@@ -1,10 +1,10 @@
 ---
 rosetta:
   primary_level: L7
-  primary_column: "Philosophy — ascent reading, D6 + ○"
+  primary_column: "Philosophy — ascent reading, D6 and horizon"
   operator: "Viṣṇu ⊙"
   register: "[I] active reader projection — ascent reading of D6 and ○, not a canon owner"
-  canonical_phrase: "D6+○ ascent — the return is a resemblance not an identity (D6≢D0); the horizon refuses by absorption not absence; the door was inside the whole time"
+  canonical_phrase: "D6-and-horizon ascent — the return is a resemblance not an identity (D6≢D0); the horizon refuses by absorption not absence; the door was inside the whole time"
 title: "D6 — The Return, and ○ — The Horizon. The ascent reading."
 status: "ACTIVE [I] — reader projection; source owners control every claim tier."
 date: 2026-08-05
@@ -60,7 +60,7 @@ is row 8 of the dead-forms catalog:
 
 > **Literal `D6≡D0`.** Loop-as-equation fails: `D0 < … < D6 + D6 ≡ D0`
 > ⟹ `D0 < D0`, a contradiction. The apophatic return-to-ground `[I]`
-> survives; "∼" similarity at conformal boundary adopted as K2-8.
+> survives; "∼" is retained only as a conformal-boundary resemblance.
 
 (`90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/
 00_THE_DEAD_FORMS_CATALOG_v0.1.md`:47. Three incompatible claims in the
@@ -163,46 +163,25 @@ Both boundaries are barren. **They are barren for opposite reasons:**
 from the inside, from being unable to act at all — but the two are
 structurally inverse, not identical.**
 
-The geometry agrees: `•` and `○` are antipodal, chordal distance 2, the
-full diameter of the sphere — the farthest apart two points can be.
+The live claim stops at structural distinctness and the two absorption
+readings. No antipodal, chordal-distance, metric, pole, or chart-successor
+conclusion follows from those typed refusals.
 
-> **⚠ STRUCK 2026-08-05, RE-ARGUED 2026-08-06 on corpus-internal grounds.**
-> The prior strike mechanism (Möbius 2-transitivity → "discriminates nothing")
-> is the wrong argument: the corpus never declared Möbius as its symmetry
-> group, and the Earth's poles don't stop being antipodal because a
-> diffeomorphism can move them. The **real** defect is corpus-internal and
-> needs no external premise:
->
-> `S = [[1,1],[0,1]]` — the corpus's own successor operator — acts on the
-> affine chart as `z ↦ z+1`, and that translation does not preserve the
-> chordal metric. The seats name the limiting directions of the translation,
-> not points it is applied to — so the disagreement is stated without
-> operating on the seats: the corpus declares the chordal metric as fixed
-> structure (`[S]`) and an operation on interior values that does not
-> preserve it. *(Self-correction 2026-08-06: the prior wording applied `S`
-> to `•` — the same coercion this kill convicts; struck here.)*
+> **⚠ FINAL TYPE CORRECTION 2026-08-09.** The reciprocal chart may name its
+> own points `p_N` and `p_S`; the Titan frame names opaque marks `•` and `○`
+> and declares no coercion to `ProjectivePoint`. Applying a chart metric,
+> pole relation, antipodality relation, or chart successor to the marks is
+> therefore ill-typed. The prior Möbius and successor rationales are
+> superseded because both began after that forbidden coercion.
 >
 > **What survives:** `• ≠ ○` — distinctness is structural and type-safe —
 > and the opposite-refusals content, which rests on **absorption**
 > (`V ∪ {x} = V`, Dedekind 1888) with no geometry in it at all. The ontology
 > was never resting on the picture.
-
-> *(Self-correction 2026-08-06, expanded post rungs fix.)* The prior wording
-> applied `S` to `•` — the same coercion this kill convicts; struck here.
-> The disambiguation, per the rungs §D2 §IV type rider: `S(•) = 1` is a
-> **chart-side** operation on the labelled point `•` in the chart structure,
-> where `•` is a label, not a Titan mark; the successor `S` is a chart
-> automorphism, not a Titan operator. The kill's argument, restated under
-> this disambiguation, is: the corpus declares the chordal metric as fixed
-> structure (`[S]`) AND an operation on **interior values** of `z ↦ z+1` that
-> does not preserve the metric. The seats `•` and `○` are not operated on;
-> the chart's own successor acts on the chart's labelled points. The
-> disambiguation is what keeps the kill from committing the coercion it
-> convicts. Cross-reference: rungs `00_THE_RUNGS_2026_08_05.md` §D2 §IV type
-> rider for the canonical disambiguation; the same rider is at rungs §D0,
-> the §D2 block, and the drops table. The §D6 listing in the prior repair
-> trail was nominal — the `S(•) = 1` formulation does not appear in this
-> section; the audit-of-the-audit note is filed at rungs §D6.
+>
+> The exact superseded 2026-08-05/06 Möbius, successor, and self-correction
+> blocks remain visible as withdrawn history in
+> [`90_ARCHIVE/50_AUDITS/57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md`](../../90_ARCHIVE/50_AUDITS/57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md).
 
 The ontology agrees: `D6 ≢ D0`. The resemblance `r₆` is live; the identity is
 not.
@@ -220,10 +199,10 @@ because **completion is precisely what excludes possibility.** So the denial
 was well-aimed and slightly misdescribed: the actual infinite is not
 incoherent. It is **inert.**
 
-At `x = 1000`: `φ = 1000`, `ν = 1/1000`, and `⊙ = sin θ ≈ 0.002`. It
-appears to have all of it and it has almost none. That is the horizon's
-whole warning — and it is also a description of a corpus with 1,321
-documents and one owned claim.
+At `x = 1000`: `φ = 1000`, `ν = 1/1000`, and the chart function
+`B = sin θ ≈ 0.002`. This is a fact about that selected one-parameter chart,
+not a fact about `○`, D6, a Titan mark, or a corpus. No horizon warning or
+world inference transfers from the chart value.
 
 ---
 
@@ -237,24 +216,28 @@ Read as interval notation: **lower bound | realm | upper bound.** `⊙` is not
 a number and not an operand — it is the mark of Finity, the whole band where
 counting is meaningful.
 
-`⊙ = • × ○` is **retired, not restored**: ill-typed, withdrawn, still
-published on 349 pages, still owner-gated. The surviving form is containment,
-not product: **`⊙` names the held relation of `•` and `○`.**
+**Retired — ill-typed:** the former product notation joining the Finity,
+ground, and horizon marks. Its exact historical form remains recorded in
+`48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121` as a withdrawal record;
+it is not restored. A 2026-08-06 audit snapshot recorded 349 live-page
+citations; that is a dated checkpoint, not a current census. The form remains
+owner-gated. The surviving form is containment, not product:
+**`⊙` names the held relation of `•` and `○`.**
 
 ---
 
 ## IX. The ascent, complete
 
 ```
-   ○     absorption · act forever, nothing registers · ⊙ → 0 · INERT, not incoherent
+   ○     absorption · act forever, nothing registers · INERT, not incoherent
    │
-  D6     the return · exit marker · D6 ≉ D0 (the identity is dead, row 8)
+  D6     the return · exit marker · D6 ≢ D0 (the identity is dead, row 8)
          four postures; the fourth is the practice; the door was inside
   D5     the game · the vow · the conditional lemma · Finity_L is dead
          horizon · maximand · enforcement — three choices the math cannot make
   D4     the actual · receipts · the iron separation · the session judged
-  D3     the state · a price list, not a purchase · the council catch
-  D2     the sphere · B = D• × D∞ = SIZE × BALANCE · the fence
+  D3     the state · probabilities relative to a declared measurement · formalism/interpretation fence
+  D2     configuration · X ⟶ (X,R) · relation declared, owner-controlled
   D1     arithmetic · S never rests, ι rests once · G2 is Euclid
    │
    1     the unit · presupposed, not discovered · reachable only from itself
@@ -262,35 +245,34 @@ not product: **`⊙` names the held relation of `•` and `○`.**
    •     no substrate · counting cannot begin · glossed "seed" — open
 ```
 
-> **⚠ REPAIR 2026-08-05 — two lines of the recap above carry struck
-> readings.** The D2 line's `B = D• × D∞ = SIZE × BALANCE` is the retired
-> `⊙ = • × ○` in new coordinates — banned at every tier (`48:121`, `:416`;
-> repair `020f4f19`; the reading is `[B]` attribution, the product
-> compensatory). The D3 line's *"a price list, not a purchase"* is the
+> **⚠ REPAIR 2026-08-09 — former recap lines carried struck readings.** The
+> D2 line now follows its sole owner: D2 is the register of configuration,
+> while a reciprocal sphere chart is at most a typed example inside it. No
+> chart limit or score transfers to a Titan mark. The D3 line's *"a price list,
+> not a purchase"* is the
 > refuted price metaphor: owned five times over (de Finetti, Peres,
 > Schrödinger 1935, Fuchs–Schack, Hardy) and firing `KSC-16`'s kill — a
 > price list is non-contextual by construction, and no such list exists.
 > **What survives at D3:** the state is probability-bearing only relative to
-> a declared measurement; the formalism/interpretation separation. The recap
-> is retained as provenance, unrevised.
+> a declared measurement; the formalism/interpretation separation. The active
+> recap above now carries that survivor.
 
 ---
 
-## X. The one sentence the whole structure yields
+## X. The bounded sentence the structure yields
 
-> Capacity lives only in the middle, it is the product of your two margins,
-> it is governed by whichever margin is thinner, and in the living case you
-> must spend continuously to stay where it is maximal — because the optimum
-> is free only for things that are not alive.
+> On the selected chart, `B = sin θ` peaks at the equator and tends to zero at
+> both poles; for independent positive inputs, `min(a,b) ≤ HM(a,b) ≤ 2·min(a,b)`.
+> Neither fact supplies a node score, capacity law, biological law, or world
+> optimum.
 
-That sentence is `[A]` in its mathematics, `[I]` in its reading, and `[C]`
-where it touches biology. **The biological clause is now dead** (Finity_L,
-eight domains, zero survivors). The sentence survives without it — capacity
-as size-discounted-by-imbalance is elementary and classical. But the claim
-that *living systems pay rent to hold the optimum* has no known instance.
+The two mathematical statements are `[A]` inside their declared structures.
+The former capacity and biological readings are withdrawn: Finity_L returned
+eight domains and zero survivors, and no "living systems pay rent" claim is
+carried forward.
 
-**The sentence solves nothing yet. It is the most coherent thing the corpus
-has, and coherence is Φ.**
+**The bounded sentence resolves no world question. It records what survived
+and what did not.**
 
 ---
 

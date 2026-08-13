@@ -1080,7 +1080,7 @@ withdrawn.
 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 **Critical edition:** `13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1.md`
 (projection SHA-256
-`01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c`).
+`71c8077248ca96a72f3ad1e5040da46f8ea53541aef527322887df654527e046`).
 **Debrief route:** `13_BOOKS/sarpasya_vijayam/DEBRIEF.md`.
 
 Source cards: SV01-02, SV01-07.

@@ -44,8 +44,9 @@ What intelligence may enlarge is a different, model-relative object:
 The light cone bounds what physics permits. The option cone is defined relative
 to an agent, model, horizon, resources, and action set inside that physical
 bound. More capable modeling may enlarge it, but intelligence alone need not:
-missing energy, access, coordination, or authorization can leave an option
-unreachable.
+missing energy, access, or coordination can leave an option unreachable.
+Authorization does not change physical reachability; it classifies a separate
+normative subset.
 
 ### Agent option cone `[I]`
 
@@ -71,6 +72,23 @@ theorem.
 \operatorname{OptionCone}_x(t)
 \subseteq\mathcal H_{\mathrm{phys}}(X_t).
 \]
+
+Define that normative subset separately:
+
+\[
+\operatorname{AuthorizedOptionCone}_x(t)
+=\{h\in\operatorname{OptionCone}_x(t):
+\operatorname{assessAuthorization}(e_h,a_h,t,B_h).\mathrm{status}
+=\mathrm{valid}\}.
+\]
+
+Here `e_h` is a supplied authorization envelope, `a_h` is the exact attempted
+action associated with the history, and `B_h` is its complete consequence-bearer
+set. The assessment applies the canonical validity predicate; it does not create
+authority.
+
+Unauthorized or coercive options do not disappear from causal description;
+their physical availability does not make them permitted or just.
 
 The evocative phrase may therefore be used only as an `[I]` compression: better
 models and capabilities can illuminate more alternatives and sometimes enlarge

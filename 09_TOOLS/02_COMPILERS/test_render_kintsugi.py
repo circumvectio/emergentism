@@ -67,6 +67,27 @@ def current_artifact(core: dict[str, object], phase: str = "B") -> dict[str, obj
     return matches[0]
 
 
+class RendererCanonicalDecodeTests(unittest.TestCase):
+    def test_direct_decoder_enforces_depth_without_misreading_strings(self) -> None:
+        import kintsugi_kernel.rendering as rendering
+
+        string_value = {"escaped": '\\\"' * 600, "literal": "[]{}" * 600}
+        self.assertEqual(
+            rendering._decode_canonical_bytes(
+                canonical_json_bytes(string_value), "quoted.json"
+            ),
+            string_value,
+        )
+        excessive = b"[" * 513 + b"0" + b"]" * 513 + b"\n"
+        with self.assertRaises(KintsugiError) as caught:
+            rendering._decode_canonical_bytes(excessive, "deep.json")
+        self.assertEqual(caught.exception.code, "KIN-E-JSON")
+        self.assertEqual(
+            caught.exception.message,
+            "JSON exceeds the supported nesting depth",
+        )
+
+
 class RendererFixture(unittest.TestCase):
     def setUp(self) -> None:
         self.temporary = tempfile.TemporaryDirectory()

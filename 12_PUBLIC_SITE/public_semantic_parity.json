@@ -2,6 +2,62 @@
   "schemaVersion": 2,
   "status": "release-candidate-projection",
   "sourceAuthority": "Source documents own semantics; this manifest binds public pages but creates no doctrine.",
+  "statusSourceClaims": [
+    {
+      "id": "KERNEL-STATUS-HOME",
+      "surface": "index.html",
+      "role": "kernel_editorial_map_boundary",
+      "source": "00_THE_KERNEL_INDEX.md",
+      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "tier": "[I]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "WHAT IS SETTLED INSIDE, AND WHAT IS STILL OPEN",
+        "Seven kernel owner surfaces",
+        "not externally confirmed"
+      ]
+    },
+    {
+      "id": "CONTACT-STATUS-HOME",
+      "surface": "index.html",
+      "role": "world_contact_open_gate_status",
+      "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
+      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
+      "tier": "[S/B]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "Twelve named world-contact gates remain open",
+        "A packet or receipt is not independent world-facing evidence by itself"
+      ]
+    },
+    {
+      "id": "KERNEL-STATUS-ABOUT",
+      "surface": "about/index.html",
+      "role": "kernel_editorial_map_boundary",
+      "source": "00_THE_KERNEL_INDEX.md",
+      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "tier": "[I]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "Seven editorial homes, not seven facts about nature",
+        "It is not a census of nature or an eighth source."
+      ]
+    },
+    {
+      "id": "CONTACT-STATUS-ABOUT",
+      "surface": "about/index.html",
+      "role": "world_contact_open_gate_status",
+      "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
+      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
+      "tier": "[S/B]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "Internal completion is not external confirmation.",
+        "Twelve named world-contact gates remain open.",
+        "Packet-complete research contracts are not evidence-complete"
+      ]
+    }
+  ],
   "claimCardContract": {
     "ledger": "00_META/claim_cards/one_sitting.yaml",
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
@@ -159,194 +215,133 @@
     },
     {
       "surface": "compass/index.html",
-      "role": "compass_directional_signal",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
+      "role": "map_action_outcome_exit_boundary",
+      "claimCardIds": ["OS01-13"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-13"]
+      }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "a compass, not a cathedral"
-      ]
+      "requiredMarkers": ["A compass, not a cathedral."]
     },
     {
-      "surface": "discoveries/nonduality/index.html",
-      "role": "discovery_nonduality",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
+      "surface": "5/index.html",
+      "role": "selected_conjunctive_model_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-09"]
+      }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "The top rhymes with the ground"
-      ]
-    },
-    {
-      "surface": "about/index.html",
-      "role": "about_identity",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "About"
-      ]
-    },
-    {
-      "surface": "read/index.html",
-      "role": "read_corpus_route",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "Read the Framework"
-      ]
-    },
-    {
-      "surface": "axioms/index.html",
-      "role": "axioms_seven",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "Seven Axioms"
-      ]
-    },
-    {
-      "surface": "journey/index.html",
-      "role": "journey_path",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "Journey Mode"
-      ]
-    },
-    {
-      "surface": "rosetta/index.html",
-      "role": "rosetta_seven_functions",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "Seven Functions"
-      ]
-    },
-    {
-      "surface": "book/index.html",
-      "role": "book_current_reader",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
-      "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "One-Sitting Reader"
-      ]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
     },
     {
       "surface": "plainly/index.html",
-      "role": "plainly_synthesis",
-      "claimCardIds": [
-        "OS01-09"
-      ],
-      "claimSources": [
-        {
-          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-          "lifecycle": "reader_synthesis",
-          "claimCardIds": [
-            "OS01-09"
-          ]
-        }
-      ],
+      "role": "selected_conjunctive_model_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-09"]
+      }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": [
-        "possible power",
-        "actual power",
-        "chosen AND-class convention"
-      ]
+      "requiredMarkers": ["P_node := min(Φ̂₄,V₄)"]
+    },
+    {
+      "surface": "discoveries/nonduality/index.html",
+      "role": "selected_conjunctive_model_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-09"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
+    },
+    {
+      "surface": "about/index.html",
+      "role": "public_refusal_and_exit_boundary",
+      "claimCardIds": ["OS01-26"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-26"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["What this is, and"]
+    },
+    {
+      "surface": "read/index.html",
+      "role": "reading_path_map_action_outcome_exit_boundary",
+      "claimCardIds": ["OS01-13"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-13"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Read the Framework — The Complete Public Reading Path"]
+    },
+    {
+      "surface": "axioms/index.html",
+      "role": "public_refusal_and_exit_boundary",
+      "claimCardIds": ["OS01-26"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-26"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Seven axioms."]
+    },
+    {
+      "surface": "journey/index.html",
+      "role": "selected_conjunctive_model_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-09"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Journey Mode"]
+    },
+    {
+      "surface": "rosetta/index.html",
+      "role": "selected_translation_language_boundary",
+      "claimCardIds": ["OS01-11"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-11"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Seven functions."]
+    },
+    {
+      "surface": "book/index.html",
+      "role": "reader_map_action_outcome_exit_boundary",
+      "claimCardIds": ["OS01-13"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-13"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["The One-Sitting Reader"]
     }
   ],
   "sequence": [
@@ -381,7 +376,7 @@
         "OS01-01",
         "OS01-02"
       ],
-      "sourceRevision": "sha256:4efb2a81b68d58787807594fb41b845953d08c138fec52b0a25dbb4cfb0c18d0",
+      "sourceRevision": "sha256:d8dbfeeed4d7aed6680f39b62206ca75bd852b0fed9e0ff059f5fba9817bd66e",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "titans",
@@ -389,7 +384,7 @@
         "id": "mu0",
         "label": "Origin aperture",
         "source": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
-        "sourceRevision": "sha256:6a2ecaa10310b17aae2c431d0331730450e1af2da23db584e2b2175dc416ea4d",
+        "sourceRevision": "sha256:79edf16981c543543a014a634051f308771b244964f31e9fa58481bcce0a61bc",
         "saturation": "None is claimed. mu0 names an origin aperture, not exhaustion of a prior positive freedom.",
         "capability": "Stable distinction and arithmetic become expressible.",
         "recovery": "D1 must preserve the boundary/operand distinction.",
@@ -415,7 +410,7 @@
         "OS01-03",
         "OS01-04"
       ],
-      "sourceRevision": "sha256:0c4b640cf2f396686af72f71ca3c5e4167224ff7fbd2800233ca8f891ec9beb2",
+      "sourceRevision": "sha256:1a1e8e02cfb549525ce4caa754700edf7dab6970d76245e7dba3fc0942dfff0e",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "logline",
@@ -423,7 +418,7 @@
         "id": "mu1",
         "label": "Configuration aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
-        "sourceRevision": "sha256:b75f02cb822f7d32ff9bc7bdb837dd3c14f94683d238b2fce51384c563ca988e",
+        "sourceRevision": "sha256:3aa7626f5b22bd1c20ca457db0a3c3902f0bac709b55b31879ee44100785be56",
         "saturation": "One-dimensional values and limits cease to display relations among many inputs, outputs, and charts economically.",
         "capability": "Functions, graphs, relations, atlases, and geometry become explicit configurations.",
         "recovery": "Every D2 configuration must recover valid D1 values and operations on its declared domain.",
@@ -490,7 +485,7 @@
         "id": "mu3",
         "label": "Actual-record aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
-        "sourceRevision": "sha256:ea98a201a0dafbc05f01dd70836c0f722ffcfe95921a8b75c2ea68dcbbf0e32a",
+        "sourceRevision": "sha256:4d63e562ea683395a3a3a88ae3c11e819963aca9d197f029a1ff799b7a1ba870",
         "saturation": "A probability assignment, even if exhaustively specified, is not itself a particular performed interaction and recorded outcome.",
         "capability": "An actual carrier, interaction, event, and receipted record enter the description.",
         "recovery": "Repeated D4 records must remain statistically answerable to the D3 probability model under the stated preparation and measurement conditions.",
@@ -515,7 +510,7 @@
       "claimCardIds": [
         "OS01-08"
       ],
-      "sourceRevision": "sha256:ea98a201a0dafbc05f01dd70836c0f722ffcfe95921a8b75c2ea68dcbbf0e32a",
+      "sourceRevision": "sha256:4d63e562ea683395a3a3a88ae3c11e819963aca9d197f029a1ff799b7a1ba870",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "horn",
@@ -523,7 +518,7 @@
         "id": "mu4",
         "label": "Counterfactual-capacity aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
-        "sourceRevision": "sha256:b75f02cb822f7d32ff9bc7bdb837dd3c14f94683d238b2fce51384c563ca988e",
+        "sourceRevision": "sha256:3aa7626f5b22bd1c20ca457db0a3c3902f0bac709b55b31879ee44100785be56",
         "saturation": "Actual histories alone do not supply an agent with explicit alternatives, rankings, and conditional plans.",
         "capability": "A finite agent models possible futures, ranks options, coordinates, and selects a reachable action.",
         "recovery": "Every D5 model token is an actual D4 inscription or process, and every enacted choice returns to D4 consequence.",
@@ -611,6 +606,13 @@
     "compass/index.html",
     "dimensions/index.html",
     "dimensions/dimensions.js",
+    "0/index.html",
+    "1/index.html",
+    "2/index.html",
+    "3/index.html",
+    "4/index.html",
+    "5/index.html",
+    "6/index.html",
     "check/index.html",
     "discoveries/index.html",
     "discoveries/burrisphere/index.html",

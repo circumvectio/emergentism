@@ -8,9 +8,9 @@ rosetta:
   register: "[A/I]"
   canonical_phrase: "B is a product of the two distances to the poles"
 title: "The Product Form of the Balance"
-status: "ACTIVE — [A] identity, elementary. The mathematics is the double-angle formula. The contribution is the reading, and it is [I], restored 2026-08-06 at [B] inherited-cite (Nash 1950, Sonnevend 1985/86, product t-norm, series reliability) after a fair re-adjudication found the prior strike over-corrected. The reading stands narrowed: the product-of-margins-as-AND is inherited and cited, not novel. This document does NOT reopen the lowercase-to-uppercase transfer that 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md closed."
+status: "ACTIVE — [A] identity, elementary. The mathematics is the double-angle formula. The factors are typed chart distances. The [B] prior-art comparison to margin products and conjunctive frameworks (Nash 1950, Sonnevend 1985/86, product t-norm, series reliability) is attribution only; it does not classify B as an AND or reinstate the struck inference. This document does NOT reopen the lowercase-to-uppercase transfer that 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md closed."
 date: 2026-08-05
-evidence_tier: "[A] the chordal identity and the AM-GM-HM chain, both classical; [B] the reading of the two factors as distances-from-failure (inherited: Nash, Sonnevend, product t-norm — cited, not novel); [S] the chordal metric as the selected metric on the sphere"
+evidence_tier: "[A] the chordal identity and the AM-GM-HM chain, both classical; [B] comparison with failure-margin and product frameworks (Nash, Sonnevend, product t-norm) is prior-art attribution only and does not classify B; [S] the chordal metric as selected structure on the chart"
 owner: "Subordinate to 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md, which governs what may and may not be transferred off this chart. This document adds a decomposition of B and claims nothing about Φ, V, or P_node beyond §5."
 parents:
   - ../00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md
@@ -49,9 +49,10 @@ that means `φ × ν` is refuted on sight by the chart itself.
 
 ## 2. The decomposition
 
-Take the sphere as the unit sphere with `θ` the polar angle, with `○` at
-`θ = 0` and `•` at `θ = π` as the **two poles of the chart**, and use the
-**chordal** metric — the straight-line distance through the sphere. `[S]`
+Take the sphere as the unit sphere with `θ` the polar angle, with the named
+chart pole `p_N` at `θ = 0` and `p_S` at `θ = π`, and use the **chordal**
+metric — the straight-line distance through the sphere. `[S]` These are typed
+points in the declared chart, not Titan marks.
 
 > **[STRUCK 2026-08-06, in alignment with the rungs ruling §D2 §IV.]** The
 > earlier reading held `•` and `○` antipodal at distance `2` on this metric
@@ -61,14 +62,14 @@ Take the sphere as the unit sphere with `θ` the polar angle, with `○` at
 > `z ↦ z+1` on the Riemann sphere, and `S(•) = 1`. Writing `d(•, ○) = 2`
 > is a **type violation** — it coerces Titan marks into projective points
 > and equips them with a metric outside their declared lawful structure,
-> the same move that killed `⊙ = • × ○` (`48:121, :416`). The antipodal
+> the same move that killed the retired `⊙ = • × ○` (`48:121, :416`). The antipodal
 > picture is dead the moment `S` is named.
 >
-> **What survives:** the chordal metric as selected structure on the sphere
-> (since `S` preserves it); `• ≠ ○` (distinctness, structural); and the two
-> factors `D•(θ)`, `D∞(θ)` below as chordal distances between a chart
-> point `θ` and the two poles of the chart — **not** distances between
-> the marks. The opposite-refusals content rests on **absorption**
+> **What survives:** the chordal metric as selected structure on the sphere;
+> the distinct chart points `p_N` and `p_S`; and the
+> two factors `d_N(θ)`, `d_S(θ)` below as chordal distances between a chart
+> point `θ` and those named poles — **not** distances between Titan marks. The
+> opposite-refusals content rests on **absorption**
 > (Dedekind 1888), with no geometry in it at all.
 
 The chord subtending polar angles `θ` and `0` has length `2 sin(θ/2)`; the
@@ -76,21 +77,21 @@ chord subtending `θ` and `π` has length `2 cos(θ/2)`. Normalise each so that
 it reads `1` at the equator:
 
 ```text
-D∞(θ) = 2 sin(θ/2) / √2 = √2 sin(θ/2)      the distance from ○
-D•(θ) = 2 cos(θ/2) / √2 = √2 cos(θ/2)      the distance from •
+d_N(θ) = 2 sin(θ/2) / √2 = √2 sin(θ/2)      distance from `p_N`
+d_S(θ) = 2 cos(θ/2) / √2 = √2 cos(θ/2)      distance from `p_S`
 ```
 
 Then
 
 ```text
-D•(θ) · D∞(θ) = 2 sin(θ/2) cos(θ/2) = sin θ = B          [A]
+d_N(θ) · d_S(θ) = 2 sin(θ/2) cos(θ/2) = sin θ = B          [A]
 ```
 
 **The product decomposition of `B` is the double-angle identity.** In the
 `x = φ = cot(θ/2)` coordinate the same statement reads
 
 ```text
-B(x) = D•(x) · D∞(x) = 2/(φ+ν) = 2x/(x²+1) = sech(log x)
+B(x) = d_N(x) · d_S(x) = 2/(φ+ν) = 2x/(x²+1) = sech(log x)
 ```
 
 Machine-verified at `x ∈ {10⁻³, 10⁻², 0.1, 0.5, 1, 2, 10, 10², 10³}` to 22
@@ -102,8 +103,8 @@ decimal places.
 decomposition says **why**, and the why is not symmetric-looking bookkeeping:
 
 ```text
-θ → π    D• → 0,  D∞ → √2       standing on • ; maximal reach to ○ ; B = 0
-θ → 0    D• → √2, D∞ → 0        standing on ○ ; maximal reach to • ; B = 0
+θ → π    d_S → 0,  d_N → √2     at `p_S`; maximal chart reach to `p_N`; B = 0
+θ → 0    d_S → √2, d_N → 0      at `p_N`; maximal chart reach to `p_S`; B = 0
 ```
 
 **Being maximally far from one boundary is worth nothing while standing on the
@@ -121,16 +122,16 @@ either distance dies.
 > is satisfied by `min`, by Cobb-Douglas, and by the product alike — it does not
 > single out `Φ×V`."*
 >
-> **Further: the two factors are not independent.** `D•² + D∞² = 2` identically,
+> **Further: the two factors are not independent.** `d_S² + d_N² = 2` identically,
 > so the chart has **one** degree of freedom and the margins cannot fail
 > separately — as one → 0 the other is *forced* to `√2`. An AND-gate presupposes
-> two inputs that can each fail alone. These cannot. What real non-compensation
-> exists here (`B ≤ √2·min(D•,D∞)`, verified) is supplied by **the constraint**,
-> not by the product form — reproducing one level up the defect §1 exists to
-> forbid.
+> two inputs that can each fail alone. These cannot. What weaker-argument control
+> exists here (`B ≤ √2·min(d_S,d_N)`, verified) is supplied by **the constraint**,
+> not by the product form. It is a bounded-compensation statement, not a
+> no-compensation or AND theorem.
 >
-> The genuinely non-compensatory statement in this document is the harmonic-mean
-> one, `min ≤ HM ≤ 2·min` in §3 — `[A]`, classical, correctly tiered, unaffected.
+> The surviving harmonic-mean statement is the bounded-compensation inequality
+> `min ≤ HM ≤ 2·min` in §3 — `[A]`, classical, and correctly tiered.
 
 This is the boundary behaviour. The interior behaviour is the classical chain
 
@@ -140,8 +141,10 @@ min(a,b) ≤ HM(a,b) ≤ 2·min(a,b)                                    [A]
 ```
 
 which says the harmonic mean is pinned to the *weaker* argument and can never
-exceed twice it. Compensation is impossible: `HM(1, 10⁴) = 1.9998`, against
-`AM(1, 10⁴) = 5000.5`. Verified.
+exceed twice it. Compensation is bounded, not impossible: for fixed `a > 0`,
+`HM(a,b)` strictly increases with `b`, while remaining below `2a` when `a` is
+the weaker argument. Thus `HM(1, 1) = 1` and `HM(1, 10⁴) = 1.9998`, against
+`AM(1, 10⁴) = 5000.5`. Verified. No no-compensation or AND theorem follows.
 
 Two derivations, one function. The product form governs the boundaries; the
 harmonic-mean form governs the interior.
@@ -153,15 +156,15 @@ Where nothing forces `φν = 1` — two independent positive quantities `a`, `b`
 ```text
 HM(a,b) = 2ab/(a+b) = √(ab) · sech(½ log(a/b))
                        ──────   ────────────────
-                        SIZE      BALANCE ≤ 1
+                   geometric factor   ratio factor ≤ 1
 ```
 
 Verified: `a=9, b=4` → `6 × 0.923077 = 5.538462 = 72/13`. ✓
 
-Potential is **size discounted by imbalance**, with the discount capped at `1`
-and attained only at `a = b`. Two routes to raise it: grow `√(ab)`
-(unbounded, costly) or reduce the skew (bounded by `1`, and available without
-growth). `[A]` on the identity.
+This is an algebraic decomposition: a geometric-mean factor multiplied by a
+ratio-dependent factor capped at `1`, with equality at `a = b`. `[A]` applies
+only to that identity. It supplies no capacity, potential, cost, growth, or
+node-level reading.
 
 ## 5. The transfer that is NOT licensed — read this before citing §2
 
@@ -174,7 +177,7 @@ Specifically, **all** of the following remain false or unlicensed:
 
 | Statement | Status |
 |---|---|
-| `P_node = Φ × V` is a product because `B` has a product form | **UNLICENSED.** §2 is an identity on the selected sphere chart. `Φ̂₄, V₄` are typed node quantities on `[0,1]` with no chordal geometry and no reciprocal constraint. |
+| the retired multiplicative node ranking follows because `B` has a product form | **UNLICENSED.** §2 is an identity on the selected sphere chart. `Φ̂₄, V₄` are typed node quantities on `[0,1]` with no chordal geometry and no reciprocal constraint. |
 | `φν = 1` is a budget, a conservation law, or evidence of an optimum | **FALSE**, per the parent §1. Unchanged. |
 | the selected node score is a product | **FALSE.** The selected score is `P_node = min(Φ̂₄, V₄)`, per the parent §1. The product `Φ̂₄V₄` is retired and testable only as a separately cardinal candidate. |
 
@@ -191,16 +194,16 @@ exactly at the balance point.** That is a statement about two aggregators
 standing side by side. It is *not* a transfer from the sphere, it does not
 depend on `φν = 1`, and it does not make `P_node` a product. Anyone wanting a
 differentiable stand-in for `min` may use `HM` and cite this line. Anyone
-wanting to resurrect `Φ × V` from the geometry may not.
+wanting to resurrect that retired node ranking from the geometry may not.
 
 ## 6. Kills
 
 | claim | kill |
 |---|---|
-| `D• · D∞ = B` | exhibit `θ ∈ (0,π)` where the normalised chordal product ≠ `sin θ` |
+| `d_S · d_N = B` | exhibit `θ ∈ (0,π)` where the normalised chordal product ≠ `sin θ` |
 | `min ≤ HM ≤ 2·min` | exhibit positive `a, b` violating either bound |
 | the reading of the factors as distances-from-failure | show a boundary at which the corresponding factor does **not** vanish |
-| **this document's discipline** | if §2 is ever cited to license `P_node = Φ × V`, or to reopen the lowercase→uppercase transfer, this document has been misused and §5 should be re-read |
+| **this document's discipline** | if §2 is ever cited to license the retired multiplicative node ranking, or to reopen the lowercase→uppercase transfer, this document has been misused and §5 should be re-read |
 
 ## 7. Prior art
 
@@ -226,13 +229,15 @@ AM–GM–HM chain and the `min`/`HM` two-sided bound are classical inequalities
 >
 > **Inherited-and-cited is a footnote, not a strike.** The project's stated
 > mission is a coherent weltanschauung, *not* priority — so prior art is a
-> citation obligation, and the reading below is restored at `[B]` rather than
-> withdrawn. What does **not** come back is the word "own", and what does not
+> citation obligation, and the prior-art comparison below is retained at `[B]`
+> rather than erased. What does **not** come back is the word "own", and what does not
 > come back is the struck AND-sentence in §3, which was false for a separate
 > reason (vanishing-at-zero is not non-compensation).
 
-**The reading of the two factors as distances-from-failure, and of their product
-as a conjunction, is `[B]` — attribution, not contribution.** Owners:
+**Named prior frameworks read their own margins or products as failure
+distances or conjunctions.** That comparison is `[B]` attribution, not a
+classification of `B`: no AND inference follows from this chart product.
+Sources:
 
 - **Nash (1950)** — the bargaining solution `argmax ∏(uᵢ − dᵢ)`: a product of
   **margins over a disagreement (failure) point**, zero if any party gains
@@ -240,10 +245,11 @@ as a conjunction, is `[B]` — attribution, not contribution.** Owners:
   at `04_AXIOLOGY/.../AX2_THE_ETHIC.md:35`.
 - **Sonnevend (1985/86)** — the *analytic center*: the interior point maximising
   the **product of distances to the constraints**, its log-barrier diverging as
-  any constraint activates. Literally this picture, on a polytope.
+  any constraint activates. This is an algebraic comparison, not an identity
+  of models or meanings.
 - **The product t-norm** (Klement–Mesiar–Pap) — conjunction *defined* as
-  multiplication on `[0,1]`. "AND as an operation" is the definition, not an
-  observation.
+  multiplication on `[0,1]` in that framework. That definition does not make
+  this constrained chart factorization an AND.
 - **Series-system reliability** `R = ∏Rᵢ` (Barlow–Proschan).
 
 And internally pre-owned: `11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT.md`
@@ -253,12 +259,13 @@ this file existed.
 `KSC-12` applies — reformulation is not novelty. Per
 `THE_BOUNDARY_RULES_STANDALONE.md:297`: **cite this; do not claim it.**
 
-**Notation fence.** This document writes `B`, deliberately. The form
-`⊙ = D• · D∞` may **not** be written at any tier: `D•` is a function of `•` and
-`D∞` of `○`, so it is `⊙ = f(•) × g(○)` — the retired `⊙ = • × ○` in new
-coordinates (`48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121`
-RETIRED — ILL-TYPED — WITHDRAWN; `:416` fires its own kill on exactly this
-reinstatement; `ArithmeticSignature(TitanFrame) = ∅`).
+**Notation fence.** This document writes `B`, deliberately. No expression may
+equate the Finity realm mark with a chart-factor product. The scalar factors
+are `d_S` and `d_N`, functions of typed chart points `p_S` and `p_N`; they are
+not functions of Titan marks. The historically retired infix remains preserved
+in `48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121` as **RETIRED —
+ILL-TYPED — WITHDRAWN**, and `ArithmeticSignature(TitanFrame) = ∅` remains the
+active type fence.
 
 **Canonical path:**
 `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`

@@ -380,6 +380,8 @@
         "S"
       ],
       "locator": {
+        "anchor": "**Finity Card**",
+        "fingerprint_sha256": "89d9731dd23e727c64c91c9ab16f9b1854e97eab5525238cee8a6df5cffffe78",
         "line_end": 150,
         "line_start": 131,
         "section": "3B"
@@ -412,6 +414,8 @@
         "C"
       ],
       "locator": {
+        "anchor": "selected practice `[S]`",
+        "fingerprint_sha256": "6cb96076c6241af231076cd9605a16066d2b20406abaae1a2c0ee82173faffa6",
         "line_end": 158,
         "line_start": 152,
         "section": "3B"
@@ -442,7 +446,7 @@
       ],
       "locator": {
         "anchor": "Emergentism selects three opaque symbolic boundary labels—its Titan",
-        "fingerprint_sha256": "91d39149c8bc525c32d0b1ddeb62b79948ac80cc65ffe9aad795b6609dcfbdc5",
+        "fingerprint_sha256": "23d9e2de8f484395266e6a63f2595c2cc24f10aaf8455015061b8e5f2a5a766a",
         "line_end": 52,
         "line_start": 39,
         "section": "1"
@@ -508,8 +512,8 @@
       "locator": {
         "anchor": "In the selected D1 presentation, distinction is read as the first positive",
         "fingerprint_sha256": "722c66f945944ff6d371d896bb58578679c9233b77e19733e927e7f87bb0bb16",
-        "line_end": 78,
-        "line_start": 64,
+        "line_end": 161,
+        "line_start": 147,
         "section": "2"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -539,8 +543,10 @@
         "I"
       ],
       "locator": {
-        "line_end": 83,
-        "line_start": 78,
+        "anchor": "The Titan labels stay outside the arithmetic because no arithmetic is",
+        "fingerprint_sha256": "8017eb8c57eac24c4cefe87a6e62fa01ec19c14fa488673744793eec9f8406d2",
+        "line_end": 203,
+        "line_start": 198,
         "section": "2"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -569,8 +575,10 @@
         "C"
       ],
       "locator": {
-        "line_end": 104,
-        "line_start": 84,
+        "anchor": "A list of elements does not tell us how they are related. D2 names",
+        "fingerprint_sha256": "34f8c3160d78f4c83bfca3e7cb4ae2f9cede7af5b731c945b2e19c9273c06038",
+        "line_end": 223,
+        "line_start": 205,
         "section": "3"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -603,8 +611,8 @@
       "locator": {
         "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
         "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc",
-        "line_end": 125,
-        "line_start": 108,
+        "line_end": 243,
+        "line_start": 226,
         "section": "4"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -637,8 +645,8 @@
       "locator": {
         "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
         "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc",
-        "line_end": 125,
-        "line_start": 108,
+        "line_end": 243,
+        "line_start": 226,
         "section": "4"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -668,19 +676,20 @@
         "S"
       ],
       "locator": {
-        "line_end": 148,
-        "line_start": 125,
+        "anchor": "D4 is causal actuality: the actual body, instrument, model token, interaction,",
+        "fingerprint_sha256": "d47a1b5ecc7b284bad1f21e5211251890cf24baab096d44272f3f6789a56ce98",
+        "line_end": 267,
+        "line_start": 246,
         "section": "5"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
-      "semantic_owner_id": "K-7",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "supporting_owner_ids": [
-        "K-1",
         "K-3"
       ],
       "work_id": "BK-ONE-SITTING"
@@ -702,9 +711,9 @@
       ],
       "locator": {
         "anchor": "D5 is possible counterfactual content represented by actual D4 carriers. A",
-        "fingerprint_sha256": "d296a08b8c569de68d38c2a9eb43dafce0f0bcf44339e942af5405c7219b666a",
-        "line_end": 169,
-        "line_start": 152,
+        "fingerprint_sha256": "65e1b8913812912e29eb4cc057c81aaff8fe87c19e864e1ccc82f533f0fe59e7",
+        "line_end": 286,
+        "line_start": 270,
         "section": "6"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -738,9 +747,9 @@
       ],
       "locator": {
         "anchor": "Future models influence present action causally because they exist now as",
-        "fingerprint_sha256": "8a00fc25c1891dc46d1f1d5363e2833ae65714728ca30552dd9c8cb1db4db099",
-        "line_end": 176,
-        "line_start": 172,
+        "fingerprint_sha256": "4b09ecfc34b199b2bb1c9c1379c5982616cc652d41395476e0574509859ed44e",
+        "line_end": 293,
+        "line_start": 290,
         "section": "6"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -769,9 +778,9 @@
       ],
       "locator": {
         "anchor": "As an optional mnemonic, the D5 Rosetta Stone labels possible transformations",
-        "fingerprint_sha256": "c116c865cb17dab4871ba0e1b1f046ba3f9ad24d2883c75e65ee2caa14069777",
-        "line_end": 197,
-        "line_start": 177,
+        "fingerprint_sha256": "0ab202faefd671d3b2a7090fe72daf9ccdc0381f5b72547b027b72a7a6ea9b39",
+        "line_end": 314,
+        "line_start": 295,
         "section": "6"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -805,8 +814,8 @@
       "locator": {
         "anchor": "## 11. The Five Apertures — the wager about emergence",
         "fingerprint_sha256": "6c54a9909e43f62b5a56728fa76e5f08ae850f1dadbf78af28a8483b0c223e5d",
-        "line_end": 426,
-        "line_start": 402,
+        "line_end": 543,
+        "line_start": 519,
         "section": "11"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -839,9 +848,9 @@
       ],
       "locator": {
         "anchor": "The Soul Loop is the Rosetta stone of the lived framework:",
-        "fingerprint_sha256": "82068937011f45841ac247b8e1e170506d269954b21f2380a874077305b98c33",
-        "line_end": 229,
-        "line_start": 201,
+        "fingerprint_sha256": "67e65c9927cafc1ed955146b34481b149822ae22d06594ffb412c85e35ff798a",
+        "line_end": 346,
+        "line_start": 318,
         "section": "7"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -874,8 +883,8 @@
       "locator": {
         "anchor": "No person models alone. Language, norms, money, law, ritual, science and myth",
         "fingerprint_sha256": "8e44008a6d6821bd6d22cb33753fe5edacc178241a6f8b9ed310381d3b0e64fa",
-        "line_end": 260,
-        "line_start": 232,
+        "line_end": 377,
+        "line_start": 349,
         "section": "8"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -907,8 +916,8 @@
       "locator": {
         "anchor": "The current research conjecture treats language as a principal compression and",
         "fingerprint_sha256": "440353705e540b7aa3f4eeefc55dbafbe5f9567f1c8db8e91ab4e8d96dd2cb99",
-        "line_end": 268,
-        "line_start": 263,
+        "line_end": 385,
+        "line_start": 380,
         "section": "8A"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -939,8 +948,8 @@
       "locator": {
         "anchor": "An extended phenotype can provide a thinner bridge. A controlled object,",
         "fingerprint_sha256": "62863038b5a38181ff5fa82bc3621a4f91abbb3e90190b4c32843a2f8c1d7611",
-        "line_end": 276,
-        "line_start": 270,
+        "line_end": 393,
+        "line_start": 387,
         "section": "8A"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -973,8 +982,8 @@
       "locator": {
         "anchor": "War is the adverse stress test. Persons bear actual `V₄` stakes and",
         "fingerprint_sha256": "b25d98de6df0365d5f607765792000f96e709bfd6ec75381612d7f02edf6c334",
-        "line_end": 292,
-        "line_start": 278,
+        "line_end": 409,
+        "line_start": 395,
         "section": "8A"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1005,8 +1014,8 @@
       "locator": {
         "anchor": "Four coordinates can correspond without becoming one hierarchy:",
         "fingerprint_sha256": "4d65a945f50eaac22ad8c41f70fa567de174bc4041fb8a796a5b54fb7caed9ef",
-        "line_end": 310,
-        "line_start": 296,
+        "line_end": 427,
+        "line_start": 413,
         "section": "8B"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1040,8 +1049,8 @@
       "locator": {
         "anchor": "`[I/C]` Justice-constrained teleology motivates a testable corollary: seek",
         "fingerprint_sha256": "9272055fcd7bf9c970b902e6047c8f83a853d20f5fd3be83b887c385113be902",
-        "line_end": 400,
-        "line_start": 312,
+        "line_end": 517,
+        "line_start": 429,
         "section": "8B and 10"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1072,8 +1081,8 @@
       "locator": {
         "anchor": "A person is an embodied continuity through change, a bearer of experience and",
         "fingerprint_sha256": "2e23ec2d52b022d969acec062dd408f20c7a1c10411cb03ef6c96cd1a25057b5",
-        "line_end": 343,
-        "line_start": 327,
+        "line_end": 460,
+        "line_start": 444,
         "section": "9"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1105,8 +1114,8 @@
       "locator": {
         "anchor": "Death ends a living organism's capacity to issue new embodied actions in its",
         "fingerprint_sha256": "9bd97a30c2c96e740e457a7c382ecd1c90e97fedb0d2914bb491ed7dd83a1b8f",
-        "line_end": 350,
-        "line_start": 344,
+        "line_end": 467,
+        "line_start": 461,
         "section": "9"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1141,8 +1150,8 @@
       "locator": {
         "anchor": "## 10. The Good — chosen under an open sky",
         "fingerprint_sha256": "3a6ea58a4d204de165f514194339d76b50499c9c74fc1cd3c7f3a851b29d6954",
-        "line_end": 400,
-        "line_start": 352,
+        "line_end": 517,
+        "line_start": 469,
         "section": "10"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1173,8 +1182,10 @@
         "C"
       ],
       "locator": {
-        "line_end": 433,
-        "line_start": 389,
+        "anchor": "`μ₀…μ₄` are interface labels for proposed crossings, not a settled scalar",
+        "fingerprint_sha256": "065f845da38e5bcacd144125d14be1923eb7b459c20f09823bdc95947e2e91cf",
+        "line_end": 564,
+        "line_start": 544,
         "section": "11"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1208,8 +1219,8 @@
       "locator": {
         "anchor": "The five force affinities remain the historical spark and an open modular wager.",
         "fingerprint_sha256": "edbdea57f004af1407c14500b786e5763bfda39d410ea04c37730ba98a87f1c2",
-        "line_end": 450,
-        "line_start": 449,
+        "line_end": 567,
+        "line_start": 566,
         "section": "11"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1241,8 +1252,8 @@
       "locator": {
         "anchor": "## 12. The Exit — what the worldview refuses to possess",
         "fingerprint_sha256": "d5a39fbaccda7ba95b024f64069c7e32957da9bece2b4eaeddc19059be894754",
-        "line_end": 469,
-        "line_start": 452,
+        "line_end": 586,
+        "line_start": 569,
         "section": "12"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -1277,9 +1288,9 @@
       ],
       "locator": {
         "anchor": "The worldview therefore contains its own refusal:",
-        "fingerprint_sha256": "332e698f8ffe4053e18849be62ce9c7c68e5edb74911d4bd28360ea7c69770fb",
-        "line_end": 490,
-        "line_start": 471,
+        "fingerprint_sha256": "a3cc76d7289ee910c7a5794335991601e9571921fc2d29fc8993082cb7e48316",
+        "line_end": 608,
+        "line_start": 588,
         "section": "12"
       },
       "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
@@ -2308,9 +2319,9 @@
       ],
       "locator": {
         "anchor": "## 1. The lexical contract",
-        "fingerprint_sha256": "24e02096719502dac553037eeb1b37c16cd09db96d4872c0fad877dcf56c514b",
-        "line_end": 328,
-        "line_start": 74,
+        "fingerprint_sha256": "c4a1a6b7a3ec3add7df4dec27009813fddf2732e0b219850ff7ec2cfbac53bee",
+        "line_end": 427,
+        "line_start": 77,
         "section": "1-8"
       },
       "primary_projection_home": "COMP-ACTIVE-02-TITANS",
@@ -2343,8 +2354,8 @@
       ],
       "locator": {
         "anchor": "## The Infinite (Zero), Finity, and Infinity",
-        "fingerprint_sha256": "a03d6f3ad9d93ebaf50ad61e6632e4aeb26557fdfe3b2882ab1e148081470cd5",
-        "line_end": 301,
+        "fingerprint_sha256": "e12d00014583c03a508f17a898e302528ab41b9376b93269bb628f7327f87637",
+        "line_end": 400,
         "line_start": 33,
         "section": "opening and typed Titans"
       },
@@ -2379,8 +2390,8 @@
       "locator": {
         "anchor": "## 4. Finity protocol `[S/I]`",
         "fingerprint_sha256": "d8b0928142fa42d928b74fab3a84175c376a56947b694bac8c8597e7d5f6eb4b",
-        "line_end": 199,
-        "line_start": 124,
+        "line_end": 230,
+        "line_start": 155,
         "section": "4-7"
       },
       "primary_projection_home": "COMP-ACTIVE-02-TITANS",
@@ -2453,8 +2464,8 @@
       "locator": {
         "anchor": "## 9. Stop conditions",
         "fingerprint_sha256": "f5c0f736e173ce5e17bf94396fa262452c7599424b40f0e57f230427f6f57a1a",
-        "line_end": 227,
-        "line_start": 213,
+        "line_end": 258,
+        "line_start": 244,
         "section": "recovery and stop conditions"
       },
       "primary_projection_home": "COMP-ACTIVE-02-TITANS",
@@ -2488,11 +2499,11 @@
         "I"
       ],
       "locator": {
-        "anchor": "Let `Feature(Ĉ) := Point(Ĉ) ⊎ Subset(Ĉ)`",
-        "fingerprint_sha256": "f6324149d8fbd8d6c82f98d54cecd3266ba4d4f867dbcf18d7c97633d959911a",
-        "line_end": 79,
-        "line_start": 51,
-        "section": "2 representation map"
+        "anchor": "Compactification does not convert a Titan frame into a projective point.",
+        "fingerprint_sha256": "8aca6572041ae3649512839a4d439c8e1ec128deb12a87e2b1f9804f1fd78ed6",
+        "line_end": 99,
+        "line_start": 83,
+        "section": "3 compactification type boundary"
       },
       "primary_projection_home": "COMP-ACTIVE-02-TITANS",
       "projection_kind": "active_research_book",
@@ -2552,6 +2563,34 @@
     },
     {
       "owner_id": "K-7",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
+    },
+    {
+      "owner_id": "KER-1",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "owner_id": "KER-2",
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+    },
+    {
+      "owner_id": "KER-3",
+      "path": "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
+    },
+    {
+      "owner_id": "KER-4",
+      "path": "06_ONTOLOGY/04_THE_CONJECTURES.md"
+    },
+    {
+      "owner_id": "KER-5",
+      "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md"
+    },
+    {
+      "owner_id": "KER-6",
+      "path": "06_ONTOLOGY/06_THE_REVELATIONS.md"
+    },
+    {
+      "owner_id": "KER-7",
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
     }
   ],

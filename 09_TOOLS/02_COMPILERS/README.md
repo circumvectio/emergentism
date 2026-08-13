@@ -63,10 +63,21 @@ The `*.yaml` inputs use the JSON subset of YAML 1.2 so compilation remains
 stdlib-only and deterministic. Generated graphs are routing views, not owners
 or evidence.
 
-Parent-relative declared sources resolve only when exactly one distinct file
-exists across the checkout ancestors; shadow owners and unresolved paths fail
-closed. `test_corpus_claim_graph.py` covers direct, portable-worktree,
-ambiguous, unresolved, and full-repository contracts.
+Parent-relative source resolution is restricted to the declared `02_SKYZAI`
+sibling inside an explicitly configured or linked-worktree federation. The
+compiler never scans checkout ancestors, rejects symlink components and path
+escapes, and requires exact reviewed SHA-256 bytes whenever that authorized
+federation is available. Secret-free CI sets
+`EMERGENTISM_ALLOW_UNAVAILABLE_EXTERNAL_SOURCES=1`; that narrowly defers byte
+replay for the exact six checked-in path/hash/lifecycle/work contracts while
+all local metadata, graph, projection, and generated-output checks still run.
+The 28 claim cards backed by four of those sources additionally share an exact
+semantic-inventory pin over card ID, source/work binding, line range, section,
+anchor, and locator fingerprint; metadata-only mode cannot widen or rewrite a
+locator without an explicit reviewed compiler update.
+`test_corpus_claim_graph.py` keeps exact byte replay as the only conditional
+skip and covers containment, mismatch, unavailable-mode, and repository-wide
+contracts.
 
 `test_coherence_profile.py` covers the adjacent script validator's four-axis
 contract, including all internal overall states and the rule that an internal
@@ -148,12 +159,16 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   --canonical-root /Users/Yves/Documents/01_EMERGENTISM
 ```
 
-`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@26e616e651e2a87e8c85bf37db515d7fcd007b7b`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no K2 approval gate.
+`kintsugi_baseline_failures.json` records 19 baseline node IDs and five exact failure signatures at `main@26e616e651e2a87e8c85bf37db515d7fcd007b7b`. A previously failing node may turn green; a removed node, new failure, exception drift, or signature drift fails. The validator itself introduces no direct writes and disables pytest cache and Python bytecode writes; arbitrary repository test bodies are not sandboxed. The baseline gate has no external approval gate.
 
 ## Kintsugi A0B machine kernel
 
-> **Boundary:** A0B validates grammar and transaction machinery. It does not
-> validate Emergentism, repair canon, or create a live Kintsugi vessel.
+> **Boundary:** A0B validates grammar and transaction machinery; it does not validate Emergentism, repair canon, or create a live Kintsugi vessel.
+
+**Purity classification:** A0B sources and fixtures are non-semantic tooling records.
+Their historical governance vocabulary is test or provenance data,
+not a premise, owner, or authority claim for Emergentism. The purity checker
+exempts only its enumerated artifacts; new siblings remain scanned by default.
 
 The dated [A0B machine handoff](kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md)
 records the reproducible local evidence and the limits on the first live A1

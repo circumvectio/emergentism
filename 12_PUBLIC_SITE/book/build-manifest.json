@@ -5,7 +5,7 @@
     "public_route": "../12_PUBLIC_SITE/book/index.html",
     "release_state": "source_active_current_public_reader",
     "schema": "emergentism/book-manifest/v2",
-    "sha256": "db94710ab7d7bed616b6b5ab5f301688c9916ff792dcc411d0fc35c047bdbd12"
+    "sha256": "660998271b689de305bb653bcac401d74e7d280d354d82f33f938e78130e354b"
   },
   "claim_card_contract": {
     "coverage": {
@@ -76,19 +76,19 @@
       ]
     },
     "graph_path": "00_META/registers/CLAIM_GRAPH.json",
-    "graph_sha256": "17b9a90e591eebfe18e772d63c9cb59bb6f9b3b0c1cb954d6efd12fb64aeaecb",
+    "graph_sha256": "cbedb66b2129f615ca87aad887fe72c2822b5e68c5418f54cf64de700a07e48d",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "register_sha256": "d7cf4f1906ec2df2b4bf657189f203e182456b84b76fcb2d92935976c86da547",
-    "schema": "emergentism/claim-card-set/v1",
-    "sha256": "815f444a84e2e94fd986565f26ca72b32810882c3acdd574ff8165cfacac8cb8"
+    "register_sha256": "936908a2824fbc07d5557ffa9fca448e374abf6fc9f9eb20aea00d066f8b3769",
+    "schema": "emergentism/claim-card-set/v2",
+    "sha256": "b7b13d587ab3c086bd167b943095a279bfac425da7441c440a9a81580c4a522d"
   },
   "ordered_source_paths": [
     "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "2c858d16339101ff792abd7005e05c1b1e976b61ea4ba5b5e1368f2dda86eeba"
+    "sha256": "5b465229255a63ab0bdae15c3f27b9dc73879dc065238b1cb4879fc630cf72ff"
   },
   "renderer": {
     "extensions": [

@@ -15,7 +15,7 @@ The seven rows order two complementary requirements:
 
 - `Phi` / `Φ` is quality: coherence, form, fidelity, evidence and fitness to purpose.
 - `V` is quantity: volume, coverage, throughput, viable means and capacity to act.
-- `P_node = Φ × V` is productive potential. Neither factor substitutes for the other.
+- `P_node = min(Φ̂₄, V₄)` is the selected ordinal-safe node score. Neither factor substitutes for the other. The former product score `Φ̂₄×V₄` is retired and must not rank nodes without a separately defended cardinal-scale contract.
 
 The Burri-Sphere projection uses lower-case `phi` / `φ` for normalized quality
 weight and `nu` / `ν` for normalized quantity weight. In the ideal reciprocal

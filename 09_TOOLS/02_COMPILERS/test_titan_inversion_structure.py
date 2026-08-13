@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 from pathlib import Path
 import unittest
 
@@ -31,62 +32,63 @@ class TitanInversionStructureTests(unittest.TestCase):
         cls.manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
         cls.edition = EDITION.read_text(encoding="utf-8")
 
-    def test_feature_action_is_typed_through_the_induced_map(self) -> None:
+    def test_projective_action_never_coerces_the_titan_frame(self) -> None:
         for required in (
-            "ι_* : Feature(Ĉ) → Feature(Ĉ)",
-            "ι_*(Point(p))  := Point(ι(p))",
-            "ι_*(Subset(A)) := Subset(ι[A])",
-            "No operation acts on `TitanFrame`",
+            "ι_P([z:w]) := [w:z]",
+            "ι_P(0_P)=∞_P",
+            "ι_P(∞_P)=0_P",
+            "NoCoercion(TitanFrame, ProjectivePoint)",
+            "none of these facts defines an operation on `TitanFrame`",
         ):
             self.assertIn(required, self.source)
-        self.assertNotIn("0_P", self.source)
+        self.assertNotIn("ι_P(0_T)", self.source)
+        self.assertNotIn("ι_P(∞_T)", self.source)
 
     def test_real_and_projective_limits_are_not_conflated(self) -> None:
         for required in (
-            "The ordinary two-sided real limit",
-            "`ℝP¹=ℝ∪{∞_P}` compactifies the real line",
-            "`Ĉ=ℂP¹=ℂ∪{∞_P}` compactifies the complex plane",
-            "both a point and the value and limit of the",
+            "In `ℝ`, infinity is not an element.",
+            "In the projective extension, `∞_P` is a",
+            "ordinary division by zero stays undefined",
+            "`ι_P(0_P)=∞_P` remains a lawful projective-map statement",
+            "coupled boundary limit is not an endpoint multiplication",
         ):
             self.assertIn(required, self.source)
-        self.assertNotIn("in ℝ      ∞ is a limit", self.source)
-        self.assertNotIn("not the value of an undefined limit", self.source)
+        self.assertNotIn("0_T=0_P", self.source)
+        self.assertNotIn("∞_T=∞_P", self.source)
 
-    def test_ring_falsifier_names_the_missing_partial_product(self) -> None:
-        self.assertIn("`0·∞_P` is undefined", self.source)
-        self.assertIn("Premise (i)", self.source)
-        self.assertIn("total associative ring multiplication", self.source)
-        self.assertNotIn("additive absorber", self.source)
-        self.assertNotIn("Premise (ii) is not a rule", self.source)
-
-    def test_cayley_conjugate_is_explicit_and_correct(self) -> None:
+    def test_endpoint_product_is_explicitly_denied(self) -> None:
         for required in (
-            "C(−1):=∞_P",
-            "C(∞_P):=1",
-            "ι_C := C ∘ ι ∘ C⁻¹",
-            "ι_C(u)=−u",
-            "ι_C(0)=0",
+            "no global multiplication or division extends the affine field laws",
+            "the coupled boundary limit is not an endpoint multiplication",
+            "endpoint multiplication is not thereby defined",
+        ):
+            self.assertIn(required, self.source)
+        self.assertNotIn("0_P·∞_P=1_N", self.source)
+
+    def test_reciprocal_chart_and_log_conjugate_are_explicit(self) -> None:
+        for required in (
+            "ν := tan(θ/2)",
+            "φ := cot(θ/2)",
+            "φν=1",
+            "s=log x",
+            "reciprocal inversion becomes `s↦−s`",
         ):
             self.assertIn(required, self.source)
 
-        cayley = lambda z: (z - 1) / (z + 1)
-        for z in (0.25, 0.5, 2.0, 4.0, 1j, 2 + 3j):
-            self.assertAlmostEqual(cayley(1 / z).real, (-cayley(z)).real)
-            self.assertAlmostEqual(cayley(1 / z).imag, (-cayley(z)).imag)
+        for value in (0.25, 0.5, 2.0, 4.0):
+            self.assertAlmostEqual(-math.log(value), math.log(1 / value))
 
-    def test_positive_ray_and_class_theory_keep_their_types(self) -> None:
+    def test_positive_ray_and_titan_roles_keep_their_types(self) -> None:
         for required in (
-            "ordered multiplicative group `ℝ_{>0}`",
-            "ordinary real points",
-            "no such **set** exists",
-            "SetClassFeature := EmptySetObject | SetSort | ProperClassObject",
-            "they include both finite and infinite sets",
-            "no theorem proves anything\nabout the Titan seat",
+            "positive reals",
+            "positive reciprocal fixed point",
+            "no Titan role becomes a point, set, class, number, or group element",
+            "no mathematical neighbor forces the selected three-role vocabulary",
         ):
             self.assertIn(required, self.source)
         for forbidden in (
-            "field / multiplicative line",
-            "the rims become points",
+            "TitanFrame := Number",
+            "TitanFrame := ProjectivePoint",
             "proof that `○` is a proper class",
         ):
             self.assertNotIn(forbidden, self.source)
@@ -111,7 +113,7 @@ class TitanInversionStructureTests(unittest.TestCase):
             locator["fingerprint_sha256"],
             hashlib.sha256(located.encode("utf-8")).hexdigest(),
         )
-        self.assertNotIn("Compactification", located)
+        self.assertIn("Compactification does not convert a Titan frame", located)
         self.assertNotIn("Cayley", located)
         self.assertNotIn("class-theory", located)
 

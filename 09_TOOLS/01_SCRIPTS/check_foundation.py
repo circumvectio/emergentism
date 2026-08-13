@@ -17,6 +17,7 @@ negative type contract across the scoped source/current-public corpus.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -45,6 +46,10 @@ TITAN_CANON = Path(
 FORMAL_ORACLE = Path("09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean")
 PUBLIC_PARITY_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
 RECORD_LEDGER = Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md")
+ADDITIVE_TITAN_CORRECTION = Path(
+    "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
+    "243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md"
+)
 ACTIVE_EXTRA_TYPE_SURFACES = (
     FORMAL_ORACLE,
     Path("12_PUBLIC_SITE/generate_public_library.py"),
@@ -52,6 +57,27 @@ ACTIVE_EXTRA_TYPE_SURFACES = (
     # Keep it in scope explicitly so the archive exclusion cannot hide live
     # Titan syntax at the record front door.
     RECORD_LEDGER,
+    # This additive correction authorizes the historical-body exception. It is
+    # therefore a current semantic surface and must itself pass the type scan.
+    ADDITIVE_TITAN_CORRECTION,
+)
+
+# This signed 2026-07-19 receipt predates the typed Foundation repair and ends
+# with the retired Titan product notation. Historical receipts are evidence,
+# not mutable owners: preserve its exact bytes and require the later additive
+# correction that states the current source-owner disposition. Any byte drift
+# loses this exception and is scanned normally.
+HISTORICAL_SIGNED_TITAN_RECORD = Path("00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md")
+HISTORICAL_SIGNED_TITAN_RECORD_SHA256 = (
+    "743f994f7d1743a0d2da9afa5553d66adc7c78fa741c6406c985a53a4dfb7371"
+)
+ADDITIVE_TITAN_CORRECTION_MARKERS = (
+    "## Additive historical correction",
+    "`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md` is a dated, signed historical",
+    "preserves its original bytes",
+    "current formula or a source-owner reinstatement",
+    "56_THE_PRODUCT_FORM_OF_THE_BALANCE.md",
+    "57_THE_POTENTIAL_READING.md",
 )
 
 FORMAL_DOCS = [
@@ -185,7 +211,7 @@ ACTIVE_SCAN_EXCLUDED_DIR_NAMES = frozenset(
 # --- use vs mention -------------------------------------------------------
 #
 # The firewall matches CARRIER TEXT. It cannot tell a document that *writes*
-# `⊙ = • × ○` from a document that *quotes* it in order to strike it. Both look
+# the retired `⊙ = • × ○` from a document that quotes it to strike it. Both look
 # identical to a regex. Measured 2026-08-06: the pre-fix gate flagged
 # 48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md at :121, :416 and :417 — the
 # exact lines that RETIRE the form. Flagging the retraction is not enforcement;
@@ -357,6 +383,33 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).lower()
 
 
+def lexical_regular_file_error(root: Path, rel: Path, label: str) -> str | None:
+    """Return a custody error for missing, escaped, or symlinked exact paths."""
+
+    lexical_root = Path(os.path.abspath(os.fspath(root)))
+    lexical_path = Path(os.path.abspath(os.fspath(root / rel)))
+    try:
+        parts = lexical_path.relative_to(lexical_root).parts
+    except ValueError:
+        return f"{label} escapes Foundation root: {rel.as_posix()}"
+    current = lexical_root
+    if current.is_symlink():
+        return f"{label} uses symlink Foundation root: {lexical_root}"
+    for part in parts:
+        current = current / part
+        if current.is_symlink():
+            return f"{label} uses symlink component: {current}"
+    try:
+        resolved_root = lexical_root.resolve(strict=True)
+        resolved = lexical_path.resolve(strict=True)
+        resolved.relative_to(resolved_root)
+    except (FileNotFoundError, RuntimeError, ValueError):
+        return f"{label} is missing or escapes Foundation root: {rel.as_posix()}"
+    if not resolved.is_file():
+        return f"{label} is not a regular file: {rel.as_posix()}"
+    return None
+
+
 def active_foundation_scan_paths(root: Path) -> list[Path]:
     """Discover source-owner and declared-current public type surfaces."""
 
@@ -400,6 +453,54 @@ def active_foundation_scan_paths(root: Path) -> list[Path]:
     return sorted(paths, key=lambda item: item.as_posix())
 
 
+def historical_signed_titan_record_binding(root: Path) -> tuple[list[str], bool]:
+    """Validate the one exact historical record and its additive correction."""
+
+    errors: list[str] = []
+    record = root / HISTORICAL_SIGNED_TITAN_RECORD
+    record_exact = False
+    record_custody_error = lexical_regular_file_error(
+        root, HISTORICAL_SIGNED_TITAN_RECORD, "historical signed Titan record"
+    )
+    if record_custody_error is not None:
+        errors.append(record_custody_error)
+    else:
+        actual = hashlib.sha256(record.read_bytes()).hexdigest()
+        if actual != HISTORICAL_SIGNED_TITAN_RECORD_SHA256:
+            errors.append(
+                "historical signed Titan record digest drift: expected "
+                f"{HISTORICAL_SIGNED_TITAN_RECORD_SHA256}, got {actual}"
+            )
+        else:
+            record_exact = True
+
+    correction = root / ADDITIVE_TITAN_CORRECTION
+    correction_exact = False
+    correction_custody_error = lexical_regular_file_error(
+        root, ADDITIVE_TITAN_CORRECTION, "additive Titan correction receipt"
+    )
+    if correction_custody_error is not None:
+        errors.append(correction_custody_error)
+    else:
+        try:
+            body = correction.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            errors.append(f"additive Titan correction receipt is unreadable: {exc}")
+        else:
+            missing = [
+                marker for marker in ADDITIVE_TITAN_CORRECTION_MARKERS if marker not in body
+            ]
+            if missing:
+                errors.append(
+                    "additive Titan correction lost required marker(s): "
+                    + ", ".join(repr(marker) for marker in missing)
+                )
+            else:
+                correction_exact = True
+
+    return errors, record_exact and correction_exact
+
+
 def strata_block(body: str) -> str:
     """Return the BASE/INHERITED/EMERGENT block.
 
@@ -431,6 +532,11 @@ def presentations_block(body: str) -> str:
 def main() -> int:
     errors: list[str] = []
 
+    historical_errors, historical_record_bound = historical_signed_titan_record_binding(
+        ROOT
+    )
+    errors.extend(historical_errors)
+
     # --- every home exists -------------------------------------------------
     required = REQUIRED_SURFACES
     bodies: dict[Path, str] = {}
@@ -441,10 +547,17 @@ def main() -> int:
             continue
         bodies[rel] = path.read_text(encoding="utf-8")
     for rel in ACTIVE_EXTRA_TYPE_SURFACES:
-        if not (ROOT / rel).is_file():
+        path = ROOT / rel
+        if not path.exists() and not path.is_symlink():
             errors.append(
                 f"missing required active Foundation type surface: {rel.as_posix()}"
             )
+        else:
+            custody_error = lexical_regular_file_error(
+                ROOT, rel, "required active Foundation type surface"
+            )
+            if custody_error is not None:
+                errors.append(custody_error)
     if errors:
         print("FOUNDATION CONTRACT: FAIL")
         print("\n".join(f"- {e}" for e in errors))
@@ -538,6 +651,11 @@ def main() -> int:
         source_text = (ROOT / rel).read_text(encoding="utf-8")
         matches = titan_arithmetic_matches(source_text)
         if not matches:
+            continue
+        if rel == HISTORICAL_SIGNED_TITAN_RECORD and historical_record_bound:
+            # Exact immutable history, paired with an additive correction. The
+            # SHA binding ensures no extra formula or prose can hide here.
+            mentions_skipped += len(matches)
             continue
         # Only pay for the mention pass on files that actually matched.
         mentions = mention_lines(source_text)

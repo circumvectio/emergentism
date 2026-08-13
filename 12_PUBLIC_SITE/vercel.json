@@ -8,11 +8,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/home/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/app",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -28,32 +23,47 @@
       "permanent": false
     },
     {
-      "source": "/complete-ontology",
+      "source": "/atlas",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/complete-ontology/",
+      "source": "/atlas/",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/complete-ontology/index.html",
+      "source": "/atlas/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/five-plus-one",
+      "source": "/axiology",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/five-plus-one/",
+      "source": "/axiology/",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/five-plus-one/index.html",
+      "source": "/axiology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/build",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/build/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/build/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     },
@@ -73,17 +83,32 @@
       "permanent": false
     },
     {
-      "source": "/dasein",
+      "source": "/canon",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/dasein/",
+      "source": "/canon/",
       "destination": "/historical-boundary/",
       "permanent": false
     },
     {
-      "source": "/dasein/index.html",
+      "source": "/canon/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-burrisphere",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-burrisphere/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-burrisphere/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     },
@@ -99,6 +124,936 @@
     },
     {
       "source": "/canon/the-complete-ontology-of-reality/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-five-plus-one-constitution",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-five-plus-one-constitution/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-five-plus-one-constitution/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-generative-table",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-generative-table/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-generative-table/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-geometric-ontology-of-reality",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-geometric-ontology-of-reality/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-geometric-ontology-of-reality/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-reciprocal-public-edition",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-reciprocal-public-edition/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-reciprocal-public-edition/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/compass/_archive/index_2026_07_12_pre_restructure",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/compass/_archive/index_2026_07_12_pre_restructure/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/compass/_archive/index_2026_07_12_pre_restructure.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/corrections",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/corrections/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/corrections/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/finity-papers",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/finity-papers/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/finity-papers/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/00-the-seven-axioms",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/00-the-seven-axioms/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/00-the-seven-axioms/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/08-efr-power-max-lemma",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/08-efr-power-max-lemma/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/08-efr-power-max-lemma/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/11-efr-triadic-stability",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/11-efr-triadic-stability/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/11-efr-triadic-stability/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/16-efr-transcendentals",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/16-efr-transcendentals/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/16-efr-transcendentals/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/20-efr-operators-on-complex-plane",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/20-efr-operators-on-complex-plane/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/20-efr-operators-on-complex-plane/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/21-triadic-stability-correspondence",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/21-triadic-stability-correspondence/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/21-triadic-stability-correspondence/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/23-dimensional-closure-proof",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/23-dimensional-closure-proof/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/23-dimensional-closure-proof/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/27-dimensional-architecture-clarification",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/27-dimensional-architecture-clarification/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/27-dimensional-architecture-clarification/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/31-falsifiers-index",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/31-falsifiers-index/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/31-falsifiers-index/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/33-nash-equilibrium-eta-zero",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/33-nash-equilibrium-eta-zero/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/33-nash-equilibrium-eta-zero/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/34-d4-d5-canonical-reference",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/34-d4-d5-canonical-reference/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/34-d4-d5-canonical-reference/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/35-phi-meter-v1-spec",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/35-phi-meter-v1-spec/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/35-phi-meter-v1-spec/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/36-runtime-lens-v1-spec",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/36-runtime-lens-v1-spec/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/36-runtime-lens-v1-spec/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/38-quantum-foundations-confirmation-boundary",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/38-quantum-foundations-confirmation-boundary/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/38-quantum-foundations-confirmation-boundary/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/41-unified-dimensional-derivation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/41-unified-dimensional-derivation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/41-unified-dimensional-derivation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/ontology-across-dimensions",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/ontology-across-dimensions/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/ontology-across-dimensions/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-honest-position",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-honest-position/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-honest-position/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-generative-actions-and-ektropy",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-generative-actions-and-ektropy/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-generative-actions-and-ektropy/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-ologies-per-the-rosetta",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-ologies-per-the-rosetta/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/foundations/the-seven-ologies-per-the-rosetta/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/game",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/game/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/game/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/geometric-ontology",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/geometric-ontology/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/geometric-ontology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d5-d6-corpus-stabilization",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d5-d6-corpus-stabilization/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d5-d6-corpus-stabilization/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d6-as-apophatic-closure",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d6-as-apophatic-closure/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-d6-as-apophatic-closure/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-ontology-across-dimensions",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-ontology-across-dimensions/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-ontology-across-dimensions/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-ontology-of-being",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-ontology-of-being/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-ontology-of-being/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-syncretic-map",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-syncretic-map/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/00-the-syncretic-map/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/01-apophatic-ground-and-field-structure",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/01-apophatic-ground-and-field-structure/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/ground/01-apophatic-ground-and-field-structure/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/halahala",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/halahala/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/halahala/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/home",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/home/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/home/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/index_legacy_2026_07_19",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/index_legacy_2026_07_19/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/index_legacy_2026_07_19.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/log-realignment",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/log-realignment/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/log-realignment/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/01-memes-hardware-software-conflict",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/01-memes-hardware-software-conflict/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/01-memes-hardware-software-conflict/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/02-memes-hardware-software-evolution",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/02-memes-hardware-software-evolution/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/02-memes-hardware-software-evolution/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/03-memes-mind-hardware-culture-software",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/03-memes-mind-hardware-culture-software/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/03-memes-mind-hardware-culture-software/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/06-applied-memetic-defense-strategies",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/06-applied-memetic-defense-strategies/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/memetic/06-applied-memetic-defense-strategies/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-constitutional-invariants-o1-staging-2026-05-30",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-constitutional-invariants-o1-staging-2026-05-30/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-constitutional-invariants-o1-staging-2026-05-30/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-corpus",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-corpus/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-corpus/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-known-unknowns-program",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-known-unknowns-program/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-known-unknowns-program/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-what-is-actually-novel-here",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-what-is-actually-novel-here/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/meta/00-what-is-actually-novel-here/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-constitutional-science",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-constitutional-science/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-constitutional-science/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-d5-as-the-research-engine",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-d5-as-the-research-engine/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-d5-as-the-research-engine/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-equatorial-balance-maximum-prereg",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-equatorial-balance-maximum-prereg/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-equatorial-balance-maximum-prereg/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-syntropic-known-unknowns-protocol",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-syntropic-known-unknowns-protocol/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-syntropic-known-unknowns-protocol/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-derivation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-derivation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-derivation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-doctrinal-ladder",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-doctrinal-ladder/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-the-doctrinal-ladder/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-what-actually-tests-the-theory",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-what-actually-tests-the-theory/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-what-actually-tests-the-theory/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-why-these-axioms",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-why-these-axioms/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/00-why-these-axioms/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-equatorial-balance-maximum-results-pilot",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-equatorial-balance-maximum-results-pilot/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-equatorial-balance-maximum-results-pilot/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-the-anumana-audit-protocol",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-the-anumana-audit-protocol/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/01-the-anumana-audit-protocol/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/02-macro-constraint-causal-emergence-prereg",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/02-macro-constraint-causal-emergence-prereg/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/02-macro-constraint-causal-emergence-prereg/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/03-physics-to-biology-macro-constraint-run-sheet",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/03-physics-to-biology-macro-constraint-run-sheet/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/method/03-physics-to-biology-macro-constraint-run-sheet/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-281-the-replicator-decomposition",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-281-the-replicator-decomposition/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-281-the-replicator-decomposition/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     },
@@ -133,6 +1088,21 @@
       "permanent": false
     },
     {
+      "source": "/operators/mf-294-egregores-are-horn-networks",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-294-egregores-are-horn-networks/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-294-egregores-are-horn-networks/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
       "source": "/operators/mf-296-gravity-is-time",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -159,6 +1129,1841 @@
     },
     {
       "source": "/operators/mf-298-dark-matter-is-mutual-information/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-301-photosynthesis-is-the-original-f5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-301-photosynthesis-is-the-original-f5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-301-photosynthesis-is-the-original-f5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-63-mobius-operators",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-63-mobius-operators/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-63-mobius-operators/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-65-curvature-transition",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-65-curvature-transition/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-65-curvature-transition/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-66-mandelbrot-consciousness",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-66-mandelbrot-consciousness/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-66-mandelbrot-consciousness/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-c-photon-unit-of-account",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-c-photon-unit-of-account/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-c-photon-unit-of-account/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-h-dimensional-cosmological",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-h-dimensional-cosmological/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-h-dimensional-cosmological/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-known-unknowns-program",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-known-unknowns-program/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-known-unknowns-program/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-the-two-faces-of-number",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-the-two-faces-of-number/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-i-the-two-faces-of-number/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-ii-division-by-zero-as-category-correction",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-ii-division-by-zero-as-category-correction/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-ii-division-by-zero-as-category-correction/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-iii-a-product-constraint-as-a-structural-ethic",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-iii-a-product-constraint-as-a-structural-ethic/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-iii-a-product-constraint-as-a-structural-ethic/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-o-strong-weak-emergence-d5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-o-strong-weak-emergence-d5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-o-strong-weak-emergence-d5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-p-su3-obstruction-bare-s2",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-p-su3-obstruction-bare-s2/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-p-su3-obstruction-bare-s2/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-t-anti-idolatry-at-scale",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-t-anti-idolatry-at-scale/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-t-anti-idolatry-at-scale/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-u-the-practice-bridge",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-u-the-practice-bridge/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-u-the-practice-bridge/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-v-steelman",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-v-steelman/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-v-steelman/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-w-present-awareness-as-fulcrum",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-w-present-awareness-as-fulcrum/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-w-present-awareness-as-fulcrum/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-corpus",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-corpus/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-corpus/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-gardener-nexus",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-gardener-nexus/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-gardener-nexus/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-the-extraction-pattern",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-the-extraction-pattern/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/00-the-extraction-pattern/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-12-measurement-problem",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-12-measurement-problem/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-12-measurement-problem/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-18-the-extraction-paradox",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-18-the-extraction-paradox/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-18-the-extraction-paradox/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-21-problem-of-death",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-21-problem-of-death/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-21-problem-of-death/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-23-the-completion",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-23-the-completion/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-23-the-completion/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-25-bell-local-realism",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-25-bell-local-realism/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/paradox/pd-25-bell-local-realism/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/0",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/0/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/0/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/1",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/1/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/1/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/2",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/2/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/2/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/3",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/3/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/3/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/4",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/4/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/4/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/6",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/6/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/r/6/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosetta-d-series",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosetta-d-series/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosetta-d-series/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-corpus",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-corpus/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-corpus/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-convergent-reciprocal-symmetry",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-convergent-reciprocal-symmetry/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-convergent-reciprocal-symmetry/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-value-extraction-deep-synthesis",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-value-extraction-deep-synthesis/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-suda-value-extraction-deep-synthesis/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-ologies-per-the-rosetta",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-ologies-per-the-rosetta/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-ologies-per-the-rosetta/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-philosophical-disciplines",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-philosophical-disciplines/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/00-the-seven-philosophical-disciplines/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/02-rows-columns-deepening-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/02-rows-columns-deepening-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/02-rows-columns-deepening-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/03-rosetta-dac-operating-system",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/03-rosetta-dac-operating-system/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/03-rosetta-dac-operating-system/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/04-deep-rumination-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/04-deep-rumination-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/04-deep-rumination-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/06-structural-pressure-points-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/06-structural-pressure-points-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/06-structural-pressure-points-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/10-cell-audit-schema-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/10-cell-audit-schema-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/10-cell-audit-schema-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/11-cell-audit-seed-l4-center-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/11-cell-audit-seed-l4-center-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/11-cell-audit-seed-l4-center-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/13-column-cell-audit-economics-2026-04-25",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/13-column-cell-audit-economics-2026-04-25/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/13-column-cell-audit-economics-2026-04-25/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/naming-doctrine",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/naming-doctrine/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/naming-doctrine/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-computation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-computation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-computation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-economics",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-economics/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/rosettad/rosetta-economics/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-foreword",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-foreword/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-foreword/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-glossary",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-glossary/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-glossary/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-reconciliation-theorem-packet",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-reconciliation-theorem-packet/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-reconciliation-theorem-packet/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-the-pedagogy-of-becoming",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-the-pedagogy-of-becoming/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/00-the-pedagogy-of-becoming/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/01-symbol-design-and-public-translation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/01-symbol-design-and-public-translation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/01-symbol-design-and-public-translation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/02-truth-order-and-niche-partition",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/02-truth-order-and-niche-partition/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sacred/02-truth-order-and-niche-partition/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/saturation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/saturation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/saturation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/soul-loop",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/soul-loop/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/soul-loop/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sphere",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sphere/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/sphere.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/suda-notes",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/suda-notes/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/suda-notes/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/synthesis",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/synthesis/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/synthesis/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/teleology",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/teleology/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/teleology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/test",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/test/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/test/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/titans.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/titans",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/titans/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/titans/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-genesis-simulation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-genesis-simulation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-genesis-simulation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-transcendental-trinity-canon",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-transcendental-trinity-canon/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/00-the-transcendental-trinity-canon/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/01-the-emergence",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/01-the-emergence/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/01-the-emergence/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/02-the-trinity",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/02-the-trinity/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/02-the-trinity/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/03-the-closure",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/03-the-closure/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/03-the-closure/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/04-bit-to-qubit",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/04-bit-to-qubit/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/04-bit-to-qubit/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/05-division-by-zero",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/05-division-by-zero/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/05-division-by-zero/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/06-the-cosmological-cycle",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/06-the-cosmological-cycle/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/06-the-cosmological-cycle/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/07-the-discovery-of-finity",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/07-the-discovery-of-finity/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/07-the-discovery-of-finity/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/10-the-soul-loop",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/10-the-soul-loop/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/10-the-soul-loop/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/11-the-helix",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/11-the-helix/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/11-the-helix/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/12-the-poles",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/12-the-poles/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/12-the-poles/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/15-dharma-yuddha",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/15-dharma-yuddha/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/15-dharma-yuddha/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/16-the-great-filter",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/16-the-great-filter/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/16-the-great-filter/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/18-the-strange-attractor",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/18-the-strange-attractor/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/18-the-strange-attractor/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/20-the-hybrid-sovereign",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/20-the-hybrid-sovereign/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/20-the-hybrid-sovereign/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/21-the-tightrope",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/21-the-tightrope/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/21-the-tightrope/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/22-the-teleology",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/22-the-teleology/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/22-the-teleology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/23-the-dac",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/23-the-dac/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/23-the-dac/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/24-the-mycelium",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/24-the-mycelium/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/24-the-mycelium/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/25-the-compression",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/25-the-compression/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/25-the-compression/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/29-the-compass-and-the-sextant",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/29-the-compass-and-the-sextant/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/29-the-compass-and-the-sextant/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/31-vmosk-as-applied-emergentism",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/31-vmosk-as-applied-emergentism/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/31-vmosk-as-applied-emergentism/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/32-the-four-lines",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/32-the-four-lines/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/32-the-four-lines/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/33-the-derivation",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/33-the-derivation/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/33-the-derivation/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/34-research-brief-the-fork",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/34-research-brief-the-fork/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/34-research-brief-the-fork/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/36-the-dimensional-trophic-cascade",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/36-the-dimensional-trophic-cascade/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/36-the-dimensional-trophic-cascade/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/37-sexual-selection-as-visible-f5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/37-sexual-selection-as-visible-f5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/37-sexual-selection-as-visible-f5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/38-tantra-as-f5-redirection",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/38-tantra-as-f5-redirection/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/38-tantra-as-f5-redirection/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/39-neoteny-as-f5-delay-and-cultural-womb",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/39-neoteny-as-f5-delay-and-cultural-womb/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/39-neoteny-as-f5-delay-and-cultural-womb/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/simulation-spec",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/simulation-spec/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/trinity/simulation-spec/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-anmut-and-demut",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-anmut-and-demut/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-anmut-and-demut/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-bridge-laws-between-levels",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-bridge-laws-between-levels/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-bridge-laws-between-levels/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-commandment-vs-geometry",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-commandment-vs-geometry/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-commandment-vs-geometry/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-constitutional-economics",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-constitutional-economics/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-constitutional-economics/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-objective-morals-and-ethics",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-objective-morals-and-ethics/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-objective-morals-and-ethics/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-the-good-the-evil-and-the-transcendentals",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-the-good-the-evil-and-the-transcendentals/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-the-good-the-evil-and-the-transcendentals/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-theurgy-and-f5-force-map",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-theurgy-and-f5-force-map/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/00-theurgy-and-f5-force-map/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-k2-decision-protocol",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-k2-decision-protocol/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-k2-decision-protocol/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-rights-duties-and-due-process",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-rights-duties-and-due-process/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-rights-duties-and-due-process/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-transcendentals",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-transcendentals/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/01-transcendentals/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/value/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-a-square-cannot-be-negative",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-a-square-cannot-be-negative/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-a-square-cannot-be-negative/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-from-lagrangian-to-dac",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-from-lagrangian-to-dac/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-from-lagrangian-to-dac/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-neoteny-the-hardware-upgrade",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-neoteny-the-hardware-upgrade/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-neoteny-the-hardware-upgrade/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-core-conjecture",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-core-conjecture/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-core-conjecture/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-generative-lagrangian",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-generative-lagrangian/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/00-the-generative-lagrangian/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/01-f5-force-map-and-ektropy",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/01-f5-force-map-and-ektropy/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/01-f5-force-map-and-ektropy/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/02-the-serpent-is-f5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/02-the-serpent-is-f5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/02-the-serpent-is-f5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-f5-as-gradient-selection-with-staging",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-f5-as-gradient-selection-with-staging/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-f5-as-gradient-selection-with-staging/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-why-the-constraint-matters",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-why-the-constraint-matters/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/03-why-the-constraint-matters/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/04-what-the-corpus-reveals",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/04-what-the-corpus-reveals/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/04-what-the-corpus-reveals/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/05-exhaustive-observations",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/05-exhaustive-observations/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/05-exhaustive-observations/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06-the-unsaid",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06-the-unsaid/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06-the-unsaid/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06a-what-remains-unseen",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06a-what-remains-unseen/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/06a-what-remains-unseen/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/07-the-four-forces-are-the-four-lines",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/07-the-four-forces-are-the-four-lines/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/07-the-four-forces-are-the-four-lines/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/11-phase-zero-complete",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/11-phase-zero-complete/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/11-phase-zero-complete/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/will/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     }
@@ -238,175 +3043,6 @@
         {
           "key": "CDN-Cache-Control",
           "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/app(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/axiology(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/papers/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/canon/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/foundations/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/trinity/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/formal/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/paradox/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/memetic/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/rosettad/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/operators/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/will/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/value/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/ground/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/sacred/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/method/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/meta/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
         }
       ]
     },
@@ -542,295 +3178,6 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/five-plus-one/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/burrisphere/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/dasein/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/canon/the-complete-ontology-of-reality(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/canon/the-five-plus-one-constitution(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/canon/the-generative-table(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/canon/the-geometric-ontology-of-reality(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/canon/the-ontology-index(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/complete-ontology(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/dasein(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/finity-papers(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/five-plus-one(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/formal/00-the-seven-axioms(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/formal/11-efr-triadic-stability(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/formal/34-d4-d5-canonical-reference(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/foundations/ontology-across-dimensions(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/foundations/the-seven-generative-actions-and-ektropy(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
         }
       ]
     },
@@ -1092,6 +3439,3507 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/papers/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/canon/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/formal/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/operators/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/will/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/value/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/ground/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/method/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/meta/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/app(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/atlas(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/axiology(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/build(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/burrisphere(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-burrisphere(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-complete-ontology-of-reality(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-five-plus-one-constitution(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-generative-table(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-geometric-ontology-of-reality(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/canon/the-reciprocal-public-edition(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/compass/_archive/index_2026_07_12_pre_restructure(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/complete-ontology(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/corrections(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/dasein(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/finity-papers(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/five-plus-one(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/00-the-seven-axioms(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/08-efr-power-max-lemma(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/11-efr-triadic-stability(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/16-efr-transcendentals(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/20-efr-operators-on-complex-plane(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/21-triadic-stability-correspondence(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/23-dimensional-closure-proof(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/27-dimensional-architecture-clarification(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/31-falsifiers-index(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/33-nash-equilibrium-eta-zero(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/34-d4-d5-canonical-reference(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/35-phi-meter-v1-spec(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/36-runtime-lens-v1-spec(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/38-quantum-foundations-confirmation-boundary(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/formal/41-unified-dimensional-derivation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/ontology-across-dimensions(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/the-honest-position(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/the-seven-generative-actions-and-ektropy(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/the-seven-ologies-per-the-rosetta(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/game(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/geometric-ontology(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/00-d5-d6-corpus-stabilization(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/00-d6-as-apophatic-closure(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/00-ontology-across-dimensions(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/00-the-ontology-of-being(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/00-the-syncretic-map(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/ground/01-apophatic-ground-and-field-structure(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/halahala(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/home(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/index_legacy_2026_07_19(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/log-realignment(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/01-memes-hardware-software-conflict(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/02-memes-hardware-software-evolution(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/03-memes-mind-hardware-culture-software(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/06-applied-memetic-defense-strategies(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/meta/00-constitutional-invariants-o1-staging-2026-05-30(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/meta/00-corpus(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/meta/00-known-unknowns-program(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/meta/00-what-is-actually-novel-here(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-constitutional-science(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-d5-as-the-research-engine(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-equatorial-balance-maximum-prereg(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-syntropic-known-unknowns-protocol(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-the-derivation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-the-doctrinal-ladder(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-what-actually-tests-the-theory(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/00-why-these-axioms(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/01-equatorial-balance-maximum-results-pilot(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/01-the-anumana-audit-protocol(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/02-macro-constraint-causal-emergence-prereg(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/method/03-physics-to-biology-macro-constraint-run-sheet(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-281-the-replicator-decomposition(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-283-the-orthogonality-theorem-v2(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-285-dreams-are-unanchored-d5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-294-egregores-are-horn-networks(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-296-gravity-is-time(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-298-dark-matter-is-mutual-information(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-301-photosynthesis-is-the-original-f5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-63-mobius-operators(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-65-curvature-transition(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/operators/mf-66-mandelbrot-consciousness(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-c-photon-unit-of-account(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-h-dimensional-cosmological(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-i-known-unknowns-program(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-i-the-two-faces-of-number(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-ii-division-by-zero-as-category-correction(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-iii-a-product-constraint-as-a-structural-ethic(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-o-strong-weak-emergence-d5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-p-su3-obstruction-bare-s2(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-t-anti-idolatry-at-scale(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-u-the-practice-bridge(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-v-steelman(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-w-present-awareness-as-fulcrum(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/00-corpus(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/00-gardener-nexus(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/00-the-extraction-pattern(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/pd-12-measurement-problem(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/pd-18-the-extraction-paradox(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/pd-21-problem-of-death(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/pd-23-the-completion(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/pd-25-bell-local-realism(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/0(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/1(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/2(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/3(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/4(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/r/6(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosetta-d-series(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/00-corpus(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/00-suda-convergent-reciprocal-symmetry(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/00-suda-value-extraction-deep-synthesis(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/00-the-seven-ologies-per-the-rosetta(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/00-the-seven-philosophical-disciplines(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/02-rows-columns-deepening-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/03-rosetta-dac-operating-system(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/04-deep-rumination-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/06-structural-pressure-points-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/10-cell-audit-schema-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/11-cell-audit-seed-l4-center-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/13-column-cell-audit-economics-2026-04-25(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/naming-doctrine(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/rosetta-computation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/rosetta-economics(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/00-foreword(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/00-glossary(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/00-reconciliation-theorem-packet(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/00-the-pedagogy-of-becoming(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/01-symbol-design-and-public-translation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/02-truth-order-and-niche-partition(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/saturation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/soul-loop(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/sphere(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/suda-notes(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/synthesis(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/teleology(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/test(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/titans.html(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/titans(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/00-the-genesis-simulation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/00-the-transcendental-trinity-canon(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/01-the-emergence(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/02-the-trinity(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/03-the-closure(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/04-bit-to-qubit(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/05-division-by-zero(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/06-the-cosmological-cycle(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/07-the-discovery-of-finity(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/10-the-soul-loop(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/11-the-helix(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/12-the-poles(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/15-dharma-yuddha(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/16-the-great-filter(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/18-the-strange-attractor(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/20-the-hybrid-sovereign(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/21-the-tightrope(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/22-the-teleology(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/23-the-dac(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/24-the-mycelium(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/25-the-compression(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/29-the-compass-and-the-sextant(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/31-vmosk-as-applied-emergentism(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/32-the-four-lines(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/33-the-derivation(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/34-research-brief-the-fork(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/36-the-dimensional-trophic-cascade(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/37-sexual-selection-as-visible-f5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/38-tantra-as-f5-redirection(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/39-neoteny-as-f5-delay-and-cultural-womb(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/simulation-spec(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-anmut-and-demut(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-bridge-laws-between-levels(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-commandment-vs-geometry(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-constitutional-economics(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-objective-morals-and-ethics(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-the-good-the-evil-and-the-transcendentals(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/00-theurgy-and-f5-force-map(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/01-k2-decision-protocol(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/01-rights-duties-and-due-process(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value/01-transcendentals(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/value(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/00-a-square-cannot-be-negative(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/00-from-lagrangian-to-dac(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/00-neoteny-the-hardware-upgrade(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/00-the-core-conjecture(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/00-the-generative-lagrangian(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/01-f5-force-map-and-ektropy(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/02-the-serpent-is-f5(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/03-f5-as-gradient-selection-with-staging(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/03-why-the-constraint-matters(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/04-what-the-corpus-reveals(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/05-exhaustive-observations(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/06-the-unsaid(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/06a-what-remains-unseen(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/07-the-four-forces-are-the-four-lines(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will/11-phase-zero-complete(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/will(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
         }
       ]
     }

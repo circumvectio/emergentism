@@ -41,18 +41,19 @@ compressed reading, not the primary research interface.
 
 ## Founder value architecture
 
-The public front is organized as a value sequence, not a directory:
+The public front assumes a short attention window and opens with the Golden
+Circle sequence **Why → How → What**, not with corpus architecture:
 
-1. **Identity — Emergentism.** A type-disciplined, revisable worldview that
-   keeps map and territory, possibility and actuality, choice and consequence
-   distinct.
-2. **Human problem — finite action.** Reality exceeds every map, yet finite
+1. **Why — finite action.** Reality exceeds every map, yet finite
    beings still have to choose and act.
-3. **First practice — Finity.** A visitor can use seven prompts to frame one
+2. **How — the receipt loop.** Keep map and territory, possibility and
+   actuality, choice and consequence distinct; make one bounded move; let an
+   observed outcome revise the map.
+3. **What — Finity.** A visitor can use seven prompts to frame one
    live decision, predeclare a review point, and record an observed outcome
    without accepting the wider worldview. Comparative benefit remains `[C]`.
-4. **World contact — the receipt loop.** A map proposes, action meets reality,
-   consequence returns a receipt, and the map is revised.
+4. **Identity — Emergentism.** The deeper worldview remains available after
+   the reader understands the problem, method, and first action.
 5. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
    enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
    correspondences are optional research mnemonics, not ranks or proof.
@@ -74,7 +75,8 @@ No step depends on membership, belief, payment, or delegated truth authority.
 - `living-map.json` routes open work and contribution modes; it cannot create or
   promote doctrine.
 - `render_dimension_site.py` deterministically renders `/dimensions/` and
-  `/0/…/6/`.
+  `/0/…/6/`. All eight rendered pages are tracked release artifacts: regenerate,
+  review, and commit them together so an exact Git checkout remains deployable.
 - `check_public_semantic_parity.py` rejects dimensional inversions, literal
   closure, forbidden quantum inflation, physical-cone expansion language, and
   application-authority leakage on current surfaces.
@@ -94,8 +96,6 @@ No step depends on membership, belief, payment, or delegated truth authority.
 python3 -B render_dimension_site.py
 python3 -B build_book.py
 python3 -B build_book.py --check
-python3 -B build_rag_index.py
-python3 -B build_rag_index.py --check
 python3 -B refresh_reading_manifest.py
 python3 -B refresh_reading_manifest.py --check
 python3 -B apply_frozen_library_boundary.py
@@ -104,6 +104,8 @@ python3 -B build_library_index.py
 python3 -B build_library_nav.py
 python3 -B build_pwa.py
 python3 -B build_social_cards.py
+python3 -B build_rag_index.py
+python3 -B build_rag_index.py --check
 python3 -B build_sw_version.py
 python3 -B predeploy_check.py
 python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py
@@ -112,11 +114,13 @@ python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py
 `build_sw_version.py` must run last among generators. `build_pwa.py` writes the
 offline page and service-worker cache constant, so it precedes
 `build_social_cards.py`; the social-card builder can then cover that newly
-written offline page. The final service-worker builder fingerprints every
-declared current page and runtime artifact, including `living-map.json` and the
-current RAG index. Any generator run after it makes the generated-artifact
-gate fail. `predeploy_check.py` and the artifact checker are checks, not
-generators, and therefore follow it.
+written offline page. `build_rag_index.py` follows social-card generation so it
+indexes the final visible bytes of the current reader and landing surfaces. The
+final service-worker builder fingerprints every declared current page and
+runtime artifact, including `living-map.json` and the current RAG index. Any
+generator run after it makes the generated-artifact gate fail.
+`predeploy_check.py` and the artifact checker are checks, not generators, and
+therefore follow it.
 
 `build_book.py` publishes exactly one current source: the claim-card-covered
 One-Sitting reader. It validates the book catalog, source lifecycle, all 26

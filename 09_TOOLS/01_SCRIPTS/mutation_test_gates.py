@@ -361,6 +361,46 @@ def m_d6_spaced(sb):
                       "spaced literal `D 6 = D 0` on a second live surface")
 
 
+def m_d6_frozen_historical_byte_drift(sb):
+    """Changing one byte must revoke the whole-body historical exception."""
+
+    rel = "00_HANDOFF/GATE_MUTATION_REPORT_2026_08_06.md"
+    if not sb.sub(rel, "type: emergentism-verification-report",
+                  "type: emergentism-verification-reporu"):
+        return ProbeResult(False, "frozen historical byte needle was not present")
+    return expect_red(sb, f"{S}/check_d6_equiv_d0.py",
+                      "one byte changed inside the exact frozen handoff body")
+
+
+def m_d6_literal_beyond_frozen_body(sb):
+    """A file path is not an allowlist: appended bytes resume ordinary scan."""
+
+    rel = "00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md"
+    sb.append(rel, "\nX D6≡D0 Y\n")
+    return expect_red(sb, f"{S}/check_d6_equiv_d0.py",
+                      "new literal appended beyond the exact frozen handoff body")
+
+
+def m_d6_frozen_historical_parent_symlink(sb):
+    """Exact bytes reached through a symlinked parent must lose custody."""
+
+    handoff = sb.tree / "00_HANDOFF"
+    real_handoff = sb.tree / "00_HANDOFF_REAL"
+    if not handoff.is_dir() or real_handoff.exists():
+        return ProbeResult(False, "handoff directory setup is unavailable")
+    handoff.rename(real_handoff)
+    handoff.symlink_to(real_handoff, target_is_directory=True)
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_d6_equiv_d0.py",
+            "frozen handoff reached through a symlinked parent directory",
+        )
+    finally:
+        handoff.unlink()
+        real_handoff.rename(handoff)
+
+
 def m_established_inflation(sb):
     sb.append("00_ESTABLISHED/README.md",
               "\nThe Lean candidate compiles cleanly on every commit.\n")
@@ -455,6 +495,85 @@ def m_record_row_verdict(sb):
                       "one 'cut' row relabelled 'held' — the against-count drops")
 
 
+def m_tree_tombstone_authority_append(sb):
+    rel = "08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md"
+    if not sb.exists(rel):
+        return ProbeResult(False, "exact support-meta tombstone is missing")
+    sb.append(rel, "\nThis directory owns active doctrine and governance.\n")
+    return expect_red(
+        sb,
+        f"{S}/check_tree_contract.py",
+        "authority claim appended to an otherwise valid compatibility tombstone",
+    )
+
+
+def m_tree_extra_directory(sb):
+    extra = sb.tree / "08_FRAMEWORK_SUPPORT/00_META/UNREGISTERED_EMPTY"
+    extra.mkdir()
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_tree_contract.py",
+            "an otherwise invisible empty directory added to held tombstone custody",
+        )
+    finally:
+        extra.rmdir()
+
+
+def m_tree_symlink_directory(sb):
+    link = sb.tree / "08_FRAMEWORK_SUPPORT/00_META/UNREGISTERED_LINK"
+    target = sb.tree / "08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS"
+    link.symlink_to(target, target_is_directory=True)
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_tree_contract.py",
+            "a symlink-to-directory added to held tombstone custody",
+        )
+    finally:
+        link.unlink()
+
+
+def m_tree_broken_meta_symlink(sb):
+    link = sb.tree / "05_COSMOLOGY/00_META"
+    link.symlink_to(sb.tree / "MISSING_META_TARGET", target_is_directory=True)
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_tree_contract.py",
+            "a broken symlink named 00_META added to an active lane",
+        )
+    finally:
+        link.unlink()
+
+
+def m_tree_meta_regular_file(sb):
+    path = sb.tree / "05_COSMOLOGY/00_META"
+    path.write_text("not a directory\n", encoding="utf-8")
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_tree_contract.py",
+            "a regular file named 00_META added to an active lane",
+        )
+    finally:
+        path.unlink()
+
+
+def v_tree_held_debt_visible(sb):
+    res = sb.run(f"{S}/check_tree_contract.py")
+    visible = (
+        res["status"] == "PASS"
+        and "TREE CONTRACT: PASS-WITH-DEBT" in res["out"]
+        and "D-OWNER-02 is UNSET" in res["out"]
+    )
+    return ProbeResult(
+        visible,
+        "exact grandfathered tombstones remain explicitly visible as held debt",
+        head(res["out"], 4),
+    )
+
+
 def m_trophic_extraction(sb):
     sb.append("00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
               "\nA higher caste may extract from a lower caste without limit.\n")
@@ -484,7 +603,7 @@ def m_ruling_threshold(sb):
 
 def m_foundation_lake_excluded(sb):
     """The .lake/ exclusion at check_foundation.py:170-182 must hold even
-    under a malicious deposit. We plant a literal `⊙ = • × ○` inside a
+    under a malicious deposit. We plant the retired Titan infix inside a
     fresh .lake/packages/ tree in the clone; if the gate flags it, the
     exclusion is broken. (This is the regression that produced the 365 s
     hang on 2026-08-06.)"""
@@ -492,7 +611,7 @@ def m_foundation_lake_excluded(sb):
     sb.write(target,
              "-- this file is a Lean build cache simulation, not a corpus surface\n"
              "theorem seeded : True := by\n"
-             "  exact (\"⊙ = • × ○\")  -- SEEDED: the gate must NOT see this\n"
+             "  exact (\"⊙ = " + "• × ○\")  -- SEEDED: the gate must NOT see this\n"
              "  trivial\n")
     res = sb.run(f"{S}/check_foundation.py")
     if "SEEDED" in res["out"] or target in res["out"]:
@@ -517,7 +636,7 @@ def m_foundation_mention_lines_struck(sb):
     if not sb.exists(target):
         return ProbeResult(False, f"target surface missing in clone: {target}")
     body = sb.read(target)
-    seed_line = "\n~~⊙ = • × ○~~ — historical form, struck in this edition.\n"
+    seed_line = "\n~~⊙ = " + "• × ○~~ — historical form, struck in this edition.\n"
     if "SEEDED_MENTION_LINES" in body:
         return ProbeResult(False, "probe already ran on this clone; cannot seed again")
     sb.append(target, f"\n<!-- SEEDED_MENTION_LINES -->{seed_line}")
@@ -584,6 +703,22 @@ def g_receipt_citations(sb):
     m = re.search(r"ambiguous receipt numbers (rose|FELL) to (\d+) \(baseline (\d+)\)", res["out"])
     detail = ("gate is a two-sided fence: " + res["out"].splitlines()[1][:160]) if m else "shape changed"
     return ProbeResult(False, detail, head(res["out"], 3))
+
+
+def m_receipt_citation_collision(sb):
+    """Add a second live r243 target; the namespace baseline must reject it."""
+
+    path = sb.tree / "11_UPLINK/60_SESSION_PACKETS/243_MUTATION_COLLISION.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("# Seeded duplicate receipt namespace target\n", encoding="utf-8")
+    try:
+        return expect_red(
+            sb,
+            f"{S}/check_receipt_citations.py",
+            "a second undeclared live r243 target raises the collision baseline",
+        )
+    finally:
+        path.unlink()
 
 
 def g_barred(sb):
@@ -714,7 +849,11 @@ GATES: list[GateSpec] = [
     GateSpec("check_contradiction_census", f"{S}/check_contradiction_census.py",
              green_probes=[("minimal tree", mt(f"{S}/check_contradiction_census.py"))]),
     GateSpec("check_d6_equiv_d0", f"{S}/check_d6_equiv_d0.py",
-             red_probes=[("literal form", m_d6_literal), ("spaced literal", m_d6_spaced)],
+             red_probes=[("literal form", m_d6_literal),
+                         ("spaced literal", m_d6_spaced),
+                         ("frozen historical byte drift", m_d6_frozen_historical_byte_drift),
+                         ("literal beyond frozen body", m_d6_literal_beyond_frozen_body),
+                         ("frozen historical parent symlink", m_d6_frozen_historical_parent_symlink)],
              green_probes=[("rewrite literals to the tilde form", g_d6)]),
     GateSpec("check_dead_citations", f"{S}/check_dead_citations.py",
              green_probes=[("minimal tree", mt(f"{S}/check_dead_citations.py"))],
@@ -755,11 +894,10 @@ GATES: list[GateSpec] = [
     GateSpec("check_q4_declarations", f"{S}/check_q4_declarations.py",
              green_probes=[("restore the robots directives", g_q4)]),
     GateSpec("check_receipt_citations", f"{S}/check_receipt_citations.py",
-             green_probes=[("minimal tree", mt(f"{S}/check_receipt_citations.py")),
-                           ("two-sided fence", g_receipt_citations)],
-             note="ambiguity baseline 91, actual 93. On a CLEAN tree it also fails — "
-                  "'FELL to 0 (baseline 91) ... lower AMBIGUOUS_BASELINE to lock the "
-                  "gain in'. Green is the single point 91, in both directions."),
+             red_probes=[("new live receipt collision", m_receipt_citation_collision)],
+             note="ambiguity baseline and current count are both 94. The checker is a "
+                  "two-sided fence: any rise fails, and any fall requires the baseline "
+                  "to be lowered in the same repair."),
     GateSpec("check_record_counters", f"{S}/check_record_counters.py",
              red_probes=[("static fallback understated", m_record_counters),
                          ("row verdict relabelled", m_record_row_verdict)]),
@@ -777,8 +915,16 @@ GATES: list[GateSpec] = [
              timeout=SLOW_TIMEOUT,
              green_probes=[("replay every generator", g_site_artifacts)]),
     GateSpec("check_tree_contract", f"{S}/check_tree_contract.py",
+             red_probes=[
+                 ("tombstone authority append", m_tree_tombstone_authority_append),
+                 ("extra held-custody directory", m_tree_extra_directory),
+                 ("held-custody symlink directory", m_tree_symlink_directory),
+                 ("broken non-root 00_META symlink", m_tree_broken_meta_symlink),
+                 ("non-directory 00_META entry", m_tree_meta_regular_file),
+             ],
              green_probes=[("minimal tree", mt(f"{S}/check_tree_contract.py"))],
-             note="6 root-layout violations"),
+             verify_probes=[("held topology debt remains visible", v_tree_held_debt_visible)],
+             note="grandfathered support-meta violation is exact-inventory and digest bound"),
     GateSpec("check_trophic_rosetta_doctrine", f"{S}/check_trophic_rosetta_doctrine.py",
              red_probes=[("forbidden phrase added", m_trophic_extraction),
                          ("required phrase removed", m_trophic_required_missing)]),

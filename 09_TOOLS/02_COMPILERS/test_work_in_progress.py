@@ -73,7 +73,9 @@ class WorkInProgressSourceMirrorTests(unittest.TestCase):
                 )
             with self.subTest(item=item, mutation="boundary"):
                 boundary = "No reviewer or contact is named." if item == CHECKER.REVIEW_CONTACT_SOURCE_ROW else (
-                    "No selection is implied" if item == "OWNER_GATE_HELD_PUBLIC_DOCS" else "No move is implied"
+                    "No selection is implied"
+                    if item == "OWNER_GATE_HELD_PUBLIC_DOCS"
+                    else "No move or conformance is implied"
                 )
                 mutated = self.mutate_open_row(item, boundary, "closed")
                 errors = CHECKER.source_mirror_errors(ROOT, mutated)
@@ -372,10 +374,10 @@ class WorkInProgressSourceMirrorTests(unittest.TestCase):
             self.assertEqual(CHECKER.owner_docket_unset_errors(corpus), [])
             path.write_text(
                 docket.replace(
-                    "`D-OWNER-02` | Whether the active framework-support `00_META` path is a narrow "
-                    "exception or must migrate | **UNSET**",
-                    "`D-OWNER-02` | Whether the active framework-support `00_META` path is a narrow "
-                    "exception or must migrate | **SELECTED**",
+                    "`D-OWNER-02` | Disposition of the grandfathered framework-support "
+                    "`00_META` tombstones under the root-only rule | **UNSET**",
+                    "`D-OWNER-02` | Disposition of the grandfathered framework-support "
+                    "`00_META` tombstones under the root-only rule | **SELECTED**",
                 )
                 + "\n\n## Historical Notes\n\n"
                 "| `D-OWNER-02` | decoy | **UNSET** | decoy |\n",
@@ -398,6 +400,7 @@ class WorkInProgressSourceMirrorTests(unittest.TestCase):
 
             status_rows = CHECKER.owner_docket_status_table(docket)
             assert status_rows is not None
+
             status_table = (
                 "| ID | Decision | Current state | Blocks |\n"
                 "|---|---|---|---|\n"
@@ -492,6 +495,21 @@ class WorkInProgressSourceMirrorTests(unittest.TestCase):
             )
             errors = CHECKER.owner_docket_unset_errors(corpus)
             self.assertTrue(any("status-and-boundary" in error for error in errors), errors)
+
+    def test_topology_row_cannot_be_reworded_as_present_conformance(self) -> None:
+        row = CHECKER.OWNER_HELD_SOURCE_ROWS["OWNER_GATE_OPEN_TOPOLOGY"]
+        self.assertIn("categorical root-only rule", row["question"])
+        self.assertIn("No move or conformance is implied", row["question"])
+        mutated = self.mutate_open_row(
+            "OWNER_GATE_OPEN_TOPOLOGY",
+            row["question"],
+            "Is the existing non-root path already conforming?",
+        )
+        errors = CHECKER.source_mirror_errors(ROOT, mutated)
+        self.assertTrue(
+            any("OWNER_GATE_OPEN_TOPOLOGY" in error for error in errors),
+            errors,
+        )
 
     def test_source_readers_reject_symlinks_and_invalid_utf8(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

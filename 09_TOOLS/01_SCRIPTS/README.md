@@ -81,7 +81,8 @@ Current repository validators and narrowly scoped support scripts.
   set of active source owners and the citation-scannable current/provisional
   public text-dependency closure. It binds typed locators and exact
   receipt/packet filename tokens,
-  treats all 97 physically reused prefixes as unsafe bare, and rejects new
+  treats all 101 physically reused prefixes as unsafe bare, distinguishes the
+  separate 94-prefix legacy heuristic, and rejects new
   unregistered active owners. Generated FILE/FOLDER inventories, compiler
   fixtures, and vendored public libraries are explicit non-citation classes;
   current lane indexes, modules, manifests, workers, and service-worker
@@ -158,6 +159,11 @@ neutralizer are at
 ## Status
 
 Active support folder. Scripts can compile, validate, and repair routing, but source owners remain upstream.
+
+**Purity classification:** Named validator fixtures are non-semantic tooling records.
+Their literal detection patterns and historical labels are test data,
+not doctrine or an authority import; the purity checker exempts only explicitly
+enumerated files, while every new sibling remains in scope.
 
 ## Corpus adequacy gates
 

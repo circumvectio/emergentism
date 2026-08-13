@@ -29,7 +29,7 @@ compensation, permission, ethics route, or external action.
 |---|---|---|---|
 | `D-TECH-01` | Review-bundle self-hash graph and provenance firewall | **implemented internally** — v3/v4 static snapshots; gate remains blocked | no human prerequisite is cleared |
 | `D-OWNER-01` | Canonical owner for the byte-identical public planning duplicate | **UNSET** | current/custody routing of two public-site planning copies |
-| `D-OWNER-02` | Whether the active framework-support `00_META` path is a narrow exception or must migrate | **UNSET** | topology rule reconciliation |
+| `D-OWNER-02` | Disposition of the grandfathered framework-support `00_META` tombstones under the root-only rule | **UNSET** | held topology violation |
 | `D-OWNER-03` | Principal and bounded terms for any future independent-review contact | **UNSET** | the six nontechnical/material review prerequisites and any later invitation |
 
 ## D-TECH-01 — completed technical custody repair
@@ -98,15 +98,17 @@ compensation, permission, ethics route, or external action.
 
 ## D-OWNER-02 — framework-support meta topology
 
-- **Question:** Does `08_FRAMEWORK_SUPPORT/00_META/` remain a strictly
-  non-governance support-meta exception to the root-only `00_META` rule, or
-  must the active topology change?
+- **Question:** How must the three grandfathered tombstones under
+  `08_FRAMEWORK_SUPPORT/00_META/` be reconciled with the categorical root-only
+  `00_META` rule while preserving their custody?
 - **Affected paths:**
   - `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md`
-  - `08_FRAMEWORK_SUPPORT/00_META/README.md`
-  - `08_FRAMEWORK_SUPPORT/00_META/`
+  - `08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md`
+  - `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md`
+  - `08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md`
   - `00_META/CONTACT_LIMITED_STATE.json`
   - `09_TOOLS/01_SCRIPTS/coherence_profile.json`
+  - `09_TOOLS/01_SCRIPTS/check_tree_contract.py`
   - `09_TOOLS/01_SCRIPTS/check_contact_limited.py`
   - `09_TOOLS/02_COMPILERS/test_contact_limited.py`
   - a new dated receipt under `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`
@@ -114,11 +116,13 @@ compensation, permission, ethics route, or external action.
   - `00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json` if an active source cites
     the new receipt
   - `00_META/registers/FILE_REGISTER.json` and `00_META/registers/FOLDER_REGISTER.json`
-- **Measured fact:** the standard literally forbids per-pillar `00_META`, while
-  the named path is an active support-meta lane with live inbound references.
+- **Measured fact:** the standard categorically forbids per-pillar `00_META`,
+  while the named path still holds exactly three pre-existing tombstones. Their
+  byte-bound custody is a known held violation, not an active support-meta lane,
+  a conforming topology, or an owner selection.
 - **Options:**
-  - **A:** define a path-specific, non-governance exception plus an executable
-    guard that prevents it becoming a second governance owner;
+  - **A:** explicitly amend the topology rule by dated owner ruling and retain
+    an executable guard against any governance or semantic ownership;
   - **B:** uphold the literal prohibition and authorize a migration plan with
     K3 forwarding stubs and a per-file old-to-new route map; or
   - **C:** dissolve/archive the lane only after a source-owner replacement
@@ -126,12 +130,12 @@ compensation, permission, ethics route, or external action.
 - **Selected option:** **UNSET**.
 - **Principal:** **UNSET** (01_EMERGENTISM editorial/topology owner must name one).
 - **Consequence boundary:** this docket does not rename, move, archive, or
-  delete the 26 tracked support-meta files.
+  delete the three grandfathered tombstones.
 - **K3 disposition:** any migration preserves historical paths with explicit
   forwarders or tombstones; a path may not silently disappear.
-- **Required propagation after a selection:** record the selected exception or
-  the complete migration/replacement map; then update the topology standard,
-  support-meta route card, source indexes and links, state evidence,
+- **Required propagation after a selection:** record the selected topology
+  amendment or the complete migration/replacement map; then update the topology
+  standard, support-meta route card, source indexes and links, state evidence,
   `coherence_profile.json`, checks/tests, this docket/roadmap/WIP status, and
   regenerated registers. Create a *new* dated receipt and rebind the state
   digest plus receipt index/ledger; update the citation registry only when an
@@ -139,8 +143,9 @@ compensation, permission, ethics route, or external action.
   docket while its route map or replacement plan remains absent.
 - **Verification after implementation:** link checker, topology/source checks,
   `check_contact_limited.py`, register replay, and full corpus gate.
-- **Does not establish:** framework-support doctrine, authority over the root
-  `00_META`, or public deployment.
+- **Does not establish:** a presently conforming non-root `00_META`,
+  framework-support doctrine, authority over the root `00_META`, or public
+  deployment.
 
 ## D-OWNER-03 — future review principal and terms
 

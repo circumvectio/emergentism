@@ -12,19 +12,34 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   gate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out Emergentism
+        uses: actions/checkout@v4
         with:
-          # The contact-limited receipt ratchet compares HEAD with its first
-          # parent. Depth 1 would make immutable receipt custody unverifiable.
-          fetch-depth: 2
+          # Receipt custody and historical propagation checks replay recorded
+          # Git objects. A shallow clone cannot establish that evidence chain.
+          fetch-depth: 0
+          # Public assets and source evidence are LFS-owned; gate their real
+          # bytes rather than pointer stubs.
+          lfs: true
+          # Gate scripts need tree access only; do not leave a write-capable
+          # credential in the checkout used to execute repository code.
+          persist-credentials: false
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          # Kintsugi's specified and release-validated runtime. Its explicit
+          # JSON depth bound is also regression-tested against Python 3.12.
+          python-version: '3.11'
+
+      - name: Install pinned gate dependencies
+        run: python3 -m pip install --disable-pip-version-check --requirement 09_TOOLS/01_SCRIPTS/requirements.txt
 
       - name: Run the gate
         # The Lean toolchain is not installed on CI, so the Lean half of
@@ -33,6 +48,11 @@ jobs:
         # and the structural checks (project files, theorem count, no sorry) still run.
         env:
           EMERGENTISM_SKIP_LEAN: '1'
+          # Skyzai is private and byte disclosure is not authorized. This mode
+          # validates all declared paths, lifecycle values, and SHA-256 syntax,
+          # while marking byte replay unavailable. If an authorized federation
+          # is configured, exact bytes remain mandatory and mismatches fail.
+          EMERGENTISM_ALLOW_UNAVAILABLE_EXTERNAL_SOURCES: '1'
         run: bash 09_TOOLS/01_SCRIPTS/gate.sh
 
       - name: Report what CI did NOT verify
@@ -42,3 +62,4 @@ jobs:
           echo "A full 'lake build' requires fetching mathlib and is impractical in CI."
           echo "Receipt 182 (182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md) records the build output and axiom traces. The generative"
           echo "base (G1-G10) IS recomputed by exhaustion on every run."
+          echo "::notice title=External source replay unavailable::Six private Skyzai source files were not fetched or replayed. CI validated their declared metadata and hash pins only; an authorized local federation must replay the exact bytes."

@@ -91,7 +91,7 @@ folders?” It is:
 
 ### P0 — Reconcile
 
-Close the Receipt-126 propagation manifest in source-authority order. Active
+Close the propagation-126 manifest in source-authority order. Active
 owners must no longer assert retracted derivations, while historical receipts
 and explicit tombstones remain visible.
 
@@ -139,7 +139,7 @@ council.
 
 Prime-time release is blocked until all of the following are true:
 
-1. The Receipt-126 propagation manifest is closed with exact counts and
+1. The propagation-126 manifest is closed with exact counts and
    source-negative checks.
 2. The public export passes allowlist, secrets, privacy, provenance, license,
    and human-eyes review.

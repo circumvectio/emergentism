@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Invariant tests for the public Living Map routing contract."""
 
+import copy
 import hashlib
 import json
 import re
@@ -142,6 +143,16 @@ class LivingMapContractTests(unittest.TestCase):
             "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
             "lab/index.html": {"FIN01-01", "FIN01-02"},
             "manifesto/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
+            "compass/index.html": {"OS01-13"},
+            "5/index.html": {"OS01-09"},
+            "plainly/index.html": {"OS01-09"},
+            "discoveries/nonduality/index.html": {"OS01-09"},
+            "about/index.html": {"OS01-26"},
+            "read/index.html": {"OS01-13"},
+            "axioms/index.html": {"OS01-26"},
+            "journey/index.html": {"OS01-09"},
+            "rosetta/index.html": {"OS01-11"},
+            "book/index.html": {"OS01-13"},
         }
         bindings = {item["surface"]: item for item in self.parity["surfaceClaims"]}
         self.assertEqual(set(bindings), set(expected))
@@ -161,6 +172,22 @@ class LivingMapContractTests(unittest.TestCase):
             page = (ROOT / surface).read_text(encoding="utf-8")
             for marker in binding["requiredMarkers"]:
                 self.assertIn(marker, page)
+
+    def test_owner_status_bindings_are_visible_and_cannot_import_application_sources(self):
+        from check_public_semantic_parity import validate_status_source_claims
+
+        errors = []
+        validate_status_source_claims(self.parity, errors)
+        self.assertEqual(errors, [])
+
+        cross_corpus = copy.deepcopy(self.parity)
+        cross_corpus["statusSourceClaims"][0]["source"] = "../03_VENTURES/README.md"
+        errors = []
+        validate_status_source_claims(cross_corpus, errors)
+        self.assertIn(
+            "KERNEL-STATUS-HOME status source is not an approved owner-status source",
+            errors,
+        )
 
     def test_current_atlas_excludes_frozen_and_withheld_routes(self):
         atlas = json.loads((ROOT / "atlas" / "site_index.json").read_text(encoding="utf-8"))
@@ -187,20 +214,17 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertEqual(manifest["id"], "/")
         self.assertEqual(manifest["start_url"], "/")
         self.assertNotIn("A Compass, Not a Cathedral", manifest["name"])
-        self.assertNotIn("/compass/", sw)
         self.assertNotIn("/compass/", offline)
         spine_match = re.search(r"const SPINE = (\[.*?\]);", sw, flags=re.DOTALL)
         self.assertIsNotNone(spine_match)
         precached_routes = set(json.loads(spine_match.group(1)))
+        self.assertNotIn("/compass/", precached_routes)
         self.assertNotIn("/read/", precached_routes)
         self.assertIn("WITHHELD_ROUTES", sw)
         self.assertIn("isWithheldRoute", sw)
         self.assertIn("isStorable", sw)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(route.startswith(f"/{frozen}/") for route in precached_routes))
-        # The legacy-surface list is optional in schema v2.  Current site
-        # manifests can preserve pre-existing Vercel headers without carrying
-        # a new semantic declaration for every historical route.
         for artifact in self.parity.get("frozenLegacySurfaces", []):
             path = Path(artifact)
             route = "/" + (path.parent.as_posix() if path.name == "index.html" else path.with_suffix("").as_posix())

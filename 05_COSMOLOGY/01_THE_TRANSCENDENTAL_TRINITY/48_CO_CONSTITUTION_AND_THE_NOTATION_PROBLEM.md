@@ -413,7 +413,7 @@ three separate facts, none doing the others' work.
 | `×` and `/` between Titan glyphs are notation errors | `[S]` | supply a declared algebra in which they type-check — which earns a claim about *that algebra*, not about the field |
 | the glyph encodes containment, not product | `[I]` | show `⊙` was drawn to depict an operation |
 
-**This document's own kill.** If it is ever cited to reinstate `⊙ = • × ○`,
+**This document's own kill.** If it is ever cited to reinstate the retired `⊙ = • × ○`,
 `• = ⊙/○`, or `○ = ⊙/•` as arithmetic, it has been read backwards and should be
 withdrawn. It argues those lines are *pointing at something real* **and are
 written wrongly**, which is not the same as arguing they are true.

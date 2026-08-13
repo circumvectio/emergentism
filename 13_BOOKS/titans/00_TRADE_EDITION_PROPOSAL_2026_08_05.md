@@ -164,7 +164,7 @@ Binding on the draft:
 1. **No tier markers in the body.** `[A]/[S]/[I]/[C]` live in The Record. The
    body earns its distinctions in prose or loses them.
 2. **No corpus vocabulary without immediate plain-English cash value.** No `μ`,
-   no `Φ`, no `η`, no VMOSK, no Rosetta, no caste language. "Titan" survives only
+   no `Φ`, no `η`, no internal project-control framework, no Rosetta, no caste language. "Titan" survives only
    if Ch. 6 earns it; otherwise it goes, including from the title.
 3. **Every mathematical claim attributed on first use.** Ch. 7 is the spine of
    this, but attribution is not quarantined there.

@@ -77,15 +77,24 @@ def _git_environment() -> dict[str, str]:
     ):
         environment.pop(name, None)
     environment["GIT_NO_REPLACE_OBJECTS"] = "1"
+    environment["GIT_OPTIONAL_LOCKS"] = "0"
     environment["LC_ALL"] = "C"
     return environment
+
+
+_GIT_COMMAND_PREFIX = (
+    "git",
+    "-c", "core.fileMode=true",
+    "-c", "maintenance.auto=false",
+    "-c", "gc.auto=0",
+)
 
 
 def _run_git(root: Path, argv: tuple[str, ...], *, allowed: tuple[int, ...] = (0,)) -> bytes:
     environment = _git_environment()
     try:
         completed = subprocess.run(
-            ["git", "-c", "core.fileMode=true", *argv],
+            [*_GIT_COMMAND_PREFIX, *argv],
             cwd=root,
             env=environment,
             check=False,
@@ -111,7 +120,7 @@ def _run_git_input(root: Path, argv: tuple[str, ...], payload: bytes) -> bytes:
     environment = _git_environment()
     try:
         completed = subprocess.run(
-            ["git", "-c", "core.fileMode=true", *argv],
+            [*_GIT_COMMAND_PREFIX, *argv],
             cwd=root,
             env=environment,
             check=False,
@@ -1519,6 +1528,7 @@ def _transition_lock(common_dir: Path) -> Iterator[Path]:
         ) from None
     created_stat = os.fstat(descriptor)
     created_identity = (created_stat.st_dev, created_stat.st_ino)
+    operation_failed = False
     try:
         try:
             payload = b"KINTSUGI-TRANSITION-LOCK-V1\n"
@@ -1529,8 +1539,6 @@ def _transition_lock(common_dir: Path) -> Iterator[Path]:
                     raise OSError("zero-byte lock write")
                 written += count
             os.fsync(descriptor)
-            os.close(descriptor)
-            descriptor = -1
             _fsync_directory(resolved, "lock")
         except OSError as exc:
             raise KintsugiError(
@@ -1539,26 +1547,43 @@ def _transition_lock(common_dir: Path) -> Iterator[Path]:
                 f"cannot persist transition lock: {exc.__class__.__name__}",
             ) from None
         yield lock_path
+    except BaseException:
+        operation_failed = True
+        raise
     finally:
-        if descriptor >= 0:
-            os.close(descriptor)
+        cleanup_failed = False
         try:
-            current_stat = lock_path.lstat()
-        except FileNotFoundError:
-            raise KintsugiError(
-                "KIN-E-CONCURRENT", "lock", "transition lock disappeared while held"
-            ) from None
-        if (current_stat.st_dev, current_stat.st_ino) != created_identity:
-            raise KintsugiError(
-                "KIN-E-CONCURRENT", "lock", "transition lock was replaced while held"
-            )
-        try:
-            lock_path.unlink()
-            _fsync_directory(resolved, "lock")
-        except OSError as exc:
-            raise KintsugiError(
-                "KIN-E-CONCURRENT", "lock", f"cannot remove transition lock: {exc.__class__.__name__}"
-            ) from None
+            try:
+                current_stat = lock_path.lstat()
+            except FileNotFoundError:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT", "lock", "transition lock disappeared while held"
+                ) from None
+            if (current_stat.st_dev, current_stat.st_ino) != created_identity:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT", "lock", "transition lock was replaced while held"
+                )
+            try:
+                lock_path.unlink()
+                _fsync_directory(resolved, "lock")
+            except OSError as exc:
+                raise KintsugiError(
+                    "KIN-E-CONCURRENT", "lock", f"cannot remove transition lock: {exc.__class__.__name__}"
+                ) from None
+        except BaseException:
+            cleanup_failed = True
+            raise
+        finally:
+            if descriptor >= 0:
+                try:
+                    os.close(descriptor)
+                except OSError as exc:
+                    if not operation_failed and not cleanup_failed:
+                        raise KintsugiError(
+                            "KIN-E-CONCURRENT",
+                            "lock",
+                            f"cannot close transition lock: {exc.__class__.__name__}",
+                        ) from None
 
 
 def _reserve_attempt_id(

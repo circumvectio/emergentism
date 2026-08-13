@@ -107,6 +107,9 @@ class ActiveReceiptCitationTests(unittest.TestCase):
             ),
             "DIAGNOSTIC_UNITS": (),
             "KNOWN_REPORT_ONLY_RESOLVED": set(),
+            # Unit fixtures model only the receipt lanes and one named active
+            # source; full-corpus route-card boundaries are tested separately.
+            "report_only_boundary_errors": lambda root: [],
         }
         values.update(extra)
         with mock.patch.multiple(CHECKER, **values):
@@ -212,6 +215,154 @@ class ActiveReceiptCitationTests(unittest.TestCase):
             CHECKER.ContractError, "new unregistered active ambiguity"
         ):
             CHECKER.build_registry(self.root)
+
+    def test_new_compiler_sibling_does_not_inherit_report_only_status(self) -> None:
+        sibling = self.root / "09_TOOLS/02_COMPILERS/unlisted_sibling.md"
+        sibling.parent.mkdir(parents=True)
+        sibling.write_text("Receipt 126 is bare.\n", encoding="utf-8")
+        with self.contract(), self.assertRaisesRegex(
+            CHECKER.ContractError,
+            r"new unregistered active ambiguity at 09_TOOLS/02_COMPILERS/unlisted_sibling\.md",
+        ):
+            CHECKER.build_registry(self.root)
+
+    def test_new_distillation_sibling_does_not_inherit_report_only_status(self) -> None:
+        sibling = self.root / "14_THE_DISTILLATION/unlisted_sibling.md"
+        sibling.parent.mkdir(parents=True)
+        sibling.write_text("Receipt 126 is bare.\n", encoding="utf-8")
+        with self.contract(), self.assertRaisesRegex(
+            CHECKER.ContractError,
+            r"new unregistered active ambiguity at 14_THE_DISTILLATION/unlisted_sibling\.md",
+        ):
+            CHECKER.build_registry(self.root)
+
+    def test_new_book_sibling_does_not_inherit_report_only_status(self) -> None:
+        sibling = self.root / "13_BOOKS/unlisted_sibling.md"
+        sibling.parent.mkdir(parents=True)
+        sibling.write_text("Receipt 126 is bare.\n", encoding="utf-8")
+        with self.contract(), self.assertRaisesRegex(
+            CHECKER.ContractError,
+            r"new unregistered active ambiguity at 13_BOOKS/unlisted_sibling\.md",
+        ):
+            CHECKER.build_registry(self.root)
+
+    def test_listed_report_only_file_rejects_new_typed_locator(self) -> None:
+        listed = "14_THE_DISTILLATION/reviewed.md"
+        path = self.root / listed
+        path.parent.mkdir(parents=True)
+        path.write_text("Projection text without a locator.\n", encoding="utf-8")
+        overrides = {
+            "KNOWN_REPORT_ONLY_FILES": {listed},
+            "BOOK_REPORT_ONLY_FILES": set(),
+            "REPORT_ONLY_CITATION_INVENTORY": {listed: ()},
+        }
+        with self.contract(**overrides):
+            CHECKER.build_registry(self.root)
+        path.write_text("Projection text. Receipt 126 is bare.\n", encoding="utf-8")
+        with self.contract(**overrides), self.assertRaisesRegex(
+            CHECKER.ContractError,
+            "report-only citation occurrence inventory drift",
+        ):
+            CHECKER.build_registry(self.root)
+
+    def test_generic_active_file_symlink_fails_before_read(self) -> None:
+        target = self.root / "active_source.data"
+        target.write_text(self.active.read_text(encoding="utf-8"), encoding="utf-8")
+        self.active.unlink()
+        self.active.symlink_to(target)
+        with self.contract(), self.assertRaisesRegex(
+            CHECKER.ContractError, "audited active source .* crosses symlink component"
+        ):
+            CHECKER.build_registry(self.root)
+
+    def test_generic_active_parent_directory_symlink_fails_before_read(self) -> None:
+        with tempfile.TemporaryDirectory() as source_directory:
+            external = Path(source_directory)
+            (external / "active.md").write_text(
+                self.active.read_text(encoding="utf-8"), encoding="utf-8"
+            )
+            linked = self.root / "linked"
+            linked.symlink_to(external, target_is_directory=True)
+            with self.contract(
+                AUDITED_ACTIVE_SOURCES=("linked/active.md",)
+            ), self.assertRaisesRegex(
+                CHECKER.ContractError,
+                "audited active source .* crosses symlink component",
+            ):
+                CHECKER.build_registry(self.root)
+
+    def test_special_receipt_bundle_directory_symlink_fails_before_read(self) -> None:
+        special = "special/134_BUNDLE/"
+        self.active.write_text(
+            f"Receipt 134 (`{special}`) names the special bundle.\n",
+            encoding="utf-8",
+        )
+        with tempfile.TemporaryDirectory() as source_directory:
+            external = Path(source_directory)
+            (self.root / "special").mkdir()
+            (self.root / "special/134_BUNDLE").symlink_to(
+                external, target_is_directory=True
+            )
+            with mock.patch.object(
+                CHECKER, "SPECIAL_RECEIPT_TARGETS", {"134": special}
+            ), mock.patch.object(
+                CHECKER, "AUDITED_ACTIVE_SOURCES", ("active.md",)
+            ):
+                _, errors = CHECKER.build_occurrences(self.root, {}, {}, {})
+        self.assertTrue(
+            any(
+                "special receipt target special/134_BUNDLE crosses symlink component"
+                in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_exact_receipt_target_file_symlink_fails_before_read(self) -> None:
+        target = "targets/999_EXACT_TARGET.md"
+        self.active.write_text(f"`{target}`\n", encoding="utf-8")
+        (self.root / "targets").mkdir()
+        external = self.root / "external-target.md"
+        external.write_text("target\n", encoding="utf-8")
+        (self.root / target).symlink_to(external)
+        with mock.patch.object(
+            CHECKER, "AUDITED_ACTIVE_SOURCES", ("active.md",)
+        ):
+            _, errors = CHECKER.build_occurrences(
+                self.root, {}, {}, {"999": [target]}
+            )
+        self.assertTrue(
+            any(
+                "exact receipt target targets/999_EXACT_TARGET.md "
+                "crosses symlink component" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_exact_receipt_target_parent_symlink_fails_before_read(self) -> None:
+        target = "targets/999_EXACT_TARGET.md"
+        self.active.write_text(f"`{target}`\n", encoding="utf-8")
+        with tempfile.TemporaryDirectory() as source_directory:
+            external = Path(source_directory)
+            (external / "999_EXACT_TARGET.md").write_text(
+                "target\n", encoding="utf-8"
+            )
+            (self.root / "targets").symlink_to(external, target_is_directory=True)
+            with mock.patch.object(
+                CHECKER, "AUDITED_ACTIVE_SOURCES", ("active.md",)
+            ):
+                _, errors = CHECKER.build_occurrences(
+                    self.root, {}, {}, {"999": [target]}
+                )
+        self.assertTrue(
+            any(
+                "exact receipt target targets/999_EXACT_TARGET.md "
+                "crosses symlink component" in error
+                for error in errors
+            ),
+            errors,
+        )
 
     def test_public_route_dependency_cannot_hide_bare_locator(self) -> None:
         public = self.root / "12_PUBLIC_SITE"

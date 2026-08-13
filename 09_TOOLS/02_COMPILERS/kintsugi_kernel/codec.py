@@ -8,6 +8,34 @@ from typing import Any
 from .diagnostics import KintsugiError
 
 
+_MAX_JSON_NESTING_DEPTH = 512
+
+
+def _json_nesting_exceeds_limit(payload: bytes) -> bool:
+    """Bound JSON containers before decoder recursion semantics can vary."""
+    depth = 0
+    in_string = False
+    escaped = False
+    for byte in payload:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif byte == 0x5C:  # backslash
+                escaped = True
+            elif byte == 0x22:  # double quote
+                in_string = False
+            continue
+        if byte == 0x22:
+            in_string = True
+        elif byte in (0x5B, 0x7B):  # [ {
+            depth += 1
+            if depth > _MAX_JSON_NESTING_DEPTH:
+                return True
+        elif byte in (0x5D, 0x7D):  # ] }
+            depth -= 1
+    return False
+
+
 def canonical_json_bytes(value: Any) -> bytes:
     try:
         rendered = json.dumps(
@@ -51,6 +79,12 @@ def load_canonical_json(path: Path) -> object:
         payload = path.read_bytes()
     except OSError as exc:
         raise KintsugiError("KIN-E-IO", str(path), str(exc)) from None
+    if _json_nesting_exceeds_limit(payload):
+        raise KintsugiError(
+            "KIN-E-JSON",
+            str(path),
+            "JSON exceeds the supported nesting depth",
+        )
     try:
         value = json.loads(payload.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:

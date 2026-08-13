@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail closed when any deployable public HTML page drifts from its owners."""
+"""Fail closed when current or provisional public pages drift from their owners."""
 
 from __future__ import annotations
 
@@ -17,9 +17,9 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 ROOT = SITE.parent
 MANIFEST_PATH = SITE / "public_semantic_parity.json"
-# Keep the semantic checker on the exact same deployment-boundary semantics as
-# predeploy_check.py.  A second, weaker glob implementation here previously
-# let deployable legacy HTML fall outside the semantic scan.
+# Use the exact same deployment-boundary semantics as the release gate.  A
+# second, weaker glob implementation here would let deployable legacy HTML
+# evade the public semantic firewall.
 if str(SITE) not in sys.path:
     sys.path.insert(0, str(SITE))
 from predeploy_check import is_vercel_ignored, load_vercelignore_patterns
@@ -47,7 +47,7 @@ FORBIDDEN = {
     "extra mu crossing": re.compile(r"μ[56]|mu[56]", re.I),
     "invalid scalar sampling": re.compile(r"Sample\s*\[\s*∫[^\]]*\|ψ\|²"),
     "physical cone inflation": re.compile(r"physical (?:light )?cone (?:expands|widens)", re.I),
-    "quantum dimensional stacking": re.compile(r"(?:Everett\b.{0,70}\b(?:five-dimensional|5D)\b|Copenhagen\b.{0,70}\b(?:four-dimensional|4D)\b)", re.I | re.S),
+    "quantum dimensional stacking": re.compile(r"(?:Everett.{0,70}(?:five-dimensional|5D)|Copenhagen.{0,70}(?:four-dimensional|4D))", re.I | re.S),
     "quantum-gravity solution inflation": re.compile(r"(?<!not )(?<!no )(?:solve[sd]?|solution to) quantum gravity", re.I),
     "zero-momentum D3 inflation": re.compile(r"D3 has no momentum", re.I),
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
@@ -93,21 +93,46 @@ REQUIRED_PUBLIC_CONTRACTS = {
     "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
-    "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
+    "manifesto/index.html": (
+        "Filing alone does not establish independent evidence, peer review, validation,",
+        "does not automatically enter the",
+    ),
+    "contribute/index.html": (
+        "does not accept payments, credentials, private data, or live model jobs.",
+        "No study, funding programme, grant scheme, compute service, or private-data intake is open.",
+        "Filing alone does not establish independent review, validation, or a tier upgrade",
+    ),
+    "record/index.html": (
+        "Filing alone does not establish independent evidence, peer review, validation, or a claim-tier upgrade.",
+    ),
+    "lab/index.html": (
+        "All twelve named GP gates have packet-complete research contracts",
+        "none is evidence-complete",
+        "public routing state",
+    ),
 }
+PUBLIC_ISSUE_FORM_ROUTE = "github.com/circumvectio/emergentism/issues/new"
+AUTOMATIC_SUBMISSION_PROMISES = (
+    "will be published unedited",
+    "with your verdict and not ours",
+    "the claim gets marked cut",
+    "so what would actually count",
+    "because it can move a claim",
+)
 REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
-    "compass/index.html": {"OS01-09"},
+    "compass/index.html": {"OS01-13"},
+    "5/index.html": {"OS01-09"},
     "plainly/index.html": {"OS01-09"},
     "discoveries/nonduality/index.html": {"OS01-09"},
-    "about/index.html": {"OS01-09"},
-    "read/index.html": {"OS01-09"},
-    "axioms/index.html": {"OS01-09"},
+    "about/index.html": {"OS01-26"},
+    "read/index.html": {"OS01-13"},
+    "axioms/index.html": {"OS01-26"},
     "journey/index.html": {"OS01-09"},
-    "rosetta/index.html": {"OS01-09"},
-    "book/index.html": {"OS01-09"},
+    "rosetta/index.html": {"OS01-11"},
+    "book/index.html": {"OS01-13"},
 }
 CURRENT_AND_CLASS_MARKERS = {
     "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
@@ -141,351 +166,18 @@ LIFECYCLE_AWARE_FORBIDDEN = {
     "literal D6 identity",
     "legacy untyped node product",
     "retired node product assignment",
-    "forbidden Titan infix arithmetic",
-    "field arithmetic claim",
-    "stale current 25-chapter reader",
-    "product uniqueness asserted as settled",
 }
 # A repair/retirement marker must precede the quoted form in the same sentence.
-# This permits a current surface to preserve its negative evidence, while a
-# later disclaimer cannot launder an affirmative formula.
-#
-# Extended 2026-08-13: also recognise the field-arithmetic fence markers
-# (do not assert, indeterminate, frame-register, emblem is, fence is
-# absolute, register-change, never [A], we do not assert, etc.). These
-# appear before retired forms like "1 = 0 × ∞" when the doctrine is
-# explicitly disclaiming the field reading. The 13 false positives
-# in the 2026-08-13 audit all had one of these fence markers in the
-# 180-char prefix.
+# A later disclaimer cannot launder an affirmative formula.
 LIFECYCLE_PREFIX = re.compile(
-    r"\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed|"
-    r"fenced|frame-register|frame\s+register|indeterminate|guardrail|"
-    r"category-correction|register-change|emblem(?:\s+is)?|"
-    r"never\s*\[A\]|never\s+as\s+(?:a\s+)?proven|"
-    r"do\s+not\s+assert|we\s+do\s+not\s+assert|assert\s+none|"
-    r"always\s+mark|not\s+field\s+arithmetic|"
-    r"in\s+the\s+field|fence(?:\s+is\s+absolute)?|"
-    r"the\s+fence|disciplined\s+kernel|small\s+kernel|"
-    r"iterat(?:ing|ion|ed)|VIVEKA\s+formula|"
-    r"track(?:ed|ing)?\s+(?:separately\s+)?as|"
-    r"derived\s+from\s+iterating|iterated\s+product\s+model|"
-    r"the\s+VIVEKA\s+formula|"
-    r"Definition|Definitional|closure\s+claim|return\s+boundary|"
-    r"self-generating|Remark|structural|"
-    r"do\s+not\s+add|are\s+not\s+additive|is\s+not\s+additive|"
-    r"do\s+not\s+sum|is\s+not\s+sum|"
-    r"Reciprocal|withheld|frozen\s+(?:library|generated|book)|"
-    r"Reciprocal\s+—\s+Public\s+Edition|Public\s+Edition|"
-    r"no\s+(?:literal\s+)?identity|"
-    # Additional markers from 2026-08-13 audit false-positives
-    r"not\s+invented|not\s+a\s+claim|"
-    r"labeling\s+choice|"
-    r"does\s+not\s+uniquely\s+select|"
-    r"consistent\s+with(?:\s+it)?|"
-    r"the\s+expression|the\s+emblem(?:\s+is)?|"
-    r"\(i\.e\.,?|i\.e\.|Zero-Sum\s+Resolution\s+Equation|"
-    r"deeper\s+algebraic\s+reading|"
-    r"as\s+memetic\s+slogan|"
-    r"compresses\s+complexity|"
-    r"empirical\s+reading|"
-    r"drum\s+register|frame\s+register|"
-    r"as\s+such,?\s+no|"
-    r"under\s+these\s+definitions|"
-    r"v1\.0\s+claimed|v1\.0|"
-    r"the\s+reviewer\s+showed|"
-    r"in\s+v1\.0|"
-    r"and\s+not\s+a\s+claim|"
-    r"an\s+identity\s+cannot\s+be|"
-    r"cannot\s+be\s+violated|exerts\s+no\s+power|"
-    r"independent\s+conservation\s+law|"
-    r"is\s+not\s+an\s+independent|"
-    r"Product-form\s+as\s+memetic|"
-    # "do not add — they multiply" / "they multiply into both sides"
-    r"do\s+not\s+add(?:\s*[—\-]\s*they\s+multiply)?|"
-    r"they\s+multiply(?:\s+into|\s+across)|"
-    r"multiply\s+into\s+both\s+sides|"
-    r"multiply\s+into\s+both|"
-    r"multiply\s+into|"
-    r"multiply\s+across|"
-    r"\[Def\]|\[Definitional\]|"
-    r"Honesty\s+note:?|"
-    r"\bcoordinate\s+degeneration|"
-    r"\bpoloidal\s+periodicity|"
-    r"withheld)\b",
-    re.I,
-)
-
-# Application authority leakage: K2, Skyzai, VMOSK-A, DAVs, DACs, PRISM, and
-# Agentz are doctrine concepts, not application components. The bare-token
-# rule in FORBIDDEN over-matches the public site, which discusses these
-# terms extensively as concepts (e.g., "K2 envelope", "the DAC as test
-# case", "under K2 sovereignty") without claiming the surface IS one of
-# them. The patterns below are context allowances: a match is skipped when
-# the immediate prefix or suffix shows it is a concept reference rather
-# than an authority claim.
-AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX = re.compile(
-    r"(?:"
-    # list/separator/bracket before: "η=0, K2, K4" / "K2 / K3 / K4"
-    r"[,;:\(\[\{<>/|·•\n]\s*$"
-    # path separator: "/k2-decision-protocol" / "01-k2-decision-protocol"
-    r"|[-/]\s*$"
-    # underscore/file continuation: "23_THE_DAC.md"
-    r"|[_]\s*$"
-    # preposition: "under K2", "by K2", "of K2"
-    r"|\b(?:in|on|at|for|by|with|from|to|of|into|through|under|over|"
-    r"between|about|against|via|using|including|across|before|after|"
-    r"upon|throughout|as|than|like|unlike|per)\s+$"
-    # article/determiner/quantifier: "the K2", "a DAC", "two DACs", "every K2"
-    r"|\b(?:the|a|an|this|that|these|those|whose|your|our|their|his|"
-    r"her|its|no|every|each|any|some|all|both|another|"
-    r"one|two|three|four|five|six|seven|eight|nine|ten)\s+$"
-    # negation: "not K2"
-    r"|\b(?:not|never|neither|nor)\s+$"
-    # conjunction in a list: "and K2", "or DAC"
-    r"|\b(?:and|or|but|nor|yet|so|plus)\s+$"
-    # "Project VMOSK-A"
-    r"|\bProject\s+$"
-    # Direct object verbs: "preserve K2", "hold K2", "carry K2", "Use K2", "Keep K2"
-    r"|\b(?:preserve|preserves|preserved|hold|holds|held|"
-    r"carry|carries|carried|place|places|placed|"
-    r"name|names|named|restore|restores|restored|"
-    r"support|supports|supported|"
-    r"honor|honors|honored|honour|honours|honoured|"
-    r"sustain|sustains|sustained|"
-    r"surrender|surrenders|surrendered|"
-    r"protect|protects|protected|"
-    r"force|forces|forced|"
-    r"weaken|weakens|weakened|"
-    r"delegitimize|delegitimizes|"
-    r"does|does\s+not|did|did\s+not|do|do\s+not|"
-    r"is\s+not|are\s+not|was\s+not|were\s+not|"
-    r"has\s+not|have\s+not|had\s+not|"
-    r"never\s+(?:signs|sign|carries|owns|preserves|holds)|"
-    r"cannot\s+(?:sign|practice|carry|own|be)|"
-    r"can\s+never|"
-    r"must|should|will|would|can|could|may|might|"
-    r"see(?:k|ks|king)?|find|finds|finding|"
-    r"avoid|avoids|avoided|escape|escapes|escaped|"
-    r"trace|traces|traced|"
-    r"comply|complies|complied|"
-    r"cross|crosses|crossed|exit|exits|exited|"
-    r"ratify|ratifies|ratified|"
-    r"reject|rejects|rejected|"
-    r"replace|replaces|replaced|"
-    r"include|includes|included|"
-    r"except|excludes|excluded|"
-    r"relate|relates|related|"
-    r"apply|applies|applied|"
-    r"form|forms|formed|"
-    r"shape|shapes|shaped|"
-    r"host|hosts|hosted|"
-    r"answer|answers|answered|"
-    r"witness|witnesses|witnessed|"
-    r"signs|signs\s+the|sign\s+the|signs\s+a|sign\s+a|"
-    r"use|uses|used|using|"
-    r"keep|keeps|kept|keeping|"
-    r"build|builds|built|building|"
-    r"treat|treats|treated|treating|"
-    r"frame|frames|framed|framing|"
-    r"claim|claims|claimed|claiming)\s+$"
-    r")",
-    re.I,
-)
-
-# Allow the suffix match whenever the term is followed by a non-authority
-# shape. Concept references have suffix shapes that begin with another
-# word, a hyphen, a digit, a verb, a preposition, or a punctuation
-# character that is part of a list. The deny shapes are very narrow:
-# only flag if the suffix is the start of an identity claim sentence.
-AUTHORITY_LEAKAGE_LEGITIMATE_SUFFIX = re.compile(
-    r"(?:"
-    # list separator / bracket: "K2, K4, K3"
-    r"^\s*[,;:\(\)\[\]<\>/|·•\n]"
-    # compound modifier: "K2-ruled", "K2-protocol"
-    r"|^\s*[-—–/]"
-    # underscore in filename: "23_THE_DAC.md"
-    r"|^\s*[_]"
-    # possessive
-    r"|^\s*['\u2019]s\b"
-    # ISO date in a citation/footnote: "K2-adopted 2026-05-31"
-    r"|^\s*\d{4}-\d{2}-\d{2}\b"
-    # any other digit (e.g. "K2 3" — reference number)
-    r"|^\s+\d+\b"
-    # a lowercase letter starts a new word — compound modifier or noun phrase
-    r"|^\s+[a-z][a-z\-]+"
-    # concept noun after the term
-    r"|^\s*(?:envelope|envelopes|council|councils|panel|panels|"
-    r"layer|layers|ruling|rulings|rule|rules|decision|decisions|"
-    r"sign-off|signer|signers|sign|signing|signed|signature|"
-    r"signatures|boundary|boundaries|governance|problem|problems|"
-    r"architect|architecture|template|templates|mandate|mandates|"
-    r"protocol|protocols|consent|stage|stages|principle|principles|"
-    r"refusal|refusals|foundation|foundations|act|acts|"
-    r"responsibility|custody|instantiation|collapse|determination|"
-    r"event|events|review|reviews|session|sessions|status|"
-    r"form|forms|level|levels|component|components|organism|"
-    r"experiment|node|nodes|system|systems|design|designs|"
-    r"spec|specs|version|versions|test|tests|state|states|"
-    r"branch|branches|board|boards|charter|charters|"
-    r"chart|charts|field|fields|stack|stacks|driver|drivers|"
-    r"contract|contracts|exchange|exchanges|module|modules|"
-    r"library|libraries|service|services|root|roots|"
-    r"membership|memberships|asset|assets|runtime|runtimes|"
-    r"pillar|pillars|caste|castes|chief|chiefs|gate|gates|"
-    r"check|checks|ladder|ladders|taxonomy|taxonomies|"
-    r"engine|engines|mode|modes|"
-    r"drum|drums|carrier|carriers|cell|cells|"
-    r"substrate|substrates|scaffold|scaffolds|organ|organs|"
-    r"grammar|grammars|epoch|epochs|"
-    r"inherits|inherit|emblem|emblems|"
-    r"convention|conventions|instance|instances|"
-    r"perspective|perspectives|reading|readings|"
-    r"sequence|sequences|loop|loops|"
-    r"tag|tags|claim|claims|cycle|cycles|"
-    r"epoch|epochs|"
-    r"principle|principles|doctrine|doctrines|"
-    r"rung|rungs|stamp|stamps|"
-    r"signed|case|test|out|case|"
-    r"as\s+test\s+case|as\s+the|as\s+a|as\s+an|as\s+one|"
-    r"agent|agents|envelope|boundary|boundaries|"
-    r"mortal|substrate|economics|architecture|"
-    r"speciate|forks|evolves|builds|show|shows|face|faces|"
-    r"moves|move|move\s+from|"
-    r"in|on|at|for|by|with|from|to|of|into|through|under|over|"
-    r"between|about|against|via|using|including|across|"
-    r"as\s+applied|as\s+the|as\s+a|as\s+an)\b"
-    # verb in any form
-    r"|^\s+(?:is|are|was|were|has|have|had|"
-    r"means|remain|remains|keep|keeps|keep|"
-    r"sit|sits|where|hold|holds|carry|carries|"
-    r"preserve|preserves|becomes|became|starts|start|appears|"
-    r"appear|stand|stands|persist|persists|begin|begins|"
-    r"belong|belongs|see|sees|make|makes|point|points|"
-    r"teach|teaches|reject|rejects|mark|marks|address|addresses|"
-    r"signal|signals|deny|denies|resist|resists|preside|presides|"
-    r"act|acts|sign|signs|refuse|refuses|recover|recovers|"
-    r"outlive|outlives|outlast|outlasts|govern|governs|"
-    r"operate|operates|recede|recedes|inherit|inherits|"
-    r"include|includes|situate|situates|"
-    r"do(?:es)?|did|"
-    r"applies|apply|"
-    r"operates|operate|"
-    r"builds|build|"
-    r"can|could|may|might|will|would|should|must|"
-    r"be\s+the|be\s+a|be\s+an|be\s+this|be\s+our|be\s+the\s+current)\b"
-    # negative/qualifying forms
-    r"|^\s+(?:do(?:es)?\s+not|did\s+not|is\s+not|are\s+not|"
-    r"was\s+not|were\s+not|has\s+not|have\s+not|had\s+not|"
-    r"cannot|can\s+not|will\s+not|won't|should\s+not|"
-    r"would\s+not|may\s+not|must\s+not)\b"
-    r"|^\s+(?:is\s+the|are\s+the|was\s+the|were\s+the|"
-    r"is\s+a|are\s+a|was\s+a|were\s+a|"
-    r"is\s+an|are\s+an|was\s+an|were\s+an)\b"
-    # in <code> tags
-    r"|^\s*</?code\b"
-    r")",
-    re.I,
-)
-
-
-def has_uncontextualized_authority_leakage(text: str) -> bool:
-    """True when a Skyzai/VMOSK/PRISM/Agentz/K2/DAC/DAV mention is an
-    authority claim rather than a legitimate concept reference.
-
-    The bare-token rule in FORBIDDEN['application authority leakage'] is
-    over-broad because the public site discusses these terms extensively
-    as concepts. Two complementary checks:
-
-    1. ALLOW shape — concept references have permissive contexts
-       (list separators, articles, prepositions, file paths, dates,
-       compound modifiers, code tags, etc.). The
-       AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX / SUFFIX patterns cover
-       these. If either side shows a concept-reference shape, skip.
-
-    2. DENY shape — identity claims are very specific: a sentence that
-       asserts "K2/Skyzai/etc. is the [current/sole/our/this site's]
-       [signer/council/authority/signatory/runtime/principal]". Only
-       flag when the term is being used in such a sentence.
-
-    The function returns True only when the deny check fires and no
-    allow shape matches. After 2026-08-13 the public site has zero
-    real leakage cases; the seven remaining matches after the allow
-    patterns all are concept references that the allow patterns
-    hadn't covered (e.g., K2 in a sentence-final position, K2 in a
-    citation path, K2 starting a new sentence as a definition).
-    """
-    candidate = normalize_visible_text(text)
-    pattern = FORBIDDEN["application authority leakage"]
-    for match in pattern.finditer(candidate):
-        pre = candidate[max(0, match.start() - 80):match.start()]
-        post = candidate[match.end():min(len(candidate), match.end() + 80)]
-        if AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX.search(pre):
-            continue
-        if AUTHORITY_LEAKAGE_LEGITIMATE_SUFFIX.search(post):
-            continue
-        # Sentence-final or sentence-start with no clear claim shape
-        # — a concept reference, not an authority claim.
-        if re.search(r"[.!?]\s*$", pre) or re.match(r"^\s*[.!?]", post):
-            continue
-        # The match starts a new sentence (capital letter + space before)
-        if re.search(r"[A-Z]\s+$", pre):
-            continue
-        # File path / source citation context
-        if re.search(r"\b01_EMERGENTISM/[a-z_/\-]+\.md", pre) or re.search(r"\.md(?::\d+)?\s*$", pre):
-            continue
-        if re.search(r"\.md(?::\d+)?\b", post):
-            continue
-        # Range notation: "K0–K9", "K6 ,"
-        if re.search(r"\bK\d+\s*[–-]\s*K\d+\b", post):
-            continue
-        # "private-DAV" / "L4/private-DAV" / "L4 Arjuna/private-DAV" prefix
-        if re.search(r"(?:L\d|arjuna|krishna|kali|brahma|shiva|vishnu|sadhur|kshatriya|vaishya|brahman)\s*/\s*private-DAV\s*$", pre, re.I):
-            continue
-        # "AI does not sign K2" / "X cannot sign K2" — K2 is the object of
-        # a "sign" verb, not the subject claiming to sign.
-        if re.search(r"(?:does|did|do|can(?:not)?|will|must|should|may|might|could|would|never)\s+not\s+(?:sign|signs|signing|carry|carry\s+conscience)\s+$", pre, re.I):
-            continue
-        # Definition form: "K2 is not a software component" / "K2 is a packet"
-        if re.search(r"is\s+not\s+a\s+software\s+component\s*$", post, re.I):
-            continue
-        # Varna role list: "L2 Śūdra ... Agentz L4 Kṣatriya"
-        if re.search(r"\b(?:L\d|Śūdra|Brāhmaṇa|Kṣatriya|Vaiśya|śūdra|brāhmaṇa|kṣatriya|vaiśya)\s+\w+\s*$", pre, re.I):
-            continue
-        if re.match(r"^\s*L\d\s+\w+", post, re.I):
-            continue
-        # Quotation context: "..." K2 "..." or '"..." K2 "..."'
-        if re.search(r"[\"\u201C\u2018]\s*$", pre):
-            continue
-        # Label sequence: "D5 X DAC D6 Y" / "Egregorocene Egregoreotype DAC"
-        if re.search(r"\bD[0-6]\b", pre):
-            continue
-        if re.search(r"\bD[0-6]\b", post):
-            continue
-        # "in the separate" prefix (adjective use of "separate DAC")
-        if re.search(r"in\s+the\s+separate\s+$", pre, re.I):
-            continue
-        # "separation" / "separation-set" / list-continuation context
-        if re.search(r"separation(?:-set)?\s+$", pre, re.I):
-            continue
-        # Sentence-start with capital + quote: "X" K2 "I am responsible"
-        if re.match(r"^\s*[\"\u201C\u2018]", post):
-            continue
-        return True
-    return False
-
-
-# Base64 image data may contain ASCII substrings like "mu5" or "mu6" that
-# the "extra mu crossing" regex would otherwise flag. Strip the data
-# before scanning.
-BASE64_DATA_PATTERN = re.compile(
-    r'src="data:image/[a-z]+;base64,[^"]+"',
+    r"(?:\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed)\b"
+    r"[^.;:!?]{0,80}|\bno\s+(?:literal\s+)?identity\b[^.;:!?]{0,80})$",
     re.I,
 )
 LIFECYCLE_FIXTURES = {
     "literal D6 identity": "D6 ≡ D0",
     "legacy untyped node product": "P = Φ × V",
     "retired node product assignment": "P_node := Φ̂₄ × V₄",
-    "forbidden Titan infix arithmetic": "⊙ = • × ○",
 }
 CURRENT_BOOK_MARKERS = {
     "book/index.html": (
@@ -500,10 +192,15 @@ CURRENT_BOOK_MARKERS = {
         "not the current <code>/book/</code> source",
     ),
     "read/index.html": (
-        "Seven frozen generated-library records",
+        "Frozen generated-library records remain preserved with provenance",
         "current twelve-chapter One-Sitting Reader",
     ),
 }
+HIDDEN_ROBOTS_META = re.compile(
+    r'<meta\b(?=[^>]*\bname=["\']robots["\'])(?=[^>]*\bcontent=["\'][^"\']*\b(?:noindex|none)\b)[^>]*>',
+    re.IGNORECASE,
+)
+FROZEN_LIBRARY_BOUNDARY_MARKER = "data-frozen-library-boundary"
 
 
 def normalize_visible_text(text: str) -> str:
@@ -528,6 +225,21 @@ def has_titan_infix(text: str) -> bool:
             normalize_visible_text(text)
         )
     )
+
+
+def record_has_only_historical_k2(text: str) -> bool:
+    """Allow the existing provenance label, not a blanket record-page waiver."""
+
+    if "data-historical-authority-boundary" not in text:
+        return False
+    matches = list(FORBIDDEN["application authority leakage"].finditer(text))
+    return bool(matches) and all(match.group(0).casefold() == "k2" for match in matches)
+
+
+STATUS_SOURCE_CONTRACTS = {
+    "00_THE_KERNEL_INDEX.md": "[I]",
+    "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md": "[S/B]",
+}
 
 
 def parity_audit_surfaces(data: dict) -> list[str]:
@@ -571,7 +283,7 @@ def deployable_html_surfaces() -> list[str]:
 
 
 def withheld_public_routes() -> set[str]:
-    """Read the existing exact withheld-route policy for RAG custody checks."""
+    """Read the exact withheld-route policy for RAG custody checks."""
 
     registry_path = SITE / "withheld-routes.json"
     try:
@@ -593,22 +305,7 @@ def withheld_public_routes() -> set[str]:
 
 
 def has_unretired_forbidden_match(text: str, name: str) -> bool:
-    """True when a lifecycle-aware retired form is used rather than mentioned.
-
-    A fence marker (retired, fenced, indeterminate, emblem, etc.) may appear
-    in the 180-char prefix OR the 180-char postfix of the match. If either
-    side carries a fence marker, the match is a fenced mention, not a
-    claim. (Originally the check was prefix-only; the postfix was added
-    2026-08-13 after the field arithmetic audit found fence markers
-    commonly follow the equation by name, e.g. "0 × ∞ is the
-    indeterminate form — there is no field theorem making it 1".)
-
-    For patterns where the match is followed by a continuation (e.g. "they
-    multiply into both sides"), the LIFECYCLE_PREFIX is also checked on
-    the union of (end of prefix + match + start of postfix) so that
-    "multiply into" can be caught even though the match itself is
-    exactly "they multiply".
-    """
+    """True when a lifecycle-aware retired form is used rather than mentioned."""
 
     if name not in LIFECYCLE_AWARE_FORBIDDEN:
         raise ValueError(f"{name} is not a lifecycle-aware public prohibition")
@@ -616,20 +313,77 @@ def has_unretired_forbidden_match(text: str, name: str) -> bool:
     pattern = FORBIDDEN[name]
     for match in pattern.finditer(candidate):
         prefix = candidate[max(0, match.start() - 180):match.start()]
-        postfix = candidate[match.end():min(len(candidate), match.end() + 180)]
-        if LIFECYCLE_PREFIX.search(prefix):
-            continue
-        if LIFECYCLE_PREFIX.search(postfix):
-            continue
-        # Check span: end of prefix + match + start of postfix
-        # (e.g. "they multiply into" — the "multiply" is in the match,
-        #  the "into" is in the postfix).
-        span_start = max(0, match.start() - 60)
-        span_end = min(len(candidate), match.end() + 60)
-        if LIFECYCLE_PREFIX.search(candidate[span_start:span_end]):
-            continue
-        return True
+        if not LIFECYCLE_PREFIX.search(prefix):
+            return True
     return False
+
+
+def validate_status_source_claims(data: dict, errors: list[str]) -> None:
+    """Bind narrow owner-status copy without promoting it to a claim card.
+
+    This extension is deliberately local to this corpus: it can attest that a
+    public page accurately reports an editorial or record status, but it cannot
+    add a doctrine claim, import an application source, or raise an evidence
+    tier. Claim-bearing public language remains governed by ``surfaceClaims``.
+    """
+
+    bindings = data.get("statusSourceClaims", [])
+    if not isinstance(bindings, list):
+        errors.append("statusSourceClaims must be a list")
+        return
+    seen_ids: set[str] = set()
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            errors.append("status source binding must be an object")
+            continue
+        binding_id = binding.get("id")
+        if not isinstance(binding_id, str) or not binding_id:
+            errors.append("status source binding missing id")
+            continue
+        if binding_id in seen_ids:
+            errors.append(f"duplicate status source binding: {binding_id}")
+            continue
+        seen_ids.add(binding_id)
+        for key in ("surface", "role", "source", "sourceRevision", "tier", "requiredMarkers", "scope"):
+            if not binding.get(key):
+                errors.append(f"{binding_id} status source binding missing {key}")
+        if binding.get("scope") != "editorial_or_record_status_only":
+            errors.append(f"{binding_id} status source binding has invalid scope")
+        tier = binding.get("tier")
+        if binding.get("surface") not in data.get("currentSurfaces", []):
+            errors.append(f"{binding_id} status binding is not a current surface")
+        markers = binding.get("requiredMarkers")
+        if not isinstance(markers, list) or not all(isinstance(marker, str) and marker for marker in markers):
+            errors.append(f"{binding_id} status binding requiredMarkers must be non-empty strings")
+            markers = []
+        source_rel = binding.get("source")
+        if not isinstance(source_rel, str) or not source_rel:
+            continue
+        expected_tier = STATUS_SOURCE_CONTRACTS.get(source_rel)
+        if expected_tier is None:
+            errors.append(f"{binding_id} status source is not an approved owner-status source")
+            continue
+        if tier != expected_tier:
+            errors.append(f"{binding_id} status source tier must remain {expected_tier}")
+        source_path = ROOT / source_rel
+        try:
+            source_path.resolve().relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"{binding_id} status source escapes the Emergentism corpus")
+            continue
+        if not source_path.is_file():
+            errors.append(f"{binding_id} status source is missing: {source_rel}")
+        elif binding.get("sourceRevision") != _sha256_revision(source_path):
+            errors.append(f"{binding_id} status sourceRevision drift: {source_rel}")
+        surface = binding.get("surface")
+        page = SITE / surface if isinstance(surface, str) else None
+        rendered = page.read_text(encoding="utf-8", errors="replace") if page and page.is_file() else ""
+        visible = normalize_visible_text(rendered)
+        for marker in markers:
+            if marker not in visible:
+                errors.append(f"{binding_id} missing bound public marker {marker!r}")
+        if "claimCardIds" in binding or "publicDisposition" in binding:
+            errors.append(f"{binding_id} status binding may not act as a claim-card binding")
 
 
 def main() -> int:
@@ -764,7 +518,11 @@ def main() -> int:
                     errors.append(f"{tr.get('id', '?')} sourceRevision drift: {tr['source']}")
             else:
                 errors.append(f"missing crossing owner: {tr['source']}")
-        rendered = (SITE / item["id"][1:] / "index.html").read_text(encoding="utf-8", errors="replace")
+        rendered_path = SITE / item["id"][1:] / "index.html"
+        if not rendered_path.is_file():
+            errors.append(f"{item['id']} missing rendered dimension surface")
+            continue
+        rendered = rendered_path.read_text(encoding="utf-8", errors="replace")
         for needle, label in (
             ('class="diagram visual-panel"', "instrument visual hook"),
             ('type="importmap"', "local Three.js import map"),
@@ -775,6 +533,7 @@ def main() -> int:
                 errors.append(f"{item['id']} missing {label}")
 
     surface_claims = data.get("surfaceClaims", [])
+    validate_status_source_claims(data, errors)
     surface_lookup: dict[str, dict] = {}
     for binding in surface_claims:
         surface = binding.get("surface")
@@ -862,24 +621,21 @@ def main() -> int:
                 f"got {sorted(actual_cards)}"
             )
 
-    # The manifest still owns the current/provisional contract.  Prohibition
-    # scans are wider: any HTML that can reach a deployment is public copy and
-    # must survive the same semantic fences.
+    # The manifest owns the current/provisional contract. Prohibition scans are
+    # wider: any HTML that can reach a deployment is public copy and must pass
+    # the same semantic fences.
     for rel in deployable_html:
         path = SITE / rel
         text = path.read_text(encoding="utf-8", errors="replace")
         for name, pattern in FORBIDDEN.items():
-            if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
-                continue
-            if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
-                continue
-            if name == "application authority leakage":
-                # Custom check: bare-token regex over-matches concept references.
-                if has_uncontextualized_authority_leakage(text):
-                    errors.append(f"{rel}: {name}")
+            if name == "application authority leakage" and rel == "record/index.html" and record_has_only_historical_k2(text):
                 continue
             if name in LIFECYCLE_AWARE_FORBIDDEN:
                 if has_unretired_forbidden_match(text, name):
+                    errors.append(f"{rel}: {name}")
+                continue
+            if name == "forbidden Titan infix arithmetic":
+                if has_titan_infix(text):
                     errors.append(f"{rel}: {name}")
                 continue
             scan_text = text
@@ -892,11 +648,14 @@ def main() -> int:
                 scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
-            # Base64 image data may contain ASCII "mu5"/"mu6" substrings.
-            if name == "extra mu crossing":
-                scan_text = BASE64_DATA_PATTERN.sub("", scan_text)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
+    for rel in parity_audit_surfaces(data):
+        text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
+        if FROZEN_LIBRARY_BOUNDARY_MARKER in text:
+            errors.append(f"{rel}: declared current/provisional page carries a frozen-library boundary")
+        if HIDDEN_ROBOTS_META.search(text):
+            errors.append(f"{rel}: declared current/provisional page self-declares noindex/none")
     for rel, markers in CURRENT_AND_CLASS_MARKERS.items():
         if rel not in data.get("currentSurfaces", []):
             errors.append(f"AND-class parity target is not a declared current surface: {rel}")
@@ -933,13 +692,32 @@ def main() -> int:
         if not path.is_file():
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
-        if rel == "contribute/index.html":
-            if not any(needle in text for needle in alternatives):
-                errors.append(f"{rel}: missing static no-payment boundary")
-            continue
         for needle in alternatives:
             if needle not in text:
                 errors.append(f"{rel}: missing founder contract marker {needle!r}")
+    contribute = (SITE / "contribute/index.html").read_text(encoding="utf-8", errors="replace")
+    custody_marker = "A public issue is a custody item. Filing alone does not establish independent review, validation, or a tier upgrade"
+    first_form = contribute.find(PUBLIC_ISSUE_FORM_ROUTE)
+    if first_form < 0:
+        errors.append("contribute/index.html: missing public issue-form route")
+    elif contribute.find(custody_marker) < 0 or contribute.find(custody_marker) > first_form:
+        errors.append("contribute/index.html: custody/non-upgrade boundary must precede public issue forms")
+    for rel in parity_audit_surfaces(data):
+        if rel == "contribute/index.html" or not rel.endswith((".html", ".htm")):
+            continue
+        path = SITE / rel
+        if path.is_file() and PUBLIC_ISSUE_FORM_ROUTE in path.read_text(encoding="utf-8", errors="replace"):
+            errors.append(f"{rel}: public issue form bypasses the contribution boundary")
+    manifesto = normalize_visible_text((SITE / "manifesto/index.html").read_text(encoding="utf-8", errors="replace")).casefold()
+    for promise in AUTOMATIC_SUBMISSION_PROMISES:
+        if promise in manifesto:
+            errors.append(f"manifesto/index.html: automatic submission promise is not authorized: {promise!r}")
+    record = normalize_visible_text((SITE / "record/index.html").read_text(encoding="utf-8", errors="replace")).casefold()
+    if "frozen product-versus-rivals study" in record:
+        errors.append("record/index.html: void GP-03 execution route was advertised as current")
+    paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8", errors="replace")
+    if '<span class="k">21</span>…and the remaining sixteen' not in paradoxes:
+        errors.append("discoveries/paradoxes/index.html: twenty-one-item suite remainder marker drift")
     render = subprocess.run([sys.executable, str(SITE / "render_dimension_site.py"), "--check"], cwd=SITE, text=True, capture_output=True)
     if render.returncode:
         errors.append(render.stdout.strip() or render.stderr.strip() or "dimension renderer drift")

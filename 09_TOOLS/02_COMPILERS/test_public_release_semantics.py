@@ -89,13 +89,11 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         for name, text in mutations.items():
             with self.subTest(name=name):
                 self.assertRegex(text, parity.FORBIDDEN[name])
-        for text in ("P_node", "P_node,i", "P<sub>node</sub>"):
-            self.assertRegex(text, parity.FORBIDDEN["legacy untyped node scalar"])
-        self.assertRegex("Φ × V", parity.FORBIDDEN["raw uncalibrated Phi-V product"])
-        self.assertRegex("Σ Δ P_node", parity.FORBIDDEN["legacy aggregate objective"])
+        self.assertRegex("P = Φ × V", parity.FORBIDDEN["legacy untyped node product"])
+        self.assertTrue(parity.has_retired_node_product("P_node := Φ̂₄ × V₄"))
         self.assertRegex(
-            "P_node = Φ × V therefore objective ethics follows",
-            parity.FORBIDDEN["product-derived ethics"],
+            "the ethic follows from arithmetic",
+            parity.FORBIDDEN["ethic derived from arithmetic"],
         )
 
     def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
@@ -128,9 +126,10 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
 
     def test_frozen_boundary_is_idempotent(self) -> None:
         sample = "<html><body><main>old claim</main></body></html>"
-        once = frozen.desired(sample)
+        page = SITE / "frozen-fixture.html"
+        once = frozen.desired(sample, page, frozen=True)
         self.assertIn(frozen.MARKER, once)
-        self.assertEqual(frozen.desired(once), once)
+        self.assertEqual(frozen.desired(once, page, frozen=True), once)
 
     def test_rag_excludes_frozen_library(self) -> None:
         rag = json.loads((SITE / "book/rag_index.json").read_text(encoding="utf-8"))
@@ -146,6 +145,45 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             text=True,
         )
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_public_submission_boundary_precedes_the_only_current_ingress(self) -> None:
+        form_route = parity.PUBLIC_ISSUE_FORM_ROUTE
+        contribute = (SITE / "contribute/index.html").read_text(encoding="utf-8")
+        boundary = "A public issue is a custody item. Filing alone does not establish independent review, validation, or a tier upgrade"
+        self.assertIn(form_route, contribute)
+        self.assertLess(contribute.index(boundary), contribute.index(form_route))
+        for rel in self.data["currentSurfaces"]:
+            if rel == "contribute/index.html":
+                continue
+            path = SITE / rel
+            if path.is_file():
+                self.assertNotIn(form_route, path.read_text(encoding="utf-8", errors="replace"), rel)
+        template_boundary = "Filing this form creates a public custody item. Filing alone does not establish independent evidence"
+        for name in ("finity-receipt.yml", "contradiction-report.yml", "bounded-evidence.yml"):
+            text = (ROOT / ".github/ISSUE_TEMPLATE" / name).read_text(encoding="utf-8")
+            self.assertIn(template_boundary, text, name)
+            self.assertIn("does not guarantee a response, ledger inclusion, or claim disposition", text, name)
+
+    def test_public_submission_copy_cannot_promise_automatic_disposition(self) -> None:
+        manifesto = parity.normalize_visible_text((SITE / "manifesto/index.html").read_text(encoding="utf-8")).casefold()
+        for promise in parity.AUTOMATIC_SUBMISSION_PROMISES:
+            self.assertNotIn(promise, manifesto)
+        record = parity.normalize_visible_text((SITE / "record/index.html").read_text(encoding="utf-8")).casefold()
+        self.assertNotIn("frozen product-versus-rivals study", record)
+        paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8")
+        self.assertIn('<span class="k">21</span>…and the remaining sixteen', paradoxes)
+
+    def test_home_opens_with_why_how_what_and_one_primary_action(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        why = home.index("Why · Emergentism · A worldview for finite beings")
+        how = home.index('id="receipt-loop-title">How ')
+        what = home.index("What · Start with one decision")
+        self.assertLess(why, how)
+        self.assertLess(how, what)
+        hero = home.split('<header class="hero wrap">', 1)[1].split("</header>", 1)[0]
+        self.assertEqual(hero.count('class="btn primary"'), 1)
+        self.assertIn("zero accepted outside outcomes", hero)
+        self.assertNotIn('class="ledger-lede', hero)
 
     def test_atlas_generator_check_binds_full_provenance_payload(self) -> None:
         payload = atlas_builder.build_payload()
@@ -696,7 +734,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         )
 
         catalog = manifest["catalog_contract"]
-        self.assertEqual(catalog["schema"], "emergentism/book-manifest/v1")
+        self.assertEqual(catalog["schema"], "emergentism/book-manifest/v2")
         self.assertEqual(catalog["path"], "13_BOOKS/book-manifest.json")
         self.assertEqual(catalog["release_state"], "source_active_current_public_reader")
         self.assertEqual(catalog["public_route"], "../12_PUBLIC_SITE/book/index.html")

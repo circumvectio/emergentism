@@ -157,7 +157,7 @@ plasticity in any single case.
 **Type.** Mechanistic.
 
 **Does it add prediction?** *Yes — and the parent pack's §6.4 already half-uses
-it.* The L4-collapse rival (Agentz and Skyzai both at L4) is, under character
+it.* The specific L4-collapse rival defined in that parent section is, under character
 displacement, a *predicted active divergence*: overlapping functions in contact
 show either competition or displacement. Character displacement names the
 mechanism by which Gause's exclusion is *avoided* — the two functions diverge
@@ -331,8 +331,8 @@ Translated under `[I]`: when two functions compete for the same bounded resource
 (attention, compute, authority), the one that can operate at the lower resource
 floor drives the other out. **This is a refinement of the parent pack's Gause
 entry** — it predicts the *direction* of exclusion, not just its occurrence.
-For the L4-collapse rival (Agentz/Skyzai), R\* predicts the survivor is whichever
-execution surface can stage changes at the lower authority/compute floor.
+For the two surfaces in that specific L4-collapse rival, R\* predicts the survivor
+is whichever execution surface can stage changes at the lower authority/compute floor.
 
 **Kill criterion.** KILLED if "resource" is read as biological (nutrient,
 light). Survives as `[I]` image for *bounded-stack-resource competition*

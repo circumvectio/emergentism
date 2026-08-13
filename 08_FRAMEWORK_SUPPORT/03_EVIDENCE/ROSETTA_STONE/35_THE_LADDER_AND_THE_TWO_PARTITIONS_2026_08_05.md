@@ -157,8 +157,9 @@ mirror test.
 Confirmed in the runtime binding at
 `08_AGENTS/MANAGED_AGENTS/agents/01_candala_firewall.agent.yaml:75` —
 `"operational (L1-L4 deployable; L5-L7 Executive witness)"` — and audited as
-earned `[S]` at `00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_
-EVIDENCE_AUDIT_2026_07_20.md` row 21.
+earned `[S]` in the
+[dated L2 claim-vs-evidence audit](../../../00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md),
+row 21.
 
 So the asymmetry is **documented, reasoned, and deliberate**, and it is exactly
 the `4+3` partition of §4 asserting itself against the `3+1+3` one. It is not a

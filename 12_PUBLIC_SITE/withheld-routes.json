@@ -20,12 +20,29 @@
         "/app/",
         "/app.html"
       ],
-      "reason": "Historical application-era interface; not a current Emergentism public surface."
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "atlas/index.html",
+      "sha256": "d8dda583b6f8b57cf7fa7ddfe0a3c3a3be92cb48ae8f4e49bb9453ce7eb70208",
+      "bytes": 23557,
+      "publicRoutes": [
+        "/atlas",
+        "/atlas/",
+        "/atlas/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
     },
     {
       "artifact": "axiology/index.html",
-      "sha256": "912236b8bf678fd09b5322aa7f7711738d25efcfc67e5830dd99f744fe716062",
-      "bytes": 5304,
+      "sha256": "6edc020ace378bc5a91587ffc96ba5af28ee21061388a4a496e1948819e2d6ad",
+      "bytes": 5945,
       "publicRoutes": [
         "/axiology",
         "/axiology/",
@@ -37,28 +54,60 @@
       ]
     },
     {
+      "artifact": "build/index.html",
+      "sha256": "34e5ba1b30a84f6dd36df90d58faa795399973b8deacde3d6bee91a859927026",
+      "bytes": 22879,
+      "publicRoutes": [
+        "/build",
+        "/build/",
+        "/build/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
       "artifact": "burrisphere/index.html",
-      "sha256": "aa57aa71ed72aebcc24fdfd34f6d386a1f9e89ef318a7345569378017780cd57",
-      "bytes": 25665,
+      "sha256": "2dfdbdf662625f66e1119ec3037c82f376213edd77fee3acb647dd5ef2d3d399",
+      "bytes": 25692,
       "publicRoutes": [
         "/burrisphere",
         "/burrisphere/",
         "/burrisphere/index.html"
       ],
-      "reason": "Historical mixed-register synthesis; preserved as provenance, withheld pending a current source-purity review."
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "canon/index.html",
+      "sha256": "d20cbdd1bdc3cc4defb85b1dd1353724b02bdbf689896459c0e60c341f7dfda5",
+      "bytes": 5996,
+      "publicRoutes": [
+        "/canon",
+        "/canon/",
+        "/canon/index.html"
+      ],
+      "reason": "matches public semantic prohibition: stale current 25-chapter reader.",
+      "policyRuleIds": [
+        "semantic-stale-current-25-chapter-reader"
+      ]
     },
     {
       "artifact": "canon/the-burrisphere/index.html",
-      "sha256": "8bf9b05b1303d907ae27ec4c36dea522920fbadb4216295f34016ac6c06b8a5c",
-      "bytes": 35085,
+      "sha256": "20a53c000bf7881865f086a9f5fd5f350ed1c9adff641df172b07490d65bd687",
+      "bytes": 37092,
       "publicRoutes": [
         "/canon/the-burrisphere",
         "/canon/the-burrisphere/",
         "/canon/the-burrisphere/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
-        "retired-product-derived-ethics"
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
       ],
       "manifestDocument": {
         "section": "canon",
@@ -67,27 +116,35 @@
     },
     {
       "artifact": "canon/the-complete-ontology-of-reality/index.html",
-      "sha256": "972b3ef1cd7139af19c25b6de5e387ab9b49ac2b96d033c7e3fecf610ba9b779",
-      "bytes": 35699,
+      "sha256": "ad1018736fd14379622a0435b76a6c0df6211441f94a1b2fb4d6fd124968f6e0",
+      "bytes": 35689,
       "publicRoutes": [
         "/canon/the-complete-ontology-of-reality",
         "/canon/the-complete-ontology-of-reality/",
         "/canon/the-complete-ontology-of-reality/index.html"
       ],
-      "reason": "Frozen generated projection whose title and closure claims exceed the current evidence-open public boundary."
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
+      ]
     },
     {
       "artifact": "canon/the-five-plus-one-constitution/index.html",
-      "sha256": "8db3f503a6dc4cf508c74e738e59ead5d83139454c265fb64fbff4e4c9365fe7",
-      "bytes": 26520,
+      "sha256": "6b6b6f71492c6b80ac5538bf11b98faf9beb6303925dc87f12edc2886750aeb6",
+      "bytes": 28471,
       "publicRoutes": [
         "/canon/the-five-plus-one-constitution",
         "/canon/the-five-plus-one-constitution/",
         "/canon/the-five-plus-one-constitution/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "canon",
@@ -96,16 +153,17 @@
     },
     {
       "artifact": "canon/the-generative-table/index.html",
-      "sha256": "fda9f7dee042040417227eb6368c53a4a69e8e9bdb60a1023b7f7a2bc61ea508",
-      "bytes": 20746,
+      "sha256": "184ff94054c1cf89a08eab0ecce4ca2b6a1a1fd67b8ee5784ecbd407abb1a1c1",
+      "bytes": 22744,
       "publicRoutes": [
         "/canon/the-generative-table",
         "/canon/the-generative-table/",
         "/canon/the-generative-table/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "canon",
@@ -114,16 +172,18 @@
     },
     {
       "artifact": "canon/the-geometric-ontology-of-reality/index.html",
-      "sha256": "21a969b8351092d587e830bda25e10c9b6e3224929fd73396a50273a3b619daa",
-      "bytes": 30216,
+      "sha256": "f054fd303539d10b1888d1ae230b37e4ede2de37b7bf2f95cfa20e4b0fdb3639",
+      "bytes": 32244,
       "publicRoutes": [
         "/canon/the-geometric-ontology-of-reality",
         "/canon/the-geometric-ontology-of-reality/",
         "/canon/the-geometric-ontology-of-reality/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "canon",
@@ -131,83 +191,135 @@
       }
     },
     {
-      "artifact": "canon/the-ontology-index/index.html",
-      "sha256": "fdd06bb9f3c004c59e5ccd809f414fa4adc80138e4be44e918fe25e971d60b05",
-      "bytes": 19131,
+      "artifact": "canon/the-reciprocal-public-edition/index.html",
+      "sha256": "d6f78c4f131475ba1de078ea4ea141e1ac1c6cc629f908be366513814f06b080",
+      "bytes": 691594,
       "publicRoutes": [
-        "/canon/the-ontology-index",
-        "/canon/the-ontology-index/",
-        "/canon/the-ontology-index/index.html"
+        "/canon/the-reciprocal-public-edition",
+        "/canon/the-reciprocal-public-edition/",
+        "/canon/the-reciprocal-public-edition/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: stale current 25-chapter reader.",
       "policyRuleIds": [
-        "retired-product-derived-ethics"
+        "semantic-application-authority-leakage",
+        "semantic-retired-node-product-assignment",
+        "semantic-stale-current-25-chapter-reader"
       ],
       "manifestDocument": {
         "section": "canon",
-        "href": "canon/the-ontology-index/"
+        "href": "canon/the-reciprocal-public-edition/"
       }
     },
     {
+      "artifact": "compass/_archive/index_2026_07_12_pre_restructure.html",
+      "sha256": "f181300c0d8475652ca5597a1982d19f2063b262a30d327851bd012e40f60e62",
+      "bytes": 11670,
+      "publicRoutes": [
+        "/compass/_archive/index_2026_07_12_pre_restructure",
+        "/compass/_archive/index_2026_07_12_pre_restructure/",
+        "/compass/_archive/index_2026_07_12_pre_restructure.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
       "artifact": "complete-ontology/index.html",
-      "sha256": "8a18e0c39d43f49b4fdf602e24a27ec88822d6348c94fd4e7d2b9543663e2ced",
-      "bytes": 35658,
+      "sha256": "d8341789d38002808957af7a4908a55155d8a724df8fb47ff60afcfaa3ef15d3",
+      "bytes": 35651,
       "publicRoutes": [
         "/complete-ontology",
         "/complete-ontology/",
         "/complete-ontology/index.html"
       ],
-      "reason": "Historical total-ontology presentation; preserved as provenance, withheld from current public delivery."
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
+      ]
+    },
+    {
+      "artifact": "corrections/index.html",
+      "sha256": "3bcb1493652f21056dd62fe356b06c200750ebf21a3dadf40338915fdb2d5112",
+      "bytes": 14022,
+      "publicRoutes": [
+        "/corrections",
+        "/corrections/",
+        "/corrections/index.html"
+      ],
+      "reason": "matches public semantic prohibition: legacy untyped node product; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-legacy-untyped-node-product"
+      ]
     },
     {
       "artifact": "dasein/index.html",
-      "sha256": "485968aaa9e2d29344c35bc020056b3891626ab3381c412068cfa60fc7986946",
-      "bytes": 33575,
+      "sha256": "ac210a95500b78dbec1bdaa9b70d4485a93b584a4dd70a99ad6aa30e1efb5250",
+      "bytes": 33568,
       "publicRoutes": [
         "/dasein",
         "/dasein/",
         "/dasein/index.html"
       ],
-      "reason": "Historical mixed-register ontology argument; preserved as provenance, withheld pending a current public-purity review."
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
+      ]
     },
     {
       "artifact": "finity-papers/index.html",
-      "sha256": "4331c7319046d67f5775c58accd024a1cc78908b0eba7579f6d1f3b01d2ce9f9",
-      "bytes": 15278,
+      "sha256": "d4c9638715053535711094878ff4f9ea40e3280ea7b7a58b8c9221d13515bddd",
+      "bytes": 16011,
       "publicRoutes": [
         "/finity-papers",
         "/finity-papers/",
         "/finity-papers/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic.",
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "explicit-legacy-route",
-        "retired-product-derived-ethics"
+        "retired-product-derived-ethics",
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
       ]
     },
     {
       "artifact": "five-plus-one/index.html",
-      "sha256": "31397490a4bf28a70110c904fd2dabf0b6347e5b498ed336001999190bdfcc05",
-      "bytes": 27049,
+      "sha256": "be524a8206788e8685aba09e73ed9f11cb0c67acdff99f266b2c7eb782747d59",
+      "bytes": 27046,
       "publicRoutes": [
         "/five-plus-one",
         "/five-plus-one/",
         "/five-plus-one/index.html"
       ],
-      "reason": "Historical governance-language projection; preserved as provenance, withheld from the pure Emergentism public surface."
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
+      ]
     },
     {
       "artifact": "formal/00-the-seven-axioms/index.html",
-      "sha256": "3c77cfb802b9eabb15be7fe80b22ff84c9c7339a2dff075695b44956e1c5190b",
-      "bytes": 22765,
+      "sha256": "778ca2415d889d331303f09b1c031b3e75b638779d2bbab813b8cb5e620a9545",
+      "bytes": 24748,
       "publicRoutes": [
         "/formal/00-the-seven-axioms",
         "/formal/00-the-seven-axioms/",
         "/formal/00-the-seven-axioms/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "formal",
@@ -215,17 +327,36 @@
       }
     },
     {
+      "artifact": "formal/08-efr-power-max-lemma/index.html",
+      "sha256": "cfa23bc931f0bda794bbd18c6a85eb3c4f79d849b033d88f80502bc96b654483",
+      "bytes": 20481,
+      "publicRoutes": [
+        "/formal/08-efr-power-max-lemma",
+        "/formal/08-efr-power-max-lemma/",
+        "/formal/08-efr-power-max-lemma/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/08-efr-power-max-lemma/"
+      }
+    },
+    {
       "artifact": "formal/11-efr-triadic-stability/index.html",
-      "sha256": "cfab186e98947b9f39f6b93c09dac5d96e2d4d383b9679845f127be9f605678d",
-      "bytes": 15247,
+      "sha256": "004f791b6f3284fb5bcd72c4635c84631e81f697afd64e03a4069c801dca91b2",
+      "bytes": 17290,
       "publicRoutes": [
         "/formal/11-efr-triadic-stability",
         "/formal/11-efr-triadic-stability/",
         "/formal/11-efr-triadic-stability/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "formal",
@@ -233,17 +364,145 @@
       }
     },
     {
+      "artifact": "formal/16-efr-transcendentals/index.html",
+      "sha256": "6f7db314e1c9726b6b24c857a6c08e03d36f2fc8885f39fe18e259ae4a20ce1e",
+      "bytes": 26343,
+      "publicRoutes": [
+        "/formal/16-efr-transcendentals",
+        "/formal/16-efr-transcendentals/",
+        "/formal/16-efr-transcendentals/index.html"
+      ],
+      "reason": "matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/16-efr-transcendentals/"
+      }
+    },
+    {
+      "artifact": "formal/20-efr-operators-on-complex-plane/index.html",
+      "sha256": "2f9084a43fc4a67e02e2e4115b64c9db4c2e21c54d24a87ed1630fb8171d4411",
+      "bytes": 23823,
+      "publicRoutes": [
+        "/formal/20-efr-operators-on-complex-plane",
+        "/formal/20-efr-operators-on-complex-plane/",
+        "/formal/20-efr-operators-on-complex-plane/index.html"
+      ],
+      "reason": "matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/20-efr-operators-on-complex-plane/"
+      }
+    },
+    {
+      "artifact": "formal/21-triadic-stability-correspondence/index.html",
+      "sha256": "3609e6fc26a14f188b51b73a83821db04aaf07f125308bc3554445b432b17497",
+      "bytes": 22117,
+      "publicRoutes": [
+        "/formal/21-triadic-stability-correspondence",
+        "/formal/21-triadic-stability-correspondence/",
+        "/formal/21-triadic-stability-correspondence/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/21-triadic-stability-correspondence/"
+      }
+    },
+    {
+      "artifact": "formal/23-dimensional-closure-proof/index.html",
+      "sha256": "0d420ed35d81749ac4cf3c3331c5a64e02dbc9bfc3a716ceea1a960a86373e36",
+      "bytes": 33798,
+      "publicRoutes": [
+        "/formal/23-dimensional-closure-proof",
+        "/formal/23-dimensional-closure-proof/",
+        "/formal/23-dimensional-closure-proof/index.html"
+      ],
+      "reason": "matches public semantic prohibition: literal D6 identity.",
+      "policyRuleIds": [
+        "semantic-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/23-dimensional-closure-proof/"
+      }
+    },
+    {
+      "artifact": "formal/27-dimensional-architecture-clarification/index.html",
+      "sha256": "3524664f7ca0c2e7ae10ea6c734636073c66046f834411c64bd7c430f24bd8bf",
+      "bytes": 21221,
+      "publicRoutes": [
+        "/formal/27-dimensional-architecture-clarification",
+        "/formal/27-dimensional-architecture-clarification/",
+        "/formal/27-dimensional-architecture-clarification/index.html"
+      ],
+      "reason": "matches public semantic prohibition: quantum dimensional stacking.",
+      "policyRuleIds": [
+        "semantic-quantum-dimensional-stacking"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/27-dimensional-architecture-clarification/"
+      }
+    },
+    {
+      "artifact": "formal/31-falsifiers-index/index.html",
+      "sha256": "b53dcea50b1ade8208ae8e709f000c873042d43b9c286c203457b51805cf1b30",
+      "bytes": 22439,
+      "publicRoutes": [
+        "/formal/31-falsifiers-index",
+        "/formal/31-falsifiers-index/",
+        "/formal/31-falsifiers-index/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/31-falsifiers-index/"
+      }
+    },
+    {
+      "artifact": "formal/33-nash-equilibrium-eta-zero/index.html",
+      "sha256": "d7d87795d38ce6bcaff0bed1f2adf3e1e6703c3aa03ab4ca2f047cb161aa23a7",
+      "bytes": 44188,
+      "publicRoutes": [
+        "/formal/33-nash-equilibrium-eta-zero",
+        "/formal/33-nash-equilibrium-eta-zero/",
+        "/formal/33-nash-equilibrium-eta-zero/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/33-nash-equilibrium-eta-zero/"
+      }
+    },
+    {
       "artifact": "formal/34-d4-d5-canonical-reference/index.html",
-      "sha256": "aa783521dc48c5cbd7b10689f19ffff549c598c7e78ead6e38f8f27654a8665e",
-      "bytes": 39285,
+      "sha256": "1a437b4ee2b01bdb63fe95155261bfe5499d32b2de4a037d49e034b1345e0fd4",
+      "bytes": 41427,
       "publicRoutes": [
         "/formal/34-d4-d5-canonical-reference",
         "/formal/34-d4-d5-canonical-reference/",
         "/formal/34-d4-d5-canonical-reference/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "formal",
@@ -251,17 +510,91 @@
       }
     },
     {
+      "artifact": "formal/35-phi-meter-v1-spec/index.html",
+      "sha256": "2bdf750ea2450dae0b1bf38576a71d69917263b8ca94b2a99f4cbac3a08c94ac",
+      "bytes": 29275,
+      "publicRoutes": [
+        "/formal/35-phi-meter-v1-spec",
+        "/formal/35-phi-meter-v1-spec/",
+        "/formal/35-phi-meter-v1-spec/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/35-phi-meter-v1-spec/"
+      }
+    },
+    {
+      "artifact": "formal/36-runtime-lens-v1-spec/index.html",
+      "sha256": "0760836460744965289630ea7cbb63a270bbf77fecdb76af61585b94d9873bc0",
+      "bytes": 24668,
+      "publicRoutes": [
+        "/formal/36-runtime-lens-v1-spec",
+        "/formal/36-runtime-lens-v1-spec/",
+        "/formal/36-runtime-lens-v1-spec/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/36-runtime-lens-v1-spec/"
+      }
+    },
+    {
+      "artifact": "formal/38-quantum-foundations-confirmation-boundary/index.html",
+      "sha256": "93d37b7620d874e775dc1a33f10101307016184ec1916a4def13c968387e6716",
+      "bytes": 15587,
+      "publicRoutes": [
+        "/formal/38-quantum-foundations-confirmation-boundary",
+        "/formal/38-quantum-foundations-confirmation-boundary/",
+        "/formal/38-quantum-foundations-confirmation-boundary/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/38-quantum-foundations-confirmation-boundary/"
+      }
+    },
+    {
+      "artifact": "formal/41-unified-dimensional-derivation/index.html",
+      "sha256": "af13b7ac22d6cedd13f03262d2dde9ee5e3edcadf1f2122dffb6ad93f40921fc",
+      "bytes": 28640,
+      "publicRoutes": [
+        "/formal/41-unified-dimensional-derivation",
+        "/formal/41-unified-dimensional-derivation/",
+        "/formal/41-unified-dimensional-derivation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/41-unified-dimensional-derivation/"
+      }
+    },
+    {
       "artifact": "foundations/ontology-across-dimensions/index.html",
-      "sha256": "fffdd5f1bbf64bd744f3b236b5847559dac97919dcb17d756dfbcbb359069f28",
-      "bytes": 32768,
+      "sha256": "dffbd3a1935b20aff8ad33663c00f46cc1247e12da2e5b18a353797d09ee230a",
+      "bytes": 34812,
       "publicRoutes": [
         "/foundations/ontology-across-dimensions",
         "/foundations/ontology-across-dimensions/",
         "/foundations/ontology-across-dimensions/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "foundations",
@@ -269,17 +602,37 @@
       }
     },
     {
+      "artifact": "foundations/the-honest-position/index.html",
+      "sha256": "a453d55dfed1a3a9417fdda4ea44a0b4d13feda99b4a423b46471be43253f8c1",
+      "bytes": 69315,
+      "publicRoutes": [
+        "/foundations/the-honest-position",
+        "/foundations/the-honest-position/",
+        "/foundations/the-honest-position/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "foundations",
+        "href": "foundations/the-honest-position/"
+      }
+    },
+    {
       "artifact": "foundations/the-seven-generative-actions-and-ektropy/index.html",
-      "sha256": "82a04fd4fcfb055e99a1a2c4e83713161a677e2bb069760510f61dd417754178",
-      "bytes": 29839,
+      "sha256": "8a17f2b2e08baed8de6b3ceeb03dbd01d56ab8f79f4cc987e258f0e86b900540",
+      "bytes": 31979,
       "publicRoutes": [
         "/foundations/the-seven-generative-actions-and-ektropy",
         "/foundations/the-seven-generative-actions-and-ektropy/",
         "/foundations/the-seven-generative-actions-and-ektropy/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "foundations",
@@ -287,46 +640,70 @@
       }
     },
     {
+      "artifact": "foundations/the-seven-ologies-per-the-rosetta/index.html",
+      "sha256": "a785a3339e90c77ea64f75b2a899f95e4814d506e5f05f939d4649bfc9e4a11a",
+      "bytes": 17577,
+      "publicRoutes": [
+        "/foundations/the-seven-ologies-per-the-rosetta",
+        "/foundations/the-seven-ologies-per-the-rosetta/",
+        "/foundations/the-seven-ologies-per-the-rosetta/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "foundations",
+        "href": "foundations/the-seven-ologies-per-the-rosetta/"
+      }
+    },
+    {
       "artifact": "game/index.html",
-      "sha256": "eb232a42a970e3ca5cc88bac375398e49fb9024a923e407e99e565518efb8088",
-      "bytes": 28703,
+      "sha256": "fa39f60a17b3b95cd79296ae73444e942e3f8494be1f63234ef4722ee3b2e3d6",
+      "bytes": 29499,
       "publicRoutes": [
         "/game",
         "/game/",
         "/game/index.html"
       ],
-      "reason": "Historical Game route scores lawful action through the retired uncalibrated node product.",
+      "reason": "Historical Game route scores lawful action through the retired uncalibrated node product; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "explicit-legacy-route"
+        "explicit-legacy-route",
+        "semantic-application-authority-leakage"
       ]
     },
     {
       "artifact": "geometric-ontology/index.html",
-      "sha256": "8f1614b354603130d7eb63a35ca20342420629e8fd3e32739e1c3fee38abe7e1",
-      "bytes": 27827,
+      "sha256": "4727c7230f74d77d96be0c92a4fec14647de0a8307f9a91f84d122edfb8432ec",
+      "bytes": 28569,
       "publicRoutes": [
         "/geometric-ontology",
         "/geometric-ontology/",
         "/geometric-ontology/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics.",
+      "reason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ]
     },
     {
       "artifact": "ground/00-d5-d6-corpus-stabilization/index.html",
-      "sha256": "467e75fa38b683ae485a1f25503fd1ba3d1e0b3a74222413747361782be59581",
-      "bytes": 11393,
+      "sha256": "7d1ae6d852c86e565e00bf3e7ca39f14242db077963839db511d6fd711fa91e0",
+      "bytes": 13461,
       "publicRoutes": [
         "/ground/00-d5-d6-corpus-stabilization",
         "/ground/00-d5-d6-corpus-stabilization/",
         "/ground/00-d5-d6-corpus-stabilization/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "ground",
@@ -335,16 +712,17 @@
     },
     {
       "artifact": "ground/00-d6-as-apophatic-closure/index.html",
-      "sha256": "9810532f5b0b42f36d239be98703c31e46cff7b62e5b5fcbb4a01386db3187d8",
-      "bytes": 15129,
+      "sha256": "eae13d5698789ff86899c84feca4c6377fbfdb343508a521976b095aae3cbb90",
+      "bytes": 17195,
       "publicRoutes": [
         "/ground/00-d6-as-apophatic-closure",
         "/ground/00-d6-as-apophatic-closure/",
         "/ground/00-d6-as-apophatic-closure/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "ground",
@@ -353,16 +731,17 @@
     },
     {
       "artifact": "ground/00-ontology-across-dimensions/index.html",
-      "sha256": "22ebc251e8339688ed4cc108f0fb51040d3c3f0f1354e94205d1c462705a83cc",
-      "bytes": 33587,
+      "sha256": "3542b4fc29637f4b3367b8e740d770abc67c8b68ff926a87d10721e0b6732720",
+      "bytes": 35664,
       "publicRoutes": [
         "/ground/00-ontology-across-dimensions",
         "/ground/00-ontology-across-dimensions/",
         "/ground/00-ontology-across-dimensions/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "ground",
@@ -371,16 +750,18 @@
     },
     {
       "artifact": "ground/00-the-ontology-of-being/index.html",
-      "sha256": "fe1c0b904f57d86f5a43ce7cf3f7e8bf0c388574113eeff1cb25fc1d05213c03",
-      "bytes": 21745,
+      "sha256": "68e2b514ac20c46886196d46c1fbf5091759b9390a959c7fb8b25d12da900468",
+      "bytes": 23799,
       "publicRoutes": [
         "/ground/00-the-ontology-of-being",
         "/ground/00-the-ontology-of-being/",
         "/ground/00-the-ontology-of-being/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "ground",
@@ -388,45 +769,204 @@
       }
     },
     {
+      "artifact": "ground/00-the-syncretic-map/index.html",
+      "sha256": "fe7ead5202a39197e6f3be525fc9e2df15aca4646c1d58a29133b0adeb46c84d",
+      "bytes": 7854,
+      "publicRoutes": [
+        "/ground/00-the-syncretic-map",
+        "/ground/00-the-syncretic-map/",
+        "/ground/00-the-syncretic-map/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/00-the-syncretic-map/"
+      }
+    },
+    {
+      "artifact": "ground/01-apophatic-ground-and-field-structure/index.html",
+      "sha256": "9a3a67e93fcb2a79cb0c5e3137cd58e89f58a565238791b3f52c79b9b5d8e5ac",
+      "bytes": 20360,
+      "publicRoutes": [
+        "/ground/01-apophatic-ground-and-field-structure",
+        "/ground/01-apophatic-ground-and-field-structure/",
+        "/ground/01-apophatic-ground-and-field-structure/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/01-apophatic-ground-and-field-structure/"
+      }
+    },
+    {
+      "artifact": "halahala/index.html",
+      "sha256": "a8daf5e1d59d298ec8ff77020d5a6244b15aa0a5c06c3bbe21359bcf7255647b",
+      "bytes": 36709,
+      "publicRoutes": [
+        "/halahala",
+        "/halahala/",
+        "/halahala/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-retired-node-product-assignment"
+      ]
+    },
+    {
       "artifact": "home/index.html",
-      "sha256": "375a9c7c0580068ac369376cb6e77d4fb4a83815877ca63108ce66ea2f675e3d",
-      "bytes": 43675,
+      "sha256": "84d54bebf962f500227cdd11a9dedd1a7901b570e5d6b1214ea1c0fd636797a1",
+      "bytes": 44489,
       "publicRoutes": [
         "/home",
         "/home/",
         "/home/index.html"
       ],
-      "reason": "Superseded alternate homepage carries the retired product-scored game rule.",
+      "reason": "Superseded alternate homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "explicit-legacy-route"
+        "explicit-legacy-route",
+        "semantic-application-authority-leakage"
       ]
     },
     {
       "artifact": "index_legacy_2026_07_19.html",
-      "sha256": "5467e7caba8241ed86ff1d098e08e4e678e60167582067e4edfc44ac9ebcf354",
-      "bytes": 43131,
+      "sha256": "711d81a3d2402bb5bc2341a0d42f26a6554d6e1d42294470cabb6e328c69c752",
+      "bytes": 43139,
       "publicRoutes": [
         "/index_legacy_2026_07_19",
         "/index_legacy_2026_07_19/",
         "/index_legacy_2026_07_19.html"
       ],
-      "reason": "Superseded root homepage carries the retired product-scored game rule.",
+      "reason": "Superseded root homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "explicit-legacy-route"
+        "explicit-legacy-route",
+        "semantic-application-authority-leakage"
       ]
     },
     {
+      "artifact": "log-realignment/index.html",
+      "sha256": "36ebdbfeb69dcc0a25d852551e6a0cc7f8953acddb4f7e4b655a56cd69ac3afc",
+      "bytes": 22667,
+      "publicRoutes": [
+        "/log-realignment",
+        "/log-realignment/",
+        "/log-realignment/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "memetic/01-memes-hardware-software-conflict/index.html",
+      "sha256": "3429c101da6cce141131351441fb735bf68e92886ae09f9516f7a214200b119c",
+      "bytes": 81816,
+      "publicRoutes": [
+        "/memetic/01-memes-hardware-software-conflict",
+        "/memetic/01-memes-hardware-software-conflict/",
+        "/memetic/01-memes-hardware-software-conflict/index.html"
+      ],
+      "reason": "matches public semantic prohibition: extra mu crossing.",
+      "policyRuleIds": [
+        "semantic-extra-mu-crossing"
+      ],
+      "manifestDocument": {
+        "section": "memetic",
+        "href": "memetic/01-memes-hardware-software-conflict/"
+      }
+    },
+    {
+      "artifact": "memetic/02-memes-hardware-software-evolution/index.html",
+      "sha256": "dbed65cd2a0ac7eb775d634e553714a257b1ff389e3c86598ccef61ac2780ab5",
+      "bytes": 92562,
+      "publicRoutes": [
+        "/memetic/02-memes-hardware-software-evolution",
+        "/memetic/02-memes-hardware-software-evolution/",
+        "/memetic/02-memes-hardware-software-evolution/index.html"
+      ],
+      "reason": "matches public semantic prohibition: extra mu crossing.",
+      "policyRuleIds": [
+        "semantic-extra-mu-crossing"
+      ],
+      "manifestDocument": {
+        "section": "memetic",
+        "href": "memetic/02-memes-hardware-software-evolution/"
+      }
+    },
+    {
+      "artifact": "memetic/03-memes-mind-hardware-culture-software/index.html",
+      "sha256": "48b9cab930b0eb4f31c7e12c32d7c50d55d726cbb78ca98c11a8b535e5d81e96",
+      "bytes": 84750,
+      "publicRoutes": [
+        "/memetic/03-memes-mind-hardware-culture-software",
+        "/memetic/03-memes-mind-hardware-culture-software/",
+        "/memetic/03-memes-mind-hardware-culture-software/index.html"
+      ],
+      "reason": "matches public semantic prohibition: extra mu crossing.",
+      "policyRuleIds": [
+        "semantic-extra-mu-crossing"
+      ],
+      "manifestDocument": {
+        "section": "memetic",
+        "href": "memetic/03-memes-mind-hardware-culture-software/"
+      }
+    },
+    {
+      "artifact": "memetic/06-applied-memetic-defense-strategies/index.html",
+      "sha256": "2f2394dc206acdbfbb8d814e609d6dc5c3d562f4f324bec9b3ffe67a0b78b24f",
+      "bytes": 60759,
+      "publicRoutes": [
+        "/memetic/06-applied-memetic-defense-strategies",
+        "/memetic/06-applied-memetic-defense-strategies/",
+        "/memetic/06-applied-memetic-defense-strategies/index.html"
+      ],
+      "reason": "matches public semantic prohibition: extra mu crossing.",
+      "policyRuleIds": [
+        "semantic-extra-mu-crossing"
+      ],
+      "manifestDocument": {
+        "section": "memetic",
+        "href": "memetic/06-applied-memetic-defense-strategies/"
+      }
+    },
+    {
+      "artifact": "meta/00-constitutional-invariants-o1-staging-2026-05-30/index.html",
+      "sha256": "f2e946037dbee07a9e35254e94d625b21a0d31d8392bb58ba02d7d3d8b81b52b",
+      "bytes": 22819,
+      "publicRoutes": [
+        "/meta/00-constitutional-invariants-o1-staging-2026-05-30",
+        "/meta/00-constitutional-invariants-o1-staging-2026-05-30/",
+        "/meta/00-constitutional-invariants-o1-staging-2026-05-30/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "meta",
+        "href": "meta/00-constitutional-invariants-o1-staging-2026-05-30/"
+      }
+    },
+    {
       "artifact": "meta/00-corpus/index.html",
-      "sha256": "e546c6f04dcb90756474772b116860fb88ce006c90ff7be628db07f9af89303f",
-      "bytes": 15392,
+      "sha256": "26397f465ef7d66f735c531d0b73565c584c309819f8501404ca6c37da10cc94",
+      "bytes": 17502,
       "publicRoutes": [
         "/meta/00-corpus",
         "/meta/00-corpus/",
         "/meta/00-corpus/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "meta",
@@ -434,20 +974,296 @@
       }
     },
     {
+      "artifact": "meta/00-known-unknowns-program/index.html",
+      "sha256": "3668130714420d806d315a80bbcc71d7a14f22b84f5e1209520d3b2b34cc8dbb",
+      "bytes": 15091,
+      "publicRoutes": [
+        "/meta/00-known-unknowns-program",
+        "/meta/00-known-unknowns-program/",
+        "/meta/00-known-unknowns-program/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "meta",
+        "href": "meta/00-known-unknowns-program/"
+      }
+    },
+    {
+      "artifact": "meta/00-what-is-actually-novel-here/index.html",
+      "sha256": "90c6134f9cd04a2a652e3d51f36f181e914a51e77a109e160996146545cffa8f",
+      "bytes": 14708,
+      "publicRoutes": [
+        "/meta/00-what-is-actually-novel-here",
+        "/meta/00-what-is-actually-novel-here/",
+        "/meta/00-what-is-actually-novel-here/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "meta",
+        "href": "meta/00-what-is-actually-novel-here/"
+      }
+    },
+    {
+      "artifact": "method/00-constitutional-science/index.html",
+      "sha256": "eb4fef0ca0c806c30e48fbac98ec8db78371de27f67a9c54dc36c72ba662988e",
+      "bytes": 10297,
+      "publicRoutes": [
+        "/method/00-constitutional-science",
+        "/method/00-constitutional-science/",
+        "/method/00-constitutional-science/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-constitutional-science/"
+      }
+    },
+    {
+      "artifact": "method/00-d5-as-the-research-engine/index.html",
+      "sha256": "4e095de75003dd1f54245b25b1b8247f14ab12515fe2d57a213bf4cd28e6a19a",
+      "bytes": 9787,
+      "publicRoutes": [
+        "/method/00-d5-as-the-research-engine",
+        "/method/00-d5-as-the-research-engine/",
+        "/method/00-d5-as-the-research-engine/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-d5-as-the-research-engine/"
+      }
+    },
+    {
+      "artifact": "method/00-equatorial-balance-maximum-prereg/index.html",
+      "sha256": "7e3d452ae8013dbdd41ebf78d61122d4a3409ef6c3e736de00760e8d36e29fb2",
+      "bytes": 32705,
+      "publicRoutes": [
+        "/method/00-equatorial-balance-maximum-prereg",
+        "/method/00-equatorial-balance-maximum-prereg/",
+        "/method/00-equatorial-balance-maximum-prereg/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-equatorial-balance-maximum-prereg/"
+      }
+    },
+    {
+      "artifact": "method/00-syntropic-known-unknowns-protocol/index.html",
+      "sha256": "baf542f19db7a873bb8dd6b109a1c1b8d5ea973b858ca75dcdde74961ba67b53",
+      "bytes": 36261,
+      "publicRoutes": [
+        "/method/00-syntropic-known-unknowns-protocol",
+        "/method/00-syntropic-known-unknowns-protocol/",
+        "/method/00-syntropic-known-unknowns-protocol/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-syntropic-known-unknowns-protocol/"
+      }
+    },
+    {
+      "artifact": "method/00-the-derivation/index.html",
+      "sha256": "a1b4c1e5267450e07b5c54fe86ba68b9fc2ce49ba95e1eb8a18d196fd738309c",
+      "bytes": 37508,
+      "publicRoutes": [
+        "/method/00-the-derivation",
+        "/method/00-the-derivation/",
+        "/method/00-the-derivation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-the-derivation/"
+      }
+    },
+    {
+      "artifact": "method/00-the-doctrinal-ladder/index.html",
+      "sha256": "fd65e78014b04abe4ddfcb84b84cfacdcf07a5db133a0a50b691f9bc407f1af4",
+      "bytes": 14101,
+      "publicRoutes": [
+        "/method/00-the-doctrinal-ladder",
+        "/method/00-the-doctrinal-ladder/",
+        "/method/00-the-doctrinal-ladder/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-the-doctrinal-ladder/"
+      }
+    },
+    {
+      "artifact": "method/00-what-actually-tests-the-theory/index.html",
+      "sha256": "2c9b2fb49df475a49efe7ec58bd24529ea1894bd9787b910279c2c05d5f79949",
+      "bytes": 26333,
+      "publicRoutes": [
+        "/method/00-what-actually-tests-the-theory",
+        "/method/00-what-actually-tests-the-theory/",
+        "/method/00-what-actually-tests-the-theory/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-what-actually-tests-the-theory/"
+      }
+    },
+    {
+      "artifact": "method/00-why-these-axioms/index.html",
+      "sha256": "694d7154bc81ef3c5e72c2a5d6cd15484f73871dc2d18f01b652641d75bce2d4",
+      "bytes": 17966,
+      "publicRoutes": [
+        "/method/00-why-these-axioms",
+        "/method/00-why-these-axioms/",
+        "/method/00-why-these-axioms/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/00-why-these-axioms/"
+      }
+    },
+    {
+      "artifact": "method/01-equatorial-balance-maximum-results-pilot/index.html",
+      "sha256": "baeb8ad5d1667b3b7d5de7014e96b04c7fdc4af49ba0770abc27f3745e8254bb",
+      "bytes": 12585,
+      "publicRoutes": [
+        "/method/01-equatorial-balance-maximum-results-pilot",
+        "/method/01-equatorial-balance-maximum-results-pilot/",
+        "/method/01-equatorial-balance-maximum-results-pilot/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/01-equatorial-balance-maximum-results-pilot/"
+      }
+    },
+    {
+      "artifact": "method/01-the-anumana-audit-protocol/index.html",
+      "sha256": "975ae91325edebbd38c68c7b614ca91f9e5b0b4b4cfd5fc5d0979dea60ce181e",
+      "bytes": 37790,
+      "publicRoutes": [
+        "/method/01-the-anumana-audit-protocol",
+        "/method/01-the-anumana-audit-protocol/",
+        "/method/01-the-anumana-audit-protocol/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/01-the-anumana-audit-protocol/"
+      }
+    },
+    {
+      "artifact": "method/02-macro-constraint-causal-emergence-prereg/index.html",
+      "sha256": "d54a8e1edc2145da18fcceac72032dac9673b9e1b169459981ef5442d10e009a",
+      "bytes": 16333,
+      "publicRoutes": [
+        "/method/02-macro-constraint-causal-emergence-prereg",
+        "/method/02-macro-constraint-causal-emergence-prereg/",
+        "/method/02-macro-constraint-causal-emergence-prereg/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/02-macro-constraint-causal-emergence-prereg/"
+      }
+    },
+    {
+      "artifact": "method/03-physics-to-biology-macro-constraint-run-sheet/index.html",
+      "sha256": "6bb95960f466d229da9290b5ae70d1786f836e25373a8bb03eaf2db5973861a2",
+      "bytes": 14909,
+      "publicRoutes": [
+        "/method/03-physics-to-biology-macro-constraint-run-sheet",
+        "/method/03-physics-to-biology-macro-constraint-run-sheet/",
+        "/method/03-physics-to-biology-macro-constraint-run-sheet/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "method",
+        "href": "method/03-physics-to-biology-macro-constraint-run-sheet/"
+      }
+    },
+    {
+      "artifact": "operators/mf-281-the-replicator-decomposition/index.html",
+      "sha256": "baf8e4b7a218faf772e00f45f2824476cecbddb7d493c2fe4458e39fd7ea61ab",
+      "bytes": 19476,
+      "publicRoutes": [
+        "/operators/mf-281-the-replicator-decomposition",
+        "/operators/mf-281-the-replicator-decomposition/",
+        "/operators/mf-281-the-replicator-decomposition/index.html"
+      ],
+      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-product-uniqueness-asserted-as-settled"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-281-the-replicator-decomposition/"
+      }
+    },
+    {
       "artifact": "operators/mf-283-the-orthogonality-theorem-v2/index.html",
-      "sha256": "b143bb4b742e682f8a84f21c08298b91cdfc1e5f3bf8d184af981460d1811a0b",
-      "bytes": 39699,
+      "sha256": "d01160801ccfaf31c62e1176f85e607eaa71c2070305fe689fb72f40e0d6edde",
+      "bytes": 39784,
       "publicRoutes": [
         "/operators/mf-283-the-orthogonality-theorem-v2",
         "/operators/mf-283-the-orthogonality-theorem-v2/",
         "/operators/mf-283-the-orthogonality-theorem-v2/index.html"
       ],
-      "reason": "Historical operator claim withheld pending a type-correct independent physics audit."
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity",
+        "semantic-retired-node-product-assignment"
+      ]
     },
     {
       "artifact": "operators/mf-285-dreams-are-unanchored-d5/index.html",
-      "sha256": "922b4dad5bc0d83359bbcbf76b27a11bf1bd078718cb89c971279c0db5c5721e",
-      "bytes": 20289,
+      "sha256": "82a95e1d4d4f136c5e82da1b496f9a73b769d1684ef980d4b18315da51522a4c",
+      "bytes": 20286,
       "publicRoutes": [
         "/operators/mf-285-dreams-are-unanchored-d5",
         "/operators/mf-285-dreams-are-unanchored-d5/",
@@ -456,9 +1272,27 @@
       "reason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance."
     },
     {
+      "artifact": "operators/mf-294-egregores-are-horn-networks/index.html",
+      "sha256": "8cc0bb1a0e58e5eda7d23a19e6942b90d131bb2753f83664b62d378b49da50e5",
+      "bytes": 24210,
+      "publicRoutes": [
+        "/operators/mf-294-egregores-are-horn-networks",
+        "/operators/mf-294-egregores-are-horn-networks/",
+        "/operators/mf-294-egregores-are-horn-networks/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-294-egregores-are-horn-networks/"
+      }
+    },
+    {
       "artifact": "operators/mf-296-gravity-is-time/index.html",
-      "sha256": "c426021efa4addafdc07f113d3d998be64fe7d4327e72581874d3c41e5ce17d8",
-      "bytes": 22579,
+      "sha256": "e39b303cc665b2831b9acade137dee433d22095c90b60d28ee37ab402ec62057",
+      "bytes": 22587,
       "publicRoutes": [
         "/operators/mf-296-gravity-is-time",
         "/operators/mf-296-gravity-is-time/",
@@ -468,8 +1302,8 @@
     },
     {
       "artifact": "operators/mf-298-dark-matter-is-mutual-information/index.html",
-      "sha256": "a625f4eaecd0535a347c241e3723a5d22957aa51b1840525fadfbc625d716173",
-      "bytes": 17791,
+      "sha256": "5cf0f1c29555713e2ad366a527258bcae90c237ecca9c4bf0f5994ae567094ca",
+      "bytes": 17788,
       "publicRoutes": [
         "/operators/mf-298-dark-matter-is-mutual-information",
         "/operators/mf-298-dark-matter-is-mutual-information/",
@@ -478,17 +1312,54 @@
       "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
     },
     {
+      "artifact": "operators/mf-301-photosynthesis-is-the-original-f5/index.html",
+      "sha256": "0e3e3d26e9f472f807f5e84c6ec4b8d4c605f71921da77df8867624dcd176a9c",
+      "bytes": 19988,
+      "publicRoutes": [
+        "/operators/mf-301-photosynthesis-is-the-original-f5",
+        "/operators/mf-301-photosynthesis-is-the-original-f5/",
+        "/operators/mf-301-photosynthesis-is-the-original-f5/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-301-photosynthesis-is-the-original-f5/"
+      }
+    },
+    {
+      "artifact": "operators/mf-63-mobius-operators/index.html",
+      "sha256": "4343cd29067b487a23edcb4aab234a7734e82257f0c0e20229e27ac3e79c9772",
+      "bytes": 22141,
+      "publicRoutes": [
+        "/operators/mf-63-mobius-operators",
+        "/operators/mf-63-mobius-operators/",
+        "/operators/mf-63-mobius-operators/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-63-mobius-operators/"
+      }
+    },
+    {
       "artifact": "operators/mf-65-curvature-transition/index.html",
-      "sha256": "ea6926d8a51d2b968f50e0fdc1b775bcbe584c681674804a6296c64bd1a01735",
-      "bytes": 19591,
+      "sha256": "96c3fb4471a68ca4f7f913d4212572657ffa1137a1931dc7e710e582c21d5a90",
+      "bytes": 21725,
       "publicRoutes": [
         "/operators/mf-65-curvature-transition",
         "/operators/mf-65-curvature-transition/",
         "/operators/mf-65-curvature-transition/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "operators",
@@ -496,17 +1367,51 @@
       }
     },
     {
+      "artifact": "operators/mf-66-mandelbrot-consciousness/index.html",
+      "sha256": "b4ff353e14ac8d539311e7f9f34af167eeda1963cb216c4ca97c448349c98e9e",
+      "bytes": 41950,
+      "publicRoutes": [
+        "/operators/mf-66-mandelbrot-consciousness",
+        "/operators/mf-66-mandelbrot-consciousness/",
+        "/operators/mf-66-mandelbrot-consciousness/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-66-mandelbrot-consciousness/"
+      }
+    },
+    {
+      "artifact": "papers/index.html",
+      "sha256": "478fc32f41c41eb09a8abe72cd0342fb2a31c9020841684b82c1d6be72d9fb0f",
+      "bytes": 13123,
+      "publicRoutes": [
+        "/papers",
+        "/papers/",
+        "/papers/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ]
+    },
+    {
       "artifact": "papers/paper-c-photon-unit-of-account/index.html",
-      "sha256": "9b4863d61766f8a87408f74e923956c37bf02ccc9846936beb727a92b1769a4e",
-      "bytes": 22829,
+      "sha256": "c4b75f3fbc51042dc8f9d8e95dc80b39763a4ef3db940dd53a635fc7efb280dc",
+      "bytes": 24862,
       "publicRoutes": [
         "/papers/paper-c-photon-unit-of-account",
         "/papers/paper-c-photon-unit-of-account/",
         "/papers/paper-c-photon-unit-of-account/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "papers",
@@ -515,16 +1420,17 @@
     },
     {
       "artifact": "papers/paper-h-dimensional-cosmological/index.html",
-      "sha256": "2a22b4fd2fa2b72f78a0c5f08430bde6377e8f4dd9c60560f98f45713957f431",
-      "bytes": 24490,
+      "sha256": "6e1ba30ba9d26db680e915a74d6be1b3e84e0e16613c6d6b684109c0abd7c4a0",
+      "bytes": 26565,
       "publicRoutes": [
         "/papers/paper-h-dimensional-cosmological",
         "/papers/paper-h-dimensional-cosmological/",
         "/papers/paper-h-dimensional-cosmological/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "papers",
@@ -532,20 +1438,223 @@
       }
     },
     {
+      "artifact": "papers/paper-i-known-unknowns-program/index.html",
+      "sha256": "6f8a404ec5a7caf6e152bc48174f41083a0cc2cfc33e211c7182b098e28a3dbe",
+      "bytes": 21438,
+      "publicRoutes": [
+        "/papers/paper-i-known-unknowns-program",
+        "/papers/paper-i-known-unknowns-program/",
+        "/papers/paper-i-known-unknowns-program/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-i-known-unknowns-program/"
+      }
+    },
+    {
+      "artifact": "papers/paper-i-the-two-faces-of-number/index.html",
+      "sha256": "4a42ddeea92035e9ade3f9e82ec8bef2309f879f84357f70fa9114d0e3ff4e00",
+      "bytes": 38917,
+      "publicRoutes": [
+        "/papers/paper-i-the-two-faces-of-number",
+        "/papers/paper-i-the-two-faces-of-number/",
+        "/papers/paper-i-the-two-faces-of-number/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-i-the-two-faces-of-number/"
+      }
+    },
+    {
+      "artifact": "papers/paper-ii-division-by-zero-as-category-correction/index.html",
+      "sha256": "0708ac0813ae745a8fc8caa7a0a5a033406aaf5c019fe85143d941d2cb402309",
+      "bytes": 63357,
+      "publicRoutes": [
+        "/papers/paper-ii-division-by-zero-as-category-correction",
+        "/papers/paper-ii-division-by-zero-as-category-correction/",
+        "/papers/paper-ii-division-by-zero-as-category-correction/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-ii-division-by-zero-as-category-correction/"
+      }
+    },
+    {
+      "artifact": "papers/paper-iii-a-product-constraint-as-a-structural-ethic/index.html",
+      "sha256": "90e9f17f8ea559d52ffb51e2e44f53d20f52f4ab894912dbbeaa29f05e038a73",
+      "bytes": 58128,
+      "publicRoutes": [
+        "/papers/paper-iii-a-product-constraint-as-a-structural-ethic",
+        "/papers/paper-iii-a-product-constraint-as-a-structural-ethic/",
+        "/papers/paper-iii-a-product-constraint-as-a-structural-ethic/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-iii-a-product-constraint-as-a-structural-ethic/"
+      }
+    },
+    {
+      "artifact": "papers/paper-o-strong-weak-emergence-d5/index.html",
+      "sha256": "58b4a0ce97f293c9f144e71bdea9e1a48b4ee40889269af494876ba41491243d",
+      "bytes": 19439,
+      "publicRoutes": [
+        "/papers/paper-o-strong-weak-emergence-d5",
+        "/papers/paper-o-strong-weak-emergence-d5/",
+        "/papers/paper-o-strong-weak-emergence-d5/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-o-strong-weak-emergence-d5/"
+      }
+    },
+    {
+      "artifact": "papers/paper-p-su3-obstruction-bare-s2/index.html",
+      "sha256": "6a8f8da193bbea6aaf72e6e33414b0a01c1669bd65266c01d70d97ea1aa8b177",
+      "bytes": 15171,
+      "publicRoutes": [
+        "/papers/paper-p-su3-obstruction-bare-s2",
+        "/papers/paper-p-su3-obstruction-bare-s2/",
+        "/papers/paper-p-su3-obstruction-bare-s2/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-p-su3-obstruction-bare-s2/"
+      }
+    },
+    {
+      "artifact": "papers/paper-t-anti-idolatry-at-scale/index.html",
+      "sha256": "1234803e978ed60d926544c9a435ddbbf2a3712956230e3e30c8db5b0f22070e",
+      "bytes": 12363,
+      "publicRoutes": [
+        "/papers/paper-t-anti-idolatry-at-scale",
+        "/papers/paper-t-anti-idolatry-at-scale/",
+        "/papers/paper-t-anti-idolatry-at-scale/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-t-anti-idolatry-at-scale/"
+      }
+    },
+    {
+      "artifact": "papers/paper-u-the-practice-bridge/index.html",
+      "sha256": "f50e20937dc5569f58282143bf505e1466d798607fdaa41a3b1f7471150d790b",
+      "bytes": 12138,
+      "publicRoutes": [
+        "/papers/paper-u-the-practice-bridge",
+        "/papers/paper-u-the-practice-bridge/",
+        "/papers/paper-u-the-practice-bridge/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-u-the-practice-bridge/"
+      }
+    },
+    {
+      "artifact": "papers/paper-v-steelman/index.html",
+      "sha256": "aafe4ae7fb6e19fd32ff5fd6317c237058efd609e97b4c31a54fc73e3dd08395",
+      "bytes": 38138,
+      "publicRoutes": [
+        "/papers/paper-v-steelman",
+        "/papers/paper-v-steelman/",
+        "/papers/paper-v-steelman/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-v-steelman/"
+      }
+    },
+    {
+      "artifact": "papers/paper-w-present-awareness-as-fulcrum/index.html",
+      "sha256": "6ff6e69c7ae081b67aa544ebceb9117bc3dd79aa377886c23fcc46316e776e5f",
+      "bytes": 12030,
+      "publicRoutes": [
+        "/papers/paper-w-present-awareness-as-fulcrum",
+        "/papers/paper-w-present-awareness-as-fulcrum/",
+        "/papers/paper-w-present-awareness-as-fulcrum/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-w-present-awareness-as-fulcrum/"
+      }
+    },
+    {
+      "artifact": "paradox/00-corpus/index.html",
+      "sha256": "195df2d8d38f0a5e01b8c44500cedd9852f2cac9a4b519633938fd30e0712be7",
+      "bytes": 14790,
+      "publicRoutes": [
+        "/paradox/00-corpus",
+        "/paradox/00-corpus/",
+        "/paradox/00-corpus/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "paradox",
+        "href": "paradox/00-corpus/"
+      }
+    },
+    {
       "artifact": "paradox/00-gardener-nexus/index.html",
-      "sha256": "8346d3b75e60d1e77be98e50ce61bc622b1aa51362dc0cfaeb973bddf319b91c",
-      "bytes": 31297,
+      "sha256": "f105d05fcae6430f14c21b3fd676134b640e29ee15b05f7e68316161cd912943",
+      "bytes": 33451,
       "publicRoutes": [
         "/paradox/00-gardener-nexus",
         "/paradox/00-gardener-nexus/",
         "/paradox/00-gardener-nexus/index.html"
       ],
-      "reason": "Historical universal-extraction synthesis; withheld while the active source is narrowed to a bounded causal pattern."
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
     },
     {
       "artifact": "paradox/00-the-extraction-pattern/index.html",
-      "sha256": "1d68d5e9704b9703c3f086a009fc500f004c2d8f0587f43213738095af4d5b71",
-      "bytes": 23841,
+      "sha256": "8f5ff9ec9641c009a6430d5d4f6b027289d89173530cd3c76d50924a762aa142",
+      "bytes": 25880,
       "publicRoutes": [
         "/paradox/00-the-extraction-pattern",
         "/paradox/00-the-extraction-pattern/",
@@ -554,9 +1663,27 @@
       "reason": "Stale generated projection of the extraction pattern; withheld until a bounded evidence-open public edition is rebuilt from its current source."
     },
     {
+      "artifact": "paradox/pd-12-measurement-problem/index.html",
+      "sha256": "c65521d19edc11318699bc9a496299df96fc12ad8a96cc3a75d02f14386657d3",
+      "bytes": 16431,
+      "publicRoutes": [
+        "/paradox/pd-12-measurement-problem",
+        "/paradox/pd-12-measurement-problem/",
+        "/paradox/pd-12-measurement-problem/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "paradox",
+        "href": "paradox/pd-12-measurement-problem/"
+      }
+    },
+    {
       "artifact": "paradox/pd-18-the-extraction-paradox/index.html",
-      "sha256": "6f4570a30d43a7ed17b02787d25bb2495ce915ba1063922cc720d3d9158db9d0",
-      "bytes": 18083,
+      "sha256": "f021e4f0ea4de3cf43316af43bed8a3712753f9e9d26657573a5ad27462fd33b",
+      "bytes": 20178,
       "publicRoutes": [
         "/paradox/pd-18-the-extraction-paradox",
         "/paradox/pd-18-the-extraction-paradox/",
@@ -566,16 +1693,17 @@
     },
     {
       "artifact": "paradox/pd-21-problem-of-death/index.html",
-      "sha256": "1b7ce456eb6ed724ab913908a04572684e25068b7cba030764d2fe52b38c3ae0",
-      "bytes": 12453,
+      "sha256": "d06a31ee7c257053ee47cf8de8daa356c21b6c51142b1a5cb86cc3033a540e2c",
+      "bytes": 14536,
       "publicRoutes": [
         "/paradox/pd-21-problem-of-death",
         "/paradox/pd-21-problem-of-death/",
         "/paradox/pd-21-problem-of-death/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "paradox",
@@ -584,8 +1712,8 @@
     },
     {
       "artifact": "paradox/pd-23-the-completion/index.html",
-      "sha256": "5c2d3209c1d33ebb48d8c2f655d7c8f197e014fd25a544afb00e5b7e3d9b2f2b",
-      "bytes": 11567,
+      "sha256": "e0b1af0a39af5d25e9d1ed74ea2199d304e6c1e78e1295eb7fc69c3f614a433e",
+      "bytes": 13683,
       "publicRoutes": [
         "/paradox/pd-23-the-completion",
         "/paradox/pd-23-the-completion/",
@@ -594,17 +1722,150 @@
       "reason": "Historical completion claim; withheld because the current programme remains evidence-open and non-total."
     },
     {
+      "artifact": "paradox/pd-25-bell-local-realism/index.html",
+      "sha256": "34daeaef43c25c4a7f41d055ffd050cab8a8dad9aa8fda03d4cbba8d2c8048ea",
+      "bytes": 14118,
+      "publicRoutes": [
+        "/paradox/pd-25-bell-local-realism",
+        "/paradox/pd-25-bell-local-realism/",
+        "/paradox/pd-25-bell-local-realism/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "paradox",
+        "href": "paradox/pd-25-bell-local-realism/"
+      }
+    },
+    {
+      "artifact": "r/0/index.html",
+      "sha256": "e502bd089b4f5db5a359c65e978858473499238c3f612a235df572dac0c9d9b7",
+      "bytes": 13717,
+      "publicRoutes": [
+        "/r/0",
+        "/r/0/",
+        "/r/0/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "r/1/index.html",
+      "sha256": "4625901e74e3f87201588cc8d29a68869fa1fb8dd895279e3d13f3ecda7e4227",
+      "bytes": 12698,
+      "publicRoutes": [
+        "/r/1",
+        "/r/1/",
+        "/r/1/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired evidence tier.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-retired-evidence-tier"
+      ]
+    },
+    {
+      "artifact": "r/2/index.html",
+      "sha256": "75268f83309f25ea8043ed1ac3546527fe19fa990a5c2f52ebbed5a648666043",
+      "bytes": 13849,
+      "publicRoutes": [
+        "/r/2",
+        "/r/2/",
+        "/r/2/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "r/3/index.html",
+      "sha256": "a177b9e787ee036dcf175a9404858d15d35923663cdca70dbbcba6c9de398a64",
+      "bytes": 13588,
+      "publicRoutes": [
+        "/r/3",
+        "/r/3/",
+        "/r/3/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "r/4/index.html",
+      "sha256": "ede3d027b4e1b9b9ad0a5feeb957fad5e3d7fde11474cd30b721da35492d8480",
+      "bytes": 12979,
+      "publicRoutes": [
+        "/r/4",
+        "/r/4/",
+        "/r/4/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "r/5/index.html",
+      "sha256": "ae0bee91d23e354ad61b8e2f91d0034bec281a5dc1a8d4d1750cf48fc43b2ae2",
+      "bytes": 17956,
+      "publicRoutes": [
+        "/r/5",
+        "/r/5/",
+        "/r/5/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "r/6/index.html",
+      "sha256": "a7ec307074679f81347420c00faf1212398629a3c86c73be3c99864fc79da861",
+      "bytes": 13358,
+      "publicRoutes": [
+        "/r/6",
+        "/r/6/",
+        "/r/6/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "rosetta-d-series/index.html",
+      "sha256": "70f1450cabbda8b1beeb95d2089bb19f453049cc49462ae419fdb65f95c00f88",
+      "bytes": 19530,
+      "publicRoutes": [
+        "/rosetta-d-series",
+        "/rosetta-d-series/",
+        "/rosetta-d-series/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
       "artifact": "rosettad/00-corpus/index.html",
-      "sha256": "5d25069350b4725c8e399b2e61f515d822b71aa9330cd50de14c6c15a841ef2a",
-      "bytes": 12594,
+      "sha256": "42c337e7932d98d9573b73048243300c556610baf02c9943aca383fa1e6e2ef3",
+      "bytes": 14785,
       "publicRoutes": [
         "/rosettad/00-corpus",
         "/rosettad/00-corpus/",
         "/rosettad/00-corpus/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "rosettad",
@@ -612,17 +1873,38 @@
       }
     },
     {
+      "artifact": "rosettad/00-suda-convergent-reciprocal-symmetry/index.html",
+      "sha256": "574fe6c70cb521e508f75fbaba958e74cd00d3bc846ccd9538f651b7b5da87de",
+      "bytes": 13833,
+      "publicRoutes": [
+        "/rosettad/00-suda-convergent-reciprocal-symmetry",
+        "/rosettad/00-suda-convergent-reciprocal-symmetry/",
+        "/rosettad/00-suda-convergent-reciprocal-symmetry/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/00-suda-convergent-reciprocal-symmetry/"
+      }
+    },
+    {
       "artifact": "rosettad/00-suda-value-extraction-deep-synthesis/index.html",
-      "sha256": "328175b1f1abe1429b3d369d12044a5cf38f5b108230179f6403ff5a1d790698",
-      "bytes": 25484,
+      "sha256": "dec23671380efc4559bd52ad66608bf6cb4655cdadd98f22698323a6132451fc",
+      "bytes": 27659,
       "publicRoutes": [
         "/rosettad/00-suda-value-extraction-deep-synthesis",
         "/rosettad/00-suda-value-extraction-deep-synthesis/",
         "/rosettad/00-suda-value-extraction-deep-synthesis/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "rosettad",
@@ -630,17 +1912,270 @@
       }
     },
     {
+      "artifact": "rosettad/00-the-seven-ologies-per-the-rosetta/index.html",
+      "sha256": "484973e4f5879b762c278a617506147e193171975c1036f5b07d50006b18e608",
+      "bytes": 16515,
+      "publicRoutes": [
+        "/rosettad/00-the-seven-ologies-per-the-rosetta",
+        "/rosettad/00-the-seven-ologies-per-the-rosetta/",
+        "/rosettad/00-the-seven-ologies-per-the-rosetta/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/00-the-seven-ologies-per-the-rosetta/"
+      }
+    },
+    {
+      "artifact": "rosettad/00-the-seven-philosophical-disciplines/index.html",
+      "sha256": "c08dbe66e941273ec167446baf7e9bc085081fb547791005a74c44ea7dda2658",
+      "bytes": 19980,
+      "publicRoutes": [
+        "/rosettad/00-the-seven-philosophical-disciplines",
+        "/rosettad/00-the-seven-philosophical-disciplines/",
+        "/rosettad/00-the-seven-philosophical-disciplines/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/00-the-seven-philosophical-disciplines/"
+      }
+    },
+    {
+      "artifact": "rosettad/02-rows-columns-deepening-2026-04-25/index.html",
+      "sha256": "af68d05ac76838aa4c6cd7afe5ecc3c97319d08e1fe0a26d4738fc9ba929f3a1",
+      "bytes": 15787,
+      "publicRoutes": [
+        "/rosettad/02-rows-columns-deepening-2026-04-25",
+        "/rosettad/02-rows-columns-deepening-2026-04-25/",
+        "/rosettad/02-rows-columns-deepening-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/02-rows-columns-deepening-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/03-rosetta-dac-operating-system/index.html",
+      "sha256": "af6ad71edcaf0fe6ec2c1fa3e067c0a0e08c8bc3d6cbc892a0d4ac7daf316381",
+      "bytes": 31926,
+      "publicRoutes": [
+        "/rosettad/03-rosetta-dac-operating-system",
+        "/rosettad/03-rosetta-dac-operating-system/",
+        "/rosettad/03-rosetta-dac-operating-system/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/03-rosetta-dac-operating-system/"
+      }
+    },
+    {
+      "artifact": "rosettad/04-deep-rumination-2026-04-25/index.html",
+      "sha256": "ebfc0a0baa9014c22e790c162657876774f0b2668b479fe8ccca5fb9fa181eeb",
+      "bytes": 18875,
+      "publicRoutes": [
+        "/rosettad/04-deep-rumination-2026-04-25",
+        "/rosettad/04-deep-rumination-2026-04-25/",
+        "/rosettad/04-deep-rumination-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/04-deep-rumination-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/06-structural-pressure-points-2026-04-25/index.html",
+      "sha256": "d61f87ea0efa53df9b8a85fe669d660e1ad51c07586675c05022155f0311921a",
+      "bytes": 23363,
+      "publicRoutes": [
+        "/rosettad/06-structural-pressure-points-2026-04-25",
+        "/rosettad/06-structural-pressure-points-2026-04-25/",
+        "/rosettad/06-structural-pressure-points-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/06-structural-pressure-points-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/10-cell-audit-schema-2026-04-25/index.html",
+      "sha256": "858c50e3a098f77b3b1e1ee9a1ef5cb3e66a299d14ccd2be7c08abc31b521e92",
+      "bytes": 18405,
+      "publicRoutes": [
+        "/rosettad/10-cell-audit-schema-2026-04-25",
+        "/rosettad/10-cell-audit-schema-2026-04-25/",
+        "/rosettad/10-cell-audit-schema-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/10-cell-audit-schema-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/11-cell-audit-seed-l4-center-2026-04-25/index.html",
+      "sha256": "ccd1d84e7ccc5961214eef1c9d8faf267e6ed523bb9fd612b8a8e5398ccae203",
+      "bytes": 21823,
+      "publicRoutes": [
+        "/rosettad/11-cell-audit-seed-l4-center-2026-04-25",
+        "/rosettad/11-cell-audit-seed-l4-center-2026-04-25/",
+        "/rosettad/11-cell-audit-seed-l4-center-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/11-cell-audit-seed-l4-center-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/13-column-cell-audit-economics-2026-04-25/index.html",
+      "sha256": "0e06a73472303dcfafa2e746418b46588834b89fa71ba92f79780540ea346f33",
+      "bytes": 14309,
+      "publicRoutes": [
+        "/rosettad/13-column-cell-audit-economics-2026-04-25",
+        "/rosettad/13-column-cell-audit-economics-2026-04-25/",
+        "/rosettad/13-column-cell-audit-economics-2026-04-25/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/13-column-cell-audit-economics-2026-04-25/"
+      }
+    },
+    {
+      "artifact": "rosettad/index.html",
+      "sha256": "cfd6df881f5fbdce2d4652b5d4f31d457c385904731fff3cd4847c154c742426",
+      "bytes": 10890,
+      "publicRoutes": [
+        "/rosettad",
+        "/rosettad/",
+        "/rosettad/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "rosettad/naming-doctrine/index.html",
+      "sha256": "a9ad0f34ebd943f99ede833c1cf5642bf21d2a84647bfe354eb7e250165385f9",
+      "bytes": 14105,
+      "publicRoutes": [
+        "/rosettad/naming-doctrine",
+        "/rosettad/naming-doctrine/",
+        "/rosettad/naming-doctrine/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/naming-doctrine/"
+      }
+    },
+    {
+      "artifact": "rosettad/rosetta-computation/index.html",
+      "sha256": "fc123fb9eef48b3f8fcc318f17892a308d5fc0e007725fc7bfe77985bb7c29f7",
+      "bytes": 13071,
+      "publicRoutes": [
+        "/rosettad/rosetta-computation",
+        "/rosettad/rosetta-computation/",
+        "/rosettad/rosetta-computation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/rosetta-computation/"
+      }
+    },
+    {
+      "artifact": "rosettad/rosetta-economics/index.html",
+      "sha256": "42b5d5c6e2b5641762d101923370ecaef5f101c8fe4f33fa1abeae3410053eec",
+      "bytes": 24046,
+      "publicRoutes": [
+        "/rosettad/rosetta-economics",
+        "/rosettad/rosetta-economics/",
+        "/rosettad/rosetta-economics/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/rosetta-economics/"
+      }
+    },
+    {
+      "artifact": "sacred/00-foreword/index.html",
+      "sha256": "e4fb9cfa4ac65f852da2b090e4fd55bc495c916983964dd4b8602cec899f09ec",
+      "bytes": 27577,
+      "publicRoutes": [
+        "/sacred/00-foreword",
+        "/sacred/00-foreword/",
+        "/sacred/00-foreword/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/00-foreword/"
+      }
+    },
+    {
       "artifact": "sacred/00-glossary/index.html",
-      "sha256": "b9f86ab1ac010db3d3370621dbee3d12b091be2c80a2135b638197b31222c022",
-      "bytes": 52232,
+      "sha256": "da69b9e40d37f09688124dfa79419b07901d9e7a4d821165f4cd42a2d2853574",
+      "bytes": 54241,
       "publicRoutes": [
         "/sacred/00-glossary",
         "/sacred/00-glossary/",
         "/sacred/00-glossary/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "sacred",
@@ -648,61 +2183,215 @@
       }
     },
     {
+      "artifact": "sacred/00-reconciliation-theorem-packet/index.html",
+      "sha256": "8e49cad2ed58bd57abb27146e5596e9a3057452b0dfc3ab0ebd6c715354eb644",
+      "bytes": 17214,
+      "publicRoutes": [
+        "/sacred/00-reconciliation-theorem-packet",
+        "/sacred/00-reconciliation-theorem-packet/",
+        "/sacred/00-reconciliation-theorem-packet/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/00-reconciliation-theorem-packet/"
+      }
+    },
+    {
+      "artifact": "sacred/00-the-pedagogy-of-becoming/index.html",
+      "sha256": "053726f60ca09059055f612cc81c86307a3708ff194290c8d24bfe89e90c1278",
+      "bytes": 9185,
+      "publicRoutes": [
+        "/sacred/00-the-pedagogy-of-becoming",
+        "/sacred/00-the-pedagogy-of-becoming/",
+        "/sacred/00-the-pedagogy-of-becoming/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/00-the-pedagogy-of-becoming/"
+      }
+    },
+    {
+      "artifact": "sacred/01-symbol-design-and-public-translation/index.html",
+      "sha256": "0f2a3d1bd2626e04733d5d447cb15ab285fa5d404a35049c9ead2c0391a1bcd1",
+      "bytes": 19966,
+      "publicRoutes": [
+        "/sacred/01-symbol-design-and-public-translation",
+        "/sacred/01-symbol-design-and-public-translation/",
+        "/sacred/01-symbol-design-and-public-translation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/01-symbol-design-and-public-translation/"
+      }
+    },
+    {
+      "artifact": "sacred/02-truth-order-and-niche-partition/index.html",
+      "sha256": "68dbd9a1dfe88556563287179319ae0ab5d120a55b85c8bd1c14475b9e28331c",
+      "bytes": 15336,
+      "publicRoutes": [
+        "/sacred/02-truth-order-and-niche-partition",
+        "/sacred/02-truth-order-and-niche-partition/",
+        "/sacred/02-truth-order-and-niche-partition/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/02-truth-order-and-niche-partition/"
+      }
+    },
+    {
+      "artifact": "saturation/index.html",
+      "sha256": "e5c16bc7cebabce9f7e8513fa6700cef0a5205d2a82fbfe47739cb5574e928d6",
+      "bytes": 136990,
+      "publicRoutes": [
+        "/saturation",
+        "/saturation/",
+        "/saturation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
       "artifact": "soul-loop/index.html",
-      "sha256": "91f9787c361fb011a8cecbd1824d1b8afefc887939f778ad0c97bf5fce77cdc9",
-      "bytes": 34407,
+      "sha256": "b87033d3bc5b8a12d94a7e2854c99a37af973f7b2377045b8047d9178601ddf1",
+      "bytes": 35080,
       "publicRoutes": [
         "/soul-loop",
         "/soul-loop/",
         "/soul-loop/index.html"
       ],
-      "reason": "Historical Soul Loop route turns the retired node product into an objective-dharma test.",
+      "reason": "Historical Soul Loop route turns the retired node product into an objective-dharma test; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "explicit-legacy-route"
+        "explicit-legacy-route",
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "sphere.html",
+      "sha256": "f2894cdb1b6167f243df98ce9c7b975c323dd222cb6fbae68c09747602eb1970",
+      "bytes": 24713,
+      "publicRoutes": [
+        "/sphere",
+        "/sphere/",
+        "/sphere.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ]
+    },
+    {
+      "artifact": "suda-notes/index.html",
+      "sha256": "38f36bdb8bec756afc3f4ffcb21480a6f5de15fdb3ea6bcddd4e2d6dfa88a555",
+      "bytes": 17855,
+      "publicRoutes": [
+        "/suda-notes",
+        "/suda-notes/",
+        "/suda-notes/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
       ]
     },
     {
       "artifact": "synthesis/index.html",
-      "sha256": "1756d3d2a0c067ab044bf717ca952db58c4faf3bb538cb173b83c2149830bc8c",
-      "bytes": 23230,
+      "sha256": "06744388b1987f4b7733dcc3ed612302a4196be7b1a54ef311a26f81027a1608",
+      "bytes": 24011,
       "publicRoutes": [
         "/synthesis",
         "/synthesis/",
         "/synthesis/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical synthesis derives an objective ethic from an uncalibrated product.",
+      "reason": "Historical synthesis derives an objective ethic from an uncalibrated product.",
       "policyRuleIds": [
-        "explicit-legacy-route",
-        "retired-product-derived-ethics"
+        "explicit-legacy-route"
       ]
     },
     {
       "artifact": "teleology/index.html",
-      "sha256": "2e9d3a89e171c8230bd5dc6cf31af29e02106493b64bb3b3faf89a99514fa960",
-      "bytes": 5070,
+      "sha256": "02a7293baa0938cb6a4e743bd1fa494382f7847570df418a9e26aceb50975ea6",
+      "bytes": 5874,
       "publicRoutes": [
         "/teleology",
         "/teleology/",
         "/teleology/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical teleology route couples an uncalibrated product to an objective-dharma rule.",
+      "reason": "Historical teleology route couples an uncalibrated product to an objective-dharma rule.",
       "policyRuleIds": [
-        "explicit-legacy-route",
-        "retired-product-derived-ethics"
+        "explicit-legacy-route"
+      ]
+    },
+    {
+      "artifact": "test/index.html",
+      "sha256": "85ac5d4616da399a3b71c910d9abe5a51192287e30713693ed64a2d765d465fb",
+      "bytes": 25399,
+      "publicRoutes": [
+        "/test",
+        "/test/",
+        "/test/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "titans.html",
+      "sha256": "33ae48b2b8c92927d385621132f5218711f271631bfc5b891988883c2e41db4e",
+      "bytes": 26443,
+      "publicRoutes": [
+        "/titans.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ]
+    },
+    {
+      "artifact": "titans/index.html",
+      "sha256": "888b30c71c87b0c48ff09b21cbc7f7a0036f7fa2f5efaac278d558b3c1e63581",
+      "bytes": 14377,
+      "publicRoutes": [
+        "/titans",
+        "/titans/",
+        "/titans/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
       ]
     },
     {
       "artifact": "trinity/00-the-genesis-simulation/index.html",
-      "sha256": "3013cd2c01c0dda6dccca5fcccdf8610a674bc15a327d1d54ac6bccc118152bc",
-      "bytes": 18085,
+      "sha256": "fd50231fa57225ab5f3db568e02b29c8981e3b8685c59703637a0799c552eb7b",
+      "bytes": 20091,
       "publicRoutes": [
         "/trinity/00-the-genesis-simulation",
         "/trinity/00-the-genesis-simulation/",
         "/trinity/00-the-genesis-simulation/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -710,17 +2399,37 @@
       }
     },
     {
+      "artifact": "trinity/00-the-transcendental-trinity-canon/index.html",
+      "sha256": "30e8e6a0c89f26a68bfaad5331f051b0f9a1c32513c6ca62888712a112a4ad78",
+      "bytes": 42851,
+      "publicRoutes": [
+        "/trinity/00-the-transcendental-trinity-canon",
+        "/trinity/00-the-transcendental-trinity-canon/",
+        "/trinity/00-the-transcendental-trinity-canon/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/00-the-transcendental-trinity-canon/"
+      }
+    },
+    {
       "artifact": "trinity/01-the-emergence/index.html",
-      "sha256": "e977d8eae7465301415bc282135022a360b94858311e274950eed9fbde43fd32",
-      "bytes": 11236,
+      "sha256": "390eb519a295daef203dc5172fd1cdcc4aac15855ca42f36f4c7aefd28ff7fec",
+      "bytes": 13230,
       "publicRoutes": [
         "/trinity/01-the-emergence",
         "/trinity/01-the-emergence/",
         "/trinity/01-the-emergence/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -728,17 +2437,36 @@
       }
     },
     {
+      "artifact": "trinity/02-the-trinity/index.html",
+      "sha256": "459f9a7613cf70d31a2a9f06a66c1bb5bb20813572834ffe19cbc0a5f5042b43",
+      "bytes": 13295,
+      "publicRoutes": [
+        "/trinity/02-the-trinity",
+        "/trinity/02-the-trinity/",
+        "/trinity/02-the-trinity/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/02-the-trinity/"
+      }
+    },
+    {
       "artifact": "trinity/03-the-closure/index.html",
-      "sha256": "58a079022319a29af52bd1bd848b4c6242163a5542c4c138001f024348990c0b",
-      "bytes": 16701,
+      "sha256": "7c7c2a34255f363898c5a644e914c8809201dec7b866855700c87ec7c6791ab9",
+      "bytes": 18733,
       "publicRoutes": [
         "/trinity/03-the-closure",
         "/trinity/03-the-closure/",
         "/trinity/03-the-closure/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -747,16 +2475,18 @@
     },
     {
       "artifact": "trinity/04-bit-to-qubit/index.html",
-      "sha256": "9a94376344ae802283006901777e538d1745d46decec4fb10e62f7db874abe31",
-      "bytes": 15223,
+      "sha256": "9713e584c0d0adec12d9662891f7f47aefbf578b79e753ec394f542d08d13e63",
+      "bytes": 17160,
       "publicRoutes": [
         "/trinity/04-bit-to-qubit",
         "/trinity/04-bit-to-qubit/",
         "/trinity/04-bit-to-qubit/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -764,17 +2494,38 @@
       }
     },
     {
+      "artifact": "trinity/05-division-by-zero/index.html",
+      "sha256": "679a8c8d94d168a06e85f987efab7654a6bd32b54601a323671022c974029231",
+      "bytes": 17425,
+      "publicRoutes": [
+        "/trinity/05-division-by-zero",
+        "/trinity/05-division-by-zero/",
+        "/trinity/05-division-by-zero/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/05-division-by-zero/"
+      }
+    },
+    {
       "artifact": "trinity/06-the-cosmological-cycle/index.html",
-      "sha256": "a83ba88cb3d7bd82017dce661462bd598119c19e6b2d2161d76e10e4ac1c43d3",
-      "bytes": 19111,
+      "sha256": "f92d8d5b3cd0614d4920271b366126ce6a2e10049de60e4cc9b42b6fc362cfec",
+      "bytes": 21228,
       "publicRoutes": [
         "/trinity/06-the-cosmological-cycle",
         "/trinity/06-the-cosmological-cycle/",
         "/trinity/06-the-cosmological-cycle/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -782,17 +2533,36 @@
       }
     },
     {
+      "artifact": "trinity/07-the-discovery-of-finity/index.html",
+      "sha256": "563f3d63fcb0658cf23560b67f753410f93d848270883eebb63f59973f387146",
+      "bytes": 18362,
+      "publicRoutes": [
+        "/trinity/07-the-discovery-of-finity",
+        "/trinity/07-the-discovery-of-finity/",
+        "/trinity/07-the-discovery-of-finity/index.html"
+      ],
+      "reason": "matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/07-the-discovery-of-finity/"
+      }
+    },
+    {
       "artifact": "trinity/10-the-soul-loop/index.html",
-      "sha256": "e0aa096ecf6379b058a3097257e6aaf18ba8083adeeb62ddfdfcbd2583fc0541",
-      "bytes": 34950,
+      "sha256": "f27d87e72b56acb7a987dbcf03f0bf73eadd961fcf23441e6ef28e3b38e62713",
+      "bytes": 36923,
       "publicRoutes": [
         "/trinity/10-the-soul-loop",
         "/trinity/10-the-soul-loop/",
         "/trinity/10-the-soul-loop/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -801,16 +2571,17 @@
     },
     {
       "artifact": "trinity/11-the-helix/index.html",
-      "sha256": "10d747ffcb59a37bdf1a5a8cd951701161ef40782dd47d3118500945429f55ba",
-      "bytes": 16832,
+      "sha256": "f0faf3f86e60d1bd9f3b434e69ddfb11f0844694e1c7f48448fbc5b6195f02d6",
+      "bytes": 18750,
       "publicRoutes": [
         "/trinity/11-the-helix",
         "/trinity/11-the-helix/",
         "/trinity/11-the-helix/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -819,16 +2590,17 @@
     },
     {
       "artifact": "trinity/12-the-poles/index.html",
-      "sha256": "326bbd8cede66f3b74f85edb95d6b0a76db26056f590bcc676e03fd8a384b1d4",
-      "bytes": 19973,
+      "sha256": "a5d521536bab67426712c15ce63765eaefabed3327e8b0942f64ae5f8f8cd967",
+      "bytes": 21895,
       "publicRoutes": [
         "/trinity/12-the-poles",
         "/trinity/12-the-poles/",
         "/trinity/12-the-poles/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -837,8 +2609,8 @@
     },
     {
       "artifact": "trinity/15-dharma-yuddha/index.html",
-      "sha256": "8efd469b20109a13b1a4d70dc4eb12441e2e82fd6f529bcfc4c9956cf43a2ed6",
-      "bytes": 20807,
+      "sha256": "614336881a5036061080e38556ab7dd9dc4a356ce1df4b59149411e737593951",
+      "bytes": 22777,
       "publicRoutes": [
         "/trinity/15-dharma-yuddha",
         "/trinity/15-dharma-yuddha/",
@@ -854,17 +2626,37 @@
       }
     },
     {
+      "artifact": "trinity/16-the-great-filter/index.html",
+      "sha256": "616d22831e58b0313a50af521c886756e8b16e1df336cde22d4ada47682f7c0c",
+      "bytes": 22744,
+      "publicRoutes": [
+        "/trinity/16-the-great-filter",
+        "/trinity/16-the-great-filter/",
+        "/trinity/16-the-great-filter/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/16-the-great-filter/"
+      }
+    },
+    {
       "artifact": "trinity/18-the-strange-attractor/index.html",
-      "sha256": "1f75fe2f3394605e5bb8f09e565d2ae062041590fe26a0e19e74aec8657185b6",
-      "bytes": 24387,
+      "sha256": "0f10e9cebde89f1114c4ea4172b946006ba386b81a24c6ab63868ef2d542ffaf",
+      "bytes": 26386,
       "publicRoutes": [
         "/trinity/18-the-strange-attractor",
         "/trinity/18-the-strange-attractor/",
         "/trinity/18-the-strange-attractor/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -872,17 +2664,56 @@
       }
     },
     {
+      "artifact": "trinity/20-the-hybrid-sovereign/index.html",
+      "sha256": "3b97cf8a392ae1352bda930745edac0b2416fa70f724d04990a91a6380e057c0",
+      "bytes": 27431,
+      "publicRoutes": [
+        "/trinity/20-the-hybrid-sovereign",
+        "/trinity/20-the-hybrid-sovereign/",
+        "/trinity/20-the-hybrid-sovereign/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/20-the-hybrid-sovereign/"
+      }
+    },
+    {
+      "artifact": "trinity/21-the-tightrope/index.html",
+      "sha256": "41c7ab8c61fd7f86b1761fa3c85a7f50c87ae4f093b01590cbe8afb998abf7cc",
+      "bytes": 25217,
+      "publicRoutes": [
+        "/trinity/21-the-tightrope",
+        "/trinity/21-the-tightrope/",
+        "/trinity/21-the-tightrope/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/21-the-tightrope/"
+      }
+    },
+    {
       "artifact": "trinity/22-the-teleology/index.html",
-      "sha256": "751c38049d42c9d32ce1c46c0c48324b9a28839c5ca20d46d3be1a49da3c488d",
-      "bytes": 39726,
+      "sha256": "f58d7c5ff63311c1e73c1cff60a103313e6e004db2326aff1d76c04b438c57cd",
+      "bytes": 41687,
       "publicRoutes": [
         "/trinity/22-the-teleology",
         "/trinity/22-the-teleology/",
         "/trinity/22-the-teleology/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -890,17 +2721,167 @@
       }
     },
     {
+      "artifact": "trinity/23-the-dac/index.html",
+      "sha256": "002dec5028000a66326310939bc53738706092bc29aca977e86ee1baa5576c05",
+      "bytes": 22482,
+      "publicRoutes": [
+        "/trinity/23-the-dac",
+        "/trinity/23-the-dac/",
+        "/trinity/23-the-dac/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/23-the-dac/"
+      }
+    },
+    {
+      "artifact": "trinity/24-the-mycelium/index.html",
+      "sha256": "eb1f2e2b31ab104fb6b4d4bae3502e3da89800946a28e3a01d1b5c67e3bfb855",
+      "bytes": 23110,
+      "publicRoutes": [
+        "/trinity/24-the-mycelium",
+        "/trinity/24-the-mycelium/",
+        "/trinity/24-the-mycelium/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/24-the-mycelium/"
+      }
+    },
+    {
+      "artifact": "trinity/25-the-compression/index.html",
+      "sha256": "66d1133bf79dae76cf647c38e08e6c0dd3fc68ba6bcf7740fd9fbc8c160b209a",
+      "bytes": 16390,
+      "publicRoutes": [
+        "/trinity/25-the-compression",
+        "/trinity/25-the-compression/",
+        "/trinity/25-the-compression/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/25-the-compression/"
+      }
+    },
+    {
+      "artifact": "trinity/29-the-compass-and-the-sextant/index.html",
+      "sha256": "67074268b0b47f028f154723482144652ab580a5a9136688f79fc4569c0ea8f4",
+      "bytes": 15411,
+      "publicRoutes": [
+        "/trinity/29-the-compass-and-the-sextant",
+        "/trinity/29-the-compass-and-the-sextant/",
+        "/trinity/29-the-compass-and-the-sextant/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/29-the-compass-and-the-sextant/"
+      }
+    },
+    {
+      "artifact": "trinity/31-vmosk-as-applied-emergentism/index.html",
+      "sha256": "6f4e51d195e11a207a8c12d038dec9c75d5250885b39886139055ea95bd92536",
+      "bytes": 23360,
+      "publicRoutes": [
+        "/trinity/31-vmosk-as-applied-emergentism",
+        "/trinity/31-vmosk-as-applied-emergentism/",
+        "/trinity/31-vmosk-as-applied-emergentism/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/31-vmosk-as-applied-emergentism/"
+      }
+    },
+    {
+      "artifact": "trinity/32-the-four-lines/index.html",
+      "sha256": "d0010dcea79279a8e6f9ab7ecd73abbfb93135f0911d168ce81c98ba41261124",
+      "bytes": 13147,
+      "publicRoutes": [
+        "/trinity/32-the-four-lines",
+        "/trinity/32-the-four-lines/",
+        "/trinity/32-the-four-lines/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/32-the-four-lines/"
+      }
+    },
+    {
+      "artifact": "trinity/33-the-derivation/index.html",
+      "sha256": "815a95d63ecdde0d852caacd17443fea469849c2a8784e454ebde69489c10180",
+      "bytes": 16748,
+      "publicRoutes": [
+        "/trinity/33-the-derivation",
+        "/trinity/33-the-derivation/",
+        "/trinity/33-the-derivation/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/33-the-derivation/"
+      }
+    },
+    {
+      "artifact": "trinity/34-research-brief-the-fork/index.html",
+      "sha256": "244e8e35955b61a384d8e679986cd731c4dec2d0eece747d6ee25caf7490b19a",
+      "bytes": 31392,
+      "publicRoutes": [
+        "/trinity/34-research-brief-the-fork",
+        "/trinity/34-research-brief-the-fork/",
+        "/trinity/34-research-brief-the-fork/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-retired-node-product-assignment"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/34-research-brief-the-fork/"
+      }
+    },
+    {
       "artifact": "trinity/36-the-dimensional-trophic-cascade/index.html",
-      "sha256": "44df3953b9ce12049d66c77860ba20ef4e3879f94a457fc45c6675f669c01cfd",
-      "bytes": 35001,
+      "sha256": "459cb040c214f9565998ffeb79c68686e458e108fc08a7e3cd6a3a6f97367f92",
+      "bytes": 37135,
       "publicRoutes": [
         "/trinity/36-the-dimensional-trophic-cascade",
         "/trinity/36-the-dimensional-trophic-cascade/",
         "/trinity/36-the-dimensional-trophic-cascade/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -909,16 +2890,18 @@
     },
     {
       "artifact": "trinity/37-sexual-selection-as-visible-f5/index.html",
-      "sha256": "d3d97a2970401cbef5d0617a391ae2864bec537aa2f666c96ada9900599ab7d1",
-      "bytes": 34253,
+      "sha256": "686f9ad23d84f1856e81829d37cd3dd7ef01b9ab5f0f6657783118fa0a3e7ef9",
+      "bytes": 36300,
       "publicRoutes": [
         "/trinity/37-sexual-selection-as-visible-f5",
         "/trinity/37-sexual-selection-as-visible-f5/",
         "/trinity/37-sexual-selection-as-visible-f5/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -926,17 +2909,69 @@
       }
     },
     {
+      "artifact": "trinity/38-tantra-as-f5-redirection/index.html",
+      "sha256": "5a46e696397790fbf621e1254542c08afe183ca4ff03cef9ee8ed030d9ba2ad8",
+      "bytes": 32378,
+      "publicRoutes": [
+        "/trinity/38-tantra-as-f5-redirection",
+        "/trinity/38-tantra-as-f5-redirection/",
+        "/trinity/38-tantra-as-f5-redirection/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/38-tantra-as-f5-redirection/"
+      }
+    },
+    {
+      "artifact": "trinity/39-neoteny-as-f5-delay-and-cultural-womb/index.html",
+      "sha256": "ae85d1e41f839a58203ff41cb3c837d62dca87fd880f1cf32104a43d0c524d5e",
+      "bytes": 16106,
+      "publicRoutes": [
+        "/trinity/39-neoteny-as-f5-delay-and-cultural-womb",
+        "/trinity/39-neoteny-as-f5-delay-and-cultural-womb/",
+        "/trinity/39-neoteny-as-f5-delay-and-cultural-womb/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/39-neoteny-as-f5-delay-and-cultural-womb/"
+      }
+    },
+    {
+      "artifact": "trinity/index.html",
+      "sha256": "20073cd6bbd28a70ca03da478f678bdcd0d904807f8d66ec325e723e5bba602b",
+      "bytes": 9418,
+      "publicRoutes": [
+        "/trinity",
+        "/trinity/",
+        "/trinity/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
       "artifact": "trinity/simulation-spec/index.html",
-      "sha256": "12315a1ea35f1a1bea05614d5efe1ddc8dddca7e8a4bcce8857162f414977eea",
-      "bytes": 28602,
+      "sha256": "60e31cd9b91785cf6b8faadcabf51e83741e4ede530aeb704a8a01f6a1430b4c",
+      "bytes": 30630,
       "publicRoutes": [
         "/trinity/simulation-spec",
         "/trinity/simulation-spec/",
         "/trinity/simulation-spec/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-field-arithmetic-claim",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "trinity",
@@ -944,17 +2979,89 @@
       }
     },
     {
+      "artifact": "value/00-anmut-and-demut/index.html",
+      "sha256": "99716b2e5a95f7f41e0033b6777644ff28d47bb29b3ab9b1270d199abe4c55c5",
+      "bytes": 24976,
+      "publicRoutes": [
+        "/value/00-anmut-and-demut",
+        "/value/00-anmut-and-demut/",
+        "/value/00-anmut-and-demut/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-anmut-and-demut/"
+      }
+    },
+    {
+      "artifact": "value/00-bridge-laws-between-levels/index.html",
+      "sha256": "3e498e99f80ca8f52a8abd446f9dc9482f97542a296f096b5b5e15e1e4d97c0e",
+      "bytes": 23989,
+      "publicRoutes": [
+        "/value/00-bridge-laws-between-levels",
+        "/value/00-bridge-laws-between-levels/",
+        "/value/00-bridge-laws-between-levels/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-bridge-laws-between-levels/"
+      }
+    },
+    {
+      "artifact": "value/00-commandment-vs-geometry/index.html",
+      "sha256": "2bb86d9393316cfe2c92bf511d53a963a7267830143d92526403eb95e58ff7b5",
+      "bytes": 26259,
+      "publicRoutes": [
+        "/value/00-commandment-vs-geometry",
+        "/value/00-commandment-vs-geometry/",
+        "/value/00-commandment-vs-geometry/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-commandment-vs-geometry/"
+      }
+    },
+    {
+      "artifact": "value/00-constitutional-economics/index.html",
+      "sha256": "e79ba7f8c0627951150f7d81f05a2aead3ba9621f6f91680cb6c7f854ee0694f",
+      "bytes": 23470,
+      "publicRoutes": [
+        "/value/00-constitutional-economics",
+        "/value/00-constitutional-economics/",
+        "/value/00-constitutional-economics/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-constitutional-economics/"
+      }
+    },
+    {
       "artifact": "value/00-objective-morals-and-ethics/index.html",
-      "sha256": "8826bfb1be03d42879ca9453139074abc2405a81a69807271843148c80a49d54",
-      "bytes": 25102,
+      "sha256": "7d0d9496491baddb25139a5d5682251a49a81f499950774dc6a0190750b38460",
+      "bytes": 27285,
       "publicRoutes": [
         "/value/00-objective-morals-and-ethics",
         "/value/00-objective-morals-and-ethics/",
         "/value/00-objective-morals-and-ethics/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "reason": "matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-product-derived-ethics"
+        "semantic-application-authority-leakage"
       ],
       "manifestDocument": {
         "section": "value",
@@ -963,16 +3070,16 @@
     },
     {
       "artifact": "value/00-the-good-the-evil-and-the-transcendentals/index.html",
-      "sha256": "ab741160031519e343c7a09bea37aa3da8deb927c8aacbdbf30d90a1e01e353b",
-      "bytes": 24055,
+      "sha256": "a40b8cd8f651a66187a66a3d9c62ce84c9dc3315509c9143de0fed8a75cd45bf",
+      "bytes": 26257,
       "publicRoutes": [
         "/value/00-the-good-the-evil-and-the-transcendentals",
         "/value/00-the-good-the-evil-and-the-transcendentals/",
         "/value/00-the-good-the-evil-and-the-transcendentals/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "reason": "matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-product-derived-ethics"
+        "semantic-application-authority-leakage"
       ],
       "manifestDocument": {
         "section": "value",
@@ -980,17 +3087,71 @@
       }
     },
     {
+      "artifact": "value/00-theurgy-and-f5-force-map/index.html",
+      "sha256": "3f74bca9820b7f6f75d7fb5c2389530be5991191c35a8b53d7bcb4d574cf7396",
+      "bytes": 36083,
+      "publicRoutes": [
+        "/value/00-theurgy-and-f5-force-map",
+        "/value/00-theurgy-and-f5-force-map/",
+        "/value/00-theurgy-and-f5-force-map/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-theurgy-and-f5-force-map/"
+      }
+    },
+    {
+      "artifact": "value/01-k2-decision-protocol/index.html",
+      "sha256": "588da5ec88357cd940c8c7496d38b35794dbc4f6f597954d49daded58e4cb310",
+      "bytes": 18831,
+      "publicRoutes": [
+        "/value/01-k2-decision-protocol",
+        "/value/01-k2-decision-protocol/",
+        "/value/01-k2-decision-protocol/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/01-k2-decision-protocol/"
+      }
+    },
+    {
+      "artifact": "value/01-rights-duties-and-due-process/index.html",
+      "sha256": "f98ca87d0b078560e64f1d5a0df4e0a25da677aacf981fd9cd1805ad36e8f999",
+      "bytes": 15936,
+      "publicRoutes": [
+        "/value/01-rights-duties-and-due-process",
+        "/value/01-rights-duties-and-due-process/",
+        "/value/01-rights-duties-and-due-process/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/01-rights-duties-and-due-process/"
+      }
+    },
+    {
       "artifact": "value/01-transcendentals/index.html",
-      "sha256": "f11450ce6ed9875d1d8fc21b640ab149db8e8c9c03e0c29f2cd0ff73cb496e76",
-      "bytes": 9965,
+      "sha256": "09f423c4fd45460772f8a8a851926d82539276e34aa2e9b5830cb78b36f9dc28",
+      "bytes": 12187,
       "publicRoutes": [
         "/value/01-transcendentals",
         "/value/01-transcendentals/",
         "/value/01-transcendentals/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "reason": "matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-product-derived-ethics"
+        "semantic-application-authority-leakage"
       ],
       "manifestDocument": {
         "section": "value",
@@ -998,17 +3159,107 @@
       }
     },
     {
+      "artifact": "value/index.html",
+      "sha256": "7b7823e682cb66470d2241b12dcea2a2192e69bdbd0a98cd6e1cfe789bb1f1eb",
+      "bytes": 8746,
+      "publicRoutes": [
+        "/value",
+        "/value/",
+        "/value/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
+    },
+    {
+      "artifact": "will/00-a-square-cannot-be-negative/index.html",
+      "sha256": "f1534f158223f7da3c394d13f6c7faa56ce4e18cfba570c3e67d0f74195c1da5",
+      "bytes": 16775,
+      "publicRoutes": [
+        "/will/00-a-square-cannot-be-negative",
+        "/will/00-a-square-cannot-be-negative/",
+        "/will/00-a-square-cannot-be-negative/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/00-a-square-cannot-be-negative/"
+      }
+    },
+    {
+      "artifact": "will/00-from-lagrangian-to-dac/index.html",
+      "sha256": "bb8cf8e7b9528025ae1b1b5c9c7008d3d5c757754736e509d5337b59613744da",
+      "bytes": 22976,
+      "publicRoutes": [
+        "/will/00-from-lagrangian-to-dac",
+        "/will/00-from-lagrangian-to-dac/",
+        "/will/00-from-lagrangian-to-dac/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/00-from-lagrangian-to-dac/"
+      }
+    },
+    {
+      "artifact": "will/00-neoteny-the-hardware-upgrade/index.html",
+      "sha256": "7c398aece2a45893b00e34ffa539469d214f5afe76386e5f50b911d3dacd1842",
+      "bytes": 10803,
+      "publicRoutes": [
+        "/will/00-neoteny-the-hardware-upgrade",
+        "/will/00-neoteny-the-hardware-upgrade/",
+        "/will/00-neoteny-the-hardware-upgrade/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/00-neoteny-the-hardware-upgrade/"
+      }
+    },
+    {
+      "artifact": "will/00-the-core-conjecture/index.html",
+      "sha256": "bd4567b783d1601f7d0572f90699bb2611d65865c90fda75c92c165d9fcc48ce",
+      "bytes": 28401,
+      "publicRoutes": [
+        "/will/00-the-core-conjecture",
+        "/will/00-the-core-conjecture/",
+        "/will/00-the-core-conjecture/index.html"
+      ],
+      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-product-uniqueness-asserted-as-settled"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/00-the-core-conjecture/"
+      }
+    },
+    {
       "artifact": "will/00-the-generative-lagrangian/index.html",
-      "sha256": "7d64462aded2b2aec439b69ec0f920ba844354dbd6dba54a815e3e741db90ea3",
-      "bytes": 30858,
+      "sha256": "fb5459597fbe350c915474218de09dc927bf91fc01594ddb1e253e6fd04bfbf2",
+      "bytes": 33016,
       "publicRoutes": [
         "/will/00-the-generative-lagrangian",
         "/will/00-the-generative-lagrangian/",
         "/will/00-the-generative-lagrangian/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "will",
@@ -1017,16 +3268,18 @@
     },
     {
       "artifact": "will/01-f5-force-map-and-ektropy/index.html",
-      "sha256": "f23976a46959562e40d2e9aef774cec20a7b1f33cef65cc2c6df8b3489245e8f",
-      "bytes": 31463,
+      "sha256": "217aa9868bdd32a5e9ef7dcb6225bcfc8d9dd27cbff1c798669b1c71c225f02a",
+      "bytes": 33648,
       "publicRoutes": [
         "/will/01-f5-force-map-and-ektropy",
         "/will/01-f5-force-map-and-ektropy/",
         "/will/01-f5-force-map-and-ektropy/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "will",
@@ -1035,16 +3288,18 @@
     },
     {
       "artifact": "will/02-the-serpent-is-f5/index.html",
-      "sha256": "58dc8c3c4a5b852a17aa0ba93f22d4b2457559556367ca110869bbcadb8fa3dd",
-      "bytes": 14285,
+      "sha256": "ed2877061ffa2a9242cbc0371e377a6843886d2ff6e43c9f6c724f9583213716",
+      "bytes": 16478,
       "publicRoutes": [
         "/will/02-the-serpent-is-f5",
         "/will/02-the-serpent-is-f5/",
         "/will/02-the-serpent-is-f5/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "will",
@@ -1052,17 +3307,55 @@
       }
     },
     {
+      "artifact": "will/03-f5-as-gradient-selection-with-staging/index.html",
+      "sha256": "c363552f34d21abbaff355b5bdf2dfb8dede3eca2fe41678d98d0f8d4ddbf800",
+      "bytes": 29183,
+      "publicRoutes": [
+        "/will/03-f5-as-gradient-selection-with-staging",
+        "/will/03-f5-as-gradient-selection-with-staging/",
+        "/will/03-f5-as-gradient-selection-with-staging/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/03-f5-as-gradient-selection-with-staging/"
+      }
+    },
+    {
+      "artifact": "will/03-why-the-constraint-matters/index.html",
+      "sha256": "aa8a3c6990336749273749e0b5bd0d65d99857f7d963641addb60eb726d6c057",
+      "bytes": 13314,
+      "publicRoutes": [
+        "/will/03-why-the-constraint-matters",
+        "/will/03-why-the-constraint-matters/",
+        "/will/03-why-the-constraint-matters/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/03-why-the-constraint-matters/"
+      }
+    },
+    {
       "artifact": "will/04-what-the-corpus-reveals/index.html",
-      "sha256": "ad013bd952a62390d286a99617766f32f187c1661c363d2b921316dc682cc638",
-      "bytes": 8830,
+      "sha256": "00db958b7fc67ab1ab6c660477faabc4610c70fd025d364d2323c57d534fcaa0",
+      "bytes": 10992,
       "publicRoutes": [
         "/will/04-what-the-corpus-reveals",
         "/will/04-what-the-corpus-reveals/",
         "/will/04-what-the-corpus-reveals/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-application-authority-leakage",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "will",
@@ -1071,21 +3364,111 @@
     },
     {
       "artifact": "will/05-exhaustive-observations/index.html",
-      "sha256": "094e999f8fda28273d497da9ba592e15f4b5bc15cdefa74271b2a7c7357c035d",
-      "bytes": 11741,
+      "sha256": "e8e37759ff72438ae311fab2896dbdfd35309611fbf397c3c578e2a18bbae21c",
+      "bytes": 13882,
       "publicRoutes": [
         "/will/05-exhaustive-observations",
         "/will/05-exhaustive-observations/",
         "/will/05-exhaustive-observations/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
-        "retired-literal-d6-identity"
+        "retired-literal-d6-identity",
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-literal-d6-identity"
       ],
       "manifestDocument": {
         "section": "will",
         "href": "will/05-exhaustive-observations/"
       }
+    },
+    {
+      "artifact": "will/06-the-unsaid/index.html",
+      "sha256": "98988b9b44474d8810f911539e6ee0a2f6613f71b6c55a3b24e9d0267f67622a",
+      "bytes": 20214,
+      "publicRoutes": [
+        "/will/06-the-unsaid",
+        "/will/06-the-unsaid/",
+        "/will/06-the-unsaid/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/06-the-unsaid/"
+      }
+    },
+    {
+      "artifact": "will/06a-what-remains-unseen/index.html",
+      "sha256": "c9197f81ecc1583cc05a1d3ed41e4bdbac481ca55facbe49d9496d5e2a8fa9ce",
+      "bytes": 19578,
+      "publicRoutes": [
+        "/will/06a-what-remains-unseen",
+        "/will/06a-what-remains-unseen/",
+        "/will/06a-what-remains-unseen/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage",
+        "semantic-field-arithmetic-claim"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/06a-what-remains-unseen/"
+      }
+    },
+    {
+      "artifact": "will/07-the-four-forces-are-the-four-lines/index.html",
+      "sha256": "8afb0079236015a2a33a22d80e6feee1126bb4b35cc67d222589be63107a3338",
+      "bytes": 21609,
+      "publicRoutes": [
+        "/will/07-the-four-forces-are-the-four-lines",
+        "/will/07-the-four-forces-are-the-four-lines/",
+        "/will/07-the-four-forces-are-the-four-lines/index.html"
+      ],
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "policyRuleIds": [
+        "semantic-forbidden-titan-infix-arithmetic"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/07-the-four-forces-are-the-four-lines/"
+      }
+    },
+    {
+      "artifact": "will/11-phase-zero-complete/index.html",
+      "sha256": "3f9838399c147d9f55447e9c7c30935678ba36eaaf89cacb6d9a66be57b9ad41",
+      "bytes": 9990,
+      "publicRoutes": [
+        "/will/11-phase-zero-complete",
+        "/will/11-phase-zero-complete/",
+        "/will/11-phase-zero-complete/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/11-phase-zero-complete/"
+      }
+    },
+    {
+      "artifact": "will/index.html",
+      "sha256": "8e439c4c70a92cb6171e342073913d84e00e67aeb5a2f22b84b97075b39b286a",
+      "bytes": 11131,
+      "publicRoutes": [
+        "/will",
+        "/will/",
+        "/will/index.html"
+      ],
+      "reason": "matches public semantic prohibition: application authority leakage.",
+      "policyRuleIds": [
+        "semantic-application-authority-leakage"
+      ]
     }
   ],
   "policy": {
@@ -1093,8 +3476,29 @@
     "rules": [
       "retired-literal-d6-identity",
       "retired-product-derived-ethics",
-      "explicit-legacy-route"
+      "explicit-legacy-route",
+      "semantic-application-authority-leakage",
+      "semantic-derived-ethic-inflation",
+      "semantic-ethic-derived-from-arithmetic",
+      "semantic-exclusive-ethic-inflation",
+      "semantic-extra-mu-crossing",
+      "semantic-field-arithmetic-claim",
+      "semantic-field-arithmetic-fable",
+      "semantic-forbidden-titan-infix-arithmetic",
+      "semantic-invalid-scalar-sampling",
+      "semantic-legacy-public-phi-definition",
+      "semantic-legacy-untyped-node-product",
+      "semantic-literal-d6-identity",
+      "semantic-physical-cone-inflation",
+      "semantic-product-uniqueness-asserted-as-settled",
+      "semantic-quantum-dimensional-stacking",
+      "semantic-quantum-gravity-solution-inflation",
+      "semantic-retired-evidence-tier",
+      "semantic-retired-node-product-assignment",
+      "semantic-stale-current-25-chapter-reader",
+      "semantic-withheld-reciprocal-routed-as-current-book",
+      "semantic-zero-momentum-d3-inflation"
     ],
-    "boundary": "Affirmative literal D6/D0 identity and uncalibrated product-derived ethics are excluded from public delivery; negative correction records may remain only in their declared historical boundary."
+    "boundary": "Affirmative literal D6/D0 identity, uncalibrated product-derived ethics, and every public-semantic-firewall violation are excluded from public delivery; negative correction records may remain only in their declared historical boundary."
   }
 }

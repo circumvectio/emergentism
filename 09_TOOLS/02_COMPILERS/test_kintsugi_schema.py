@@ -27,9 +27,9 @@ BASELINE_CONTRACT_HASH = "74496df660f0ca989f293c30db652b8f9aeb78beb30fa91fe249d8
 SCHEMA_HASH = "f8c4205af97635f8eea9f83cbf3a1e05ff50a0f64bc6ee8dd54ff61f6df78a3f"
 SCHEMA_ID = "https://emergentism.org/schema/kintsugi/1.0.0"
 SCHEMA_PATH = ROOT / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
-PLAN_PATH = ROOT / "docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md"
+PLAN_PATH = COMPILER / "kintsugi_kernel/docs/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md"
 COMPILER_README_PATH = ROOT / "09_TOOLS/02_COMPILERS/README.md"
-HANDOFF_PATH = ROOT / "docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md"
+HANDOFF_PATH = COMPILER / "kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md"
 ROOT_ROLES = {"coreData", "publicQueue", "baselineAllowlist"}
 REVIEW_HISTORY = {
     "reviewAttempts",
@@ -511,6 +511,35 @@ class StablePackageSurfaceTests(SchemaAssertions):
             with self.assertRaises(kernel.KintsugiError) as caught:
                 codec.load_canonical_json(noncanonical)
         self.assertEqual(caught.exception.code, "KIN-E-CANONICAL")
+
+    def test_canonical_json_loader_has_a_version_independent_depth_bound(self):
+        from kintsugi_kernel import codec
+
+        at_limit = b"[" * 512 + b"0" + b"]" * 512 + b"\n"
+        over_limit = b"[" * 513 + b"0" + b"]" * 513 + b"\n"
+        string_delimiters = {
+            "escaped": '\\\"' * 600,
+            "literal": "[]{}" * 600,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            bounded = root / "bounded.json"
+            bounded.write_bytes(at_limit)
+            self.assertIsNotNone(codec.load_canonical_json(bounded))
+
+            quoted = root / "quoted.json"
+            quoted.write_bytes(kernel.canonical_json_bytes(string_delimiters))
+            self.assertEqual(codec.load_canonical_json(quoted), string_delimiters)
+
+            excessive = root / "excessive.json"
+            excessive.write_bytes(over_limit)
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                codec.load_canonical_json(excessive)
+        self.assertEqual(caught.exception.code, "KIN-E-JSON")
+        self.assertEqual(
+            caught.exception.message,
+            "JSON exceeds the supported nesting depth",
+        )
 
     def test_schema_validator_frozen_keyword_names_are_callable(self):
         core = support.build_core_data()

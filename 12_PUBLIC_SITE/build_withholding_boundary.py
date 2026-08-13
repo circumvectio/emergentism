@@ -15,6 +15,14 @@ import json
 import re
 from pathlib import Path
 
+from check_public_semantic_parity import (
+    FORBIDDEN,
+    LIFECYCLE_AWARE_FORBIDDEN,
+    has_unretired_forbidden_match,
+    has_titan_infix,
+    record_has_only_historical_k2,
+)
+
 
 SITE = Path(__file__).resolve().parent
 REGISTRY = SITE / "withheld-routes.json"
@@ -42,10 +50,9 @@ FORCED_ARTIFACTS = {
 }
 
 # This policy inspects source artifacts that could be delivered by the static
-# site.  Local deployment output is neither source custody nor a public route:
-# scanning it would manufacture routes such as `/.vercel/output/static/...` in
-# the withholding ledger.  Keep the existing historical exclusions together
-# with the runtime-only directories so the boundary remains source-relative.
+# site. Local deployment output is neither source custody nor a public route:
+# scanning it would manufacture routes such as
+# `/.vercel/output/static/...` in the withholding ledger.
 POLICY_SCAN_EXCLUDED_PREFIXES = (
     ".vercel/",
     ".git/",
@@ -78,6 +85,54 @@ PRODUCT_DERIVED_ETHICS = re.compile(
 PRODUCT_HISTORY_EXCEPTIONS = {"axioms/index.html", "record/index.html", "halahala/index.html"}
 
 
+def _rule_id(name: str) -> str:
+    """Stable custody rule identifier for a public semantic prohibition."""
+
+    return "semantic-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+BASE_POLICY_RULE_IDS = (
+    "retired-literal-d6-identity",
+    "retired-product-derived-ethics",
+    "explicit-legacy-route",
+)
+SEMANTIC_POLICY_RULE_IDS = tuple(sorted(_rule_id(name) for name in FORBIDDEN))
+POLICY_RULE_IDS = (*BASE_POLICY_RULE_IDS, *SEMANTIC_POLICY_RULE_IDS)
+
+
+def _semantic_policy_matches(artifact: str, text: str) -> tuple[list[str], list[str]]:
+    """Return public-firewall violations for a source artifact.
+
+    The semantic checker is the owner of the patterns. Reusing its exact
+    lifecycle and historical-record exceptions keeps withholding fail-closed
+    without inventing a second, weaker interpretation of public safety.
+    """
+
+    rule_ids: list[str] = []
+    reasons: list[str] = []
+    for name, pattern in FORBIDDEN.items():
+        if name == "application authority leakage" and artifact == "record/index.html" and record_has_only_historical_k2(text):
+            continue
+        if name in LIFECYCLE_AWARE_FORBIDDEN:
+            matched = has_unretired_forbidden_match(text, name)
+        elif name == "forbidden Titan infix arithmetic":
+            matched = has_titan_infix(text)
+        else:
+            scan_text = text
+            if name in ("product uniqueness asserted as settled", "ethic derived from arithmetic"):
+                scan_text = re.sub(r"<[^>]+>", " ", text)
+            if name == "quantum-gravity solution inflation":
+                scan_text = re.sub(
+                    r"does not.{0,240}solve quantum gravity", "", scan_text,
+                    flags=re.I | re.S,
+                )
+            matched = bool(pattern.search(scan_text))
+        if matched:
+            rule_ids.append(_rule_id(name))
+            reasons.append(f"matches public semantic prohibition: {name}")
+    return rule_ids, reasons
+
+
 def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -86,8 +141,13 @@ def _routes(artifact: str) -> list[str]:
     path = Path(artifact)
     if path.name == "index.html":
         base = "/" + path.parent.as_posix().strip("/")
-    else:
-        base = "/" + path.with_suffix("").as_posix().strip("/")
+        return [base, base + "/", "/" + artifact]
+    # With clean URLs, ``foo.html`` and ``foo/index.html`` would both claim
+    # ``/foo`` when they coexist.  The directory owns the clean alias; the
+    # file remains an exact raw artifact route only.
+    if (SITE / path.with_suffix("") / "index.html").is_file():
+        return ["/" + artifact]
+    base = "/" + path.with_suffix("").as_posix().strip("/")
     return [base, base + "/", "/" + artifact]
 
 
@@ -95,6 +155,8 @@ def _route_base(artifact: str) -> str:
     path = Path(artifact)
     if path.name == "index.html":
         return "/" + path.parent.as_posix().strip("/")
+    if (SITE / path.with_suffix("") / "index.html").is_file():
+        return "/" + artifact
     return "/" + path.with_suffix("").as_posix().strip("/")
 
 
@@ -132,6 +194,9 @@ def _policy_matches(current_surfaces: set[str]) -> dict[str, tuple[list[str], st
         if artifact in FORCED_ARTIFACTS:
             rule_ids.append("explicit-legacy-route")
             reasons.append(FORCED_ARTIFACTS[artifact])
+        semantic_rules, semantic_reasons = _semantic_policy_matches(artifact, text)
+        rule_ids.extend(semantic_rules)
+        reasons.extend(semantic_reasons)
         if not rule_ids:
             continue
         if artifact in current_surfaces:
@@ -151,7 +216,12 @@ def _policy_matches(current_surfaces: set[str]) -> dict[str, tuple[list[str], st
 def _build_registry() -> dict:
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
     parity = json.loads(PARITY.read_text(encoding="utf-8"))
-    current = set(parity.get("currentSurfaces", [])) | set(parity.get("currentInfrastructureSurfaces", []))
+    current = (
+        set(parity.get("currentSurfaces", []))
+        | set(parity.get("currentInfrastructureSurfaces", []))
+        | set(parity.get("infrastructureRoutes", {}).get("routes", []))
+        | set(parity.get("declaredProvisional", {}).get("routes", []))
+    )
     policy_matches = _policy_matches(current)
     lookup = _manifest_lookup()
 
@@ -175,6 +245,13 @@ def _build_registry() -> dict:
             row["sha256"] = _sha256(path)
             row["bytes"] = path.stat().st_size
             row["publicRoutes"] = _routes(artifact)
+            if artifact in policy_matches:
+                rule_ids, policy_reason = policy_matches[artifact]
+                row["policyRuleIds"] = rule_ids
+                curated_reason = str(row.get("reason", "")).rstrip(".")
+                row["reason"] = "; ".join(
+                    part for part in (curated_reason, policy_reason.rstrip(".")) if part
+                ) + "."
         else:
             rule_ids, reason = policy_matches[artifact]
             row = {
@@ -196,23 +273,35 @@ def _build_registry() -> dict:
     result["schemaVersion"] = 2
     result["policy"] = {
         "mode": "exact-artifact fail-closed",
-        "rules": [
-            "retired-literal-d6-identity",
-            "retired-product-derived-ethics",
-            "explicit-legacy-route",
-        ],
-        "boundary": "Affirmative literal D6/D0 identity and uncalibrated product-derived ethics are excluded from public delivery; negative correction records may remain only in their declared historical boundary.",
+        "rules": list(POLICY_RULE_IDS),
+        "boundary": "Affirmative literal D6/D0 identity, uncalibrated product-derived ethics, and every public-semantic-firewall violation are excluded from public delivery; negative correction records may remain only in their declared historical boundary.",
     }
     result["artifacts"] = rows
+    route_owners: dict[str, list[str]] = {}
+    for row in rows:
+        for route in row["publicRoutes"]:
+            route_owners.setdefault(route, []).append(row["artifact"])
+    collisions = {
+        route: owners for route, owners in route_owners.items() if len(owners) > 1
+    }
+    if collisions:
+        rendered = "; ".join(
+            f"{route}: {', '.join(owners)}" for route, owners in sorted(collisions.items())
+        )
+        raise ValueError(f"withheld public aliases must have one artifact owner: {rendered}")
     return result
 
 
 def _build_ignore(artifacts: list[dict]) -> str:
     text = VERCEL_IGNORE.read_text(encoding="utf-8")
-    start = text.index(IGNORE_BEGIN) + len(IGNORE_BEGIN)
-    end = text.index(IGNORE_END)
-    body = "\n" + "\n".join(row["artifact"] for row in artifacts) + "\n"
-    return text[:start] + body + text[end:]
+    start = text.index(IGNORE_BEGIN)
+    end = text.index(IGNORE_END) + len(IGNORE_END)
+    # Gitignore-style patterns are ordered: a later re-include such as
+    # ``!build/**`` must never revive a withheld artifact. Keep the generated
+    # exact block at EOF so the registry is the last applicable rule.
+    without_generated = (text[:start] + text[end:]).rstrip()
+    body = "\n".join(row["artifact"] for row in artifacts)
+    return f"{without_generated}\n\n{IGNORE_BEGIN}\n{body}\n{IGNORE_END}\n"
 
 
 def _is_single_frozen_header(row: dict) -> bool:
@@ -223,20 +312,25 @@ def _is_single_frozen_header(row: dict) -> bool:
 def _frozen_legacy_surfaces(parity: dict) -> list[str] | None:
     """Return an explicit legacy list, or None for older schema-v2 manifests.
 
-    `frozenLegacySurfaces` was added to one schema-v2 parity revision, but
-    later valid schema-v2 manifests omitted it.  Absence therefore cannot mean
-    that legacy headers are safe to delete.  A present field is still checked
-    strictly so a malformed declaration fails before a generation write.
+    `frozenLegacySurfaces` appeared in one schema-v2 manifest revision and was
+    absent in later valid schema-v2 manifests. Its absence therefore cannot
+    silently authorize removing existing legacy noindex headers.
     """
 
     missing = object()
     value = parity.get("frozenLegacySurfaces", missing)
     if value is missing:
         return None
-    if not isinstance(value, list) or any(not isinstance(artifact, str) or not artifact for artifact in value):
-        raise ValueError("public_semantic_parity.json frozenLegacySurfaces must be a list of non-empty artifacts")
+    if not isinstance(value, list) or any(
+        not isinstance(artifact, str) or not artifact for artifact in value
+    ):
+        raise ValueError(
+            "public_semantic_parity.json frozenLegacySurfaces must be a list of non-empty artifacts"
+        )
     if len(value) != len(set(value)):
-        raise ValueError("public_semantic_parity.json frozenLegacySurfaces must not contain duplicates")
+        raise ValueError(
+            "public_semantic_parity.json frozenLegacySurfaces must not contain duplicates"
+        )
     return value
 
 
@@ -253,9 +347,15 @@ def _is_withheld_header(row: dict) -> bool:
 
 def _build_vercel(artifacts: list[dict]) -> dict:
     config = json.loads(VERCEL.read_text(encoding="utf-8"))
+    withheld_routes = {
+        route
+        for item in artifacts
+        for route in item["publicRoutes"]
+    }
     config["redirects"] = [
         row for row in config.get("redirects", [])
         if row.get("destination") != "/historical-boundary/"
+        and row.get("source") not in withheld_routes
     ]
     for item in artifacts:
         for route in item["publicRoutes"]:
@@ -269,13 +369,13 @@ def _build_vercel(artifacts: list[dict]) -> dict:
     frozen_roots = parity["frozenLibraryRoots"]
     frozen_legacy = _frozen_legacy_surfaces(parity)
     if frozen_legacy is None:
-        # Compatibility mode: without an explicit source-owned legacy list,
-        # regenerate the named frozen roots but retain any existing legacy
-        # headers.  Treating omission as [] would silently change publication
-        # policy when this generator is run.
+        # Compatibility mode: regenerate named frozen roots but retain existing
+        # legacy headers. Treating omission as [] would change publication
+        # policy merely because this generator ran.
         headers = [
             row for row in config.get("headers", [])
-            if not _is_frozen_root_header(row, frozen_roots) and not _is_withheld_header(row)
+            if not _is_frozen_root_header(row, frozen_roots)
+            and not _is_withheld_header(row)
         ]
     else:
         headers = [

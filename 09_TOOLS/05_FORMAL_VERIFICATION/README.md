@@ -1,6 +1,6 @@
 ---
 rosetta:
-  canonical_phrase: "EmergentismCheck.lean — first oracle-outside-the-corpus check of Emergentism's analytic claims in Lean 4 + mathlib (2026-07-29, 8661 jobs, no sorry/native_decide/added axioms); receipt 173 had observed the corpus had never before received outcome receipts from any party outside itself."
+  canonical_phrase: "EmergentismCheck.lean — Lean 4 + mathlib check of Emergentism's analytic claims (2026-07-29, 8661 jobs, no sorry/native_decide/added axioms); receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) has a zero-outcome scope contested by the earlier R2 external-model pilots."
 ---
 
 # Formal verification — the `[A]` claim set, machine-checked
@@ -8,9 +8,12 @@ rosetta:
 `EmergentismCheck.lean` submits the corpus's analytic claims to **Lean 4 +
 mathlib** — an oracle outside the corpus that can return *no*.
 
-Receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) established
-that the corpus had **never** done this: 155 receipts,
-zero outcome receipts from any party outside itself. This is the first.
+Receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) reported 155
+receipts and zero outside outcome receipts under its chosen scope. The earlier
+R2 harness contains 2026-06-10 external-model pilots with raw transcripts and a
+hash-frozen battery. No owner ruling reconciles those scopes, so this README
+makes no "first" or corpus-wide "zero" claim. The Lean result is formal machine
+verification of the listed analytic statements, not independent world evidence.
 
 ## Result, 2026-07-29
 

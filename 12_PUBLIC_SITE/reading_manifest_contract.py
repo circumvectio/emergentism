@@ -144,10 +144,34 @@ def apply_contract(manifest: dict[str, Any]) -> dict[str, Any]:
         if isinstance(row.get("manifestDocument"), dict)
         and row["manifestDocument"].get("href")
     }
+    # A withheld frozen-library landing page withdraws that whole catalogue from
+    # the *current* reader.  Its individual noindex projections stay in source
+    # custody, but a current reading manifest must not make their descendants
+    # look like an endorsed public path merely because their old root happened
+    # to contain no direct manifestDocument row.
+    withheld_library_roots = {
+        artifact.removesuffix("index.html")
+        for row in withheld.get("artifacts", [])
+        if isinstance((artifact := row.get("artifact")), str)
+        and artifact.endswith("/index.html")
+        and artifact.count("/") == 1
+    }
+
+    def is_withheld_current_href(href: object) -> bool:
+        return isinstance(href, str) and (
+            href in withheld_hrefs
+            or any(href.startswith(root) for root in withheld_library_roots)
+        )
+
     result["documents"] = [
         row for row in result.get("documents", [])
-        if row.get("href") not in withheld_hrefs
+        if not is_withheld_current_href(row.get("href"))
     ]
+    result["routes"] = {
+        name: href
+        for name, href in result.get("routes", {}).items()
+        if not is_withheld_current_href(href)
+    }
     result["lifecycle"] = "frozen_generated_library"
     result["current_reader"] = current_reader_contract()
     return result

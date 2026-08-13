@@ -74,7 +74,7 @@ corrected.
 | 5 output fences (η=0, K3, K4, A7, Ω) | Constitutional / AGENTS.md — not dependent on any biology framing |
 | 7 row-fences + Syntropic Dyadism meta-rule | `syntropic-dyadism.md` carries own falsification (§6); D-tagged empirical kill; 3/7 anchored |
 | Virtue/vice per row | Stone briefs (commit `98de00fe`) — independent of the ethics synthesis |
-| Polar note (L1/L2 demon-polar; L3/L4 giving; L5–L7 witness) | Caste table + K2 2026-07-18 ruling + Kālī two-faces — all canonical |
+| Polar note (L1/L2 demon-polar; L3/L4 giving; L5–L7 witness) | Caste table + the 2026-07-18 polarity ruling + Kālī two-faces — all canonical |
 | Organ cut as dispatch grouping | Work vocabulary; same license as GEN7@1 guilds in Balance of Houses |
 
 ## Non-transfer laws restated (Master Rosetta §2)

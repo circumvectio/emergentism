@@ -51,9 +51,10 @@ records, and 2 non-semantic work-programme control projections.** The six conten
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
 - [`ROSETTA.md`](ROSETTA.md) · this `README.md`
 
-The two dated natural-person signature records remain at this root: the 2026-08-01
-closed-reading-loop signature record and the V-forcer 10 closure record. The latter
-was restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`.
+The two dated natural-person signature records remain at this root:
+[`00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md`](00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md)
+and [`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md`](00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md).
+The latter was restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`.
 The work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md` — are cited as non-semantic filename references only, since neither owns doctrine.
 
 (`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
@@ -118,7 +119,10 @@ tests. Consequential action uses a complete, scoped, contestable
 > `00_THE_KERNEL_INDEX.md`, `00_THE_WELTANSCHAUUNG.md`,
 > `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`, `00_THE_FOUNDATION.md`; **3 are agent
 > routes** — `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`; **2 are dated
-> natural-person signature records**; **2 are non-semantic work-programme control
+> natural-person signature records** —
+> [`00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md`](00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md)
+> and [`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md`](00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md);
+> **2 are non-semantic work-programme control
 > projections**; and **9 are
 > forwarding stubs** — each holds a path, not a claim, and each is cited by live
 > doctrine, so they stay where they are. A stub's `canonical_target` always names

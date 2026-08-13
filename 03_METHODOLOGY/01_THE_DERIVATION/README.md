@@ -41,6 +41,14 @@ This is the Auditing sublane for the complete derivation spine.
 
 Active source-owner subfolder.
 
+## Kintsugi machine-schema boundary
+
+`02_KINTSUGI_SCHEMA.json` is the bounded audit-vessel schema consumed by the
+Kintsugi machine validator. It constrains grammar and frozen test fixtures; it
+is not worldview doctrine, semantic authority, or an authority claim. The
+surrounding derivation documents remain source-owned and continue to be scanned
+as doctrine.
+
 ---
 
 ## Agent Execution Surface

@@ -101,7 +101,7 @@ def validate_book_contract() -> dict:
     catalog = manifest.get("catalog_contract", {})
     catalog_path = CORPUS_ROOT / catalog.get("path", "__missing__")
     if (
-        catalog.get("schema") != "emergentism/book-manifest/v1"
+        catalog.get("schema") != "emergentism/book-manifest/v2"
         or catalog.get("path") != "13_BOOKS/book-manifest.json"
         or not catalog_path.is_file()
         or catalog.get("sha256") != hashlib.sha256(catalog_path.read_bytes()).hexdigest()

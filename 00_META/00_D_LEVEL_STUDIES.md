@@ -19,7 +19,7 @@ rosetta:
 > place for provenance. In the body below, every passage asserting a
 > forced/unique Titan triad, universal strong or irreducible `μ`, `Born rule =
 > φν`, Everett/Copenhagen as added dimensions or collapse as `μ`/`χ`, or
-> K2/founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
+> founder status as metaphysical `D5→D4` agency is superseded by `KSC-02`,
 > `KSC-04`, `KSC-05`, and `KSC-06` in
 > `00_META/00_SETTLED_CANON_REGISTRY.md`. Those passages are
 > **not live authority**. Current semantic owners are

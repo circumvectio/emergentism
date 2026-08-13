@@ -105,10 +105,16 @@ def _git_fixture_run(root: Path, *argv: str) -> bytes:
     environment.update({
         "GIT_AUTHOR_DATE": "2000-01-01T00:00:00+0000",
         "GIT_COMMITTER_DATE": "2000-01-01T00:00:00+0000",
+        "GIT_OPTIONAL_LOCKS": "0",
         "LC_ALL": "C",
     })
     return subprocess.run(
-        ["git", *argv],
+        [
+            "git",
+            "-c", "maintenance.auto=false",
+            "-c", "gc.auto=0",
+            *argv,
+        ],
         cwd=root,
         env=environment,
         check=True,
@@ -125,6 +131,8 @@ def build_synthetic_git_repository(
     isolated_root = parent / "isolated"
     canonical_root.mkdir(parents=True)
     _git_fixture_run(canonical_root, "init", "-b", "main")
+    _git_fixture_run(canonical_root, "config", "maintenance.auto", "false")
+    _git_fixture_run(canonical_root, "config", "gc.auto", "0")
     _git_fixture_run(canonical_root, "config", "user.name", "Kintsugi Fixture")
     _git_fixture_run(canonical_root, "config", "user.email", "fixture@example.invalid")
 

@@ -87,10 +87,7 @@ def current_source_contract():
     because a Markdown directory happens to exist.
     """
     books = load_object(BOOK_MANIFEST, "book manifest")
-    # v2 added catalog_role/generated_from/editorial_architecture as top-level
-    # metadata but did not change any field this script reads. v1 is still
-    # accepted for backward compatibility with older manifests in this tree.
-    if books.get("schema") not in {"emergentism/book-manifest/v1", "emergentism/book-manifest/v2"}:
+    if books.get("schema") != "emergentism/book-manifest/v2":
         sys.exit("book manifest schema drift")
     works = books.get("works")
     if not isinstance(works, list):
@@ -137,10 +134,7 @@ def current_source_contract():
     cards_path = resolve_corpus_path(cards_rel, "current claim-card set")
 
     ledger = load_object(cards_path, "current claim-card set")
-    # v2 claim-card set added review_history/reviewed_source_sha256 and richer
-    # per-card fields; this script only reads schema/work_id/source.path/source
-    # .lifecycle and the per-card public/review state. v1 is still accepted.
-    if ledger.get("schema") not in {"emergentism/claim-card-set/v1", "emergentism/claim-card-set/v2"}:
+    if ledger.get("schema") != "emergentism/claim-card-set/v2":
         sys.exit("current claim-card set schema drift")
     if ledger.get("work_id") != CURRENT_WORK_ID:
         sys.exit("current claim-card set work mismatch")
@@ -374,7 +368,7 @@ def desired_manifest(page, contract, source_chapter_order):
         "output": {"path": "book/index.html", "sha256": sha_bytes(page.encode("utf-8"))},
         "renderer": {"package": "Markdown", "version": markdown.__version__, "extensions": EXTENSIONS},
         "claim_card_contract": {
-            "schema": "emergentism/claim-card-set/v1",
+            "schema": "emergentism/claim-card-set/v2",
             "path": contract["cards_rel"],
             "sha256": sha_bytes(open(contract["cards_path"], "rb").read()),
             "register_path": os.path.relpath(CLAIM_REGISTER, ROOT).replace(os.sep, "/"),
@@ -609,11 +603,6 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   .bookbar{background:var(--bg);backdrop-filter:none}
 }
 </style>
-<link rel="stylesheet" href="../assets/css/a11y.css">
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#070A12">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to book</a>
@@ -624,7 +613,6 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   <nav aria-label="Primary navigation">
     <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">☰ Contents</button>
     <a href="../practice/#frame">Practice</a>
-    <a href="../spark/">Spark</a>
     <a href="../plainly/">Worldview</a>
     <a href="../record/">Research</a>
     <a href="../book/" aria-current="page">Library</a>
@@ -643,9 +631,8 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
     <div class="reading-inner">
       %%BODY%%
       <footer class="book-foot">
-        <div class="phi">N = (Φ̂₄, V₄) · Pareto default; min only after κ; product ranking retired</div>
-        <p>This is the only current public book: the One-Sitting reader. The next workshop book that may enter is <strong>The Emergentist Manifesto</strong> — public current-body only (Preamble + chapters 1–11 + 17). The 17-chapter private manuscript is complete locally and <em>not</em> public. Titans, Serpent, Reciprocal, and the rest stay workshop until their own gates pass.</p>
-        <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, <a href="../spark/">Spark</a>, and <a href="../record/">correction record</a>.</p>
+        <div class="phi">P_node := min(Φ̂₄, V₄) · ordinal AND-class; Φ̂₄V₄ ranking retired</div>
+        <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>
         <p>Its highest success is that you can put it down.</p>
       </footer>
     </div>

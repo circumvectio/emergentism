@@ -116,9 +116,10 @@ class LivedWeltanschauungTests(unittest.TestCase):
         self.assertIn(marker, self.book_flat)
         self.assertIn(marker, re.sub(r"\s+", " ", self.public_book))
         card = next(card for card in self.cards["cards"] if card["card_id"] == "OS01-09")
-        self.assertEqual(card["locator"], {"section": "6", "line_start": 149, "line_end": 163})
+        self.assertEqual(card["locator"]["section"], "6")
         lines = self.book.splitlines()
         covered = "\n".join(lines[card["locator"]["line_start"] - 1 : card["locator"]["line_end"]])
+        self.assertIn(card["locator"]["anchor"], covered)
         self.assertIn(marker, covered)
 
     def test_human_condition_answers_without_solving_mysteries(self) -> None:
@@ -245,26 +246,24 @@ class LivedWeltanschauungTests(unittest.TestCase):
 
     def test_r7_owner_boundary_remains_held_until_owner_reconciliation(self) -> None:
         card = next(card for card in self.cards["cards"] if card["card_id"] == "OS01-17")
-        self.assertEqual(
-            card["locator"],
-            {"section": "8A", "line_start": 270, "line_end": 287},
-        )
+        self.assertEqual(card["locator"]["section"], "8A")
         self.assertEqual(card["plain_claim"], "Worldview coordination is one candidate variable in a causally plural account of conflict.")
         self.assertEqual(card["claim_type"], "conjecture")
         self.assertEqual(
             card["evidence"],
             [{"tier": "C", "scope": "multilevel conflict coordination"}],
         )
-        self.assertEqual(card["owner_ids"], ["K-4"])
+        self.assertEqual(card["semantic_owner_id"], "K-4")
+        self.assertEqual(card["supporting_owner_ids"], [])
         self.assertEqual(card["dependencies"], ["OS01-14", "OS01-15"])
 
         lines = self.book.splitlines()
         covered = "\n".join(lines[card["locator"]["line_start"] - 1 : card["locator"]["line_end"]])
-        mixed_closing_line = lines[card["locator"]["line_end"]]
+        self.assertIn(card["locator"]["anchor"], covered)
         self.assertIn("Weltanschauungskrieg", covered)
-        self.assertNotIn("Any Dharma application", covered)
-        self.assertIn("never a licence for violence", mixed_closing_line)
-        self.assertIn("Any Dharma application is Justice-first", mixed_closing_line)
+        self.assertIn("never a licence for violence", covered)
+        self.assertIn("Any Dharma application is Justice-first", covered)
+        self.assertIn("nonviolent, exit-preserving and never a battlefield directive", covered)
         self.assertIn("nonviolent, exit-preserving and never a battlefield directive", self.public_book)
 
     def test_f5_weak_and_strong_readings_are_separate(self) -> None:
@@ -288,8 +287,9 @@ class LivedWeltanschauungTests(unittest.TestCase):
         )
         self.assertIn("`[A]` chart identity; `[C]` world interpretation", matrix)
         self.assertIn("The former F5/theurgy operational routing | **retired**", matrix)
-        self.assertIn("live ordered finite-node profile", matrix)
-        self.assertIn("requires an explicit calibration contract", matrix)
+        self.assertIn("selected normalized finite-node action model", matrix)
+        self.assertIn("common strictly increasing reparametrisation", matrix)
+        self.assertIn("using scales that satisfy their assumptions", matrix)
         self.assertIn("chosen two-direction Justice test", matrix)
         self.assertNotIn("Reality is `S²`; the geometry is the territory", matrix)
 

@@ -186,7 +186,7 @@ Keep this open while you write. Each ban carries its reason.
 | `0/0 = 0` | Not derivable in any field, and it conflicts with cancellation. As a *stipulation* it is respectable — but then §9 applies and you owe the bill. | "`0/0` is NON-UNIQUE in a field. As a limit form it is route-dependent — state the routes." |
 | `0 · ∞ = 1` | Reductio: if such a `w` were adjoined as a ring element, `0·w = 0` holds in every ring, so `1 = 0` and the ring is trivial. One line; no associativity argument needed. | "If `x → 0` and `g(x) → ∞`, the limit of `x·g(x)` depends on `g`. State `g`." |
 | Any arithmetic operator between two boundary labels | Boundary labels carry no operations (§2). The string is not a term. | Spacing, and words. There is no salvage equation — see §8. |
-| `log ○`, `√•`, `card(•)` | Function application to a label. | Nothing. If you meant a logarithm, give it a numeric argument and a domain. |
+| `log ○`, `√•`, `card(•)` | Forbidden function application to a label; the string is not a term. | Nothing. If you meant a logarithm, give it a numeric argument and a domain. |
 | `• = 0`, `○ = ∞` | Cross-sort equality. | "`•` labels the lower boundary of this chart; the corresponding item **in the field register** is `0`." Use *labels* / *corresponds to in register R*, never `=`. |
 | `∞`, unqualified | Four different objects (S2). | Name which one, every time. |
 | `x/0 = 0` presented as a fact | It is a convention (Lean/Mathlib, Isabelle/HOL, and Rocq/Coq's `Rinv_0`). It **overloads `0`**: the symbol now means both the number and the answer to an inadmissible question, indistinguishably. | "Convention, chosen so every term denotes; the mathematical content stays in the `x ≠ 0` hypotheses." |

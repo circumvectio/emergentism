@@ -25,7 +25,12 @@ def copy_checker_fixture(temp_root: Path) -> None:
     """Copy every surface the checker requires into an isolated corpus."""
 
     surfaces = dict.fromkeys(
-        (*MODULE.REQUIRED_SURFACES, *MODULE.ACTIVE_EXTRA_TYPE_SURFACES)
+        (
+            *MODULE.REQUIRED_SURFACES,
+            *MODULE.ACTIVE_EXTRA_TYPE_SURFACES,
+            MODULE.HISTORICAL_SIGNED_TITAN_RECORD,
+            MODULE.ADDITIVE_TITAN_CORRECTION,
+        )
     )
     for rel in surfaces:
         source = ROOT / rel
@@ -73,6 +78,31 @@ class FoundationTypeFirewallTests(unittest.TestCase):
 
     def test_reciprocal_identity_cannot_be_called_titan_equation(self) -> None:
         self.assertTrue(forbidden("φ · ν = 1 is the equation ⊙ = • × ○"))
+
+    def test_titan_geometry_coercions_are_rejected(self) -> None:
+        examples = (
+            "• and ○ are antipodal",
+            "•, ○ form the metric poles",
+            "The chordal distance between • and ○ is 2",
+            "• is at θ = 0",
+            "○ is on the south chart pole theta = pi",
+            "NoCoercion(TitanFrame, ProjectivePoint) remains open",
+        )
+        for example in examples:
+            with self.subTest(example=example):
+                self.assertTrue(forbidden(example))
+
+    def test_typed_geometry_denials_are_allowed(self) -> None:
+        examples = (
+            "• and ○ are not antipodal chart points",
+            "No metric, pole, or antipodality claim transfers to • and ○.",
+            "Ill-typed expression: d(•, ○) = 2",
+            "NoCoercion(TitanFrame, ProjectivePoint) is settled: no coercion exists.",
+            "Only p_N and p_S are chart poles.",
+        )
+        for example in examples:
+            with self.subTest(example=example):
+                self.assertFalse(forbidden(example))
 
     def test_typed_group_algebra_is_allowed(self) -> None:
         self.assertFalse(forbidden("a · b = e; b = a⁻¹ inside G"))
@@ -197,6 +227,72 @@ class FoundationTypeFirewallTests(unittest.TestCase):
                 f"{MODULE.RECORD_LEDGER.as_posix()}",
                 output.getvalue(),
             )
+
+    def test_signed_historical_infix_requires_exact_bytes_and_correction(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            temp_root = Path(tmp)
+            copy_checker_fixture(temp_root)
+
+            with mock.patch.object(MODULE, "ROOT", temp_root):
+                with contextlib.redirect_stdout(io.StringIO()):
+                    self.assertEqual(MODULE.main(), 0)
+
+                record = temp_root / MODULE.HISTORICAL_SIGNED_TITAN_RECORD
+                original_record = record.read_text(encoding="utf-8")
+                record.write_text(original_record + "\n", encoding="utf-8")
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn("historical signed Titan record digest drift", output.getvalue())
+                record.write_text(original_record, encoding="utf-8")
+
+                correction = temp_root / MODULE.ADDITIVE_TITAN_CORRECTION
+                original_correction = correction.read_text(encoding="utf-8")
+                correction.write_text(
+                    original_correction.replace(
+                        "## Additive historical correction",
+                        "## Historical note",
+                    ),
+                    encoding="utf-8",
+                )
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn("additive Titan correction lost required marker", output.getvalue())
+                correction.write_text(original_correction, encoding="utf-8")
+
+                correction.write_text(
+                    original_correction
+                    + "\n\n## Current formula\n\n"
+                    + "⊙ = "
+                    + "• × ○\n",
+                    encoding="utf-8",
+                )
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn(MODULE.ADDITIVE_TITAN_CORRECTION.as_posix(), output.getvalue())
+                self.assertIn("forbidden Titan arithmetic", output.getvalue())
+                correction.write_text(original_correction, encoding="utf-8")
+
+                uplink = temp_root / "11_UPLINK"
+                real_uplink = temp_root / "11_UPLINK_REAL"
+                uplink.rename(real_uplink)
+                uplink.symlink_to(real_uplink, target_is_directory=True)
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn("symlink component", output.getvalue())
+                uplink.unlink()
+                real_uplink.rename(uplink)
+
+                outside = temp_root / "05_COSMOLOGY/03_FORMAL_SYSTEM/ZZ_MUTATION.md"
+                outside.parent.mkdir(parents=True, exist_ok=True)
+                outside.write_text("⊙ = " + "• × ○\n", encoding="utf-8")
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn("ZZ_MUTATION.md", output.getvalue())
 
     def test_public_generator_uses_the_shared_firewall(self) -> None:
         generator_path = ROOT / "12_PUBLIC_SITE/generate_public_library.py"

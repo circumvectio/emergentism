@@ -5,7 +5,7 @@
     "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
     "lifecycle": "active",
     "role": "formal_research_seed",
-    "reviewed_source_sha256": "2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3"
+    "reviewed_source_sha256": "4b37c7fc77dc7a79fa97acf55588eefc70dc7a1e2b01bc3061a6fec2164efe77"
   },
   "cards": [
     {
@@ -14,18 +14,18 @@
         "typed-inversion"
       ],
       "locator": {
-        "section": "2 representation map",
-        "line_start": 51,
-        "line_end": 79,
-        "anchor": "Let `Feature(Ĉ) := Point(Ĉ) ⊎ Subset(Ĉ)`",
-        "fingerprint_sha256": "f6324149d8fbd8d6c82f98d54cecd3266ba4d4f867dbcf18d7c97633d959911a"
+        "section": "3 compactification type boundary",
+        "line_start": 83,
+        "line_end": 99,
+        "anchor": "Compactification does not convert a Titan frame into a projective point.",
+        "fingerprint_sha256": "8aca6572041ae3649512839a4d439c8e1ec128deb12a87e2b1f9804f1fd78ed6"
       },
-      "plain_claim": "A selected map r_T may relate opaque Titan seats to two pole points and the unit-circle subset; only the induced map iota_* acts on those tagged features, and no projective or arithmetic operation acts on TitanFrame.",
+      "plain_claim": "An optional interpretive diagram may place opaque Titan frames beside named projective facts only while keeping their types disjoint: compactification does not convert TitanFrame into a projective point, and projective inversion never acts on TitanFrame.",
       "claim_type": "interpretation_vow",
       "evidence": [
         {
           "tier": "I",
-          "scope": "selected representation of opaque Titan seats; standard orbit facts remain under TIT01-01"
+          "scope": "optional no-coercion juxtaposition of opaque Titan frames and standard projective neighbors; standard orbit facts remain under TIT01-01"
         }
       ],
       "semantic_owner_id": "K-1",
@@ -38,9 +38,9 @@
         "A1"
       ],
       "type_boundaries": [
-        "TitanFrame is not Feature(C-hat), ProjectivePoint, or Number",
-        "iota acts on C-hat and iota_* acts on tagged features, never on TitanFrame",
-        "the representation map is selected and carries no ontological warrant"
+        "TitanFrame is not ProjectivePoint or Number",
+        "projective inversion acts on projective points, never on TitanFrame",
+        "an interpretive diagram is optional, must display the no-coercion fence, and carries no ontological warrant"
       ],
       "strongest_rival": "Use the projective orbit facts without Titan imagery.",
       "discriminator": "The representation survives only if it improves comprehension while readers retain the seat-feature type boundary.",
@@ -56,7 +56,7 @@
       "disposition": "restate",
       "public": {
         "state": "source_only",
-        "wording": "Titan seating is an optional typed representation of independently standard projective orbit facts."
+        "wording": "Titan imagery is optional; projective facts never coerce Titan frames into points or operands."
       },
       "review": {
         "state": "l3_audited",

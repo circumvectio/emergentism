@@ -294,7 +294,7 @@ None retracts a fence, a caste, or a synthesis. All are register-clarifications.
   carry an identity promotion this audit missed (the parallel
   register-corrections suggest this is unlikely, but re-audit on any material
   edit).
-- **Escalate to K2 / doctrine-owner** if Finding 2's "derivation"→"rooted in"
+- **Escalate to the doctrine owner** if Finding 2's "derivation"→"rooted in"
   retitle touches a doctrine-live surface this L3 shouldn't unilaterally restage.
 
 ## Bottom line
