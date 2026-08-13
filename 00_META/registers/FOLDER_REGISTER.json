@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 835,
+  "entry_count": 838,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3772,
+      "tracked_file_count": 3782,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -285,7 +285,7 @@
       "owns": "00_META lane — canon custody and correction; owns routing and claim custody (Settled Canon Registry, The Refusals, Kintsugi Protocol, claim ",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 102,
+      "tracked_file_count": 103,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1442,7 +1442,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 434,
+      "tracked_file_count": 435,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1572,7 +1572,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 213,
+      "tracked_file_count": 214,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7864,7 +7864,7 @@
       "owns": "Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop",
       "must_not_own": null,
       "status": "staged",
-      "tracked_file_count": 70,
+      "tracked_file_count": 75,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7877,7 +7877,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1,
+      "tracked_file_count": 2,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7890,7 +7890,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1,
+      "tracked_file_count": 2,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7955,7 +7955,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7981,7 +7981,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8007,7 +8007,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 6,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8085,7 +8085,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1103,
+      "tracked_file_count": 1106,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -9223,6 +9223,45 @@
     },
     {
       "path": "90_ARCHIVE/2026_08_13_disposition_docket/12_PUBLIC_SITE/_PLANS",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_14_public_site_vision_adjudication",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_14_pure_axiology_boundary",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_14_pure_axiology_boundary/04_AXIOLOGY",
       "type": "archive",
       "nearest_front_door": null,
       "front_door_requirement": "missing",
