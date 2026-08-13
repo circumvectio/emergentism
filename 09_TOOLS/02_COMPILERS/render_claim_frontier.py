@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 from pathlib import Path
 
@@ -75,16 +76,27 @@ def render_html(payload: dict) -> str:
     rows = payload["claims"]
     items = []
     for row in rows:
+        row_id = html.escape(str(row.get("id") or ""))
+        bucket = html.escape(str(row.get("bucket") or ""))
+        status = html.escape(str(row.get("status") or ""))
+        tier = html.escape(str(row.get("tier") or ""))
+        statement = html.escape(str(row.get("statement") or ""))
+        raise_text = html.escape(str(row.get("raise") or "unrecorded"))
+        kill_text = html.escape(str(row.get("kill") or "unrecorded"))
+        owner = html.escape(str(row.get("owner") or "unrecorded"))
+        move_date = html.escape(
+            str((row.get("last_move") or {}).get("date", "unrecorded"))
+            if isinstance(row.get("last_move"), dict)
+            else "unrecorded"
+        )
         items.append(
             "<article>"
-            f"<p class='id'>{row['id']} <span>{row['bucket']} · {row['status']}"
-            f"{' · ['+str(row['tier'])+']' if row.get('tier') else ''}</span></p>"
-            f"<p>{row.get('statement') or ''}</p>"
-            f"<p><b>Raise.</b> {row.get('raise') or 'unrecorded'}</p>"
-            f"<p><b>Kill.</b> {row.get('kill') or 'unrecorded'}</p>"
-            f"<p class='meta'>last move: "
-            f"{(row.get('last_move') or {}).get('date', 'unrecorded') if isinstance(row.get('last_move'), dict) else 'unrecorded'}"
-            f" · owner: {row.get('owner') or 'unrecorded'}</p>"
+            f"<p class='id'>{row_id} <span>{bucket} · {status}"
+            f"{' · ['+tier+']' if tier else ''}</span></p>"
+            f"<p>{statement}</p>"
+            f"<p><b>Raise.</b> {raise_text}</p>"
+            f"<p><b>Kill.</b> {kill_text}</p>"
+            f"<p class='meta'>last move: {move_date} · owner: {owner}</p>"
             "</article>"
         )
     body = "\n".join(items)
@@ -97,6 +109,15 @@ def render_html(payload: dict) -> str:
 <meta name="description" content="Every row in CLAIM_STATUS.yaml: status, raise, kill. Not a complete ontology. Not a reach score. World contact 0.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://emergentism.org/record/frontier/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emergentism">
+<meta property="og:title" content="Frontier ledger — Emergentism">
+<meta property="og:description" content="Every row in CLAIM_STATUS.yaml: status, raise, kill. Not a complete ontology. Not a reach score. World contact 0.">
+<meta property="og:url" content="https://emergentism.org/record/frontier/">
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png">
+<meta property="og:image:alt" content="Emergentism ontology-churn instrument: source, rival, test, receipt, disposition, correction, and retained grave.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png">
 <style>
 body{{margin:0;background:#070A12;color:#F5F0E6;font:17px/1.55 -apple-system,BlinkMacSystemFont,sans-serif}}
 main{{max-width:46rem;margin:0 auto;padding:2rem 1.2rem 4rem}}

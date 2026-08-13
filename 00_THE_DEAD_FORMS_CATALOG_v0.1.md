@@ -7,7 +7,6 @@ rosetta:
   regime: "Kṣatriya"
   register: "[S]"
 historical_target: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
-canonical_target: 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
 status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-22
@@ -17,7 +16,7 @@ date: 2026-07-22
 
 This former root-level file was moved on **2026-07-22** under the TIDY-2026-07-22 K2 envelope (root tidy of `01_EMERGENTISM/`, K3 move + tombstone discipline).
 
-**Canonical home:** [00_THE_DEAD_FORMS_CATALOG_v0.1.md](00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md)
+**Historical custody:** [00_THE_DEAD_FORMS_CATALOG_v0.1.md](90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md)
 
 **Rationale:** see `00_META/00_TIDY_PLAN_v0.1.md` §3 (Move Group B — governance catalog, root meta spine owns it).
 

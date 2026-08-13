@@ -329,8 +329,8 @@
     },
     {
       "path": "00_FOLDER_LAYOUT_v0.1.md",
-      "sha256": "c9466e9e09c752c8c6c4e1d5c17f4252004e67729441c40f4aeb6e831e829431",
-      "bytes": 802,
+      "sha256": "1f99ba50b829aed705cda5cade95d9f4278c7ffbc9ea41694acaee27d71401ef",
+      "bytes": 908,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "signed",
@@ -340,7 +340,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 34,
+      "inbound_references": 32,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -2369,8 +2369,8 @@
     },
     {
       "path": "00_META/00_FOLDER_LAYOUT_v0.1.md",
-      "sha256": "3986fb693ff4534e05069f156336ee8356c6c2b777eec62bf095c32f6ee582c5",
-      "bytes": 754,
+      "sha256": "06544bd3d16faee4e11b5b31e3a44c47c31aac9517b84a9016169364ddfcda29",
+      "bytes": 755,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "signed",
@@ -2380,14 +2380,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 34,
+      "inbound_references": 32,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "00_META/00_FOUNDATION_READER_GUIDE.md",
-      "sha256": "377c8dbbcd1e2d8c29e9c06a21b919fdc14f58be20424c25ffae41616bcadeeb",
-      "bytes": 750,
+      "sha256": "b2c8855e8769879c7c1c88fc5f28863fee65470d86c57c0b021521977b066f9a",
+      "bytes": 754,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "signed",
@@ -2686,7 +2686,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 59,
+      "inbound_references": 58,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -2862,8 +2862,8 @@
     },
     {
       "path": "00_META/00_THE_TWELVE_RULINGS_2026_07_22.md",
-      "sha256": "9d10e27f24182c730cde13311a1d6267f8223a87614e91e9b46de859adb95ea3",
-      "bytes": 1013,
+      "sha256": "9f02c76f785522d8965bf5fab5d959cb801bc37f8f8554bbabdc5aa675e73202",
+      "bytes": 1014,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -3865,8 +3865,8 @@
     },
     {
       "path": "00_META/registers/CORPUS_INDEX.jsonl",
-      "sha256": "bd50f07c10a84f485c7849faa7cc96da61c81098704b2099613bcdc043255916",
-      "bytes": 784502,
+      "sha256": "e39c24295a33da6286a5e1cd26d518964819e25cd3817761e135e64116bcc2f6",
+      "bytes": 817342,
       "owner_lane": "00_META",
       "artifact_class": "other",
       "authority_status": "unrated",
@@ -4103,8 +4103,8 @@
     },
     {
       "path": "00_THE_DEAD_FORMS_CATALOG_v0.1.md",
-      "sha256": "6d3ab20d07938a72ec1f9e3abb4122b0371727092d92f233eae8fb828a0c716b",
-      "bytes": 900,
+      "sha256": "5bc0fba6754feda946382e14696f76ac21cb3d67613836b4b4a73671b257c97e",
+      "bytes": 892,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4114,7 +4114,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 59,
+      "inbound_references": 58,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -4165,7 +4165,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 225,
+      "inbound_references": 228,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -18689,8 +18689,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/render_claim_frontier.py",
-      "sha256": "624b1c777c82d747daef1355621f84f21d6c7a701c7b7111c28dc61ff244b208",
-      "bytes": 7658,
+      "sha256": "0f54ab04ad24c1436c965a3438a407235de63bf2caa242a9b654ab736932630c",
+      "bytes": 8884,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -18825,8 +18825,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/test_claim_frontier.py",
-      "sha256": "366d3ad4e2ea3be97a69fadd577584cf7f1186633ab41d9e9d53b51c0edb6c50",
-      "bytes": 1593,
+      "sha256": "9104a7cf144527b1a50c79d3c550ff3af7275755a396192f5c4d4813de08678c",
+      "bytes": 2781,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -37015,8 +37015,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/record/frontier/index.html",
-      "sha256": "6b7e5cca358a1ab68e5ee9bab998b3bc6fdf572a4f4fa7a29351c269f132acf2",
-      "bytes": 33370,
+      "sha256": "d20ea32e6ea4b2138a88ea18d40ab88bb67ab167343ab1fd2bed54acc710b2a9",
+      "bytes": 33500,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -38154,7 +38154,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/sw.js",
-      "sha256": "8fd79cb13c03b382b71267dfa05c0b428d637a9a74db5bd751649c9414ac1a1b",
+      "sha256": "634a30679fbf983bf4090b9cecefe45af314d623c3a3f9caba929da92626aa85",
       "bytes": 26734,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -47583,7 +47583,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 34,
+      "inbound_references": 32,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -48059,7 +48059,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 59,
+      "inbound_references": 58,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -63801,7 +63801,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 34,
+      "inbound_references": 32,
       "gate": null,
       "review_state": "unreviewed"
     },
