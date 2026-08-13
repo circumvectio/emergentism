@@ -1,0 +1,21 @@
+/* a11y-floor-2026-08-13 · accessibility and motion floor
+   Extracted from assets/css/xai.css (lines 3808-3825) into a standalone file
+   so the 35 pages that do not link xai.css can still get the floor without
+   duplicating ~719 bytes of inline CSS each. The 228 pages that link xai.css
+   keep the floor there; this file is a parallel source of truth for the
+   non-xai pages. Keep these two copies in sync. */
+:root { color-scheme: dark; }
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0; z-index: 999;
+  background: var(--accent, #FFEB3B); color: #050505;
+  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
+  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
+}
+.skip-to-content:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+}
