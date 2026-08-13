@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "00_META/claim_status/CLAIM_STATUS.yaml"
 OUT_JSON = ROOT / "12_PUBLIC_SITE/record/frontier.json"
 OUT_HTML = ROOT / "12_PUBLIC_SITE/record/frontier/index.html"
-BUCKETS = ("validated", "open", "reopened", "restored", "graves")
+BUCKETS = ("validated", "open", "reopened", "investigations", "restored", "typed_survivors", "graves")
 
 
 def _text(*parts: object) -> str | None:
@@ -162,8 +162,8 @@ def main() -> int:
         "counts": {
             "validated": len(source.get("validated") or []),
             "open": len(source.get("open") or []),
-            "reopened": len(source.get("reopened") or []),
-            "restored": len(source.get("restored") or []),
+            "investigations": len(source.get("investigations") or source.get("reopened") or []),
+            "typed_survivors": len(source.get("typed_survivors") or source.get("restored") or []),
             "graves": len(source.get("graves") or []),
             "total": len(claims),
         },

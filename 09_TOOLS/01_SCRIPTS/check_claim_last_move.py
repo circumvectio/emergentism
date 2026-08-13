@@ -18,7 +18,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 STATUS_PATH = Path("00_META/claim_status/CLAIM_STATUS.yaml")
-BUCKETS = ("validated", "open", "graves", "reopened", "restored")
+BUCKETS = ("validated", "open", "graves", "investigations", "reopened", "typed_survivors", "restored")
 LAST_MOVE_KEYS = {"mover", "date", "evidence"}
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 PLACEHOLDER = re.compile(r"^(none|n/?a|tbd|todo|unknown|yves|ai|agent)$", re.I)

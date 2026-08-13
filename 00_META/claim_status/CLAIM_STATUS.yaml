@@ -81,6 +81,14 @@
       "boundary": "An internal proof, countermodel, source reconciliation, or scope ruling may settle only the typed internal question; it supplies no observation, replication, or world-contact evidence."
     }
   },
+  "investigation_authorization": {
+    "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
+    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
+    "what_it_does_not_do": "A ruling cannot delete a counterexample or its later scope correction. Reopening means the question is live again, not that the prior form is true or that an over-broad falsifier becomes evidence.",
+    "current_state": "ADJUDICATED — 20 transition statuses returned to their recorded terminal classes; DF-13 is corrected from the prior empirical label to NOT-WELL-POSED; DF-14 remains NARROWED; executable work is owned only by explicit successor rows.",
+    "adjudication_receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md",
+    "instruction": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes."
+  },
   "validated": [
     {
       "id": "FV-01",
@@ -324,8 +332,12 @@
       "disposition": {
         "kind": "MERGED-TO-CONTACT",
         "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
-        "target_ids": ["W4"],
-        "contract_ids": ["W4A-EVALUATED-PRODUCTIVITY-01"],
+        "target_ids": [
+          "W4"
+        ],
+        "contract_ids": [
+          "W4A-EVALUATED-PRODUCTIVITY-01"
+        ],
         "reason": "The current W3 form already states an empirical product-versus-rivals test. W4A owns the same scale prerequisite, rivals, and held-out comparison, so W3 remains live through that contract and cannot be counted as an independent confirmation."
       }
     },
@@ -756,7 +768,9 @@
       "repair_path": "Rebuild as translation grammar with one novel cross-domain discriminator (GP-11); derivation form stays refuted.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["GP-11"],
+        "target_ids": [
+          "GP-11"
+        ],
         "boundary": "The refuted derivation form remains dead; GP-11 alone owns the narrower translation-grammar work."
       }
     },
@@ -771,7 +785,10 @@
       "repair_path": "Retype: keep E8 as vow; prosecute W6 as the conditional lemma. No is-to-ought bridge is admissible.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["E8", "W6"],
+        "target_ids": [
+          "E8",
+          "W6"
+        ],
         "boundary": "The category error stays dead; E8 owns the vow and W6 owns the conditional empirical work."
       }
     },
@@ -786,7 +803,9 @@
       "repair_path": "Prosecute W10 on a polarity-encoding system outside the known lineage.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W10"],
+        "target_ids": [
+          "W10"
+        ],
         "boundary": "The universal claim stays refuted; W10 alone owns the scoped lineage test."
       }
     },
@@ -801,7 +820,9 @@
       "repair_path": "The product-uniqueness proof remains dead. The current empirical W3 form is live only by merging into W4A, whose GP-03 prerequisite requires defended cardinal scales or a discriminator invariant under admissible reparameterization.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W3"],
+        "target_ids": [
+          "W3"
+        ],
         "boundary": "The non-uniqueness counterexample remains; current W3 is an empirical successor merged into W4A and cannot restore product uniqueness or count as a separate confirmation."
       }
     },
@@ -821,7 +842,9 @@
           "result_status": "CATEGORY-ERROR",
           "result_tier": "S",
           "scope": "No successor, typed structure, or discriminator was supplied after reopening; the original analytic-to-world transfer remains the same category error.",
-          "source_refs": ["00_META/00_THE_CLAIM_STATUS_REGISTER.md"],
+          "source_refs": [
+            "00_META/00_THE_CLAIM_STATUS_REGISTER.md"
+          ],
           "survivor": "FV-01 remains a chart identity only.",
           "reopen_when": "Create a new claim ID with a declared non-coordinate structure and a discriminator unavailable to the chart tautology.",
           "evidence_contract": "INTERNAL-VERDICT-V1"
@@ -839,7 +862,9 @@
       "repair_path": "RQ-01: build a survivorship-free instrument before re-running the transfer claim.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-01"],
+        "target_ids": [
+          "RQ-01"
+        ],
         "boundary": "The retracted hump stays dead; RQ-01 and W5 own the survivorship-free successor."
       }
     },
@@ -854,7 +879,9 @@
       "repair_path": "RQ-02: search the candidate class; the squid stays refuted as that witness.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-02"],
+        "target_ids": [
+          "RQ-02"
+        ],
         "boundary": "The squid stays refuted; RQ-02 and W6 own any new bearer-complete witness search."
       }
     },
@@ -869,7 +896,9 @@
       "repair_path": "W12: prosecute the practice discrimination of the boundary-role relation.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W12"],
+        "target_ids": [
+          "W12"
+        ],
         "boundary": "Literal D6 identity remains refuted; W12 owns only the practice-level role resemblance."
       }
     },
@@ -884,7 +913,9 @@
       "repair_path": "W11: find functional work for the dark twin, or accept DECORATIVE.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W11"],
+        "target_ids": [
+          "W11"
+        ],
         "boundary": "Forced Titan-3 remains refuted; W11 has now fired its DECORATIVE terminal criterion."
       }
     },
@@ -899,7 +930,13 @@
       "repair_path": "Prosecute W7a-e per leg with native-theory recovery and a permutation test.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W7a", "W7b", "W7c", "W7d", "W7e"],
+        "target_ids": [
+          "W7a",
+          "W7b",
+          "W7c",
+          "W7d",
+          "W7e"
+        ],
         "boundary": "The force bijection remains refuted; each W7 leg owns a separate role-affinity contract."
       }
     },
@@ -914,7 +951,9 @@
       "repair_path": "RQ-03: seek hypotheses forcing N=3, or a general no-go. The Z5 counterexample stands against the stated lemma.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-03"],
+        "target_ids": [
+          "RQ-03"
+        ],
         "boundary": "The universal group lemma remains refuted; RQ-03 is narrowed only to FV-19's projective normalization problem."
       }
     },
@@ -929,7 +968,9 @@
       "repair_path": "Open: no formal successor admissible; E9 survives as apparatus. Reopened as a question about the apparatus, not the lift.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["E9"],
+        "target_ids": [
+          "E9"
+        ],
         "boundary": "The universal Gödel lift remains refuted; E9 owns only the correction apparatus."
       }
     },
@@ -944,7 +985,9 @@
       "repair_path": "RQ-04 is terminal NOT-WELL-POSED because substrate, unit, horizon, and outcome were never typed; any durability successor requires a new ID.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-04"],
+        "target_ids": [
+          "RQ-04"
+        ],
         "boundary": "The signed universal retraction stands; RQ-04 records why the martyr shorthand does not independently prove substrate cardinality."
       }
     },
@@ -958,7 +1001,9 @@
       "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), with its weaker form live under KSC-04. r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s blanket application was over-broad by exactly one row; corrected 2026-07-29.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["KSC-04"],
+        "target_ids": [
+          "KSC-04"
+        ],
         "boundary": "Ordinary frame-operand exclusivity remains narrowed; KSC-04 alone owns the opaque TitanFrame survivor."
       }
     },
@@ -973,7 +1018,9 @@
       "repair_path": "RQ-05: establish lineage independence before any convergence datum is counted.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-05"],
+        "target_ids": [
+          "RQ-05"
+        ],
         "boundary": "Convergence-as-proof remains a category error; RQ-05 and W10 own causal-independence custody."
       }
     },
@@ -988,7 +1035,9 @@
       "repair_path": "W6 carries the conditional form; the general Nash claim stays refuted.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["W6"],
+        "target_ids": [
+          "W6"
+        ],
         "boundary": "The general Nash claim remains refuted; W6 owns only the conditional, bearer-accounted form."
       }
     },
@@ -1003,7 +1052,9 @@
       "repair_path": "RQ-06: supply one discriminator the analogy makes and rival social science does not.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-06"],
+        "target_ids": [
+          "RQ-06"
+        ],
         "boundary": "Civilizational physics remains not well posed; RQ-06 owns only a comparative typology test."
       }
     },
@@ -1018,7 +1069,9 @@
       "repair_path": "Re-pose each of the four separately as an open question; Human Condition 11 holds them.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["HC-11"],
+        "target_ids": [
+          "HC-11"
+        ],
         "boundary": "The dissolution claim remains not well posed; HC-11 owns four separate open mysteries without a mechanism claim."
       }
     },
@@ -1033,7 +1086,9 @@
       "repair_path": "RQ-07: declare a dynamics, derive the trajectory, then test. The static inequality alone yields nothing.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-07"],
+        "target_ids": [
+          "RQ-07"
+        ],
         "boundary": "The static-to-dynamics inference remains refuted; RQ-07 is narrowed to FV-20 and W7e owns any physical bridge."
       }
     },
@@ -1048,7 +1103,9 @@
       "repair_path": "RQ-08: require one held-out quantitative prediction from any overlay.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["RQ-08"],
+        "target_ids": [
+          "RQ-08"
+        ],
         "boundary": "Coincidence-as-derivation remains a category error; RQ-08 narrows future work to named, typed candidates."
       }
     },
@@ -1068,7 +1125,9 @@
           "result_status": "FORMALLY-REFUTED",
           "result_tier": "S",
           "scope": "The recorded counterexample still kills CC-CORE-1, and the reopened existential question names neither a candidate bridge nor premises nor a discriminator.",
-          "source_refs": ["00_META/00_THE_CLAIM_STATUS_REGISTER.md"],
+          "source_refs": [
+            "00_META/00_THE_CLAIM_STATUS_REGISTER.md"
+          ],
           "survivor": "E8 remains a chosen vow; no seam-to-score warrant survives.",
           "reopen_when": "Create a new claim ID with a typed bridge, premises, discriminator, and counterexample-sensitive kill.",
           "evidence_contract": "INTERNAL-VERDICT-V1"
@@ -1086,12 +1145,14 @@
       "repair_path": "Not a claim. Reopened as an E9 enforcement obligation: audit whether any fired kill is still logged as a pass.",
       "disposition": {
         "kind": "MERGED-TO-OWNER",
-        "target_ids": ["E9"],
+        "target_ids": [
+          "E9"
+        ],
         "boundary": "The process defect remains recorded; E9 owns enforcement and no truth-status upgrade follows."
       }
     }
   ],
-  "reopened": [
+  "investigations": [
     {
       "id": "RQ-01",
       "parent": "DF-06",
@@ -1357,15 +1418,7 @@
       }
     }
   ],
-  "owner_reopening": {
-    "ruling": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes.",
-    "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
-    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
-    "what_it_does_not_do": "A ruling cannot delete a counterexample or its later scope correction. Reopening means the question is live again, not that the prior form is true or that an over-broad falsifier becomes evidence.",
-    "current_state": "ADJUDICATED — 20 transition statuses returned to their recorded terminal classes; DF-13 is corrected from the prior empirical label to NOT-WELL-POSED; DF-14 remains NARROWED; executable work is owned only by explicit successor rows.",
-    "adjudication_receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md"
-  },
-  "restored": [
+  "typed_survivors": [
     {
       "id": "TR-01",
       "status": "FORMALLY-VALID",

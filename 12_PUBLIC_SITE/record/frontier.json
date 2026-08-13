@@ -2,7 +2,7 @@
   "schema": "emergentism/frontier-ledger/v0",
   "status": "STAGED [D] — rendering of the validation register, not a result",
   "source": "00_META/claim_status/CLAIM_STATUS.yaml",
-  "source_sha256": "4ed013a34393fc28dcc686be4264df7215c90420fe73c5a9c6126d132e856ed3",
+  "source_sha256": "d2efe1ab6bffc6fcd7371434eb8bc372dbd7b6d511e6d54ea5588d691df5f074",
   "k_star": 0,
   "attention_capture": false,
   "completeness_claim": false,
@@ -18,8 +18,8 @@
   "counts": {
     "validated": 21,
     "open": 17,
-    "reopened": 9,
-    "restored": 1,
+    "investigations": 9,
+    "typed_survivors": 1,
     "graves": 22,
     "total": 70
   },
@@ -596,7 +596,7 @@
     },
     {
       "id": "RQ-01",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "OPEN-EMPIRICAL",
       "tier": "C",
       "statement": "Is there an instrument that can test the equator-transfer claim at all?",
@@ -611,7 +611,7 @@
     },
     {
       "id": "RQ-02",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "OPEN-EMPIRICAL",
       "tier": "C",
       "statement": "Does any real system instantiate a relational eta near zero as a witness?",
@@ -626,7 +626,7 @@
     },
     {
       "id": "RQ-03",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "NARROWED",
       "tier": "C",
       "statement": "Is there any hypothesis set under which N=3 is forced?",
@@ -641,7 +641,7 @@
     },
     {
       "id": "RQ-04",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "NOT-WELL-POSED",
       "tier": "C",
       "statement": "Is there a non-trivial substrate-plurality claim that survives the martyr counterexample?",
@@ -656,7 +656,7 @@
     },
     {
       "id": "RQ-05",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "OPEN-EMPIRICAL",
       "tier": "C",
       "statement": "Can lineage independence be established for any convergence datum?",
@@ -671,7 +671,7 @@
     },
     {
       "id": "RQ-06",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "OPEN-EMPIRICAL",
       "tier": "C",
       "statement": "Does the civilizational analogy yield a discriminator?",
@@ -686,7 +686,7 @@
     },
     {
       "id": "RQ-07",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "NARROWED",
       "tier": "C",
       "statement": "Under what declared dynamics does the squared deviation tend to zero?",
@@ -701,7 +701,7 @@
     },
     {
       "id": "RQ-08",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "NARROWED",
       "tier": "C",
       "statement": "Does any numeric overlay predict something not already known?",
@@ -716,7 +716,7 @@
     },
     {
       "id": "RQ-09",
-      "bucket": "reopened",
+      "bucket": "investigations",
       "status": "NARROWED",
       "tier": "C",
       "statement": "Can REACHABLE be defined non-circularly?",
@@ -731,7 +731,7 @@
     },
     {
       "id": "TR-01",
-      "bucket": "restored",
+      "bucket": "typed_survivors",
       "status": "FORMALLY-VALID",
       "tier": "A",
       "statement": "In their declared structures, projective inversion exchanges the two projective endpoints, the selected positive numeric midpoint is self-reciprocal, and the open reciprocal chart satisfies phi times nu equals one. These are numeric/projective facts, not Titan equations or identities.",
