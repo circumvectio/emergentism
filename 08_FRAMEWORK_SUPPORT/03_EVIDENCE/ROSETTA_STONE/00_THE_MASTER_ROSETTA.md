@@ -125,6 +125,7 @@ defines them nor transfers warrant.
 
 Current routes and source owners:
 
+- [The Rosetta in Themes](36_THE_ROSETTA_IN_THEMES_2026_08_13.md) — grouped index over the live packs; its §0 carries the three lines every ladder surface must show (geometry `[A]` given the selection · count `[S]` · every cross-domain cell `[I]`)
 - [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md) — routes to owners; it does not create doctrine
 - [Dimension-first completion register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 - [D-register axioms](../../../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md)

@@ -49,6 +49,22 @@ human worth or prescriptions. The -ologies are cross-cutting questions, not
 steps or dimensions. Mathematical expressions annotate rows; they neither
 evidence nor generate the adjacent cultural mappings.
 
+**The count is `[S]` — selected, not derived.** Seven stations arise from
+choosing six equal arcs of 30° on the selected chart. On the geometry alone,
+**3, 5 or 9 stations satisfy every symmetry the chart forces**; what recommends
+six is that it lands the ladder on closed-form sines. That is an `[S]` with a
+stated reason, and still an `[S]`.
+
+**What the geometry does force is `[A]`, and only this:** with `B = sin θ` on
+the selected chart, `B(θ) = B(π−θ)` makes the count odd with a unique centre,
+makes that centre the unique argmax, pairs the rows palindromically at equal
+`B`, and sends both extremes to `0`. Those are identities. They do not produce
+seven and they do not reach any adjacent column. See
+[`../35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md`](../35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md)
+§5 for the forced/selected/derived split, and
+[`../36_THE_ROSETTA_IN_THEMES_2026_08_13.md`](../36_THE_ROSETTA_IN_THEMES_2026_08_13.md)
+§0 for the three lines every ladder surface must carry.
+
 ## Boundary rows
 
 `S2BOUNDARY@1:zero_pole` and `S2BOUNDARY@1:infinity_pole` are distinct

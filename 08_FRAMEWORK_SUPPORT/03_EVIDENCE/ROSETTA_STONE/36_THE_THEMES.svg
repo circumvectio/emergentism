@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 392" role="img" aria-labelledby="ttitle tdesc">
+<title id="ttitle">The seven Rosetta seats across three themed columns</title>
+<desc id="tdesc">Seven seats L1 to L7 in source order, with a governance analogy, a biological replicator layer, and a dispatch work function for each. L1 to L4 are deployable, L5 to L7 are executive witness. L1 carries no replicator layer — it is ground, not a rung. Every cross-domain cell is interpretive.</desc>
+<style>
+  .ink   { fill: #1F1F1D; }
+  .muted { fill: #6B6B66; }
+  .hair  { stroke: #C9C7C0; }
+  .rule  { stroke: #6B6B66; }
+  .teal  { fill: #0F6E56; }
+  .purp  { fill: #534AB7; }
+  text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .t  { font-size: 14px; font-weight: 500; }
+  .ts { font-size: 12px; font-weight: 400; }
+  @media (prefers-color-scheme: dark) {
+    .ink   { fill: #F5F5F3; }
+    .muted { fill: #9A9D9F; }
+    .hair  { stroke: rgba(245,245,243,.16); }
+    .rule  { stroke: #9A9D9F; }
+    .teal  { fill: #5DCAA5; }
+    .purp  { fill: #AFA9EC; }
+  }
+</style>
+<text class="t ink" x="52" y="60" dominant-baseline="central">seat</text>
+<text class="t ink" x="108" y="60" dominant-baseline="central">governance</text>
+<text class="t ink" x="274" y="60" dominant-baseline="central">biology</text>
+<text class="t ink" x="420" y="60" dominant-baseline="central">dispatch</text>
+<path d="M40,72H640" class="rule" stroke-width="0.5" fill="none"/>
+<rect x="40" y="77" width="3" height="136" class="teal"/>
+<rect x="40" y="213" width="3" height="102" class="purp"/>
+<path d="M40,111H640M40,145H640M40,179H640M40,247H640M40,281H640" class="hair" stroke-width="0.5" fill="none"/>
+<path d="M40,213H640M40,315H640" class="rule" stroke-width="0.5" fill="none"/>
+<text class="t ink" x="52" y="94" dominant-baseline="central">L1</text>
+<text class="ts muted" x="108" y="94" dominant-baseline="central">Caṇḍāla · tyranny</text>
+<text class="ts muted" x="274" y="94" dominant-baseline="central">ground · not a rung</text>
+<text class="ts muted" x="420" y="94" dominant-baseline="central">isolate contradictions</text>
+<text class="t ink" x="52" y="128" dominant-baseline="central">L2</text>
+<text class="ts muted" x="108" y="128" dominant-baseline="central">Śūdra · democracy</text>
+<text class="ts muted" x="274" y="128" dominant-baseline="central">genotype</text>
+<text class="ts muted" x="420" y="128" dominant-baseline="central">expand counterexamples</text>
+<text class="t ink" x="52" y="162" dominant-baseline="central">L3</text>
+<text class="ts muted" x="108" y="162" dominant-baseline="central">Vaiśya · oligarchy</text>
+<text class="ts muted" x="274" y="162" dominant-baseline="central">epigenotype</text>
+<text class="ts muted" x="420" y="162" dominant-baseline="central">audit evidence and routes</text>
+<text class="t ink" x="52" y="196" dominant-baseline="central">L4</text>
+<text class="ts muted" x="108" y="196" dominant-baseline="central">Kṣatriya · timocracy</text>
+<text class="ts muted" x="274" y="196" dominant-baseline="central">phenotype</text>
+<text class="ts muted" x="420" y="196" dominant-baseline="central">execute smallest change</text>
+<text class="t ink" x="52" y="230" dominant-baseline="central">L5</text>
+<text class="ts muted" x="108" y="230" dominant-baseline="central">Brāhmaṇa · aristocracy</text>
+<text class="ts muted" x="274" y="230" dominant-baseline="central">extended phenotype</text>
+<text class="ts muted" x="420" y="230" dominant-baseline="central">design schemas and owners</text>
+<text class="t ink" x="52" y="264" dominant-baseline="central">L6</text>
+<text class="ts muted" x="108" y="264" dominant-baseline="central">Sādhu · anarchy</text>
+<text class="ts muted" x="274" y="264" dominant-baseline="central">memotype</text>
+<text class="ts muted" x="420" y="264" dominant-baseline="central">compress and archive</text>
+<text class="t ink" x="52" y="298" dominant-baseline="central">L7</text>
+<text class="ts muted" x="108" y="298" dominant-baseline="central">Ṛṣi · theocracy</text>
+<text class="ts muted" x="274" y="298" dominant-baseline="central">egregoreotype</text>
+<text class="ts muted" x="420" y="298" dominant-baseline="central">witness and translate</text>
+<rect x="44" y="340" width="3" height="12" class="teal"/>
+<text class="ts muted" x="56" y="346" dominant-baseline="central">L1–L4 deployable</text>
+<rect x="200" y="340" width="3" height="12" class="purp"/>
+<text class="ts muted" x="212" y="346" dominant-baseline="central">L5–L7 executive witness</text>
+<text class="ts muted" x="40" y="376" dominant-baseline="central">Every cell above is [I] · varṇa and regime are attributed historical analogies, never classes of human worth</text>
+</svg>

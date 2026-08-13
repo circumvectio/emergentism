@@ -35,6 +35,29 @@ empirical Triple Lock claims.
 
 ## REGIME TABLE
 
+> **Read before the table — the three lines, and the fence this table needs most.**
+> Full statement at
+> [`../36_THE_ROSETTA_IN_THEMES_2026_08_13.md`](../36_THE_ROSETTA_IN_THEMES_2026_08_13.md) §0.
+>
+> 1. **The geometry is `[A]`, given the selection** (`B = sin θ`, palindromic
+>    pairing, `L4` the unique argmax).
+> 2. **The count is `[S]`, selected — not derived.** 3, 5 or 9 stations satisfy
+>    the same symmetry.
+> 3. **Every cell below is `[I]`** — a directional projection inheriting neither
+>    truth nor evidence tier from political theory.
+>
+> **Varṇa and regime are attributed historical analogies, never classes of human
+> worth, ranks, or prescriptions.** `KSC-24` kills on *role assigned by birth*;
+> `KSC-25` kills on a row assignment that is other-ascribed, fixed,
+> status-bearing, broad/default, birth-linked, or presented as biology. A modern
+> analogue in the rightmost column names a **governance form**, never a people.
+>
+> **Five of these regimes are inherited from Plato and two are framework
+> additions** — he has no sixth regime called anarchy and no seventh called
+> theocracy. See `../16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md`, which also
+> records that linear/degenerative traditions *"project partially or with
+> forcing."*
+
 | L | Plato's Regime | Varṇa | Governance | Economic Model | Modern Analogue | Mapping tier |
 |---|---------------|-------|-----------|---------------|----------------|-------|
 | L1 | Tyranny | Caṇḍāla | Force/Chaos | Extractive | Failed states, warlords | [I] |

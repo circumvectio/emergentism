@@ -27,6 +27,25 @@ certificate nor evidence for the Emergentist ontology.
 5. [Balance of Houses](04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md) — the bounded trophic-cascade, mobile-guild, coadaptation, convergence, and normative-target projection.
 6. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — the generalized pack and cell evaluation form.
 7. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
+8. [The Rosetta in Themes](36_THE_ROSETTA_IN_THEMES_2026_08_13.md) — a grouped index over the live packs, and the §0 three-line clarification every ladder surface must carry.
+
+## The three lines — required on any surface that shows the seven-row ladder
+
+Carrying one or two without the third is the failure this block exists to stop.
+Full statement and figures at
+[36_THE_ROSETTA_IN_THEMES](36_THE_ROSETTA_IN_THEMES_2026_08_13.md) §0.
+
+1. **The geometry is `[A]`, given the selection.** `B = sin θ` on the selected
+   chart; `B(θ)=B(π−θ)` forces palindromic pairing, `L4` is the unique argmax,
+   the extremes go to `0`. Identities, not findings.
+2. **The count is `[S]`, selected — not derived.** Six arcs of 30° is a choice;
+   **3, 5 or 9 stations satisfy every symmetry in line 1 equally well.**
+3. **Every cross-domain cell is `[I]`.** Varṇa, regime, -ology, inference,
+   replicator layer and every domain column are directional projections
+   inheriting neither truth nor tier.
+
+Corollaries: `G7@1` is a partition (`M4 ⊎ F3`), **not a column of `GEN7@1`**;
+and the two poles are non-members that `L1`/`L7` approach and never identify.
 
 ## Authority boundary
 
