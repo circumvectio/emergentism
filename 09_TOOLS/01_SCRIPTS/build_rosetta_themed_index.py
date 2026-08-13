@@ -196,62 +196,249 @@ def render(records: list[dict]) -> str:
 # systems are neither premises nor authorities here."
 PUBLIC_WITHHELD_COLUMNS = {"helios product"}
 
+# Reader-facing names. The public surface names a reading, never a file path.
+# Provenance stays in the corpus catalogue and in the title= attribute.
+SOURCE_LABEL = {
+    "D_SERIES_ROWS/00_GENERATIVE_TABLE.md": "The generative table",
+    "D_SERIES_DOMAINS/D32_MATHEMATICS.md": "The chart",
+    "D_SERIES_ROWS/D22_ROSETTA_R13_HEXAGRAM.md": "Hexagram",
+    "00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md": "The seven questions",
+    "D_SERIES_DOMAINS/D30_SOCIAL_POLITICAL.md": "Regimes and governance",
+    "16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md": "Plato, Lakota, brain",
+    "ROSETTA_REPLICATOR.md": "Replicator layers",
+    "04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md": "Ecological cascade",
+    "D_SERIES_DOMAINS/D24_PSYCHOLOGY.md": "Developmental psychology",
+    "ROSETTA_PSYCHOLOGY.md": "Psychology, second reading",
+    "D_SERIES_DOMAINS/D25_NEUROSCIENCE.md": "Neuroscience",
+    "ROSETTA_NEUROSCIENCE.md": "Neuroscience, second reading",
+    "D_SERIES_DOMAINS/D26_COMPUTATION.md": "Computation",
+    "ROSETTA_COMPUTATION.md": "Computation, second reading",
+    "D_SERIES_DOMAINS/D27_GAME_THEORY.md": "Game theory",
+    "D_SERIES_DOMAINS/D28_MYTHOLOGY.md": "Mythology",
+    "ROSETTA_MYTHOLOGY.md": "Mythology, second reading",
+    "ROSETTA_MUSIC.md": "Music",
+    "D_SERIES_ROWS/D24_ROSETTA_R14_PIE_COMPARATIVE_LINGUISTICS.md": "Proto-Indo-European",
+    "D_SERIES_DOMAINS/D29_SPIRITUAL.md": "Contemplative practice",
+    "00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md": "Sufi and Chinese stages",
+    "05_NON_WEIRD_SWEEP_2026_04_25.md": "Bhūmi stages",
+    "10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md": "Aztec and Tahitian readings",
+    "ROSETTA_INDIGENOUS_AMERICAN.md": "Lakota rites",
+    "D_SERIES_DOMAINS/D31_CIVILISATIONAL.md": "Civilisational stages",
+    "ROSETTA_CIVILISATIONAL.md": "Civilisation, second reading",
+    "07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md": "The mirror test",
+    "08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md": "The mirror test, extended",
+    "17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md": "Psychology cell audit",
+}
+
+# seat -> (varṇa, B label, mirror partner or None, hue token)
+SEAT_META = OrderedDict([
+    ("L1", ("Caṇḍāla", "0", "L7", "m1")),
+    ("L2", ("Śūdra", "0.5", "L6", "m2")),
+    ("L3", ("Vaiśya", "√3⁄2", "L5", "m3")),
+    ("L4", ("Kṣatriya", "1", None, "gold")),
+    ("L5", ("Brāhmaṇa", "√3⁄2", "L3", "m3")),
+    ("L6", ("Sādhu", "0.5", "L2", "m2")),
+    ("L7", ("Ṛṣi", "0", "L1", "m1")),
+])
+
+# Columns that grade the mapping become a badge on the reading, not a row of data.
+TIER_COLUMNS = {"mapping tier", "rigor", "standing", "verdict", "weight", "strength"}
+# Redundant in the seat view — the rail already shows the pairing.
+SEAT_VIEW_DROP = {"mirror partner"}
+
 
 def hesc(v) -> str:
     if not v:
         return "—"
-    return (v.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    return v.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def label_of(fname: str) -> str:
+    return SOURCE_LABEL.get(fname, fname.rsplit("/", 1)[-1].replace(".md", ""))
+
+
+def _dome_path() -> str:
+    import math
+    pts = []
+    for i in range(0, 109):
+        t = i / 108
+        x = 70 + t * 540
+        y = 130 - 90 * math.sin(math.pi * t)
+        pts.append(f"{x:.1f},{y:.1f}")
+    return "M" + "L".join(pts)
+
+
+def _seat_xy(idx: int) -> tuple[float, float]:
+    import math
+    t = idx / 6
+    return 70 + t * 540, 130 - 90 * math.sin(math.pi * t)
+
+
+ROSETTA_CSS = """
+.rstone{margin:0 0 1.4rem}
+.rstone .rail{width:100%;max-width:680px;margin:0 auto .4rem;display:block}
+.rstone .nseat{cursor:pointer}
+.rstone .nseat circle{transition:r .18s ease,fill-opacity .18s ease}
+.rstone .nseat:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.rstone .nlab{font-family:var(--mono);font-size:11px;fill:var(--bone-ghost);letter-spacing:.1em}
+.rstone .nseat.is-active .nlab{fill:var(--bone)}
+.rstone .nseat.is-mirror .nlab{fill:var(--bone-dim)}
+.rstone .railhint{font-family:var(--mono);font-size:10px;fill:var(--bone-ghost);letter-spacing:.18em;text-transform:uppercase}
+.rstone .pane{display:none}
+.rstone .pane.is-on{display:block}
+.rstone .seathead{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;
+  padding:.9rem 0 .7rem;border-bottom:1px solid var(--line)}
+.rstone .sglyph{font-family:var(--mono);font-size:1.5rem;letter-spacing:.16em;font-weight:500}
+.rstone .svarna{font-size:1.9rem;font-weight:200;letter-spacing:-.02em;margin:0;color:var(--bone)}
+.rstone .smeta{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--bone-ghost);margin:0 0 0 auto}
+.rstone .reg{padding:1.1rem 0;border-bottom:1px solid var(--line-soft)}
+.rstone .regname{font-family:var(--mono);font-size:.66rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--gold-deep);margin:0 0 .7rem}
+.rstone .src{margin:0 0 .9rem}
+.rstone .srcname{font-size:.86rem;color:var(--bone);margin:0 0 .25rem;font-weight:500}
+.rstone .tier{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--bone-ghost);
+  border:1px solid var(--line);border-radius:2px;padding:.05rem .3rem;margin-left:.4rem}
+.rstone dl{display:grid;grid-template-columns:minmax(8.5rem,auto) 1fr;gap:.18rem .9rem;margin:0}
+.rstone dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--bone-ghost);
+  text-transform:lowercase;padding-top:.12rem}
+.rstone dd{margin:0;color:var(--bone-dim);font-size:.92rem;font-weight:300}
+@media (max-width:640px){
+  .rstone dl{grid-template-columns:1fr;gap:0 0}
+  .rstone dt{margin-top:.4rem}
+  .rstone .smeta{margin:.3rem 0 0}
+}
+@media (prefers-reduced-motion:reduce){.rstone .nseat circle{transition:none}}
+"""
 
 
 def render_html(records: list[dict]) -> str:
-    grouped: dict[str, list[dict]] = {k: [] for k in THEMES}
     withheld = 0
+    kept: list[dict] = []
     for r in records:
         if r["column"].strip().lower() in PUBLIC_WITHHELD_COLUMNS:
             withheld += 1
             continue
-        grouped[theme_of(r)].append(r)
+        kept.append(r)
 
-    total = sum(len(v) for v in grouped.values())
     out: list[str] = []
     w = out.append
-    w('    <details class="comparative-appendix reveal" style="margin-top:1.6rem">')
-    w(f'      <summary>Open the full themed catalogue — {total} columns, '
-      f'{len(THEMES)} themes [I]</summary>')
-    w('      <div class="comparative-body">')
-    w('        <p class="symbolic-fence"><b>Every cell below is interpretive.</b> '
-      'Each column is a directional projection into the seven seats, copied verbatim '
-      'from its source table and carrying neither the truth nor the evidence tier of '
-      'the domain it came from. Columns are grouped by an authored selection; the '
-      'grouping changes no cell. Varṇa and regime are attributed historical analogies, '
-      'never classes of human worth and never assigned by birth.'
-      + (f' {withheld} column(s) carrying venture vocabulary are withheld from this '
-         'public projection and remain in the source lane.' if withheld else '') +
-      '</p>')
-    for key, title in THEMES.items():
-        recs = grouped[key]
-        if not recs:
-            continue
-        w(f'        <h3 style="margin:1.8rem 0 .4rem;font-weight:500">{hesc(title)}</h3>')
-        by_file: dict[str, list[dict]] = OrderedDict()
-        for r in recs:
-            by_file.setdefault(r["file"], []).append(r)
-        for fname, cols in by_file.items():
-            w(f'        <p class="pk" style="margin:.9rem 0 .3rem">{hesc(fname)}</p>')
-            for start in range(0, len(cols), 5):
-                chunk = cols[start:start + 5]
-                w('        <div class="tblwrap"><table style="min-width:0">')
-                w('          <thead><tr><th>seat</th>'
-                  + "".join(f"<th>{hesc(c['column'])}</th>" for c in chunk)
-                  + '</tr></thead>')
-                w('          <tbody>')
-                for s in SEATS:
-                    w(f'            <tr><td class="level">{s}</td>'
-                      + "".join(f"<td>{hesc(c['cells'][s])}</td>" for c in chunk)
-                      + '</tr>')
-                w('          </tbody></table></div>')
-    w('      </div>')
-    w('    </details>')
+    w("<!-- ROSETTA-CATALOGUE:START -->")
+    w(f"    <style>{ROSETTA_CSS}    </style>")
+    w('    <div class="rstone reveal" id="rstone" data-seat="L4">')
+
+    # --- the rail: height is balance -------------------------------------
+    w('      <svg class="rail" viewBox="0 0 680 168" role="tablist" '
+      'aria-label="Choose a seat to read across every domain">')
+    w(f'        <path d="{_dome_path()}" fill="none" stroke="var(--line)" stroke-width="1"/>')
+    w('        <line x1="70" y1="130" x2="610" y2="130" stroke="var(--line-soft)" stroke-width="1"/>')
+    w('        <line class="mlink" x1="0" y1="0" x2="0" y2="0" stroke="var(--line)" '
+      'stroke-width="1" stroke-dasharray="3 4" opacity="0"/>')
+    for i, (seat, (varna, b, mirror, hue)) in enumerate(SEAT_META.items()):
+        x, y = _seat_xy(i)
+        w(f'        <g class="nseat" data-seat="{seat}" data-x="{x:.1f}" data-y="{y:.1f}" '
+          f'role="tab" tabindex="0" aria-label="{seat}, {varna}, balance {b}">')
+        w(f'          <circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="var(--{hue})" fill-opacity=".35"/>')
+        w(f'          <text class="nlab" x="{x:.1f}" y="154" text-anchor="middle">{seat}</text>')
+        w('        </g>')
+    w('        <text class="railhint" x="340" y="16" text-anchor="middle">height is balance</text>')
+    w('      </svg>')
+
+    # --- one pane per seat -----------------------------------------------
+    for seat, (varna, b, mirror, hue) in SEAT_META.items():
+        on = " is-on" if seat == "L4" else ""
+        mtxt = f"mirrors {mirror}" if mirror else "no mirror · the equator"
+        w(f'      <div class="pane{on}" data-seat="{seat}" role="tabpanel" aria-label="{seat} {varna}">')
+        w('        <div class="seathead">')
+        w(f'          <span class="sglyph" style="color:var(--{hue})">{seat}</span>')
+        w(f'          <h3 class="svarna">{hesc(varna)}</h3>')
+        w(f'          <p class="smeta">B = {b} · {mtxt}</p>')
+        w('        </div>')
+
+        for key, title in THEMES.items():
+            if key == "audit":
+                continue
+            recs = [r for r in kept if theme_of(r) == key]
+            by_file: dict[str, list[dict]] = OrderedDict()
+            for r in recs:
+                by_file.setdefault(r["file"], []).append(r)
+            block: list[str] = []
+            for fname, cols in by_file.items():
+                pairs, badge = [], None
+                for c in cols:
+                    cname = c["column"].strip().lower()
+                    val = c["cells"][seat]
+                    if not val:
+                        continue
+                    if cname in TIER_COLUMNS:
+                        badge = val
+                        continue
+                    if cname in SEAT_VIEW_DROP:
+                        continue
+                    pairs.append((c["column"], val))
+                if not pairs:
+                    continue
+                block.append(f'          <div class="src">')
+                block.append(f'            <p class="srcname" title="{hesc(fname)}">'
+                             f'{hesc(label_of(fname))}'
+                             + (f'<span class="tier">{hesc(badge)}</span>' if badge else '')
+                             + '</p>')
+                block.append('            <dl>')
+                for k, v in pairs:
+                    block.append(f'              <dt>{hesc(k)}</dt><dd>{hesc(v)}</dd>')
+                block.append('            </dl>')
+                block.append('          </div>')
+            if block:
+                short = title.split("·", 1)[1].split("—")[0].strip() if "·" in title else title
+                w('        <section class="reg">')
+                w(f'          <p class="regname">{hesc(short)}</p>')
+                out.extend(block)
+                w('        </section>')
+        w('      </div>')
+
+    w('    </div>')
+    w("""    <script>
+    (function(){
+      var root=document.getElementById('rstone'); if(!root) return;
+      var tabs=[].slice.call(root.querySelectorAll('.nseat'));
+      var panes=[].slice.call(root.querySelectorAll('.pane'));
+      var link=root.querySelector('.mlink');
+      var pairs={L1:'L7',L2:'L6',L3:'L5',L5:'L3',L6:'L2',L7:'L1'};
+      function pick(seat){
+        root.dataset.seat=seat;
+        panes.forEach(function(p){p.classList.toggle('is-on',p.dataset.seat===seat);});
+        var m=pairs[seat]||null, a=null, bnode=null;
+        tabs.forEach(function(t){
+          var s=t.dataset.seat, act=s===seat, mir=s===m;
+          t.classList.toggle('is-active',act); t.classList.toggle('is-mirror',mir);
+          t.setAttribute('aria-selected',act?'true':'false');
+          t.setAttribute('tabindex',act?'0':'-1');
+          var c=t.querySelector('circle');
+          c.setAttribute('r',act?8:(mir?6:5));
+          c.setAttribute('fill-opacity',act?'1':(mir?'.7':'.35'));
+          if(act)a=t; if(mir)bnode=t;
+        });
+        if(a&&bnode){
+          link.setAttribute('x1',a.dataset.x);link.setAttribute('y1',a.dataset.y);
+          link.setAttribute('x2',bnode.dataset.x);link.setAttribute('y2',bnode.dataset.y);
+          link.setAttribute('opacity','1');
+        } else { link.setAttribute('opacity','0'); }
+      }
+      tabs.forEach(function(t,i){
+        t.addEventListener('click',function(){pick(t.dataset.seat);});
+        t.addEventListener('keydown',function(e){
+          if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(t.dataset.seat);}
+          if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+            e.preventDefault();
+            var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];
+            n.focus();pick(n.dataset.seat);
+          }
+        });
+      });
+      pick('L4');
+    })();
+    </script>""")
+    w("<!-- ROSETTA-CATALOGUE:END -->")
     return "\n".join(out) + "\n"
 
 
