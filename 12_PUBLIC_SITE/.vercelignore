@@ -19,6 +19,9 @@ __pycache__/
 *.py
 *.sh
 *.md
+# The model-facing training seed is a declared current public surface. Keep the
+# broad Markdown source exclusion, then re-include this one exact deployable.
+!spark.md
 
 # iCloud conflict copies are local custody artifacts, never deploy inputs.
 **/* 2.*

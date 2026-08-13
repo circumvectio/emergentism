@@ -650,6 +650,12 @@
     "assets/js/living-map.js",
     "living-map.json"
   ],
+  "machineSurfaces": [
+    "spark.md",
+    "llms.txt",
+    "record/problems.json",
+    "record/frontier.json"
+  ],
   "frozenLibraryRoots": [
     "papers",
     "canon",

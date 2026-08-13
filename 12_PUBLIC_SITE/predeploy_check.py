@@ -3139,6 +3139,16 @@ def check_declared_public_head_custody():
     return all_ok
 
 
+def declared_public_surfaces():
+    """Return the exact current, provisional, and infrastructure deploy set."""
+    manifest = json.loads(read_file("public_semantic_parity.json"))
+    declared = set(manifest.get("currentSurfaces", []))
+    declared.update(manifest.get("machineSurfaces", []))
+    declared.update(manifest.get("declaredProvisional", {}).get("routes", []))
+    declared.update(manifest.get("infrastructureRoutes", {}).get("routes", []))
+    return declared
+
+
 def check_publication_boundary():
     print("\n[11] Deployment publication boundary")
     patterns = load_vercelignore_patterns()
@@ -3167,6 +3177,14 @@ def check_publication_boundary():
     if missing:
         for pattern in missing:
             error(f".vercelignore missing required pattern: {pattern}")
+        return False
+
+    ignored_declared = sorted(
+        rel for rel in declared_public_surfaces() if is_vercel_ignored(rel, patterns)
+    )
+    if ignored_declared:
+        for rel in ignored_declared:
+            error(f"declared public surface is excluded by .vercelignore: {rel}")
         return False
 
     risky_paths = [

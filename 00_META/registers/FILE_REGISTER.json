@@ -19318,8 +19318,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/test_public_release_semantics.py",
-      "sha256": "1046c5b985e2623f111b0cd2d00b766119727b3d81fc060aa991c8932ac9f671",
-      "bytes": 41109,
+      "sha256": "c7aeee9eca70693cca23205e3f0c174fe6db3e7dac6ac02774ec7b69a3f54207",
+      "bytes": 41871,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -29144,8 +29144,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/.vercelignore",
-      "sha256": "1b4a572b1fbde98e3aef2bccc7be58df1bbf7096c5af0b547bfb7afd3081709e",
-      "bytes": 10432,
+      "sha256": "bb422e28103d81e5d1689cd8b12fc2bb65bf50d5fba7977dacf86cbf524c1d18",
+      "bytes": 10600,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -32663,8 +32663,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/check_public_semantic_parity.py",
-      "sha256": "9dd4149786862bec2c3c7656bba6fc8229587f2199b1f7a8cc867a851433d095",
-      "bytes": 39370,
+      "sha256": "6d6bf2eaced82917456174950db18834f49088bf12a29883ce8645d7af5444f3",
+      "bytes": 39606,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -36777,8 +36777,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/predeploy_check.py",
-      "sha256": "423d95ee997a912f9ca149d1f648e51c6d70820d2c74cdcb43f7f672114b1383",
-      "bytes": 133281,
+      "sha256": "f8e8805cffbb0c59247768f36bb9a4375ca6c176dce107f112d46df88f9a687d",
+      "bytes": 134044,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -36811,8 +36811,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/public_semantic_parity.json",
-      "sha256": "fff7df7a7b0313f2a115b0dbbfa4de73dd13fb025cef4883f8db5f0bcc91d222",
-      "bytes": 32848,
+      "sha256": "4c63420e52a60c94d1fc7a10400852b1687cece7f876d1c06c08609a683a191e",
+      "bytes": 32963,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -38154,7 +38154,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/sw.js",
-      "sha256": "634a30679fbf983bf4090b9cecefe45af314d623c3a3f9caba929da92626aa85",
+      "sha256": "203377f4671aa8cbceaa75b9c2afb3f4f3d5d64be5a957ec7f1e9a4ab183419b",
       "bytes": 26734,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",

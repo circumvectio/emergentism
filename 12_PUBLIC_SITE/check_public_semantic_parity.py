@@ -245,18 +245,23 @@ STATUS_SOURCE_CONTRACTS = {
 def parity_audit_surfaces(data: dict) -> list[str]:
     """Return every current/provisional surface subject to prohibition scans."""
     current = data.get("currentSurfaces")
+    machine = data.get("machineSurfaces")
     provisional_block = data.get("declaredProvisional")
     if not isinstance(current, list) or not all(
         isinstance(item, str) for item in current
     ):
         raise ValueError("currentSurfaces must be a list of paths")
+    if not isinstance(machine, list) or not all(
+        isinstance(item, str) for item in machine
+    ):
+        raise ValueError("machineSurfaces must be a list of paths")
     if not isinstance(provisional_block, dict) or not isinstance(
         provisional_block.get("routes"), list
     ) or not all(isinstance(item, str) for item in provisional_block["routes"]):
         raise ValueError("declaredProvisional.routes must be a list of paths")
-    combined = current + provisional_block["routes"]
+    combined = current + machine + provisional_block["routes"]
     if len(combined) != len(set(combined)):
-        raise ValueError("current and provisional public surfaces must be disjoint")
+        raise ValueError("current, machine, and provisional public surfaces must be disjoint")
     return combined
 
 NEGATIVE_PRODUCT_RECORDS = {"axioms/index.html", "record/index.html"}
