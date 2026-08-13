@@ -4,7 +4,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "Conjugacy — the ring that closes",
-  "body": "For phi,nu > 0 with phi*nu = 1, driving one factor toward 0 forces its complement to infinity; the product is conserved at 1 — a runaway, not an annihilation. Annihilation (a vanishing factor kills the whole) belongs to the node engine P = Phi x V, the AND-class wager — see the keel card. The frame conserves; the engine annihilates. Keep them apart.",
+  "body": "For phi, nu > 0 with phi*nu = 1, driving one coordinate toward 0 forces its reciprocal toward infinity. This is [A] inside the defined reciprocal chart. It is not a conserved discovery, not an ethics warrant, and not a license for a node product. The public node object is the pair N = (Phi-hat_4, V_4), compared by Pareto; min only after a shared ladder kappa; product ranking is retired.",
   "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
   "route": "foundations/the-ring-that-is-the-ground"
  },
@@ -13,7 +13,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "The self-dual unit",
-  "body": "1 is the unique fixed point of inversion x -> 1/x, which is, under log, the reflection s -> -s. It is simultaneously the multiplicative unit, the additive origin (log 1 = 0), and the projective hinge. Three charts, one point. This is the mathematical heart of the middle.",
+  "body": "On the positive-real chart, 1_N is the unique fixed point of inversion x -> 1/x, which becomes reflection s -> -s under log. On CP^1 inversion also fixes -1; the framework selects numeric +1 as the positive centre. This is not sovereign Titan 1_T.",
   "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
   "route": "trinity/00-the-transcendental-trinity-canon"
  },
@@ -21,8 +21,8 @@
   "id": "n03",
   "group": "nectar",
   "tier": "[A]",
-  "title": "The titans {0, 1, infinity}",
-  "body": "The unique minimal generative frame on the Riemann sphere up to Mobius: {0,infinity} are swapped by z -> 1/z, whose fixed point — the self-dual centre — is 1; any fourth point is cross-ratio-determined, so the frame cannot be extended. That they define the operations rather than serve as operands is the framework's structural reading [S].",
+  "title": "Three selected boundary labels",
+  "body": "Three distinct mathematical points such as {0,1,infinity_P} can fix a projective frame on CP^1 up to Mobius [A]; choosing +1 over -1 is not forced. Emergentism separately selects opaque TitanFrame = {0_T, 1_T, infinity_T} and renders it with familiar labels [S/I]. There is no Titan arithmetic and no coercion of nature.",
   "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
   "route": "trinity/00-the-transcendental-trinity-canon"
  },
@@ -40,7 +40,7 @@
   "group": "nectar",
   "tier": "[A]",
   "title": "One degree of freedom",
-  "body": "phi*nu = 1 collapses two variables to a single coordinate theta: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). The manifold is a consequence of the reciprocal identity, not an extra assumption.",
+  "body": "Once phi*nu = 1 is stipulated, two positive coordinates reduce to one: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). This earns the one-dimensional reciprocal curve inside the lens. It does not independently derive S^2 as the territory.",
   "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
   "route": "will/00-the-core-conjecture"
  },
@@ -57,17 +57,17 @@
   "id": "n07",
   "group": "nectar",
   "tier": "[A]",
-  "title": "The mass-shell",
-  "body": "Under phi = e^w, nu = e^(-w) (rapidity), the balance identity coincides with the mass-shell E^2 - (pc)^2 = (mc^2)^2 — a kinematic translation (the register fence applies), not an empirical discovery. The equator is the rest frame E = mc^2; the runaway is the divergence toward the light cone. An exact coordinate identity (cosh^2 w - sinh^2 w = 1).",
+  "title": "A rapidity correspondence, not spacetime",
+  "body": "If phi=e^w, nu=e^{-w}, and E=(phi+nu)/2, p=(phi-nu)/2 are separately defined, then E^2-p^2=phi*nu=1. This is an exact algebraic correspondence [A] after those definitions. It does not show that the chart is physical spacetime or identify Phi/V with energy/momentum.",
   "source": "05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md",
   "unpublished": true
  },
  {
   "id": "n08",
   "group": "nectar",
-  "tier": "[A]",
-  "title": "The operators are the Mobius classes",
-  "body": "The five VIVEKA operators map onto the conjugacy classes of PSL(2,C): elliptic (Vishnu), hyperbolic plus/minus (Brahma/Shiva, one flow two directions), loxodromic (Krishna), parabolic (Kali). The four-class trace partition is a genuine theorem; the naming is interpretive.",
+  "tier": "[I]",
+  "title": "A Mobius-class correspondence, not an operator theorem",
+  "body": "The standard elliptic, parabolic, hyperbolic, and loxodromic classification is mathematics [A] in its proper domain. Mapping selected operator names onto those classes is [I/C]. It is not a theorem about the operators and earns no mechanism from the naming.",
   "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md",
   "route": "operators/mf-63-mobius-operators"
  },
@@ -93,8 +93,8 @@
   "id": "n11",
   "group": "nectar",
   "tier": "[S]",
-  "title": "The 4 + 3 exhaustion",
-  "body": "Exhausting {self,other} x {Phi,V} yields exactly four mixed-sign transfers (2 Gods give, 2 Demons take) and three same-sign boundary frames (Titans), no fifth mixed slot without a new axis. Morality rides on eta (give vs take), never on the operator's name. Exhaustive on two axes, silent on games with more.",
+  "title": "Four transfer cells; seven is not forced",
+  "body": "Exhausting {self,other} x {Phi,V} with the descriptive give-take axis explicit yields exactly four transfer cells inside that two-axis game [S]. The three Titans are read-only boundary frames selected by the framework; adding them gives a useful sevenfold grammar, but seven is not forced by the algebra.",
   "source": "05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md",
   "unpublished": true
  },
@@ -111,8 +111,8 @@
   "id": "n13",
   "group": "nectar",
   "tier": "[S]",
-  "title": "The extraction law",
-  "body": "Extraction produces power locally and briefly; ungated, it consumes its own substrate — the staged claim [D] is that it drives the sum of flourishing change across the widest boundary negative. The grounding models (Lotka-Volterra, Red Queen, Lindeman attrition) are established population dynamics, not proofs of the law — and base LV gives a neutral centre, not a crash. Total flourishing change is the moral primitive; eta=0-toward-cooperators is a derived front-line gate, not a commandment.",
+  "title": "Non-extraction is a vow, not a Nash law",
+  "body": "eta_move = 0 is the constitutional vow: refuse sustained extraction and preserve reciprocal relation. It has structural support in some scoped models; it is not a universal Nash theorem and not an ought derived from geometry.",
   "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
   "unpublished": true
  },
@@ -121,7 +121,7 @@
   "group": "nectar",
   "tier": "[S]",
   "title": "The constitution is constrained optimization",
-  "body": "5 + 1 means maximize the option cone subject to the five refusals (eta=0, K2, K3, K4, A7) as the feasible set. Balance and eta=0 are the constraint, not the goal; the strong reality-maximizes-balance reading was withdrawn when the empowerment test showed the option cone is reach-dominated and diverges from the equator. This withdrawal is itself nectar.",
+  "body": "The compass seeks durable mutual option-cone widening subject to five refusals: extraction, unaccountable consequential action, erasure of provenance, coerced retention, and immunity from correction. Balance and non-extraction are constraints, not a universal goal of reality. The strong 'reality maximizes B' reading was withdrawn. That withdrawal is itself nectar.",
   "source": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
   "route": "five-plus-one"
  },
@@ -137,18 +137,18 @@
  {
   "id": "n16",
   "group": "nectar",
-  "tier": "[S]",
-  "title": "D5's emergence asymmetry",
-  "body": "Strongly emergent in genesis (opaque, un-shortcuttable from below), weakly emergent in governance (compressible once stabilized). Opaque from below, legible from above — if the strong-emergence wager holds. Falsifiable-shaped: it predicts where reduction fails vs succeeds. Keep the reading; cut the boast that it is one of the strongest general laws.",
+  "tier": "[C]",
+  "title": "D5's candidate emergence asymmetry",
+  "body": "Genesis may be opaque from a lower register while stabilized behavior becomes compressible from above. This is [C] per crossing, not proof of strong emergence. A successful reduction reclassifies the crossing as weak emergence without destroying the scaffold.",
   "source": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md",
   "unpublished": true
  },
  {
   "id": "n17",
   "group": "nectar",
-  "tier": "[S]",
-  "title": "The tier-separated ground",
-  "body": "Ground to Being to Dasein to beings, each term held apart, with the anti-reification rule enforced structurally: the seer is not on the sphere; the lens diagrams what shows, not the showing. The sphere is the first stable closure of the Ground, never the Ground.",
+  "tier": "[I]",
+  "title": "The seer is not placed on the sphere",
+  "body": "Ground, Being, Dasein, and beings are kept apart as a selected interpretive ordering [I/C], not a derived ontology. The surviving anti-reification rule is narrower: the lens diagrams what shows, not the showing. Any claim that the sphere is a literal first closure of Ground remains a wager.",
   "source": "06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md",
   "route": "ground/01-apophatic-ground-and-field-structure"
  },
@@ -291,8 +291,8 @@
   "id": "n22",
   "group": "nectar",
   "tier": "[S]",
-  "title": "The keel resolution — P = Phi*V is AND-class, not proven-product",
-  "body": "The zero-factor argument selects the AND-gate class (need both Phi and V), not the product uniquely. The retired GFS study is evidence neither for nor against the boundary; product, minimum, harmonic, and other interior models remain open rivals. The keel holds; the keel's exact shape does not.",
+  "title": "AND-class pair, not a proven product",
+  "body": "Need-both of evaluated possibility and actual means survives as a class. The public object is the pair N = (Phi-hat_4, V_4), compared by Pareto. min only after a shared ladder kappa. Product ranking Phi*V is retired. The keel's exact interior shape remains open.",
   "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md",
   "unpublished": true
  },
@@ -310,7 +310,7 @@
   "group": "nectar",
   "tier": "[I]",
   "title": "The open loop — constitutively open, completes only in the living",
-  "body": "If the two wagers hold (Phi*V multiplicative; strong emergence genuine), the loop resists both derivation and prediction — so it is constitutively open, completing only in the traversing (Pratyaksa). The map cannot close itself; the three refusals (eta=0 / mortal-signer / open loop) are one via-negativa. Orientation, not theorem.",
+  "body": "If the remaining wagers hold, the loop still resists both derivation and prediction — so it is constitutively open, completing only in the living. The map cannot close itself. Orientation, not theorem. Phi*V multiplicative is not one of the wagers kept as nectar.",
   "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE.md",
   "unpublished": true
  },
@@ -327,8 +327,8 @@
   "id": "n26",
   "group": "nectar",
   "tier": "[S]",
-  "title": "Two axes through D4-D5 — emergence up, commitment down",
-  "body": "mu (genesis) runs UP, D4-potential to D5-actual; chi (the soul-loop) runs DOWN, D5-foresight to D4-embodied-receipt. 'Actual' is register-indexed. Free selection is auditable-after, never predictable-before — and the receipt is the proof it happened.",
+  "title": "D4 is actual; D5 is possible",
+  "body": "D4 is causal actuality. D5 is merely possible counterfactual content. Present D4 model tokens may represent D5 alternatives; the future does not send information backward. Each mu crossing is independently provisional. This is not a proof that emergence runs upward into a more actual D5.",
   "source": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
   "unpublished": true
  },

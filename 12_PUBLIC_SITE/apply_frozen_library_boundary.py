@@ -18,8 +18,11 @@ BANNER = (
     '<aside data-frozen-library-boundary="2026-07-22" role="note" '
     'style="padding:.75rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);'
     'background:#17150a;color:#d8d2bd;font:600 .76rem/1.5 ui-monospace,monospace">'
-    '[D] Frozen library projection — preserved for provenance, noindex, and excluded from current retrieval. '
-    'Where it conflicts with the <a href="/dimensions/" style="color:#ffeb3b">dimension-first spine</a> '
+    '[D] Frozen library projection — provenance only, noindex, not current retrieval. '
+    'It does not warrant its claims. Current nectar sits at '
+    '<a href="/amrita/" style="color:#ffeb3b">/amrita/</a> and '
+    '<a href="/spark/" style="color:#ffeb3b">/spark/</a>. '
+    'Where this attic conflicts with the <a href="/dimensions/" style="color:#ffeb3b">dimension-first spine</a> '
     'or a named source owner, the current owner governs.</aside>'
 )
 
@@ -27,6 +30,7 @@ BANNER = (
 def paths() -> list[Path]:
     out: set[Path] = set()
     withheld = {row["artifact"] for row in WITHHELD["artifacts"]}
+    provisional = {rel for rel in MANIFEST.get("declaredProvisional", {}).get("routes", [])}
     for root in MANIFEST["frozenLibraryRoots"]:
         base = SITE / root
         if base.is_dir():
@@ -34,7 +38,9 @@ def paths() -> list[Path]:
     out.update(SITE / rel for rel in MANIFEST.get("frozenLegacySurfaces", []))
     return sorted(
         path for path in out
-        if path.is_file() and path.relative_to(SITE).as_posix() not in withheld
+        if path.is_file()
+        and path.relative_to(SITE).as_posix() not in withheld
+        and path.relative_to(SITE).as_posix() not in provisional
     )
 
 
@@ -45,7 +51,15 @@ def desired(text: str) -> str:
         target = robots.sub(ROBOTS, target, count=1)
     else:
         target = re.sub(r"(<head\b[^>]*>)", r"\1\n" + ROBOTS, target, count=1, flags=re.IGNORECASE)
-    if MARKER not in target:
+    if MARKER in target:
+        target = re.sub(
+            r"<aside\b[^>]*data-frozen-library-boundary=\"2026-07-22\"[^>]*>.*?</aside>",
+            BANNER,
+            target,
+            count=1,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+    else:
         target = re.sub(r"(<body\b[^>]*>)", r"\1\n" + BANNER, target, count=1, flags=re.IGNORECASE)
     return target
 
