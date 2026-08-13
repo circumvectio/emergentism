@@ -89,7 +89,28 @@ FORBIDDEN = {
 }
 
 REQUIRED_PUBLIC_CONTRACTS = {
-    "index.html": ("A worldview for finite beings", "Frame one decision"),
+    "index.html": (
+        "A worldview for finite beings",
+        "Fluency is not emergence",
+        "Enter the Spark",
+        "Frame one decision",
+        "A criterion on trial",
+    ),
+    "spark/index.html": (
+        "Ontology-churn instrument",
+        "Nothing promotes itself",
+        "No model validates itself",
+        "Current disposition · raised [C] → not-well-posed",
+    ),
+    "record/problems/index.html": (
+        "VIS-00 publishing aim",
+        "W10-SPARK mechanism under test",
+        "W0-COMPLETE <strong>NOT-WELL-POSED</strong>",
+    ),
+    "record/frontier/index.html": (
+        "W10-SPARK <span>open · OPEN-EMPIRICAL</span>",
+        "W0-COMPLETE <span>open · NOT-WELL-POSED</span>",
+    ),
     "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
@@ -120,7 +141,8 @@ AUTOMATIC_SUBMISSION_PROMISES = (
     "because it can move a claim",
 )
 REQUIRED_SURFACE_CARDS = {
-    "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
+    "index.html": {"FIN01-01", "OS01-02", "OS01-08", "OS01-13", "OS01-20", "OS01-22", "OS01-23", "OS01-26"},
+    "spark/index.html": {"OS01-02", "OS01-08", "OS01-13", "OS01-23", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
     "compass/index.html": {"OS01-13"},
@@ -239,6 +261,25 @@ def record_has_only_historical_k2(text: str) -> bool:
 STATUS_SOURCE_CONTRACTS = {
     "00_THE_KERNEL_INDEX.md": "[I]",
     "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md": "[S/B]",
+    "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md": "[S]",
+    "00_META/claim_status/CLAIM_STATUS.yaml": "[S]",
+}
+REQUIRED_STATUS_SOURCE_SURFACES = {
+    "index.html",
+    "about/index.html",
+    "spark/index.html",
+    "record/problems/index.html",
+    "record/frontier/index.html",
+}
+REQUIRED_STATUS_SOURCE_BINDING_IDS = {
+    "KERNEL-STATUS-HOME",
+    "CONTACT-STATUS-HOME",
+    "HOME-SPARK-ADJUDICATION",
+    "KERNEL-STATUS-ABOUT",
+    "CONTACT-STATUS-ABOUT",
+    "SPARK-ADJUDICATION",
+    "PROBLEMS-ADJUDICATION",
+    "FRONTIER-CLAIM-STATUS",
 }
 
 
@@ -332,6 +373,7 @@ def validate_status_source_claims(data: dict, errors: list[str]) -> None:
         errors.append("statusSourceClaims must be a list")
         return
     seen_ids: set[str] = set()
+    seen_surfaces: set[str] = set()
     for binding in bindings:
         if not isinstance(binding, dict):
             errors.append("status source binding must be an object")
@@ -352,6 +394,8 @@ def validate_status_source_claims(data: dict, errors: list[str]) -> None:
         tier = binding.get("tier")
         if binding.get("surface") not in data.get("currentSurfaces", []):
             errors.append(f"{binding_id} status binding is not a current surface")
+        elif isinstance(binding.get("surface"), str):
+            seen_surfaces.add(binding["surface"])
         markers = binding.get("requiredMarkers")
         if not isinstance(markers, list) or not all(isinstance(marker, str) and marker for marker in markers):
             errors.append(f"{binding_id} status binding requiredMarkers must be non-empty strings")
@@ -384,6 +428,12 @@ def validate_status_source_claims(data: dict, errors: list[str]) -> None:
                 errors.append(f"{binding_id} missing bound public marker {marker!r}")
         if "claimCardIds" in binding or "publicDisposition" in binding:
             errors.append(f"{binding_id} status binding may not act as a claim-card binding")
+    missing_surfaces = REQUIRED_STATUS_SOURCE_SURFACES - seen_surfaces
+    for surface in sorted(missing_surfaces):
+        errors.append(f"missing required status source binding: {surface}")
+    missing_bindings = REQUIRED_STATUS_SOURCE_BINDING_IDS - seen_ids
+    for binding_id in sorted(missing_bindings):
+        errors.append(f"missing required status source binding id: {binding_id}")
 
 
 def main() -> int:

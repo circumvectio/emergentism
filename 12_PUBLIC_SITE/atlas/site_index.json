@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 39,
+ "total": 43,
  "tree": [
   {
    "key": "start",
@@ -31,7 +31,11 @@
    "pages": [
     {
      "href": "/",
-     "title": "Emergentism — A worldview for finite beings"
+     "title": "Emergentism — Fluency is not emergence"
+    },
+    {
+     "href": "/spark/",
+     "title": "The Spark"
     },
     {
      "href": "/practice/",
@@ -48,6 +52,18 @@
     {
      "href": "/record/",
      "title": "The Trial Record"
+    },
+    {
+     "href": "/record/problems/",
+     "title": "Open problems"
+    },
+    {
+     "href": "/record/frontier/",
+     "title": "Frontier ledger"
+    },
+    {
+     "href": "/manifesto/",
+     "title": "Frame One Decision — the Emergentism manifesto"
     },
     {
      "href": "/read/",
@@ -93,7 +109,7 @@
     },
     {
      "href": "/5/",
-     "title": "Possible power and the Rosetta Stone"
+     "title": "/5 — Possible power and the Rosetta Stone"
     },
     {
      "href": "/6/",
@@ -175,7 +191,7 @@
     },
     {
      "href": "/discoveries/game/",
-     "title": "The Game — a Discovery"
+     "title": "Choose moves that expand both sides."
     },
     {
      "href": "/discoveries/is-ought/",
@@ -207,7 +223,7 @@
     },
     {
      "href": "/discoveries/universalizability/",
-     "title": "Universalizability — a Discovery"
+     "title": "Stress-test an ethic with one hard question."
     }
    ]
   }

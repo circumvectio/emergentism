@@ -19,18 +19,30 @@ article{border-top:1px solid rgba(245,240,230,.12);padding:1.2rem 0}
 .id{font:600 .78rem ui-monospace,Menlo,monospace;color:#F0C85A}
 .cls{font:500 .72rem ui-monospace,Menlo,monospace;color:#959CAB}
 a{color:#79A8FF}
+.skip{position:absolute;left:-999px;top:.6rem}
+.skip:focus{left:.6rem;z-index:20;background:#F0C85A;color:#070A12;padding:.6rem 1rem}
 </style>
+<!--OG:AUTO-->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Emergentism" />
+<meta property="og:title" content="Open problems — Emergentism" />
+<meta property="og:description" content="A machine-readable register of holes. Not a worldview. Not Amrita. World contact remains 0." />
+<meta property="og:url" content="https://emergentism.org/record/problems/" />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
+<!--/OG:AUTO-->
 </head>
 <body>
-<a href="#main" class="skip" style="position:absolute;left:-999px">Skip</a>
-<main id="main">
+<a href="#main" class="skip">Skip to content</a>
+<main id="main" tabindex="-1">
 <p class="kicker">Record · holes, not nectar</p>
 <h1>Open problems</h1>
-<div class="fence">
-  <span class="kicker">[D]</span> staged holes ·
-  <span class="kicker">[I]</span> VIS-00 vision ·
-  <span class="kicker">[C]</span> OC-00 wager ·
-  not <span class="kicker">[S]</span>.
+	<div class="fence">
+	  <span class="kicker">[S]</span> VIS-00 publishing aim ·
+	  <span class="kicker">[C]</span> W10-SPARK mechanism under test ·
+	  <span class="kicker">[I]</span> OC-00 successor ·
+	  W0-COMPLETE <strong>NOT-WELL-POSED</strong>.
   This is a register of holes. It captures nothing from your attention.
   A green internal gate is not world contact. World contact accepted:
   <strong>0</strong>. This page does not say the Amrita has emerged.
@@ -40,20 +52,42 @@ a{color:#79A8FF}
   <p>Enable nothing. Read the JSON. The holes are there without this page.</p>
 </noscript>
 <div id="list"></div>
-<p><a href="/record/">← the trial record (graves)</a> · <a href="/spark/">the spark</a> · <a href="/exit/">exit</a></p>
+<p><a href="/contribute/#modes">Return a public result</a> · <a href="/record/problems.json">machine JSON</a> · <a href="/record/">trial record (graves)</a> · <a href="/spark/">the spark</a> · <a href="/exit/">exit</a></p>
 </main>
 <script>
 fetch("../problems.json").then(r=>r.json()).then(data=>{
   const root = document.getElementById("list");
   data.problems.forEach(p=>{
     const el = document.createElement("article");
-    el.innerHTML = `<p class="id">${p.id} <span class="cls">${p.class} ${p.tier}</span></p>
-      <h2>${p.title}</h2>
-      <p>${p.statement}</p>
-      <p><b>Acceptance.</b> ${p.acceptance}</p>
-      <p><b>Why the best attempt fails.</b> ${p.why_fails}</p>
-      <p><b>Kill the framing if.</b> ${p.kill_framing}</p>
-      <p class="cls">runnable: ${p.runnable} · owner: ${p.owner}</p>`;
+    const id = document.createElement("p");
+    id.className = "id";
+    id.append(document.createTextNode(p.id + " "));
+    const cls = document.createElement("span");
+    cls.className = "cls";
+    cls.textContent = p.class + " " + p.tier;
+    id.append(cls);
+    el.append(id);
+    const title = document.createElement("h2");
+    title.textContent = p.title;
+    el.append(title);
+    const row = (label, value) => {
+      const para = document.createElement("p");
+      if (label) {
+        const strong = document.createElement("b");
+        strong.textContent = label;
+        para.append(strong, document.createTextNode(" "));
+      }
+      para.append(document.createTextNode(value));
+      el.append(para);
+    };
+    row("", p.statement);
+    row("Acceptance.", p.acceptance);
+    row("Why the best attempt fails.", p.why_fails);
+    row("Kill the framing if.", p.kill_framing);
+    const meta = document.createElement("p");
+    meta.className = "cls";
+    meta.textContent = "runnable: " + p.runnable + " · owner: " + p.owner;
+    el.append(meta);
     root.appendChild(el);
   });
 }).catch(()=>{

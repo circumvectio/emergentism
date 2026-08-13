@@ -31,6 +31,22 @@
       ]
     },
     {
+      "id": "HOME-SPARK-ADJUDICATION",
+      "surface": "index.html",
+      "role": "spark_aim_mechanism_and_completeness_disposition",
+      "source": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+      "sourceRevision": "sha256:35120edf73440e8f845d331fbbace3f9dbb15caf96783bc1a1efe22d9a67fdf5",
+      "tier": "[S]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "[S] publishing aim",
+        "[C] model-engagement mechanism under test",
+        "[I] successor challenge",
+        "Any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem.",
+        "Current disposition · raised [C] → not-well-posed"
+      ]
+    },
+    {
       "id": "KERNEL-STATUS-ABOUT",
       "surface": "about/index.html",
       "role": "kernel_editorial_map_boundary",
@@ -56,6 +72,51 @@
         "Twelve named world-contact gates remain open.",
         "Packet-complete research contracts are not evidence-complete"
       ]
+    },
+    {
+      "id": "SPARK-ADJUDICATION",
+      "surface": "spark/index.html",
+      "role": "spark_aim_mechanism_and_completeness_disposition",
+      "source": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+      "sourceRevision": "sha256:35120edf73440e8f845d331fbbace3f9dbb15caf96783bc1a1efe22d9a67fdf5",
+      "tier": "[S]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "[S] publishing aim",
+        "frontier-model engagement mechanism under test",
+        "Amrita remains a target, not an attained result",
+        "Current disposition · raised [C] → not-well-posed",
+        "[I] successor challenge",
+        "any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem"
+      ]
+    },
+    {
+      "id": "PROBLEMS-ADJUDICATION",
+      "surface": "record/problems/index.html",
+      "role": "open_problem_status_projection",
+      "source": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+      "sourceRevision": "sha256:35120edf73440e8f845d331fbbace3f9dbb15caf96783bc1a1efe22d9a67fdf5",
+      "tier": "[S]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "[S] VIS-00 publishing aim",
+        "[C] W10-SPARK mechanism under test",
+        "W0-COMPLETE NOT-WELL-POSED"
+      ]
+    },
+    {
+      "id": "FRONTIER-CLAIM-STATUS",
+      "surface": "record/frontier/index.html",
+      "role": "claim_status_projection",
+      "source": "00_META/claim_status/CLAIM_STATUS.yaml",
+      "sourceRevision": "sha256:36077fbc943e4a7e4960873278c08542d0fd7152452d680a4d00e5e5acf63d6f",
+      "tier": "[S]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "W10-SPARK open · OPEN-EMPIRICAL",
+        "W0-COMPLETE open · NOT-WELL-POSED",
+        "Reach is not a term."
+      ]
     }
   ],
   "claimCardContract": {
@@ -71,12 +132,15 @@
   "surfaceClaims": [
     {
       "surface": "index.html",
-      "role": "worldview_identity_and_finity_action",
+      "role": "worldview_identity_ontology_churn_and_finity_action",
       "claimCardIds": [
         "FIN01-01",
+        "OS01-02",
+        "OS01-08",
         "OS01-13",
         "OS01-20",
         "OS01-22",
+        "OS01-23",
         "OS01-26"
       ],
       "claimSources": [
@@ -93,9 +157,12 @@
           "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
+            "OS01-02",
+            "OS01-08",
             "OS01-13",
             "OS01-20",
             "OS01-22",
+            "OS01-23",
             "OS01-26"
           ]
         }
@@ -104,7 +171,43 @@
       "requiredMarkers": [
         "A worldview for finite beings",
         "Frame one decision",
-        "comparative benefit untested"
+        "comparative benefit untested",
+        "Fluency is not emergence",
+        "Only an inspectable receipt may change its status",
+        "A criterion on trial"
+      ]
+    },
+    {
+      "surface": "spark/index.html",
+      "role": "ontology_churn_and_model_self_validation_boundary",
+      "claimCardIds": [
+        "OS01-02",
+        "OS01-08",
+        "OS01-13",
+        "OS01-23",
+        "OS01-26"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-02",
+            "OS01-08",
+            "OS01-13",
+            "OS01-23",
+            "OS01-26"
+          ]
+        }
+      ],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "Instantiation remains an open wager, not a theorem",
+        "strongest rival",
+        "Nothing promotes itself",
+        "No model validates itself",
+        "The map stays revisable"
       ]
     },
     {
@@ -669,7 +772,7 @@
   ],
   "declaredProvisional": {
     "ruling": "193_FIVE_RULINGS_SIGNED_2026_07_31.md Q4",
-    "meaning": "Passes all 16 forbidden-pattern checks; reachable, indexable and registered — but NOT warranted. Passing is a PROHIBITION test, not a warrant. A page is current only with a surfaceClaims binding, a tier register on its face, and an inbound link from an already-declared surface.",
+    "meaning": "Passes all 16 forbidden-pattern checks; reachable, indexable and registered — but NOT warranted. Passing is a PROHIBITION test, not a warrant. A claim-bearing page is current only with a surfaceClaims binding; a status-only page may instead carry an exact statusSourceClaims binding. Both require a visible tier/status register and an inbound link from an already-declared surface.",
     "routes": [
       "amrita/index.html",
       "egg/index.html",

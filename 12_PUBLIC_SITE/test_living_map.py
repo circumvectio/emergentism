@@ -139,7 +139,8 @@ class LivingMapContractTests(unittest.TestCase):
 
     def test_surface_claims_bind_current_cards_sources_and_markers(self):
         expected = {
-            "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
+            "index.html": {"FIN01-01", "OS01-02", "OS01-08", "OS01-13", "OS01-20", "OS01-22", "OS01-23", "OS01-26"},
+            "spark/index.html": {"OS01-02", "OS01-08", "OS01-13", "OS01-23", "OS01-26"},
             "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
             "lab/index.html": {"FIN01-01", "FIN01-02"},
             "manifesto/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
@@ -179,6 +180,28 @@ class LivingMapContractTests(unittest.TestCase):
         errors = []
         validate_status_source_claims(self.parity, errors)
         self.assertEqual(errors, [])
+        self.assertTrue(
+            {
+                "index.html", "about/index.html", "spark/index.html",
+                "record/problems/index.html", "record/frontier/index.html",
+            }.issubset({item["surface"] for item in self.parity["statusSourceClaims"]})
+        )
+        self.assertIn(
+            "HOME-SPARK-ADJUDICATION",
+            {item["id"] for item in self.parity["statusSourceClaims"]},
+        )
+
+        missing_home_adjudication = copy.deepcopy(self.parity)
+        missing_home_adjudication["statusSourceClaims"] = [
+            item for item in missing_home_adjudication["statusSourceClaims"]
+            if item["id"] != "HOME-SPARK-ADJUDICATION"
+        ]
+        errors = []
+        validate_status_source_claims(missing_home_adjudication, errors)
+        self.assertIn(
+            "missing required status source binding id: HOME-SPARK-ADJUDICATION",
+            errors,
+        )
 
         cross_corpus = copy.deepcopy(self.parity)
         cross_corpus["statusSourceClaims"][0]["source"] = "../03_VENTURES/README.md"

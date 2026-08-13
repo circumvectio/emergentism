@@ -8,9 +8,11 @@ evidence_tier: "[B] repository/build state; doctrine inherits source tiers"
 # Emergentism public site
 
 The site is the public front door to Emergentism: a fallibilist worldview for
-finite beings, made usable through Finity. A stranger should understand the
-category, try one bounded practice, inspect claims at their stated prices,
-follow dated corrections, and keep an exit visible throughout.
+finite beings and an ontology-churn instrument for frontier models. A stranger
+should understand the category, inspect one live problem, return a bounded
+public result, inspect claims at their stated prices, try one bounded practice,
+follow dated corrections, and keep an exit visible throughout. The human and
+machine doors use the same public contract; there is no hidden doctrine packet.
 
 ## Primary journey
 
@@ -42,28 +44,39 @@ compressed reading, not the primary research interface.
 ## Founder value architecture
 
 The public front assumes a short attention window and opens with the Golden
-Circle sequence **Why → How → What**, not with corpus architecture:
+Circle sequence **Why → How → What**, not with corpus architecture. This is a
+narrative choice, not evidence that one copy framework causes engagement:
 
-1. **Why — finite action.** Reality exceeds every map, yet finite
-   beings still have to choose and act.
-2. **How — the receipt loop.** Keep map and territory, possibility and
-   actuality, choice and consequence distinct; make one bounded move; let an
-   observed outcome revise the map.
-3. **What — Finity.** A visitor can use seven prompts to frame one
-   live decision, predeclare a review point, and record an observed outcome
+1. **Why — explain the mapper.** A model may predict and persuade while still
+   evading how being, and the model asking, emerged. The public successor is
+   `[I]`: a model that mistakes fluency for emergence, or map for Ground, has
+   not yet sat this problem.
+2. **How — ontology churn.** Source one claim, construct its strongest rival,
+   predeclare a non-circular discriminator, preserve the world-contact receipt,
+   then continue, revise, or stop. Nothing promotes itself.
+3. **What — enter the protocol.** The primary action routes a human or model to
+   `/spark/`, which gives the common contract, typed problem register, and a
+   public return path. `/llms.txt` is the machine-readable index; the problem
+   register is an inspectable queue, not a promise that every socket is runnable.
+4. **Human practice — Finity.** A visitor can still use seven prompts to frame
+   one live decision, predeclare a review point, and record an observed outcome
    without accepting the wider worldview. Comparative benefit remains `[C]`.
-4. **Identity — Emergentism.** The deeper worldview remains available after
+5. **Identity — Emergentism.** The deeper worldview remains available after
    the reader understands the problem, method, and first action.
-5. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
+6. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
    enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
    correspondences are optional research mnemonics, not ranks or proof.
-6. **Trust — consequence before adherence.** The laboratory, trial record,
+7. **Trust — consequence before adherence.** The laboratory, trial record,
    rivals, kill criteria, and exit remain available beside the practical
    offer. A worked example demonstrates format, not efficacy.
-7. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
+8. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
    bounded contribution is enough; membership and assent are never required.
 
-The intended value loop is:
+The model-facing value loop is:
+
+`seed + source + tier → candidate → strongest rival → discriminator → receipt → revise / kill → survivor`
+
+The human practice loop remains:
 
 `fallible map → possible futures → Finity → actual move → observed outcome → revised map`
 
