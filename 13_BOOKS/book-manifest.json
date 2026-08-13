@@ -40,9 +40,7 @@
         "K-2",
         "K-3",
         "K-4",
-        "K-5",
-        "K-6",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "OS01-01",
@@ -357,7 +355,7 @@
       "title": "Six-Fold Revelation / Six Lenses",
       "edition": "critical-edition-1-staged",
       "historical_sources": [
-        "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
+        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
       ],
       "chapter_order": [
         "preface",

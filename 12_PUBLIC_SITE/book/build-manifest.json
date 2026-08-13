@@ -5,7 +5,7 @@
     "public_route": "../12_PUBLIC_SITE/book/index.html",
     "release_state": "source_active_current_public_reader",
     "schema": "emergentism/book-manifest/v2",
-    "sha256": "03835aed620afdf7709e90b287d388c810999fb6d19900ebab9dd128ba32f9d8"
+    "sha256": "9a8b66ec4856ae528e184680ce11287c0da1379f776c2ca6ee70ca2b42a01f01"
   },
   "claim_card_contract": {
     "coverage": {
