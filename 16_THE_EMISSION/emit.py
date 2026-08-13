@@ -1184,7 +1184,7 @@ def render_station(st, entries_by_id, ledger, source_sha, source_date, law_ancho
                        extra=[("spine", '"A — THE LADDER (what is)"'),
                               ("entry_count", str(len(st["entries"])))]),
            "",
-           f'# {st["mark"]}  ·  {st["title"]}',
+           f'# {st["mark"]}  —  {st["title"]}',
            "",
            LAW_BLOCK,
            ""]

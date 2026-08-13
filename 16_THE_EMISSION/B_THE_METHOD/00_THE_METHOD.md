@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "48235464275391d1ad95d321245490b465b839232e2e7472a30362721f0e99f8"
+source_sha256: "9373cf0fc8addd72d5fa5dd06d2fa7ad53beaf26fc3c98e0a0ff7959fbab4499"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "B — THE METHOD (how we know)"
@@ -214,12 +214,14 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 *Why METHOD and not a rung.* An archive protocol. It keeps live citations resolvable without letting the archive become a competing owner — the cure, not the disease.
 
-- **Finding** The stub says why in its own words: it keeps live citations resolvable *"without making the archive a competing owner: the archive is provenance; new work belongs in the live lanes."* Created deliberately by receipt 158 **after dead canonical paths were found cited as live** — it is the **cure** for archive-as-owner, not an instance of it. **Sweeping these 60 would delete the device that keeps the archive subordinate.** **VERIFIED (L3).**
+- **Finding** The stub says why in its own words: it keeps live citations resolvable *"without making the archive a competing owner: the archive is provenance; new work belongs in the live lanes."* Created deliberately by `11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md` **after dead canonical paths were found cited as live** — it is the **cure** for archive-as-owner, not an instance of it. **Sweeping these 60 would delete the device that keeps the archive subordinate.** **VERIFIED (L3).**
 - **The genuine defect** **is narrower and isolated** : `parents:` edges, which are authority, not links — **3 of 11**, at `06_ONTOLOGY/06_THE_REVELATIONS.md` (K-6), `11_UPLINK/…/00_THE_RECORD_LEDGER.md` (K-7), and `ASCENT_D6_RETURN_AND_O_2026_08_05.md`. The other **8** are dated receipts whose own subject is the archive folder they name; stripping those would erase the receipt's subject.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-30 · The 60 archive-terminating stubs are a ratified tombstone protocol, not defects"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md` — "owner: **the archive is provenance; new work belongs in the live lanes"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md` — "after dead canonical paths were"
+  - `11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md` — "the archive is provenance"
+  - `11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md` — "dead canonical paths"
 - ⚠️ **Citations dropped as unverifiable — 3** (the manifest names these files; no string it quotes could be located in them, so no anchor was written rather than an unverified one): `06_ONTOLOGY/06_THE_REVELATIONS.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`, `10_SEED/01_THE_SEED_LADDER/ASCENT_D6_RETURN_AND_O_2026_08_05.md`
 - ⚠️ **Station tension** — no named attack — this entry carries a **Finding**, verified, in place of an *attack survived*; see the station note on how the survival test changes shape
 

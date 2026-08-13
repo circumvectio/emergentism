@@ -5,14 +5,14 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "48235464275391d1ad95d321245490b465b839232e2e7472a30362721f0e99f8"
+source_sha256: "9373cf0fc8addd72d5fa5dd06d2fa7ad53beaf26fc3c98e0a0ff7959fbab4499"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "A — THE LADDER (what is)"
 entry_count: 5
 ---
 
-# D4  ·  D4 — THE ACTUAL · RECEIPTS
+# D4  —  D4 — THE ACTUAL · RECEIPTS
 
 > **The law of this tree.** Every citation below is `path` **plus an exact quoted
 > string**, verified to appear in the target file before it was written. There are no

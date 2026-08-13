@@ -89,7 +89,7 @@
       "byte_validation": "exact_sha256_when_authorized_federation_available; explicit_unavailable_mode_validates_metadata_only",
       "external_readonly": true,
       "lifecycle": "frozen",
-      "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
+      "path": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
       "roles": [
         "historical_source"
       ],
@@ -100,7 +100,7 @@
       "byte_validation": "exact_sha256_when_authorized_federation_available; explicit_unavailable_mode_validates_metadata_only",
       "external_readonly": true,
       "lifecycle": "frozen",
-      "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "path": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
       "roles": [
         "historical_lineage",
         "historical_source"
@@ -112,7 +112,7 @@
       "byte_validation": "exact_sha256_when_authorized_federation_available; explicit_unavailable_mode_validates_metadata_only",
       "external_readonly": true,
       "lifecycle": "legacy",
-      "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "path": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
       "roles": [
         "historical_lineage",
         "historical_source"
@@ -124,7 +124,7 @@
       "byte_validation": "exact_sha256_when_authorized_federation_available; explicit_unavailable_mode_validates_metadata_only",
       "external_readonly": true,
       "lifecycle": "legacy",
-      "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "path": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
       "roles": [
         "historical_lineage",
         "historical_source"

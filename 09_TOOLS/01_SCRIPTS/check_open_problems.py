@@ -13,6 +13,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REG = ROOT / "12_PUBLIC_SITE/record/problems.json"
+EUB_PROTOCOL_REL = Path(
+    "03_METHODOLOGY/03_PREREGISTRATIONS/"
+    "04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md"
+)
 REQUIRED = (
     "id",
     "class",
@@ -46,6 +50,7 @@ def main() -> int:
     if data.get("k_star") != 0:
         errors.append("k_star must remain 0")
     seen: set[str] = set()
+    eub_row: dict[str, object] | None = None
     for row in data.get("problems") or []:
         rid = row.get("id", "?")
         for key in REQUIRED:
@@ -54,6 +59,8 @@ def main() -> int:
         if rid in seen:
             errors.append(f"duplicate id {rid}")
         seen.add(rid)
+        if rid == "ASI-UNFOLD-00":
+            eub_row = row
         if row.get("class") not in CLASSES:
             errors.append(f"{rid}: bad class")
         blob = " ".join(str(row.get(k, "")) for k in ("title", "statement", "acceptance", "best_attempt")).lower()
@@ -76,6 +83,29 @@ def main() -> int:
         owner = row.get("owner", "")
         if owner and not (ROOT / owner).exists():
             errors.append(f"{rid}: owner missing: {owner}")
+    if eub_row is None:
+        errors.append("missing ASI-UNFOLD-00")
+    else:
+        if eub_row.get("class") != "underdefined":
+            errors.append("ASI-UNFOLD-00: must remain underdefined until freeze gates close")
+        if eub_row.get("runnable") is not False:
+            errors.append("ASI-UNFOLD-00: must remain non-runnable until a harness exists")
+        if eub_row.get("owner") != EUB_PROTOCOL_REL.as_posix():
+            errors.append("ASI-UNFOLD-00: must route to the EUB-1 methodology owner")
+    protocol = ROOT / EUB_PROTOCOL_REL
+    if not protocol.is_file():
+        errors.append(f"EUB-1 protocol missing: {EUB_PROTOCOL_REL}")
+    else:
+        protocol_text = protocol.read_text(encoding="utf-8")
+        for marker in (
+            "Track A — hidden-ground-truth synthetic lineages",
+            "Track B — disclosed real-system lineage",
+            "Track-by-dimension applicability",
+            "INVALID-RUN",
+            "None of these states is “ASI.”",
+        ):
+            if marker not in protocol_text:
+                errors.append(f"EUB-1 protocol missing boundary marker: {marker}")
     if errors:
         print("OPEN PROBLEMS: FAIL")
         print("\n".join(errors))

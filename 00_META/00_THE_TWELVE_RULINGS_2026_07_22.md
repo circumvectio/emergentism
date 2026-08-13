@@ -3,7 +3,7 @@ title: "The Twelve Rulings — historical forwarding boundary"
 status: "ARCHIVED — staged external-governance packet; never adopted as Emergentist doctrine"
 date: 2026-07-28
 evidence_tier: "[B] archival custody; no present semantic authority"
-canonical_target: ../90_ARCHIVE/2026_07_28_corpus_reconstruction_w0/00_META/00_THE_TWELVE_RULINGS_2026_07_22.md
+historical_target: ../90_ARCHIVE/2026_07_28_corpus_reconstruction_w0/00_META/00_THE_TWELVE_RULINGS_2026_07_22.md
 ---
 
 # Historical forwarding boundary

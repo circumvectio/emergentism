@@ -202,21 +202,37 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             report["receipt_namespace"]["target_files"],
             self.state["receipt_namespace"]["target_files"],
         )
+        self.assertEqual(report["receipt_namespace"]["target_files"], 319)
+        self.assertEqual(
+            report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
+            325,
+        )
+        self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 193)
         self.assertEqual(
             report["receipt_namespace"]["bare_unsafe_reused_prefixes"],
             CHECKER.EXPECTED_REUSED_PREFIXES,
         )
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 402)
+        self.assertEqual(
+            report["public_lifecycle"]["ignore_counts"],
+            {
+                "present_html": 415,
+                "ignored_html": 208,
+                "deployable_html": 207,
+                "withheld_artifacts_added_back": 198,
+            },
+        )
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 405)
+        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 43)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
         )
-        self.assertEqual(report["claim_disposition"]["lifecycle_rows"], 48)
-        self.assertEqual(report["claim_disposition"]["current_rows"], 26)
-        self.assertEqual(report["claim_disposition"]["direct_contact"], 15)
+        self.assertEqual(report["claim_disposition"]["lifecycle_rows"], 50)
+        self.assertEqual(report["claim_disposition"]["current_rows"], 28)
+        self.assertEqual(report["claim_disposition"]["direct_contact"], 16)
         self.assertEqual(report["claim_disposition"]["merged_contact"], 4)
-        self.assertEqual(report["claim_disposition"]["internal"], 7)
-        self.assertEqual(report["claim_disposition"]["external_contracts"], 18)
+        self.assertEqual(report["claim_disposition"]["internal"], 8)
+        self.assertEqual(report["claim_disposition"]["external_contracts"], 19)
         self.assertEqual(report["claim_disposition"]["ambiguous"], 0)
         self.assertEqual(report["owner_held"], 2)
         self.assertEqual(report["world_contact"]["state"], "OPEN")
@@ -234,7 +250,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             with self.assertRaisesRegex(CHECKER.ContractError, "investigations"):
                 CHECKER.compute_claim_disposition(ROOT)
 
-    def test_typed_survivor_cannot_enter_the_48_row_lifecycle(self) -> None:
+    def test_typed_survivor_cannot_enter_the_50_row_lifecycle(self) -> None:
         source = copy.deepcopy(
             CHECKER._CLAIM_STATUS_POLICY.load_document(ROOT / CHECKER.CLAIM_SOURCE)
         )
@@ -244,10 +260,10 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         ), mock.patch.object(
             CHECKER._CLAIM_STATUS_POLICY, "load_document", return_value=source
         ):
-            with self.assertRaisesRegex(CHECKER.ContractError, "outside the 48-row"):
+            with self.assertRaisesRegex(CHECKER.ContractError, "outside the 50-row"):
                 CHECKER.compute_claim_disposition(ROOT)
 
-    def test_claim_lifecycle_cannot_be_coordinately_rebaselined_to_49(self) -> None:
+    def test_claim_lifecycle_cannot_be_coordinately_rebaselined_to_51(self) -> None:
         source = copy.deepcopy(
             CHECKER._CLAIM_STATUS_POLICY.load_document(ROOT / CHECKER.CLAIM_SOURCE)
         )
@@ -257,7 +273,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         ), mock.patch.object(
             CHECKER._CLAIM_STATUS_POLICY, "load_document", return_value=source
         ):
-            with self.assertRaisesRegex(CHECKER.ContractError, "exactly 48"):
+            with self.assertRaisesRegex(CHECKER.ContractError, "exactly 50"):
                 CHECKER.compute_claim_disposition(ROOT)
 
     def test_public_artifact_disappearance_fails(self) -> None:
@@ -1265,7 +1281,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
     def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
         contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
         self.assertEqual(contract["classes"], ["current", "provisional"])
-        self.assertEqual(contract["routes"], 44)
+        self.assertEqual(contract["routes"], 47)
 
     def test_sitemap_extra_frozen_route_fails(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

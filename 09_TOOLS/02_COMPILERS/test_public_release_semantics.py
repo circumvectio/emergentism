@@ -214,6 +214,21 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         gate = (ROOT / "09_TOOLS/01_SCRIPTS/gate.sh").read_text(encoding="utf-8")
         self.assertIn('"12_PUBLIC_SITE/predeploy_check.py"', gate)
 
+    def test_vercelignore_cannot_exclude_a_declared_public_surface(self) -> None:
+        patterns = predeploy.load_vercelignore_patterns()
+        self.assertIsNotNone(patterns)
+        declared = predeploy.declared_public_surfaces()
+        self.assertEqual(
+            set(self.data["machineSurfaces"]),
+            {"spark.md", "llms.txt", "record/problems.json", "record/frontier.json"},
+        )
+        self.assertTrue(set(self.data["machineSurfaces"]) <= declared)
+        self.assertFalse(
+            {rel for rel in declared if predeploy.is_vercel_ignored(rel, patterns)}
+        )
+        without_spark_reinclude = [p for p in patterns if p != "!spark.md"]
+        self.assertTrue(predeploy.is_vercel_ignored("spark.md", without_spark_reinclude))
+
     def test_css_parser_dependency_is_pinned_for_the_public_gate(self) -> None:
         requirements = (ROOT / "09_TOOLS/01_SCRIPTS/requirements.txt").read_text(
             encoding="utf-8"

@@ -161,8 +161,8 @@ Egregoreotype.
 Six layers over seven seats. **Kill:** if `L1` is shown to carry *"a replicator
 layer of its own,"* the mapping falls. Ground, yes; rung, no.
 
-`Egregoreotype` is the canonical spelling per `KSC-11`; the legacy
-`Egregorotype` is stale and must not be inherited.
+`Egregoreotype` is the canonical spelling per `KSC-11`; variants that omit the
+second `e` are stale and must not be inherited.
 
 ## 7 · Theme VI — the formal column, and it axiomatizes `min` `[A]`
 

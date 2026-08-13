@@ -73,12 +73,12 @@ but they must not appear as `current_body` or feed a public route. `[S]`
 |---|---|---|
 | One-Sitting open questions | `OS01-02,05,07,10,12,15,23,24` | Each remains an explicit `[C]` research question with its card’s rival, discriminator, and kill criterion. |
 | Finity comparative adequacy | `FIN01-02` | No decision-quality benefit claim before a fair component-matched comparison. |
-| *The Titans* | `TIT01-01`–`TIT01-06`; [`../titans/RESEARCH_EDITION_1.md`](../titans/RESEARCH_EDITION_1.md) §§1–6 | Standard mathematics first; no completed algebra, total ontology, universal paradox resolution, or science unification. |
-| *Dharma Yuddha* | `DHY01-01`–`DHY01-05`; [`../dharma_yuddha/CRITICAL_EDITION_1.md`](../dharma_yuddha/CRITICAL_EDITION_1.md) §§1–5 | Justice declared; nonviolent constitutional inquiry; no sacred command or force authorization. |
-| *The Self-Eating Serpent* | `SES01-01`–`SES01-06`; [`../self_eating_serpent/CRITICAL_EDITION_1.md`](../self_eating_serpent/CRITICAL_EDITION_1.md) §§1–6 | A review occurring is not proof of truth, safety, or correction. |
-| *Six Lenses* | `SL01-01`–`SL01-08`; [`../six_lenses/CRITICAL_EDITION_1.md`](../six_lenses/CRITICAL_EDITION_1.md) | Selected questions only; no complete analytical genome or privileged access. |
-| *Sarpasya Vijayam* survivors | `SV01-01`–`SV01-07`; [`../sarpasya_vijayam/CRITICAL_EDITION_1.md`](../sarpasya_vijayam/CRITICAL_EDITION_1.md) §§1–7 | Use the corrected critical edition; no revived sovereignty, recruitment, human-rank, or formula claims. |
-| *Evolutionary Network* | `EN01-01`–`EN01-05`; [`../evolutionary_network/RESEARCH_EDITION_1.md`](../evolutionary_network/RESEARCH_EDITION_1.md) §§1–5 | A voluntary institutional proposal, never a runtime, membership apparatus, enforcement organism, or state project. |
+| *The Titans* | `TIT01-01`–`TIT01-06`; [`../titans/RESEARCH_EDITION_1_REVIEWED.md`](../titans/RESEARCH_EDITION_1_REVIEWED.md) §§1–6 | Standard mathematics first; no completed algebra, total ontology, universal paradox resolution, or science unification. |
+| *Dharma Yuddha* | `DHY01-01`–`DHY01-05`; [`../dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md`](../dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md) §§1–5 | Justice declared; nonviolent constitutional inquiry; no sacred command or force authorization. |
+| *The Self-Eating Serpent* | `SES01-01`–`SES01-06`; [`../self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md`](../self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md) §§1–6 | A review occurring is not proof of truth, safety, or correction. |
+| *Six Lenses* | `SL01-01`–`SL01-08`; [`../six_lenses/CRITICAL_EDITION_1_REVIEWED.md`](../six_lenses/CRITICAL_EDITION_1_REVIEWED.md) | Selected questions only; no complete analytical genome or privileged access. |
+| *Sarpasya Vijayam* survivors | `SV01-01`–`SV01-07`; [`../sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md`](../sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md) §§1–7 | Use the corrected critical edition; no revived sovereignty, recruitment, human-rank, or formula claims. |
+| *Evolutionary Network* | `EN01-01`–`EN01-05`; [`../evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md`](../evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md) §§1–5 | A voluntary institutional proposal, never a runtime, membership apparatus, enforcement organism, or state project. |
 
 ## Historical and custody map
 

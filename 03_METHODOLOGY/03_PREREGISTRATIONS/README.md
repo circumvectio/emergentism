@@ -26,6 +26,7 @@ result-shopping.
 | [`01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md) | [I] pilot result | Preliminary falsification receipt for the pre-registered prediction. |
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 | [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
+| [`04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md`](04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md) | [D] protocol design; no run or result | EUB-1 two-track causal-provenance benchmark for coherent, consistent, corrigible emergence accounts. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 | [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
 
@@ -55,3 +56,7 @@ result-shopping.
 6. **The toy harness is not biology evidence.** It proves that the witness
    objects can be computed in a declared model; it does not upgrade any living
    system claim.
+7. **EUB-1 is not an ASI certificate.** Until its schemas, fixtures, rivals,
+   judges, analysis plan, and hashes are frozen, it remains a non-runnable
+   design. A later pass is only a bounded capability profile for the named
+   candidate and protocol version.

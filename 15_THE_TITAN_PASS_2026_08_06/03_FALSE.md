@@ -167,7 +167,7 @@ superseded document.
 - **What survives of the original finding**: the **boundary** question is real and unresolved — four card sources sit outside `01_EMERGENTISM` in a pillar this repo's gates cannot see (`04_CREATE.md` C-03).
 
 ### W-02 · "The 60 stubs forwarding into `90_ARCHIVE` are defects" — **OVERTURNED**
-- **OVERTURNED by L3.** They are a **ratified tombstone protocol** created by receipt 158 *after dead canonical paths were found cited as live*, and they explicitly disclaim ownership. **Sweeping them would delete the device that keeps the archive subordinate.** Moved to `01_PRESERVE.md` P-30. The genuine defect is narrower: **3 of 11 `parents:` edges**, which are authority, not links.
+- **OVERTURNED by L3.** They are a **ratified tombstone protocol** created by `11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md` *after dead canonical paths were found cited as live*, and they explicitly disclaim ownership. **Sweeping them would delete the device that keeps the archive subordinate.** Moved to `01_PRESERVE.md` P-30. The genuine defect is narrower: **3 of 11 `parents:` edges**, which are authority, not links.
 
 ### W-03 · "The 148 dead links show a laundering gate" — **OVERTURNED**
 - **OVERTURNED by L3.** All 148 fall inside `check_links.py`'s declared, in-code-reasoned `SKIP_DIRS`; the BASELINE of 0 is a real zero; in-scope health is **1 broken of 3586**. **The gate is honest and should not be touched.** Moved to `01_PRESERVE.md` P-29.

@@ -2668,7 +2668,7 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         len(current_classes) != EXPECTED_CURRENT_ROWS
         or classified_current_count != EXPECTED_CURRENT_ROWS
     ):
-        errors.append("current claim disposition must cover exactly 26 distinct W/RQ rows")
+        errors.append("current claim disposition must cover exactly 28 distinct W/RQ rows")
     if claim_lists["contact_routed"] != claim_lists["direct_contact"] + claim_lists["merged_contact"]:
         errors.append("contact_routed must be the ordered direct+merged projection")
     if set(grave_lists["merged_to_owner"]) & set(grave_lists["internal_terminal"]):
@@ -2690,7 +2690,7 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
     if claims is not None:
         if claims.get("lifecycle_rows_total") != EXPECTED_LIFECYCLE_ROWS:
             errors.append(
-                "claim disposition must retain exactly 48 open/investigation/grave "
+                "claim disposition must retain exactly 50 open/investigation/grave "
                 "lifecycle rows"
             )
         scalar_keys = (
