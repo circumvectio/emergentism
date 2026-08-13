@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="dark" />
 <title>/6 — Exit and nonclosure · Emergentism</title>
 <meta name="description" content="D6 opens no positive freedom. It marks the point where the description stops, its unresolved questions remain visible, and the reader may put the map down." />
 <link rel="icon" href="data:," />
@@ -28,11 +29,15 @@ main{max-width:920px;margin:0 auto;padding:110px 22px 72px} .hero{padding:2rem 0
 dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)} dt,dd{margin:0;padding:.8rem;border-bottom:1px solid var(--border)} dt{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)} dd{color:var(--text-muted)}
 .next{display:inline-block;margin-top:1rem;color:var(--gold)} .pager{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem} code{overflow-wrap:anywhere}
 @media(max-width:700px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{padding-bottom:.2rem}dd{padding-top:.2rem}}
+/* a11y-floor-2026-08-13 */
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
+<a class="skip-to-content" href="#main">Skip to content</a>
 <header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
-<main>
+<main><span id="main" tabindex="-1"></span>
 <section class="hero">
   <p class="eyebrow">D6 · boundary · [I]</p>
   <h1>Exit and nonclosure</h1>
