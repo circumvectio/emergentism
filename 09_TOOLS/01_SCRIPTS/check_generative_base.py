@@ -39,6 +39,92 @@ WORD_LEN = 10       # exhaustive over all 2^(n+1)-1 words up to this length
 CW_DEPTH = 12       # Calkin-Wilf binary tree depth
 GRID = 25           # every p/q with p,q <= GRID must be reachable
 
+# --- BOUND CONTRACT -------------------------------------------------------
+# 2026-08-13: the three bounds above were DECLARED and ASSERTED NOWHERE. All
+# three narrowed silently and still printed PASS with exit 0 (measured, at the
+# pre-repair revision: WORD_LEN 10->4 exit 0, GRID 25->5 exit 0, CW_DEPTH
+# 12->4 exit 0). The gate honestly reported the smaller bound in its PASS line
+# and did not treat it as a failure, so "shrink the bound to speed up CI" was
+# an invisible edit. This block closes that. It continues the P1 repair queued
+# at 00_HANDOFF/gate_audit/MUTATION_TEST_RECEIPT_2026_08_06.md:112 ("add
+# explicit self-assertions on val, WORD_LEN, GRID"); the `val` third of that
+# line already landed as the G-Spec assertions in main().
+#
+# Each bound is pinned twice, because either lock alone is weak:
+#
+#   1. STRUCTURAL — a property the gate genuinely needs AT that bound, so the
+#      number is not arbitrary and the assertion is not a tautology:
+#        WORD_LEN  the enumeration must contain every word the gate names as a
+#                  literal witness; the longest is "S"*9+"i" (the G5 lower
+#                  limit), length 10.
+#        CW_DEPTH  the Calkin-Wilf tree is a CROSS-CHECK on G2, so it must
+#                  cover the {S,iota} enumeration it cross-checks. Minimum
+#                  depth for that is 10 (measured); 12 is declared, for margin.
+#        GRID      the G1 superset direction only tests something the exhaustive
+#                  enumeration did not already test if the grid reaches BEYOND
+#                  it. At GRID=5 that surplus is 0 of 19 cells -- the check is
+#                  decorative. At GRID=25 it is 182 of 399 (measured).
+#
+#   2. DECLARED-VALUE — exact equality against counts HARVESTED from a passing
+#      run at the declared bounds (2026-08-13, this file's own output). The
+#      structural locks alone would still let GRID drift 25->11, so the counts
+#      pin the exact bound. These are measurements, not derivations: they
+#      cannot be recomputed from the bound without running the enumeration.
+#
+# CHANGING A BOUND IS THEREFORE A TWO-PLACE EDIT: move the constant, re-run,
+# and re-harvest the witness below. That is the point -- the second place is
+# where a human has to look at what the new bound actually covers.
+DECLARED_BOUNDS = {"WORD_LEN": 10, "CW_DEPTH": 12, "GRID": 25}
+
+DECLARED_WITNESS = {
+    "distinct_values": 232,          # |{val(w)} : |w| <= WORD_LEN|
+    "unreduced_collisions": 143,     # values carrying >1 word (iota-iota twins)
+    "cw_nodes": 8191,                # 2^(CW_DEPTH+1)-1 distinct Calkin-Wilf values
+    "grid_cells": 399,               # distinct reduced p/q with p,q <= GRID
+    "grid_beyond_enumeration": 182,  # grid cells the WORD_LEN enumeration misses
+}
+
+# Every word this script names as a literal witness. The enumeration claims to
+# cover "all words to length WORD_LEN"; if a named witness falls outside that,
+# the PASS line is overstating what was enumerated.
+NAMED_WITNESS_WORDS = ("S", "S" * 2, "Si", "S" * 9, "S" * 9 + "i")
+
+# Minimum Calkin-Wilf depth that covers the WORD_LEN=10 enumeration (measured
+# 2026-08-13; the closure first contains all 232 values at depth 10).
+CW_MIN_DEPTH_FOR_COVERAGE = 10
+
+
+def declared_bound_failures() -> list[str]:
+    """Bound-contract checks that need no computation. Run FIRST, fail fast.
+
+    Cheap and early on purpose: an inflated bound (CW_DEPTH 12 -> 20 is 2^21
+    nodes) must be rejected before the expensive loops build it, not after.
+    """
+    out: list[str] = []
+    for name, actual in (("WORD_LEN", WORD_LEN), ("CW_DEPTH", CW_DEPTH), ("GRID", GRID)):
+        declared = DECLARED_BOUNDS[name]
+        if actual != declared:
+            out.append(
+                f"BOUND: {name} is {actual} but the bound contract declares "
+                f"{declared}. A bound may not move silently -- re-run the gate, "
+                f"re-harvest DECLARED_WITNESS, and update DECLARED_BOUNDS in the "
+                f"same edit."
+            )
+    longest = max(len(w) for w in NAMED_WITNESS_WORDS)
+    if WORD_LEN < longest:
+        out.append(
+            f"BOUND: WORD_LEN={WORD_LEN} is shorter than the longest named "
+            f"witness word ({longest} letters); the enumeration would not "
+            f"contain the words this gate tests by name"
+        )
+    if CW_DEPTH < CW_MIN_DEPTH_FOR_COVERAGE:
+        out.append(
+            f"BOUND: CW_DEPTH={CW_DEPTH} is below {CW_MIN_DEPTH_FOR_COVERAGE}, "
+            f"the minimum depth whose closure covers the WORD_LEN enumeration; "
+            f"the Calkin-Wilf tree would no longer cross-check G2"
+        )
+    return out
+
 
 def val(word: str) -> F:
     """Value of a word: its letters applied left to right to 1."""
@@ -56,12 +142,62 @@ def reduced(w: str) -> bool:
 def main() -> int:
     failures: list[str] = []
 
+    # --- bound contract, before any expensive work ---------------------------
+    bound_failures = declared_bound_failures()
+    if bound_failures:
+        print("GENERATIVE BASE: FAIL")
+        for f in bound_failures:
+            print(f"- {f}")
+        return 1
+
     # --- enumerate every word up to WORD_LEN ---------------------------------
     by_value: dict[F, list[str]] = defaultdict(list)
     for n in range(WORD_LEN + 1):
         for tup in product("Si", repeat=n):
             w = "".join(tup)
             by_value[val(w)].append(w)
+
+    # --- WORD_LEN witness: the enumeration is the declared one ---------------
+    if len(by_value) != DECLARED_WITNESS["distinct_values"]:
+        failures.append(
+            f"BOUND/WORD_LEN: enumeration to length {WORD_LEN} produced "
+            f"{len(by_value)} distinct values, contract declares "
+            f"{DECLARED_WITNESS['distinct_values']}"
+        )
+    for w in NAMED_WITNESS_WORDS:
+        # .get, never [] -- by_value is a defaultdict and a missing witness must
+        # not be silently created as an empty bucket, which would itself corrupt
+        # the collision counts below.
+        if w not in by_value.get(val(w), []):
+            failures.append(
+                f"BOUND/WORD_LEN: named witness word {w!r} (length {len(w)}) is "
+                f"not in the enumeration to length {WORD_LEN}"
+            )
+
+    # --- G-Spec: the corpus's defining operation IS x+1 ------------------------
+    # 2026-08-06: check_generative_base was SOUND-BUT-BLIND. Changing the
+    # successor from x+1 to x+2 produced a byte-identical PASS — the
+    # aggregate checks (positive values, no zero, grid coverage) all still
+    # hold. The sibling check_g2_normal_form.py catches the same mutation
+    # because it pins the continued-fraction dictionary; this gate now adds
+    # three specific G-Spec assertions that any future successor change must
+    # violate. (A gate that cannot fail on a substantive mutation is not a
+    # gate; the lesson is the same one check_g2_normal_form carries in its
+    # own header.)
+    if val("S") != F(2):
+        failures.append(
+            f"G-Spec: val('S') must be 2 (i.e. S(1)=1+1), got {val('S')}; "
+            f"the successor is not the corpus's defining +1"
+        )
+    if val("S" * 2) != F(3):
+        failures.append(
+            f"G-Spec: val('SS') must be 3, got {val('S' * 2)}"
+        )
+    if val("Si") != F(1, 2):
+        failures.append(
+            f"G-Spec: val('Si') must be 1/2 (i.e. iota(1)=1/1), got {val('Si')}; "
+            f"iota is not 1/x"
+        )
 
     # --- G1 (subset direction): every word's value is a positive rational ----
     if any(v <= 0 for v in by_value):
@@ -80,6 +216,12 @@ def main() -> int:
     unreduced_multi = sum(1 for ws in by_value.values() if len(ws) > 1)
     if unreduced_multi == 0:
         failures.append("G2: no unreduced collisions found — the test is not exercising iota-iota")
+    if unreduced_multi != DECLARED_WITNESS["unreduced_collisions"]:
+        failures.append(
+            f"BOUND/WORD_LEN: {unreduced_multi} unreduced collisions at length "
+            f"{WORD_LEN}, contract declares "
+            f"{DECLARED_WITNESS['unreduced_collisions']}"
+        )
 
     # --- G2 cross-check: Calkin-Wilf {S, L} must be a perfect binary tree -----
     cw: dict[F, int] = defaultdict(int)
@@ -92,6 +234,23 @@ def main() -> int:
     n_words = 2 ** (CW_DEPTH + 1) - 1
     if len(cw) != n_words or any(c > 1 for c in cw.values()):
         failures.append(f"G2/CW: {n_words} words produced {len(cw)} distinct values (expected equal)")
+
+    # --- CW_DEPTH witness ----------------------------------------------------
+    # n_words is DERIVED from CW_DEPTH, so the check above is self-consistent at
+    # any depth and cannot detect a change to it. These two can.
+    if len(cw) != DECLARED_WITNESS["cw_nodes"]:
+        failures.append(
+            f"BOUND/CW_DEPTH: tree to depth {CW_DEPTH} has {len(cw)} nodes, "
+            f"contract declares {DECLARED_WITNESS['cw_nodes']}"
+        )
+    uncovered = set(by_value) - set(cw)
+    if uncovered:
+        failures.append(
+            f"BOUND/CW_DEPTH: the Calkin-Wilf cross-check at depth {CW_DEPTH} "
+            f"misses {len(uncovered)} of the {len(by_value)} enumerated values "
+            f"(e.g. {sorted(uncovered)[:3]}); it is no longer cross-checking G2 "
+            f"over the words G2 was tested on"
+        )
 
     # --- G1 (superset direction): reachability of a dense grid ---------------
     seen: set[F] = set()
@@ -109,6 +268,30 @@ def main() -> int:
     missing = sorted(grid - seen)
     if missing:
         failures.append(f"G1: {len(missing)} grid values unreachable, e.g. {missing[:3]}")
+
+    # --- GRID witness --------------------------------------------------------
+    # "grid is reachable" is satisfied trivially by a small grid, because a small
+    # grid sits entirely inside the exhaustive word enumeration and so tests
+    # nothing the enumeration did not already test. The surplus is what makes
+    # this the SUPERSET direction rather than a restatement of the subset one.
+    if len(grid) != DECLARED_WITNESS["grid_cells"]:
+        failures.append(
+            f"BOUND/GRID: {GRID}x{GRID} holds {len(grid)} distinct fractions, "
+            f"contract declares {DECLARED_WITNESS['grid_cells']}"
+        )
+    beyond = grid - set(by_value)
+    if len(beyond) != DECLARED_WITNESS["grid_beyond_enumeration"]:
+        failures.append(
+            f"BOUND/GRID: {len(beyond)} grid cells lie beyond the WORD_LEN="
+            f"{WORD_LEN} enumeration, contract declares "
+            f"{DECLARED_WITNESS['grid_beyond_enumeration']}"
+        )
+    if not beyond:
+        failures.append(
+            f"BOUND/GRID: every cell of the {GRID}x{GRID} grid is already inside "
+            f"the exhaustive enumeration — the G1 superset direction is testing "
+            f"nothing the subset direction did not already cover"
+        )
 
     # --- G3: no word attains zero -------------------------------------------
     if F(0) in by_value or F(0) in seen:
@@ -248,7 +431,14 @@ def main() -> int:
         f"({len(by_value)} values from all words to length {WORD_LEN}; "
         f"{unreduced_multi} unreduced collisions, 0 reduced; "
         f"CW tree {n_words} words / {len(cw)} distinct; "
-        f"grid {GRID}x{GRID} reachable; 0 unattained)"
+        f"grid {GRID}x{GRID} reachable; 0 unattained; "
+        f"{len(beyond)} grid cells beyond the enumeration)"
+    )
+    print(
+        f"BOUND CONTRACT: PASS "
+        f"(WORD_LEN={WORD_LEN}, CW_DEPTH={CW_DEPTH}, GRID={GRID} each pinned to "
+        f"a declared value and a harvested witness; narrowing any of the three "
+        f"is a FAIL, not a quieter PASS)"
     )
     return 0
 
