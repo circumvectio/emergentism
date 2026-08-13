@@ -292,8 +292,11 @@ def build_offline():
     font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
   .q4decl b{color:#a9a394;letter-spacing:.04em}
 </style>
+<link rel="stylesheet" href="assets/css/a11y.css">
 </head>
 <body>
+<a class="skip-to-content" href="#main">Skip to content</a>
+<main id="main">
 <div>
   <aside class="q4decl q4infra" role="note" aria-label="publication status">
     <b>INFRASTRUCTURE</b> &mdash; a service&#8209;worker fallback. It carries no doctrine and
@@ -304,6 +307,7 @@ def build_offline():
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
   <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
 </div>
+</main>
 </body>
 </html>
 """)

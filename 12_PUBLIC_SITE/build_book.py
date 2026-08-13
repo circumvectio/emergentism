@@ -603,6 +603,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   .bookbar{background:var(--bg);backdrop-filter:none}
 }
 </style>
+<link rel="stylesheet" href="assets/css/a11y.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to book</a>
