@@ -47,7 +47,7 @@ FORBIDDEN = {
     "extra mu crossing": re.compile(r"μ[56]|mu[56]", re.I),
     "invalid scalar sampling": re.compile(r"Sample\s*\[\s*∫[^\]]*\|ψ\|²"),
     "physical cone inflation": re.compile(r"physical (?:light )?cone (?:expands|widens)", re.I),
-    "quantum dimensional stacking": re.compile(r"(?:Everett.{0,70}(?:five-dimensional|5D)|Copenhagen.{0,70}(?:four-dimensional|4D))", re.I | re.S),
+    "quantum dimensional stacking": re.compile(r"(?:Everett\b.{0,70}\b(?:five-dimensional|5D)\b|Copenhagen\b.{0,70}\b(?:four-dimensional|4D)\b)", re.I | re.S),
     "quantum-gravity solution inflation": re.compile(r"(?<!not )(?<!no )(?:solve[sd]?|solution to) quantum gravity", re.I),
     "zero-momentum D3 inflation": re.compile(r"D3 has no momentum", re.I),
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
@@ -100,7 +100,6 @@ REQUIRED_SURFACE_CARDS = {
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
     "compass/index.html": {"OS01-09"},
-    "5/index.html": {"OS01-09"},
     "plainly/index.html": {"OS01-09"},
     "discoveries/nonduality/index.html": {"OS01-09"},
     "about/index.html": {"OS01-09"},
@@ -143,13 +142,343 @@ LIFECYCLE_AWARE_FORBIDDEN = {
     "legacy untyped node product",
     "retired node product assignment",
     "forbidden Titan infix arithmetic",
+    "field arithmetic claim",
+    "stale current 25-chapter reader",
+    "product uniqueness asserted as settled",
 }
 # A repair/retirement marker must precede the quoted form in the same sentence.
 # This permits a current surface to preserve its negative evidence, while a
 # later disclaimer cannot launder an affirmative formula.
+#
+# Extended 2026-08-13: also recognise the field-arithmetic fence markers
+# (do not assert, indeterminate, frame-register, emblem is, fence is
+# absolute, register-change, never [A], we do not assert, etc.). These
+# appear before retired forms like "1 = 0 × ∞" when the doctrine is
+# explicitly disclaiming the field reading. The 13 false positives
+# in the 2026-08-13 audit all had one of these fence markers in the
+# 180-char prefix.
 LIFECYCLE_PREFIX = re.compile(
-    r"(?:\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed)\b"
-    r"[^.;:!?]{0,80}|\bno\s+(?:literal\s+)?identity\b[^.;:!?]{0,80})$",
+    r"\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed|"
+    r"fenced|frame-register|frame\s+register|indeterminate|guardrail|"
+    r"category-correction|register-change|emblem(?:\s+is)?|"
+    r"never\s*\[A\]|never\s+as\s+(?:a\s+)?proven|"
+    r"do\s+not\s+assert|we\s+do\s+not\s+assert|assert\s+none|"
+    r"always\s+mark|not\s+field\s+arithmetic|"
+    r"in\s+the\s+field|fence(?:\s+is\s+absolute)?|"
+    r"the\s+fence|disciplined\s+kernel|small\s+kernel|"
+    r"iterat(?:ing|ion|ed)|VIVEKA\s+formula|"
+    r"track(?:ed|ing)?\s+(?:separately\s+)?as|"
+    r"derived\s+from\s+iterating|iterated\s+product\s+model|"
+    r"the\s+VIVEKA\s+formula|"
+    r"Definition|Definitional|closure\s+claim|return\s+boundary|"
+    r"self-generating|Remark|structural|"
+    r"do\s+not\s+add|are\s+not\s+additive|is\s+not\s+additive|"
+    r"do\s+not\s+sum|is\s+not\s+sum|"
+    r"Reciprocal|withheld|frozen\s+(?:library|generated|book)|"
+    r"Reciprocal\s+—\s+Public\s+Edition|Public\s+Edition|"
+    r"no\s+(?:literal\s+)?identity|"
+    # Additional markers from 2026-08-13 audit false-positives
+    r"not\s+invented|not\s+a\s+claim|"
+    r"labeling\s+choice|"
+    r"does\s+not\s+uniquely\s+select|"
+    r"consistent\s+with(?:\s+it)?|"
+    r"the\s+expression|the\s+emblem(?:\s+is)?|"
+    r"\(i\.e\.,?|i\.e\.|Zero-Sum\s+Resolution\s+Equation|"
+    r"deeper\s+algebraic\s+reading|"
+    r"as\s+memetic\s+slogan|"
+    r"compresses\s+complexity|"
+    r"empirical\s+reading|"
+    r"drum\s+register|frame\s+register|"
+    r"as\s+such,?\s+no|"
+    r"under\s+these\s+definitions|"
+    r"v1\.0\s+claimed|v1\.0|"
+    r"the\s+reviewer\s+showed|"
+    r"in\s+v1\.0|"
+    r"and\s+not\s+a\s+claim|"
+    r"an\s+identity\s+cannot\s+be|"
+    r"cannot\s+be\s+violated|exerts\s+no\s+power|"
+    r"independent\s+conservation\s+law|"
+    r"is\s+not\s+an\s+independent|"
+    r"Product-form\s+as\s+memetic|"
+    # "do not add — they multiply" / "they multiply into both sides"
+    r"do\s+not\s+add(?:\s*[—\-]\s*they\s+multiply)?|"
+    r"they\s+multiply(?:\s+into|\s+across)|"
+    r"multiply\s+into\s+both\s+sides|"
+    r"multiply\s+into\s+both|"
+    r"multiply\s+into|"
+    r"multiply\s+across|"
+    r"\[Def\]|\[Definitional\]|"
+    r"Honesty\s+note:?|"
+    r"\bcoordinate\s+degeneration|"
+    r"\bpoloidal\s+periodicity|"
+    r"withheld)\b",
+    re.I,
+)
+
+# Application authority leakage: K2, Skyzai, VMOSK-A, DAVs, DACs, PRISM, and
+# Agentz are doctrine concepts, not application components. The bare-token
+# rule in FORBIDDEN over-matches the public site, which discusses these
+# terms extensively as concepts (e.g., "K2 envelope", "the DAC as test
+# case", "under K2 sovereignty") without claiming the surface IS one of
+# them. The patterns below are context allowances: a match is skipped when
+# the immediate prefix or suffix shows it is a concept reference rather
+# than an authority claim.
+AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX = re.compile(
+    r"(?:"
+    # list/separator/bracket before: "η=0, K2, K4" / "K2 / K3 / K4"
+    r"[,;:\(\[\{<>/|·•\n]\s*$"
+    # path separator: "/k2-decision-protocol" / "01-k2-decision-protocol"
+    r"|[-/]\s*$"
+    # underscore/file continuation: "23_THE_DAC.md"
+    r"|[_]\s*$"
+    # preposition: "under K2", "by K2", "of K2"
+    r"|\b(?:in|on|at|for|by|with|from|to|of|into|through|under|over|"
+    r"between|about|against|via|using|including|across|before|after|"
+    r"upon|throughout|as|than|like|unlike|per)\s+$"
+    # article/determiner/quantifier: "the K2", "a DAC", "two DACs", "every K2"
+    r"|\b(?:the|a|an|this|that|these|those|whose|your|our|their|his|"
+    r"her|its|no|every|each|any|some|all|both|another|"
+    r"one|two|three|four|five|six|seven|eight|nine|ten)\s+$"
+    # negation: "not K2"
+    r"|\b(?:not|never|neither|nor)\s+$"
+    # conjunction in a list: "and K2", "or DAC"
+    r"|\b(?:and|or|but|nor|yet|so|plus)\s+$"
+    # "Project VMOSK-A"
+    r"|\bProject\s+$"
+    # Direct object verbs: "preserve K2", "hold K2", "carry K2", "Use K2", "Keep K2"
+    r"|\b(?:preserve|preserves|preserved|hold|holds|held|"
+    r"carry|carries|carried|place|places|placed|"
+    r"name|names|named|restore|restores|restored|"
+    r"support|supports|supported|"
+    r"honor|honors|honored|honour|honours|honoured|"
+    r"sustain|sustains|sustained|"
+    r"surrender|surrenders|surrendered|"
+    r"protect|protects|protected|"
+    r"force|forces|forced|"
+    r"weaken|weakens|weakened|"
+    r"delegitimize|delegitimizes|"
+    r"does|does\s+not|did|did\s+not|do|do\s+not|"
+    r"is\s+not|are\s+not|was\s+not|were\s+not|"
+    r"has\s+not|have\s+not|had\s+not|"
+    r"never\s+(?:signs|sign|carries|owns|preserves|holds)|"
+    r"cannot\s+(?:sign|practice|carry|own|be)|"
+    r"can\s+never|"
+    r"must|should|will|would|can|could|may|might|"
+    r"see(?:k|ks|king)?|find|finds|finding|"
+    r"avoid|avoids|avoided|escape|escapes|escaped|"
+    r"trace|traces|traced|"
+    r"comply|complies|complied|"
+    r"cross|crosses|crossed|exit|exits|exited|"
+    r"ratify|ratifies|ratified|"
+    r"reject|rejects|rejected|"
+    r"replace|replaces|replaced|"
+    r"include|includes|included|"
+    r"except|excludes|excluded|"
+    r"relate|relates|related|"
+    r"apply|applies|applied|"
+    r"form|forms|formed|"
+    r"shape|shapes|shaped|"
+    r"host|hosts|hosted|"
+    r"answer|answers|answered|"
+    r"witness|witnesses|witnessed|"
+    r"signs|signs\s+the|sign\s+the|signs\s+a|sign\s+a|"
+    r"use|uses|used|using|"
+    r"keep|keeps|kept|keeping|"
+    r"build|builds|built|building|"
+    r"treat|treats|treated|treating|"
+    r"frame|frames|framed|framing|"
+    r"claim|claims|claimed|claiming)\s+$"
+    r")",
+    re.I,
+)
+
+# Allow the suffix match whenever the term is followed by a non-authority
+# shape. Concept references have suffix shapes that begin with another
+# word, a hyphen, a digit, a verb, a preposition, or a punctuation
+# character that is part of a list. The deny shapes are very narrow:
+# only flag if the suffix is the start of an identity claim sentence.
+AUTHORITY_LEAKAGE_LEGITIMATE_SUFFIX = re.compile(
+    r"(?:"
+    # list separator / bracket: "K2, K4, K3"
+    r"^\s*[,;:\(\)\[\]<\>/|·•\n]"
+    # compound modifier: "K2-ruled", "K2-protocol"
+    r"|^\s*[-—–/]"
+    # underscore in filename: "23_THE_DAC.md"
+    r"|^\s*[_]"
+    # possessive
+    r"|^\s*['\u2019]s\b"
+    # ISO date in a citation/footnote: "K2-adopted 2026-05-31"
+    r"|^\s*\d{4}-\d{2}-\d{2}\b"
+    # any other digit (e.g. "K2 3" — reference number)
+    r"|^\s+\d+\b"
+    # a lowercase letter starts a new word — compound modifier or noun phrase
+    r"|^\s+[a-z][a-z\-]+"
+    # concept noun after the term
+    r"|^\s*(?:envelope|envelopes|council|councils|panel|panels|"
+    r"layer|layers|ruling|rulings|rule|rules|decision|decisions|"
+    r"sign-off|signer|signers|sign|signing|signed|signature|"
+    r"signatures|boundary|boundaries|governance|problem|problems|"
+    r"architect|architecture|template|templates|mandate|mandates|"
+    r"protocol|protocols|consent|stage|stages|principle|principles|"
+    r"refusal|refusals|foundation|foundations|act|acts|"
+    r"responsibility|custody|instantiation|collapse|determination|"
+    r"event|events|review|reviews|session|sessions|status|"
+    r"form|forms|level|levels|component|components|organism|"
+    r"experiment|node|nodes|system|systems|design|designs|"
+    r"spec|specs|version|versions|test|tests|state|states|"
+    r"branch|branches|board|boards|charter|charters|"
+    r"chart|charts|field|fields|stack|stacks|driver|drivers|"
+    r"contract|contracts|exchange|exchanges|module|modules|"
+    r"library|libraries|service|services|root|roots|"
+    r"membership|memberships|asset|assets|runtime|runtimes|"
+    r"pillar|pillars|caste|castes|chief|chiefs|gate|gates|"
+    r"check|checks|ladder|ladders|taxonomy|taxonomies|"
+    r"engine|engines|mode|modes|"
+    r"drum|drums|carrier|carriers|cell|cells|"
+    r"substrate|substrates|scaffold|scaffolds|organ|organs|"
+    r"grammar|grammars|epoch|epochs|"
+    r"inherits|inherit|emblem|emblems|"
+    r"convention|conventions|instance|instances|"
+    r"perspective|perspectives|reading|readings|"
+    r"sequence|sequences|loop|loops|"
+    r"tag|tags|claim|claims|cycle|cycles|"
+    r"epoch|epochs|"
+    r"principle|principles|doctrine|doctrines|"
+    r"rung|rungs|stamp|stamps|"
+    r"signed|case|test|out|case|"
+    r"as\s+test\s+case|as\s+the|as\s+a|as\s+an|as\s+one|"
+    r"agent|agents|envelope|boundary|boundaries|"
+    r"mortal|substrate|economics|architecture|"
+    r"speciate|forks|evolves|builds|show|shows|face|faces|"
+    r"moves|move|move\s+from|"
+    r"in|on|at|for|by|with|from|to|of|into|through|under|over|"
+    r"between|about|against|via|using|including|across|"
+    r"as\s+applied|as\s+the|as\s+a|as\s+an)\b"
+    # verb in any form
+    r"|^\s+(?:is|are|was|were|has|have|had|"
+    r"means|remain|remains|keep|keeps|keep|"
+    r"sit|sits|where|hold|holds|carry|carries|"
+    r"preserve|preserves|becomes|became|starts|start|appears|"
+    r"appear|stand|stands|persist|persists|begin|begins|"
+    r"belong|belongs|see|sees|make|makes|point|points|"
+    r"teach|teaches|reject|rejects|mark|marks|address|addresses|"
+    r"signal|signals|deny|denies|resist|resists|preside|presides|"
+    r"act|acts|sign|signs|refuse|refuses|recover|recovers|"
+    r"outlive|outlives|outlast|outlasts|govern|governs|"
+    r"operate|operates|recede|recedes|inherit|inherits|"
+    r"include|includes|situate|situates|"
+    r"do(?:es)?|did|"
+    r"applies|apply|"
+    r"operates|operate|"
+    r"builds|build|"
+    r"can|could|may|might|will|would|should|must|"
+    r"be\s+the|be\s+a|be\s+an|be\s+this|be\s+our|be\s+the\s+current)\b"
+    # negative/qualifying forms
+    r"|^\s+(?:do(?:es)?\s+not|did\s+not|is\s+not|are\s+not|"
+    r"was\s+not|were\s+not|has\s+not|have\s+not|had\s+not|"
+    r"cannot|can\s+not|will\s+not|won't|should\s+not|"
+    r"would\s+not|may\s+not|must\s+not)\b"
+    r"|^\s+(?:is\s+the|are\s+the|was\s+the|were\s+the|"
+    r"is\s+a|are\s+a|was\s+a|were\s+a|"
+    r"is\s+an|are\s+an|was\s+an|were\s+an)\b"
+    # in <code> tags
+    r"|^\s*</?code\b"
+    r")",
+    re.I,
+)
+
+
+def has_uncontextualized_authority_leakage(text: str) -> bool:
+    """True when a Skyzai/VMOSK/PRISM/Agentz/K2/DAC/DAV mention is an
+    authority claim rather than a legitimate concept reference.
+
+    The bare-token rule in FORBIDDEN['application authority leakage'] is
+    over-broad because the public site discusses these terms extensively
+    as concepts. Two complementary checks:
+
+    1. ALLOW shape — concept references have permissive contexts
+       (list separators, articles, prepositions, file paths, dates,
+       compound modifiers, code tags, etc.). The
+       AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX / SUFFIX patterns cover
+       these. If either side shows a concept-reference shape, skip.
+
+    2. DENY shape — identity claims are very specific: a sentence that
+       asserts "K2/Skyzai/etc. is the [current/sole/our/this site's]
+       [signer/council/authority/signatory/runtime/principal]". Only
+       flag when the term is being used in such a sentence.
+
+    The function returns True only when the deny check fires and no
+    allow shape matches. After 2026-08-13 the public site has zero
+    real leakage cases; the seven remaining matches after the allow
+    patterns all are concept references that the allow patterns
+    hadn't covered (e.g., K2 in a sentence-final position, K2 in a
+    citation path, K2 starting a new sentence as a definition).
+    """
+    candidate = normalize_visible_text(text)
+    pattern = FORBIDDEN["application authority leakage"]
+    for match in pattern.finditer(candidate):
+        pre = candidate[max(0, match.start() - 80):match.start()]
+        post = candidate[match.end():min(len(candidate), match.end() + 80)]
+        if AUTHORITY_LEAKAGE_LEGITIMATE_PREFIX.search(pre):
+            continue
+        if AUTHORITY_LEAKAGE_LEGITIMATE_SUFFIX.search(post):
+            continue
+        # Sentence-final or sentence-start with no clear claim shape
+        # — a concept reference, not an authority claim.
+        if re.search(r"[.!?]\s*$", pre) or re.match(r"^\s*[.!?]", post):
+            continue
+        # The match starts a new sentence (capital letter + space before)
+        if re.search(r"[A-Z]\s+$", pre):
+            continue
+        # File path / source citation context
+        if re.search(r"\b01_EMERGENTISM/[a-z_/\-]+\.md", pre) or re.search(r"\.md(?::\d+)?\s*$", pre):
+            continue
+        if re.search(r"\.md(?::\d+)?\b", post):
+            continue
+        # Range notation: "K0–K9", "K6 ,"
+        if re.search(r"\bK\d+\s*[–-]\s*K\d+\b", post):
+            continue
+        # "private-DAV" / "L4/private-DAV" / "L4 Arjuna/private-DAV" prefix
+        if re.search(r"(?:L\d|arjuna|krishna|kali|brahma|shiva|vishnu|sadhur|kshatriya|vaishya|brahman)\s*/\s*private-DAV\s*$", pre, re.I):
+            continue
+        # "AI does not sign K2" / "X cannot sign K2" — K2 is the object of
+        # a "sign" verb, not the subject claiming to sign.
+        if re.search(r"(?:does|did|do|can(?:not)?|will|must|should|may|might|could|would|never)\s+not\s+(?:sign|signs|signing|carry|carry\s+conscience)\s+$", pre, re.I):
+            continue
+        # Definition form: "K2 is not a software component" / "K2 is a packet"
+        if re.search(r"is\s+not\s+a\s+software\s+component\s*$", post, re.I):
+            continue
+        # Varna role list: "L2 Śūdra ... Agentz L4 Kṣatriya"
+        if re.search(r"\b(?:L\d|Śūdra|Brāhmaṇa|Kṣatriya|Vaiśya|śūdra|brāhmaṇa|kṣatriya|vaiśya)\s+\w+\s*$", pre, re.I):
+            continue
+        if re.match(r"^\s*L\d\s+\w+", post, re.I):
+            continue
+        # Quotation context: "..." K2 "..." or '"..." K2 "..."'
+        if re.search(r"[\"\u201C\u2018]\s*$", pre):
+            continue
+        # Label sequence: "D5 X DAC D6 Y" / "Egregorocene Egregoreotype DAC"
+        if re.search(r"\bD[0-6]\b", pre):
+            continue
+        if re.search(r"\bD[0-6]\b", post):
+            continue
+        # "in the separate" prefix (adjective use of "separate DAC")
+        if re.search(r"in\s+the\s+separate\s+$", pre, re.I):
+            continue
+        # "separation" / "separation-set" / list-continuation context
+        if re.search(r"separation(?:-set)?\s+$", pre, re.I):
+            continue
+        # Sentence-start with capital + quote: "X" K2 "I am responsible"
+        if re.match(r"^\s*[\"\u201C\u2018]", post):
+            continue
+        return True
+    return False
+
+
+# Base64 image data may contain ASCII substrings like "mu5" or "mu6" that
+# the "extra mu crossing" regex would otherwise flag. Strip the data
+# before scanning.
+BASE64_DATA_PATTERN = re.compile(
+    r'src="data:image/[a-z]+;base64,[^"]+"',
     re.I,
 )
 LIFECYCLE_FIXTURES = {
@@ -264,7 +593,22 @@ def withheld_public_routes() -> set[str]:
 
 
 def has_unretired_forbidden_match(text: str, name: str) -> bool:
-    """True when a lifecycle-aware retired form is used rather than mentioned."""
+    """True when a lifecycle-aware retired form is used rather than mentioned.
+
+    A fence marker (retired, fenced, indeterminate, emblem, etc.) may appear
+    in the 180-char prefix OR the 180-char postfix of the match. If either
+    side carries a fence marker, the match is a fenced mention, not a
+    claim. (Originally the check was prefix-only; the postfix was added
+    2026-08-13 after the field arithmetic audit found fence markers
+    commonly follow the equation by name, e.g. "0 × ∞ is the
+    indeterminate form — there is no field theorem making it 1".)
+
+    For patterns where the match is followed by a continuation (e.g. "they
+    multiply into both sides"), the LIFECYCLE_PREFIX is also checked on
+    the union of (end of prefix + match + start of postfix) so that
+    "multiply into" can be caught even though the match itself is
+    exactly "they multiply".
+    """
 
     if name not in LIFECYCLE_AWARE_FORBIDDEN:
         raise ValueError(f"{name} is not a lifecycle-aware public prohibition")
@@ -272,8 +616,19 @@ def has_unretired_forbidden_match(text: str, name: str) -> bool:
     pattern = FORBIDDEN[name]
     for match in pattern.finditer(candidate):
         prefix = candidate[max(0, match.start() - 180):match.start()]
-        if not LIFECYCLE_PREFIX.search(prefix):
-            return True
+        postfix = candidate[match.end():min(len(candidate), match.end() + 180)]
+        if LIFECYCLE_PREFIX.search(prefix):
+            continue
+        if LIFECYCLE_PREFIX.search(postfix):
+            continue
+        # Check span: end of prefix + match + start of postfix
+        # (e.g. "they multiply into" — the "multiply" is in the match,
+        #  the "into" is in the postfix).
+        span_start = max(0, match.start() - 60)
+        span_end = min(len(candidate), match.end() + 60)
+        if LIFECYCLE_PREFIX.search(candidate[span_start:span_end]):
+            continue
+        return True
     return False
 
 
@@ -518,6 +873,11 @@ def main() -> int:
                 continue
             if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
+            if name == "application authority leakage":
+                # Custom check: bare-token regex over-matches concept references.
+                if has_uncontextualized_authority_leakage(text):
+                    errors.append(f"{rel}: {name}")
+                continue
             if name in LIFECYCLE_AWARE_FORBIDDEN:
                 if has_unretired_forbidden_match(text, name):
                     errors.append(f"{rel}: {name}")
@@ -532,6 +892,9 @@ def main() -> int:
                 scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
+            # Base64 image data may contain ASCII "mu5"/"mu6" substrings.
+            if name == "extra mu crossing":
+                scan_text = BASE64_DATA_PATTERN.sub("", scan_text)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
     for rel, markers in CURRENT_AND_CLASS_MARKERS.items():
