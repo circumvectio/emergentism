@@ -121,8 +121,8 @@
         "seed"
       ],
       "owner_ids": [
-        "K-5",
-        "K-7"
+        "K-4",
+        "K-5"
       ],
       "claim_card_ids": [
         "SES01-01",
@@ -136,7 +136,7 @@
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "self_eating_serpent/CRITICAL_EDITION_1.md",
+        "path": "self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md",
         "sha256": "3eda2a0eae8bcb1b4dcafce49f569dcbacb3adda5e12f6f03342a60c102d40ec"
       }
     },
