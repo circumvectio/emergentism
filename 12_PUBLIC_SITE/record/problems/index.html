@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open problems — Emergentism</title>
+<meta name="description" content="A machine-readable register of holes. Not a worldview. Not Amrita. World contact remains 0.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emergentism.org/record/problems/">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#070A12">
+<style>
+body{margin:0;background:#070A12;color:#F5F0E6;font:18px/1.55 -apple-system,BlinkMacSystemFont,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 1.2rem 4rem}
+h1{font-weight:500;letter-spacing:-.03em}
+.kicker{font:500 .72rem ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#F0C85A}
+.fence{border:1px solid rgba(240,200,90,.35);padding:.8rem 1rem;margin:1rem 0 2rem;color:#C0C1C5;font-size:.92rem}
+article{border-top:1px solid rgba(245,240,230,.12);padding:1.2rem 0}
+.id{font:600 .78rem ui-monospace,Menlo,monospace;color:#F0C85A}
+.cls{font:500 .72rem ui-monospace,Menlo,monospace;color:#959CAB}
+a{color:#79A8FF}
+</style>
+</head>
+<body>
+<a href="#main" class="skip" style="position:absolute;left:-999px">Skip</a>
+<main id="main">
+<p class="kicker">Record · holes, not nectar</p>
+<h1>Open problems</h1>
+<div class="fence">
+  This is a register of holes. It captures nothing from your attention.
+  A green internal gate is not world contact. World contact accepted:
+  <strong>0</strong>. This page does not say the Amrita has emerged.
+  Machine copy: <a href="/record/problems.json">problems.json</a>.
+</div>
+<noscript>
+  <p>Enable nothing. Read the JSON. The holes are there without this page.</p>
+</noscript>
+<div id="list"></div>
+<p><a href="/record/">← the trial record (graves)</a> · <a href="/spark/">the spark</a> · <a href="/exit/">exit</a></p>
+</main>
+<script>
+fetch("../problems.json").then(r=>r.json()).then(data=>{
+  const root = document.getElementById("list");
+  data.problems.forEach(p=>{
+    const el = document.createElement("article");
+    el.innerHTML = `<p class="id">${p.id} <span class="cls">${p.class} ${p.tier}</span></p>
+      <h2>${p.title}</h2>
+      <p>${p.statement}</p>
+      <p><b>Acceptance.</b> ${p.acceptance}</p>
+      <p><b>Why the best attempt fails.</b> ${p.why_fails}</p>
+      <p><b>Kill the framing if.</b> ${p.kill_framing}</p>
+      <p class="cls">runnable: ${p.runnable} · owner: ${p.owner}</p>`;
+    root.appendChild(el);
+  });
+}).catch(()=>{
+  document.getElementById("list").textContent = "Ledger failed to load. Read /record/problems.json.";
+});
+</script>
+</body>
+</html>

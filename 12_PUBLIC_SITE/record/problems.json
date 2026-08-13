@@ -1,0 +1,102 @@
+{
+  "schema": "emergentism/open-problems/v0",
+  "status": "STAGED [D] — a register of holes, not a result and not Amrita",
+  "k_star": 0,
+  "attention_capture": false,
+  "world_contact_accepted": 0,
+  "source_of_count": "00_META/CONTACT_LIMITED_STATE.json#world_contact.accepted_evidence_records",
+  "not": [
+    "a worldview brochure",
+    "a completeness certificate",
+    "an engagement metric",
+    "a claim that being has been explained"
+  ],
+  "classes": {
+    "executable_internal": "A command exists. Green is internal gradient only. It is not world contact.",
+    "well_posed_unpaid": "Acceptance is written. No outside outcome has paid it. A model can attempt; the corpus can tell it failed.",
+    "underdefined": "Named honestly. No fake empirical kill. Do not run this as if it were a benchmark."
+  },
+  "problems": [
+    {
+      "id": "OC-00",
+      "class": "underdefined",
+      "tier": "[C]",
+      "title": "Ontological closure of structured being",
+      "statement": "A dynamics model that predicts inside a world but cannot say why there is structured being, or why novelty at N+1 is not derivable from N, has a hole at its base.",
+      "acceptance": "None executable. A closure theorem would have to name its universe, its derivation relation, and what would count as a countermodel. That packet does not exist.",
+      "kill_framing": "If 'incomplete without solving emergence' is sold as a scored eval, or as a proof that this corpus has the missing piece, the framing dies.",
+      "best_attempt": "Founder creed / seed packet beside W0-CROWN and W7-ORIGIN. Provenance [B], content [C].",
+      "why_fails": "Nobody evaluates world models on ontological closure. The claim is presently motivation, not a discriminator.",
+      "owner": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+      "runnable": false
+    },
+    {
+      "id": "WC-00",
+      "class": "well_posed_unpaid",
+      "tier": "[B]",
+      "title": "World contact remains zero",
+      "statement": "No accepted outside evidence record has ever returned. Internal checks, commits, AI review, and preregistrations are listed as inadmissible.",
+      "acceptance": "CONTACT_LIMITED_STATE.json world_contact.accepted_evidence_records >= 1 with every transition_gate.required_fields filed and no inadmissible_inputs used as the sole warrant.",
+      "kill_framing": "If a green repo, a merge, or model agreement is counted as an accepted evidence record, the count is corrupt.",
+      "best_attempt": "Fail-closed gate. Current value is 0.",
+      "why_fails": "No independent party has filed a discriminating outcome into custody.",
+      "owner": "00_META/CONTACT_LIMITED_STATE.json",
+      "runnable": false,
+      "probe": "python3 -c \"import json; print(json.load(open('00_META/CONTACT_LIMITED_STATE.json'))['world_contact']['accepted_evidence_records'])\""
+    },
+    {
+      "id": "WO-C1",
+      "class": "well_posed_unpaid",
+      "tier": "[C]",
+      "title": "Discharge or kill Finity_L",
+      "statement": "One biological pair with a conserved product, setpoint predicted before lookup, conservation and commensurability both held.",
+      "acceptance": "A dated prediction file precedes the lookup. The pair is conserved and commensurate. A miss kills Finity_L [C] cleanly. A hit upgrades only that wager, not the sciences.",
+      "kill_framing": "If a shifted, incommensurate, or post-hoc pair is counted as a hit, the framing dies. Grave 4 stays dead.",
+      "best_attempt": "00_HANDOFF/WO_C1_OPENING_REPORT_BIOLOGICAL_PAIR_2026_08_05.md — seven candidates; none survived unshifted and commensurate.",
+      "why_fails": "Conservation is not the same as a held product. No surviving pair from the searched set.",
+      "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/51_FINITY_L_C1_PREDICTION_2026_08_05.md",
+      "runnable": false
+    },
+    {
+      "id": "GP-03",
+      "class": "well_posed_unpaid",
+      "tier": "[S]",
+      "title": "AND-class identifiability without product ranking",
+      "statement": "Need-both survives as a class. The public object is the pair N = (Φ̂₄, V₄). Product ranking is retired. Is any cross-factor AND-class conclusion identifiable from declared ordinal inputs?",
+      "acceptance": "Freeze admissible transformations. Show conclusion invariance, or publish non-identifiability. A cardinal aggregator is local to a defended measurement contract κ.",
+      "kill_framing": "If Φ×V is restored as the default score, the framing is the keel overclaim (Halāhala h13).",
+      "best_attempt": "Product ranking retired on /amrita/ and the formula block. GitHub issue #3 predates the ordinal ruling and is not executable as written.",
+      "why_fails": "No lawful scale contract has been supplied. The question is still deferred.",
+      "owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+      "runnable": false
+    },
+    {
+      "id": "HYG-01",
+      "class": "executable_internal",
+      "tier": "[B]",
+      "title": "Current-door prohibition scan",
+      "statement": "CURRENT public surfaces plus the staged Manifesto current-body assert none of P1–P11 / Grave 4 as law.",
+      "acceptance": "09_TOOLS/01_SCRIPTS/scan_halahala_current.py exits 0. A green scan is a prohibition pass, not nectar.",
+      "kill_framing": "If a green scan is cited as 'the Amrita has emerged' or 'Halāhala is contained', the citation is the poison.",
+      "best_attempt": "Last sitting: 49 files, 0 live assertion hits.",
+      "why_fails": "Does not speak to the world. Frozen attic is out of scope by design.",
+      "owner": "09_TOOLS/01_SCRIPTS/scan_halahala_current.py",
+      "runnable": true,
+      "command": "python3 -B 09_TOOLS/01_SCRIPTS/scan_halahala_current.py"
+    },
+    {
+      "id": "HYG-02",
+      "class": "executable_internal",
+      "tier": "[B]",
+      "title": "Book I public-current-body hygiene",
+      "statement": "The staged public extract stays off /book/, deterministic, and free of ch.12–16 / Reciprocal.",
+      "acceptance": "09_TOOLS/01_SCRIPTS/check_pwa_book1_hygiene.py exits 0 and still prints that Amrita has not emerged.",
+      "kill_framing": "If the private 17-chapter manuscript is silently retargeted to /book/, the gate is broken.",
+      "best_attempt": "Extract 28,919 words; public_route null; G10 unpaid.",
+      "why_fails": "Internal hygiene. Not a public edition and not world contact.",
+      "owner": "09_TOOLS/01_SCRIPTS/check_pwa_book1_hygiene.py",
+      "runnable": true,
+      "command": "python3 -B 09_TOOLS/01_SCRIPTS/check_pwa_book1_hygiene.py"
+    }
+  ]
+}

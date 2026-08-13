@@ -159,6 +159,8 @@ Titans / Serpent / Reciprocal are not next.
 - One-sitting worldview: https://emergentism.org/plainly/
 - Practice: https://emergentism.org/practice/
 - Record and corrections: https://emergentism.org/record/
+- Open problems (run these, or fail honestly): https://emergentism.org/record/problems.json
+- Frontier ledger (tier movement only): https://emergentism.org/record/frontier.json
 - Book: https://emergentism.org/book/
 - Exit: https://emergentism.org/exit/
 - Crawler map: https://emergentism.org/llms.txt

@@ -112,6 +112,30 @@ an existing grave changes to a live validation status.
 
 Anything less is not a new investigation. It is the parent claim wearing a new coat.
 
+### The last_move triple `[S]`
+
+A status *change* is not a move until it carries:
+
+```
+last_move:
+  mover:    who adjudicated it
+  date:     YYYY-MM-DD
+  evidence: repo path, optional :line — the artifact that IS the move
+```
+
+Presence is not shape. `last_move: "yves"` is not a move. A dangling
+evidence path is not a move. Git blame is not a mover.
+
+Forward-only: existing rows may remain without the triple. A *new* row or a
+*changed* status without the triple fails
+`09_TOOLS/01_SCRIPTS/check_claim_last_move.py`. Graves are not back-filled
+from folklore. Where a receipt and the row already agree on the kill, harvest
+is allowed; where they disagree, `null` stays.
+
+The public projection is `12_PUBLIC_SITE/record/frontier.json`. It renders
+this register only. It does not harvest the tree, score reach, or promise
+closure.
+
 ---
 
 ## 3 · `FORMALLY-VALID` — what is actually proved

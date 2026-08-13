@@ -92,6 +92,10 @@ def surfaces() -> list[Path]:
         SITE / "amrita" / "amrita.json",
         SITE / "spark.md",
         SITE / "spark" / "index.html",
+        SITE / "record" / "problems.json",
+        SITE / "record" / "problems" / "index.html",
+        SITE / "record" / "frontier.json",
+        SITE / "record" / "frontier" / "index.html",
     ):
         if extra.is_file() and extra not in out:
             out.append(extra)

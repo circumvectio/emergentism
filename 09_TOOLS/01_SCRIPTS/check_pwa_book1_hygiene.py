@@ -16,6 +16,9 @@ CHECKS = (
     [sys.executable, "-m", "unittest", "09_TOOLS.02_COMPILERS.test_manifesto_public_current_body"],
     [sys.executable, "-B", "09_TOOLS/02_COMPILERS/extract_manifesto_public_current_body.py", "--check"],
     [sys.executable, "-B", "09_TOOLS/01_SCRIPTS/scan_halahala_current.py"],
+    [sys.executable, "-B", "09_TOOLS/01_SCRIPTS/check_open_problems.py"],
+    [sys.executable, "-B", "09_TOOLS/01_SCRIPTS/check_claim_last_move.py"],
+    [sys.executable, "-B", "09_TOOLS/02_COMPILERS/render_claim_frontier.py", "--check"],
     [sys.executable, "-B", "09_TOOLS/01_SCRIPTS/check_q4_declarations.py"],
     [sys.executable, "-B", "12_PUBLIC_SITE/check_public_semantic_parity.py"],
 )
