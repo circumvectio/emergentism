@@ -87,7 +87,10 @@ def current_source_contract():
     because a Markdown directory happens to exist.
     """
     books = load_object(BOOK_MANIFEST, "book manifest")
-    if books.get("schema") != "emergentism/book-manifest/v1":
+    # v2 added catalog_role/generated_from/editorial_architecture as top-level
+    # metadata but did not change any field this script reads. v1 is still
+    # accepted for backward compatibility with older manifests in this tree.
+    if books.get("schema") not in {"emergentism/book-manifest/v1", "emergentism/book-manifest/v2"}:
         sys.exit("book manifest schema drift")
     works = books.get("works")
     if not isinstance(works, list):
@@ -134,7 +137,10 @@ def current_source_contract():
     cards_path = resolve_corpus_path(cards_rel, "current claim-card set")
 
     ledger = load_object(cards_path, "current claim-card set")
-    if ledger.get("schema") != "emergentism/claim-card-set/v1":
+    # v2 claim-card set added review_history/reviewed_source_sha256 and richer
+    # per-card fields; this script only reads schema/work_id/source.path/source
+    # .lifecycle and the per-card public/review state. v1 is still accepted.
+    if ledger.get("schema") not in {"emergentism/claim-card-set/v1", "emergentism/claim-card-set/v2"}:
         sys.exit("current claim-card set schema drift")
     if ledger.get("work_id") != CURRENT_WORK_ID:
         sys.exit("current claim-card set work mismatch")
