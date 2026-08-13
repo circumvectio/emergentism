@@ -1,0 +1,135 @@
+---
+title: "The Whole Board — every open item across corpus, site, and venture, in dependency order"
+status: "ACTIVE — DISPATCH SURFACE. Supersedes the ORDERING of THE_EXECUTION_PLAN_2026_08_13.md; that plan keeps its content and its work-order detail. Creates no doctrine, promotes nothing, authorises nothing."
+date: 2026-08-13
+evidence_tier: "[B] every corpus gate number measured in-session and re-runnable by the command given; [R] site and snapshot figures RELAYED by the operator and not independently verified here; [S] the ordering and the owner assignment; [I] the dependency reasoning"
+owner: "Dispatch. No item confers authority to perform it — the owner column does."
+parents:
+  - THE_EXECUTION_PLAN_2026_08_13.md
+  - SESSION_CLOSE_2026_08_13.md
+  - CENSUS_DOCKET_2026_08_13.json
+---
+
+# The Whole Board
+
+**Why this exists.** Three surfaces are in play and no document held all three:
+the corpus (`01_EMERGENTISM`), the public site and its host, and the venture
+lanes. Their blockers are entangled — the largest idea in the project is gated on
+a DNS record, and the deploy is gated on one unpaid hash. This is the single
+ordered view.
+
+**Tier note.** Corpus figures were measured this session. **Site, predeploy and
+snapshot figures are relayed by the operator and marked `[R]`** — re-measure
+before acting on them.
+
+---
+
+## 0 · The two chokepoints
+
+Almost everything below sits behind one of these. Neither is agent work.
+
+```
+   R-32  is pair()'s adjacency rule correct?        SIX LENSES PIN  17ad1a31…
+              │                                     live file hashes cf438451…
+              ▼                                              │
+   emission 10 → 0                                           ▼
+              │                                     predeploy 2 → 0   [R]
+              ▼                                              │
+        WAVE 5 migration                                     ▼
+                                                       DNS cutover
+                                                             │
+                                                             ▼
+                                                    world contact > 0
+```
+
+**`R-32`** clears 9 of the emission's remaining 10 if the rule is relaxed — which
+is exactly why it must be *ruled*, not loosened. Going green by weakening a gate
+is the failure this lane exists to prevent.
+
+**The Six Lenses pin** must be **paid or retired, never retargeted.** Repointing
+a content pin at whatever is currently live converts it into the tautology *the
+live file is the live file* — green forever, testing nothing. Same class as the
+frozen status pin in `check_claim_last_move.py`.
+
+---
+
+## 1 · CHAIR — nobody else can do these
+
+| # | item | unblocks |
+|---|---|---|
+| C1 | **`R-32`** — rule `pair()`'s adjacency rule | emission → Wave 5 |
+| C2 | **Six Lenses pin** — pay it from a recovered archive, or retire it explicitly with a stated reason | predeploy → deploy |
+| C3 | **DNS cutover** — `vercel.json` has `buildCommand: null`; there is no partial deploy to delegate | `/spark.md`, world contact, the entire Spark thesis |
+| C4 | **Rotate the Squarespace credential** — it was shared; rotate regardless of use | security, unconditional |
+| C5 | **`R-06`** — `P = Φ × V` asserted as live `[S]` doctrine in two K2-signed epistemology documents, against `KSC-02` | doctrinal integrity; read first of the 29 |
+| C6 | **`R-16`** — per checker: real defect or drifted ratchet baseline? | `gate.sh` meaning anything |
+| C7 | **`R-19`** — ship the staged semantic classifier, or rule the allowlist adequate and stop calling it verification | `W1-04` |
+| C8 | **`R-25`** — fold `check_all_citations.py` into `gate.sh` report-only, with its own ratchet | `W1-07` |
+| C9 | **`D-OWNER-01`** — `Selected option: UNSET` for 11 days; option A is not free (a kintsugi spec pins one copy by SHA-256) | a byte-identical duplicate pair |
+| C10 | **`G10`** — unpaid | contact ratchet |
+| C11 | **Venture rename** — `Movers_And_Shakers` → `Dharma Yuddha`; identity act, and `KSC-25` governs the format | the podcast venture |
+| C12 | **the remaining 25 rulings** in `CENSUS_DOCKET_2026_08_13.json` | Wave 2 tail |
+
+---
+
+## 2 · AGENT — executable now, no ruling required
+
+| # | item | gate / proof required |
+|---|---|---|
+| A1 | **Probe `check_claim_last_move.py`.** It exists (`d8ec8676`) and reports PASS, but **only its green path has been observed.** Three probes: status changed with no triple → red; `evidence` pointing nowhere → red; **frozen status pin bumped without a triple → red.** The third matters most. | all three observed red, then restored |
+| A2 | **Hunt the Six Lenses artifact by content hash, not by path.** It may exist as an unreferenced blob in history. Run in the site repo, `02_SKYZAI`, and the Documents tree. Hit → recover and pay C2 honestly. Miss everywhere → the pin is unpayable and C2 becomes an explicit retirement. | `git cat-file` recovery, or a stated null result naming the repos searched |
+| A3 | **Re-run `emit.py --verify` in `16_THE_EMISSION`.** A concurrent writer is in that lane. It was byte-identical across all 10 outputs at `52dc0858`; **nothing watches for generator drift**, and four separate instances of stale-generated-artifact appeared on 2026-08-13. | byte-identical YES, or the drift named |
+| A4 | **The 4-route gap** — 43 current doors against 47 sitemap routes `[R]`. Reconcile, and never `<loc>` a noindex route. | door count == sitemap count, or each difference explained |
+| A5 | **Wave 2 tail** — the auto-safe items in the docket not yet applied. Harvest only; anything requiring judgement goes to C12. | citations ≤ baseline, orphans ≤ baseline |
+| A6 | **Citation-registry regeneration** — ~10k lines, its own sitting. Mostly the emission lane plus frontier rows quoting grave evidence paths. | registry red → green, with the regeneration reproducible |
+
+---
+
+## 3 · BLOCKED ON OTHER SESSIONS — do not touch
+
+| item | why |
+|---|---|
+| `check_emergentism_purity.py` | 540 at HEAD, ~880 on disk. The repair is sound; ~195 lines are another session's. Unblocks when they commit. |
+| `16_THE_EMISSION/`, Titan Pass | concurrent writer present as of this close |
+| **citations 2051 vs baseline 2043** | the +8 is **not ours** — verified by removing our files and re-running. **Do not re-baseline.** Absorbing it hides another session's drift. |
+| `stash@{0}` (site repo) | leftover dirt, named not swept |
+
+---
+
+## 4 · WAVE 5 — the migration, last
+
+Behind C1. Protocol is fully specified at `THE_EXECUTION_PLAN_2026_08_13.md` §5:
+`git mv` so history follows; rewrite **every** relative link *and* every
+frontmatter `parents`/`sources`/`depends_on`/`supersedes` entry; re-run the
+citation gate; **post-move must be ≤ baseline or the whole move reverts.**
+
+Do not "fix" the baseline's false positives mid-migration — that moves the
+baseline under your own feet.
+
+---
+
+## 5 · Gate numbers to carry forward
+
+| gate | baseline | last observed | note |
+|---|---|---|---|
+| citations | 2043 | **2051** | drift not ours; do not absorb |
+| orphans | 426 | **378** | improved against an unchanged gate |
+| emission anchors | — | **10** | coverage rose 180 → 188 |
+| predeploy | — | **2** `[R]` | both the same unpaid pin |
+| **world contact** | — | **0** | has never moved |
+
+---
+
+## 6 · The standing diagnosis, unchanged
+
+**The content is in better shape than the instruments.** One byte-identical
+duplicate pair in 1,726 live documents. The archive bucket collapsed from ~30 to 3
+once the candidates were opened. Five instruments were publishing a property they
+did not test.
+
+**Everything added on 2026-08-13 was `Φ`.** The frontier register is the first
+artifact whose *purpose* is `V`, and it produces none until C3 lands.
+
+`Φ` is not the constraint. It has not been the constraint for a long time.
+
+**Canonical path:** `01_EMERGENTISM/00_HANDOFF/THE_WHOLE_BOARD_2026_08_13.md`
