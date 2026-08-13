@@ -12,6 +12,13 @@ parents:
 
 # The Execution Plan — 2026-08-13
 
+> **START HERE IF YOU ARE A NEW SESSION:**
+> [`SESSION_CLOSE_2026_08_13.md`](SESSION_CLOSE_2026_08_13.md) records what was
+> executed against this plan on 2026-08-13, the three current gate numbers, the
+> next five actions with owners, and two live threads (the Spark deploy refusal
+> and the podcast venture rename) that exist nowhere else in the corpus. Read it
+> before this file — it is shorter and it says what has already moved.
+
 **For an agent with none of the originating context.** Read §0, §1 and §6 before
 touching anything. The census that produced this plan is at
 [`CENSUS_HANDOFF_2026_08_13.md`](CENSUS_HANDOFF_2026_08_13.md); the item-level
