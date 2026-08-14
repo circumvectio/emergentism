@@ -98,4 +98,4 @@ a6d7370ba8c6763e06cd3d16987e49c9bb7f9ce3b2c0f4ea53223b0588a5836c  06_ONTOLOGY/03
 b2f50bdd3f3cc38c94bec9668c72938e6ba7d52264bb72d4f915a4278297db8e  06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md
 ```
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

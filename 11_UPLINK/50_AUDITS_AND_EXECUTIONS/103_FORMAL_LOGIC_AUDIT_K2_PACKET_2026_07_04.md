@@ -109,7 +109,7 @@ The site audit (packet: `12_PUBLIC_SITE/_PLANS/audits/2026-07-04-site-first-prin
 
 *Nothing in this packet modifies canon. K2 signature required for items 1–7.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.
 
 ---
 

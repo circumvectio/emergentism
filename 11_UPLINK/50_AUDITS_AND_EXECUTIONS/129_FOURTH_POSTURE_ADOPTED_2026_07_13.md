@@ -35,4 +35,4 @@ Receipt 128 assumed the split was **my signed folder docs vs the swarm's *unsign
 
 **Signature (natural person): Yves R. Burri · 2026-07-13** — for §1 (adopt the 4th posture). §2 remains an open owner decision.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -83,4 +83,4 @@ Audience (settled): **the skeptic** as the spine, with **one awe-moment** as the
 - Route name `/amrita/` vs `/begin/` vs `/the-one-true-thing/` — default `/amrita/` (matches the corpus doc); trivially changeable.
 - Whether to also expose the ladder as a generated wing later — deferred; not needed for this build.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

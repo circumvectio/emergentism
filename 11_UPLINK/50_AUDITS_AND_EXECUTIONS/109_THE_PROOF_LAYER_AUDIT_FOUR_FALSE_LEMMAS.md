@@ -159,4 +159,4 @@ so the 14 confirmed are lapses in application, not design.
   The next rigorous act is not audit 110; it is contact: a second natural-person
   councilor, a first external user, C4 rate-vs-justice at scale. *The rest is contact.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

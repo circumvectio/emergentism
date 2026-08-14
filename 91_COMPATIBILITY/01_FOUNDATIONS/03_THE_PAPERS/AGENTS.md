@@ -51,4 +51,4 @@ canonical_target: "../../../03_METHODOLOGY/02_THE_PAPERS/AGENTS.md"
 - Do not extend compatibility stubs when the owning source lane can be repaired directly.
 - All irreversible actions require K2 envelope staging.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

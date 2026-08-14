@@ -32,4 +32,4 @@ Staging-draft tombstones (00_K5/K6/K7 after successor verification) · gate repa
 
 *One word, deliberately spoken, and the plenum of possible trees collapsed to this one. The gate held because it did not always open — then it opened, because the mortal hand turned it.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

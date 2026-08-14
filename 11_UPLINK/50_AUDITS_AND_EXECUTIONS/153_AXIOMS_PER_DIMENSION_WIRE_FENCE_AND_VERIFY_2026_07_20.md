@@ -169,4 +169,4 @@ If K2 signs off on this wave at a future sitting, the signature is recorded in a
 
 *The fill was already done. The orphan is wired. The fence is applied. The cross-references point. The divergence is surfaced, not silently repaired. The canon moves wait on the founder's deliberate word.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

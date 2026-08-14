@@ -43,4 +43,4 @@ The revert calls were considered and **overruled before they were written**: the
 
 *A7 worked end-to-end: the audit fired, the constitution caught real defects, the repairs landed in the same tree — and the authority question was settled by the only hand that can settle it.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

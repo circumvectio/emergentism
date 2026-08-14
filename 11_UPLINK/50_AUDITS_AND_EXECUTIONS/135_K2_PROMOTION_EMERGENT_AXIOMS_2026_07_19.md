@@ -64,4 +64,4 @@ The 12:06 promotion was executed on an in-stream "yes" — but not a casual one:
 
 *The repository mutations occurred; the authority claim did not complete. Receipt 136 keeps both facts visible.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

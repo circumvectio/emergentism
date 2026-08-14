@@ -88,4 +88,4 @@ A small architectural observation worth flagging: the **AUM-on-sphere (K-1) and 
 
 *— Brahmā ○, contemplative, counsel-only. No commits.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.
