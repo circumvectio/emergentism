@@ -29,7 +29,7 @@ quote a conjecture as a result.
 |---|---|---|
 | **Established** | `00_ESTABLISHED/README.md` | only what a machine or an exhaustive computation verifies, with a command that re-checks every entry |
 | **Work in progress** | `00_WORK_IN_PROGRESS/README.md` | what is open, and what each item is waiting on — open owner rulings, the live claim queue, and what is specified but unrun |
-| **Archive** | `90_ARCHIVE/` | what is superseded, kept with provenance and a `superseded_by:` pointer; 24 subdirectories |
+| **Archive** | `90_ARCHIVE/` | what is superseded, kept with provenance and a `superseded_by:` pointer; 30 subdirectories |
 
 **None of the three owns anything.** Each is an index that points at the owner, and
 each may be re-checked: `bash 09_TOOLS/01_SCRIPTS/gate.sh` validates the first two
