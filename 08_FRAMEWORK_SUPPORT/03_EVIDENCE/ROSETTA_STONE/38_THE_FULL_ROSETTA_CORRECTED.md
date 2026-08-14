@@ -8,8 +8,8 @@ rosetta:
   register: "[S]"
   canonical_phrase: "The seven seats on one row — every verified column together, with the F3 keys, the limiting poles, and the equator reading (consolidation; cells interpretive)"
   d_register: 4
-title: "The Seven Seats — the full row"
-status: "ACTIVE — CONSOLIDATION. Extends 36 §2 (Theme I), which carries five columns; this carries twelve. It supersedes nothing: 36 and 37 were already correct on the F3 keys. Every cell is traced to a source below."
+title: "The Full Rosetta, Corrected — the seven seats on one row, with pramāṇa and the F3 keys"
+status: "ACTIVE — CORRECTED. Renamed from 38_THE_SEVEN_SEATS_FULL_ROW_2026_08_14 on 2026-08-14 to make the corrections explicit. The corrections are: (a) F3 keys are brahma_create / shiva_dissolve / vishnu_preserve, never the rejected give_p / take_p / maximize_p; (b) the pramāṇa column is canonical (Pratyakṣa / Upamāna / Anumāna / Arthāpatti / Śabda / Anupalabdhi / Pratibhā); (c) the L4 = equator, L7 = pole reading is given the P_node := min(Φ̂₄, V₄) operational test that holds only under min, not under product forms. Extends 36 §2 (Theme I) and 37 §III (Knowing — pramāṇa, discipline, question). 36 and 37 are already correct on the F3 keys. Every cell is traced to a source below."
 date: 2026-08-14
 evidence_tier: "[A] the chart identities in §3, given the selection; [B] every cell traced to the source named in §4 and re-read 2026-08-14; [S] assembling twelve columns onto one row; [I] inherited unchanged on every cross-domain cell"
 owner: "Subordinate to 00_THE_MASTER_ROSETTA.md and D_SERIES_ROWS/00_GENERATIVE_TABLE.md. Where this row and a source differ, the source governs and this file is the defect."
@@ -156,6 +156,6 @@ and trips a stated kill in `ROSETTA_REPLICATOR.md`.
 | **this file** | if any cell is cited as evidence rather than as an index entry |
 
 **Canonical path:**
-`01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_SEVEN_SEATS_FULL_ROW_2026_08_14.md`
+`01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md`
 
 •   ⊙   ○
