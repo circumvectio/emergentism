@@ -80,6 +80,15 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`53_THE_NUMBER_CHART.md`](53_THE_NUMBER_CHART.md) | Number-chart type distinctions. |
 | [`54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md`](54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md) | Direction-sphere/radial-line factorization and its boundary. |
 
+## Ordinal collisions — a routing index, not a renaming
+
+Two ordinals are each carried by two files — declared intentional, not a defect:
+
+- **48** — `48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md` (prose owner) and `48_FINITY_PARADOX_LEDGER.yaml` (machine-readable ledger).
+- **49** — `49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md` and `49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md` (two prose owners).
+
+This mirrors `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md` — the collisions are a routing index, not a renaming. Do not rename to "fix" them.
+
 ## Axiom Count Note
 
 The framework currently seats **E1–E10** in
