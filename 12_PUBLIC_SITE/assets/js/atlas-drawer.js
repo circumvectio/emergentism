@@ -147,8 +147,8 @@
     }
     if (!treeEl.firstChild) {
       var fallback = document.createElement("a");
-      fallback.href = "/atlas/";
-      fallback.textContent = "no match — open the full atlas";
+      fallback.href = "/record/";
+      fallback.textContent = "no match — open the record";
       treeEl.appendChild(fallback);
     }
     var total = (data.total || 0) + libTotal;
@@ -169,8 +169,8 @@
     }).catch(function () {
       treeEl.textContent = "";
       var a = document.createElement("a");
-      a.href = "/atlas/";
-      a.textContent = "open the atlas page →";
+      a.href = "/record/";
+      a.textContent = "open the record →";
       treeEl.appendChild(a);
     });
   }

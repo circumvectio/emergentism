@@ -291,186 +291,217 @@
  ],
  "needs_ruling": [
   {
+   "id": "R-00",
    "question": "Do the 31 self-declared-dead documents stay tombstoned in place, or move to 90_ARCHIVE? I recommend STAY, and I am contradicting the superseded lens's proposed disposition to say so.",
    "sides": "ARCHIVE (the lens's proposal): they declare 'no current semantic authority' and clutter live doctrine lanes. STAY IN PLACE (my recommendation): I opened ten of them and their own banners order it. 16_EFR_TRANSCENDENTALS.md:18 — 'retained in place for provenance and link stability'. 28_EFR_HYGIENE_BOUNDARY_THEOREM.md:17 — 'This stable path preserves…'. 09_EFR_GODEL_CLARIFICATION.md:18 — 'retained as provenance'. D14_ROSETTA_R5_NIETZSCHE.md:29 — 'retained as provenance'. MF_66:~35 — 'retained in place as provenance', then 'Current owners: …'. They already carry the successor routes in their banners. Moving them breaks 2–6 live inbound citations each and breaks the published routes three of them serve. Archiving is the disposition they were spared.",
    "paths": "05_COSMOLOGY/03_FORMAL_SYSTEM/16_EFR_TRANSCENDENTALS.md (477 lines, 3 citers) · MF_66_Mandelbrot_Consciousness.md (502) · D14_ROSETTA_R5_NIETZSCHE.md (426, 3 citers) · PD_18_THE_EXTRACTION_PARADOX.md (316, 4 citers, successor named) · THE_RECURSIVE_TRIVIUM_…_SYNTHESIS.md (317) · 09_EFR_GODEL_CLARIFICATION.md (297, 6 citers) · 08_WHAT_WE_HAVENT_SAID.md (183, 4 citers) · ROSETTA_CIVILISATIONAL.md (143) · 28_EFR_HYGIENE_BOUNDARY_THEOREM.md (46, 4 citers) · THE_RECURSIVE_TRIVIUM_BRIEFING.md (179)",
    "recommendation": "Rule STAY IN PLACE, and close the real gap instead: none of these 31 is enumerated in any register. Add a file-level §6 to 00_META/00_THE_CLAIM_STATUS_REGISTER.md (whose §5 adjudicates dead FORMS DF-01…DF-22 but names no FILES). I checked 00_META/, 00_HANDOFF/ and 14_THE_DISTILLATION/ with /usr/bin/grep for 'no current semantic authority' and found nothing — checked, not skipped."
   },
   {
+   "id": "R-01",
    "question": "The 33 already-emptied 16-line tombstone stubs in MF_ADVANCED, PARADOX_DISSOLUTIONS and SPHERE_DERIVATIONS — archive the block, or leave it? I recommend LEAVE, and this also refutes the lens.",
    "sides": "ARCHIVE: 'SUPERSEDED — no current semantic authority' at line 3 of each, 16 lines apiece. LEAVE (my recommendation): I read MF_284 and PD_08 in full. Their bodies were ALREADY archived on 2026-07-21 — each stub ends with '- Preserved historical body: [.../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/…_LEGACY_2026_07_21.md]' plus named current owners. These stubs ARE the archive-first artifact. Archiving the pointer to the archive is the one move that loses the route.",
    "paths": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_{284,286,287,288,289,291,293,295,297,299} · 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_{08,09,10,14,15,20,21,23,24} · 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_{64,65,67,69}",
    "recommendation": "Rule LEAVE. One line in the block's ruling would also retire the recurring re-flagging: these are the corpus's working pattern, not a backlog."
   },
   {
+   "id": "R-02",
    "question": "PD_19: execute the prose half of the 2026-07-12 ruling? The label half landed 2026-07-30; the prose half did not.",
    "sides": "The ruling exists and is quoted inside PD_19's own SEAM at :35-37: the proven-impossibility prose 'must be softened to \"third-person science has not yet produced a mechanism; first-person practice discloses what third-person methods cannot reach.\"' The replacement wording is supplied verbatim, which makes it near-mechanical. Against: it rewrites doctrinal prose in a live evidence file, and the same SEAM calls PD_19 a 'merge candidate' — so a chair might prefer merge-into-PD_13 over softening.",
    "paths": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md:67 · ruling at 11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_SEVEN_CASTE_CORPUS_AUDIT.md:149 · non-execution recorded 188_THE_PARADOX_INVENTORY_2026_07_30.md:83",
    "recommendation": "Soften, do not merge or archive. I re-read :67 today and it is unchanged: 'Science has no answer. Not an incomplete answer. No answer.' The SEAM already rules 'This file is retained as a phenomenological practice narrative', so it stays at its path — 13 months of inbound links survive and the ordered repair closes."
   },
   {
+   "id": "R-03",
    "question": "REFUTED FINDING, needs your ruling on what to do instead: 05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md:350 does NOT cite a nonexistent brief. The target exists. check_links.py forbids the shape.",
    "sides": "The citations lens reported '/usr/bin/find returns 0 matches' — but it searched only inside 01_EMERGENTISM. I re-ran /usr/bin/find over /Users/Yves/Documents and the file EXISTS: /Users/Yves/Documents/00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md. The link depth '../../../' is CORRECT — it resolves to the Magnum Opus root. check_links.py flags it because its declared contract (line 20) is 'every local target remains inside the repository after resolution'. So: either the corpus may cite up into its parent governance tree (and the gate needs an allowance), or it may not (and the citation must be restated as a bare path, not a link).",
    "paths": "05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md:350 · 09_TOOLS/01_SCRIPTS/check_links.py:20",
    "recommendation": "Allow parent-root citations as bare code-span paths (never as resolvable links), and teach check_links to recognise and skip that shape. This is the second of check_links' two live failures; with the Finder-duplicate repair it is the whole of the red, and the BASELINE=0 ratchet becomes truthful again."
   },
   {
+   "id": "R-04",
    "question": "REFUTED FINDING, and it changes a doctrinal contradiction: the Mavis-as-principal constitutional amendment DOES exist. Which of the two live documents is wrong?",
    "sides": "The contradictions lens reported the warrant 'exists nowhere in the repository and was never committed to it'. True of this repo — but I re-ran /usr/bin/find over /Users/Yves/Documents and found /Users/Yves/Documents/00_HANDOFF/constitutional/CONSTITUTIONAL_AMENDMENT_2026_07_28_MAVIS_AS_PRINCIPAL.md (173 lines). The citation merely omits the 'constitutional/' path component. And the amendment's own status line settles the contradiction: 'status: \"[D] Mavis-staged, K2-ratification pending (D2 closed by file presence; D1 status contested per constitutional record §2)\"' and 'fences: [η=0, K3, K4, A7, Ω]   # 5 fences; K2-as-fence REPEALED per the body below', with 'hand_off: K2 (Yves R. Burri) for separate constitutional ratification'.",
    "paths": "02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md:117 ('The 2026-07-28 constitutional amendment removed the K2 fence and ratified Mavis-as-principal') vs 02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md:22 and :138 ('remains contested (D1) — K2 disposition pending') · 02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md:139",
    "recommendation": "CLOSED_READING_LOOP is right and HOLOBIONT_MEMBRANE:117 overstates. The amendment itself says ratification is pending and hands off to K2 — and it dates itself 2026-07-28 while 00_HANDOFF/PENDING_K2_QUEUE_REFRESH_2026_08_04.md, dated after the claimed repeal, still names 'K2 (Yves R. Burri, natural person)' as owner. Repair :117 to the pending form, and repair the three citing paths to include 'constitutional/'. Only you can rule on whether the fence is in fact repealed."
   },
   {
+   "id": "R-05",
    "question": "P = Φ × V asserted as live [S] doctrine in two K2-signed epistemology documents, against KSC-02.",
    "sides": "KSC-02 retires the product form as a ranking (00_META/00_SETTLED_CANON_REGISTRY.md:62), 56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:178 marks it 'UNLICENSED', and 57_THE_POTENTIAL_READING.md:162 says 'the product was the wrong operation and the harmonic mean is the right one'. But 00_THE_CLOSED_READING_LOOP_v0.1.md is registered as '[A] K2-ratified canon' in its own sign receipt — so this is canon against canon, not draft against canon.",
    "paths": "02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md:103 ('P = Φ × V multiplicative is [S] doctrinal; the multiplicative shape is load-bearing') · 02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md:111 (bare, no fence) · confirmed by two lenses independently and by Titan Pass A-05 at the identical line",
    "recommendation": "Narrow both to the surviving AND-class form (P_node = min(Φ̂₄, V₄) per KSC-02, 00_THE_RUNGS_2026_08_05.md:704). The AND-class reading survives; the product does not. Note the membrane doc is NOT among the four artefacts the 2026-07-31 Drift-1 reconciliation named — I re-measured all four today and they are clean, so this is an extension of that finding, not a restatement."
   },
   {
+   "id": "R-06",
    "question": "KSC-13: five live documents import external governance/venture instruments as premises inside worldview lanes. Fence, retier, or relocate?",
    "sides": "KSC-13 says product/venture/governance frameworks 'may apply it but are not premises, authorities, evidence, or agent instructions inside the worldview.' Four of the five carry no external-mapping exemption block at all. Against a blanket strike: 32_PACK_SOUL4_v0.md shows the corpus's working pattern — an 'External-mapping boundary' block naming ventures as 'data under audit, never as premises', tied to the gate so deleting it fails closed.",
    "paths": "02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md (12 violations; canonical_phrase itself names 'Mavis-as-principal' as a membrane constituent) · 00_THE_CLOSED_READING_LOOP_v0.1.md:38 (15; F1 RSS proof, SKY-ZAI pair, Aureus A7 clock as premises) · 00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md:139 (7) · 04_AXIOLOGY/00_DUAL_USE_POSITION_v0.1_DRAFT.md:380 (15; imports a Guardian Project banner as law that 'stands above all of it') · 00_THE_GATE_EXIT_v0.1_DRAFT.md (1)",
    "recommendation": "Apply the 32_PACK_SOUL4 fence block to all five rather than deleting content — it is gate-enforced and fail-closed. The purity gate reports 51 violations across exactly these 6 files; three lenses ran it and got the same 51/6."
   },
   {
+   "id": "R-07",
    "question": "Two incompatible live definitions of [S]. This ruling is upstream of every other tier adjudication and no agent can make it.",
    "sides": "THE_HONESTY_PROTOCOL_STANDALONE.md:47 — '[S] Structural | Follows necessarily *if* you accept stated premises'. 13_BOOKS/the_reciprocal/00_front_matter.md:97 — '[S] selected — a considered choice, defensible as a choice, not a discovery'. A reader applying the protocol's reading to a document written under the book's reading reads a selection as forced.",
    "paths": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md:47 · 13_BOOKS/the_reciprocal/00_front_matter.md:97",
    "recommendation": "Rule first, then re-run the tier findings. If [S] means 'selected', the ASCENT_D5 finding weakens and the 56_THE_PRODUCT_FORM tier split resolves itself. Every [S] label in the corpus is currently ambiguous between 'forced given premises' and 'a choice I own'."
   },
   {
+   "id": "R-08",
    "question": "Four receipt-type documents wear [A]. Tier demotions to [B] — your call by definition.",
    "sides": "By the corpus's own ladder ([B] = 'Custodied observation, measurement, attribution, build, run, or outcome'), all four are [B]. Against: 228_APU's tier line is embedded in an ACTIVE DOCTRINE close-out whose whole purpose is to disown an earlier unsupported signature claim, so touching its tier touches a governance record.",
    "paths": "118_SHIP_RECEIPT_VERCEL_PROD_DNS_CUTOVER_OWED.md:5 (HTTP-200 verification at [A]) · 190_R188_WAS_WRONG_ABOUT_PD_25_2026_07_30.md:5 and :22 (verbatim web quotation at [A]) · 228_APU_ROUTE_B_DIRECT_K2_RATIFICATION_2026_05_18.md:22 (founder's spoken instruction at [A], no transcript cited) · 05_L3_AUDIT_HOLOBIONT_REGISTER_CORRECTION_2026_08_03.md:7 and sibling 06_L3_AUDIT…:7 (document custody at [S])",
    "recommendation": "Demote all four to [B]. 228 is the one to watch: the ladder requires 'source bytes, method, scope, date, and receipt available for replay', and the packet cites no transcript — so it does not reach [B] either without one."
   },
   {
+   "id": "R-09",
    "question": "12_PUBLIC_SITE: three publication-boundary defects. Editing the published surface is neither archive execution nor index/tidy, so I did not put these in AUTO_SAFE.",
    "sides": "For repair: the pages make machine-checkable promises they do not keep, and the corpus names warrant substitution as its own defect. Against acting now: it is 53+ pages of published HTML, and the measured mitigation is real — 0 of the 53 appear in sitemap.xml, so nothing is actively submitted for indexing.",
    "paths": "(a) canon/the-reciprocal-public-edition/index.html:6726 and :6802 — '[A] established external fact', attributed to front matter that says [A] 'says nothing about whether the premises describe anything real'. (b) 53 of 344 frozen-library pages assert 'noindex' in prose with no robots meta. (c) paradox/pd-18-the-extraction-paradox/index.html discloses nothing about its source's FROZEN status — 0 matches for supersed/withdrawn/retired, while sibling frozen pages carry at least one.",
    "recommendation": "Fix (a) first and alone — it inverts its own cited source in the same sentence that promises 'no claim should silently climb tiers', and it is the corpus's outward face. (b) and (c) can wait for a public-site pass. Note this lane is excluded from the purity gate by ROUTE_EXCLUDED_PARTS, so nothing will catch a regression."
   },
   {
+   "id": "R-10",
    "question": "12_PUBLIC_SITE/.vercel/output/static/ ships 23 stale KSC-11 spellings that no instrument can see. Rebuild before any deploy?",
    "sides": "The sources were repaired (commit e0628266) and measure stale=0; the build output is 7 days older (Aug 6 00:54 vs source Aug 13 12:54) and still carries the legacy spelling across 9 files. `vercel deploy --prebuilt` ships exactly this directory. Against acting: it is gitignored build output, so regenerating it is a deploy-pipeline act, not a corpus repair.",
    "paths": "12_PUBLIC_SITE/.vercel/output/static/operators/mf-281-the-replicator-decomposition/index.html:88 and 8 sibling files",
    "recommendation": "Rule 'rebuild before next deploy' and record why it was invisible: `git check-ignore -v` returns '12_PUBLIC_SITE/.gitignore:1:.vercel', so `git grep` and the shell grep function (which wraps ugrep --ignore-files) both report zero. Only /usr/bin/grep -rlI sees the 9 files. This is the sharpest live instance of the .gitignore blindness this corpus has already been burned by."
   },
   {
+   "id": "R-11",
    "question": "A-27: archive the 24-file 2026_07_20_k2_audit_trio_l1_l7 wave? It asks for your adjudication in its own status line, so I will not archive it on the manifest's word.",
    "sides": "FOR: successor named in its own sources block and verified on disk — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md (2,303 B) and 147_POST_AUDIT_RECONCILIATION_2026_07_20.md (3,874 B). It is the single largest carrier of the retired ⊙=•×○ infix outside 90_ARCHIVE — 24 of 24 files — which makes a fifth of the contradiction census a permanent false positive. AGAINST: its own status is still 'STAGED — K2 adjudication requested', seventeen days on, and four files inside (L1.3, L2.3, L5, L7 insight sets, all 'FILED — counsel only') have zero reference in any live document.",
    "paths": "00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/ (24 files) → 90_ARCHIVE/2026_08_13_disposition_docket/00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/ if you approve",
    "recommendation": "Approve the archive in one line, or adjudicate the packet — but do one. Note 146 collides with 146_PAPERS_LENS_CLOSURE_2026_07_20.md (two documents share receipt: 146), so the successor citation needs a path, not a number."
   },
   {
+   "id": "R-12",
    "question": "A-29 has decayed and now has two incompatible successor claims. Which is the live route for the finity_practice review packet?",
    "sides": "The Titan Pass names REVIEW_BUNDLE_v1.md:67-92 as the successor — the sendable invitation — on the reasoning that 'every version made the packet more internally verifiable and less sendable'. The working-tree README.md:38 names REVIEW_BUNDLE_v5.md. Both cannot be right. And the pattern recurred after the manifest was written: v5 landed 2026-08-08 with a status string character-identical to v3 and v4.",
    "paths": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/ — v1..v5 .md + .json + binding receipts + registry snapshots",
    "recommendation": "Do NOT archive v2/v3/v4 yet. All four v5 artifacts are untracked and the README naming v5 is uncommitted — archiving tracked files in favour of an uncommitted successor is the one move that can lose the packet. Commit v5 (or rule for v1) first; then archive. I have put the v1→v2→v3→v4 supersession markers in AUTO_SAFE since that chain is fully committed."
   },
   {
+   "id": "R-13",
    "question": "Two-hop forwarding-stub chains: archive both hops, or neither? Three clusters, all blocked on the same question.",
    "sides": "FOR archiving: each chain is root stub → 00_META stub → 90_ARCHIVE grave, and the corpus's own gate rule is violated at both hops ([R4] a canonical_target pointing at another STUB; [R2] one pointing at a GRAVE). AGAINST: I measured live inbound and it is not zero — DEAD_FORMS_CATALOG 21 and 20 mentions, FOLDER_LAYOUT 7 and 6, FOUNDATION_READER_GUIDE 7, INSIGHTS_INDEX 6, DISTILLED_DOCTRINE 6 and 6, TIDY_PLAN 4 (including live root files 00_THE_DEAD_FORMS_CATALOG_v0.1.md and 00_WELTANSCHAUUNG_KERNEL_v0.2 citing it as the authorizing plan). Stubs exist to hold links; archiving them is the act that breaks what they were built to protect.",
    "paths": "A-01/A-02 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md + root twin (also blocked on the DF-22 id collision) · A-09/A-10 00_META/00_FOLDER_LAYOUT_v0.1.md + root twin (README.md:118-119 asserts the opposite of the measurement) · A-11 00_FOUNDATION_READER_GUIDE.md · A-12 00_INSIGHTS_INDEX_v0.1.md · A-14/A-15 the two 00_THE_DISTILLED_DOCTRINE.md · A-26 00_META/00_TIDY_PLAN_v0.1.md",
    "recommendation": "Rule ONE policy for the whole class rather than eight file decisions: either stubs are permanent link infrastructure (leave all, and fix the [R2]/[R4] rule to permit stub→grave), or they expire on a schedule (archive all, and add redirects). Piecemeal is what produced two-hop chains in the first place."
   },
   {
+   "id": "R-14",
    "question": "VMOSK_A.md (A-08): the supersession is signed and countersigned, but archiving is blocked on propagation, not on the disposition.",
    "sides": "The disposition is settled — :38 '**SUPERSEDED — countersigned by Yves R. Burri, natural person, 2026-07-31**' by VMOSK_A_v2_2026_07_31.md, which confirms at its :16. What is unsettled is whether the corpus has finished repointing to v2. Separately: VMOSK_A_v2's own parents block (:23) declares '../VMOSK_A_v2_2026_07_31.md' — a Magnum Opus root keystone. I checked with ls and it does NOT exist at /Users/Yves/Documents/. Its depends block calls it 'the keystone this pillar inherits'. So this is a missing declared keystone, not the duplicated-row artifact the citations lens read it as.",
    "paths": "VMOSK_A.md:15 and :34 · VMOSK_A_v2_2026_07_31.md:23 and :29 · /Users/Yves/Documents/VMOSK_A_v2_2026_07_31.md (absent; only VMOSK_A.md, 5,249 B, sits at the root)",
    "recommendation": "Do not archive VMOSK_A.md this wave. Fix its status line (AUTO_SAFE) so ^status: stops returning the wrong answer, then rule on the root keystone: either create the root v2, or strike the declared parent. Do not let an executor silently delete a parents row that names a constitutional keystone."
   },
   {
+   "id": "R-15",
    "question": "gate.sh is globally and persistently red. Per checker: real defect, or drifted ratchet baseline?",
    "sides": "8 of 20 wired checkers exit 1, plus 14 of 40 compiler test files fail. gate.sh's own header concedes maintainers use `git commit --no-verify` routinely, and line 22 says 'A HOOK IS THEREFORE NOT A GATE.' A gate that is always red cannot distinguish new breakage from the standing backlog. But two of the eight are drifted counters, not defects — check_active_receipt_citations (physical reused-prefix universe 101 vs expected 97) and check_receipt_citations (ambiguous receipt numbers rose to 94, baseline 91) — and raising those is exactly what the corpus forbids doing casually.",
    "paths": "09_TOOLS/01_SCRIPTS/gate.sh:44,96 · red-and-wired: check_active_receipt_citations, check_contact_limited, check_emergentism_purity, check_links, check_node_product_ranking, check_q4_declarations, check_receipt_citations, check_site_build_artifacts · red-and-unwired: check_contradiction_census, check_dead_citations ('13 undisclosed dead citations across 917 live documents'), check_forwarding_stubs ('5 violations across 79 stubs'), check_tree_contract (7 findings)",
    "recommendation": "check_links goes green this wave (both failures are dispositioned above). Take the other seven one at a time. Wire or retire the four orphaned red checkers — leaving working instruments invoked by nothing is a smaller recurrence of the HOLE 0 that gate.sh was built to close."
   },
   {
+   "id": "R-16",
    "question": "check_contradiction_census targets 0 live hits while counting the receipt zones the Settled Canon Registry explicitly licenses. Retarget or retire?",
    "sides": "The registry at :92-93 says 'Historical receipts, quotations, compatibility paths, and explicit tombstones may preserve retired wording.' The checker excludes only 90_ARCHIVE, 91_COMPATIBILITY and 09_TOOLS. Result: 88 of 121 'live' hits sit in 00_HANDOFF (48) and 11_UPLINK (40), and only 2 are in doctrine — both explicit tombstones. The gate is structurally unpassable. Two lenses found this independently.",
    "paths": "09_TOOLS/01_SCRIPTS/check_contradiction_census.py:29-31",
    "recommendation": "Add 00_HANDOFF and 11_UPLINK to its exclusion set so the target of 0 becomes reachable, then wire it into gate.sh. A rule and its licensed exception cannot both be enforced by one substring scan."
   },
   {
+   "id": "R-17",
    "question": "claim_policy.py's 180-character negation lookbehind exempts one insertion point in three. Narrow it, or accept the blindness?",
    "sides": "Narrowing makes the gate stricter and will surface real barred claims. But it will also surface false positives in a corpus whose register is saturated with hedging and retraction language — that saturation is precisely why the lookbehind was written. This is a policy call about how much noise the gate may make.",
    "paths": "09_TOOLS/01_SCRIPTS/claim_policy.py:53",
    "recommendation": "Narrow it, and here is the concrete failure to weigh against the noise: appending 'The law is P = Φ × V and it holds everywhere.' to 13_BOOKS/00_CATALOG.md leaves the gate at 'BARRED CLAIMS: PASS (all)' rc=0, because the file's preceding 180 characters happen to contain 'not deletion' and 'none currently'. The same sentence in isolation is caught. Measured over the checker's own 120-file scan set: 366 of 1,097 insertion points (33.4%) silently exempted."
   },
   {
+   "id": "R-18",
    "question": "check_established.py is a literal-substring allowlist and its own header says so. Ship the semantic classifier that is already staged [D] for K2?",
    "sides": "The checker's header already records that the allowlist 'drifted the day it was written' and that a semantic classifier 'is the proper fix and is staged [D] for K2'. The fix applied seven days ago was to append two more literal phrases. Complication: the corpus's own harness grades this checker SOUND — but both of its seeded faults are drawn from the checker's own FORBIDDEN_INFLATIONS list, so it tests the gate in the gate's vocabulary.",
    "paths": "09_TOOLS/01_SCRIPTS/check_established.py:34 · 09_TOOLS/01_SCRIPTS/mutation_test_gates.py",
    "recommendation": "Ship the classifier, or rule the allowlist adequate and stop calling the gap a defect. Three out-of-vocabulary paraphrases all pass at rc=0 today — 'machine-checked end to end', 'confirmed by the compiler on each commit', 'true for every word without exception' — while the listed phrase 'compiles cleanly' is caught. The checker's other four declared properties are genuinely sound (Lean count, η = 0 deletion, disclosure deletion, a planted real `sorry` — all caught)."
   },
   {
+   "id": "R-19",
    "question": "test_contact_limited.py runs 0 tests while printing 'FAILED (errors=1)'. Re-sync the byte-count registry, or is the drift real?",
    "sides": "setUpClass raises before any test executes, so an entire suite is disabled while the output reads like one broken test. Re-syncing the registry byte count makes it run again — but if the drift is a genuine unauthorised change to a withheld artifact, re-syncing launders it. That is exactly the shape of gate-laundering the corpus forbids, so I will not touch it.",
    "paths": "09_TOOLS/02_COMPILERS/test_contact_limited.py:34-38 → 09_TOOLS/01_SCRIPTS/check_contact_limited.py:1185,1247",
    "recommendation": "Read the drift before re-syncing: ContractError says 'withheld artifact axiology/index.html byte count drifted: registry=5304, actual=5945' — a 641-byte growth in a withheld artifact. Establish what added those bytes, THEN re-sign the registry. Separately, make the runner distinguish 'suite disabled' from 'one test failed'."
   },
   {
+   "id": "R-20",
    "question": "No orphan/reachability gate exists, and 432 of 1,387 live docs (31%) have zero inbound edge. Build one?",
    "sides": "This absence is why the 2026-08-04 orphan finding decayed silently for nine days — and why its own receipt, 00_HANDOFF/0_REF_ORPHAN_VERIFICATION_2026_08_04.md, is itself an orphan with all 7 of its named candidates still at zero inbound. Against building it now: the denominator question below is unresolved, and a gate with the wrong exclusion rule will report a number nobody trusts.",
    "paths": "09_TOOLS/01_SCRIPTS/ (no such script) · .github/workflows/ (no such job)",
    "recommendation": "Build it, but hard-code two exclusions the census already proved necessary: 09_TOOLS/03_SIMULATIONS/formal_reap/.lake/ (41 vendored Lean/mathlib files, ~10% inflation) and the three generated registers. Registry membership proves tracked, never reachable — counting register rows as inbound edges reports ~45 orphans instead of 432 and concludes the corpus is healthy. I checked for an existing gate with /usr/bin/grep -rln 'orphan' over 09_TOOLS/01_SCRIPTS/*.py and .github/workflows/*.yml: exit 1, zero files. Checked, not skipped."
   },
   {
+   "id": "R-21",
    "question": "Which live-.md denominator governs? Ten lenses used ten different numbers and no report is quotable until you pick one.",
    "sides": "1,726 / 1,727 (find-style, today) · 1,706 (the Titan Pass's published figure, inflated by 93 files inside eight NESTED 90_ARCHIVE directories under live pillars) · 1,591 (citations) · 1,588 (excluding nested archives) · 1,514 · 1,387 (excluding vendored .lake) · 1,385 (reproducing the builder's own walk rules) · 1,381 (index rows) · 1,003 (files carrying evidence_tier). None is wrong; each is a different exclusion rule.",
    "paths": "09_TOOLS/01_SCRIPTS/build_corpus_index.py:38-41 (the only scope contract that exists in code) · 15_THE_TITAN_PASS_2026_08_06/README.md:126 (the published 1706, whose own command re-runs to 1727 today)",
    "recommendation": "Adopt 1,385 — the builder's walk rules — because it is the only figure derived from a scope contract that exists in code rather than from an ad-hoc find. Then require every future count to be quoted with its exclusion rule attached. Two lenses independently found the same 93 nested-archive files, so the Titan Pass figure is stale in both directions at once."
   },
   {
+   "id": "R-22",
    "question": "18_EFR_METHODOLOGY_COMPLETE.md and 15_EFR_WOLFRAM_NKS_INTEGRATION.md are the same document written twice in one directory, and 18 restates as live fact the exact claim 15 withdrew.",
    "sides": "Merge into 15: it carries the 2026-08-01 v5.0 type correction and the honest [D/C] tier. Keep 18: it is dated 2026-03-23 v1.0 and a reader hits it first because its title says COMPLETE — so deleting the path strands whoever follows that title. Neither file links to the other as a version (/usr/bin/grep -n '18_EFR' 15_EFR_WOLFRAM_NKS_INTEGRATION.md exits 1).",
    "paths": "05_COSMOLOGY/03_FORMAL_SYSTEM/18_EFR_METHODOLOGY_COMPLETE.md:367 (asserts K_sc = 0 as live, in a row that LINKS to the file that withdrew it) and :16-20 (still 'Status: Active', tier [S]) vs 15_EFR_WOLFRAM_NKS_INTEGRATION.md:15 ('The Titan-based minimality proof is withdrawn')",
    "recommendation": "At minimum repair :367 now — the row directly below it received exactly this treatment on 2026-07-20, so the pattern was known and this row was missed. Then rule on the merge: 26 shared table rows, 0.897 row overlap, a byte-identical 'Hierarchy of Description' fenced block, and eight identically-titled sections is the strongest duplication pair in the corpus."
   },
   {
+   "id": "R-23",
    "question": "D-OWNER-01 has sat at 'Selected option: UNSET' for 11 days and option A is not free.",
    "sides": "The only byte-identical pair of real documents in the live tree (md5 2c16b1d18b9038442616219ca8c1b8d8, 10,637 B each), both tracked, both separately registered in FILE_REGISTER.json (:28619 and :31917). Git shows commit a55327d9 recorded this as a RENAME (R100) out of docs/superpowers into _PLANS — and the old path came back. Option A (delete one) is constrained: kintsugi docs/specs/2026-07-12-…-execution-lock pins one copy by SHA-256.",
    "paths": "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md · 12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md · docket at 00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md:31,53-57",
    "recommendation": "Select an option. I re-verified the pair is still byte-identical today, 11 days on, and the only three live mentions of D-OWNER-01 are the docket itself and one pointer — so nothing else will surface this."
   },
   {
+   "id": "R-24",
    "question": "Extend check_links to the frontmatter parents/sources/depends_on/superseded_by channel? 238 of 382 unresolved paths live there and nothing has ever looked.",
    "sides": "FOR: it is the corpus's declared-authority channel, gated by nothing, and it carries [A]-tier keystone citations. The gate's PASS message reads '(N local Markdown links resolved)', which sounds like coverage it does not have. AGAINST: turning 238 unresolved paths red at once buries the 2 real failures, and many are dated receipts recording where a file WAS — which the checker's own contract says must not be rewritten to keep a link green.",
    "paths": "09_TOOLS/01_SCRIPTS/check_links.py:17,69 · measured: 1,149 frontmatter path values in live .md, 238 unresolved (sources 122, parents 69, depends_on 28, source 19)",
    "recommendation": "Extend it report-only first, with a separate ratchet baseline, and land the systematic clusters from AUTO_SAFE (the 84 recoverable 01_EMERGENTISM_ORG/ prefixes, the ruminations/ paths, the holobiont repoints) before flipping it to blocking. Adopt the citations lens's resolver, which tries four modes before declaring MISSING — the naming lens's markdown-only pass reported 155 and neither number is a total."
   },
   {
+   "id": "R-25",
    "question": "41 citations target _PENDING_K2 / _PENDING_SIGNATURE / _PENDING_SHIP filenames; 28 resolve once the suffix is dropped, 13 resolve under no transformation. Rewrite, or leave as dated record?",
    "sides": "These are receipts renamed when signed. Per the corpus's own rule a dated receipt records where a file WAS and must not be rewritten — so most of the 28 are arguably correct as written. But the 13 are genuinely lost, and 105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md still carries PENDING_K2 in its filename while its own status retires its verdict for contradicting KSC-03 verbatim, with 5 inbound citers.",
    "paths": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ — e.g. 112_AMRITA_REFINEMENT_SPEC_FIVE_MOVES.md:9 → 110_…_PENDING_K2.md (0 copies on disk; sibling 110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md exists) · 105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md:4",
    "recommendation": "Leave the 28 (dated record). Chase the 13. Rule separately on 105: its retirement is partial ('SUPERSEDED IN PART 2026-07-29 (HR-D2, owner-confirmed)'), so it is a narrow-in-place, not a whole-file archive — but the filename still advertises a pending state that was disposed."
   },
   {
+   "id": "R-26",
    "question": "Three orphaned staged-verdict clusters ask for routing that never came. Route, or archive?",
    "sides": "All three sit in live lanes with zero or near-zero inbound and frontmatter that explicitly expects a decision. 134_ROSETTA_FULL_SET_PURIFICATION_AUDIT is the strongest 'genuinely lost' cluster I found: 8 files of L1–L7 verdicts, and the only reference anywhere in the tree is one archived pending-signature CSV.",
    "paths": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/ (8 files; L4_SEPARATION_ENVELOPE.md 'STAGED — awaiting K2 countersign; disposition reserved to K2'; L7_CONSTITUTIONAL_WITNESS.md 'STAGED — counsel only; no acts taken; K2 disposes.') · 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_HUMAN_ACTION_ITEMS.md + 4 siblings (reachable only through a 2026-06-04 audit CSV now in 00_META/90_ARCHIVE) · 00_HANDOFF/0_REF_ORPHAN_VERIFICATION_2026_08_04.md's 7 candidates",
    "recommendation": "Route or archive, but decide — a document titled HUMAN_ACTION_ITEMS that only an archived spreadsheet points at will not produce human action, and nine days after the orphan receipt named its 7 candidates all 7 still have zero inbound edges."
   },
   {
+   "id": "R-27",
    "question": "15_THE_TITAN_PASS_2026_08_06/ itself: ratify, re-measure, or leave staged?",
    "sides": "Nothing in the pass has been executed — `git log --oneline` for the folder returns a single commit (3960d9be) and `git status --porcelain --untracked-files=all` is empty, so all 34 named paths are exactly where the manifest left them. But A-22's declared surviving remainder has already gone stale IN THE MANIFEST'S FAVOUR, which means executing it as written would archive against a closed premise. Two checkers separately declare this a staged non-owning lane that 'may never be cited as authority'.",
    "paths": "15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md:138 (A-22 claims 00_THE_RUNGS_2026_08_05.md is unregistered, 8 of 9) · 09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py:250 · check_foundation.py:156-167",
    "recommendation": "Re-measure before executing anything beyond the three archives in this docket. I re-ran A-22's own test today: /usr/bin/grep -o '\"path\": \"14_THE_DISTILLATION/[^\"]*\"' 00_META/registers/FILE_REGISTER.json returns 9 unique rows INCLUDING 00_THE_RUNGS_2026_08_05.md. Executing a 7-day-old manifest without re-measuring is this corpus's own named failure mode."
   },
   {
+   "id": "R-28",
    "question": "Ordinal collisions with no covering index: rename, index, or accept?",
    "sides": "Renaming breaks inbound links and edges toward the restructure you refused. Indexing costs one row per file and resolves the ambiguity for a reader. Accepting is defensible where the lane README already lists both — but 05_COSMOLOGY/03_FORMAL_SYSTEM/README.md:75 reproduces two collisions (48 and 49) without comment, so the index currently launders them.",
    "paths": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE (two 2026-08-03 L3 audits both at ordinal 07; _v0 series colliding with the dated series at 31/32/33/34) · 05_COSMOLOGY/03_FORMAL_SYSTEM (48 ×2, 49 ×2, all ACTIVE, none a stub) · 04_AXIOLOGY/02_VALUE_THEORY (01 ×2, both ACTIVE Kintsugi owners) · 11_UPLINK/20_SCOPE (25 ×2, neither declares a status) · 03_METHODOLOGY (01 ×2)",
    "recommendation": "Index, do not rename. 48 of 57 flagged ordinal collisions are declared-intentional families, so the real defect is only that these nine are uncovered: 00_RECEIPT_DISAMBIGUATION_INDEX.json (101 ambiguous numbers) covers only two 11_UPLINK lanes and nothing in 01/04/05/08. Note the 48 .yaml is a Finity sidecar whose prose owner sits at 49 — the sidecar is off by one from its parent."
   },
   {
+   "id": "R-29",
    "question": "Two zero-IO checkers are advertised as corpus verification. Relabel, or leave?",
    "sides": "check_g2_normal_form.py and check_generative_base.py perform no corpus IO — they evaluate a model held in their own source, and their docstrings say so honestly. But check_generative_base is wired into gate.sh AND CI, and .github/workflows/gate.yml describes it as 'The generative base (G1-G10) IS recomputed by exhaustion on every run', which a reader takes as corpus verification. With respect to corpus content both are constant-PASS by construction.",
    "paths": "09_TOOLS/01_SCRIPTS/check_g2_normal_form.py:55 · check_generative_base.py · .github/workflows/gate.yml",
    "recommendation": "Relabel the CI text as a self-contained mathematical regression, which is what it is and what it is good at. grep -cE 'open\\(|read_text|Path|glob|sys\\.stdin' returns 0 for both; imports are exactly sys, fractions.Fraction, itertools.product (+ collections.defaultdict)."
   },
   {
+   "id": "R-30",
    "question": "May a POA be cited as in-lane staging authority inside 01_EMERGENTISM?",
    "sides": "Three papers derive their right to exist in this lane from an external instrument: 'Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM.' Their CONTENT fences are exemplary and gate-enforced — the fence quarantines what the paper says while an external governance act underwrites that it may say it. Weighing against: the corpus separately records an AI refusing power of attorney.",
    "paths": "03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md:22 · THE_HOLOBIONT_PARTS_BRIEFING.md:16 · THE_HOLOBIONT_MOODS_BRIEFING.md (cited_source_status)",

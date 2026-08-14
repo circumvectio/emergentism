@@ -1,9 +1,23 @@
 /* a11y-floor-2026-08-13 · accessibility and motion floor
-   Extracted from assets/css/xai.css (lines 3808-3825) into a standalone file
-   so the 35 pages that do not link xai.css can still get the floor without
-   duplicating ~719 bytes of inline CSS each. The 228 pages that link xai.css
-   keep the floor there; this file is a parallel source of truth for the
-   non-xai pages. Keep these two copies in sync. */
+   Sibling copy of the block marked `a11y-floor-2026-08-13` in assets/css/xai.css.
+   Locate it by that marker, never by line number — the original pointer here said
+   "lines 3808-3825" and had already decayed by 2026-08-14 (3808 now holds
+   .canon-src; the block begins at 3827).
+
+   COVERAGE, re-measured 2026-08-14 via predeploy_check.get_public_html_files()
+   (N=207), superseding the "35 / 228" figures this header used to assert:
+     172  link xai.css and get the floor there
+      28  link this file
+       0  link both
+       7  link NEITHER and have no floor at all — book/, egg/, record/frontier/,
+          record/problems/, riemann/, spark/, suda/. Six also lack
+          prefers-reduced-motion. This is an open item, not a covered case.
+
+   WARNING — this is an unwatched parallel source of truth. No checker in
+   09_TOOLS/ or 12_PUBLIC_SITE/ references a11y.css, so nothing detects
+   divergence from the xai.css copy. Disposition is an open owner decision:
+   maintain both, inline the floor and delete this, or gate it. Until then,
+   any edit here must be mirrored by hand. */
 :root { color-scheme: dark; }
 .skip-to-content {
   position: absolute; left: -9999px; top: 0; z-index: 999;
