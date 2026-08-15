@@ -140,3 +140,15 @@ This is why the framework identifies L3 capture as the central civilisational cr
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- Culture → D31_CIVILISATIONAL.md
+- Environment → D31_CIVILISATIONAL.md
+- Stage → D24_PSYCHOLOGY.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

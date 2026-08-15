@@ -117,3 +117,16 @@ These predictions are falsifiable. If they fail, the neuroscience column of the 
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_NEUROSCIENCE.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- Brain Region → D25_NEUROSCIENCE.md
+- Brainwave → D25_NEUROSCIENCE.md
+- Cognitive Mode → 08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md
+- Hemisphere → D25_NEUROSCIENCE.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

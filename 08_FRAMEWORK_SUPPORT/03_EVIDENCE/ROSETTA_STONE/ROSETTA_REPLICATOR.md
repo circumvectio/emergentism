@@ -259,3 +259,14 @@ prey, hereditary worth classes, or a ladder.*
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_REPLICATOR.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- B = sin θ → D32_MATHEMATICS.md
+- Operator projection → 38_THE_FULL_ROSETTA_CORRECTED.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

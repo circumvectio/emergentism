@@ -127,3 +127,18 @@ separate named source tradition.
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_PSYCHOLOGY.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- Kohlberg → D24_PSYCHOLOGY.md
+- Maslow → D24_PSYCHOLOGY.md
+- Piaget → D24_PSYCHOLOGY.md
+- Shadow → D24_PSYCHOLOGY.md
+- Stage → D24_PSYCHOLOGY.md
+- Virtue (Sanskrit) → D24_PSYCHOLOGY.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

@@ -100,3 +100,13 @@ Zero-Sum Resolution Equation · Social-Political · v10.0
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D30_SOCIAL_POLITICAL.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- Mapping tier → D27_GAME_THEORY.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

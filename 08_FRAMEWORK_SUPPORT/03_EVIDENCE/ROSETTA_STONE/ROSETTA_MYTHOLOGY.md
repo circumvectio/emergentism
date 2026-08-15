@@ -101,3 +101,18 @@ This claim is [I] -- interpretive, not empirically testable. It is falsifiable i
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_MYTHOLOGY.md
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- Animal → D28_MYTHOLOGY.md
+- Greek → D28_MYTHOLOGY.md
+- Jungian → D28_MYTHOLOGY.md
+- Norse → D28_MYTHOLOGY.md
+- Sumerian → D28_MYTHOLOGY.md
+- Tarot → D28_MYTHOLOGY.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

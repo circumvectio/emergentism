@@ -159,3 +159,16 @@ and trips a stated kill in `ROSETTA_REPLICATOR.md`.
 `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md`
 
 •   ⊙   ○
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- -ology → 36_THE_ROSETTA_IN_THEMES_2026_08_13.md
+- Inference → 36_THE_ROSETTA_IN_THEMES_2026_08_13.md
+- Regime → 36_THE_ROSETTA_IN_THEMES_2026_08_13.md
+- Varṇa → D30_SOCIAL_POLITICAL.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.

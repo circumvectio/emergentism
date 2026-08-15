@@ -249,3 +249,13 @@ the arc because they are non-members.
 `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/36_THE_ROSETTA_IN_THEMES_2026_08_13.md`
 
 •   ⊙   ○ — *Rosetta translates. Sources evidence. Owners define. The world decides.*
+
+
+## Supersession notes — canonical column set (2026-08-15)
+
+Per `39_THE_CANONICAL_COLUMN_SET_v0.md` §D, executed under the K2 merge ruling
+of 2026-08-15. This file's superseded columns and their canonical members:
+
+- varṇa → D30_SOCIAL_POLITICAL.md
+
+Nothing is deleted (OUT.ARCHIVE); the generated 37 remains the verbatim audit trail.
