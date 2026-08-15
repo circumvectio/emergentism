@@ -58,6 +58,21 @@ or authority-bearing warrant."*
 are limiting and are **non-members** — the seats approach them and never identify
 them.
 
+> **Native cardinality of the pramāṇa column `[D — staged 2026-08-15 for K2; not
+> ratified]`.** No source school counts seven. Native counts per school: Cārvāka
+> 1 (pratyakṣa); Vaiśeṣika and Buddhist pramāṇavāda 2 (+ anumāna); Sāṃkhya 3
+> (+ śabda); Nyāya 4 (+ upamāna); Prābhākara Mīmāṃsā 5 (+ arthāpatti); **Bhāṭṭa
+> Mīmāṃsā and Advaita Vedānta 6 (+ anupalabdhi)** — the maximum any darśana
+> admits; the Paurāṇika eight-list adds sambhava and aitihya to the six. **The
+> selection here is the Advaita six.** **Pratibhā is a framework-added seventh
+> and a member of no school's list**: it is a contested pramāṇa-candidate in
+> Bhartṛhari's Vākyapadīya (2.146–152), and Kashmir Śaiva Trika folds it into
+> āgama-pramāṇa inside a three-member list; the mainstream schools reject it as
+> a separate pramāṇa. Declared per `00_THE_MASTER_ROSETTA.md` §1 item 5 (native
+> cardinality before normalization) and §4 step 1 (inventory before mapping);
+> absent this line the §6 kill — *"native source counts must be hidden"* — is
+> live against this column.
+
 ---
 
 ## 2 · The move grammar — `G7@1` is a partition, not a column

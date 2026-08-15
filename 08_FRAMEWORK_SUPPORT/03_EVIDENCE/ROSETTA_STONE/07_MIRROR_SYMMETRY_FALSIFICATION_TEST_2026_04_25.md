@@ -75,6 +75,20 @@ For each 7-row column in the Rosetta, score the three mirror pairs:
 
 **Falsification score:** 0 fails. **Pramāṇa column is a genuine S² projection.** This is the gold standard.
 
+> **Native-cardinality addendum `[D — staged 2026-08-15 for K2; not ratified]`.**
+> The 2026-04-25 table above is preserved unchanged. Its seven-member list is a
+> selection plus a framework extension, not any school's own count: Bhāṭṭa
+> Mīmāṃsā and Advaita Vedānta admit **six** (pratyakṣa, anumāna, upamāna,
+> arthāpatti, anupalabdhi, śabda) — the maximum of any darśana; below six the
+> ladder runs Cārvāka 1, Vaiśeṣika/Buddhist 2, Sāṃkhya 3, Nyāya 4, Prābhākara 5;
+> the Paurāṇika eight-list adds sambhava and aitihya. **Pratibhā is a member of
+> no standard list** — a contested candidate in Bhartṛhari's Vākyapadīya
+> (2.146–152), folded into āgama-pramāṇa in Kashmir Śaiva Trika (whose own list
+> counts three), and rejected by the mainstream schools. The header's "Vedāntic
+> inference modes" therefore covers six of the seven cells; the L7 cell is
+> framework-added. Declared per `00_THE_MASTER_ROSETTA.md` §1 item 5 and §4
+> step 1.
+
 ### 2.2 Operator (Sanskrit deity grammar) — [S]
 
 | L | Operator | Mirror partner |
