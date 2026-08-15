@@ -74,6 +74,17 @@ def main() -> int:
                         source_binding["sourceRevision"] = new
                         updates += 1
 
+    # Status source claims (KERNEL-STATUS entries, etc.)
+    for entry in data.get("statusSourceClaims", []):
+        src_rel = entry.get("source")
+        if src_rel:
+            src = _resolve(src_rel)
+            if src.is_file():
+                new = _sha256_revision(src)
+                if entry.get("sourceRevision") != new:
+                    entry["sourceRevision"] = new
+                    updates += 1
+
     if updates:
         # Write back with stable key order
         MANIFEST.write_text(

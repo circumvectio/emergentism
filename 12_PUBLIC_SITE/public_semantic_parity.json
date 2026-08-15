@@ -8,7 +8,7 @@
       "surface": "index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "sourceRevision": "sha256:6f464ef15a0903e481fdc1033a886fa7a899c013d39d86f1d1b7e2f660a47539",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -35,7 +35,7 @@
       "surface": "about/index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "sourceRevision": "sha256:6f464ef15a0903e481fdc1033a886fa7a899c013d39d86f1d1b7e2f660a47539",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -216,132 +216,212 @@
     {
       "surface": "compass/index.html",
       "role": "map_action_outcome_exit_boundary",
-      "claimCardIds": ["OS01-13"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-13"]
-      }],
+      "claimCardIds": [
+        "OS01-13"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-13"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["A compass, not a cathedral."]
+      "requiredMarkers": [
+        "A compass, not a cathedral."
+      ]
     },
     {
       "surface": "5/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
-      }],
+      "claimCardIds": [
+        "OS01-09"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-09"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
+      "requiredMarkers": [
+        "P_node := min(Φ̂₄, V₄)"
+      ]
     },
     {
       "surface": "plainly/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
-      }],
+      "claimCardIds": [
+        "OS01-09"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-09"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄,V₄)"]
+      "requiredMarkers": [
+        "P_node := min(Φ̂₄,V₄)"
+      ]
     },
     {
       "surface": "discoveries/nonduality/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
-      }],
+      "claimCardIds": [
+        "OS01-09"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-09"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
+      "requiredMarkers": [
+        "P_node := min(Φ̂₄, V₄)"
+      ]
     },
     {
       "surface": "about/index.html",
       "role": "public_refusal_and_exit_boundary",
-      "claimCardIds": ["OS01-26"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-26"]
-      }],
+      "claimCardIds": [
+        "OS01-26"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-26"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["What this is, and"]
+      "requiredMarkers": [
+        "What this is, and"
+      ]
     },
     {
       "surface": "read/index.html",
       "role": "reading_path_map_action_outcome_exit_boundary",
-      "claimCardIds": ["OS01-13"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-13"]
-      }],
+      "claimCardIds": [
+        "OS01-13"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-13"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Read the Framework — The Complete Public Reading Path"]
+      "requiredMarkers": [
+        "Read the Framework — The Complete Public Reading Path"
+      ]
     },
     {
       "surface": "axioms/index.html",
       "role": "public_refusal_and_exit_boundary",
-      "claimCardIds": ["OS01-26"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-26"]
-      }],
+      "claimCardIds": [
+        "OS01-26"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-26"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Seven axioms."]
+      "requiredMarkers": [
+        "Seven axioms."
+      ]
     },
     {
       "surface": "journey/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
-      }],
+      "claimCardIds": [
+        "OS01-09"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-09"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Journey Mode"]
+      "requiredMarkers": [
+        "Journey Mode"
+      ]
     },
     {
       "surface": "rosetta/index.html",
       "role": "selected_translation_language_boundary",
-      "claimCardIds": ["OS01-11"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-11"]
-      }],
+      "claimCardIds": [
+        "OS01-11"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-11"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Seven functions."]
+      "requiredMarkers": [
+        "Seven functions."
+      ]
     },
     {
       "surface": "book/index.html",
       "role": "reader_map_action_outcome_exit_boundary",
-      "claimCardIds": ["OS01-13"],
-      "claimSources": [{
-        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
-        "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-13"]
-      }],
+      "claimCardIds": [
+        "OS01-13"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-13"
+          ]
+        }
+      ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["The One-Sitting Reader"]
+      "requiredMarkers": [
+        "The One-Sitting Reader"
+      ]
     }
   ],
   "sequence": [
