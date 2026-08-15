@@ -182,3 +182,15 @@ This is the **final honest position** after complete OQ-CC-3 fulfillment.
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_INDIGENOUS_AMERICAN.md
+
+
+## Cross-reference — inter-coder divergence registered (2026-08-15)
+
+`16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md` carries the **same seven rites in
+the same cyclic order with the anchor rotated by exactly one seat** the other
+way (its center is Hunkápi where this file's center is the Sun Dance). The
+cyclic order survives independent coding; the mirror and equator assignments
+do not — killed-by-independent-coding pending the consultation demanded by
+`FAILED_MAPPINGS_AND_TESTING_QUEUE.md` item I. Registered as relation object
+`R1_LAKOTA_ROTATION@1` in `rosetta_cells.json`. Nothing in either table is
+altered. Propose, not assert.

@@ -95,3 +95,15 @@ labels are removed, the mapping was doing unearned explanatory work.
 
 **Exit:** use the seven rows when they clarify a comparison; put them down when
 they force the territory.
+
+
+## Cross-reference — inter-coder divergence registered (2026-08-15)
+
+`D_SERIES_ROWS/00_GENERATIVE_TABLE.md` carries a second -ology assignment for
+the same seats. Compared coding: **L2–L4 are identical** across both;
+**L1 differs only nominally** (teleology vs objective-function — the same
+concept, ends, in philosophical vs computational dress); **L5–L7 is a genuine
+reshuffle** ({cosmology, ontology, theology} vs {ontology, metaphysics,
+teleology}). Both ladders remain `[I]`; no reconciliation is asserted — both
+sources govern their own cells. Registered as relation object
+`R2_OLOGY_DIVERGENCE@1` in `rosetta_cells.json`. Propose, not assert.

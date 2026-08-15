@@ -89,3 +89,13 @@ as historical mapping material without current semantic authority.
 ---
 
 *One table can compress many readings. Compression is not causation.*
+
+
+## Cross-reference — inter-coder divergence registered (2026-08-15)
+
+`00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md` carries a second -ology assignment
+for the same seats: L2–L4 identical; L1 a rename (objective-function vs
+teleology — same concept, different dress); L5–L7 a genuine reshuffle. Both
+ladders remain `[I]`; both sources govern their own cells. Registered as
+relation object `R2_OLOGY_DIVERGENCE@1` in `rosetta_cells.json`. Propose, not
+assert.

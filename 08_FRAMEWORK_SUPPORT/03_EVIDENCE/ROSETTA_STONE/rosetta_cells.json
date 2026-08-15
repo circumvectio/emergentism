@@ -1,7 +1,7 @@
 {
   "schema_ref": "RS.CORE@1:pack-projection-cell-ledger-v3",
   "ledger_revision": 3,
-  "recorded_at": "2026-07-31",
+  "recorded_at": "2026-08-15",
   "_about": [
     "Machine-readable seed ledger for Rosetta vNext. Active PackManifest v2 records are separate from directional ProjectionManifest v2 records.",
     "A pack freezes native vocabulary and exact source custody only. A projection owns target choice, mapping normalization, invariant, loss, dependencies, rival, discriminator, kill criterion, round trip, and cells.",
@@ -95,8 +95,8 @@
     {
       "schema_version": "rs.pack_manifest.v2",
       "pack_id": "GEN7",
-      "version": 1,
-      "pack_ref": "GEN7@1",
+      "version": 2,
+      "pack_ref": "GEN7@2",
       "description": "Seven native interface seats in the selected generative catalogue; the source itself declares the construction as selected and interpretive.",
       "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
       "source_path": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
@@ -148,9 +148,9 @@
         }
       ],
       "native_cardinality": 7,
-      "source_version": "GEN7@1/2026-07-31",
+      "source_version": "GEN7@2/2026-08-15",
       "digest_algorithm": "sha256",
-      "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+      "source_exact_digest": "995b04e77975b53311d3dc8276cfa6d875b896d63f49d2395e0da88f133681cc",
       "native_expression_digest_algorithm": "sha256",
       "native_expression_digest_canonicalization": "rs.native_term_definitions.v1",
       "native_expression_digest": "22f82e9515de75a55c01f74b877d90f059989ef4d21028f1e18aae83701a4cb7",
@@ -162,7 +162,9 @@
       "registration_event": {
         "recorded_at": "2026-07-31",
         "reason": "Freeze the active selected-row vocabulary under a versioned native pack."
-      }
+      },
+      "supersedes": "GEN7@1",
+      "supersession_note": "Source 00_GENERATIVE_TABLE.md changed in commit fbeb0c23 (2026-08-13: additive three-line clarification) and again 2026-08-15 (additive cross-reference note). No native term, cell, or table row changed. Versioned forward per the Master Rosetta supersession rule; never silently changed. Projections re-bound to the GEN7@2 snapshot."
     },
     {
       "schema_version": "rs.pack_manifest.v2",
@@ -281,18 +283,18 @@
         "pack_manifest_digest": "447e10068a81f6290857842d7c34920894409655ba3e42c54e0f059982ded3c3"
       },
       "target_pack_refs": [
-        "GEN7@1"
+        "GEN7@2"
       ],
       "target_pack_bindings": [
         {
           "binding_schema": "rs.pack_snapshot_binding.v1",
-          "pack_ref": "GEN7@1",
+          "pack_ref": "GEN7@2",
           "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
-          "source_version": "GEN7@1/2026-07-31",
-          "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+          "source_version": "GEN7@2/2026-08-15",
+          "source_exact_digest": "995b04e77975b53311d3dc8276cfa6d875b896d63f49d2395e0da88f133681cc",
           "pack_manifest_digest_algorithm": "sha256",
           "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
-          "pack_manifest_digest": "ab2501a4d851564a5f83ea3ab297a89b4cd34a5c01054bf4fdef45dd2c480ed8"
+          "pack_manifest_digest": "7be0741063474892ffc9b5f154d87ef7e4306d348a499186d433598066561722"
         }
       ],
       "normalization_operations": [
@@ -337,7 +339,7 @@
       "discriminator": "Independent coders using frozen definitions recover the preregistered invariant on held-out examples while naming the losses and outperforming the null map.",
       "kill_criterion": "Kill or contract the projection if coders cannot recover an invariant after shared labels are masked, or if rival prompts perform equally well.",
       "round_trip_test": {
-        "route": "PHIL7@1 -> GEN7@1 -> PHIL7@1 through a separately audited inverse",
+        "route": "PHIL7@1 -> GEN7@2 -> PHIL7@1 through a separately audited inverse",
         "must_preserve": [
           "source question identity",
           "direction of each projection"
@@ -350,7 +352,7 @@
       },
       "claim_digest_algorithm": "sha256",
       "claim_digest_canonicalization": "rs.projection_claim_digest.v1",
-      "claim_semantic_digest": "2d11d7e520eaf83287d6096c0e991a87214323b6f2d9925018f38020b916ed87",
+      "claim_semantic_digest": "5f1aa9bd91c6f589850778c7cf5c8f6812b6d64172f402d797087c94194e1158",
       "resolution_status": "UNDERDETERMINED",
       "resolution_dispositions": [],
       "predecessor_comparisons": [],
@@ -368,7 +370,7 @@
           "projection_ref": "PHIL7_TO_GEN7@1",
           "source_ref": "PHIL7@1:purpose",
           "target_refs": [
-            "GEN7@1:L7"
+            "GEN7@2:L7"
           ],
           "relation_type": "ANALOGY",
           "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
@@ -381,7 +383,7 @@
           "outcome_status": "NOT_OBSERVED",
           "source_basis": [
             "PHIL7@1",
-            "GEN7@1"
+            "GEN7@2"
           ],
           "independence_status": "FRAMEWORK_DERIVED",
           "fit_reason": "Both terms use teleological vocabulary, but PHIL7 asks a cross-cutting purpose question while GEN7 places an ultimate-horizon analogy in its final seat.",
@@ -419,7 +421,7 @@
           "projection_ref": "PHIL7_TO_GEN7@1",
           "source_ref": "PHIL7@1:being",
           "target_refs": [
-            "GEN7@1:L5"
+            "GEN7@2:L5"
           ],
           "relation_type": "ANALOGY",
           "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
@@ -432,7 +434,7 @@
           "outcome_status": "NOT_OBSERVED",
           "source_basis": [
             "PHIL7@1",
-            "GEN7@1"
+            "GEN7@2"
           ],
           "independence_status": "FRAMEWORK_DERIVED",
           "fit_reason": "Both terms use ontology vocabulary, while PHIL7 treats it as an entity-and-relation audit and GEN7 uses it in an architecture seat.",
@@ -473,16 +475,16 @@
       "projection_ref": "GEN7_TO_PHIL7@1",
       "parent_revision": null,
       "supersedes_ref": null,
-      "source_pack_ref": "GEN7@1",
+      "source_pack_ref": "GEN7@2",
       "source_pack_binding": {
         "binding_schema": "rs.pack_snapshot_binding.v1",
-        "pack_ref": "GEN7@1",
+        "pack_ref": "GEN7@2",
         "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
-        "source_version": "GEN7@1/2026-07-31",
-        "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+        "source_version": "GEN7@2/2026-08-15",
+        "source_exact_digest": "995b04e77975b53311d3dc8276cfa6d875b896d63f49d2395e0da88f133681cc",
         "pack_manifest_digest_algorithm": "sha256",
         "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
-        "pack_manifest_digest": "ab2501a4d851564a5f83ea3ab297a89b4cd34a5c01054bf4fdef45dd2c480ed8"
+        "pack_manifest_digest": "7be0741063474892ffc9b5f154d87ef7e4306d348a499186d433598066561722"
       },
       "target_pack_refs": [
         "PHIL7@1"
@@ -541,7 +543,7 @@
       "discriminator": "Under matched effort and masked row labels, the selected prompts detect held-out omissions more reliably than rival PHIL7 prompts.",
       "kill_criterion": "Kill or contract the projection if masked-label tests erase its advantage or if the many-to-many rival is equally clear at lower loss.",
       "round_trip_test": {
-        "route": "GEN7@1 -> PHIL7@1 -> GEN7@1 through a separately audited inverse",
+        "route": "GEN7@2 -> PHIL7@1 -> GEN7@2 through a separately audited inverse",
         "must_preserve": [
           "source seat identity",
           "analogy rather than synonymy"
@@ -554,7 +556,7 @@
       },
       "claim_digest_algorithm": "sha256",
       "claim_digest_canonicalization": "rs.projection_claim_digest.v1",
-      "claim_semantic_digest": "9dcd7ad37b609bf9a23a76d0bc37f161aa9ff53808b3efeb05e198ec506b2bc9",
+      "claim_semantic_digest": "6d7b5bef46e05704eca72c690a35d9bfa426a8d7d0b44b0ee713d5cd62504996",
       "resolution_status": "UNDERDETERMINED",
       "resolution_dispositions": [],
       "predecessor_comparisons": [],
@@ -570,7 +572,7 @@
           "legacy_cell_id": "GEN7__L7__Teleology",
           "cell_id": "GEN7_TO_PHIL7@1:L7_to_purpose",
           "projection_ref": "GEN7_TO_PHIL7@1",
-          "source_ref": "GEN7@1:L7",
+          "source_ref": "GEN7@2:L7",
           "target_refs": [
             "PHIL7@1:purpose"
           ],
@@ -584,7 +586,7 @@
           "use_status": "UNUSED",
           "outcome_status": "NOT_OBSERVED",
           "source_basis": [
-            "GEN7@1",
+            "GEN7@2",
             "PHIL7@1"
           ],
           "independence_status": "FRAMEWORK_DERIVED",
@@ -620,7 +622,7 @@
           "legacy_cell_id": "GEN7__L5__Ontology",
           "cell_id": "GEN7_TO_PHIL7@1:L5_to_being",
           "projection_ref": "GEN7_TO_PHIL7@1",
-          "source_ref": "GEN7@1:L5",
+          "source_ref": "GEN7@2:L5",
           "target_refs": [
             "PHIL7@1:being"
           ],
@@ -634,7 +636,7 @@
           "use_status": "UNUSED",
           "outcome_status": "NOT_OBSERVED",
           "source_basis": [
-            "GEN7@1",
+            "GEN7@2",
             "PHIL7@1"
           ],
           "independence_status": "FRAMEWORK_DERIVED",
@@ -667,6 +669,38 @@
           "status_transitions": []
         }
       ]
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "R1_LAKOTA_ROTATION@1",
+      "schema": "rs.relation.observation.v0",
+      "kind": "inter-coder divergence - cyclic rotation by one seat",
+      "parties": [
+        "16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md",
+        "ROSETTA_INDIGENOUS_AMERICAN.md"
+      ],
+      "observation": "Same seven Lakota rites, same cyclic order, anchors differ by exactly one seat; equator candidate differs (Hunkapi vs Sun Dance) and all mirror pairs differ with it. A rotation is not a chart symmetry; genuine divergence, not convention.",
+      "claim_status": "cyclic order retained [I]; mirror and equator claims killed-by-independent-coding pending the Lakota-scholar consultation demanded by FAILED_MAPPINGS_AND_TESTING_QUEUE.md item I",
+      "kill": "exhibit a third independent coding that breaks the rotation reading",
+      "evidence_tier": "[I]",
+      "recorded": "2026-08-15",
+      "gate": "checker validation of relations is acknowledged debt (34_LEDGER_CONVENTION_COLLISION_2026_07_31 recommendation); entries are inert data until the checker gains a relations section"
+    },
+    {
+      "relation_id": "R2_OLOGY_DIVERGENCE@1",
+      "schema": "rs.relation.observation.v0",
+      "kind": "inter-coder divergence - rename plus L5-L7 reshuffle",
+      "parties": [
+        "00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md",
+        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
+      ],
+      "observation": "L2-L4 identical across both codings; L1 teleology vs objective-function is a rename (same concept, ends, in philosophical vs computational dress); L5-L7 a genuine reshuffle {cosmology, ontology, theology} vs {ontology, metaphysics, teleology}.",
+      "claim_status": "both ladders remain [I]; no reconciliation asserted; both sources govern their own cells",
+      "kill": "exhibit a third authoritative coding of the -ology ladder",
+      "evidence_tier": "[I]",
+      "recorded": "2026-08-15",
+      "gate": "same relations-validation debt as R1"
     }
   ]
 }
