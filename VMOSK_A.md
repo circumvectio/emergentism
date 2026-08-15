@@ -2,7 +2,7 @@
 type: vmosk-a-pointer
 title: "VMOSK_A — Emergentism (bare-name live pointer)"
 date: 2026-08-15
-status: "[D] pointer — live account is the SIGNED v2 variant; staged per VMOSK-A completion plan V-3 / rulings docket Q4 (chair rules at V-5); reversible by git mv"
+status: "[S] bare-name law ADOPTED by recorded chair direction 2026-08-15 (Q4): this bare file is the live account pointer; the signed v2 remains the canonical text at its suffixed path"
 may_sign: false
 may_authorize: false
 authority_effect: none
