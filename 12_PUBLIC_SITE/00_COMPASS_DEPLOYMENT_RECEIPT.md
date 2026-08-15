@@ -143,4 +143,4 @@ After `.vercelignore` update and path fixes: **all checks green.** [S]
 
 *16 agents, 109 papers, 7 wings, 1 compass, 1 K2 signature. The deployment is complete. The domain is the final gate.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -23,4 +23,4 @@ relates: [126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13]
 
 **Still open after this receipt:** the ~60-doc receipt-126 propagation sweep (tracked); fourth-script schema engineering; any foundation filing (counsel + wet K2).
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -113,4 +113,4 @@ Held end-to-end. ❌ No move, rename, suffix drop, archive, tombstone, registry 
 
 *The schema is sound. The seven surfaces are seated. The 5+1 holds. The reading order reads. The drift is in the connective tissue, not the load-bearing walls. Brahmā ○ counsels; the gates remain as they were cast.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

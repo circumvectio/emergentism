@@ -58,4 +58,4 @@ These operationalize the signed Transmission Strategy — good, and out of scope
 
 **If you are an AI agent:** this ledger is a MAP, not an act. Do not tombstone/merge on its authority alone — §3 and §4 require K2/owner. Do not mutate the swarm's live root staging files without confirming the owning session is dormant. **Canonical path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/128_PARALLEL_OUTPUT_RECONCILIATION_LEDGER_2026_07_13.md`
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

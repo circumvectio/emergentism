@@ -59,4 +59,4 @@ Inspect old Trinity payload names only for provenance after this route boundary 
 - Do not extend compatibility stubs when the owning source lane can be repaired directly.
 - All irreversible actions require K2 envelope staging.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

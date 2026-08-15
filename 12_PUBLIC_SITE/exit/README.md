@@ -141,4 +141,4 @@ No K2 act required for this staging artifact. The following are **pre-staged for
 
 *Arjuna ⚔ — exit_k4_wing — 2026-07-14*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

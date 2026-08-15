@@ -27,7 +27,7 @@ parents:
 > `09_TOOLS/01_SCRIPTS/build_rosetta_themed_index.py`. **Do not hand-edit —
 > re-run the two scripts.** A missing seat is rendered `—`; no cell is inferred.
 
-**171 columns** harvested from **29 files**, grouped into
+**182 columns** harvested from **30 files**, grouped into
 **11 themes**. The grouping is `[S]` — an authored selection living in
 `THEME_BY_FILE`. Every *cell* keeps the tier its source gave it, and the
 source's tier column travels with it in theme XI where one exists.
@@ -51,7 +51,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 
 ## I · The spine — the native seats and their operators
 
-*10 columns.*
+*11 columns.*
 
 **`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`**
 
@@ -76,6 +76,18 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L5` | — |
 | `L6` | — |
 | `L7` | — |
+
+**`38_THE_FULL_ROSETTA_CORRECTED.md`**
+
+| seat | Operator |
+|---|---|
+| `L1` | Kali 🎲 |
+| `L2` | Kālī 💀 |
+| `L3` | Kṛṣṇa ◇ |
+| `L4` | Arjuna ⚔ |
+| `L5` | Brahmā ○ |
+| `L6` | Śiva • |
+| `L7` | Viṣṇu ⊙ |
 
 **`D_SERIES_ROWS/00_GENERATIVE_TABLE.md`**
 
@@ -129,7 +141,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 
 ## II · The chart — angle, reciprocal coordinates, balance
 
-*13 columns.*
+*14 columns.*
 
 **`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`**
 
@@ -142,6 +154,18 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L5` | 30 | phi > nu |
 | `L6` | 15 | phi > nu |
 | `L7` | ~0 (north pole) | phi >> nu |
+
+**`38_THE_FULL_ROSETTA_CORRECTED.md`**
+
+| seat | B = sin θ |
+|---|---|
+| `L1` | →0 (limiting) |
+| `L2` | ½ |
+| `L3` | √3⁄2 |
+| `L4` | 1 |
+| `L5` | √3⁄2 |
+| `L6` | ½ |
+| `L7` | →0 (limiting) |
 
 **`D_SERIES_DOMAINS/D32_MATHEMATICS.md`**
 
@@ -577,7 +601,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 
 ## XI · The audit apparatus — columns that grade the mapping
 
-*41 columns.*
+*50 columns.*
 
 **`07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md`**
 
@@ -654,6 +678,28 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L5` | Contemplative | WEAK | Low |
 | `L6` | Axiomatic | VERY WEAK | Very Low |
 | `L7` | Transcendent | CONJECTURAL | Negligible |
+
+**`38_THE_FULL_ROSETTA_CORRECTED.md`**
+
+| seat | Varṇa | G7@1 cell | Pramāṇa | REP6@1 | VMOSK-A [I/C] |
+|---|---|---|---|---|---|
+| `L1` | Caṇḍāla | kalitakephi | Pratyakṣa | — external ground / firewall; no REP6@1 term | — |
+| `L2` | Śūdra | kalitakev | Upamāna | genotype | A · Agents |
+| `L3` | Vaiśya | krishnagivev | Anumāna | epigenotype | K · measured triggers |
+| `L4` | Kṣatriya | arjunagivephi | Arthāpatti | phenotype | S · Strategies |
+| `L5` | Brāhmaṇa | brahmacreate | Śabda | extended phenotype | O · Objectives |
+| `L6` | Sādhu | shivadissolve | Anupalabdhi | memotype | M · Mission |
+| `L7` | Ṛṣi | vishnupreserve | Pratibhā | egregoreotype | V · Vision |
+
+| seat | Inference | -ology | Regime | Deploy |
+|---|---|---|---|---|
+| `L1` | dialectical | objective-function | tyranny | ✓ |
+| `L2` | inductive | epistemology | democracy | ✓ |
+| `L3` | deductive | methodology | oligarchy | ✓ |
+| `L4` | abductive | axiology | timocracy | ✓ |
+| `L5` | systematic | ontology | aristocracy | ✗ |
+| `L6` | apophatic | metaphysics | anarchy | ✗ |
+| `L7` | transcendental | teleology | theocracy | ✗ |
 
 **`D_SERIES_DOMAINS/D24_PSYCHOLOGY.md`**
 

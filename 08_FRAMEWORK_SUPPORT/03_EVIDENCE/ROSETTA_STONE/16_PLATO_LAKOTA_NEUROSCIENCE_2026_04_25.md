@@ -286,3 +286,18 @@ This is consistent with — and now empirically extends — the sovereign's Pres
 ## Execution Surface
 
 - **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md
+
+
+## Cross-reference — inter-coder divergence registered (2026-08-15)
+
+`ROSETTA_INDIGENOUS_AMERICAN.md` carries the **same seven Lakota rites in the
+same cyclic order with the anchor rotated by exactly one seat** (its L-cycle =
+this file's L-cycle rotated +1; its center is the Sun Dance where this file's
+center is Hunkápi, and every mirror pair differs with it). A rotation is not a
+symmetry of the chart (only θ→π−θ is), so this is genuine divergence, not
+convention. Standing per the Master Rosetta kill rule: the **cyclic order is
+retained `[I]`**; the **mirror and equator claims are killed-by-independent-
+coding** pending the Lakota-scholar consultation already demanded by
+`FAILED_MAPPINGS_AND_TESTING_QUEUE.md` item I. Registered as relation object
+`R1_LAKOTA_ROTATION@1` in `rosetta_cells.json`. Nothing in either table is
+altered; this note only makes the divergence addressable. Propose, not assert.

@@ -144,4 +144,4 @@ evidence_tier: "[B] discoverability index over dated session packets; the packet
 
 **K2 rulings to home upstream:** #228 (APU Route B → `04_AXIOLOGY/`), #231 (Constitution 5+1 → `08_FRAMEWORK_SUPPORT/01_GOVERNANCE/` + `05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`). They live here as dated receipts (K3); their canonical homes are the framework roots.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

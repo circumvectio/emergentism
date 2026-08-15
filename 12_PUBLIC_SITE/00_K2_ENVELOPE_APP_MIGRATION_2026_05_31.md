@@ -82,4 +82,4 @@ Notes / conditions:  Authorized. Physical execution coordinates with the AIA
 
 > Until the AIA destination and final signoff receipt exist, the app stays where it is. The agents may route, draft, audit, and warn; they may not perform the mortal collapse.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

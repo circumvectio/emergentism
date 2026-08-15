@@ -112,4 +112,4 @@ patch (A.8 L5 Balance, A.9 Kṛṣṇa signature) lives in the `02_SKYZAI` repo 
 is applied there under its own commit. The map's governing law from here is
 its Rule 8, including the terminal retirement clause (clause 6).
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

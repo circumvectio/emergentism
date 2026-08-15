@@ -122,4 +122,4 @@ Topbar includes `C` (Compass) in the number-nav, replacing the old `R` (Rosetta)
 
 *The Map is not the territory. The territory is not the goal. The goal is to navigate well enough to put all of them down.*
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

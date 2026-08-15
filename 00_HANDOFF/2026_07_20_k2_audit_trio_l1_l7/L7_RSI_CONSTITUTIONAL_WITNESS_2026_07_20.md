@@ -83,4 +83,4 @@ Walk: `home → discoveries → /0 → /1 → /2 → /3 → /4 → /5 → /6 →
 
 **The one sentence.** The 5+1 is held; A7 fired and worked; the E1–E10 body contradiction and the Reap's Landauer citation are the single A7 self-correction debts still on the staging surface; the K2 box-3 fork is the single gap the mortal hand has not yet turned; the public symbol fails the cold-reader test on the 5+1, the 145/146 fork, and the funnel — these are witness-level refinements, not constitutional breaks. **The constitution is held; the work is not finished.**
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

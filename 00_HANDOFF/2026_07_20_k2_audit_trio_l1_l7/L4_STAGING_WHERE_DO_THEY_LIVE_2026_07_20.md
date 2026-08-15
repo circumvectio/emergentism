@@ -58,4 +58,4 @@ task_id: bg_f797aa17-f37c-4349-a8cc-5ee99960fa58
 - **Insights Index is at `11_UPLINK/`, not root.** The root `00_INSIGHTS_INDEX_v0.1.md` is a forwarding stub. New insights register in 11_UPLINK, not at root.
 - **Honest uncertainty:** I read the D-Scaffold/L-Ladder bridge as distinguishing D0–D6 (phenomenological) from L1–L7 (vocational). If the user's "Models Ladder" means the L1–L7 pipeline (not D0–D6), the audit home moves to a different surface — needs a 1-question check before write. **Flagging to parent session for K2 confirmation, not blocking.**
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

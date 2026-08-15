@@ -96,4 +96,4 @@ W6 (Conjectures, signed 2026-07-20): extraction self-terminates over **long hori
 
 **Overall: PASS WITH FENCES.** Four exact fence sentences (checks 1, 2-kill, 3a, 3b) + one debt-relabel + two soft flags staged above as recommendation text only. The Reap remains `[D]`, byte-untouched; K2 disposes at the sitting. L2 fires only at false coherence — tonight there was none.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

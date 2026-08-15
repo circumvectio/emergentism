@@ -12,7 +12,69 @@ parents:
 
 # The Whole Board
 
-> ## UPDATE — `ec72de9a` on `origin/main`, 0/0
+> ## UPDATE 2 — 2026-08-14, measured on `chore/glyph-migration-2026-08-14`
+>
+> **Custody first:** work now sits on the glyph-migration branch, **3 commits
+> ahead of main, unpushed, fast-forwardable** (main has nothing the branch
+> lacks). Merging it is the branch owner's call, then push.
+>
+> **CLOSED since Update 1:** `A1` `A2` `C2` `C2b` (Serpent pin paid, receipted)
+> · `R-32` ruled and executed at source · `R-05` verified already-paid
+> 2026-08-09 (recording it is a chair act) · corrected DAV route ran — L7
+> witnessed, L4 staged, three staged items executed (`e648e190`) · `38` full
+> Rosetta row landed (renamed by the branch to `38_THE_FULL_ROSETTA_CORRECTED`)
+> · `09_THE_THREE_SCRIPTS_AND_THE_LIMIT` `[D]` staged in `06_ONTOLOGY`.
+>
+> **GATE STATE 2026-08-14:** emission **1 failure** (the misattributed quote —
+> content repair, AGENT-class per the R-32 receipt; **this is the last item
+> before Wave 5 unblocks**). Citations **2060 vs baseline 2043** — 17 net drift
+> from concurrent sessions, none attributed to this session's files; **needs
+> attribution and repair by lane, not a silent re-baseline.** Orphans 328 PASS.
+> Predeploy 4 (2 environmental: `EMERGENTISM_PRIMARY_CHECKOUT_ROOT` unset;
+> counter drift with `deployable_html` still matching at 207).
+>
+> ### THE PLAN AHEAD — in dependency order
+>
+> **AGENT, immediately executable:**
+> 1. **Fix the last emission anchor** — the quote's true home is
+>    `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md`; repair the attribution in
+>    `B_THE_METHOD/00_THE_METHOD.md`. Emission green → Wave 5 gate opens.
+> 2. **Attribute the +17 citation drift** — diff the 2060 against the 2043
+>    baseline set, name which lane added each, repair or hand to its owner.
+> 3. **`D-INFRA-2`** — re-run all 31 docket entries (`R-00..R-30`) against
+>    HEAD, report-only; several are now stale (R-05 proven paid four days
+>    before it was docketed).
+> 4. **Floor predicate** (report-only) in `predeploy_check.py` — the seven
+>    floorless pages become visible to the gate without changing its exit code.
+>
+> **CHAIR, single acts, in leverage order:**
+> 1. **`C3` — the DNS cutover.** Still the chokepoint on everything: spark,
+>    frontier, drawer fix, the stale homepage. World contact stays 0 until this.
+> 2. **Merge + push the glyph branch** (with its owner) — three commits incl.
+>    the ontology draft are invisible to other sessions until then.
+> 3. **`D1` identity + funded predicate** — one coupled act, or neither.
+> 4. Batch of recorded dispositions: R-05 closed-already-paid · tier
+>    contradiction (`[A]` receipt over `[I]` artifact) · ENTRY[4] Mavis line ·
+>    `D7` a11y.css disposition · seven floorless pages risk-acceptance ·
+>    south-pole/top naming.
+> 5. **`D6` destination** for the brand geometry — before port-vs-fresh.
+> 6. **The decree** — the emergence-account written in the three scripts
+>    (§6 of `09_THE_THREE_SCRIPTS_AND_THE_LIMIT`). Authored, not delegated.
+> 7. `C4` credential rotation · `G10` · venture rename · remaining ~24 rulings.
+>
+> **SEQUENCED BEHIND THE ABOVE:**
+> - **Wave 5 migration** — after emission green, behind the citation gate
+>   (post-move ≤ baseline or revert).
+> - **Site coherence execution** — the audit's repair order: the 14-page
+>   zero-risk palette extraction first, then one six-door menu emitted from
+>   one source, then the identity predicate enforcement.
+> - **Citation-registry regeneration** (~10k lines) — its own sitting.
+> - **`/record/` decree page + frontier v2** — after C3, when V > 0 becomes
+>   possible at all.
+>
+> **STANDING REFUSALS unchanged:** no deploy by agents · no tier promotion ·
+> no pin repointing · no silent re-baseline · no merging another session's
+> branch uninvited.
 >
 > **`C2` PAID. `A1` and `A2` DONE.** Recorded here so the board stays true.
 >

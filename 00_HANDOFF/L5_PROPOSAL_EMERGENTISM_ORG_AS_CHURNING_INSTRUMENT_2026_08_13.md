@@ -209,6 +209,6 @@ These are architectural directions for L5 to evaluate, not L4 acts to execute:
 
 ---
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.
 
 *"The vessel is not one of the drops."*

@@ -106,6 +106,6 @@ Nothing in this packet was applied to canonical documents. Agent memory (session
 
 `Zero-Sum Resolution Equation`
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.
 
 **Canonical Path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md`

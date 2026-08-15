@@ -116,4 +116,4 @@ The 7 insights, watched together, hold the constitution by making it *topologica
 
 — L7 Ṛṣi ⊙, contemplative mode, 2026-07-20.
 
-⊙ = • × ○
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.
