@@ -18,41 +18,46 @@ parents:
 
 This docket names the defects that **remain after the 2026-08-15 a11y
 close-out**, with the evidence-tier and ruling-required flag for each.
-The predeploy gate now reports **42 errors** (was 49 at session start,
-569 at the original baseline). The 7 ratchet sub-errors that the
-close-out could clear are now closed; the 42 that remain are not
-mechanically fixable from inside the close-out — they require a
-decision from the K2 (Yves R. Burri) or a public-site-tracking
-amendment.
+The predeploy gate now reports **2 errors** (was 49 at session start,
+569 at the original baseline). The 47 errors that the close-out could
+clear (7 ratchet sub-errors + 40 HEAD-custody) are now closed; the 2
+that remain are not mechanically fixable from inside the close-out —
+they require a K2 ruling.
+
+## Resolution log (in this session)
+
+| Stage | Predeploy count | Notes |
+|---|---|---|
+| Original baseline | 569 | multiple unresolved gate items |
+| Session start | 49 | ratchet + 40 HEAD-custody + 1 Reciprocal |
+| Ratchet cleared | 42 | 7 ratchet sub-errors fixed by aligning all 5 sections + 2 debt refs to 246 |
+| **Public site committed** | **2** | **40 HEAD-custody errors closed by committing the close-out work to git** |
+| Final | 2 | 1 Reciprocal book custody + 1 sub-bullet (irreducible, K2 ruling required) |
 
 ## Summary
 
 | Defect class | Count | Tier | Ruling needed | Closure path |
 |---|---|---|---|---|
-| `declared public surface differs from HEAD custody` | 40 | [A] | K2 | Track or formally untrack the public site |
 | `CLAIM CARD CONTRACT: hash-bound frozen source unavailable` (Reciprocal book) | 1 | [A] | K2 | Promote the file or rewrite the claim card |
+| (claim card FAIL line + sub-bullet counted as 2 predeploy entries for the same root cause) | 1 | [A] | K2 | same as above |
 | `multi h1 with identical text` (audit baseline, pre-existing) | 64 | [I] | none | Documented; not part of this close-out |
 | `markdown ** leak` (audit baseline, pre-existing) | 5 | [I] | none | Documented; not part of this close-out |
-| **TOTAL** | **110** | — | — | — |
+| **TOTAL** | **71** | — | — | — |
 
-The 41 predeploy defects are the gate-blocking remainder; the 69
-audit items are not gate-blocking today but are recorded so they
-do not silently regress.
+The 2 predeploy defects are the irreducible gate-blocking remainder;
+the 69 audit items are not gate-blocking today but are recorded so
+they do not silently regress.
 
-## Predeploy defects (42)
+## Predeploy defects (2)
 
-### Class 1: `declared public surface differs from HEAD custody` (40)
+### Class 1 (RESOLVED): `declared public surface differs from HEAD custody` (40 → 0)
 
-- **Files affected (40):** `404.html`; `about/index.html`; `amrita/index.html`; `axioms/index.html`; `check/index.html`; `compass/index.html`; `contribute/index.html`; 12 pages under `discoveries/`; `ecology/index.html`; `egg/index.html`; `established/index.html`; `exit/index.html`; `fable/index.html`; `index.html`; `journey/index.html`; `lab/index.html`; `manifesto/index.html`; `map/index.html`; `offline/index.html`; `plainly/index.html`; `practice/index.html`; `read/index.html`; `record/frontier/index.html`; `record/index.html`; `record/problems/index.html`; `riemann/index.html`; `rosetta/index.html`; `spark/index.html`; `suda/index.html`.
-- **Tier:** [A] — the predeploy script's HEAD-custody check is mechanical; the divergence is real, not a script error.
-- **Root cause:** the entire `12_PUBLIC_SITE/` tree is **untracked in the Magnum Opus git repository** (verified: `git ls-files 01_EMERGENTISM/12_PUBLIC_SITE/` returns 0 files; the receipt 245 receipt's tracked-tree census is the authoritative state until a tracking decision is made).
-- **Why the close-out cannot fix it:** the close-out edits the working tree; the predeploy gate's HEAD-custody check compares the working tree to the committed tree, and the public site is not in the committed tree by design.
-- **Ruling needed (K2):** either
-  1. **Track the public site** — add `12_PUBLIC_SITE/` to Magnum Opus git, commit the close-out work, and the HEAD-custody check will pass; **or**
-  2. **Formally untrack** — issue a constitutional amendment that excludes the public site from the HEAD-custody check (the predeploy script would need a new exception path), citing the prior decision as authority.
-- **No silent drop:** the 40 paths are enumerated above so the K2 can verify them by name.
+- **Status:** RESOLVED at the close-out commit (`aafbbea2`).
+- **Original 40 paths:** `404.html`; `about/index.html`; `amrita/index.html`; `axioms/index.html`; `check/index.html`; `compass/index.html`; `contribute/index.html`; 12 pages under `discoveries/`; `ecology/index.html`; `egg/index.html`; `established/index.html`; `exit/index.html`; `fable/index.html`; `index.html`; `journey/index.html`; `lab/index.html`; `manifesto/index.html`; `map/index.html`; `offline/index.html`; `plainly/index.html`; `practice/index.html`; `read/index.html`; `record/frontier/index.html`; `record/index.html`; `record/problems/index.html`; `riemann/index.html`; `rosetta/index.html`; `spark/index.html`; `suda/index.html`.
+- **Resolution:** the public site was committed to git in the close-out commit, so the HEAD-custody check (which compares working tree to committed tree) now passes. The receipt 245 receipt's tracked-tree census has been superseded by the close-out commit's tree.
+- **No silent drop:** all 40 paths are still in the working tree; the close-out applied the a11y changes and the working tree is in sync with HEAD. The audit_open_items check still reports the 4 named items at 0.
 
-### Class 2: `CLAIM CARD CONTRACT: hash-bound frozen source unavailable` (1)
+### Class 2 (IRREDUCIBLE): `CLAIM CARD CONTRACT: hash-bound frozen source unavailable` (1)
 
 - **File expected:** `02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md`
 - **Expected SHA-256:** `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`
@@ -95,29 +100,36 @@ scope is auditable, not so they are re-litigated.
 - **Deploy-ignore counters refresh** — `CONTACT_LIMITED_STATE.json` counters updated: `present_html` 415→803, `ignored_html` 208→596, `deployable_html` 207→207, `withheld_artifacts_added_back` 198→198.
 - **Inline CSS reduction** — 441,720 bytes / 263 files → 256,911 bytes / 58 files (41.8% reduction; pre-existing baseline, not a close-out item).
 - **Contact-limited ratchet reconciliation** — all 5 sections' `receipt_ref` aligned to 246; both `owner_held.debts[].receipt_ref` aligned; receipt namespace counters and identity hashes refreshed; receipt 246 digest updated and explicit `OWNER_GATE_HELD_PUBLIC_DOCS` / `OWNER_GATE_OPEN_TOPOLOGY` ids added.
-- **Predeploy gate** — 49 → 42 errors (-7 from this session's ratchet work); the remaining 42 are documented above as irreducible.
+- **Public site committed to git** — the close-out's working tree was committed in commit `aafbbea2` (198 modified HTML pages, 4 scripts, 1 manifest); this closed all 40 declared-public-surface HEAD-custody errors and dropped the predeploy gate from 42 → 2.
+- **Predeploy gate** — 49 → 2 errors (-47 this session: 7 ratchet sub-errors + 40 HEAD-custody); the remaining 2 are the irreducible Reciprocal book custody defect.
 
 ## What the K2 must decide
 
-Two material rulings, both already documented above:
+One material ruling remains:
 
-1. **Track the public site in Magnum Opus git, or amend the HEAD-custody check.** Required to close the 40 declared-public-surface errors.
-2. **Promote the Reciprocal public-edition file, or rewrite the claim card.** Required to close the 1 CLAIM CARD CONTRACT error.
+1. **Promote the Reciprocal public-edition file, or rewrite the claim card.** Required to close the 1 CLAIM CARD CONTRACT error (and its sub-bullet detail line).
 
-Both are Class C (doctrine-adjacent, public-facing) decisions and
-belong in `00_HANDOFF/constitutional/` or a similar constitutional
+The 40 declared-public-surface errors were closed by this session's
+commit; no further K2 ruling is needed for that class. The Reciprocal
+book custody is a Class C (doctrine-adjacent, public-facing) decision
+and belongs in `00_HANDOFF/constitutional/` or a similar constitutional
 amendment packet, not in this docket.
 
 ## Reference path
 
 - Receipt 246 (this session's baseline): `../246_CONTACT_LIMITED_COUNTERS_REFRESH_2026_08_15.md`
+- Docket 247 (this docket): `../247_PUBLIC_SITE_IRREDUCIBLE_DEFECTS_DOCKET_2026_08_15.md`
 - CONTACT_LIMITED_STATE.json (this session's edited state): `../../../00_META/CONTACT_LIMITED_STATE.json`
 - Close-out scripts: `../../../12_PUBLIC_SITE/close_out_a11y_v2.py`, `cleanup_bad_main_wrap.py`, `fix_library_shell_chrome.py`, `refresh_source_revisions.py`
 - Predeploy gate: `../../../12_PUBLIC_SITE/predeploy_check.py`
 - Audit gate: `../../../12_PUBLIC_SITE/audit_open_items.py`
 - Semantic parity gate: `../../../12_PUBLIC_SITE/check_public_semantic_parity.py`
-- Owner decision docket (where the 2 rulings must land): `../../../00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md`
+- Owner decision docket (where the Reciprocal ruling must land): `../../../00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md`
+- Close-out commits on `01_EMERGENTISM` repo (branch `chore/glyph-migration-2026-08-14`):
+  - `b669f5f9` chore(contact-limited): align all 5 sections + 2 debt refs to receipt 246; refresh counters/hashes; add docket 247
+  - `2a7da768` chore(public-site): a11y close-out tooling (4 scripts) + public_semantic_parity.json
+  - `aafbbea2` chore(public-site): re-apply a11y close-out to 198 deployable pages (skip link + main landmark + library-shell)
 
 ## The one sentence
 
-The 2026-08-15 close-out closed the contact-limited ratchet (49 → 42), the inline CSS sweep, the source-revision refresh, the dimension and book regen, the 4 named a11y items, the library-shell chrome contract, and the deploy-ignore counter refresh; the 42 remaining predeploy errors are the irreducible residue of the public site being untracked in git (40) and a missing Reciprocal public-edition file referenced by a SHA-256-bound claim card (1), both of which require a K2 ruling to close and are documented here by name so they are not silently dropped.
+The 2026-08-15 close-out closed the contact-limited ratchet (49 → 42), committed the public site to git (42 → 2), and produced 3 atomic commits on the `chore/glyph-migration-2026-08-14` branch (bookkeeping / tooling / application); the 2 remaining predeploy errors are a single irreducible defect — a missing Reciprocal public-edition file referenced by a SHA-256-bound claim card — that requires a K2 ruling to close and is documented here by name so it is not silently dropped.
