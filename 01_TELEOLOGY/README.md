@@ -30,6 +30,7 @@ from the reciprocal chart.
 | [Tantric/Vajrayana Transmutation](00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md) | Disciplined redirection of biological friction | `[I/C]` |
 | [The Hidden Center](00_THE_HIDDEN_CENTER_OF_THE_FRAMEWORK.md) | Non-capture and self-correction reading | `[I]` |
 | [Teleology Spectrum](00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) | Self-diagnostic placement of stronger and weaker readings | `[I]` |
+| [The Knowledge of Good and Evil](05_THE_GOOD_AND_THE_EVIL_2026_08_17.md) | `[D]` staged exhaustive program — the factor-signature discriminant that knows the good and thereby the evil; companion to The Goal, not a second `Ω`; adoption is an owner act via [`../00_HANDOFF/GOOD_AND_EVIL_PROGRAM_DOCKET_2026_08_17.md`](../00_HANDOFF/GOOD_AND_EVIL_PROGRAM_DOCKET_2026_08_17.md) | `[I]` vow; `[S]` instrument; `[C]` world fit |
 
 ## Active proposal
 
