@@ -30,6 +30,11 @@ commitments stop. The Ground remains prior to every map, including this one.
   boundary note.
 - [Bounded Generative Emergentism](00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md)
   — `[D]` staged companion; read the degree-of-freedom owner first.
+- [The Parasite-Load Wager](10_PARASITE_LOAD_WAGER_2026_08_17.md) — `[D]`
+  staged candidate conjecture `W13-PARASITE` from the 2026-08-17 brainstorm
+  audit; full claim record, killable, fenced; adoption is an owner act via
+  [`../00_HANDOFF/PARASITE_LOAD_WAGER_DOCKET_2026_08_17.md`](../00_HANDOFF/PARASITE_LOAD_WAGER_DOCKET_2026_08_17.md);
+  not a ledger row and no authority.
 - [`ruminations/`](ruminations/README.md) — `[I]` readings beside doctrine, not
   authority instruments.
 
