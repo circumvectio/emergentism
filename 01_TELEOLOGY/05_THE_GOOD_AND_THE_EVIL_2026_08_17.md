@@ -58,7 +58,10 @@ corpus's own instruments refuse that split, for three reasons:
    same signature arising without deliberation — inherited load, drifted
    institution, neglect — is bad, and must be paid against and repaired; it is
    not evil until chosen. Deliberation attaches to the *choice*, never to the
-   person: plays are evil, people are not.
+   person: plays are evil, people are not. **And it accumulates:** deliberate
+   acts form vices — durable patterns that themselves operate deliberately in
+   a functional sense. Evil is therefore not only the moment of choice but the
+   formed disposition. A vice is never an accident (§3B).
 2. **One instrument discriminates both.** The factor-signature discriminant
    (§3) is a single function on transfers. Its positive branch *is* the good;
    its negative branch *is* the evil. You cannot build one branch without the
@@ -130,19 +133,25 @@ For any play `(w,f)` and any transfer it effects, record the **seven-tuple**:
   declared stratum; coherent; banks; bearer and sustaining whole both rise
   (`ΔW_i>0 ∧ ΔW_H>0 ∧ Justice`, the strict-syntropy gate of
   [`00_THE_GOAL.md`](00_THE_GOAL.md) §6).
-- **BAD — unpaid maintenance (baseline entropy).** Drift, neglect, the unpaid
-  bill. No deliberation attributed; no enemy, only the adversary. Bad is what
+- **BAD — unpaid maintenance (baseline entropy).** Drift, neglect, accident,
+  the unpaid bill — including unchosen structural load nobody formed and
+  nobody deliberately maintains. No enemy, only the adversary. Bad is what
   must be paid against. It is repaired, not condemned.
-- **PARASITIC PATTERN.** The evil signature without the mens rea — inherited
-  load, a drifted institution, a structural cheat nobody chose. Defended
-  against and repaired like the bad; becomes evil only in the choosing.
+- **VICE — the formed parasitic pattern.** Deliberate acts have consolidated
+  the egoic signature — collective sacrificed for ego — into a self-perpetuating
+  disposition: individual (character) or collective (a vicious egregore).
+  Functionally deliberate: *"in some sense conscious"* is the intentional-stance
+  reading `[I]` — the pattern behaves as if it had aims; consciousness is never
+  presumed (W9 fence). **Not an accident** (§3B). The moment anyone
+  deliberately keeps or feeds a parasitic pattern, it leaves BAD behind.
 - **EVIL — deliberate entropy.** The parasitic signature *deliberately
   chosen*: `V₄` or `Φ₅ → Φ̂₄`, or drained into nothing, producing **no
   absolute gain in potential for anyone over `T_L` — for the chooser
   included** — and only a relative, short-horizon gain against the deceived.
-  Deceit in the endless game (§3A). The terminal case is **spite**: burning
-  others' potential with no inflation anywhere, the relative diminishment
-  itself as the only payoff.
+  Deceit in the endless game (§3A). Evil acts form vices; vices generate
+  further parasitic acts; that loop is the cycle (§3B). The terminal case is
+  **spite**: burning others' potential with no inflation anywhere, the
+  relative diminishment itself as the only payoff.
 - **UNDETERMINED.** Insufficient receipt. The discriminant returns *no
   verdict*, never *innocent*. Absence of evidence is not clearance.
 
@@ -188,12 +197,60 @@ game — it gains nothing absolutely, not even for the chooser, and destroys
 potential for its own sake. It is the cleanest instance of the discriminant's
 EVIL verdict.
 
-**The BAD/EVIL split, restated.** The same factor signature arising without
-deliberation — drifted institution, inherited load, neglect — is **BAD**:
-unpaid maintenance, the adversary without an enemy. It is repaired, not
-condemned. It becomes **EVIL** only when the signature is *chosen with
-visibility of the bearers it destroys*. Deliberation attaches to the choice,
-never to the person: plays are evil, people are not.
+**The three-way split, restated.** Pure unchosen drift and unchosen structural
+load is **BAD**: unpaid maintenance, the adversary without an enemy — repaired,
+not condemned. Deliberate parasitic acts consolidate into **VICE**: formed
+patterns that operate deliberately in the functional sense and are never
+accidents. The deliberate choosing of the signature is **EVIL**. Deliberation
+attaches to the choice and to what the choice forms — never to the person:
+plays are evil, vices are formed, people are not.
+
+### 3B · The formation of vice — deliberate patterns, never accidents
+
+The discriminant judges acts; but acts form dispositions, and dispositions
+generate acts. That dynamic is the program's account of how evil persists
+without a substance:
+
+```text
+deliberate parasitic act ──repetition──▶ formed vice (character)
+formed vice ─────────────generation────▶ further parasitic acts
+collective repetition ──carrier turnover──▶ vicious egregore
+```
+
+**A vice is a formed pattern, not an accident.** Repeated egoic acts
+consolidate into durable dispositions that carry the demon-polar signature —
+collective sacrificed for ego
+([`00_THE_WELTANSCHAUUNG.md`](../00_THE_WELTANSCHAUUNG.md) §7.5). Once
+formed, the vice operates deliberately in the functional sense: it
+self-perpetuates, directs attention to its own continuation, and spends the
+viability or possibility of others to inflate its own representation. At the
+collective level a vicious egregore is the W13 Kali-type
+([`../06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md`](../06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md)
+§2.3) admitted only through W9's five markers: shared trace, carrier turnover,
+intervention effect, recurrent bias, visible cost.
+
+**"In some sense conscious" — the typed reading.** The intentional stance
+`[I]`: the formed pattern behaves *as if* it had aims, and treating it so is
+predictively useful. The W9 fence stands: consciousness is never presumed; a
+vicious egregore is a candidate collective pattern, not a being. This is the
+salvaged core of the original brainstorm's "the real egregores are the vices"
+claim — retyped, killable, and purged of entity-ontology.
+
+**The asymmetry that breaks the symmetry.** Virtues form by the same
+mechanism in the opposite direction: repeated god-polar acts (ego sacrificed
+for collective) form a virtue that generates further good acts. But formed
+virtue **banks** — it accumulates cashable `V₄` — so the virtuous loop can
+rest. Formed vice only inflates unbankable `Φ̂₄`, so by the treadmill
+consequence (W13 §2.3) it **cannot stop**: *vice is a treadmill; virtue is a
+treasury.* That asymmetry is the remedial direction of the whole program:
+what is formed can be unformed — by contrary acts, receipts, and exit — and
+the vicious loop has no resting point of its own, only breaking.
+
+**Crosswalk `[I]` for P5.** The dharma traditions carried this dynamic under
+other names: karma as the ledger of acts; *vāsanā/saṃskāra* as the formed
+latencies acts leave behind; saṃsāra as the self-perpetuating loop; mokṣa as
+its breaking. The formation loop above retypes that grammar — to be tested as
+a crosswalk, never claimed as identity.
 
 ## 4 · The exhaustive work program
 
@@ -203,10 +260,10 @@ Each phase is killable. A phase without a kill is decoration, not work.
 |---|---|---|---|
 | **P0** | The instrument | Fix the seven-tuple discriminant as one named, testable definition, assembled from T5 + the three passes + the Justice envelope + the deliberation field | it cannot be stated without circularity, or depends on an owner it does not cite |
 | **P1** | Enumerate the good | Type every give-move and preserve-frame play: what maintenance it pays, what `V₄` it banks, which bearers rise | a "good" play is shown to hide a bearer |
-| **P2** | Enumerate the bad and the evil | Type every parasitic take-play (`V₄`/`Φ₅→Φ̂₄`, or pure burn): separate the BAD (undeliberated unpaid maintenance) from the EVIL (deliberate parasitic signature, no absolute gain for anyone over `T_L`) and the terminal spite case | an "evil" play is indistinguishable from a legitimate trophic one under the signature — then the discriminant is useless; or the BAD/EVIL split cannot be drawn on any real case |
+| **P2** | Enumerate the bad, the vice, and the evil | Type every parasitic take-play (`V₄`/`Φ₅→Φ̂₄`, or pure burn): separate BAD (undeliberated unpaid maintenance) from VICE (the formed, functionally-deliberate egoic pattern, never an accident — §3B) from EVIL (the deliberate choosing of the signature, no absolute gain for anyone over `T_L`) and the terminal spite case | an "evil" play is indistinguishable from a legitimate trophic one under the signature — then the discriminant is useless; or the BAD/VICE/EVIL splits cannot be drawn on any real case |
 | **P3** | The border cases | The tragic, sacrificial, and conflict classes ([`04_THE_LIVED_COMPASS.md`](04_THE_LIVED_COMPASS.md)). Voluntary sacrifice is a distinct costly class — never automatically syntropic, never demanded by a collective | the discriminant cannot hold sacrifice without laundering coercion, or cannot tell voluntary sacrifice from coerced sacrifice dressed as virtue |
 | **P4** | Contact | Apply the discriminant to receipted cases at each stack layer; the cheapest first contact is W13's GP-13 packet | the discriminant predicts no better than plain extraction accounting (it then shares W13-S3's fate) |
-| **P5** | The perennial crosswalk | Test whether the maintenance/dissolution dialectic (dharma/adharma, the guṇas, saṃsāra/mokṣa) adds discriminative content beyond the native instrument | it is decoration — a beautiful metaphor wearing a theory's clothes |
+| **P5** | The perennial crosswalk | Test whether the maintenance/dissolution dialectic (dharma/adharma, the guṇas, karma, *vāsanā/saṃskāra* as formed latencies, saṃsāra/mokṣa as loop and breaking — §3B) adds discriminative content beyond the native instrument | it is decoration — a beautiful metaphor wearing a theory's clothes |
 | **P6** | The endless game | Validate the iterated-dilemma mechanism (§3A): show the deliberate-defection path converges to a strictly lower absolute potential than the cooperative path over `T_L`, on a declared model | the cooperative path does not dominate, or the mechanism adds nothing beyond the factor signature alone |
 
 **P4 is the hinge.** Phases P0–P3, P5, and P6 can all survive forever as
@@ -216,8 +273,8 @@ receipt.
 
 ## 5 · Method — how to work exhaustively without losing the discipline
 
-- **Tier every verdict.** Each assigned good/evil/undetermined carries its tier
-  and its receipt; no silent promotion.
+- **Tier every verdict.** Each assigned good/bad/vice/evil/undetermined
+  carries its tier and its receipt; no silent promotion.
 - **Every phase keeps its kill visible.** A kill that disappears is the
   program's own anti-completeness failure firing.
 - **The discriminant detects; it does not redeem.** It identifies a parasitic
@@ -269,8 +326,9 @@ the evil — more cleanly than plain accounting, with every bearer still visible
 It fails, and must say so, the day it cannot.
 
 **One sentence:** *The good is maintenance paid and banked with every bearer
-visible; the bad is the unpaid bill; the evil is the same signature chosen
-deliberately, for relative gain in an endless game, with no absolute gain for
+visible; the bad is the unpaid bill; the vice is the parasitic signature
+formed by deliberate acts, never an accident; the evil is the choosing of that
+signature for relative gain in an endless game, with no absolute gain for
 anyone — and the whole game is the exhaustive space between.*
 
 ---
