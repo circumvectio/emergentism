@@ -47,12 +47,18 @@ companion:
 The natural reading is to study good and evil as separate territories. The
 corpus's own instruments refuse that split, for three reasons:
 
-1. **Evil is not a substance.** There is no second principle, no anti-force, no
-   cosmic combatant. Entropy is the baseline and takes no side (§2.1 of
+1. **Evil is not a substance, but it is not merely structural either.** There is
+   no second principle, no anti-force, no cosmic combatant. Entropy is the
+   baseline and takes no side (§2.1 of
    [`10_PARASITE_LOAD_WAGER_2026_08_17.md`](../06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md)).
    What presents as "evil" is *the good's signature inverted*: unpaid
    maintenance and concealed one-factor inflation. It has no independent
-   ontology; it is parasitic on the constructed order by definition.
+   ontology; it is parasitic on the constructed order by definition. **And it
+   has a mens rea: evil is the *deliberate* choice of that signature.** The
+   same signature arising without deliberation — inherited load, drifted
+   institution, neglect — is bad, and must be paid against and repaired; it is
+   not evil until chosen. Deliberation attaches to the *choice*, never to the
+   person: plays are evil, people are not.
 2. **One instrument discriminates both.** The factor-signature discriminant
    (§3) is a single function on transfers. Its positive branch *is* the good;
    its negative branch *is* the evil. You cannot build one branch without the
@@ -101,17 +107,21 @@ validate the assignment against receipted cases at each layer of the C4 stack.
 
 ## 3 · The discriminant — the instrument of the goal
 
-For any play `(w,f)` and any transfer it effects, record the **six-tuple**:
+For any play `(w,f)` and any transfer it effects, record the **seven-tuple**:
 
 ```text
 1. DONOR DRAINED      which of {V₄, Φ₅, Φ̂₄} leaves the donor?
-2. RECEIVER BUILT     which of {V₄, Φ̂₄} accrues to the receiver?
+2. RECEIVER BUILT     which of {V₄, Φ̂₄} accrues to the receiver — or does
+                      the drained potential go to NOTHING (pure burn)?
 3. BEARER VISIBILITY  is every affected bearer named, or laundered?   → Justice
 4. DECLARATION        is the transfer authorized at a declared stratum,
                       or concealed?                                  → Truth
 5. FORM               does the account cohere without hiding seams?  → Beauty
 6. BANK vs TREADMILL  does the receiver accumulate cashable V₄,
-                      or only unbankable Φ̂₄ inflation?
+                      or only unbankable Φ̂₄ inflation — or neither?
+7. DELIBERATION       is the parasitic signature chosen with visibility
+                      of the bearers, or does it arise without choice
+                      (drift, inherited load, neglect)?
 ```
 
 **Verdict rules** `[S]` inside the declared premises:
@@ -120,15 +130,70 @@ For any play `(w,f)` and any transfer it effects, record the **six-tuple**:
   declared stratum; coherent; banks; bearer and sustaining whole both rise
   (`ΔW_i>0 ∧ ΔW_H>0 ∧ Justice`, the strict-syntropy gate of
   [`00_THE_GOAL.md`](00_THE_GOAL.md) §6).
-- **EVIL — parasitic / extractive.** `V₄` or `Φ₅ → Φ̂₄`; bearer hidden or
-  laundered; concealed; treadmill (consumes, never banks); some bearer
-  disappears from the score.
+- **BAD — unpaid maintenance (baseline entropy).** Drift, neglect, the unpaid
+  bill. No deliberation attributed; no enemy, only the adversary. Bad is what
+  must be paid against. It is repaired, not condemned.
+- **PARASITIC PATTERN.** The evil signature without the mens rea — inherited
+  load, a drifted institution, a structural cheat nobody chose. Defended
+  against and repaired like the bad; becomes evil only in the choosing.
+- **EVIL — deliberate entropy.** The parasitic signature *deliberately
+  chosen*: `V₄` or `Φ₅ → Φ̂₄`, or drained into nothing, producing **no
+  absolute gain in potential for anyone over `T_L` — for the chooser
+  included** — and only a relative, short-horizon gain against the deceived.
+  Deceit in the endless game (§3A). The terminal case is **spite**: burning
+  others' potential with no inflation anywhere, the relative diminishment
+  itself as the only payoff.
 - **UNDETERMINED.** Insufficient receipt. The discriminant returns *no
   verdict*, never *innocent*. Absence of evidence is not clearance.
 
 This is `T5` of the Parasite-Load Wager lifted from a diagnostic into the
 organizing instrument of the goal. The good/evil split and the
-trophic/parasitic split are the same split, read at two registers.
+trophic/parasitic split are the same split, read at two registers. The added
+seventh field (deliberation) and the BAD/EVIL split are the program's own
+contribution, retyped below.
+
+### 3A · The endless game — why deceit is its own defeat
+
+The corpus's two-horizon rule ([`00_THE_GOAL.md`](00_THE_GOAL.md) §4A) and
+the factor-signature discriminant meet game theory in one place. Model the
+game as an **iterated prisoner's dilemma with an indefinite horizon** — the
+players do not know when, or whether, the game ends, so they must plan as if
+it is endless.
+
+- **Cooperation** is the trophic / syntropic signature: `V₄ → V₄`, both
+  bearer and sustaining whole rise, maintenance is paid and banked. Over an
+  endless horizon the cooperative surplus grows without bound; absolute
+  potential for every bearer grows.
+- **Deceit / defection** is the parasitic signature deliberately chosen: the
+  defector gains a **relative, short-horizon** payoff against the deceived,
+  but produces **no absolute gain in potential over `T_L` — for the defector
+  included.** By defecting, the defector destroys the cooperative surplus
+  they would otherwise have drawn on forever. In an endless game the defector's
+  absolute payoff converges toward the non-cooperative equilibrium, which is
+  strictly lower than the cooperative path.
+
+**The mechanism, typed.** Deceit collapses `T_L` into `T_S`: the evil act
+treats the endless game as if it were one-shot. Hidden extraction is literally
+the move of making the long-horizon cost invisible so the short-horizon gain
+can be banked. But the game does not end. The defector must keep playing, and
+every future round is now played against a depleted trust base. The treadmill
+consequence (W13 §2.3) is the same fact from the factor side: the defector
+never accumulates cashable `V₄`, so `P_node = min(Φ̂₄,V₄)` stays capped and
+the defector cannot stop defecting.
+
+**The terminal case — spite.** Pure burn: the parasitic signature chosen with
+*no* inflation of the chooser's own `Φ̂₄` anywhere. The only payoff is the
+relative diminishment of others. Spite is the limit of deceit in the endless
+game — it gains nothing absolutely, not even for the chooser, and destroys
+potential for its own sake. It is the cleanest instance of the discriminant's
+EVIL verdict.
+
+**The BAD/EVIL split, restated.** The same factor signature arising without
+deliberation — drifted institution, inherited load, neglect — is **BAD**:
+unpaid maintenance, the adversary without an enemy. It is repaired, not
+condemned. It becomes **EVIL** only when the signature is *chosen with
+visibility of the bearers it destroys*. Deliberation attaches to the choice,
+never to the person: plays are evil, people are not.
 
 ## 4 · The exhaustive work program
 
@@ -136,14 +201,15 @@ Each phase is killable. A phase without a kill is decoration, not work.
 
 | # | Phase | Exhaustive task | Kill |
 |---|---|---|---|
-| **P0** | The instrument | Fix the six-tuple discriminant as one named, testable definition, assembled from T5 + the three passes + the Justice envelope | it cannot be stated without circularity, or depends on an owner it does not cite |
+| **P0** | The instrument | Fix the seven-tuple discriminant as one named, testable definition, assembled from T5 + the three passes + the Justice envelope + the deliberation field | it cannot be stated without circularity, or depends on an owner it does not cite |
 | **P1** | Enumerate the good | Type every give-move and preserve-frame play: what maintenance it pays, what `V₄` it banks, which bearers rise | a "good" play is shown to hide a bearer |
-| **P2** | Enumerate the evil | Type every parasitic take-play (`V₄`/`Φ₅→Φ̂₄`): treadmill, hidden bearer, laundered aggregate | an "evil" play is indistinguishable from a legitimate trophic one under the signature — then the discriminant is useless |
+| **P2** | Enumerate the bad and the evil | Type every parasitic take-play (`V₄`/`Φ₅→Φ̂₄`, or pure burn): separate the BAD (undeliberated unpaid maintenance) from the EVIL (deliberate parasitic signature, no absolute gain for anyone over `T_L`) and the terminal spite case | an "evil" play is indistinguishable from a legitimate trophic one under the signature — then the discriminant is useless; or the BAD/EVIL split cannot be drawn on any real case |
 | **P3** | The border cases | The tragic, sacrificial, and conflict classes ([`04_THE_LIVED_COMPASS.md`](04_THE_LIVED_COMPASS.md)). Voluntary sacrifice is a distinct costly class — never automatically syntropic, never demanded by a collective | the discriminant cannot hold sacrifice without laundering coercion, or cannot tell voluntary sacrifice from coerced sacrifice dressed as virtue |
 | **P4** | Contact | Apply the discriminant to receipted cases at each stack layer; the cheapest first contact is W13's GP-13 packet | the discriminant predicts no better than plain extraction accounting (it then shares W13-S3's fate) |
 | **P5** | The perennial crosswalk | Test whether the maintenance/dissolution dialectic (dharma/adharma, the guṇas, saṃsāra/mokṣa) adds discriminative content beyond the native instrument | it is decoration — a beautiful metaphor wearing a theory's clothes |
+| **P6** | The endless game | Validate the iterated-dilemma mechanism (§3A): show the deliberate-defection path converges to a strictly lower absolute potential than the cooperative path over `T_L`, on a declared model | the cooperative path does not dominate, or the mechanism adds nothing beyond the factor signature alone |
 
-**P4 is the hinge.** Phases P0–P3 and P5 can all survive forever as
+**P4 is the hinge.** Phases P0–P3, P5, and P6 can all survive forever as
 interpretation. Only P4 can be defeated by the world, so only P4 can pay the
 program's way. Fund P4 first; treat the rest as unpaid until P4 returns a
 receipt.
@@ -203,8 +269,9 @@ the evil — more cleanly than plain accounting, with every bearer still visible
 It fails, and must say so, the day it cannot.
 
 **One sentence:** *The good is maintenance paid and banked with every bearer
-visible; the evil is the same signature inverted; and the whole game is the
-exhaustive space between.*
+visible; the bad is the unpaid bill; the evil is the same signature chosen
+deliberately, for relative gain in an endless game, with no absolute gain for
+anyone — and the whole game is the exhaustive space between.*
 
 ---
 
