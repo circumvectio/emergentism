@@ -62,7 +62,7 @@ evaluation bridge `Φ̂₄=Eval₄(M,Φ₅)` and then the selected
 | L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive with a tombstone | **schemas-compress + primitives-archive** | `claude-opus-4-8` | + write·edit·bash | **yes — permission-gated** |
 | L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | **value-chain (public-tree commit — only publishing caste)** | `claude-opus-4-8` | read·grep·glob | no |
 
-**[T] Model tiers follow the framework's own caste doctrine** (CLAUDE.md *Quality × Quantity by Caste*),
+**[D] Model tiers are a STAGED ASSIGNMENT, not doctrine.** *(Retiered and repaired 2026-08-19: this line previously read `[T]` — a tier that does not exist in the estate vocabulary `[A][B][S][I][C][D]` — and cited "CLAUDE.md *Quality × Quantity by Caste*", a section that does not exist in that file. Both were warrant substitution on this exact table. The nearest real document, `QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md`, governs the φ/ν/B of work products and says nothing about models.)* **Kill criterion: a null or equivalence result from P2 on cell `CASTE→MODEL@0` retires this table.** Live routing is applied, not pinned here — see `02_SKYZAI/01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/00_CANONICAL_DEFINITION.md` §"Rosetta dispatch". The tier rationale, unchanged:
 not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
 deep-reasoning L5–L7 → Opus. Reserve high-quality inference for higher-risk or constitutional lanes.
 
@@ -203,3 +203,14 @@ MANAGED_AGENTS/
 Canon: [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) ·
 [historical constitutional-invariants application](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) ·
 [`../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
+
+> **Model-id rot, measured 2026-08-19.** Five of the seven ids pinned in the
+> caste YAMLs (`claude-sonnet-4-6` ×2, `claude-opus-4-8` ×3) are dead, and the
+> integrity gate reported 7/7 OK the whole time — the seal hashes bytes, and
+> the bytes never changed; only the world did. The YAMLs were deliberately
+> NOT edited to fix this: their `model:` field's sole consumer is
+> `provision.py` against a control plane that has never been provisioned (no
+> credentials, no `agent_ids.json`), so the field has never selected a model
+> for a single dispatch — while editing it would restale ~30 landed pointer
+> lines and ~70 pending line-specs. Per ruling D4 the fix is registry-bound,
+> not pinned. Live routing lives in the applied layer.
