@@ -29,6 +29,7 @@ accompany the 2026-07 audit-and-kernel wave without claiming doctrinal force.
 | `00_E1_E10_RUMINATION_L7_RSI_2026_07_19.md` | L7 Ṛṣi rumination across E1–E10. |
 | `00_RUMINATION_ON_AUM_AND_THE_SPHERE_2026_07_20.md` | Compatibility stub; routes the historical application note to archive custody and current owners. |
 | `00_RUMINATION_ON_THE_TORUS_SPHERE_PASSAGE_2026_07_20.md` | Compatibility stub; routes the historical application note to archive custody and current owners. |
+| `00_RUMINATION_ON_EMERGENTISM_ORG_2026_08_19.md` | Rumination VI — The Readable Column: L7 witness of the live `emergentism.org` projection (Vercel; Finity-gate front; contact still zero). |
 
 ## Evidence posture
 
