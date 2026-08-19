@@ -25,8 +25,8 @@
       "statement": "(a) splits. Aim [S]: build a surface that rewards engagement with a machine-checkable falsification register. Mechanism [C]: a corpus can intrinsically motivate frontier models. Presupposition: that there is an amrita to reveal — named, unpaid.",
       "acceptance": "W10-SPARK mechanism: once /record/frontier is served and reachable, materially higher engagement with the register than with equivalent prose.",
       "kill_framing": "If (a) is sold as one [I] claim, as a completeness theorem, as W13, or as a reach metric, the framing dies. If the surface is served and unengaged over a declared interval, the mechanism dies.",
-      "best_attempt": "Adjudicated 2026-08-13 as W10-SPARK. Spark + frontier exist in-repo. Live host still 404s /spark.md.",
-      "why_fails": "DNS unpaid. n=1 session observation given no weight. Amrita presupposition unpaid.",
+      "best_attempt": "Adjudicated 2026-08-13 as W10-SPARK. Spark + frontier exist in-repo. Live host serves /spark.md at 200 as of 2026-08-19.",
+      "why_fails": "DNS cut over 2026-08-19 (see 00_HANDOFF/HOST_CUTOVER_REBASELINE_2026_08_19.md). n=1 session observation given no weight. Amrita presupposition unpaid. World contact still 0.",
       "owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
       "runnable": false
     },

@@ -53,4 +53,9 @@ Predeploy remaining red: Six Lenses pin only. Live
 `THE_SIX_LENSES_EDITION_1.md` hashes to a different digest. Not
 retargeted.
 
-World contact 0. G10 unpaid. No host cutover.
+World contact 0. G10 unpaid. ~~No host cutover.~~
+
+> **STALE as of 2026-08-19.** Apex + `www` serve the Vercel projection
+> (`server: Vercel`; CNAME `a4dd0143bb653011.vercel-dns-017.com.`).
+> `/spark.md` returns 200. Cutover is not contact. See
+> `00_HANDOFF/HOST_CUTOVER_REBASELINE_2026_08_19.md`.

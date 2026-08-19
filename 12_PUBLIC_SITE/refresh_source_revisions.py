@@ -35,6 +35,16 @@ def main() -> int:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     updates = 0
 
+    # Status-source bindings (KERNEL-STATUS-*, CONTACT-STATUS-*)
+    for binding in data.get("statusSourceClaims", []):
+        if binding.get("source"):
+            src = _resolve(binding["source"])
+            if src.is_file():
+                new = _sha256_revision(src)
+                if binding.get("sourceRevision") != new:
+                    binding["sourceRevision"] = new
+                    updates += 1
+
     # Contract sourceRevision
     contract = data.get("claimCardContract", {})
     if contract.get("source"):

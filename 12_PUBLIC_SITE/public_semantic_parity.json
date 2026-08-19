@@ -8,7 +8,7 @@
       "surface": "index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "sourceRevision": "sha256:6f464ef15a0903e481fdc1033a886fa7a899c013d39d86f1d1b7e2f660a47539",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -35,7 +35,7 @@
       "surface": "about/index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:32abf98da97b51db3025acb5a4375fbe24da1adcdbd5904e4c32f8bbd0ac7db3",
+      "sourceRevision": "sha256:6f464ef15a0903e481fdc1033a886fa7a899c013d39d86f1d1b7e2f660a47539",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
