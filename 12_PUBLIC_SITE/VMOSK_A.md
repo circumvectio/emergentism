@@ -23,12 +23,15 @@ or equal to** its sources (AGENTS.md protected-surface rule).
 
 Release-candidate static projection publishing **Emergentism only**, per the
 2026-07-22 route card. Current bound state:
-- Lane is **source-preserved/frozen for the signed AIA migration** (122 packet evidence).
-- The K2-countersigned 122 decision packet bounds any site work to a **local,
-  non-public `[D/C]` design prototype** — no deployment, publication, DNS,
-  analytics, payment, or public-DAV action authorized.
-- The compass restructure converged on the concurrent 7-wing build
-  (122 convergence handoff); corrected-foundation folds owed to that build.
+- **DNS / host (2026-08-19):** apex + `www` serve the Vercel projection.
+  Receipt `00_HANDOFF/HOST_CUTOVER_REBASELINE_2026_08_19.md`. Cutover is not
+  contact and not a public-DAV act.
+- **122 packet (2026-07-12) remains provenance.** Its then-bound “no
+  deployment / DNS / analytics / payment / public-DAV” still governs those
+  *classes of act* that have not since been separately receipted. It no longer
+  describes the live host. Do not cite 122 as “DNS unpaid.”
+- AIA-migration freeze and compass prototype stay as 122 left them: local
+  `[D/C]`, unattached as a product runtime.
 
 # O — Objectives (this phase) `[S/I]`
 
@@ -50,14 +53,13 @@ Release-candidate static projection publishing **Emergentism only**, per the
 
 # K — KPIs / triggers `[S/D]`
 
-| Measure | Target | State |
+| Measure | Target | State (2026-08-19, S0) |
 |---|---|---|
-| Parity audit (`audit_live_domain_against_manifest.py`) | green | runnable; no current measurement recorded in-lane — **owed** |
-| living-map orphan pages | 0 | unmeasured — owed |
-| Tier-inheritance violations | 0 | enforced by review, not yet measured |
+| Parity audit (`audit_live_domain_against_manifest.py --strict`) | green | **measured:** 717/717 probes 200; 74/74 manifest 200; withheld → `/historical-boundary/`. **Strict FAIL:** served `/` and `public_semantic_parity.json` ≠ local HEAD `2e4bb5e4` (not promoted). Receipt `00_HANDOFF/S0_MEASUREMENT_RECEIPT_2026_08_19.md` |
+| living-map orphan pages | 0 | **0** current-surface orphans. `python3 -m unittest test_living_map.py` 11/11 OK. Predeploy `[3]` 0 orphans |
+| Tier-inheritance violations | 0 | barred-claims PASS (1139 files). Not a full inheritance census |
 
-Honest note: the lane has **no KPI surface yet** beyond the parity contract;
-measurement is owed before any release decision.
+O9 ledger: `RELEASE_STATE.md`. Human FPE KPIs remain unrun.
 
 # A — Agents (Rosetta mapping) `[S]`
 
@@ -68,5 +70,5 @@ measurement is owed before any release decision.
 - **L4 Kṣatriya** — bounded build changes only under a countersigned packet (122 pattern).
 - **L5 Brāhmaṇa** — structural maps (living-map, parity contract) — owner-ratified before force.
 
-*Drafted for owner ratification (PMO-0036, R11). Until ratified: [D], no
-authority, no publication. η = 0.*
+*Ratified 2026-08-04. DNS present-tense repaired 2026-08-19 (S0). 122 kept
+as provenance. η = 0.*

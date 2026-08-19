@@ -16,7 +16,7 @@ completion object is the front-door packet (O1–O9 + eight KPIs). The site is a
 reader projection. This file scores that packet. It does not class the site as
 a product or a DAV.
 
-HEAD scored: `01_EMERGENTISM` `66c5b7d0`. Uncommitted: FPE-READ materials draft.
+HEAD scored: `01_EMERGENTISM` `2e4bb5e4`. Fuller audit: `FULL_PROJECTION_AUDIT_2026_08_19.md`.
 
 ## Score
 
@@ -75,4 +75,4 @@ validation, deploy authority, or contact.
 
 ---
 
-*7/9 objectives met as copy. 2/8 KPIs measured-pass. 0 outside outcomes.*
+*7/9 objectives met as copy. 3/8 KPIs measured-pass. 0 outside outcomes.*
