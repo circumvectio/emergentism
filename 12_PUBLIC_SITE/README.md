@@ -120,7 +120,14 @@ final service-worker builder fingerprints every declared current page and
 runtime artifact, including `living-map.json` and the current RAG index. Any
 generator run after it makes the generated-artifact gate fail.
 `predeploy_check.py` and the artifact checker are checks, not generators, and
-therefore follow it.
+therefore follow it. O9 states live in [`RELEASE_STATE.md`](RELEASE_STATE.md)
+and stay separate: committed ≠ pushed ≠ promoted ≠ DNS ≠ served hash.
+Federation claim-card replay (does not copy 02_SKYZAI):
+
+```text
+EMERGENTISM_PRIMARY_CHECKOUT_ROOT=/absolute/path/to/01_EMERGENTISM \
+  python3 -B predeploy_check.py
+```
 
 `build_book.py` publishes exactly one current source: the claim-card-covered
 One-Sitting reader. It validates the book catalog, source lifecycle, all 26

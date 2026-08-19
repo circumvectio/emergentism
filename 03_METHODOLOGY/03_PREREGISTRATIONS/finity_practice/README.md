@@ -68,6 +68,9 @@ review gate and supplies no world-facing evidence.
 
 ## Current state
 
+- **2026-08-19:** unfrozen READ materials staged at
+  [`READ_MATERIALS_DRAFT_2026_08_19.md`](READ_MATERIALS_DRAFT_2026_08_19.md).
+  Instruments only. GATE_REGISTRY prerequisites stay `missing`. No freeze.
 - No reader or participant has been recruited or contacted.
 - No external reviewer has been engaged.
 - No ethics determination or approval has been obtained.
