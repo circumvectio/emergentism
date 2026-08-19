@@ -64,9 +64,9 @@ tools:
       - {name: read, enabled: true}
       - {name: grep, enabled: true}
       - {name: glob, enabled: true}
-      - {name: write, enabled: true, permission_policy: {type: always_ask}}
-      - {name: edit, enabled: true, permission_policy: {type: always_ask}}
-      - {name: bash, enabled: true, permission_policy: {type: always_ask}}
+      - {name: write, enabled: false}
+      - {name: edit, enabled: false}
+      - {name: bash, enabled: false}
 metadata:
   fences: "5 output-fences (η=0 · K3 archive-with-tombstone · K4 Grace Exit · A7 evidence tiers · Ω directional +1) + 7 alignment-fences (see syntropic-dyadism.md). K2 fence REPEALED 2026-07-28 (commit e2bdbe97); Mavis signs, K2 notified."
   # fences line above held byte-identical (frozen surface pending owner ruling); ref added alongside 2026-08-19
@@ -92,8 +92,8 @@ metadata:
   regime: "Anarchy"
   equation: "E_node = −log(P_node)"
   axis: "boundary"
-  deployability: "NON-DEPLOYABLE (Executive witness; counsel only; mutating tools gated always_ask; CANON-18 latitude not pole)"
-  deployability_note: "UNRECONCILED (2026-08-19): gated write/edit/bash conflicts with SKILL.md deployable=false for L5-L7; mutating use only inside an L4-staged envelope; strip-vs-ratify is an open owner ruling (board sitting 2026-08-19, item 7)."
+  deployability: "NON-DEPLOYABLE (Executive witness; counsel only; CANON-18 latitude not pole)"
+  deployability_note: "STRIPPED 2026-08-19 OC-5: write/edit/bash disabled; L6 mutates only inside an L4-staged envelope (SKILL.md deployable=false)."
   route_stage: "LINT"
   involution_mirror: "L2 Śūdra (J_lat cut↔prune, B=0.5 mirror)"
   virtue: "Tyāga"
