@@ -1,5 +1,6 @@
 ---
-type: vmosk-a-pointer
+type: pointer-shim
+supersedes_type: "vmosk-a-pointer (re-typed 2026-08-19, OC-3d — one type token for the pointer class)"
 title: "VMOSK_A — Emergentism (bare-name live pointer)"
 date: 2026-08-15
 status: "[D] pointer — live account is the SIGNED v2 variant; staged per VMOSK-A completion plan V-3 / rulings docket Q4 (chair rules at V-5); reversible by git mv"
