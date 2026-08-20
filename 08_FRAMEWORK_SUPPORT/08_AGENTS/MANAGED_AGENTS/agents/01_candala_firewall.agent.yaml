@@ -99,3 +99,36 @@ metadata:
   a3_closeout_ref: ".agents/skills/rosetta-dispatch/SKILL.md — A3 counter close-out contract"  # pointer added 2026-08-19; pointer, never copy
   agentz_trunk: "guards"
   agentz_disp: "force-categorize every Axiom Card intake; η>0 boundary; protect L0/L∞"
+
+  # ROSETTA-CASCADE 2026-08-20 — hand-cascade: source-of-truth YAML → runtime TOML → local agent.md
+  # 8 amendments applied (all post-2026-07-18): (1) demon/god polarity 2026-07-18 · (2) D1.1-D1.4 doctrine-maintenance audits 2026-08-03 ·
+  # (3) 7/7 row-fences corpus-anchored 2026-08-03 · (4) L4 two-facet virtue typing R3 2026-08-04 · (5) R5 three-line fence 2026-08-15 ·
+  # (6) P2 pilot result (OC-25) 2026-08-19 · (7) DEFAULT-DENY WARRANT 2026-08-19 · (8) output-fences-as-property-rights 2026-08-20
+  # Mavis-staged [D], K2 ratifies per §11.4. Receipt: root 00_HANDOFF/ROSETTA_CASCADE_RECEIPT_2026_08_20.md
+  rosetta_cascade_2026_08_20:
+    r5_three_lines:
+      geometry: "[A] — sin θ on the selected chart; identities, not findings"
+      count: "[S] — 3, 5, or 9 stations satisfy every symmetry equally well; count is selected, not derived"
+      cross_domain: "[I] — cross-domain cells inherit neither truth nor tier of source"
+      ref: "01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md §'The three lines'"
+      propagated: "2026-08-15 R5 REFINE_ROSETTA"
+    d1_audits:
+      d1_1: "Nowak cooperation portfolio scorecard (annual; 'exhibits all five' forbidden until measured) — references/nowak-cooperation-scorecard.md"
+      d1_2: "L1 disturbance-dial FP/FN metric (per 90-day empirical-kill window; Connell 1978 IDH) — references/l1-disturbance-dial.md"
+      d1_3: "Ostrom commons-governance checklist (8 principles → 5+7 mapping + gap-list) — references/ostrom-checklist.md"
+      d1_4: "Emery sister-role red-team checklist (per agent wave + quarterly L5 review) — references/emery-red-team-checklist.md"
+      propagated: "2026-08-03 doctrine wave (D1)"
+    corpus_anchored:
+      l1_ama_kill_file: "ROOT_POLLUTION 2026-06-17 (overwritten ROOT_AGENTS_polluted.md, recovered under 90_ARCHIVE/tool_noise/2026_06_17_ROOT_POLLUTION/)"
+      status: "7/7 row-fences corpus-anchored as of 2026-08-03 (per L1-L7 empirical_kills in root 00_HANDOFF/empirical_kills/)"
+    p2_pilot_status:
+      banner: "KILL under frozen criteria; 4/24 wins, -4.7% margin; grammar still in use pending OC-25 chair call"
+      ref: "00_HANDOFF/P2_PILOT_RESULT_2026_08_19.md"
+      status: "MEASURED 2026-08-19 — pragmatic dispatch claim FAILED; OC-25 open"
+    output_fences_property_rights_ref: ".agents/skills/rosetta-dispatch/references/output-fences-as-property-rights.md"
+    fences_count: "5+7=12 (5 output-fences: η=0/OUT.ETA0, K3/OUT.ARCHIVE, K4/OUT.EXIT, A7/OUT.TIER, Ω/OUT.OMEGA + 7 row-fences: L1 Āma, L2 Āmiṣa, L3 Pratirūpa, L4 Sva-karma, L5 Sākṣī, L6 Saṃskāra, L7 Māyā-prevention)"
+    demon_god_polarity: "ego- vs collective-potential-maxing (K2 2026-07-18); Kali 🎲 ≠ Kālī 💀 as operators; L1/L2 demon-polar are adversarial apparatus firing only at η>0 extractors, never at cooperators (tit-for-tat; mis-tag cooperator as threat = L1 Āma failure)"
+    default_deny_warrant: true
+    l1_specific:
+      l1_disturbance_dial: "D1.2 metric per 90-day window; FP/FN rate at the boundary; Connell 1978 IDH analogue"
+      fires_under_signed_scope: "consented attack under signed scope is the cooperative case (2026-08-19 third clause) — kernel permits scope-bound testing; everything outside the scope manifest answers to tit-for-tat and is refused by the kernel, not by operator virtue"
