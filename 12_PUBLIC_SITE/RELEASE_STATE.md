@@ -14,7 +14,7 @@ A local green is not a deploy. A deploy is not contact.
 
 | State | Value 2026-08-19 | How measured |
 |---|---|---|
-| **committed** | `66c5b7d03b97451bb521b69a228262968265ac96` | `git -C 01_EMERGENTISM rev-parse HEAD` |
+| **committed** | `ae062bf6` + cascade in flight | `git -C 01_EMERGENTISM rev-parse HEAD` after this wave |
 | **pushed** | **no** — this sitting not pushed | no `git push` this wave |
 | **immutable artifact** | local tree at that commit | not a Vercel deployment id |
 | **promoted** | **unknown / not this sitting** | live `last-modified: Thu, 13 Aug 2026 19:19:23 GMT` |

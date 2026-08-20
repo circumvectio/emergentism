@@ -74,7 +74,7 @@ No [C] claim is presented as fact. No silent tier upgrades. No doctrine creation
 
 | Invariant | Status | Evidence |
 |-----------|--------|----------|
-| Leave with everything | [S] Stated as structural guarantee | Section 2, Card 1 |
+| ~~Leave with everything~~ | **RETRACTED** (K4 slogan 2026-06-10). Current: documented withdrawal of legitimate/redeemable property, data, and keys — not “leave with everything.” Live page: `exit/index.html`. | Section 2 historical; do not restore |
 | No extraction (η = 0) | [S] Cross-referenced to Five + One | Section 2, Card 2; Section 5 |
 | No lock-in | [S] Repeated in hero and steps | Hero subtitle; Step 3 |
 | Self-custody default | [S] Mentioned as architectural choice | Section 2, Card 3 |
