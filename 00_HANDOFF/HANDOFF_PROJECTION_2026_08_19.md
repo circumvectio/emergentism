@@ -23,6 +23,7 @@ FPE contact, main merge, or `vercel --prod`.
 4. `S0_MEASUREMENT_RECEIPT_2026_08_19.md` — live 717/717
 5. `12_PUBLIC_SITE/RELEASE_STATE.md` — O9 six states
 6. Root `00_HANDOFF/NEXT_STEPS_DAV_2026_08_19.md` — estate clocks
+7. `ROSETTA_L7_PROJECTION_SYNERGY_2026_08_19.md` + `L7_SYNERGY_INTERFACES_2026_08_19.md`
 
 ## Landed this wave (01_EMERGENTISM)
 

@@ -1,0 +1,72 @@
+{
+  "schema": "emergentism/l7-admissible-joins/v0",
+  "status": "DRAFT [I] — not doctrine, not GTM, not a DAV",
+  "date": "2026-08-19",
+  "projection": "https://www.emergentism.org/",
+  "residence": "L7 witness / public symbol",
+  "cut": "foundation-ground; separate from the organism",
+  "forbidden_global": [
+    "proof transfer from this site to any product",
+    "fee ticker or token on this domain",
+    "membership, account, or DAV issuance here",
+    "Agentz/Skyzai/OFN as the Practice",
+    "quoting zero-outside-outcomes as a moat"
+  ],
+  "levels": [
+    {
+      "id": "L1",
+      "supplies": "record + spark graves as public immune log",
+      "consumes": "custody issues via contribute (GitHub)",
+      "forbidden": "naming persons as extractors; scores; consented-attack UI",
+      "test": "contribute issue is custody, never a rating"
+    },
+    {
+      "id": "L2",
+      "supplies": "plain-before-formal copy; rivals on the Card",
+      "consumes": "nits that keep the symbol honest",
+      "forbidden": "Circle telemetry driving homepage claims",
+      "test": "no telemetry script on current surfaces"
+    },
+    {
+      "id": "L3",
+      "supplies": "kill grammar; internal funerals as process evidence",
+      "consumes": "nothing from RF markets",
+      "forbidden": "forecast fees or prices on this domain",
+      "test": "no market widget on current surfaces"
+    },
+    {
+      "id": "L4",
+      "supplies": "Finity as human worksheet; dispatch seats as work functions",
+      "consumes": "Agentz stages; site witnesses",
+      "forbidden": "Agentz Cloud picker linked as Practice; G7 mashed with GEN7",
+      "test": "practice page has no Agentz/Skyzai href"
+    },
+    {
+      "id": "L5",
+      "supplies": "/book/ as projection of source-owned readers",
+      "consumes": "claim-card pins; federation replay only",
+      "forbidden": "live HTML as canon; merging Reciprocal bytes into this repo",
+      "test": "repair source before pages"
+    },
+    {
+      "id": "L6",
+      "supplies": "/historical-boundary/ withhold",
+      "consumes": "dead claims from any level",
+      "forbidden": "silent delete; presenting withheld as current",
+      "test": "withheld routes 200 to boundary + noindex"
+    },
+    {
+      "id": "L7-elsewhere",
+      "supplies": "parallel three-scripts (story/plain/receipt)",
+      "consumes": "optional Finity without worldview assent",
+      "forbidden": "one brand; this site as skyzai.com or ofn.app",
+      "test": "about page states this site is not those products"
+    }
+  ],
+  "ingest": {
+    "first": "/spark.md",
+    "map": "/llms.txt",
+    "not_law": "/record/"
+  },
+  "exit": "/exit/"
+}
