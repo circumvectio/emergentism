@@ -2,11 +2,12 @@
 """Run ONE Managed-Agents session against the L4 Kṣatriya (Arjuna) executor.
 
 DATA PLANE (per task) — the runnable counterpart to provision.py's control plane.
-provision.py creates the env + 7 agents and writes agent_ids.json; this script loads
-those IDs, resolves the L4 executor + the shared environment, opens ONE session, and
-streams it to completion. Arjuna is wired as the multiagent coordinator over the other
-six (see provision.py / provision.sh), so a single session at L4 can delegate down the
-caste ensemble — each delegation surfaces here as a `session.thread_created` event.
+provision.py creates the environment plus hosted operational L1-L4 and writes
+agent_ids.json; this script loads those IDs, resolves L4 plus the shared environment,
+opens one session, and streams it to completion. Arjuna coordinates only L1-L3 plus
+self (see provision.py / provision.sh). L5-L7 remain non-persistent counsel and are
+not hosted delegates. Each operational delegation surfaces here as a
+`session.thread_created` event.
 
 Usage:
     pip install anthropic
@@ -63,7 +64,7 @@ def load_ids() -> dict:
     if not IDS_FILE.exists():
         sys.exit(
             f"{IDS_FILE.name} not found — run provision.py (or provision.sh) first to "
-            "create the environment + seven agents."
+            "create the environment + operational L1-L4 agents."
         )
     return json.loads(IDS_FILE.read_text())
 

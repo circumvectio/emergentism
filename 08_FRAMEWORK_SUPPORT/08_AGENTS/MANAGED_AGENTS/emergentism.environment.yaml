@@ -1,14 +1,15 @@
 # Emergentism Managed Agents — shared cloud environment
-# One environment, reused by all seven caste agents. Each session provisions a
+# Legacy-named environment reused only by hosted operational L1-L4. L5-L7 remain
+# non-deployable counsel and are never persistent hosted agents. Each session provisions a
 # container from this template. Mount the Magnum Opus repo per-session as a
 # github_repository resource (see README §Runtime).
 name: emergentism-seven
-description: "Shared cloud container for the seven Emergentism caste slots (2 Gods + 2 Demons + 3 Executive boundary rows; selected node score min(Phi_hat_4,V_4))."
+description: "Shared cloud container for operational Rosetta seats L1-L4; boundary rows L5-L7 are not hosted."
 config:
   type: cloud
   networking:
-    # L2/L3/L5 use web_search / web_fetch. Tighten to `limited` + allowed_hosts to lock egress.
+    # Hosted L2/L3 use web_search / web_fetch. Tighten to `limited` + allowed_hosts to lock egress.
     type: unrestricted
 metadata:
   framework: "Emergentism"
-  purpose: "seven-operator caste ensemble"
+  purpose: "four-seat operational Rosetta ensemble"

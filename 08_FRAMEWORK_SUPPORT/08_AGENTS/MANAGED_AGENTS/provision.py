@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Provision the seven Emergentism caste agents as Claude Managed Agents.
+"""Provision only the four operational Rosetta seats as Claude Managed Agents.
 
 ONE-TIME SETUP — run once, then reuse the IDs in agent_ids.json on every session.
 Idempotent by name: re-running skips agents that already exist.
@@ -10,10 +10,10 @@ Prerequisites:
 
 What it does (control plane):
     1. Create (or reuse) the shared `emergentism-seven` cloud environment.
-    2. Create (or reuse) the SIX non-L4 caste agents from agents/*.agent.yaml.
-    3. Create (or reuse) the L4 Kṣatriya (Arjuna) executor as a MULTIAGENT COORDINATOR
-       over those six (multiagent={type: coordinator, agents:[<six ids>, {type: self}]}),
-       so a single L4 session can delegate down the caste ensemble.
+    2. Create (or reuse) L1-L3 from agents/*.agent.yaml.
+    3. Create (or reuse) L4 Kṣatriya (Arjuna) as a MULTIAGENT COORDINATOR
+       over L1-L3 plus self. L5-L7 remain non-deployable counsel phases and are
+       never created as persistent hosted agents.
     4. Write agent_ids.json { name: {id, version} } + the environment id.
 
 It does NOT start sessions — sessions are the data plane (per task), driven from
@@ -25,6 +25,7 @@ client.beta.{environments,agents,sessions}.* calls.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -33,10 +34,11 @@ AGENTS_DIR = HERE / "agents"
 ENV_FILE = HERE / "emergentism.environment.yaml"
 OUT_FILE = HERE / "agent_ids.json"
 
-# The L4 Kṣatriya (Arjuna) executor is the multiagent COORDINATOR over the other six.
+# L4 Kṣatriya (Arjuna) is the hosted coordinator over operational L1-L3 only.
 # We identify its spec file (04_*) by these substrings in the yaml `name:` so a wording
 # tweak doesn't break the wiring. Canonical name: "Emergentism · L4 Kṣatriya (Arjuna) — Executor".
 L4_TOKENS = ("Arjuna", "Executor", "L4", "Kṣatriya", "Ksatriya")
+OPERATIONAL_LEVELS = {"L1", "L2", "L3", "L4"}
 
 
 def is_l4(name: str) -> bool:
@@ -66,6 +68,18 @@ def find_by_name(items, name: str):
     return None
 
 
+def model_for(spec: dict) -> str:
+    """Resolve an applied model assignment; caste YAMLs intentionally pin none."""
+    level = (spec.get("metadata") or {}).get("level")
+    if not isinstance(level, str):
+        raise ValueError(f"agent {spec.get('name')!r} has no metadata.level")
+    variable = f"ROSETTA_MODEL_{level}"
+    model = os.environ.get(variable, "").strip()
+    if not model:
+        raise ValueError(f"{variable} is required; model routing is registry-bound")
+    return model
+
+
 def main() -> None:
     client = anthropic.Anthropic()  # resolves ANTHROPIC_API_KEY / auth profile
 
@@ -83,28 +97,32 @@ def main() -> None:
         )
         print(f"+ environment created: {env.name} ({env.id})")
 
-    # 2. Agents (create or reuse by name) -----------------------------------
-    # Split the roster: create the SIX non-L4 castes first, collect their ids, THEN
-    # create the L4 (Arjuna) executor as a coordinator over those six. multiagent must
+    # 2. Operational agents (create or reuse by name) -----------------------
+    # Create L1-L3 first, collect their ids, THEN create L4 as coordinator.
+    # L5-L7 are source-owned counsel phases, never persistent hosted agents. multiagent must
     # be injected at create time on the L4 agent — the platform shape is
-    #   multiagent={"type": "coordinator", "agents": [<six ids>, {"type": "self"}]}.
+    #   multiagent={"type": "coordinator", "agents": [<L1-L3 ids>, {"type": "self"}]}.
     existing_agents = {a.name: a for a in client.beta.agents.list()}
     results: dict[str, dict] = {"_environment": {"name": env.name, "id": env.id}}
 
-    specs = [(p, load_yaml(p)) for p in sorted(AGENTS_DIR.glob("*.agent.yaml"))]
+    all_specs = [(p, load_yaml(p)) for p in sorted(AGENTS_DIR.glob("*.agent.yaml"))]
+    specs = [(p, s) for p, s in all_specs if (s.get("metadata") or {}).get("level") in OPERATIONAL_LEVELS]
     non_l4 = [(p, s) for (p, s) in specs if not is_l4(s["name"])]
     l4 = [(p, s) for (p, s) in specs if is_l4(s["name"])]
+    if {(s.get("metadata") or {}).get("level") for _p, s in non_l4} != {"L1", "L2", "L3"} or len(l4) != 1:
+        raise ValueError("hosted roster must be exactly L1-L3 workers plus one L4 coordinator")
 
     def create_or_reuse(spec: dict, **extra) -> object:
         """Create the agent by name, or reuse the existing one (idempotent by name)."""
         name = spec["name"]
+        model = model_for(spec)
         if name in existing_agents:
             a = existing_agents[name]
             print(f"= agent exists:  {name}  ({a.id} v{a.version})")
             return a
         a = client.beta.agents.create(
             name=name,
-            model=spec["model"],
+            model=model,
             description=spec.get("description", ""),
             system=spec.get("system", ""),
             tools=spec.get("tools", []),
@@ -112,27 +130,27 @@ def main() -> None:
             **extra,
         )
         tag = " +coordinator" if "multiagent" in extra else ""
-        print(f"+ agent created: {name}  ({a.id} v{a.version})  [{spec['model']}]{tag}")
+        print(f"+ agent created: {name}  ({a.id} v{a.version})  [{model}]{tag}")
         return a
 
-    # 2a. The six non-L4 castes first — collect their ids for the L4 roster.
-    six_ids: list[str] = []
+    # 2a. L1-L3 first — collect their ids for the L4 roster.
+    worker_ids: list[str] = []
     for _path, spec in non_l4:
         a = create_or_reuse(spec)
-        results[spec["name"]] = {"id": a.id, "version": a.version, "model": spec["model"]}
-        six_ids.append(a.id)
+        results[spec["name"]] = {"id": a.id, "version": a.version, "model": model_for(spec)}
+        worker_ids.append(a.id)
 
-    # 2b. The L4 Kṣatriya (Arjuna) executor, wired as coordinator over the six.
-    roster = [*six_ids, {"type": "self"}]  # the six + self-delegation
+    # 2b. L4, wired over L1-L3 plus self. Boundary counsel is not provisioned.
+    roster = [*worker_ids, {"type": "self"}]
     for _path, spec in l4:
         a = create_or_reuse(
             spec,
             multiagent={"type": "coordinator", "agents": roster},
         )
-        results[spec["name"]] = {"id": a.id, "version": a.version, "model": spec["model"]}
+        results[spec["name"]] = {"id": a.id, "version": a.version, "model": model_for(spec)}
         if spec["name"] in existing_agents:
             # Existing agent reused by name — inject/refresh the coordinator roster via
-            # update so Arjuna delegates to the six even on a re-run (idempotent-friendly).
+            # update so Arjuna delegates to L1-L3 on a re-run (idempotent-friendly).
             try:
                 updated = client.beta.agents.update(
                     a.id,
@@ -145,7 +163,7 @@ def main() -> None:
 
     OUT_FILE.write_text(json.dumps(results, indent=2, ensure_ascii=False))
     print(f"\nWrote {OUT_FILE.relative_to(HERE)} ({len(results) - 1} agents).")
-    print(f"L4 (Arjuna) coordinates {len(six_ids)} castes + self.")
+    print(f"L4 (Arjuna) coordinates {len(worker_ids)} operational seats + self; L5-L7 remain non-deployable counsel.")
     print("Watch sessions in Console: https://platform.claude.com/workspaces/default/sessions")
 
 
