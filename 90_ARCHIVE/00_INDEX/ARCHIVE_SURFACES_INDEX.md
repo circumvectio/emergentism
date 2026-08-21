@@ -30,6 +30,9 @@ path before it can be treated as a completed K3 stone.
 | `2026_07_22_pre_integration_remaining_work/` | Pre-integration remaining work | Historical work list |
 | `2026_07_22_tree_authority_reconciliation/` | Tree-authority reconciliation | Historical; uses `README.md` not `TOMBSTONE.md` |
 | `2026_07_22_untracked_arrivals_reconciliation/` | Untracked-arrivals reconciliation | Historical; uses `README.md` not `TOMBSTONE.md` |
+| `2026_08_21_adverse_comparative_input_quarantine/` | Exact-byte custody of an unprovenanced adverse comparative input | No active doctrine, evidence, public projection, or social prescription; see its tombstone |
+| `2026_08_21_l1_l7_inversion_reclassification/` | Exact-byte custody of historical population/status mapping | Refused; no current doctrine, people-to-row mapping, or public prescription |
+| `2026_08_21_uplink_legacy_grammar_reconciliation/` | Exact-byte custody of legacy MF-309 self-application grammar | Historical source only; stable numbered tombstone retained for citations |
 | `50_AUDITS/` | Archived audit material | Dated findings, not current source truth |
 | `old_front_doors/` | Superseded reader routes | Requires per-file stones and live successors |
 | `pure_emergentism_boundary_2026_07_20/` | Major pure-Emergentism boundary (pillar-mirrored superseded corpus) | Non-canonical; the largest archive subtree — see its `TOMBSTONE.md` |
@@ -52,4 +55,3 @@ Every completed archive batch names: source path, reason, successor/absorber,
 hash or other custody proof, inbound-reference treatment, resurrection path,
 and dated authority. Empty folders and unreceipted copies are recorded as debts,
 not counted as completed archives.
-

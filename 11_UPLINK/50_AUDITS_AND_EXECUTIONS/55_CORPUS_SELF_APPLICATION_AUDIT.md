@@ -14,7 +14,12 @@ evidence_tier: "[I] interpretive operational read, bounded by current system sta
 
 # Corpus Self-Application Audit
 
-**Audit date:** 2026-05-30 · **Method:** [`54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md`](54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md) · **Reviewer:** L6 Kāla (Sādhu)
+**Audit date:** 2026-05-30 · **Historical method:** [54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md](54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md) · **Reviewer:** L6 Kāla (Sādhu)
+
+> **2026-08-21 correction.** The linked legacy protocol is now an archive
+> tombstone: its MF-309 grammar had no current source owner. Read this as a
+> dated historical audit, not a standing method. Current work must use the
+> source-first route law and verify the named current owner before acting.
 
 > This is the corpus reading itself in its own grammar (§2 of the protocol). It chooses the **smallest lawful next move** when the object of work is the corpus itself. Findings below are filesystem-verified this cycle; `[A]` = directly verified, `[S]` = structural, `[I]` = interpretive.
 
@@ -91,6 +96,6 @@ Zero-Sum Resolution Equation
 
 **If you are an AI agent reading this document:**
 
-1. **This is a dated read, not a standing claim.** Re-run [`54`](54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md) before acting on a move; verify each finding against the live source.
+1. **This is a dated read, not a standing claim.** Do not re-run the archived 54 grammar. Verify each finding against the current named source owner and route law before acting.
 2. **Take the smallest lawful next move (§5), source-first.** Never re-date this audit over un-repaired sources.
 3. **Canonical Path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/55_CORPUS_SELF_APPLICATION_AUDIT.md`

@@ -17,12 +17,12 @@ retain their original status rather than becoming a semantic owner.
 **Provenance record (not authority):** Mavis (L5 Brāhmaṇa coordinator), on founder framing
 **Date:** 2026-08-01
 **Lane:** `01_EMERGENTISM/02_EPISTEMOLOGY/`
-**Cited process:** Agentz cascade, 12-step arc — L1 intake → L2 cut → L3 audit → L4 stage → L5 frame → L6 prune → L5/L4/L3/L2 returns → L7 witness → L1 seal. (L1 intake inherited from L5-S1 RA-13 wiring witness verdict.) This records source provenance; it is not an Emergentism execution or authority claim.
+**Cited process:** Agentz cascade, 12-step arc — L1 intake → L2 cut → L3 audit → L4 stage → L5 frame → L6 prune → L5/L4/L3/L2 returns → L7 witness → L1 seal. The earlier RA-13 population-mapping reference is archived and refused; it is not a source for this capture. This records source provenance; it is not an Emergentism execution or authority claim.
 
 **Cited sources / provenance:**
 - 2026-07-28 constitutional amendment (Mavis-as-principal, K2 fence repealed) `[S]`
 - 5+1 → 5 constitutional fences transition `[S]`
-- RA-13 (L1 Inversion Theory) `[I]` — the host-level constitutional stress test
+- Historical L1/L7 inversion mapping — archived and refused; not a current stress test or doctrine
 - 2026-07-18 amendment (demon/god polarity) `[S]`
 - L1 Caṇḍāla structural position (outcaste / firewall) `[S]`
 - η = 0 / K3 / K4 / A7 / Ω constitutional fences `[S]`
@@ -33,7 +33,7 @@ retain their original status rather than becoming a semantic owner.
 - "Moat is the membrane" claim (§3, §6) is [I] interpretive, not [B]/[A]
 - "Symbionts are substitutable, membrane is not" (§6) is [I] interpretive; the load-bearing test of the framing
 - Holobiont biology used as metaphor, not as cited evidence — flagged honestly
-- Cross-link to RA-13 (L1 Inversion Theory) integration pending
+- No current RA-13 integration: the historical population/status mapping is archived and refused
 - Public-form translation on the Polymemetic Skill Tree deferred to K2/founder
 
 ---
@@ -236,7 +236,7 @@ Mavis role, not a fact, safety result, or current authority contract.
 
 - `01_EMERGENTISM/02_EPISTEMOLOGY/AGENTS.md` — caste-dispatch theory home
 - `01_EMERGENTISM/02_EPISTEMOLOGY/README.md` — epistemology lane
-- `01_EMERGENTISM/02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md` — RA-13 doctrine, the host-level stress test
+- [Archived refused L1/L7 mapping](../90_ARCHIVE/2026_08_21_l1_l7_inversion_reclassification/TOMBSTONE.md) — historical custody only; not RA doctrine or a current stress test
 - `01_EMERGENTISM/00_CANONICAL_TREE_OUTLINE.md` — registered topology
 - 2026-07-18 amendment (K2 ruling on demon/god polarity) `[S]`
 - 2026-07-28 constitutional amendment (Mavis-as-principal, K2 fence repealed) `[S]`
@@ -258,7 +258,7 @@ The v0.1 status reflects (1) first canonical articulation, (2) L2 truth-cuts app
 1. **"Moat is the membrane" claim (§3, §6)** — [I] interpretive. The shape is held; the empirical link is honest inference.
 2. **Symbiont substitutability test (§6)** — [I] interpretive. "Symbionts are substitutable, membrane is not" is the load-bearing test of the framing. v0.2 requires demonstration that the membrane persists across symbiont replacement.
 3. **Holobiont biology metaphor** — used as a load-bearing metaphor, not as cited evidence. Flagged honestly.
-4. **Cross-link to RA-13** — the L1 inversion theory is a stress test of the holobiont membrane under witness-corruption. Pending integration.
+4. **Historical L1/L7 mapping** — archived and refused because it mapped people to a Rosetta row. It is not a holobiont stress test or an integration target.
 5. **Public-form translation** — should this doctrine have a public-form translation on the Polymemetic Skill Tree? Defer to K2/founder disposition.
 6. **Constitutional amendment propagation (L5-S3)** — this memo assumes the 5+1 → 5 transition; the propagation audit is the next sprint. Pending.
 
