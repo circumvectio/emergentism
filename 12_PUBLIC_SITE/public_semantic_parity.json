@@ -56,6 +56,21 @@
         "Twelve named world-contact gates remain open.",
         "Packet-complete research contracts are not evidence-complete"
       ]
+    },
+    {
+      "id": "EUB1-V1-STATUS",
+      "surface": "record/eub-1/index.html",
+      "role": "benchmark_construct_status",
+      "source": "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md",
+      "sourceRevision": "sha256:c5f413a7d61d2e39b0e55925c013673234992ad73d1035c5bc4bf6bc99738ff2",
+      "tier": "[D]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "Yves R. Burri proposes The Dasein Test",
+        "OFFLINE-READY · [D]",
+        "No candidate has been evaluated.",
+        "Agreement between systems is not truth evidence."
+      ]
     }
   ],
   "claimCardContract": {
@@ -634,6 +649,7 @@
     "practice/index.html",
     "manifesto/index.html",
     "record/index.html",
+    "record/eub-1/index.html",
     "established/index.html",
     "exit/index.html",
     "journey/index.html",

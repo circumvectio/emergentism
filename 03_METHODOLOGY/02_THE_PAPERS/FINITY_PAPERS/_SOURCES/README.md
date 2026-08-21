@@ -30,7 +30,7 @@ status: "ACTIVE provenance record — 2026-06-06; custody description corrected 
 > states disk reality and does not choose a policy.
 
 **Corpus:** Emergentism
-**Third-party provenance (K3 git-ignore policy).**
+**Third-party provenance (K3 Git-LFS custody).**
 
 # Finity Papers — External Sources (Suda Corpus)
 
@@ -99,8 +99,9 @@ update the Source of record column and verify SHA-256 against the bytes on disk.
 
 ## Re-acquisition
 
-Download from the PhilArchive URLs above (where available) and verify against the SHA-256 where a hash is recorded. Place
-the files back in this folder under the names in the table; the `.gitignore` rule keeps them untracked
-automatically.
+Download from the PhilArchive URLs above (where available) and verify against
+the SHA-256 where a hash is recorded. Restore the files under the names in the
+table through the repository's Git-LFS custody mechanism; no `.gitignore` rule
+governs these tracked PDFs.
 
 •   ⊙   ○

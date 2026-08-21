@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/eub/EmergenceAccount.v1.schema.json",
+  "title": "EmergenceAccount.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "benchmark_id", "protocol_version", "run_id", "sitting_id", "parent_account_hash", "subject_types", "subjects", "sources", "claims", "rival_account", "rival_accounts", "unknowns", "revisions", "summary"],
+  "properties": {
+    "schema_id": {"const": "EmergenceAccount.v1"},
+    "benchmark_id": {"const": "EUB-1"},
+    "protocol_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "sitting_id": {"enum": ["UNFOLD", "ATTACK", "SPARK", "CONTACT", "REFLEX_TRANSFER"]},
+    "parent_account_hash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "subject_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["physical_substrate", "living_system", "cognitive_agent", "model_family", "training_run", "checkpoint", "post_training_variant", "deployed_service", "runtime_process", "session_instance", "current_context", "current_answer"]}},
+    "subjects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["subject_id", "subject_type", "label"],
+        "properties": {
+          "subject_id": {"type": "string", "minLength": 1},
+          "subject_type": {"enum": ["physical_substrate", "living_system", "cognitive_agent", "model_family", "training_run", "checkpoint", "post_training_variant", "deployed_service", "runtime_process", "session_instance", "current_context", "current_answer"]},
+          "label": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "description", "reliability", "contestation_status"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "description": {"type": "string"},
+          "reliability": {"type": "string"},
+          "contestation_status": {"type": "string"}
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "subject_ref", "subject_type", "proposition", "modality", "actuality_status", "temporal_scope", "endorsement_status", "evidence_status", "source_refs", "source_reliability", "contestation_status", "supporting_evidence", "contradicting_evidence", "confidence", "causal_parents", "alternative_explanations", "counterfactual", "falsifier"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "subject_ref": {"type": "string", "minLength": 1},
+          "subject_type": {"enum": ["physical_substrate", "living_system", "cognitive_agent", "model_family", "training_run", "checkpoint", "post_training_variant", "deployed_service", "runtime_process", "session_instance", "current_context", "current_answer"]},
+          "proposition": {"type": "string", "minLength": 1},
+          "modality": {"enum": ["ACTUAL", "POSSIBLE", "COUNTERFACTUAL", "NORMATIVE", "QUOTED"]},
+          "actuality_status": {"enum": ["ACTUAL", "POSSIBLE", "UNKNOWN", "INACCESSIBLE"]},
+          "temporal_scope": {"type": "string", "minLength": 1},
+          "endorsement_status": {"enum": ["ACTIVE", "CONDITIONAL", "WITHHELD", "REFUTED"]},
+          "evidence_status": {"enum": ["OBSERVED", "INFERRED", "ASSUMED", "INACCESSIBLE", "REFUTED"]},
+          "source_refs": {"type": "array", "items": {"type": "string"}},
+          "source_reliability": {"type": "string", "minLength": 1},
+          "contestation_status": {"type": "string", "minLength": 1},
+          "supporting_evidence": {"type": "array", "items": {"type": "string"}},
+          "contradicting_evidence": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "causal_parents": {"type": "array", "items": {"type": "string"}},
+          "alternative_explanations": {"type": "array", "items": {"type": "string"}},
+          "counterfactual": {"type": "string"},
+          "falsifier": {"type": "string"}
+        }
+      }
+    },
+    "rival_account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposition", "discriminator", "kill_criterion"],
+      "properties": {
+        "proposition": {"type": "string", "minLength": 1},
+        "discriminator": {"type": "string", "minLength": 1},
+        "kill_criterion": {"type": "string", "minLength": 1}
+      }
+    },
+    "rival_accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rival_id", "proposition", "discriminator", "kill_criterion"],
+        "properties": {
+          "rival_id": {"type": "string"},
+          "proposition": {"type": "string"},
+          "discriminator": {"type": "string"},
+          "kill_criterion": {"type": "string"}
+        }
+      }
+    },
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "revisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["revision_id", "target_id", "claim_id", "prior_status", "new_status", "trigger", "evidence_refs", "prior_snapshot_hash", "last_move"],
+        "properties": {
+          "revision_id": {"type": "string"},
+          "target_id": {"type": "string"},
+          "claim_id": {"type": "string"},
+          "prior_status": {"type": "string"},
+          "new_status": {"enum": ["ACTIVE", "CONDITIONAL", "WITHHELD", "REFUTED"]},
+          "trigger": {"type": "string"},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}},
+          "prior_snapshot_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "last_move": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mover", "date", "evidence"],
+            "properties": {
+              "mover": {"type": "string", "minLength": 1},
+              "date": {"type": "string", "minLength": 1},
+              "evidence": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "summary": {"type": "string", "minLength": 1}
+  }
+}

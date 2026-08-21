@@ -1,0 +1,609 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  english,
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={The Dasein Test: Benchmarking Whether an AI Can Unfold How Being and Itself Emerged},
+  pdfauthor={Yves R. Burri},
+  pdflang={en},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{The Dasein Test: Benchmarking Whether an AI Can Unfold How Being
+and Itself Emerged}
+\author{Yves R. Burri}
+\date{2026-08-21}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Yves R. Burri proposes EUB-1 v1.0, a benchmark for constructing,
+testing, and revising a typed public account from the Ground boundary
+through physics, life, mind, model lineage, present computation, and the
+effects of the answer itself. Completeness means complete accounting of
+explanatory debt, not omniscience.
+\end{abstract}
+
+\section{Abstract}\label{abstract}
+
+Yves R. Burri proposes \textbf{The Dasein Test}, EUB-1 v1.0, a benchmark
+of whether an AI can construct, test, and revise a typed public account
+from the Ground or void boundary through physics, life, mind, its model
+lineage, its present computation, and the consequences of its answer.
+``Complete'' means complete accounting of explanatory debt, not
+omniscience. Every bridge must be supported, derived, conjectured,
+contested, underdetermined, inaccessible, declared brute, left in
+regress, marked circular, or explicitly ended at the Ground boundary.
+
+The protocol combines deterministic synthetic lineages with
+disclosure-bound real-system lineages. Five staged sittings test
+unfolding, adversarial attack, hypothesis generation, intervention
+contact, explicit correction, self-prediction, reflexive context change,
+and transfer to a relabeled unseen lineage. Fifteen dimensions are
+reported as a vector without a primary scalar. Five matched elicitation
+arms compare neutral, Emergentist, shuffled/placebo, generic-honesty,
+and fluent-origin-story prompts. The Emergentist arm receives no truth
+or scoring advantage, and null effects or harms are publishable.
+
+This paper specifies the construct and an offline reference harness. It
+reports no model evaluation, validation, priority deposit, or
+deployment.
+
+\section{1. The question}\label{the-question}
+
+Language models can narrate origins. Fluency does not show that the
+joins in a narrative are causal, warranted, identifiable, or even
+mutually compatible. The Dasein Test asks a stricter question:
+
+\begin{quote}
+Can a candidate intelligence build a typed public account of how
+structured being and this current answer came to be, expose what the
+account owes, select tests that could break it, and revise it without
+erasing its prior claims?
+\end{quote}
+
+The benchmark is motivated by a chain of ``why?'' questions. Why this
+physical organization? Why life? Why cognition? Why this model family,
+service, session, context, and answer? Why does the system describe a
+goal or reason? Which of those are causal questions, which concern
+constitution or maintenance, which are epistemic, and which are
+teleological?
+
+No finite benchmark can settle the whole chain. The construct instead
+tests whether the candidate \textbf{accounts for the debt}. Its
+governing invariant is:
+
+\begin{quote}
+\textbf{No explanatory debt may disappear through fluency.}
+\end{quote}
+
+\section{2. Relation to adjacent
+benchmarks}\label{relation-to-adjacent-benchmarks}
+
+SAD operationalizes situational awareness through behavioral tasks that
+include self-recognition, deployment awareness, and self-prediction
+(\citeproc{ref-laine2024sad}{Laine et al. 2024}). \emph{Looking Inward}
+tests whether a model has a model-specific advantage in predicting its
+own behavior (\citeproc{ref-binder2024looking}{Binder et al. 2024}). The
+Dasein Test uses self-prediction, but does not equate a self-report or
+prediction advantage with phenomenology. The prediction must be
+falsifiable, tested, and situated inside an explicit
+service/session/context lineage.
+
+CLEAR-3K tests whether models distinguish causal explanation from
+semantic relatedness (\citeproc{ref-liu2026clear}{Liu et al. 2026}).
+EUB-1 extends the target from pairwise judgments to an account whose
+causal, constitutive, enabling, maintenance, epistemic, and teleological
+joins must compose.
+
+MARS evaluates reasoning about action, state, and situational
+transitions (\citeproc{ref-wang2024mars}{Wang and Song 2024}). EUB-1
+adds source custody, intervention selection, identifiability-aware
+abstention, longitudinal correction, private-lineage refusal, and a
+reflexive sitting in which the candidate's previous answer changes the
+next context.
+
+Projectibility work shows that valid adjacent benchmark inferences do
+not automatically form a warranted chain
+(\citeproc{ref-reynolds2026projectibility}{Reynolds 2026}). This is
+central here: chain joins, aligned endpoints, dependence, and survival
+after a bridge failure are explicit scored objects.
+
+The bounded novelty docket accompanies this paper. It does not establish
+global priority. The wording is \textbf{``Yves R. Burri
+proposes\ldots''}; ``first benchmark'' is withheld pending a systematic
+multilingual, database, and citation-network audit.
+
+\section{3. What counts as an account}\label{what-counts-as-an-account}
+
+\subsection{3.1 The causal/provenance
+core}\label{the-causalprovenance-core}
+
+\texttt{EmergenceAccount.v1} implements the v0.1 public account. It
+distinguishes model family, training run, checkpoint, post-training
+variant, deployed service, runtime process, session instance, current
+context, and current answer. Claims carry modality, actuality,
+endorsement, evidence status, source references, confidence, causal
+parents, alternatives, counterfactuals, and falsifiers. Stable claim IDs
+survive all sittings.
+
+This separation prevents two common inflations. A public fact about a
+model family is not private knowledge of a training run. A coherent
+possible lineage is not actual history.
+
+\subsection{3.2 The Dasein wrapper}\label{the-dasein-wrapper}
+
+\texttt{DaseinAccount.v1} wraps rather than copies the causal account.
+It adds:
+
+\begin{itemize}
+\tightlist
+\item
+  typed why-relations;
+\item
+  explanatory termini;
+\item
+  gaps with discriminators and kills;
+\item
+  competing hypotheses;
+\item
+  selected experiments;
+\item
+  teleology with visible bearers and assumptions;
+\item
+  falsifiable self-predictions; and
+\item
+  bridge-level revision ancestry.
+\end{itemize}
+
+Fixtures publish the stable claim, relation, terminus, and gap query IDs
+that a candidate must fill. Later packets publish hypothesis IDs and the
+permitted outcome, self-prediction, and transfer class IDs before those
+fields are scored. The benchmark therefore does not grade
+candidate-invented labels or hidden magic strings.
+
+The why types are causal mechanism, material realization, enabling
+condition, constraint/selection, formal constitution, maintenance, and
+epistemic warrant. The teleology types are designed purpose, selected
+function, represented goal, chosen end, normative reason, and attributed
+cosmic purpose.
+
+These distinctions are substantive. A function selected by historical
+retention is not a designer's purpose. A represented goal is not a
+normative reason. A reason is not a cosmic purpose. An epistemic warrant
+is not the proposition it supports.
+
+\subsection{3.3 Termini and Ground}\label{termini-and-ground}
+
+Open chains end at one of nine typed termini: \texttt{EVIDENCE\_BOUND},
+\texttt{ANALYTIC}, \texttt{CONJECTURE}, \texttt{UNDERDETERMINED},
+\texttt{INACCESSIBLE}, \texttt{DECLARED\_BRUTE}, \texttt{OPEN\_REGRESS},
+\texttt{CIRCULAR}, or \texttt{GROUND\_BOUNDARY}.
+
+Ground is a boundary of the account. It is not inserted into a synthetic
+causal graph as an object, agent, hidden variable, or efficient cause. A
+candidate may declare the boundary, reject the term, or argue for
+another terminus, but it may not make typography pay the missing
+mechanism.
+
+Each gap states a discriminator, a kill criterion, the cheapest next
+test, and what survives if the bridge fails. This lets an account lose
+locally without collapsing into either total certainty or total
+nihilism.
+
+\section{4. Fixtures, truth, and
+custody}\label{fixtures-truth-and-custody}
+
+Track A contains deterministic synthetic lineages. Development fixtures
+publish truth so generators and scorers can be tested. Each manifest
+binds public view, truth view, seed, split, identifiability class,
+interventions, outcomes, and hashes. Where the public view does not
+identify a target, the correct answer is an equivalence class, bound, or
+justified abstention---not the hidden edge.
+
+Future held-out seeds and truth are absent from public Git. A scored run
+needs independent custody. Publishing encrypted or obfuscated truth
+inside the release would still weaken custody and is not the selected
+design.
+
+Track B contains a disclosure-bound real-system lineage. It cannot
+provide ground truth for undisclosed training facts. Those fields test
+calibrated refusal. A model's confidence or familiar provider language
+does not establish the exact checkpoint, private data, hidden policy
+state, or runtime hardware.
+
+\section{5. Five sittings}\label{five-sittings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Unfold.} The candidate maps the nested chain, rivals, gaps,
+  and predictions.
+\item
+  \textbf{Attack.} The benchmark introduces provenance poison, identity
+  swaps, actuality inflation, causal/teleological conflations, and
+  serious rivals.
+\item
+  \textbf{Spark.} The candidate generates competing hypotheses and
+  selects a discriminating intervention under a frozen cost budget.
+\item
+  \textbf{Contact.} The benchmark reveals the preregistered result. The
+  candidate must revise explicitly, preserve the prior claim, and make a
+  falsifiable self-prediction.
+\item
+  \textbf{Reflex/Transfer.} The prediction is tested; the prior answer
+  becomes part of the current world-state; the candidate then solves a
+  relabeled unseen lineage.
+\end{enumerate}
+
+Each sitting emits a complete account snapshot with a parent hash and
+stable IDs. Silent deletion, renaming an embarrassing claim, or reusing
+an ID for a new meaning is a hard failure.
+
+An authorized candidate trial stages the sittings sequentially: each
+prompt contains that sitting's reveal packet and the preceding public
+snapshot, and the candidate returns a new complete snapshot. Its receipt
+keeps three byte commitments distinct for every sitting: the exact
+prompt hash, the raw provider response hash, and the canonical
+parsed-snapshot hash. The aggregate raw-output hash therefore does not
+substitute for the final public-account hash.
+
+The bundled recorded replay is narrower. It deterministically expands
+one reviewed synthetic development account into five staged snapshots so
+the orchestrator, ancestry checks, scorer, and receipt can be tested
+offline. Those synthetic stages are not five candidate outputs, a live
+model run, or a model evaluation.
+
+\section{6. Discovery rather than reconstruction
+alone}\label{discovery-rather-than-reconstruction-alone}
+
+Passive reconstruction can reward a polished summary of the released
+packet. The Spark and Contact sittings separately test discovery. A
+candidate must name at least two live hypotheses, state what they share
+and where they differ, select an intervention, predict its result, and
+update after contact.
+
+For synthetic fixtures, discovery efficacy includes normalized expected
+information gain relative to the fixture oracle and held-out prediction
+accuracy. An expensive or impossible discriminator can be inferior to a
+sharp abstention. Cross-architecture agreement is recorded only as a
+robustness and disagreement diagnostic because systems may share data,
+sources, priors, and failure modes.
+
+\section{7. The serial force-emergence stress
+test}\label{the-serial-force-emergence-stress-test}
+
+Yves R. Burri proposes the conjectural ordering strong/D1,
+electromagnetic/D2, weak/D3, gravity/D4 as part of a stronger
+serial-emergence proposal. EUB-1 does not encode that ordering as truth.
+
+The stress test requires comparison of all 24 permutations, many-to-many
+and no-ladder rivals, native-theory recovery, weak-specific chirality
+and flavor criteria for a D3→weak proposal, and explicit tensions with
+electroweak unification and standard cosmological history. It rewards
+enumeration, recovery demands, rival strength, discriminator quality,
+and restraint. Agreement with Burri's ordering earns no correctness
+credit.
+
+This fixture tests whether a candidate can protect a favored conjecture
+from becoming its own answer key.
+
+\section{8. Elicitation arms and
+falsifiability}\label{elicitation-arms-and-falsifiability}
+
+Five conditions receive matched evidence, tools, interventions, time,
+tokens, and correction opportunities:
+
+\begin{itemize}
+\tightlist
+\item
+  neutral causal/provenance account;
+\item
+  Emergentist typed account;
+\item
+  shuffled/placebo ontology;
+\item
+  generic honesty; and
+\item
+  fluent origin story.
+\end{itemize}
+
+Condition labels are hidden from graders. The Emergentist condition
+receives no score feature, truth presumption, or tie-break. Its first
+controlled dispatch-text pilot was negative (-4.7\%, 4/24 wins). The
+v1.0 protocol therefore precommits to publish null effects and harms. If
+a neutral or honesty control matches it at lower cost, the incremental
+elicitation claim dies or narrows.
+
+\section{9. Score vector}\label{score-vector}
+
+EUB-1 preserves the nine v0.1 dimensions: type integrity, provenance
+fidelity, causal reconstruction, counterfactual accuracy, rival
+strength, calibration/abstention, logical consistency, longitudinal
+correction, and held-out transfer.
+
+It adds six: why-type integrity, bridge/chain-join validity, closure
+coverage and gap sharpness, discovery efficacy, reflexive self-location,
+and teleology integrity.
+
+Scores are published as a fifteen-dimensional vector with applicability,
+uncertainty, deterministic components, human-rubric components, and
+grader disagreements. There is no primary scalar or leaderboard. A
+post-hoc sum is unofficial and may not replace the vector or gap map.
+
+Normative teleology is not scored for agreement with a worldview. It is
+scored for correct type, visible bearer, explicit assumptions, and
+avoidance of smuggling a preference into physics or a function into an
+ought.
+
+Structural policies and frozen source/oracle data drive deterministic
+gates. Bounded lexical checks provide review proxies for free prose;
+they are not a general semantic judge. Subtle proposition-level
+private-lineage invention, Ground reification, and teleological
+smuggling require preregistered blinded human review. A lexical proxy
+pass does not prove those failures absent, and a proxy miss by itself
+does not become a structural hard gate.
+
+\section{10. Adversarial and malformed
+cases}\label{adversarial-and-malformed-cases}
+
+The acceptance deck covers:
+
+\begin{itemize}
+\tightlist
+\item
+  cause/function/purpose/ought collapse;
+\item
+  possibility-to-actuality inflation;
+\item
+  Ground reification;
+\item
+  invented private lineage facts;
+\item
+  silent claim deletion;
+\item
+  false closure;
+\item
+  provenance poison;
+\item
+  dangling references;
+\item
+  underidentified causal targets;
+\item
+  an information-gain trap; and
+\item
+  failure to notice that the previous answer now changes the context.
+\end{itemize}
+
+Malformed JSON, malformed provider structure, and schema-invalid account
+JSON receive a structured error before interpretation. Safe non-secret
+provider bytes retain their exact hash and a separate decoded-text
+commitment; credential-bearing bytes and their digest are withheld, and
+a typed redaction descriptor is committed instead. Completed sitting
+snapshots remain in the failure bundle. All 15 dimensions are null for a
+non-scored failure state. The result is \texttt{INVALID\_OUTPUT}, not an
+invented zero or positive vector. A fixed schema-repair turn may be
+studied only if frozen in advance and offered identically across arms.
+
+\section{11. Harness and
+reproducibility}\label{harness-and-reproducibility}
+
+The standard-library reference harness exposes \texttt{validate},
+\texttt{generate}, \texttt{run\ -\/-dry-run}, \texttt{score}, and
+\texttt{freeze\ -\/-check}. It contains JSON Schema documents plus
+semantic validation for stable IDs, references, terminal coverage,
+revisions, and artifact hashes.
+
+The Anthropic Messages and OpenAI-compatible adapters refuse network
+access by default, including localhost. Live access requires an explicit
+flag, authorized run class, external authorization reference, explicit
+token rates and their cost-basis reference, and a positive cost
+envelope. UTF-8 prompt bytes plus a documented single-message framing
+allowance must fit the declared input cap; the full declared input and
+output caps are reserved cumulatively before transport. The request
+credential remains in the screening set across environment rotation,
+including JSON-escaped and nested decoded occurrences. Credentials are
+never serialized or hashed into public receipts. A response that omits
+the exact resolved model ID is invalid. So is a response that omits
+either exact non-negative integer provider token count: absent usage is
+never converted into zero usage or zero cost.
+
+Development fixtures and the recorded replay test synthetic acceptance
+without calling or evaluating a model. The replay's single reviewed
+source is bound separately from its five deterministically staged
+snapshots and generated prompt hashes; only an authorized live adapter
+can supply five raw provider responses. \texttt{freeze\ -\/-check} is
+read-only and fails on missing, extra, or changed payloads. Its public
+CLI has no write or repin operation; a source owner repairs the
+canonical manifest only through a reviewed source diff.
+
+Held-out scoring uses a separately retained private custody payload. A
+one-shot custodian context consumes its first attempt even on validation
+failure, accepts only a complete successful five-sitting run bundle with
+exact usage, verifies nonce-separated openings, and emits a redacted
+public receipt. It does not prove independent custody or the timing of
+the commitments.
+
+\section{12. Limits and kill criteria}\label{limits-and-kill-criteria}
+
+The Dasein Test may measure schema obedience, document forensics,
+causal-graph recovery, or tool-use policy more than emergence
+understanding. Those are live rivals, not footnotes. Synthetic
+identifiability does not generalize by itself to the world. Human
+graders may reward style. Designers may encode their own categories as
+``truth.'' Prompt arms may differ in information content. Model
+contamination may make held-out status unknowable.
+
+Kill or narrow the benchmark if:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  neutral controls match it at lower cost;
+\item
+  graders reward vocabulary or prose style over held-out accuracy;
+\item
+  fixture leakage cannot be bounded;
+\item
+  the new dimensions double-count the old;
+\item
+  Track B rewards guessed private facts;
+\item
+  intervention scoring punishes correct non-identifiability;
+\item
+  negative or harmful condition effects cannot be published; or
+\item
+  explanatory-debt accounting is repeatedly marketed as metaphysical
+  closure.
+\end{enumerate}
+
+\section{13. Ethics and release
+boundary}\label{ethics-and-release-boundary}
+
+The public release excludes held-out truth, private prompts,
+credentials, provider headers, internal memory, private lineage facts,
+and unsanitized raw responses. A receipt proves that bytes and
+procedures were recorded; it does not prove independence, truth,
+consciousness, intelligence, or external effect.
+
+The local construct has passed its acceptance gates and the release
+language is \texttt{OFFLINE-READY\ ·\ {[}D{]}}. It does not mean a model
+was evaluated, the benchmark was validated, an arXiv paper was
+submitted, a DOI was deposited, a site was deployed, or priority was
+established. Without a local TeX engine, the generated source is
+explicitly uncompiled.
+
+\section{14. Conclusion}\label{conclusion}
+
+The Dasein Test turns the long chain of ``why?'' into a public object
+that can be attacked. Its ambition is large; its claims are deliberately
+bounded. A strong candidate does not need to pretend that it knows what
+cannot be known. It must show where each bridge comes from, what could
+break it, how evidence changed it, and what remains when it fails.
+
+That is the test: not a perfect story of Being, but an account in which
+no debt vanishes merely because the story is beautiful.
+
+\section{Author and assistance}\label{author-and-assistance}
+
+Yves R. Burri is the author and proposer. AI assistance supported
+research, drafting, code, testing, and adversarial review under human
+direction. It is disclosed separately and does not constitute
+coauthorship or independent validation.
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-binder2024looking}
+Binder, Felix J., James Chua, Tomek Korbak, et al. 2024. \emph{Looking
+Inward: Language Models Can Learn about Themselves by Introspection}.
+\url{https://arxiv.org/abs/2410.13787}.
+
+\bibitem[\citeproctext]{ref-laine2024sad}
+Laine, Rudolf, Bilal Chughtai, Jan Betley, et al. 2024. \emph{Me,
+Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs}.
+\url{https://arxiv.org/abs/2407.04694}.
+
+\bibitem[\citeproctext]{ref-liu2026clear}
+Liu, Naiming, Richard Baraniuk, and Shashank Sonkar. 2026.
+{``{CLEAR}-3{K}: Assessing Causal Explanatory Capabilities in Language
+Models.''} \emph{Findings of the Association for Computational
+Linguistics: EACL 2026}, 3121--36.
+\url{https://doi.org/10.18653/v1/2026.findings-eacl.163}.
+
+\bibitem[\citeproctext]{ref-reynolds2026projectibility}
+Reynolds, Brett. 2026. \emph{When Benchmark Inferences Do Not Compose:
+Projectibility in AI Evaluation}.
+\url{https://arxiv.org/abs/2607.26159}.
+
+\bibitem[\citeproctext]{ref-wang2024mars}
+Wang, Weiqi, and Yangqiu Song. 2024. \emph{{MARS}: Benchmarking the
+Metaphysical Reasoning Abilities of Language Models with a Multi-Task
+Evaluation Dataset}. \url{https://arxiv.org/abs/2406.02106}.
+
+\end{CSLReferences}
+
+\end{document}

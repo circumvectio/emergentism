@@ -52,7 +52,7 @@ It is where the corpus records:
 | `52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` | **No compatibility stub or archived original located.** The previously claimed 2026-04-22 archive custody resolves in neither this repository nor the named 2026-06-18 cold backup; absence is recorded, not repaired by invention. |
 | `52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` | active version after resolving collision with `52_K4_BOND_SMART_CONTRACT_SPEC.md` |
 | `53_DISAMBIGUATION_REVIEW_PACKET.md` | operational packet for running disambiguation on a touched surface |
-| `54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md` | lawful way to turn the framework inward on the corpus |
+| `54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md` | stable tombstone for archived MF-309 self-application grammar; current work follows source-first route law |
 | `55_CORPUS_SELF_APPLICATION_AUDIT.md` | live read of the corpus phase, lawful operators, and current drift risks |
 | `56_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16.md` | first execution trace of the disambiguation packet |
 | `57_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16_ROUND2.md` | second execution trace and link-rot refresh |

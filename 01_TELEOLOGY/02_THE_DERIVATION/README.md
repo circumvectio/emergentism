@@ -78,6 +78,8 @@ The rest of the framework is not automatically proved by these lines. Core State
 | [`13_PATHS_ABC_ANALYSIS.md`](13_PATHS_ABC_ANALYSIS.md) | *(Kintsugi tombstone, 2026-07-22 — its own status reads "HISTORICAL — not current force canon".)* The claim that these routes run from S² to the Standard Model is withdrawn there; the standard geometric and spectral facts remain, the force identifications do not. The owner it names is [W7-ORIGIN in `04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md#W7-modularity-and-origin-custody). |
 | [`16_OPERATOR_CONSISTENCY_AUDIT.md`](16_OPERATOR_CONSISTENCY_AUDIT.md) | Authoritative operator-routing note separating the weighted sphere baseline, exact `u`-chart representation, flat 1D control, and intended Liouville-normal-form target. |
 
+| [Burri Sequential Force-Emergence Conjecture](07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md) | Yves R. Burri’s dated first-party four-force proposal: a noncanonical 24-permutation D1–D4 research program; no causal-emergence or priority claim. |
+
 ### Audit and Track Files
 
 | File | Purpose |

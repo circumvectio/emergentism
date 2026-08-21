@@ -41,6 +41,12 @@ types; the geometry is a lens, never the Ground. The former mixed-type infix is
 retired. The papers approach the limit by being *refutable* — the only kind
 worth publishing.
 
-**External sources.** Suda's source PDFs are tracked by provenance under [`_SOURCES/`](_SOURCES/README.md): Parts I-III are git-ignored third-party PDFs kept on disk with SHA-256 and byte counts. The 2026-06-06 Suda intake pass also produced the synthesis note [`00_SUDA_VALUE_EXTRACTION_2026_06_06.md`](00_SUDA_VALUE_EXTRACTION_2026_06_06.md), which separates adoptable reciprocal geometry from broader intake claims that remain `[C]/[I]`.
+**External sources.** Suda's source PDFs are tracked by provenance under
+[`_SOURCES/`](_SOURCES/README.md): all eleven third-party PDFs are
+Git-LFS-tracked, with SHA-256 and byte counts recorded there. The 2026-06-06
+Suda intake pass also produced the synthesis note
+[`00_SUDA_VALUE_EXTRACTION_2026_06_06.md`](00_SUDA_VALUE_EXTRACTION_2026_06_06.md),
+which separates adoptable reciprocal geometry from broader intake claims that
+remain `[C]/[I]`.
 
 • ⊙ ○ — *operator-free selected emblem*

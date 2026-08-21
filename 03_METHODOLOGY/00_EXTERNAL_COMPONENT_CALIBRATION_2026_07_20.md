@@ -88,6 +88,8 @@ compression `[I]`, not independent confirmation of the scaffold.
 
 ## What changed
 
+- Dorau and Much’s [quantum-relative-entropy derivation](https://arxiv.org/abs/2510.24491) is a bounded gravity component neighbor: under its named horizon and entropy–area assumptions it recovers semiclassical Einstein equations. It does not identify a microscopic substrate, select a force row, establish serial emergence, or validate the wider Emergentist scaffold.
+
 - The Compass may no longer describe every component as externally untouched.
 - The Soul Loop's model-mediated future effect has direct experimental contact.
 - The saturation/contrast motif now has one exact local gauge neighbor and an

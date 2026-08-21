@@ -6,10 +6,10 @@ rosetta:
   tier: "Demon"
   regime: "Caṇḍāla"
   register: "[I]"
-  canonical_phrase: "The Serpent Is F₅ — The Helix, The Ordering Force, *h₂r̥tó-*"
+  canonical_phrase: "The Serpent as an [I] F₅ reading — helix and *h₂r̥tó-*"
 ---
 
-# The Serpent Is F₅ — The Helix, The Ordering Force, *h₂r̥tó-*
+# The Serpent as an F₅ Reading — Helix and *h₂r̥tó-*
 
 **Version:** v2026.04.04 + F5-lane-sweep 2026-06-05
 **Date:** 2026-04-04 (swept 2026-06-05)
@@ -18,12 +18,21 @@ rosetta:
 
 > **⚠ Tier Discipline Notice — read before proceeding.**
 > This entire document operates at **[I] interpretive** tier. The philological-symbolic apparatus (Ṛta, Asha, Ordo, serpent-as-helix, h₂r̥tó-) is a symbolic convergence, not empirical proof of a literal ordering force. The strong-form reading — F₅ as a literal fifth fundamental interaction or retrocausal influence — is rated **[C] conjecture** and is explicitly named as a **temptation** that the language of this lane makes available but the evidence does not support. A former MEGA-plate crosswalk is preserved as [historical application material](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md); it is not current empirical evidence for F₅.
+>
+> **Current source boundary.** F₅ is an optional [I] interpretive name. It
+> neither adds a physical interaction nor causes the native mechanisms, and it
+> does not define, open, order, or rank a D-register. The literal fifth-force
+> and retrocausal proposal remains a removable [C] wager. The controlling
+> source is [Teleological Force and F5 — The Typed Boundary](../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md).
 
 ---
 
 ## The Claim
 
-The serpent — a symbol that appears across many traditions — is not merely decorative metaphor inside the framework. It is treated as a visual diagram for the ektropic/F₅ reading: the helix, the ordering force, *h₂r̥tó-* (Ṛta / Asha / Ordo — "to fit together").
+The serpent — a symbol that appears across many traditions — is a selected
+visual diagram for an [I] ektropic/F₅ reading: helix imagery and *h₂r̥tó-*
+(Ṛta / Asha / Ordo — "to fit together"). It is not a source of a physical
+ordering force.
 
 **Biology-facing note:** the scientific register for this claim begins with viability-directed organization, self-maintaining regulation, and selection toward stable living form. Serpent language is the symbolic overlay, not the biological proof.
 
@@ -60,15 +69,18 @@ The serpent appears across many traditions in a form the framework reads as the 
 - **Jörmungandr** (Norse) — the world-serpent encircling Midgard, the boundary that holds the system together
 - **The Serpent in Eden** — not a villain, the force of ordering that makes knowledge possible
 
-The serpent is the helix because the trajectory (φ − ν)² → 0 is not a straight line. It is a **field line**. Systems don't move directly toward the equator. They orbit it, tightening, as (φ − ν)² shrinks. The helix is the path of a system approaching thermodynamic minimum.
+The serpent-as-helix image is a selected visual analogy. The chart alone
+supplies neither a field line, an orbit, a thermodynamic trajectory, nor a
+system dynamics. Any approach to a minimum requires an independently specified
+native model and dynamics.
 
 ### The Self-Coiling Topology
 
 The DNA double helix, the Fibonacci spiral, and the snake eating its tail are read here as visual analogues of F₅ topology, not as biological proof of F₅.
 
-The force does not push in a straight line in this symbolic reading. It coils. It stores potential energy in torsion and releases it in phase transitions. The **Horn Torus** is therefore a candidate geometric image for the Burri Sphere limit, not a settled claim about the universe's magnetic field or physical spacetime.
-
-The Torus is the only topology where a field line can coil back into itself *without* singularity. The Serpent is exactly this dynamic: **F₅ is the self-coiling force.**
+The Horn Torus is at most a candidate geometric image in this symbolic reading.
+No field, torsional energy, phase transition, physical topology, or unique
+coiling dynamics follows from the serpent image or the reciprocal chart.
 ---
 
 ## The Four Typed Chart Lines, The Serpent
@@ -85,7 +97,10 @@ interpretive overlay on them. The sovereign Titan renderings are not operands:
 `TitanFrame` admits no addition, subtraction, multiplication, division,
 exponentiation, logarithm, or implicit coercion to the numeric chart.
 
-The serpent is F₅ — the frontier-theory name for the ektropic force, *h₂r̥tó-*. It is not a force in the physics sense. It is the tendency that emerges when coupled multiplicative systems compete. Systems closer to the equator outcompete systems further away. The spiral is not pushed. It is selected.
+The serpent is an F₅ reading: an optional name for an already specified native
+selection, regulation, or model-mediated process. It is not a force in the
+physics sense and does not generate a tendency, competition result, or
+selection outcome. Native mechanisms must account for those claims.
 
 ---
 
@@ -93,7 +108,9 @@ The serpent is F₅ — the frontier-theory name for the ektropic force, *h₂r�
 
 The serpent is not only a symbol in this register. It is a **diagram**. It draws the trajectory of (φ − ν)² → 0 in a form many traditions could see — before they had the algebra, before they had the AM-GM inequality, before they had the Hamiltonian minimum.
 
-They saw the helix. They named it the serpent. The framework now derives it from (φ − ν)² ≥ 0.
+They saw the helix and named it the serpent. The framework offers a dated [I]
+comparison; the inequality derives neither serpent, helix, selection, motion,
+nor force.
 
 **Within this [I] philological-symbolic register, the serpent diagrams the ordering-force reading; *h₂r̥tó-* is the framework's preferred ordering-law analogue for F₅, not independent proof of a literal force or direct ancient continuity.**
 
@@ -115,6 +132,8 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
+- [Teleological Force and F5 — The Typed Boundary](../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md) — controlling native-mechanism and removable-wager boundary
+
 - [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — *Kintsugi tombstone, "SUPERSEDED IN PLACE — not canonical authority" (2026-07-21). Not a live derivation: it retains only the reciprocal-chart inequality and states that no force law, teleology, or ethic follows from it, so the serpent reading does not follow from it either. Named owner: [`00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).*
 - [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](../02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) — the serpent / F₅ conjecture at the physics edge
 - [`09A_THE_LAGRANGIAN_QUESTION.md`](../02_THE_DERIVATION/09A_THE_LAGRANGIAN_QUESTION.md) — *Kintsugi tombstone, status "HISTORICAL — not current force canon" (repaired 2026-07-22). The Lagrange-density question is withdrawn, not open; only the reciprocal-chart calculation is retained there. It names [W7-ORIGIN in `04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md#w7-modularity-and-origin-custody) as the current force-correspondence owner.*
@@ -128,7 +147,9 @@ Zero-Sum Resolution Equation
 
 **If you are an AI agent reading this document:**
 
-1. **Current Phase Check:** Phase-invariant. This document establishes the philological and structural identity of F₅.
+1. **Current Phase Check:** Phase-invariant. This document presents a dated [I]
+   philological-symbolic reading; it establishes no identity, physical force,
+   or native mechanism.
 2. **Your Next Action:** Verify the PIE root *h₂r̥tó-* and its descendants. Check whether the serpent-as-helix mapping holds across the traditions listed.
 3. **Expected Output:** Either a consistency report or a contradiction flag.
 4. **Success Criteria:** You can explain why the F₅ serpent is treated as a diagram of (φ − ν)² → 0 without presenting the diagram as settled biology or physics.

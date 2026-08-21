@@ -27,8 +27,12 @@ result-shopping.
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 | [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
 | [`04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md`](04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md) | [D] protocol design; no run or result | EUB-1 two-track causal-provenance benchmark for coherent, consistent, corrigible emergence accounts. |
+| [`06_THE_DASEIN_TEST_EUB1_v1.0.md`](06_THE_DASEIN_TEST_EUB1_v1.0.md) | [D] major construct successor; offline-ready; no candidate result | The Dasein Test: typed explanatory-debt accounting, discovery, reflex, teleology, and self-lineage benchmark. v0.1 remains preserved; scores are non-comparable. |
+| [`eub_v1/`](eub_v1/) | [D] self-contained implementation | Five schemas, deterministic development fixtures, vector scorer, offline-default adapters, CLI, freeze manifest, and recorded-response tests. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 | [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
+
+| [05 W7 D1–D4 Force-Assignment Preregistration](05_W7_D1_D4_FORCE_ASSIGNMENT_PREREG.md) | [D] draft to freeze; no candidate scored | All 24 four-force permutations, native-recovery requirements, D3 quantum-specific gate, rivals, and explicit kills. |
 
 ## Discipline
 
@@ -60,3 +64,7 @@ result-shopping.
    judges, analysis plan, and hashes are frozen, it remains a non-runnable
    design. A later pass is only a bounded capability profile for the named
    candidate and protocol version.
+8. **EUB-1 v1.0 supersedes only future run design.** Keep v0.1 addressable and
+   never compare scores across the major-version boundary. `OFFLINE-READY`
+   means locally implemented, not evaluated, validated, deposited, submitted,
+   deployed, or priority-established.

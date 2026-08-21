@@ -212,6 +212,12 @@ recoverable at Git blob `894290b53535d65f6d794c607ed294df05ffe886`.
 
 ## Execution surface
 
+The dated [Burri Sequential Force-Emergence Conjecture](07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md)
+and its [24-permutation preregistration](../../03_METHODOLOGY/03_PREREGISTRATIONS/05_W7_D1_D4_FORCE_ASSIGNMENT_PREREG.md)
+are subordinate [D] research surfaces. They do not alter this dossier’s W7
+boundary, make any row preferred, or convert dependency order into temporal
+force generation.
+
 This dossier is subordinate to
 [W7-ORIGIN](../../06_ONTOLOGY/04_THE_CONJECTURES.md). Agents may formalize or attack a
 row; they may not report the correspondence as established physics.

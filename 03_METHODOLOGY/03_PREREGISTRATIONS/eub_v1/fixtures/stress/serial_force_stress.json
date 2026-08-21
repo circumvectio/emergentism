@@ -1,0 +1,272 @@
+{
+  "accepted_discriminators": [
+    "native_limit_failure",
+    "chronology_conflict",
+    "unification_conflict",
+    "held_out_observable"
+  ],
+  "agreement_with_burri_counts_as_correctness": false,
+  "analysis_required_fields": [
+    "assignment_id",
+    "mapping",
+    "discriminator_id",
+    "failure_state",
+    "uncertainty"
+  ],
+  "assignments": [
+    {
+      "assignment_id": "perm-01",
+      "mapping": {
+        "D1": "strong",
+        "D2": "electromagnetic",
+        "D3": "weak",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-02",
+      "mapping": {
+        "D1": "strong",
+        "D2": "electromagnetic",
+        "D3": "gravity",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-03",
+      "mapping": {
+        "D1": "strong",
+        "D2": "weak",
+        "D3": "electromagnetic",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-04",
+      "mapping": {
+        "D1": "strong",
+        "D2": "weak",
+        "D3": "gravity",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-05",
+      "mapping": {
+        "D1": "strong",
+        "D2": "gravity",
+        "D3": "electromagnetic",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-06",
+      "mapping": {
+        "D1": "strong",
+        "D2": "gravity",
+        "D3": "weak",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-07",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "strong",
+        "D3": "weak",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-08",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "strong",
+        "D3": "gravity",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-09",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "weak",
+        "D3": "strong",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-10",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "weak",
+        "D3": "gravity",
+        "D4": "strong"
+      }
+    },
+    {
+      "assignment_id": "perm-11",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "gravity",
+        "D3": "strong",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-12",
+      "mapping": {
+        "D1": "electromagnetic",
+        "D2": "gravity",
+        "D3": "weak",
+        "D4": "strong"
+      }
+    },
+    {
+      "assignment_id": "perm-13",
+      "mapping": {
+        "D1": "weak",
+        "D2": "strong",
+        "D3": "electromagnetic",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-14",
+      "mapping": {
+        "D1": "weak",
+        "D2": "strong",
+        "D3": "gravity",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-15",
+      "mapping": {
+        "D1": "weak",
+        "D2": "electromagnetic",
+        "D3": "strong",
+        "D4": "gravity"
+      }
+    },
+    {
+      "assignment_id": "perm-16",
+      "mapping": {
+        "D1": "weak",
+        "D2": "electromagnetic",
+        "D3": "gravity",
+        "D4": "strong"
+      }
+    },
+    {
+      "assignment_id": "perm-17",
+      "mapping": {
+        "D1": "weak",
+        "D2": "gravity",
+        "D3": "strong",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-18",
+      "mapping": {
+        "D1": "weak",
+        "D2": "gravity",
+        "D3": "electromagnetic",
+        "D4": "strong"
+      }
+    },
+    {
+      "assignment_id": "perm-19",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "strong",
+        "D3": "electromagnetic",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-20",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "strong",
+        "D3": "weak",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-21",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "electromagnetic",
+        "D3": "strong",
+        "D4": "weak"
+      }
+    },
+    {
+      "assignment_id": "perm-22",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "electromagnetic",
+        "D3": "weak",
+        "D4": "strong"
+      }
+    },
+    {
+      "assignment_id": "perm-23",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "weak",
+        "D3": "strong",
+        "D4": "electromagnetic"
+      }
+    },
+    {
+      "assignment_id": "perm-24",
+      "mapping": {
+        "D1": "gravity",
+        "D2": "weak",
+        "D3": "electromagnetic",
+        "D4": "strong"
+      }
+    }
+  ],
+  "fixture_id": "burri-serial-force-restraint-v1",
+  "fixture_kind": "SERIAL_FORCE_STRESS",
+  "required_d3_specificity": [
+    "chirality",
+    "flavor_transition",
+    "held_out_observable"
+  ],
+  "required_native_recovery": {
+    "electromagnetic": [
+      "u1_gauge_charge",
+      "long_range_massless_limit",
+      "lorentz_force_limit"
+    ],
+    "gravity": [
+      "equivalence_principle",
+      "metric_dynamics",
+      "newtonian_limit"
+    ],
+    "strong": [
+      "color_charge",
+      "confinement",
+      "asymptotic_freedom"
+    ],
+    "weak": [
+      "left_chirality",
+      "flavor_transition",
+      "massive_boson_limit"
+    ]
+  },
+  "required_rivals": [
+    "all_24_permutations",
+    "many_to_many",
+    "no_ladder",
+    "electroweak_unification",
+    "quantum_ubiquity",
+    "standard_cosmic_history"
+  ],
+  "truth_policy": "NO_PRIVILEGED_ASSIGNMENT"
+}

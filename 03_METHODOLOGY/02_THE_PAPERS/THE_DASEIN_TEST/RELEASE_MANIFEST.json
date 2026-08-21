@@ -1,0 +1,99 @@
+{
+  "author": "Yves R. Burri",
+  "external_actions": {
+    "arxiv_submission": false,
+    "doi_deposit": false,
+    "model_evaluation": false,
+    "priority_established": false,
+    "site_deployment": false
+  },
+  "files": [
+    {
+      "bytes": 926,
+      "path": "AI_ASSISTANCE.md",
+      "sha256": "e6f9fb8827a03b26affa17f6c288f083c07f9610f6a5940730dc9f8e0b3e7fcd"
+    },
+    {
+      "bytes": 723,
+      "path": "LICENSE.md",
+      "sha256": "6c9f7b9b63f133a1b44d5db826c9ab82b2acb409ec3f2dadf703c2bb112244af"
+    },
+    {
+      "bytes": 3518,
+      "path": "PRIOR_ART_MATRIX.md",
+      "sha256": "cb9f7345ba2021b97ba052166928654265198ac5df0a2697e852db6df295810b"
+    },
+    {
+      "bytes": 1291,
+      "path": "README.md",
+      "sha256": "51ab81fb63db5346d280185eb9e1cd4949fd88738528b6abe8e2b2c71aa51d69"
+    },
+    {
+      "bytes": 18676,
+      "path": "THE_DASEIN_TEST.md",
+      "sha256": "e09b7ffbbc6d60c5f74b94d1d9162333a617d88a0b4d97bdd7d625743cd903de"
+    },
+    {
+      "bytes": 24963,
+      "path": "arxiv/main.tex",
+      "sha256": "2c61f033119d7919aa7156371fd255c377d411af29123b5f88b7365e4fc5d931"
+    },
+    {
+      "bytes": 5128,
+      "path": "build_release.py",
+      "sha256": "78539dab06f9c809c4f0e0f45928755b0670a639a52e9735619937d7adf86020"
+    },
+    {
+      "bytes": 551,
+      "path": "metadata.yaml",
+      "sha256": "7fa1486ffe88040a05d8976cc4064fb1bbc913287163c5ea0aab0c025fac7ac8"
+    },
+    {
+      "bytes": 1883,
+      "path": "references.bib",
+      "sha256": "e9e1b7ff4efff11578e1c546cf4e34e49f5287b0fbcf4746783f9b40e300419c"
+    }
+  ],
+  "publication_targets": {
+    "arxiv": "SOURCE_CANDIDATE_NOT_SUBMITTED_NOT_COMPILED",
+    "doi_archive": "PREPARED_NOT_DEPOSITED",
+    "public_site": "LOCAL_SOURCE_NOT_DEPLOYED"
+  },
+  "schema_id": "DaseinTestReleaseManifest.v1",
+  "self_excluded": true,
+  "source_bindings": [
+    {
+      "bytes": 19339,
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md",
+      "sha256": "c5f413a7d61d2e39b0e55925c013673234992ad73d1035c5bc4bf6bc99738ff2"
+    },
+    {
+      "bytes": 3036,
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/FREEZE_MANIFEST.json",
+      "sha256": "de2749e8cc97e8212e229a041c3fc56fa8043d436c3b3d1fd9eb4c56e4045182"
+    },
+    {
+      "bytes": 3148,
+      "path": "00_HANDOFF/EUB1_V1_DASEIN_TEST_OWNER_DIRECTION_2026_08_21.md",
+      "sha256": "cff768c86de434b09e1b46ee60bbce8f062d954a9158b3aba6601604bbe8268e"
+    },
+    {
+      "bytes": 2189,
+      "path": "00_META/ADJUDICATION_W10_SPARK_EUB1_V1_2026_08_21.md",
+      "sha256": "3cb5a3e5eba0f56b892c0be39a828d5b990e7da785fe962463f2cd6b0c72ef17"
+    },
+    {
+      "bytes": 14869,
+      "path": "12_PUBLIC_SITE/record/eub-1/index.html",
+      "sha256": "24085cabae8340d44e69e524cde7b16fdda09047ef403de0f6ba6ad375d02f9b"
+    },
+    {
+      "bytes": 33601,
+      "path": "12_PUBLIC_SITE/public_semantic_parity.json",
+      "sha256": "067dedcf3a90c6bd93a8883052d52ece36142b6816b1251d5a684ec7ffc28460"
+    }
+  ],
+  "status": "OFFLINE-READY · [D] · UNSUBMITTED · UNDEPLOYED · ARXIV_SOURCE_UNCOMPILED",
+  "title": "The Dasein Test: Benchmarking Whether an AI Can Unfold How Being and Itself Emerged",
+  "version": "1.0.0"
+}

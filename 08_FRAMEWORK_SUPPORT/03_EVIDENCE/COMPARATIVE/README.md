@@ -44,13 +44,18 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../00_
 | `The_Corpus_Hermeticum.pdf` | Imported primary-source reference (Hermetic corpus). |
 | `The_Sovereign_Path.pdf` | Imported reference text. |
 | `dissolution_game_theory.pdf` | Imported reference text. |
-| `THE_PATTERN_Atlantean_Constitution_FINAL.docx` | Imported reference document. |
+| [`THE_PATTERN_Atlantean_Constitution_FINAL.TOMBSTONE.md`](THE_PATTERN_Atlantean_Constitution_FINAL.TOMBSTONE.md) | Dated custody pointer for an imported document removed from active comparison because its fixed-hierarchy and exclusion prescriptions conflict with the active equal-worth boundary. |
 
-The four binary files are unendorsed source imports kept for comparison; only the markdown note carries a framework reading.
+The three remaining binary files are unendorsed source imports kept for
+comparison; only the markdown note carries a framework reading. The former
+DOCX is preserved under dated archive custody and is not available as an active
+comparison input.
 
 ## Active vs Archive
 
-Assume these materials are reference inputs. Active status means they are available for comparison, not that every file is endorsed.
+Assume these materials are reference inputs. Active status means they are
+available for comparison, not that every file is endorsed. A quarantine or
+tombstone is not an endorsement, a replacement source, or public projection.
 
 ## Execution Surface
 

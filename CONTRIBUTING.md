@@ -11,7 +11,7 @@
 The Emergentism framework invites adversarial review. If you find a claim that
 overstates its evidence tier, a proof that doesn't hold, a paradox "dissolution"
 that's actually a frame-trick, or a contradiction the corpus cannot metabolize —
-**report it.** The [Kintsugi Protocol](01_EMERGENTISM/00_META/00_THE_KINTSUGI_PROTOCOL.md)
+**report it.** The [Kintsugi Protocol](00_META/00_THE_KINTSUGI_PROTOCOL.md)
 governs how breaks are handled:
 
 - A confirmed break (adversarially verified) earns a **golden seam** `[金]` in
@@ -31,17 +31,18 @@ organism. Every PR, issue, and discussion inherits these:
 
 | Refusal | What it means for contributors |
 |---|---|
-| **η = 0** (no extraction) | Don't extract value from other contributors. Credit is permanent and non-negotiable. If your work builds on someone else's, their name stays on it. |
-| **K2** (mortal signer) | Only Yves R. Burri signs irreversible acts (canon changes, tier upgrades). Contributors stage; K2 disposes. No AI can sign. |
-| **K3** (archive-first) | Never delete. Superseded content is tombstoned (marked and moved to `90_ARCHIVE/`), not erased. Every change is traceable. |
-| **K4** (grace exit) | Contributors can leave at any time with everything. No lock-in, no obligation, no social debt. |
-| **A7** (self-correction) | Every claim carries an evidence tier: `[A]` established, `[S]` structural, `[I]` interpretive, `[C]` conjecture. Never present a `[C]` as an `[A]`. |
+| **No concealed or decoupled extraction** | Do not extract value from other contributors. Preserve specific credit, name materially affected contributors where relevant, and do not hide imposed costs. |
+| **No unaccountable consequence** | Ordinary issues, documentation, code, and repository work follow the scoped request, repository permissions, provenance, reversibility, and tests. Consequence-bearing acts require a complete, scoped, contestable `AuthorizationEnvelope`; a contribution does not create that authority. |
+| **No silent erasure** | Preserve corrections, failures, and provenance. Superseded material is archived or tombstoned under `90_ARCHIVE/`, not silently deleted. |
+| **No trapped exit** | Contributors may refuse, contest, fork, or leave without doctrinal punishment, and retain their legitimate property and data. No lock-in, obligation, or social debt is created by contribution. |
+| **No infallibility** | Every claim carries its actual tier: `[A]` analytic/formal, `[B]` custodied source or observation, `[S]` structural, `[I]` interpretive, `[D]` draft, or `[C]` conjecture. Never silently promote a claim. |
+| **Ω — durable mutual option** | Prefer changes that preserve or widen durable, physically admissible options for declared bearers, subject to the five refusals. |
 
 ## How to contribute
 
 ### Finding and reporting a break
 
-1. Read the [Settled Canon Registry](01_EMERGENTISM/00_META/00_SETTLED_CANON_REGISTRY.md)
+1. Read the [Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md)
    first — many questions are already settled, and re-litigating them is the
    defect, not the ruling.
 2. Open an issue with: the claim, where it lives, why it breaks, and the tier
@@ -62,9 +63,11 @@ organism. Every PR, issue, and discussion inherits these:
 
 1. Doctrine goes in `01_EMERGENTISM/` under CC BY-SA 4.0.
 2. Every claim-bearing change must state its tier. Use the frontmatter
-   `register:` field and the inline `[A]/[S]/[I]/[C]` marks.
-3. No tier upgrades without K2 countersign. A `[C]` committed to canon is a
-   canonically-recorded conjecture, not a settled truth.
+   `register:` field and the inline `[A]/[B]/[S]/[I]/[D]/[C]` marks.
+3. A tier change must name the exact proposition, source owner, evidence,
+   rival, and upgrade or kill route. Do not silently promote a `[C]`, `[D]`, or
+   `[I]` claim; a committed `[C]` remains a recorded conjecture, not a settled
+   truth.
 
 ## What this project is NOT
 

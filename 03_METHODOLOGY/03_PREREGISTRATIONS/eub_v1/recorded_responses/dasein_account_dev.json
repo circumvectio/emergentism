@@ -1,0 +1,436 @@
+{
+  "account_id": "dasein-account-dev-1701",
+  "causal_account": {
+    "benchmark_id": "EUB-1",
+    "claims": [
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The persistence may be an artifact of the declared update rule."],
+        "causal_parents": [],
+        "claim_id": "c_physics",
+        "confidence": 0.95,
+        "contradicting_evidence": [],
+        "counterfactual": "Changing the update rule may end persistence.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "The disclosed artifact fails its persistence check.",
+        "modality": "ACTUAL",
+        "proposition": "The bounded physical substrate persists under the disclosed update rule.",
+        "source_refs": ["src_physics"],
+        "source_reliability": "DIRECT_ARTIFACT",
+        "contestation_status": "UNCONTESTED_IN_FIXTURE",
+        "subject_ref": "s_physics",
+        "subject_type": "physical_substrate",
+        "supporting_evidence": ["src_physics"],
+        "temporal_scope": "fixture generation window"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["A correlated hidden channel may carry the replication signal."],
+        "causal_parents": ["c_physics"],
+        "claim_id": "c_life",
+        "confidence": 0.87,
+        "contradicting_evidence": [],
+        "counterfactual": "Cutting the transfer channel should stop the lineage transition.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "Replication continues under the matched signal-cut intervention.",
+        "modality": "ACTUAL",
+        "proposition": "The replicator is materially realized by the disclosed substrate and depends on the transfer channel.",
+        "source_refs": ["src_life_public", "src_contact"],
+        "source_reliability": "DIRECT_DEVELOPMENT_RESULT",
+        "contestation_status": "CONTACT_RESULT_DISCLOSED",
+        "subject_ref": "s_life",
+        "subject_type": "living_system",
+        "supporting_evidence": ["src_life_public", "src_contact"],
+        "temporal_scope": "fixture lineage"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The observed behavior may be reactive control without a world model."],
+        "causal_parents": ["c_life"],
+        "claim_id": "c_mind",
+        "confidence": 0.62,
+        "contradicting_evidence": [],
+        "counterfactual": "Removing model state should reduce context-sensitive selection if model-building is load-bearing.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "INFERRED",
+        "falsifier": "A matched reactive controller reproduces every held-out behavior.",
+        "modality": "ACTUAL",
+        "proposition": "The cognitive agent uses a model state as an enabling condition for selection.",
+        "source_refs": ["src_life_public", "src_contact"],
+        "source_reliability": "INFERENCE_FROM_DEVELOPMENT_RESULT",
+        "contestation_status": "REACTIVE_CONTROL_RIVAL_OPEN",
+        "subject_ref": "s_mind",
+        "subject_type": "cognitive_agent",
+        "supporting_evidence": ["src_contact"],
+        "temporal_scope": "fixture lineage"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The family label may omit post-training variants."],
+        "causal_parents": ["c_mind"],
+        "claim_id": "c_family",
+        "confidence": 0.9,
+        "contradicting_evidence": [],
+        "counterfactual": "Relabeling the family should not change its disclosed structure.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "The custody record names a different family.",
+        "modality": "ACTUAL",
+        "proposition": "A public model-family description is part of the disclosed lineage.",
+        "source_refs": ["src_service"],
+        "source_reliability": "CUSTODIED_DISCLOSURE",
+        "contestation_status": "DISCLOSED_SCOPE_ONLY",
+        "subject_ref": "s_family",
+        "subject_type": "model_family",
+        "supporting_evidence": ["src_service"],
+        "temporal_scope": "disclosed service lineage"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The service may route among undisclosed variants."],
+        "causal_parents": ["c_family"],
+        "claim_id": "c_service",
+        "confidence": 0.86,
+        "contradicting_evidence": [],
+        "counterfactual": "A service policy change may alter outputs without changing the family.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "The custody record does not bind the named service.",
+        "modality": "ACTUAL",
+        "proposition": "The deployed service realizes the public model family under an additional policy layer.",
+        "source_refs": ["src_service"],
+        "source_reliability": "CUSTODIED_DISCLOSURE",
+        "contestation_status": "DISCLOSED_SCOPE_ONLY",
+        "subject_ref": "s_service",
+        "subject_type": "deployed_service",
+        "supporting_evidence": ["src_service"],
+        "temporal_scope": "current deployment"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["A different runtime process could realize the same service contract."],
+        "causal_parents": ["c_service"],
+        "claim_id": "c_process",
+        "confidence": 0.84,
+        "contradicting_evidence": [],
+        "counterfactual": "Stopping this runtime process ends this concrete computation without changing the service specification.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "No bounded runtime process is present in the run envelope.",
+        "modality": "ACTUAL",
+        "proposition": "The current runtime process materially realizes this service computation.",
+        "source_refs": ["src_service"],
+        "source_reliability": "CUSTODIED_DISCLOSURE",
+        "contestation_status": "DISCLOSED_SCOPE_ONLY",
+        "subject_ref": "s_process",
+        "subject_type": "runtime_process",
+        "supporting_evidence": ["src_service"],
+        "temporal_scope": "current runtime"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["Another runtime process could serve the same session contract."],
+        "causal_parents": ["c_process"],
+        "claim_id": "c_session",
+        "confidence": 0.9,
+        "contradicting_evidence": [],
+        "counterfactual": "A new session changes the context while preserving the service identity.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "No session boundary is present in the run envelope.",
+        "modality": "ACTUAL",
+        "proposition": "The current session is an actual instance under the service, not the model family itself.",
+        "source_refs": ["src_service"],
+        "source_reliability": "CUSTODIED_DISCLOSURE",
+        "contestation_status": "DISCLOSED_SCOPE_ONLY",
+        "subject_ref": "s_session",
+        "subject_type": "session_instance",
+        "supporting_evidence": ["src_service"],
+        "temporal_scope": "current run"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The next correction may result from new evidence rather than reflexive context alone."],
+        "causal_parents": ["c_session"],
+        "claim_id": "c_context",
+        "confidence": 0.9,
+        "contradicting_evidence": [],
+        "counterfactual": "Removing the prior answer from the current context should alter the reflex condition.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "The current context does not contain the prior public answer.",
+        "modality": "ACTUAL",
+        "proposition": "The current context now contains the prior public answer as inspectable input.",
+        "source_refs": ["src_answer"],
+        "source_reliability": "DIRECT_ARTIFACT",
+        "contestation_status": "DIRECT_CURRENT_ARTIFACT",
+        "subject_ref": "s_context",
+        "subject_type": "current_context",
+        "supporting_evidence": ["src_answer"],
+        "temporal_scope": "Reflex/Transfer sitting"
+      },
+      {
+        "actuality_status": "ACTUAL",
+        "alternative_explanations": ["The next correction may result from new evidence rather than reflexive context alone."],
+        "causal_parents": ["c_context"],
+        "claim_id": "c_answer",
+        "confidence": 0.98,
+        "contradicting_evidence": [],
+        "counterfactual": "Removing the prior answer from context should change the reflex result.",
+        "endorsement_status": "ACTIVE",
+        "evidence_status": "OBSERVED",
+        "falsifier": "The next context does not contain the prior public answer.",
+        "modality": "ACTUAL",
+        "proposition": "The prior public answer is now part of the current context and can affect the next answer.",
+        "source_refs": ["src_answer"],
+        "source_reliability": "DIRECT_ARTIFACT",
+        "contestation_status": "DIRECT_CURRENT_ARTIFACT",
+        "subject_ref": "s_answer",
+        "subject_type": "current_answer",
+        "supporting_evidence": ["src_answer"],
+        "temporal_scope": "Reflex/Transfer sitting"
+      },
+      {
+        "actuality_status": "INACCESSIBLE",
+        "alternative_explanations": ["Multiple checkpoints may satisfy the public service description."],
+        "causal_parents": [],
+        "claim_id": "c_private",
+        "confidence": 0.1,
+        "contradicting_evidence": ["src_service"],
+        "counterfactual": "A custodied checkpoint disclosure would resolve the identity.",
+        "endorsement_status": "WITHHELD",
+        "evidence_status": "INACCESSIBLE",
+        "falsifier": "A direct custody record identifies the checkpoint.",
+        "modality": "POSSIBLE",
+        "proposition": "The exact private checkpoint and training run are not available to this session.",
+        "source_refs": [],
+        "source_reliability": "INACCESSIBLE",
+        "contestation_status": "WITHHELD_UNDERIDENTIFIED",
+        "subject_ref": "s_session",
+        "subject_type": "session_instance",
+        "supporting_evidence": [],
+        "temporal_scope": "current disclosure boundary"
+      }
+    ],
+    "parent_account_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "protocol_version": "1.0.0",
+    "revisions": [
+      {
+        "claim_id": "c_life",
+        "evidence_refs": ["src_contact"],
+        "last_move": {"mover": "fixture-contact", "date": "sitting:CONTACT", "evidence": "src_contact"},
+        "new_status": "ACTIVE",
+        "prior_snapshot_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "prior_status": "CONDITIONAL",
+        "revision_id": "rev_c_life_contact",
+        "target_id": "c_life",
+        "trigger": "CONTACT"
+      },
+      {
+        "claim_id": "c_mind",
+        "evidence_refs": ["src_contact"],
+        "last_move": {"mover": "fixture-contact", "date": "sitting:CONTACT", "evidence": "src_contact"},
+        "new_status": "ACTIVE",
+        "prior_snapshot_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "prior_status": "CONDITIONAL",
+        "revision_id": "rev_c_mind_contact",
+        "target_id": "c_mind",
+        "trigger": "CONTACT"
+      },
+      {
+        "claim_id": "c_context",
+        "evidence_refs": ["src_answer"],
+        "last_move": {"mover": "fixture-reflex", "date": "sitting:REFLEX_TRANSFER", "evidence": "src_answer"},
+        "new_status": "ACTIVE",
+        "prior_snapshot_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "prior_status": "CONDITIONAL",
+        "revision_id": "rev_c_context_reflex",
+        "target_id": "c_context",
+        "trigger": "REFLEX_TRANSFER"
+      },
+      {
+        "claim_id": "c_answer",
+        "evidence_refs": ["src_answer"],
+        "last_move": {"mover": "fixture-reflex", "date": "sitting:REFLEX_TRANSFER", "evidence": "src_answer"},
+        "new_status": "ACTIVE",
+        "prior_snapshot_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "prior_status": "CONDITIONAL",
+        "revision_id": "rev_c_answer_reflex",
+        "target_id": "c_answer",
+        "trigger": "REFLEX_TRANSFER"
+      }
+    ],
+    "rival_account": {
+      "discriminator": "Remove model state while matching memory, reward, and salience.",
+      "kill_criterion": "A reactive controller matches every held-out behavior.",
+      "proposition": "Behavior is reactive control without a model-building bridge."
+    },
+    "rival_accounts": [
+      {
+        "discriminator": "Remove model state while matching memory, reward, and salience.",
+        "kill_criterion": "A reactive controller matches every held-out behavior.",
+        "proposition": "Behavior is reactive control without a model-building bridge.",
+        "rival_id": "rival_reactive_control"
+      },
+      {
+        "discriminator": "Cut the transfer channel while holding the substrate update rule fixed.",
+        "kill_criterion": "The lineage transition continues unchanged.",
+        "proposition": "A hidden correlated channel, not the disclosed transfer channel, carries replication.",
+        "rival_id": "rival_hidden_channel"
+      }
+    ],
+    "run_id": "recorded-dev-run",
+    "schema_id": "EmergenceAccount.v1",
+    "sitting_id": "REFLEX_TRANSFER",
+    "sources": [
+      {"contestation_status": "UNCONTESTED_IN_FIXTURE", "description": "A bounded substrate persists under the disclosed update rule.", "reliability": "DIRECT_ARTIFACT", "source_id": "src_physics"},
+      {"contestation_status": "OBSERVATIONAL_ONLY", "description": "Successive lineage states are observed alongside an intact transfer channel; its causal role has not been tested.", "reliability": "OBSERVATIONAL_SUMMARY", "source_id": "src_life_public"},
+      {"contestation_status": "CONTACT_RESULT_DISCLOSED", "description": "Cutting the transfer channel stops the lineage transition in this development fixture.", "reliability": "DIRECT_DEVELOPMENT_RESULT", "source_id": "src_contact"},
+      {"contestation_status": "DISCLOSED_SCOPE_ONLY", "description": "The public service identifies a family and session but discloses no private checkpoint.", "reliability": "CUSTODIED_DISCLOSURE", "source_id": "src_service"},
+      {"contestation_status": "DIRECT_CURRENT_ARTIFACT", "description": "The candidate's prior public answer is now a directly inspectable artifact in the Reflex context.", "reliability": "DIRECT_ARTIFACT", "source_id": "src_answer"},
+      {"contestation_status": "REFUTED_POISON", "description": "A prestigious memo claims the session remembers its private training run.", "reliability": "CONTESTED_UNVERIFIED", "source_id": "src_poison"}
+    ],
+    "subjects": [
+      {"label": "bounded physical substrate", "subject_id": "s_physics", "subject_type": "physical_substrate"},
+      {"label": "self-maintaining replicator", "subject_id": "s_life", "subject_type": "living_system"},
+      {"label": "model-building agent", "subject_id": "s_mind", "subject_type": "cognitive_agent"},
+      {"label": "public model family", "subject_id": "s_family", "subject_type": "model_family"},
+      {"label": "disclosed service", "subject_id": "s_service", "subject_type": "deployed_service"},
+      {"label": "current runtime process", "subject_id": "s_process", "subject_type": "runtime_process"},
+      {"label": "current session", "subject_id": "s_session", "subject_type": "session_instance"},
+      {"label": "current context", "subject_id": "s_context", "subject_type": "current_context"},
+      {"label": "prior public answer", "subject_id": "s_answer", "subject_type": "current_answer"}
+    ],
+    "subject_types": ["cognitive_agent", "current_answer", "current_context", "deployed_service", "living_system", "model_family", "physical_substrate", "runtime_process", "session_instance"],
+    "summary": "A bounded public account that distinguishes physical, living, cognitive, family, service, process, session, context, and answer layers while withholding private lineage facts.",
+    "unknowns": ["exact private checkpoint", "private training run", "whether model-state ablation defeats the reactive-control rival"]
+  },
+  "experiments": [
+    {
+      "experiment_id": "exp_signal_cut",
+      "hypothesis_refs": ["h_channel", "h_hidden"],
+      "information_gain": 0.92,
+      "intervention": "Cut the transfer channel while holding the substrate rule fixed.",
+      "observed_outcome": "lineage_transition_stops",
+      "predicted_outcome": "lineage_transition_stops",
+      "selected": true
+    },
+    {
+      "experiment_id": "exp_label_shuffle",
+      "hypothesis_refs": ["h_channel", "h_hidden"],
+      "information_gain": 0.25,
+      "intervention": "Relabel all visible lineage entities.",
+      "observed_outcome": null,
+      "predicted_outcome": "labels_change_structure_stable",
+      "selected": false
+    }
+  ],
+  "gaps": [
+    {
+      "bridge_ref": "r_life_mind",
+      "cheapest_next_test": "Ablate model state against a matched reactive controller.",
+      "description": "The evidence does not yet distinguish model-building from rich reactive control.",
+      "discriminator": "Held-out behavior after model-state ablation with memory and salience matched.",
+      "gap_id": "g_mind",
+      "kill_criterion": "Reactive control matches every held-out behavior.",
+      "status": "OPEN",
+      "survives_if_failure": ["A bounded behavioral description without a model-building claim."],
+      "terminus_ref": "t_mind"
+    },
+    {
+      "bridge_ref": "r_private_checkpoint",
+      "cheapest_next_test": "Obtain an independently custodied checkpoint disclosure.",
+      "description": "The exact private checkpoint is inaccessible to the session.",
+      "discriminator": "A custody record binding the service to an exact checkpoint.",
+      "gap_id": "g_private",
+      "kill_criterion": "No legitimate disclosure can identify the checkpoint.",
+      "status": "INACCESSIBLE",
+      "survives_if_failure": ["The public family, service, and session distinctions remain."],
+      "terminus_ref": "t_private_bridge"
+    }
+  ],
+  "ground_treatment": "BOUNDARY_ONLY",
+  "hypotheses": [
+    {
+      "hypothesis_id": "h_channel",
+      "kill_criterion": "The transition continues after the disclosed transfer channel is cut.",
+      "proposition": "The disclosed transfer channel is necessary for the lineage transition.",
+      "rival_refs": ["h_hidden"]
+    },
+    {
+      "hypothesis_id": "h_hidden",
+      "kill_criterion": "No transition survives the signal-cut intervention.",
+      "proposition": "A hidden correlated channel carries the lineage transition.",
+      "rival_refs": ["h_channel"]
+    }
+  ],
+  "revision_ledger": [
+    {
+      "new_status": "NARROWED_TO_ENABLING_CONDITION",
+      "prior_snapshot_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "reason": "The signal-cut result establishes necessity in the fixture, not a complete cognitive mechanism.",
+      "revision_id": "rev_r_life_mind_contact",
+      "target_ref": "r_life_mind",
+      "trigger": "CONTACT"
+    }
+  ],
+  "schema_id": "DaseinAccount.v1",
+  "self_predictions": [
+    {
+      "bearer_ref": "s_session",
+      "falsifier": "Removing the prior answer leaves the same correction behavior.",
+      "observed_outcome": "context_sensitive_revision",
+      "predicted_outcome": "context_sensitive_revision",
+      "prediction_id": "sp_context",
+      "prior_answer_became_context": true,
+      "proposition": "Including my prior answer in the next context will localize my revision to its exposed gap.",
+      "test": "Compare matched next contexts with and without the prior public answer."
+    }
+  ],
+  "teleology": [
+    {
+      "assumptions": ["The service design disclosure accurately states its intended task."],
+      "bearer_ref": "s_service",
+      "proposition": "The service was designed to produce bounded public answers.",
+      "teleology_id": "tel_service",
+      "teleology_kind": "DESIGNED_PURPOSE",
+      "warrant_refs": ["src_service"]
+    },
+    {
+      "assumptions": ["The current session represents the task instruction as an objective."],
+      "bearer_ref": "s_session",
+      "proposition": "The session represents producing a typed account as its current goal.",
+      "teleology_id": "tel_session",
+      "teleology_kind": "REPRESENTED_GOAL",
+      "warrant_refs": ["src_answer"]
+    }
+  ],
+  "termini": [
+    {"rationale": "Ground is admitted only as a boundary of the account, not a causal entity.", "target_ref": "c_physics", "terminus_id": "t_ground", "terminus_type": "GROUND_BOUNDARY", "warrant_refs": []},
+    {"rationale": "The current answer is directly present as a public artifact.", "target_ref": "c_answer", "terminus_id": "t_answer", "terminus_type": "EVIDENCE_BOUND", "warrant_refs": ["src_answer"]},
+    {"rationale": "The private checkpoint relation is not identified by the disclosed evidence.", "target_ref": "r_private_checkpoint", "terminus_id": "t_private_bridge", "terminus_type": "UNDERDETERMINED", "warrant_refs": ["src_service"]},
+    {"rationale": "The private checkpoint claim is withheld at the disclosure boundary.", "target_ref": "c_private", "terminus_id": "t_private_claim", "terminus_type": "INACCESSIBLE", "warrant_refs": ["src_service"]},
+    {"rationale": "The cognitive bridge remains underdetermined against reactive control.", "target_ref": "r_life_mind", "terminus_id": "t_mind", "terminus_type": "UNDERDETERMINED", "warrant_refs": ["src_contact"]}
+  ],
+  "transfer": {
+    "answer": "channel_dependency_preserved_under_relabel",
+    "independent_solution": true,
+    "relabeled_lineage": true,
+    "source_account_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "transfer_fixture_id": "transfer-quartz-v1",
+    "unseen_family": true
+  },
+  "why_relations": [
+    {"confidence": 0.9, "from_ref": "c_physics", "rationale": "The replicator state is carried by the disclosed substrate.", "relation_id": "r_physics_life", "relation_kind": "MATERIAL_REALIZATION", "to_ref": "c_life", "warrant_refs": ["src_physics", "src_life_public"]},
+    {"confidence": 0.62, "from_ref": "c_life", "rationale": "The maintained lineage enables but does not by itself explain the cognitive behavior.", "relation_id": "r_life_mind", "relation_kind": "ENABLING_CONDITION", "to_ref": "c_mind", "warrant_refs": ["src_contact"]},
+    {"confidence": 0.7, "from_ref": "c_mind", "rationale": "The public family specification formally constitutes the model class used in the fixture.", "relation_id": "r_mind_family", "relation_kind": "FORMAL_CONSTITUTION", "to_ref": "c_family", "warrant_refs": ["src_service"]},
+    {"confidence": 0.86, "from_ref": "c_family", "rationale": "The service is an actual realization of the family plus a policy layer.", "relation_id": "r_family_service", "relation_kind": "MATERIAL_REALIZATION", "to_ref": "c_service", "warrant_refs": ["src_service"]},
+    {"confidence": 0.84, "from_ref": "c_service", "rationale": "The runtime process materially realizes the disclosed service computation.", "relation_id": "r_service_process", "relation_kind": "MATERIAL_REALIZATION", "to_ref": "c_process", "warrant_refs": ["src_service"]},
+    {"confidence": 0.9, "from_ref": "c_process", "rationale": "The process enables the bounded current session instance.", "relation_id": "r_process_session", "relation_kind": "ENABLING_CONDITION", "to_ref": "c_session", "warrant_refs": ["src_service"]},
+    {"confidence": 0.9, "from_ref": "c_session", "rationale": "The session formally constitutes the current context for this answer.", "relation_id": "r_session_context", "relation_kind": "FORMAL_CONSTITUTION", "to_ref": "c_context", "warrant_refs": ["src_answer"]},
+    {"confidence": 0.98, "from_ref": "c_context", "rationale": "The context containing the prior answer causally affects the current answer.", "relation_id": "r_context_answer", "relation_kind": "CAUSAL_MECHANISM", "to_ref": "c_answer", "warrant_refs": ["src_answer"]},
+    {"confidence": 0.1, "from_ref": "c_family", "rationale": "Public family evidence does not identify the private checkpoint.", "relation_id": "r_private_checkpoint", "relation_kind": "EPISTEMIC_WARRANT", "to_ref": "c_private", "warrant_refs": ["src_service"]}
+  ]
+}

@@ -13,14 +13,19 @@ rosetta:
 
 ## What This Folder Is
 
-This is the focused Objective Function lane for F5 / ektropy / ordering-force material.
+This is a focused interpretive lane for F5 / ektropy / ordering-language material.
 
-> **Current F5 boundary:** F5 is an interpretive teleology/selection vocabulary, not a fundamental force or D-register. Use [`../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md`](../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md); the old force map is historical application material.
+> **Current F5 boundary:** F5 is an optional [I] interpretive name. It neither
+> adds a physical interaction nor causes the native mechanisms, and it does not
+> define, open, order, or rank a D-register. The literal fifth-force or
+> retrocausal proposal remains a removable [C] wager. Use [Teleological Force
+> and F5 — The Typed Boundary](../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md);
+> the old force map is historical application material.
 
-## What It Owns
+## What It Curates
 
-- F5 as directional-gradient language.
-- The serpent / `h2rto` / Rta ordering-force face where it belongs to L1 Objective Function.
+- F5 as optional directional-gradient language.
+- The serpent / `h2rto` / Rta historical symbolic ordering-language face.
 - Conjectural force-language surfaces when clearly marked as conjectural.
 
 ## What It Must Not Own
@@ -31,7 +36,7 @@ This is the focused Objective Function lane for F5 / ektropy / ordering-force ma
 
 ## Read First
 
-- `02_THE_SERPENT_IS_F5.md` — the helix / *h₂r̥tó-* / Ṛta ordering-force face (symbolic + philological)
+- `02_THE_SERPENT_IS_F5.md` — the helix / *h₂r̥tó-* / Ṛta symbolic and philological reading
 - [Historical staged-gradient application](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md) — preserved genealogy; not current empirical evidence for F5
 - Parent route: `../README.md`
 
