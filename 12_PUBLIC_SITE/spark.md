@@ -159,9 +159,8 @@ The means is the message. The ends is the remainder.
 
 ## Read next (stable URLs)
 
-Next public book (not yet shipped): *The Emergentist Manifesto* current-body only.
-Private 17-chapter manuscript is locally complete. Public release is a separate unpaid gate.
-Titans / Serpent / Reciprocal are not next.
+The manifesto *page* is live: https://emergentism.org/manifesto/ — a one-decision ask, not a shipped book.
+A longer manifesto manuscript is not the current reader. Titans / Serpent / Reciprocal are not next.
 
 - This file: https://emergentism.org/spark.md
 - Readable page: https://emergentism.org/spark/
