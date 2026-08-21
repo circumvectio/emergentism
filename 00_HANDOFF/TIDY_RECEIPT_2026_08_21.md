@@ -91,6 +91,23 @@ nearly became "no Codex processes are running." `ps` is at `/bin/ps` on this mac
 The instrument had not run at all — the third distinct instance this week of a check
 reporting a property it never tested.
 
+**And a third, measured while confirming this receipt added no breakage: 239 of the
+2066 broken citations — 11.6% — are not broken paths.** They are authoring idioms the
+resolver types as paths (`nothing` ×8, `none` ×2, `nothing — supplements the existing
+pillar README` ×3) and, more consequentially, **real files with a section anchor
+appended** (`00_THE_AMRITA.md §I.C.19` ×6, `00_THE_MASTER_ROSETTA.md §2 (non-transfer
+laws)` ×2). Those files exist; the citation resolves; only the ` §…` suffix defeats the
+lookup. So the headline number overstates real breakage by at least a ninth, and the
+overstatement is **not uniformly distributed** — it concentrates in exactly the
+carefully-annotated documents whose authors cited a *section* rather than a file.
+
+The checker was deliberately **not** modified. It is a shared gate; loosening a gate in
+the tail of a tidy pass is how a gate stops testing what it claims to test. The repair
+is its own scoped act, and it must be mutation-verified: strip a trailing ` §…` before
+resolution, prove the count falls, then plant a genuinely dead path and prove it still
+rises. Until then the honest statement of the number is **"≤2066 broken, of which ≥239
+are resolver artifacts"** — not "2066 broken citations."
+
 ## 5 · Chair items, by leverage
 
 1. **Dispose of the 35-entry change set in `…refinement-20260821`** — atomically, explicit
