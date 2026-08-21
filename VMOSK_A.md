@@ -7,6 +7,7 @@ status: "[D] pointer — live account is the SIGNED v2 variant; staged per VMOSK
 may_sign: false
 may_authorize: false
 authority_effect: none
+semantic_authority: "none"
 owner: "01_EMERGENTISM control plane"
 sources:
   - VMOSK_A_v2_2026_07_31.md
@@ -23,6 +24,7 @@ sources:
   intact.
 
 This bare-name file exists so exact-name resolution returns the live route,
-not superseded text. It adds no text, claims nothing, and disposes nothing
-beyond the pointer; every letter, tier, and fence lives in the files it
-routes to. η = 0.
+not superseded text. It adds no doctrine, claims nothing, and disposes nothing
+beyond the pointer; every letter, tier, and fence lives in the files it routes
+to. This non-semantic control projection creates no theorem, ontology, axiology,
+or eighth kernel owner. Its biological correspondences are optional `[I]` Rosetta annotations, never transferred proof or semantic authority. η = 0.
