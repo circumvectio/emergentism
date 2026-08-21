@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3883,
+      "tracked_file_count": 3889,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup;",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 141,
+      "tracked_file_count": 143,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -935,7 +935,7 @@
       "owns": "06_ONTOLOGY read-order index and canonical type split (D4 causal actuality, D5 counterfactual content, D6 apophatic; non-μ b₆/r₆; D-stable f",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 31,
+      "tracked_file_count": 32,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +974,7 @@
       "owns": "08_FRAMEWORK_SUPPORT — translation and stress tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 270,
+      "tracked_file_count": 271,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1234,7 +1234,7 @@
       "owns": "Rosetta agents — bounded application lane",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 22,
+      "tracked_file_count": 23,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1247,7 +1247,7 @@
       "owns": "The Seven as Managed Agents",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 17,
+      "tracked_file_count": 18,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1286,7 +1286,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 245,
+      "tracked_file_count": 247,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1312,7 +1312,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 79,
+      "tracked_file_count": 81,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -6743,7 +6743,7 @@
       "type": "site",
       "nearest_front_door": "12_PUBLIC_SITE/spark/index.html",
       "front_door_requirement": "present",
-      "owns": "<!DOCTYPE html>",
+      "owns": "<!doctype html>",
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,
