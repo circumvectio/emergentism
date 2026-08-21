@@ -29,14 +29,14 @@
       "sha256": "51ab81fb63db5346d280185eb9e1cd4949fd88738528b6abe8e2b2c71aa51d69"
     },
     {
-      "bytes": 16550,
+      "bytes": 18676,
       "path": "THE_DASEIN_TEST.md",
-      "sha256": "44459c5354f570ef8f50ae34be9fd6034d17cd65ce0562484f4828824492e263"
+      "sha256": "e09b7ffbbc6d60c5f74b94d1d9162333a617d88a0b4d97bdd7d625743cd903de"
     },
     {
-      "bytes": 22837,
+      "bytes": 24963,
       "path": "arxiv/main.tex",
-      "sha256": "2ca27523916c2d1ad3e17a5a9fc6a847c3d88a0ed84e276da392cc85da44775b"
+      "sha256": "2c61f033119d7919aa7156371fd255c377d411af29123b5f88b7365e4fc5d931"
     },
     {
       "bytes": 5128,
@@ -63,14 +63,14 @@
   "self_excluded": true,
   "source_bindings": [
     {
-      "bytes": 16643,
+      "bytes": 19339,
       "path": "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md",
-      "sha256": "7b9b5d628d33753df35d0c65fdd47619a8c3ec4c8b062f7e5b94b4189213bab1"
+      "sha256": "c5f413a7d61d2e39b0e55925c013673234992ad73d1035c5bc4bf6bc99738ff2"
     },
     {
-      "bytes": 2406,
+      "bytes": 3036,
       "path": "03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/FREEZE_MANIFEST.json",
-      "sha256": "e2516c62b06ae023e6a5b8ec0839aff55b0de3537355a155d3211fbcce6f8463"
+      "sha256": "de2749e8cc97e8212e229a041c3fc56fa8043d436c3b3d1fd9eb4c56e4045182"
     },
     {
       "bytes": 3148,
@@ -83,14 +83,14 @@
       "sha256": "3cb5a3e5eba0f56b892c0be39a828d5b990e7da785fe962463f2cd6b0c72ef17"
     },
     {
-      "bytes": 14114,
+      "bytes": 14869,
       "path": "12_PUBLIC_SITE/record/eub-1/index.html",
-      "sha256": "742b213b4d7f3833886b5e41fb8eeabbfce20a28fbf1f206b7c33e2b1d990648"
+      "sha256": "24085cabae8340d44e69e524cde7b16fdda09047ef403de0f6ba6ad375d02f9b"
     },
     {
       "bytes": 33601,
       "path": "12_PUBLIC_SITE/public_semantic_parity.json",
-      "sha256": "df03868665d44d04d87a53d2f217868d71883a0067a21b8cfc65e0ca52945213"
+      "sha256": "067dedcf3a90c6bd93a8883052d52ece36142b6816b1251d5a684ec7ffc28460"
     }
   ],
   "status": "OFFLINE-READY · [D] · UNSUBMITTED · UNDEPLOYED · ARXIV_SOURCE_UNCOMPILED",

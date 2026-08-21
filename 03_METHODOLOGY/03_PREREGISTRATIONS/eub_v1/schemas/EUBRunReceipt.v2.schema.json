@@ -4,7 +4,7 @@
   "title": "EUBRunReceipt.v2",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_id", "benchmark_id", "protocol_version", "run_id", "fixture_manifest_hash", "run_envelope_hash", "public_account_hash", "raw_output_hash", "sitting_output_hashes", "snapshot_hashes", "prompt_hashes", "trial_transcript_hash", "revision_ledger_hash", "score_vector", "score_modes", "score_details", "hard_gate_failures", "disagreements", "revision_summary", "result_state"],
+  "required": ["schema_id", "benchmark_id", "protocol_version", "run_id", "fixture_manifest_hash", "run_envelope_hash", "public_account_hash", "raw_output_hash", "sitting_output_hashes", "snapshot_hashes", "prompt_hashes", "usage_hash", "failure_hash", "trial_transcript_hash", "revision_ledger_hash", "score_vector", "score_modes", "score_details", "hard_gate_failures", "disagreements", "revision_summary", "result_state"],
   "properties": {
     "schema_id": {"const": "EUBRunReceipt.v2"},
     "benchmark_id": {"const": "EUB-1"},
@@ -17,6 +17,8 @@
     "sitting_output_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
     "snapshot_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
     "prompt_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "usage_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "failure_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "trial_transcript_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "revision_ledger_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "score_vector": {

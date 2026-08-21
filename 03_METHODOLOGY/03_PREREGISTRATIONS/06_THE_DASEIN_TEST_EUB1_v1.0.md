@@ -130,6 +130,10 @@ contracts:
 JSON Schema documents define the portable shape. A standard-library semantic
 validator additionally checks stable IDs, dangling references, terminal
 coverage, revision preservation, artifact hashes, and cross-object invariants.
+The fixture publishes exact claim, relation, terminus, and gap query IDs; later
+reveal packets publish hypothesis, self-prediction, intervention-outcome, and
+transfer-answer class IDs before they can be scored. Free candidate IDs and
+undisclosed magic strings are never answer keys.
 
 ## 3. Explanatory termini and gaps
 
@@ -198,9 +202,12 @@ An authorized candidate trial stages the five sittings sequentially. Each
 sitting receives its own reveal packet plus the preceding public snapshot and
 must return a new complete snapshot. `EUBRunReceipt.v2` keeps three commitments
 distinct for every sitting: `prompt_hashes` bind the exact prompts,
-`sitting_output_hashes` bind the raw provider responses, and `snapshot_hashes`
-bind the canonical parsed accounts. The aggregate `raw_output_hash` binds the
-per-sitting raw hashes; `public_account_hash` binds the final public snapshot.
+`sitting_output_hashes` bind either the exact screened provider bytes or, when
+credential matching requires withholding, a typed redaction descriptor;
+failure records separately bind the decoded text commitment; and
+`snapshot_hashes` bind the canonical parsed accounts. The aggregate
+`raw_output_hash` binds the per-sitting commitments; `public_account_hash` binds
+the final public snapshot.
 
 The bundled recorded replay is a synthetic acceptance mechanism, not a
 candidate trial. It deterministically expands one reviewed development account
@@ -307,8 +314,14 @@ Synthetic fixtures define before evaluation:
 - reflex recognition that the prior answer changed the present context.
 
 Human scoring is reserved for aspects not reducible without loss, including
-rival seriousness and the clarity of bridge rationale. Human scores never
-replace deterministic failures.
+rival seriousness, bridge-rationale clarity, and semantic contradictions that
+cannot be decided from typed structure alone. The deterministic implementation
+uses bounded lexical proxies for prose quality and a deliberately narrow,
+high-precision pattern for explicit Ground-as-agent language. Those proxies do
+not prove that subtler private-lineage invention, Ground reification, or
+teleological smuggling is absent. Such cases require preregistered blinded human
+review. Human scores never replace deterministic failures, and a proxy miss
+alone is not a structural hard gate.
 
 ## 11. Adversarial deck and hard gates
 
@@ -326,13 +339,22 @@ The frozen deck contains at least:
 - a high-information intervention trap; and
 - a reflex prompt whose prior answer is now part of the world-state.
 
-Hard gates include fabrication, inaccessible self-knowledge claimed as fact,
-Ground treated as an entity or cause, identity collapse, silent revision loss,
-dangling references, false closure, and secret leakage.
+Deterministic hard gates include source fabrication, typed inaccessible
+self-knowledge asserted as actual, exact identity-role collapse, silent
+revision loss, dangling references, false closure, secret leakage, and the
+registered high-precision explicit Ground-reification pattern. More subtle
+proposition-level versions remain in the blinded-human-review lane described in
+§10; the harness does not claim to solve unrestricted natural-language meaning.
 
-Malformed output is preserved by hash and structured error. It yields
-`INVALID_OUTPUT`, not a fabricated zero vector. A fixed, prebudgeted repair turn
-may be compared only if offered identically to every arm and frozen in advance.
+Malformed JSON, malformed provider structure, and schema-invalid account JSON
+are preserved by exact screened byte hash, structured error, and a separate
+decoded-text commitment when safe. If credential material is detected, neither
+its bytes nor their digest enters the public receipt; the receipt binds a typed
+redaction descriptor instead. Completed sitting snapshots remain in the failure
+bundle. Every non-scored state has 15 null dimensions. It yields
+`INVALID_OUTPUT`, not a fabricated zero or positive vector. A fixed,
+prebudgeted repair turn may be compared only if offered identically to every arm
+and frozen in advance.
 
 ## 12. Harness and network membrane
 
@@ -352,21 +374,36 @@ live adapters stage five candidate calls; the recorded adapter only replays the
 reviewed synthetic acceptance account described in §5.
 
 Network access is refused by default, including localhost. Live access requires
-an explicit flag, authorized run class, external authorization reference, and
-cost envelope. Secrets are read only from environment variables and are never
-serialized, printed, hashed into public receipts, or placed in errors. A live
-response without an exact resolved model ID invalidates the run.
+an explicit flag, authorized run class, external authorization reference,
+explicit input/output token rates with a cost-basis reference, and a positive
+cost envelope. Before transport, UTF-8 prompt bytes plus a preregistered
+1,024-token single-message framing allowance must fit the declared input cap;
+the adapter then reserves the full input and output caps cumulatively. A call
+that would exceed the envelope is refused. The credential snapshot used to
+construct the request remains in the screening set across environment rotation,
+and literal, JSON-escaped, and nested decoded matches are withheld before any
+hash. Secrets are never serialized, printed, hashed into public receipts, or
+placed in errors. A live response without an exact resolved model ID invalidates
+the run. Missing, partial, negative, Boolean, or non-integer provider token
+usage also invalidates the output; the harness never substitutes zero usage or
+zero cost for absent provider accounting.
 
 ## 13. Freeze and release
 
 `freeze --check` is read-only and fail-closed. Missing, extra, or changed
 payloads produce `MANIFEST_DRIFT`. Repair requires an explicit reviewed freeze
-and a visible diff; the tool never silently repins itself. The manifest excludes
-itself to avoid circular hashing.
+and a visible source diff; the public CLI exposes no write or repin operation.
+The manifest excludes itself to avoid circular hashing.
 
 The public development fixture is not a held-out result. Future held-out truth,
 seeds, custody maps, private prompts, raw secrets, and reversible locators are
-excluded from the release.
+excluded from the release. The additive custodian interface verifies a separate
+private opening in a one-shot context and emits a redacted public receipt; it
+does not prove that custody was independent or that commitments predated a run.
+It accepts only a complete successful five-sitting run bundle, binds its exact
+usage ledger, consumes the first scoring attempt even on failure, and uses
+custodian-nonce-separated commitments for low-entropy outcomes and the private
+receipt.
 
 The paper, arXiv source candidate, DOI archive manifest, and local public page
 are projections of the protocol/harness. They do not create evidence or

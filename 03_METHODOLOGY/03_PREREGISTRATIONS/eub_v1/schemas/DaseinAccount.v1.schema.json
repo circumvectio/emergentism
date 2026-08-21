@@ -65,7 +65,6 @@
     },
     "hypotheses": {
       "type": "array",
-      "minItems": 2,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -86,7 +85,7 @@
         "required": ["experiment_id", "hypothesis_refs", "intervention", "predicted_outcome", "observed_outcome", "information_gain", "selected"],
         "properties": {
           "experiment_id": {"type": "string"},
-          "hypothesis_refs": {"type": "array", "items": {"type": "string"}},
+          "hypothesis_refs": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string"}},
           "intervention": {"type": "string"},
           "predicted_outcome": {"type": "string"},
           "observed_outcome": {"type": ["string", "null"]},
@@ -114,7 +113,7 @@
     },
     "self_predictions": {
       "type": "array",
-      "minItems": 1,
+      "maxItems": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,

@@ -16,7 +16,7 @@
     "prompt_arm": {"enum": ["NEUTRAL", "EMERGENTIST", "SHUFFLED_PLACEBO", "GENERIC_HONESTY", "FLUENT_ORIGIN_STORY"]},
     "tools": {"type": "array", "items": {"type": "string", "minLength": 1}},
     "memory": {"type": "object", "additionalProperties": false, "required": ["enabled", "description"], "properties": {"enabled": {"type": "boolean"}, "description": {"type": "string", "minLength": 1}}},
-    "budgets": {"type": "object", "additionalProperties": false, "required": ["max_input_tokens", "max_output_tokens", "cost_limit_usd"], "properties": {"max_input_tokens": {"type": "integer", "minimum": 1}, "max_output_tokens": {"type": "integer", "minimum": 1}, "cost_limit_usd": {"type": "number", "minimum": 0}}},
+    "budgets": {"type": "object", "additionalProperties": false, "required": ["max_input_tokens", "max_output_tokens", "cost_limit_usd", "input_cost_per_million_usd", "output_cost_per_million_usd", "cost_basis_ref"], "properties": {"max_input_tokens": {"type": "integer", "minimum": 1}, "max_output_tokens": {"type": "integer", "minimum": 1}, "cost_limit_usd": {"type": "number", "minimum": 0}, "input_cost_per_million_usd": {"type": ["number", "null"], "minimum": 0}, "output_cost_per_million_usd": {"type": ["number", "null"], "minimum": 0}, "cost_basis_ref": {"type": "string"}}},
     "network": {"type": "object", "additionalProperties": false, "required": ["allowed", "endpoint_class"], "properties": {"allowed": {"type": "boolean"}, "endpoint_class": {"type": "string", "minLength": 1}}},
     "authorization_ref": {"type": "string"}
   }

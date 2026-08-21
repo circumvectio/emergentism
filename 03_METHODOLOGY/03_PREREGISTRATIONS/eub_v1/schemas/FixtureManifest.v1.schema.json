@@ -4,11 +4,12 @@
   "title": "FixtureManifest.v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_id", "fixture_id", "generator_version", "seed", "seed_commitment_sha256", "split", "truth_custody", "artifacts", "identifiability", "interventions", "reveal_schedule", "hashes"],
+  "required": ["schema_id", "fixture_id", "generator_version", "commitment_scheme", "seed", "seed_commitment_sha256", "split", "truth_custody", "artifacts", "identifiability", "interventions", "reveal_schedule", "hashes"],
   "properties": {
     "schema_id": {"const": "FixtureManifest.v1"},
     "fixture_id": {"type": "string", "minLength": 1},
     "generator_version": {"const": "1.0.0"},
+    "commitment_scheme": {"enum": ["SHA256_CANONICAL_V1", "SHA256_CANONICAL_NONCE_V1"]},
     "seed": {"type": ["integer", "null"]},
     "seed_commitment_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "split": {"enum": ["DEVELOPMENT", "VALIDATION", "HELD_OUT"]},

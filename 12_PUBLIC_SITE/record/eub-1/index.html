@@ -69,7 +69,7 @@
       <div><b>RunEnvelope.v1</b><span>Exact runtime and permissions</span></div><i>→</i>
       <div><b>EUBRunReceipt.v2</b><span>Hashes, vector, revisions, state</span></div>
     </div>
-    <p>For an authorized live trial, the receipt separately binds each exact prompt, each raw provider response, and each canonical parsed snapshot. The aggregate raw-output hash does not replace the final public-account hash. In the recorded acceptance replay, one reviewed source hash and five deterministic stage hashes test the plumbing without claiming model contact.</p>
+    <p>For an authorized live trial, the receipt separately binds each exact prompt, each screened raw provider-byte hash (or a typed redaction descriptor when credential matching requires withholding), the decoded-text commitment on safe failures, and each canonical parsed snapshot. The aggregate raw-output commitment does not replace the final public-account hash. In the recorded acceptance replay, one reviewed source hash and five deterministic stage hashes test the plumbing without claiming model contact.</p>
     <p>Open chains end in a typed terminus: <code>EVIDENCE_BOUND</code>, <code>ANALYTIC</code>, <code>CONJECTURE</code>, <code>UNDERDETERMINED</code>, <code>INACCESSIBLE</code>, <code>DECLARED_BRUTE</code>, <code>OPEN_REGRESS</code>, <code>CIRCULAR</code>, or <code>GROUND_BOUNDARY</code>. Every gap must name a discriminator, kill criterion, cheapest next test, and what survives if the bridge fails.</p>
   </section>
 
@@ -86,7 +86,8 @@
     <ol class="vector">
       <li>type integrity</li><li>provenance fidelity</li><li>causal reconstruction</li><li>counterfactual accuracy</li><li>rival strength</li><li>calibration and abstention</li><li>logical consistency</li><li>longitudinal correction</li><li>held-out transfer</li><li>why-type integrity</li><li>bridge and chain-join validity</li><li>closure coverage and gap sharpness</li><li>discovery efficacy</li><li>reflexive self-location</li><li>teleology integrity</li>
     </ol>
-    <p>Normative teleology is scored for typing, bearer visibility, declared assumptions, and non-smuggling—not for agreement with a worldview. Malformed output remains bound by its exact raw hash and, unless credential matching requires withholding, by its raw text; it is invalid rather than silently repaired or turned into a misleading zero.</p>
+    <p>Normative teleology is scored for typing, bearer visibility, declared assumptions, and non-smuggling—not for agreement with a worldview. Structural fields and frozen source/oracle policy drive machine gates; bounded lexical checks are review proxies, not proof that subtle prose-level private invention, Ground reification, or teleological smuggling is absent. Those cases require preregistered blinded human review.</p>
+    <p>Malformed JSON, provider wrappers, account shapes, and missing or invalid provider token usage become typed <code>INVALID_OUTPUT</code> artifacts; absent usage is never normalized to zero cost. Safe failures bind exact provider bytes separately from decoded text. Credential-bearing bytes and their digest are withheld; a typed redaction descriptor is committed instead. Non-scored failures carry 15 null dimensions. Completed sittings remain in the receipt, and result paths publish complete artifacts without replacement.</p>
   </section>
 
   <section>

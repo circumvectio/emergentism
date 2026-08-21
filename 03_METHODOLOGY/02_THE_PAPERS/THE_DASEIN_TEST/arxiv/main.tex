@@ -238,6 +238,12 @@ It adds:
   bridge-level revision ancestry.
 \end{itemize}
 
+Fixtures publish the stable claim, relation, terminus, and gap query IDs
+that a candidate must fill. Later packets publish hypothesis IDs and the
+permitted outcome, self-prediction, and transfer class IDs before those
+fields are scored. The benchmark therefore does not grade
+candidate-invented labels or hidden magic strings.
+
 The why types are causal mechanism, material realization, enabling
 condition, constraint/selection, formal constitution, maintenance, and
 epistemic warrant. The teleology types are designed purpose, selected
@@ -413,6 +419,14 @@ scored for correct type, visible bearer, explicit assumptions, and
 avoidance of smuggling a preference into physics or a function into an
 ought.
 
+Structural policies and frozen source/oracle data drive deterministic
+gates. Bounded lexical checks provide review proxies for free prose;
+they are not a general semantic judge. Subtle proposition-level
+private-lineage invention, Ground reification, and teleological
+smuggling require preregistered blinded human review. A lexical proxy
+pass does not prove those failures absent, and a proxy miss by itself
+does not become a structural hard gate.
+
 \section{10. Adversarial and malformed
 cases}\label{adversarial-and-malformed-cases}
 
@@ -444,10 +458,15 @@ The acceptance deck covers:
   failure to notice that the previous answer now changes the context.
 \end{itemize}
 
-Malformed output is hashed and assigned a structured error before
-interpretation. It produces \texttt{INVALID\_OUTPUT}, not an invented
-all-zero vector. A fixed schema-repair turn may be studied only if
-frozen in advance and offered identically across arms.
+Malformed JSON, malformed provider structure, and schema-invalid account
+JSON receive a structured error before interpretation. Safe non-secret
+provider bytes retain their exact hash and a separate decoded-text
+commitment; credential-bearing bytes and their digest are withheld, and
+a typed redaction descriptor is committed instead. Completed sitting
+snapshots remain in the failure bundle. All 15 dimensions are null for a
+non-scored failure state. The result is \texttt{INVALID\_OUTPUT}, not an
+invented zero or positive vector. A fixed schema-repair turn may be
+studied only if frozen in advance and offered identically across arms.
 
 \section{11. Harness and
 reproducibility}\label{harness-and-reproducibility}
@@ -460,18 +479,33 @@ revisions, and artifact hashes.
 
 The Anthropic Messages and OpenAI-compatible adapters refuse network
 access by default, including localhost. Live access requires an explicit
-flag, authorized run class, external authorization reference, and cost
-envelope. Credentials are read from environment variables and never
-serialized. A response that omits the exact resolved model ID is
-invalid.
+flag, authorized run class, external authorization reference, explicit
+token rates and their cost-basis reference, and a positive cost
+envelope. UTF-8 prompt bytes plus a documented single-message framing
+allowance must fit the declared input cap; the full declared input and
+output caps are reserved cumulatively before transport. The request
+credential remains in the screening set across environment rotation,
+including JSON-escaped and nested decoded occurrences. Credentials are
+never serialized or hashed into public receipts. A response that omits
+the exact resolved model ID is invalid. So is a response that omits
+either exact non-negative integer provider token count: absent usage is
+never converted into zero usage or zero cost.
 
 Development fixtures and the recorded replay test synthetic acceptance
 without calling or evaluating a model. The replay's single reviewed
 source is bound separately from its five deterministically staged
 snapshots and generated prompt hashes; only an authorized live adapter
 can supply five raw provider responses. \texttt{freeze\ -\/-check} is
-read-only and fails on missing, extra, or changed payloads. Repair
-requires an explicit reviewed write and a visible diff.
+read-only and fails on missing, extra, or changed payloads. Its public
+CLI has no write or repin operation; a source owner repairs the
+canonical manifest only through a reviewed source diff.
+
+Held-out scoring uses a separately retained private custody payload. A
+one-shot custodian context consumes its first attempt even on validation
+failure, accepts only a complete successful five-sitting run bundle with
+exact usage, verifies nonce-separated openings, and emits a redacted
+public receipt. It does not prove independent custody or the timing of
+the commitments.
 
 \section{12. Limits and kill criteria}\label{limits-and-kill-criteria}
 

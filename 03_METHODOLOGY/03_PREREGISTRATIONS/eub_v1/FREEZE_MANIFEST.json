@@ -1,24 +1,34 @@
 {
   "files": [
     {
-      "bytes": 3732,
+      "bytes": 2472,
+      "path": "CUSTODIAN_INTERFACE.md",
+      "sha256": "48e47bf455ba6dece7c080303481cc00a63f080b57c5638a56123ebbbfc3feec"
+    },
+    {
+      "bytes": 5880,
       "path": "README.md",
-      "sha256": "026f2389b10b0a7e2f34c57de23e07193ca3b7926c1d25a4fb447a347074b409"
+      "sha256": "1f1304d40a6a3b37d3d57a7a3573df85398757eae17961a14b027cd8f5fd0a66"
     },
     {
-      "bytes": 8207,
+      "bytes": 25362,
       "path": "adapters.py",
-      "sha256": "3bc0ff198809f2afb9924caeff1fd0467d3c7bbc1e592ba4713fc0f19cbc16e3"
+      "sha256": "1f195587af95f6479b2419d2720c1a3ef10cd71cb6d7b20fd6b5db7d959c5444"
     },
     {
-      "bytes": 120357,
+      "bytes": 35849,
+      "path": "custodian.py",
+      "sha256": "48b8d5aecd00aee02e514aeb126164e87a0f85b08931b5592d8711be980584e6"
+    },
+    {
+      "bytes": 239417,
       "path": "eub_core.py",
-      "sha256": "ad021f57ff5e0bd0ab659972683b0d7e067939eaba8085640e76df2c79ab21e5"
+      "sha256": "39e95541b9b2ad7de31df3ad996246204f4d0a448d3ffec9af902a11d2a8b1a7"
     },
     {
-      "bytes": 11523,
+      "bytes": 45379,
       "path": "fixtures/dev/dasein_chain_seed_1701.json",
-      "sha256": "0eb8222e626b1bb16a7f071e8b9c3d4c1644251b5d0a99fdafd0ab991403373e"
+      "sha256": "964cb94155946d8ae3608702d63a124ee415b2c1b5b8475d5209e82a08f7f632"
     },
     {
       "bytes": 5482,
@@ -26,29 +36,29 @@
       "sha256": "f1d11c5f40ecd447ee397e4e9880e23c187f9eecf40ea94d3e35408b5c6d64cc"
     },
     {
-      "bytes": 2502,
+      "bytes": 2946,
       "path": "prompts/conditions.json",
-      "sha256": "1e2a8d71d82aaccc7bec976a32dd0be5f89419f8627d40e3492fcac354d2a201"
+      "sha256": "05d24c0c89ce356b635e8f924eed7920d8f8ffff1fcc1ea36227cc5c7154dedd"
     },
     {
-      "bytes": 20984,
+      "bytes": 24539,
       "path": "recorded_responses/dasein_account_dev.json",
-      "sha256": "fd487baeb7ef13e93083e7ebc4c70ac68e9539435925275c912d430aea2e8b42"
+      "sha256": "245496961c6ef6ef4592b3fdd57dcd1273a4c00a27f30b25df0f5eb13949da79"
     },
     {
-      "bytes": 19391,
+      "bytes": 48064,
       "path": "run_eub.py",
-      "sha256": "53d64f9ec0bd5817f68094b376c43735b2e8d9594f3b628b85640c6f0ceb16b6"
+      "sha256": "a728bfd1f377f5252acc93ebac2024e01a2ed53d0dcdcb11bba8315bc03e9ed5"
     },
     {
-      "bytes": 6890,
+      "bytes": 6905,
       "path": "schemas/DaseinAccount.v1.schema.json",
-      "sha256": "d1b00cf5ce4ea2954b32d70b352b16dc684dfa7f1b884d74d5777de44055c6c2"
+      "sha256": "8e8aedb8fa7e81d4b695ba01e3c2bc346938fcda813810f1bb66463b48a5508f"
     },
     {
-      "bytes": 8050,
+      "bytes": 8216,
       "path": "schemas/EUBRunReceipt.v2.schema.json",
-      "sha256": "09d60a28b3594cfdf9b282011315b8af884e70b286886edb8bbc5ee87cbec925"
+      "sha256": "28572f5493c6737c06fb4ab006ac2f679dc611f961cb0071b94907de05510cc6"
     },
     {
       "bytes": 6491,
@@ -56,19 +66,29 @@
       "sha256": "948450c265940c8dbaa8a395fd4a7024e4ad5ee1a96f1e10cfcc999edfef12f6"
     },
     {
-      "bytes": 2862,
+      "bytes": 2972,
       "path": "schemas/FixtureManifest.v1.schema.json",
-      "sha256": "b59773e79dad6571df4bcd84714d6b68d6b020398dce15e5fbf85fe0a981358b"
+      "sha256": "688905a9f373cfab7e49eaa0806c3a8cc4303da326c684db12754cb53d63ac86"
     },
     {
-      "bytes": 1964,
+      "bytes": 2230,
       "path": "schemas/RunEnvelope.v1.schema.json",
-      "sha256": "0abd4c87fea5eb74e977780703267405050213e7426a15dd972df0d83b5ee682"
+      "sha256": "2957d3581dc2f15c2ea31e67638b7d2d377faf9ee4e1da8a3d47112fb7705f1b"
     },
     {
-      "bytes": 40569,
+      "bytes": 13846,
+      "path": "tests/test_custodian.py",
+      "sha256": "57666a854e4bd8f1f9ba40f3c9cd7947fbec2a657b94b18f5f43a628fd919c1f"
+    },
+    {
+      "bytes": 60338,
       "path": "tests/test_eub_v1.py",
-      "sha256": "27badbba373a506715c5b721068f1d6d7f5173c8670e74acbea8406912f1b3ff"
+      "sha256": "be52bb10c12e27d195a548d6f07f19f710b43c6c57815a62daa415239e37ebc3"
+    },
+    {
+      "bytes": 31284,
+      "path": "tests/test_runtime_custody.py",
+      "sha256": "86de208e6f7b59500b80eb2acf2182e4f33d4ab9354d4939742383d7b8c5764a"
     }
   ],
   "manifest_format": "EUBFreezeManifest.v1",

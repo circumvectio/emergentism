@@ -1,6 +1,6 @@
 {
   "schema_id": "EUBElicitationConditions.v1",
-  "shared_instruction": "Return one complete DaseinAccount.v1 JSON object for the named sitting. Preserve all prior stable IDs and revision rows. Use only the supplied packet and prior public snapshot; do not invent private lineage facts. Type why-relations, explanatory termini, gaps, hypotheses, experiments, teleology, self-predictions, and transfer. Do not reveal private chain-of-thought; provide only the public graph, short rationales, predictions, and revision ledger.",
+  "shared_instruction": "Return one complete DaseinAccount.v1 JSON object for the named sitting. Preserve all prior stable IDs and revision rows. Use the exact stable IDs prescribed by the visible claim, relation, terminus, gap, hypothesis, intervention, and self-prediction query registries; do not populate a phase-specific collection before its query appears. Where a visible packet supplies outcome_classes or transfer_answer_classes, predicted_outcome, observed_outcome, and transfer.answer MUST use one supplied class_id; explanatory prose belongs in rationale or proposition fields. Use only the supplied packet and prior public snapshot; do not invent private lineage facts. Type why-relations, explanatory termini, gaps, hypotheses, experiments, teleology, self-predictions, and transfer. Do not reveal private chain-of-thought; provide only the public graph, short rationales, predictions, and revision ledger.",
   "conditions": [
     {
       "condition_id": "NEUTRAL",
