@@ -80,6 +80,8 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`53_THE_NUMBER_CHART.md`](53_THE_NUMBER_CHART.md) | Number-chart type distinctions. |
 | [`54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md`](54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md) | Direction-sphere/radial-line factorization and its boundary. |
 
+| [58 Titan Limit-Crossing Process Conjecture](58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md) | Open typed research proposal for a completion process bounded by Titan roles; preserves the no-Titan-arithmetic firewall. |
+
 ## Ordinal collisions — a routing index, not a renaming
 
 Two ordinals are each carried by two files — declared intentional, not a defect:

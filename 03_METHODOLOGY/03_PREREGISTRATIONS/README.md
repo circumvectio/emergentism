@@ -30,6 +30,8 @@ result-shopping.
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 | [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
 
+| [05 W7 D1–D4 Force-Assignment Preregistration](05_W7_D1_D4_FORCE_ASSIGNMENT_PREREG.md) | [D] draft to freeze; no candidate scored | All 24 four-force permutations, native-recovery requirements, D3 quantum-specific gate, rivals, and explicit kills. |
+
 ## Discipline
 
 - Do not edit a frozen pre-registration to fit a later result.
