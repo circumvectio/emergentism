@@ -11,7 +11,7 @@
 The Emergentism framework invites adversarial review. If you find a claim that
 overstates its evidence tier, a proof that doesn't hold, a paradox "dissolution"
 that's actually a frame-trick, or a contradiction the corpus cannot metabolize —
-**report it.** The [Kintsugi Protocol](01_EMERGENTISM/00_META/00_THE_KINTSUGI_PROTOCOL.md)
+**report it.** The [Kintsugi Protocol](00_META/00_THE_KINTSUGI_PROTOCOL.md)
 governs how breaks are handled:
 
 - A confirmed break (adversarially verified) earns a **golden seam** `[金]` in
@@ -41,7 +41,7 @@ organism. Every PR, issue, and discussion inherits these:
 
 ### Finding and reporting a break
 
-1. Read the [Settled Canon Registry](01_EMERGENTISM/00_META/00_SETTLED_CANON_REGISTRY.md)
+1. Read the [Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md)
    first — many questions are already settled, and re-litigating them is the
    defect, not the ruling.
 2. Open an issue with: the claim, where it lives, why it breaks, and the tier
