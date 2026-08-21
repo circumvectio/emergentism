@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3889,
+  "entry_count": 3890,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -1140,6 +1140,23 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 1,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "00_HANDOFF/2026_08_21_worktree_consolidation/2026_08_21_EMERGENTISM_WORKTREE_CONSOLIDATION_RECEIPT.md",
+      "sha256": "aba8fbc1c73ebd1f3ee0081e69c60ee638a85589bbc4b7d95ac9e9a9080a4594",
+      "bytes": 7977,
+      "owner_lane": "00_HANDOFF",
+      "artifact_class": "receipt",
+      "authority_status": "signed",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 0,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -4409,8 +4426,8 @@
     },
     {
       "path": "00_META/registers/CORPUS_INDEX.jsonl",
-      "sha256": "3e2dcf544ab8ef5fd68e1a24015bf947161937f00a562090890f9c54a71e2eeb",
-      "bytes": 854799,
+      "sha256": "4ab7736f39f9f1f2295587225288031df7ea2177a79b6cc0fb81836b3862f05b",
+      "bytes": 855276,
       "owner_lane": "00_META",
       "artifact_class": "other",
       "authority_status": "unrated",
@@ -18632,7 +18649,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 17,
+      "inbound_references": 18,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -18887,7 +18904,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 27,
+      "inbound_references": 28,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -38216,7 +38233,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 79,
+      "inbound_references": 80,
       "gate": null,
       "review_state": "unreviewed"
     },
