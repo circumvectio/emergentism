@@ -23,33 +23,26 @@ model, `φν = 1`. These coordinates are a design model, not an empirical score.
 
 ## Seven-row gradient
 
-| Level | Class | Quality `φ` | Quantity `ν` | Balance `B` | Operational meaning |
+| Level | Seat class | Quality `φ` | Quantity `ν` | Balance `B` | Operational meaning |
 |---|---|---:|---:|---:|---|
-| L1 | Demon pole | `→ 0` | `→ ∞` | `→ 0` | Maximum intake/force; minimum form. Bound and classify only. |
-| L2 | God-balancer | `2−√3` | `2+√3` | `1/2` | Expand many possibilities, then hand them upward. |
-| L3 | God-balancer | `1/√3` | `√3` | `√3/2` | Convert candidate volume into checked evidence. |
-| L4 | God-balancer / equator | `1` | `1` | `1` | Kṣatriya balance: quality and quantity move proportionally. |
-| L5 | Titan pole | `√3` | `1/√3` | `√3/2` | High-form architecture, constrained by executable descent. |
-| L6 | Titan pole | `2+√3` | `2−√3` | `1/2` | Extreme compression; retain enough capacity to remain useful. |
-| L7 | Titan pole | `→ ∞` | `→ 0` | `→ 0` | Maximum pattern/constitution; no ordinary execution. |
+| L1 | operational | `→ 0` | `→ ∞` | `→ 0` | Bound and classify only; limiting seat, not the pole itself. |
+| L2 | operational | `2−√3` | `2+√3` | `1/2` | Expand many possibilities, then hand them upward. |
+| L3 | operational | `1/√3` | `√3` | `√3/2` | Convert candidate volume into checked evidence. |
+| L4 | operational / equator | `1` | `1` | `1` | Sole local mutator; equality is selected balance. |
+| L5 | boundary counsel | `√3` | `1/√3` | `√3/2` | High-form architecture returned to L4 as counsel. |
+| L6 | boundary counsel | `2+√3` | `2−√3` | `1/2` | Propose compression; retain enough capacity to remain useful. |
+| L7 | boundary witness | `→ ∞` | `→ 0` | `→ 0` | Limiting whole-pattern witness; no ordinary execution. |
 
-For reciprocal rows, `B = 2 / (φ + ν)`. L4 also obeys the dynamic balance
-condition `dΦ/Φ = dV/V`: quality and quantity must improve proportionally.
+For reciprocal rows, `B = 2 / (φ + ν)`. At L4, `φ=ν=B=1`; if the normalized
+ordinal factors are equal, `min(Φ,V)` equals both. This is selected balance,
+not a universal optimum or a proportional-growth differential law.
 
-## Classes and pathologies
+## Direction predicates and pathologies
 
-- **Demon** names the quantity-over-quality pole: `V >> Φ`. It is necessary for
-  intake, stress, adversarial coverage and raw capability, but becomes pathological
-  when force, speed or output volume outruns evidence, form, consent or review.
-- **God-balancer** names the converting function from raw quantity toward usable
-  quality. L2 and L3 remain quantity-side stations; L4 is the exact balance.
-- **Titan** names the quality-over-quantity pole: `Φ >> V`. It is necessary for
-  architecture, compression and constitutional witness, but becomes pathological
-  when perfection, abstraction or doctrine can no longer descend into workable
-  action.
-
-These are operational predicates, not moral identities. Demon and Titan are both
-necessary boundary functions. Neither pole may control ordinary execution.
+Historical God/Demon language is a retrospective consequence predicate, never
+an identity, person-rank, seat class, permission, or authority. L1–L4 are the
+operational work seats. L5–L7 are non-deployable boundary counsel. Their G7
+move labels are `[I]` directional projections into GEN7 seats; `GEN7 ≠ G7`.
 
 ## Dispatch law
 
@@ -57,7 +50,7 @@ necessary boundary functions. Neither pole may control ordinary execution.
 2. L2 maximizes distinct candidates and must stop expansion at a declared handoff gate.
 3. L3 reduces candidate volume only by explicit evidence, method and provenance.
 4. L4 chooses the smallest sufficient action with both a quality floor and a quantity ceiling.
-5. L5-L7 must return a compressed, executable packet to L4 or remain advisory.
+5. L5–L7 return non-authorizing counsel to L4 and never mutate or publish.
 6. Every dispatch states its target balance profile, quantity evidence, quality evidence,
    stopping condition and handoff.
 7. A role crossing its target toward either pole triggers review; a pole claiming the
@@ -71,6 +64,9 @@ validated performance unless the measures and calibration were preregistered.
 
 This balance law governs reasoning and work allocation. It grants no legal, corporate,
 financial, transaction or public-DAV authority. Ordinary AI work requires no signature.
-If an AI actually signs a smart contract or transaction for a Natural Person, that act
-requires a separate scoped, revocable delegated transaction mandate and the AI's own
-disclosed agent key.
+Every AI and Rosetta seat has `may_sign=false` and `may_authorize=false`. An AI
+may compile and drive an unsigned proposal to the boundary but may not hold or
+ad-hoc-use a treasury key. External consequence requires the applicable
+authority; `AUTH.PUBLIC_BIND` requires at least two natural persons and PRISM
+verifies only. Ordinary scoped repository mutation remains an L4 task act, not
+a signature or legal-person act.

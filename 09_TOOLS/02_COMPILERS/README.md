@@ -50,6 +50,27 @@ source lane, repair the source and recompile.
 | `compile_claim_cards.py` | `00_META/registers/CLAIM_CARD_REGISTER.json`, `CLAIM_GRAPH.json`, `CLAIM_LIFECYCLE_INVENTORY.json` | [B/S] Active deterministic claim/owner/dependency compiler. |
 | `build_corpus_map.py` | compatibility front door for `compile_claim_cards.py` | [B] Active; the absent-source holographic compiler was replaced in W0. |
 | `render_burri_rules.py` | deterministic Burri plate renders from `05_COSMOLOGY/00_THE_BURRI_RULES.md` | [B/S] Active; covered by `test_render_burri_rules.py`. |
+| `sync_root_agentz_dispatch.py` | side-output `.codex/agents/` projection from seven manifest-listed YAMLs | [B/S] Active deterministic compiler; direct runtime emission refused. |
+| `check_root_agentz_projection.py` | independent semantic audit of a proposed or adopted projection | [B/S] Active write-free checker; freezes the corrected seven-row matrix and authority/tool fences. |
+
+## Rosetta agent projection commands
+
+```sh
+python3 -B 09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py --self-test
+python3 -B 09_TOOLS/02_COMPILERS/check_root_agentz_projection.py --self-test
+python3 -B 09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py \
+  --emit-proposal --out <empty-side-directory>
+python3 -B 09_TOOLS/02_COMPILERS/check_root_agentz_projection.py \
+  --target <side-directory>
+```
+
+The source contract is
+`08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/ROSETTA_AGENT_PROJECTION_CONTRACT.md`.
+Both gates parse the live corrected Stone row and Generative Table and fail on
+Stone-to-YAML drift; those hashes plus the Master Rosetta hash travel into every
+generated row, schema, and deployment manifest. Adoption into the root runtime is a
+separate diff-reviewed act. A compiler or checker pass proves local deterministic
+conformance only.
 
 ## Claim-card commands
 

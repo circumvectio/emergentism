@@ -30,13 +30,20 @@ evidence_tier: "[B] local scaffold; [S] structural caste mapping; [C] unprovisio
 > conventions, and deployment bindings below describe an application surface
 > and supply no evidence for Emergentism.
 
-The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine,
-L5-L7 Executive boundary on the selected `P_node=min(Φ̂₄,V₄)` score)
-expressed as **Claude platform Managed Agents** — persisted, versioned agent configs
-that Anthropic runs in hosted, sandboxed containers.
+The seven Emergentism dispatch seats (L1 firewall, L2–L4 operational engine,
+L5–L7 non-deployable boundary counsel) expressed as source-owned managed-agent
+specifications. All seven compile into the local Codex runtime projection. The
+dormant hosted adapter may provision only operational L1–L4; it must never turn
+L5–L7 counsel into persistent hosted agents. No hosted provisioning or deployment
+is asserted by this checkout.
+
+The compiler and independent checker both parse the active corrected Stone row
+and Generative Table. Their exact hashes and the Master Rosetta hash travel with
+the projection, so a later canonical edit cannot leave an adopted runtime falsely
+green.
 
 > **Source of truth.** Definitions are *discovered, not invented* — each agent's
-> system prompt, tools, and model derive from the genotype
+> system prompt, tools, and row projection derive from the genotype
 > [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
 > The former per-caste spec folders are preserved under
 > [`../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/)
@@ -52,23 +59,26 @@ not cardinal score changes. Any present node arithmetic must first use the D4
 evaluation bridge `Φ̂₄=Eval₄(M,Φ₅)` and then the selected
 `P_node=min(Φ̂₄,V₄)` score.
 
-| L | Caste · Operator | Qualitative factor transfer | Function | Agentz.cloud trunk | Model | Tools | Mutates? |
+| L | Caste · Operator | G7 projection `[I]` | Function | Agentz.cloud trunk | Model route | Tools | Mutates? |
 |---|---|---|---|---|---|---|---|
-| L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | **guards** | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
-| L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | **primitives** | `claude-haiku-4-5` | + web | no |
-| L3 | Vaiśya · **Kṛṣṇa** (God) | −Φ_self, +V_other | auditor/charioteer — rank, enable | **axiom-card-schemas** | `claude-sonnet-4-6` | + web | no |
-| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | **templates** (STAGE, never F4 in public-DAV mode) | `claude-sonnet-4-6` | + write·edit·bash | **yes — permission-gated** |
-| L5 | Brāhmaṇa · **Brahmā** (Executive) | +Φ, +V | architect — redesign packets; advises | **value-chain (Porter)** | `claude-opus-4-8` | read·web | no |
-| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive with a tombstone | **schemas-compress + primitives-archive** | `claude-opus-4-8` | + write·edit·bash | **yes — permission-gated** |
-| L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | **value-chain (public-tree commit — only publishing caste)** | `claude-opus-4-8` | read·grep·glob | no |
+| L1 | Caṇḍāla · **Kali 🎲** | `kali_take_phi` | firewall — force-categorize, detect, encode | **guards** | registry-bound | read·grep·glob | no |
+| L2 | Śūdra · **Kālī 💀** | `kali_take_v` | explorer — expand candidates, truth-cut | **primitives** | registry-bound | + web | no |
+| L3 | Vaiśya · **Kṛṣṇa ◇** | `krishna_give_v` | auditor/charioteer — rank, enable | **axiom-card-schemas** | registry-bound | + web | no |
+| L4 | Kṣatriya · **Arjuna ⚔** | `arjuna_give_phi` | **executor — selected equator; sole local mutator** | **templates** | registry-bound | + write·edit·bash | **yes — permission-gated and task-scoped** |
+| L5 | Brāhmaṇa · **Brahmā ○** | `brahma_create` | architecture counsel; returns to L4 | **value-chain (Porter)** | registry-bound | read·web | no |
+| L6 | Sādhu · **Śiva •** | `shiva_dissolve` | negative/compaction counsel; returns to L4 | **schemas-compress + primitives-archive** | registry-bound | read·grep·glob | no |
+| L7 | Ṛṣi · **Viṣṇu ⊙** | `vishnu_preserve` | constitutional witness; returns to L4 | **whole-pattern witness** | registry-bound | read·grep·glob | no |
 
-**[D] Model tiers are a STAGED ASSIGNMENT, not doctrine.** *(Retiered and repaired 2026-08-19: this line previously read `[T]` — a tier that does not exist in the estate vocabulary `[A][B][S][I][C][D]` — and cited "CLAUDE.md *Quality × Quantity by Caste*", a section that does not exist in that file. Both were warrant substitution on this exact table. The nearest real document, `QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md`, governs the φ/ν/B of work products and says nothing about models.)* **Kill criterion: a null or equivalence result from P2 on cell `CASTE→MODEL@0` retires this table.** Live routing is applied, not pinned here — see `02_SKYZAI/01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/00_CANONICAL_DEFINITION.md` §"Rosetta dispatch". The tier rationale, unchanged:
-not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
-deep-reasoning L5–L7 → Opus. Reserve high-quality inference for higher-risk or constitutional lanes.
+**[D] Model routing is registry-bound and absent from the caste YAMLs.** The local
+runtime chooses a model at dispatch time for any invoked seat. The dormant hosted
+adapter requires explicit `ROSETTA_MODEL_L1` … `ROSETTA_MODEL_L4` variables and
+provisions only those four operational seats; L5–L7 have no hosted model route.
+The model-by-seat hypothesis remains untested and creates no semantic or authority
+claim.
 
 ## Accountable authorization, encoded structurally
 
-Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their `write`/`edit`/`bash`
+Only **L4 (Arjuna)** can mutate local state, and its `write`/`edit`/`bash`
 tools carry `permission_policy: {type: always_ask}`. The session goes idle and emits a
 `tool_use` event with `evaluated_permission: "ask"`; nothing lands until a human replies
 `user.tool_confirmation`. This is an ordinary platform permission safeguard:
@@ -84,14 +94,13 @@ contract is outside this runtime and outside Emergentist doctrine.
 ### Agentz.cloud projection (added 2026-07-23)
 
 Each caste maps to a *trunk* of the Agentz.cloud Public Polymemetic Tree (see
-`02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/AGENTZ_CLOUD_APP/05_PUBLIC_POLYMEMETIC_TREE.md`).
+`02_SKYZAI/01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/00_CANONICAL_DEFINITION.md`).
 The Axiom Card is the load-bearing join: every other layer (3-pass loop, 12-step
 arc, 5 trunks, 7 SPECTRE rows, 3-Tier Entity Model, 6 replicator layers, 7 consumer
 Modes) is a projection on it. In **public-DAV mode** (2026-07-12), Agentz.cloud is
-a deliberation/unsigned-proposal surface; PRISM multisig (≥2 natural-person
-councilors) signs consequence; the K2-of-the-time signs the unsigned proposal. L4
-*stages*, never F4s (acts/transmits/settles). The convergence-memo holds: one
-V-forcing directive, one commit, stop.
+a deliberation/unsigned-proposal surface. `AUTH.PUBLIC_BIND` requires at least
+two natural persons; PRISM verifies only. No Rosetta seat signs, authorizes,
+publishes, transmits, settles, or makes a public commitment.
 
 ---
 
@@ -104,18 +113,21 @@ V-forcing directive, one commit, stop.
 ```bash
 pip install anthropic pyyaml
 export ANTHROPIC_API_KEY=sk-ant-...        # your key
-python provision.py                        # creates env + 7 agents → agent_ids.json
+export ROSETTA_MODEL_L1=<provisioned-model-id>
+# repeat through ROSETTA_MODEL_L4; there are deliberately no defaults
+python provision.py                        # creates env + L1-L4 → agent_ids.json
 ```
 
 **Path B — Anthropic CLI (canonical version-controlled YAML):**
 ```bash
 brew install anthropics/tap/ant            # see shared/anthropic-cli.md
 ant auth login
-./provision.sh                             # creates env + 7 agents → agent_ids.env
+./provision.sh                             # creates env + L1-L4 → agent_ids.env
 ```
 
-Both create the `emergentism-seven` environment and the seven agents, and write their
-IDs. **Agents are persistent and versioned** — create once, reuse the IDs; to change a
+Both create the legacy-named `emergentism-seven` environment and operational L1–L4,
+then write those four IDs. L5–L7 remain unprovisioned counsel phases. **Hosted agents
+are persistent and versioned** — create once, reuse the IDs; to change a
 prompt/tool later, *update* (`ant beta:agents update --agent-id <id> --version N`), which
 bumps the version. Agents cannot be deleted, only archived — so don't re-run `provision.sh`
 blindly (use `provision.py`, which skips existing names).
@@ -127,8 +139,8 @@ blindly (use `provision.py`, which skips existing names).
 Agents are the config; **sessions** are each run. The runnable entry point is
 [`run_session.py`](run_session.py) — it loads `agent_ids.json`, resolves the L4 (Arjuna)
 executor + the shared environment, opens ONE session (stream-first), streams it, and
-reports the final status. Because Arjuna is wired as the coordinator over the other six
-(below), a single L4 session delegates down the whole caste ensemble:
+reports the final status. Arjuna is wired only over operational L1–L3 plus self;
+a hosted session never instantiates the L5–L7 boundary witnesses:
 
 ```bash
 pip install anthropic
@@ -160,22 +172,35 @@ session = client.beta.sessions.create(
 # stream-first, then send the kickoff; break on terminal idle / terminated
 ```
 
-**The ensemble = a polygenic pipeline that brings a decision to the equator:**
-`L1 firewall → L2 explore → L3 rank → L4 decide & execute within granted permissions`, with the Executive boundaries
-held as boundaries the work runs within (**L5** redesign only when L4 is structurally
-blocked; **L6** compress overgrowth; **L7** constitutional adjudication). You can run each
-caste as its own session, but the ensemble is now **wired as a coordinator**: at provision
-time both `provision.py` and `provision.sh` create the six non-L4 castes first, capture
-their ids, then create the L4 (Arjuna) executor with `multiagent: {type: "coordinator",
-agents: [<the six ids>, {type: "self"}]}` injected. So `run_session.py` opens a single L4
-session and Arjuna delegates down to the six — each delegation surfaces on the stream as a
-`session.thread_created` event. (Background on the platform shape:
+**The hosted ensemble is the operational pipeline to the equator:**
+`L1 firewall → L2 explore → L3 rank → L4 stage/execute local scoped work`. L5
+architecture, L6 negative-boundary, and L7 constitutional witness remain sequential,
+non-persistent counsel phases in the local Soul Loop; they are not independently
+runnable hosted agents. At provision time both adapters create L1–L3 first, then
+L4 with `multiagent: {type: "coordinator", agents: [<L1-L3 ids>, {type: "self"}]}`.
+Each operational delegation surfaces as a `session.thread_created` event. (Background:
 `shared/managed-agents-multiagent.md`.)
 
-> **Note on parity.** These hosted agents mirror the seven Claude Code subagents already
-> registered in this workspace (`candala_firewall` … `rsi_constitution`). Use the local
-> subagents for work *inside this repo*; use these Managed Agents when you want Anthropic
-> to host the loop + a per-session workspace (CI triggers, long-running sessions, a UI).
+> **No parity claim.** The local runtime can invoke all seven seats under the Soul
+> Loop. The dormant hosted adapter exposes only L1–L4 and therefore is not a hosted
+> copy of the full seven-seat loop.
+
+### Mission sizing by stop condition
+
+Every source YAML owns an exact `runtime_projection.stop_condition`. A dispatch
+brief must quote it and ask only for work the station's pramāṇa and stop condition
+can close. A mismatch is re-routed or split; the unchanged mission is not retried,
+and a resulting timeout is recorded as a briefing error rather than a station
+failure. L1 direct perception is bounded to one named source or artifact and facts
+or contradictions visible within it. Cross-source inference and consistency work
+belong to L3.
+
+L4 also owns commit cadence. A completed owned change ends in a local commit without
+an owner permission ping. Non-trivial or mixed surfaces first route through L1 dirty
+path mapping, L2 revertible grouping, and L3 ownership/reversibility ranking. L4
+uses explicit pathspec and inspects the staged diff; `git add -A` and capture of
+active or unresolved foreign work are forbidden. Commit is a receipt, not authority,
+deployment, publication, settlement, or permission to push.
 
 ---
 
@@ -191,26 +216,24 @@ MANAGED_AGENTS/
 │   ├── 03_vaisya_auditor.agent.yaml        (L3 · Kṛṣṇa · read+web)
 │   ├── 04_ksatriya_executor.agent.yaml     (L4 · Arjuna · write-gated · coordinator)
 │   ├── 05_brahmana_architect.agent.yaml    (L5 · Brahmā · read+web)
-│   ├── 06_sadhu_compressor.agent.yaml      (L6 · Śiva · write-gated)
+│   ├── 06_sadhu_compressor.agent.yaml      (L6 · Śiva · read-only counsel)
 │   └── 07_rsi_constitution.agent.yaml      (L7 · Viṣṇu · read-only)
 ├── provision.py                    ← SDK provisioner (idempotent by name; wires L4 coordinator)
 ├── provision.sh                    ← `ant` CLI provisioner (version-controlled YAML; wires L4 coordinator)
 └── run_session.py                  ← data-plane entry: one L4 (Arjuna) session, stream-first
 ```
 
-> `agents/` holds provisioning YAML only (one `*.agent.yaml` per caste) — a machine-config leaf with **no front-door triplet (README/AGENTS/CLAUDE) by design**; its routing front door is this file, and each YAML is annotated in the tree above.
+> `agents/` holds source YAML for the local seven-seat projection; only L1–L4 are
+> eligible inputs to the dormant hosted provisioners. It is a machine-config leaf
+> with no front-door triplet by design; this file is its routing front door.
 
 Canon: [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) ·
 [historical constitutional-invariants application](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) ·
 [`../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
 
-> **Model-id rot, measured 2026-08-19.** Five of the seven ids pinned in the
-> caste YAMLs (`claude-sonnet-4-6` ×2, `claude-opus-4-8` ×3) are dead, and the
-> integrity gate reported 7/7 OK the whole time — the seal hashes bytes, and
-> the bytes never changed; only the world did. The YAMLs were deliberately
-> NOT edited to fix this: their `model:` field's sole consumer is
-> `provision.py` against a control plane that has never been provisioned (no
-> credentials, no `agent_ids.json`), so the field has never selected a model
-> for a single dispatch — while editing it would restale ~30 landed pointer
-> lines and ~70 pending line-specs. Per ruling D4 the fix is registry-bound,
-> not pinned. Live routing lives in the applied layer.
+> **Model-id rot repaired 2026-08-21.** The dead pinned ids were removed from
+> all seven source YAMLs. `provision.py` and `provision.sh` now fail closed
+> unless model ids for hosted L1–L4 are supplied through per-seat registry variables;
+> they reject the idea that L5–L7 are persistent hosted agents.
+> This is a local configuration repair, not evidence that the external control
+> plane is provisioned or reachable.
