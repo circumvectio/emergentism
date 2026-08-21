@@ -8,8 +8,8 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s 21 reopened transitions adjudicated by `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; 21 grave parent forms terminal, DF-14 narrowed, zero separate active parent investigations; 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 242, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; world contact and deployment open; historical receipts preserved by full filename"
-date: 2026-08-02
+status: "ACTIVE — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s 21 reopened transitions adjudicated by `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; 21 grave parent forms terminal, DF-14 narrowed, zero separate active parent investigations; 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 245, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; world contact and deployment open; historical receipts preserved by full filename"
+date: 2026-08-21
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
@@ -267,7 +267,7 @@ ledger's assembly of them.
 
 ## 4 · The rules of the record — the four postures
 
-Every worldview lives in the synthetic gap (formally valid, beyond proof, held as a wager). They cannot compete *in* the gap; they compete by their **posture toward** it. `[I]`. Full source: `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` (filename retained per K3; content is four postures, `129_FOURTH_POSTURE_ADOPTED_2026_07_13.md`).
+Every worldview lives in the synthetic gap (formally valid, beyond proof, held as a wager). They cannot compete *in* the gap; they compete by their **posture toward** it. `[I]`. Full current source: [`02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](../../02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md). The former three-posture filename is historical custody at [`90_ARCHIVE/2026_07_22_tree_authority_reconciliation/08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md`](../../90_ARCHIVE/2026_07_22_tree_authority_reconciliation/08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md), not a current source.
 
 | Posture | Stance toward the gap | Signature | Makes people |
 |---|---|---|---|
