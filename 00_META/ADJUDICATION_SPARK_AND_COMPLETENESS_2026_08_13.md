@@ -164,3 +164,11 @@ projection is not the place for it.
 
 **Canonical path:**
 `01_EMERGENTISM/00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md`
+
+## Dated successor pointer — 2026-08-21
+
+The additive EUB-1 v1.0 compatibility ruling is
+[`ADJUDICATION_W10_SPARK_EUB1_V1_2026_08_21.md`](ADJUDICATION_W10_SPARK_EUB1_V1_2026_08_21.md).
+It narrows cross-architecture agreement to a robustness/disagreement diagnostic
+and makes held-out interventions and predictions the truth-discriminating tests.
+The 2026-08-13 body remains preserved as provenance.

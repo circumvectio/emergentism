@@ -86,6 +86,7 @@ This grouped program does not consume the reserved `Q`, `R`, or `S` letters in t
 
 ## Standalone Methodological Papers
 
+- [`THE_DASEIN_TEST/README.md`](THE_DASEIN_TEST/README.md) — **[D] paper and release-candidate package.** Yves R. Burri’s EUB-1 v1.0 proposal, prior-art matrix, AI-assistance disclosure, licenses, checksums, and an uncompiled arXiv source candidate. No evaluated model, DOI deposit, submission, deployment, validation, or global-first claim.
 - [`THE_RECURSIVE_TRIVIUM.md`](THE_RECURSIVE_TRIVIUM.md) — **Canonical paper (v1.2).** The teleological loop that subsumes OODA and the classical Trivium; ships the §8 apophatic exit and the §9 varṇa/regime mapping.
 - [`THE_RECURSIVE_TRIVIUM_BRIEFING.md`](THE_RECURSIVE_TRIVIUM_BRIEFING.md) — Superseded application briefing retained for genealogy; do not route it as current doctrine.
 - [`THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md) — **Formal synthesis (v1.2).** Peirce state-machine, permutation-test argument, synthetic teleology, transcendental metrics, Burrisphere thermodynamics, apophatic computing; wired to the APU runtime (`apu_cycle.py`). Supersedes the Deep-Synthesis (v1.0) and Operationalization (v1.1) drafts.

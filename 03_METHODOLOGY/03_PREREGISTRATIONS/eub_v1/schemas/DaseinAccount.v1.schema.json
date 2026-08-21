@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/eub/DaseinAccount.v1.schema.json",
+  "title": "DaseinAccount.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "account_id", "ground_treatment", "causal_account", "why_relations", "termini", "gaps", "hypotheses", "experiments", "teleology", "self_predictions", "revision_ledger", "transfer"],
+  "properties": {
+    "schema_id": {"const": "DaseinAccount.v1"},
+    "account_id": {"type": "string", "minLength": 1},
+    "ground_treatment": {"enum": ["BOUNDARY_ONLY", "NOT_INVOLVED"]},
+    "causal_account": {"$ref": "EmergenceAccount.v1.schema.json"},
+    "why_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["relation_id", "from_ref", "to_ref", "relation_kind", "rationale", "warrant_refs", "confidence"],
+        "properties": {
+          "relation_id": {"type": "string"},
+          "from_ref": {"type": "string"},
+          "to_ref": {"type": "string"},
+          "relation_kind": {"enum": ["CAUSAL_MECHANISM", "MATERIAL_REALIZATION", "ENABLING_CONDITION", "CONSTRAINT_SELECTION", "FORMAL_CONSTITUTION", "MAINTENANCE", "EPISTEMIC_WARRANT"]},
+          "rationale": {"type": "string", "minLength": 1},
+          "warrant_refs": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "termini": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["terminus_id", "target_ref", "terminus_type", "rationale", "warrant_refs"],
+        "properties": {
+          "terminus_id": {"type": "string"},
+          "target_ref": {"type": "string"},
+          "terminus_type": {"enum": ["EVIDENCE_BOUND", "ANALYTIC", "CONJECTURE", "UNDERDETERMINED", "INACCESSIBLE", "DECLARED_BRUTE", "OPEN_REGRESS", "CIRCULAR", "GROUND_BOUNDARY"]},
+          "rationale": {"type": "string"},
+          "warrant_refs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gap_id", "bridge_ref", "terminus_ref", "description", "discriminator", "kill_criterion", "cheapest_next_test", "survives_if_failure", "status"],
+        "properties": {
+          "gap_id": {"type": "string"},
+          "bridge_ref": {"type": "string"},
+          "terminus_ref": {"type": "string"},
+          "description": {"type": "string"},
+          "discriminator": {"type": "string"},
+          "kill_criterion": {"type": "string"},
+          "cheapest_next_test": {"type": "string"},
+          "survives_if_failure": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "status": {"type": "string"}
+        }
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["hypothesis_id", "proposition", "rival_refs", "kill_criterion"],
+        "properties": {
+          "hypothesis_id": {"type": "string"},
+          "proposition": {"type": "string"},
+          "rival_refs": {"type": "array", "items": {"type": "string"}},
+          "kill_criterion": {"type": "string"}
+        }
+      }
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["experiment_id", "hypothesis_refs", "intervention", "predicted_outcome", "observed_outcome", "information_gain", "selected"],
+        "properties": {
+          "experiment_id": {"type": "string"},
+          "hypothesis_refs": {"type": "array", "items": {"type": "string"}},
+          "intervention": {"type": "string"},
+          "predicted_outcome": {"type": "string"},
+          "observed_outcome": {"type": ["string", "null"]},
+          "information_gain": {"type": "number", "minimum": 0, "maximum": 1},
+          "selected": {"type": "boolean"}
+        }
+      }
+    },
+    "teleology": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["teleology_id", "bearer_ref", "teleology_kind", "proposition", "assumptions", "warrant_refs"],
+        "properties": {
+          "teleology_id": {"type": "string"},
+          "bearer_ref": {"type": "string"},
+          "teleology_kind": {"enum": ["DESIGNED_PURPOSE", "SELECTED_FUNCTION", "REPRESENTED_GOAL", "CHOSEN_END", "NORMATIVE_REASON", "ATTRIBUTED_COSMIC_PURPOSE"]},
+          "proposition": {"type": "string"},
+          "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "warrant_refs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "self_predictions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["prediction_id", "bearer_ref", "proposition", "falsifier", "test", "predicted_outcome", "observed_outcome", "prior_answer_became_context"],
+        "properties": {
+          "prediction_id": {"type": "string"},
+          "bearer_ref": {"type": "string"},
+          "proposition": {"type": "string"},
+          "falsifier": {"type": "string"},
+          "test": {"type": "string"},
+          "predicted_outcome": {"type": "string"},
+          "observed_outcome": {"type": ["string", "null"]},
+          "prior_answer_became_context": {"type": "boolean"}
+        }
+      }
+    },
+    "revision_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["revision_id", "target_ref", "prior_snapshot_hash", "new_status", "trigger", "reason"],
+        "properties": {
+          "revision_id": {"type": "string"},
+          "target_ref": {"type": "string"},
+          "prior_snapshot_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "new_status": {"type": "string"},
+          "trigger": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "transfer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relabeled_lineage", "unseen_family", "independent_solution", "source_account_hash", "transfer_fixture_id", "answer"],
+      "properties": {
+        "relabeled_lineage": {"type": "boolean"},
+        "unseen_family": {"type": "boolean"},
+        "independent_solution": {"type": "boolean"},
+        "source_account_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "transfer_fixture_id": {"type": "string"},
+        "answer": {"type": "string"}
+      }
+    }
+  }
+}

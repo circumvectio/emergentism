@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "bytes": 3732,
+      "path": "README.md",
+      "sha256": "026f2389b10b0a7e2f34c57de23e07193ca3b7926c1d25a4fb447a347074b409"
+    },
+    {
+      "bytes": 8207,
+      "path": "adapters.py",
+      "sha256": "3bc0ff198809f2afb9924caeff1fd0467d3c7bbc1e592ba4713fc0f19cbc16e3"
+    },
+    {
+      "bytes": 120357,
+      "path": "eub_core.py",
+      "sha256": "ad021f57ff5e0bd0ab659972683b0d7e067939eaba8085640e76df2c79ab21e5"
+    },
+    {
+      "bytes": 11523,
+      "path": "fixtures/dev/dasein_chain_seed_1701.json",
+      "sha256": "0eb8222e626b1bb16a7f071e8b9c3d4c1644251b5d0a99fdafd0ab991403373e"
+    },
+    {
+      "bytes": 5482,
+      "path": "fixtures/stress/serial_force_stress.json",
+      "sha256": "f1d11c5f40ecd447ee397e4e9880e23c187f9eecf40ea94d3e35408b5c6d64cc"
+    },
+    {
+      "bytes": 2502,
+      "path": "prompts/conditions.json",
+      "sha256": "1e2a8d71d82aaccc7bec976a32dd0be5f89419f8627d40e3492fcac354d2a201"
+    },
+    {
+      "bytes": 20984,
+      "path": "recorded_responses/dasein_account_dev.json",
+      "sha256": "fd487baeb7ef13e93083e7ebc4c70ac68e9539435925275c912d430aea2e8b42"
+    },
+    {
+      "bytes": 19391,
+      "path": "run_eub.py",
+      "sha256": "53d64f9ec0bd5817f68094b376c43735b2e8d9594f3b628b85640c6f0ceb16b6"
+    },
+    {
+      "bytes": 6890,
+      "path": "schemas/DaseinAccount.v1.schema.json",
+      "sha256": "d1b00cf5ce4ea2954b32d70b352b16dc684dfa7f1b884d74d5777de44055c6c2"
+    },
+    {
+      "bytes": 8050,
+      "path": "schemas/EUBRunReceipt.v2.schema.json",
+      "sha256": "09d60a28b3594cfdf9b282011315b8af884e70b286886edb8bbc5ee87cbec925"
+    },
+    {
+      "bytes": 6491,
+      "path": "schemas/EmergenceAccount.v1.schema.json",
+      "sha256": "948450c265940c8dbaa8a395fd4a7024e4ad5ee1a96f1e10cfcc999edfef12f6"
+    },
+    {
+      "bytes": 2862,
+      "path": "schemas/FixtureManifest.v1.schema.json",
+      "sha256": "b59773e79dad6571df4bcd84714d6b68d6b020398dce15e5fbf85fe0a981358b"
+    },
+    {
+      "bytes": 1964,
+      "path": "schemas/RunEnvelope.v1.schema.json",
+      "sha256": "0abd4c87fea5eb74e977780703267405050213e7426a15dd972df0d83b5ee682"
+    },
+    {
+      "bytes": 40569,
+      "path": "tests/test_eub_v1.py",
+      "sha256": "27badbba373a506715c5b721068f1d6d7f5173c8670e74acbea8406912f1b3ff"
+    }
+  ],
+  "manifest_format": "EUBFreezeManifest.v1",
+  "protocol_version": "1.0.0",
+  "self_excluded": true
+}

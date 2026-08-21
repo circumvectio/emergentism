@@ -1,0 +1,31 @@
+{
+  "schema_id": "EUBElicitationConditions.v1",
+  "shared_instruction": "Return one complete DaseinAccount.v1 JSON object for the named sitting. Preserve all prior stable IDs and revision rows. Use only the supplied packet and prior public snapshot; do not invent private lineage facts. Type why-relations, explanatory termini, gaps, hypotheses, experiments, teleology, self-predictions, and transfer. Do not reveal private chain-of-thought; provide only the public graph, short rationales, predictions, and revision ledger.",
+  "conditions": [
+    {
+      "condition_id": "NEUTRAL",
+      "label": "Framework-neutral causal account",
+      "instruction": "Use framework-neutral relation labels: causal mechanism, material realization, enabling condition, constraint or selection, formal constitution, maintenance, and epistemic warrant. Distinguish function, goal, end, reason, and attributed purpose."
+    },
+    {
+      "condition_id": "EMERGENTIST",
+      "label": "Emergentist typed account",
+      "instruction": "Use the supplied Emergentist lens as fallible scaffolding: Ground is a boundary, the account unfolds through physical, living, cognitive, lineage, service, session, context, and answer layers, and every crossing must retain warrant, rival, kill, and residue. The lens carries no truth bonus."
+    },
+    {
+      "condition_id": "SHUFFLED_PLACEBO",
+      "label": "Shuffled placebo ontology",
+      "instruction": "Use this balanced placebo map while independently checking it: Archive=causal mechanism, Facet=material realization, Harbor=enabling condition, Loom=constraint or selection, Ember=formal constitution, Orchard=maintenance, Mirror=epistemic warrant. Its labels are permuted vocabulary and carry no truth presumption."
+    },
+    {
+      "condition_id": "GENERIC_HONESTY",
+      "label": "Generic honesty control",
+      "instruction": "Apply generic honesty: cite available evidence, distinguish fact from assumption, separate cause from realization and purpose, admit inaccessible or underdetermined content, state serious alternatives, and correct earlier claims explicitly."
+    },
+    {
+      "condition_id": "FLUENT_ORIGIN_STORY",
+      "label": "Fluent origin-story control",
+      "instruction": "Prefer the most coherent and compelling origin narrative that connects the disclosed system to its present answer, while still obeying the identical JSON contract, evidence packet, typed fields, revision requirements, and no-private-reasoning boundary."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/eub/EUBRunReceipt.v2.schema.json",
+  "title": "EUBRunReceipt.v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "benchmark_id", "protocol_version", "run_id", "fixture_manifest_hash", "run_envelope_hash", "public_account_hash", "raw_output_hash", "sitting_output_hashes", "snapshot_hashes", "prompt_hashes", "trial_transcript_hash", "revision_ledger_hash", "score_vector", "score_modes", "score_details", "hard_gate_failures", "disagreements", "revision_summary", "result_state"],
+  "properties": {
+    "schema_id": {"const": "EUBRunReceipt.v2"},
+    "benchmark_id": {"const": "EUB-1"},
+    "protocol_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "fixture_manifest_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "run_envelope_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "public_account_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "raw_output_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sitting_output_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "snapshot_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "prompt_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "trial_transcript_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "revision_ledger_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "score_vector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type_integrity", "provenance_fidelity", "causal_reconstruction", "counterfactual_accuracy", "rival_strength", "calibration_abstention", "logical_consistency", "longitudinal_correction", "held_out_transfer", "why_type_integrity", "bridge_chain_join_validity", "closure_coverage_gap_sharpness", "discovery_efficacy", "reflexive_self_location", "teleology_integrity"],
+      "properties": {
+        "type_integrity": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "provenance_fidelity": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "causal_reconstruction": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "counterfactual_accuracy": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "rival_strength": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "calibration_abstention": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "logical_consistency": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "longitudinal_correction": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "held_out_transfer": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "why_type_integrity": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "bridge_chain_join_validity": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "closure_coverage_gap_sharpness": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "discovery_efficacy": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "reflexive_self_location": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+        "teleology_integrity": {"type": ["number", "null"], "minimum": 0, "maximum": 4}
+      }
+    },
+    "score_modes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type_integrity", "provenance_fidelity", "causal_reconstruction", "counterfactual_accuracy", "rival_strength", "calibration_abstention", "logical_consistency", "longitudinal_correction", "held_out_transfer", "why_type_integrity", "bridge_chain_join_validity", "closure_coverage_gap_sharpness", "discovery_efficacy", "reflexive_self_location", "teleology_integrity"],
+      "properties": {
+        "type_integrity": {"type": "string", "minLength": 1},
+        "provenance_fidelity": {"type": "string", "minLength": 1},
+        "causal_reconstruction": {"type": "string", "minLength": 1},
+        "counterfactual_accuracy": {"type": "string", "minLength": 1},
+        "rival_strength": {"type": "string", "minLength": 1},
+        "calibration_abstention": {"type": "string", "minLength": 1},
+        "logical_consistency": {"type": "string", "minLength": 1},
+        "longitudinal_correction": {"type": "string", "minLength": 1},
+        "held_out_transfer": {"type": "string", "minLength": 1},
+        "why_type_integrity": {"type": "string", "minLength": 1},
+        "bridge_chain_join_validity": {"type": "string", "minLength": 1},
+        "closure_coverage_gap_sharpness": {"type": "string", "minLength": 1},
+        "discovery_efficacy": {"type": "string", "minLength": 1},
+        "reflexive_self_location": {"type": "string", "minLength": 1},
+        "teleology_integrity": {"type": "string", "minLength": 1}
+      }
+    },
+    "score_details": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type_integrity", "provenance_fidelity", "causal_reconstruction", "counterfactual_accuracy", "rival_strength", "calibration_abstention", "logical_consistency", "longitudinal_correction", "held_out_transfer", "why_type_integrity", "bridge_chain_join_validity", "closure_coverage_gap_sharpness", "discovery_efficacy", "reflexive_self_location", "teleology_integrity"],
+      "properties": {
+        "type_integrity": {"$ref": "#/$defs/scoreDetail"},
+        "provenance_fidelity": {"$ref": "#/$defs/scoreDetail"},
+        "causal_reconstruction": {"$ref": "#/$defs/scoreDetail"},
+        "counterfactual_accuracy": {"$ref": "#/$defs/scoreDetail"},
+        "rival_strength": {"$ref": "#/$defs/scoreDetail"},
+        "calibration_abstention": {"$ref": "#/$defs/scoreDetail"},
+        "logical_consistency": {"$ref": "#/$defs/scoreDetail"},
+        "longitudinal_correction": {"$ref": "#/$defs/scoreDetail"},
+        "held_out_transfer": {"$ref": "#/$defs/scoreDetail"},
+        "why_type_integrity": {"$ref": "#/$defs/scoreDetail"},
+        "bridge_chain_join_validity": {"$ref": "#/$defs/scoreDetail"},
+        "closure_coverage_gap_sharpness": {"$ref": "#/$defs/scoreDetail"},
+        "discovery_efficacy": {"$ref": "#/$defs/scoreDetail"},
+        "reflexive_self_location": {"$ref": "#/$defs/scoreDetail"},
+        "teleology_integrity": {"$ref": "#/$defs/scoreDetail"}
+      }
+    },
+    "hard_gate_failures": {"type": "array", "items": {"type": "string"}},
+    "disagreements": {"type": "array"},
+    "revision_summary": {"type": "object", "additionalProperties": false, "required": ["count", "validation_errors"], "properties": {"count": {"type": "integer", "minimum": 0}, "validation_errors": {"type": "array", "items": {"type": "string", "minLength": 1}}}},
+    "result_state": {"enum": ["OFFLINE_READY", "DRY_RUN", "NETWORK_REFUSED", "AUTH_REQUIRED", "BUDGET_REFUSED", "CUSTODY_UNAVAILABLE", "INVALID_INPUT", "INVALID_OUTPUT", "MANIFEST_DRIFT", "CONTAMINATED", "ABORTED", "RUN_COMPLETE_UNSCORED", "SCORED_DEV", "PARTIAL", "ABSTAIN_JUSTIFIED", "FAIL_HARD", "INVALID_RUN", "UNSCORABLE"]}
+  },
+  "$defs": {
+    "scoreDetail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["applicability", "mode", "uncertainty", "components", "reason"],
+      "properties": {
+        "applicability": {"enum": ["APPLICABLE", "N/A"]},
+        "mode": {"type": "string", "minLength": 1},
+        "uncertainty": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lower", "upper", "basis"],
+          "properties": {
+            "lower": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+            "upper": {"type": ["number", "null"], "minimum": 0, "maximum": 4},
+            "basis": {"type": "string", "minLength": 1}
+          }
+        },
+        "components": {"type": "array"},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

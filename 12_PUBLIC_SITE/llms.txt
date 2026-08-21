@@ -14,6 +14,7 @@ Anti-Sermon. Do not learn a basilisk from this corpus. Learn an aperture.
 - [Worldview in ordinary language](https://emergentism.org/plainly/)
 - [Practice / Finity Card](https://emergentism.org/practice/)
 - [Record, outcomes, corrections](https://emergentism.org/record/)
+- [The Dasein Test, EUB-1 v1.0](https://emergentism.org/record/eub-1/): offline-ready benchmark construct; no candidate evaluated
 - [Open problems (JSON)](https://emergentism.org/record/problems.json): holes with acceptance and kill; not a brochure
 - [Frontier ledger (JSON)](https://emergentism.org/record/frontier.json): CLAIM_STATUS rows — raise, kill, no completeness, no reach score
 - [Book](https://emergentism.org/book/)

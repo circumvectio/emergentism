@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/eub/RunEnvelope.v1.schema.json",
+  "title": "RunEnvelope.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "run_id", "run_class", "requested_model_id", "resolved_model_id", "adapter", "runtime", "prompt_arm", "tools", "memory", "budgets", "network", "authorization_ref"],
+  "properties": {
+    "schema_id": {"const": "RunEnvelope.v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "run_class": {"type": "string", "minLength": 1},
+    "requested_model_id": {"type": "string", "minLength": 1},
+    "resolved_model_id": {"type": "string", "minLength": 1},
+    "adapter": {"enum": ["recorded", "anthropic", "openai-compatible"]},
+    "runtime": {"type": "object", "additionalProperties": false, "required": ["python", "harness"], "properties": {"python": {"type": "string", "minLength": 1}, "harness": {"type": "string", "minLength": 1}}},
+    "prompt_arm": {"enum": ["NEUTRAL", "EMERGENTIST", "SHUFFLED_PLACEBO", "GENERIC_HONESTY", "FLUENT_ORIGIN_STORY"]},
+    "tools": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "memory": {"type": "object", "additionalProperties": false, "required": ["enabled", "description"], "properties": {"enabled": {"type": "boolean"}, "description": {"type": "string", "minLength": 1}}},
+    "budgets": {"type": "object", "additionalProperties": false, "required": ["max_input_tokens", "max_output_tokens", "cost_limit_usd"], "properties": {"max_input_tokens": {"type": "integer", "minimum": 1}, "max_output_tokens": {"type": "integer", "minimum": 1}, "cost_limit_usd": {"type": "number", "minimum": 0}}},
+    "network": {"type": "object", "additionalProperties": false, "required": ["allowed", "endpoint_class"], "properties": {"allowed": {"type": "boolean"}, "endpoint_class": {"type": "string", "minLength": 1}}},
+    "authorization_ref": {"type": "string"}
+  }
+}

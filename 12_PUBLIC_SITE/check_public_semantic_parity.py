@@ -239,6 +239,7 @@ def record_has_only_historical_k2(text: str) -> bool:
 STATUS_SOURCE_CONTRACTS = {
     "00_THE_KERNEL_INDEX.md": "[I]",
     "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md": "[S/B]",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md": "[D]",
 }
 
 
