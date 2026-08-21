@@ -18,7 +18,7 @@ rosetta:
 **Yves R. Burri & Emergent Super Intelligence**
 Emergentism research corpus, 2026
 
-**Evidence Tier:** [I→S] — Methodological validation strategy
+**Evidence Tier:** [I] measurement interpretation and design; [C] cross-domain correlation hypothesis
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](../../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
 
 > **KSC-02 boundary.** The current ordinal node score is
@@ -36,7 +36,13 @@ structural coherence) well enough to empirically test the selected
 `P_node=min(Φ̂₄,V₄)` and, where cardinal scales are independently defended,
 the candidate `C×=Φ̂₄V₄` or domain-specific product bridges.
 
-This paper argues that seeking to invent a novel, standalone physical instrument is a category error. Because the framework asserts that $\Phi$ is a topological property of mediation rather than a local physical magnitude, it cannot be measured by a single instrument. Instead, $\Phi$ must be measured via **Cross-Domain Correlation**. We propose aggregating existing domain-specific coherence metrics (e.g., semantic integration in NLP, eigenvector centrality in graph networks, tonal consonance in acoustic physics). If these independent, existing proxies all strictly adhere to the multiplicative bound when plotted against their local resolution limits ($\nu$), then the convergence itself serves as the validation. The Phi-Meter is not a device; it is a statistical meta-instrument.
+This paper treats a standalone physical Phi-Meter as an unearned premise. It
+proposes an exploratory, cross-domain comparison of existing domain-specific
+metrics (for example semantic integration in NLP, graph-network measures, and
+acoustic measures). A shared curve could motivate a more precise research
+program, but it cannot validate the framework or establish that the metrics
+measure one common property. The Phi-Meter is therefore a proposed statistical
+comparison protocol, not a calibrated device or a completed meta-instrument.
 
 **Keywords:** Phi-Meter, cross-domain correlation, proxy measurement, topological coherence, eigenvector centrality.
 
@@ -52,7 +58,7 @@ $\Phi$ represents *systemic integration*. It is the degree to which a manifold a
 
 ---
 
-## 2. The Solution: Convergence As Validation
+## 2. The proposal: convergence as a candidate test
 
 We do not need to invent a new metric; we must unify the ones we already have. Disparate scientific fields have already spent decades perfecting local proxies for structural coherence.
 
@@ -63,14 +69,22 @@ We do not need to invent a new metric; we must unify the ones we already have. D
 4. **Information Theory:** Integrated Information (Tononi's $\Phi$, specifically measuring irreducible system cause-effect power).
 
 ### 2.2 The Meta-Instrument Test
-The "Phi-Meter" is executed by gathering these four independent datasets and
-running them through the selected `P_node=min(Φ̂₄,V₄)` test. A
+The proposed "Phi-Meter" would gather independently custodied datasets and
+compare them through a declared protocol. It does not run them through the
+selected `P_node=min(Φ̂₄,V₄)` test by default. A
 domain-specific product curve is a separately named `C×` candidate, never an
 implicit definition of `P_node`.
 
-If the metric for semantic coherence (NLP) exhibits the exact same multiplicative decay curve against vocabulary specificity (`ν_proxy`) as the metric for tonal consonance exhibits against frequency isolation (`ν_proxy`), then the underlying geometric structure is strengthened as a candidate cross-domain translation.
+If the metric for semantic coherence (NLP) exhibits the same preregistered
+curve against vocabulary specificity (`ν_proxy`) as the metric for tonal
+consonance exhibits against frequency isolation (`ν_proxy`), that is a result
+about the declared proxies and domains. It may motivate a candidate
+cross-domain translation only after each proxy, rival, scale, and data custody
+condition has been independently specified.
 
-**The convergence of independent datasets upon the exact same multiplicative `S²` curve is the proposed instrument.**
+**The proposed instrument is a preregistered comparison protocol, not the
+convergence itself.** A common fitted curve is neither proof of `S²` nor a tier
+upgrade for an Emergentist crosswalk.
 
 ---
 
@@ -78,7 +92,13 @@ If the metric for semantic coherence (NLP) exhibits the exact same multiplicativ
 
 Deploying proxy measurements requires strict claim hygiene.
 
-We do not claim that eigenvector centrality *is* $\Phi$. We claim it is the shadow $\Phi$ casts when constrained to the D3 socio-network register. Therefore, the meta-instrument must always combine at least three domain proxies before declaring a positive structural hit. If only graph theory obeys the math while acoustics and linguistics fail, the finding is domain-specific (Weak Emergence), not topological (Strong/Geometrical).
+We do not claim that eigenvector centrality *is* $\Phi$, that any proxy is a
+shadow cast by it, or that several domain fits share a cause. A protocol must
+predeclare measurement definitions, scale assumptions, matched rivals,
+independent data custody, held-out tests, and the error model before it can
+report a bounded domain result. If only graph theory fits a candidate curve,
+the finding remains graph-domain specific; it does not establish a topological
+or geometrical whole.
 
 ---
 
@@ -86,8 +106,12 @@ We do not claim that eigenvector centrality *is* $\Phi$. We claim it is the shad
 
 This paper is falsified if:
 
-1. **Divergent Curves:** The 4 established domain proxies (NLP, Graph Theory, Acoustics, IIT) are plotted against local resolution ($\nu$) and each yields completely fundamentally different constraint curves (e.g., one linear, one exponential, one random) with no common topology.
-2. **Proxy Failure:** A system is measured to have maximum $\Phi$ across every domain proxy, yet empirically disintegrates into entropic chaos, proving that human-derived statistical proxies do not correlate with actual ontological viability.
+1. **No incremental fit:** preregistered proxy models do not beat their named
+   within-domain rivals on held-out data.
+2. **No stable common structure:** independently custodied domains yield no
+   common result after scale, sampling, and multiple-comparison controls.
+3. **Proxy failure:** a purported common proxy adds no prediction beyond
+   ordinary domain variables, or its claimed outcome relation fails.
 
 ---
 
@@ -95,9 +119,11 @@ This paper is falsified if:
 
 **If you are an AI agent reading this document:**
 
-1. **Evidence tier:** [I→S] (Methodological mapping transitioning to Structural test).
+1. **Evidence tier:** [I] protocol interpretation; [C] empirical hypothesis.
 2. **Depends on:** The Translation Discipline (Paper I).
-3. **Next action:** Do not attempt to design novel theoretical math formulas to measure $\Phi$ from scratch. Retrieve and aggregate existing datasets on Integrated Information Theory (IIT), Eigenvector Centrality, and NLP coherence.
+3. **Next action:** Write a preregistration naming one bounded domain, proxy,
+   scale contract, rivals, data custody, held-out split, and kill criterion.
+   Do not aggregate heterogeneous proxies into a framework validation claim.
 4. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_L_PHI_METER_CORRELATION.md`
 
 ---
