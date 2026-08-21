@@ -14,7 +14,7 @@ Created 2026-08-19 (E3 manifest hand, runtime-DAV L4 execution lane).
      for pinned source_sha256 keys (with their source_spec paths) and compares
      each pin against the live hash of its source YAML. Every divergence is
      reported as:
-       GENERATED-ROW STALE (known compiler gap — sync_root_agentz_dispatch.py absent)
+       GENERATED-ROW STALE (regenerate a side proposal and review before adoption)
      so the silent divergence is a NAMED red, never silence.
 
 Exit codes:
@@ -44,7 +44,7 @@ AGENTS_DIR = SCRIPT_DIR / "agents"
 MANIFEST_PATH = AGENTS_DIR / "MANIFEST.sha256"
 DOCUMENTS_ROOT = SCRIPT_DIR.parents[3]                # .../Documents (source_spec paths are relative to this)
 ROWS_DIR = Path("/Users/Yves/Documents/.codex/agents/rows")
-STALE_LABEL = "GENERATED-ROW STALE (known compiler gap — sync_root_agentz_dispatch.py absent)"
+STALE_LABEL = "GENERATED-ROW STALE (regenerate a side proposal and review before adoption)"
 
 _MANIFEST_LINE = re.compile(r"^([0-9a-fA-F]{64})\s+\*?(.+?)\s*$")
 
