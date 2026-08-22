@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 37,
+      "primary_card_count": 43,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1327,6 +1327,276 @@
       "to": "A5"
     },
     {
+      "from": "OS01-31",
+      "kind": "depends_on",
+      "to": "OS01-01"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "depends_on",
+      "to": "OS01-25"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-31",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "depends_on",
+      "to": "OS01-12"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "depends_on",
+      "to": "OS01-23"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "depends_on",
+      "to": "OS01-31"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-32",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "depends_on",
+      "to": "OS01-11"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "depends_on",
+      "to": "OS01-12"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-33",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "depends_on",
+      "to": "OS01-33"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-34",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "depends_on",
+      "to": "OS01-33"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "depends_on",
+      "to": "OS01-34"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-35",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "depends_on",
+      "to": "OS01-33"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "depends_on",
+      "to": "OS01-35"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "supported_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-36",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -2493,8 +2763,8 @@
     }
   ],
   "metrics": {
-    "edges": 492,
-    "nodes": 113
+    "edges": 546,
+    "nodes": 119
   },
   "nodes": [
     {
@@ -2543,7 +2813,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 37,
+      "primary_card_count": 43,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -2816,6 +3086,36 @@
     },
     {
       "id": "OS01-30",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-31",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-32",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-33",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-34",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-35",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-36",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

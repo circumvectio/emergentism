@@ -671,3 +671,104 @@ prove physically coexisting worlds, and no physical result derives the Good.
 
 The exact machine-bound fork, rivals, discriminators, kills and survivors are
 in [`F5Fork.v1`](05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json).
+
+### 12B. Dasein, Being, and the corrected projection of seven
+
+Capitalized **Dasein** is this Weltanschauung's selected technical name `[I]`
+for the tagged coherent-consistent whole. A **situated dasein** is one finite
+actual D4 standpoint within it. The dimensional atlas is a selected
+articulation of Dasein, not an inventory that contains or exhausts the whole.
+
+Emergentism therefore proposes serial emergence as an explanation of the
+architecture of determinate Being `[I/C]`: distinction, relation,
+probability-bearing state, actual history, and represented possibility become
+legible as typed dependencies rather than one undifferentiated fact. This is a
+real explanatory proposal, not merely a list of labels. It is not thereby a
+proof that reality must have this shape, an exhaustive account of every
+content, external validation, or unique establishment. Every transition keeps
+its own explanatory debt, rival, discriminator, and possible failure.
+
+The source of G7's seven is operational. Inside the selected vocabulary,
+`G7=M4⊎F3`: four bearer-oriented self↔other transfers plus three Titan-frame
+classes `[S]`. The owner's ego↔collective reading of the bearer direction is an
+interpretive gloss `[I]`. The v2.1 Burrisphere then projects the same classes as
+four quadrant positions and a three-station axis: Śiva `•` / dissolution at
+the bottom, Viṣṇu `⊙` / preservation at the centre-unit marker `1_T`, and
+Brahmā `○` / creation at the top `[I]`.
+
+That Burrisphere projection does not independently generate or confirm seven.
+The separate `GEN7@1` L1–L7 meridian mirror ladder can be grouped `3+1+3`; its
+sine values are analytic only after seven equal stations are selected. It is
+not the G7 Burrisphere: `G7@1 ≠ GEN7@1`. The shared count transfers no proof,
+and lowercase reciprocal-chart coordinates `φ,ν` remain distinct from
+uppercase D5/D4 powers `Φ₅,Φ̂₄,V₄`.
+
+The public Burrisphere adds a selected display itinerary `[I]`: a winding path
+rises from the Śiva bottom station to the Brahmā top station while completing
+one `360°` turn around the Titan axis; Viṣṇu `1_T` marks its centre latitude.
+The path encounters all four transfer sectors in a displayed reading order.
+“Ego/collective `+` and `−`” is shorthand for self/other bearer orientation
+together with the specific signed `Φ₅` or `V₄` change. Bare ego/collective
+signs are insufficient: they would merge Taking-A with Taking-B and Giving-A
+with Giving-B.
+
+The axis carries three frames; the winding path carries four transfers. The
+path is not a continuous G7 state and does not turn a frame into a move. Its
+one-turn phase and direction are selected visualization choices, not time,
+recurrence, moral ranking, developmental necessity, physical dynamics, causal
+mechanism, or a geometric derivation of seven.
+
+The figure may place a second, explicitly distinct spectrum beside that display.
+On the positive reciprocal chart, the limits run from `ν→∞, φ→0` through
+`φ=ν=1` to `φ→∞, ν→0`. The constraint product `φν=1` is constant across the
+entire chart, so it cannot select the centre. What uniquely reaches its maximum
+there is the balance function
+
+```text
+B = 2/(φ+ν) ≤ 1,
+```
+
+with equality exactly at `φ=ν=1` by AM–GM `[A]`. “Exhaustion” remains scoped:
+the four transfer sectors plus three frames close the selected G7 vocabulary
+`[S]`; they do not exhaust all games or derive the reciprocal spectrum. The
+lowercase chart, the signed G7 display, and the retired uppercase product
+ranking are three different objects.
+
+The owner's conjectured maximal compression of game-theoretic strategy `[I/C]`
+crosses two axes. The direction axis is self/ego-facing taking versus
+other/collective-facing giving; the channel axis is `Φ₅` possible/model power
+versus `V₄` actual/embodied power. That cross produces the four M4 cells inside
+the declared vocabulary `[S]`.
+“Theft versus sacrifice” and “mental versus physical power” are public
+mnemonics, not exact types or moral verdicts: `Φ₅` also includes linguistic,
+institutional and computational possibility, while taking can be reparative
+and giving can be coercive.
+
+**Game theory is not exhausted.** The stronger claim is intensional:
+M4 is conjectured to be a maximally compressed cross-game basis for the
+self/other direction and
+possible/actual power-channel orientation of strategy `[C]`. It neither
+enumerates nor reconstructs native players, coalitions, information sets,
+timing, payoffs, repetition, stochasticity, institutions, learning, equilibrium
+concepts, or every action. Those remain in their native game descriptions.
+
+A necessary third universal power channel, additional bearer orientation, or
+strategically relevant effect unrecoverable from the projection kills the
+maximal-compression conjecture. The scoped four-cell construction survives.
+
+Here “basis” means a preregistered **lossy coding hypothesis** over a declared
+cross-game corpus, not a vector-space basis or reconstruction theorem. Before
+G7 coding, the protocol must fix native game descriptions, bearer-indexed
+option/capability changes, held-out prediction or intervention targets, a loss
+function, a description-length measure, a material-improvement threshold, and
+an acceptable distortion ceiling or target-utility floor. Compare M4 with a
+native-game baseline, a coarser one-axis code, and at least one added-axis
+rival. In a scored run, “maximally compressed” means minimum description length
+at the declared acceptable performance level **within the preregistered
+comparator class**. M4 dies there if a richer rival clears the improvement
+threshold after its complexity cost, or if strategically necessary orientation
+distinctions repeatedly collapse into one M4 code. A finite run cannot establish
+unique global maximality over every conceivable representation.
+
+**Status: NOT RUN.** The preregistration is specified, but no scored comparator
+run has yet tested whether M4 reaches the declared compression criterion.

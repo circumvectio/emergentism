@@ -1455,6 +1455,243 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-31",
+      "chapters": [
+        "boundaries"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-01",
+        "OS01-25"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "anchor": "Capitalized **Dasein** is this Weltanschauung's selected technical name `[I]`",
+        "fingerprint_sha256": "c35cc08c692b87f7c52ada7060149d9cfd1c5300576aa07b8e1277bdefac010a",
+        "line_end": 680,
+        "line_start": 677,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-32",
+      "chapters": [
+        "five-apertures"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-12",
+        "OS01-23",
+        "OS01-31"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "Emergentism therefore proposes serial emergence as an explanation of the",
+        "fingerprint_sha256": "0fa6fc12c4f61a6cadcaa9ba2c93aa1fd48eb273cea5f9628c8b789a1abff2a8",
+        "line_end": 689,
+        "line_start": 682,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-33",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-11",
+        "OS01-12"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "evidence_tiers": [
+        "A",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The source of G7's seven is operational. Inside the selected vocabulary,",
+        "fingerprint_sha256": "8c3c3a1b5426329a97849633564eb30a5b2f898184510b892b3e15657a7d4eef",
+        "line_end": 704,
+        "line_start": 691,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-34",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-33"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The public Burrisphere adds a selected display itinerary `[I]`: a winding path",
+        "fingerprint_sha256": "ee8e9e2966e8ecd5cda603cea8706959a4009d11a7c63638d520e249ff5c30e6",
+        "line_end": 719,
+        "line_start": 706,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-35",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-09",
+        "OS01-33",
+        "OS01-34"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "evidence_tiers": [
+        "A",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The figure may place a second, explicitly distinct spectrum beside that display.",
+        "fingerprint_sha256": "0e14349e0c131ff6e2936fb42ee0b8c0955f2ea7bb7f67840ce68a92e61ccd4a",
+        "line_end": 735,
+        "line_start": 721,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-36",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-09",
+        "OS01-33",
+        "OS01-35"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The owner's conjectured maximal compression of game-theoretic strategy `[I/C]`",
+        "fingerprint_sha256": "6df9befe7af6fe465f645e2775de87ac4cb6ee20ed10bd2f9703d3650e320594",
+        "line_end": 774,
+        "line_start": 737,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-1",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -2679,9 +2916,9 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 76,
-    "conjecture_cards": 28,
-    "public_bounded_current": 20,
+    "cards": 82,
+    "conjecture_cards": 30,
+    "public_bounded_current": 24,
     "works_with_cards": 9
   },
   "owners": [

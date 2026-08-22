@@ -15,6 +15,8 @@
       "3/index.html",
       "4/index.html",
       "5/index.html",
+      "burrisphere/index.html",
+      "rosetta/index.html",
       "6/index.html",
       "f5/index.html",
       "practice/index.html",
@@ -122,7 +124,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -143,7 +145,13 @@
         "OS01-27",
         "OS01-28",
         "OS01-29",
-        "OS01-30"
+        "OS01-30",
+        "OS01-31",
+        "OS01-32",
+        "OS01-33",
+        "OS01-34",
+        "OS01-35",
+        "OS01-36"
       ],
       "claimSources": [
         {
@@ -156,7 +164,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+          "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13",
@@ -169,17 +177,30 @@
             "OS01-27",
             "OS01-28",
             "OS01-29",
-            "OS01-30"
+            "OS01-30",
+            "OS01-31",
+            "OS01-32",
+            "OS01-33",
+            "OS01-34",
+            "OS01-35",
+            "OS01-36"
           ]
         }
       ],
       "publicDisposition": "bounded_current",
       "requiredMarkers": [
         "A worldview for finite beings",
+        "Emergentism explains the architecture of Being",
+        "Dasein is the coherent whole",
+        "four quadrant transformations",
         "Frame one decision",
         "comparative benefit untested",
-        "One present, two explanations",
-        "one of 24 possible assignments"
+        "One present, three explanations",
+        "one of 24 possible assignments",
+        "one complete 360° turn",
+        "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted",
+        "maximally compressed"
       ]
     },
     {
@@ -194,11 +215,17 @@
         "OS01-20",
         "OS01-21",
         "OS01-23",
-        "OS01-25"
+        "OS01-25",
+        "OS01-31",
+        "OS01-32",
+        "OS01-33",
+        "OS01-34",
+        "OS01-35",
+        "OS01-36"
       ],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": [
           "OS01-01",
@@ -209,15 +236,29 @@
           "OS01-20",
           "OS01-21",
           "OS01-23",
-          "OS01-25"
+          "OS01-25",
+          "OS01-31",
+          "OS01-32",
+          "OS01-33",
+          "OS01-34",
+          "OS01-35",
+          "OS01-36"
         ]
       }],
       "publicDisposition": "bounded_current",
       "requiredMarkers": [
         "What had to emerge for you—and this moment—to be here?",
+        "Dasein names all that can coherently and consistently exist",
+        "situated dasein is one finite actual standpoint",
+        "G7@1 ≠ GEN7@1",
         "Complete means accounted explanatory debt, not omniscience",
         "Every “why” must say what kind of answer it is.",
-        "D6 is nonclosure, not D0."
+        "D6 is nonclosure, not D0.",
+        "reading itinerary, not time",
+        "φν=1 is constant",
+        "self/ego-facing taking",
+        "Game theory is not exhausted",
+        "maximally compressed"
       ]
     },
     {
@@ -226,7 +267,7 @@
       "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"]
       }],
@@ -255,7 +296,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -322,7 +363,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -345,7 +386,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -355,28 +396,28 @@
     {
       "surface": "5/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
+      "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
+        "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers", "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1", "360° display path", "B = 2/(φ+ν) ≤ 1", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "plainly/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09"],
+      "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09"]
+        "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "discoveries/nonduality/index.html",
@@ -384,7 +425,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -397,7 +438,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -410,7 +451,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -423,7 +464,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -436,7 +477,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -444,17 +485,30 @@
       "requiredMarkers": ["Journey Mode"]
     },
     {
-      "surface": "rosetta/index.html",
-      "role": "selected_translation_language_boundary",
-      "claimCardIds": ["OS01-11"],
+      "surface": "burrisphere/index.html",
+      "role": "g7_quadrant_and_titan_axis_projection",
+      "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-11"]
+        "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Seven functions."]
+      "requiredMarkers": ["Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā", "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1", "Game theory is not exhausted", "maximally compressed"]
+    },
+    {
+      "surface": "rosetta/index.html",
+      "role": "selected_translation_language_boundary",
+      "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["One move, translated", "G7", "possible power", "actual power", "G7@1 ≠ GEN7@1", "Correspondence is not confirmation", "presentation itinerary", "φν=1 is the constraint", "mental versus physical power", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "book/index.html",
@@ -462,7 +516,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -660,7 +714,7 @@
       "id": "D5",
       "title": "Possible power and the Rosetta Stone",
       "subtitle": "D5 possibility becomes actionable only through D4 power",
-      "tier": "[S/I/C]",
+      "tier": "[A/S/I/C]",
       "modality": "possible",
       "summary": "Φ names D5 possible power: the structured potential of an option field. V names D4 actual power: embodied capability and usable means. A present model evaluates the first and couples it to the second; an unrealized future never acts by itself.",
       "inherited": "Decision theory, control, planning, counterfactual reasoning, and institutional coordination supply comparison classes.",
@@ -670,7 +724,11 @@
         "OS01-09",
         "OS01-10",
         "OS01-11",
-        "OS01-12"
+        "OS01-12",
+        "OS01-33",
+        "OS01-34",
+        "OS01-35",
+        "OS01-36"
       ],
       "sourceRevision": "sha256:227f3c0bbd8662e3b08697fc345d3fa36bbbf40e1852ad843955ac2b48e4f4bf",
       "lifecycle": "reader_synthesis",
@@ -681,11 +739,157 @@
         "formula": "Φ₅ possible power → Φ̂₄ present evaluation + V₄ actual power → attempted action",
         "summary": "G7 names the transformation grammar over possible and actual power. Four symbols are moves; three are read-only Titan-frame projections.",
         "families": [
-          "Demons — Kali and Kālī: two taking forms",
-          "Gods — Kṛṣṇa and Arjuna: two giving forms",
-          "Titans — Brahmā, Śiva, Viṣṇu: create, dissolve, preserve"
+          "Taking-A and Taking-B — two bearer-oriented taking transfers",
+          "Giving-A and Giving-B — two bearer-oriented giving transfers",
+          "Brahmā, Śiva, and Viṣṇu — creation, dissolution, and preservation frames"
         ],
-        "boundary": "The names do not decide moral standing. Authorization, affected bearers, cost, and outcome receipts judge actual acts. The Titans are boundary roles, not D5 agents or arithmetic operands."
+        "boundary": "Neutral functions precede Kali, Kālī, Kṛṣṇa, and Arjuna aliases. The names do not decide moral standing. Authorization, affected bearers, cost, and outcome receipts judge actual acts. The Titans are boundary roles, not D5 agents or arithmetic operands.",
+        "projection": {
+          "schema": "emergentism/G7Projection.v1",
+          "powers": {
+            "possible": {"symbol": "Φ₅", "type": "D5 possible power", "causalByItself": false},
+            "actual": {"symbol": "V₄", "type": "D4 actual power"},
+            "presentEvaluation": {"symbol": "Φ̂₄", "type": "D4 evaluation of Φ₅"},
+            "tier": "[S/I]"
+          },
+          "bearerIndices": ["self", "other"],
+          "egoCollectiveGlossTier": "[I]",
+          "egoCollectiveGloss": {
+            "self": "ego-facing",
+            "other": "collective-facing",
+            "identity": false,
+            "bareSignsRecoverM4": false,
+            "tier": "[I]"
+          },
+          "planeAxes": {
+            "horizontal": "self-facing to other-facing",
+            "vertical": "raised Phi5 channel to raised V4 channel",
+            "tier": "[I]"
+          },
+          "countSource": {
+            "id": "G7@1",
+            "partition": [4, 3],
+            "tier": "[S]",
+            "derivation": "four bearer-oriented mixed-sign transfers plus three Titan-frame classes inside the selected vocabulary"
+          },
+          "transfers": [
+            {"id": "taking-a", "plain": "Taking-A", "alias": "Kali", "signature": "+Φ₅,self; −V₄,other", "quadrant": "top-left", "channelPair": "Φ₅,self ↔ V₄,other", "egoCollectiveSigns": "ego +Φ₅; collective −V₄"},
+            {"id": "taking-b", "plain": "Taking-B", "alias": "Kālī", "signature": "+V₄,self; −Φ₅,other", "quadrant": "bottom-left", "channelPair": "V₄,self ↔ Φ₅,other", "egoCollectiveSigns": "ego +V₄; collective −Φ₅"},
+            {"id": "giving-a", "plain": "Giving-A", "alias": "Kṛṣṇa", "signature": "−Φ₅,self; +V₄,other", "quadrant": "bottom-right", "channelPair": "Φ₅,self ↔ V₄,other", "egoCollectiveSigns": "ego −Φ₅; collective +V₄"},
+            {"id": "giving-b", "plain": "Giving-B", "alias": "Arjuna", "signature": "−V₄,self; +Φ₅,other", "quadrant": "top-right", "channelPair": "V₄,self ↔ Φ₅,other", "egoCollectiveSigns": "ego −V₄; collective +Φ₅"}
+          ],
+          "frames": [
+            {"id": "shiva-dissolve", "plain": "dissolution", "alias": "Śiva", "glyph": "•", "axisPosition": "bottom", "signature": "−Φ₅; −V₄"},
+            {"id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu", "glyph": "⊙", "axisPosition": "centre", "valueMarker": "1_T", "signature": "ΔΦ₅≈0; ΔV₄≈0"},
+            {"id": "brahma-create", "plain": "creation", "alias": "Brahmā", "glyph": "○", "axisPosition": "top", "signature": "+Φ₅; +V₄"}
+          ],
+          "burrisphereG7": {
+            "layout": "four-quadrants-plus-three-axial-stations",
+            "tier": "[I]",
+            "generatesCount": false,
+            "meaningWithoutColor": true
+          },
+          "displayPath": {
+            "schema": "emergentism/G7DisplayPath.v1",
+            "geometry": "one-selected-turn-around-stationary-axis",
+            "turns": 1,
+            "degrees": 360,
+            "verticalDirection": "bottom-to-top",
+            "startFrame": "shiva-dissolve",
+            "centreLatitude": "vishnu-preserve",
+            "endFrame": "brahma-create",
+            "traversesAxisPoint": false,
+            "phaseOrder": ["taking-a", "taking-b", "giving-a", "giving-b"],
+            "phaseOrderTier": "[I]",
+            "semantics": "presentation-itinerary-only",
+            "makesContinuousG7State": false,
+            "dynamics": false,
+            "causal": false,
+            "temporal": false,
+            "recurrent": false,
+            "moralRanking": false,
+            "derivesCount": false,
+            "tier": "[I]"
+          },
+          "reciprocalSpectrum": {
+            "schema": "emergentism/ReciprocalSpectrum.v1",
+            "domain": "positive reciprocal chart",
+            "from": "ν→∞, φ→0",
+            "centre": "φ=ν=1",
+            "to": "φ→∞, ν→0",
+            "constraint": "φν=1 everywhere",
+            "constraintSelectsCentre": false,
+            "balance": "B=2/(φ+ν)≤1",
+            "uniqueMaximum": {"value": 1, "at": "φ=ν=1", "tier": "[A]"},
+            "sameAsSignedG7Plane": false,
+            "sameAsUppercasePowerModel": false,
+            "revivesProductRanking": false,
+            "g7ExhaustsAllGames": false,
+            "tier": "[A/S/I]"
+          },
+          "strategyCompression": {
+            "schema": "emergentism/BasicStrategyCompression.v1",
+            "axes": {
+              "direction": ["self-facing taking", "other-facing giving"],
+              "channel": ["Φ₅ possible/model power", "V₄ actual/embodied power"]
+            },
+            "cells": 4,
+            "scopedExhaustion": "selected M4 two-axis vocabulary",
+            "compressionMode": "intensional-not-extensional",
+            "compressionTarget": "cross-game self/other direction and possible/actual power-channel orientation",
+            "maximumCompressionCandidate": true,
+            "exhaustsGameTheory": false,
+            "reconstructsNativeGames": false,
+            "nativeStructurePreserved": ["players", "coalitions", "information", "timing", "payoffs", "repetition", "stochasticity", "institutions", "learning", "equilibrium concepts"],
+            "maximalityTest": {
+              "schema": "emergentism/StrategyCompressionTest.v1",
+              "status": "preregistration-required-not-run",
+              "coding": "lossy",
+              "corpus": "declared cross-game corpus",
+              "fixedBeforeCoding": ["native-game-descriptions", "bearer-indexed-option-capability-changes", "held-out-prediction-or-intervention-targets", "loss-function", "description-length-measure", "material-improvement-threshold", "acceptable-distortion-ceiling-or-target-utility-floor"],
+              "comparators": ["native-game-baseline", "coarser-one-axis-code", "added-axis-rival"],
+              "criterion": "declared rate-distortion frontier",
+              "maximalDefinition": "minimum-description-length-at-fixed-acceptable-performance-within-preregistered-comparator-class",
+              "globalUniqueEstablished": false,
+              "kills": ["richer-rival-clears-threshold-after-complexity-cost", "necessary-orientation-distinctions-collapse", "third-universal-channel-or-bearer-orientation"],
+              "truthEvidence": false,
+              "tier": "[C]"
+            },
+            "mnemonics": {
+              "egoCollective": {"tier": "[I]", "identity": false},
+              "theftSacrifice": {"tier": "[I]", "moralVerdict": false},
+              "mentalPhysical": {"tier": "[I]", "identity": false, "phi5WiderThanMental": true}
+            },
+            "kills": ["third-power-channel", "additional-bearer-orientation", "unrecoverable-strategy-effect"],
+            "tier": "[S/I/C]"
+          },
+          "separateMirrorLadder": {
+            "id": "GEN7@1",
+            "partition": [3, 1, 3],
+            "values": ["0", "1/2", "sqrt(3)/2", "1", "sqrt(3)/2", "1/2", "0"],
+            "selectionTier": "[S]",
+            "analyticGivenSelectionTier": "[A]",
+            "projectionTier": "[I]",
+            "isG7Burrisphere": false,
+            "generatesCount": false
+          },
+          "relation": {
+            "g7NotGen7": true,
+            "sameCount": true,
+            "sameStructure": false,
+            "geometryForcesSeven": false,
+            "convergenceIsTruthEvidence": false,
+            "lowercaseEqualsUppercase": false
+          },
+          "sources": [
+            {"path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md", "sha256": "227f3c0bbd8662e3b08697fc345d3fa36bbbf40e1852ad843955ac2b48e4f4bf", "tier": "[S/I/C]"},
+            {"path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md", "sha256": "788ba9d27892c928e45ea191d6e88471e81b5b597ed58e15d008204837354894", "tier": "[A/I/C]"},
+            {"path": "05_COSMOLOGY/00_THE_BURRISPHERE.md", "sha256": "e4c0bcb9ac0274351da25fd50caadd54ee7e3f0c899d2322990e1cac0134c18f", "tier": "[S] routing only"},
+            {"path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md", "sha256": "be2dbc783791225cb8a2886e15bc503d51c5ea98c2af80678cf8bc916c7d0b30", "tier": "[A/S/I]"},
+            {"path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md", "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b", "tier": "[S/I]"},
+            {"path": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md", "sha256": "edb183f9de07e113681f60071b64b98b89e5a228428d21c1f13de323e472af99", "tier": "[B] direction"}
+          ]
+        }
       },
       "transition": {
         "id": "b6",
@@ -767,6 +971,7 @@
     "exit/index.html",
     "journey/index.html",
     "rosetta/index.html",
+    "burrisphere/index.html",
     "ecology/index.html",
     "book/index.html",
     "map/index.html",

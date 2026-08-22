@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+    "reviewed_source_sha256": "d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -24,6 +24,87 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "F5Fork.v1 source adoption and Emergentism.org v2 owner direction",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_OWNER_DIRECTION_2026_08_22.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-corrected v2.1 Dasein and G7 projection reconciliation without shifting any prior locator; add OS01-31 through OS01-33",
+        "prior_hash": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "8506f414cb51af23dd36a521d2704b2ac207524f030b5a5fa165f1b4b822897d", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "v2.1 explains Being while preserving debt; G7 four-quadrant plus Titan-axis correction",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-directed 360-degree Burrisphere display itinerary without shifting prior card slices; add OS01-34",
+        "prior_hash": "8506f414cb51af23dd36a521d2704b2ac207524f030b5a5fa165f1b4b822897d", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "b4617733de34d9c0c913a0cec36886101eeeadd3e9cb0b6ba9bece5a7834f6a4", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "one selected winding display path; full bearer and channel signs retained; no dynamics or count derivation",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the corrected reciprocal-spectrum and balance-maximum reconciliation without shifting prior card slices; add OS01-35",
+        "prior_hash": "b4617733de34d9c0c913a0cec36886101eeeadd3e9cb0b6ba9bece5a7834f6a4", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "b22e2d9901ec9d33ed92064bfabaf8b11ef5c3127234e33475f02a95895e80bc", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "phi-nu product remains the constant chart constraint; B has the unique centre maximum; game exhaustion remains scoped",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-directed two-axis basic-strategy compression without shifting prior card slices; add OS01-36",
+        "prior_hash": "b22e2d9901ec9d33ed92064bfabaf8b11ef5c3127234e33475f02a95895e80bc", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "691562683f15bbfae497947b4de3459b770efe6d66883dbb329e9352b1660a57", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "basic strategy compressed by bearer direction and power channel; mnemonic axes fenced; broader adequacy remains killable",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "apply the owner correction that game theory is not exhausted but its basic strategic orientation is conjectured to be maximally compressed; restamp OS01-36",
+        "prior_hash": "691562683f15bbfae497947b4de3459b770efe6d66883dbb329e9352b1660a57", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "cff0e9b827c5c682a97c806ed24c2eb1649b22e1b3bd7e3057be7eeeb8fb5f44", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "intensional maximal-compression conjecture separated from extensional game enumeration and native game structure",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "add an independent preregistered rate-distortion test so OS01-36 maximality is not true by construction",
+        "prior_hash": "cff0e9b827c5c682a97c806ed24c2eb1649b22e1b3bd7e3057be7eeeb8fb5f44", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "0af3c395c9d420ee047caacbbead9df1fda7504ba5b76b5aaec62d32897b778d", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "declared corpus and targets plus native, coarser, and added-axis rivals decide maximality on a preregistered rate-distortion frontier",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "operationally define maximal compression at a fixed acceptable performance level within the preregistered comparator class",
+        "prior_hash": "0af3c395c9d420ee047caacbbead9df1fda7504ba5b76b5aaec62d32897b778d", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "565dbebb99cefc2f380a836e3598eca41d0ae9f32c298cc816b8d40333b4cc7d", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "frontier efficiency separated from unique global maximality; minimum code length is judged at a fixed performance floor inside a declared rival class",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "make the conjectural qualifier locally inseparable from the maximal-compression clause so excerpts cannot inflate certainty",
+        "prior_hash": "565dbebb99cefc2f380a836e3598eca41d0ae9f32c298cc816b8d40333b4cc7d", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "ac60d1c084d045cdd433772431b05fa0070c6f694bd18d11e2dd96ac4d4090e7", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "M4 is conjectured to be remains in the same clause as maximally compressed",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "make the unexecuted empirical status inseparable from OS01-36 and its public wording",
+        "prior_hash": "ac60d1c084d045cdd433772431b05fa0070c6f694bd18d11e2dd96ac4d4090e7", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "the lossy-code preregistration is specified but NOT RUN; no maximality result is claimed",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
       }
     ]
   },
@@ -1357,6 +1438,168 @@
       "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]},
       "semantic_owner_id": "K-5",
       "supporting_owner_ids": ["K-4"]
+    },
+    {
+      "card_id": "OS01-31",
+      "chapters": ["boundaries"],
+      "locator": {
+        "section": "12B",
+        "line_start": 677,
+        "line_end": 680,
+        "anchor": "Capitalized **Dasein** is this Weltanschauung's selected technical name `[I]`",
+        "fingerprint_sha256": "c35cc08c692b87f7c52ada7060149d9cfd1c5300576aa07b8e1277bdefac010a"
+      },
+      "plain_claim": "Dasein names the typed coherent-consistent whole; situated dasein names one finite actual D4 standpoint within it, and the dimensional atlas does not exhaust the whole.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "I", "scope": "selected technical ontology and public distinction"}],
+      "dependencies": ["OS01-01", "OS01-25"],
+      "docket_ids": ["A2"],
+      "type_boundaries": ["Dasein whole is not situated dasein; articulation is not inventory or exhaustion"],
+      "strongest_rival": "Use narrower Heideggerian or ordinary modal vocabulary and reject the Emergentist whole-field term.",
+      "discriminator": "The technical distinction must improve typed explanation without erasing world tags, actuality, finitude, or the source term's different history.",
+      "kill_criterion": "Retire or rename the public term if it persistently collapses the modal whole into one actual standpoint or falsely claims a definitive Heidegger exegesis.",
+      "survivor_if_killed": "The distinction between a typed coherent whole and a finite actual bearer.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The terminology is optional and may be replaced."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[I] Dasein is Emergentism's selected name for the tagged coherent-consistent whole; situated dasein is one finite actual D4 standpoint within it, and the atlas does not exhaust the whole."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-2",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-32",
+      "chapters": ["five-apertures"],
+      "locator": {
+        "section": "12B",
+        "line_start": 682,
+        "line_end": 689,
+        "anchor": "Emergentism therefore proposes serial emergence as an explanation of the",
+        "fingerprint_sha256": "0fa6fc12c4f61a6cadcaa9ba2c93aa1fd48eb273cea5f9628c8b789a1abff2a8"
+      },
+      "plain_claim": "Emergentism proposes serial emergence as a typed explanation of the architecture of determinate Being while retaining an independent explanatory debt at every transition.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "I", "scope": "explanatory synthesis"}, {"tier": "C", "scope": "cross-register adequacy"}, {"tier": "S", "scope": "declared debt-retention discipline"}],
+      "dependencies": ["OS01-31", "OS01-12", "OS01-23"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["explanation is not proof, external validation, exhaustive possession, or unique establishment"],
+      "strongest_rival": "Native domain theories plus ordinary dependency language explain the same architecture with less imposed structure.",
+      "discriminator": "Compare bridge validity, compression, intervention value, prediction, and revision against native and simpler rival accounts.",
+      "kill_criterion": "Demote the serial account to a mnemonic wherever it adds no valid join, discriminating prediction, or task-relative explanatory gain.",
+      "survivor_if_killed": "The native sciences, typed questions, and explicit record of unpaid explanatory debt.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "A better explanation replaces the serial account."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[I/C] Emergentism proposes serial emergence as a typed explanation of determinate Being; it is not proof, external validation, an exhaustive account, or a uniquely established explanation, and every transition retains its own debt and failure test."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": ["K-2", "K-3"]
+    },
+    {
+      "card_id": "OS01-33",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12B",
+        "line_start": 691,
+        "line_end": 704,
+        "anchor": "The source of G7's seven is operational. Inside the selected vocabulary,",
+        "fingerprint_sha256": "8c3c3a1b5426329a97849633564eb30a5b2f898184510b892b3e15657a7d4eef"
+      },
+      "plain_claim": "G7 closes as four bearer-oriented transfers plus three Titan frames; the Burrisphere projects those seven as four quadrants plus a bottom-centre-top Titan axis, while the separate L1-L7 mirror ladder is not G7.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "S", "scope": "closure inside the selected G7 vocabulary"}, {"tier": "I", "scope": "ego-collective gloss and Burrisphere layout"}, {"tier": "A", "scope": "mirror-ladder sine values only after seven stations are selected"}],
+      "dependencies": ["OS01-11", "OS01-12"],
+      "docket_ids": ["A1", "A2"],
+      "type_boundaries": ["G7@1 is not GEN7@1; Burrisphere G7 is 4 quadrants plus 3 axial frames, not the separate 3+1+3 mirror ladder; lowercase phi/nu are not uppercase Phi/V"],
+      "strongest_rival": "The quadrant-and-axis picture adds no explanatory value beyond the typed G7 table, while the shared count is inherited rather than convergent evidence.",
+      "discriminator": "Readers and implementations must recover all four bearer-indexed transfers, all three frames, both non-identities, and no proof transfer without relying on color or aliases.",
+      "kill_criterion": "Kill the projection if it collapses the two sevenfold structures, treats the sphere as independently generating seven, or obscures bearer direction and Titan-frame status.",
+      "survivor_if_killed": "G7's typed 4+3 vocabulary, the separate mirror-ladder chart facts, and their separately preserved evidence tiers.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The geometry is a removable reader projection."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[S] G7 selects four bearer-oriented transfers plus three Titan frames; an [I] Burrisphere projection renders them as four quadrants plus the Śiva–Viṣṇu–Brahmā axis. The separate GEN7@1 3+1+3 mirror ladder is not G7; its sine values are [A] only after seven stations are selected [S]."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": ["K-2", "K-3"]
+    },
+    {
+      "card_id": "OS01-34",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12B",
+        "line_start": 706,
+        "line_end": 719,
+        "anchor": "The public Burrisphere adds a selected display itinerary `[I]`: a winding path",
+        "fingerprint_sha256": "ee8e9e2966e8ecd5cda603cea8706959a4009d11a7c63638d520e249ff5c30e6"
+      },
+      "plain_claim": "The Burrisphere may display the four typed transfers on one selected 360-degree ascent around the stationary Titan axis, provided the path remains a non-temporal reading itinerary rather than a G7 state or physical dynamic.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "I", "scope": "one-turn display path, phase order, and ego-collective gloss"}, {"tier": "S", "scope": "inherited full G7 transfer signatures and frame-transfer separation"}],
+      "dependencies": ["OS01-33"],
+      "docket_ids": ["A1", "A2"],
+      "type_boundaries": ["the winding path carries four transfers while the axis carries three non-transfer frames", "bare ego-collective signs do not recover M4; full bearer and Phi5/V4 channel signs are mandatory", "one turn is not time, recurrence, value ascent, physical dynamics, causation, or a derivation of seven"],
+      "strongest_rival": "A static quadrant table and stationary axis communicate G7 more accurately, while a winding path invites false dynamics and hierarchy.",
+      "discriminator": "Without relying on animation or color, readers and implementations must recover all four typed signatures, distinguish path from axis, and reject chronological, causal, recurrent, and moral-ascent readings.",
+      "kill_criterion": "Remove the winding path if it persistently collapses the channels into bare ego-collective signs, turns frames into moves, or implies physical dynamics, chronology, recurrence, moral rank, or geometry-generated seven.",
+      "survivor_if_killed": "The typed G7 4+3 vocabulary, the stationary bottom-centre-top frame axis, and the removable flat quadrant projection.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The display path is optional and removable."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[I] One selected 360-degree path winds from the Śiva bottom latitude past the Viṣṇu centre latitude to the Brahmā top latitude and encounters all four fully typed G7 transfer sectors. It is a reading itinerary, not time, recurrence, moral ascent, physics, causation, or a source of seven."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": ["K-2", "K-3"]
+    },
+    {
+      "card_id": "OS01-35",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12B",
+        "line_start": 721,
+        "line_end": 735,
+        "anchor": "The figure may place a second, explicitly distinct spectrum beside that display.",
+        "fingerprint_sha256": "0e14349e0c131ff6e2936fb42ee0b8c0955f2ea7bb7f67840ce68a92e61ccd4a"
+      },
+      "plain_claim": "On the positive reciprocal chart phi times nu is the constant constraint one, while the balance function B equals 2 divided by their sum and reaches its unique maximum one at phi equals nu equals one; this chart remains distinct from the scoped G7 game and uppercase node models.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "A", "scope": "phi nu equals one by chart definition and B is at most one by AM-GM"}, {"tier": "S", "scope": "G7 exhaustion only inside the selected M4 plus F3 vocabulary"}, {"tier": "I", "scope": "placing the reciprocal spectrum beside the Burrisphere display"}],
+      "dependencies": ["OS01-09", "OS01-33", "OS01-34"],
+      "docket_ids": ["A1", "A2"],
+      "type_boundaries": ["phi times nu is constant one and is not a centre-selecting maximum", "B equals 2 divided by phi plus nu and has a unique maximum of one at the centre", "the lowercase positive reciprocal chart is not the signed G7 display and neither is the retired uppercase Phi-hat4 V4 ranking", "G7 exhaustion is scoped to the selected vocabulary, not all games"],
+      "strongest_rival": "The reciprocal spectrum and the G7 projection should remain separate figures because juxtaposition invites false identity and product-maximization claims.",
+      "discriminator": "Readers and implementations must identify the product as a constant constraint, B as the unique centre maximum, the chart as positive, and G7 closure as vocabulary-scoped without conflating lowercase and uppercase factors.",
+      "kill_criterion": "Separate or remove the combined display if it suggests that the product peaks at the centre, the positive chart supplies signed G7 quadrants, G7 exhausts all games, or uppercase product ranking has returned.",
+      "survivor_if_killed": "The reciprocal-chart theorem, the typed G7 vocabulary, the ordinal minimum node convention, and their separately preserved evidence tiers.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The juxtaposed spectrum is optional and removable."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[A] Along the positive reciprocal spectrum, φν=1 everywhere while B=2/(φ+ν)≤1 reaches one only at φ=ν=1. [S] Four transfers plus three frames exhaust only the selected G7 vocabulary; the lowercase chart, signed G7 display, and retired uppercase product ranking remain distinct."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": ["K-2", "K-3"]
+    },
+    {
+      "card_id": "OS01-36",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12B",
+        "line_start": 737,
+        "line_end": 774,
+        "anchor": "The owner's conjectured maximal compression of game-theoretic strategy `[I/C]`",
+        "fingerprint_sha256": "6df9befe7af6fe465f645e2775de87ac4cb6ee20ed10bd2f9703d3650e320594"
+      },
+      "plain_claim": "Game theory is not exhausted, but M4 is conjectured to be a maximally compressed cross-game basis for the self/other direction and possible/actual power-channel orientation of strategy.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "S", "scope": "four-cell exhaustion inside the declared two-axis M4 vocabulary"}, {"tier": "I", "scope": "ego-collective, theft-sacrifice, and mental-physical public mnemonics"}, {"tier": "C", "scope": "maximal cross-game compression of the declared strategic orientation target"}],
+      "dependencies": ["OS01-09", "OS01-33", "OS01-35"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["direction and channel are combinatorially crossed axes inside the model; theft-sacrifice is a defeasible mnemonic for taking-giving, not a moral verdict", "possible/model power includes linguistic, institutional, and computational possibility and is not identical to private mentality", "maximally compressed means minimum description length at a fixed acceptable performance level within a preregistered comparator class, not enumeration, reconstruction, replacement, or proven unique global maximality"],
+      "strongest_rival": "Game families have heterogeneous strategic variables and no universal two-axis orientation basis; M4 may be a memorable projection whose apparent coverage comes from discarding decision-relevant structure.",
+      "discriminator": "Before coding, fix a cross-game corpus, native descriptions, bearer-indexed option/capability changes, held-out prediction or intervention targets, loss, description length, a material-improvement threshold, and an acceptable distortion ceiling or target-utility floor; then ask whether M4 has minimum code length at that performance level against a native-game baseline, a coarser one-axis code, and at least one added-axis rival.",
+      "kill_criterion": "Kill maximality if a richer rival clears the preregistered improvement threshold after complexity cost, if strategically necessary orientation distinctions repeatedly collapse into one M4 code, or if a necessary third universal channel or bearer orientation is found.",
+      "survivor_if_killed": "The scoped four-cell construction inside the selected M4 language, all native game descriptions, and the separate bearer-complete Justice test.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The broader compression claim may be dropped while retaining the local vocabulary."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[C] Game theory is not exhausted; M4 is conjectured to maximally compress the self/other direction and possible/actual power-channel orientation of strategy. In a run, maximal means minimum description length at fixed acceptable performance within the preregistered rival class—not unique global maximality. Native game structures remain. Status: NOT RUN."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": ["K-1", "K-4"]
     }
   ]
 }
