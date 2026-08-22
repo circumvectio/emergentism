@@ -63,9 +63,9 @@ RECEIPT_CITATION_LANES = (
 )
 RECEIPT_TARGET_REGISTRY = Path("00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json")
 EXPECTED_RECEIPT_TARGET_UNIVERSE_SHA256 = (
-    "e133c7b9d259ab37e0d0548fbcc71488e8d09daa46933e511db6b7cf8b3e3b82"
+    "25661f69c75f93ee977969bb2fcc6a1158698013c5517000ef3868b9d088bd5a"  # pragma: allow-secret
 )
-EXPECTED_RECEIPT_TARGET_COUNT = 319
+EXPECTED_RECEIPT_TARGET_COUNT = 321
 
 # Derived custody surfaces repeat source semantic units and exact historical
 # filenames by design. Their dedicated checker and digest receipt own that

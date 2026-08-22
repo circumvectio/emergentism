@@ -84,7 +84,7 @@ OWNER_HELD_SOURCE_ROWS = {
                 "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_2026_08_22.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_LEDGER_AUDITS_2026_08_22.md",
         },
         "question": (
             "Which byte-identical numbered-doctrine-spine copy is current planning "
@@ -122,7 +122,7 @@ OWNER_HELD_SOURCE_ROWS = {
                 "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_2026_08_22.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_LEDGER_AUDITS_2026_08_22.md",
         },
         "question": (
             "How must the three grandfathered tombstones under "

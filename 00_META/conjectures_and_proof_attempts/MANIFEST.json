@@ -323,12 +323,12 @@
   },
   {
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
-   "sha256": "f7788b876dc3e9955622d475bc72a42783d2ecc997833d5219769e3c44989916",
+   "sha256": "ea6fdd17ed948eb2319a8371c7fcfdbf52f0f82a2928c78ab807778c571d37a6",
    "role": "semantic_owner"
   },
   {
    "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
-   "sha256": "c4f77986dd7713e2e9a8f22cb66c362c967abcb24a76d4584ecaca61f1fbe5c8",
+   "sha256": "50e6aeddafc27a80dc1e430a70a075b0d2b9f8e560e4ea59dd2711794b149608",
    "role": "conjecture_owner"
   },
   {
@@ -1521,5 +1521,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "b4899d09476ee762744ac550d5a47bc0aebd59bcf77378cc6fbae1e37ba205bf"
+ "inventory_digest": "8ade7e28e2d7c68294d4913679cacc1854453f995effbb339a83025d387bd176"
 }

@@ -202,12 +202,12 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             report["receipt_namespace"]["target_files"],
             self.state["receipt_namespace"]["target_files"],
         )
-        self.assertEqual(report["receipt_namespace"]["target_files"], 319)
+        self.assertEqual(report["receipt_namespace"]["target_files"], 321)
         self.assertEqual(
             report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
-            327,
+            330,
         )
-        self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 193)
+        self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 195)
         self.assertEqual(
             report["receipt_namespace"]["bare_unsafe_reused_prefixes"],
             CHECKER.EXPECTED_REUSED_PREFIXES,

@@ -1,7 +1,7 @@
 ---
 title: "DOCKET — Titan Semantics v3 and the staged conjecture family, one adoption decision"
 date: 2026-08-22
-status: "[D] docket — decision surface for the chair; creates no doctrine, adopts nothing"
+status: "[D] docket — decision surface for owner adoption; creates no doctrine, adopts nothing"
 evidence_tier: "[S] the option framing; [I] the recommendation; everything cited stays at its owner's tier"
 owner: "Chair. Mirrors the W13-PARASITE docket convention."
 parents:
@@ -52,7 +52,7 @@ survive as documentation; the semantic assignment is dropped.
    conjecture; `BIL-01` is its proposed lemma, not a proof of strong emergence.
 2. **The C1 kill stays displayed** (`51B`): no biological claim re-attaches to
    Finity_L through v3.
-3. **No public surface** carries any of this before `C3` and the chair's
+3. **No public surface** carries any of this before `C3` and an owner-authorized
    deploy decision; the site's semantic-parity gate already bans the v1
    arithmetic forms.
 

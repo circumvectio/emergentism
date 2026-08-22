@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3896,
+      "tracked_file_count": 3904,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup;",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 144,
+      "tracked_file_count": 146,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -896,7 +896,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 144,
+      "tracked_file_count": 146,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -922,7 +922,7 @@
       "owns": "The Transcendental Trinity — active route",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 53,
+      "tracked_file_count": 55,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -961,7 +961,7 @@
       "owns": "06_ONTOLOGY read-order index and canonical type split (D4 causal actuality, D5 counterfactual content, D6 apophatic; non-μ b₆/r₆; D-stable f",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 33,
+      "tracked_file_count": 34,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1611,7 +1611,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 437,
+      "tracked_file_count": 440,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1741,7 +1741,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 216,
+      "tracked_file_count": 219,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

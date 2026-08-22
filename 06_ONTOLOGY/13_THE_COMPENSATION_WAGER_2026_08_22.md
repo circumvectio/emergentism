@@ -10,7 +10,7 @@ rosetta:
       column: Value Alignment
       role: "no cosmic-purpose claim; the balance is a testable preservation structure, not a command"
   operator: "Kālī 💀"
-  tier: "Executive"
+  tier: "Operational conjecture"
   regime: "Śūdra"
   register: "[D] staged conjecture; every clause tiered in place"
   canonical_phrase: "Every emergent freedom may require a compensator that maintains a named register quantity, with independently measurable freedom-loss predicted at saturation (staged W19-BALANCE candidate; gauge language conditional)"

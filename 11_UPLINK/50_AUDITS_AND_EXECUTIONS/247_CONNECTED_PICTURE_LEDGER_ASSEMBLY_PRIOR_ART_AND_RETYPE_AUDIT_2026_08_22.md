@@ -13,7 +13,7 @@ rosetta:
       column: Architecture
       role: "typed non-metaphorical admission schema proposed for L4 execution"
   operator: "Kṛṣṇa ◇"
-  tier: "Executive audit"
+  tier: "Operational audit"
   regime: "Vaiśya"
   register: "[S] custody and internal contradictions; [B] cited sources; [I] join and priority adjudication; [C] surviving heuristic; [D] adoption withheld"
   canonical_phrase: "Ledger-assembly audit — broad priority occupied, literal thirteen-dot entailment refuted, test-bearing heuristic retained"
@@ -51,7 +51,7 @@ prior occupants for the broad cosmic-ledger/debt/settlement assembly. Source
 | Is the broad assembly available for a priority claim? | **No — `OCCUPANT-FOUND · BROAD PRIORITY BLOCKED`.** |
 | Do the prior occupants validate the science? | **No. Prior publication is not empirical warrant.** |
 | Does a narrower research conjecture survive? | **Yes `[C]`: selected transitions may admit a common typed ledger model if it adds held-out prediction.** |
-| Is the result adopted, public, deployed, or contact-validated? | **No. `ADOPTION=HOLD · PUBLICATION=NO · WORLD_CONTACT=0`.** |
+| Is the result adopted, public, deployed, or contact-validated? | **No. `ADOPTION=HOLD · PUBLICATION=NO · WORLD_CONTACT=0`, where zero means no accepted outcome/contact record, not that no external scholarship was consulted.** |
 
 ## 1 · Custody
 
@@ -69,6 +69,9 @@ The two identical Claude handoff transcripts have SHA-256
 `14b671567c8e5c1065a89e5a2ce88ded6580f73904937d971c4a3cce368c8bcd`. <!-- # pragma: allow-secret — SHA-256 custody digest -->
 The attached internal planning trace has SHA-256
 `7962a9b625f57aaba9ec334b9d0143dd19c4427bf8a9cfec74f2790b578b37e6`. <!-- # pragma: allow-secret — SHA-256 custody digest -->
+These three inputs were session-local attachments supplied in the task. Their
+hashes bind the inspected bytes, but they are not durable repository custody
+or recoverable locators.
 The trace is provenance of an intended audit, not evidence that its proposed
 agents ran or that its conclusions were reached.
 

@@ -13,7 +13,7 @@ rosetta:
       column: Execution
       role: "narrow source correction; adoption and publication withheld"
   operator: "Kṛṣṇa ◇"
-  tier: "Executive audit"
+  tier: "Operational audit"
   regime: "Vaiśya"
   register: "[A] source and mathematical checks at their owners; [I] synthesis; [D] adoption remains withheld"
   canonical_phrase: "Titan v3 + W19 six-candidate audit — broad components inherited, two proof claims refuted, bounded synthesis residue retained, priority blocked"
@@ -21,7 +21,7 @@ type: prior-art-and-refutation-receipt
 title: "Titan v3 + W19 — six-candidate prior-art and refutation audit"
 date: 2026-08-22
 status: "AUDIT COMPLETE FOR THE DECLARED ENGLISH SOURCE-DIRECTED SCOPE · PREMISE-REFUTED=TRUE · PRIORITY-BLOCKED · ADOPTION=HOLD · PUBLICATION=NO"
-evidence_tier: "[A] scoped identities and source custody; [B] historical attribution; [I] cross-source ranking; [C] surviving conjectures; [D] no adoption"
+evidence_tier: "[S] scoped source custody; [A] scoped mathematical identities; [B] historical attribution; [I] cross-source ranking; [C] surviving conjectures; [D] no adoption"
 proposer: "Yves R. Burri"
 assistance: "AI-assisted L1/L2/L3 source review and synthesis; no AI authority, authorship, or priority"
 parents:
@@ -154,8 +154,8 @@ No absence in a query result is treated as evidence of global absence.
 - The customary elementary real-calculus list is
   `0/0, ∞/∞, 0·∞, ∞−∞, 0^0, 1^∞, ∞^0`. These are limiting forms, not real-number
   equations.
-- On a declared ring or field, `x↦0x` is a constant non-injective map and has
-  no inverse. It is not the unique information-erasing operation.
+- On a declared nontrivial ring or field, `x↦0x` is a constant non-injective
+  map and has no inverse. It is not the unique information-erasing operation.
 - For fixed `N>0`, `N/x→+∞` as `x→0+`. With `t→∞`,
   `(N/t)·t=N`; projecting all such paths to `(0+,+∞)` erases `N` by
   construction.

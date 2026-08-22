@@ -157,7 +157,7 @@ classical indeterminate form or its degenerate neighbour:
 
 | attempt | form it lands on | what the refutation yielded |
 |---|---|---|
-| `⊙ = • × ○` | `0·∞` | the coupling selects the finite; `(c/n)·n → c` for any `c` |
+| `⊙ = • × ○` **(retired; ill-typed)** | `0·∞` | the coupling selects the finite; `(c/n)·n → c` for any `c` |
 | `Σ• ⇒ ⊙` | divergence + limit-act | Cantor's two generation principles; the crossing is not addition |
 | `log_•(⊙) = ○` | `1^∞` / `log₁` collapse | the sterility of pure self-identity; the generative `ε`; `e` |
 | `•` as zero | `0^0` / `log₀` collapse | `0^0 = 1` in the combinatorial empty-function convention, while `0^0` remains an indeterminate limiting form; `{∅} = 1` |
@@ -204,8 +204,9 @@ per-leg. Operations on shadows are defined exactly as far as the register can
 absorb them — `0 + n` and `0 · n` are unproblematic — and they fail precisely
 where the shadow's Titan-nature pokes through:
 
-- **Division by zero, typed.** On any stated ring or field, the map `x ↦ 0x`
-  is constant and therefore non-injective; it has no inverse. Division by zero
+- **Division by zero, typed.** On any stated **nontrivial** ring or field, the
+  map `x ↦ 0x` is constant and therefore non-injective; it has no inverse.
+  Division by zero
   consequently cannot be defined as the inverse of multiplication by zero
   while retaining the field laws. “Arithmetic remembering what absence
   erased” is the corpus's `[I]` information metaphor, not an additional
@@ -227,7 +228,7 @@ Circles and spheres are both D2-register *configurations* — of different
 spatial dimensionality, which is a property inside configuration space, not a
 register index. Keep the banana; retype the sphere.
 
-## 4 · `○` is the diagonal `[I]` with `[A/B]` components
+## 4 — The potential glyph is the diagonal `[I]` with `[A/B]` components
 
 The boundary-error motif has a rigorous family of shapes: in each cited
 diagonal construction, a proposed enumeration or representational scheme fails
@@ -348,7 +349,7 @@ it does not prove the rule or establish that no formalism could type a Titan.
 
 ## 5c · The Information Reading — bit, qubit, and a shared mathematical sphere
 
-Owner's formulation, 2026-08-22: *• for absence · ⊙ as the bit · ○ as the
+Owner's formulation, 2026-08-22: *• for absence; ⊙ as the bit; ○ as the
 qubit — and the qubit is not really "both at the same time"; it is neither and
 both, like the paradox of the set of sets.*
 
@@ -437,7 +438,7 @@ selection under the pole-swap: require the positive-real candidate `m` to obey
 `m = 1/m`; then `m² = 1` and `m = 1` uniquely on the positive axis. Here the
 named `κ` is inversion symmetry, not multiplication. Therefore:
 
-> `⊙ = • × ○` remains a mis-typed equation. Its defensible residue is a
+> `⊙ = • × ○` remains an ill-typed, retired equation. Its defensible residue is a
 > different theorem: **inversion symmetry selects the positive unit between
 > the exchanged pole-shadows.** v1 stays retired; the symmetry analogy is
 > lawful only after its changed operation and domain are stated.
