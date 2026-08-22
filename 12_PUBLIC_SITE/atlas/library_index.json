@@ -5,8 +5,8 @@
   "source": "reading-manifest.json",
   "excludes": "withheld-routes.json artifacts, current surfaces, missing files",
   "skipped": {
-    "withheld": 32,
-    "already_current": 0,
+    "withheld": 31,
+    "already_current": 1,
     "missing_file": 0
   },
   "total": 82,

@@ -93,11 +93,16 @@ No step depends on membership, belief, payment, or delegated truth authority.
 ## Build and verification
 
 ```text
+python3 -B build_core_shell.py
+python3 -B build_core_shell.py --check
 python3 -B render_dimension_site.py
+python3 -B render_dimension_site.py --check
 python3 -B build_book.py
 python3 -B build_book.py --check
 python3 -B refresh_reading_manifest.py
 python3 -B refresh_reading_manifest.py --check
+python3 -B build_withholding_boundary.py
+python3 -B build_withholding_boundary.py --check
 python3 -B apply_frozen_library_boundary.py
 python3 -B build_atlas_index.py
 python3 -B build_library_index.py
@@ -107,6 +112,7 @@ python3 -B build_social_cards.py
 python3 -B build_rag_index.py
 python3 -B build_rag_index.py --check
 python3 -B build_sw_version.py
+python3 -B check_public_semantic_parity.py
 python3 -B predeploy_check.py
 python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py
 ```

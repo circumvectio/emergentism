@@ -365,6 +365,22 @@ def _is_frozen_root_header(row: dict, frozen_roots: list[str]) -> bool:
     }
 
 
+def _is_current_surface_header(row: dict, current_surfaces: set[str]) -> bool:
+    """Reject a retained legacy noindex header once its exact page is current."""
+
+    if not _is_single_frozen_header(row):
+        return False
+    current_routes: set[str] = set()
+    for artifact in current_surfaces:
+        if not artifact.endswith(".html"):
+            continue
+        base = _route_base(artifact)
+        current_routes.add(base + "(.*)")
+        if base != "/":
+            current_routes.add(base.rstrip("/") + "/(.*)")
+    return row.get("source") in current_routes
+
+
 def _is_withheld_header(row: dict) -> bool:
     values = {item.get("value") for item in row.get("headers", []) if item.get("key") == "X-Robots-Tag"}
     return "noindex, noarchive, nosnippet, nofollow" in values and row.get("source") != "/historical-boundary/(.*)"
@@ -392,6 +408,9 @@ def _build_vercel(artifacts: list[dict]) -> dict:
 
     parity = json.loads(PARITY.read_text(encoding="utf-8"))
     frozen_roots = parity["frozenLibraryRoots"]
+    current_surfaces = set(parity.get("currentSurfaces", [])) | set(
+        parity.get("currentInfrastructureSurfaces", [])
+    )
     frozen_legacy = _frozen_legacy_surfaces(parity)
     if frozen_legacy is None:
         # Compatibility mode: regenerate named frozen roots but retain existing
@@ -400,6 +419,7 @@ def _build_vercel(artifacts: list[dict]) -> dict:
         headers = [
             row for row in config.get("headers", [])
             if not _is_frozen_root_header(row, frozen_roots)
+            and not _is_current_surface_header(row, current_surfaces)
             and not _is_withheld_header(row)
         ]
     else:

@@ -29,7 +29,8 @@ EXPECTED_CORE_QUESTION = "What had to emerge for you—and this moment—to be h
 EXPECTED_CORE_JOURNEY = [
     "index.html", "plainly/index.html", "dasein/index.html",
     "dimensions/index.html", "0/index.html", "1/index.html", "2/index.html",
-    "3/index.html", "4/index.html", "5/index.html", "6/index.html",
+    "3/index.html", "4/index.html", "5/index.html",
+    "burrisphere/index.html", "rosetta/index.html", "6/index.html",
     "f5/index.html", "practice/index.html", "spark/index.html",
     "record/index.html", "record/eub-1/index.html", "lab/index.html",
     "discoveries/index.html", "book/index.html", "about/index.html",
@@ -123,25 +124,254 @@ FORBIDDEN = {
         r"\brepresented\b.{0,100}\b(?:proves?|establishes?|means)\b.{0,80}\b(?:ontic|physical(?:ly)?)?\s*multiverse\b",
         re.I | re.S,
     ),
+    "Emergentism proof inflation": re.compile(
+        r"\bEmergentism\s+(?:(?:is|has\s+been)\s+)?"
+        r"(?:proved|proven|validated|verified|scientifically\s+established)\b",
+        re.I,
+    ),
+    "Emergentism exhaustive or unique inflation": re.compile(
+        r"\bEmergentism\s+(?:is|provides?|offers?|gives?)\s+(?:the\s+)?"
+        r"(?:complete|exhaustive|unique|only)\s+"
+        r"(?:account|explanation|ontology|theory)\b",
+        re.I,
+    ),
+    "Dasein atlas exhaustion inflation": re.compile(
+        r"\b(?:the\s+)?(?:dimensional\s+)?atlas\s+"
+        r"(?:contains?|captures?|inventories|exhausts)\s+(?:all\s+of\s+)?"
+        r"(?:Dasein|the\s+(?:whole|thing-in-itself))\b",
+        re.I,
+    ),
+    "Burrisphere mirror-partition collapse": re.compile(
+        r"\b(?:the\s+)?(?:G7\s+)?Burrisphere\s+"
+        r"(?:is|uses?|has|forms?|projects?|partitions?\s+as)\s+(?:the\s+)?"
+        r"3\s*\+\s*1\s*\+\s*3\b",
+        re.I,
+    ),
+    "geometry generates or confirms seven": re.compile(
+        r"\b(?:the\s+)?(?:Burrisphere|geometry|sphere)\s+(?:independently\s+)?"
+        r"(?:generates?|derives?|forces?|proves?|confirms?|establishes?)\s+"
+        r"(?:the\s+)?(?:G7\s+)?(?:count(?:\s+of\s+seven)?|seven)\b",
+        re.I,
+    ),
+    "Rosetta convergence truth-evidence inflation": re.compile(
+        r"\b(?:Rosetta\s+)?(?:convergence|same\s+count|shared\s+count|agreement)\s+"
+        r"(?:is|provides?|constitutes?|counts?\s+as)\s+(?:independent\s+)?"
+        r"(?:truth\s+)?(?:evidence|proof|confirmation)\b",
+        re.I,
+    ),
+    "G7 GEN7 identity inflation": re.compile(
+        r"\bG7@1\s*(?:=|≡|is\s+(?:the\s+)?same\s+(?:thing\s+)?as)\s*GEN7@1\b",
+        re.I,
+    ),
+    "lowercase uppercase power collapse": re.compile(
+        r"(?:φ\s*(?:and|,)\s*ν)\s+(?:are|=|≡)\s+(?:the\s+)?"
+        r"(?:same\s+as\s+)?(?:Φ\s*(?:and|,)\s*V)",
+        re.I,
+    ),
+    "bare ego-collective signs exhaust M4": re.compile(
+        r"\b(?:the\s+)?(?:four\s+)?(?:bare\s+)?ego\s*/\s*collective"
+        r"[+\-−±/\s]*(?:signs?|quadrants?)\s+(?:alone\s+)?"
+        r"(?:recover|generate|derive|exhaust|define)s?\s+(?:the\s+)?"
+        r"(?:M4|four\s+transfers?|transfer\s+grammar)\b",
+        re.I,
+    ),
+    "display path dynamics inflation": re.compile(
+        r"\b(?:the\s+)?(?:helix|winding\s+path|360(?:°|\s*degrees?)\s+(?:display\s+)?path)\s+"
+        r"(?:is|represents?|models?|describes?|shows?)\s+(?:a\s+)?(?:physical\s+)?"
+        r"(?:dynamics?|causal\s+(?:process|mechanism)|mechanism)\b",
+        re.I,
+    ),
+    "display path time inflation": re.compile(
+        r"\b(?:the\s+)?(?:helix|winding\s+path|360(?:°|\s*degrees?)\s+(?:display\s+)?path)\s+"
+        r"(?:is|represents?|models?|encodes?|shows?)\s+(?:a\s+)?"
+        r"(?:time|timeline|temporal\s+(?:sequence|process)|arrow\s+of\s+time)\b",
+        re.I,
+    ),
+    "display path recurrence inflation": re.compile(
+        r"\b(?:the\s+)?(?:helix|winding\s+path|360(?:°|\s*degrees?)\s+(?:display\s+)?path)\s+"
+        r"(?:is|proves?|establishes?|means?|shows?)\s+(?:a\s+)?"
+        r"(?:recurrence|recurrent|cycle|cyclic\s+return)\b",
+        re.I,
+    ),
+    "display path value-ascent inflation": re.compile(
+        r"\b(?:the\s+)?(?:helix|winding\s+path|360(?:°|\s*degrees?)\s+(?:display\s+)?path)\s+"
+        r"(?:is|represents?|models?|shows?|establishes?)\s+(?:a\s+)?"
+        r"(?:moral|value|developmental|spiritual)\s+"
+        r"(?:ascent|hierarchy|progress(?:ion)?|necessity)\b",
+        re.I,
+    ),
+    "display path count-derivation inflation": re.compile(
+        r"\b(?:the\s+)?(?:helix|winding\s+path|360(?:°|\s*degrees?)\s+(?:display\s+)?path)\s+"
+        r"(?:derives?|generates?|proves?|forces?|establishes?)\s+(?:the\s+)?"
+        r"(?:count\s+of\s+)?(?:seven|G7)\b",
+        re.I,
+    ),
+    "reciprocal product centre-peak inflation": re.compile(
+        r"\b(?:(?:the\s+)?(?:constraint\s+)?product(?:\s+φν)?|φν)\s+"
+        r"(?:peaks?|is\s+(?:uniquely\s+)?maximi[sz]ed|reaches?\s+(?:its\s+)?maximum)\s+"
+        r"(?:at\s+)?(?:the\s+)?centre\b",
+        re.I,
+    ),
+    "positive chart signed-G7 identity inflation": re.compile(
+        r"\b(?:the\s+)?(?:lowercase\s+)?positive\s+(?:reciprocal\s+)?chart\s+"
+        r"(?:is|equals?|=|≡)\s+(?:the\s+)?signed\s+G7\s+(?:plane|display)\b",
+        re.I,
+    ),
+    "G7 all-game exhaustion inflation": re.compile(
+        r"\bG7\s+(?:exhausts?|covers?|contains?|completes?)\s+"
+        r"(?:all\s+(?:of\s+)?)?(?:games?|game\s+theory|possible\s+games?|the\s+space\s+of\s+games)\b",
+        re.I,
+    ),
+    "uppercase product ranking revival": re.compile(
+        r"\b(?:(?:the\s+)?uppercase\s+(?:product\s+)?(?:ranking|score)\s+"
+        r"(?:is|has\s+been|has)\s+(?:restored|revived|returned|reinstated|current|valid)"
+        r"|(?:restore|revive|reinstate|use)\s+(?:the\s+)?uppercase\s+product\s+"
+        r"(?:ranking|score))\b",
+        re.I,
+    ),
+    "basic-strategy maximum certainty inflation": re.compile(
+        r"\bM4\s+(?:is|constitutes?)\s+(?:(?:the\s+)?(?:(?:proved|proven)\s+)?"
+        r"maximum\s+compression\s+of\s+basic\s+strategy"
+        r"|(?:a\s+)?maximally\s+compressed\s+(?:cross-game\s+)?basis)\b",
+        re.I,
+    ),
+    "M4 game-theory exhaustion inflation": re.compile(
+        r"\b(?:M4|(?:the\s+)?four\s+M4\s+cells?)\s+"
+        r"(?:exhausts?|covers?|contains?|completes?)\s+"
+        r"(?:all\s+(?:of\s+)?)?(?:games?|game\s+theory|the\s+space\s+of\s+games)\b",
+        re.I,
+    ),
+    "strategy axes identity inflation": re.compile(
+        r"\b(?:(?:bearer\s+)?direction\s+(?:is|equals?|=)\s+(?:the\s+)?"
+        r"(?:same\s+(?:axis\s+)?as\s+)?(?:power\s+)?channel"
+        r"|(?:power\s+)?channel\s+(?:is|equals?|=)\s+(?:the\s+)?"
+        r"(?:same\s+(?:axis\s+)?as\s+)?(?:bearer\s+)?direction)\b",
+        re.I,
+    ),
+    "ego-collective identity inflation": re.compile(
+        r"\b(?:self(?:-facing)?\s+(?:is|means?|equals?)\s+ego(?!-facing)"
+        r"|ego(?!-facing)\s+(?:is|means?|equals?)\s+self(?:-facing)?"
+        r"|other(?:-facing)?\s+(?:is|means?|equals?)\s+collective(?!-facing)"
+        r"|collective(?!-facing)\s+(?:is|means?|equals?)\s+other(?:-facing)?)\b",
+        re.I,
+    ),
+    "theft-sacrifice moral-verdict inflation": re.compile(
+        r"\b(?:theft\s+(?:and|versus|vs\.?|\u2194)\s+sacrifice"
+        r"|taking\s+(?:and|versus|vs\.?|\u2194)\s+giving)\s+"
+        r"(?:are|encode|determine|provide)\s+(?:the\s+)?(?:moral\s+)?"
+        r"(?:verdicts?|good\s+and\s+evil|right\s+and\s+wrong)\b",
+        re.I,
+    ),
+    "mental-physical power identity inflation": re.compile(
+        r"\b(?:mental\s+(?:power\s+)?(?:is|means?|equals?)\s*\u03a6(?:\u2085|5)"
+        r"|\u03a6(?:\u2085|5)\s+(?:is|means?|equals?)\s+mental(?:\s+power)?"
+        r"|physical\s+(?:power\s+)?(?:is|means?|equals?)\s*V(?:\u2084|4)"
+        r"|V(?:\u2084|4)\s+(?:is|means?|equals?)\s+physical(?:\s+power)?)\b",
+        re.I,
+    ),
+    "Phi5 mental-only narrowing": re.compile(
+        r"\b\u03a6(?:\u2085|5)\s+(?:is|means?|equals?)\s+"
+        r"(?:only|merely|nothing\s+but)\s+mental(?:\s+power)?\b",
+        re.I,
+    ),
+    "M4 game enumeration inflation": re.compile(
+        r"\b(?:M4|(?:the\s+)?(?:two-axis\s+)?(?:compression|projection|basis))\s+"
+        r"(?:enumerates?|lists?|contains?)\s+(?:(?:all(?:\s+of)?|every)\s+)?"
+        r"(?:games?|game\s+theory|native\s+games?)\b",
+        re.I,
+    ),
+    "native-game reconstruction inflation": re.compile(
+        r"\b(?:M4|(?:the\s+)?(?:two-axis\s+)?(?:compression|projection|basis))\s+"
+        r"reconstructs?\s+(?:(?:all(?:\s+of)?|every)\s+)?"
+        r"(?:games?|game\s+theory|native\s+games?|native\s+game\s+structures?)\b",
+        re.I,
+    ),
+    "native-game replacement inflation": re.compile(
+        r"\b(?:M4|(?:the\s+)?(?:two-axis\s+)?(?:compression|projection|basis))\s+"
+        r"replaces?\s+(?:(?:all(?:\s+of)?|every)\s+)?"
+        r"(?:games?|game\s+theory|native\s+games?|native\s+game\s+(?:structures?|descriptions?))\b",
+        re.I,
+    ),
+    "strategy-test execution inflation": re.compile(
+        r"\b(?:StrategyCompressionTest|strategy\s+compression\s+test|M4\s+maximality\s+test)\s+"
+        r"(?:has\s+been|was|is)\s+(?:already\s+)?(?:run|completed|validated)\b",
+        re.I,
+    ),
+    "strategy-test truth-evidence inflation": re.compile(
+        r"\b(?:StrategyCompressionTest|strategy\s+compression\s+test|"
+        r"(?:the\s+)?rate[\s–-]*distortion\s+(?:test|frontier))\s+"
+        r"(?:is|provides?|constitutes?|counts?\s+as)\s+(?:independent\s+)?"
+        r"(?:truth\s+)?(?:evidence|proof|confirmation)\b",
+        re.I,
+    ),
+    "lossless strategy-code inflation": re.compile(
+        r"\bM4\s+(?:is|provides?|forms?)\s+(?:a\s+)?lossless\s+"
+        r"(?:code|compression|reconstruction|representation)\b",
+        re.I,
+    ),
+    "unpreregistered maximality inflation": re.compile(
+        r"\bM4\s+(?:is|has\s+been)\s+(?:proved|proven|established|confirmed)?\s*"
+        r"maximal\s+without\s+(?:preregistration|comparators?|a\s+declared\s+loss)\b",
+        re.I,
+    ),
+    "global unique maximality inflation": re.compile(
+        r"\b(?:(?:a\s+)?finite\s+(?:scored\s+)?run|(?:the\s+)?"
+        r"(?:strategy\s+compression|maximality)\s+test)\s+"
+        r"(?:proves?|establishes?|confirms?|shows?)\s+(?:that\s+)?(?:M4\s+(?:(?:is|as)\s+)?)?"
+        r"(?:uniquely\s+)?globally\s+maximal\b"
+        r"|\bM4\s+is\s+(?:the\s+)?(?:uniquely\s+)?globally\s+maximal\b",
+        re.I,
+    ),
+    "performance-free compression inflation": re.compile(
+        r"\bminimum\s+description\s+length\s+(?:alone\s+)?"
+        r"(?:proves?|establishes?|guarantees?|means?)\s+(?:global\s+)?maximality\b"
+        r"|\bminimum\s+description\s+length\s+regardless\s+of\s+performance\b",
+        re.I,
+    ),
+    "unbounded comparator-class inflation": re.compile(
+        r"\bM4\s+(?:beats?|dominates?|outcompresses?|is\s+shorter\s+than)\s+"
+        r"(?:all|every)\s+(?:conceivable\s+)?(?:representations?|codes?|bases)\b",
+        re.I,
+    ),
 }
 
 REQUIRED_PUBLIC_CONTRACTS = {
     "index.html": (
         "A worldview for finite beings", "Frame one decision",
-        EXPECTED_CORE_QUESTION, "One present, two explanations",
+        EXPECTED_CORE_QUESTION, "One present, three explanations",
+        "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted", "maximally compressed",
     ),
-    "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
+    "plainly/index.html": (
+        "possible power", "actual power", "chosen AND-class convention",
+        "one complete 360° turn", "φν=1 everywhere",
+        "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
+    ),
     "dasein/index.html": (
         EXPECTED_CORE_QUESTION,
         "Complete means accounted explanatory debt, not omniscience",
         "D6 is nonclosure, not D0.",
+        "reading itinerary, not time", "φν=1 is constant",
+        "self/ego-facing taking", "Game theory is not exhausted", "maximally compressed",
     ),
     "f5/index.html": (
         "F5-W", "F5-N", "F5-R", "[C] UNVALIDATED",
         "Strongest rival", "Discriminator", "Kill", "Survivor", "Pareto frontier",
     ),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
-    "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
+    "5/index.html": ("Game theory is not exhausted", "maximally compressed"),
+    "burrisphere/index.html": (
+        "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
+        "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary",
+        "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted", "maximally compressed",
+    ),
+    "rosetta/index.html": (
+        "One move, translated", "G7", "possible power", "actual power",
+        "G7@1 ≠ GEN7@1", "Correspondence is not confirmation",
+        "presentation itinerary", "φν=1 is the constraint",
+        "mental versus physical power", "Game theory is not exhausted", "maximally compressed",
+    ),
     "manifesto/index.html": (
         "Filing alone does not establish independent evidence, peer review, validation,",
         "does not automatically enter the",
@@ -172,25 +402,78 @@ REQUIRED_SURFACE_CARDS = {
     "index.html": {
         "FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-23",
         "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
-        "OS01-29", "OS01-30",
+        "OS01-29", "OS01-30", "OS01-31", "OS01-32", "OS01-33",
+        "OS01-34", "OS01-35", "OS01-36",
     },
     "dasein/index.html": {
         "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
-        "OS01-20", "OS01-21", "OS01-23", "OS01-25",
+        "OS01-20", "OS01-21", "OS01-23", "OS01-25", "OS01-31",
+        "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
     },
     "f5/index.html": {"OS01-27", "OS01-28", "OS01-29", "OS01-30"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
     "compass/index.html": {"OS01-13"},
-    "5/index.html": {"OS01-09"},
-    "plainly/index.html": {"OS01-09"},
+    "5/index.html": {
+        "OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
+    },
+    "plainly/index.html": {
+        "OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35",
+        "OS01-36",
+    },
     "discoveries/nonduality/index.html": {"OS01-09"},
     "about/index.html": {"OS01-26"},
     "read/index.html": {"OS01-13"},
     "axioms/index.html": {"OS01-26"},
     "journey/index.html": {"OS01-09"},
-    "rosetta/index.html": {"OS01-11"},
+    "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36"},
+    "rosetta/index.html": {
+        "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
+    },
     "book/index.html": {"OS01-13"},
+}
+REQUIRED_SURFACE_MARKERS = {
+    "index.html": {
+        "A worldview for finite beings", "Emergentism explains the architecture of Being",
+        "Dasein is the coherent whole", "four quadrant transformations",
+        "Frame one decision", "comparative benefit untested",
+        "One present, three explanations", "one of 24 possible assignments",
+        "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted", "maximally compressed",
+    },
+    "dasein/index.html": {
+        EXPECTED_CORE_QUESTION, "Dasein names all that can coherently and consistently exist",
+        "situated dasein is one finite actual standpoint", "G7@1 ≠ GEN7@1",
+        "Complete means accounted explanatory debt, not omniscience",
+        "Every “why” must say what kind of answer it is.", "D6 is nonclosure, not D0.",
+        "reading itinerary, not time", "φν=1 is constant",
+        "self/ego-facing taking", "Game theory is not exhausted", "maximally compressed",
+    },
+    "5/index.html": {
+        "P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers",
+        "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1",
+        "360° display path", "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted", "maximally compressed",
+    },
+    "plainly/index.html": {
+        "P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being",
+        "Dasein is the whole that can be", "four quadrants plus the Titan axis",
+        "G7@1 ≠ GEN7@1",
+        "one complete 360° turn", "φν=1 everywhere",
+        "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
+    },
+    "burrisphere/index.html": {
+        "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
+        "G7@1 ≠ GEN7@1",
+        "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1",
+        "Game theory is not exhausted", "maximally compressed",
+    },
+    "rosetta/index.html": {
+        "One move, translated", "G7", "possible power", "actual power",
+        "G7@1 ≠ GEN7@1", "Correspondence is not confirmation",
+        "presentation itinerary", "φν=1 is the constraint",
+        "mental versus physical power", "Game theory is not exhausted", "maximally compressed",
+    },
 }
 CURRENT_AND_CLASS_MARKERS = {
     "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
@@ -227,6 +510,149 @@ F5_REJECT_FIXTURES = {
     "future light cone as source": "The future light cone is a causal source for present choice.",
     "represented bundle proves multiverse": "A represented history bundle proves a physical multiverse.",
 }
+V21_REJECT_FIXTURES = (
+    ("Emergentism proof inflation", "Emergentism has been scientifically established."),
+    ("Emergentism exhaustive or unique inflation", "Emergentism provides the unique explanation of Being."),
+    ("Dasein atlas exhaustion inflation", "The dimensional atlas exhausts Dasein."),
+    ("Burrisphere mirror-partition collapse", "The G7 Burrisphere is 3+1+3."),
+    ("geometry generates or confirms seven", "The Burrisphere independently generates seven."),
+    ("Rosetta convergence truth-evidence inflation", "Rosetta convergence is truth evidence."),
+    ("G7 GEN7 identity inflation", "G7@1 = GEN7@1."),
+    ("lowercase uppercase power collapse", "φ and ν are the same as Φ and V."),
+    ("bare ego-collective signs exhaust M4", "Bare ego/collective signs exhaust M4."),
+    ("display path dynamics inflation", "The helix represents physical dynamics."),
+    ("display path time inflation", "The winding path encodes time."),
+    ("display path recurrence inflation", "The 360° display path proves a cycle."),
+    ("display path value-ascent inflation", "The helix represents moral ascent."),
+    ("display path count-derivation inflation", "The winding path derives seven."),
+    ("reciprocal product centre-peak inflation", "φν peaks at the centre."),
+    (
+        "positive chart signed-G7 identity inflation",
+        "The lowercase positive reciprocal chart is the signed G7 plane.",
+    ),
+    ("G7 all-game exhaustion inflation", "G7 exhausts all of game theory."),
+    ("uppercase product ranking revival", "The uppercase product ranking has returned."),
+    (
+        "basic-strategy maximum certainty inflation",
+        "M4 is the maximum compression of basic strategy.",
+    ),
+    (
+        "basic-strategy maximum certainty inflation",
+        "M4 is a maximally compressed cross-game basis.",
+    ),
+    ("M4 game-theory exhaustion inflation", "M4 exhausts all of game theory."),
+    ("strategy axes identity inflation", "Direction is the same axis as power channel."),
+    ("ego-collective identity inflation", "Self-facing means ego."),
+    (
+        "theft-sacrifice moral-verdict inflation",
+        "Theft and sacrifice are moral verdicts.",
+    ),
+    ("mental-physical power identity inflation", "Mental power is Φ₅."),
+    ("Phi5 mental-only narrowing", "Φ₅ is only mental power."),
+    ("M4 game enumeration inflation", "M4 enumerates every game."),
+    ("native-game reconstruction inflation", "M4 reconstructs native games."),
+    ("native-game replacement inflation", "M4 replaces native game descriptions."),
+    ("strategy-test execution inflation", "The M4 maximality test has been run."),
+    (
+        "strategy-test truth-evidence inflation",
+        "The rate-distortion frontier provides truth evidence.",
+    ),
+    ("lossless strategy-code inflation", "M4 is a lossless code for native games."),
+    ("unpreregistered maximality inflation", "M4 is proven maximal without preregistration."),
+    (
+        "global unique maximality inflation",
+        "A finite scored run establishes M4 as uniquely globally maximal.",
+    ),
+    (
+        "performance-free compression inflation",
+        "Minimum description length alone establishes maximality.",
+    ),
+    (
+        "unbounded comparator-class inflation",
+        "M4 beats every conceivable representation.",
+    ),
+)
+V21_BOUNDED_FIXTURES = (
+    ("Emergentism proof inflation", "Emergentism is not proved or externally validated."),
+    ("Emergentism exhaustive or unique inflation", "Emergentism is not an exhaustive or uniquely established explanation."),
+    ("Dasein atlas exhaustion inflation", "The dimensional atlas does not exhaust Dasein."),
+    ("Burrisphere mirror-partition collapse", "The G7 Burrisphere is not the separate 3+1+3 mirror ladder."),
+    ("geometry generates or confirms seven", "The Burrisphere does not independently generate or confirm seven."),
+    ("Rosetta convergence truth-evidence inflation", "Rosetta convergence is not truth evidence."),
+    ("G7 GEN7 identity inflation", "G7@1 ≠ GEN7@1."),
+    ("lowercase uppercase power collapse", "φ and ν are not Φ and V."),
+    ("bare ego-collective signs exhaust M4", "Bare ego/collective signs do not recover M4."),
+    ("display path dynamics inflation", "The helix is not physical dynamics."),
+    ("display path time inflation", "The winding path is not time."),
+    ("display path recurrence inflation", "The 360° display path is not recurrence."),
+    ("display path value-ascent inflation", "The helix is not moral ascent."),
+    ("display path count-derivation inflation", "The winding path does not derive seven."),
+    (
+        "reciprocal product centre-peak inflation",
+        "φν is constant and does not peak at the centre.",
+    ),
+    (
+        "positive chart signed-G7 identity inflation",
+        "The positive reciprocal chart is not the signed G7 plane.",
+    ),
+    ("G7 all-game exhaustion inflation", "G7 does not exhaust all game theory."),
+    (
+        "uppercase product ranking revival",
+        "The retired uppercase product ranking has not returned.",
+    ),
+    (
+        "basic-strategy maximum certainty inflation",
+        "M4 is a candidate maximum compression of basic strategy.",
+    ),
+    (
+        "basic-strategy maximum certainty inflation",
+        "M4 is conjectured to be a maximally compressed cross-game basis.",
+    ),
+    ("M4 game-theory exhaustion inflation", "M4 does not exhaust game theory."),
+    ("strategy axes identity inflation", "Direction and channel are distinct declared axes."),
+    ("ego-collective identity inflation", "Self-facing is glossed as ego-facing, not identity."),
+    (
+        "theft-sacrifice moral-verdict inflation",
+        "Theft and sacrifice are mnemonics, not moral verdicts.",
+    ),
+    (
+        "mental-physical power identity inflation",
+        "Mental and physical power are mnemonics, not identities with Φ₅ and V₄.",
+    ),
+    ("Phi5 mental-only narrowing", "Φ₅ is wider than mental power."),
+    ("M4 game enumeration inflation", "M4 does not enumerate native games."),
+    ("native-game reconstruction inflation", "M4 does not reconstruct native games."),
+    ("native-game replacement inflation", "M4 does not replace native game descriptions."),
+    (
+        "strategy-test execution inflation",
+        "The M4 maximality test requires preregistration and has not been run.",
+    ),
+    (
+        "strategy-test truth-evidence inflation",
+        "The rate-distortion test is not truth evidence.",
+    ),
+    (
+        "lossless strategy-code inflation",
+        "M4 is a lossy coding hypothesis and does not reconstruct native games.",
+    ),
+    (
+        "unpreregistered maximality inflation",
+        "M4 maximality is conjectural until preregistered comparator tests are run.",
+    ),
+    (
+        "global unique maximality inflation",
+        "A finite run cannot establish unique global maximality.",
+    ),
+    (
+        "performance-free compression inflation",
+        "Maximal means minimum description length at fixed acceptable performance.",
+    ),
+    (
+        "unbounded comparator-class inflation",
+        "M4 is compared only within the preregistered comparator class.",
+    ),
+)
+NORMALIZED_FORBIDDEN = {name for name, _fixture in V21_REJECT_FIXTURES}
 LIFECYCLE_AWARE_FORBIDDEN = {
     "literal D6 identity",
     "legacy untyped node product",
@@ -332,9 +758,351 @@ def parity_audit_surfaces(data: dict) -> list[str]:
 
 NEGATIVE_PRODUCT_RECORDS = {"axioms/index.html", "record/index.html"}
 
+EXPECTED_G7_POWERS = {
+    "possible": {"symbol": "Φ₅", "type": "D5 possible power", "causalByItself": False},
+    "actual": {"symbol": "V₄", "type": "D4 actual power"},
+    "presentEvaluation": {"symbol": "Φ̂₄", "type": "D4 evaluation of Φ₅"},
+    "tier": "[S/I]",
+}
+EXPECTED_D5_CARD_IDS = [
+    "OS01-09", "OS01-10", "OS01-11", "OS01-12", "OS01-33", "OS01-34", "OS01-35",
+    "OS01-36",
+]
+EXPECTED_EGO_COLLECTIVE_GLOSS = {
+    "self": "ego-facing",
+    "other": "collective-facing",
+    "identity": False,
+    "bareSignsRecoverM4": False,
+    "tier": "[I]",
+}
+EXPECTED_G7_PLANE_AXES = {
+    "horizontal": "self-facing to other-facing",
+    "vertical": "raised Phi5 channel to raised V4 channel",
+    "tier": "[I]",
+}
+EXPECTED_G7_COUNT_SOURCE = {
+    "id": "G7@1",
+    "partition": [4, 3],
+    "tier": "[S]",
+    "derivation": "four bearer-oriented mixed-sign transfers plus three Titan-frame classes inside the selected vocabulary",
+}
+EXPECTED_G7_TRANSFERS = (
+    {
+        "id": "taking-a", "plain": "Taking-A", "alias": "Kali",
+        "signature": "+Φ₅,self; −V₄,other", "quadrant": "top-left",
+        "channelPair": "Φ₅,self ↔ V₄,other",
+        "egoCollectiveSigns": "ego +Φ₅; collective −V₄",
+    },
+    {
+        "id": "taking-b", "plain": "Taking-B", "alias": "Kālī",
+        "signature": "+V₄,self; −Φ₅,other", "quadrant": "bottom-left",
+        "channelPair": "V₄,self ↔ Φ₅,other",
+        "egoCollectiveSigns": "ego +V₄; collective −Φ₅",
+    },
+    {
+        "id": "giving-a", "plain": "Giving-A", "alias": "Kṛṣṇa",
+        "signature": "−Φ₅,self; +V₄,other", "quadrant": "bottom-right",
+        "channelPair": "Φ₅,self ↔ V₄,other",
+        "egoCollectiveSigns": "ego −Φ₅; collective +V₄",
+    },
+    {
+        "id": "giving-b", "plain": "Giving-B", "alias": "Arjuna",
+        "signature": "−V₄,self; +Φ₅,other", "quadrant": "top-right",
+        "channelPair": "V₄,self ↔ Φ₅,other",
+        "egoCollectiveSigns": "ego −V₄; collective +Φ₅",
+    },
+)
+EXPECTED_G7_FRAMES = (
+    {"id": "shiva-dissolve", "plain": "dissolution", "alias": "Śiva", "glyph": "•", "axisPosition": "bottom", "signature": "−Φ₅; −V₄"},
+    {"id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu", "glyph": "⊙", "axisPosition": "centre", "valueMarker": "1_T", "signature": "ΔΦ₅≈0; ΔV₄≈0"},
+    {"id": "brahma-create", "plain": "creation", "alias": "Brahmā", "glyph": "○", "axisPosition": "top", "signature": "+Φ₅; +V₄"},
+)
+EXPECTED_BURRISPHERE_G7 = {
+    "layout": "four-quadrants-plus-three-axial-stations",
+    "tier": "[I]",
+    "generatesCount": False,
+    "meaningWithoutColor": True,
+}
+EXPECTED_G7_DISPLAY_PATH = {
+    "schema": "emergentism/G7DisplayPath.v1",
+    "geometry": "one-selected-turn-around-stationary-axis",
+    "turns": 1,
+    "degrees": 360,
+    "verticalDirection": "bottom-to-top",
+    "startFrame": "shiva-dissolve",
+    "centreLatitude": "vishnu-preserve",
+    "endFrame": "brahma-create",
+    "traversesAxisPoint": False,
+    "phaseOrder": ["taking-a", "taking-b", "giving-a", "giving-b"],
+    "phaseOrderTier": "[I]",
+    "semantics": "presentation-itinerary-only",
+    "makesContinuousG7State": False,
+    "dynamics": False,
+    "causal": False,
+    "temporal": False,
+    "recurrent": False,
+    "moralRanking": False,
+    "derivesCount": False,
+    "tier": "[I]",
+}
+EXPECTED_RECIPROCAL_SPECTRUM = {
+    "schema": "emergentism/ReciprocalSpectrum.v1",
+    "domain": "positive reciprocal chart",
+    "from": "ν→∞, φ→0",
+    "centre": "φ=ν=1",
+    "to": "φ→∞, ν→0",
+    "constraint": "φν=1 everywhere",
+    "constraintSelectsCentre": False,
+    "balance": "B=2/(φ+ν)≤1",
+    "uniqueMaximum": {"value": 1, "at": "φ=ν=1", "tier": "[A]"},
+    "sameAsSignedG7Plane": False,
+    "sameAsUppercasePowerModel": False,
+    "revivesProductRanking": False,
+    "g7ExhaustsAllGames": False,
+    "tier": "[A/S/I]",
+}
+EXPECTED_BASIC_STRATEGY_COMPRESSION = {
+    "schema": "emergentism/BasicStrategyCompression.v1",
+    "axes": {
+        "direction": ["self-facing taking", "other-facing giving"],
+        "channel": ["Φ₅ possible/model power", "V₄ actual/embodied power"],
+    },
+    "cells": 4,
+    "scopedExhaustion": "selected M4 two-axis vocabulary",
+    "compressionMode": "intensional-not-extensional",
+    "compressionTarget": (
+        "cross-game self/other direction and possible/actual power-channel orientation"
+    ),
+    "maximumCompressionCandidate": True,
+    "exhaustsGameTheory": False,
+    "reconstructsNativeGames": False,
+    "nativeStructurePreserved": [
+        "players",
+        "coalitions",
+        "information",
+        "timing",
+        "payoffs",
+        "repetition",
+        "stochasticity",
+        "institutions",
+        "learning",
+        "equilibrium concepts",
+    ],
+    "maximalityTest": {
+        "schema": "emergentism/StrategyCompressionTest.v1",
+        "status": "preregistration-required-not-run",
+        "coding": "lossy",
+        "corpus": "declared cross-game corpus",
+        "fixedBeforeCoding": [
+            "native-game-descriptions",
+            "bearer-indexed-option-capability-changes",
+            "held-out-prediction-or-intervention-targets",
+            "loss-function",
+            "description-length-measure",
+            "material-improvement-threshold",
+            "acceptable-distortion-ceiling-or-target-utility-floor",
+        ],
+        "comparators": [
+            "native-game-baseline",
+            "coarser-one-axis-code",
+            "added-axis-rival",
+        ],
+        "criterion": "declared rate-distortion frontier",
+        "maximalDefinition": (
+            "minimum-description-length-at-fixed-acceptable-performance-"
+            "within-preregistered-comparator-class"
+        ),
+        "globalUniqueEstablished": False,
+        "kills": [
+            "richer-rival-clears-threshold-after-complexity-cost",
+            "necessary-orientation-distinctions-collapse",
+            "third-universal-channel-or-bearer-orientation",
+        ],
+        "truthEvidence": False,
+        "tier": "[C]",
+    },
+    "mnemonics": {
+        "egoCollective": {"tier": "[I]", "identity": False},
+        "theftSacrifice": {"tier": "[I]", "moralVerdict": False},
+        "mentalPhysical": {
+            "tier": "[I]",
+            "identity": False,
+            "phi5WiderThanMental": True,
+        },
+    },
+    "kills": [
+        "third-power-channel",
+        "additional-bearer-orientation",
+        "unrecoverable-strategy-effect",
+    ],
+    "tier": "[S/I/C]",
+}
+EXPECTED_GEN7_MIRROR_LADDER = {
+    "id": "GEN7@1",
+    "partition": [3, 1, 3],
+    "values": ["0", "1/2", "sqrt(3)/2", "1", "sqrt(3)/2", "1/2", "0"],
+    "selectionTier": "[S]",
+    "analyticGivenSelectionTier": "[A]",
+    "projectionTier": "[I]",
+    "isG7Burrisphere": False,
+    "generatesCount": False,
+}
+EXPECTED_G7_GEN7_RELATION = {
+    "g7NotGen7": True,
+    "sameCount": True,
+    "sameStructure": False,
+    "geometryForcesSeven": False,
+    "convergenceIsTruthEvidence": False,
+    "lowercaseEqualsUppercase": False,
+}
+EXPECTED_G7_SOURCE_TIERS = {
+    "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md": "[S/I/C]",
+    "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md": "[A/I/C]",
+    "05_COSMOLOGY/00_THE_BURRISPHERE.md": "[S] routing only",
+    "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md": "[A/S/I]",
+    "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md": "[S/I]",
+    "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md": "[B] direction",
+}
+
 
 def _sha256_revision(path: Path) -> str:
     return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _validate_projection_rows(
+    label: str,
+    rows: object,
+    expected: tuple[dict, ...],
+    errors: list[str],
+) -> None:
+    """Validate an ordered, ID-addressable part of G7Projection.v1."""
+
+    if not isinstance(rows, list):
+        errors.append(f"G7Projection.v1 {label} must be a list")
+        return
+    expected_ids = [row["id"] for row in expected]
+    actual_ids = [row.get("id") if isinstance(row, dict) else None for row in rows]
+    if actual_ids != expected_ids:
+        errors.append(
+            f"G7Projection.v1 {label} order/IDs drift: "
+            f"expected {expected_ids}, got {actual_ids}"
+        )
+    for index, expected_row in enumerate(expected):
+        if index >= len(rows):
+            break
+        if rows[index] != expected_row:
+            errors.append(
+                f"G7Projection.v1 {label} row drift: {expected_row['id']}"
+            )
+    if len(rows) != len(expected):
+        errors.append(
+            f"G7Projection.v1 {label} cardinality must be {len(expected)}, got {len(rows)}"
+        )
+
+
+def validate_g7_projection(levels: object, errors: list[str]) -> None:
+    """Validate the corrected operational G7 and its two distinct projections."""
+
+    if not isinstance(levels, list):
+        errors.append("levels must be a list before validating G7Projection.v1")
+        return
+    d5_rows = [row for row in levels if isinstance(row, dict) and row.get("id") == "D5"]
+    if len(d5_rows) != 1:
+        errors.append("G7Projection.v1 requires exactly one D5 level")
+        return
+    d5 = d5_rows[0]
+    if d5.get("claimCardIds") != EXPECTED_D5_CARD_IDS:
+        errors.append(
+            "D5 claimCardIds drift: "
+            f"expected {EXPECTED_D5_CARD_IDS}, got {d5.get('claimCardIds')}"
+        )
+    stone = d5.get("stone")
+    if not isinstance(stone, dict):
+        errors.append("D5 stone must be an object")
+        return
+    projection = stone.get("projection")
+    if not isinstance(projection, dict):
+        errors.append("D5 stone.projection must be an object")
+        return
+    expected_keys = {
+        "schema", "powers", "bearerIndices", "egoCollectiveGlossTier",
+        "egoCollectiveGloss", "planeAxes", "countSource", "transfers", "frames",
+        "burrisphereG7", "displayPath", "reciprocalSpectrum",
+        "strategyCompression",
+        "separateMirrorLadder", "relation", "sources",
+    }
+    if set(projection) != expected_keys:
+        errors.append(
+            "G7Projection.v1 field set drift: "
+            f"expected {sorted(expected_keys)}, got {sorted(projection)}"
+        )
+    if projection.get("schema") != "emergentism/G7Projection.v1":
+        errors.append("D5 stone.projection schema must be emergentism/G7Projection.v1")
+    for key, expected in (
+        ("powers", EXPECTED_G7_POWERS),
+        ("bearerIndices", ["self", "other"]),
+        ("egoCollectiveGlossTier", "[I]"),
+        ("egoCollectiveGloss", EXPECTED_EGO_COLLECTIVE_GLOSS),
+        ("planeAxes", EXPECTED_G7_PLANE_AXES),
+        ("countSource", EXPECTED_G7_COUNT_SOURCE),
+        ("burrisphereG7", EXPECTED_BURRISPHERE_G7),
+        ("displayPath", EXPECTED_G7_DISPLAY_PATH),
+        ("reciprocalSpectrum", EXPECTED_RECIPROCAL_SPECTRUM),
+        ("strategyCompression", EXPECTED_BASIC_STRATEGY_COMPRESSION),
+        ("separateMirrorLadder", EXPECTED_GEN7_MIRROR_LADDER),
+        ("relation", EXPECTED_G7_GEN7_RELATION),
+    ):
+        if projection.get(key) != expected:
+            errors.append(f"G7Projection.v1 {key} contract drift")
+    _validate_projection_rows(
+        "transfers", projection.get("transfers"), EXPECTED_G7_TRANSFERS, errors
+    )
+    _validate_projection_rows(
+        "frames", projection.get("frames"), EXPECTED_G7_FRAMES, errors
+    )
+
+    sources = projection.get("sources")
+    if not isinstance(sources, list):
+        errors.append("G7Projection.v1 sources must be a list")
+        return
+    rows_by_path: dict[str, dict] = {}
+    for row in sources:
+        if not isinstance(row, dict):
+            errors.append("G7Projection.v1 source row must be an object")
+            continue
+        source_rel = row.get("path")
+        if not isinstance(source_rel, str) or not source_rel:
+            errors.append("G7Projection.v1 source row missing path")
+            continue
+        if source_rel in rows_by_path:
+            errors.append(f"G7Projection.v1 repeats source {source_rel}")
+            continue
+        rows_by_path[source_rel] = row
+    if set(rows_by_path) != set(EXPECTED_G7_SOURCE_TIERS):
+        errors.append(
+            "G7Projection.v1 source set drift: "
+            f"expected {sorted(EXPECTED_G7_SOURCE_TIERS)}, got {sorted(rows_by_path)}"
+        )
+    for source_rel, expected_tier in EXPECTED_G7_SOURCE_TIERS.items():
+        row = rows_by_path.get(source_rel)
+        if row is None:
+            continue
+        if set(row) != {"path", "sha256", "tier"}:
+            errors.append(f"G7Projection.v1 source field set drift: {source_rel}")
+        if row.get("tier") != expected_tier:
+            errors.append(f"G7Projection.v1 source tier drift: {source_rel}")
+        source_path = ROOT / source_rel
+        try:
+            source_path.resolve().relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"G7Projection.v1 source escapes corpus: {source_rel}")
+            continue
+        if not source_path.is_file():
+            errors.append(f"G7Projection.v1 source missing: {source_rel}")
+            continue
+        actual_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
+        if row.get("sha256") != actual_hash:
+            errors.append(f"G7Projection.v1 source hash drift: {source_rel}")
 
 
 def deployable_html_surfaces() -> list[str]:
@@ -541,6 +1309,12 @@ def main() -> int:
     for name, fixture in F5_REJECT_FIXTURES.items():
         if not FORBIDDEN[name].search(fixture):
             errors.append(f"F5 negative-control escaped: {name}")
+    for name, fixture in V21_REJECT_FIXTURES:
+        if not FORBIDDEN[name].search(normalize_visible_text(fixture)):
+            errors.append(f"v2.1 negative-control escaped: {name}")
+    for name, fixture in V21_BOUNDED_FIXTURES:
+        if FORBIDDEN[name].search(normalize_visible_text(fixture)):
+            errors.append(f"v2.1 rule overmatched bounded wording: {name}")
     for fixture, expected in (
         ("Choose the least entropy future.", "least entropy lacks the four-ledger separation"),
         ("Maximize agent options.", "agent potential hides affected bearers or safeguards"),
@@ -635,6 +1409,7 @@ def main() -> int:
         errors.append("transitions must be exactly mu0..mu4 plus b6")
     if levels[4].get("modality") != "actual" or levels[5].get("modality") != "possible":
         errors.append("D4 must be actual and D5 possible")
+    validate_g7_projection(levels, errors)
     for item in levels:
         for key in ("claimCardIds", "sourceRevision", "lifecycle", "publicDisposition"):
             if not item.get(key):
@@ -769,6 +1544,20 @@ def main() -> int:
                 f"{surface} claim-card set drift: expected {sorted(expected_cards)}, "
                 f"got {sorted(actual_cards)}"
             )
+    for surface, expected_markers in REQUIRED_SURFACE_MARKERS.items():
+        binding = surface_lookup.get(surface)
+        if binding is None:
+            errors.append(f"missing required marker binding: {surface}")
+            continue
+        markers = binding.get("requiredMarkers", [])
+        actual_markers = set(markers) if isinstance(markers, list) else set()
+        if len(markers) != len(actual_markers):
+            errors.append(f"{surface} repeats a required public marker")
+        if actual_markers != expected_markers:
+            errors.append(
+                f"{surface} required-marker set drift: expected {sorted(expected_markers)}, "
+                f"got {sorted(actual_markers)}"
+            )
 
     # The manifest owns the current/provisional contract. Prohibition scans are
     # wider: any HTML that can reach a deployment is public copy and must pass
@@ -797,12 +1586,19 @@ def main() -> int:
                 scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
+            if name in NORMALIZED_FORBIDDEN:
+                scan_text = normalize_visible_text(text)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
         for message in f5_typing_errors(text):
             errors.append(f"{rel}: {message}")
     for rel in parity_audit_surfaces(data):
-        text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
+        path = SITE / rel
+        if not path.is_file():
+            # The manifest-presence loop above already records this failure.
+            # Do not turn a semantic error into an uncaught FileNotFoundError.
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
         if FROZEN_LIBRARY_BOUNDARY_MARKER in text:
             errors.append(f"{rel}: declared current/provisional page carries a frozen-library boundary")
         if HIDDEN_ROBOTS_META.search(text):
@@ -811,7 +1607,10 @@ def main() -> int:
         if rel not in data.get("currentSurfaces", []):
             errors.append(f"AND-class parity target is not a declared current surface: {rel}")
             continue
-        text = (SITE / rel).read_text(encoding="utf-8", errors="replace").casefold()
+        path = SITE / rel
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace").casefold()
         for marker in markers:
             if marker.casefold() not in text:
                 errors.append(f"{rel}: missing selected AND-class marker {marker!r}")
@@ -819,7 +1618,10 @@ def main() -> int:
         if rel not in data.get("currentSurfaces", []):
             errors.append(f"current-reader parity target is not a declared current surface: {rel}")
             continue
-        text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
+        path = SITE / rel
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
         for marker in markers:
             if marker not in text:
                 errors.append(f"{rel}: missing current-reader marker {marker!r}")

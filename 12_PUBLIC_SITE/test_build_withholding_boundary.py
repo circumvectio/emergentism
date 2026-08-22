@@ -49,13 +49,22 @@ class WithholdingBoundaryBuilderTests(unittest.TestCase):
             site = Path(tmp)
             parity = site / "public_semantic_parity.json"
             vercel = site / "vercel.json"
-            parity.write_text(json.dumps({"frozenLibraryRoots": ["papers"]}), encoding="utf-8")
+            parity.write_text(
+                json.dumps(
+                    {
+                        "currentSurfaces": ["current/index.html"],
+                        "frozenLibraryRoots": ["papers"],
+                    }
+                ),
+                encoding="utf-8",
+            )
             vercel.write_text(
                 json.dumps(
                     {
                         "headers": [
                             {"source": "/papers/(.*)", "headers": FROZEN_HEADER},
                             {"source": "/legacy/(.*)", "headers": FROZEN_HEADER},
+                            {"source": "/current/(.*)", "headers": FROZEN_HEADER},
                         ],
                         "redirects": [],
                     }
@@ -70,6 +79,7 @@ class WithholdingBoundaryBuilderTests(unittest.TestCase):
             sources = [row["source"] for row in generated["headers"]]
             self.assertEqual(sources.count("/papers/(.*)"), 1)
             self.assertIn("/legacy/(.*)", sources)
+            self.assertNotIn("/current/(.*)", sources)
 
     def test_check_mode_accepts_schema_v2_without_legacy_list(self):
         with tempfile.TemporaryDirectory() as tmp:

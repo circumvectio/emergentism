@@ -59,7 +59,7 @@ class GestaltV2ContractTests(unittest.TestCase):
 
     def test_shell_is_byte_idempotent_and_exactly_owned(self) -> None:
         rendered = shell.outputs()
-        self.assertEqual(len(rendered), 13)
+        self.assertEqual(len(rendered), 15)
         self.assertEqual(set(rendered), {SITE / rel for rel in shell.CORE_PAGES})
         for path, body in rendered.items():
             with self.subTest(path=path.relative_to(SITE)):
@@ -70,6 +70,8 @@ class GestaltV2ContractTests(unittest.TestCase):
                 self.assertRegex(body, r'<main\b[^>]*\btabindex=["\']-1["\']')
                 self.assertIn('/assets/css/gestalt-v2.css', body)
                 self.assertIn('/assets/js/gestalt-v2.js', body)
+                self.assertEqual(body.count('/favicon.svg'), 1)
+                self.assertEqual(body.count('rel="icon"'), 1)
 
     def test_shell_rejects_malformed_ownership_and_preserves_article_footer(self) -> None:
         base = (
@@ -103,23 +105,38 @@ class GestaltV2ContractTests(unittest.TestCase):
                 shell.render_page(fixture, "worldview")
 
     def test_signature_atlas_is_semantic_without_color_or_motion(self) -> None:
-        for relative in ("index.html", "f5/index.html"):
-            page = (SITE / relative).read_text(encoding="utf-8")
-            figure = page.split('<figure class="g2-atlas"', 1)[1].split("</figure>", 1)[0]
-            with self.subTest(page=relative):
-                self.assertIn('role="img"', figure)
-                self.assertRegex(figure, r'aria-labelledby="[^"]+ [^"]+"')
-                self.assertIn("<title", figure)
-                self.assertIn("<desc", figure)
-                self.assertIn("actual-line", figure)
-                self.assertIn("possible-line", figure)
-                self.assertIn("conjecture-line", figure)
-                self.assertIn("evidence-line", figure)
-                self.assertIn("[C] UNVALIDATED", figure)
-                self.assertIn("ΣT", figure)
-                self.assertNotIn("future light cone", figure.casefold())
-                self.assertIn("solid · actual", figure)
-                self.assertIn("dash · conjecture", figure)
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        match = re.search(
+            r'<figure class="[^"]*\bg2-atlas\b[^"]*".*?</figure>',
+            home,
+            re.S,
+        )
+        self.assertIsNotNone(match)
+        overview = match.group(0)
+        self.assertIn('role="img"', overview)
+        self.assertRegex(overview, r'aria-labelledby="[^"]+ [^"]+"')
+        self.assertIn("<title", overview)
+        self.assertIn("<desc", overview)
+        self.assertIn("possible-line", overview)
+        self.assertIn("evidence-line", overview)
+        self.assertIn("solid · actual", overview)
+        self.assertNotIn("future light cone", overview.casefold())
+
+        f5 = (SITE / "f5/index.html").read_text(encoding="utf-8")
+        figure = f5.split('<figure class="g2-atlas"', 1)[1].split("</figure>", 1)[0]
+        self.assertIn('role="img"', figure)
+        self.assertRegex(figure, r'aria-labelledby="[^"]+ [^"]+"')
+        self.assertIn("<title", figure)
+        self.assertIn("<desc", figure)
+        self.assertIn("actual-line", figure)
+        self.assertIn("possible-line", figure)
+        self.assertIn("conjecture-line", figure)
+        self.assertIn("evidence-line", figure)
+        self.assertIn("[C] UNVALIDATED", figure)
+        self.assertIn("ΣT", figure)
+        self.assertNotIn("future light cone", figure.casefold())
+        self.assertIn("solid · actual", figure)
+        self.assertIn("dash · conjecture", figure)
 
     def test_static_accessibility_and_local_resource_contract(self) -> None:
         self.assertIn("min-height: 48px", self.css)

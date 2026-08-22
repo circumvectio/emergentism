@@ -450,7 +450,6 @@ TEMPLATE = r"""<!DOCTYPE html>
 <title>The One-Sitting Reader — Emergentism</title>
 <meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. World-facing evidence and independent review remain incomplete." />
 <meta name="color-scheme" content="light dark" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 %%CORE_HEAD%%
 <style>
 /* Self-hosted Roboto (Apache-2.0) — accessible and gate-safe */
