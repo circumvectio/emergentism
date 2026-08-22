@@ -136,7 +136,7 @@ EMERGENTISM_PRIMARY_CHECKOUT_ROOT=/absolute/path/to/01_EMERGENTISM \
 ```
 
 `build_book.py` publishes exactly one current source: the claim-card-covered
-One-Sitting reader. It validates the book catalog, source lifecycle, all 26
+One-Sitting reader. It validates the book catalog, source lifecycle, all
 registered claim cards in implemented or L3-audited state, full 12-chapter
 coverage, derived register, and claim graph before writing. The tier-`[D]`
 Reciprocal port remains staged provenance under
