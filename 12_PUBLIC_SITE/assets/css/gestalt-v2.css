@@ -1642,6 +1642,8 @@ body.g2-page {
   color: var(--g2-bone-muted);
   font: 650 0.66rem/1.35 var(--g2-mono);
   text-align: center;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .g2-reciprocal-spectrum__pole:first-child { border-right: 1px solid var(--g2-rule); }
@@ -1664,7 +1666,12 @@ body.g2-page {
   color: var(--g2-bone-faint);
   font: 550 0.61rem/1.25 var(--g2-mono);
   text-align: center;
+  flex-direction: column;
+  gap: 3px;
 }
+
+.g2-reciprocal-spectrum__pole > span,
+.g2-reciprocal-spectrum__segment > span { display: block; }
 
 .g2-reciprocal-spectrum__segment:last-child { border-right: 0; }
 .g2-reciprocal-spectrum__segment--centre {
