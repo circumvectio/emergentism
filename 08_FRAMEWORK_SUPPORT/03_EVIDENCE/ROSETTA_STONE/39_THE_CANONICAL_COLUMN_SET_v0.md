@@ -12,7 +12,7 @@ title: "The Canonical Column Set — deduplication register v0"
 status: "ACTIVE REGISTER (staged on branch refine-rosetta/2026-08-15). Tombstone directives are merge-gated: no source file is altered by this document. Zero loss by construction — the generated 37 remains the verbatim audit trail and every superseded column stays readable in its source."
 date: 2026-08-15
 evidence_tier: "[S] the register grouping; [B] the family computation (mechanical, re-runnable from the ledger); [I] every cell, unchanged"
-owner: "Subordinate to 00_THE_MASTER_ROSETTA.md. Charter: 00_HANDOFF/ROSETTA_REFINE_GOAL_2026_08_15.md target R3."
+owner: "Subordinate to 00_THE_MASTER_ROSETTA.md. Charter: 00_HANDOFF/ROSETTA_REFINE_GOAL_2026_08_15.md (path missing on this tree 2026-08-22 `[B]`; citation HOLD) target R3."
 parents:
   - 00_THE_MASTER_ROSETTA.md
   - 37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md

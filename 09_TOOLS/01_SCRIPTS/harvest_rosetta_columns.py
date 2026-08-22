@@ -73,10 +73,20 @@ def tables_in(lines: list[str]):
 
 
 def harvest(lane: Path):
+    # Generated 37 is a view of the harvest. Reading it back as a source
+    # self-ingests (~182 extra columns on 2026-08-22). Index files that
+    # originate nothing (41) are skipped even if a later edit becomes L-keyed.
+    SKIP_HARVEST = {
+        "37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md",
+        "41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md",
+    }
+
     records = []
     skipped = []
     for path in sorted(lane.rglob("*.md")):
         rel = path.relative_to(lane).as_posix()
+        if path.name in SKIP_HARVEST or rel in SKIP_HARVEST:
+            continue
         try:
             lines = path.read_text(encoding="utf-8").splitlines()
         except (UnicodeDecodeError, OSError) as exc:

@@ -40,6 +40,9 @@ this file is the in-lane owner those briefs compress into.
 Domain columns (psychology, music, mythology, chakras, Mithraic grades)
 stay out. Stuffing them here would make a seat recite.
 
+The dispatch table is **not L-keyed on purpose** (seat cells carry pramāṇa and inference, so harvest will not ingest think/stuck/stop as source columns). The harvester also lists this filename in SKIP_HARVEST.
+
+
 ## 0 · The three lines, and the pack fences they do not cover
 
 1. **The geometry is `[A]`, given the selection.**

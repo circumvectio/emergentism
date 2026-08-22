@@ -12,7 +12,7 @@ title: "Preregistered Double-Coding Protocol v0 — testing the stability-band c
 status: "STAGED PROTOCOL. No coding has occurred. Preregistration is the deliverable; the conjecture remains [I] until the discriminator runs. may_sign=false — this document authorizes nothing."
 date: 2026-08-15
 evidence_tier: "[S] the protocol design; [I] the conjecture; [C] any result until independently ratified"
-owner: "Subordinate to 00_THE_MASTER_ROSETTA.md. Charter: 00_HANDOFF/ROSETTA_REFINE_GOAL_2026_08_15.md target R4."
+owner: "Subordinate to 00_THE_MASTER_ROSETTA.md. Charter: 00_HANDOFF/ROSETTA_REFINE_GOAL_2026_08_15.md (path missing on this tree 2026-08-22 `[B]`; citation HOLD) target R4."
 parents:
   - 00_THE_MASTER_ROSETTA.md
   - 07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md
