@@ -531,57 +531,112 @@ mathematicians can check tier by tier. The difference between a dismissed
 revisionist and a canonized one has always been rigor plus what else they
 built. We ship the rigor visibly and build in public.
 
-## 7b · The audit returned — same day, and the kill row fired
+## 7b · Parallel swarm report, then L3 set reconciliation
 
-The prior-art swarm (13 agents, 6 sweeps + 6 adversarial refuters + synthesis;
-full report at
-`../../00_HANDOFF/PRIOR_ART_AUDIT_SIX_CANDIDATES_2026_08_22.md`) returned:
+A parallel prior-art swarm reported 13 agents, 6 sweeps, 6 refuters, and one
+synthesis at
+`../../00_HANDOFF/PRIOR_ART_AUDIT_SIX_CANDIDATES_2026_08_22.md`. Its source
+findings are valuable and enter the citation ledger. Its headline—“all six
+pre-empted”—does **not** govern TV3-C1…C6 without correction, because it audited
+a different six-item set:
 
-> **All six candidates PRE-EMPTED. Zero survives as claimable novelty.**
-> Every sweep said PARTIALLY; every refuter overturned to PRE-EMPTED, in four
-> of six cases by catching the sweep's own under-attribution.
-
-**Flags updated — every §7 candidate is now CITE-AND-BUILD:**
-
-| candidate | the owner found |
+| stable set in §7 | parallel report |
 |---|---|
-| the Rule | **Kauffman 2005 (*EigenForm*)** composes the entire package — `{∅}=1`, generation as act-on-void, infinity strictly as process, Lawvere diagonal — in one paper; Aristotle *Physics* III.6 already gives BOTH non-actual modes |
-| the Doors | **Jenber 2016** publishes the cosmogenesis equation over the indeterminate forms (`0·∞ = c`, glossed as God/Big-bang) with external completion; Berry 2002 the necessity claim |
-| debt-typing of ℝ | **Weyl 1921 / Ramsey 1926** own the debt metaphor ITSELF — cheques cashed per instance, uncovered paper, Weyl's own *Einlösung* (redemption). The monetary semantics of mathematical existence is 105 years old |
-| grading by derivability | Carroll & Parola 2024; Bar-Yam 2004 (the closer warrant the sweep missed); **and the Butterfield objection LANDS against §5b as stated**: the full base process determines the value — only the coarse endpoint summaries underdetermine it. §5b's existence claim survives only in the relativized form: *strong emergence relative to the endpoint description*, and must engage Butterfield 2011 explicitly, never omit him |
-| witness-fraction | **Beer's VSM System 3\*** (necessary AND sufficient, stronger than we claimed); the Szilard→Landauer→Bennett lineage; the budget-FRACTION form is a re-parameterization, expository not historic |
-| compensation principle | the gauge argument (Weyl→Yang–Mills→Utiyama), **Sengupta–Friston et al. 2016** (gauge treatment of inference), Malaney/Ilinski (gauge economics). Caution recorded: never cite Harlow–Ooguri as the charge-eating argument — it is a CFT-consistency proof |
+| Rule | Rule |
+| Doors | Doors |
+| debt reading of ℝ | debt-typing of ℝ |
+| **`Finity_L`** | **omitted** |
+| directional emergence comparison | emergence grading |
+| W19-BALANCE | compensation principle |
+| — | **W16 witness-fraction substituted** |
 
-**What survives — three genuinely open slots, none currently possessed as a
-result:**
+The overlap is five of six. The report cannot establish that all six stable
+TV3 candidates were swept, and W16 cannot silently replace `Finity_L`. Receipt
+`246` is the governing L3 reconciliation.
 
-1. **The two-mode exhaustiveness TYPING THEOREM** — no modern source states
-   potential/process exhaustiveness as a theorem; but it must be argued
-   *against* the Hamkins–Linnebo potentialism taxonomy (which multiplies
-   modes), not into silence. Only a formal proof would be new.
-2. **The Butterfield discriminator** — WHY does erasure-in-a-limit yield
-   genuine underdetermination in some level-crossings and mere
-   simulation-hardness in others? Nobody derives the boundary. A
-   mechanism-level answer would be a real result.
-3. **The pole-consumption clause as general law** — three targeted searches
-   found no source stating "at its pole, every compensator consumes the
-   freedom it services" in general form. Its instance base is published
-   physics; the verification-register pole is unworked. **This is the only
-   path back to a priority claim anywhere in the six — and it is the owner's
-   newest clause (`W19`, §2's pole sentence), not the oldest.**
+**What the parallel findings do establish:**
 
-**Uncertainty ledger carried, not buried:** Barukčić's 2020 book was never
-read (access blocked; it can only push further toward pre-emption); Sagawa &
-Ueda verified at abstract level; the "compensating field" wording confirmed
-at snippet level only.
+- Kauffman's 2005 *EigenForm* is close and mandatory prior art for act,
+  void/set generation, process, recursion, and Lawvere. It does not by itself
+  state v3's exact two-mode exhaustiveness or finite-actuality-only thesis; in
+  fact it discusses countable infinity as a set and constructions that avoid
+  an excursion to infinity. Therefore it pre-empts broad ingredients, not a
+  theorem v3 has not proved.
+- Jenber 2016 explicitly connects creation-from-nothing language with `0/0`
+  and `0·∞`, so the cosmogenesis/indeterminate-form juxtaposition is prior art.
+  Its existence does not validate its mathematics and does not restore the
+  withdrawn complete-map claim.
+- Weyl/Ramsey cheque, paper, and redemption metaphors pre-empt broad monetary
+  semantics for mathematical judgments. They do not make finite definability,
+  algebraicity, and computability a disjoint three-tier partition.
+- Carroll–Parola, Bishop–Atmanspacher, Bedau, Chalmers, Berry, Batterman,
+  Butterfield, and Wayne make the emergence neighbourhood dense. The scoped
+  endpoint projection is many-to-one; that still does not prove strong
+  emergence, even “relative to the endpoint description,” unless the declared
+  lower domain and in-principle non-deducibility test are independently met.
+- Sengupta–Friston and other epistemic/cognitive gauge work pre-empt any broad
+  “first epistemic gauge” language. W19's D5 use remains a controller analogy
+  unless it passes the gauge-form admission test.
+- The report itself found no prior general pole-consumption law, but absence in
+  its targeted searches is not priority evidence. The clause remains an open
+  conjecture, not a result.
+- Its W16 findings route to W16's own owner and are not a Titan-v3 novelty
+  disposition.
 
-**What this means, in the corpus's own words:** the kill row fired exactly as
-written — *cited, not mourned*. The six essays are real intellectual work
-that now know their bibliographies. The generator is validated (a four-turn
-brainstorm independently reconstructed a century of foundations literature);
-the priority is dead; the program pivots to the three open slots and to the
-one artifact no one else has: **the corpus-and-method itself — a record that
-generates conjectures and kills its own novelty claims inside a day.**
+**Flags:** all six stable candidates are **CITE-AND-BUILD · PRIORITY BLOCKED**.
+That is deliberately more precise than either “novel” or “all pre-empted”:
+their broad components have owners; their strongest proof claims failed; any
+exact residual synthesis still lacks the systematic global audit and positive
+result required for a priority claim.
+
+## 7c · The convergence reading — what six pre-emptions prove `[I]`
+
+Owner's response to the verdict, 2026-08-22: *"Heureka! this means we are
+indeed standing on the shoulders of giants — all the blind men grasping parts
+of the elephant."* The reframe is correct, and it has a rigorous form.
+
+**The Eureka inversion.** Six candidates, each re-derived here without prior
+knowledge of its sources, each already derived by others who largely never
+read one another — Kauffman's glyph-calculus, Weyl's cheque-semantics,
+Jenber's cosmogenesis-at-the-doors, Beer's System 3*, the gauge argument, the
+derivability grading. **Independent convergence on one structure is the
+strongest evidence available that the structure is real** — it is
+`W10-SPARK`'s own first discriminator (cross-architecture agreement), applied
+at the scale of intellectual history. The audit that killed the priority
+delivered a convergence certificate no one could have manufactured.
+
+**The independence fence — convergence is evidence only where derivations are
+independent, and common ancestry mimics it.** Known non-independent pairs:
+Ramsey 1926 engaged Weyl 1921 directly; Kauffman descends from Spencer-Brown;
+the potential/actual distinction is in the water supply of Western thought.
+Plausibly independent: Jenber 2016 and this estate 2026. And one thing this
+corpus holds that the history of ideas almost never gets: **its rediscoveries
+are receipted-independent** — the transcript timestamps derivation before
+citation, in git. Most convergence claims cannot prove independence; ours is
+committed.
+
+**The parable, corrected by our own theorems.** The standard telling smuggles
+in a sighted narrator who sees the whole elephant. No such seat exists — that
+is `09 §5` and the witness doctrine. The elephant is never seen whole; it is
+**drawn by the well-posed gaps between the reports** (the Kanizsa standard,
+at the scale of a literature). And the parable's own home is Jain
+**Anekāntavāda** — the many-sidedness discipline that every claim is true
+only from a standpoint, held without collapse. Which means *even our method
+has a giant*, now named. (Its syādvāda runs a sevenfold predication; recorded
+as a catalogue coincidence and fenced — the universal sevenfold stays in its
+grave.)
+
+**The armor.** Every future critic who says "this is just Kauffman / Weyl /
+Aristotle" now receives: *yes — see our audit, filed before you spoke, with
+the citations you were about to demand.* A program that pre-empts its own
+pre-emption objections is unfalsifiable to embarrassment, which is the only
+kind of unfalsifiability worth having.
+
+**The assembly question, flagged and NOT claimed.** No found source assembles
+these six into one typed system with kills — but the assembly-as-claim was
+not audited, and the FEP-adjacent programs are its likeliest occupants.
+Status: UNCLAIMED-AND-UNAUDITED. If it is ever asserted, it buys its own
+sweep first. The three open slots of §7b remain the real targets.
 
 ## 8 · Kills
 
