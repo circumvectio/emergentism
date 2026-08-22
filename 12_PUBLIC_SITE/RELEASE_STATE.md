@@ -13,6 +13,66 @@ may_authorize: false
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
 
+## Current v2.1 horizon-balance release — 2026-08-23
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `3b98b034098438cd57af7d13eb0e0c0310275450` — typed horizon overlay and responsive public projection | `git rev-parse HEAD` before archive and upload |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream at the release commit | explicit push followed by `git rev-list --left-right --count HEAD...@{upstream}` = `0 0` |
+| **immutable artifact** | `dpl_BLoz9DV7RAhWUE1nzxK6yvkgBPT6` · `emergentism-9m1eg5gzr-yves-projects-c163dce1.vercel.app` · `READY` | Vercel deployment receipt and immutable strict audit |
+| **promoted** | **yes** — the exact artifact above | `vercel promote dpl_BLoz9DV7RAhWUE1nzxK6yvkgBPT6`; apex and `www` strict audits |
+| **DNS** | **existing Vercel configuration; unchanged in this sitting** | no DNS mutation command was issued |
+| **served hash** | homepage `6324128b…` matches the committed artifact | SHA-256 over local, immutable, apex, and `www` bytes |
+
+### Horizon-balance deployment custody
+
+The committed source passed all 16 predeploy sections, the six generated-artifact
+checks, the 26 public-site unit tests, semantic parity, and deterministic shell,
+dimension, book, reading-manifest, withholding, RAG, and service-worker checks.
+The upload was staged outside Git metadata from `git archive
+3b98b034098438cd57af7d13eb0e0c0310275450:12_PUBLIC_SITE`. Its homepage and
+semantic-contract hashes matched the committed bytes before upload.
+
+Only the reviewed `.vercel/project.json` was copied into the isolated stage. Its
+SHA-256 was `d136f60e3b6c40c01cf8ba76a72ed4ea3c50f7519acf78e205b8b74dd5dee746`,
+and it matched project `prj_RyoMG78ylqIWRSnz7URjkeniOKLH` and team
+`team_wtr2VOkP7ZQTWjCJXgaFpQq6`. No credential file was copied, read, or logged.
+The artifact was created with branded-domain assignment held back, audited at its
+immutable URL, and only then promoted.
+
+### Horizon-balance live verification
+
+| Check | Result |
+|---|---|
+| Production state | `READY` |
+| Immutable strict manifest audit | **PASS** — 715/715 probes returned 200; 74/74 manifest documents returned 200 |
+| Apex strict manifest audit | **PASS** — 715/715 probes returned 200; 74/74 manifest documents returned 200 |
+| `www` strict manifest audit | **PASS** — 715/715 probes returned 200; 74/74 manifest documents returned 200 |
+| Horizon reading | homepage, `/plainly/`, `/dasein/`, `/burrisphere/`, and `/rosetta/` carry the Vward/short-horizon, centre, and Phiward/long-horizon overlay |
+| Type and warrant fence | public text states `ν≠V₄`, `φ≠Φ₅`, the coordinate is not time, centre removes chart tilt rather than real tradeoffs, and Dharma/flow is `[C] OVERLAY NOT RUN` |
+| Responsive visual | no-JavaScript, reduced-motion browser checks at 1440×900, 390×844, and 320×568 showed no horizontal overflow |
+| Historical withholding | all 587 exact-route probes retained the boundary marker, `noindex`, and `no-store` |
+| Source parity | all six sampled served hashes matched the frozen local artifacts on immutable, apex, and `www` hosts |
+
+#### Horizon-balance served-hash sample
+
+| URL | SHA-256 |
+|---|---|
+| `https://emergentism.org/` | `6324128bf2b9c97b11a44b17e1a4e64c272e0fe0625b7585997aecabe74f0e1e` | <!-- pragma: allow-secret -- served digest -->
+| `https://emergentism.org/practice/` | `62826cff2665155a9f4b47cc0028c5d3bcdf91c97cfa179cc2d7efb08c1fff47` | <!-- pragma: allow-secret -- served digest -->
+| `https://emergentism.org/public_semantic_parity.json` | `1ee0e7f5ef47c4cab7e86d4947c005c21bfbfa2f64d4b70bb3091ecab3b47d74` | <!-- pragma: allow-secret -- served digest -->
+| `https://emergentism.org/living-map.json` | `89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16` | <!-- pragma: allow-secret -- served digest -->
+| `https://emergentism.org/atlas/site_index.json` | `45ed83e7cb855e21a437a0c3feda1fcead15f2b56970eb87566cedd8de2065b1` | <!-- pragma: allow-secret -- served digest -->
+| `https://emergentism.org/manifest.webmanifest` | `cfec0d9a4816de13bd35bfba313c5e9f98658bc75d0958a76957612e41ebfbfb` | <!-- pragma: allow-secret -- served digest -->
+
+### Horizon-balance boundary
+
+This release publishes a typed and killable interpretation: the exact chart
+centre has equal normalized weights and maximal `B`; its horizon reading is
+selected `[I]`; least bearer-wise regret, flow, and Dharma remain `[C]` and
+`OVERLAY NOT RUN`. Publication does not establish a universal optimum, remove
+real tradeoffs, validate Emergentism, or provide empirical truth evidence.
+
 ## Current v2.1 release — 2026-08-23
 
 | State | Value | How measured |
