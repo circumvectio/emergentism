@@ -31,6 +31,16 @@ parents:
 
 # Seat dispatch grammar — think / stuck / stop
 
+
+> **P2 PILOT 2026-08-19 — KILL of the pragmatic dispatch-advantage claim** `[B]`
+> pointer, not a repeal. Caste-typing a work unit is **not** shown to make the
+> work better (Rosetta 8.12 vs PLAIN 8.58 vs RIVAL-4TIER 8.21; 4/24 wins;
+> both kill conditions; evidence discipline 2.50 vs 2.79). A win would have
+> been inadmissible under AMENDMENT 5 (tenfold length). A loss is admissible.
+> Untouched: hologenome, admission grammar, Theme VII reading verbs, this
+> file as an *index of how a seat reads*. Do not cite 41 as proof that
+> dispatch improves output. OC-25 / OC-26 remain chair. A3: Skyzai `fc2ac8b2c`.
+
 **Read §0 before quoting any cell.** This is an index of dispatch fields,
 not evidence *for* a mapping, and not a twelfth theme of 36. Theme VII of
 36 already owns the operational verbs. The stone briefs under
