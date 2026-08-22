@@ -2437,8 +2437,8 @@
     },
     {
       "path": "00_HANDOFF/THE_WHOLE_BOARD_2026_08_13.md",
-      "sha256": "2875db84bc7d21bb6935c1719e4df9afb38207a95a310f06baf330629ec15f0e",
-      "bytes": 13886,
+      "sha256": "6cf849b02a0e9e1b9ae3f5f03b87657ffb83f1ae614bd0db58cd3bbed678bbb1",
+      "bytes": 16727,
       "owner_lane": "00_HANDOFF",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -38335,7 +38335,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 80,
+      "inbound_references": 81,
       "gate": null,
       "review_state": "unreviewed"
     },
