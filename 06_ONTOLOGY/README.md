@@ -42,6 +42,11 @@ commitments stop. The Ground remains prior to every map, including this one.
 - [The Debt-Service Conjectures](11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md)
   — `[D]` staged candidates `W14–W18`; numbering is provisional, they are not
   ledger rows, and inclusion here supplies no adoption.
+- [The Compensation Wager](13_THE_COMPENSATION_WAGER_2026_08_22.md) — `[D]`
+  staged candidate `W19-BALANCE`: every freedom demands a compensator
+  preserving a register-invariant (the gauge principle cited at its owners;
+  verification as the D5 compensator; freedom-collapse at the pole).
+  Adoption via the Titan-v3 docket; not a ledger row.
 - [Strong-Lift / Weak-Projection](12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md)
   — `SLWP-01`, a `[C]` proposal and proof program. BIL-01 is its `[A]`
   mathematical neighbor, not proof of its D-level generalization; it is not

@@ -50,6 +50,13 @@ survive as documentation; the semantic assignment is dropped.
    deploy decision; the site's semantic-parity gate already bans the v1
    arithmetic forms.
 
+## Addendum, same day — W19-BALANCE rides this docket
+
+`../06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md` (the compensation
+principle) is staged in the same convention and awaits the same decision;
+its novelty residue is under audit by the wedge prior-art swarm launched
+2026-08-22.
+
 ## What this docket does not do
 
 It does not adopt, promote, publish, or authorize. It exists so the adoption

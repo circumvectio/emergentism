@@ -325,6 +325,11 @@
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
    "sha256": "22e18e221753db81358084b4a28572fbebea01aac879f1f62f3596757b060958",
    "role": "semantic_owner"
+  },
+  {
+   "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
+   "sha256": "95f08157c4652f42c98769ed79453ae378a5878d8b4e35053dd827a6bb5621aa",
+   "role": "conjecture_owner"
   }
  ],
  "entries": [
@@ -1404,6 +1409,38 @@
      "target": "TLC-01"
     }
    ]
+  },
+  {
+   "entry_id": "W19-BALANCE",
+   "source_ids": [
+    "W19-BALANCE"
+   ],
+   "kind": "STAGED_DRAFT",
+   "lifecycle": "staged",
+   "evidence_tier": "[D/S/I/C]",
+   "validation_status_ref": [],
+   "owner_path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
+   "partition": "live",
+   "summary": "Staged compensation-principle candidate: every register-freedom demands a compensator preserving a register-invariant; gauge forces at D1-D4, verification-practice at D5, freedom-collapse at the compensator's pole. Explicitly outside the wager ledger.",
+   "target_entry_ids": [
+    "W14-W18",
+    "TITAN-SEMANTICS-V3"
+   ],
+   "outcome": "Candidate claim record awaiting owner adoption via the standing Titan-v3 docket; novelty residue under audit by the wedge prior-art swarm.",
+   "rival": "The gauge principle plus zero-energy-universe arguments as already covering everything; the cross-register extension as mere analogy.",
+   "discriminator": "Per-register invariant naming; the W16-coupled truth-maintenance test for the D5 clause; the pole clause's freedom-collapse prediction.",
+   "kill": "An opened freedom with no compensator and intact invariance; or the tautology framing failing to cash as a named invariant in a register.",
+   "survivor": "The two-faces reconciliation (payment/consumption as one coupling) survives as documentation of 07C's dual reading.",
+   "relations": [
+    {
+     "type": "not_adopted_by",
+     "target": "W0-W12"
+    },
+    {
+     "type": "dual_reading_of",
+     "target": "W14-W18"
+    }
+   ]
   }
  ],
  "excluded_with_reason": [
@@ -1446,5 +1483,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "86ae31e5b33af237f999c0ce20ce603fdd612f7a22aa12ed2f4715d4d2286dbd"
+ "inventory_digest": "65380d4e4021a2e1153e520b6e77ff8542bed43e570389acd9eac40e93777c9f"
 }
