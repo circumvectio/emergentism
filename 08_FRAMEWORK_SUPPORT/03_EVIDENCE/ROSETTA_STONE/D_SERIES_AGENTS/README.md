@@ -50,6 +50,10 @@ claims require evidence-tier discipline and do not become runtime commitments he
 
 > Single-file lane today; additional operator-row analyses land here as they are written.
 
+In-lane dispatch grammar (think / stuck / stop for all seven seats) is
+[`../41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md`](../41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md),
+not a D35-style analysis.
+
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)

@@ -41,7 +41,9 @@ d_register_basis: "agent route card (line 8: \"Rosetta Stone — Agent route\");
 
 ## Rosetta dispatch
 
-Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+Use the seven roles as a work vocabulary, never as identities or ranks of worth.
+Think / stuck / stop live in [41_SEAT_DISPATCH_GRAMMAR](41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md).
+Verbs remain Theme VII:
 
 - L1 isolates boundaries and contradictions.
 - L2 expands alternatives and counterexamples.

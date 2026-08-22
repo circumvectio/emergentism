@@ -194,6 +194,11 @@ schemas and owner maps · `L6` compress and archive · `L7` witness and translat
 **Tier split:** `L1–L4` deployable · `L5–L7` Executive witness,
 `deployable = false`.
 
+Think / stuck / stop — the three dispatch fields this column does not itself
+carry — are indexed at
+[`41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md`](41_SEAT_DISPATCH_GRAMMAR_2026_08_22.md).
+That file is not a tenth theme.
+
 ## 9 · Theme VIII — the domain library
 
 **12 domains** — psychology · neuroscience · computation · game theory ·
