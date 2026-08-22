@@ -174,3 +174,35 @@ in the primary tree, which was deliberately left untouched.
 **The rescue snapshot's worktree half is now redundant** by its own stated criterion
 (committed *and* pushed) and can be deleted. `tmp_ledgers/` should stay: `/private/tmp`
 clears at boot and those three files back a 220-line audit's evidence claims.
+
+### 7a · A sweep, committed by the author of the rule against it
+
+The addendum commit `c9c5e19e` carried a second file that is **not mine**:
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_2026_08_22.md`,
+61 lines of a concurrent session's in-flight gate-repair work.
+
+**Mechanism.** I ran `git add -- <my file>` with a correct explicit pathspec, then
+`git commit -m …` with **no** pathspec. The other session had already *staged* its file
+(`A ` in the status I had printed one command earlier), so it rode along. The pathspec
+discipline was applied to the `add` and dropped at the `commit` — which is the half that
+decides what a commit contains. §3 of this very receipt records leaving that session's
+work untouched.
+
+**Damage: none, verified.** The file is byte-identical to the working tree
+(`git diff HEAD -- <path>` → 0), all 61 lines present, and it contributes 0 broken
+citations. Nothing was truncated or altered; it was committed earlier than its author
+intended, under someone else's message.
+
+**Not repaired by rewriting history.** `c9c5e19e` is pushed. A rebase or amend to
+un-sweep one intact file would rewrite a published ref that another live session may
+already have fetched — strictly worse than the provenance defect it would fix. The
+correction is this note.
+
+**The rule, sharpened by the failure:** an explicit pathspec on `git add` is worthless
+if the `commit` is unscoped. **`git commit -- <path>`** is the form that actually bounds
+a commit. In a tree with concurrent writers, the index is shared state and staging is
+not ownership.
+
+*(Timestamp note: `c9c5e19e` is authored 2026-08-22 15:28 +07 while this receipt is
+dated 2026-08-21 from the clock readings taken during the audit. The receipt's counts
+remain true of the moment they were measured; the filename keeps its original date.)*
