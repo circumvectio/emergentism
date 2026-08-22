@@ -107,3 +107,19 @@ A fourth, weaker slot: deriving the verification bound in budget-FRACTION form r
 ## 5. Recommended priority-flag update
 
 All six candidates exit PRIORITY-UNESTABLISHED and none becomes CANDIDATE-FIRST: **all six move to CITE-AND-BUILD** — each rewritten as a named synthesis over the giants in the table above, asserting no novelty beyond coined vocabulary, with the specific first-citation obligations honored (Aristotle and Kauffman for THE RULE; Jenber and Berry for THE DOORS; Weyl AND Ramsey for the debt-typing; Carroll–Parola and Bishop–Atmanspacher for the grading; Beer and the Szilard–Landauer lineage for the witness-fraction; Utiyama and Sengupta–Friston for the compensation principle). Exactly two future CANDIDATE-FIRST slots are licensed, both conditional and neither currently possessed: (a) the pole-consumption clause of the compensation principle, claimable only if stated as a general law with the verification-register pole actually worked out and only after Dumbrava ch. 23 is read in full; (b) a two-mode exhaustiveness typing theorem for THE RULE, claimable only as a proof argued against the Hamkins–Linnebo multi-mode taxonomy. Three verification debts must be discharged before any synthesis note is staged, so the pre-emption ledger does not itself commit the corpus's named disease: read Barukčić 2020 (doors), Sagawa–Ueda 2009 at full text (witness-fraction), and Dumbrava ch. 23 (compensation). The Butterfield discriminator (grading) is flagged as open research, not a wedge: it would be new work in the emergence literature, but nothing in the corpus currently claims it.
+
+---
+
+## Provenance note — commit `55730ce1` carries two lanes
+
+The commit that staged this report also carried a concurrent session's
+uncommitted hardening of `52` (126 deleted lines: §5b retitled from "Theorem"
+to "Analogue" — independently applying the same Butterfield correction this
+audit demanded; §5c's coherence identity retyped as a basis-dependent formal
+match; fences tightened throughout). My pathspec was correct on paper —
+`git add -- 52` — but the concurrent edits were already in the working tree
+under the same path, so the pathspec could not separate the lanes. Content
+verified whole (all 15 sections present, load-bearing identities survive in
+hardened form); the defect is attribution, not loss. Not repaired by rewriting
+the pushed ref. The two hardenings converging on the same corrections from
+independent directions is itself evidence the corrections are right.
