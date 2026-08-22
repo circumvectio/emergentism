@@ -36,6 +36,7 @@ Mutation tests (run with --test-mutations):
   MUT-5  one byte changes in a frozen historical handoff         -> FAIL
   MUT-6  a new literal is appended beyond the frozen body        -> FAIL
   MUT-7  a frozen handoff is reached through a symlinked parent  -> FAIL
+  MUT-8  the archive-tagged refutation loses its dead marker     -> FAIL
 
 """
 
@@ -92,6 +93,15 @@ FROZEN_HISTORICAL_SURFACES: dict[str, FrozenHistoricalSurface] = {
             "type: new-findings-audit",
             "**The literal equation `D6≡D0` is dead**",
             "D6≡D0 retraction argument",
+        ),
+    ),
+    "00_HANDOFF/EMERGENTISM_GREAT_MYSTERY_2026_08_20.md": FrozenHistoricalSurface(
+        sha256="e54bae5cbf8b19e148332d548b5eed6d216803679a104d13f13d3710a1de7d63",
+        literal_occurrences=2,
+        required_local_markers=(
+            "**#8 Literal `D6≡D0`** (dead)",
+            "D6 + D6 ≡ D0 ⟹ D0 < D0",
+            "the apophatic return-to-ground `[I]`",
         ),
     ),
 }
@@ -394,6 +404,37 @@ def test_mutations() -> int:
         ):
             failures.append("MUT-6: appended literal escaped the ordinary live scan")
 
+        # MUT-8: this archive-tagged synthesis is admitted only as an exact
+        # refutation body. Changing its local dead marker revokes both byte
+        # custody and the semantic reason for retaining its quoted literals.
+        refutation_rel = "00_HANDOFF/EMERGENTISM_GREAT_MYSTERY_2026_08_20.md"
+        refutation_path = scratch / refutation_rel
+        refutation_blob = refutation_path.read_text(encoding="utf-8")
+        refutation_needle = "**#8 Literal `D6≡D0`** (dead)"
+        if refutation_needle not in refutation_blob:
+            failures.append("MUT-8: archive-tagged refutation marker is missing")
+        else:
+            refutation_path.write_text(
+                refutation_blob.replace(
+                    refutation_needle,
+                    "**#8 Literal `D6≡D0`** (live)",
+                    1,
+                ),
+                encoding="utf-8",
+            )
+            refutation_errors = check_live_surfaces(scratch)
+            if not any(
+                refutation_rel in error and "SHA-256 drift" in error
+                for error in refutation_errors
+            ):
+                failures.append("MUT-8: changed refutation marker did not revoke custody")
+            if not any(
+                refutation_rel in error and "literal D6/D0 equivalence" in error
+                for error in refutation_errors
+            ):
+                failures.append("MUT-8: live literal escaped the ordinary scan")
+            refutation_path.write_text(refutation_blob, encoding="utf-8")
+
         # MUT-7: exact bytes cannot inherit custody through a symlinked parent
         # directory. Move the real handoff directory aside and replace it with
         # a lexical symlink so the ancestor case is exercised directly.
@@ -410,7 +451,7 @@ def test_mutations() -> int:
             for f in failures:
                 print(f"- {f}")
             return 1
-        print("D6/D0 FENCE MUTATIONS: PASS (7 of 7)")
+        print("D6/D0 FENCE MUTATIONS: PASS (8 of 8)")
         return 0
 
 

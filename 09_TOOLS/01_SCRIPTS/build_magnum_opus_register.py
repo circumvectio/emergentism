@@ -29,7 +29,9 @@ moves, deletes, tombstones, or commits anything.
 
 Derivation notes:
   * authority_status: frontmatter `status` (cheap first-block YAML scan) —
-    STAGED/PENDING/[D]/DRAFT -> 'staged'; else SIGNED -> 'signed'; else 'unrated'.
+    STAGED/PENDING/[D]/DRAFT -> 'staged'; an explicit leading signed status ->
+    'signed'; mentions, denials, forwarding stubs, and disputed/superseded
+    provenance remain 'unrated'.
   * evidence_tier: first [S]/[I]/[C]/[D]/[B]/[A] token in frontmatter
     `evidence_tier`, else null (spec: frontmatter evidence_tier else null).
   * k_relation: named kernel surfaces per
@@ -102,6 +104,12 @@ K_PREFIX = (
 )
 
 TIER_RE = re.compile(r"\[(S|I|C|D|B|A)\]")
+SIGNED_STATUS_RE = re.compile(
+    r"^(?:SIGNED\b|\[E\]\s+[A-Z0-9][A-Z0-9_-]*-(?:COUNTERSIGNED|SHIP-SIGNED)\b|"
+    r"[A-Z0-9][A-Z0-9_-]*-(?:COUNTERSIGNED|SHIP-SIGNED)\b|"
+    r"ACTIVE(?:\s+RECEIPT)?\s+—\s+[A-Z0-9][A-Z0-9_-]*-"
+    r"(?:SIGNED|COUNTERSIGNED|SHIP-SIGNED)\b)"
+)
 TOKEN_RE = re.compile(r"[\w.\-]+", re.UNICODE)
 CORPUS_EXTS = (".md", ".html")
 CONFIG_NAMES = {".gitignore", ".gitattributes", ".gitmodules", "license", "makefile"}
@@ -223,7 +231,7 @@ def authority_from_status(status):
     u = status.upper()
     if "STAGED" in u or "PENDING" in u or "[D]" in u or "DRAFT" in u:
         return "staged"
-    if "SIGNED" in u:
+    if SIGNED_STATUS_RE.search(u):
         return "signed"
     return "unrated"
 

@@ -34,6 +34,7 @@ RECEIPT_CHECKER = Path("09_TOOLS/01_SCRIPTS/check_receipt_citations.py")
 CLAIM_SOURCE = Path("00_META/claim_status/CLAIM_STATUS.yaml")
 COHERENCE_SOURCE = Path("09_TOOLS/01_SCRIPTS/coherence_profile.json")
 PUBLIC_DIR = Path("12_PUBLIC_SITE")
+PUBLIC_RUNTIME_OUTPUT_DIRS = frozenset({".vercel"})
 PUBLIC_PARITY = PUBLIC_DIR / "public_semantic_parity.json"
 WITHHELD_REGISTRY = PUBLIC_DIR / "withheld-routes.json"
 VERCEL_CONFIG = PUBLIC_DIR / "vercel.json"
@@ -1498,7 +1499,20 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
     artifacts = require_list(withheld_registry.get("artifacts"), "withheld artifacts", [])
     withheld_artifacts = _validated_withheld_artifacts(site, artifacts)
 
-    html_entries = [path for path in site_entries if path.suffix.lower() == ".html"]
+    def is_runtime_output(path: Path) -> bool:
+        relative = path.relative_to(site)
+        return bool(
+            relative.parts and relative.parts[0] in PUBLIC_RUNTIME_OUTPUT_DIRS
+        )
+
+    # Vercel's local build tree is ignored by the uploader and by the public
+    # predeploy walker.  It is workstation runtime output, not a source-owned
+    # lifecycle artifact, so it must not perturb the frozen source census.
+    html_entries = [
+        path
+        for path in site_entries
+        if path.suffix.lower() == ".html" and not is_runtime_output(path)
+    ]
     non_files = [path.relative_to(site).as_posix() for path in html_entries if not path.is_file()]
     if non_files:
         raise ContractError(
@@ -1521,7 +1535,7 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
     matcher_paths = {
         path.relative_to(site).as_posix()
         for path in site_entries
-        if path.is_file()
+        if path.is_file() and not is_runtime_output(path)
     }
     matcher_mismatches = sorted(
         rel

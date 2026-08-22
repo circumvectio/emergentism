@@ -104,6 +104,36 @@ class RegisterBuilderTests(unittest.TestCase):
         paths = {entry["path"] for entry in self.load_file_register()["entries"]}
         self.assertIn("new.md", paths)
 
+    def test_authority_status_requires_an_explicit_positive_declaration(self):
+        fixtures = {
+            "signed.md": '---\nstatus: "SIGNED [S] — owner countersignature"\n---\n',
+            "countersigned.md": '---\nstatus: "[E] ROLE-COUNTERSIGNED 2026-07-12"\n---\n',
+            "active_signed.md": '---\nstatus: "ACTIVE — ROLE-signed authority of record"\n---\n',
+            "unsigned.md": '---\nstatus: "owner aware, unsigned"\n---\n',
+            "not_signed.md": '---\nstatus: "role aware, not role signed"\n---\n',
+            "forwarding.md": '---\nstatus: "FORWARDING STUB — signed citations resolve here"\n---\n',
+            "disputed.md": '---\nstatus: "DISPUTED PROVENANCE — NOT CURRENT; signed packet retained"\n---\n',
+            "superseded.md": '---\nstatus: "SUPERSEDED — countersigned by a later version"\n---\n',
+            "staged_unsigned.md": '---\nstatus: "[D] STAGED — unsigned"\n---\n',
+        }
+        for name, body in fixtures.items():
+            (self.root / name).write_text(body, encoding="utf-8")
+        self.git("add", *fixtures)
+        written = self.builder("--write")
+        self.assertEqual(written.returncode, 0, written.stdout + written.stderr)
+        entries = {entry["path"]: entry for entry in self.load_file_register()["entries"]}
+        for name in ("signed.md", "countersigned.md", "active_signed.md"):
+            self.assertEqual(entries[name]["authority_status"], "signed", name)
+        for name in (
+            "unsigned.md",
+            "not_signed.md",
+            "forwarding.md",
+            "disputed.md",
+            "superseded.md",
+        ):
+            self.assertEqual(entries[name]["authority_status"], "unrated", name)
+        self.assertEqual(entries["staged_unsigned.md"]["authority_status"], "staged")
+
     def test_duplicate_and_corrupt_documents_fail_structural_validation(self):
         register_path = self.root / FILE_REG_REL
         original = register_path.read_bytes()

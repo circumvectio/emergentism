@@ -21,6 +21,14 @@ FOREIGN_TYPED_TERM = (
     r"\b(?:e|a|b|x|y|v|φ|ν)\b)"
 )
 TITAN_PAIR = r"(?:[•○]\s*(?:,|and|&|/)\s*[•○])"
+EXACT_PROSE_TITAN_ROLE_LINES = frozenset(
+    {
+        "brahmā ○ · architect",
+        "śiva • · compressor / pruner",
+        "; emergentism managed agent — l5 brāhmaṇa · brahmā ○ · architect",
+        "; emergentism managed agent — l6 sādhu · śiva • · compressor / pruner",
+    }
+)
 
 # Equality and rendering are lawful on TitanFrame; arithmetic and cross-type
 # identification are not. Function application is closed by default, with a
@@ -194,6 +202,16 @@ def _explicitly_denied(text: str, start: int, stop: int) -> bool:
     )
 
 
+def _is_exact_prose_role_line(text: str, offset: int) -> bool:
+    """Admit only the two reviewed role-title lines that use a middle dot."""
+
+    line_start = text.rfind("\n", 0, offset) + 1
+    line_stop = text.find("\n", offset)
+    if line_stop < 0:
+        line_stop = len(text)
+    return text[line_start:line_stop].strip() in EXACT_PROSE_TITAN_ROLE_LINES
+
+
 def line_number_for_offset(text: str, offset: int) -> int:
     """Map a normalized-text offset to its preserved logical line number."""
 
@@ -209,7 +227,11 @@ def titan_arithmetic_matches(text: str) -> list[tuple[str, int]]:
     for pattern in FORBIDDEN_TITAN_ARITHMETIC:
         for match in re.finditer(pattern, candidate, re.I):
             key = (pattern, match.start())
-            if key in seen or _explicitly_denied(candidate, match.start(), match.end()):
+            if (
+                key in seen
+                or _is_exact_prose_role_line(candidate, match.start())
+                or _explicitly_denied(candidate, match.start(), match.end())
+            ):
                 continue
             seen.add(key)
             violations.append(key)

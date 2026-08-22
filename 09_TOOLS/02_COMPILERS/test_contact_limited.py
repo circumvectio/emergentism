@@ -205,7 +205,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(report["receipt_namespace"]["target_files"], 319)
         self.assertEqual(
             report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
-            325,
+            327,
         )
         self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 193)
         self.assertEqual(
@@ -215,14 +215,14 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(
             report["public_lifecycle"]["ignore_counts"],
             {
-                "present_html": 415,
+                "present_html": 416,
                 "ignored_html": 208,
-                "deployable_html": 207,
+                "deployable_html": 208,
                 "withheld_artifacts_added_back": 198,
             },
         )
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 405)
-        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 43)
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 406)
+        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 44)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
@@ -1281,7 +1281,29 @@ class ContactLimitedRatchetTests(unittest.TestCase):
     def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
         contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
         self.assertEqual(contract["classes"], ["current", "provisional"])
-        self.assertEqual(contract["routes"], 47)
+        self.assertEqual(contract["routes"], 48)
+
+    def test_vercel_runtime_html_does_not_change_source_census(self) -> None:
+        entries = CHECKER._strict_tree_entries(
+            ROOT, CHECKER.PUBLIC_DIR, "public lifecycle"
+        )
+        synthetic = (
+            ROOT
+            / CHECKER.PUBLIC_DIR
+            / ".vercel/output/static/synthetic-runtime/index.html"
+        )
+        with mock.patch.object(
+            CHECKER, "_strict_tree_entries", return_value=[*entries, synthetic]
+        ):
+            observed = CHECKER.compute_public_lifecycle(ROOT)
+        self.assertEqual(
+            observed["ignore_counts"],
+            self.computed["compute_public_lifecycle"]["ignore_counts"],
+        )
+        self.assertEqual(
+            observed["counts"],
+            self.computed["compute_public_lifecycle"]["counts"],
+        )
 
     def test_sitemap_extra_frozen_route_fails(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

@@ -71,6 +71,12 @@ class FoundationTypeFirewallTests(unittest.TestCase):
             "1_T**2",
             "1_T ⊗ v",
             "1_T ∈ Number",
+            "• + n",
+            "• / N",
+            "○ ^ value",
+            "• × mass",
+            "• · tensor",
+            "Brahmā ○ · mass",
         )
         for example in examples:
             with self.subTest(example=example):
@@ -109,6 +115,18 @@ class FoundationTypeFirewallTests(unittest.TestCase):
 
     def test_numeric_and_operator_free_forms_are_allowed(self) -> None:
         self.assertFalse(forbidden("φ · ν = 1; ι_P(0_P)=∞_P; •  ⊙  ○"))
+
+    def test_titan_glyphs_in_prose_titles_are_allowed(self) -> None:
+        for title in (
+            "Brahmā ○ · Architect",
+            "Śiva • · Compressor / Pruner",
+        ):
+            with self.subTest(title=title):
+                self.assertFalse(forbidden(title))
+
+    def test_prose_title_allowance_is_exact(self) -> None:
+        self.assertTrue(forbidden("Brahmā ○ · Architect; • + n"))
+        self.assertTrue(forbidden("Śiva • · Compressor / Pruner; ○ ^ value"))
 
     def test_explicit_denial_is_allowed(self) -> None:
         self.assertFalse(forbidden("φ · ν = 1 is not the equation ⊙ = • × ○"))

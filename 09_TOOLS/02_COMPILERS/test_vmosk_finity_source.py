@@ -16,12 +16,21 @@ class VmoskFinitySourceTests(unittest.TestCase):
             'semantic_authority: "none"',
             "creates no theorem, ontology, axiology",
             "or eighth kernel owner",
-            "Emergentism is the worldview. Finity is its first practical instrument.",
-            "Followers, applause, products, revenue",
         ):
             self.assertIn(phrase, text)
         for external_authority in (("PRI" + "SM"), ("private D" + "AV"), "sovereign disposes"):
             self.assertNotIn(external_authority, text)
+
+        live = (ROOT / ("V" + "MOSK_A_v2_2026_07_31.md")).read_text(
+            encoding="utf-8"
+        )
+        for phrase in (
+            "worldview-as-parent front door",
+            "Finity Card owned",
+            "mostly-unbuilt",
+            "Followers, applause, and AI agreement remain non-KPIs.",
+        ):
+            self.assertIn(phrase, live)
 
     def test_finity_card_has_an_active_source_and_formal_boundary(self):
         text = (ROOT / "01_TELEOLOGY" / "04_THE_LIVED_COMPASS.md").read_text(encoding="utf-8")

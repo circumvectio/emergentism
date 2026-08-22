@@ -144,7 +144,9 @@ SELF_CHECKER_UNIT_SHA256: tuple[str, ...] = (
     "1957cd1741a9f21b16f4a0065091a2480041f7ef8502b417fba6c4f567fe4c40",
     "1957cd1741a9f21b16f4a0065091a2480041f7ef8502b417fba6c4f567fe4c40",
     "1ebfe1ed60597b3bef9e5fc811562da43a4f0fa6d1826e6f286f63baa02e0cc1",
+    "2678a01146d33ecf7bd3e031c302dd15bdf08a74f4f5fd7512cc6b84d7ccb031",
     "286fecae785aba41b07e66f34a4a92b885c4bc5b7fc8555f0c9666bdc221d314",
+    "2c48f403f4687c0af8de08b5b27c63b1d80b518da4691d68e72e7a8b7d55dcfd",
     "34ef9859a341dca102e9919e9d3ed18d635339587b2dd4b315a2d96699a11075",
     "3820c4322e3ea08f4555ab715f3587b9e7e35736b182d6ec4f31afe40877579e",
     "39a43501905dae6b24c3ab39df8add0055ca95c3d0d1ef020736e8065c9b13a9",
@@ -207,19 +209,22 @@ MANAGED_AGENT_PROJECTION_ROOT = Path(
 MANAGED_AGENT_PROJECTION_SHA256 = {
     MANAGED_AGENT_PROJECTION_ROOT / "AGENTS.md": "b73c0bb4745f1456b0f8d3e213fd89346b99a8b844db84196bd384bf7aacc555",
     MANAGED_AGENT_PROJECTION_ROOT / "CLAUDE.md": "9ddfb4dfe38c852b065baa1ce8bc2442de9c748738392f2867601e35811f088d",
-    MANAGED_AGENT_PROJECTION_ROOT / "QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md": "3db1c106f2672868463324b3273592ecbe8dd832b6617714279e3ea9e28a43ca",
-    MANAGED_AGENT_PROJECTION_ROOT / "README.md": "4dde5c2142fb5552cb944f7e6475d4a6a4b24eb145322c6b91e7f6c034d237ad",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/01_candala_firewall.agent.yaml": "05853af42d4b712f30bbb5b880b707dc4ac17f6bff08fb6d0a573bd2315f223c",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/02_sudra_explorer.agent.yaml": "50686fd66fe26645e6702c0903f4bcbf9dd884c4358e6672666b44ad870adcd1",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/03_vaisya_auditor.agent.yaml": "c4c2029bc603a44f8025823a64e7adcbbf8866f678ccd382f697c1e12a01c50c",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/04_ksatriya_executor.agent.yaml": "653d3d8075c9a793d92af78b93c1c3df0b2125f3f561fdcf8e734c9b8b35d125",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/05_brahmana_architect.agent.yaml": "5c05436c9ead24773f956b0332a46be0ed3dcd6c5831469d2064e923a8972e4e",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/06_sadhu_compressor.agent.yaml": "9c6889754e8a7d4202d93c2c3b239af99811920b268841e4c23a5567f72d7652",
-    MANAGED_AGENT_PROJECTION_ROOT / "agents/07_rsi_constitution.agent.yaml": "0ee05d927d2707056eb97a10907a4f1d88dca88745ded455cc897b0f4e3267c8",
-    MANAGED_AGENT_PROJECTION_ROOT / "emergentism.environment.yaml": "21518ee43b2c69a0f044d51079238a8871cad69012f600efb921ee67cdb5d3e9",
-    MANAGED_AGENT_PROJECTION_ROOT / "provision.py": "bc2c43398a200109505333327180a68bcb609bbd10cbb1a1c6dfec56cc783069",
-    MANAGED_AGENT_PROJECTION_ROOT / "provision.sh": "4971060bf84ebf06d32e169bca3f89597aa284ec98ebed492a79aae187eef16b",
-    MANAGED_AGENT_PROJECTION_ROOT / "run_session.py": "4c6d4cdc68b74f9d26c8d94ec4df8700396bab4c17f6740493c5aa67e3bc6099",
+    MANAGED_AGENT_PROJECTION_ROOT / "QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md": "dd601c207d4240126c8d76e6588fe1af01d72bccc0b2f09a2740fdc01f561670",
+    MANAGED_AGENT_PROJECTION_ROOT / "README.md": "3d9815ce7b1d8dd550a9461c6872e1cd9a2368350e30929675ef8c9ff707f1c1",
+    MANAGED_AGENT_PROJECTION_ROOT / "ROSETTA_AGENT_PROJECTION_CONTRACT.md": "d8efba4f6f1d1b1f053ab9f905553072a3623d66d0e7b01701059b4c74f8c03a",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/01_candala_firewall.agent.yaml": "4bd5080b3a5c37195430880072b8e9e1944919ffce8b05a6e26a974705612a04",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/02_sudra_explorer.agent.yaml": "2aa19190f285d699d7a953b1b562c0be6ebc1d959b1f000161ad2c91d3953cca",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/03_vaisya_auditor.agent.yaml": "1c3fc24cf457ba147b892ba8a0cd352fa5cbeb2c634ac7dc5b5717c73b7aacff",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/04_ksatriya_executor.agent.yaml": "3dc42c105348ae05d73fb765108ca5368cf6574513beffc2af08e7c016e7650b",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/05_brahmana_architect.agent.yaml": "245b070e81e59377c084bcbf698986dbec02e0c1a3ac0793c7f73889fd495763",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/06_sadhu_compressor.agent.yaml": "5603cfbae641a2658a075d798e59cc221894991fb5b745b0a9cbb45bce4a9e8c",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/07_rsi_constitution.agent.yaml": "053ee865d3df8f70b8d05ccd678e2cf28bca118fcd3bf230dea334c4c52ae490",
+    MANAGED_AGENT_PROJECTION_ROOT / "agents/MANIFEST.sha256": "673cc62825c0a7257cd1552388b3dd4cff43fd480caf56bec7d056339495d028",
+    MANAGED_AGENT_PROJECTION_ROOT / "check_agent_source_hashes.py": "b4d024bfb3e421aa4cd5a0591c4ce02b53703d03e74f1d8b002159872174af18",
+    MANAGED_AGENT_PROJECTION_ROOT / "emergentism.environment.yaml": "9c68bf66bfaf7a86466efc5990e8120c03c1a74177585b1dc66a1081a9640c81",
+    MANAGED_AGENT_PROJECTION_ROOT / "provision.py": "a2a40162849d927b19c053213d2047211b9797858238b50e980343748b4b53b4",
+    MANAGED_AGENT_PROJECTION_ROOT / "provision.sh": "3ab5bc2ac3886873ac2bf9710885b0b37bed50ae117577273efd4657d8245023",
+    MANAGED_AGENT_PROJECTION_ROOT / "run_session.py": "b18870fa34fade54cc6530fd5aa762ab2430960f2a6a0ed9c1ca70fcb1cf7cf5",
 }
 MANAGED_AGENT_PROJECTION_DIRECTORIES = frozenset({
     MANAGED_AGENT_PROJECTION_ROOT / "agents",
@@ -268,8 +273,106 @@ STRUCTURED_TOOLING_UNIT_SHA256 = {
         "e45165d45acd9907a13808aca0dc1307667031c7fd89919bbd1c44829eea660d",
     }),
     Path("09_TOOLS/02_COMPILERS/README.md"): frozenset({
+        "1911dd2a8a48acccef97da97bee2a8aa91d6d4b45952e0c739c1ab48f2565524",
         "07a7780a32b2d7ae5feb828075e7bf894d8b2b1ddb5f2afa6ab6b3f5a28c6c4a",
+        "c29425f21a36f798bd5daae6141c526b9a99c2aa0e9121c2ae2048e5907b4b79",
+        "c41fad5a1d3c4a03b37c616e525dbec441a06109cb33b4d651716b731252fbc1",
+        "d9f2db6d2181c534700fad3984b501232afe56a62ecdab1a471459e52c7e6823",
+        "e7ef4acc4cea706e30a46a84e6165980173496452b11219208adbd716e3dd579",
+        "9d64928c61d4c4a93b17d0ba274e825172068d167b743f16019260498f1892bf",
     }),
+    Path("09_TOOLS/02_COMPILERS/check_root_agentz_projection.py"): frozenset({
+        "666f9a3e7a73ea7a516bdc7118eee5c40772daf59caca31d1ddb9027d37de4b4",
+        "162e4db40a87ffacf07ec9c5d63e74bc96b02ae4b63bd97db5b13d1a2d000a22",
+        "eefea9dd68feea67a77f09ee6041e1b9b3aa321c547f9e32dc8f0656a328bc42",
+        "5224bce3d786d6a2b69ab28b2e72e32500162bb3bce9f96697247f0e9923f92b",
+        "0e2bcfdf4baa5bd0fd56fa835520064d52155245afdfe14ce457cd5d060f73e7",
+        "ab0f59aa84930695ba02cf0dce8cd07caa651992fb4e7212a5884dfe1fe4f946",
+        "43311639292947f5ff120a09aea91915f67bdc6784b3dd716d40b27fada8a311",
+        "3830358a90181ffe045b77b3155f3832a1cf816892bc5a62104c8cd236980a26",
+        "885efbfdbeba7b0a76ae4fa57aecef69347cb6a8b90c27de07201c71e94aaeeb",
+        "3d39603f4a67aa1acdedaddb9243820f9ec8d67eca489cb79e90e4820fa4eebd",
+        "97db6cb8ef34b56ba36203d63098769828a2b6b311fc4669f3baa9d196169004",
+        "6682bab74195375cb672c2f9e42a181e396e21fa407edac0230cacece9127ab5",
+        "0bf530920be152d84186604c6d93a8088eb5402966676b072de191018ccd50ad",
+    }),
+    Path("09_TOOLS/02_COMPILERS/sync_root_agentz_dispatch.py"): frozenset({
+        "0e22f390a2f53f67711fe1d79a638d7580d4bab9d9080722f9f499117ca3bfa0",
+        "f9c383e5fb2423ac3e40325a79e22be83df34e5cee16779e882e4bc6710d8165",
+        "01d4d2e92051cdbfa13acd1df1d169a073c576d1c5b67f9c00bb0f846b9ffc37",
+        "99fbcc500e2d98b9a14f844f1d5cfc9b9ec87a190938f82c07a762c62a8e0fef",
+        "e015c638d7459065fd74a6369aff0f4a153d7853a432eaed0378b0b0c0772095",
+        "032fdee68688ab03e6405fb66a69a65bec2a7834947c3e76859e47cb366bf8ce",
+        "d821ffd3ba5bc027909da604ba1042d1eae826e10882a86956db6600028f3538",
+        "3508c657694fd4ecf48e576ad7e5222448f06c680a791bb91ff8f069e1557e0d",
+        "2e295089534a113f14862c06ea28ab7a4ea60197318fc0239f52dd615dda7a73",
+        "0441896fada8b78397f1921231d1ca93b5a6fd40d3fff5c1a001e97305ff094c",
+        "cc6ec3a56157327ca5fa4ce6f6335980d9eb655354f52e8ba797576977bac58f",
+        "03796579faef30bc26329394e825512ea1966ad6ea2f91fd83a5d3c544862c47",
+        "6f1937c5d4289576f06246d0218c5516cf4e1c54f68e8e1f17f7f6b85fe56f90",
+        "5ce50cf8e11ad2e5bd3db25fa7fdccc0a76d2c8a1a5e24acd0235e24947548f6",
+        "5869e78e7b272b9c9f028a6a333a876392cfb2b5ed3037c204c5fd0679b6dd56",
+        "617742b1f3c22d54a38a467ad627fe2904d09d69c3615b9d991b4a1ca8dfa005",
+        "7dc20ab811ca53a51dbbc093596821aec524c70b3ac961efc464f974c732c1fd",
+        "ab2ce0ca8ed3ee059a660b22ac93751cf82ed06c0bd298c01a34d97ff5d2fa3d",
+        "b9e414ac3f84354a2d91ae3a0e9c95ea2b9d3215f258099e8763335973a18bda",
+    }),
+}
+
+# Two current Rosetta catalogues carry one explicitly qualified editorial
+# crosswalk.  Bind only the vocabulary-bearing lines and require the nearby
+# source-precedence language; no other line inherits the allowance.
+ROSETTA_CROSSWALK_UNIT_SHA256 = {
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"): frozenset({
+        "250bfc66d3db29431aab18af69ac03c802818c01c6cbcf8344b1e04c8b198e14",
+        "9b482c9c3822d4083637cdfbdf590e29b52e8b12c0bdfaaff2da8207c1219502",
+        "520f1fcda299bbe3cb15e7ff9f1435ec2d10721c9399482e0d8baf8ca14fe253",
+    }),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md"): frozenset({
+        "d29bd685af4cbeec89e5d87c10c2f88bf3bd4498ed778ddcc052cdf03826126f",
+    }),
+}
+ROSETTA_CROSSWALK_BOUNDARY_CONTRACTS = {
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"): (
+        "editorial crosswalk, not an",
+        "transfers no biological, mathematical, moral,",
+        "Where this row and a source differ, the source governs",
+    ),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md"): (
+        "It creates no mapping and promotes no cell.",
+        "Where this catalogue and a source table differ, the source table governs",
+        "no cell is inferred",
+    ),
+}
+
+# Exact dated attribution lines remain readable as provenance rather than being
+# rewritten into generic roles. Only these byte-level semantic units are
+# admitted; a changed line or a new sibling falls through to the ordinary scan.
+_MERGE_RULING_PROVENANCE_UNIT = frozenset({
+    "0b28f5d94a48485ad1f6a473357a0f5fb35c5e6fcb85e247e422d95fcac73a01",
+})
+HISTORICAL_PROVENANCE_UNIT_SHA256 = {
+    Path("06_ONTOLOGY/ruminations/00_RUMINATION_ON_EMERGENTISM_ORG_2026_08_19.md"): frozenset({
+        "0e4e437d6b6861f7b326337bd6ef2240ba4fb483ab66164d358b2efbd776c63f",
+        "95b79b1f3e61e707ad0b65e45a5ea900cfd4cd95608773c4bcc5b64405597be1",
+    }),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md"): frozenset({
+        "10ff5331d995591abd6153b7c3d7799328b6725347e60dde268538485bea193b",
+    }),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/36_THE_ROSETTA_IN_THEMES_2026_08_13.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"): frozenset({
+        "c29047c36612cac85e2b7bb40109a37e8c4dcd6fa1d68d357fbb0c0dd47dc69f",
+        "0b28f5d94a48485ad1f6a473357a0f5fb35c5e6fcb85e247e422d95fcac73a01",
+    }),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D30_SOCIAL_POLITICAL.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_COMPUTATION.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_MUSIC.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_MYTHOLOGY.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_NEUROSCIENCE.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_PSYCHOLOGY.md"): _MERGE_RULING_PROVENANCE_UNIT,
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_REPLICATOR.md"): _MERGE_RULING_PROVENANCE_UNIT,
 }
 
 DEDICATED_PURITY_PATHS = (
@@ -282,6 +385,7 @@ DEDICATED_PURITY_PATHS = (
     | STRUCTURED_DIAGNOSTIC_PATHS
     | DERIVED_BOOK_PROJECTION_PATHS
     | set(STRUCTURED_TOOLING_UNIT_SHA256)
+    | set(ROSETTA_CROSSWALK_UNIT_SHA256)
 )
 
 NON_SEMANTIC_BOUNDARY_CONTRACTS = {
@@ -358,7 +462,6 @@ HISTORICAL_INLINE_EXACT_SOURCE_PATHS = {
 EXTERNAL_MAPPING_AUDIT_PATHS = {
     Path("02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md"),
     Path("02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md"),
-    Path("02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_PARTS_BRIEFING.md"),
@@ -375,9 +478,8 @@ EXTERNAL_MAPPING_AUDIT_PATHS = {
 # boundary boilerplate is necessary but not sufficient: exact reviewed bytes
 # prevent an authority assertion from being appended elsewhere in the file.
 EXTERNAL_MAPPING_AUDIT_SHA256 = {
-    Path("02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md"): "33315da0c9c96fc3dc3643d4f7a62e6b7cf5fb8ec152487c887bddaabd57f5b7",
+    Path("02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md"): "ce2e595e86de736c9167e98bf701eaf15fb88cad403531d56a7d1ac5a210e348",
     Path("02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md"): "5b7371d2802f4a4426e8317deb9fd71aa595ad333eaf9b01bf9dec5ca8914c39",
-    Path("02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md"): "c4d318429a29c22d05f7731f9f9487f14877ad4c32b620029844c07f36c66037",
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md"): "ce6956c64a149cac689ed4845f63eaaef7dc65b9b5851c911034df3e22e1ea62",
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md"): "2c45777a93e8c134d9ba88b0e454409450937f1baa9ed68a90714b7a872fae1c",
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_PARTS_BRIEFING.md"): "515946f14b06d75a7714652e8077e125d9186fad0106fd66e0f8a72f1ada1f57",
@@ -407,7 +509,6 @@ EXTERNAL_MAPPING_AUDIT_TYPE = "type: external-mapping-audit"
 EXTERNAL_MAPPING_AUDIT_TYPE_PATHS = {
     Path("02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md"),
     Path("02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md"),
-    Path("02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md"),
     Path("03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_PARTS_BRIEFING.md"),
@@ -461,16 +562,14 @@ CONTROL_PROJECTION_REFERENCE_MARKDOWN_LINKS = (
 # a new authority line or a changed sensitive line fails closed.
 CONTROL_PROJECTION_UNIT_SHA256 = {
     Path("VMOSK_A.md"): frozenset({
-        "0785614bd53650daf4665f8149e7c9675952c16d2fc64ed39e9349b5122cdfbc",
-        "191ca8c75d65b335b42b0c653d626b87276699a683819d3a66e1eefe3c955256",
-        "3f7a7c8046b0da4c9dec30ceb59c42040067c4cb145fb69daa393f3504d25948",
-        "51a2ea7522293cc892620b3c62f9b98dd3cf9fc61353095579c8d084c1bf64de",
-        "5c857370371a4c7fda6fd517eb1b56d378c4ecaff9a06d728316e9165f8143b3",
-        "63d6a56d26a796bf9e3fef9c4dfb63caf2b822b0f260d335d2d3833436717fb9",
-        "8052dfcdf7dbbad3442a4062bad9a276533f51634e9698e3e879049ab01dde89",
-        "baf11383d954c187d3b2b161dd565fc70143c67a6425f5a832bf7cc19e0a8721",
-        "b47dff177d974d0004c4bb2c8b799d6eb9666180d88cf2f13fbbbcb179096c0b",
-        "d51e18d363f39929d3e113bb28a1e1cf3103cc906c47197e7655500943c030c7",
+        "ed50ff3220b8a438a30e7a42febd231b4928f2648c5b6b94afffeec6985af712",
+        "8986335b62bb955b8dfac4515321867e56227bb3dd25b9a29169c72c110d55b4",
+        "d412b82266fbad7e7fa4c51c42497de050e152befb0ab0da025ca4e5818b1dea",
+        "ab78dc77fb4c00ea585f13b4ccb81571597256250c239af9993c238146e8eed9",
+        "faaea77245622eef1a7f4704bb23fa3e56f83b09beceeeef77c7b7462bd6348c",
+        "16dd65152f4fcb0d673945016a7ba9897ef0ddbece4afedb8040904c3968997d",
+        "58178b54c3ba0840c2e6cf561756e809fd6188e305da0dd3bc62a6bd36ba4dfa",
+        "9d68f67a1b868440fb348305488a76e49076c4dc2fe25c80fe9486b1a948ccdb",
     }),
     Path("VMOSK_A_v2_2026_07_31.md"): frozenset({
         "244424c56d8871ee59734d59e6a30cde5319ffb5bb05e811386d4d0754f81c2d",
@@ -488,6 +587,7 @@ CONTROL_PROJECTION_UNIT_SHA256 = {
         "d07b2487d493490e482662bee4e13c1b6adcff87175b314730ed6b5388418421",
         "d7db09185e578b7fd7ae9e71ccaaac41284a832dd77bf7e93e484414a56e173a",
         "fe4650e0c2d4a572eeddfa5d73a9233931570f42c183732590ceea0b430088b1",
+        "6c2ed874d4167cc286a6130d31439b4ecb03cc5211978217779f1d206afad8d0",
     }),
 }
 
@@ -816,7 +916,15 @@ def managed_agent_projection_errors() -> list[str]:
     if not managed_root.is_dir():
         return [f"missing managed-agent projection root: {MANAGED_AGENT_PROJECTION_ROOT}"]
 
-    entries = list(managed_root.rglob("*"))
+    # Interpreter caches are workstation runtime residue, not projection
+    # members.  They neither enter the closed inventory nor gain a semantic
+    # exemption; every non-cache sibling remains fail-closed.
+    entries = [
+        path
+        for path in managed_root.rglob("*")
+        if "__pycache__" not in path.relative_to(managed_root).parts
+        and path.suffix != ".pyc"
+    ]
     observed = {path.relative_to(ROOT) for path in entries}
     symlinks = sorted(
         (path.relative_to(ROOT) for path in entries if path.is_symlink()),
@@ -1489,6 +1597,47 @@ def non_semantic_boundary_errors() -> list[str]:
         ]
         if len(observed) != len(expected) or set(observed) != set(expected):
             errors.append(f"structured tooling semantic-unit drift: {rel}")
+    if set(ROSETTA_CROSSWALK_UNIT_SHA256) != set(
+        ROSETTA_CROSSWALK_BOUNDARY_CONTRACTS
+    ):
+        errors.append("Rosetta crosswalk unit inventory differs from boundaries")
+    for rel, expected in sorted(
+        ROSETTA_CROSSWALK_UNIT_SHA256.items(), key=lambda item: str(item[0])
+    ):
+        if rel in invalid_dedicated:
+            continue
+        path = ROOT / rel
+        observed = [
+            semantic_unit_sha256(line)
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if purity_sensitive_line(line)
+            and semantic_unit_sha256(line) not in (
+                HISTORICAL_PROVENANCE_UNIT_SHA256.get(rel) or frozenset()
+            )
+        ]
+        if len(observed) != len(expected) or set(observed) != set(expected):
+            errors.append(f"Rosetta crosswalk semantic-unit drift: {rel}")
+        text = path.read_text(encoding="utf-8")
+        for phrase in ROSETTA_CROSSWALK_BOUNDARY_CONTRACTS[rel]:
+            if phrase not in text:
+                errors.append(
+                    f"Rosetta crosswalk boundary {rel} missing phrase: {phrase!r}"
+                )
+    for rel, expected in sorted(
+        HISTORICAL_PROVENANCE_UNIT_SHA256.items(), key=lambda item: str(item[0])
+    ):
+        path = ROOT / rel
+        problem = scoped_file_problem(rel, "historical provenance unit")
+        if problem is not None:
+            errors.append(problem)
+            continue
+        observed = [
+            semantic_unit_sha256(line)
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if semantic_unit_sha256(line) in expected
+        ]
+        if len(observed) != len(expected) or set(observed) != set(expected):
+            errors.append(f"historical provenance semantic-unit drift: {rel}")
     if set(CONTROL_PROJECTION_UNIT_SHA256) != set(CONTROL_PROJECTION_PATHS):
         errors.append("control-projection semantic-unit inventory differs from paths")
     for rel, expected in sorted(
@@ -1698,6 +1847,12 @@ def scan_file(
         control_projection_unit = semantic_unit_sha256(line) in (
             CONTROL_PROJECTION_UNIT_SHA256.get(rel) or frozenset()
         )
+        rosetta_crosswalk_unit = semantic_unit_sha256(line) in (
+            ROSETTA_CROSSWALK_UNIT_SHA256.get(rel) or frozenset()
+        )
+        historical_provenance_unit = semantic_unit_sha256(line) in (
+            HISTORICAL_PROVENANCE_UNIT_SHA256.get(rel) or frozenset()
+        )
         book_projection_locator = _book_projection_locator_line(
             rel, lines, line_no
         )
@@ -1710,6 +1865,8 @@ def scan_file(
                 or structured_tooling_unit
                 or self_checker_unit
                 or control_projection_unit
+                or rosetta_crosswalk_unit
+                or historical_provenance_unit
                 or book_projection_locator
                 or structured_external_locator
                 or forbidden_match_is_control_projection_reference(

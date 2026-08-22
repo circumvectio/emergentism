@@ -401,6 +401,23 @@ def m_d6_frozen_historical_parent_symlink(sb):
         real_handoff.rename(handoff)
 
 
+def m_d6_archive_tagged_refutation_byte_drift(sb):
+    """A dead-form handoff is exempt only while its exact refutation survives."""
+
+    rel = "00_HANDOFF/EMERGENTISM_GREAT_MYSTERY_2026_08_20.md"
+    if not sb.sub(
+        rel,
+        "**#8 Literal `D6≡D0`** (dead)",
+        "**#8 Literal `D6≡D0`** (live)",
+    ):
+        return ProbeResult(False, "archive-tagged refutation marker was not present")
+    return expect_red(
+        sb,
+        f"{S}/check_d6_equiv_d0.py",
+        "archive-tagged D6/D0 refutation marker changed from dead to live",
+    )
+
+
 def m_established_inflation(sb):
     sb.append("00_ESTABLISHED/README.md",
               "\nThe Lean candidate compiles cleanly on every commit.\n")
@@ -853,7 +870,8 @@ GATES: list[GateSpec] = [
                          ("spaced literal", m_d6_spaced),
                          ("frozen historical byte drift", m_d6_frozen_historical_byte_drift),
                          ("literal beyond frozen body", m_d6_literal_beyond_frozen_body),
-                         ("frozen historical parent symlink", m_d6_frozen_historical_parent_symlink)],
+                         ("frozen historical parent symlink", m_d6_frozen_historical_parent_symlink),
+                         ("archive-tagged refutation drift", m_d6_archive_tagged_refutation_byte_drift)],
              green_probes=[("rewrite literals to the tilde form", g_d6)]),
     GateSpec("check_dead_citations", f"{S}/check_dead_citations.py",
              green_probes=[("minimal tree", mt(f"{S}/check_dead_citations.py"))],
