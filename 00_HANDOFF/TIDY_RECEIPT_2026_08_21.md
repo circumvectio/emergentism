@@ -128,3 +128,49 @@ unrecoverable to recoverable, but it is a copy on the same disk. **Nothing here 
 until those branches reach a remote**, and that is a chair act.
 
 **Canonical path:** `01_EMERGENTISM/00_HANDOFF/TIDY_RECEIPT_2026_08_21.md`
+
+---
+
+## 7 · Addendum, 17:45 — the chair items resolved themselves, and the snapshot proved it
+
+Within the hour, **a concurrent session executed the entire chair-only bucket**: it
+committed both dirty worktrees, merged the branch sprawl, removed the worktree
+directories, and deleted the merged branch refs. The state this receipt described at
+17:30 no longer exists.
+
+**The snapshot's real value turned out not to be rescue but verification.** Because an
+independent copy of all 39 pre-consolidation files existed, the consolidation could be
+audited rather than trusted:
+
+| check | result |
+|---|---|
+| rescued files absent from the repo afterwards | **0 of 39** |
+| byte-identical | 29 |
+| differing | 10 — registers regenerated, the audit doc extended |
+| **lines present in the snapshot but gone from the repo** | **0** — verified per-file with `comm` on the custody-critical tombstone and forwarding stub |
+
+**The consolidation was lossless.** That is now a checked statement, not an assumption —
+and it could not have been checked an hour later, because the sources were deleted.
+
+**What was then pushed.** `theory/parasite-load-2026-08-17` fast-forwarded to `origin`
+(22 commits, 104 files, no force). Secret-scanned first: all hits were SHA-256 content
+hashes carrying explicit `pragma: allow-secret` markers, plus "token" in its D4/D5
+ontological sense. Five of the six previously-stranded tips — including `981310d4`
+(refinement) and `8e408ce7` (great-mystery) — travelled with it as ancestors.
+
+**One correction to §5 of this receipt.** It listed `chore/glyph-migration-2026-08-14`
+as diverged and unmergeable. That branch **no longer exists** — the consolidation
+deleted it, leaving `ec7bc5b4` dangling. Verified before accepting that: `git diff
+--name-status ec7bc5b4 HEAD` shows **no deletions**, both its artifacts
+(`16_THE_EMISSION/ANCHORS.jsonl`, `06_ONTOLOGY/09_THE_THREE_SCRIPTS_AND_THE_LIMIT`) are
+present on HEAD, and the emission re-runs **PASS — 343 anchors, exit 0**. Its content
+survived; only the ref died.
+
+**Final state:** 10 branches → **2** (`main`, `theory/parasite-load-2026-08-17`).
+5 worktrees → **1**. Uncommitted work in a worktree with no commit → **none**.
+Everything offsite except the 20 files of a live session's in-flight gate-repair work
+in the primary tree, which was deliberately left untouched.
+
+**The rescue snapshot's worktree half is now redundant** by its own stated criterion
+(committed *and* pushed) and can be deleted. `tmp_ledgers/` should stay: `/private/tmp`
+clears at boot and those three files back a 220-line audit's evidence claims.
