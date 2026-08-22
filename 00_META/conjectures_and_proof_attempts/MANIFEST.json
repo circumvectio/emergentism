@@ -330,6 +330,11 @@
    "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
    "sha256": "d18a91abfa04335a953b0c941fe29384664f9695ca47e9b15e362b680c0f8513",
    "role": "conjecture_owner"
+  },
+  {
+   "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md",
+   "sha256": "7f68838ea74b5fc25a7ea0a10323515377a0a42dca6dc95967ba170d539f598a",
+   "role": "semantic_owner"
   }
  ],
  "entries": [
@@ -1441,6 +1446,39 @@
      "target": "W14-W18"
     }
    ]
+  },
+  {
+   "entry_id": "LEDGER-ASSEMBLY",
+   "source_ids": [
+    "LEDGER-ASSEMBLY"
+   ],
+   "kind": "STAGED_DRAFT",
+   "lifecycle": "staged",
+   "evidence_tier": "[D/I/C]",
+   "validation_status_ref": [],
+   "owner_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md",
+   "partition": "live",
+   "summary": "The connected picture over the six pre-empted dots: reality read as a self-balancing ledger (borrowings at crossings, laws as repayment schedules, forces as balancing entries, minds as serviced accounts, funded audit, time as settlement). Assembly-priority UNAUDITED pending the ledger-assembly sweep.",
+   "target_entry_ids": [
+    "TITAN-SEMANTICS-V3",
+    "W19-BALANCE",
+    "W14-W18"
+   ],
+   "outcome": "Staged assembly awaiting its own prior-art sweep (launched same hour); becomes a citation essay if an occupant is found, keeps its value either way.",
+   "rival": "Vedic rna doctrine, Nietzsche-Deleuze debt lineage, Friston-program totalizations, Whitehead process metaphysics as prior occupants; Feynman's blocks as owning the metaphor.",
+   "discriminator": "The ledger-assembly sweep's verdict; per-register maintained-quantity naming (inherits W19's discriminator).",
+   "kill": "An occupant found by the sweep; or no register able to name its maintained quantity — then Feynman's metaphor owns everything here.",
+   "survivor": "The thirteen-dot citation table and the estate-identity reading survive any kill as documentation.",
+   "relations": [
+    {
+     "type": "assembles",
+     "target": "TITAN-SEMANTICS-V3"
+    },
+    {
+     "type": "not_adopted_by",
+     "target": "W0-W12"
+    }
+   ]
   }
  ],
  "excluded_with_reason": [
@@ -1483,5 +1521,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "3bd16db8c663b6a82ebadf2b9ef8ef8db337a46b19393527f9513966a7d1c426"
+ "inventory_digest": "8e3e96fc6cc28e827726a10e86ca50d106a96e20a53ebcec1d24763791a0dd99"
 }

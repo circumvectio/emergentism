@@ -20,6 +20,9 @@ repaired formal system. Where an older document conflicts, those owners rule.
   — tiered case and research gates for Finity as a forward programme; companion only.
 - [`43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md`](43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md)
 - [`52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md`](52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md)
+- [`53_THE_CONNECTED_PICTURE_2026_08_22.md`](53_THE_CONNECTED_PICTURE_2026_08_22.md)
+  — `[D]` the assembly over the six audited dots: reality read as a
+  self-balancing ledger; assembly-priority UNAUDITED pending its sweep.
   — `[D]` staged v3 semantics: the Rule (infinite zero · diagonal-act ·
   finite actual), the Doors, the Closure Rule, the Asymmetry instance;
   beside v1/v2, never over them; adoption via the 00_HANDOFF docket.
