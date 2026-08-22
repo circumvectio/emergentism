@@ -9,6 +9,7 @@ parents:
   - ../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md
   - ../06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md
   - ../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md
+  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/246_TITAN_V3_W19_SIX_CANDIDATE_PRIOR_ART_AND_REFUTATION_AUDIT_2026_08_22.md
 ---
 
 # DOCKET — Titan Semantics v3, the staged family, one decision
@@ -21,8 +22,11 @@ the Closure Rule; the Asymmetry instance; the Information Reading), keeping v2
 promotes no tier: everything stays `[S/I]` with `[A]` components at their
 owners.
 
-**Option B — hold staged.** v3 remains `[D]` beside v2; nothing changes until
-the prior-art audit on the four candidate contributions returns.
+**Option B — hold staged (L3 recommendation after audit).** v3 remains `[D]`
+beside v2. The six-candidate audit returned `premise-refuted=true`: broad
+components are inherited, two proof-strength claims failed, and only a bounded
+typed-synthesis residue survives. Source errata have been applied without
+adoption.
 
 **Option C — archive with tombstone.** The type-corrections and giants table
 survive as documentation; the semantic assignment is dropped.
@@ -40,10 +44,12 @@ survive as documentation; the semantic assignment is dropped.
 
 ## Preconditions the docket flags regardless of option
 
-1. **The prior-art audit** on: the Rule-as-typed-system, the Doors thesis, the
-   debt-typing of ℝ, and the grading alignment (`52 §5b`'s external half).
-   SLWP-01 already carries the estate-internal ownership of the directional
-   conjecture; `BIL-01` is its lemma.
+1. **The prior-art audit** on stable IDs `TV3-C1…C6`: Rule, Doors, debt reading
+   of ℝ, `Finity_L`, directional emergence comparison, and W19-BALANCE. The
+   result is filed at receipt `246`: global priority remains blocked, the
+   arithmetic does not prove emergence, and gauge language stays conditional.
+   SLWP-01 still carries estate-internal ownership of the directional
+   conjecture; `BIL-01` is its proposed lemma, not a proof of strong emergence.
 2. **The C1 kill stays displayed** (`51B`): no biological claim re-attaches to
    Finity_L through v3.
 3. **No public surface** carries any of this before `C3` and the chair's
@@ -54,8 +60,11 @@ survive as documentation; the semantic assignment is dropped.
 
 `../06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md` (the compensation
 principle) is staged in the same convention and awaits the same decision;
-its novelty residue is under audit by the wedge prior-art swarm launched
-2026-08-22.
+its audit found the broad gauge/Noether/zero-energy components inherited and
+multiple physics overclaims. The surviving residue is the Burri typed
+`freedom → compensator → maintained quantity → saturation` wager, subject to
+the D5 gauge-form admission test and all 24 force permutations. It remains
+staged, not adopted.
 
 ## What this docket does not do
 

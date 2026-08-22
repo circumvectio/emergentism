@@ -323,17 +323,17 @@
   },
   {
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
-   "sha256": "6762a5c5eac61f06bc681bb57d6b5029e52b6cfc2dcbc54b30e9f1200d6e6ecb",
+   "sha256": "f7788b876dc3e9955622d475bc72a42783d2ecc997833d5219769e3c44989916",
    "role": "semantic_owner"
   },
   {
    "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
-   "sha256": "d18a91abfa04335a953b0c941fe29384664f9695ca47e9b15e362b680c0f8513",
+   "sha256": "c4f77986dd7713e2e9a8f22cb66c362c967abcb24a76d4584ecaca61f1fbe5c8",
    "role": "conjecture_owner"
   },
   {
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md",
-   "sha256": "7f68838ea74b5fc25a7ea0a10323515377a0a42dca6dc95967ba170d539f598a",
+   "sha256": "9346ce848b4d20a3e359f78577a098ab4b6a1de0213b7f986c685cde186793e2",
    "role": "semantic_owner"
   }
  ],
@@ -1041,7 +1041,7 @@
    ],
    "kind": "STAGED_DRAFT",
    "lifecycle": "staged",
-   "evidence_tier": "[D/I/C]",
+   "evidence_tier": "[B/I/C/D]",
    "validation_status_ref": [],
    "owner_path": "06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md",
    "partition": "live",
@@ -1458,17 +1458,17 @@
    "validation_status_ref": [],
    "owner_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md",
    "partition": "live",
-   "summary": "The connected picture over the six pre-empted dots: reality read as a self-balancing ledger (borrowings at crossings, laws as repayment schedules, forces as balancing entries, minds as serviced accounts, funded audit, time as settlement). Assembly-priority UNAUDITED pending the ledger-assembly sweep.",
+   "summary": "The Ledger Heuristic over thirteen cited historical neighbours: selected register transitions may admit a common typed ledger model, but only if an eight-field register account adds held-out predictive power. The literal universe-as-ledger entailment is refuted; broad assembly priority is occupied; adoption remains withheld.",
    "target_entry_ids": [
     "TITAN-SEMANTICS-V3",
     "W19-BALANCE",
     "W14-W18"
    ],
-   "outcome": "Staged assembly awaiting its own prior-art sweep (launched same hour); becomes a citation essay if an occupant is found, keeps its value either way.",
-   "rival": "Vedic rna doctrine, Nietzsche-Deleuze debt lineage, Friston-program totalizations, Whitehead process metaphysics as prior occupants; Feynman's blocks as owning the metaphor.",
-   "discriminator": "The ledger-assembly sweep's verdict; per-register maintained-quantity naming (inherits W19's discriminator).",
-   "kill": "An occupant found by the sweep; or no register able to name its maintained quantity — then Feynman's metaphor owns everything here.",
-   "survivor": "The thirteen-dot citation table and the estate-identity reading survive any kill as documentation.",
+   "outcome": "Receipt 247 returned premise-refuted=true and OCCUPANT-FOUND: Bhak, Engidaw, Hudock, and an earlier conservation/karma article occupy broad cosmic-ledger, existence-as-loan, and debt/time-settlement language. Prior art blocks priority but does not validate the science. The source is retyped as a test-bearing heuristic.",
+   "rival": "Native conservation, gauge, control, maintenance, error-correction, thermodynamic, and organizational accounts; the named prior cosmic-ledger occupants; Feynman's bookkeeping-without-literal-ontology warning.",
+   "discriminator": "For one register, freeze X_R, T_R, F_R, Q_R, C_R, M_R, B_R, and a prediction P_R that a simpler native rival does not equally make; then test intervention and blinded transfer on held-out cases.",
+   "kill": "The broad priority claim and literal thirteen-dot entailment are already dead. A non-metaphorical register fit dies if a field is absent or circular, if every prediction is matched by a simpler rival, or if the preregistered compensator intervention fails.",
+   "survivor": "The corrected thirteen-source map, dated Burri proposal provenance, ledger vocabulary as a heuristic, and any future register-local model that independently passes the admission and contact tests. The worldview and downstream applications remain separately typed.",
    "relations": [
     {
      "type": "assembles",
@@ -1521,5 +1521,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "8e3e96fc6cc28e827726a10e86ca50d106a96e20a53ebcec1d24763791a0dd99"
+ "inventory_digest": "b4899d09476ee762744ac550d5a47bc0aebd59bcf77378cc6fbae1e37ba205bf"
 }

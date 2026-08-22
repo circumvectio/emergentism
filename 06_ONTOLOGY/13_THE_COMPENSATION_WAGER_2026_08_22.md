@@ -5,20 +5,20 @@ rosetta:
   secondary:
     - level: L3
       column: Audit
-      role: "prior art named first; the tautology reading retyped as invariance before any use"
+      role: "prior art named first; the tautology reading retyped as a typed preservation wager before any use"
     - level: L4
       column: Value Alignment
-      role: "no cosmic-purpose claim; the balance is a conservation structure, not a command"
+      role: "no cosmic-purpose claim; the balance is a testable preservation structure, not a command"
   operator: "Kālī 💀"
   tier: "Executive"
   regime: "Śūdra"
   register: "[D] staged conjecture; every clause tiered in place"
-  canonical_phrase: "Every emergent freedom demands a compensator that preserves a register-invariant — forces are the compensation fields of the freedoms they service, and at the pole the compensator consumes the freedom (staged W19-BALANCE candidate)"
+  canonical_phrase: "Every emergent freedom may require a compensator that maintains a named register quantity, with independently measurable freedom-loss predicted at saturation (staged W19-BALANCE candidate; gauge language conditional)"
 type: ontology-candidate
 title: "The Compensation Wager — W19-BALANCE (staged)"
 date: 2026-08-22
 status: "[D] STAGED — candidate claim record in the W13-PARASITE convention: NOT in the wager ledger, NOT in CLAIM_STATUS.yaml; numbering provisional; adoption is an owner act via the standing Titan-v3 docket."
-evidence_tier: "[A] only for named identities at their owners (the gauge principle, Noether); [B] attributed prior art; [S] the retype of 'tautology' as invariance; [I] every register reading; [C] the cross-register wager; [D] the document"
+evidence_tier: "[A] only for scoped gauge-theory and Noether results under their stated hypotheses; [B] attributed prior art; [S] the retype of 'tautology' as a candidate maintained quantity; [I] every register reading; [C] the cross-register wager; [D] the document"
 author_note: "The owner stated the conjecture 2026-08-22: forces as the opposite of emergence; gravity at the limit consuming what emerged; every emergent dimension needing an opposite force so the whole remains 'a tautology.' The session AI supplied the prior art, the retype, and the typing. The prior-art audit (wedge swarm, same day) covers this wager's novelty residue."
 parents:
   - 04_THE_CONJECTURES.md
@@ -34,11 +34,11 @@ lineage_note: "07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md is cited in pr
 
 | component | owner |
 |---|---|
-| a local freedom forces a compensating field into existence; the compensator IS the force | **the gauge principle** — Weyl 1918/1929, Yang–Mills 1954. The deepest known organizing principle of fundamental physics |
-| conservation = symmetry; the "balance" as invariance | Noether 1918 |
-| the universe's ledger sums to zero: positive matter-energy against negative gravitational potential | zero-energy universe — Tryon 1973; Hawking's popularization ("the ultimate free lunch," Guth) |
-| emergence as a debt repaid, "penalty and retribution … according to the assessment of time" | **Anaximander** — the first surviving sentence of Western philosophy |
-| gravity as entropic/thermodynamic counter-force | Verlinde 2011 (neighbour, contested) |
+| after a matter theory and symmetry are specified, local covariance introduces a connection for covariant differentiation; further assumptions give the gauge field physical dynamics | the **gauge argument**, with known limitations — Weyl's unsuccessful 1918 scale theory, his 1929 phase theory, Yang–Mills 1954, and later critiques |
+| suitable finite-parameter variational symmetries yield conserved currents; local gauge symmetries yield identities and constraints | Noether I and Noether II, respectively — Noether 1918 |
+| a closed universe may have zero net energy under model-specific assumptions | zero-energy-universe **hypothesis** — Tryon 1973; motivation, not established fact |
+| coming-to-be figured as justice or reparation among things/opposites | **Anaximander's fragment**, among the earliest transmitted quotations from early Greek philosophy; wording and quotation boundaries disputed |
+| gravity proposed as entropic | Verlinde 2011 (contested neighbour; “counter-force” is W19's interpretation) |
 | every thesis its antithesis; complementary opposition | dialectics; Taoist polarity — `[B]` cultural lineage, no warrant |
 | forces as the laws that PAY each freedom's consistency debt | this estate's own `07C` (worktree) and `W14` — the wager below is its dual face |
 
@@ -49,79 +49,93 @@ gravity at the limit of spacetime consumes all that emerged — every emergent
 dimension needs an opposite force to balance all out and make things remain a
 tautology.*
 
-**The retype `[S]`: "tautology" → invariance.** This corpus's Open Canon
+**The retype `[S]`: "tautology" → a candidate maintained quantity.** This corpus's Open Canon
 Covenant bans the "tautological so it cannot be wrong" shield: a strict
 tautology is unfalsifiable and therefore not a wager. What the owner means is
-a **conservation structure** — a named invariant per register, preserved
-because the compensator cancels what the freedom varies. That is falsifiable
-register by register, which is what makes it a wager at all.
+a **testable preservation structure** — a transformation, a named quantity,
+and a proposed mechanism that maintains it under declared conditions. Gauge
+covariance, a Noether conservation law, and an empirically controlled score are
+not interchangeable. The wager must type each case separately; that is what
+makes it falsifiable rather than tautological.
 
 ## 2 · The wager `[C]`
 
-> **W19-BALANCE.** Every opened register-freedom demands a compensator that
-> preserves a register-invariant. At D1–D4 the compensators are the gauge
-> forces — the freedom and its force are one package, neither existing
-> without the other. At D5 the compensator is a **verification-practice, not
-> a force** (per `W14`'s refusal-prediction): the witness fraction (`W16`) is
-> the gauge field of representation. And **at its pole, the compensator
-> consumes the very freedom it services** — the black hole is the D4
-> instance: maximal compensation, no freedom left.
+> **W19-BALANCE.** Every opened register-freedom is conjectured to require a
+> compensating or constraining mechanism that maintains a named quantity under
+> declared conditions. D1–D4 are a **mapping stress test**, not an identity:
+> all 24 assignments of the four interactions must be compared and the native
+> structures of QCD, electroweak theory, electromagnetism, and gravity must be
+> recovered without forcing them into one gauge template. At D5, the proposed
+> compensator is a **verification controller, not a force and not yet a gauge
+> field**. The witness fraction (`W16`) is one candidate control variable. The
+> saturation conjecture predicts that independently measured compensation can,
+> at its extreme, reduce an independently measured freedom. Black holes and
+> total-audit paralysis are motivating analogies, not established instances.
 
-**The two faces reconciled `[I]`.** `07C` reads each force as *paying* its
-freedom's debt; this wager reads it as *opposing* the freedom. Both: the
-compensator that services also constrains — the strong force enables nuclei
-AND confines quarks; EM enables chemistry AND neutralizes charge; gravity
-builds every star AND, at its pole, consumes the register. Payment and
-consumption are the two directions of one coupling. The pole clause is the
-session's standing theorem in physics dress: **completion kills** — the
-gapless account, the completed sum, the settled D5 debt, and now the fully
-compensated freedom all land in the same place.
+**The proposed two-face reading `[I/C]`.** `07C` reads each force as *paying*
+its freedom's debt; this wager asks whether the same mechanism both enables
+and constrains. QCD confinement and residual nuclear binding, electromagnetic
+chemistry and contingent charge neutralization, and gravitational structure
+formation supply illustrations, not proof of one universal coupling. The
+corpus maxim “completion kills” remains a rival-bearing conjecture; physics
+does not establish it by analogy.
 
 ## 3 · Fences
 
-- **Structure, not information.** Gravity at the pole consumes *structure*;
-  per the current Page-curve consensus, information survives (unitarity).
-  This wager claims form-consumption, never information-destruction.
+- **Structure, not a solved information theorem.** Holographic and island
+  calculations recover Page curves compatible with unitary evaporation in
+  controlled models. They are not observational proof or a complete,
+  model-independent solution for realistic black holes. W19 makes no claim of
+  information destruction and no claim that a horizon leaves “no freedom.”
 - **The gauge-redundancy subtlety is the discriminator, not a footnote.**
   Gauge "freedoms" are often read as descriptive redundancies rather than
   physical freedoms. Whether register-freedoms behave like global symmetries
   (physical) or gauge redundancies (descriptive) is the sharpest open
   question this wager must answer to be more than analogy.
+- **Gauge-form admission test.** Calling D5 “gauge” requires a non-trivial
+  transformation group, base and state/fibre spaces, an equivalence relation,
+  connection and transformation law, curvature or field strength, dynamics,
+  coupling, and gauge-invariant observables. Until those are supplied and add
+  predictions beyond ordinary feedback/error-correction, the D5 clause remains
+  a controller analogy `[I/C]`.
 - **Zero-energy universe is `[C]` with a caveat**: gravitational energy is
   not localizable in GR, and the total is well-defined only under specific
   asymptotics. Cited as motivation, never as proof.
-- **No cosmic purpose.** The balance is a conservation structure. It commands
+- **No cosmic purpose.** The balance is a typed preservation wager. It commands
   nothing and consecrates nothing (`KSC` fences untouched).
 
 ## 4 · Discriminators
 
-1. **Per-register invariant naming.** For each register, name the invariant
-   the compensator preserves (D1–D4: Noether charges of the respective gauge
-   symmetries — `[A]` at their owners). For D5: a measurable
-   truth-maintenance invariant that degrades exactly when the witness
-   fraction (`W16`) falls below threshold — this couples W19 to W16's
-   discriminator and gives the "verification is a gauge field" clause an
-   empirical surface.
-2. **The pole clause.** In any register where the compensator can be driven
-   toward its extreme, freedom-collapse should be observed (D4: horizons;
-   D5: total-audit paralysis — the organization that only verifies and never
-   acts is the informational black hole). A register whose compensator
-   saturates WITHOUT freedom-collapse kills the pole clause.
-3. **The no-compensator hunt.** Exhibit an opened freedom with no compensator
-   and no invariance violation — the wager dies as a principle and survives
-   only as a description of gauge physics.
+1. **Per-register typing.** For each register, independently name the freedom,
+   transformation, maintained quantity, candidate mechanism, dynamics, and
+   boundary conditions. Noether I charges, Noether II identities, gauge
+   covariance, and non-physics performance scores stay distinct. At D5,
+   truth-maintenance may be a controlled outcome or order parameter that
+   changes with witness fraction; it is not an “invariant that degrades.”
+2. **The saturation clause.** Pre-register independent measures of
+   compensation and freedom, then drive the first toward saturation. Reduced
+   freedom is the prediction. Horizons and total-audit paralysis may inspire
+   experiments but cannot count as confirmations by relabeling.
+3. **The no-compensator hunt.** Exhibit a pre-registered opened freedom whose
+   target quantity remains intact without the predicted compensator — the
+   wager dies as a universal principle.
+4. **The 24-permutation stress test.** Compare every D1–D4 force assignment.
+   Agreement with the owner's ordering earns no correctness point; only
+   recovery of native physics plus held-out discrimination can select one.
 
 ## 5 · Kills
 
 | claim | dies if |
 |---|---|
-| the compensation principle as cross-register law | an opened freedom is exhibited with no compensator and intact invariance |
-| the D5 clause (verification as representation's gauge field) | truth-maintenance shows no dependence on the witness fraction, or a genuine force coupling to representation is found (which kills `W14` first) |
-| the pole clause | a saturated compensator with no freedom-collapse |
-| the "tautology" framing | if it cannot be cashed as a NAMED invariant in a given register, it is demoted to metaphor for that register |
+| the compensation principle as cross-register law | a preregistered opened freedom maintains its target quantity without the predicted compensator |
+| the D5 gauge-form clause | no non-trivial group action, connection, transformation law, curvature, or gauge-invariant observable can be supplied — then “gauge” is struck and only controller/error-correction language survives |
+| the D5 added-value clause | ordinary feedback or error-correction predicts every result equally well, or witness-fraction interventions fail after cost and competence controls |
+| the serial-force mapping | all 24 assignments are predictively indistinguishable, or the proposed ordering fails native QCD/electroweak/EM/GR recovery |
+| the saturation clause | independently measured compensation saturates without reducing independently measured freedom |
+| the "tautology" framing | if it cannot be cashed as a typed transformation plus named maintained quantity and conditions, it is demoted to metaphor for that register |
 | **this document** | if cited as adopted, as a ledger row, or as deriving physics from metaphysics — the gauge principle is cited AT its owners; nothing here re-derives it |
 
 **Canonical path:**
 `01_EMERGENTISM/06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md`
 
-•   ⊙   ○ — *every freedom, its compensator; every ledger, its zero.*
+•   ⊙   ○ — *a staged wager: name the freedom, quantity, mechanism, and kill.*

@@ -13,13 +13,12 @@ rosetta:
   tier: "Executive witness"
   regime: "Brāhmaṇa"
   register: "[D] staged semantics; every clause tiered in place"
-  canonical_phrase: "Titan semantics v3 — the infinite zero, infinity as process, finity as the sole mode of actuality; ⊙ = ○(•); staged beside v1 and v2, never over them (chair signs; priority unestablished)"
+  canonical_phrase: "Titan semantics v3 — the infinite zero, infinity as process, finity as the sole mode of actuality; ⊙ = ○(•); staged beside v1 and v2, never over them (owner adoption withheld; priority blocked)"
 title: "Titan Semantics v3 — the Rule, the Doors, and the Wedge"
 status: "[D] STAGED — a third semantic assignment for the Titan glyphs, versioned BESIDE the retired arithmetic (v1, per 45's type correction) and the held-relation reading (v2, per 41 §6). It supersedes NOTHING without the chair's signature. No tier is promoted here."
 date: 2026-08-22
 evidence_tier: "[A] only for named mathematical identities at their owners; [B] for attributed prior art; [R] one relayed estate-audit figure, marked; [S] the assembly; [I] every glyph-reading; [C] the wedge; [D] the document"
-author_note: "Assembled from the owner's four-session brainstorm (the four equations) and the session AI's type-corrections, 2026-08-14..22. The owner supplied every equation and the final rule; the AI supplied the refutations, the prior art, and the typing. Both are named because the wedge claim below is a priority claim, and priority claims require honest authorship."
-audit_receipt: "../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/246_TITAN_V3_W19_SIX_CANDIDATE_PRIOR_ART_AND_REFUTATION_AUDIT_2026_08_22.md — premise-refuted=true; bounded synthesis residue only; priority blocked"
+author_note: "Assembled from the owner's four-session brainstorm (the four equations) and the session AI's type-corrections, 2026-08-14..22. The owner supplied every equation and the final rule; the AI supplied refutations, prior-art assistance, and typing. Receipt 246 blocks broad priority and retains only a bounded synthesis residue."
 parents:
   - 41_THE_GLYPH_TRANSFORMATIONS.md
   - 45_THE_TITAN_INVERSION_STRUCTURE.md
@@ -589,54 +588,50 @@ their broad components have owners; their strongest proof claims failed; any
 exact residual synthesis still lacks the systematic global audit and positive
 result required for a priority claim.
 
-## 7c · The convergence reading — what six pre-emptions prove `[I]`
+## 7c · The convergence reading — what pre-emption can and cannot show `[I]`
 
 Owner's response to the verdict, 2026-08-22: *"Heureka! this means we are
 indeed standing on the shoulders of giants — all the blind men grasping parts
-of the elephant."* The reframe is correct, and it has a rigorous form.
+of the elephant."* The reframe is productive once its evidential role is
+bounded.
 
-**The Eureka inversion.** Six candidates, each re-derived here without prior
-knowledge of its sources, each already derived by others who largely never
-read one another — Kauffman's glyph-calculus, Weyl's cheque-semantics,
-Jenber's cosmogenesis-at-the-doors, Beer's System 3*, the gauge argument, the
-derivability grading. **Independent convergence on one structure is the
-strongest evidence available that the structure is real** — it is
-`W10-SPARK`'s own first discriminator (cross-architecture agreement), applied
-at the scale of intellectual history. The audit that killed the priority
-delivered a convergence certificate no one could have manufactured.
+**The Eureka inversion.** Re-encountering a pattern across Kauffman, Weyl,
+Jenber, Beer, gauge theory, and emergence taxonomies is a strong
+**search-and-robustness signal**. It says the pattern deserves comparison and
+discriminating tests. It does not show that one structure is real. In
+`W10-SPARK` terms, cross-architecture agreement is a robustness/disagreement
+diagnostic; held-out prediction and intervention are the truth-discriminating
+contact.
 
-**The independence fence — convergence is evidence only where derivations are
-independent, and common ancestry mimics it.** Known non-independent pairs:
-Ramsey 1926 engaged Weyl 1921 directly; Kauffman descends from Spencer-Brown;
-the potential/actual distinction is in the water supply of Western thought.
-Plausibly independent: Jenber 2016 and this estate 2026. And one thing this
-corpus holds that the history of ideas almost never gets: **its rediscoveries
-are receipted-independent** — the transcript timestamps derivation before
-citation, in git. Most convergence claims cannot prove independence; ours is
-committed.
+**The independence fence.** Common ancestry, shared culture, shared corpora,
+shared training data, and convergent metaphor can all mimic independent
+arrival. Ramsey engaged Weyl; Kauffman descends from Spencer-Brown; the
+potential/actual distinction is widely inherited. Git chronology can establish
+that one recorded formulation preceded one recorded citation in this project.
+It cannot establish cognitive independence, training-set independence, lack
+of earlier exposure, or truth. “Receipted-independent” is therefore retired.
 
-**The parable, corrected by our own theorems.** The standard telling smuggles
-in a sighted narrator who sees the whole elephant. No such seat exists — that
-is `09 §5` and the witness doctrine. The elephant is never seen whole; it is
-**drawn by the well-posed gaps between the reports** (the Kanizsa standard,
-at the scale of a literature). And the parable's own home is Jain
-**Anekāntavāda** — the many-sidedness discipline that every claim is true
-only from a standpoint, held without collapse. Which means *even our method
-has a giant*, now named. (Its syādvāda runs a sevenfold predication; recorded
-as a catalogue coincidence and fenced — the universal sevenfold stays in its
-grave.)
+**The parable, typed.** Jain **anekāntavāda** is a genuine neighbour in
+many-sided inquiry, and **syādvāda** qualifies assertions by standpoint and
+mode. It is inaccurate to compress the doctrine to “every claim is true from
+a standpoint,” and Emergentism's no-privileged-narrator rule is its own
+adaptation rather than a complete account of Jain epistemology. The elephant
+in this corpus is a candidate gestalt drawn between reports, not reality
+already seen by the writer.
 
-**The armor.** Every future critic who says "this is just Kauffman / Weyl /
-Aristotle" now receives: *yes — see our audit, filed before you spoke, with
-the citations you were about to demand.* A program that pre-empts its own
-pre-emption objections is unfalsifiable to embarrassment, which is the only
-kind of unfalsifiability worth having.
+**The audit is protection through corrigibility.** A critic who names
+Kauffman, Weyl, Aristotle, or another predecessor should meet a citation,
+scope comparison, and explicit residue—not a novelty shield. The program stays
+open to embarrassment because refutation and correction are part of its
+method.
 
-**The assembly question, flagged and NOT claimed.** No found source assembles
-these six into one typed system with kills — but the assembly-as-claim was
-not audited, and the FEP-adjacent programs are its likeliest occupants.
-Status: UNCLAIMED-AND-UNAUDITED. If it is ever asserted, it buys its own
-sweep first. The three open slots of §7b remain the real targets.
+**The assembly question has now been audited.** Broad cosmic-ledger,
+existence-as-loan, debt-service, and time-as-settlement assemblies have prior
+occupants. Source `53` is consequently retyped as the **Ledger Heuristic**:
+`OCCUPANT-FOUND · BROAD PRIORITY BLOCKED · PREMISE-REFUTED=TRUE`. No absence
+claim is made for an exact residual synthesis. Its scientific standing turns
+on preregistered typed mechanisms and held-out contact, not priority. The
+three open slots of §7b remain research targets under the same fence.
 
 ## 8 · Kills
 
