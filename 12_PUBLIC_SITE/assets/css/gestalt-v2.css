@@ -764,6 +764,1279 @@ body.g2-page {
 .g2-note--conjecture { border-left-color: var(--g2-conjecture); }
 .g2-note--evidence { border-left-color: var(--g2-evidence); }
 
+/* V2.1 ontological-atlas components. Every diagram retains visible text so
+   layout, colour, and line style remain supplementary rather than semantic. */
+.g2-local-nav {
+  position: sticky;
+  top: var(--g2-nav-h);
+  z-index: 80;
+  border-bottom: 1px solid var(--g2-rule);
+  background: var(--g2-field);
+}
+
+.g2-local-nav__inner {
+  width: var(--g2-page);
+  min-height: 58px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.g2-local-nav__label {
+  min-height: 58px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 18px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font: 600 0.65rem/1.4 var(--g2-mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.g2-local-nav__links {
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.g2-local-nav__links a {
+  min-width: max-content;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  color: var(--g2-bone-muted);
+  font: 560 0.7rem/1.35 var(--g2-mono);
+  text-decoration: none;
+}
+
+.g2-local-nav__links a:hover,
+.g2-local-nav__links a[aria-current] {
+  color: var(--g2-bone);
+  box-shadow: inset 0 -2px var(--g2-actual);
+}
+
+.g2-thesis-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-thesis-band__thesis,
+.g2-thesis-band__fence {
+  min-width: 0;
+  padding: clamp(24px, 4vw, 48px);
+}
+
+.g2-thesis-band__thesis {
+  box-shadow: inset 4px 0 var(--g2-actual);
+}
+
+.g2-thesis-band__fence {
+  border-left: 1px solid var(--g2-rule-strong);
+  background: var(--g2-surface);
+}
+
+.g2-thesis-band__label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--g2-actual);
+  font: 650 0.67rem/1.4 var(--g2-mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.g2-thesis-band__fence .g2-thesis-band__label {
+  color: var(--g2-evidence);
+}
+
+.g2-thesis-band__statement {
+  max-width: 28ch;
+  margin: 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.8rem, 3.8vw, 3.45rem)/1.04 var(--g2-display);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.g2-thesis-band__fence p {
+  max-width: 44ch;
+  margin: 0;
+  color: var(--g2-bone-muted);
+}
+
+.g2-thesis-band a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.g2-g7 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  gap: clamp(24px, 4vw, 52px);
+  align-items: stretch;
+}
+
+.g2-g7__plane {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-rule-strong);
+}
+
+.g2-g7__plane::before,
+.g2-g7__plane::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  background: var(--g2-bone-faint);
+  opacity: 0.55;
+}
+
+.g2-g7__plane::before {
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+}
+
+.g2-g7__plane::after {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+}
+
+.g2-g7__quadrant {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 3vw, 32px);
+  background: var(--g2-field);
+}
+
+.g2-g7__quadrant--possible {
+  box-shadow: inset 0 3px var(--g2-possible);
+}
+
+.g2-g7__quadrant--actual {
+  box-shadow: inset 0 3px var(--g2-actual);
+}
+
+.g2-g7__family,
+.g2-g7__signature,
+.g2-g7__bearer {
+  font-family: var(--g2-mono);
+}
+
+.g2-g7__family {
+  color: var(--g2-bone);
+  font-size: 0.73rem;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.g2-g7__signature {
+  margin-top: auto;
+  padding-top: 30px;
+  color: var(--g2-bone-muted);
+  font-size: clamp(0.72rem, 1.4vw, 0.9rem);
+  overflow-wrap: anywhere;
+}
+
+.g2-g7__bearer {
+  margin-top: 10px;
+  color: var(--g2-bone-faint);
+  font-size: 0.66rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.g2-g7__legend {
+  align-self: start;
+  padding: 22px;
+  border-top: 1px solid var(--g2-rule-strong);
+  border-bottom: 1px solid var(--g2-rule-strong);
+}
+
+.g2-g7__legend p {
+  margin: 0 0 14px;
+  color: var(--g2-bone-muted);
+}
+
+.g2-g7__legend p:last-child { margin-bottom: 0; }
+
+.g2-titan-axis {
+  position: relative;
+  min-height: 500px;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  justify-items: center;
+  padding: 18px 0;
+}
+
+.g2-titan-axis::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 50%;
+  width: 1px;
+  background: var(--g2-rule-strong);
+}
+
+.g2-titan-axis::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 4px);
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid var(--g2-rule-strong);
+  border-left: 1px solid var(--g2-rule-strong);
+  transform: rotate(45deg);
+}
+
+.g2-titan-axis__station {
+  position: relative;
+  z-index: 1;
+  width: min(420px, calc(100% - 28px));
+  min-height: 96px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-titan-axis__station--bottom {
+  grid-row: 3;
+  align-self: end;
+}
+
+.g2-titan-axis__station--centre {
+  grid-row: 2;
+  align-self: center;
+  border-color: var(--g2-evidence);
+}
+
+.g2-titan-axis__station--top {
+  grid-row: 1;
+  align-self: start;
+}
+
+.g2-titan-axis__glyph {
+  color: var(--g2-actual);
+  font: 500 1.4rem/1 var(--g2-mono);
+  text-align: center;
+}
+
+.g2-titan-axis__station--centre .g2-titan-axis__glyph {
+  color: var(--g2-evidence);
+}
+
+.g2-titan-axis__name {
+  display: block;
+  color: var(--g2-bone);
+  font: 650 0.72rem/1.4 var(--g2-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.g2-titan-axis__function {
+  display: block;
+  margin-top: 5px;
+  color: var(--g2-bone-muted);
+  font-size: 0.86rem;
+}
+
+.g2-provenance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--g2-rule);
+  border-bottom: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font: 550 0.65rem/1.45 var(--g2-mono);
+}
+
+.g2-provenance__item {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  overflow-wrap: anywhere;
+}
+
+.g2-provenance__label {
+  color: var(--g2-bone-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.g2-provenance a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--g2-bone-muted);
+}
+
+.g2-tier-label {
+  --g2-tier-color: var(--g2-bone-muted);
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 8px;
+  border: 1px solid var(--g2-tier-color);
+  color: var(--g2-tier-color);
+  font: 650 0.63rem/1 var(--g2-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.g2-tier-label--a,
+.g2-tier-label--s,
+.g2-tier-label--b { --g2-tier-color: var(--g2-evidence); }
+.g2-tier-label--i { --g2-tier-color: var(--g2-possible); }
+.g2-tier-label--c { --g2-tier-color: var(--g2-conjecture); border-style: dashed; }
+.g2-tier-label--d { --g2-tier-color: var(--g2-bone-faint); }
+
+.g2-research-sockets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 1px;
+  border: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+}
+
+.g2-research-socket {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--g2-field);
+  box-shadow: inset 0 2px var(--g2-conjecture);
+}
+
+.g2-research-socket__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.g2-research-socket__id,
+.g2-research-socket__state {
+  font: 650 0.64rem/1.4 var(--g2-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.g2-research-socket__id { color: var(--g2-conjecture); }
+.g2-research-socket__state { color: var(--g2-bone-faint); }
+
+.g2-research-socket__question {
+  margin: 18px 0 12px;
+  color: var(--g2-bone);
+  font: 430 clamp(1.35rem, 2.3vw, 1.8rem)/1.08 var(--g2-display);
+  letter-spacing: -0.018em;
+}
+
+.g2-research-socket__meta {
+  margin: auto 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.82rem;
+}
+
+.g2-research-socket a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.g2-world-return {
+  margin: 0;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-world-return__steps {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.g2-world-return__step {
+  position: relative;
+  min-width: 0;
+  min-height: 142px;
+  padding: 42px 14px 18px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font: 550 0.72rem/1.45 var(--g2-mono);
+  overflow-wrap: anywhere;
+}
+
+.g2-world-return__step:last-child { border-right: 0; }
+
+.g2-world-return__step::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: var(--g2-evidence);
+  font: 650 0.65rem/1 var(--g2-mono);
+}
+
+.g2-world-return__step--possible { box-shadow: inset 0 3px var(--g2-possible); }
+.g2-world-return__step--actual { box-shadow: inset 0 3px var(--g2-actual); }
+.g2-world-return__step--evidence { box-shadow: inset 0 3px var(--g2-evidence); }
+
+.g2-world-return__return {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-top: 1px solid var(--g2-evidence);
+  color: var(--g2-evidence);
+  font: 600 0.7rem/1.45 var(--g2-mono);
+}
+
+.g2-world-return__return::before {
+  content: "↶";
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+}
+
+.g2-world-return figcaption {
+  padding: 14px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font-size: 0.78rem;
+}
+
+.g2-world-return a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Lightweight v2.1 homepage compatibility. */
+.g2-atlas-nav {
+  position: sticky;
+  top: var(--g2-nav-h);
+  z-index: 75;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-right: 1px solid var(--g2-rule);
+  border-bottom: 1px solid var(--g2-rule);
+  border-left: 1px solid var(--g2-rule);
+  background: var(--g2-field);
+}
+
+.g2-atlas-nav a {
+  min-width: 0;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 16px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font: 650 0.7rem/1.3 var(--g2-mono);
+  text-decoration: none;
+}
+
+.g2-atlas-nav a:last-child { border-right: 0; }
+
+.g2-atlas-nav a:hover,
+.g2-atlas-nav a[aria-current] {
+  color: var(--g2-bone);
+  box-shadow: inset 0 -2px var(--g2-actual);
+}
+
+.g2-atlas-nav small {
+  display: block;
+  margin-top: 4px;
+  color: var(--g2-bone-faint);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.g2-thesis-fence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 28px;
+  border-top: 1px solid var(--g2-rule-strong);
+  border-bottom: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-thesis-fence p {
+  margin: 0;
+  padding: 16px 18px;
+  color: var(--g2-bone-muted);
+  font-size: 0.86rem;
+}
+
+.g2-thesis-fence p:first-child {
+  border-right: 1px solid var(--g2-rule);
+  box-shadow: inset 3px 0 var(--g2-actual);
+}
+
+.g2-thesis-fence p:last-child {
+  box-shadow: inset 3px 0 var(--g2-evidence);
+}
+
+.g2-thesis-fence .g2-tier {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.g2-power-equation {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr) auto minmax(120px, 1fr) auto minmax(120px, 1fr);
+  align-items: stretch;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-power-equation > span {
+  min-width: 0;
+  min-height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+}
+
+.g2-power-equation strong {
+  color: var(--g2-bone);
+  font: 430 clamp(1.7rem, 3vw, 2.6rem)/1 var(--g2-display);
+}
+
+.g2-power-equation span:first-child strong { color: var(--g2-possible); }
+.g2-power-equation span:nth-of-type(2) strong { color: var(--g2-evidence); }
+.g2-power-equation span:nth-of-type(3) strong,
+.g2-power-equation span:last-child strong { color: var(--g2-actual); }
+
+.g2-power-equation small {
+  margin-top: 8px;
+  color: var(--g2-bone-faint);
+  font: 550 0.67rem/1.4 var(--g2-mono);
+}
+
+.g2-power-equation > b {
+  min-width: 38px;
+  display: grid;
+  place-items: center;
+  border-right: 1px solid var(--g2-rule);
+  border-left: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font: 500 1rem/1 var(--g2-mono);
+}
+
+.g2-g7-map {
+  margin: 0;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-g7-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.g2-g7-map text {
+  fill: var(--g2-bone-muted);
+  font: 550 13px/1 var(--g2-mono);
+}
+
+.g2-map-line {
+  stroke: var(--g2-rule-strong);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-map-label {
+  fill: var(--g2-bone-faint) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.06em;
+}
+
+.g2-map-cell rect {
+  fill: var(--g2-surface);
+  stroke: var(--g2-rule-strong);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-map-cell--possible rect { stroke: var(--g2-possible); }
+.g2-map-cell--actual rect { stroke: var(--g2-actual); }
+
+.g2-map-cell text:first-of-type {
+  fill: var(--g2-bone);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.g2-map-cell--possible text:nth-of-type(2) { fill: var(--g2-possible); }
+.g2-map-cell--actual text:nth-of-type(2) { fill: var(--g2-actual); }
+.g2-map-cell text:last-of-type { fill: var(--g2-bone-faint); }
+
+.g2-titan-node circle {
+  fill: var(--g2-void);
+  stroke: var(--g2-actual);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-titan-node > text:not(.g2-titan-caption) {
+  fill: var(--g2-actual);
+  font-size: 24px;
+}
+
+.g2-titan-node--centre circle { stroke: var(--g2-evidence); }
+.g2-titan-node--centre > text:not(.g2-titan-caption) { fill: var(--g2-evidence); }
+
+.g2-titan-caption {
+  fill: var(--g2-bone-faint) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.05em;
+}
+
+.g2-g7-map figcaption {
+  padding: 16px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.8rem;
+}
+
+.g2-atlas .g2-svg-fill--muted { fill: var(--g2-bone-faint); }
+.g2-atlas .g2-svg-fill--actual { fill: var(--g2-actual); }
+.g2-atlas .g2-svg-node--possible {
+  fill: var(--g2-field);
+  stroke: var(--g2-possible);
+  stroke-width: 2;
+}
+
+/* One-turn Burrisphere ascent. The axis holds F3; only the M4 transfer path
+   winds. Solid/front and dashed/back remain labelled, never colour-only. */
+.g2-burrisphere-ascent {
+  margin: 0;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-burrisphere-ascent__stage {
+  position: relative;
+  overflow: hidden;
+}
+
+.g2-burrisphere-ascent svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.g2-burrisphere-axis,
+.g2-burrisphere-axis-guide,
+.g2-burrisphere-path,
+.g2-burrisphere-spectrum-line {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-axis {
+  stroke: var(--g2-bone-muted);
+  stroke-width: 2;
+}
+
+.g2-burrisphere-axis-guide {
+  stroke: var(--g2-rule-strong);
+  stroke-width: 1;
+  stroke-dasharray: 2 7;
+}
+
+.g2-burrisphere-path {
+  stroke: var(--g2-conjecture);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.g2-burrisphere-path--front {
+  stroke-dasharray: none;
+  opacity: 1;
+}
+
+.g2-burrisphere-path--back {
+  stroke-dasharray: 8 7;
+  opacity: 0.72;
+}
+
+.g2-burrisphere-phase circle,
+.g2-burrisphere-phase rect {
+  fill: var(--g2-field);
+  stroke: var(--g2-bone-muted);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-phase--possible circle,
+.g2-burrisphere-phase--possible rect { stroke: var(--g2-possible); }
+.g2-burrisphere-phase--actual circle,
+.g2-burrisphere-phase--actual rect { stroke: var(--g2-actual); }
+
+.g2-burrisphere-phase text,
+.g2-burrisphere-phase-label {
+  fill: var(--g2-bone);
+  font: 650 12px/1 var(--g2-mono);
+  letter-spacing: 0.04em;
+}
+
+.g2-burrisphere-phase .g2-burrisphere-phase__signature {
+  fill: var(--g2-bone-muted);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.g2-burrisphere-titan circle {
+  fill: var(--g2-void);
+  stroke: var(--g2-actual);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-titan--centre circle { stroke: var(--g2-evidence); }
+
+.g2-burrisphere-titan text {
+  fill: var(--g2-actual);
+  font: 650 12px/1 var(--g2-mono);
+}
+
+.g2-burrisphere-titan--centre text { fill: var(--g2-evidence); }
+
+.g2-burrisphere-axis-label,
+.g2-burrisphere-depth-label,
+.g2-burrisphere-line-label,
+.g2-burrisphere-spectrum-label {
+  fill: var(--g2-bone-faint);
+  font: 600 10px/1 var(--g2-mono);
+  letter-spacing: 0.06em;
+}
+
+.g2-burrisphere-line-label--front { fill: var(--g2-conjecture); }
+.g2-burrisphere-line-label--back { fill: var(--g2-bone-muted); }
+
+.g2-burrisphere-ascent__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font: 550 0.66rem/1.5 var(--g2-mono);
+}
+
+.g2-burrisphere-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.g2-burrisphere-key::before {
+  content: "";
+  width: 28px;
+  border-top: 2px solid var(--g2-rule-strong);
+}
+
+.g2-burrisphere-key--axis::before { border-color: var(--g2-bone-muted); }
+.g2-burrisphere-key--front::before { border-color: var(--g2-conjecture); }
+.g2-burrisphere-key--back::before {
+  border-color: var(--g2-conjecture);
+  border-top-style: dashed;
+}
+
+.g2-burrisphere-phase-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+  list-style: none;
+}
+
+.g2-burrisphere-phase-list li {
+  min-width: 0;
+  padding: 16px;
+  background: var(--g2-field);
+  color: var(--g2-bone-muted);
+  font-size: 0.82rem;
+}
+
+.g2-burrisphere-phase-list strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--g2-bone);
+  font: 650 0.7rem/1.35 var(--g2-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.g2-burrisphere-ascent figcaption {
+  padding: 16px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.8rem;
+}
+
+/* Reciprocal-chart context remains outside the G7 ascent geometry. */
+.g2-reciprocal-spectrum {
+  display: grid;
+  grid-template-columns: minmax(90px, auto) minmax(0, 1fr) minmax(90px, auto);
+  align-items: stretch;
+  margin-top: 20px;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-reciprocal-spectrum__pole {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: var(--g2-bone-muted);
+  font: 650 0.66rem/1.35 var(--g2-mono);
+  text-align: center;
+}
+
+.g2-reciprocal-spectrum__pole:first-child { border-right: 1px solid var(--g2-rule); }
+.g2-reciprocal-spectrum__pole:last-child { border-left: 1px solid var(--g2-rule); }
+
+.g2-reciprocal-spectrum__segments {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+}
+
+.g2-reciprocal-spectrum__segment {
+  min-width: 0;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 5px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-faint);
+  font: 550 0.61rem/1.25 var(--g2-mono);
+  text-align: center;
+}
+
+.g2-reciprocal-spectrum__segment:last-child { border-right: 0; }
+.g2-reciprocal-spectrum__segment--centre {
+  color: var(--g2-evidence);
+  box-shadow: inset 0 3px var(--g2-evidence);
+}
+
+.g2-burrisphere-spectrum-line {
+  stroke: var(--g2-rule-strong);
+  stroke-width: 2;
+}
+
+.g2-burrisphere-spectrum-node {
+  fill: var(--g2-field);
+  stroke: var(--g2-bone-muted);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-spectrum-node--centre {
+  fill: var(--g2-evidence);
+  stroke: var(--g2-evidence);
+}
+
+/* Existing one-turn homepage markup aliases the Burrisphere roles explicitly. */
+.g2-helix {
+  margin: 28px 0 0;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-helix__stage {
+  position: relative;
+  overflow: hidden;
+}
+
+.g2-helix svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.g2-helix__axis,
+.g2-helix__latitude,
+.g2-helix__front,
+.g2-helix__back {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-helix__axis {
+  stroke: var(--g2-bone-muted);
+  stroke-width: 2;
+}
+
+.g2-helix__latitude {
+  stroke: var(--g2-rule-strong);
+  stroke-width: 1;
+  stroke-dasharray: 2 7;
+}
+
+.g2-helix__front,
+.g2-helix__back {
+  stroke: var(--g2-conjecture);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.g2-helix__front {
+  stroke-dasharray: none;
+  opacity: 1;
+}
+
+.g2-helix__back {
+  stroke-dasharray: 8 7;
+  opacity: 0.72;
+}
+
+.g2-helix__frame circle {
+  fill: var(--g2-void);
+  stroke: var(--g2-actual);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-helix__frame--centre circle { stroke: var(--g2-evidence); }
+
+.g2-helix__frame text {
+  fill: var(--g2-bone-muted);
+  font: 600 11px/1 var(--g2-mono);
+  letter-spacing: 0.04em;
+}
+
+.g2-helix__frame > text:first-of-type {
+  fill: var(--g2-actual);
+  font-size: 22px;
+}
+
+.g2-helix__frame--centre > text:first-of-type { fill: var(--g2-evidence); }
+
+.g2-helix__phase circle {
+  fill: var(--g2-field);
+  stroke: var(--g2-conjecture);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-helix__phase text {
+  fill: var(--g2-bone);
+  font: 650 12px/1 var(--g2-mono);
+  letter-spacing: 0.04em;
+}
+
+.g2-helix__phase text:last-of-type {
+  fill: var(--g2-bone-muted);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.g2-helix figcaption {
+  padding: 16px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.8rem;
+}
+
+/* Strategy compression is the 2 x 2 product of bearer orientation and raised
+   factor channel. Every cell repeats its coordinate and signature in text. */
+.g2-strategy-compression {
+  display: grid;
+  grid-template-columns: minmax(112px, 0.24fr) minmax(0, 1fr);
+  grid-template-areas:
+    "vertical matrix"
+    ". horizontal"
+    "fence fence";
+  margin-top: 24px;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-strategy-compression__matrix {
+  grid-area: matrix;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--g2-rule-strong);
+}
+
+.g2-strategy-compression__axes {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  z-index: 1;
+  min-width: 0;
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: minmax(112px, 0.24fr) minmax(0, 1fr);
+  align-items: stretch;
+  border-bottom: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-strategy-compression__axes > span {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  color: var(--g2-bone-faint);
+  font: 600 0.64rem/1.4 var(--g2-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.g2-strategy-compression__axes > span:first-child {
+  border-right: 1px solid var(--g2-rule-strong);
+}
+
+.g2-strategy-compression__axes > span:last-child {
+  justify-content: center;
+  color: var(--g2-bone-muted);
+  text-align: center;
+}
+
+.g2-strategy-compression__grid {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--g2-rule-strong);
+}
+
+.g2-strategy-axis {
+  min-width: 0;
+  display: grid;
+  color: var(--g2-bone-faint);
+  font: 600 0.64rem/1.35 var(--g2-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.g2-strategy-axis--vertical {
+  grid-area: vertical;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  padding: 18px 14px;
+  border-right: 1px solid var(--g2-rule-strong);
+}
+
+.g2-strategy-axis--horizontal {
+  grid-area: horizontal;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 62px;
+  padding: 10px 18px;
+  border-top: 1px solid var(--g2-rule-strong);
+}
+
+.g2-strategy-axis__label {
+  color: var(--g2-bone-muted);
+  text-align: center;
+}
+
+.g2-strategy-axis__label--start { justify-self: start; text-align: left; }
+.g2-strategy-axis__label--end { justify-self: end; text-align: right; }
+
+.g2-strategy-axis__line {
+  position: relative;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.g2-strategy-axis--horizontal .g2-strategy-axis__line::before,
+.g2-strategy-axis--vertical .g2-strategy-axis__line::before {
+  content: "";
+  position: absolute;
+  background: var(--g2-rule-strong);
+}
+
+.g2-strategy-axis--horizontal .g2-strategy-axis__line::before {
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+}
+
+.g2-strategy-axis--vertical .g2-strategy-axis__line::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+}
+
+.g2-strategy-cell {
+  min-width: 0;
+  min-height: 174px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(18px, 2.6vw, 28px);
+  background: var(--g2-field);
+  box-shadow: inset 0 3px var(--g2-rule-strong);
+}
+
+.g2-strategy-cell--possible { box-shadow: inset 0 3px var(--g2-possible); }
+.g2-strategy-cell--actual { box-shadow: inset 0 3px var(--g2-actual); }
+
+.g2-strategy-cell__coordinate {
+  display: block;
+  color: var(--g2-bone-faint);
+  font: 600 0.62rem/1.4 var(--g2-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.g2-strategy-cell__name {
+  margin: 12px 0 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.35rem, 2.4vw, 2rem)/1.05 var(--g2-display);
+  letter-spacing: -0.018em;
+}
+
+.g2-strategy-cell h3 {
+  margin: 12px 0 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.35rem, 2.4vw, 2rem)/1.05 var(--g2-display);
+  letter-spacing: -0.018em;
+}
+
+.g2-strategy-cell p {
+  margin: 9px 0 0;
+  color: var(--g2-bone-muted);
+  font-size: 0.82rem;
+}
+
+.g2-strategy-cell code {
+  color: inherit;
+  font-family: var(--g2-mono);
+  overflow-wrap: anywhere;
+}
+
+.g2-strategy-cell__signature {
+  margin: auto 0 0;
+  padding-top: 24px;
+  color: var(--g2-bone-muted);
+  font: 560 clamp(0.68rem, 1.2vw, 0.82rem)/1.5 var(--g2-mono);
+  overflow-wrap: anywhere;
+}
+
+.g2-strategy-cell__gloss {
+  margin: 7px 0 0;
+  color: var(--g2-bone-faint);
+  font-size: 0.78rem;
+}
+
+.g2-strategy-compression__fence {
+  grid-area: fence;
+  z-index: 1;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid var(--g2-rule-strong);
+  background: var(--g2-surface);
+  color: var(--g2-bone-muted);
+  font-size: 0.78rem;
+}
+
+.g2-strategy-compression__fence strong {
+  color: var(--g2-evidence);
+}
+
+.g2-strategy-compression__fence > * { margin: 0; }
+
+.g2-strategy-fence {
+  grid-area: fence;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--g2-rule-strong);
+  background: var(--g2-surface);
+}
+
+.g2-strategy-fence__item {
+  min-width: 0;
+  padding: 14px 16px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.78rem;
+}
+
+.g2-strategy-fence__item:last-child { border-right: 0; }
+
+.g2-strategy-fence__item strong,
+.g2-strategy-fence__label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--g2-evidence);
+  font: 650 0.62rem/1.35 var(--g2-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.g2-strategy-compression a,
+.g2-strategy-fence a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+
 .g2-footer {
   margin: 0;
   padding: 0;
@@ -866,9 +2139,16 @@ body.g2-page.g2-legacy .footer {
   .g2-fork,
   .g2-research-grid,
   .g2-meta-grid { grid-template-columns: 1fr; }
+  .g2-g7 { grid-template-columns: 1fr; }
+  .g2-g7__legend { width: min(100%, 680px); }
   .g2-loop { grid-template-columns: repeat(4, 1fr); }
   .g2-loop span:nth-child(4) { border-right: 0; }
   .g2-loop span:nth-child(-n + 4) { border-bottom: 1px solid var(--g2-rule); }
+  .g2-world-return__steps { grid-template-columns: repeat(4, 1fr); }
+  .g2-world-return__step:nth-child(4) { border-right: 0; }
+  .g2-world-return__step:nth-child(-n + 4) {
+    border-bottom: 1px solid var(--g2-rule);
+  }
 }
 
 @media (max-width: 680px) {
@@ -891,6 +2171,121 @@ body.g2-page.g2-legacy .footer {
     left: 14px;
     min-width: 0;
   }
+  .g2-atlas-nav {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .g2-atlas-nav a {
+    border-right: 1px solid var(--g2-rule);
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-atlas-nav a:nth-child(even) { border-right: 0; }
+  .g2-atlas-nav a:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    border-right: 0;
+  }
+  .g2-thesis-fence { grid-template-columns: 1fr; }
+  .g2-thesis-fence p:first-child {
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-power-equation {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  .g2-g7-map,
+  .g2-burrisphere-ascent__stage,
+  .g2-helix__stage {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  .g2-g7-map svg,
+  .g2-burrisphere-ascent svg,
+  .g2-helix svg {
+    width: 640px;
+    max-width: none;
+  }
+  .g2-burrisphere-phase-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .g2-reciprocal-spectrum {
+    grid-template-columns: 1fr;
+  }
+  .g2-reciprocal-spectrum__pole:first-child {
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-reciprocal-spectrum__pole:last-child {
+    border-top: 1px solid var(--g2-rule);
+    border-left: 0;
+  }
+  .g2-strategy-compression {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+  .g2-strategy-compression__axes {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+  .g2-strategy-compression__axes > span { padding-inline: 11px; }
+  .g2-strategy-axis--vertical { padding-inline: 10px; }
+  .g2-strategy-fence { grid-template-columns: 1fr; }
+  .g2-strategy-fence__item {
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-strategy-fence__item:last-child { border-bottom: 0; }
+  .g2-local-nav { position: static; }
+  .g2-local-nav__inner { grid-template-columns: 1fr; }
+  .g2-local-nav__label {
+    min-height: 40px;
+    padding-inline: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-local-nav__links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+  .g2-local-nav__links a {
+    min-width: 0;
+    padding-inline: 10px;
+    border-right: 1px solid var(--g2-rule);
+    border-bottom: 1px solid var(--g2-rule);
+    white-space: normal;
+  }
+  .g2-local-nav__links a:nth-child(even) { border-right: 0; }
+  .g2-thesis-band { grid-template-columns: 1fr; }
+  .g2-thesis-band__thesis { box-shadow: inset 0 4px var(--g2-actual); }
+  .g2-thesis-band__fence {
+    border-top: 1px solid var(--g2-rule-strong);
+    border-left: 0;
+  }
+  .g2-g7__plane { grid-template-columns: 1fr; }
+  .g2-g7__plane::before,
+  .g2-g7__plane::after { display: none; }
+  .g2-g7__quadrant { min-height: 150px; }
+  .g2-titan-axis { min-height: 440px; }
+  .g2-titan-axis__station {
+    width: calc(100% - 16px);
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 10px;
+    padding: 15px 14px;
+  }
+  .g2-provenance {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .g2-world-return__steps { grid-template-columns: 1fr; }
+  .g2-world-return__step {
+    min-height: 96px;
+    padding: 38px 16px 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-world-return__step:nth-child(-n + 4) {
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-world-return__step:last-child { border-bottom: 0; }
   .g2-hero { padding: 54px 0 70px; }
   .g2-hero h1 { font-size: clamp(3.1rem, 16vw, 5.1rem); }
   .g2-atlas__caption { grid-template-columns: 1fr 1fr; }
@@ -926,6 +2321,87 @@ body.g2-page.g2-legacy .footer {
   .g2-actions { flex-direction: column; }
   .g2-button { width: 100%; }
   .g2-atlas__caption { grid-template-columns: 1fr; }
+  .g2-atlas-nav { grid-template-columns: 1fr; }
+  .g2-atlas-nav a,
+  .g2-atlas-nav a:nth-child(even) {
+    grid-column: auto;
+    border-right: 0;
+  }
+  .g2-thesis-fence p { padding: 15px 14px; }
+  .g2-power-equation {
+    grid-template-columns: 1fr;
+    overflow: visible;
+  }
+  .g2-power-equation > span {
+    min-height: 88px;
+    padding: 15px 16px;
+  }
+  .g2-power-equation > b {
+    min-width: 0;
+    min-height: 30px;
+    border-top: 1px solid var(--g2-rule);
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+    border-left: 0;
+  }
+  .g2-g7-map svg,
+  .g2-burrisphere-ascent svg,
+  .g2-helix svg { width: 560px; }
+  .g2-burrisphere-phase-list { grid-template-columns: 1fr; }
+  .g2-burrisphere-ascent__legend { flex-direction: column; }
+  .g2-reciprocal-spectrum__segments {
+    grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+  }
+  .g2-strategy-compression {
+    display: block;
+  }
+  .g2-strategy-compression__axes {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .g2-strategy-compression__axes > span {
+    min-height: 48px;
+    justify-content: flex-start !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--g2-rule);
+    text-align: left !important;
+  }
+  .g2-strategy-compression__grid,
+  .g2-strategy-compression__matrix {
+    grid-template-columns: 1fr;
+  }
+  .g2-strategy-axis--vertical,
+  .g2-strategy-axis--horizontal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 6px;
+    min-height: 0;
+    padding: 12px 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule-strong);
+  }
+  .g2-strategy-axis__line { display: none; }
+  .g2-strategy-axis__label,
+  .g2-strategy-axis__label--start,
+  .g2-strategy-axis__label--end {
+    justify-self: start;
+    text-align: left;
+  }
+  .g2-strategy-cell {
+    min-height: 150px;
+    padding: 18px 16px;
+  }
+  .g2-strategy-compression__fence { min-height: 0; }
+  .g2-local-nav__links { grid-template-columns: 1fr; }
+  .g2-local-nav__links a {
+    border-right: 0;
+  }
+  .g2-thesis-band__thesis,
+  .g2-thesis-band__fence { padding: 22px 18px; }
+  .g2-g7__quadrant { padding: 19px 16px; }
+  .g2-research-socket { padding: 18px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -937,14 +2413,85 @@ body.g2-page.g2-legacy .footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
+  .g2-burrisphere-path {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  .g2-helix__front,
+  .g2-helix__back {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
 }
 
 @media print {
   :root { color-scheme: light; }
   body.g2-page { background: #fff; color: #111; }
   .g2-nav,
-  .g2-actions { display: none !important; }
+  .g2-actions,
+  .g2-atlas-nav { display: none !important; }
   .g2-page p,
   .g2-page li { color: #222 !important; }
   .g2-section { break-inside: avoid; }
+  .g2-thesis-fence,
+  .g2-power-equation,
+  .g2-g7-map,
+  .g2-burrisphere-ascent,
+  .g2-helix,
+  .g2-reciprocal-spectrum,
+  .g2-burrisphere-phase-list li,
+  .g2-strategy-compression,
+  .g2-strategy-cell,
+  .g2-strategy-compression__fence,
+  .g2-strategy-fence__item {
+    background: #fff !important;
+    color: #111 !important;
+    border-color: #777 !important;
+  }
+  .g2-g7-map,
+  .g2-burrisphere-ascent,
+  .g2-helix,
+  .g2-strategy-compression { break-inside: avoid; }
+  .g2-g7-map text,
+  .g2-burrisphere-ascent text,
+  .g2-helix text { fill: #111 !important; }
+  .g2-map-cell rect,
+  .g2-titan-node circle,
+  .g2-burrisphere-phase circle,
+  .g2-burrisphere-phase rect,
+  .g2-burrisphere-titan circle,
+  .g2-burrisphere-spectrum-node,
+  .g2-helix__frame circle,
+  .g2-helix__phase circle {
+    fill: #fff !important;
+    stroke: #111 !important;
+  }
+  .g2-map-line,
+  .g2-burrisphere-axis,
+  .g2-burrisphere-axis-guide,
+  .g2-burrisphere-spectrum-line,
+  .g2-helix__axis,
+  .g2-helix__latitude { stroke: #333 !important; }
+  .g2-burrisphere-path,
+  .g2-helix__front,
+  .g2-helix__back { stroke: #111 !important; }
+  .g2-burrisphere-path--back,
+  .g2-helix__back { stroke-dasharray: 8 7 !important; }
+  .g2-power-equation strong,
+  .g2-power-equation small,
+  .g2-thesis-fence p,
+  .g2-g7-map figcaption,
+  .g2-burrisphere-ascent figcaption,
+  .g2-helix figcaption,
+  .g2-reciprocal-spectrum__pole,
+  .g2-reciprocal-spectrum__segment,
+  .g2-strategy-axis,
+  .g2-strategy-cell__coordinate,
+  .g2-strategy-cell__name,
+  .g2-strategy-cell h3,
+  .g2-strategy-cell p,
+  .g2-strategy-cell__signature,
+  .g2-strategy-cell__gloss,
+  .g2-strategy-compression__fence { color: #111 !important; }
+  .g2-strategy-cell { box-shadow: inset 0 2px #111 !important; }
 }

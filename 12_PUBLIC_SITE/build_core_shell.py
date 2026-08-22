@@ -16,6 +16,8 @@ CORE_PAGES = {
     "index.html": "worldview",
     "plainly/index.html": "worldview",
     "dasein/index.html": "worldview",
+    "burrisphere/index.html": "worldview",
+    "rosetta/index.html": "worldview",
     "f5/index.html": "research",
     "practice/index.html": "practice",
     "spark/index.html": "research",
@@ -48,6 +50,10 @@ LEGACY_FOOTER_RE = re.compile(r"\s*<footer\b([^>]*)>.*?</footer>", re.DOTALL | r
 LEGACY_SKIP_RE = re.compile(
     r'\s*<a\b[^>]*class="[^"]*(?:skip|skip-to-content)[^"]*"[^>]*>.*?</a>',
     re.DOTALL | re.IGNORECASE,
+)
+LEGACY_ICON_RE = re.compile(
+    r'\s*<link\b[^>]*\brel\s*=\s*["\']icon["\'][^>]*>\s*',
+    re.IGNORECASE,
 )
 
 
@@ -90,6 +96,7 @@ def render_footer() -> str:
 
 def head_assets() -> str:
     return (
+        '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />\n'
         '<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />\n'
         '<script defer src="/assets/js/gestalt-v2.js"></script>'
     )
@@ -109,6 +116,12 @@ def _insert_before_close(text: str, tag: str, insertion: str) -> str:
 
 def _bind_head(text: str) -> str:
     _single_close(text, "head")
+    text = LEGACY_ICON_RE.sub("\n", text)
+    text = _insert_before_close(
+        text,
+        "head",
+        '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />',
+    )
     if "/assets/css/gestalt-v2.css" not in text:
         text = _insert_before_close(
             text, "head", '<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />'
