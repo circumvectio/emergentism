@@ -33,11 +33,14 @@ BUILD_MANIFEST = os.path.join(OUT_DIR, "build-manifest.json")
 EXTENSIONS = ["extra", "toc", "sane_lists"]
 
 TIER_RE = re.compile(r'\[(A|B|S|I|D|C)((?:/[A-Z]+)*)\]')
-SOURCE_LINK_RE = re.compile(r'href="(?P<target>[^"#]*\.md(?:#[^"]*)?)"')
+SOURCE_LINK_RE = re.compile(r'href="(?P<target>[^"#]*\.(?:md|json)(?:#[^"]*)?)"')
 PUBLIC_SOURCE_LINK_ROUTES = {
     # The internal ledger is broader than its twelve-question public projection.
     # The Lab makes that weaker boundary visible rather than implying equality.
     "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md": "../lab/#questions",
+    # The canonical machine-readable F5 fork is projected through the bounded
+    # public fork page rather than exposed as an undeployed repository link.
+    "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json": "../f5/",
 }
 
 def strip_tags(s):
@@ -538,7 +541,7 @@ html[data-gestalt-enhanced="true"] #theme-toggle{display:inline-flex;align-items
 .ch-num{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:0;color:var(--gold);margin-bottom:.7rem}
 .ch-body>h1:first-child,.chapter>header h1{margin-top:0}
 h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.08;
-  letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance}
+  letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance;overflow-wrap:anywhere}
 .overture .ch-head h1{font-size:clamp(2.6rem,6vw,4rem)}
 h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.2;
   margin:2.4rem 0 .8rem;letter-spacing:0}

@@ -76,13 +76,13 @@
     {
       "external_readonly": false,
       "lifecycle": "reader_synthesis",
-      "line_count": 629,
+      "line_count": 673,
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "roles": [
         "historical_source",
         "reader_synthesis"
       ],
-      "sha256": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+      "sha256": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
       "work_id": "BK-ONE-SITTING"
     },
     {

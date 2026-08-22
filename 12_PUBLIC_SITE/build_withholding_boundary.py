@@ -225,10 +225,31 @@ def _build_registry() -> dict:
     policy_matches = _policy_matches(current)
     lookup = _manifest_lookup()
 
+    prior_rows = {
+        row["artifact"]: row for row in registry.get("artifacts", [])
+    }
+    curated_reasons: dict[str, str] = {}
+    for artifact, row in prior_rows.items():
+        declared = row.get("curatedReason")
+        if isinstance(declared, str) and declared.strip():
+            curated_reasons[artifact] = declared.strip()
+            continue
+        reason = str(row.get("reason", "")).strip()
+        if not row.get("policyRuleIds") and reason:
+            curated_reasons[artifact] = reason
+            continue
+        # Migration for a curated row that acquired a semantic policy match
+        # before curatedReason was explicit. Auto-policy rows begin directly
+        # with "matches" and therefore do not enter this branch.
+        marker = "; matches public semantic prohibition:"
+        if marker in reason:
+            prefix = reason.split(marker, 1)[0].rstrip(".; ")
+            if prefix:
+                curated_reasons[artifact] = prefix + "."
     curated = {
-        row["artifact"]: row
-        for row in registry.get("artifacts", [])
-        if not row.get("policyRuleIds")
+        artifact: row
+        for artifact, row in prior_rows.items()
+        if artifact in curated_reasons
     }
     prior_manifest_documents = {
         row["artifact"]: row["manifestDocument"]
@@ -242,16 +263,20 @@ def _build_registry() -> dict:
             raise FileNotFoundError(f"withheld artifact is missing: {artifact}")
         if artifact in curated:
             row = dict(curated[artifact])
+            curated_reason = curated_reasons[artifact].rstrip(".")
+            row["curatedReason"] = curated_reason + "."
             row["sha256"] = _sha256(path)
             row["bytes"] = path.stat().st_size
             row["publicRoutes"] = _routes(artifact)
             if artifact in policy_matches:
                 rule_ids, policy_reason = policy_matches[artifact]
                 row["policyRuleIds"] = rule_ids
-                curated_reason = str(row.get("reason", "")).rstrip(".")
                 row["reason"] = "; ".join(
                     part for part in (curated_reason, policy_reason.rstrip(".")) if part
                 ) + "."
+            else:
+                row.pop("policyRuleIds", None)
+                row["reason"] = curated_reason + "."
         else:
             rule_ids, reason = policy_matches[artifact]
             row = {

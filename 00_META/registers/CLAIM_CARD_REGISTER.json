@@ -1307,6 +1307,154 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-27",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-08",
+        "OS01-10",
+        "OS01-12"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A5"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I"
+      ],
+      "locator": {
+        "anchor": "Stand again at one actual D4 present. A body, instrument, model, memory and",
+        "fingerprint_sha256": "1eeb739f35b9a7fe2bece15e9857e602eb3833689a21960ddf0fd5ae50176dbc",
+        "line_end": 639,
+        "line_start": 633,
+        "section": "12A"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-4",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-28",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-27"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "D"
+      ],
+      "locator": {
+        "anchor": "- `F5-N [D/C]` says there is no additional interaction: known physics,",
+        "fingerprint_sha256": "a6ff6c3380e28c57fafb071b0dcea5d03d97a5addd79b0cc25f45949438662fd",
+        "line_end": 641,
+        "line_start": 640,
+        "section": "12A"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-4",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-29",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-27",
+        "OS01-28"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "anchor": "- `F5-R [C]` wagers that an actual D4 history-selection law indexed by a",
+        "fingerprint_sha256": "5243f83b457c8727d5de43b9e7191c7aec447891fa7b37870423f5d42b48342a",
+        "line_end": 663,
+        "line_start": 642,
+        "section": "12A"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-4",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-30",
+      "chapters": [
+        "good"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-22",
+        "OS01-29"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The option ethic is separately chosen. Agent options, affected-whole options,",
+        "fingerprint_sha256": "49ba65b5d4175666bc49fc59146e26c6cf598f498821529b597fad1c1ed6718f",
+        "line_end": 670,
+        "line_start": 665,
+        "section": "12A"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -2531,9 +2679,9 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 72,
-    "conjecture_cards": 25,
-    "public_bounded_current": 19,
+    "cards": 76,
+    "conjecture_cards": 28,
+    "public_bounded_current": 20,
     "works_with_cards": 9
   },
   "owners": [

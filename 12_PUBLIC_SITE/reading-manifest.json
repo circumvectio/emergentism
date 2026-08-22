@@ -471,7 +471,7 @@
         "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
       ],
       "source_count": 1,
-      "claim_card_count": 26,
+      "claim_card_count": 30,
       "covered_chapters": [
         "actuality",
         "boundaries",
@@ -493,7 +493,7 @@
       }
     },
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "source_revision": "sha256:d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+    "source_revision": "sha256:fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
     "lifecycle": "reader_synthesis",
     "public_disposition": "bounded_current",
     "claim_card_ids": [
@@ -522,14 +522,18 @@
       "OS01-23",
       "OS01-24",
       "OS01-25",
-      "OS01-26"
+      "OS01-26",
+      "OS01-27",
+      "OS01-28",
+      "OS01-29",
+      "OS01-30"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "c2cfb7b0c41d48ca0810d72a6b377175e198bbd17559fbd63561cf4b805b9e06",
+    "claim_card_register_sha256": "9885786e113153f9f1ec1c0dda4f3763b5ac91e719aaac2e39abee62557cf2d9",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
-    "claim_graph_sha256": "cbedb66b2129f615ca87aad887fe72c2822b5e68c5418f54cf64de700a07e48d",
+    "claim_graph_sha256": "774a384af9acb122b5aa3431226e87357f73333456a2026f9948cea3f5915faa",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "5b465229255a63ab0bdae15c3f27b9dc73879dc065238b1cb4879fc630cf72ff",
+    "output_sha256": "c0753a0782d79c220f8087bccde96dbc48910beece826549369296a8d2c3f7bc",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }

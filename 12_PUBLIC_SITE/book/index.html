@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-reading-theme="light">
+<html lang="en" data-reading-theme="light" data-gestalt="v2">
 <head>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Emergentism" />
@@ -13,6 +13,8 @@
 <meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. World-facing evidence and independent review remain incomplete." />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+<script defer src="/assets/js/gestalt-v2.js"></script>
 <style>
 /* Self-hosted Roboto (Apache-2.0) — accessible and gate-safe */
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -55,8 +57,8 @@ a{color:inherit}
 .skip:focus{transform:translateY(0)}
 
 /* progress bar */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
-  background:linear-gradient(90deg,var(--gold),var(--gold-bright));transition:width .12s linear}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:110;
+  background:var(--gold);transition:width .12s linear}
 
 /* topbar */
 .bookbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
@@ -69,6 +71,9 @@ a{color:inherit}
 .bookbar nav a,.bookbar nav button{color:var(--ink-soft);background:none;border:1px solid transparent;
   min-height:var(--target-min);display:inline-flex;align-items:center;border-radius:var(--shape-full);padding:0 .75rem;cursor:pointer;font:inherit;letter-spacing:0}
 .bookbar nav a:hover,.bookbar nav button:hover{color:var(--gold);border-color:var(--rule)}
+.book-tools{min-height:52px;display:flex;justify-content:flex-end;gap:.5rem;padding:.35rem clamp(1rem,3vw,1.6rem);background:var(--bg);border-bottom:1px solid var(--rule-soft)}
+.book-tools button{display:none;min-height:44px;padding:0 .8rem;border:1px solid var(--rule);background:var(--bg2);color:var(--ink-soft);font:600 .76rem var(--mono);cursor:pointer}
+html[data-gestalt-enhanced="true"] #theme-toggle{display:inline-flex;align-items:center}
 #toc-toggle{display:none}
 
 /* layout */
@@ -99,7 +104,7 @@ a{color:inherit}
 .ch-num{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:0;color:var(--gold);margin-bottom:.7rem}
 .ch-body>h1:first-child,.chapter>header h1{margin-top:0}
 h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.08;
-  letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance}
+  letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance;overflow-wrap:anywhere}
 .overture .ch-head h1{font-size:clamp(2.6rem,6vw,4rem)}
 h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.2;
   margin:2.4rem 0 .8rem;letter-spacing:0}
@@ -155,13 +160,15 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   .bookbar nav{width:100%;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
   .bookbar nav::-webkit-scrollbar{display:none}
   .bookbar nav a,.bookbar nav button{flex:0 0 auto;white-space:nowrap}
-  #toc-toggle{display:inline-block}
   .book-shell{grid-template-columns:1fr}
-  .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:55;background:var(--panel);
+  .toc{position:static;top:auto;left:auto;height:auto;width:auto;z-index:auto;background:var(--panel);
+    border-right:0;border-bottom:1px solid var(--rule);opacity:1;visibility:visible;pointer-events:auto;padding:1.5rem 1rem}
+  html[data-gestalt-enhanced="true"] #toc-toggle{display:inline-flex;align-items:center}
+  html[data-gestalt-enhanced="true"] .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:105;background:var(--panel);
     border-right:1px solid var(--rule);clip-path:inset(0 100% 0 0);opacity:0;visibility:hidden;pointer-events:none;
     transition:clip-path .28s cubic-bezier(.2,.7,.2,1),opacity .18s ease;padding-top:3.4rem}
-  html.toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
-  html.toc-open .toc-scrim{position:fixed;inset:0;z-index:54;background:rgba(0,0,0,.45)}
+  html[data-gestalt-enhanced="true"].toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
+  html[data-gestalt-enhanced="true"].toc-open .toc-scrim{position:fixed;inset:0;z-index:104;background:rgba(0,0,0,.45)}
   pre{overflow-x:hidden;white-space:pre-wrap}
   pre code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
 }
@@ -174,27 +181,48 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 }
 </style>
 </head>
-<body>
-<a class="skip" href="#main">Skip to book</a>
+<body class="g2-book">
 <div class="progress" id="progress"></div>
-
-<header class="bookbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav aria-label="Primary navigation">
-    <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">☰ Contents</button>
-    <a href="../practice/#frame">Practice</a>
-    <a href="../plainly/">Worldview</a>
-    <a href="../record/">Research</a>
-    <a href="../book/" aria-current="page">Library</a>
-    <a href="../contribute/">Participate</a>
-    <a href="../exit/">Exit</a>
-    <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">◐</button>
-  </nav>
+<!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" href="/plainly/">Worldview</a>
+      <a data-section="practice" href="/practice/">Practice</a>
+      <a data-section="research" href="/record/">Research</a>
+      <a data-section="library" aria-current="location" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" aria-current="location" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
 </header>
+<!-- gestalt-core-nav:end -->
+<div class="book-tools" aria-label="Reading controls">
+  <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">Contents</button>
+  <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">Reading theme</button>
+</div>
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">
-    <div class="toc-head">One-Sitting Reader · 12 chapters · 4,347 words</div>
+    <div class="toc-head">One-Sitting Reader · 12 chapters · 4,683 words</div>
     <a class="toc-link is-overture" href="#the-emergentist-weltanschauung" data-target="the-emergentist-weltanschauung"><span class="toc-n">·</span><span class="toc-t">Overture</span></a>
 <a class="toc-link" href="#1-the-boundaries-before-the-world-is-divided" data-target="1-the-boundaries-before-the-world-is-divided"><span class="toc-n">01</span><span class="toc-t">1. The Boundaries — before the world is divided</span></a>
 <a class="toc-link" href="#2-difference-arithmetic-begins-after-the-frame" data-target="2-difference-arithmetic-begins-after-the-frame"><span class="toc-n">02</span><span class="toc-t">2. Difference — arithmetic begins after the frame</span></a>
@@ -734,7 +762,44 @@ visible. Correct the map. Leave when the lens no longer serves.</p>
 <li><a href="../sources/"><code>Memotype, trade and war research contract</code></a></li>
 </ol>
 <p>The owners control. This book connects them and may never silently strengthen
-them.</p></div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#11-the-five-apertures-the-wager-about-emergence">← 11. The Five Apertures — the wager about emergence</a></nav></section>
+them.</p>
+<h3 id="12a-one-present-three-explanations-the-f5-fork">12A. One present, three explanations — the F5 fork</h3>
+<p>Stand again at one actual D4 present. A body, instrument, model, memory and
+record exist now. Behind them lies one solid actual history. Ahead, an actual
+model carries a branching cone of represented D5 alternatives. Three accounts
+must be kept apart:</p>
+<ul>
+<li><code>F5-W <span class="tier t-i">[I/C]</span></code> says represented futures reweight present action through actual
+  present models. This is the current empirical floor.</li>
+<li><code>F5-N <span class="tier t-d">[D/C]</span></code> says there is no additional interaction: known physics,
+  selection, control, verification and revision exhaust the effect.</li>
+<li><code>F5-R <span class="tier t-c">[C]</span></code> wagers that an actual D4 history-selection law indexed by a
+  declared later physical boundary and a D5 option functional changes present
+  transition weights.</li>
+</ul>
+<p>The strong branch is written provisionally as</p>
+<p>[
+P_\kappa[h\mid I,B_T]
+=Z_\kappa^{-1}P_0[h\mid I,B_T]e^{\kappa U_5[h;B_T]}.
+]</p>
+<p><code>κ=0</code> is the no-F5 arm; <code>κ≠0</code> is the strong wager. <code>B_T</code> is declared data on a
+later physical boundary, not the future light cone. <code>U_5</code> is a history
+functional, not a future agent and not a value theorem. Until a coupling,
+units, carrier or boundary source, conservation and Lorentz behavior, range,
+and distinct observable are supplied, this remains a candidate history law—not
+a force.</p>
+<p>No branch receives a truth bonus. If only present-model effects survive,
+<code>F5-W</code> remains and <code>F5-R</code> dies. A preregistered null kills the promised F5-R
+parameter or range. A replicated force-specific residual kills <code>F5-N</code> only in
+the tested scope. Observational equivalence means <code>UNDERDETERMINED</code>.</p>
+<p>The option ethic is separately chosen. Agent options, affected-whole options,
+subsystem entropy, total entropy production and export, path/history entropy,
+empowerment, viability cost, consent, Justice and Exit remain separate ledger
+dimensions. The decision surface is a Pareto frontier unless a distinct
+measurement and value contract earns a scalar. A history ensemble does not
+prove physically coexisting worlds, and no physical result derives the Good.</p>
+<p>The exact machine-bound fork, rivals, discriminators, kills and survivors are
+in <a href="../f5/"><code>F5Fork.v1</code></a>.</p></div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#11-the-five-apertures-the-wager-about-emergence">← 11. The Five Apertures — the wager about emergence</a></nav></section>
       <footer class="book-foot">
         <div class="phi">P_node := min(Φ̂₄, V₄) · ordinal AND-class; Φ̂₄V₄ ranking retired</div>
         <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>
@@ -743,6 +808,25 @@ them.</p></div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-
     </div>
   </main>
 </div>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
+</footer>
+<!-- gestalt-core-footer:end -->
 
 <script>
 (function(){

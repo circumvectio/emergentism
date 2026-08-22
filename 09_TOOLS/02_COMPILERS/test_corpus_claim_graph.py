@@ -234,15 +234,15 @@ class ClaimGraphContractTests(unittest.TestCase):
             ],
             "nonbook_claim_routes": [],
             "integrity": {
-                "existing_claim_card_count": 26,
+                "existing_claim_card_count": 30,
                 "primary_cards_by_composition": {
-                    "COMP-ACTIVE-01-WELTANSCHAUUNG": 26,
+                    "COMP-ACTIVE-01-WELTANSCHAUUNG": 30,
                     "COMP-ACTIVE-02-TITANS": 0,
                     "COMP-ACTIVE-03-LIVED-COMPASS": 0,
                     "COMP-HISTORICAL-01-SERPENT-CYCLE": 0,
                 },
                 "primary_cards_by_nonbook_home": {},
-                "total_primary_or_custody_routes": 26,
+                "total_primary_or_custody_routes": 30,
             },
         }
         (root / "13_BOOKS/book-manifest.json").write_text(
@@ -411,7 +411,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         self.assertEqual(register["schema"], "emergentism/claim-card-register/v2")
         self.assertEqual(graph["schema"], "emergentism/claim-owner-dependency-graph/v2")
         self.assertEqual(lifecycle["schema"], "emergentism/claim-lifecycle-inventory/v3")
-        self.assertEqual(register["metrics"]["cards"], 72)
+        self.assertEqual(register["metrics"]["cards"], 76)
         self.assertEqual(register["metrics"]["works_with_cards"], 9)
         expected_owners = (
             {f"K-{i}" for i in range(1, 8)}
@@ -943,7 +943,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         temp, root = self.make_fixture(); self.addCleanup(temp.cleanup)
         path = root / "13_BOOKS/book-manifest.json"
         manifest = json.loads(path.read_text(encoding="utf-8"))
-        manifest["editorial_architecture"]["integrity"]["existing_claim_card_count"] = 27
+        manifest["editorial_architecture"]["integrity"]["existing_claim_card_count"] = 31
         path.write_text(json.dumps(manifest), encoding="utf-8")
         with self.assertRaisesRegex(COMPILER.ContractError, "integrity totals drifted"):
             COMPILER.compile_contract(root)
@@ -1231,12 +1231,12 @@ class ClaimGraphContractTests(unittest.TestCase):
         register, graph, _ = COMPILER.compile_contract(
             ROOT, allow_unavailable_external=True
         )
-        self.assertEqual(len(register["cards"]), 72)
+        self.assertEqual(len(register["cards"]), 76)
         self.assertTrue(all(row.get("primary_projection_home") for row in register["cards"]))
         self.assertTrue(all(row.get("projection_kind") for row in register["cards"]))
         self.assertEqual(len(graph["composition_summaries"]), 4)
         projected = [edge for edge in graph["edges"] if edge["kind"] == "projected_to"]
-        self.assertEqual(len(projected), 72)
+        self.assertEqual(len(projected), 76)
 
     def test_zero_card_legacy_source_is_in_inventory(self) -> None:
         temp, root = self.make_fixture(); self.addCleanup(temp.cleanup)

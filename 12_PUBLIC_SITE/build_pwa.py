@@ -26,6 +26,7 @@ SKIP_DIRS = {"node_modules", "vendor", ".git", ".vercel", ".next",
              "90_ARCHIVE", "_archive", "_STAGING_COMPASS_RESTRUCTURE",
              "book-pwa", "partials", "__pycache__"}
 MARKER = "<!-- pwa-chrome -->"
+CACHE_CONST = re.compile(r"const CACHE = '[^']+';")
 VOID = (7, 10, 18)        # #070A12
 GOLD = (240, 200, 90)     # #F0C85A
 
@@ -135,7 +136,7 @@ def safe_spine() -> list[str]:
         "/", "/plainly/", "/dasein/", "/f5/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/",
         "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
-        "/manifest.webmanifest", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
+        "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
         "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/living-map.json",
         "/public_semantic_parity.json", "/atlas/site_index.json",
         "/assets/fonts/Roboto-latin.woff2",
@@ -261,7 +262,20 @@ self.addEventListener('fetch', (e) => {
 
 def build_sw(*, check: bool = False, overrides: dict[str, bytes] | None = None) -> str:
     sw, version = sw_document(overrides=overrides)
-    _emit(ROOT / "sw.js", sw, check=check, label="sw.js")
+    if check:
+        path = ROOT / "sw.js"
+        if not path.is_file():
+            raise ValueError("sw.js differs from deterministic output")
+        have = path.read_text(encoding="utf-8")
+        # build_sw_version.py owns the final content-derived cache constant and
+        # runs after this builder. PWA check mode owns every other service-worker
+        # byte and deliberately normalizes only that one downstream field.
+        if CACHE_CONST.sub("const CACHE = '';", have) != CACHE_CONST.sub(
+            "const CACHE = '';", sw
+        ):
+            raise ValueError("sw.js strategy, spine, or withholding boundary drift")
+    else:
+        _emit(ROOT / "sw.js", sw, check=False, label="sw.js")
     if not check:
         print(f"sw cache: emergentism-{version}")
     return sw

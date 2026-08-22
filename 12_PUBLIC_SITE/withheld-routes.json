@@ -104,7 +104,7 @@
         "/canon/the-burrisphere/",
         "/canon/the-burrisphere/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
@@ -112,7 +112,8 @@
       "manifestDocument": {
         "section": "canon",
         "href": "canon/the-burrisphere/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "canon/the-complete-ontology-of-reality/index.html",
@@ -123,13 +124,14 @@
         "/canon/the-complete-ontology-of-reality/",
         "/canon/the-complete-ontology-of-reality/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic",
         "semantic-literal-d6-identity"
-      ]
+      ],
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "canon/the-five-plus-one-constitution/index.html",
@@ -140,7 +142,7 @@
         "/canon/the-five-plus-one-constitution/",
         "/canon/the-five-plus-one-constitution/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -149,7 +151,8 @@
       "manifestDocument": {
         "section": "canon",
         "href": "canon/the-five-plus-one-constitution/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "canon/the-generative-table/index.html",
@@ -160,7 +163,7 @@
         "/canon/the-generative-table/",
         "/canon/the-generative-table/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -168,7 +171,8 @@
       "manifestDocument": {
         "section": "canon",
         "href": "canon/the-generative-table/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "canon/the-geometric-ontology-of-reality/index.html",
@@ -179,7 +183,7 @@
         "/canon/the-geometric-ontology-of-reality/",
         "/canon/the-geometric-ontology-of-reality/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -188,7 +192,8 @@
       "manifestDocument": {
         "section": "canon",
         "href": "canon/the-geometric-ontology-of-reality/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "canon/the-reciprocal-public-edition/index.html",
@@ -199,7 +204,7 @@
         "/canon/the-reciprocal-public-edition/",
         "/canon/the-reciprocal-public-edition/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: stale current 25-chapter reader.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: stale current 25-chapter reader.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-retired-node-product-assignment",
@@ -208,7 +213,8 @@
       "manifestDocument": {
         "section": "canon",
         "href": "canon/the-reciprocal-public-edition/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "compass/_archive/index_2026_07_12_pre_restructure.html",
@@ -233,13 +239,14 @@
         "/complete-ontology/",
         "/complete-ontology/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic",
         "semantic-literal-d6-identity"
-      ]
+      ],
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "corrections/index.html",
@@ -250,28 +257,12 @@
         "/corrections/",
         "/corrections/index.html"
       ],
-      "reason": "matches public semantic prohibition: legacy untyped node product; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: legacy untyped node product; matches public semantic prohibition: legacy untyped node product; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-forbidden-titan-infix-arithmetic",
         "semantic-legacy-untyped-node-product"
-      ]
-    },
-    {
-      "artifact": "dasein/index.html",
-      "sha256": "ac210a95500b78dbec1bdaa9b70d4485a93b584a4dd70a99ad6aa30e1efb5250",
-      "bytes": 33568,
-      "publicRoutes": [
-        "/dasein",
-        "/dasein/",
-        "/dasein/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
-      "policyRuleIds": [
-        "retired-literal-d6-identity",
-        "semantic-application-authority-leakage",
-        "semantic-forbidden-titan-infix-arithmetic",
-        "semantic-literal-d6-identity"
-      ]
+      "curatedReason": "matches public semantic prohibition: legacy untyped node product."
     },
     {
       "artifact": "finity-papers/index.html",
@@ -282,13 +273,14 @@
         "/finity-papers/",
         "/finity-papers/index.html"
       ],
-      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic; derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "retired-product-derived-ethics",
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
-      ]
+      ],
+      "curatedReason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic."
     },
     {
       "artifact": "five-plus-one/index.html",
@@ -299,12 +291,13 @@
         "/five-plus-one/",
         "/five-plus-one/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
         "semantic-literal-d6-identity"
-      ]
+      ],
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "formal/00-the-seven-axioms/index.html",
@@ -315,7 +308,7 @@
         "/formal/00-the-seven-axioms/",
         "/formal/00-the-seven-axioms/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -324,7 +317,8 @@
       "manifestDocument": {
         "section": "formal",
         "href": "formal/00-the-seven-axioms/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "formal/08-efr-power-max-lemma/index.html",
@@ -353,7 +347,7 @@
         "/formal/11-efr-triadic-stability/",
         "/formal/11-efr-triadic-stability/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -361,7 +355,8 @@
       "manifestDocument": {
         "section": "formal",
         "href": "formal/11-efr-triadic-stability/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "formal/16-efr-transcendentals/index.html",
@@ -498,16 +493,18 @@
         "/formal/34-d4-d5-canonical-reference/",
         "/formal/34-d4-d5-canonical-reference/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: untyped D5 causal agency.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
-        "semantic-literal-d6-identity"
+        "semantic-literal-d6-identity",
+        "semantic-untyped-d5-causal-agency"
       ],
       "manifestDocument": {
         "section": "formal",
         "href": "formal/34-d4-d5-canonical-reference/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "formal/35-phi-meter-v1-spec/index.html",
@@ -572,7 +569,7 @@
         "/formal/41-unified-dimensional-derivation/",
         "/formal/41-unified-dimensional-derivation/index.html"
       ],
-      "reason": "matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-literal-d6-identity"
@@ -580,7 +577,8 @@
       "manifestDocument": {
         "section": "formal",
         "href": "formal/41-unified-dimensional-derivation/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: literal D6 identity."
     },
     {
       "artifact": "foundations/ontology-across-dimensions/index.html",
@@ -591,7 +589,7 @@
         "/foundations/ontology-across-dimensions/",
         "/foundations/ontology-across-dimensions/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -599,7 +597,8 @@
       "manifestDocument": {
         "section": "foundations",
         "href": "foundations/ontology-across-dimensions/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "foundations/the-honest-position/index.html",
@@ -610,14 +609,16 @@
         "/foundations/the-honest-position/",
         "/foundations/the-honest-position/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: untyped D5 causal agency.",
       "policyRuleIds": [
-        "semantic-application-authority-leakage"
+        "semantic-application-authority-leakage",
+        "semantic-untyped-d5-causal-agency"
       ],
       "manifestDocument": {
         "section": "foundations",
         "href": "foundations/the-honest-position/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "foundations/the-seven-generative-actions-and-ektropy/index.html",
@@ -628,7 +629,7 @@
         "/foundations/the-seven-generative-actions-and-ektropy/",
         "/foundations/the-seven-generative-actions-and-ektropy/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -637,7 +638,8 @@
       "manifestDocument": {
         "section": "foundations",
         "href": "foundations/the-seven-generative-actions-and-ektropy/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "foundations/the-seven-ologies-per-the-rosetta/index.html",
@@ -648,7 +650,7 @@
         "/foundations/the-seven-ologies-per-the-rosetta/",
         "/foundations/the-seven-ologies-per-the-rosetta/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic",
@@ -657,7 +659,8 @@
       "manifestDocument": {
         "section": "foundations",
         "href": "foundations/the-seven-ologies-per-the-rosetta/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "game/index.html",
@@ -668,11 +671,12 @@
         "/game/",
         "/game/index.html"
       ],
-      "reason": "Historical Game route scores lawful action through the retired uncalibrated node product; matches public semantic prohibition: application authority leakage.",
+      "reason": "Historical Game route scores lawful action through the retired uncalibrated node product; Historical Game route scores lawful action through the retired uncalibrated node product; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "semantic-application-authority-leakage"
-      ]
+      ],
+      "curatedReason": "Historical Game route scores lawful action through the retired uncalibrated node product."
     },
     {
       "artifact": "geometric-ontology/index.html",
@@ -683,13 +687,14 @@
         "/geometric-ontology/",
         "/geometric-ontology/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics; asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
         "semantic-literal-d6-identity"
-      ]
+      ],
+      "curatedReason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics."
     },
     {
       "artifact": "ground/00-d5-d6-corpus-stabilization/index.html",
@@ -700,7 +705,7 @@
         "/ground/00-d5-d6-corpus-stabilization/",
         "/ground/00-d5-d6-corpus-stabilization/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -708,7 +713,8 @@
       "manifestDocument": {
         "section": "ground",
         "href": "ground/00-d5-d6-corpus-stabilization/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "ground/00-d6-as-apophatic-closure/index.html",
@@ -719,7 +725,7 @@
         "/ground/00-d6-as-apophatic-closure/",
         "/ground/00-d6-as-apophatic-closure/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -727,7 +733,8 @@
       "manifestDocument": {
         "section": "ground",
         "href": "ground/00-d6-as-apophatic-closure/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "ground/00-ontology-across-dimensions/index.html",
@@ -738,7 +745,7 @@
         "/ground/00-ontology-across-dimensions/",
         "/ground/00-ontology-across-dimensions/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -746,7 +753,8 @@
       "manifestDocument": {
         "section": "ground",
         "href": "ground/00-ontology-across-dimensions/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "ground/00-the-ontology-of-being/index.html",
@@ -757,7 +765,7 @@
         "/ground/00-the-ontology-of-being/",
         "/ground/00-the-ontology-of-being/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-forbidden-titan-infix-arithmetic",
@@ -766,7 +774,8 @@
       "manifestDocument": {
         "section": "ground",
         "href": "ground/00-the-ontology-of-being/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "ground/00-the-syncretic-map/index.html",
@@ -813,11 +822,12 @@
         "/halahala/",
         "/halahala/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-retired-node-product-assignment"
-      ]
+      ],
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "home/index.html",
@@ -828,11 +838,12 @@
         "/home/",
         "/home/index.html"
       ],
-      "reason": "Superseded alternate homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
+      "reason": "Superseded alternate homepage carries the retired product-scored game rule; Superseded alternate homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "semantic-application-authority-leakage"
-      ]
+      ],
+      "curatedReason": "Superseded alternate homepage carries the retired product-scored game rule."
     },
     {
       "artifact": "index_legacy_2026_07_19.html",
@@ -843,11 +854,12 @@
         "/index_legacy_2026_07_19/",
         "/index_legacy_2026_07_19.html"
       ],
-      "reason": "Superseded root homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
+      "reason": "Superseded root homepage carries the retired product-scored game rule; Superseded root homepage carries the retired product-scored game rule; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "semantic-application-authority-leakage"
-      ]
+      ],
+      "curatedReason": "Superseded root homepage carries the retired product-scored game rule."
     },
     {
       "artifact": "log-realignment/index.html",
@@ -962,7 +974,7 @@
         "/meta/00-corpus/",
         "/meta/00-corpus/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -971,7 +983,8 @@
       "manifestDocument": {
         "section": "meta",
         "href": "meta/00-corpus/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "meta/00-known-unknowns-program/index.html",
@@ -1234,7 +1247,7 @@
         "/operators/mf-281-the-replicator-decomposition/",
         "/operators/mf-281-the-replicator-decomposition/index.html"
       ],
-      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage.",
+      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-product-uniqueness-asserted-as-settled"
@@ -1242,7 +1255,8 @@
       "manifestDocument": {
         "section": "operators",
         "href": "operators/mf-281-the-replicator-decomposition/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: product uniqueness asserted as settled."
     },
     {
       "artifact": "operators/mf-283-the-orthogonality-theorem-v2/index.html",
@@ -1253,12 +1267,14 @@
         "/operators/mf-283-the-orthogonality-theorem-v2/",
         "/operators/mf-283-the-orthogonality-theorem-v2/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: retired node product assignment.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: untyped D5 causal agency.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity",
-        "semantic-retired-node-product-assignment"
-      ]
+        "semantic-retired-node-product-assignment",
+        "semantic-untyped-d5-causal-agency"
+      ],
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "operators/mf-285-dreams-are-unanchored-d5/index.html",
@@ -1269,7 +1285,8 @@
         "/operators/mf-285-dreams-are-unanchored-d5/",
         "/operators/mf-285-dreams-are-unanchored-d5/index.html"
       ],
-      "reason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance."
+      "reason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance.",
+      "curatedReason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance."
     },
     {
       "artifact": "operators/mf-294-egregores-are-horn-networks/index.html",
@@ -1298,7 +1315,11 @@
         "/operators/mf-296-gravity-is-time/",
         "/operators/mf-296-gravity-is-time/index.html"
       ],
-      "reason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation."
+      "reason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation; matches public semantic prohibition: gravity entropy identity inflation.",
+      "policyRuleIds": [
+        "semantic-gravity-entropy-identity-inflation"
+      ],
+      "curatedReason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation."
     },
     {
       "artifact": "operators/mf-298-dark-matter-is-mutual-information/index.html",
@@ -1309,7 +1330,8 @@
         "/operators/mf-298-dark-matter-is-mutual-information/",
         "/operators/mf-298-dark-matter-is-mutual-information/index.html"
       ],
-      "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
+      "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models.",
+      "curatedReason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
     },
     {
       "artifact": "operators/mf-301-photosynthesis-is-the-original-f5/index.html",
@@ -1356,7 +1378,7 @@
         "/operators/mf-65-curvature-transition/",
         "/operators/mf-65-curvature-transition/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -1364,7 +1386,8 @@
       "manifestDocument": {
         "section": "operators",
         "href": "operators/mf-65-curvature-transition/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "operators/mf-66-mandelbrot-consciousness/index.html",
@@ -1375,7 +1398,7 @@
         "/operators/mf-66-mandelbrot-consciousness/",
         "/operators/mf-66-mandelbrot-consciousness/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-retired-node-product-assignment"
@@ -1383,7 +1406,8 @@
       "manifestDocument": {
         "section": "operators",
         "href": "operators/mf-66-mandelbrot-consciousness/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "papers/index.html",
@@ -1408,7 +1432,7 @@
         "/papers/paper-c-photon-unit-of-account/",
         "/papers/paper-c-photon-unit-of-account/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -1416,7 +1440,8 @@
       "manifestDocument": {
         "section": "papers",
         "href": "papers/paper-c-photon-unit-of-account/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "papers/paper-h-dimensional-cosmological/index.html",
@@ -1427,7 +1452,7 @@
         "/papers/paper-h-dimensional-cosmological/",
         "/papers/paper-h-dimensional-cosmological/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -1435,7 +1460,8 @@
       "manifestDocument": {
         "section": "papers",
         "href": "papers/paper-h-dimensional-cosmological/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "papers/paper-i-known-unknowns-program/index.html",
@@ -1446,7 +1472,7 @@
         "/papers/paper-i-known-unknowns-program/",
         "/papers/paper-i-known-unknowns-program/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -1454,7 +1480,8 @@
       "manifestDocument": {
         "section": "papers",
         "href": "papers/paper-i-known-unknowns-program/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "papers/paper-i-the-two-faces-of-number/index.html",
@@ -1519,7 +1546,7 @@
         "/papers/paper-o-strong-weak-emergence-d5/",
         "/papers/paper-o-strong-weak-emergence-d5/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -1527,7 +1554,8 @@
       "manifestDocument": {
         "section": "papers",
         "href": "papers/paper-o-strong-weak-emergence-d5/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "papers/paper-p-su3-obstruction-bare-s2/index.html",
@@ -1660,7 +1688,8 @@
         "/paradox/00-the-extraction-pattern/",
         "/paradox/00-the-extraction-pattern/index.html"
       ],
-      "reason": "Stale generated projection of the extraction pattern; withheld until a bounded evidence-open public edition is rebuilt from its current source."
+      "reason": "Stale generated projection of the extraction pattern; withheld until a bounded evidence-open public edition is rebuilt from its current source.",
+      "curatedReason": "Stale generated projection of the extraction pattern; withheld until a bounded evidence-open public edition is rebuilt from its current source."
     },
     {
       "artifact": "paradox/pd-12-measurement-problem/index.html",
@@ -1689,7 +1718,8 @@
         "/paradox/pd-18-the-extraction-paradox/",
         "/paradox/pd-18-the-extraction-paradox/index.html"
       ],
-      "reason": "Frozen superseded paradox chapter with no current semantic authority."
+      "reason": "Frozen superseded paradox chapter with no current semantic authority.",
+      "curatedReason": "Frozen superseded paradox chapter with no current semantic authority."
     },
     {
       "artifact": "paradox/pd-21-problem-of-death/index.html",
@@ -1700,7 +1730,7 @@
         "/paradox/pd-21-problem-of-death/",
         "/paradox/pd-21-problem-of-death/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -1708,7 +1738,8 @@
       "manifestDocument": {
         "section": "paradox",
         "href": "paradox/pd-21-problem-of-death/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "paradox/pd-23-the-completion/index.html",
@@ -1719,7 +1750,8 @@
         "/paradox/pd-23-the-completion/",
         "/paradox/pd-23-the-completion/index.html"
       ],
-      "reason": "Historical completion claim; withheld because the current programme remains evidence-open and non-total."
+      "reason": "Historical completion claim; withheld because the current programme remains evidence-open and non-total.",
+      "curatedReason": "Historical completion claim; withheld because the current programme remains evidence-open and non-total."
     },
     {
       "artifact": "paradox/pd-25-bell-local-realism/index.html",
@@ -1762,11 +1794,12 @@
         "/r/1/",
         "/r/1/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired evidence tier.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired evidence tier.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-retired-evidence-tier"
-      ]
+      ],
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "r/2/index.html",
@@ -1861,7 +1894,7 @@
         "/rosettad/00-corpus/",
         "/rosettad/00-corpus/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -1870,7 +1903,8 @@
       "manifestDocument": {
         "section": "rosettad",
         "href": "rosettad/00-corpus/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "rosettad/00-suda-convergent-reciprocal-symmetry/index.html",
@@ -1899,7 +1933,7 @@
         "/rosettad/00-suda-value-extraction-deep-synthesis/",
         "/rosettad/00-suda-value-extraction-deep-synthesis/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -1909,7 +1943,8 @@
       "manifestDocument": {
         "section": "rosettad",
         "href": "rosettad/00-suda-value-extraction-deep-synthesis/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "rosettad/00-the-seven-ologies-per-the-rosetta/index.html",
@@ -1920,7 +1955,7 @@
         "/rosettad/00-the-seven-ologies-per-the-rosetta/",
         "/rosettad/00-the-seven-ologies-per-the-rosetta/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic",
@@ -1929,7 +1964,8 @@
       "manifestDocument": {
         "section": "rosettad",
         "href": "rosettad/00-the-seven-ologies-per-the-rosetta/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "rosettad/00-the-seven-philosophical-disciplines/index.html",
@@ -2152,7 +2188,7 @@
         "/sacred/00-foreword/",
         "/sacred/00-foreword/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
@@ -2160,7 +2196,8 @@
       "manifestDocument": {
         "section": "sacred",
         "href": "sacred/00-foreword/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "sacred/00-glossary/index.html",
@@ -2171,7 +2208,7 @@
         "/sacred/00-glossary/",
         "/sacred/00-glossary/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2180,7 +2217,8 @@
       "manifestDocument": {
         "section": "sacred",
         "href": "sacred/00-glossary/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "sacred/00-reconciliation-theorem-packet/index.html",
@@ -2277,11 +2315,12 @@
         "/soul-loop/",
         "/soul-loop/index.html"
       ],
-      "reason": "Historical Soul Loop route turns the retired node product into an objective-dharma test; matches public semantic prohibition: application authority leakage.",
+      "reason": "Historical Soul Loop route turns the retired node product into an objective-dharma test; Historical Soul Loop route turns the retired node product into an objective-dharma test; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "explicit-legacy-route",
         "semantic-application-authority-leakage"
-      ]
+      ],
+      "curatedReason": "Historical Soul Loop route turns the retired node product into an objective-dharma test."
     },
     {
       "artifact": "sphere.html",
@@ -2388,7 +2427,7 @@
         "/trinity/00-the-genesis-simulation/",
         "/trinity/00-the-genesis-simulation/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2396,7 +2435,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/00-the-genesis-simulation/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/00-the-transcendental-trinity-canon/index.html",
@@ -2407,7 +2447,7 @@
         "/trinity/00-the-transcendental-trinity-canon/",
         "/trinity/00-the-transcendental-trinity-canon/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
@@ -2415,7 +2455,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/00-the-transcendental-trinity-canon/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "trinity/01-the-emergence/index.html",
@@ -2426,7 +2467,7 @@
         "/trinity/01-the-emergence/",
         "/trinity/01-the-emergence/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2434,7 +2475,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/01-the-emergence/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/02-the-trinity/index.html",
@@ -2463,7 +2505,7 @@
         "/trinity/03-the-closure/",
         "/trinity/03-the-closure/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2471,7 +2513,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/03-the-closure/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/04-bit-to-qubit/index.html",
@@ -2482,7 +2525,7 @@
         "/trinity/04-bit-to-qubit/",
         "/trinity/04-bit-to-qubit/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2491,7 +2534,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/04-bit-to-qubit/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/05-division-by-zero/index.html",
@@ -2520,7 +2564,7 @@
         "/trinity/06-the-cosmological-cycle/",
         "/trinity/06-the-cosmological-cycle/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2530,7 +2574,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/06-the-cosmological-cycle/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/07-the-discovery-of-finity/index.html",
@@ -2559,7 +2604,7 @@
         "/trinity/10-the-soul-loop/",
         "/trinity/10-the-soul-loop/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2567,7 +2612,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/10-the-soul-loop/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/11-the-helix/index.html",
@@ -2578,7 +2624,7 @@
         "/trinity/11-the-helix/",
         "/trinity/11-the-helix/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2586,7 +2632,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/11-the-helix/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/12-the-poles/index.html",
@@ -2597,7 +2644,7 @@
         "/trinity/12-the-poles/",
         "/trinity/12-the-poles/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-literal-d6-identity"
@@ -2605,7 +2652,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/12-the-poles/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/15-dharma-yuddha/index.html",
@@ -2652,7 +2700,7 @@
         "/trinity/18-the-strange-attractor/",
         "/trinity/18-the-strange-attractor/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2661,7 +2709,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/18-the-strange-attractor/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/20-the-hybrid-sovereign/index.html",
@@ -2708,7 +2757,7 @@
         "/trinity/22-the-teleology/",
         "/trinity/22-the-teleology/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2718,7 +2767,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/22-the-teleology/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/23-the-dac/index.html",
@@ -2783,7 +2833,7 @@
         "/trinity/29-the-compass-and-the-sextant/",
         "/trinity/29-the-compass-and-the-sextant/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -2791,7 +2841,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/29-the-compass-and-the-sextant/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "trinity/31-vmosk-as-applied-emergentism/index.html",
@@ -2802,7 +2853,7 @@
         "/trinity/31-vmosk-as-applied-emergentism/",
         "/trinity/31-vmosk-as-applied-emergentism/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -2810,7 +2861,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/31-vmosk-as-applied-emergentism/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "trinity/32-the-four-lines/index.html",
@@ -2821,7 +2873,7 @@
         "/trinity/32-the-four-lines/",
         "/trinity/32-the-four-lines/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -2829,7 +2881,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/32-the-four-lines/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "trinity/33-the-derivation/index.html",
@@ -2858,7 +2911,7 @@
         "/trinity/34-research-brief-the-fork/",
         "/trinity/34-research-brief-the-fork/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-retired-node-product-assignment"
@@ -2866,7 +2919,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/34-research-brief-the-fork/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "trinity/36-the-dimensional-trophic-cascade/index.html",
@@ -2877,7 +2931,7 @@
         "/trinity/36-the-dimensional-trophic-cascade/",
         "/trinity/36-the-dimensional-trophic-cascade/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2886,7 +2940,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/36-the-dimensional-trophic-cascade/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/37-sexual-selection-as-visible-f5/index.html",
@@ -2897,7 +2952,7 @@
         "/trinity/37-sexual-selection-as-visible-f5/",
         "/trinity/37-sexual-selection-as-visible-f5/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -2906,7 +2961,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/37-sexual-selection-as-visible-f5/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "trinity/38-tantra-as-f5-redirection/index.html",
@@ -2967,7 +3023,7 @@
         "/trinity/simulation-spec/",
         "/trinity/simulation-spec/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-field-arithmetic-claim",
@@ -2976,7 +3032,8 @@
       "manifestDocument": {
         "section": "trinity",
         "href": "trinity/simulation-spec/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "value/00-anmut-and-demut/index.html",
@@ -3181,7 +3238,7 @@
         "/will/00-a-square-cannot-be-negative/",
         "/will/00-a-square-cannot-be-negative/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-forbidden-titan-infix-arithmetic"
@@ -3189,7 +3246,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/00-a-square-cannot-be-negative/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "will/00-from-lagrangian-to-dac/index.html",
@@ -3236,15 +3294,17 @@
         "/will/00-the-core-conjecture/",
         "/will/00-the-core-conjecture/index.html"
       ],
-      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage.",
+      "reason": "matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: product uniqueness asserted as settled; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: untyped D5 causal agency.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
-        "semantic-product-uniqueness-asserted-as-settled"
+        "semantic-product-uniqueness-asserted-as-settled",
+        "semantic-untyped-d5-causal-agency"
       ],
       "manifestDocument": {
         "section": "will",
         "href": "will/00-the-core-conjecture/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: product uniqueness asserted as settled."
     },
     {
       "artifact": "will/00-the-generative-lagrangian/index.html",
@@ -3255,7 +3315,7 @@
         "/will/00-the-generative-lagrangian/",
         "/will/00-the-generative-lagrangian/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -3264,7 +3324,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/00-the-generative-lagrangian/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "will/01-f5-force-map-and-ektropy/index.html",
@@ -3275,7 +3336,7 @@
         "/will/01-f5-force-map-and-ektropy/",
         "/will/01-f5-force-map-and-ektropy/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -3284,7 +3345,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/01-f5-force-map-and-ektropy/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "will/02-the-serpent-is-f5/index.html",
@@ -3295,7 +3357,7 @@
         "/will/02-the-serpent-is-f5/",
         "/will/02-the-serpent-is-f5/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-forbidden-titan-infix-arithmetic",
@@ -3304,7 +3366,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/02-the-serpent-is-f5/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "will/03-f5-as-gradient-selection-with-staging/index.html",
@@ -3351,7 +3414,7 @@
         "/will/04-what-the-corpus-reveals/",
         "/will/04-what-the-corpus-reveals/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: application authority leakage.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-application-authority-leakage",
@@ -3360,7 +3423,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/04-what-the-corpus-reveals/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "will/05-exhaustive-observations/index.html",
@@ -3371,7 +3435,7 @@
         "/will/05-exhaustive-observations/",
         "/will/05-exhaustive-observations/index.html"
       ],
-      "reason": "asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "asserts the retired literal D6/D0 identity; asserts the retired literal D6/D0 identity; matches public semantic prohibition: literal D6 identity; matches public semantic prohibition: forbidden Titan infix arithmetic.",
       "policyRuleIds": [
         "retired-literal-d6-identity",
         "semantic-forbidden-titan-infix-arithmetic",
@@ -3380,7 +3444,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/05-exhaustive-observations/"
-      }
+      },
+      "curatedReason": "asserts the retired literal D6/D0 identity."
     },
     {
       "artifact": "will/06-the-unsaid/index.html",
@@ -3391,7 +3456,7 @@
         "/will/06-the-unsaid/",
         "/will/06-the-unsaid/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
@@ -3399,7 +3464,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/06-the-unsaid/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "will/06a-what-remains-unseen/index.html",
@@ -3410,7 +3476,7 @@
         "/will/06a-what-remains-unseen/",
         "/will/06a-what-remains-unseen/index.html"
       ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
+      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: field arithmetic claim.",
       "policyRuleIds": [
         "semantic-application-authority-leakage",
         "semantic-field-arithmetic-claim"
@@ -3418,7 +3484,8 @@
       "manifestDocument": {
         "section": "will",
         "href": "will/06a-what-remains-unseen/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
       "artifact": "will/07-the-four-forces-are-the-four-lines/index.html",
@@ -3429,14 +3496,16 @@
         "/will/07-the-four-forces-are-the-four-lines/",
         "/will/07-the-four-forces-are-the-four-lines/index.html"
       ],
-      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic.",
+      "reason": "matches public semantic prohibition: forbidden Titan infix arithmetic; matches public semantic prohibition: forbidden Titan infix arithmetic; matches public semantic prohibition: untyped D5 causal agency.",
       "policyRuleIds": [
-        "semantic-forbidden-titan-infix-arithmetic"
+        "semantic-forbidden-titan-infix-arithmetic",
+        "semantic-untyped-d5-causal-agency"
       ],
       "manifestDocument": {
         "section": "will",
         "href": "will/07-the-four-forces-are-the-four-lines/"
-      }
+      },
+      "curatedReason": "matches public semantic prohibition: forbidden Titan infix arithmetic."
     },
     {
       "artifact": "will/11-phase-zero-complete/index.html",
@@ -3485,6 +3554,9 @@
       "semantic-field-arithmetic-claim",
       "semantic-field-arithmetic-fable",
       "semantic-forbidden-titan-infix-arithmetic",
+      "semantic-future-light-cone-as-source",
+      "semantic-gravity-entropy-identity-inflation",
+      "semantic-gravity-time-direction-inflation",
       "semantic-invalid-scalar-sampling",
       "semantic-legacy-public-phi-definition",
       "semantic-legacy-untyped-node-product",
@@ -3493,9 +3565,11 @@
       "semantic-product-uniqueness-asserted-as-settled",
       "semantic-quantum-dimensional-stacking",
       "semantic-quantum-gravity-solution-inflation",
+      "semantic-represented-bundle-proves-multiverse",
       "semantic-retired-evidence-tier",
       "semantic-retired-node-product-assignment",
       "semantic-stale-current-25-chapter-reader",
+      "semantic-untyped-d5-causal-agency",
       "semantic-withheld-reciprocal-routed-as-current-book",
       "semantic-zero-momentum-d3-inflation"
     ],

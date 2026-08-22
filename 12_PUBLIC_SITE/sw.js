@@ -1,9 +1,11 @@
 // Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
-const CACHE = 'emergentism-e08f93a63790';
+const CACHE = 'emergentism-07ebbd0a0408';
 const SPINE = [
   "/",
-  "/practice/",
   "/plainly/",
+  "/dasein/",
+  "/f5/",
+  "/practice/",
   "/book/",
   "/spark/",
   "/spark.md",
@@ -18,13 +20,17 @@ const SPINE = [
   "/exit/",
   "/offline/",
   "/manifest.webmanifest",
+  "/favicon.svg",
   "/assets/css/living-map.css",
+  "/assets/css/gestalt-v2.css",
   "/assets/js/living-map.js",
+  "/assets/js/gestalt-v2.js",
   "/living-map.json",
   "/public_semantic_parity.json",
   "/atlas/site_index.json",
   "/assets/fonts/Roboto-latin.woff2",
   "/assets/fonts/RobotoMono-latin.woff2",
+  "/assets/fonts/Newsreader-latin-variable.woff2",
   "/assets/icons/icon-192.png"
 ];
 const WITHHELD_ROUTES = new Set([
@@ -73,9 +79,6 @@ const WITHHELD_ROUTES = new Set([
   "/corrections",
   "/corrections/",
   "/corrections/index.html",
-  "/dasein",
-  "/dasein/",
-  "/dasein/index.html",
   "/finity-papers",
   "/finity-papers/",
   "/finity-papers/index.html",

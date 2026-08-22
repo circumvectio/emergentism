@@ -185,9 +185,9 @@ def index_page(levels: list[dict], sequence: list[str]) -> str:
 <link rel="icon" href="data:," /><link rel="stylesheet" href="../assets/css/xai.css" /><style>
 main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1;margin:.5rem 0 1rem}} .lede{{color:var(--text-muted);max-width:64ch;font-size:1.1rem}}
 .sequence{{font:700 .72rem/1.7 var(--font-mono);color:var(--gold);overflow-wrap:anywhere}} .spine{{margin:3rem 0;border-left:1px solid var(--gold);padding-left:1.2rem}}
-.rung,.crossing{{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:baseline;padding:1rem;border-bottom:1px solid var(--border);text-decoration:none}} .rung:hover{{background:var(--surface)}}
+.rung,.crossing{{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:baseline;padding:1rem;border-bottom:1px solid var(--border);text-decoration:none}} .rung:hover{{background:var(--surface)}} .rung>*,.crossing>*{{min-width:0;overflow-wrap:anywhere}}
 .rung b{{color:var(--gold)}} .crossing{{margin-left:1.5rem;color:var(--text-muted);font-style:italic}} .crossing b{{color:var(--text-dim)}} small{{font:600 .68rem/1.4 var(--font-mono);color:var(--text-dim)}}
-.contract{{border:1px solid var(--border);padding:1.3rem;background:var(--surface)}} .contract li{{margin:.55rem 0;color:var(--text-muted)}} @media(max-width:650px){{.rung,.crossing{{grid-template-columns:55px 1fr}}small{{grid-column:2}}}}
+.contract{{border:1px solid var(--border);padding:1.3rem;background:var(--surface)}} .contract li{{margin:.55rem 0;color:var(--text-muted);overflow-wrap:anywhere}} @media(max-width:650px){{.rung,.crossing{{grid-template-columns:55px 1fr}}small{{grid-column:2}}}}
 /* a11y-floor-2026-08-13 */
 :focus-visible{{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}}
 @media (prefers-reduced-motion: reduce){{*,*::before,*::after{{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}}}

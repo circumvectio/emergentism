@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 39,
+ "total": 42,
  "tree": [
   {
    "key": "start",
@@ -31,15 +31,19 @@
    "pages": [
     {
      "href": "/",
-     "title": "Emergentism — A worldview for finite beings"
+     "title": "What had to emerge for you—and this moment—to be here?"
+    },
+    {
+     "href": "/plainly/",
+     "title": "Everything you are is real—and none of it appeared all at once."
+    },
+    {
+     "href": "/dasein/",
+     "title": "How did this moment become possible?"
     },
     {
      "href": "/practice/",
      "title": "The Practice — what a person actually does"
-    },
-    {
-     "href": "/plainly/",
-     "title": "Emergentism, plainly — the whole idea in ordinary words"
     },
     {
      "href": "/established/",
@@ -73,23 +77,23 @@
    "pages": [
     {
      "href": "/0/",
-     "title": "Boundary frames"
+     "title": "/0 — Boundary frames"
     },
     {
      "href": "/1/",
-     "title": "Distinction and arithmetic"
+     "title": "/1 — Distinction and arithmetic"
     },
     {
      "href": "/2/",
-     "title": "Configuration"
+     "title": "/2 — Configuration"
     },
     {
      "href": "/3/",
-     "title": "Quantum state"
+     "title": "/3 — Quantum state"
     },
     {
      "href": "/4/",
-     "title": "Causal actuality"
+     "title": "/4 — Causal actuality"
     },
     {
      "href": "/5/",
@@ -97,7 +101,7 @@
     },
     {
      "href": "/6/",
-     "title": "Exit and nonclosure"
+     "title": "/6 — Exit and nonclosure"
     }
    ]
   },
@@ -144,16 +148,24 @@
    "label": "Open research",
    "pages": [
     {
+     "href": "/f5/",
+     "title": "One present. Three explanations."
+    },
+    {
      "href": "/map/",
      "title": "The map is unfinished."
     },
     {
      "href": "/lab/",
-     "title": "Choose a gap."
+     "title": "The Laboratory"
+    },
+    {
+     "href": "/record/eub-1/",
+     "title": "The Dasein Test — EUB-1 v1.0"
     },
     {
      "href": "/contribute/",
-     "title": "Use it. Test it.Make it answerable."
+     "title": "Participate"
     }
    ]
   },

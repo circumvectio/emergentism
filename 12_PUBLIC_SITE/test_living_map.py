@@ -139,7 +139,16 @@ class LivingMapContractTests(unittest.TestCase):
 
     def test_surface_claims_bind_current_cards_sources_and_markers(self):
         expected = {
-            "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
+            "index.html": {
+                "FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-23",
+                "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
+                "OS01-29", "OS01-30",
+            },
+            "dasein/index.html": {
+                "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
+                "OS01-20", "OS01-21", "OS01-23", "OS01-25",
+            },
+            "f5/index.html": {"OS01-27", "OS01-28", "OS01-29", "OS01-30"},
             "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
             "lab/index.html": {"FIN01-01", "FIN01-02"},
             "manifesto/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
@@ -200,6 +209,8 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertEqual(atlas["schemaVersion"], 2)
         self.assertEqual(atlas["status"], "current-cleared-surfaces-only")
         self.assertIn("/read/", hrefs)
+        self.assertIn("/dasein/", hrefs)
+        self.assertIn("/f5/", hrefs)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(href == f"/{frozen}/" or href.startswith(f"/{frozen}/") for href in hrefs))
         for item in withheld["artifacts"]:
@@ -210,7 +221,7 @@ class LivingMapContractTests(unittest.TestCase):
         sw = (ROOT / "sw.js").read_text(encoding="utf-8")
         offline = (ROOT / "offline" / "index.html").read_text(encoding="utf-8")
         withheld = json.loads((ROOT / "withheld-routes.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["name"], "Emergentism — A Worldview for Finite Beings")
+        self.assertEqual(manifest["name"], "Emergentism — The Gestalt of Dasein")
         self.assertEqual(manifest["id"], "/")
         self.assertEqual(manifest["start_url"], "/")
         self.assertNotIn("A Compass, Not a Cathedral", manifest["name"])
@@ -220,6 +231,12 @@ class LivingMapContractTests(unittest.TestCase):
         precached_routes = set(json.loads(spine_match.group(1)))
         self.assertNotIn("/compass/", precached_routes)
         self.assertNotIn("/read/", precached_routes)
+        self.assertTrue(
+            {
+                "/dasein/", "/f5/", "/assets/css/gestalt-v2.css",
+                "/assets/js/gestalt-v2.js", "/assets/fonts/Newsreader-latin-variable.woff2",
+            }.issubset(precached_routes)
+        )
         self.assertIn("WITHHELD_ROUTES", sw)
         self.assertIn("isWithheldRoute", sw)
         self.assertIn("isStorable", sw)

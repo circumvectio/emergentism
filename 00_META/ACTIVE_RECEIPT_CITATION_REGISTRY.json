@@ -3,7 +3,7 @@
   "status": "ACTIVE_INTERNAL_CITATION_CUSTODY",
   "boundary": "A registered exact filename/path token disambiguates a receipt citation; it does not ratify the receipt, promote evidence, or rewrite historical custody.",
   "custody": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_LEDGER_AUDITS_2026_08_22.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_PUBLIC_SCOPE_REBASELINE_2026_08_22.md",
     "digest_marker": "active_receipt_citation_registry_canonical_sha256",
     "rebaseline_rule": "A changed registry requires a new dated receipt path."
   },
@@ -141,8 +141,8 @@
       "12_PUBLIC_SITE/record/frontier/index.html",
       "12_PUBLIC_SITE/sw.js"
     ],
-    "public_current_provisional_text_dependency_count": 76,
-    "public_current_provisional_text_dependencies_sha256": "ba947723b44f3e4ced192238c056e80cc489826c69279e2a6c8a272edd9490e3",
+    "public_current_provisional_text_dependency_count": 80,
+    "public_current_provisional_text_dependencies_sha256": "872f5482a9dd23e9a499ec07fad34331945f284824e9eb6d83ea2114fa575589",
     "scope_cut": {
       "text_suffixes": [
         ".css",

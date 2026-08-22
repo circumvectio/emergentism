@@ -5,9 +5,11 @@
   <url><loc>https://emergentism.org/</loc><priority>1.0</priority></url>
   <url><loc>https://emergentism.org/spark/</loc><priority>0.98</priority></url>
 
-  <!-- Primary journey: practice → worldview → research → current book → participation → exit. -->
-  <url><loc>https://emergentism.org/practice/</loc><priority>0.95</priority></url>
+  <!-- Core ontological journey: worldview → Dasein → dimensions → F5 → practice → research → library → participation → exit. -->
   <url><loc>https://emergentism.org/plainly/</loc><priority>0.95</priority></url>
+  <url><loc>https://emergentism.org/dasein/</loc><priority>0.95</priority></url>
+  <url><loc>https://emergentism.org/f5/</loc><priority>0.94</priority></url>
+  <url><loc>https://emergentism.org/practice/</loc><priority>0.95</priority></url>
   <url><loc>https://emergentism.org/record/</loc><priority>0.95</priority></url>
   <url><loc>https://emergentism.org/record/eub-1/</loc><priority>0.94</priority></url>
   <url><loc>https://emergentism.org/record/problems/</loc><priority>0.94</priority></url>

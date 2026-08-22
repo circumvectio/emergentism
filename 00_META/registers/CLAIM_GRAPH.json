@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 33,
+      "primary_card_count": 37,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1182,6 +1182,151 @@
       "to": "A3"
     },
     {
+      "from": "OS01-27",
+      "kind": "depends_on",
+      "to": "OS01-08"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "depends_on",
+      "to": "OS01-10"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "depends_on",
+      "to": "OS01-12"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-27",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "depends_on",
+      "to": "OS01-27"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-28",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "depends_on",
+      "to": "OS01-27"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "depends_on",
+      "to": "OS01-28"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-29",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "depends_on",
+      "to": "OS01-29"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-30",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -2348,8 +2493,8 @@
     }
   ],
   "metrics": {
-    "edges": 463,
-    "nodes": 109
+    "edges": 492,
+    "nodes": 113
   },
   "nodes": [
     {
@@ -2398,7 +2543,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 33,
+      "primary_card_count": 37,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -2651,6 +2796,26 @@
     },
     {
       "id": "OS01-26",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-27",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-28",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-29",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-30",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

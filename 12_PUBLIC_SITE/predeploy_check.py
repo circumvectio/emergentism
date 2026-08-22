@@ -2605,7 +2605,7 @@ def check_public_reading_bundle():
         "contribute/",
         "exit/",
     ]:
-        if f'href="{href}"' in index_body:
+        if any(f'href="{prefix}{href}"' in index_body for prefix in ("", "/")):
             ok(f"landing links {href}")
         else:
             error(f"landing missing link to {href}")

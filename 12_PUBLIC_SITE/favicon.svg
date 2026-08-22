@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title favicon-description">
+  <title id="favicon-title">Emergentism boundary emblem</title>
+  <desc id="favicon-description">A gold present point inside a bone horizon, crossed by blue axes on a near-black field.</desc>
+  <rect width="64" height="64" rx="12" fill="#07090f"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#efe8db" stroke-width="3"/>
+  <path d="M32 10v44M10 32h44" fill="none" stroke="#78a7e8" stroke-width="2"/>
+  <circle cx="32" cy="32" r="5" fill="#d7b65a"/>
+</svg>

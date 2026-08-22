@@ -199,6 +199,10 @@ body.g2-page {
   content: "−";
 }
 
+.g2-menu:not([open]) .g2-menu__panel {
+  display: none;
+}
+
 .g2-menu__panel {
   position: absolute;
   top: calc(100% + 8px);
@@ -491,6 +495,13 @@ body.g2-page {
 .g2-page code {
   color: var(--g2-evidence);
   font-family: var(--g2-mono);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.g2-page .src {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .g2-definition-list {
@@ -868,7 +879,11 @@ body.g2-page.g2-legacy .footer {
   .g2-nav__inner { gap: 6px; }
   .g2-brand__word { display: none; }
   .g2-mobile__direct,
-  .g2-menu summary { padding-inline: 10px; }
+  .g2-menu summary {
+    min-width: 48px;
+    justify-content: center;
+    padding-inline: 10px;
+  }
   .g2-menu__panel {
     position: fixed;
     top: calc(var(--g2-nav-h) + 8px);

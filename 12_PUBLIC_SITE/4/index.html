@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-gestalt="v2">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,16 +28,49 @@ main{max-width:920px;margin:0 auto;padding:110px 22px 72px} .hero{padding:2rem 0
 .dimension-canvas{width:100%;height:320px} .transition{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}
 dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)} dt,dd{margin:0;padding:.8rem;border-bottom:1px solid var(--border)} dt{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)} dd{color:var(--text-muted)}
 .next{display:inline-block;margin-top:1rem;color:var(--gold)} .pager{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem} code{overflow-wrap:anywhere}
+html:not([data-gestalt-enhanced="true"]) .fallback{display:flex}
 @media(max-width:700px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{padding-bottom:.2rem}dd{padding-top:.2rem}}
 /* a11y-floor-2026-08-13 */
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
 </style>
+<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+<script defer src="/assets/js/gestalt-v2.js"></script>
 </head>
-<body>
-<a class="skip-to-content" href="#main">Skip to content</a>
-<header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
-<main><span id="main" tabindex="-1"></span>
+<body class="g2-page g2-legacy g2-dimension">
+<!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" aria-current="location" href="/plainly/">Worldview</a>
+      <a data-section="practice" href="/practice/">Practice</a>
+      <a data-section="research" href="/record/">Research</a>
+      <a data-section="library" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" aria-current="location" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
+</header>
+<!-- gestalt-core-nav:end -->
+<main id="main" tabindex="-1">
 <section class="hero">
   <p class="eyebrow">D4 · actual · [S/I]</p>
   <h1>Causal actuality</h1>
@@ -47,9 +80,15 @@ dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1
   <article><h2>Inherited structure</h2><p>Physical dynamics and spacetime constraints remain those of the relevant sciences; Emergentism supplies no replacement law.</p></article>
   <article><h2>Claim boundary</h2><p>A selector can issue a commitment receipt but cannot manufacture the world&#x27;s outcome receipt. Physical light cones remain bounded by spacetime and c. THE HORN TORUS WAS TESTED AS COSMOLOGY AND FAILED: fitted against the data cosmology uses, it did worse than special relativity, with a best-fit expansion rate of exactly zero. It is kept here as a rapidity illustration and a light-cone diagram, which is what it is good for, and NOT as a cosmological model. The animation shows a real identity; it does not show a surviving theory.</p></article>
 </section>
-<section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
-  <canvas class="dimension-canvas"></canvas>
-  <noscript>Illustration omitted. The text carries the claim.</noscript>
+<section class="diagram visual-panel" aria-labelledby="diagram-title-4">
+  <canvas class="dimension-canvas" aria-hidden="true"></canvas>
+  <div class="fallback">
+    <div class="fallback-inner">
+      <p class="fallback-equation" id="diagram-title-4">D4 · Causal actuality</p>
+      <p>D4 is the register of what actually occurs: embodied means, attempted action, interaction, outcome, and record. Spacetime, bodies, physical light cones, and cognition are application lenses inside actuality rather than alternate definitions of the rung.</p>
+      <p>This illustration carries no evidence beyond the typed text above.</p>
+    </div>
+  </div>
 </section>
 <p class="source">Semantic owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md</code></p>
 
@@ -63,7 +102,25 @@ dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1
 </section>
 <nav class="pager"><a href="../3/">← D3</a><a href="../5/">D5 →</a></nav>
 </main>
-<footer class="site-footer">Public projection · source tiers preserved · <a href="../practice/">use the compass</a> · <a href="../exit/">put it down</a></footer>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
+</footer>
+<!-- gestalt-core-footer:end -->
 <script>window.DIMENSION_PAGE={animationMode:"horn"};</script>
 <script type="module" src="../dimensions/dimensions.js"></script>
 <script defer src="/assets/js/atlas-drawer.js"></script>

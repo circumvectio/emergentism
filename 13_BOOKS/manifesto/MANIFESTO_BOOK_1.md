@@ -4966,7 +4966,7 @@ Source cards: none — editorial control.
 - **Kill or narrowing route:** Retire the imagery if readers persistently treat it as arithmetic or ontology.
 - **Survivor if killed:** The explicit frame/object distinction.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-01`.
 
 <!-- FULLBOOK-P: atlas_os01_02 -->
@@ -4980,7 +4980,7 @@ Source cards: `OS01-01`.
 - **Kill or narrowing route:** Demote if it adds no contact or conflicts with contact.
 - **Survivor if killed:** A map does not establish its own ground.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-02`.
 
 <!-- FULLBOOK-P: atlas_os01_03 -->
@@ -4994,7 +4994,7 @@ Source cards: `OS01-02`.
 - **Kill or narrowing route:** Remove the crosswalk if it changes native results or adds no explanatory value.
 - **Survivor if killed:** Ordinary arithmetic and explicit domains.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-03`.
 
 <!-- FULLBOOK-P: atlas_os01_04 -->
@@ -5008,7 +5008,7 @@ Source cards: `OS01-03`.
 - **Kill or narrowing route:** If no mismatch is identified, withdraw the diagnosis.
 - **Survivor if killed:** Local type discipline.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-04`.
 
 <!-- FULLBOOK-P: atlas_os01_05 -->
@@ -5022,7 +5022,7 @@ Source cards: `OS01-04`.
 - **Kill or narrowing route:** Demote autonomy if the fair baseline matches or wins.
 - **Survivor if killed:** Configuration mathematics and convenient redescription.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-05`.
 
 <!-- FULLBOOK-P: atlas_os01_06 -->
@@ -5036,7 +5036,7 @@ Source cards: `OS01-05`.
 - **Kill or narrowing route:** Demote the D placement if it adds no discrimination.
 - **Survivor if killed:** The state/record distinction.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-06`.
 
 <!-- FULLBOOK-P: atlas_os01_07 -->
@@ -5050,7 +5050,7 @@ Source cards: `OS01-06`.
 - **Kill or narrowing route:** Kill the derivation claim if external time is silently assumed.
 - **Survivor if killed:** A state inventory is not itself a history.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-07`.
 
 <!-- FULLBOOK-P: atlas_os01_08 -->
@@ -5064,7 +5064,7 @@ Source cards: `OS01-07`.
 - **Kill or narrowing route:** Narrow if the receipt protocol adds no calibration or is routinely gamed.
 - **Survivor if killed:** Commitments do not award their own consequences.
 - **Consequence / exit:** bearers: actor; affected parties; consent: declare where applicable; reversibility: record repair path; exit: Affected parties require a contest path..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-08`.
 
 <!-- FULLBOOK-P: atlas_os01_09 -->
@@ -5078,7 +5078,7 @@ Source cards: `OS01-08`.
 - **Kill or narrowing route:** Replace the selected minimum if a fair rival predicts better without violating the declared AND-class boundary; retire numeric aggregation if no defensible scale exists.
 - **Survivor if killed:** Possible maps and actual means are distinct inputs.
 - **Consequence / exit:** bearers: evaluated actor; affected parties; consent: required for personal evaluation; reversibility: model is replaceable; exit: Never use the score as worth or rank..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-09`.
 
 <!-- FULLBOOK-P: atlas_os01_10 -->
@@ -5092,7 +5092,7 @@ Source cards: `OS01-09`.
 - **Kill or narrowing route:** Demote if representation adds no reliable shift.
 - **Survivor if killed:** Only present tokens participate causally.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-10`.
 
 <!-- FULLBOOK-P: atlas_os01_11 -->
@@ -5106,7 +5106,7 @@ Source cards: `OS01-10`.
 - **Kill or narrowing route:** Retire labels that add confusion or status effects.
 - **Survivor if killed:** Move and frame distinctions.
 - **Consequence / exit:** bearers: participants; consent: voluntary vocabulary; reversibility: labels are replaceable; exit: No human identity or rank follows..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-11`.
 
 <!-- FULLBOOK-P: atlas_os01_12 -->
@@ -5120,7 +5120,7 @@ Source cards: `OS01-11`.
 - **Kill or narrowing route:** Narrow or retire the translation claim if it yields no common dynamics or novel discrimination beyond native accounts.
 - **Survivor if killed:** A removable address system.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-12`.
 
 <!-- FULLBOOK-P: atlas_os01_13 -->
@@ -5134,7 +5134,7 @@ Source cards: `OS01-12`.
 - **Kill or narrowing route:** Narrow any step that fails to improve correction or enables self-validation.
 - **Survivor if killed:** Outcome contact can revise the map.
 - **Consequence / exit:** bearers: actor; affected parties; consent: declare; reversibility: smallest reversible step; exit: Exit and appeal stay inside..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-13`.
 
 <!-- FULLBOOK-P: atlas_os01_14 -->
@@ -5148,7 +5148,7 @@ Source cards: `OS01-13`.
 - **Kill or narrowing route:** Reject candidate status if any marker fails or rivals absorb the effect.
 - **Survivor if killed:** A shared trace description.
 - **Consequence / exit:** bearers: trace carriers; affected noncarriers; consent: not implied by participation; reversibility: interventions require repair; exit: No collective label overrides individual rights..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-14`.
 
 <!-- FULLBOOK-P: atlas_os01_15 -->
@@ -5162,7 +5162,7 @@ Source cards: `OS01-14`.
 - **Kill or narrowing route:** Narrow if language adds no incremental coordination effect.
 - **Survivor if killed:** Coordination can use multiple protocols.
 - **Consequence / exit:** bearers: participants; consent: language use does not prove assent; reversibility: classification is revisable; exit: Dissent is not pathology..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-15`.
 
 <!-- FULLBOOK-P: atlas_os01_16 -->
@@ -5176,7 +5176,7 @@ Source cards: `OS01-15`.
 - **Kill or narrowing route:** Withdraw the trade analogy if it adds unsupported intentional or moral content.
 - **Survivor if killed:** Learned cross-species exchange behavior occurred.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-16`.
 
 <!-- FULLBOOK-P: atlas_os01_17 -->
@@ -5190,7 +5190,7 @@ Source cards: `OS01-16`.
 - **Kill or narrowing route:** Retire the stronger account if coordination variables add no reliable value beyond rivals.
 - **Survivor if killed:** Coalitions often use shared meanings to coordinate material conflict.
 - **Consequence / exit:** bearers: conflict participants; nonparticipants; consent: participation does not prove belief; reversibility: analysis supplies no action authorization; exit: Only nonviolent worldview competition is endorsed..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-17`.
 
 <!-- FULLBOOK-P: atlas_os01_18 -->
@@ -5204,7 +5204,7 @@ Source cards: `OS01-17`.
 - **Kill or narrowing route:** Retire any mapping that creates rank, proof transfer, or false biological necessity.
 - **Survivor if killed:** Equal human worth and voluntary specialization.
 - **Consequence / exit:** bearers: all people classified; consent: voluntary and task-specific; reversibility: roles change and combine; exit: No caste, inheritance, or entitlement..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-18`.
 
 <!-- FULLBOOK-P: atlas_os01_19 -->
@@ -5218,7 +5218,7 @@ Source cards: `OS01-18`.
 - **Kill or narrowing route:** Freeze any role system that creates inherited status, blocked dissent, or governing entitlement.
 - **Survivor if killed:** Task-specific functional differentiation with equal dignity.
 - **Consequence / exit:** bearers: participants; affected parties; consent: required; reversibility: roles are changeable; exit: Leave without loss of personhood or property..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-19`.
 
 <!-- FULLBOOK-P: atlas_os01_20 -->
@@ -5232,7 +5232,7 @@ Source cards: `OS01-19`.
 - **Kill or narrowing route:** Narrow any part contradicted by evidence or better rival explanation.
 - **Survivor if killed:** Agents face constraints and consequences.
 - **Consequence / exit:** bearers: persons; consent: worldview use is voluntary; reversibility: interpretation is revisable; exit: Any holder may put it down..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-20`.
 
 <!-- FULLBOOK-P: atlas_os01_21 -->
@@ -5246,7 +5246,7 @@ Source cards: `OS01-20`.
 - **Kill or narrowing route:** Remove an open item once genuinely answered under its native burden.
 - **Survivor if killed:** Fallibilist revision.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-21`.
 
 <!-- FULLBOOK-P: atlas_os01_22 -->
@@ -5260,7 +5260,7 @@ Source cards: `OS01-21`.
 - **Kill or narrowing route:** If no objective bridge survives, keep Justice chosen rather than describing it as discovered.
 - **Survivor if killed:** An explicit, contestable constitutional commitment.
 - **Consequence / exit:** bearers: all affected parties; consent: declare and contest; reversibility: prefer reversible action; exit: No aggregate erases a bearer..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-22`.
 
 <!-- FULLBOOK-P: atlas_os01_23 -->
@@ -5274,7 +5274,7 @@ Source cards: `OS01-22`.
 - **Kill or narrowing route:** Reclassify or kill each row separately when a rival wins or evidence fails.
 - **Survivor if killed:** A removable address for the question.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-23`.
 
 <!-- FULLBOOK-P: atlas_os01_24 -->
@@ -5288,7 +5288,7 @@ Source cards: `OS01-23`.
 - **Kill or narrowing route:** Kill a force row that lacks incremental prediction or survives only by relabeling.
 - **Survivor if killed:** Historical motivation and typed translation vocabulary.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-24`.
 
 <!-- FULLBOOK-P: atlas_os01_25 -->
@@ -5302,7 +5302,7 @@ Source cards: `OS01-24`.
 - **Kill or narrowing route:** Retire the symbol if it becomes identity, attainment, or hidden ontology.
 - **Survivor if killed:** Not every remainder must become an object.
 - **Consequence / exit:** bearers: holders; consent: voluntary; reversibility: fully_reversible; exit: Any holder may put down the map..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-25`.
 
 <!-- FULLBOOK-P: atlas_os01_26 -->
@@ -5316,8 +5316,64 @@ Source cards: `OS01-25`.
 - **Kill or narrowing route:** Treat any unpracticed refusal as an aspiration, not a safety result.
 - **Survivor if killed:** A worldview does not validate itself.
 - **Consequence / exit:** bearers: holders; critics; affected parties; consent: voluntary adoption; reversibility: correction and withdrawal required; exit: Any holder may put it down..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
 Source cards: `OS01-26`.
+
+<!-- FULLBOOK-P: atlas_os01_27 -->
+### OS01-27 — F5-W says represented futures can reweight present action only through actual present carriers and models.
+- **Work / owner:** `BK-ONE-SITTING` / `K-4`.
+- **Classification:** `conjecture`; **evidence:** [I] typed synthesis; [C] incremental D5-capacity effect.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — F5-W: represented futures matter through actual present models.
+- **Type boundary:** represented D5 content is carried and made causal by actual D4 tokens.
+- **Strongest rival:** Salience, reward, memory, expectancy, reactive control, or ordinary planning explains the effect.
+- **Discriminator:** Intervene on represented content while holding present means and confounds fixed; require incremental prediction beyond rich D4 baselines.
+- **Kill or narrowing route:** A fair-baseline null kills the distinct-capacity claim.
+- **Survivor if killed:** Ordinary anticipation through present physical carriers.
+- **Consequence / exit:** not applicable.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
+Source cards: `OS01-27`.
+
+<!-- FULLBOOK-P: atlas_os01_28 -->
+### OS01-28 — F5-N is the no-additional-interaction and service/controller null, not a theorem.
+- **Work / owner:** `BK-ONE-SITTING` / `K-4`.
+- **Classification:** `conjecture`; **evidence:** [D] declared null; [C] exhaustion prediction.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — F5-N: no additional interaction; selection, verification, and revision service D5.
+- **Type boundary:** absence of a new interaction is a testable null, not a consequence of the register count.
+- **Strongest rival:** A replicated F5-R residual survives every accepted-physics and control baseline.
+- **Discriminator:** Compare a frozen no-F5 baseline with the specified future-boundary history law.
+- **Kill or narrowing route:** A replicated force-specific residual with a defined coupling and observable kills the null in its tested range.
+- **Survivor if killed:** Verification and revision remain practices of fallible modeling.
+- **Consequence / exit:** not applicable.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
+Source cards: `OS01-28`.
+
+<!-- FULLBOOK-P: atlas_os01_29 -->
+### OS01-29 — F5-R wagers that an actual D4 future-boundary/history-selection law changes present transition weights.
+- **Work / owner:** `BK-ONE-SITTING` / `K-4`.
+- **Classification:** `conjecture`; **evidence:** [C] physical future-boundary history law.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — F5-R [C]: an unvalidated future-boundary history law, not established physics.
+- **Type boundary:** possible D5 content does not act; the future light cone is not a source; a history law is not yet a force.
+- **Strongest rival:** Standard dynamics, present-model control, time-symmetric redescription, common cause, superdeterminism, selection bias, or postselection.
+- **Discriminator:** Randomize a later physical boundary after an early irreversible record; exclude signalling and postselection; test the preregistered residual.
+- **Kill or narrowing route:** No exact law fails admission; a preregistered null kills the promised parameter or range; equivalence remains underdetermined.
+- **Survivor if killed:** F5-W and F5-N remain viable and the normative orientation stays separately chosen.
+- **Consequence / exit:** not applicable.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
+Source cards: `OS01-29`.
+
+<!-- FULLBOOK-P: atlas_os01_30 -->
+### OS01-30 — Option preservation is a bearer-complete, multi-ledger, Pareto practice rather than a scalar law derived from physics.
+- **Work / owner:** `BK-ONE-SITTING` / `K-5`.
+- **Classification:** `interpretation_vow`; **evidence:** [I] selected multi-ledger architecture; [S] declared normative separation.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `bounded_current` — Keep option, entropy, cost, consent, Justice, and Exit ledgers separate; use a Pareto frontier.
+- **Type boundary:** thermodynamic entropy, entropy export, path entropy, empowerment, options, consent, Justice, and Exit are distinct.
+- **Strongest rival:** A defended scalar objective may predict and protect bearers better than a Pareto ledger.
+- **Discriminator:** Expose every ledger and bearer, compare decisions and harms against preregistered scalar and simpler rivals, and preserve contest and Exit.
+- **Kill or narrowing route:** Hidden bearers, entropy conflation, proxy harm, or decorative Exit kills the claimed integrity of the practice.
+- **Survivor if killed:** Physics still does not derive the Good, and affected bearers must remain visible.
+- **Consequence / exit:** bearers: agent; all affected parties; consent: declare and contest; reversibility: prefer reversible action; exit: No option score may hide another bearer's exit..
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507`.
+Source cards: `OS01-30`.
 
 
 

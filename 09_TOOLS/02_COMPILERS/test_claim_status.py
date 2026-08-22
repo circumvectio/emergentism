@@ -44,11 +44,11 @@ class ClaimStatusV2Tests(unittest.TestCase):
         self.assertEqual(len(CHECKER.lifecycle_rows(self.document)), 50)
         self.assertEqual(
             CHECKER.canonical_lifecycle_sha256(self.document),
-            "eb0e25fd6ea253b289117e360e4ff31990098a1e41f07462ce226b25976e0ea5",  # pragma: allow-secret -- public corpus digest fixture
+            "ce17af307ae2c754f033427f3b112a487b168d42ee86399f24c3afa3b9f2744b",  # pragma: allow-secret -- public corpus digest fixture
         )
         self.assertEqual(
             CHECKER.canonical_contract_sha256(self.document),
-            "7bbf9fa45cbeeaed8f5931c6e1153df40018b8c7acd05f411e0be65b0ca754d1",  # pragma: allow-secret -- public corpus digest fixture
+            "9c655c8e247f4e91420757deac4b0781f0c9dd3e0c277b24026d9185e5cf44a7",  # pragma: allow-secret -- public corpus digest fixture
         )
 
     def test_duplicate_json_key_is_rejected(self) -> None:

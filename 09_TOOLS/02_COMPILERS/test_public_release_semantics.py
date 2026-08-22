@@ -48,7 +48,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertEqual(self.data["levels"][5]["modality"], "possible")
 
     def test_claim_card_projection_contract_is_current(self) -> None:
-        self.assertEqual(self.data["schemaVersion"], 2)
+        self.assertEqual(self.data["schemaVersion"], 3)
         contract = self.data["claimCardContract"]
         source = ROOT / contract["source"]
         self.assertEqual(
@@ -85,6 +85,11 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             "quantum-gravity solution inflation": "we solved quantum gravity",
             "zero-momentum D3 inflation": "D3 has no momentum",
             "application authority leakage": "Sky" + "zai governs this claim",
+            "untyped D5 causal agency": "D5 pushes physical events into the present.",
+            "gravity entropy identity inflation": "Gravity is entropy.",
+            "gravity time-direction inflation": "Gravity points past to present.",
+            "future light cone as source": "The future light cone is a causal source.",
+            "represented bundle proves multiverse": "A represented history bundle proves a physical multiverse.",
         }
         for name, text in mutations.items():
             with self.subTest(name=name):
@@ -95,6 +100,31 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             "the ethic follows from arithmetic",
             parity.FORBIDDEN["ethic derived from arithmetic"],
         )
+        self.assertIn(
+            "least entropy lacks the four-ledger separation",
+            parity.f5_typing_errors("Choose the least entropy future."),
+        )
+        self.assertIn(
+            "agent potential hides affected bearers or safeguards",
+            parity.f5_typing_errors("Maximize agent options."),
+        )
+        self.assertIn(
+            "strange attractor lacks declared dynamics",
+            parity.f5_typing_errors("Potential is a strange attractor."),
+        )
+
+    def test_v2_routing_is_exact_and_cannot_own_semantics(self) -> None:
+        errors = []
+        parity.validate_core_routing(self.data, errors)
+        self.assertEqual(errors, [])
+        self.assertEqual(self.data["coreJourney"]["surfaces"], parity.EXPECTED_CORE_JOURNEY)
+        self.assertEqual(self.data["navigation"]["primary"], parity.EXPECTED_PRIMARY_NAV)
+        self.assertEqual(self.data["navigation"]["mobilePersistent"], parity.EXPECTED_MOBILE_NAV)
+        mutated = json.loads(json.dumps(self.data))
+        mutated["navigation"]["claimCardIds"] = ["OS01-27"]
+        errors = []
+        parity.validate_core_routing(mutated, errors)
+        self.assertIn("routing block may not own semantics: navigation.claimCardIds", errors)
 
     def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
         audited = set(parity.parity_audit_surfaces(self.data))
@@ -121,8 +151,10 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             if path.parent.name == "dimensions":
                 continue
             self.assertIn('class="diagram visual-panel"', body)
+            self.assertIn('data-core-shell="v2"', body)
             self.assertIn('type="importmap"', body)
             self.assertIn('type="module" src="../dimensions/dimensions.js"', body)
+            self.assertIn("This illustration carries no evidence beyond the typed text above.", body)
 
     def test_frozen_boundary_is_idempotent(self) -> None:
         sample = "<html><body><main>old claim</main></body></html>"
@@ -173,17 +205,23 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8")
         self.assertIn('<span class="k">21</span>…and the remaining sixteen', paradoxes)
 
-    def test_home_opens_with_why_how_what_and_one_primary_action(self) -> None:
+    def test_home_unfolds_the_gestalt_in_order_with_one_hero_action(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        why = home.index("Why · Emergentism · A worldview for finite beings")
-        how = home.index('id="receipt-loop-title">How ')
-        what = home.index("What · Start with one decision")
-        self.assertLess(why, how)
-        self.assertLess(how, what)
-        hero = home.split('<header class="hero wrap">', 1)[1].split("</header>", 1)[0]
-        self.assertEqual(hero.count('class="btn primary"'), 1)
-        self.assertIn("zero accepted outside outcomes", hero)
-        self.assertNotIn('class="ledger-lede', hero)
+        self.assertIn(parity.EXPECTED_CORE_QUESTION, home)
+        markers = [
+            "01 · Serial emergence",
+            "02 · The debt wager",
+            "03 · One present, two explanations",
+            "04 · The option ledger",
+            "05 · Practice",
+            "06 · Research sockets",
+            "07 · WHAT IS SETTLED INSIDE, AND WHAT IS STILL OPEN",
+        ]
+        positions = [home.index(marker) for marker in markers]
+        self.assertEqual(positions, sorted(positions))
+        hero = home.split('<section class="g2-shell g2-hero"', 1)[1].split("</section>", 1)[0]
+        self.assertEqual(hero.count('g2-button--primary'), 1)
+        self.assertIn("comparative benefit untested", hero)
 
     def test_atlas_generator_check_binds_full_provenance_payload(self) -> None:
         payload = atlas_builder.build_payload()
@@ -765,7 +803,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             hashlib.sha256((SITE / output["path"]).read_bytes()).hexdigest(),
         )
         coverage = manifest["claim_card_contract"]["coverage"]
-        self.assertEqual(coverage["claim_card_count"], 26)
+        self.assertEqual(coverage["claim_card_count"], 30)
         self.assertEqual(len(coverage["rendered_source_chapter_order"]), 12)
         self.assertEqual(coverage["public_states"], ["bounded_current", "candidate"])
         self.assertEqual(coverage["review_states"], ["implemented", "l3_audited"])
