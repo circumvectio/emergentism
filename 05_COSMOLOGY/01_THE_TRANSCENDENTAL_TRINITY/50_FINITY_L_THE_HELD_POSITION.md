@@ -172,3 +172,11 @@ The pair `a, b` in §3–§4 is a **stipulated** pair in a stipulated model, not
 `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md`
 
 •   ⊙   ○ — *the mathematical case sits at the optimum for free; the living case pays rent.*
+
+## Cross-reference — semantic structure staged under this position (2026-08-22)
+
+`52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md` builds the v3
+semantic structure under Finity_L's position (the estate's rivals audit found
+it alone unclaimed). The C1 kill (`51B`) is carried forward there explicitly:
+no biological claim is re-attached. Staged `[D]`; this file remains the owner
+of the held position.

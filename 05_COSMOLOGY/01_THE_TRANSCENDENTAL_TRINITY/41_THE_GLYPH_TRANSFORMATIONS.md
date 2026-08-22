@@ -133,3 +133,11 @@ authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.
 ```text
 •     ⊙     ○
 ```
+
+## Cross-reference — v3 semantics staged (2026-08-22)
+
+`52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md` stages an
+operator reading — `⊙ = ○(•)` — compatible with this file's §6 held-relation:
+containment becomes an application fact. Staged `[D]`, beside this reading,
+never over it; adoption is a chair act via the 00_HANDOFF docket. This file
+remains the v2 owner.

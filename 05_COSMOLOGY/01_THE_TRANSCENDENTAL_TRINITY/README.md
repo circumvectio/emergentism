@@ -19,6 +19,10 @@ repaired formal system. Where an older document conflicts, those owners rule.
 - [`42_THE_CASE_FOR_FINITY.md`](42_THE_CASE_FOR_FINITY.md)
   — tiered case and research gates for Finity as a forward programme; companion only.
 - [`43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md`](43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md)
+- [`52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md`](52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md)
+  — `[D]` staged v3 semantics: the Rule (infinite zero · diagonal-act ·
+  finite actual), the Doors, the Closure Rule, the Asymmetry instance;
+  beside v1/v2, never over them; adoption via the 00_HANDOFF docket.
   — typed narrative formulation of The Infinite, Finity, and Infinity as
   research modes; it interprets but does not redefine the canonical Titan seats.
 - [`10_THE_SOUL_LOOP.md`](10_THE_SOUL_LOOP.md) — modeled future, commitment,

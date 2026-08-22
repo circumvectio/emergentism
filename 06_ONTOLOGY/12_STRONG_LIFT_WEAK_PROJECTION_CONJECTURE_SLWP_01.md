@@ -207,3 +207,17 @@ The strongest honest sentence today is:
 > may require information absent from a lower description. `[C]` Whether this
 > asymmetry constitutes strong emergence upward and weak projection downward
 > at every D-level remains an open, modular conjecture.
+
+## Cross-reference — the arithmetic instance and the grading (2026-08-22)
+
+`../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md`
+§5b supplies, same day and independently: the concrete arithmetic instance
+(every finite `N` runs a distinct lawful path to the SAME boundary pair
+`(0, ∞)`; the pair forgets the path — the κ is the erased memory), the
+emergence-grading table (resultant / weak / strong ↔ settled / serviced /
+unbacked, with Bedau's simulation-derivability equal to the serviced tier),
+the Batterman/Berry prior-art fence, and the hyperreal stress test (`*ℝ`
+internalizes paths as members; the Titans stay outside every extension).
+**Ownership of the directional conjecture stays HERE (SLWP-01).** §5b lends an
+instance and a grading, never a second owner; BIL-01 remains the lemma both
+lean on.

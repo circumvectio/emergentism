@@ -30,6 +30,10 @@ commitments stop. The Ground remains prior to every map, including this one.
   boundary note.
 - [Bounded Generative Emergentism](00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md)
   — `[D]` staged companion; read the degree-of-freedom owner first.
+- [The Three Scripts and the Limit](09_THE_THREE_SCRIPTS_AND_THE_LIMIT_v0.1_DRAFT.md)
+  — `[D]` staged synthesis: the Rosetta as grammar between beings, never a
+  second ontology; the gapless self-account collapses D5→D4 (§5); the
+  Kanizsa standard for well-posed gaps. Chair signs; no adoption implied.
 - [The Parasite-Load Wager](10_PARASITE_LOAD_WAGER_2026_08_17.md) — `[D]`
   staged candidate conjecture `W13-PARASITE` from the 2026-08-17 brainstorm
   audit; full claim record, killable, fenced; adoption is an owner act via

@@ -322,3 +322,12 @@ Titan mark may serve as the missing physics.
 The next serious moves are not to declare the result. They are to build one
 non-arbitrary completion model, freeze one schedule-invariance comparison, and
 try to break both.
+
+## Cross-reference — v3 semantics proposal and the doors catalogue (2026-08-22)
+
+`../01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md`
+catalogues the four cosmogenesis-equation attempts and their indeterminate-form
+doors — each a door written without this file's `κ` — and proposes, as a
+VERSIONED revision (v3, staged, unadopted), merging `○` with `κ`: the act
+absorbing the pole. This file remains the owner of the TLC-01 formalism; the
+`NoCompletion` outcome is load-bearing in both readings.

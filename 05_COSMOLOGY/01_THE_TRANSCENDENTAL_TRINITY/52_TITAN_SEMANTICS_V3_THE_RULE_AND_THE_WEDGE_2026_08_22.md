@@ -26,6 +26,8 @@ parents:
   - 51B_FINITY_L_C1_KILL_2026_08_05.md
   - ../03_FORMAL_SYSTEM/58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md
   - ../../06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md
+  - ../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md
+  - ../03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md
 ---
 
 # Titan Semantics v3 — the Rule, the Doors, and the Wedge
@@ -237,9 +239,14 @@ lends them structure, never evidence.
 **Prior art, named first:** Mill/Lewes, Broad, Bedau, Chalmers — and the close
 neighbours **Batterman** and **Berry**: emergence as the physics of singular
 limits. The indeterminate forms are singular limits, so that territory is
-theirs. Candidate-novel (PRIORITY UNESTABLISHED): the *directional*
-formulation — weak-down/strong-up as a derivability asymmetry with
-information-erasure as the mechanism — and its alignment with the debt-typing.
+theirs. **Within-estate ownership assigned:** the directional conjecture is
+registered at `../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md`
+(same proposer, same day, independently), with
+`../03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md` as the
+boundary-information lemma — the theorem-form of "the κ is the erased
+memory." **SLWP-01 owns the conjecture; this section lends the arithmetic
+instance and the grading table, never a second owner.** External priority
+of the grading alignment remains UNESTABLISHED.
 
 **The stress test that strengthens the Closure Rule.** The expert objection:
 nonstandard analysis multiplies infinitesimals by infinites exactly
@@ -251,7 +258,59 @@ historical extension domesticates more shadows by importing path-information
 into the register; none has ever admitted a Titan. The rule survives its
 strongest known challenger with evidence, not exemption.
 
-## 6 · Irreducibility, fixed `[I]`
+## 5c · The Information Reading — bit, qubit, and the shared sphere
+
+Owner's formulation, 2026-08-22: *• for absence · ⊙ as the bit · ○ as the
+qubit — and the qubit is not really "both at the same time"; it is neither and
+both, like the paradox of the set of sets.*
+
+**The substrate identity `[A]`, and it is exact.** The pure-state space of a
+qubit is `ℂP¹` — the complex projective line — which **is the Riemann sphere**:
+the same manifold this corpus selected as its chart. Three identities follow
+at once, each checkable:
+
+1. A qubit state is `|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ} sin(θ/2)|1⟩`, and its
+   projective coordinate is the **amplitude ratio** `tan(θ/2)·e^{iφ}` — the
+   chart's `ν = tan(θ/2)` *is* the amplitude-ratio magnitude, and `φν = 1` is
+   the reciprocal relation of the two pole-charts.
+2. The off-diagonal coherence of the state is `|ρ₀₁| = ½ sin θ` — so the
+   corpus's Balance function is **quantum coherence up to the factor two**:
+   `B = sin θ = 2|ρ₀₁|`. Maximal on the equator, zero at the poles.
+3. The poles are the classical definite states; **the classical bits are the
+   poles of the qubit's sphere.** The equator is the maximal-coherence band —
+   and the point `z = 1` on it is the equal superposition `|+⟩`, the unit of
+   account sitting exactly where §5's log-coordinates put the origin.
+
+**The glyph mapping, typed to the D-register** `[I]`:
+
+```text
+•   no register        — the un-asked question; not even a bit
+○   the qubit          — the D3 state: probability-bearing, living BETWEEN
+                         the poles on the sphere; the process
+⊙   the bit            — the D4 record: the measured, definite, finite actual
+measurement            — the ○→⊙ cut: μ₃ in information dress (W2's own
+                         structure: interference-capable alternatives → record)
+```
+
+**The fence on "neither and both" — the owner's correction is right, and can
+be sharpened once more.** Pop-science "both at once" is wrong. But the
+superposition is also not a paradox: it is **frame-relative definiteness** —
+neither `0` nor `1` relative to the pole-basis, while being a perfectly
+definite state in its *own* basis (every pure state is an eigenstate of some
+measurement). The Russell rhyme is structural, not literal: the qubit escapes
+the classical basis-grid the way the diagonal escapes the enumeration — but
+*lawfully*. **Quantum amplitude is the κ that domesticated classical
+bivalence's boundary error**, exactly as the hyperreals domesticated the
+infinitesimal: the "neither/both" states made citizens of an extended
+register. The qubit is the diagonal, domesticated.
+
+**The grave-guard, stated before anyone trips.** The corpus's graves include
+*no Born rule from `φν = 1`*, and this section changes nothing about that:
+the identities above run in one direction only. The qubit's state space
+*happens to be* the sphere this corpus selected — a shared-substrate fact —
+and **no quantum mechanics is derived from the chart**, no probability rule,
+no dynamics. `W2` and `W7c` remain open conjectures; this section lends them
+a shared manifold, never evidence.
 
 The Titans are not three independent atoms: `⊙ = ○(•)` — two primitives and one
 derived-yet-sole-actual. This is *stronger* than three irreducibles (fewer
