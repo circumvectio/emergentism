@@ -772,3 +772,48 @@ unique global maximality over every conceivable representation.
 
 **Status: NOT RUN.** The preregistration is specified, but no scored comparator
 run has yet tested whether M4 reaches the declared compression criterion.
+
+The owner adds a temporal interpretation of the reciprocal spectrum. It is a
+new overlay, not a revision of the chart and not time encoded by the
+Burrisphere path. Define normalized chart weights and their signed horizon
+tilt:
+
+```text
+w_S := ν/(φ+ν)                         short-horizon chart weight
+w_L := φ/(φ+ν)                         long-horizon chart weight
+q_H := w_L−w_S = (φ−ν)/(φ+ν)       horizon tilt
+
+w_S+w_L = 1
+B = 2√(w_S w_L) = √(1−q_H²) ≤ 1.
+```
+
+Those identities and the unique maximum `B=1` at `q_H=0` are analytic `[A]`
+on the selected positive chart. We then select the ν-dominant side as
+short-horizon, present-enactment-facing or **Vward**, and the φ-dominant side
+as long-horizon, represented-future-facing or **Φward** `[I]`. These are
+orientation labels, not identities: `ν≠V₄`, `φ≠Φ₅`, `q_H` is not time,
+equal chart weights do not mean the short and long clocks are equal, and
+represented futures still act only through present D4 carriers.
+
+The centre therefore has no reciprocal-axis dominance and no chart-balance
+deficit. It does **not** abolish scarcity, specialization, sacrifice, or real
+opportunity costs. Opportunity regret belongs to named affected bearers and a
+declared feasible set; it remains a vector unless a separately defended
+aggregation rule is supplied. A real optimum may be tilted by asymmetric
+prices, substitution, storage, emergency, or task-specific specialization.
+
+The strongest admissible **Dharma/flow hypothesis** is consequently `[C]`:
+for a preregistered decision class in which present enactment and retained
+future options are complementary and comparably calibrated, a Justice-admissible,
+Exit-preserving policy near `q_H=0` will be Pareto-undominated for the named
+bearers and will outperform matched Vward, Φward, timescale-matched, and
+native-domain rivals on joint performance and independently operationalized
+flow. Hidden delayed cost, a harmed bearer, decorative Exit, a robust off-centre
+optimum, or no incremental flow relation kills the corresponding transfer
+claim. The reciprocal-chart theorem, the two-clock practice, and lawful
+context-specific tilts survive. Here **Dharma** names the chosen practice of
+Justice-admissible, Exit-preserving, receipt-responsive coordination; geometry
+does not derive the Good.
+
+**Status: OVERLAY NOT RUN.** The horizon reading, regret transfer, and
+Dharma/flow hypothesis have no scored empirical result.

@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 43,
+      "primary_card_count": 44,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1597,6 +1597,56 @@
       "to": "A6"
     },
     {
+      "from": "OS01-37",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "depends_on",
+      "to": "OS01-30"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "depends_on",
+      "to": "OS01-35"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "supported_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-37",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -2763,8 +2813,8 @@
     }
   ],
   "metrics": {
-    "edges": 546,
-    "nodes": 119
+    "edges": 556,
+    "nodes": 120
   },
   "nodes": [
     {
@@ -2813,7 +2863,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 43,
+      "primary_card_count": 44,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -3116,6 +3166,11 @@
     },
     {
       "id": "OS01-36",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-37",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

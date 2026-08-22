@@ -1692,6 +1692,47 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-37",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-22",
+        "OS01-30",
+        "OS01-35"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "A",
+        "C",
+        "I"
+      ],
+      "locator": {
+        "anchor": "The owner adds a temporal interpretation of the reciprocal spectrum.",
+        "fingerprint_sha256": "7f1a2fc3500850517f1be06afa24c8c950a247b5e96c91d7af056b79cc40bb12",
+        "line_end": 819,
+        "line_start": 776,
+        "section": "12B"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-1",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -2916,8 +2957,8 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 82,
-    "conjecture_cards": 30,
+    "cards": 83,
+    "conjecture_cards": 31,
     "public_bounded_current": 24,
     "works_with_cards": 9
   },

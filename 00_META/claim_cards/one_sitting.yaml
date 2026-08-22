@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "reviewed_source_sha256": "37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -105,6 +105,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "the lossy-code preregistration is specified but NOT RUN; no maximality result is claimed",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-directed temporal horizon overlay without shifting prior card slices; add OS01-37",
+        "prior_hash": "d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "analytic chart weights separated from the selected horizon crosswalk, bearer-wise regret, and untested Dharma-flow transfer",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md"
       }
     ]
   },
@@ -1598,6 +1607,33 @@
       "disposition": "research_docket",
       "public": {"state": "candidate", "wording": "[C] Game theory is not exhausted; M4 is conjectured to maximally compress the self/other direction and possible/actual power-channel orientation of strategy. In a run, maximal means minimum description length at fixed acceptable performance within the preregistered rival class—not unique global maximality. Native game structures remain. Status: NOT RUN."},
       "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": ["K-1", "K-4"]
+    },
+    {
+      "card_id": "OS01-37",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12B",
+        "line_start": 776,
+        "line_end": 819,
+        "anchor": "The owner adds a temporal interpretation of the reciprocal spectrum.",
+        "fingerprint_sha256": "7f1a2fc3500850517f1be06afa24c8c950a247b5e96c91d7af056b79cc40bb12"
+      },
+      "plain_claim": "The reciprocal chart admits an exact equal-weight centre, while its Vward short-horizon and Phiward long-horizon reading, its transfer to bearer-wise opportunity regret, and its Dharma-flow interpretation remain selected and untested.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "A", "scope": "normalized chart-weight identities and unique balance maximum"}, {"tier": "I", "scope": "Vward short-horizon and Phiward long-horizon orientation crosswalk"}, {"tier": "C", "scope": "real opportunity-regret, centre-optimality, flow, and Dharma transfer"}],
+      "dependencies": ["OS01-22", "OS01-30", "OS01-35"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["lowercase nu is not uppercase V4 and lowercase phi is not uppercase Phi5", "q_H is a signed chart tilt rather than time and the Burrisphere display path remains non-temporal", "equal normalized chart weights do not mean the short and long clocks are equal", "zero chart-balance deficit does not eliminate scarcity, specialization, sacrifice, or real opportunity cost", "Dharma names a chosen Justice-admissible Exit-preserving receipt-responsive practice and is not derived from geometry"],
+      "strongest_rival": "Real decisions have asymmetric returns, multiple timescales, non-fungible resources, and bearer conflicts, so a specialized, timescale-matched, or native-domain policy may lawfully and predictively outperform the reciprocal centre.",
+      "discriminator": "Preregister one decision class, its short and long horizons, feasible set, native calibration, complement or substitute relation, prices and storage, affected bearers, Justice, consent, Exit, held-out target, independently operationalized flow measure, null, and centre, tilted, timescale-matched, and native-domain rivals.",
+      "kill_criterion": "Kill centre-optimality in a domain if a tilted, timescale-matched, or native rival robustly wins; kill Dharma integrity if delayed cost or an affected bearer is hidden or Exit is decorative; kill the flow transfer if the independent flow measure adds no discriminating relationship.",
+      "survivor_if_killed": "The reciprocal-chart identities, the two-clock practice, bearer-complete Justice, lawful context-specific tilts, and the optional Vward-Phiward mnemonic if comprehension testing shows no namespace leakage.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The horizon overlay and Dharma-flow gloss are removable while the analytic chart survives."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[A] The reciprocal centre equalizes normalized short and long chart weights and uniquely maximizes B. [I] Emergentism reads the nu-dominant side as Vward and present-facing, and the phi-dominant side as Phiward and future-option-facing. [C] Whether the centre minimizes bearer-wise opportunity regret or supports flow and Dharma is untested; real optima may tilt. Status: OVERLAY NOT RUN."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md"]},
       "semantic_owner_id": "K-3",
       "supporting_owner_ids": ["K-1", "K-4"]
     }

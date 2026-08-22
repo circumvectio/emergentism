@@ -78,7 +78,8 @@
         "OS01-33",
         "OS01-34",
         "OS01-35",
-        "OS01-36"
+        "OS01-36",
+        "OS01-37"
       ],
       "release_state": "source_active_current_public_reader",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
@@ -722,9 +723,9 @@
       }
     ],
     "integrity": {
-        "existing_claim_card_count": 82,
+        "existing_claim_card_count": 83,
         "primary_cards_by_composition": {
-        "COMP-ACTIVE-01-WELTANSCHAUUNG": 43,
+        "COMP-ACTIVE-01-WELTANSCHAUUNG": 44,
         "COMP-ACTIVE-02-TITANS": 7,
         "COMP-ACTIVE-03-LIVED-COMPASS": 20,
         "COMP-HISTORICAL-01-SERPENT-CYCLE": 0
@@ -733,7 +734,7 @@
         "historical_custody_only": 7,
         "research_dossier": 5
       },
-      "total_primary_or_custody_routes": 82
+      "total_primary_or_custody_routes": 83
     }
   }
 }
