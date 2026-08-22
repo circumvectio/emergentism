@@ -122,6 +122,77 @@ def require_g7_projection(stone: dict) -> dict:
         raise ValueError("G7DisplayPath.v1 contract drift")
 
     reciprocal = projection.get("reciprocalSpectrum", {})
+    expected_horizon_overlay = {
+        "schema": "emergentism/HorizonBalanceOverlay.v1",
+        "status": "candidate-not-run",
+        "sourceObject": "emergentism/ReciprocalSpectrum.v1",
+        "chartWeights": {
+            "short": "w_S:=ν/(φ+ν)",
+            "long": "w_L:=φ/(φ+ν)",
+            "tilt": "q_H:=w_L−w_S=(φ−ν)/(φ+ν)",
+            "identities": ["w_S+w_L=1", "B=2sqrt(w_S*w_L)=sqrt(1−q_H^2)"],
+            "tier": "[A]",
+        },
+        "interpretation": {
+            "negativeTilt": "short-horizon/present-enactment-facing (Vward)",
+            "centre": "equal normalized chart weights",
+            "positiveTilt": "long-horizon/represented-future-facing (Phiward)",
+            "tier": "[I]",
+        },
+        "firewalls": {
+            "lowercaseEqualsUppercase": False,
+            "coordinateIsTime": False,
+            "centreMeansShortClockEqualsLongClock": False,
+            "futureContentActsByItself": False,
+            "displayPathBecomesTemporal": False,
+            "centreIsUniversalOptimum": False,
+            "eliminatesTradeoffs": False,
+            "derivesDharma": False,
+        },
+        "transfer": {
+            "tier": "[C]",
+            "requires": [
+                "named-decision-domain", "named-short-and-long-horizons",
+                "native-cardinal-calibration-or-explicit-ordinal-alternative",
+                "feasible-set-or-budget", "complement-or-substitute-declaration",
+                "prices-storage-and-asymmetry", "named-affected-bearers",
+                "Justice-consent-and-Exit", "held-out-target-null-and-rivals",
+            ],
+        },
+        "opportunityRegret": {
+            "mode": "bearer-wise-Pareto-vector",
+            "scalarAggregationDefault": False,
+            "centreMinimizes": "candidate-only-under-declared-symmetric-premises",
+            "tier": "[I/C]",
+        },
+        "normativePhenomenology": {
+            "justiceFirst": True,
+            "exitRequired": True,
+            "dharmaDerivedFromChart": False,
+            "flowRequiresIndependentOperationalization": True,
+            "tier": "[S/I/C]",
+        },
+        "test": {
+            "status": "not-run",
+            "comparators": [
+                "centre-policy", "Vward-policy", "Phiward-policy",
+                "timescale-matched-policy", "native-domain-baseline",
+            ],
+            "kills": [
+                "robust-off-centre-or-native-winner",
+                "hidden-delayed-cost-or-harmed-bearer", "decorative-Exit",
+                "no-independent-flow-relation",
+            ],
+            "survivor": [
+                "reciprocal-chart-identities", "two-clock-practice",
+                "bearer-complete-Justice", "lawful-context-specific-tilts",
+            ],
+            "truthEvidence": False,
+            "tier": "[C]",
+        },
+        "truthEvidence": False,
+        "tier": "[A/I/C]",
+    }
     expected_reciprocal = {
         "schema": "emergentism/ReciprocalSpectrum.v1",
         "domain": "positive reciprocal chart",
@@ -136,6 +207,7 @@ def require_g7_projection(stone: dict) -> dict:
         "sameAsUppercasePowerModel": False,
         "revivesProductRanking": False,
         "g7ExhaustsAllGames": False,
+        "horizonBalanceOverlay": expected_horizon_overlay,
         "tier": "[A/S/I]",
     }
     if reciprocal != expected_reciprocal:
@@ -225,6 +297,7 @@ def stone_section(stone: dict) -> tuple[str, str]:
     ego_collective_gloss = projection["egoCollectiveGloss"]
     display_path = projection["displayPath"]
     reciprocal = projection["reciprocalSpectrum"]
+    horizon_overlay = reciprocal["horizonBalanceOverlay"]
     strategy = projection["strategyCompression"]
     balance_display = reciprocal["balance"].replace("=", " = ", 1).replace("≤", " ≤ ")
 
@@ -383,13 +456,15 @@ def stone_section(stone: dict) -> tuple[str, str]:
     <p class="eyebrow">{esc(reciprocal['schema'])} · {esc(reciprocal['tier'])}</p>
     <h3 id="reciprocal-title">The lowercase reciprocal chart</h3>
     <p class="projection-tier">Domain: {esc(reciprocal['domain'])}</p>
-    <div class="spectrum-points" aria-label="Positive reciprocal chart from one pole through the centre to the other pole">
-      <p><b>From</b><code>{esc(reciprocal['from'])}</code></p>
-      <p><b>Centre</b><code>{esc(reciprocal['centre'])}</code></p>
-      <p><b>To</b><code>{esc(reciprocal['to'])}</code></p>
+    <div class="spectrum-points" aria-label="Selected horizon reading of the positive reciprocal chart">
+      <p><b>Vward [I]</b><code>{esc(reciprocal['from'])}</code><span>shorter horizon · present enactment</span></p>
+      <p><b>Centre</b><code>q_H=0 · B=1</code><span>{esc(horizon_overlay['interpretation']['centre'])} · Dharma / flow [C]</span></p>
+      <p><b>Φward [I]</b><code>{esc(reciprocal['to'])}</code><span>longer horizon · represented futures</span></p>
     </div>
     <p><code>{esc(reciprocal['constraint'])}</code>: the product is constant across the chart and therefore does not select the centre.</p>
-    <p><code>{esc(balance_display)}</code>: B reaches its unique maximum <code>B={esc(reciprocal['uniqueMaximum']['value'])}</code> at <code>{esc(reciprocal['uniqueMaximum']['at'])}</code> {esc(reciprocal['uniqueMaximum']['tier'])}.</p>
+    <p><code>{esc(horizon_overlay['chartWeights']['short'])}</code>, <code>{esc(horizon_overlay['chartWeights']['long'])}</code>, and <code>{esc(horizon_overlay['chartWeights']['tilt'])}</code>. Therefore <code>B = 2/(φ+ν) ≤ 1</code> and <code>B=2√(w_Sw_L)=√(1−q_H²)</code>, with the unique maximum at equal chart weights {esc(horizon_overlay['chartWeights']['tier'])}.</p>
+    <p><b>Horizon firewall:</b> Vward and Φward are selected orientation labels {esc(horizon_overlay['interpretation']['tier'])}, not identities: <code>ν≠V₄</code>, <code>φ≠Φ₅</code>, <code>q_H</code> is not time, and the non-temporal 360° display path remains separate.</p>
+    <p><b>Dharma / flow hypothesis {esc(horizon_overlay['test']['tier'])} · OVERLAY NOT RUN:</b> the centre removes chart tilt, not scarcity or real tradeoffs. Whether it minimizes bearer-wise opportunity regret or supports flow must be tested against asymmetric, specialized, timescale-matched, and native-domain rivals with Justice, consent, delayed cost, and Exit visible.</p>
     <h4>Signed G7 plane ≠ lowercase reciprocal chart ≠ uppercase node model</h4>
     <div class="model-distinction">
       <article><h5>Signed G7 plane</h5><p>Bearer-indexed <code>±Φ₅</code> and <code>±V₄</code> transfer signs in the selected G7 vocabulary.</p></article>
@@ -419,7 +494,7 @@ def stone_section(stone: dict) -> tuple[str, str]:
 .strategy-compression{margin-top:2rem;padding-top:.5rem;border-top:1px solid var(--border)}.strategy-table-wrap{overflow-x:auto}.strategy-matrix{width:100%;min-width:620px;border-collapse:collapse;margin:1rem 0}.strategy-matrix caption{text-align:left;padding:.6rem 0;font:600 .72rem/1.5 var(--font-mono);color:var(--text-dim)}.strategy-matrix th,.strategy-matrix td{padding:.8rem;border:1px solid var(--border);text-align:left}.strategy-matrix thead th{color:var(--gold);background:var(--bg)}.strategy-mnemonics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.strategy-mnemonics article{padding:1rem;background:var(--bg)}.strategy-mnemonics h4,.strategy-mnemonics p{margin:.2rem 0}.native-structures{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin:1rem 0;padding:0;list-style:none;background:var(--border);border:1px solid var(--border)}.native-structures li{padding:.7rem;background:var(--bg);text-align:center}.strategy-kills{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:1rem 0;padding:0;list-style:none;background:var(--border);border:1px solid var(--border)}.strategy-kills li{padding:1rem;background:var(--bg);overflow-wrap:anywhere}
 .maximality-test{margin:1.5rem 0 0;padding:1rem;border:1px dashed var(--gold);background:var(--bg)}.maximality-test h4{margin:.35rem 0}.maximality-test h5{margin:1.2rem 0 .5rem}.test-bundle,.test-comparators,.test-kills{display:grid;gap:1px;margin:.5rem 0 1rem;padding:0;list-style:none;background:var(--border);border:1px solid var(--border)}.test-bundle{grid-template-columns:repeat(3,1fr)}.test-comparators,.test-kills{grid-template-columns:repeat(3,1fr)}.test-bundle li,.test-comparators li,.test-kills li{padding:.7rem;background:var(--surface);overflow-wrap:anywhere}
 .display-itinerary,.reciprocal-spectrum{margin-top:2rem;padding-top:.5rem;border-top:1px solid var(--border)}.display-phases{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin:1rem 0;padding:0;list-style:none;background:var(--border);border:1px solid var(--border)}.display-phases li{padding:.8rem;background:var(--bg)}.display-phases h4,.display-phases p{margin:.2rem 0}.itinerary-fence{border:1px dashed var(--gold);padding:1rem}
-.spectrum-points,.model-distinction{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.spectrum-points p,.model-distinction article{margin:0;padding:1rem;background:var(--bg)}.spectrum-points b,.spectrum-points code{display:block}.model-distinction h5{margin:.1rem 0 .5rem;font-size:.9rem}.model-distinction p{margin:0}.reciprocal-spectrum>p code{color:var(--gold)}
+.spectrum-points,.model-distinction{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}.spectrum-points p,.model-distinction article{margin:0;padding:1rem;background:var(--bg)}.spectrum-points b,.spectrum-points code,.spectrum-points span{display:block}.spectrum-points span{margin-top:.35rem;color:var(--text-dim);font-size:.78rem}.model-distinction h5{margin:.1rem 0 .5rem;font-size:.9rem}.model-distinction p{margin:0}.reciprocal-spectrum>p code{color:var(--gold)}
 .stone-boundary{margin-top:1.5rem;border-left:2px solid var(--border);padding-left:1rem}.stone-boundary code{color:var(--gold)}
 @media(max-width:700px){.power-grid,.plane-axes,.g7-layout,.g7-transfer-grid,.strategy-mnemonics,.native-structures,.strategy-kills,.test-bundle,.test-comparators,.test-kills,.display-phases,.spectrum-points,.model-distinction{display:grid;grid-template-columns:1fr;grid-template-areas:none}.g7-transfer{grid-area:auto}.native-structures li{text-align:left}}
 """

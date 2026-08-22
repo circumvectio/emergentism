@@ -124,7 +124,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -151,7 +151,8 @@
         "OS01-33",
         "OS01-34",
         "OS01-35",
-        "OS01-36"
+        "OS01-36",
+        "OS01-37"
       ],
       "claimSources": [
         {
@@ -164,7 +165,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+          "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13",
@@ -183,7 +184,8 @@
             "OS01-33",
             "OS01-34",
             "OS01-35",
-            "OS01-36"
+            "OS01-36",
+            "OS01-37"
           ]
         }
       ],
@@ -199,6 +201,9 @@
         "one of 24 possible assignments",
         "one complete 360° turn",
         "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon",
+        "longer horizon",
+        "OVERLAY NOT RUN",
         "Game theory is not exhausted",
         "maximally compressed"
       ]
@@ -221,11 +226,12 @@
         "OS01-33",
         "OS01-34",
         "OS01-35",
-        "OS01-36"
+        "OS01-36",
+        "OS01-37"
       ],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": [
           "OS01-01",
@@ -242,7 +248,8 @@
           "OS01-33",
           "OS01-34",
           "OS01-35",
-          "OS01-36"
+          "OS01-36",
+          "OS01-37"
         ]
       }],
       "publicDisposition": "bounded_current",
@@ -256,6 +263,9 @@
         "D6 is nonclosure, not D0.",
         "reading itinerary, not time",
         "φν=1 is constant",
+        "shorter horizon",
+        "longer horizon",
+        "OVERLAY NOT RUN",
         "self/ego-facing taking",
         "Game theory is not exhausted",
         "maximally compressed"
@@ -267,7 +277,7 @@
       "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"]
       }],
@@ -282,7 +292,8 @@
         "FIN01-02",
         "OS01-08",
         "OS01-13",
-        "OS01-22"
+        "OS01-22",
+        "OS01-37"
       ],
       "claimSources": [
         {
@@ -296,12 +307,13 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
             "OS01-13",
-            "OS01-22"
+            "OS01-22",
+            "OS01-37"
           ]
         }
       ],
@@ -309,6 +321,8 @@
       "requiredMarkers": [
         "Finity Card",
         "private two-face receipt",
+        "The two-horizon overlay",
+        "OVERLAY NOT RUN",
         "comparative benefit over simpler decision practices remains open"
       ]
     },
@@ -363,7 +377,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -386,7 +400,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -396,28 +410,28 @@
     {
       "surface": "5/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
+      "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
+        "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers", "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1", "360° display path", "B = 2/(φ+ν) ≤ 1", "Game theory is not exhausted", "maximally compressed"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers", "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1", "360° display path", "B = 2/(φ+ν) ≤ 1", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "plainly/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
+      "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
+        "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "discoveries/nonduality/index.html",
@@ -425,7 +439,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -438,7 +452,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -451,7 +465,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -464,7 +478,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -477,7 +491,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -487,28 +501,28 @@
     {
       "surface": "burrisphere/index.html",
       "role": "g7_quadrant_and_titan_axis_projection",
-      "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36"],
+      "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36"]
+        "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā", "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1", "Game theory is not exhausted", "maximally compressed"]
+      "requiredMarkers": ["Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā", "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "rosetta/index.html",
       "role": "selected_translation_language_boundary",
-      "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"],
+      "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36"]
+        "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["One move, translated", "G7", "possible power", "actual power", "G7@1 ≠ GEN7@1", "Correspondence is not confirmation", "presentation itinerary", "φν=1 is the constraint", "mental versus physical power", "Game theory is not exhausted", "maximally compressed"]
+      "requiredMarkers": ["One move, translated", "G7", "possible power", "actual power", "G7@1 ≠ GEN7@1", "Correspondence is not confirmation", "presentation itinerary", "φν=1 is the constraint", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "mental versus physical power", "Game theory is not exhausted", "maximally compressed"]
     },
     {
       "surface": "book/index.html",
@@ -516,7 +530,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:d8de369affe9769a08e78fe9f00ccb3ba2554222c027f461c2d31bb2eed239cd",
+    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -728,7 +742,8 @@
         "OS01-33",
         "OS01-34",
         "OS01-35",
-        "OS01-36"
+        "OS01-36",
+        "OS01-37"
       ],
       "sourceRevision": "sha256:227f3c0bbd8662e3b08697fc345d3fa36bbbf40e1852ad843955ac2b48e4f4bf",
       "lifecycle": "reader_synthesis",
@@ -825,6 +840,90 @@
             "sameAsUppercasePowerModel": false,
             "revivesProductRanking": false,
             "g7ExhaustsAllGames": false,
+            "horizonBalanceOverlay": {
+              "schema": "emergentism/HorizonBalanceOverlay.v1",
+              "status": "candidate-not-run",
+              "sourceObject": "emergentism/ReciprocalSpectrum.v1",
+              "chartWeights": {
+                "short": "w_S:=ν/(φ+ν)",
+                "long": "w_L:=φ/(φ+ν)",
+                "tilt": "q_H:=w_L−w_S=(φ−ν)/(φ+ν)",
+                "identities": [
+                  "w_S+w_L=1",
+                  "B=2sqrt(w_S*w_L)=sqrt(1−q_H^2)"
+                ],
+                "tier": "[A]"
+              },
+              "interpretation": {
+                "negativeTilt": "short-horizon/present-enactment-facing (Vward)",
+                "centre": "equal normalized chart weights",
+                "positiveTilt": "long-horizon/represented-future-facing (Phiward)",
+                "tier": "[I]"
+              },
+              "firewalls": {
+                "lowercaseEqualsUppercase": false,
+                "coordinateIsTime": false,
+                "centreMeansShortClockEqualsLongClock": false,
+                "futureContentActsByItself": false,
+                "displayPathBecomesTemporal": false,
+                "centreIsUniversalOptimum": false,
+                "eliminatesTradeoffs": false,
+                "derivesDharma": false
+              },
+              "transfer": {
+                "tier": "[C]",
+                "requires": [
+                  "named-decision-domain",
+                  "named-short-and-long-horizons",
+                  "native-cardinal-calibration-or-explicit-ordinal-alternative",
+                  "feasible-set-or-budget",
+                  "complement-or-substitute-declaration",
+                  "prices-storage-and-asymmetry",
+                  "named-affected-bearers",
+                  "Justice-consent-and-Exit",
+                  "held-out-target-null-and-rivals"
+                ]
+              },
+              "opportunityRegret": {
+                "mode": "bearer-wise-Pareto-vector",
+                "scalarAggregationDefault": false,
+                "centreMinimizes": "candidate-only-under-declared-symmetric-premises",
+                "tier": "[I/C]"
+              },
+              "normativePhenomenology": {
+                "justiceFirst": true,
+                "exitRequired": true,
+                "dharmaDerivedFromChart": false,
+                "flowRequiresIndependentOperationalization": true,
+                "tier": "[S/I/C]"
+              },
+              "test": {
+                "status": "not-run",
+                "comparators": [
+                  "centre-policy",
+                  "Vward-policy",
+                  "Phiward-policy",
+                  "timescale-matched-policy",
+                  "native-domain-baseline"
+                ],
+                "kills": [
+                  "robust-off-centre-or-native-winner",
+                  "hidden-delayed-cost-or-harmed-bearer",
+                  "decorative-Exit",
+                  "no-independent-flow-relation"
+                ],
+                "survivor": [
+                  "reciprocal-chart-identities",
+                  "two-clock-practice",
+                  "bearer-complete-Justice",
+                  "lawful-context-specific-tilts"
+                ],
+                "truthEvidence": false,
+                "tier": "[C]"
+              },
+              "truthEvidence": false,
+              "tier": "[A/I/C]"
+            },
             "tier": "[A/S/I]"
           },
           "strategyCompression": {
@@ -887,7 +986,8 @@
             {"path": "05_COSMOLOGY/00_THE_BURRISPHERE.md", "sha256": "e4c0bcb9ac0274351da25fd50caadd54ee7e3f0c899d2322990e1cac0134c18f", "tier": "[S] routing only"},
             {"path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md", "sha256": "be2dbc783791225cb8a2886e15bc503d51c5ea98c2af80678cf8bc916c7d0b30", "tier": "[A/S/I]"},
             {"path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md", "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b", "tier": "[S/I]"},
-            {"path": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md", "sha256": "edb183f9de07e113681f60071b64b98b89e5a228428d21c1f13de323e472af99", "tier": "[B] direction"}
+            {"path": "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md", "sha256": "edb183f9de07e113681f60071b64b98b89e5a228428d21c1f13de323e472af99", "tier": "[B] direction"},
+            {"path": "00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md", "sha256": "e2841d5558e2fc5fdf6811fc6a058057780099443ea054a12a34a555f13dbb74", "tier": "[B] direction"}
           ]
         }
       },

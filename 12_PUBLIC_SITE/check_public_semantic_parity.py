@@ -168,6 +168,36 @@ FORBIDDEN = {
         r"(?:same\s+as\s+)?(?:Φ\s*(?:and|,)\s*V)",
         re.I,
     ),
+    "lowercase horizon-power identity inflation": re.compile(
+        r"(?:\bν\s+(?:is|equals?|=|≡)\s+V(?:₄|_?4)\b"
+        r"|\bφ\s+(?:is|equals?|=|≡)\s+Φ(?:₅|_?5)\b)",
+        re.I,
+    ),
+    "horizon coordinate time inflation": re.compile(
+        r"(?:\bq[_\s]?H\s+(?:is|equals?|measures?|represents?)\s+(?:physical\s+)?time\b"
+        r"|\b(?:the\s+)?chart\s+coordinate\s+is\s+time\b)",
+        re.I,
+    ),
+    "universal centre optimum inflation": re.compile(
+        r"\b(?:the\s+)?centre\s+(?:is|proves?|guarantees?|establishes?)\s+"
+        r"(?:the\s+)?(?:real\s+|universal\s+|universally\s+)?optimum\b",
+        re.I,
+    ),
+    "tradeoff elimination inflation": re.compile(
+        r"\b(?:the\s+)?centre\s+(?:removes?|eliminates?|abolishes?|has\s+no)\s+"
+        r"(?:all\s+|real\s+)?tradeoffs?\b",
+        re.I,
+    ),
+    "least opportunity claim inflation": re.compile(
+        r"\b(?:the\s+)?centre\s+(?:has|gives?|guarantees?|minimi[sz]es?)\s+"
+        r"(?:the\s+)?least\s+opportunity\s+(?:cost|loss|regret)\b",
+        re.I,
+    ),
+    "geometry Dharma-flow inflation": re.compile(
+        r"\b(?:geometry|the\s+(?:reciprocal\s+)?chart|the\s+B\s+maximum)\s+"
+        r"(?:proves?|derives?|guarantees?|establishes?)\s+(?:flow|Dharma|the\s+Good)\b",
+        re.I,
+    ),
     "bare ego-collective signs exhaust M4": re.compile(
         r"\b(?:the\s+)?(?:four\s+)?(?:bare\s+)?ego\s*/\s*collective"
         r"[+\-−±/\s]*(?:signs?|quadrants?)\s+(?:alone\s+)?"
@@ -340,11 +370,13 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "A worldview for finite beings", "Frame one decision",
         EXPECTED_CORE_QUESTION, "One present, three explanations",
         "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     ),
     "plainly/index.html": (
         "possible power", "actual power", "chosen AND-class convention",
         "one complete 360° turn", "φν=1 everywhere",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
     ),
     "dasein/index.html": (
@@ -352,24 +384,33 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "Complete means accounted explanatory debt, not omniscience",
         "D6 is nonclosure, not D0.",
         "reading itinerary, not time", "φν=1 is constant",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "self/ego-facing taking", "Game theory is not exhausted", "maximally compressed",
     ),
     "f5/index.html": (
         "F5-W", "F5-N", "F5-R", "[C] UNVALIDATED",
         "Strongest rival", "Discriminator", "Kill", "Survivor", "Pareto frontier",
     ),
-    "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
-    "5/index.html": ("Game theory is not exhausted", "maximally compressed"),
+    "practice/index.html": (
+        "Finity Card", "Φ₅", "V₄", "The two-horizon overlay",
+        "Vward", "Φward", "OVERLAY NOT RUN",
+    ),
+    "5/index.html": (
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
+        "Game theory is not exhausted", "maximally compressed",
+    ),
     "burrisphere/index.html": (
         "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
         "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary",
         "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     ),
     "rosetta/index.html": (
         "One move, translated", "G7", "possible power", "actual power",
         "G7@1 ≠ GEN7@1", "Correspondence is not confirmation",
         "presentation itinerary", "φν=1 is the constraint",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "mental versus physical power", "Game theory is not exhausted", "maximally compressed",
     ),
     "manifesto/index.html": (
@@ -403,32 +444,32 @@ REQUIRED_SURFACE_CARDS = {
         "FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-23",
         "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
         "OS01-29", "OS01-30", "OS01-31", "OS01-32", "OS01-33",
-        "OS01-34", "OS01-35", "OS01-36",
+        "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
     "dasein/index.html": {
         "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
         "OS01-20", "OS01-21", "OS01-23", "OS01-25", "OS01-31",
-        "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
+        "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
     "f5/index.html": {"OS01-27", "OS01-28", "OS01-29", "OS01-30"},
-    "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
+    "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22", "OS01-37"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
     "compass/index.html": {"OS01-13"},
     "5/index.html": {
-        "OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
+        "OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
     "plainly/index.html": {
         "OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35",
-        "OS01-36",
+        "OS01-36", "OS01-37",
     },
     "discoveries/nonduality/index.html": {"OS01-09"},
     "about/index.html": {"OS01-26"},
     "read/index.html": {"OS01-13"},
     "axioms/index.html": {"OS01-26"},
     "journey/index.html": {"OS01-09"},
-    "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36"},
+    "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
     "rosetta/index.html": {
-        "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36",
+        "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
     "book/index.html": {"OS01-13"},
 }
@@ -439,6 +480,7 @@ REQUIRED_SURFACE_MARKERS = {
         "Frame one decision", "comparative benefit untested",
         "One present, three explanations", "one of 24 possible assignments",
         "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     },
     "dasein/index.html": {
@@ -447,12 +489,14 @@ REQUIRED_SURFACE_MARKERS = {
         "Complete means accounted explanatory debt, not omniscience",
         "Every “why” must say what kind of answer it is.", "D6 is nonclosure, not D0.",
         "reading itinerary, not time", "φν=1 is constant",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "self/ego-facing taking", "Game theory is not exhausted", "maximally compressed",
     },
     "5/index.html": {
         "P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers",
         "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1",
         "360° display path", "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     },
     "plainly/index.html": {
@@ -460,18 +504,21 @@ REQUIRED_SURFACE_MARKERS = {
         "Dasein is the whole that can be", "four quadrants plus the Titan axis",
         "G7@1 ≠ GEN7@1",
         "one complete 360° turn", "φν=1 everywhere",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
     },
     "burrisphere/index.html": {
         "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
         "G7@1 ≠ GEN7@1",
         "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     },
     "rosetta/index.html": {
         "One move, translated", "G7", "possible power", "actual power",
         "G7@1 ≠ GEN7@1", "Correspondence is not confirmation",
         "presentation itinerary", "φν=1 is the constraint",
+        "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "mental versus physical power", "Game theory is not exhausted", "maximally compressed",
     },
 }
@@ -519,6 +566,14 @@ V21_REJECT_FIXTURES = (
     ("Rosetta convergence truth-evidence inflation", "Rosetta convergence is truth evidence."),
     ("G7 GEN7 identity inflation", "G7@1 = GEN7@1."),
     ("lowercase uppercase power collapse", "φ and ν are the same as Φ and V."),
+    ("lowercase horizon-power identity inflation", "ν is V₄."),
+    ("lowercase horizon-power identity inflation", "φ is Φ₅."),
+    ("horizon coordinate time inflation", "q_H represents physical time."),
+    ("universal centre optimum inflation", "The centre is the universal optimum."),
+    ("tradeoff elimination inflation", "The centre eliminates real tradeoffs."),
+    ("least opportunity claim inflation", "The centre gives the least opportunity cost."),
+    ("geometry Dharma-flow inflation", "The reciprocal chart proves Dharma."),
+    ("geometry Dharma-flow inflation", "Geometry guarantees flow."),
     ("bare ego-collective signs exhaust M4", "Bare ego/collective signs exhaust M4."),
     ("display path dynamics inflation", "The helix represents physical dynamics."),
     ("display path time inflation", "The winding path encodes time."),
@@ -581,6 +636,12 @@ V21_BOUNDED_FIXTURES = (
     ("Rosetta convergence truth-evidence inflation", "Rosetta convergence is not truth evidence."),
     ("G7 GEN7 identity inflation", "G7@1 ≠ GEN7@1."),
     ("lowercase uppercase power collapse", "φ and ν are not Φ and V."),
+    ("lowercase horizon-power identity inflation", "ν≠V₄ and φ≠Φ₅."),
+    ("horizon coordinate time inflation", "q_H is not time."),
+    ("universal centre optimum inflation", "The centre is not a universal optimum."),
+    ("tradeoff elimination inflation", "The centre does not eliminate real tradeoffs."),
+    ("least opportunity claim inflation", "Least opportunity regret is only a conditional candidate."),
+    ("geometry Dharma-flow inflation", "Geometry does not derive Dharma or guarantee flow."),
     ("bare ego-collective signs exhaust M4", "Bare ego/collective signs do not recover M4."),
     ("display path dynamics inflation", "The helix is not physical dynamics."),
     ("display path time inflation", "The winding path is not time."),
@@ -766,7 +827,7 @@ EXPECTED_G7_POWERS = {
 }
 EXPECTED_D5_CARD_IDS = [
     "OS01-09", "OS01-10", "OS01-11", "OS01-12", "OS01-33", "OS01-34", "OS01-35",
-    "OS01-36",
+    "OS01-36", "OS01-37",
 ]
 EXPECTED_EGO_COLLECTIVE_GLOSS = {
     "self": "ego-facing",
@@ -845,6 +906,85 @@ EXPECTED_G7_DISPLAY_PATH = {
     "derivesCount": False,
     "tier": "[I]",
 }
+EXPECTED_HORIZON_BALANCE_OVERLAY = {
+    "schema": "emergentism/HorizonBalanceOverlay.v1",
+    "status": "candidate-not-run",
+    "sourceObject": "emergentism/ReciprocalSpectrum.v1",
+    "chartWeights": {
+        "short": "w_S:=ν/(φ+ν)",
+        "long": "w_L:=φ/(φ+ν)",
+        "tilt": "q_H:=w_L−w_S=(φ−ν)/(φ+ν)",
+        "identities": [
+            "w_S+w_L=1",
+            "B=2sqrt(w_S*w_L)=sqrt(1−q_H^2)",
+        ],
+        "tier": "[A]",
+    },
+    "interpretation": {
+        "negativeTilt": "short-horizon/present-enactment-facing (Vward)",
+        "centre": "equal normalized chart weights",
+        "positiveTilt": "long-horizon/represented-future-facing (Phiward)",
+        "tier": "[I]",
+    },
+    "firewalls": {
+        "lowercaseEqualsUppercase": False,
+        "coordinateIsTime": False,
+        "centreMeansShortClockEqualsLongClock": False,
+        "futureContentActsByItself": False,
+        "displayPathBecomesTemporal": False,
+        "centreIsUniversalOptimum": False,
+        "eliminatesTradeoffs": False,
+        "derivesDharma": False,
+    },
+    "transfer": {
+        "tier": "[C]",
+        "requires": [
+            "named-decision-domain",
+            "named-short-and-long-horizons",
+            "native-cardinal-calibration-or-explicit-ordinal-alternative",
+            "feasible-set-or-budget",
+            "complement-or-substitute-declaration",
+            "prices-storage-and-asymmetry",
+            "named-affected-bearers",
+            "Justice-consent-and-Exit",
+            "held-out-target-null-and-rivals",
+        ],
+    },
+    "opportunityRegret": {
+        "mode": "bearer-wise-Pareto-vector",
+        "scalarAggregationDefault": False,
+        "centreMinimizes": "candidate-only-under-declared-symmetric-premises",
+        "tier": "[I/C]",
+    },
+    "normativePhenomenology": {
+        "justiceFirst": True,
+        "exitRequired": True,
+        "dharmaDerivedFromChart": False,
+        "flowRequiresIndependentOperationalization": True,
+        "tier": "[S/I/C]",
+    },
+    "test": {
+        "status": "not-run",
+        "comparators": [
+            "centre-policy", "Vward-policy", "Phiward-policy",
+            "timescale-matched-policy", "native-domain-baseline",
+        ],
+        "kills": [
+            "robust-off-centre-or-native-winner",
+            "hidden-delayed-cost-or-harmed-bearer",
+            "decorative-Exit",
+            "no-independent-flow-relation",
+        ],
+        "survivor": [
+            "reciprocal-chart-identities", "two-clock-practice",
+            "bearer-complete-Justice", "lawful-context-specific-tilts",
+        ],
+        "truthEvidence": False,
+        "tier": "[C]",
+    },
+    "truthEvidence": False,
+    "tier": "[A/I/C]",
+}
 EXPECTED_RECIPROCAL_SPECTRUM = {
     "schema": "emergentism/ReciprocalSpectrum.v1",
     "domain": "positive reciprocal chart",
@@ -859,6 +999,7 @@ EXPECTED_RECIPROCAL_SPECTRUM = {
     "sameAsUppercasePowerModel": False,
     "revivesProductRanking": False,
     "g7ExhaustsAllGames": False,
+    "horizonBalanceOverlay": EXPECTED_HORIZON_BALANCE_OVERLAY,
     "tier": "[A/S/I]",
 }
 EXPECTED_BASIC_STRATEGY_COMPRESSION = {
@@ -962,6 +1103,7 @@ EXPECTED_G7_SOURCE_TIERS = {
     "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md": "[A/S/I]",
     "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md": "[S/I]",
     "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md": "[B] direction",
+    "00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md": "[B] direction",
 }
 
 
