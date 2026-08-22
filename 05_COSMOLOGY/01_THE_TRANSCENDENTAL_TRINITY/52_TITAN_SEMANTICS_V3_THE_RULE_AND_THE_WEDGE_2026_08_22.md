@@ -93,6 +93,59 @@ The corpus was already here: `47_THE_EMERGENCE_OF_FINITY.md`,
 `../../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md`, and TLC-01's output
 typed `⊙₍F₎` — the **Finity witness**.
 
+## 2b · The Divided Ruliad — the ladder as the interior of ⊙
+
+Owner's architecture, 2026-08-22: reality structured in dimensions of freedom;
+real = the coherent and consistent; the ladder bracketed **⊙ … ⊙** — five
+registers of freedom between two marks of the finite actual, with `•` beneath
+and `○` at the rim.
+
+**Ownership fence first:** the D-register's owner is
+`../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`. This section maps
+v3 onto it and stages no rival register.
+
+**The division IS the point `[I]`.** By §1's two sterilities, the undivided
+totality is featureless — the Ruliad (`[B]` Wolfram) taken whole experiences
+nothing. Reality is therefore **the Ruliad typed**: divided into dimensions of
+freedom, each with its own emergent discoverable laws — and those laws are
+exactly the register's *settled debts* (07C, `W14`): the consistency payments
+that hold that freedom open.
+
+**The bracket reading `[I]`.** The ladder opens and closes in `⊙`: every
+register is a mode of the finite actual — the ladder is ⊙'s interior anatomy.
+`•` sits strictly beneath the first rung. `○` appears at **every crossing**
+(the μ-apertures are the diagonal-act at successive registers, §4) and at the
+rim (`D6`, the apophatic exit) — and `W12`'s `D6 ≈ roleD0` closes the
+bracket: the rim faces the ground.
+
+**The native-mathematics column `[I]`, each cell on existing canon:**
+
+| register (owner: 02) | native mathematics | canon under the cell |
+|---|---|---|
+| D1 distinction | arithmetic | the `{∅}=1` tower: counting = iterated distinction |
+| D2 configuration | geometry (Euclidean-flat as *first* law-set `[S]`; curvature waits for D4 per `W7d`) | configuration and relation |
+| D3 probability-bearing state | probability, QM | §5c — the qubit's sphere |
+| D4 causal actuality | spacetime dynamics | `W7d`'s gravity leg; the record |
+| D5 represented possibility | game theory, decision theory, behavioural economics | the D5 gamespace audit; `G7`; `W8` |
+
+**The fence that saves the ladder: register index ≠ spatial dimensionality.**
+The rhyme (1↔line, 2↔plane, 4↔spacetime) is seductive and **snaps at D3** —
+probability spaces are Hilbert spaces of arbitrary dimension — and again at
+D5. **The index counts opened freedoms: doors passed, not axes possessed.**
+One near-miss recorded, not claimed: a single qubit's mixed-state Bloch ball
+is 3-dimensional — a rhyme, never a law. "Multiverse" at D5 carries `W8`'s
+fence: represented option-fields only, no physical co-existence. And the
+Dasein criterion keeps `W1`'s split: coherence buys possibility;
+**actuality still requires lawful reachability** — the division is what keeps
+plenitude out.
+
+**○'s catalogue upgraded to `[A]`.** The classical impossibility theorems are
+*proven* boundary errors: Lindemann (π transcendental → no quadrature of the
+circle), Wantzel (trisection, cube-doubling), Abel–Ruffini/Galois (the quintic
+by radicals). Each proves a register-crossing has **no κ within the declared
+means**. To the skeptic's "aren't boundary errors just mistakes?" — some of
+them are theorems.
+
 ## 3 · The Doors — why every Titan equation failed the same way `[I]`
 
 Four equations were proposed across the brainstorm, and each landed on a
@@ -427,6 +480,7 @@ built. We ship the rigor visibly and build in public.
 | `○`'s guarantee | a grid is exhibited that contains its own diagonal |
 | the Doors thesis | a cosmogenesis-equation attempt is exhibited that fails at a point NOT in the indeterminate catalogue |
 | the Closure Rule (§3b) | a well-defined arithmetic operation is exhibited with a genuine Titan (not shadow) operand yielding register-internal results without a κ |
+| the Divided-Ruliad reading (§2b) | a register's "native mathematics" proves freely transferable across registers without κ — or the index-dimensionality rhyme is asserted as law, which D3 kills on contact |
 | the Asymmetry Theorem’s grading (§5b) | a register-crossing is exhibited whose upward reconstruction succeeds from endpoint terms alone, with no path/coupling information — or Bedau-class weak emergence is shown NOT to align with the serviced tier |
 | the wedge (candidates 1–3) | the prior-art audit finds any of them already claimed — then that candidate is cited, not mourned |
 | **this document** | if it is ever cited as v3 *adopted*, as a tier promotion, or as license for Titan arithmetic |
