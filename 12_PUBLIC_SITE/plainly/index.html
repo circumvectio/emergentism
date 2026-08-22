@@ -1,423 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-gestalt="v2">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emergentism, plainly — the whole idea in ordinary words</title>
-<meta name="description" content="The Finity method and the wider Emergentist research programme, explained from scratch in plain language — what is exact inside a stated construction, what is interpretation, and what remains a bet." />
-<meta name="color-scheme" content="dark" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Emergentism, plainly" />
-<meta property="og:description" content="Possible power, actual means, nested horizons, and accountable consequence—the core Emergentist proposal in ordinary words." />
-<meta property="og:url" content="https://emergentism.org/plainly/" />
-<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
-<meta name="twitter:title" content="Emergentism, plainly" />
-<meta name="twitter:description" content="Start from something you already know. Build up in pictures. Stay honest about what's proven and what's a guess." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
-<style>
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
-:root{
-  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
-  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#9a9d9f; --bone-ghost:#8f9296;
-  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
-  --blue:#5aa9e6; --green:#5bbf88;
-  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
-  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
-  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --maxw:1080px; --read:44rem;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
-             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
-body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
-  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.012) 0 1px, transparent 1px 3px)}
-::selection{background:rgba(255,235,59,.26);color:#050505}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--void);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
-.skip:focus{transform:translateY(0)}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
-.read{max-width:var(--read)}
-.mono{font-family:var(--mono)}
-
-.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
-.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
-.brand b{color:var(--gold);font-weight:800}
-.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
-.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
-.nav a:hover{color:var(--void);background:var(--gold)}
-.nav a.here{color:var(--gold);border:1px solid var(--line)}
-.mobile-actions{display:none;align-items:center;gap:.55rem;font:500 .7rem var(--mono);text-transform:uppercase}
-.mobile-actions>a,.mobile-actions summary{color:var(--bone-dim);text-decoration:none;cursor:pointer;list-style:none;padding:.42rem .1rem}
-.mobile-actions summary::-webkit-details-marker{display:none}
-.mobile-actions details{position:relative}.mobile-actions .menu-panel{position:absolute;right:0;top:calc(100% + .8rem);min-width:12rem;padding:.65rem;background:var(--panel-2);border:1px solid var(--line);box-shadow:0 1rem 2.5rem rgba(0,0,0,.42)}
-.mobile-actions .menu-panel a{display:block;padding:.55rem;color:var(--bone-dim);text-decoration:none}.mobile-actions .nav-action{color:var(--void);background:var(--gold);padding:.46rem .62rem}.mobile-actions .nav-quiet{color:var(--bone-faint)}
-
-/* hero */
-header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
-.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
-.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
-h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
-h1 .heavy{font-weight:900;letter-spacing:-.04em}
-h1 .gold{color:var(--gold);font-weight:900}
-.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
-.dek b{color:var(--bone);font-weight:500}
-
-/* the one-liner card */
-.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
-.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
-.pitch p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
-.pitch b{color:var(--gold);font-weight:500}
-.notation{margin-top:1rem;border-top:1px solid var(--line);padding-top:.75rem}
-.notation summary{cursor:pointer;color:var(--bone-faint);font:500 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
-.notation p{margin:.7rem 0 0!important;color:var(--bone-dim)!important;font-size:.9rem!important}
-
-/* generic section */
-section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
-.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
-h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
-h2 b{font-weight:800}
-.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
-p{margin:0 0 1.25rem}
-.body p{color:var(--bone-dim);font-weight:300}
-.body p b{color:var(--bone);font-weight:500}
-.body em{font-style:italic;color:var(--bone)}
-.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;letter-spacing:-.015em;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
-.pull b{font-weight:700}
-.pull .gold{color:var(--gold);font-weight:700}
-
-/* the build-up steps */
-.step{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;padding:1.8rem 0;border-top:1px solid var(--line-soft)}
-.step:first-of-type{border-top:0}
-.step .n{font-family:var(--mono);font-size:2.4rem;font-weight:100;color:var(--bone-ghost);line-height:1;letter-spacing:-.02em}
-.step h3{font-size:clamp(1.2rem,2vw,1.55rem);font-weight:300;letter-spacing:-.01em;margin:0 0 .8rem;color:var(--bone);line-height:1.25}
-.step h3 b{font-weight:700}
-.step p{color:var(--bone-dim);font-weight:300;margin:0 0 .9rem;max-width:62ch}
-.step p:last-child{margin-bottom:0}
-.step p b{color:var(--bone);font-weight:500}
-.step em{font-style:italic;color:var(--bone)}
-@media(max-width:640px){.step{grid-template-columns:1fr;gap:.5rem}.step .n{font-size:1.6rem}}
-
-/* the globe figure */
-.figrow{display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:center;margin:1rem 0 0}
-@media(max-width:820px){.figrow{grid-template-columns:1fr}.globe{max-width:300px;margin:1rem auto 0}}
-.globe svg{width:100%;height:auto;display:block;overflow:visible}
-.globe figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
-
-/* honesty callout */
-.callout{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:clamp(1.6rem,4vw,2.6rem)}
-.callout .big{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:200;letter-spacing:-.02em;line-height:1.22;color:var(--bone);margin:0 0 1.3rem;max-width:30ch}
-.callout .big b{font-weight:800;color:var(--gold)}
-.callout p{color:var(--bone-dim);max-width:64ch;font-weight:300}
-.callout p b{color:var(--bone);font-weight:500}
-.callout .r6{margin-top:1.6rem;padding:1.3rem 1.5rem;border:1px solid var(--line);border-left:2px solid var(--crimson);border-radius:0 10px 10px 0;background:linear-gradient(90deg,rgba(224,69,59,.05),transparent 70%)}
-.callout .r6 .l{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--crimson);margin:0 0 .6rem}
-.callout .r6 p{margin:0;color:var(--bone-dim)}
-.callout .r6 b{color:var(--bone)}
-
-/* know vs bet grid */
-.split{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:.5rem}
-.colhead{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 1.1rem;display:flex;align-items:center;gap:.6rem}
-.colhead.know{color:var(--green)} .colhead.bet{color:var(--t-c)}
-.colhead .d{width:9px;height:9px;border-radius:50%;background:currentColor}
-.item{border-top:1px solid var(--line-soft);padding:1.25rem 0}
-.item:first-of-type{border-top:0}
-.item h4{font-size:1.12rem;font-weight:400;margin:0 0 .5rem;color:var(--bone);letter-spacing:-.01em}
-.item h4 b{font-weight:700}
-.item p{color:var(--bone-dim);font-size:.97rem;font-weight:300;margin:0 0 .55rem;max-width:66ch}
-.item p:last-child{margin-bottom:0}
-.item em{font-style:italic;color:var(--bone)}
-.gloss{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin-top:.3rem}
-.t{font-family:var(--mono);font-size:.92em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
-.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
-.howlose{color:var(--bone-faint);font-size:.9rem;font-weight:300}
-.howlose b{color:var(--t-c);font-weight:500}
-
-/* not-this list */
-.nots{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:.5rem}
-@media(max-width:680px){.nots{grid-template-columns:1fr}}
-.not{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.3rem 1.5rem}
-.not h4{font-size:1rem;font-weight:600;margin:0 0 .4rem;color:var(--crimson)}
-.not h4 .x{font-family:var(--mono);margin-right:.4rem;opacity:.7}
-.not p{color:var(--bone-dim);font-size:.92rem;font-weight:300;margin:0}
-.not p b{color:var(--bone);font-weight:500}
-
-/* close */
-.close{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.04),transparent 72%);padding:clamp(1.8rem,4vw,2.6rem)}
-.close p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);max-width:60ch;margin:0;font-weight:200;line-height:1.5}
-.close b{color:var(--gold-deep);font-weight:600}
-.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
-.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
-  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
-.cta:hover{border-color:var(--gold);color:var(--gold)}
-.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
-.cta.primary:hover{background:#FFF176}
-.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
-.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
-.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
-
-.reveal{opacity:1;transform:none}
-.js .reveal{opacity:0;transform:translateY(16px)}
-.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media(max-width:760px){.nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
-</style>
-<!-- pwa-chrome -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
-<script>document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="../assets/css/a11y.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergentism, plainly — The worldview in one sitting</title>
+  <meta name="description" content="Emergentism in plain language: how reality, life, mind, possibility, action, and revision fit into one fallible map." />
+  <meta name="theme-color" content="#07090f" />
+  <link rel="canonical" href="https://emergentism.org/plainly/" />
+  <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+  <script defer src="/assets/js/gestalt-v2.js"></script>
 </head>
-<body>
-
-<a class="skip" href="#main">Skip to content</a>
-
-<header class="topbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Routes">
-    <a href="../practice/#frame">Practice</a><a href="../plainly/" class="here" aria-current="page">Worldview</a>
-    <a href="../record/">Research</a><a href="../book/">Library</a>
-    <a href="../contribute/">Participate</a><a href="../exit/" style="opacity:.62">Exit</a>
-  </nav>
-  <nav class="mobile-actions" aria-label="Mobile navigation">
-    <a class="nav-action" href="../practice/#frame">Practice</a>
-    <details><summary>Menu</summary><div class="menu-panel"><a href="../plainly/" aria-current="page">Worldview</a><a href="../record/">Research</a><a href="../book/">Library</a><a href="../contribute/">Participate</a></div></details>
-    <a class="nav-quiet" href="../exit/">Exit</a>
-  </nav>
+<body class="g2-page">
+<!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" aria-current="location" href="/plainly/">Worldview</a>
+      <a data-section="practice" href="/practice/">Practice</a>
+      <a data-section="research" href="/record/">Research</a>
+      <a data-section="library" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" aria-current="location" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
 </header>
+<!-- gestalt-core-nav:end -->
 
-<main class="wrap" id="main" tabindex="-1">
-  <header class="hero">
-    <p class="fileno reveal in">Emergentism, in plain words · no jargon required · <a href="../fable/" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px;text-transform:none;letter-spacing:normal">prefer it as a story? — the fable, five minutes</a></p>
-    <h1 class="reveal in">Many consequential decisions<br>meet <span class="gold">two powers</span> at once.</h1>
-    <p class="dek reveal in">One is the power of the possible: the futures you can distinguish and compare. The other is actual power: what can act now. Emergentism asks where they can meet at a finite, observable, revisable boundary—then lets consequence correct the answer.</p>
-
-    <div class="pitch reveal in">
-      <p class="lab">If you remember one thing</p>
-      <p><b>Finity is a bounded review point approached in service of a longer responsibility.</b> It asks what is genuinely possible, what can act now, and where an observed consequence can correct the move. Whether this improves decisions over simpler methods remains open.</p>
-      <details class="notation"><summary>Optional notation</summary><p>In the selected ordinal node convention, a present estimate of possible power meets actual power as <code>P_node := min(Φ̂₄,V₄)</code>. This is a chosen AND-class convention, not a universal law or a metric of persons.</p></details>
-    </div>
-    <div class="cta-row reveal in" aria-label="Choose a next question">
-      <a class="cta primary" href="../practice/#frame">Frame one decision →</a>
-      <a class="cta" href="../record/">Audit the claims →</a>
-      <a class="cta" href="../book/">Read the current reader →</a>
-    </div>
+<main id="main" class="g2-main" tabindex="-1">
+  <header class="g2-shell g2-page-hero">
+    <p class="g2-kicker">Worldview · plainly</p>
+    <h1>Everything you are is real—and none of it appeared all at once.</h1>
+    <p class="g2-page-hero__lede">Emergentism is a fallibilist worldview for finite beings. It asks how new freedoms become possible, how they depend on what came before, and how a person can act responsibly while every map remains incomplete.</p>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="#one-breath">Read in one sitting</a><a class="g2-button" href="/practice/#frame">Frame one decision</a></div>
+    <div class="g2-page-meta"><span>About 8 minutes</span><span>No belief required</span><span>Exit remains open</span></div>
   </header>
 
-  <!-- THE BUILD-UP -->
-  <section>
-    <p class="kicker reveal">Start from something you already know</p>
-    <h2 class="reveal read">Six proposed distinctions. <b>Keep only what survives.</b></h2>
-
-    <div class="step reveal">
-      <div class="n">1</div>
-      <div>
-        <h3>Finite beings can imagine more than they can <b>enact</b>.</h3>
-        <p>You can represent several futures while living only one present history. Call that structured field of relevant alternatives <b>possible power</b>.</p>
-        <p>Your body, time, tools, access, energy, and authority make up <b>actual power</b>. A possibility does not act by itself, and capability alone does not tell you where to aim.</p>
-        <details class="notation"><summary>Optional notation</summary><p>The dimensional scaffold labels possible power <code>D5 / Φ₅</code> and actual power <code>D4 / V₄</code>. Present D4 carriers represent D5 content; the future does not physically signal backward.</p></details>
-      </div>
-    </div>
-
-    <div class="step reveal">
-      <div class="n">2</div>
-      <div>
-        <h3>Emergentism selects a <b>need-both model</b>.</h3>
-        <p>A plan needs both a live possibility and the means to enact it. The selected model treats either missing factor as decisive.</p>
-        <p>This is a <b>chosen need-both model</b>, not the only possible account. The minimum is the selected convention for the declared ordinal factors; additive, harmonic, asymmetric, ordinary-planning, and cardinal-product rivals require their own lawful scale contracts.</p>
-        <details class="notation"><summary>Optional notation</summary><p>A present model estimates possible power as <code>Φ̂₄</code> and couples it to actual power with <code>P_node := min(Φ̂₄,V₄)</code>. The historical product shorthand is retired as a ranking unless separately defended cardinal measures exist.</p></details>
-      </div>
-    </div>
-
-    <div class="step reveal">
-      <div class="n">3</div>
-      <div>
-        <h3>Finity gives the open field a <b>direction</b>.</h3>
-        <p>The Infinite names what no finite inventory can exhaust. Infinity names continuation without end. Neither tells a finite agent what to do next.</p>
-        <p><b>Finity is a finite limit a process can approach:</b> concrete enough to guide action, observable enough to assess, and revisable when the world answers differently than expected.</p>
-        <p>The practical rule uses two clocks: let the <b>longest responsible horizon</b> set direction, then act at the <b>shortest informative horizon</b> that can distinguish the move while foreseeable delayed costs remain visible. Long promises must accept short correction; fast metrics must answer to the longer consequence.</p>
-      </div>
-    </div>
-
-    <div class="step reveal">
-      <div class="n">4</div>
-      <div>
-        <h3>The Rosetta makes transformations <b>legible</b>.</h3>
-        <p>Once possible and actual power are distinct, the primary Rosetta axis makes seven transformation functions legible: <b>constrain, remove, enable, commit, create, dissolve, and preserve</b>.</p>
-        <p>A separate, optional symbolic lens groups four transfer readings with three boundary frames as <code>G7 = M4 ⊎ F3</code>. The mythic names make that secondary mapping memorable; they neither replace the functional axis nor decide whether an act is good.</p>
-      </div>
-    </div>
-
-    <div class="step reveal">
-      <div class="n">5</div>
-      <div>
-        <h3>The ethic is <b>chosen openly</b>.</h3>
-        <p>No equation derives an ought. Emergentism chooses a Justice orientation: keep affected bearers, consent, costs, custody, consequences, and exit visible; refuse to call one side's gain good when another side is silently destroyed.</p>
-        <p>Cooperation can become stable under repeated, coupled, enforceable conditions. One-shot extraction can still pay. The ethical work is to build conditions in which creating shared capacity is the durable strategy—not to pretend multiplication has already done that work.</p>
-      </div>
-    </div>
-
-    <div class="step reveal">
-      <div class="n">6</div>
-      <div>
-        <h3>Consequence keeps the map <b>answerable</b>.</h3>
-        <p>A finite agent represents alternatives, selects a boundary, commits an action, and records an observed consequence that may contradict the model. Observation remains mediated and fallible; it can still force revision.</p>
-        <p>That loop—map, act, receive, revise—is the portable method. The worldview may be wrong; the consequence still gets a vote.</p>
-      </div>
+  <section class="g2-shell g2-section" id="one-breath" aria-labelledby="one-breath-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">01 · In one breath</p><h2 id="one-breath-title">The world is layered, but the layers do not float free.</h2></div><p class="g2-section__intro">A higher description can reveal something the lower one hides, yet it still owes a bridge back to the conditions that make it possible.</p></div>
+    <div class="g2-prose">
+      <p>Before you can count objects, one thing must be distinguishable from another. Before a structure can persist, distinctions must enter relations. Before an event can occur, alternatives and constraints must be describable. Before you can choose, an actual organism must represent more than the present.</p>
+      <p>Emergentism calls this <strong>serial emergence</strong>: reality becomes legible through nested freedoms. Each new register depends on lower conditions, but can introduce patterns, constraints, and interventions that are not usefully visible in the lower vocabulary alone. Whether any particular bridge is weakly reducible or strongly emergent is an empirical question, never a reward for sounding profound.</p>
+      <p>The worldview therefore keeps two promises at once: <strong>look for the larger Gestalt</strong>, and <strong>pay every explanatory debt</strong>.</p>
     </div>
   </section>
 
-  <!-- THE HONESTY -->
-  <section>
-    <div class="callout reveal">
-      <p class="big">The point isn't that we're right. It's that we're <b>wrong-able</b> — and we've been wrong, on the record.</p>
-      <p>Current load-bearing public claims are intended to wear a small grade. In plain terms: <b>an exact identity inside declared definitions</b> that you can check yourself; <b>structural</b> reasoning that holds if you grant the setup; an <b>interpretation</b>, which is a lens and says so; or a <b>bet</b>, which comes with a stated way to lose. The grading system is itself auditable and incomplete coverage remains a defect to report. When a grade and the grand story disagree, the lower warranted claim wins.</p>
-      <p>Why should a stakeholder care about a grading system? Because it separates an auditable research programme from a self-protecting story. A framework that can't lose an argument to reality will tell you whatever keeps it alive. This one is built to record losses in plain sight, dated and preserved.</p>
-      <div class="r6">
-        <p class="l">An internal correction — 2026</p>
-        <p><b>This year a prominent internal claim was put to a declared test, and it failed.</b> The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it doesn't — it stacks up in a straight line instead. So we retired the claim, wrote down exactly how it died, and <a href="../record/#008" style="color:var(--bone);text-decoration:underline;text-underline-offset:3px">left it standing where anyone can read it</a>. That is process evidence: it shows an internal correction was honored. It does not establish novelty, validate the wider framework, or replace external review.</p>
-      </div>
+  <section class="g2-shell g2-section" id="ladder" aria-labelledby="ladder-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">02 · The seven addresses</p><h2 id="ladder-title">From boundary to possibility—and back to humility.</h2></div><p class="g2-section__intro">These are addresses for inquiry, not seven substances or ranks of persons.</p></div>
+    <dl class="g2-definition-list">
+      <dt>D0 · Boundary</dt><dd>The limit before a world is divided into things. It is not a hidden object called Nothing.</dd>
+      <dt>D1 · Distinction</dt><dd>The freedom for one to differ from another. Arithmetic keeps its ordinary definitions; the D1 placement is an interpretation.</dd>
+      <dt>D2 · Relation</dt><dd>The freedom for distinctions to form configurations, networks, wholes, and macro-patterns.</dd>
+      <dt>D3 · Quantum state</dt><dd>Probability-bearing state description. The state predicts; an actual recorded event is distinct.</dd>
+      <dt>D4 · Actual history</dt><dd>The causal world in which bodies, instruments, records, costs, and consequences occur.</dd>
+      <dt>D5 · Possibility</dt><dd>Counterfactual content represented by actual carriers: plans, models, stories, simulations, institutions, and minds.</dd>
+      <dt>D6 · Nonclosure</dt><dd>The refusal to turn every remainder into another possessed object. D6 resembles D0 only as a boundary role.</dd>
+    </dl>
+    <p class="g2-note">The scaffold is a conjectural cross-domain grammar. Native mathematics and science always outrank a resemblance. <a href="/dasein/">See the complete Dasein map →</a></p>
+  </section>
+
+  <section class="g2-shell g2-section" id="powers" aria-labelledby="powers-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">03 · Two powers, one present</p><h2 id="powers-title">A possibility cannot act. Capability alone cannot aim.</h2></div><p class="g2-section__intro">The critical firewall separates possible power from actual power without severing their lived relationship.</p></div>
+    <div class="g2-practice-grid">
+      <article class="g2-panel g2-panel--possible"><span class="g2-claim-id">Φ₅ · possible power</span><h3>What alternatives can be represented?</h3><p>Your possible power is the structured field of futures a present model can distinguish and compare. D5 content is not a physical signal and does not act alone.</p></article>
+      <article class="g2-panel g2-panel--actual"><span class="g2-claim-id">V₄ · actual power</span><h3>What can act here and now?</h3><p>Your actual power is body, time, energy, tools, access, permission, and capability in the causal present. It carries both action and cost.</p></article>
+    </div>
+    <div class="g2-prose" style="margin-top: 34px">
+      <p>A present D4 model estimates possible power as <code>Φ̂₄</code>. Emergentism currently uses <code>P_node := min(Φ̂₄, V₄)</code> as a <strong>chosen AND-class convention</strong>: if either the map or the means is absent, the modeled node cannot enact the option. This is not uniquely derived, not a universal law, and not a measure of anyone’s worth. The historical product ranking is retired.</p>
     </div>
   </section>
 
-  <!-- WHAT IS CHECKABLE -->
-  <section>
-    <p class="kicker reveal">What is checkable in the current construction</p>
-    <h2 class="reveal read">The stronger surfaces — <b>bounded and inspectable.</b></h2>
-    <p class="lead reveal read">These claims carry more internal weight than the open bets below. Their scope still travels with their grade.</p>
-    <div class="split reveal">
-      <div>
-        <p class="colhead know"><span class="d"></span>What can be checked now</p>
-        <div class="item">
-          <h4>The reciprocal chart has an exact <b>balance point.</b></h4>
-          <p>On the declared chart, reciprocal coordinates satisfy <code>φν=1</code> and the balance function reaches its maximum at the equator. That mathematics is exact inside the construction; what it means for reality remains a separate interpretation.</p>
-          <span class="gloss"><span class="t t-a">[A]</span> analytic inside the stated chart</span>
-        </div>
-        <div class="item">
-          <h4>The correction discipline has <b>fired internally.</b></h4>
-          <p>The current record documents several over-claims caught and fenced inside the programme: a bad proof, a mislabelled "attractor," and a false "always" broken by one counterexample. That is evidence about the procedure, not independent validation of the worldview.</p>
-          <span class="gloss"><span class="t t-s">[S]</span> documented internally · external review absent</span>
-        </div>
-        <div class="item">
-          <h4>The current canon records what it <b>hasn't</b> earned.</h4>
-          <p>The famous "it must multiply" claim turned out unproven: the same evidence fits several balance-laws equally well. Rather than bluff, we downgraded it and said so. Knowing the edge of your knowledge is itself a result.</p>
-          <span class="gloss"><span class="t t-s">[S]</span> settled in current canon</span>
-        </div>
-        <div class="item">
-          <h4>The selected minimum has an exact <b>zero boundary.</b></h4>
-          <p>Inside <code>P_node:=min(Φ̂₄,V₄)</code>, either nonnegative factor at zero makes the modeled value zero. That is an analytic property of the selected ordinal convention. Whether any cross-factor conclusion survives lawful reparameterization remains an open identification question.</p>
-          <span class="gloss"><span class="t t-a">[A]</span> exact in the selected model · <span class="t t-c">[C]</span> external fit</span>
-        </div>
-      </div>
-    </div>
-    <p class="pull reveal">Notice: most of our <span class="gold">certainties</span> are about the <b>discipline</b>. The exciting ideas are still bets — and we say so.</p>
+  <section class="g2-shell g2-section" id="forces" aria-labelledby="forces-plain-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">04 · A physics wager · [C]</p><h2 id="forces-plain-title">Perhaps every new freedom arrives with a debt.</h2></div><p class="g2-section__intro">A compensating interaction can both enable a freedom and constrain it. Emergentism asks whether this repeats across the physical registers.</p></div>
+    <div class="g2-prose"><p>The proposed serial ordering is <strong>D1–strong, D2–electromagnetic, D3–weak, D4–gravity</strong>. It is one of 24 assignments and currently untested. Gauge principles, confinement, charge compensation, and thermodynamic approaches to gravity are neighbors—not proof of the mapping.</p><p>If the ordering fails, the dimensional scaffold may survive. If the scaffold adds no prediction, compression, or intervention advantage beyond native physics, it should be demoted to a mnemonic.</p></div>
   </section>
 
-  <!-- WHAT WE BET -->
-  <section>
-    <p class="kicker reveal">What we're still betting on</p>
-    <h2 class="reveal read">The open bets — <b>each with a way to lose.</b></h2>
-    <p class="lead reveal read">This is where the real intellectual risk lives. If you want to attack the framework, attack here — at the stated tier.</p>
-    <div class="split reveal">
-      <div>
-        <p class="colhead bet"><span class="d"></span>What we bet</p>
-        <div class="item">
-          <h4>The unit "1" is a <b>hidden frame</b>, not just a number.</h4>
-          <p>A long historical thread — from Euclid to the modern metric system — can be read as humanity repeatedly choosing and revising frames for "one." This is a surviving interpretation within the programme, not an established discovery.</p>
-          <p class="howlose"><b>How it loses:</b> if historians already tell this exact story, it's a nice retelling, not a discovery.</p>
-          <span class="gloss"><span class="t t-i">[I]</span> an interpretation, with real history under it</span>
-        </div>
-        <div class="item">
-          <h4>An AND-class conclusion may identify <b>actionable power.</b></h4>
-          <p>The first question is whether any conclusion about evaluated possibility and actual means survives every admissible reparameterization of the declared ordinal inputs. Cardinal products become testable only after their scales are separately defended.</p>
-          <p class="howlose"><b>How it loses:</b> if admissible reparameterizations reverse the conclusion, no scale-invariant discriminator exists, or a fair ordinary-planning rival performs as well.</p>
-          <span class="gloss"><span class="t t-c">[C]</span> a bet, and a testable one</span>
-        </div>
-        <div class="item">
-          <h4>Non-extraction can become a <b>stable strategy.</b></h4>
-          <p>Under repeated, coupled, visible, and enforceable play, cooperation may outperform extraction. The Justice orientation is chosen; the stability claim still depends on the game's actual conditions.</p>
-          <p class="howlose"><b>How it loses:</b> if honest cooperation can't be made stable even with enforcement.</p>
-          <span class="gloss"><span class="t t-i">[I]</span> conditional model · <span class="t t-c">[C]</span> domain fit</span>
-        </div>
-        <div class="item">
-          <h4>Coordination may create a usable <b>direction.</b></h4>
-          <p>The open conjecture is that memory, modeling, communication, selection, and institutions can make some viable futures more reachable than others. This is a claim about agency and coordination through ordinary mechanisms, not a hidden interaction in physics.</p>
-          <p class="howlose"><b>How it loses:</b> if the framework predicts or guides nothing beyond ordinary planning and coordination models.</p>
-          <span class="gloss"><span class="t t-c">[C]</span> a conjecture, fully fenced</span>
-        </div>
-      </div>
+  <section class="g2-shell g2-section" id="future" aria-labelledby="future-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">05 · The future question</p><h2 id="future-title">Why does a future that does not yet exist matter now?</h2></div><p class="g2-section__intro">There are three live answers, and no branch receives a truth bonus.</p></div>
+    <div class="g2-fork">
+      <article class="g2-panel g2-panel--evidence"><span class="g2-tier g2-tier--evidence">F5-W · [I/C]</span><h3>Because we model it</h3><p>Present brains, models, records, and institutions represent futures and change present action through ordinary channels.</p></article>
+      <article class="g2-panel g2-panel--actual"><span class="g2-tier g2-tier--actual">F5-N · [D/C]</span><h3>No fifth interaction</h3><p>Known physics plus selection, verification, and revision may fully explain what D5 requires.</p></article>
+      <article class="g2-panel g2-panel--conjecture"><span class="g2-tier g2-tier--conjecture">F5-R · [C]</span><h3>A strong rival</h3><p>A precisely declared later physical boundary might enter an actual history-selection law. This is not established retrocausality and not yet a force.</p></article>
+    </div>
+    <p class="g2-note g2-note--conjecture">The strong wager is public only with its null, rival, discriminator, kill, and survivor. It does not use the future light cone as a source, does not make D5 content causal, and does not infer a physically actual multiverse from a model. <a href="/f5/">Inspect the fork →</a></p>
+  </section>
+
+  <section class="g2-shell g2-section" id="good" aria-labelledby="good-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">06 · The chosen direction</p><h2 id="good-title">Keep more durable futures open—without hiding who pays.</h2></div><p class="g2-section__intro">This is the worldview’s teleology, explicitly chosen rather than smuggled out of physics.</p></div>
+    <div class="g2-prose">
+      <p>Raw option count is not the Good. A choice can widen one agent’s power by closing the lives of everyone else. Emergentism therefore asks separately about agent options, affected-whole options, thermodynamic entropy and export, path entropy, viability cost, consent, Justice, and Exit.</p>
+      <p>The orientation is to widen <strong>durable, bearer-complete potential</strong> inside Truth, Justice, and Exit. Compare the full ledger as a Pareto frontier; never hide a destroyed side inside a convenient total.</p>
+      <p>No equation derives an ought. The option-preserving bias, a physically plural multiverse, and the chosen ethic remain independent propositions.</p>
     </div>
   </section>
 
-  <!-- WHAT IT IS NOT -->
-  <section>
-    <p class="kicker reveal">Say the honest thing plainly</p>
-    <h2 class="reveal read">What this is <b>not.</b></h2>
-    <p class="lead reveal read">Feynman's rule: the first principle is that you must not fool yourself — and you are the easiest person to fool. So, in plain words, the things Emergentism is careful <em>not</em> to claim:</p>
-    <div class="nots reveal">
-      <div class="not">
-        <h4><span class="x">✕</span> A theory of everything.</h4>
-        <p>It's a <b>lens plus a discipline</b>, not a final account of reality. It translates known science; it doesn't replace it.</p>
-      </div>
-      <div class="not">
-        <h4><span class="x">✕</span> A new force of physics.</h4>
-        <p>Direction here refers to modeling, memory, coordination, and action through ordinary mechanisms. <b>No new physical interaction is claimed.</b></p>
-      </div>
-      <div class="not">
-        <h4><span class="x">✕</span> Proven to be how reality is.</h4>
-        <p>Some identities are exact inside their declared definitions and constructions. Whether any model <b>fits reality is a separate, testable wager</b>.</p>
-      </div>
-      <div class="not">
-        <h4><span class="x">✕</span> Something to believe in.</h4>
-        <p><b>Adherence does not validate it.</b> Use a distinction, test a practice, refuse the vocabulary, or put the whole map down.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLOSE -->
-  <section>
-    <div class="close reveal">
-      <p>So here's the whole thing, once more, plainly: <b>name what is actually possible, meet it with the power available now, choose a finite boundary worth approaching, act, and let consequence revise the map.</b> Refuse to hide one bearer's destruction inside another's gain. Never let how good a story sounds outrun how much of it has earned.</p>
-      <div class="cta-row">
-        <a class="cta primary" href="../practice/#frame">Frame one decision →</a>
-        <a class="cta" href="../axioms/">Inspect the current claim ledger →</a>
-        <a class="cta" href="../record/">The record of what we got wrong →</a>
-        <a class="cta" href="../book/">Read the whole book →</a>
-        <a class="cta" href="../5/">Turn the sphere yourself →</a>
-      </div>
-    </div>
+  <section class="g2-shell g2-section" id="practice-plain" aria-labelledby="practice-plain-title">
+    <div class="g2-section__head"><div><p class="g2-eyebrow">07 · What you do with it</p><h2 id="practice-plain-title">Model. Choose. Act. Receive. Revise.</h2></div><p class="g2-section__intro">Fallibility becomes useful only when the world can answer back.</p></div>
+    <div class="g2-loop" aria-label="Soul Loop"><span data-step="01">territory</span><span data-step="02">fallible model</span><span data-step="03">alternatives</span><span data-step="04">selection</span><span data-step="05">commitment</span><span data-step="06">consequence</span><span data-step="07">revision</span></div>
+    <p class="g2-note"><strong>Finity</strong> is the small, practical form: name the actual, name the possible, choose one responsible move, keep bearers and Exit visible, decide what evidence would change you, and return after consequence.</p>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/practice/#frame">Frame one decision</a><a class="g2-button" href="/book/">Read the full worldview</a><a class="g2-button" href="/exit/">Leave with the map optional</a></div>
   </section>
 </main>
 
-<footer class="foot wrap">
-  <div class="glyph">Possible power · Actual power · Consequence</div>
-  <p>Emergentism, plainly · inspect the current claim ledger on <a href="../axioms/">the axioms page</a> and the currently logged corrections on <a href="../record/">the trial record</a>.<br>One canon, three scripts — <a href="../fable/">the fable</a> (story) · this page (plain words) · <a href="../record/">the record</a> (receipts).<br>Coherence is not truth. The framework succeeds when you can <a href="../exit/">put it down</a>.</p>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
 </footer>
-
-<script>
-(function(){
-  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
-  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
-  else {
-    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
-    reveals.forEach(function(el){ io.observe(el); });
-  }
-  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
-})();
-</script>
-<script defer src="/assets/js/atlas-drawer.js"></script>
+<!-- gestalt-core-footer:end -->
 </body>
 </html>

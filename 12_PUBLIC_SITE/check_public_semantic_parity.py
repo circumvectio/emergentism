@@ -25,6 +25,32 @@ if str(SITE) not in sys.path:
 from predeploy_check import is_vercel_ignored, load_vercelignore_patterns
 
 EXPECTED_SEQUENCE = ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"]
+EXPECTED_CORE_QUESTION = "What had to emerge for you—and this moment—to be here?"
+EXPECTED_CORE_JOURNEY = [
+    "index.html", "plainly/index.html", "dasein/index.html",
+    "dimensions/index.html", "0/index.html", "1/index.html", "2/index.html",
+    "3/index.html", "4/index.html", "5/index.html", "6/index.html",
+    "f5/index.html", "practice/index.html", "spark/index.html",
+    "record/index.html", "record/eub-1/index.html", "lab/index.html",
+    "discoveries/index.html", "book/index.html", "about/index.html",
+    "contribute/index.html", "exit/index.html",
+]
+EXPECTED_PRIMARY_NAV = [
+    {"label": "Worldview", "href": "/plainly/"},
+    {"label": "Practice", "href": "/practice/"},
+    {"label": "Research", "href": "/record/"},
+    {"label": "Library", "href": "/book/"},
+    {"label": "Participate", "href": "/contribute/"},
+    {"label": "Exit", "href": "/exit/"},
+]
+EXPECTED_MOBILE_NAV = [
+    {"label": "Practice", "href": "/practice/"},
+    {"label": "Menu", "control": "menu"},
+    {"label": "Exit", "href": "/exit/"},
+]
+ROUTING_FORBIDDEN_KEYS = {
+    "claimCardIds", "claimSources", "sourceRevision", "tier", "evidence",
+}
 FORBIDDEN = {
     # --- added 2026-07-22 after a Rosetta caste sweep found the sharpest tier
     # violation on the site sitting INSIDE the scanned bytes while this gate
@@ -86,11 +112,34 @@ FORBIDDEN = {
     # infinity equals 1. NEVER escapable, at any tier, with any fence.
     "field arithmetic claim": re.compile(r"1\s*=\s*0\s*(?:×|x|\*)\s*∞"),
     "retired evidence tier": re.compile(r"\[E\]"),
+    "untyped D5 causal agency": re.compile(r"\bD5\s+(?:causes?|pushes?|forces?|sends?)\b", re.I),
+    "gravity entropy identity inflation": re.compile(r"\bgravity\s+is\s+entropy\b", re.I),
+    "gravity time-direction inflation": re.compile(r"\bgravity\s+points?\s+(?:from\s+)?past\s*(?:to|→)\s*present\b", re.I),
+    "future light cone as source": re.compile(
+        r"\bfuture\s+light\s+cone\s+(?:is|acts\s+as|serves\s+as|causes?|pushes?|sends?)\b",
+        re.I,
+    ),
+    "represented bundle proves multiverse": re.compile(
+        r"\brepresented\b.{0,100}\b(?:proves?|establishes?|means)\b.{0,80}\b(?:ontic|physical(?:ly)?)?\s*multiverse\b",
+        re.I | re.S,
+    ),
 }
 
 REQUIRED_PUBLIC_CONTRACTS = {
-    "index.html": ("A worldview for finite beings", "Frame one decision"),
+    "index.html": (
+        "A worldview for finite beings", "Frame one decision",
+        EXPECTED_CORE_QUESTION, "One present, two explanations",
+    ),
     "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
+    "dasein/index.html": (
+        EXPECTED_CORE_QUESTION,
+        "Complete means accounted explanatory debt, not omniscience",
+        "D6 is nonclosure, not D0.",
+    ),
+    "f5/index.html": (
+        "F5-W", "F5-N", "F5-R", "[C] UNVALIDATED",
+        "Strongest rival", "Discriminator", "Kill", "Survivor", "Pareto frontier",
+    ),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
     "manifesto/index.html": (
@@ -120,7 +169,16 @@ AUTOMATIC_SUBMISSION_PROMISES = (
     "because it can move a claim",
 )
 REQUIRED_SURFACE_CARDS = {
-    "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
+    "index.html": {
+        "FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-23",
+        "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
+        "OS01-29", "OS01-30",
+    },
+    "dasein/index.html": {
+        "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
+        "OS01-20", "OS01-21", "OS01-23", "OS01-25",
+    },
+    "f5/index.html": {"OS01-27", "OS01-28", "OS01-29", "OS01-30"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
     "compass/index.html": {"OS01-13"},
@@ -162,6 +220,13 @@ TITAN_OPERATOR_FREE_FIXTURES = (
     "•  ⊙  ○",
     "TitanFrame := 0_T | 1_T | ∞_T",
 )
+F5_REJECT_FIXTURES = {
+    "untyped D5 causal agency": "D5 pushes physical events into the present.",
+    "gravity entropy identity inflation": "Gravity is entropy.",
+    "gravity time-direction inflation": "Gravity points past to present.",
+    "future light cone as source": "The future light cone is a causal source for present choice.",
+    "represented bundle proves multiverse": "A represented history bundle proves a physical multiverse.",
+}
 LIFECYCLE_AWARE_FORBIDDEN = {
     "literal D6 identity",
     "legacy untyped node product",
@@ -392,6 +457,73 @@ def validate_status_source_claims(data: dict, errors: list[str]) -> None:
             errors.append(f"{binding_id} status binding may not act as a claim-card binding")
 
 
+def _routing_semantic_keys(value: object, path: str = "") -> list[str]:
+    errors: list[str] = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            child_path = f"{path}.{key}" if path else key
+            if key in ROUTING_FORBIDDEN_KEYS:
+                errors.append(child_path)
+            errors.extend(_routing_semantic_keys(child, child_path))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            errors.extend(_routing_semantic_keys(child, f"{path}[{index}]"))
+    return errors
+
+
+def validate_core_routing(data: dict, errors: list[str]) -> None:
+    """Keep presentation routing exact and separate from semantic ownership."""
+
+    journey = data.get("coreJourney")
+    navigation = data.get("navigation")
+    if not isinstance(journey, dict):
+        errors.append("coreJourney must be an object")
+        return
+    if not isinstance(navigation, dict):
+        errors.append("navigation must be an object")
+        return
+    if journey.get("question") != EXPECTED_CORE_QUESTION:
+        errors.append("coreJourney question drift")
+    surfaces = journey.get("surfaces")
+    if surfaces != EXPECTED_CORE_JOURNEY:
+        errors.append("coreJourney surfaces must match the exact ordered v2 journey")
+    elif len(surfaces) != len(set(surfaces)):
+        errors.append("coreJourney surfaces repeat an artifact")
+    current = set(data.get("currentSurfaces", []))
+    for surface in EXPECTED_CORE_JOURNEY:
+        if surface not in current:
+            errors.append(f"coreJourney surface is not current: {surface}")
+    if navigation.get("primary") != EXPECTED_PRIMARY_NAV:
+        errors.append("primary navigation contract drift")
+    if navigation.get("mobilePersistent") != EXPECTED_MOBILE_NAV:
+        errors.append("mobile persistent navigation contract drift")
+    for path in _routing_semantic_keys({"coreJourney": journey, "navigation": navigation}):
+        errors.append(f"routing block may not own semantics: {path}")
+
+
+def f5_typing_errors(text: str) -> list[str]:
+    """Reject F5/entropy shorthand that hides required types and bearers."""
+
+    visible = normalize_visible_text(text)
+    folded = visible.casefold()
+    errors: list[str] = []
+    if "least entropy" in folded:
+        required = (
+            "thermodynamic entropy", "entropy production", "path", "empowerment",
+        )
+        if any(marker not in folded for marker in required):
+            errors.append("least entropy lacks the four-ledger separation")
+    if re.search(r"\bagent (?:potential|options)\b", folded):
+        required = ("affected", "consent", "justice", "exit")
+        if any(marker not in folded for marker in required):
+            errors.append("agent potential hides affected bearers or safeguards")
+    if "strange attractor" in folded:
+        required = ("state space", "flow", "invariant set", "attraction test")
+        if any(marker not in folded for marker in required):
+            errors.append("strange attractor lacks declared dynamics")
+    return errors
+
+
 def main() -> int:
     errors: list[str] = []
     for fixture in NODE_PRODUCT_REJECT_FIXTURES:
@@ -406,6 +538,16 @@ def main() -> int:
     for fixture in TITAN_OPERATOR_FREE_FIXTURES:
         if has_titan_infix(fixture):
             errors.append(f"Titan infix rule overmatched operator-free wording: {fixture}")
+    for name, fixture in F5_REJECT_FIXTURES.items():
+        if not FORBIDDEN[name].search(fixture):
+            errors.append(f"F5 negative-control escaped: {name}")
+    for fixture, expected in (
+        ("Choose the least entropy future.", "least entropy lacks the four-ledger separation"),
+        ("Maximize agent options.", "agent potential hides affected bearers or safeguards"),
+        ("Potential is a strange attractor.", "strange attractor lacks declared dynamics"),
+    ):
+        if expected not in f5_typing_errors(fixture):
+            errors.append(f"F5 typed-ledger negative-control escaped: {expected}")
     for name, fixture in LIFECYCLE_FIXTURES.items():
         if not has_unretired_forbidden_match(fixture, name):
             errors.append(f"lifecycle-aware prohibition escaped: {name}")
@@ -434,8 +576,9 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 2:
-        errors.append("public semantic parity schemaVersion must be 2")
+    if data.get("schemaVersion") != 3:
+        errors.append("public semantic parity schemaVersion must be 3")
+    validate_core_routing(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:
@@ -533,7 +676,7 @@ def main() -> int:
             ('class="diagram visual-panel"', "instrument visual hook"),
             ('type="importmap"', "local Three.js import map"),
             ('type="module" src="../dimensions/dimensions.js"', "module instrument loader"),
-            ('class="number-nav"', "accessible spaced navigation"),
+            ('data-core-shell="v2"', "shared v2 navigation"),
         ):
             if needle not in rendered:
                 errors.append(f"{item['id']} missing {label}")
@@ -656,6 +799,8 @@ def main() -> int:
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
+        for message in f5_typing_errors(text):
+            errors.append(f"{rel}: {message}")
     for rel in parity_audit_surfaces(data):
         text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
         if FROZEN_LIBRARY_BOUNDARY_MARKER in text:

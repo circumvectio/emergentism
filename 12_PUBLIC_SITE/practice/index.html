@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-gestalt="v2">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -153,33 +153,42 @@ footer.foot a{color:var(--bone-dim)}
 <meta name="theme-color" content="#070A12">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+<script defer src="/assets/js/gestalt-v2.js"></script>
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="topbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Primary navigation">
-    <a class="here" href="../practice/#frame" aria-current="page">Practice</a>
-    <a href="../plainly/">Worldview</a>
-    <a href="../record/">Research</a>
-    <a href="../book/">Library</a>
-    <a href="../contribute/">Participate</a>
-    <a class="exit-link" href="../exit/">Exit</a>
-  </nav>
-  <nav class="mobile-actions" aria-label="Mobile navigation">
-    <a class="nav-action" href="#frame" aria-current="page">Practice</a>
-    <details>
-      <summary>Menu</summary>
-      <div class="menu-panel">
-        <a href="../plainly/">Worldview</a>
-        <a href="../record/">Research</a>
-        <a href="../book/">Library</a>
-        <a href="../contribute/">Participate</a>
-      </div>
-    </details>
-    <a class="nav-quiet" href="../exit/">Exit</a>
-  </nav>
+<body class="g2-page g2-legacy">
+<!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" href="/plainly/">Worldview</a>
+      <a data-section="practice" aria-current="location" href="/practice/">Practice</a>
+      <a data-section="research" href="/record/">Research</a>
+      <a data-section="library" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" aria-current="location" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
 </header>
+<!-- gestalt-core-nav:end -->
 
 <main class="wrap" id="main" tabindex="-1">
 
@@ -393,11 +402,25 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
   </details>
 
 </main>
-
-<footer class="foot wrap">
-  <div class="glyph">Possible power · Actual power · Consequence</div>
-  <p>The Practice · <a href="../plainly/">understand Finity</a> → <b>frame one decision</b> → <a href="../rosetta/">read the move</a> → <a href="../record/">keep the consequence</a>.<br>The framework succeeds when you can <a href="../exit/">put it down</a>.</p>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
 </footer>
+<!-- gestalt-core-footer:end -->
 
 <script>
 (function(){

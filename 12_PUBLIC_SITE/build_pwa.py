@@ -71,11 +71,11 @@ def build_icons():
     print("icons: 4 written")
 
 
-def build_manifest():
+def manifest_document() -> str:
     manifest = {
-        "name": "Emergentism — A Worldview for Finite Beings",
+        "name": "Emergentism — The Gestalt of Dasein",
         "short_name": "Emergentism",
-        "description": "A corrigible worldview for finite beings, with Finity as a practice for one accountable next move.",
+        "description": "An ontological atlas asking what had to emerge for you—and this moment—to be here.",
         "id": "/",
         "start_url": "/",
         "scope": "/",
@@ -88,11 +88,23 @@ def build_manifest():
             {"src": "/assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
         ],
     }
-    (ROOT / "manifest.webmanifest").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=1) + "\n",
-        encoding="utf-8",
-    )
-    print("manifest.webmanifest written")
+    return json.dumps(manifest, ensure_ascii=False, indent=1) + "\n"
+
+
+def _emit(path: Path, content: str, *, check: bool, label: str) -> None:
+    if check:
+        if not path.is_file() or path.read_text(encoding="utf-8") != content:
+            raise ValueError(f"{label} differs from deterministic output")
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    print(f"{label} written")
+
+
+def build_manifest(*, check: bool = False) -> str:
+    content = manifest_document()
+    _emit(ROOT / "manifest.webmanifest", content, check=check, label="manifest.webmanifest")
+    return content
 
 
 def route_to_artifact(route: str) -> str:
@@ -120,14 +132,15 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/practice/", "/plainly/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/",
+        "/", "/plainly/", "/dasein/", "/f5/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/",
         "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
-        "/manifest.webmanifest", "/assets/css/living-map.css",
-        "/assets/js/living-map.js", "/living-map.json",
+        "/manifest.webmanifest", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
+        "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/living-map.json",
         "/public_semantic_parity.json", "/atlas/site_index.json",
         "/assets/fonts/Roboto-latin.woff2",
-        "/assets/fonts/RobotoMono-latin.woff2", "/assets/icons/icon-192.png",
+        "/assets/fonts/RobotoMono-latin.woff2", "/assets/fonts/Newsreader-latin-variable.woff2",
+        "/assets/icons/icon-192.png",
     ]
     for route in spine:
         artifact = route_to_artifact(route)
@@ -156,7 +169,8 @@ def public_withheld_routes() -> list[str]:
     return sorted(routes)
 
 
-def content_version(spine: list[str]) -> str:
+def content_version(spine: list[str], overrides: dict[str, bytes] | None = None) -> str:
+    overrides = overrides or {}
     digest = hashlib.sha256()
     # Withholding changes must rotate the cache even when every spine byte is
     # unchanged, so activation can delete caches that may contain newly
@@ -166,15 +180,18 @@ def content_version(spine: list[str]) -> str:
     for route in spine:
         artifact = ROOT / route_to_artifact(route)
         digest.update(route.encode("utf-8"))
-        if artifact.is_file():
+        relative = artifact.relative_to(ROOT).as_posix()
+        if relative in overrides:
+            digest.update(overrides[relative])
+        elif artifact.is_file():
             digest.update(artifact.read_bytes())
     return digest.hexdigest()[:12]
 
 
-def build_sw():
+def sw_document(*, overrides: dict[str, bytes] | None = None) -> tuple[str, str]:
     spine = safe_spine()
     withheld_routes = public_withheld_routes()
-    version = content_version(spine)
+    version = content_version(spine, overrides)
     sw = """// Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
 const CACHE = 'emergentism-__VERSION__';
 const SPINE = __SPINE__;
@@ -239,8 +256,15 @@ self.addEventListener('fetch', (e) => {
 """.replace("__VERSION__", version).replace("__SPINE__", json.dumps(spine, indent=2)).replace(
         "__WITHHELD_ROUTES__", json.dumps(withheld_routes, indent=2)
     )
-    (ROOT / "sw.js").write_text(sw, encoding="utf-8")
-    print(f"sw.js written (cache emergentism-{version})")
+    return sw, version
+
+
+def build_sw(*, check: bool = False, overrides: dict[str, bytes] | None = None) -> str:
+    sw, version = sw_document(overrides=overrides)
+    _emit(ROOT / "sw.js", sw, check=check, label="sw.js")
+    if not check:
+        print(f"sw cache: emergentism-{version}")
+    return sw
 
 
 def build_register():
@@ -258,7 +282,7 @@ def build_register():
     print("assets/js/pwa.js written")
 
 
-def build_offline():
+def offline_document() -> str:
     # THIS GENERATOR OWNS offline/index.html — it overwrites the file wholesale.
     #
     # 2026-07-31: it therefore also owns ruling Q4's INFRASTRUCTURE declaration, which was
@@ -270,10 +294,7 @@ def build_offline():
     # An owned file may only be edited HERE. check_q4_declarations.py now asserts this
     # block survives, so the property is tested rather than merely present.
     # Receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/232_FIVE_RULINGS_EXECUTED_2026_07_31.md
-    d = os.path.join(BASE, "offline")
-    os.makedirs(d, exist_ok=True)
-    with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write("""<!DOCTYPE html>
+    return """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -306,13 +327,18 @@ def build_offline():
   </aside>
   <div class="dot"></div>
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
-  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/spark/">spark</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
+  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/dasein/">Dasein</a> · <a href="/f5/">F5 fork</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/spark/">spark</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
 </div>
 </main>
 </body>
 </html>
-""")
-    print("offline/index.html written (with the Q4 INFRASTRUCTURE declaration)")
+"""
+
+
+def build_offline(*, check: bool = False) -> str:
+    content = offline_document()
+    _emit(ROOT / "offline" / "index.html", content, check=check, label="offline/index.html")
+    return content
 
 
 def public_pages():
@@ -350,16 +376,36 @@ def parse_args(argv):
     parser.add_argument("--register", action="store_true", help="regenerate the service-worker registration script")
     parser.add_argument("--inject-heads", action="store_true", help="inject PWA head markup into public HTML pages")
     parser.add_argument("--all", action="store_true", help="run all optional generators and injection")
+    parser.add_argument("--check", action="store_true", help="verify the three core PWA outputs without writing")
     return parser.parse_args(argv)
 
 
 def main(argv) -> int:
     args = parse_args(argv)
+    if args.check and (args.all or args.icons or args.register or args.inject_heads):
+        print("PWA: FAIL\n- --check cannot be combined with mutating optional generators")
+        return 1
+    manifest = manifest_document()
+    offline = offline_document()
+    overrides = {
+        "manifest.webmanifest": manifest.encode("utf-8"),
+        "offline/index.html": offline.encode("utf-8"),
+    }
+    if args.check:
+        try:
+            build_manifest(check=True)
+            build_offline(check=True)
+            build_sw(check=True, overrides=overrides)
+        except (OSError, ValueError) as exc:
+            print(f"PWA: FAIL\n- {exc}")
+            return 1
+        print("PWA: PASS (manifest, offline fallback, and service worker are deterministic)")
+        return 0
     if args.all or args.icons:
         build_icons()
     build_manifest()
     build_offline()
-    build_sw()
+    build_sw(overrides=overrides)
     if args.all or args.register:
         build_register()
     if args.all or args.inject_heads:

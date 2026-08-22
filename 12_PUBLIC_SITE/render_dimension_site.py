@@ -8,6 +8,8 @@ import html
 import json
 from pathlib import Path
 
+from build_core_shell import head_assets, render_footer, render_nav
+
 
 SITE = Path(__file__).resolve().parent
 MANIFEST = SITE / "public_semantic_parity.json"
@@ -80,7 +82,7 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
     stone_html = ""
     stone_style = ""
     if stone := item.get("stone"):
-        stone_style = ".stone{margin:2rem 0;padding:clamp(1.3rem,4vw,2rem);border:1px solid var(--gold);background:linear-gradient(135deg,var(--surface),transparent)} .stone h2{font-size:clamp(1.8rem,4vw,3rem);margin:.35rem 0} .stone p,.stone li{color:var(--text-muted)} .stone li{margin:.5rem 0} .stone-formula{font:700 .85rem/1.8 var(--font-mono);color:var(--gold)!important} .stone-boundary{border-left:2px solid var(--border);padding-left:1rem}\n"
+        stone_style = ".stone{margin:2rem 0;padding:clamp(1.3rem,4vw,2rem);border:1px solid var(--gold);background:var(--surface)} .stone h2{font-size:clamp(1.8rem,4vw,3rem);margin:.35rem 0} .stone p,.stone li{color:var(--text-muted)} .stone li{margin:.5rem 0} .stone-formula{font:700 .85rem/1.8 var(--font-mono);color:var(--gold)!important} .stone-boundary{border-left:2px solid var(--border);padding-left:1rem}\n"
         families = "".join(f"<li>{esc(family)}</li>" for family in stone["families"])
         stone_html = f"""
 <section class="stone" aria-labelledby="stone-title">
@@ -93,7 +95,7 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
   <a class="next" href="../rosetta/">Open the Rosetta →</a>
 </section>"""
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-gestalt="v2">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -122,16 +124,17 @@ main{{max-width:920px;margin:0 auto;padding:110px 22px 72px}} .hero{{padding:2re
 .dimension-canvas{{width:100%;height:320px}} .transition{{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}}
 {stone_style}dl{{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)}} dt,dd{{margin:0;padding:.8rem;border-bottom:1px solid var(--border)}} dt{{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)}} dd{{color:var(--text-muted)}}
 .next{{display:inline-block;margin-top:1rem;color:var(--gold)}} .pager{{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem}} code{{overflow-wrap:anywhere}}
+html:not([data-gestalt-enhanced="true"]) .fallback{{display:flex}}
 @media(max-width:700px){{.grid{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}dt{{padding-bottom:.2rem}}dd{{padding-top:.2rem}}}}
 /* a11y-floor-2026-08-13 */
 :focus-visible{{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}}
 @media (prefers-reduced-motion: reduce){{*,*::before,*::after{{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}}}
 </style>
+{head_assets()}
 </head>
-<body>
-<a class="skip-to-content" href="#main">Skip to content</a>
-<header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
-<main><span id="main" tabindex="-1"></span>
+<body class="g2-page g2-legacy g2-dimension">
+{render_nav("worldview")}
+<main id="main" tabindex="-1">
 <section class="hero">
   <p class="eyebrow">{esc(ident)} · {esc(item['modality'])} · {esc(item['tier'])}</p>
   <h1>{esc(item['title'])}</h1>
@@ -141,15 +144,21 @@ main{{max-width:920px;margin:0 auto;padding:110px 22px 72px}} .hero{{padding:2re
   <article><h2>Inherited structure</h2><p>{esc(item['inherited'])}</p></article>
   <article><h2>Claim boundary</h2><p>{esc(item['boundary'])}</p></article>
 </section>{stone_html}
-<section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
-  <canvas class="dimension-canvas"></canvas>
-  <noscript>Illustration omitted. The text carries the claim.</noscript>
+<section class="diagram visual-panel" aria-labelledby="diagram-title-{esc(number)}">
+  <canvas class="dimension-canvas" aria-hidden="true"></canvas>
+  <div class="fallback">
+    <div class="fallback-inner">
+      <p class="fallback-equation" id="diagram-title-{esc(number)}">{esc(ident)} · {esc(item['title'])}</p>
+      <p>{esc(item['summary'])}</p>
+      <p>This illustration carries no evidence beyond the typed text above.</p>
+    </div>
+  </div>
 </section>
 <p class="source">Semantic owner: <code>{esc(item['source'])}</code></p>
 {transition_card(item)}
 <nav class="pager">{prev_link}{next_link}</nav>
 </main>
-<footer class="site-footer">Public projection · source tiers preserved · <a href="../practice/">use the compass</a> · <a href="../exit/">put it down</a></footer>
+{render_footer()}
 <script>window.DIMENSION_PAGE={{animationMode:{json.dumps(item['illustrationMode'])}}};</script>
 <script type="module" src="../dimensions/dimensions.js"></script>
 <script defer src="/assets/js/atlas-drawer.js"></script>
@@ -170,7 +179,7 @@ def index_page(levels: list[dict], sequence: list[str]) -> str:
             ret = item["return"]
             rows.append(f"<div class='crossing'><b>{esc(ret['id'])}</b><span>{esc(ret['label'])}</span><small>interpretive edge only</small></div>")
     return f"""<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-gestalt="v2"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The dimension-first spine · Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6 with five typed μ-interfaces — two standing, one owing a discriminator, two adjudicated failed — one exit boundary, and one interpretive return." />
 <link rel="icon" href="data:," /><link rel="stylesheet" href="../assets/css/xai.css" /><style>
@@ -182,11 +191,11 @@ main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clam
 /* a11y-floor-2026-08-13 */
 :focus-visible{{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}}
 @media (prefers-reduced-motion: reduce){{*,*::before,*::after{{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}}}
-</style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#070A12"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><script src="/assets/js/pwa.js" defer></script></head><body><a class="skip-to-content" href="#main">Skip to content</a>
-<header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../check/">Check</a><a href="../practice/">Practice</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
-<main><span id="main" tabindex="-1"></span><p class="sequence">{esc(' → '.join(pretty_id(x) for x in sequence))}</p><h1>The dimension-first spine</h1><p class="lede">A scaffold, not a census forced on nature. Each page separates inherited mathematics or science from Emergentist interpretation, and every crossing carries a prediction and a way to fail.</p>
+</style>{head_assets()}<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#070A12"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><script src="/assets/js/pwa.js" defer></script></head><body class="g2-page g2-legacy g2-dimensions-index">
+{render_nav("worldview")}
+<main id="main" tabindex="-1"><p class="sequence">{esc(' → '.join(pretty_id(x) for x in sequence))}</p><h1>The dimension-first spine</h1><p class="lede">A scaffold, not a census forced on nature. Each page separates inherited mathematics or science from Emergentist interpretation, and every crossing carries a prediction and a way to fail.</p>
 <section class="contract"><h2>How to read it</h2><ul><li>D4 is actual; D5 is possible. An actual D4 model token may represent D5 possible content.</li><li>μ₀…μ₄ are candidate apertures. Empty evidence remains unassessed.</li><li>b₆ and r₆ are boundary relations, not additional μ-crossings.</li><li>The matter→bond→life→mind→choice story is an optional interpretation, not the owner of the formal registers.</li><li><b>The numbering is dependency priority, and nothing else.</b> Three orders must not collapse into it: <b>dependency priority</b> asks what rules and carriers a realization presupposes; <b>actuality</b> asks what causally occurred; <b>psychological salience</b> asks what is vivid or important to someone now. A higher number therefore implies <b>no</b> greater reality, vividness, moral worth, causal power, or standing of any person or thing placed near it. A ladder invites exactly that misreading, so it is refused here in writing.</li></ul></section>
-<section class="spine">{''.join(rows)}</section><section class="contract"><h2>Related instruments and preserved visual studies</h2><p><a href="../suda/">Suda notes</a> · <a href="../egg/">The Egg</a> · <a href="../riemann/">Riemann view</a> · <a href="../journey/">Earlier journey view</a></p><p>These are supporting projections. The typed spine above governs where they conflict.</p></section><p><a href="../0/">Begin with D0 →</a></p></main><script defer src="/assets/js/atlas-drawer.js"></script><footer class="site-footer">[I/C] scaffold · externally uncalibrated · <a href="../record/">corrections remain visible</a></footer></body></html>"""
+<section class="spine">{''.join(rows)}</section><section class="contract"><h2>Related instruments and preserved visual studies</h2><p><a href="../suda/">Suda notes</a> · <a href="../egg/">The Egg</a> · <a href="../riemann/">Riemann view</a> · <a href="../journey/">Earlier journey view</a></p><p>These are supporting projections. The typed spine above governs where they conflict.</p></section><p><a href="../0/">Begin with D0 →</a></p></main><script defer src="/assets/js/atlas-drawer.js"></script>{render_footer()}</body></html>"""
 
 
 def render() -> dict[Path, str]:

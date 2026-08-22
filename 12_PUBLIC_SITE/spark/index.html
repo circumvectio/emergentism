@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-gestalt="v2">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,16 +63,43 @@
     footer a:hover, footer a:focus-visible { color:var(--bone); }
     @media (max-width:640px) { body { font-size:16px; } .topbar { align-items:flex-start; flex-direction:column; } .nav { justify-content:flex-start; } .wrap { width:min(100% - 2.5rem,48rem); padding-top:3rem; } .status { grid-template-columns:1fr; gap:.35rem; } th, td { padding:.55rem .25rem; } }
   </style>
+<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+<script defer src="/assets/js/gestalt-v2.js"></script>
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="topbar">
-    <a class="brand" href="../">Emergent<b>ism</b></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="../spark.md">spark.md</a><a href="../plainly/">Worldview</a><a href="../practice/">Practice</a><a href="../record/">Record</a><a href="../exit/">Exit</a>
+<body class="g2-page g2-legacy">
+  <!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" href="/plainly/">Worldview</a>
+      <a data-section="practice" href="/practice/">Practice</a>
+      <a data-section="research" aria-current="location" href="/record/">Research</a>
+      <a data-section="library" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
     </nav>
-  </header>
-  <main id="main" class="wrap">
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" aria-current="location" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
+</header>
+<!-- gestalt-core-nav:end -->
+  <main id="main" class="wrap" tabindex="-1">
     <p class="kicker">A fallibilist introduction</p>
     <h1>Reality exceeds every map. <em>We still have to act.</em></h1>
     <p class="dek">Emergentism is a lens and a compass for finite beings: distinguish map from territory, possibility from actuality, and commitment from outcome. Make one bounded move. Let consequence revise the map.</p>
@@ -134,6 +161,24 @@
     <p><strong>The map proposes. The world replies. Exit remains open.</strong></p>
     <div class="cta"><a class="btn primary" href="../plainly/">Read in ordinary language</a><a class="btn" href="../practice/">Try one decision</a><a class="btn" href="../spark.md">Read the markdown</a></div>
   </main>
-  <footer><p>Public projection. Upstream source owners govern if this page conflicts with them.</p><p><a href="../spark.md">spark.md</a> · <a href="../plainly/">Worldview</a> · <a href="../record/">Record</a> · <a href="../exit/">Exit</a></p><p>•&nbsp;&nbsp;⊙&nbsp;&nbsp;○ — boundary labels; no arithmetic or coercion.</p></footer>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
+</footer>
+<!-- gestalt-core-footer:end -->
 </body>
 </html>

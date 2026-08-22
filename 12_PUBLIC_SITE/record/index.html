@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-gestalt="v2">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -211,20 +211,44 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 <script src="/assets/js/pwa.js" defer></script>
 <script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="../assets/css/a11y.css">
+<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+<script defer src="/assets/js/gestalt-v2.js"></script>
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
+<body class="g2-page g2-legacy">
 <aside data-historical-authority-boundary="2026-07-22" role="note" style="padding:.8rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);background:#17150a;color:#d8d2bd;font:600 .76rem/1.5 ui-monospace,monospace">[B] Historical receipt labels below are preserved as provenance. They create no current editorial, repository, AI, financial, contractual, or publication authority. Current work follows source ownership, evidence, consent, custody, consequence, contest, and applicable permissions.</aside>
 
-<header class="topbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Routes">
-    <a href="../practice/#frame">Practice</a><a href="../plainly/">Worldview</a>
-    <a href="../record/" class="here" aria-current="page">Research</a><a href="../book/">Library</a>
-    <a href="../contribute/">Participate</a><a href="../exit/" style="opacity:.62">Exit</a>
-  </nav>
-  <nav class="mobile-actions" aria-label="Mobile navigation"><a class="nav-action" href="../practice/#frame">Practice</a><details><summary>Menu</summary><div class="menu-panel"><a href="../plainly/">Worldview</a><a href="../record/" aria-current="page">Research</a><a href="../book/">Library</a><a href="../contribute/">Participate</a></div></details><a class="nav-quiet" href="../exit/">Exit</a></nav>
+<!-- gestalt-core-nav:start -->
+<a class="g2-skip" href="#main">Skip to content</a>
+<header class="g2-nav" data-core-shell="v2">
+  <div class="g2-nav__inner">
+    <a class="g2-brand" href="/" aria-label="Emergentism home">
+      <span class="g2-brand__mark" aria-hidden="true">• ⊙ ○</span>
+      <span class="g2-brand__word">Emergentism</span>
+    </a>
+    <nav class="g2-nav__desktop" aria-label="Primary navigation">
+      <a data-section="worldview" href="/plainly/">Worldview</a>
+      <a data-section="practice" href="/practice/">Practice</a>
+      <a data-section="research" aria-current="location" href="/record/">Research</a>
+      <a data-section="library" href="/book/">Library</a>
+      <a data-section="participate" href="/contribute/">Participate</a>
+      <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+    <nav class="g2-nav__mobile" aria-label="Mobile navigation">
+      <a class="g2-mobile__direct" data-section="practice" href="/practice/">Practice</a>
+      <details class="g2-menu">
+        <summary>Menu</summary>
+        <div class="g2-menu__panel">
+          <a data-section="worldview" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
+          <a data-section="research" aria-current="location" href="/record/">Research <span aria-hidden="true">02</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+        </div>
+      </details>
+      <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
+    </nav>
+  </div>
 </header>
+<!-- gestalt-core-nav:end -->
 
 <main class="wrap" id="main" tabindex="-1">
   <header class="hero">
@@ -784,11 +808,25 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </div>
   </section>
 </main>
-
-<footer class="foot wrap">
-  <div class="glyph">Claim · Test · Consequence · Revision</div>
-  <p>The Trial Record · projected from receipts under 03_METHODOLOGY and the 2026-07 audits; completeness remains contestable.<br>One canon, three scripts — <a href="../fable/">the fable</a> (story) · <a href="../plainly/">plainly</a> (plain words) · this record (receipts).<br>Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.<br>Logged verdict rows carry dates and stated tiers. Coherence is not truth — <a href="../axioms/">see the axioms</a>.<br>If you can see directly, <a href="../exit/">put this down</a>.</p>
+<!-- gestalt-core-footer:start -->
+<footer class="g2-footer" data-core-shell="v2">
+  <div class="g2-footer__inner">
+    <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/plainly/">Worldview</a>
+      <a href="/practice/">Practice</a>
+      <a href="/record/">Research</a>
+      <a href="/book/">Library</a>
+      <a href="/about/">About</a>
+      <a href="/exit/">Exit</a>
+    </nav>
+    <div class="g2-footer__boundary">
+      <span>Public projection · source owners govern · no external validation implied</span>
+      <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
+    </div>
+  </div>
 </footer>
+<!-- gestalt-core-footer:end -->
 
 <script>
 (function(){

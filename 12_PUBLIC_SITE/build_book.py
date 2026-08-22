@@ -14,6 +14,8 @@ Run:  python3 -B build_book.py [--check]
 import argparse, hashlib, json, os, re, sys
 import markdown
 
+from build_core_shell import head_assets, render_footer, render_nav
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 BOOK_MANIFEST = os.path.join(ROOT, "13_BOOKS", "book-manifest.json")
@@ -335,6 +337,9 @@ def render(contract):
     page = page.replace("%%BODY%%", body_html)
     page = page.replace("%%NCH%%", str(n_ch))
     page = page.replace("%%WORDS%%", f"{words:,}")
+    page = page.replace("%%CORE_HEAD%%", head_assets())
+    page = page.replace("%%CORE_NAV%%", render_nav("library"))
+    page = page.replace("%%CORE_FOOTER%%", render_footer())
 
     return page, n_ch, words, source_chapter_order
 
@@ -429,7 +434,7 @@ def build(check=False):
 
 
 TEMPLATE = r"""<!DOCTYPE html>
-<html lang="en" data-reading-theme="light">
+<html lang="en" data-reading-theme="light" data-gestalt="v2">
 <head>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Emergentism" />
@@ -443,6 +448,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. World-facing evidence and independent review remain incomplete." />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
+%%CORE_HEAD%%
 <style>
 /* Self-hosted Roboto (Apache-2.0) — accessible and gate-safe */
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -485,8 +491,8 @@ a{color:inherit}
 .skip:focus{transform:translateY(0)}
 
 /* progress bar */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
-  background:linear-gradient(90deg,var(--gold),var(--gold-bright));transition:width .12s linear}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:110;
+  background:var(--gold);transition:width .12s linear}
 
 /* topbar */
 .bookbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
@@ -499,6 +505,9 @@ a{color:inherit}
 .bookbar nav a,.bookbar nav button{color:var(--ink-soft);background:none;border:1px solid transparent;
   min-height:var(--target-min);display:inline-flex;align-items:center;border-radius:var(--shape-full);padding:0 .75rem;cursor:pointer;font:inherit;letter-spacing:0}
 .bookbar nav a:hover,.bookbar nav button:hover{color:var(--gold);border-color:var(--rule)}
+.book-tools{min-height:52px;display:flex;justify-content:flex-end;gap:.5rem;padding:.35rem clamp(1rem,3vw,1.6rem);background:var(--bg);border-bottom:1px solid var(--rule-soft)}
+.book-tools button{display:none;min-height:44px;padding:0 .8rem;border:1px solid var(--rule);background:var(--bg2);color:var(--ink-soft);font:600 .76rem var(--mono);cursor:pointer}
+html[data-gestalt-enhanced="true"] #theme-toggle{display:inline-flex;align-items:center}
 #toc-toggle{display:none}
 
 /* layout */
@@ -585,13 +594,15 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   .bookbar nav{width:100%;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
   .bookbar nav::-webkit-scrollbar{display:none}
   .bookbar nav a,.bookbar nav button{flex:0 0 auto;white-space:nowrap}
-  #toc-toggle{display:inline-block}
   .book-shell{grid-template-columns:1fr}
-  .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:55;background:var(--panel);
+  .toc{position:static;top:auto;left:auto;height:auto;width:auto;z-index:auto;background:var(--panel);
+    border-right:0;border-bottom:1px solid var(--rule);opacity:1;visibility:visible;pointer-events:auto;padding:1.5rem 1rem}
+  html[data-gestalt-enhanced="true"] #toc-toggle{display:inline-flex;align-items:center}
+  html[data-gestalt-enhanced="true"] .toc{position:fixed;top:0;left:0;height:100vh;width:min(84vw,330px);z-index:105;background:var(--panel);
     border-right:1px solid var(--rule);clip-path:inset(0 100% 0 0);opacity:0;visibility:hidden;pointer-events:none;
     transition:clip-path .28s cubic-bezier(.2,.7,.2,1),opacity .18s ease;padding-top:3.4rem}
-  html.toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
-  html.toc-open .toc-scrim{position:fixed;inset:0;z-index:54;background:rgba(0,0,0,.45)}
+  html[data-gestalt-enhanced="true"].toc-open .toc{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;box-shadow:0 0 60px rgba(0,0,0,.4)}
+  html[data-gestalt-enhanced="true"].toc-open .toc-scrim{position:fixed;inset:0;z-index:104;background:rgba(0,0,0,.45)}
   pre{overflow-x:hidden;white-space:pre-wrap}
   pre code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
 }
@@ -604,23 +615,13 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 }
 </style>
 </head>
-<body>
-<a class="skip" href="#main">Skip to book</a>
+<body class="g2-book">
 <div class="progress" id="progress"></div>
-
-<header class="bookbar">
-  <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav aria-label="Primary navigation">
-    <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">☰ Contents</button>
-    <a href="../practice/#frame">Practice</a>
-    <a href="../plainly/">Worldview</a>
-    <a href="../record/">Research</a>
-    <a href="../book/" aria-current="page">Library</a>
-    <a href="../contribute/">Participate</a>
-    <a href="../exit/">Exit</a>
-    <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">◐</button>
-  </nav>
-</header>
+%%CORE_NAV%%
+<div class="book-tools" aria-label="Reading controls">
+  <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">Contents</button>
+  <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">Reading theme</button>
+</div>
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">
@@ -638,6 +639,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
     </div>
   </main>
 </div>
+%%CORE_FOOTER%%
 
 <script>
 (function(){
