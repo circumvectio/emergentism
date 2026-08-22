@@ -25,7 +25,9 @@ parents:
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - 09_THE_THREE_SCRIPTS_AND_THE_LIMIT_v0.1_DRAFT.md
   - 10_PARASITE_LOAD_WAGER_2026_08_17.md
-lineage_note: "Two further parents are cited in prose only because they are NOT yet in this tree: 07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md and 58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md live in the 2026-08-21 refinement worktree (.codex-worktrees/emergentism-corpus-refinement-20260821/), pending merge. Listing them as frontmatter parents before the merge would assert custody this tree does not have — the citation gate correctly rejected exactly that on first draft."
+  - ../01_TELEOLOGY/02_THE_DERIVATION/07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md
+  - ../05_COSMOLOGY/03_FORMAL_SYSTEM/58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md
+lineage_note: "Custody reconciled 2026-08-22: 07C and 58 are present in this tree after the 2026-08-21 refinement consolidation. Their addition here repairs the earlier accurate-but-now-stale pending-merge note; it supplies no adoption or tier promotion."
 ---
 
 # The Debt-Service Conjectures — W14–W18 (staged)

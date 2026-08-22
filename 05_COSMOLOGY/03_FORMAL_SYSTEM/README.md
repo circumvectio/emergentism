@@ -81,6 +81,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md`](54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md) | Direction-sphere/radial-line factorization and its boundary. |
 
 | [58 Titan Limit-Crossing Process Conjecture](58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md) | Open typed research proposal for a completion process bounded by Titan roles; preserves the no-Titan-arithmetic firewall. |
+| [59 BIL-01 — Boundary Information-Loss Lemma](59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md) | `[A]` proof that the endpoint signature `(0,+∞)` does not determine a product limit; its emergence reading remains `[I]` and proves no `μ`. |
 
 ## Ordinal collisions — a routing index, not a renaming
 

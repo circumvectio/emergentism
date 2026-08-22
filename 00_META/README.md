@@ -17,6 +17,10 @@ This lane owns routing and claim custody, not new cosmology.
 - [Kintsugi Protocol](00_THE_KINTSUGI_PROTOCOL.md) — visible repair discipline.
 - [Open Canon Covenant](00_THE_OPEN_CANON_COVENANT.md) — tier-preserving revision.
 - [Registers](registers/README.md) — deterministic tracked-file and folder inventories.
+- [Conjectures and proof attempts](conjectures_and_proof_attempts/README.md) —
+  dated, non-owning pointer manifest across conjectures, formal results,
+  counterexamples, and failed attempts; inclusion supplies no validation or
+  adoption.
 - [The Claim Status Register](00_THE_CLAIM_STATUS_REGISTER.md) — validation status as a second axis beside evidence tier; the `FV`, `W`, `DF`, and `RQ` rows.
 - [Claim cards](claim_cards/README.md) — authoritative routing inputs, not semantic owners; compiled by `09_TOOLS/02_COMPILERS/compile_claim_cards.py`.
 - [Claim-card schema](schemas/claim-card.schema.yaml) — required fields, enums, and the `K-1`…`K-7` owner registry.

@@ -35,6 +35,16 @@ commitments stop. The Ground remains prior to every map, including this one.
   audit; full claim record, killable, fenced; adoption is an owner act via
   [`../00_HANDOFF/PARASITE_LOAD_WAGER_DOCKET_2026_08_17.md`](../00_HANDOFF/PARASITE_LOAD_WAGER_DOCKET_2026_08_17.md);
   not a ledger row and no authority.
+- [The Debt-Service Conjectures](11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md)
+  — `[D]` staged candidates `W14–W18`; numbering is provisional, they are not
+  ledger rows, and inclusion here supplies no adoption.
+- [Strong-Lift / Weak-Projection](12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md)
+  — `SLWP-01`, a `[C]` proposal and proof program. BIL-01 is its `[A]`
+  mathematical neighbor, not proof of its D-level generalization; it is not
+  `W19` and is not in `CLAIM_STATUS.yaml`.
+- [Conjectures and proof attempts](../00_META/conjectures_and_proof_attempts/README.md)
+  — corpus-wide non-owning pointer manifest; semantic and validation ownership
+  remain distributed.
 - [`ruminations/`](ruminations/README.md) — `[I]` readings beside doctrine, not
   authority instruments.
 

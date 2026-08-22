@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 860,
+  "entry_count": 861,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3890,
+      "tracked_file_count": 3895,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -311,7 +311,7 @@
       "owns": "00_META lane — canon custody and correction; owns routing and claim custody (Settled Canon Registry, The Refusals, Kintsugi Protocol, claim ",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 107,
+      "tracked_file_count": 109,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -374,6 +374,19 @@
       "nearest_front_door": "00_META/claim_status/README.md",
       "front_door_requirement": "present",
       "owns": "**What:** the claim-status lifecycle register (`CLAIM_STATUS.yaml`).",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "00_META/conjectures_and_proof_attempts",
+      "type": "meta",
+      "nearest_front_door": "00_META/conjectures_and_proof_attempts/README.md",
+      "front_door_requirement": "present",
+      "owns": "Conjectures and Proof Attempts — manifest-bounded index",
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 2,
@@ -883,7 +896,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 143,
+      "tracked_file_count": 144,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -935,7 +948,7 @@
       "owns": "> **[金] reconciliation — 2026-07-20.** The triadic frame is selected, not",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 55,
+      "tracked_file_count": 56,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -948,7 +961,7 @@
       "owns": "06_ONTOLOGY read-order index and canonical type split (D4 causal actuality, D5 counterfactual content, D6 apophatic; non-μ b₆/r₆; D-stable f",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 32,
+      "tracked_file_count": 33,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1299,7 +1312,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 247,
+      "tracked_file_count": 248,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1312,7 +1325,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 56,
+      "tracked_file_count": 57,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

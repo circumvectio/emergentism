@@ -50,6 +50,9 @@ Current repository validators and narrowly scoped support scripts.
   full contract document, validates the named external-owner registry and
   restored-result inventory, and rejects terminal/fake blockers or dependency
   cycles.
+- `check_conjecture_proof_attempt_manifest.py` — validates the dated non-owning
+  conjecture/proof-attempt manifest, exact claim-status ID snapshot, source
+  hashes, attempt relations, and the BIL-01/SLWP-01 anti-promotion boundary.
 - `check_coherence_profile.py` validates the tool-owned four-axis declaration
   in `coherence_profile.json`. Its overall state is explicitly internal;
   world contact remains a separate typed axis and cannot be supplied by a
