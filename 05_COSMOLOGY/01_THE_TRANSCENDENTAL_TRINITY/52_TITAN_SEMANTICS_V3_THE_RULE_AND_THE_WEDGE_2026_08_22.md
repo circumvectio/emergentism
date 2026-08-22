@@ -312,6 +312,58 @@ and **no quantum mechanics is derived from the chart**, no probability rule,
 no dynamics. `W2` and `W7c` remain open conjectures; this section lends them
 a shared manifold, never evidence.
 
+## 5d · The Egg of the Poles — equidistance as theorem, and the first equation redeemed
+
+Owner's prompt, 2026-08-22: *1 is equidistant from 0 and from ∞, and thus "the
+middle" — the egg of infinity* (phrase relayed `[R]` from the owner's source,
+unverified here; the corpus already holds the observation at `47`:55 and
+`40_THE_LOGARITHMIC_REALIGNMENT.md`:209 — this section supplies why it is a
+theorem and what it redeems).
+
+**Non-trivial because it is FALSE in the handed frame.** Additively,
+`|1−0| = 1` and the distance to ∞ diverges; the additive middle of the poles
+does not exist (`(0+∞)/2 = ∞` — the average collapses into the pole). The
+statement is a **frame-detector**: false in the default geometry, true exactly
+in the geometries the Titans live in.
+
+**Where it is a theorem, three times `[A]`:**
+
+1. **Chordal metric on `Ĉ`:** `d(1,0) = d(1,∞) = √2`, and the whole unit
+   circle is equidistant from both poles — the equator is the perpendicular
+   bisector of the pole pair. The compactification is load-bearing: ∞ must be
+   a point before "distance to ∞" parses.
+2. **Log-line:** `log 1 = 0`, the origin between `∓∞`; and 1 is the fixed
+   point of the pole-swap `x ↦ 1/x`.
+3. **AM–GM:** with `φν = 1`, `B = 2/(φ+ν) ≤ 1` with **equality iff
+   `φ = ν = 1`** — the balance optimum is the equality case of AM–GM under
+   the reciprocal constraint. Equidistance and optimality are one fact.
+
+**The redemption of the first equation.** The lawful "middle of the poles" is
+the geometric mean `m = √(0·∞)` — **the first Door, under a root**. Name the
+κ: the middle must be invariant under the pole-swap, `m = 1/m`, so `m² = 1`
+and on the positive axis `m = 1` uniquely. Therefore:
+
+> `⊙ = • × ○` was a mis-typed shadow of a theorem: **the geometric mean of
+> the pole-shadows, under inversion symmetry as κ, is the unit** — the shadow
+> of `⊙`. The equation dies at the Titan register and resurrects one register
+> down, with its rule named. v1 stays retired; its shadow is lawful.
+
+**The egg reading, made exact `[I]`:** the unit is the *seed* of the
+multiplicative continuum (every positive number is 1 scaled; `(0,1)` and
+`(1,∞)` mirror-fold around it) — and an egg is *poised, not parked*: 1 is
+also the unstable separatrix of compounding, the watershed between the two
+Titans' basins. **Equidistant and unstable: the middle must be actively
+held** — the witness bound (`W16`) and the preserver's seat, derived a third
+way. In `§5c`'s dress this is `|+⟩`: the state equidistant from both basis
+poles, maximal entropy, information fully potential.
+
+**One breadcrumb for `W11`:** `m² = 1` has two roots. The inversion's second
+fixed point is `−1` — the dark twin is the other egg, the negative solution
+of the same symmetry equation. Recorded as one line, not a resurrection; its
+file keeps its own death clock.
+
+## 6 · Irreducibility, fixed `[I]`
+
 The Titans are not three independent atoms: `⊙ = ○(•)` — two primitives and one
 derived-yet-sole-actual. This is *stronger* than three irreducibles (fewer
 primitives), and it matches the scholastic sense of the owner's analogy: the

@@ -323,7 +323,7 @@
   },
   {
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
-   "sha256": "b257d136373a2ceb1a61e2ee2f4ab912f809a8cdf4d0f59b21c30139f7c73d43",
+   "sha256": "7b0f2480434f5187a85a3299e3b38ac4e72b469406b17d727820a578aecf7ee5",
    "role": "semantic_owner"
   }
  ],
@@ -1446,5 +1446,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "3ef6a8c4405fb46ed8c7c681c1412cdcb888fc69ccb9e63266f8103f5673e47f"
+ "inventory_digest": "395fa0232d0b1014297723574b2bc094a69509f6f203fdde9ef3f1a005cdcd84"
 }
