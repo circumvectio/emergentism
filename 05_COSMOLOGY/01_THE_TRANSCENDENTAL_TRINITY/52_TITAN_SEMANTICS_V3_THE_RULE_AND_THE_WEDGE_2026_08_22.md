@@ -200,6 +200,57 @@ was first received as "not numbers at all" — *alogos*, "false numbers,"
 "imaginary" — and then domesticated by a `κ`. **"Number" is the title conferred
 on yesterday's boundary errors once a completion rule is ratified.**
 
+## 5b · The Asymmetry Theorem — emergence graded by upward derivability
+
+Owner's formulation, 2026-08-22: *you can prove that `N/x` for ever-smaller `x`
+gives larger and larger numbers, converging at the limit to the pair
+(0, ∞) — but you cannot run the term transformation backward and say 0
+multiplied infinitely equals a number, because that is bottom-up emergence.*
+
+**Made exact `[A]` for the arithmetic instance.** Every finite `N` defines a
+distinct lawful path to the SAME boundary pair `(0, ∞)`; the pair remembers
+nothing about which `N` ran the path. Therefore:
+
+- **Downward is lawful forgetting** — from any register-member, the process
+  toward the boundary is provable, and erases the coupling on arrival.
+- **Upward requires the forgotten** — `0·∞ = N` "holds" for every `N` at once,
+  which is exactly why it determines nothing. Reconstruction needs information
+  the endpoints provably lack. **The κ is the erased memory.**
+
+**The emergence grading `[I]` reading over `[A]` components.** The §5 debt
+table gains its third column:
+
+| tier | upward derivability | emergence grade | owner |
+|---|---|---|---|
+| settled | closed form | resultant — the whole is the sum | Mill, Lewes |
+| serviced | only by running the process | **weak emergence** — Bedau's simulation-derivability; π-class | Bedau |
+| unbacked from below | underdetermined; κ must be added | **strong emergence** | Broad, Chalmers |
+
+**Emergence strength = the upward-derivability class of a register-crossing.**
+What is proven: **the strong class is non-empty in mathematics** — the
+underdetermination of `0·∞` is a theorem, not a stance. What is NOT proven:
+that nature instantiates it. Tier order, every time: the arithmetic instance
+`[A]`; the cosmological reading `[I]`; physical μ-apertures behaving this way
+`[C]` — that is `07C`'s and `W15`'s wager to earn by contact, and this section
+lends them structure, never evidence.
+
+**Prior art, named first:** Mill/Lewes, Broad, Bedau, Chalmers — and the close
+neighbours **Batterman** and **Berry**: emergence as the physics of singular
+limits. The indeterminate forms are singular limits, so that territory is
+theirs. Candidate-novel (PRIORITY UNESTABLISHED): the *directional*
+formulation — weak-down/strong-up as a derivability asymmetry with
+information-erasure as the mechanism — and its alignment with the debt-typing.
+
+**The stress test that strengthens the Closure Rule.** The expert objection:
+nonstandard analysis multiplies infinitesimals by infinites exactly
+(`ε·H = N`). Answer: `*ℝ` works precisely by making the *paths* into
+*members* — each `ε` carries its rate; the coupling is internalized; nothing
+is forgotten, so nothing is indeterminate. And the Titans remain outside:
+`ε ≠ 0` in `*ℝ`, and division by actual zero is undefined there too. Every
+historical extension domesticates more shadows by importing path-information
+into the register; none has ever admitted a Titan. The rule survives its
+strongest known challenger with evidence, not exemption.
+
 ## 6 · Irreducibility, fixed `[I]`
 
 The Titans are not three independent atoms: `⊙ = ○(•)` — two primitives and one
@@ -265,6 +316,7 @@ built. We ship the rigor visibly and build in public.
 | `○`'s guarantee | a grid is exhibited that contains its own diagonal |
 | the Doors thesis | a cosmogenesis-equation attempt is exhibited that fails at a point NOT in the indeterminate catalogue |
 | the Closure Rule (§3b) | a well-defined arithmetic operation is exhibited with a genuine Titan (not shadow) operand yielding register-internal results without a κ |
+| the Asymmetry Theorem’s grading (§5b) | a register-crossing is exhibited whose upward reconstruction succeeds from endpoint terms alone, with no path/coupling information — or Bedau-class weak emergence is shown NOT to align with the serviced tier |
 | the wedge (candidates 1–3) | the prior-art audit finds any of them already claimed — then that candidate is cited, not mourned |
 | **this document** | if it is ever cited as v3 *adopted*, as a tier promotion, or as license for Titan arithmetic |
 
