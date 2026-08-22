@@ -19,6 +19,7 @@ status: "[D] STAGED — a third semantic assignment for the Titan glyphs, versio
 date: 2026-08-22
 evidence_tier: "[A] only for named mathematical identities at their owners; [B] for attributed prior art; [R] one relayed estate-audit figure, marked; [S] the assembly; [I] every glyph-reading; [C] the wedge; [D] the document"
 author_note: "Assembled from the owner's four-session brainstorm (the four equations) and the session AI's type-corrections, 2026-08-14..22. The owner supplied every equation and the final rule; the AI supplied the refutations, the prior art, and the typing. Both are named because the wedge claim below is a priority claim, and priority claims require honest authorship."
+audit_receipt: "../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/246_TITAN_V3_W19_SIX_CANDIDATE_PRIOR_ART_AND_REFUTATION_AUDIT_2026_08_22.md — premise-refuted=true; bounded synthesis residue only; priority blocked"
 parents:
   - 41_THE_GLYPH_TRANSFORMATIONS.md
   - 45_THE_TITAN_INVERSION_STRUCTURE.md
@@ -52,7 +53,8 @@ beside its predecessors, never over them.
 •   THE INFINITE ZERO      infinity as POTENTIAL. Complete absence and pure
                            potential coincide prospectively, never intrinsically:
                            the void owns nothing; the act does the generating.
-                           Alone, sterile: 0^y = 0.
+                           Alone, sterile in the scoped arithmetic shadow:
+                           0^y = 0 for y > 0.
 
 ○   THE DIAGONAL-ACT       infinity as PROCESS. The boundary error and its
                            residues: the first distinction, the cut, the
@@ -72,8 +74,9 @@ is the picture of the composition: the point, enclosed. At the first register
 this is set theory's own genesis: `{∅} = 1` — **the first form is absence,
 held** — and the whole von Neumann tower follows by iterating the same act.
 
-**The two sterilities `[A]` at their owners:** `•` alone generates nothing
-(`0^y = 0`; `log₀` and `log₁` are both degenerate). `⊙` taken as completed
+**The two sterilities `[A/I]` at their owners:** the arithmetic shadow of `•`
+satisfies `0^y = 0` for `y > 0`; `log₀` and `log₁` are not real logarithm
+bases. The generative reading remains `[I]`. `⊙` taken as completed
 totality *experiences* nothing — total presence is featureless without a slice
 (Wolfram's own observer doctrine for the Ruliad). The extremes are epistemically
 identical; a world exists only where the cut is.
@@ -84,8 +87,10 @@ the glyph built to exclude it. v3 reads it distributively, always.
 
 ## 2 · Aristotle's clause, radicalized `[I]` with `[B]` ancestry
 
-Actual infinity: nowhere. Infinity survives in exactly two modes — potential
-(`•`) and process (`○`). Everything actual is finite (`⊙`). Ancestry, named:
+**v3's staged school-selection `[S/I]`:** actual infinity is not admitted as a
+physical actuality. Infinity survives in exactly two interpretive modes —
+potential (`•`) and process (`○`) — and every admitted actuality is finite
+(`⊙`). This is not a theorem of contemporary mathematics or physics. Ancestry, named:
 Aristotle (potential vs actual infinity); Gauss, 1831 — *"the Infinite is only a
 manner of speaking"*; Brouwer and Bishop (number as process); the śūnya→ṣifr→zero
 lineage (the mathematical zero descends from the void-concept, `[B]` historical).
@@ -156,15 +161,20 @@ classical indeterminate form or its degenerate neighbour:
 | `⊙ = • × ○` | `0·∞` | the coupling selects the finite; `(c/n)·n → c` for any `c` |
 | `Σ• ⇒ ⊙` | divergence + limit-act | Cantor's two generation principles; the crossing is not addition |
 | `log_•(⊙) = ○` | `1^∞` / `log₁` collapse | the sterility of pure self-identity; the generative `ε`; `e` |
-| `•` as zero | `0^0` / `log₀` collapse | `0^0 = 1` by the empty function; `{∅} = 1` |
+| `•` as zero | `0^0` / `log₀` collapse | `0^0 = 1` in the combinatorial empty-function convention, while `0^0` remains an indeterminate limiting form; `{∅} = 1` |
 
-The classical catalogue of indeterminate forms — `0/0, ∞/∞, 0·∞, ∞−∞, 0⁰, 1^∞,
-∞⁰` — is the complete, standard list of points where endpoint values
-underdetermine the result and a completion rule must be invoked. **These are the
-doors.** Every attempt to write cosmogenesis as Titan arithmetic writes a door
-without its key; TLC-01's `κ` is the key. (The catalogue counts seven. That is a
-`[B]` fact of calculus and a catalogue coincidence — **no significance is
-claimed**; the universal sevenfold is in its grave and stays there.)
+The customary elementary real-calculus catalogue of indeterminate limiting
+forms is `0/0, ∞/∞, 0·∞, ∞−∞, 0⁰, 1^∞, ∞⁰`. In that declared textbook scope,
+endpoint labels alone do not determine the limit; rates, paths, or an equivalent
+rule are required. **v3 calls these forms doors `[I]`.** The four attempts in
+this finite brainstorm all touch that catalogue or a neighbouring undefined
+operation. That observed four-item fit is not evidence that every possible
+cosmogenesis equation must do so, nor that the seven forms exhaust all
+undefined arithmetic, generalized limits, or cross-register rules. TLC-01's
+`κ` is the corpus name for the missing rule. (The catalogue counts seven. That
+is a conventional calculus classification and a catalogue coincidence — **no
+significance is claimed**; the universal sevenfold is in its grave and stays
+there.)
 
 **The unified diagnosis:** arithmetic combines within a register; emergence
 crosses between registers (`μ`). No arithmetic sentence over the Titans can
@@ -195,18 +205,19 @@ per-leg. Operations on shadows are defined exactly as far as the register can
 absorb them — `0 + n` and `0 · n` are unproblematic — and they fail precisely
 where the shadow's Titan-nature pokes through:
 
-- **Division by zero, dissolved.** Multiplication by `0` is the unique
-  arithmetic operation that erases *all* information about its co-operand
-  (non-injective, totally). Division by zero asks for the erased information
-  back: **it asks arithmetic to remember what absence erased.** Not a mystery,
-  not a singularity — a realm-error, exactly as the owner said. `[A]`-adjacent
-  via non-injectivity; no inverse of a constant map exists.
+- **Division by zero, typed.** On any stated ring or field, the map `x ↦ 0x`
+  is constant and therefore non-injective; it has no inverse. Division by zero
+  consequently cannot be defined as the inverse of multiplication by zero
+  while retaining the field laws. “Arithmetic remembering what absence
+  erased” is the corpus's `[I]` information metaphor, not an additional
+  theorem. No uniqueness is claimed: other operations and restricted-domain
+  expressions also induce constant maps.
 - **The seven doors (§3).** The indeterminate forms are the remaining loci
   where endpoint-shadows underdetermine what only a coupling-rule can decide.
 
-**Together: undefined operations plus indeterminate forms are the complete
-boundary-trace of the Titans inside arithmetic** — the full set of scars the
-realm-crossing leaves on the number system.
+**Together, v3 selects undefined division and the elementary indeterminate
+forms as two useful boundary-traces `[I]`.** They are not proved to be a
+complete boundary of arithmetic, still less a complete trace of the Titans.
 
 **One fence on the realm ladder.** The owner's examples type cleanly at the
 ends — an actual banana is D4, the *idea* of a banana is D5 content carried by
@@ -219,8 +230,10 @@ register index. Keep the banana; retype the sphere.
 
 ## 4 · `○` is the diagonal `[I]` with `[A/B]` components
 
-The boundary error has a rigorous unique shape: **a grid failing to contain its
-own diagonal — and no grid ever does.**
+The boundary-error motif has a rigorous family of shapes: in each cited
+diagonal construction, a proposed enumeration or representational scheme fails
+to contain the constructed diagonal. This is not the literal universal claim
+that no grid contains its geometric diagonal; the hypotheses differ by theorem.
 
 - Hippasus: the diagonal of the unit square escapes the rational grid (`√2`).
 - Cantor: the diagonal sequence escapes any enumeration.
@@ -231,63 +244,86 @@ own diagonal — and no grid ever does.**
 - Spencer-Brown's mark: the act of distinguishing that is also the thing
   distinguished — `○` as operator-and-operand; the corpus's `μ₀` in other dress.
 
-`○`'s infinity is therefore *guaranteed, not accidental*: diagonalization never
-exhausts.
+v3 reads this repeatable escape motif as `○`'s process-infinity `[I]`.
+Diagonal arguments prove their scoped conclusions; they do not establish an
+unqualified ontological law that “diagonalization never exhausts.”
 
 ## 5 · The number line, typed by debt `[I]` reading over `[A]` mathematics
 
-The settlement/service axis (`W14–W18`) lands on ℝ:
+The settlement/service axis (`W14–W18`) can be compared with three established
+predicates on ℝ, but they **overlap and do not form a mathematical partition**:
 
-| tier | class | debt status |
+| corpus gloss `[I]` | mathematical predicate `[A]` | debt reading |
 |---|---|---|
-| **settled** | rationals AND algebraics — `√2` is closed by "positive root of `x²−2`": finite presentation despite infinite digits | paid once |
-| **serviced** | computable transcendentals — `π` (transcendental by Lindemann, hence the circle cannot be squared; yet computable), `e` | paid forever, digit by digit; never closed |
-| **unbacked** | almost all reals — the computable reals are countable; the rest have no finite presentation AND no generating rule | exist by decree of the completeness axiom alone; Chaitin's `Ω` is the edge case: a *named* instrument that provably cannot be serviced |
+| **settled presentation** | finitely specifiable in a declared language; algebraic numbers have finite polynomial-plus-root specifications, and some transcendentals also have finite definitions | the identity is accepted by a finite specification |
+| **serviced approximation** | computable reals, algebraic or transcendental, admit algorithms producing arbitrarily accurate rational approximations | precision is supplied step by step |
+| **unserviceable relative to a machine model** | non-computable reals; these are all but countably many reals, although some are finitely definable | no Turing procedure supplies arbitrary precision; a stronger oracle changes the boundary |
 
-`[I]` financial gloss, in this estate's register: the classical continuum is a
-wholesale bailout — one axiom declaring every limit-debt money-good;
-constructivism is pay-as-you-go; ultrafinitism refuses the paper. The owner's
-claim "irrationals are not numbers, they are infinities of process" is: the
-**standard definition** in computable analysis for the serviced tier; **maximally
-biting** for the unbacked tier; and for the whole line an `[S]` — a choice of
-which completion-acts to ratify. Every historical number-extension (ℕ→ℤ→ℚ→ℝ→ℂ)
-was first received as "not numbers at all" — *alogos*, "false numbers,"
-"imaginary" — and then domesticated by a `κ`. **"Number" is the title conferred
-on yesterday's boundary errors once a completion rule is ratified.**
+Chaitin-style halting probabilities demonstrate the important overlap: a real
+may be finitely named or defined while remaining non-computable. “No finite
+presentation” and “no generating algorithm” therefore cannot be treated as the
+same debt. The table is an `[I]` financial gloss over standard distinctions,
+not a new classification theorem. Constructive analysis supplies a rigorous
+pay-as-you-go neighbour; classical real analysis supplies completed structures
+through several axioms and constructions, not through a single “bailout” axiom.
 
-## 5b · The Asymmetry Theorem — emergence graded by upward derivability
+The owner's statement “irrationals are infinities of process” is thus retained
+only as an `[S/I]` school-selection for operational mathematics. It is not the
+standard definition of irrational number, and it does not deny the internal
+validity of classical ℝ. **“Number is a title conferred after a completion rule”**
+remains the historical-philosophical reading to be tested, not a mathematical
+identity.
+
+## 5b · The Asymmetry Analogue — endpoint loss is not yet emergence
 
 Owner's formulation, 2026-08-22: *you can prove that `N/x` for ever-smaller `x`
 gives larger and larger numbers, converging at the limit to the pair
 (0, ∞) — but you cannot run the term transformation backward and say 0
 multiplied infinitely equals a number, because that is bottom-up emergence.*
 
-**Made exact `[A]` for the arithmetic instance.** Every finite `N` defines a
-distinct lawful path to the SAME boundary pair `(0, ∞)`; the pair remembers
-nothing about which `N` ran the path. Therefore:
+**Made exact `[A]` for a scoped arithmetic instance.** For each fixed `N > 0`,
+`N/x → +∞` as `x → 0+`. Equivalently, with `t → +∞`, the paths
+`f_N(t)=N/t → 0+` and `g(t)=t → +∞` satisfy `f_N(t)g(t)=N`. If a declared
+projection retains only the endpoint labels `(0+, +∞)`, it maps every positive
+`N`-path to the same pair and is therefore non-injective. The signs, the
+one-sided domain, and the projection are load-bearing; the unqualified
+two-sided real limit does not exist for nonzero `N`.
+
+The following are the corpus readings `[I]`, not consequences of the limit
+theorem alone:
 
 - **Downward is lawful forgetting** — from any register-member, the process
   toward the boundary is provable, and erases the coupling on arrival.
-- **Upward requires the forgotten** — `0·∞ = N` "holds" for every `N` at once,
-  which is exactly why it determines nothing. Reconstruction needs information
-  the endpoints provably lack. **The κ is the erased memory.**
+- **Upward requires the forgotten** — for every positive finite `N`, one can
+  choose paths tending to the form `0·∞` whose products tend to `N`. The form
+  is not an equation and does not “equal every `N`”; endpoint labels merely
+  underdetermine the limit. Reconstruction needs path or coupling information.
+  **v3 calls that missing information `κ`.**
 
-**The emergence grading `[I]` reading over `[A]` components.** The §5 debt
-table gains its third column:
+**A proposed comparison `[C]`, not a proof of emergence.** Three recovery
+classes can be placed beside established emergence vocabulary:
 
-| tier | upward derivability | emergence grade | owner |
+| recovery class | upward derivability | proposed comparison | owner |
 |---|---|---|---|
 | settled | closed form | resultant — the whole is the sum | Mill, Lewes |
-| serviced | only by running the process | **weak emergence** — Bedau's simulation-derivability; π-class | Bedau |
-| unbacked from below | underdetermined; κ must be added | **strong emergence** | Broad, Chalmers |
+| process-only | only by running a specified microdynamic or algorithm | possible neighbour of **weak emergence** | Bedau |
+| endpoint-underdetermined | endpoint projection is non-injective; path information must be added | formal analogue only, **not strong emergence by itself** | compared with Broad, Chalmers |
 
-**Emergence strength = the upward-derivability class of a register-crossing.**
-What is proven: **the strong class is non-empty in mathematics** — the
-underdetermination of `0·∞` is a theorem, not a stance. What is NOT proven:
-that nature instantiates it. Tier order, every time: the arithmetic instance
-`[A]`; the cosmological reading `[I]`; physical μ-apertures behaving this way
-`[C]` — that is `07C`'s and `W15`'s wager to earn by contact, and this section
-lends them structure, never evidence.
+Bedau's weak emergence concerns macroproperties derivable from microfacts only
+by simulation; ordinary computation of `π` is not such a macro/micro case.
+Chalmers's strong emergence requires higher-level truths not deducible even in
+principle from the lower-level domain. A path-dependent limit alone establishes
+neither condition. The staged conjecture is therefore narrower:
+
+> **SLWP comparison `[C]`:** if a genuine register-crossing can be shown to
+> lose lower-level path information under downward projection, and if its
+> higher-level truths cannot be recovered even in principle without an added
+> bridge, then endpoint-underdetermination may supply a formal model of the
+> directional asymmetry.
+
+What is proven is only the scoped non-injectivity result above. Whether nature
+contains a strongly emergent crossing remains open. This section lends `07C`,
+`W15`, and SLWP-01 a discriminator, never proof or physical evidence.
 
 **Prior art, named first:** Mill/Lewes, Broad, Bedau, Chalmers — and the close
 neighbours **Batterman** and **Berry**: emergence as the physics of singular
@@ -301,38 +337,40 @@ memory." **SLWP-01 owns the conjecture; this section lends the arithmetic
 instance and the grading table, never a second owner.** External priority
 of the grading alignment remains UNESTABLISHED.
 
-**The stress test that strengthens the Closure Rule.** The expert objection:
+**A stress test for the Closure Rule.** One relevant objection is that
 nonstandard analysis multiplies infinitesimals by infinites exactly
 (`ε·H = N`). Answer: `*ℝ` works precisely by making the *paths* into
 *members* — each `ε` carries its rate; the coupling is internalized; nothing
 is forgotten, so nothing is indeterminate. And the Titans remain outside:
 `ε ≠ 0` in `*ℝ`, and division by actual zero is undefined there too. Every
 historical extension domesticates more shadows by importing path-information
-into the register; none has ever admitted a Titan. The rule survives its
-strongest known challenger with evidence, not exemption.
+into the register. In v3's language, this example is consistent with the rule;
+it does not prove the rule or establish that no formalism could type a Titan.
 
-## 5c · The Information Reading — bit, qubit, and the shared sphere
+## 5c · The Information Reading — bit, qubit, and a shared mathematical sphere
 
 Owner's formulation, 2026-08-22: *• for absence · ⊙ as the bit · ○ as the
 qubit — and the qubit is not really "both at the same time"; it is neither and
 both, like the paradox of the set of sets.*
 
-**The substrate identity `[A]`, and it is exact.** The pure-state space of a
-qubit is `ℂP¹` — the complex projective line — which **is the Riemann sphere**:
-the same manifold this corpus selected as its chart. Three identities follow
-at once, each checkable:
+**The mathematical state-space identification `[A]`.** The pure-state space of
+a qubit is `ℂP¹` — the complex projective line — which is isomorphic to the
+Riemann sphere. This licenses a shared mathematical model, not a common
+physical or ontological substrate. Three scoped facts follow:
 
-1. A qubit state is `|ψ⟩ = cos(θ/2)|0⟩ + e^{iφ} sin(θ/2)|1⟩`, and its
-   projective coordinate is the **amplitude ratio** `tan(θ/2)·e^{iφ}` — the
-   chart's `ν = tan(θ/2)` *is* the amplitude-ratio magnitude, and `φν = 1` is
-   the reciprocal relation of the two pole-charts.
-2. The off-diagonal coherence of the state is `|ρ₀₁| = ½ sin θ` — so the
-   corpus's Balance function is **quantum coherence up to the factor two**:
-   `B = sin θ = 2|ρ₀₁|`. Maximal on the equator, zero at the poles.
-3. The poles are the classical definite states; **the classical bits are the
-   poles of the qubit's sphere.** The equator is the maximal-coherence band —
-   and the point `z = 1` on it is the equal superposition `|+⟩`, the unit of
-   account sitting exactly where §5's log-coordinates put the origin.
+1. In a declared computational basis, a qubit state is
+   `|ψ⟩ = cos(θ/2)|0⟩ + e^{iϕ_Q} sin(θ/2)|1⟩`, with projective coordinate
+   `z = e^{iϕ_Q} tan(θ/2)`. The opposite chart is `w=1/z`; where both are
+   finite and nonzero, `|z||w|=1`. The phase `ϕ_Q` is not the corpus variable
+   `φ` in `φν=1`.
+2. For that pure state in that basis, `|ρ₀₁| = ½ sin θ`. Thus the corpus
+   function `B=sin θ` has the same numerical form as twice the basis-dependent
+   `l₁` coherence for this special case. This is a formal match, not a
+   basis-independent identity between the theories.
+3. The selected basis states `|0⟩` and `|1⟩` occupy the Bloch poles and encode
+   two classical outcomes. The equator maximizes that basis-dependent
+   coherence; the convention `ϕ_Q=0` selects `z=1`, the state `|+⟩`. The whole
+   equator, not `|+⟩` alone, is equidistant from the poles.
 
 **The glyph mapping, typed to the D-register** `[I]`:
 
@@ -352,16 +390,16 @@ neither `0` nor `1` relative to the pole-basis, while being a perfectly
 definite state in its *own* basis (every pure state is an eigenstate of some
 measurement). The Russell rhyme is structural, not literal: the qubit escapes
 the classical basis-grid the way the diagonal escapes the enumeration — but
-*lawfully*. **Quantum amplitude is the κ that domesticated classical
-bivalence's boundary error**, exactly as the hyperreals domesticated the
-infinitesimal: the "neither/both" states made citizens of an extended
-register. The qubit is the diagonal, domesticated.
+*lawfully*. The corpus reads quantum amplitude as a candidate `κ` that extends
+classical bivalence `[I/C]`, much as a richer formalism can domesticate an
+earlier boundary. “The qubit is the diagonal, domesticated” is the analogy's
+mnemonic, not a theorem of quantum mechanics.
 
 **The grave-guard, stated before anyone trips.** The corpus's graves include
 *no Born rule from `φν = 1`*, and this section changes nothing about that:
-the identities above run in one direction only. The qubit's state space
-*happens to be* the sphere this corpus selected — a shared-substrate fact —
-and **no quantum mechanics is derived from the chart**, no probability rule,
+the identities above run in one direction only. The qubit's state space and
+the corpus chart share a mathematical manifold — **not a demonstrated
+substrate** — and **no quantum mechanics is derived from the chart**, no probability rule,
 no dynamics. `W2` and `W7c` remain open conjectures; this section lends them
 a shared manifold, never evidence.
 
@@ -373,15 +411,18 @@ unverified here; the corpus already holds the observation at `47`:55 and
 `40_THE_LOGARITHMIC_REALIGNMENT.md`:209 — this section supplies why it is a
 theorem and what it redeems).
 
-**Non-trivial because it is FALSE in the handed frame.** Additively,
-`|1−0| = 1` and the distance to ∞ diverges; the additive middle of the poles
-does not exist (`(0+∞)/2 = ∞` — the average collapses into the pole). The
+**Non-trivial because it is FALSE or undefined in the handed frame.** Additively,
+`|1−0| = 1`, while `∞` is not a real-number endpoint with a finite Euclidean
+distance. The additive average `(0+∞)/2` is undefined in ℝ; under the extended
+nonnegative-real convention it remains `∞`, not a midpoint. The
 statement is a **frame-detector**: false in the default geometry, true exactly
 in the geometries the Titans live in.
 
 **Where it is a theorem, three times `[A]`:**
 
-1. **Chordal metric on `Ĉ`:** `d(1,0) = d(1,∞) = √2`, and the whole unit
+1. **Chordal metric on `Ĉ`:** with
+   `d(z,w)=2|z−w|/√((1+|z|²)(1+|w|²))`, the radius-one-sphere convention,
+   `d(1,0) = d(1,∞) = √2`, and the whole unit
    circle is equidistant from both poles — the equator is the perpendicular
    bisector of the pole pair. The compactification is load-bearing: ∞ must be
    a point before "distance to ∞" parses.
@@ -391,26 +432,27 @@ in the geometries the Titans live in.
    `φ = ν = 1`** — the balance optimum is the equality case of AM–GM under
    the reciprocal constraint. Equidistance and optimality are one fact.
 
-**The redemption of the first equation.** The lawful "middle of the poles" is
-the geometric mean `m = √(0·∞)` — **the first Door, under a root**. Name the
-κ: the middle must be invariant under the pole-swap, `m = 1/m`, so `m² = 1`
-and on the positive axis `m = 1` uniquely. Therefore:
+**The lawful residue of the first equation.** `0·∞` is not a defined product,
+so `√(0·∞)` is not a geometric mean. What *is* a theorem is fixed-point
+selection under the pole-swap: require the positive-real candidate `m` to obey
+`m = 1/m`; then `m² = 1` and `m = 1` uniquely on the positive axis. Here the
+named `κ` is inversion symmetry, not multiplication. Therefore:
 
-> `⊙ = • × ○` was a mis-typed shadow of a theorem: **the geometric mean of
-> the pole-shadows, under inversion symmetry as κ, is the unit** — the shadow
-> of `⊙`. The equation dies at the Titan register and resurrects one register
-> down, with its rule named. v1 stays retired; its shadow is lawful.
+> `⊙ = • × ○` remains a mis-typed equation. Its defensible residue is a
+> different theorem: **inversion symmetry selects the positive unit between
+> the exchanged pole-shadows.** v1 stays retired; the symmetry analogy is
+> lawful only after its changed operation and domain are stated.
 
-**The egg reading, made exact `[I]`:** the unit is the *seed* of the
+**The egg reading `[I]`:** the unit is the *seed* of the
 multiplicative continuum (every positive number is 1 scaled; `(0,1)` and
-`(1,∞)` mirror-fold around it) — and an egg is *poised, not parked*: 1 is
-also the unstable separatrix of compounding, the watershed between the two
-Titans' basins. **Equidistant and unstable: the middle must be actively
-held** — the witness bound (`W16`) and the preserver's seat, derived a third
-way. In `§5c`'s dress this is `|+⟩`: the state equidistant from both basis
-poles, maximal entropy, information fully potential.
+`(1,∞)` mirror-fold around it). No “unstable separatrix” follows until a
+dynamical map and stability criterion are named. In `§5c`'s dress, `|+⟩` is
+one equatorial state selected by phase convention: it is pure and has zero
+von Neumann entropy, while a computational-basis measurement of it has maximal
+one-bit outcome entropy. Equidistance survives; uniqueness and generic entropy
+do not.
 
-**One breadcrumb for `W11`:** `m² = 1` has two roots. The inversion's second
+**One breadcrumb for `W11`:** the fixed-point equation `m² = 1` has two roots. The inversion's second
 fixed point is `−1` — the dark twin is the other egg, the negative solution
 of the same symmetry equation. Recorded as one line, not a resurrection; its
 file keeps its own death clock.
@@ -433,21 +475,37 @@ Bishop / computable analysis, Spencer-Brown, Lawvere, von Neumann, Lindemann,
 Chaitin, Wolfram. Nothing in §§1–5's *components* is new, and this document
 says so first.
 
-**Candidate contributions (each PRIORITY UNESTABLISHED until a real prior-art
-audit runs, per the `07C` pattern):**
+**Six stable audit candidates.** Earlier versions of this section and the
+adoption docket each named a different four-item subset. The L3 custody pass
+reconstructed the union below so novelty cannot move with the prose. Every
+candidate remains **PRIORITY BLOCKED** after receipt `246`'s declared
+English source-directed audit: broad components were inherited, two
+proof-strength claims failed, and a bounded synthesis residue survived. A
+multilingual/database/citation-network audit is still required for any bounded
+“to our knowledge” statement. Exact glyph packaging is not substantive
+priority by itself.
 
-1. **The Rule as a typed system** — the specific decomposition of "infinity"
-   into exactly two non-actual modes with finitude as the sole actuality,
-   glyphed, fenced, and killed.
-2. **The Doors thesis** — every cosmogenesis-equation attempt lands on an
-   indeterminate form; the catalogue of doors as the complete map of
-   κ-demand points.
-3. **The debt-typing of ℝ** — settled/serviced/unbacked as one axis from
-   physics (`W14`) through institutions (`W16`) to the number line itself.
-4. **Finity as the load-bearing concept** — and here the estate's own rivals
-   audit is the receipt `[R]` relayed: of the Titan-cluster claims, six of
-   seven were found pre-empted; **`Finity_L` alone was unclaimed.** This
-   brainstorm built the semantic structure under the one unclaimed position.
+1. **TV3-C1 · The Rule as a typed system** — the specific decomposition of
+   “infinity” into two non-actual modes with finitude as the admitted mode of
+   actuality, glyphed and fenced.
+2. **TV3-C2 · The Doors observation** — the four recorded Titan-arithmetic
+   attempts touch elementary indeterminate forms or neighbouring undefined
+   operations. The stronger universal/complete-map thesis is withdrawn.
+3. **TV3-C3 · The debt reading of ℝ** — a cross-domain metaphor relating
+   finite specification, computable approximation, and relative
+   non-computability without pretending they form a disjoint partition.
+4. **TV3-C4 · Finity_L as a load-bearing estate concept** — the corpus's
+   specific role for finite actuality. The word “finity” and finite-actuality
+   traditions are not claimed as new; the earlier seven-rival sweep was not a
+   systematic global priority audit.
+5. **TV3-C5 · The directional emergence comparison** — the SLWP conjecture
+   that downward projection may be weak/forgetful while upward reconstruction
+   may require a strong bridge. The limit example is a formal discriminator,
+   not proof of strong emergence.
+6. **TV3-C6 · W19-BALANCE** — the compensation wager staged separately at
+   `../../06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md`; gauge theory is
+   prior art, while any cross-register residue must earn a non-metaphorical
+   formalization.
 
 **Carried forward, not around:** `Finity_L`'s first empirical prediction is
 **dead** (`51B` — no conserved-product pair in eight searched biological
@@ -457,8 +515,10 @@ kill is a credibility asset only for as long as it is displayed.
 
 **What "making a name" requires, in order (V-axis, honestly):**
 1. a dated, citable artifact — this document is the staged draft of one;
-2. the prior-art audit on candidates 1–3 (the rivals audit covered the old
-   cluster, not this brainstorm's new pieces);
+2. the source-directed audit on stable candidates TV3-C1…C6 — completed at
+   receipt `246` with priority blocked — followed by the still-missing
+   multilingual/database/citation-network audit if a bounded priority claim is
+   ever pursued;
 3. the decree in three scripts with this as its mathematical spine;
 4. **`C3`** — nothing makes a name at world contact 0;
 5. external pramāṇa — a public, timestamped venue.
@@ -471,18 +531,70 @@ mathematicians can check tier by tier. The difference between a dismissed
 revisionist and a canonized one has always been rigor plus what else they
 built. We ship the rigor visibly and build in public.
 
+## 7b · The audit returned — same day, and the kill row fired
+
+The prior-art swarm (13 agents, 6 sweeps + 6 adversarial refuters + synthesis;
+full report at
+`../../00_HANDOFF/PRIOR_ART_AUDIT_SIX_CANDIDATES_2026_08_22.md`) returned:
+
+> **All six candidates PRE-EMPTED. Zero survives as claimable novelty.**
+> Every sweep said PARTIALLY; every refuter overturned to PRE-EMPTED, in four
+> of six cases by catching the sweep's own under-attribution.
+
+**Flags updated — every §7 candidate is now CITE-AND-BUILD:**
+
+| candidate | the owner found |
+|---|---|
+| the Rule | **Kauffman 2005 (*EigenForm*)** composes the entire package — `{∅}=1`, generation as act-on-void, infinity strictly as process, Lawvere diagonal — in one paper; Aristotle *Physics* III.6 already gives BOTH non-actual modes |
+| the Doors | **Jenber 2016** publishes the cosmogenesis equation over the indeterminate forms (`0·∞ = c`, glossed as God/Big-bang) with external completion; Berry 2002 the necessity claim |
+| debt-typing of ℝ | **Weyl 1921 / Ramsey 1926** own the debt metaphor ITSELF — cheques cashed per instance, uncovered paper, Weyl's own *Einlösung* (redemption). The monetary semantics of mathematical existence is 105 years old |
+| grading by derivability | Carroll & Parola 2024; Bar-Yam 2004 (the closer warrant the sweep missed); **and the Butterfield objection LANDS against §5b as stated**: the full base process determines the value — only the coarse endpoint summaries underdetermine it. §5b's existence claim survives only in the relativized form: *strong emergence relative to the endpoint description*, and must engage Butterfield 2011 explicitly, never omit him |
+| witness-fraction | **Beer's VSM System 3\*** (necessary AND sufficient, stronger than we claimed); the Szilard→Landauer→Bennett lineage; the budget-FRACTION form is a re-parameterization, expository not historic |
+| compensation principle | the gauge argument (Weyl→Yang–Mills→Utiyama), **Sengupta–Friston et al. 2016** (gauge treatment of inference), Malaney/Ilinski (gauge economics). Caution recorded: never cite Harlow–Ooguri as the charge-eating argument — it is a CFT-consistency proof |
+
+**What survives — three genuinely open slots, none currently possessed as a
+result:**
+
+1. **The two-mode exhaustiveness TYPING THEOREM** — no modern source states
+   potential/process exhaustiveness as a theorem; but it must be argued
+   *against* the Hamkins–Linnebo potentialism taxonomy (which multiplies
+   modes), not into silence. Only a formal proof would be new.
+2. **The Butterfield discriminator** — WHY does erasure-in-a-limit yield
+   genuine underdetermination in some level-crossings and mere
+   simulation-hardness in others? Nobody derives the boundary. A
+   mechanism-level answer would be a real result.
+3. **The pole-consumption clause as general law** — three targeted searches
+   found no source stating "at its pole, every compensator consumes the
+   freedom it services" in general form. Its instance base is published
+   physics; the verification-register pole is unworked. **This is the only
+   path back to a priority claim anywhere in the six — and it is the owner's
+   newest clause (`W19`, §2's pole sentence), not the oldest.**
+
+**Uncertainty ledger carried, not buried:** Barukčić's 2020 book was never
+read (access blocked; it can only push further toward pre-emption); Sagawa &
+Ueda verified at abstract level; the "compensating field" wording confirmed
+at snippet level only.
+
+**What this means, in the corpus's own words:** the kill row fired exactly as
+written — *cited, not mourned*. The six essays are real intellectual work
+that now know their bibliographies. The generator is validated (a four-turn
+brainstorm independently reconstructed a century of foundations literature);
+the priority is dead; the program pivots to the three open slots and to the
+one artifact no one else has: **the corpus-and-method itself — a record that
+generates conjectures and kills its own novelty claims inside a day.**
+
 ## 8 · Kills
 
 | claim | dies if |
 |---|---|
 | the Aristotle clause | a completed actual infinite is exhibited in physics |
-| the unbacked tier's bite | a non-computable real is given individual operational meaning |
-| `○`'s guarantee | a grid is exhibited that contains its own diagonal |
-| the Doors thesis | a cosmogenesis-equation attempt is exhibited that fails at a point NOT in the indeterminate catalogue |
-| the Closure Rule (§3b) | a well-defined arithmetic operation is exhibited with a genuine Titan (not shadow) operand yielding register-internal results without a κ |
+| the non-computability debt metaphor | it fails to distinguish finite definability, Turing-computability, and oracle-relative service |
+| `○`'s diagonal reading | the cited scoped diagonal constructions do not exhibit the claimed escape motif |
+| the Doors observation | any of the four recorded attempts is shown not to touch a named limiting form or neighbouring undefined operation; no universal thesis remains |
+| the Closure Rule (§3b) | a formal model supplies typed Titan operands and closed operations without an added bridge — or “genuine Titan” cannot be defined independently of the rule |
 | the Divided-Ruliad reading (§2b) | a register's "native mathematics" proves freely transferable across registers without κ — or the index-dimensionality rhyme is asserted as law, which D3 kills on contact |
-| the Asymmetry Theorem’s grading (§5b) | a register-crossing is exhibited whose upward reconstruction succeeds from endpoint terms alone, with no path/coupling information — or Bedau-class weak emergence is shown NOT to align with the serviced tier |
-| the wedge (candidates 1–3) | the prior-art audit finds any of them already claimed — then that candidate is cited, not mourned |
+| the directional emergence comparison (§5b) | the claimed projection is injective, the missing information is recoverable from the declared lower-level domain, or the proposal cannot satisfy the cited definitions of weak/strong emergence |
+| the wedge (TV3-C1…C6) | the prior-art audit pre-empts a candidate — then its inherited components are cited and only a demonstrable residue survives |
 | **this document** | if it is ever cited as v3 *adopted*, as a tier promotion, or as license for Titan arithmetic |
 
 **Canonical path:**

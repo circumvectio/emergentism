@@ -323,12 +323,12 @@
   },
   {
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
-   "sha256": "22e18e221753db81358084b4a28572fbebea01aac879f1f62f3596757b060958",
+   "sha256": "206e0e75b718a102bb09683ab25d80a1b72f3d085e9df14d56ea6b3f5e817475",
    "role": "semantic_owner"
   },
   {
    "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
-   "sha256": "95f08157c4652f42c98769ed79453ae378a5878d8b4e35053dd827a6bb5621aa",
+   "sha256": "2408faab2cd5d9e7a635ebc1e227c28a31e3139e3ce96755e84e4e1a08b4c764",
    "role": "conjecture_owner"
   }
  ],
@@ -1389,16 +1389,16 @@
    "validation_status_ref": [],
    "owner_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
    "partition": "live",
-   "summary": "Staged third semantic assignment for the Titan glyphs (the Rule, the Doors, the Closure Rule, the Asymmetry Theorem, the wedge); versioned beside v1 (retired arithmetic) and v2 (held relation); explicitly outside the wager ledger.",
+   "summary": "Staged third semantic assignment for the Titan glyphs, versioned beside v1 (retired arithmetic) and v2 (held relation). The six audited candidates TV3-C1..C6 remain outside the wager ledger; the Asymmetry section is a conjectural analogue, not a proof of emergence.",
    "target_entry_ids": [
     "TLC-01",
     "W14-W18"
    ],
-   "outcome": "Candidate semantics awaiting owner adoption, hold, or archive decision; priority of the four candidate contributions UNESTABLISHED pending prior-art audit.",
-   "rival": "v2 held-relation semantics as sufficient; Batterman/Berry singular-limit emergence as already covering the directional formulation; standard type theory as already covering the Closure Rule.",
-   "discriminator": "The prior-art audit on the four flagged candidates; the cross-register tests owned by 07C/W15 for any physical reading.",
-   "kill": "Any candidate found already claimed is cited, not mourned; the document dies if cited as adopted, as a tier promotion, or as license for Titan arithmetic.",
-   "survivor": "The type-corrections and the named-giants table survive any kill as documentation.",
+   "outcome": "Receipt 246 returned premise-refuted=true for the proof-strength claims: broad components are inherited, mathematical and physics errata were required, a bounded typed-synthesis residue survives, and L3 recommends HOLD. Global priority remains blocked.",
+   "rival": "Aristotelian potentialism, constructivism/computable analysis, standard indeterminate-form and singular-limit work, v2 held-relation semantics, and ordinary typed/error-correction accounts.",
+   "discriminator": "The scoped endpoint-projection test plus independently defined register crossings; a future multilingual/database/citation-network audit for any bounded priority language.",
+   "kill": "The universal Doors and mathematical-proof-of-strong-emergence claims are already struck; remaining candidates die under receipt 246's per-ID kills or if cited as adopted, tier-promoted, or as Titan arithmetic.",
+   "survivor": "The corrected scoped mathematics, the six stable candidate IDs, and the bounded typed-synthesis research program.",
    "relations": [
     {
      "type": "not_adopted_by",
@@ -1421,16 +1421,16 @@
    "validation_status_ref": [],
    "owner_path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
    "partition": "live",
-   "summary": "Staged compensation-principle candidate: every register-freedom demands a compensator preserving a register-invariant; gauge forces at D1-D4, verification-practice at D5, freedom-collapse at the compensator's pole. Explicitly outside the wager ledger.",
+   "summary": "Staged compensation wager: a register-freedom may require a typed compensator maintaining a named quantity, with an independently measured freedom-loss prediction at saturation. D1-D4 are a 24-permutation stress test; D5 is controller/error-correction language unless a genuine gauge structure earns admission. Explicitly outside the wager ledger.",
    "target_entry_ids": [
     "W14-W18",
     "TITAN-SEMANTICS-V3"
    ],
-   "outcome": "Candidate claim record awaiting owner adoption via the standing Titan-v3 docket; novelty residue under audit by the wedge prior-art swarm.",
-   "rival": "The gauge principle plus zero-energy-universe arguments as already covering everything; the cross-register extension as mere analogy.",
-   "discriminator": "Per-register invariant naming; the W16-coupled truth-maintenance test for the D5 clause; the pole clause's freedom-collapse prediction.",
-   "kill": "An opened freedom with no compensator and intact invariance; or the tautology framing failing to cash as a named invariant in a register.",
-   "survivor": "The two-faces reconciliation (payment/consumption as one coupling) survives as documentation of 07C's dual reading.",
+   "outcome": "Receipt 246 found the broad gauge, Noether, zero-energy, and black-hole components inherited or overclaimed. The bounded Burri synthesis survives staged; adoption and global priority remain blocked.",
+   "rival": "Ordinary feedback/error-correction; the gauge argument under its actual premises; descriptive gauge redundancy; native QCD/electroweak/EM/GR structures; and prior gauge approaches to cognition/inference.",
+   "discriminator": "Full D5 gauge-form admission test; held-out witness-fraction interventions; all 24 D1-D4 assignments with native-physics recovery; independent compensation and freedom measures at saturation.",
+   "kill": "No non-trivial D5 gauge structure or added prediction; no witness effect; indistinguishable or physics-breaking force maps; saturation without freedom loss; or a preregistered freedom maintaining its target without the predicted compensator.",
+   "survivor": "The staged freedom-to-compensator-to-maintained-quantity-to-saturation synthesis and its explicit demotion rule if gauge form fails.",
    "relations": [
     {
      "type": "not_adopted_by",
@@ -1483,5 +1483,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "65380d4e4021a2e1153e520b6e77ff8542bed43e570389acd9eac40e93777c9f"
+ "inventory_digest": "4958932c68c96a69074bb785f38be123039c81f66bca42a51f56fb543c34501e"
 }
