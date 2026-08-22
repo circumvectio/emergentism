@@ -1,7 +1,7 @@
 ---
 title: "Front-door packet — Emergentism worldview"
 date: 2026-07-28
-status: "ACTIVE EXECUTION PACKET — public projection only; dated filename retained as provenance; creates no doctrine"
+status: "SUPERSEDED 2026-08-22 — preserved predecessor; no longer the active front-door execution packet"
 evidence_tier: "[B] repository and release gates; [I] positioning, information architecture, and reader hypotheses"
 owner: "01_EMERGENTISM/12_PUBLIC_SITE"
 supersedes: "../../90_ARCHIVE/2026_08_13_disposition_docket/12_PUBLIC_SITE/_PLANS/2026_07_28_VMOSK_A_FINITY_PUBLIC_RELEASE.md"
@@ -10,9 +10,15 @@ source_owners:
   - "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
   - "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"
   - "00_META/ADEQUACY_DOCKETS.yaml"
+successor: "2026_08_22_EMERGENTISM_ORG_V2_GESTALT_OF_DASEIN.md"
 ---
 
 # Front-door packet — Emergentism worldview
+
+> **Supersession notice (2026-08-22).** This packet remains immutable
+> provenance for the first worldview/Finity front door. The active design and
+> release contract is
+> [`Emergentism.org v2 — The Gestalt of Dasein`](2026_08_22_EMERGENTISM_ORG_V2_GESTALT_OF_DASEIN.md).
 
 > **Provenance boundary.** The dated filename preserves the packet's former
 > external-grammar label. No external project grammar governs Emergentism; this

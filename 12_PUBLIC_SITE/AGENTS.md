@@ -43,8 +43,11 @@ criterion.
 - D3 is quantum state assignment; D4 is causal actuality and actual selection;
   D5 is possible power or modeled counterfactual content. Every D5 estimate is
   carried by an actual D4 model token.
-- Do not claim physical retrocausality, quantum-dimensional stacking, solved
-  quantum gravity, literal closure, or an established five-force census.
+- Never present physical retrocausality as established. The strong form may
+  appear only as the named `F5-R [C]` wager beside `F5-W`, the `F5-N` null, its
+  strongest rivals, discriminator, kill, and survivor. Do not claim
+  quantum-dimensional stacking, solved quantum gravity, literal closure, or an
+  established five-force census.
 - No application, venture, product, private-contract, or private-signature
   premise may govern this lane.
 - Historical generated-library pages must carry the frozen-library boundary

@@ -189,8 +189,8 @@ is shown here; entry tiers and kills remain there.
 | `W4` | candidate two-factor `Φ×V` out-predicts one general factor under separately defended cardinal proxies | `OPEN-EMPIRICAL` | A6 |
 | `W5` | the equator transfers to premise-satisfying real systems | `OPEN-EMPIRICAL` — see **RQ-01** | A6 |
 | `W6` | the vow is load-bearing in a frozen domain set | `OPEN-EMPIRICAL` | A4 |
-| `W7a–W7e` | five modular force role-affinities | `OPEN-EMPIRICAL`, five legs, independently killable | A6 |
-| `W8` | model-mediated future influence | `COMPONENT-SUPPORTED` (future-cue analogues exist) | A5 |
+| `W7a–W7e` | five modular force role-affinities; W7e contains `F5-W`, `F5-N`, and `F5-R` as a no-bonus fork | `OPEN-EMPIRICAL`, five legs and three F5 branches independently killable | A6 |
+| `W8` | `F5-W` model-mediated future influence | `COMPONENT-SUPPORTED` (future-cue analogues exist; this does not support physical `F5-R`) | A5 |
 | `W9` | the Egregoreotype five-marker criterion | `COMPONENT-SUPPORTED` (stigmergic trace evidence) | A7 |
 | `W10` | the mirror grammar travels within scoped lineages | `OPEN-EMPIRICAL` | A7 |
 | `W11` | the `−1` dark twin does functional work | `DECORATIVE`; ordinary mathematics and optional symbolism survive | A1 |
@@ -199,6 +199,15 @@ is shown here; entry tiers and kills remain there.
 The axioms `E1–E10` are not on this table: `E1–E7` are ontology and structure at
 their own tiers, and `E8–E10` are *posited conduct*, which no test validates or
 refutes. A vow is kept or abandoned, never proved.
+
+### W7e / F5 branch boundary
+
+[`F5Fork.v1`](../05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json) keeps one
+actual D4 present under three rival explanations: `F5-W [I/C]` present-model
+influence, `F5-N [D/C]` no additional interaction and service/controller
+practice, and `F5-R [C]` future-boundary/history selection. This register does
+not score agreement with any branch. A W8 result moves only `F5-W`; a physical
+F5 claim requires the separate W7e admission and intervention contract.
 
 ---
 

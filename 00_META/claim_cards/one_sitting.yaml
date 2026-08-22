@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+    "reviewed_source_sha256": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -15,6 +15,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "T12 in 01_EMERGENTISM_TIDY_RECEIPT_2026_08_04 (chair ratified 2026-08-04 'i ratify')",
         "authoritative_receipt": "00_HANDOFF/tidy/01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md §3 T12"
+      },
+      {
+        "date": "2026-08-22",
+        "act": "append the owner-directed F5Fork.v1 synthesis; preserve all prior card slices and add four independently typed cards",
+        "prior_hash": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "F5Fork.v1 source adoption and Emergentism.org v2 owner direction",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_OWNER_DIRECTION_2026_08_22.md"
       }
     ]
   },
@@ -1240,6 +1249,114 @@
         "K-4",
         "K-7"
       ]
+    },
+    {
+      "card_id": "OS01-27",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12A",
+        "line_start": 633,
+        "line_end": 639,
+        "anchor": "Stand again at one actual D4 present. A body, instrument, model, memory and",
+        "fingerprint_sha256": "1eeb739f35b9a7fe2bece15e9857e602eb3833689a21960ddf0fd5ae50176dbc"
+      },
+      "plain_claim": "F5-W says represented futures can reweight present action only through actual present carriers and models.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "I", "scope": "typed synthesis"}, {"tier": "C", "scope": "incremental D5-capacity effect"}],
+      "dependencies": ["OS01-08", "OS01-10", "OS01-12"],
+      "docket_ids": ["A5"],
+      "type_boundaries": ["represented D5 content is carried and made causal by actual D4 tokens"],
+      "strongest_rival": "Salience, reward, memory, expectancy, reactive control, or ordinary planning explains the effect.",
+      "discriminator": "Intervene on represented content while holding present means and confounds fixed; require incremental prediction beyond rich D4 baselines.",
+      "kill_criterion": "A fair-baseline null kills the distinct-capacity claim.",
+      "survivor_if_killed": "Ordinary anticipation through present physical carriers.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The weak interpretation may be dropped without changing actuality."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "F5-W: represented futures matter through actual present models."},
+      "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]},
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-28",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12A",
+        "line_start": 640,
+        "line_end": 641,
+        "anchor": "- `F5-N [D/C]` says there is no additional interaction: known physics,",
+        "fingerprint_sha256": "a6ff6c3380e28c57fafb071b0dcea5d03d97a5addd79b0cc25f45949438662fd"
+      },
+      "plain_claim": "F5-N is the no-additional-interaction and service/controller null, not a theorem.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "D", "scope": "declared null"}, {"tier": "C", "scope": "exhaustion prediction"}],
+      "dependencies": ["OS01-27"],
+      "docket_ids": ["A6"],
+      "type_boundaries": ["absence of a new interaction is a testable null, not a consequence of the register count"],
+      "strongest_rival": "A replicated F5-R residual survives every accepted-physics and control baseline.",
+      "discriminator": "Compare a frozen no-F5 baseline with the specified future-boundary history law.",
+      "kill_criterion": "A replicated force-specific residual with a defined coupling and observable kills the null in its tested range.",
+      "survivor_if_killed": "Verification and revision remain practices of fallible modeling.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The null loses only in the tested scope."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "F5-N: no additional interaction; selection, verification, and revision service D5."},
+      "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]},
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-29",
+      "chapters": ["possibility"],
+      "locator": {
+        "section": "12A",
+        "line_start": 642,
+        "line_end": 663,
+        "anchor": "- `F5-R [C]` wagers that an actual D4 history-selection law indexed by a",
+        "fingerprint_sha256": "5243f83b457c8727d5de43b9e7191c7aec447891fa7b37870423f5d42b48342a"
+      },
+      "plain_claim": "F5-R wagers that an actual D4 future-boundary/history-selection law changes present transition weights.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "C", "scope": "physical future-boundary history law"}],
+      "dependencies": ["OS01-27", "OS01-28"],
+      "docket_ids": ["A6"],
+      "type_boundaries": ["possible D5 content does not act; the future light cone is not a source; a history law is not yet a force"],
+      "strongest_rival": "Standard dynamics, present-model control, time-symmetric redescription, common cause, superdeterminism, selection bias, or postselection.",
+      "discriminator": "Randomize a later physical boundary after an early irreversible record; exclude signalling and postselection; test the preregistered residual.",
+      "kill_criterion": "No exact law fails admission; a preregistered null kills the promised parameter or range; equivalence remains underdetermined.",
+      "survivor_if_killed": "F5-W and F5-N remain viable and the normative orientation stays separately chosen.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "Failure removes the strong physical branch without harming the D scaffold."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "F5-R [C]: an unvalidated future-boundary history law, not established physics."},
+      "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]},
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-30",
+      "chapters": ["good"],
+      "locator": {
+        "section": "12A",
+        "line_start": 665,
+        "line_end": 670,
+        "anchor": "The option ethic is separately chosen. Agent options, affected-whole options,",
+        "fingerprint_sha256": "49ba65b5d4175666bc49fc59146e26c6cf598f498821529b597fad1c1ed6718f"
+      },
+      "plain_claim": "Option preservation is a bearer-complete, multi-ledger, Pareto practice rather than a scalar law derived from physics.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "I", "scope": "selected multi-ledger architecture"}, {"tier": "S", "scope": "declared normative separation"}],
+      "dependencies": ["OS01-22", "OS01-29"],
+      "docket_ids": ["A4", "A5"],
+      "type_boundaries": ["thermodynamic entropy, entropy export, path entropy, empowerment, options, consent, Justice, and Exit are distinct"],
+      "strongest_rival": "A defended scalar objective may predict and protect bearers better than a Pareto ledger.",
+      "discriminator": "Expose every ledger and bearer, compare decisions and harms against preregistered scalar and simpler rivals, and preserve contest and Exit.",
+      "kill_criterion": "Hidden bearers, entropy conflation, proxy harm, or decorative Exit kills the claimed integrity of the practice.",
+      "survivor_if_killed": "Physics still does not derive the Good, and affected bearers must remain visible.",
+      "consequence": {"applicable": true, "bearers": ["agent", "all affected parties"], "consent": "declare and contest", "reversibility": "prefer reversible action", "exit": "No option score may hide another bearer's exit."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "Keep option, entropy, cost, consent, Justice, and Exit ledgers separate; use a Pareto frontier."},
+      "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]},
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": ["K-4"]
     }
   ]
 }

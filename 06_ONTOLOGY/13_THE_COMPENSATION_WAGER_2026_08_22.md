@@ -25,7 +25,7 @@ parents:
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - 11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md
   - ../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md
-lineage_note: "07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md is cited in prose only — it lives in the 2026-08-21 refinement worktree, not this tree; listing it as a frontmatter parent would assert custody this tree does not have."
+lineage_note: "Custody corrected 2026-08-22: 07C is present in this tree. W19's D5 verification controller is retained as the F5-N service rival; it does not settle the F5-R branch."
 ---
 
 # The Compensation Wager — W19-BALANCE (staged)
@@ -71,6 +71,12 @@ makes it falsifiable rather than tautological.
 > saturation conjecture predicts that independently measured compensation can,
 > at its extreme, reduce an independently measured freedom. Black holes and
 > total-audit paralysis are motivating analogies, not established instances.
+
+Under [`F5Fork.v1`](../05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json), this
+D5 clause is the controller/service account allied with `F5-N`. It remains a
+serious rival to `F5-R`; agreement with it is not evidence, and an actual
+future-boundary residual would have to be tested rather than excluded by
+definition.
 
 **The proposed two-face reading `[I/C]`.** `07C` reads each force as *paying*
 its freedom's debt; this wager asks whether the same mechanism both enables

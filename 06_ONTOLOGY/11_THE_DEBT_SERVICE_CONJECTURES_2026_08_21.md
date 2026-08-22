@@ -13,7 +13,7 @@ rosetta:
   tier: "Executive"
   regime: "Śūdra"
   register: "[D] staged conjectures; every clause tiered in place"
-  canonical_phrase: "One axis through five registers — a consistency debt is either settled by a law or serviced by a practice, and which one it is types the register (staged W14–W18 candidates)"
+  canonical_phrase: "One axis through five registers — a consistency debt may be settled by a law or serviced by a practice; W14 is the no-F5 null, not a theorem (staged W14–W18 candidates)"
 type: ontology-candidate
 title: "The Debt-Service Conjectures — W14–W18 (staged)"
 date: 2026-08-21
@@ -39,27 +39,30 @@ physical interaction is the law that pays it. 09 §5 established that D5's debt
 is the one debt that *cannot* be paid in full without collapsing the register
 (the gapless self-account falls to D4). Put together, one axis appears:
 
-> **A consistency debt is either SETTLED — paid once, by a law — or SERVICED —
-> carried, by an ongoing practice. Which of the two a register's debt admits
-> types the register.**
+> **A consistency debt may be SETTLED — paid by a law — or SERVICED — carried
+> by an ongoing practice. Which reading fits a register is a testable typing
+> question, not a deduction from the gapless-account result.**
 
-D1–D4 debts are settled. D5's is serviceable only. Everything below is that
-one distinction driven through physics, biology, institutions, language, and
-self-modeling. Each conjecture can die alone; the axis dies only if all five do.
+The staged axis treats D1–D4 debts as settled and wagers that D5's is
+serviceable only. Everything below drives that candidate distinction through
+physics, biology, institutions, language, and self-modeling. Each conjecture
+can die alone; the axis dies only if all five do.
 
 ---
 
 ## W14-SETTLEMENT · the refusal-prediction `[I]` reading · `[C]` wager
 
-**Statement.** The F5 slot in W7 differs in kind from F1–F4 because D5's debt
-admits no settlement: **no fifth fundamental interaction coupling to
-representation-as-such will be found.** Whatever occupies the slot is a
-practice — selection, error-correction, self-revision — not a force. The 07C
-ladder stops at gravity *necessarily*, not contingently.
+**Statement.** `W14` is the explicit `F5-N` null in
+`F5Fork.v1`: **no fifth fundamental interaction coupling to
+representation-as-such will be found.** Whatever services the D5 slot is a
+practice—selection, error-correction, self-revision—not a force. This is a
+refusal-prediction `[C]`, not a theorem of the register grammar; the 07C ladder
+may stop at gravity contingently rather than necessarily.
 
-**Emerges from / bridge.** 07C's debt mechanism + 09 §5.3 (both exits from D5
-land in D4). The bridge is typed: settlement of the D5 debt ≡ the gapless
-self-account ≡ leaving D5.
+**Emerges from / bridge.** 07C's debt mechanism + 09 §5.3 motivate the null:
+both exits from a gapless D5 self-account land in D4. They do **not** establish
+that no actual D4 history law can be indexed by future boundary data. That
+non-entailment is why `F5-R` remains a live rival.
 
 **Prior art / rival.** W7 already holds F5 at weak form (model-mediated
 teleonomy). Rival: any fifth-force programme. Note the standing ones
@@ -70,9 +73,10 @@ as such — they would not kill this even if found.
 what physics will not find. Its value is asymmetric and slow, and that is
 declared rather than hidden.
 
-**Kill.** Discovery of an interaction whose coupling is a function of
-representational content as such. **Survivor if killed:** the 07C ladder gains
-a rung; the settlement/service axis dies at the physics register only.
+**Kill.** A replicated residual interaction with an exact physical coupling,
+observable and native-physics recovery that survives the `F5-R` controls.
+**Survivor if killed:** verification and revision still service fallible D5
+models; only the claim that service exhausts the physics dies.
 
 ## W15-REFINANCE · maintenance refinancing at the apertures `[C]`
 

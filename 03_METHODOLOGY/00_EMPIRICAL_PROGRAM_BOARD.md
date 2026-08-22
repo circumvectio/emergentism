@@ -2,7 +2,7 @@
 title: "The Empirical Program Board"
 status: "ACTIVE — dimension-first world-contact queue"
 date: 2026-04-14
-updated: 2026-08-01
+updated: 2026-08-22
 evidence_tier: "[B] recorded contacts/results; [S] routing; claims retain owner-declared tiers"
 owner: "03_METHODOLOGY empirical routing; board is not a result"
 parents:
@@ -47,7 +47,7 @@ Never translate `formal-only` or `local-result` as “confirmed.”
 | **GP-05** | exactly five candidate apertures capture independently discriminable freedoms | no crossing-specific empirical packet has fired | **formal-only** | run one seam at a time; no joint score before each row has novelty and recovery tests | one crossing at a time, then the census |
 | **GP-06** | the five-marker Egregoreotype composite predicts beyond carriers and incentives | trace-mediated coordination has external component contact | **component-contact** | carrier replacement plus trace removal/scrambling with costs recorded | W9 composite only |
 | **GP-12** | nested learning and responsibility horizons with explicit bearers, tie-breakers, and exit outperform ordinary governance rivals without proxy harm or lock-in | packet design only; no observed outcome evidence | **ready-to-freeze** | preregister `T_L`, `T_S`, bearer vector, voluntary roles, authority, tie-breakers, exit costs, tragic residue, and held-out delivery/harm/lock-in/exit outcomes | the coordination proposal only; no cosmic telos, caste truth, or authority upgrade |
-| **GP-07** | represented future content changes present selection beyond salience/framing controls | episodic-future cues changed delay discounting in published work | **component-contact** | preregister content-specific manipulation and matched salience, demand, reward, memory, and expectancy controls | W8 weak causal content |
+| **GP-07** | represented future content changes present selection beyond salience/framing controls | episodic-future cues changed delay discounting in published work | **component-contact** | preregister content-specific manipulation and matched salience, demand, reward, memory, and expectancy controls | `F5-W` / W8 weak causal content only; no support for `F5-R` |
 | **GP-08** | ontic plurality of complete histories has an observation distinct from epistemic support | no local discriminator | **deferred** | produce an interpretation-sensitive observation or publish non-identifiability | strong block-plurality correspondence only |
 | **GP-09** | history-bundle growth varies independently of Minkowski causal volume and model resolution | no independent metric | **deferred** | define and validate history entropy before comparing it with cone geometry | light-cone/history-bundle correspondence only |
 | **GP-10** | force/freedom rows are mechanistic and non-permutable | native theories bound every row; the four-force matrix is enumerated but no leg is calibrated | **deferred** | complete one native object map and accepted-domain recovery test per row, then challenge all 24 permutations and the no-placement rival; see [W7 D1–D4 Force-Assignment Preregistration](03_PREREGISTRATIONS/05_W7_D1_D4_FORCE_ASSIGNMENT_PREREG.md) | W7a–W7e independently |
@@ -75,7 +75,7 @@ possible outcome, not evidence that an outcome exists.
 | `W7B-EM-ROLE-AFFINITY-01` | W7b electromagnetic leg | design required; native recovery, permutation challenge, held-out effect |
 | `W7C-WEAK-ROLE-AFFINITY-01` | W7c weak leg | design required; chirality/flavor specificity and held-out observable |
 | `W7D-GRAVITY-ROLE-AFFINITY-01` | W7d gravity leg | design required; GR/EFT recovery without circular spacetime import |
-| `W7E-F5-ROLE-AFFINITY-01` | W7e teleonomic/F5 leg | blocked on W8's fair-baseline result; `FV-20` is selected mathematics only |
+| `W7E-F5-ROLE-AFFINITY-01` | W7e F5 fork | design required: compare `F5-W`, `F5-N`, and `F5-R`; `FV-20` is selected mathematics only and no branch receives a truth bonus |
 | `W8-FUTURE-CONTENT-CHAIN-01` | W8 integrated D5 effect | component-supported; first isolate content, then beat rich D4 baselines |
 | `W9-EGREGOREOTYPE-COMPOSITE-01` | W9 five-marker composite | component-supported; manipulate trace, carrier, incentive, command, and environment separately |
 | `W10-INDEPENDENT-POLARITY-LINEAGE-01` | W10 lineage-independent recurrence | design required; establish causal separation before blind coding or counting |
@@ -90,6 +90,28 @@ fields: `claim_id`, `contract_id`, `frozen_protocol_hash`, `scope`,
 `discriminating_protocol`, `outcome`, `verbatim_custody`, `provenance`, and
 `null_harm_deviation_custody`. A receipt binds what was filed; it does not prove
 independence.
+
+## 2B. F5 fork protocol split
+
+The typed owner is
+[`F5Fork.v1`](../05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json). The existing
+twelve GP gates remain the public queue; the rows below split W7e's protocol
+without manufacturing additional confirmations.
+
+| Socket | Branch or proposition | Minimum admission and discriminator | Kill / survivor |
+|---|---|---|---|
+| `F5-W-01` | present-model floor `[I/C]` | run GP-07; manipulate represented content and beat salience, reward, memory, expectancy, reactive-control, model-based and model-free baselines | fair-baseline null kills the distinct-capacity claim; ordinary anticipation survives |
+| `F5-N-01` | no-additional-interaction null `[D/C]` | freeze accepted physics, ordinary control, time-symmetric, common-cause, selection, and postselection baselines before testing `F5-R` | a replicated force-specific residual kills the null only in its tested parameter and range; verification practice survives |
+| `F5-R-01` | future-boundary/history-selection law `[C]` | freeze `P₀`, `U₅`, `κ`, later physical boundary `B_T`, observable, effect floor, no-signalling and no-postselection controls; irreversibly record the early outcome before a randomized later boundary intervention | no exact law fails admission; preregistered null kills the promised parameter/range; observational equivalence is `UNDERDETERMINED` |
+| `F5-P3-01` | ontic plurality | use GP-08; require an observation distinct from a represented or measure-weighted history bundle | no independent discriminator removes the ontic clause; modeled alternatives survive |
+| `F5-P4-01` | option/ektropy bias | independently measure subsystem entropy, total entropy production/export, path entropy, empowerment, viability cost, agent options, and affected-whole options | an unnamed entropy correlation is inadmissible; conflation splits the claim |
+| `F5-P5-01` | chosen teleology | compare a bearer-visible Pareto ledger with preregistered scalar and simpler rivals; record consent, Justice, harm, and Exit | hidden bearers, proxy harm, or decorative Exit kills integrity; the is–ought separation survives |
+
+Dorau and Much's relative-entropy route to semiclassical Einstein equations is
+a gravity neighbor under its horizon and entropy-area assumptions. It proves
+neither a gravity time arrow, a microscopic substrate, the serial-force order,
+nor F5. Time-symmetric/retrocausal models and causal-entropic-force models are
+required rivals, not evidence for the new branch.
 
 ## 3. Legacy program disposition
 

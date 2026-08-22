@@ -627,3 +627,47 @@ For exact ownership and deeper checking:
 
 The owners control. This book connects them and may never silently strengthen
 them.
+
+### 12A. One present, three explanations — the F5 fork
+
+Stand again at one actual D4 present. A body, instrument, model, memory and
+record exist now. Behind them lies one solid actual history. Ahead, an actual
+model carries a branching cone of represented D5 alternatives. Three accounts
+must be kept apart:
+
+- `F5-W [I/C]` says represented futures reweight present action through actual
+  present models. This is the current empirical floor.
+- `F5-N [D/C]` says there is no additional interaction: known physics,
+  selection, control, verification and revision exhaust the effect.
+- `F5-R [C]` wagers that an actual D4 history-selection law indexed by a
+  declared later physical boundary and a D5 option functional changes present
+  transition weights.
+
+The strong branch is written provisionally as
+
+\[
+P_\kappa[h\mid I,B_T]
+=Z_\kappa^{-1}P_0[h\mid I,B_T]e^{\kappa U_5[h;B_T]}.
+\]
+
+`κ=0` is the no-F5 arm; `κ≠0` is the strong wager. `B_T` is declared data on a
+later physical boundary, not the future light cone. `U_5` is a history
+functional, not a future agent and not a value theorem. Until a coupling,
+units, carrier or boundary source, conservation and Lorentz behavior, range,
+and distinct observable are supplied, this remains a candidate history law—not
+a force.
+
+No branch receives a truth bonus. If only present-model effects survive,
+`F5-W` remains and `F5-R` dies. A preregistered null kills the promised F5-R
+parameter or range. A replicated force-specific residual kills `F5-N` only in
+the tested scope. Observational equivalence means `UNDERDETERMINED`.
+
+The option ethic is separately chosen. Agent options, affected-whole options,
+subsystem entropy, total entropy production and export, path/history entropy,
+empowerment, viability cost, consent, Justice and Exit remain separate ledger
+dimensions. The decision surface is a Pareto frontier unless a distinct
+measurement and value contract earns a scalar. A history ensemble does not
+prove physically coexisting worlds, and no physical result derives the Good.
+
+The exact machine-bound fork, rivals, discriminators, kills and survivors are
+in [`F5Fork.v1`](05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json).

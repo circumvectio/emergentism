@@ -1,0 +1,141 @@
+{
+  "schema": "emergentism/F5Fork.v1",
+  "id": "F5-FORK-2026-08-22",
+  "title": "One present, three explanations",
+  "status": "ACTIVE-PROVISIONAL",
+  "owner": "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md",
+  "authorship": {
+    "proposer": "Yves R. Burri",
+    "ai_assistance_disclosed": true,
+    "ai_coauthor": false
+  },
+  "epistemic_contract": {
+    "truth_bonus_before_contact": false,
+    "agreement_is_evidence": false,
+    "d4_actuality": "Every model, computation, intervention, boundary condition, selection, and physical effect is actual D4.",
+    "d5_possibility": "D5 contains represented or model-relative possible histories; its content does not act independently.",
+    "force_label_gate": "F5-R remains a candidate history-selection law until it supplies a physical coupling, units, carrier or boundary source, conservation accounting, Lorentz behavior, range, and a distinct observable."
+  },
+  "branches": [
+    {
+      "id": "F5-W",
+      "tier": "[I/C]",
+      "kind": "present-model floor",
+      "statement": "Represented futures influence present action through actual present models, signals, memories, institutions, and computations.",
+      "mechanism": "A D4 model token represents and reweights D5 alternatives, then ordinary present dynamics carries the effect into action.",
+      "strongest_rival": "Salience, demand, reward, memory, expectancy, reactive control, or ordinary planning explains the measured change without a distinct D5-capacity variable.",
+      "discriminator": "Intervene on represented future content while holding relevant present means and confounds fixed; require incremental prediction beyond rich D4 baselines.",
+      "kill": "A fair-baseline null or the absence of an independently measurable future-content variable kills the distinct-capacity claim.",
+      "survivor": "Ordinary causal anticipation through present physical carriers."
+    },
+    {
+      "id": "F5-N",
+      "tier": "[D/C]",
+      "kind": "no-additional-interaction null",
+      "statement": "No additional interaction couples to representation-as-such; selection, verification, correction, and revision service the D5 register.",
+      "mechanism": "Known physical interactions plus biological, cognitive, social, and verification mechanisms exhaust the observed effects.",
+      "strongest_rival": "F5-R predicts a preregistered residual dependence on later physical boundary data after ordinary channels are excluded.",
+      "discriminator": "Compare the frozen accepted-physics and control baseline with the F5-R history law on a held-out intervention.",
+      "kill": "A replicated force-specific residual with a defined coupling and observable kills this null in the tested range.",
+      "survivor": "Verification and revision remain necessary practices even if a new interaction is found."
+    },
+    {
+      "id": "F5-R",
+      "tier": "[C]",
+      "kind": "future-boundary history-selection wager",
+      "statement": "An actual D4 history-selection law indexed by declared future boundary data and a D5 option functional may alter present transition probabilities.",
+      "mechanism": "A two-boundary or weighted-history law changes history weights; no possible future is treated as an agent and the future light cone is not treated as a source.",
+      "strongest_rival": "Standard quantum or classical dynamics, time-symmetric redescription, present-model control, common cause, selection bias, superdeterminism, or postselection predicts the same observations.",
+      "discriminator": "After an early outcome is irreversibly recorded, randomize a later physical boundary intervention without ordinary signalling or postselection and test the preregistered residual against the frozen null.",
+      "kill": "No exact law or observable fails admission; a preregistered null kills the promised parameter or range; observational equivalence yields UNDERDETERMINED rather than support.",
+      "survivor": "F5-W and F5-N remain viable; the option-preserving ethic remains a chosen orientation rather than physics."
+    }
+  ],
+  "candidate_history_law": {
+    "equation": "P_kappa[h|I,B_T] = Z_kappa^-1 P_0[h|I,B_T] exp(kappa U_5[h;B_T])",
+    "history": "h is a complete declared D4 history in the comparison ensemble.",
+    "initial_data": "I is the declared initial or preparation data.",
+    "future_boundary": "B_T is physical boundary data on a declared later boundary Sigma_T; it is not the future light cone.",
+    "baseline": "P_0 is the frozen accepted-physics and control baseline.",
+    "functional": "U_5 is a declared option or viability functional over histories; it creates no value premise by itself.",
+    "null": "kappa = 0 is the no-F5 arm.",
+    "strong_wager": "kappa != 0 is the F5-R arm.",
+    "normalization": "Z_kappa normalizes the declared history ensemble."
+  },
+  "independently_killable_propositions": [
+    {
+      "id": "F5-P1-FUTURE-BOUNDARY",
+      "statement": "Present probabilities depend on declared later physical boundary data beyond ordinary signalling, common cause, and postselection."
+    },
+    {
+      "id": "F5-P2-NEW-INTERACTION",
+      "statement": "The dependence requires a genuinely new interaction rather than an existing time-symmetric or variational formulation."
+    },
+    {
+      "id": "F5-P3-ONTIC-PLURALITY",
+      "statement": "Alternative histories physically coexist rather than merely appearing in a model or measure."
+    },
+    {
+      "id": "F5-P4-OPTION-BIAS",
+      "statement": "The candidate law favors a declared option-preserving or ektropic class."
+    },
+    {
+      "id": "F5-P5-NORMATIVE-TELEOLOGY",
+      "statement": "Agents ought to preserve durable mutual option space under Justice and Exit."
+    }
+  ],
+  "option_ledger": {
+    "aggregation": "pareto_frontier",
+    "scalarization": "forbidden_without_an_independently_defended_measurement_and_value_contract",
+    "dimensions": [
+      "agent_options",
+      "affected_whole_options",
+      "subsystem_thermodynamic_entropy",
+      "total_entropy_production_and_export",
+      "path_or_history_entropy",
+      "empowerment_or_control_capacity",
+      "viability_cost",
+      "consent",
+      "Justice",
+      "Exit"
+    ],
+    "bearer_boundary": "No agent-potential claim may hide the options, costs, consent, or exit of affected bearers.",
+    "normative_boundary": "The Pareto discipline and Justice orientation are chosen constraints, not consequences of the candidate physical law."
+  },
+  "physics_fences": {
+    "gravity_neighbor": "Dorau and Much recover semiclassical Einstein equations from quantum relative entropy under stated horizon and entropy-area assumptions; they do not prove that gravity is entropy, a gravity time arrow, a microscopic substrate, the serial-force ordering, or F5.",
+    "multiverse": "A represented history bundle or path measure does not establish ontic multiverse plurality.",
+    "strange_attractor": "The phrase is inadmissible as physics unless a state space, flow, metric, invariant set, basin, and attraction test are declared.",
+    "entropy": "Thermodynamic entropy, total entropy production and export, path or Shannon entropy, and empowerment are distinct ledgers."
+  },
+  "prior_art": [
+    {
+      "name": "Time-symmetric and retrocausal quantum models",
+      "source": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.92.021002",
+      "boundary": "Retrocausal or all-at-once formulations do not by themselves constitute a fifth interaction."
+    },
+    {
+      "name": "Causal entropic forces",
+      "source": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.168702",
+      "boundary": "Future-option entropy models are direct neighbors; resemblance supplies no independent evidence for F5-R."
+    },
+    {
+      "name": "Quantum relative entropy and semiclassical Einstein equations",
+      "source": "https://journals.aps.org/prl/abstract/10.1103/lmq8-nsty",
+      "boundary": "The gravity result supplies neither a future-boundary interaction nor the D1-D4 force assignment."
+    }
+  ],
+  "public_contract": {
+    "allowed": "Present F5-R only as a named [C] wager beside F5-W, F5-N, its discriminator, kill, and survivor.",
+    "forbidden": [
+      "D5 causes or pushes physical events by itself",
+      "gravity is entropy",
+      "gravity points from past to present",
+      "the future light cone is a causal source",
+      "represented histories prove a physically actual multiverse",
+      "least entropy without a typed ledger",
+      "a strange attractor without declared dynamics",
+      "the chosen teleology follows from physics"
+    ]
+  }
+}

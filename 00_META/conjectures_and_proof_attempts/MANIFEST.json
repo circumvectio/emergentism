@@ -123,7 +123,7 @@
  "source_manifest": [
   {
    "path": "00_META/00_THE_CLAIM_STATUS_REGISTER.md",
-   "sha256": "6b10460c372873b783e6c24e7b240959211d2d9a11dbc44a902a7c053a6b5c5f",
+   "sha256": "7d176b2bf0d0d34abaf732d56986cafbafc83d95dd2b21163a23b36c22bd7a12",
    "role": "status_owner"
   },
   {
@@ -138,12 +138,12 @@
   },
   {
    "path": "00_META/claim_status/CLAIM_STATUS.yaml",
-   "sha256": "36077fbc943e4a7e4960873278c08542d0fd7152452d680a4d00e5e5acf63d6f",
+   "sha256": "805f28a7c25547991fe4800e43df8898e1cb35f63c68f591eaea3dfe4d68e7d5",
    "role": "status_owner"
   },
   {
    "path": "00_THE_WELTANSCHAUUNG.md",
-   "sha256": "d4641db28ad0d5c12e38e4643375fc1ea7061281358cc4d0d95258ca3c781684",
+   "sha256": "ce4234f1c0c81e1bf13e7b65c5a19d39f928641949e41e59fea1885cd0ec3610",
    "role": "semantic_owner"
   },
   {
@@ -228,7 +228,12 @@
   },
   {
    "path": "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md",
-   "sha256": "ad6cd55953c377a5c9ee628b538fd53194d8a0f59ad85a1846323df15605c4c4",
+   "sha256": "59f8af6ec03d80f0ef9b81d93887b39998937ed63a860690965152a1ad592426",
+   "role": "conjecture_owner"
+  },
+  {
+   "path": "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json",
+   "sha256": "09b2c5700a20fd2d90ad0c2dc11999ad048faea0baf6ce08ac327809a9c1ddb6",
    "role": "conjecture_owner"
   },
   {
@@ -293,7 +298,7 @@
   },
   {
    "path": "06_ONTOLOGY/04_THE_CONJECTURES.md",
-   "sha256": "6fdde940f563a24b57b7635ad4c878ae829751bb36c7270b4964c5b2b72579e8",
+   "sha256": "914ec400c138a2e72b715e0567d3e7901825857a98effe5f8e633f0f2fde1530",
    "role": "semantic_owner"
   },
   {
@@ -303,7 +308,7 @@
   },
   {
    "path": "06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md",
-   "sha256": "fcc88efc27971432af9ef6ce58144c60504f15f9871c219baa6d12200a245687",
+   "sha256": "299b07e94127f418f92884b0313513e53e58db27f6cb2b5b3b2e6bb218384a5e",
    "role": "conjecture_owner"
   },
   {
@@ -328,7 +333,7 @@
   },
   {
    "path": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
-   "sha256": "50e6aeddafc27a80dc1e430a70a075b0d2b9f8e560e4ea59dd2711794b149608",
+   "sha256": "e641241b39c6fee99f6a5df7dd3670aa9ce28656369397c2595c19aba8c7ba16",
    "role": "conjecture_owner"
   },
   {
@@ -740,19 +745,66 @@
    ],
    "owner_path": "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md",
    "partition": "live",
-   "summary": "Weak interpretive F5 reading and strong teleological-force wager kept separate.",
+   "summary": "Typed F5 owner keeping present-model teleonomy, the no-interaction/service null, and the strong future-boundary history wager separate.",
    "target_entry_ids": [
     "W7-ORIGIN"
    ],
-   "outcome": "Static identities supply no physical trajectory; contact remains open.",
-   "rival": "Standard control, agency, selection, and physical dynamics.",
-   "discriminator": "A force-specific held-out effect beyond those rivals.",
-   "kill": "No novel dynamics or physical recovery.",
-   "survivor": "An interpretive agency and option-cone vocabulary.",
+   "outcome": "The three-branch F5 fork is typed; no branch has received empirical support from this filing.",
+   "rival": "Standard control, agency, selection, verification, time-symmetric redescription, common cause, postselection, and accepted physical dynamics.",
+   "discriminator": "Branch-specific contact: present-content intervention for F5-W and a preregistered later-boundary residual with an exact law for F5-R.",
+   "kill": "No incremental present-model effect kills the distinct F5-W capacity; no exact law fails F5-R admission; a preregistered null kills the promised F5-R parameter or range.",
+   "survivor": "Ordinary anticipation, verification practice, the D4/D5 distinction, and the separately chosen option ethic.",
    "relations": [
     {
      "type": "leg_of",
      "target": "W7-ORIGIN"
+    }
+   ]
+  },
+  {
+   "entry_id": "F5-FORK-V1",
+   "source_ids": [
+    "F5-W",
+    "F5-N",
+    "F5-R",
+    "F5-P1-FUTURE-BOUNDARY",
+    "F5-P2-NEW-INTERACTION",
+    "F5-P3-ONTIC-PLURALITY",
+    "F5-P4-OPTION-BIAS",
+    "F5-P5-NORMATIVE-TELEOLOGY"
+   ],
+   "kind": "CONJECTURE",
+   "lifecycle": "active",
+   "evidence_tier": "[I/C · D/C · C]",
+   "validation_status_ref": [
+    "W7e",
+    "W8"
+   ],
+   "owner_path": "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json",
+   "partition": "live",
+   "summary": "Machine-bound three-branch F5 contract: present-model floor, no-additional-interaction null, and future-boundary/history-selection wager, with independent multiverse, entropy, and teleology propositions.",
+   "target_entry_ids": [
+    "F5-DYNAMICS",
+    "W14-W18",
+    "W19-BALANCE"
+   ],
+   "outcome": "Typed source and test debt only; no branch receives a truth bonus and no physical observation is recorded.",
+   "rival": "Each branch is a rival to the other two, alongside accepted physics, present-model control, time-symmetric descriptions, common causes, postselection, causal-entropic-force, and empowerment models.",
+   "discriminator": "Freeze P0, U5, kappa, later boundary data, a physical observable, effect floor, no-signalling and no-postselection controls; separately run the present-model intervention and option-ledger tests.",
+   "kill": "No exact law fails F5-R admission; fair-baseline nulls kill their promised scope; a represented history bundle cannot support ontic plurality; entropy or bearer conflation splits the option claim.",
+   "survivor": "The other branches, D4/D5 firewall, native sciences, and chosen Justice and Exit commitments survive independently.",
+   "relations": [
+    {
+     "type": "typed_fork_of",
+     "target": "F5-DYNAMICS"
+    },
+    {
+     "type": "sets_rival_for",
+     "target": "W14-W18"
+    },
+    {
+     "type": "sets_rival_for",
+     "target": "W19-BALANCE"
     }
    ]
   },
@@ -1521,5 +1573,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "8ade7e28e2d7c68294d4913679cacc1854453f995effbb339a83025d387bd176"
+ "inventory_digest": "ad21da9c64390ff46d0dbfd17bf41bcc3d3567455d9cf1d499c412e228ccc155"
 }

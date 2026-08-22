@@ -429,6 +429,38 @@ In one line:
 > foresight and means couple; action receives consequence; Justice keeps every
 > bearer visible; correction keeps the compass pointed at territory.**
 
+### 7.7 One present, three explanations — the F5 fork
+
+At one actual D4 present, Emergentism now keeps three accounts visibly in
+competition:
+
+1. `F5-W [I/C]`: represented futures matter through actual present models;
+2. `F5-N [D/C]`: no additional interaction exists, and D5's debt is serviced
+   by selection, verification and revision; and
+3. `F5-R [C]`: an actual D4 history-selection law indexed by declared later
+   boundary data and a D5 option functional changes present transition weights.
+
+The typed owner is
+[`F5Fork.v1`](05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json). It preserves
+the D4/D5 firewall: possible content never pushes actuality by itself. The
+strong branch is initially a history law, not a force. It earns that name only
+through a coupling, units, carrier or boundary source, conservation and
+Lorentz behavior, range, and a distinct held-out observable. `κ=0` is the
+no-F5 arm; `κ≠0` is the strong arm. No elegance, count symmetry, AI agreement,
+or metaphysical fit scores either branch as true.
+
+Five propositions remain independently killable: future-boundary dependence,
+a genuinely new interaction, ontic plurality of histories, an option- or
+ektropy-biased law, and the chosen normative teleology. A history ensemble does
+not prove a multiverse. Physics does not derive the Good.
+
+The practical objective therefore remains a **dual option ledger**, not a
+cosmic scalar: agent options and affected-whole options are tracked beside
+subsystem entropy, total entropy production and export, path/history entropy,
+empowerment, viability cost, consent, Justice and Exit. Trade-offs remain on a
+Pareto frontier unless a separate measurement and value contract justifies a
+scalarization.
+
 ## 8 · What remains open to the world
 
 The internal cleanup does not externally validate the worldview. The live work
@@ -436,6 +468,8 @@ is contact: preregister discriminators; compare the selected node-minimum
 convention with other conjunctive aggregators, testing a product only under
 separately defended cardinal scales; operationalize each μ-crossing; intervene on
 represented futures; test Egregoreotype candidates across carrier turnover;
+compare the `F5-N` null with a preregistered `F5-R` boundary intervention while
+excluding ordinary signals, common causes and postselection;
 publish nulls and failures; and invite independent replication. A result enters
 the worldview only at the tier it earns.
 
@@ -486,7 +520,9 @@ This document was composed from the post-recovery arc:
 - W7 — the originating five-freedoms/five-force-slots wager: five modular
   role-affinities, never an established or exclusive force↔rung bijection
   `[B]` provenance / `[I/C]` map
-- W8 — model-mediated future causation `[I/C]`
+- W8 / F5-W — model-mediated future causation `[I/C]`; F5-N is the
+  no-interaction/service null `[D/C]`, and F5-R the independent
+  future-boundary/history-selection wager `[C]`
 - W9 — Egregoreotype criterion `[I/C]`
 - W10 — mirror grammar travels within scoped lineages `[I/C]`
 - W11 — the `−1` dark-twin functional-work claim is `DECORATIVE`; ordinary mathematics and optional symbolism survive

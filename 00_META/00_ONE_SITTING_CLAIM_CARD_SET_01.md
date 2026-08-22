@@ -88,6 +88,15 @@ edit until its named owner reviews the repair.
 | OS01-25 | §12, lines 401–410. **Retain.** | K-3 E10 and K-4 W12 / `[I/C]` boundary posture. | D6 may be reified into identity, loop, attainment, or a sixth freedom. If it becomes compulsory or non-discriminating, demote it; nonclosure and exit survive. | “D6 marks a refusal to turn every remainder into another object; it is neither an achievement nor a cosmic loop.” |
 | OS01-26 | §12, lines 412–435. **Retain.** | K-4, K-5, K-7 / `[S/I/C]` modularity and correction contract. | A framework can make its kills decorative or claim its own survival proves truth. If modularity, correction, or exit fails in practice, it is a self-protecting creed. | “A useful worldview must remain useful when its grandest wagers fail—and leaveable when its lens no longer serves.” |
 
+## D. F5 fork and option-ledger cards — 2026-08-22
+
+| ID | Source / disposition | Owner and type | Rival, kill, and survivor | Safe public wording |
+|---|---|---|---|---|
+| OS01-27 | §12A, lines 633–639. **Research docket.** | K-4 W8 / `F5-W [I/C]`. | Salience, reward, memory, expectancy, reactive control, or ordinary planning may explain the effect. A fair-baseline null kills the distinct-capacity claim; ordinary anticipation survives. | “F5-W: represented futures matter through actual present models.” |
+| OS01-28 | §12A, lines 640–641. **Research docket.** | K-4 W14 null / `F5-N [D/C]`. | A preregistered F5-R residual is the rival. A replicated force-specific residual with a coupling and observable kills the null only in its tested range; verification practice survives. | “F5-N: no additional interaction; selection, verification, and revision service D5.” |
+| OS01-29 | §12A, lines 642–663. **Research docket.** | K-4 W7e strong branch / `F5-R [C]`. | Standard dynamics, present models, time-symmetric redescription, common cause, superdeterminism, selection bias, and postselection are controls. No exact law fails admission; a preregistered null kills the promised parameter or range; equivalence remains underdetermined. | “F5-R [C]: an unvalidated future-boundary history law, not established physics.” |
+| OS01-30 | §12A, lines 665–670. **Retain as chosen architecture.** | K-5 / `[I/S]` option-ledger and is–ought separation. | A defended scalar may outperform the Pareto ledger. Hidden bearers, entropy conflation, proxy harm, or decorative Exit kills integrity; bearer visibility survives. | “Keep option, entropy, cost, consent, Justice, and Exit ledgers separate; use a Pareto frontier.” |
+
 ## Precision-repair queue — 2026-07-28 proposal record
 
 The following preserves the original proposed source repairs. It is not a

@@ -601,17 +601,17 @@
             "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
             "protocol_refs": [
               "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md",
-              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md"
+              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md",
+              "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json"
             ],
-            "maturity": "blocked",
-            "blocked_by": [
-              "W8"
-            ],
-            "discriminator": "After a nontrivial native dynamics is fixed, show a D5-specific intervention effect beyond control, learning, evolution, and teleonomy, and beat every force-row permutation.",
-            "kill": "No independent dynamics, no incremental effect, free permutation, or retrocausality is required.",
-            "survivor": "FV-20 and ordinary model-mediated anticipation survive without a fifth force.",
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Compare F5-W present-model effects, the F5-N no-interaction null, and the F5-R future-boundary history law under a frozen accepted-physics baseline. F5-R must supply an exact coupling or history law, observable, later-boundary intervention, no-signalling and no-postselection controls, native recovery, and a held-out residual; the D1-D4 rows must separately survive all 24 assignments.",
+            "kill": "No exact law or observable fails F5-R admission; a fair-baseline null kills the promised parameter or range; standard dynamics or present-model control predicting equally kills the fifth-interaction label; free permutation kills the force map.",
+            "survivor": "F5-W ordinary model-mediated anticipation and F5-N verification practice survive without a fifth interaction; the D scaffold and chosen option ethic remain independently removable.",
             "component_support_refs": [
-              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md"
+              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md",
+              "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json"
             ],
             "integrated_support": "absent",
             "evidence_contract": "WORLD-OUTCOME-V1"
@@ -636,8 +636,8 @@
             ],
             "maturity": "component-supported",
             "blocked_by": [],
-            "discriminator": "First separate represented future content from salience, demand, reward, memory, and expectancy; then require an independent D5 measure to beat rich D4 planning, search, model-based, and model-free baselines.",
-            "kill": "A fair-baseline null, unbounded all-timelines language, or dependence on physical coexistence of alternatives.",
+            "discriminator": "First separate represented future content from salience, demand, reward, memory, and expectancy; then require an independent D5 measure to beat rich D4 planning, search, model-based, and model-free baselines. This tests F5-W only and supplies no evidence for or against F5-R unless the later-boundary contract is also run.",
+            "kill": "A fair-baseline null, unbounded all-timelines language, or dependence on physical coexistence of alternatives kills the distinct F5-W capacity claim.",
             "survivor": "Ordinary causal anticipation through present model tokens remains.",
             "component_support_refs": [
               "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
