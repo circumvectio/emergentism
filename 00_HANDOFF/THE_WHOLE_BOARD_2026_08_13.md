@@ -12,6 +12,56 @@ parents:
 
 # The Whole Board
 
+> ## UPDATE 3 — 2026-08-22, after consolidation. **Updates 1 and 2 are superseded on
+> every custody fact below; their gate findings still stand.**
+>
+> **The worktree/branch problem is closed.** A concurrent session executed the whole
+> chair bucket — committed both dirty worktrees, merged the sprawl, retired the branches
+> behind eight annotated recovery tags, and removed the worktrees. This session verified
+> the consolidation **lossless** against an independent pre-consolidation snapshot
+> (0 of 39 files absent, 0 lines lost) and then put everything offsite.
+>
+> | | Update 2 | now |
+> |---|---|---|
+> | branches | 10 local, 8 unmerged | **2** (`main`, `theory/parasite-load-2026-08-17`) |
+> | worktrees | 5 | **1** |
+> | uncommitted work in no commit | ~496 lines | **none** |
+> | tips with no remote copy | 4 | **0** |
+> | recovery tags offsite | — | **8 of 8** |
+>
+> **Update 2's item 4 is void:** `chore/glyph-migration-2026-08-14` no longer exists. It
+> was retired unmerged as `archive/2026-08-21/glyph-migration` (`ec7bc5b4`) — a
+> *selective-adoption boundary*, not a merge. Its two artifacts are on HEAD independently
+> and the emission re-runs **PASS, 343 anchors, exit 0**.
+>
+> **Three alternatives were deliberately NOT merged** and survive only as tags — now
+> pushed, so they are recoverable rather than lost: `glyph-migration` (selective-adoption
+> boundary), `ontology-seed` (`7ff958d6`, semantically subsumed), `rosetta-cascade`
+> (`b7854852`, superseded). Adopting or discarding any of them is a chair act; nothing
+> forces it now that they are safe.
+>
+> ### Gate findings from Update 2 that SURVIVE
+>
+> - **Emission is green** and stays green post-consolidation.
+> - **The citation number is not what it says.** `2043` was stored on one branch; the
+>   count is branch-dependent, and **≥239 of ~2066 are resolver artifacts** — authoring
+>   idioms (`nothing`, `none`) and real files with a ` §section` suffix the resolver
+>   cannot strip. Honest form: *"≤2066 broken, of which ≥239 are resolver artifacts."*
+>   The checker was deliberately not loosened; the repair is its own mutation-verified act.
+> - Remaining agent items: the docket re-run against HEAD, and the report-only floor
+>   predicate in `predeploy_check.py`.
+>
+> ### What is actually left
+>
+> 1. **`C3` — the DNS cutover.** Now unambiguously the top of the board. Every other
+>    blocker that stood in front of it is gone. World contact remains **0**.
+> 2. **`main` is 49 commits behind the work branch** — merging is a content decision.
+> 3. `D1` identity + funded predicate · the disposition batch · `D6` destination ·
+>    `C4` credential rotation · the decree (authored, not delegated).
+>
+> **STANDING REFUSALS unchanged:** no deploy by agents · no tier promotion · no pin
+> repointing · no silent re-baseline.
+
 > ## UPDATE 2 — 2026-08-14, measured on `chore/glyph-migration-2026-08-14`
 >
 > **Custody first:** work now sits on the glyph-migration branch, **3 commits
