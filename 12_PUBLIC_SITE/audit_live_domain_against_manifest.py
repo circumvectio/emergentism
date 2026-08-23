@@ -94,6 +94,7 @@ HASH_SAMPLE_ARTIFACTS = {
     "manifest.webmanifest": "manifest.webmanifest",
     "sw.js": "sw.js",
 }
+DEFAULT_BODY_READ_LIMIT = 220_000
 
 
 @dataclass(frozen=True)
@@ -140,7 +141,16 @@ def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
     )
     try:
         with urlopen(request, timeout=timeout) as response:
-            body = response.read(220_000)
+            artifact = HASH_SAMPLE_ARTIFACTS.get(path)
+            local_artifact = SITE_ROOT / artifact if artifact is not None else None
+            # Exact release witnesses must hash the complete expected object.
+            # Read one byte beyond its committed local size so an unexpectedly
+            # longer response also fails closed, while keeping every response
+            # bounded even if the remote host is compromised or misrouted.
+            read_limit = DEFAULT_BODY_READ_LIMIT
+            if local_artifact is not None and local_artifact.is_file():
+                read_limit = local_artifact.stat().st_size + 1
+            body = response.read(read_limit)
             return build_result(
                 path,
                 response.status,
@@ -256,7 +266,17 @@ def run_audit(base_url: str, timeout: float, workers: int) -> dict[str, Any]:
             for route in item["publicRoutes"]
         ]
     )
-    paths = unique_paths(CORE_PATHS + manifest_paths + withheld_paths)
+    # Hash witnesses are a separate release invariant: a sampled artifact may
+    # be intentionally absent from both the reading manifest and the current
+    # HTML route set (for example corpus JSON/JSONL or the service worker).
+    # Every witness therefore has to enter the probe plan explicitly; otherwise
+    # the strict audit reports a false ``NOT_PROBED`` mismatch.
+    paths = unique_paths(
+        CORE_PATHS
+        + manifest_paths
+        + withheld_paths
+        + list(HASH_SAMPLE_ARTIFACTS)
+    )
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(executor.map(lambda path: probe(base_url, path, timeout), paths))

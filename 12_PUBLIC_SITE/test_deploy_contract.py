@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import io
 import json
 import os
@@ -10,9 +11,10 @@ import tarfile
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
 from subprocess import TimeoutExpired
+from unittest.mock import patch
 
+import audit_live_domain_against_manifest as live_audit
 import deploy_release_contract as contract
 
 
@@ -34,6 +36,114 @@ def archive_bytes(
 
 
 class DeployReleaseContractTests(unittest.TestCase):
+    def test_sampled_hash_probe_reads_complete_body_but_ordinary_probe_is_bounded(
+        self,
+    ) -> None:
+        class Headers(dict[str, str]):
+            def get_content_charset(self) -> str:
+                return "utf-8"
+
+        class Response:
+            status = 200
+
+            def __init__(self, body: bytes) -> None:
+                self.body = body
+                self.headers = Headers()
+                self.read_limits: list[int | None] = []
+
+            def __enter__(self) -> Response:
+                return self
+
+            def __exit__(self, *args: object) -> None:
+                return None
+
+            def read(self, limit: int | None = None) -> bytes:
+                self.read_limits.append(limit)
+                return self.body if limit is None else self.body[:limit]
+
+            def geturl(self) -> str:
+                return "https://example.invalid/artifact"
+
+        sample_path = "churn/corpus.jsonl"
+        payload = b"x" * (live_audit.DEFAULT_BODY_READ_LIMIT + 4_096)
+        sampled_response = Response(payload)
+        ordinary_response = Response(payload)
+        with tempfile.TemporaryDirectory() as temporary:
+            site_root = Path(temporary)
+            sample_artifact = (
+                site_root / live_audit.HASH_SAMPLE_ARTIFACTS[sample_path]
+            )
+            sample_artifact.parent.mkdir(parents=True)
+            sample_artifact.write_bytes(payload)
+            with (
+                patch.object(live_audit, "SITE_ROOT", site_root),
+                patch.object(
+                    live_audit,
+                    "urlopen",
+                    side_effect=[sampled_response, ordinary_response],
+                ),
+            ):
+                sampled = live_audit.probe(
+                    "https://example.invalid/", sample_path, timeout=0.1
+                )
+                ordinary = live_audit.probe(
+                    "https://example.invalid/", "plainly/", timeout=0.1
+                )
+
+        self.assertEqual(sampled.bytes_read, len(payload))
+        self.assertEqual(sampled.body_sha256, hashlib.sha256(payload).hexdigest())
+        self.assertEqual(sampled_response.read_limits, [len(payload) + 1])
+        self.assertEqual(ordinary.bytes_read, live_audit.DEFAULT_BODY_READ_LIMIT)
+        self.assertEqual(
+            ordinary.body_sha256,
+            hashlib.sha256(payload[: live_audit.DEFAULT_BODY_READ_LIMIT]).hexdigest(),
+        )
+        self.assertEqual(
+            ordinary_response.read_limits, [live_audit.DEFAULT_BODY_READ_LIMIT]
+        )
+
+    def test_live_audit_probes_every_hash_sample_route(self) -> None:
+        probed_paths: list[str] = []
+
+        def record_probe(
+            base_url: str, path: str, timeout: float
+        ) -> live_audit.ProbeResult:
+            probed_paths.append(path)
+            return live_audit.ProbeResult(
+                path=path,
+                status=200,
+                final_url=f"{base_url.rstrip('/')}/{path}",
+                title="",
+                bytes_read=0,
+                body_sha256="",
+                repo_worldview_identity=False,
+                repo_finity_action=False,
+                repo_finity_card=False,
+                repo_local_receipt=False,
+                repo_generated_manifest=False,
+                repo_historical_boundary=False,
+                risky_withheld_body=False,
+                old_vmgsta_markers=False,
+                google_sites_markers=False,
+                x_robots_tag="",
+                cache_control="",
+                cdn_cache_control="",
+            )
+
+        with patch.object(live_audit, "probe", side_effect=record_probe):
+            report = live_audit.run_audit(
+                "https://example.invalid/", timeout=0.1, workers=1
+            )
+
+        sampled = {row["path"]: row for row in report["sampled_hashes"]}
+        self.assertEqual(set(sampled), set(live_audit.HASH_SAMPLE_ARTIFACTS))
+        self.assertTrue(
+            set(live_audit.HASH_SAMPLE_ARTIFACTS).issubset(probed_paths)
+        )
+        self.assertNotIn(
+            "NOT_PROBED", {row["status"] for row in sampled.values()}
+        )
+
     def test_archive_manifest_is_content_addressed(self) -> None:
         rows = contract._inspect_archive(archive_bytes("index.html", b"hello\n"))
         self.assertEqual(rows[0]["path"], "index.html")
