@@ -165,6 +165,9 @@ class LivingMapContractTests(unittest.TestCase):
             "rosetta/index.html": {"OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
             "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
             "book/index.html": {"OS01-13"},
+            "questions/index.html": {"OS01-26"},
+            "ethics/index.html": {"OS01-26"},
+            "record/pqa-54/index.html": {"OS01-26"},
         }
         bindings = {item["surface"]: item for item in self.parity["surfaceClaims"]}
         self.assertEqual(set(bindings), set(expected))
