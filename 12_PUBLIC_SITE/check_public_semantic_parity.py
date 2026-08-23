@@ -31,8 +31,9 @@ EXPECTED_CORE_JOURNEY = [
     "dimensions/index.html", "0/index.html", "1/index.html", "2/index.html",
     "3/index.html", "4/index.html", "5/index.html",
     "burrisphere/index.html", "rosetta/index.html", "6/index.html",
-    "f5/index.html", "practice/index.html", "spark/index.html",
-    "record/index.html", "record/eub-1/index.html", "lab/index.html",
+    "f5/index.html", "questions/index.html", "ethics/index.html",
+    "practice/index.html", "spark/index.html",
+    "record/index.html", "record/eub-1/index.html", "record/pqa-54/index.html", "lab/index.html",
     "discoveries/index.html", "book/index.html", "about/index.html",
     "contribute/index.html", "exit/index.html",
 ]
@@ -445,11 +446,13 @@ REQUIRED_SURFACE_CARDS = {
         "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
         "OS01-29", "OS01-30", "OS01-31", "OS01-32", "OS01-33",
         "OS01-34", "OS01-35", "OS01-36", "OS01-37",
+        "OS01-38", "OS01-39", "OS01-40", "OS01-41",
     },
     "dasein/index.html": {
         "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
         "OS01-20", "OS01-21", "OS01-23", "OS01-25", "OS01-31",
         "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
+        "OS01-38", "OS01-39", "OS01-40", "OS01-41",
     },
     "f5/index.html": {"OS01-27", "OS01-28", "OS01-29", "OS01-30"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22", "OS01-37"},
@@ -460,7 +463,7 @@ REQUIRED_SURFACE_CARDS = {
     },
     "plainly/index.html": {
         "OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35",
-        "OS01-36", "OS01-37",
+        "OS01-36", "OS01-37", "OS01-38", "OS01-39", "OS01-40", "OS01-41",
     },
     "discoveries/nonduality/index.html": {"OS01-09"},
     "about/index.html": {"OS01-26"},
@@ -471,6 +474,12 @@ REQUIRED_SURFACE_CARDS = {
     "rosetta/index.html": {
         "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
+    "questions/index.html": {"OS01-41"},
+    "ethics/index.html": {"OS01-38", "OS01-39", "OS01-40"},
+    "record/pqa-54/index.html": {"OS01-41"},
+    "record/index.html": {"OS01-37", "OS01-41"},
+    "discoveries/paradoxes/index.html": {"OS01-41"},
+    "discoveries/is-ought/index.html": {"OS01-39", "OS01-40"},
     "book/index.html": {"OS01-13"},
 }
 REQUIRED_SURFACE_MARKERS = {
@@ -482,6 +491,8 @@ REQUIRED_SURFACE_MARKERS = {
         "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Contribution", "Support", "Co-agency creates no shared personhood",
     },
     "dasein/index.html": {
         EXPECTED_CORE_QUESTION, "Dasein names all that can coherently and consistently exist",
@@ -491,6 +502,8 @@ REQUIRED_SURFACE_MARKERS = {
         "reading itinerary, not time", "φν=1 is constant",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "self/ego-facing taking", "Game theory is not exhausted", "maximally compressed",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "RCAB-01", "GEX-01", "Definition stability",
     },
     "5/index.html": {
         "P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers",
@@ -506,6 +519,8 @@ REQUIRED_SURFACE_MARKERS = {
         "one complete 360° turn", "φν=1 everywhere",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
+        "Question Atlas", "Contribution and Support", "Co-agency and guardianship",
+        "Framework-objective",
     },
     "burrisphere/index.html": {
         "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
@@ -521,6 +536,27 @@ REQUIRED_SURFACE_MARKERS = {
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "mental versus physical power", "Game theory is not exhausted", "maximally compressed",
     },
+    "questions/index.html": {
+        "Fifty-four questions. None quietly counted as solved.", "54 selected",
+        "0 evaluated", "0 independently reviewed", "0 resolved",
+        "Inventory is not evaluation.", "Even that would not mean “most philosophy.”",
+    },
+    "ethics/index.html": {
+        "Contribution goes part→whole", "Support goes whole→part", "RCAB-01", "GEX-01",
+        "shared personhood", "Representation is not consent.",
+        "No AI, framework, title, model output, or declaration makes itself a guardian",
+        "Framework-objective",
+    },
+    "record/pqa-54/index.html": {
+        "The Philosophical Question Atlas companion",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Beating a placebo earns nothing.",
+        "Companion means joined by hashes, not joined by truth.",
+        "OFFLINE-READY · [D] is not a philosophical result.",
+    },
+    "record/index.html": {"PQA-54", "M4-01", "SLWP-01D", "all 24 D1–D4 assignments remain unscored"},
+    "discoveries/paradoxes/index.html": {"none of them an earned dissolution", "PQA-54 begins separately at 54 selected", "Open the frozen PQA-54 denominator"},
+    "discoveries/is-ought/index.html": {"Reciprocal co-agency and guardianship are now separate.", "RCAB-01", "GEX-01", "Neither proves moral realism"},
 }
 CURRENT_AND_CLASS_MARKERS = {
     "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
@@ -792,6 +828,7 @@ STATUS_SOURCE_CONTRACTS = {
     "00_THE_KERNEL_INDEX.md": "[I]",
     "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md": "[S/B]",
     "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md": "[D]",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md": "[D]",
 }
 
 
@@ -1434,6 +1471,122 @@ def f5_typing_errors(text: str) -> list[str]:
     return errors
 
 
+def validate_v4_contracts(data: dict, errors: list[str]) -> None:
+    """Validate the v2.2 question, normative, and companion firewalls."""
+
+    atlas_contract = data.get("questionAtlas")
+    bridge = data.get("normativeBridge")
+    companions = data.get("researchCompanions")
+    if not isinstance(atlas_contract, dict):
+        errors.append("questionAtlas must be an object")
+        return
+    if not isinstance(bridge, dict):
+        errors.append("normativeBridge must be an object")
+        return
+    if not isinstance(companions, dict):
+        errors.append("researchCompanions must be an object")
+        return
+
+    expected_counts = {
+        "selected": 54,
+        "evaluated": 0,
+        "independentlyReviewed": 0,
+        "resolved": 0,
+    }
+    if atlas_contract.get("schemaId") != "PQAAtlasManifest.v1":
+        errors.append("questionAtlas schema identity drift")
+    if atlas_contract.get("counts") != expected_counts:
+        errors.append("questionAtlas launch counts must remain 54/0/0/0")
+    if (
+        atlas_contract.get("majorityThreshold") != 28
+        or atlas_contract.get("perDomainMinimum") != 3
+        or atlas_contract.get("globalPhilosophyClaimAllowed") is not False
+    ):
+        errors.append("questionAtlas bounded-majority contract drift")
+    source_fields = ("protocol", "atlas", "publicProjection")
+    sources: dict[str, Path] = {}
+    for field in source_fields:
+        rel = atlas_contract.get(field)
+        if not isinstance(rel, str) or not rel:
+            errors.append(f"questionAtlas.{field} is missing")
+            continue
+        path = (ROOT / rel).resolve()
+        try:
+            path.relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"questionAtlas.{field} escapes the corpus")
+            continue
+        if not path.is_file():
+            errors.append(f"questionAtlas.{field} is missing: {rel}")
+            continue
+        sources[field] = path
+    if "atlas" in sources:
+        try:
+            atlas = json.loads(sources["atlas"].read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            errors.append("questionAtlas source is malformed JSON")
+        else:
+            domains = atlas.get("domains", [])
+            rows = [row for domain in domains if isinstance(domain, dict) for row in domain.get("questions", [])]
+            if len(domains) != 9 or any(len(domain.get("questions", [])) != 6 for domain in domains if isinstance(domain, dict)) or len(rows) != 54:
+                errors.append("questionAtlas source must preserve the exact 9x6 denominator")
+            if atlas.get("launch_counts") != {
+                "selected": 54,
+                "evaluated": 0,
+                "independently_reviewed": 0,
+                "resolved": 0,
+            }:
+                errors.append("questionAtlas source launch state drift")
+    if "publicProjection" in sources:
+        try:
+            projection = json.loads(sources["publicProjection"].read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            errors.append("questionAtlas public projection is malformed JSON")
+        else:
+            if projection.get("counts") != {
+                "selected": 54,
+                "evaluated": 0,
+                "independently_reviewed": 0,
+                "resolved": 0,
+            }:
+                errors.append("questionAtlas public projection count drift")
+            if projection.get("external_validation") is not False or projection.get("deployed") is not False:
+                errors.append("questionAtlas offline projection cannot claim validation or deployment")
+
+    if {
+        bridge.get("directionCard"),
+        bridge.get("coAgencyCard"),
+        bridge.get("guardianshipCard"),
+    } != {"OS01-38", "OS01-39", "OS01-40"}:
+        errors.append("normativeBridge card ownership drift")
+    for field in (
+        "sharedPersonhoodInferred",
+        "sharedConsentInferred",
+        "authorityCreated",
+        "moralRealismEstablished",
+    ):
+        if bridge.get(field) is not False:
+            errors.append(f"normativeBridge.{field} must be false")
+    if bridge.get("coAgencyAndGuardianshipAreDistinct") is not True:
+        errors.append("normativeBridge must keep co-agency and guardianship distinct")
+    if bridge.get("objectivityLevels") != [
+        "DEFINITION_STABLE",
+        "PROCEDURALLY_REPRODUCIBLE",
+        "EMPIRICALLY_ADEQUATE",
+        "STANCE_INDEPENDENT",
+    ]:
+        errors.append("normativeBridge objectivity-level order drift")
+
+    if companions.get("truthTransfer") is not False or companions.get("scoreTransfer") is not False:
+        errors.append("researchCompanions cannot transfer score or truth")
+    eub = companions.get("eub1")
+    pqa = companions.get("pqa54")
+    if not isinstance(eub, dict) or eub.get("frozen") is not True or eub.get("candidateResults") != 0:
+        errors.append("researchCompanions EUB-1 freeze/result boundary drift")
+    if not isinstance(pqa, dict) or pqa.get("companionOnly") is not True or pqa.get("candidateResults") != 0:
+        errors.append("researchCompanions PQA-54 boundary drift")
+
+
 def main() -> int:
     errors: list[str] = []
     for fixture in NODE_PRODUCT_REJECT_FIXTURES:
@@ -1492,9 +1645,10 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 3:
-        errors.append("public semantic parity schemaVersion must be 3")
+    if data.get("schemaVersion") != 4:
+        errors.append("public semantic parity schemaVersion must be 4")
     validate_core_routing(data, errors)
+    validate_v4_contracts(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:

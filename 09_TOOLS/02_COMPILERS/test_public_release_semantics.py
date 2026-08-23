@@ -48,7 +48,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertEqual(self.data["levels"][5]["modality"], "possible")
 
     def test_claim_card_projection_contract_is_current(self) -> None:
-        self.assertEqual(self.data["schemaVersion"], 3)
+        self.assertEqual(self.data["schemaVersion"], 4)
         contract = self.data["claimCardContract"]
         source = ROOT / contract["source"]
         self.assertEqual(
@@ -125,6 +125,11 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         errors = []
         parity.validate_core_routing(mutated, errors)
         self.assertIn("routing block may not own semantics: navigation.claimCardIds", errors)
+
+    def test_v4_question_atlas_bridge_and_companion_contracts_are_exact(self) -> None:
+        errors = []
+        parity.validate_v4_contracts(self.data, errors)
+        self.assertEqual(errors, [])
 
     def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
         audited = set(parity.parity_audit_surfaces(self.data))
@@ -209,17 +214,19 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         home = (SITE / "index.html").read_text(encoding="utf-8")
         self.assertIn(parity.EXPECTED_CORE_QUESTION, home)
         markers = [
-            "01 · Serial emergence",
-            "02 · The debt wager",
-            "03 · One present, two explanations",
-            "04 · The option ledger",
-            "05 · Practice",
-            "06 · Research sockets",
-            "07 · WHAT IS SETTLED INSIDE, AND WHAT IS STILL OPEN",
+            'id="whole"',
+            'id="emergence"',
+            'id="powers"',
+            'id="g7"',
+            'id="translation"',
+            'id="questions"',
+            'id="practice"',
+            'id="research"',
+            'id="authorship"',
         ]
         positions = [home.index(marker) for marker in markers]
         self.assertEqual(positions, sorted(positions))
-        hero = home.split('<section class="g2-shell g2-hero"', 1)[1].split("</section>", 1)[0]
+        hero = home.split('<section class="g2-shell g2-hero', 1)[1].split("</section>", 1)[0]
         self.assertEqual(hero.count('g2-button--primary'), 1)
         self.assertIn("comparative benefit untested", hero)
 
@@ -803,7 +810,18 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             hashlib.sha256((SITE / output["path"]).read_bytes()).hexdigest(),
         )
         coverage = manifest["claim_card_contract"]["coverage"]
-        self.assertEqual(coverage["claim_card_count"], 30)
+        register = json.loads(
+            (ROOT / manifest["claim_card_contract"]["register_path"]).read_text(
+                encoding="utf-8"
+            )
+        )
+        authoritative_ids = {
+            card["card_id"]
+            for card in register["cards"]
+            if card.get("work_id") == manifest["work_id"]
+        }
+        self.assertEqual(coverage["claim_card_count"], len(authoritative_ids))
+        self.assertEqual(set(coverage["claim_card_ids"]), authoritative_ids)
         self.assertEqual(len(coverage["rendered_source_chapter_order"]), 12)
         self.assertEqual(coverage["public_states"], ["bounded_current", "candidate"])
         self.assertEqual(coverage["review_states"], ["implemented", "l3_audited"])

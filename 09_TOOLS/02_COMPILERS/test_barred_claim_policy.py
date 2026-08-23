@@ -41,6 +41,33 @@ class BarredClaimPolicyTests(unittest.TestCase):
             with self.subTest(sample=sample):
                 self.assertEqual(POLICY.violations(sample), [])
 
+    def test_negation_cannot_launder_a_later_sentence(self) -> None:
+        samples = (
+            "Emergentism is not a religion. Finity resolves all paradoxes.",
+            "Emergentism does not provide a complete ontology. It provides a complete ontology.",
+            "Finity does not resolve all paradoxes. Finity resolves all paradoxes.",
+        )
+        for sample in samples:
+            with self.subTest(sample=sample):
+                self.assertTrue(POLICY.violations(sample))
+
+    def test_v22_overclaims_fail(self) -> None:
+        samples = (
+            "Emergentism resolves most philosophical questions.",
+            "Emergentism proves objective ethics.",
+            "RCAB-01 closes the is-ought gap.",
+            "Potential is the Good.",
+            "Co-agency creates shared consent.",
+            "A guardian overrides the bearer.",
+            "Protection authorizes coercion.",
+            "Guardianship is co-agency.",
+            "An AI guardian may sign.",
+            "Cross-agent agreement validates Emergentism.",
+        )
+        for sample in samples:
+            with self.subTest(sample=sample):
+                self.assertTrue(POLICY.violations(sample))
+
     def test_actual_current_and_provisional_surfaces_pass(self) -> None:
         import json
         import sys

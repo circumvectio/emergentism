@@ -59,7 +59,15 @@ class GestaltV2ContractTests(unittest.TestCase):
 
     def test_shell_is_byte_idempotent_and_exactly_owned(self) -> None:
         rendered = shell.outputs()
-        self.assertEqual(len(rendered), 15)
+        self.assertEqual(len(rendered), len(shell.CORE_PAGES))
+        self.assertTrue(
+            {
+                "questions/index.html",
+                "ethics/index.html",
+                "record/pqa-54/index.html",
+            }
+            <= set(shell.CORE_PAGES)
+        )
         self.assertEqual(set(rendered), {SITE / rel for rel in shell.CORE_PAGES})
         for path, body in rendered.items():
             with self.subTest(path=path.relative_to(SITE)):
@@ -189,7 +197,8 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertEqual(before, {path: path.read_bytes() for path in protected})
         self.assertTrue(
             {
-                "/dasein/", "/f5/", "/assets/css/gestalt-v2.css",
+                "/dasein/", "/f5/", "/questions/", "/ethics/",
+                "/record/pqa-54/", "/assets/css/gestalt-v2.css",
                 "/assets/js/gestalt-v2.js", "/assets/fonts/Newsreader-latin-variable.woff2",
                 "/favicon.svg",
             }.issubset(set(pwa.safe_spine()))

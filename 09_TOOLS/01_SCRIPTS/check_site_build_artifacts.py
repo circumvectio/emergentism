@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Run the site's generated-artifact checks so they cannot drift unnoticed.
 
-Six artifact classes in 12_PUBLIC_SITE are generated from declared source
+Seven artifact classes in 12_PUBLIC_SITE are generated from declared source
 surfaces and would otherwise rot silently:
 
+  questions/ and record/pqa-54/
+                             the 54-question atlas and its null-state research
+                             record, generated from the frozen PQA-54 contract.
   atlas/site_index.json      the current-surface search index. It DID go stale: two
                              declared current surfaces were absent, so searching for
                              the site's own flagship page returned nothing.
@@ -19,8 +22,8 @@ surfaces and would otherwise rot silently:
   sw.js's CACHE constant     derived from the bytes of every current surface and cached
                              asset. Stale = returning visitors get the previous site.
 
-All six generators expose --check. gate.sh calls checkers with no arguments, so this wrapper
-exists to pass it. Exits 0 only if all six agree with the tree.
+All seven generators expose --check. gate.sh calls checkers with no arguments, so this wrapper
+exists to pass it. Exits 0 only if all seven agree with the tree.
 """
 from __future__ import annotations
 import subprocess, sys
@@ -28,6 +31,7 @@ from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[2] / "12_PUBLIC_SITE"
 BUILDERS = (
+    "build_question_atlas.py",
     "build_atlas_index.py",
     "build_library_index.py",
     "build_library_nav.py",

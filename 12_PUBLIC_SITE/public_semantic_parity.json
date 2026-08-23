@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "status": "release-candidate-projection",
   "sourceAuthority": "Source documents own semantics; this manifest binds public pages but creates no doctrine.",
   "coreJourney": {
@@ -19,10 +19,13 @@
       "rosetta/index.html",
       "6/index.html",
       "f5/index.html",
+      "questions/index.html",
+      "ethics/index.html",
       "practice/index.html",
       "spark/index.html",
       "record/index.html",
       "record/eub-1/index.html",
+      "record/pqa-54/index.html",
       "lab/index.html",
       "discoveries/index.html",
       "book/index.html",
@@ -47,6 +50,35 @@
       {"label": "Menu", "control": "menu"},
       {"label": "Exit", "href": "/exit/"}
     ]
+  },
+  "questionAtlas": {
+    "schemaId": "PQAAtlasManifest.v1",
+    "protocol": "03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md",
+    "atlas": "03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/prompts/questions.json",
+    "publicProjection": "03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/public_projection.json",
+    "counts": {"selected": 54, "evaluated": 0, "independentlyReviewed": 0, "resolved": 0},
+    "majorityThreshold": 28,
+    "perDomainMinimum": 3,
+    "globalPhilosophyClaimAllowed": false,
+    "boundary": "Inventory is not evaluation, native review, resolution, validation, or truth."
+  },
+  "normativeBridge": {
+    "directionCard": "OS01-38",
+    "coAgencyCard": "OS01-39",
+    "guardianshipCard": "OS01-40",
+    "coAgencyAndGuardianshipAreDistinct": true,
+    "sharedPersonhoodInferred": false,
+    "sharedConsentInferred": false,
+    "authorityCreated": false,
+    "moralRealismEstablished": false,
+    "objectivityLevels": ["DEFINITION_STABLE", "PROCEDURALLY_REPRODUCIBLE", "EMPIRICALLY_ADEQUATE", "STANCE_INDEPENDENT"]
+  },
+  "researchCompanions": {
+    "eub1": {"protocol": "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md", "frozen": true, "candidateResults": 0},
+    "pqa54": {"protocol": "03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md", "companionOnly": true, "candidateResults": 0},
+    "truthTransfer": false,
+    "scoreTransfer": false,
+    "boundary": "A companion join may bind exact hashes; neither benchmark validates the other."
   },
   "statusSourceClaims": [
     {
@@ -117,6 +149,22 @@
         "No candidate has been evaluated.",
         "Agreement between systems is not truth evidence."
       ]
+    },
+    {
+      "id": "PQA54-V01-STATUS",
+      "surface": "record/pqa-54/index.html",
+      "role": "benchmark_construct_status",
+      "source": "03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md",
+      "sourceRevision": "sha256:b1af36d375e0a1b65f64d73f1a2f7e1d19bbbea511deba50bb01e58d26987af9",
+      "tier": "[D]",
+      "scope": "editorial_or_record_status_only",
+      "requiredMarkers": [
+        "OFFLINE-READY · [D]",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Agreement between systems is not truth evidence.",
+        "truth_transfer=false",
+        "score_transfer=false"
+      ]
     }
   ],
   "claimCardContract": {
@@ -124,7 +172,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -152,7 +200,11 @@
         "OS01-34",
         "OS01-35",
         "OS01-36",
-        "OS01-37"
+        "OS01-37",
+        "OS01-38",
+        "OS01-39",
+        "OS01-40",
+        "OS01-41"
       ],
       "claimSources": [
         {
@@ -165,7 +217,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+          "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13",
@@ -185,7 +237,11 @@
             "OS01-34",
             "OS01-35",
             "OS01-36",
-            "OS01-37"
+            "OS01-37",
+            "OS01-38",
+            "OS01-39",
+            "OS01-40",
+            "OS01-41"
           ]
         }
       ],
@@ -205,7 +261,11 @@
         "longer horizon",
         "OVERLAY NOT RUN",
         "Game theory is not exhausted",
-        "maximally compressed"
+        "maximally compressed",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Contribution",
+        "Support",
+        "Co-agency creates no shared personhood"
       ]
     },
     {
@@ -227,11 +287,15 @@
         "OS01-34",
         "OS01-35",
         "OS01-36",
-        "OS01-37"
+        "OS01-37",
+        "OS01-38",
+        "OS01-39",
+        "OS01-40",
+        "OS01-41"
       ],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": [
           "OS01-01",
@@ -249,7 +313,11 @@
           "OS01-34",
           "OS01-35",
           "OS01-36",
-          "OS01-37"
+          "OS01-37",
+          "OS01-38",
+          "OS01-39",
+          "OS01-40",
+          "OS01-41"
         ]
       }],
       "publicDisposition": "bounded_current",
@@ -268,7 +336,11 @@
         "OVERLAY NOT RUN",
         "self/ego-facing taking",
         "Game theory is not exhausted",
-        "maximally compressed"
+        "maximally compressed",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "RCAB-01",
+        "GEX-01",
+        "Definition stability"
       ]
     },
     {
@@ -277,7 +349,7 @@
       "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-27", "OS01-28", "OS01-29", "OS01-30"]
       }],
@@ -307,7 +379,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -377,7 +449,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -400,7 +472,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -413,7 +485,7 @@
       "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09", "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
@@ -423,15 +495,15 @@
     {
       "surface": "plainly/index.html",
       "role": "selected_conjunctive_model_boundary",
-      "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
+      "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37", "OS01-38", "OS01-39", "OS01-40", "OS01-41"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
-        "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
+        "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37", "OS01-38", "OS01-39", "OS01-40", "OS01-41"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed", "Question Atlas", "Contribution and Support", "Co-agency and guardianship", "Framework-objective"]
     },
     {
       "surface": "discoveries/nonduality/index.html",
@@ -439,7 +511,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -452,7 +524,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -465,7 +537,7 @@
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -478,7 +550,7 @@
       "claimCardIds": ["OS01-26"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-26"]
       }],
@@ -491,7 +563,7 @@
       "claimCardIds": ["OS01-09"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-09"]
       }],
@@ -504,7 +576,7 @@
       "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
@@ -517,7 +589,7 @@
       "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"]
       }],
@@ -525,12 +597,90 @@
       "requiredMarkers": ["One move, translated", "G7", "possible power", "actual power", "G7@1 ≠ GEN7@1", "Correspondence is not confirmation", "presentation itinerary", "φν=1 is the constraint", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "mental versus physical power", "Game theory is not exhausted", "maximally compressed"]
     },
     {
+      "surface": "questions/index.html",
+      "role": "public_pqa54_denominator_and_null_state",
+      "claimCardIds": ["OS01-41"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-41"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Fifty-four questions. None quietly counted as solved.", "54 selected", "0 evaluated", "0 independently reviewed", "0 resolved", "Inventory is not evaluation.", "Even that would not mean “most philosophy.”"]
+    },
+    {
+      "surface": "ethics/index.html",
+      "role": "typed_direction_reciprocal_coagency_and_guardianship",
+      "claimCardIds": ["OS01-38", "OS01-39", "OS01-40"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-38", "OS01-39", "OS01-40"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Contribution goes part→whole", "Support goes whole→part", "RCAB-01", "GEX-01", "shared personhood", "Representation is not consent.", "No AI, framework, title, model output, or declaration makes itself a guardian", "Framework-objective"]
+    },
+    {
+      "surface": "record/pqa-54/index.html",
+      "role": "pqa54_construct_record_and_eub_firewall",
+      "claimCardIds": ["OS01-41"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-41"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["The Philosophical Question Atlas companion", "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved", "Beating a placebo earns nothing.", "Companion means joined by hashes, not joined by truth.", "OFFLINE-READY · [D] is not a philosophical result."]
+    },
+    {
+      "surface": "record/index.html",
+      "role": "v22_research_companion_index",
+      "claimCardIds": ["OS01-37", "OS01-41"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-37", "OS01-41"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["PQA-54", "M4-01", "SLWP-01D", "all 24 D1–D4 assignments remain unscored"]
+    },
+    {
+      "surface": "discoveries/paradoxes/index.html",
+      "role": "legacy_paradox_readings_with_pqa54_boundary",
+      "claimCardIds": ["OS01-41"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-41"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["none of them an earned dissolution", "PQA-54 begins separately at 54 selected", "Open the frozen PQA-54 denominator"]
+    },
+    {
+      "surface": "discoveries/is-ought/index.html",
+      "role": "legacy_is_ought_record_with_reciprocal_guardianship_split",
+      "claimCardIds": ["OS01-39", "OS01-40"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-39", "OS01-40"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Reciprocal co-agency and guardianship are now separate.", "RCAB-01", "GEX-01", "Neither proves moral realism"]
+    },
+    {
       "surface": "book/index.html",
       "role": "reader_map_action_outcome_exit_boundary",
       "claimCardIds": ["OS01-13"],
       "claimSources": [{
         "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "sourceRevision": "sha256:0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
         "lifecycle": "reader_synthesis",
         "claimCardIds": ["OS01-13"]
       }],
@@ -1060,6 +1210,8 @@
     "discoveries/universalizability/index.html",
     "fable/index.html",
     "plainly/index.html",
+    "questions/index.html",
+    "ethics/index.html",
     "about/index.html",
     "read/index.html",
     "axioms/index.html",
@@ -1067,6 +1219,7 @@
     "manifesto/index.html",
     "record/index.html",
     "record/eub-1/index.html",
+    "record/pqa-54/index.html",
     "established/index.html",
     "exit/index.html",
     "journey/index.html",

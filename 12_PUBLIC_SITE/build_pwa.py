@@ -133,7 +133,7 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/plainly/", "/dasein/", "/f5/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/",
+        "/", "/plainly/", "/dasein/", "/f5/", "/questions/", "/ethics/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/pqa-54/",
         "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
         "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
