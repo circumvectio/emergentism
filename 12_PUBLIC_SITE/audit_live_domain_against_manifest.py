@@ -81,10 +81,18 @@ CORE_PATHS = current_route_paths()
 HASH_SAMPLE_ARTIFACTS = {
     "": "index.html",
     "practice/": "practice/index.html",
+    "questions/": "questions/index.html",
+    "churn/": "churn/index.html",
+    "amrita/": "amrita/index.html",
+    "halahala/": "halahala/index.html",
+    "record/churning/": "record/churning/index.html",
+    "churn/corpus.json": "churn/corpus.json",
+    "churn/corpus.jsonl": "churn/corpus.jsonl",
     "public_semantic_parity.json": "public_semantic_parity.json",
     "living-map.json": "living-map.json",
     "atlas/site_index.json": "atlas/site_index.json",
     "manifest.webmanifest": "manifest.webmanifest",
+    "sw.js": "sw.js",
 }
 
 

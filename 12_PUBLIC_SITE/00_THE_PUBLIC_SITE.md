@@ -24,8 +24,10 @@ supersedes: nothing — supplements the existing pillar README
 ## Read first
 
 1. `README.md` — active release boundary; gate with `python3 predeploy_check.py`,
-   deploy only through the documented `cd 12_PUBLIC_SITE && ./deploy_vercel.sh`
-   linkage check, and require a separate external host receipt.
+   deploy only through the documented three-phase `deploy_vercel.sh`
+   prepare/held-stage/promote contract, and require its receipt outside the
+   repository. A held deployment is not publication; promotion is a separate
+   owner act.
 2. `public_semantic_parity.json` — the current source-to-page contract.
 3. `living-map.json` — open-work routing only; never doctrine authority.
 4. The seven chapter directories `0/` through `6/` — one typed register per page.

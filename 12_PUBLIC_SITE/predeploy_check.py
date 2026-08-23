@@ -3206,6 +3206,7 @@ def check_publication_boundary():
         "deploy.sh",
         "deploy_vercel.sh",
         "deploy_target_contract.py",
+        "deploy_release_contract.py",
         "__pycache__/predeploy_check.cpython-311.pyc",
         "compass/_archive/index_2026_07_12_pre_restructure.html",
         "a/b/_archive/c.html",
@@ -3232,10 +3233,15 @@ def check_publication_boundary():
     for marker in (
         ".vercel/project.json",
         "deploy_target_contract.py",
+        "deploy_release_contract.py",
         "--vercel-link",
         "predeploy_check.py",
         "check_site_build_artifacts.py",
-        "exec vercel --prod --yes",
+        "prepare|stage|promote",
+        "git archive",
+        "--skip-domain",
+        "vercel promote",
+        "previous-deployment rollback",
     ):
         if marker not in vercel_entry:
             error(f"Vercel entrypoint lacks fail-closed marker: {marker}")
@@ -3249,6 +3255,36 @@ def check_publication_boundary():
     ):
         if marker not in target_contract:
             error(f"Vercel target contract lacks explicit-pin marker: {marker}")
+            return False
+    release_contract = read_file("deploy_release_contract.py")
+    for marker in (
+        "emergentism/VercelReleaseReceipt.v1",
+        "STAGE_DISPATCHING",
+        "STAGE_CREATED_UNVERIFIED",
+        "emergentismRelease",
+        "_find_deployment_by_release_nonce",
+        "PROMOTION_DISPATCHING",
+        "PROMOTION_ABORTED_PREDECESSOR_CHANGED",
+        "PROMOTION_INDETERMINATE",
+        "PROMOTION_OBSERVED_UNVERIFIED",
+        "STAGED_VERIFIED",
+        "PROMOTED_VERIFIED",
+        "--skip-domain",
+        "vercel rollback",
+        "audit_live_domain_against_manifest.py",
+        "production compare-and-swap",
+        "previous_deployment_id",
+        "stage_manifest",
+        "predeploy_gate_sha256",
+        "artifact_gate_sha256",
+        "ROLLED_BACK_VERIFIED_AFTER_FAILED_PROMOTION",
+        "ROLLBACK_INDETERMINATE",
+        "ROLLBACK_DISPATCHING",
+        "ROLLBACK_BLOCKED_BY_CONCURRENT_PRODUCTION",
+        "receipt_sha256",
+    ):
+        if marker not in release_contract:
+            error(f"Vercel release contract lacks fail-closed marker: {marker}")
             return False
 
     fallback = read_file("deploy.sh")

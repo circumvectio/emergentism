@@ -174,9 +174,37 @@ Added 2026-07-31. Until then this document ended at `predeploy_check.py`, so a
 newcomer could produce release-candidate bytes and had no documented way to ship
 them.
 
+Production release is deliberately split into three invocations. The receipt
+must live outside the repository so it cannot be mistaken for source custody:
+
 ```bash
-cd 12_PUBLIC_SITE && ./deploy_vercel.sh
+cd 12_PUBLIC_SITE
+release_receipt=/tmp/emergentism-vercel-release.json
+./deploy_vercel.sh prepare --receipt "$release_receipt"
+./deploy_vercel.sh stage --receipt "$release_receipt"
+# Inspect the STAGED_VERIFIED receipt; promotion remains a separate owner act.
+./deploy_vercel.sh promote --receipt "$release_receipt"
 ```
+
+`prepare` requires a clean, pushed commit; runs the local gates; archives the
+committed public-site tree into a non-Git temporary stage; rejects empty,
+symlinked, or incomplete payloads; and records an exact path/mode/size/hash
+manifest. `stage` deploys that frozen payload with `--skip-domain`, verifies the
+deployment-specific URL, and leaves the public domains unchanged. `promote`
+revalidates the receipt and immutable deployment, requires production still to
+be the receipted predecessor, switches the domains, verifies the new deployment
+identity and bytes on both branded domains, and uses Vercel rollback to restore
+and re-verify the recorded predecessor if branded verification fails. A stable
+project-scoped local lock prevents concurrent commands on this machine; the
+predecessor is checked again immediately before the remote mutation. This is a
+fail-closed predecessor guard, not a claim that Vercel exposes an atomic
+cross-host compare-and-swap operation. None of the three commands pushes source
+or infers publication authority.
+
+The external receipt contains the full materialized CLI-input manifest and an
+unkeyed SHA-256 checksum. The checksum detects accidental or unrehashed drift;
+it is neither a signature nor authorization. Later phases independently rebuild
+the deployable manifest from the clean pushed commit before trusting the stage.
 
 - The wrapper fails closed unless `.vercel/project.json` exists **and** its two
   identities exactly match independently supplied
@@ -186,11 +214,15 @@ cd 12_PUBLIC_SITE && ./deploy_vercel.sh
   through an independently reviewed account surface, export those two values
   in the invoking shell, and run `./deploy_vercel.sh`. Missing pins, a stale
   link, or a link to another project fails before the Vercel CLI is invoked.
-  `./deploy_vercel.sh --self-test` exercises this boundary without network.
+  `./deploy_vercel.sh --self-test` exercises the target and release-state
+  boundaries without network.
 - **Never open, print, or commit `.vercel/.env.production.local`** — it is
   gitignored and may hold deploy credentials.
-- The live domain is `https://emergentism.org`. A deploy that reports
-  `"target": "production"` and `READY` has shipped bytes; it has not verified them.
+- The live domain is `https://emergentism.org`. A deployment that reports
+  `"target": "production"` and `READY` has shipped bytes; it has not verified
+  them. Only a `PROMOTED_VERIFIED` receipt records successful immutable and
+  branded-domain audits, and that receipt is evidence of deployment rather than
+  scientific validation.
 
 For a non-Vercel host, `deploy.sh` is a fallback **versioned-release staging**
 path, not an arbitrary-webroot rsync. It accepts only a fresh target shaped as
