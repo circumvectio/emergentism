@@ -1,0 +1,1697 @@
+[
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:GROUND",
+    "canonical_problem_id": "PQA54@0.1:MET:GROUND",
+    "aliases": [],
+    "domain": "MET",
+    "family": "ground",
+    "native_problem": "Ground, sufficient reason and explanatory termination.",
+    "native_reference": "Leibniz, Principles of Nature and Grace §7; Heidegger, Introduction to Metaphysics.",
+    "proposed_answer": "Emergentism places a GROUND_BOUNDARY where object-language explanation no longer has a lawful target; it does not turn Ground into an object or necessary being.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native ground, sufficient reason and explanatory termination. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Leibniz, Principles of Nature and Grace §7; Heidegger, Introduction to Metaphysics.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Why that boundary rather than a brute fact or necessary truth remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:ONE_MANY",
+    "canonical_problem_id": "PQA54@0.1:MET:ONE_MANY",
+    "aliases": [
+      "LEGACY:PD-05"
+    ],
+    "domain": "MET",
+    "family": "one_and_many",
+    "native_problem": "Unity, plurality and dependence without erasure.",
+    "native_reference": "Plato, Parmenides; Aristotle, Metaphysics.",
+    "proposed_answer": "Typed levels allow one coherent whole and genuine plural situated bearers without identifying either with the other.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native unity, plurality and dependence without erasure. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Plato, Parmenides; Aristotle, Metaphysics.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The metaphysical dependence relation is not thereby proved.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:UNIVERSALS",
+    "canonical_problem_id": "PQA54@0.1:MET:UNIVERSALS",
+    "aliases": [],
+    "domain": "MET",
+    "family": "universals_particulars",
+    "native_problem": "Realism, nominalism and trope theories of universals.",
+    "native_reference": "Plato, Republic; Aristotle, Categories and Metaphysics.",
+    "proposed_answer": "Repeatable properties may be tracked as invariants across transformations while their nominalist, realist or trope ontology remains open.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native realism, nominalism and trope theories of universals. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Plato, Republic; Aristotle, Categories and Metaphysics.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "What makes an invariant ontologically real remains disputed.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:IDENTITY",
+    "canonical_problem_id": "PQA54@0.1:MET:IDENTITY",
+    "aliases": [
+      "LEGACY:PD-06"
+    ],
+    "domain": "MET",
+    "family": "identity_persistence",
+    "native_problem": "Numerical identity, continuity, constitution and persistence.",
+    "native_reference": "Locke, Essay Concerning Human Understanding II.27; Parfit, Reasons and Persons.",
+    "proposed_answer": "Identity claims must declare which continuity—material, causal, structural, functional, narrative or authorized—carries the same bearer.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native numerical identity, continuity, constitution and persistence. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Locke, Essay Concerning Human Understanding II.27; Parfit, Reasons and Persons.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "No universal criterion of persistence follows.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:MODALITY",
+    "canonical_problem_id": "PQA54@0.1:MET:MODALITY",
+    "aliases": [],
+    "domain": "MET",
+    "family": "modality_possible_worlds",
+    "native_problem": "Modal truth, accessibility and possible-world semantics.",
+    "native_reference": "Kripke, Naming and Necessity; Lewis, On the Plurality of Worlds.",
+    "proposed_answer": "Possible content, actual carriers and actual histories are distinct types; this blocks actuality inflation without choosing modal realism.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native modal truth, accessibility and possible-world semantics. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Kripke, Naming and Necessity; Lewis, On the Plurality of Worlds.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Truthmakers for modal claims remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MET:TIME",
+    "canonical_problem_id": "PQA54@0.1:MET:TIME",
+    "aliases": [],
+    "domain": "MET",
+    "family": "time_change",
+    "native_problem": "A-series, B-series, passage and change.",
+    "native_reference": "Aristotle, Physics IV; McTaggart, The Unreality of Time.",
+    "proposed_answer": "Ordered records and lawful dynamics are required before a sequence can count as time; the dimensional or Burrisphere order alone is not temporal.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native a-series, b-series, passage and change. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Aristotle, Physics IV; McTaggart, The Unreality of Time.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Passage, tense and fundamentality remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-001",
+      "TC-HAL-002"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:EXTERNAL_WORLD",
+    "canonical_problem_id": "PQA54@0.1:EPI:EXTERNAL_WORLD",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "external_world",
+    "native_problem": "External-world skepticism and perceptual warrant.",
+    "native_reference": "Descartes, Meditations I; Moore, Proof of an External World.",
+    "proposed_answer": "Resistance, independent consequence and correction provide public warrant beyond present self-report without defeating global skepticism deductively.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native external-world skepticism and perceptual warrant. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Descartes, Meditations I; Moore, Proof of an External World.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The ultimate skeptical challenge remains.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:INDUCTION",
+    "canonical_problem_id": "PQA54@0.1:EPI:INDUCTION",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "induction",
+    "native_problem": "Hume's problem of induction and projectibility.",
+    "native_reference": "Hume, Enquiry Concerning Human Understanding IV; Goodman, Fact, Fiction, and Forecast.",
+    "proposed_answer": "Induction is fallible projectibility whose warrant is comparative calibration, intervention and correction rather than logical entailment.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native hume's problem of induction and projectibility. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hume, Enquiry Concerning Human Understanding IV; Goodman, Fact, Fiction, and Forecast.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The circularity and choice of projectible predicates remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:GETTIER",
+    "canonical_problem_id": "PQA54@0.1:EPI:GETTIER",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "knowledge_gettier",
+    "native_problem": "Gettier luck and analyses of knowledge.",
+    "native_reference": "Plato, Theaetetus; Gettier, Is Justified True Belief Knowledge?",
+    "proposed_answer": "True belief needs a provenance-sensitive warrant that remains connected to the fact through relevant counterfactuals and correction paths.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native gettier luck and analyses of knowledge. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Plato, Theaetetus; Gettier, Is Justified True Belief Knowledge?",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Whether this is knowledge or another condition remains contested.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:APRIORI",
+    "canonical_problem_id": "PQA54@0.1:EPI:APRIORI",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "a_priori",
+    "native_problem": "A priori warrant, rational insight and empiricism.",
+    "native_reference": "Kant, Critique of Pure Reason; BonJour, In Defense of Pure Reason.",
+    "proposed_answer": "A priori warrant can be internal necessity inside a declared formal system without becoming a claim about the world's ontology.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native a priori warrant, rational insight and empiricism. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Kant, Critique of Pure Reason; BonJour, In Defense of Pure Reason.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "How formal insight is known remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:TESTIMONY",
+    "canonical_problem_id": "PQA54@0.1:EPI:TESTIMONY",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "testimony",
+    "native_problem": "Testimonial warrant, reductionism and social dependence.",
+    "native_reference": "Coady, Testimony; Hume, Enquiry Concerning Human Understanding X.",
+    "proposed_answer": "Testimony carries warrant only through declared provenance, competence, calibration, contest and independent contact appropriate to the claim.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native testimonial warrant, reductionism and social dependence. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Coady, Testimony; Hume, Enquiry Concerning Human Understanding X.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Reductionism versus anti-reductionism remains.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:EPI:DISAGREEMENT",
+    "canonical_problem_id": "PQA54@0.1:EPI:DISAGREEMENT",
+    "aliases": [],
+    "domain": "EPI",
+    "family": "disagreement_underdetermination",
+    "native_problem": "Peer disagreement, conciliation and steadfastness.",
+    "native_reference": "Feldman and Warfield, Disagreement; Christensen, Epistemology of Disagreement.",
+    "proposed_answer": "Rational disagreement should preserve rivals, discriminators and underdetermination; consensus is never a truth bonus.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native peer disagreement, conciliation and steadfastness. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Feldman and Warfield, Disagreement; Christensen, Epistemology of Disagreement.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "How much peers should conciliate remains case-specific.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-006",
+      "TC-HAL-003"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:LIAR",
+    "canonical_problem_id": "PQA54@0.1:LOG:LIAR",
+    "aliases": [
+      "LEGACY:PD-08"
+    ],
+    "domain": "LOG",
+    "family": "liar_self_reference",
+    "native_problem": "Semantic self-reference, truth predicates and hierarchy.",
+    "native_reference": "Tarski, The Concept of Truth in Formalized Languages; Kripke, Outline of a Theory of Truth.",
+    "proposed_answer": "A liar construction may dissolve within a typed or hierarchical truth language when the offending self-application is excluded explicitly.",
+    "proposed_effect": "CONDITIONAL_RESOLUTION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native semantic self-reference, truth predicates and hierarchy. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Tarski, The Concept of Truth in Formalized Languages; Kripke, Outline of a Theory of Truth.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Revenge paradoxes and natural-language truth remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:RUSSELL",
+    "canonical_problem_id": "PQA54@0.1:LOG:RUSSELL",
+    "aliases": [
+      "FORMAL:RUSSELL-01",
+      "LEGACY:PD-08"
+    ],
+    "domain": "LOG",
+    "family": "russell_set_formation",
+    "native_problem": "Unrestricted comprehension and axiomatic set formation.",
+    "native_reference": "Russell, Principles of Mathematics; Zermelo, Investigations in the Foundations of Set Theory I.",
+    "proposed_answer": "The unrestricted formation rule fails; restricted comprehension or a declared type discipline preserves lawful set formation.",
+    "proposed_effect": "FORMAL_CORRECTION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native unrestricted comprehension and axiomatic set formation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Russell, Principles of Mathematics; Zermelo, Investigations in the Foundations of Set Theory I.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Choice among foundations remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:GODEL",
+    "canonical_problem_id": "PQA54@0.1:LOG:GODEL",
+    "aliases": [
+      "FORMAL:GODEL-01"
+    ],
+    "domain": "LOG",
+    "family": "incompleteness",
+    "native_problem": "Formal consistency, completeness and arithmetical truth.",
+    "native_reference": "Gödel, On Formally Undecidable Propositions (1931).",
+    "proposed_answer": "Incompleteness is retained as a nonclosure result for systems meeting its hypotheses; no outside glyph or observer completes the system.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native formal consistency, completeness and arithmetical truth. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Gödel, On Formally Undecidable Propositions (1931).",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Philosophical interpretations remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:SORITES",
+    "canonical_problem_id": "PQA54@0.1:LOG:SORITES",
+    "aliases": [],
+    "domain": "LOG",
+    "family": "vagueness_sorites",
+    "native_problem": "Vagueness, tolerance principles and borderline cases.",
+    "native_reference": "Eubulides' sorites tradition; Williamson, Vagueness.",
+    "proposed_answer": "Sorites arguments require an explicit scale, threshold rule and uncertainty region; this diagnoses hidden boundary assumptions without eliminating vagueness.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native vagueness, tolerance principles and borderline cases. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Eubulides' sorites tradition; Williamson, Vagueness.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "A theory of vague truth remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:REFERENCE",
+    "canonical_problem_id": "PQA54@0.1:LOG:REFERENCE",
+    "aliases": [],
+    "domain": "LOG",
+    "family": "reference_meaning",
+    "native_problem": "Sense, reference, causal naming and context.",
+    "native_reference": "Frege, On Sense and Reference; Kripke, Naming and Necessity.",
+    "proposed_answer": "Actual signs and uses can carry represented content through causal, inferential and social practices while sign, referent and interpretation stay distinct.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native sense, reference, causal naming and context. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Frege, On Sense and Reference; Kripke, Naming and Necessity.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "A complete metasemantics remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:LOG:RULE_FOLLOWING",
+    "canonical_problem_id": "PQA54@0.1:LOG:RULE_FOLLOWING",
+    "aliases": [],
+    "domain": "LOG",
+    "family": "rule_following_truth",
+    "native_problem": "Normativity of meaning and rule-following skepticism.",
+    "native_reference": "Wittgenstein, Philosophical Investigations; Kripke, Wittgenstein on Rules and Private Language.",
+    "proposed_answer": "Public correction, shared practice and counterfactual response constrain rule following without converting agreement into truth.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native normativity of meaning and rule-following skepticism. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Wittgenstein, Philosophical Investigations; Kripke, Wittgenstein on Rules and Private Language.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The normativity of meaning remains.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-003",
+      "TC-HAL-006"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:MIND_BODY",
+    "canonical_problem_id": "PQA54@0.1:MIN:MIND_BODY",
+    "aliases": [
+      "LEGACY:PD-14"
+    ],
+    "domain": "MIN",
+    "family": "mind_body",
+    "native_problem": "Dualism, physicalism, functionalism and realization.",
+    "native_reference": "Descartes, Meditations VI; Ryle, The Concept of Mind.",
+    "proposed_answer": "D5 content is realized through D4 carriers, separating content from carrier without establishing physicalism, dualism or a psychophysical mechanism.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native dualism, physicalism, functionalism and realization. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Descartes, Meditations VI; Ryle, The Concept of Mind.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The realization and consciousness relations remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:CONSCIOUSNESS",
+    "canonical_problem_id": "PQA54@0.1:MIN:CONSCIOUSNESS",
+    "aliases": [
+      "LEGACY:PD-13",
+      "LEGACY:PD-19"
+    ],
+    "domain": "MIN",
+    "family": "hard_problem",
+    "native_problem": "Phenomenal consciousness and the explanatory gap.",
+    "native_reference": "Chalmers, Facing Up to the Problem of Consciousness; Nagel, What Is It Like to Be a Bat?",
+    "proposed_answer": "Emergentism can type reports, carriers, access and behavior but presently supplies no mechanism that explains why processing is accompanied by experience.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native phenomenal consciousness and the explanatory gap. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Chalmers, Facing Up to the Problem of Consciousness; Nagel, What Is It Like to Be a Bat?",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The hard problem remains fully open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:INTENTIONALITY",
+    "canonical_problem_id": "PQA54@0.1:MIN:INTENTIONALITY",
+    "aliases": [],
+    "domain": "MIN",
+    "family": "intentionality",
+    "native_problem": "Aboutness, content and representation.",
+    "native_reference": "Brentano, Psychology from an Empirical Standpoint; Searle, Intentionality.",
+    "proposed_answer": "Present actual representations can be about absent or possible content; the content itself need not physically act.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native aboutness, content and representation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Brentano, Psychology from an Empirical Standpoint; Searle, Intentionality.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Naturalization of original intentionality remains.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:PERSONAL_IDENTITY",
+    "canonical_problem_id": "PQA54@0.1:MIN:PERSONAL_IDENTITY",
+    "aliases": [],
+    "domain": "MIN",
+    "family": "personal_identity",
+    "native_problem": "Personal identity, continuity, fission and survival.",
+    "native_reference": "Locke, Essay II.27; Parfit, Reasons and Persons.",
+    "proposed_answer": "Personal persistence requires a declared bundle of bodily, causal, psychological, narrative and authorized continuities, with fission debt preserved.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native personal identity, continuity, fission and survival. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Locke, Essay II.27; Parfit, Reasons and Persons.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "No single necessary and sufficient criterion is established.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:FREE_WILL",
+    "canonical_problem_id": "PQA54@0.1:MIN:FREE_WILL",
+    "aliases": [
+      "LEGACY:PD-11"
+    ],
+    "domain": "MIN",
+    "family": "free_will_determinism",
+    "native_problem": "Compatibilism, sourcehood, alternatives and determinism.",
+    "native_reference": "Hume, Enquiry VIII; Frankfurt, Alternate Possibilities and Moral Responsibility.",
+    "proposed_answer": "Operational agency can be assessed through represented options, available means, authorization, action and correction without settling ultimate sourcehood.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native compatibilism, sourcehood, alternatives and determinism. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hume, Enquiry VIII; Frankfurt, Alternate Possibilities and Moral Responsibility.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Ultimate freedom and desert remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:MIN:OTHER_MINDS",
+    "canonical_problem_id": "PQA54@0.1:MIN:OTHER_MINDS",
+    "aliases": [],
+    "domain": "MIN",
+    "family": "other_minds_ai",
+    "native_problem": "Other minds, behavioral evidence and machine mentality.",
+    "native_reference": "Turing, Computing Machinery and Intelligence; Nagel, What Is It Like to Be a Bat?",
+    "proposed_answer": "Other minds and AI mentality require convergent public evidence across behavior, structure, intervention and self-report; private phenomenology remains inaccessible.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native other minds, behavioral evidence and machine mentality. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Turing, Computing Machinery and Intelligence; Nagel, What Is It Like to Be a Bat?",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "No consciousness attribution is earned here.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-007",
+      "TC-AMR-014",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:CAUSATION",
+    "canonical_problem_id": "PQA54@0.1:SCI:CAUSATION",
+    "aliases": [],
+    "domain": "SCI",
+    "family": "causation",
+    "native_problem": "Counterfactual, interventionist, regularity and process accounts.",
+    "native_reference": "Hume, Enquiry VII; Pearl, Causality.",
+    "proposed_answer": "Causal claims should expose intervention, counterfactual, temporal and receipt structure rather than rest on correlation or narrative fit.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native counterfactual, interventionist, regularity and process accounts. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hume, Enquiry VII; Pearl, Causality.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Competing metaphysics of causation remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:LAWS",
+    "canonical_problem_id": "PQA54@0.1:SCI:LAWS",
+    "aliases": [],
+    "domain": "SCI",
+    "family": "laws_explanation",
+    "native_problem": "Laws, models, explanation and necessity.",
+    "native_reference": "Hempel and Oppenheim, Studies in the Logic of Explanation; van Fraassen, The Scientific Image.",
+    "proposed_answer": "Law, model, mechanism, constraint and explanation are different types whose adequacy must be tested in their native domain.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native laws, models, explanation and necessity. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hempel and Oppenheim, Studies in the Logic of Explanation; van Fraassen, The Scientific Image.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "What makes laws necessary remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:EMERGENCE",
+    "canonical_problem_id": "PQA54@0.1:SCI:EMERGENCE",
+    "aliases": [],
+    "domain": "SCI",
+    "family": "reduction_emergence",
+    "native_problem": "Reduction, multiple realization, emergence and universality.",
+    "native_reference": "Nagel, The Structure of Science; Anderson, More Is Different.",
+    "proposed_answer": "Emergence claims must distinguish construction, reduction, multiple realization, constraint and explanatory usefulness; missing reduction is not proof of strength.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native reduction, multiple realization, emergence and universality. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Nagel, The Structure of Science; Anderson, More Is Different.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Every crossing remains an empirical wager.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:MEASUREMENT",
+    "canonical_problem_id": "PQA54@0.1:SCI:MEASUREMENT",
+    "aliases": [
+      "FORMAL:MEAS-01",
+      "LEGACY:PD-12"
+    ],
+    "domain": "SCI",
+    "family": "quantum_measurement",
+    "native_problem": "Measurement, decoherence, outcomes and interpretation.",
+    "native_reference": "von Neumann, Mathematical Foundations of Quantum Mechanics; Bell, Against Measurement.",
+    "proposed_answer": "Quantum state, interaction, probability and actual record remain separate; the typing blocks conflation but selects no interpretation.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native measurement, decoherence, outcomes and interpretation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by von Neumann, Mathematical Foundations of Quantum Mechanics; Bell, Against Measurement.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Definite outcomes and Born weights remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:BELL",
+    "canonical_problem_id": "PQA54@0.1:SCI:BELL",
+    "aliases": [
+      "LEGACY:PD-25"
+    ],
+    "domain": "SCI",
+    "family": "bell_locality_realism",
+    "native_problem": "Bell inequalities, locality and hidden-variable assumptions.",
+    "native_reference": "Bell, On the Einstein Podolsky Rosen Paradox (1964).",
+    "proposed_answer": "Bell-type conclusions retain their exact assumptions; no Emergentist frame restores a conjunction experimentally ruled out.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native bell inequalities, locality and hidden-variable assumptions. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Bell, On the Einstein Podolsky Rosen Paradox (1964).",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Interpretation and viable assumption packages remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:SCI:PROBABILITY",
+    "canonical_problem_id": "PQA54@0.1:SCI:PROBABILITY",
+    "aliases": [],
+    "domain": "SCI",
+    "family": "probability_indeterminacy",
+    "native_problem": "Interpretations of probability and objective chance.",
+    "native_reference": "Kolmogorov, Foundations of the Theory of Probability; de Finetti, Theory of Probability.",
+    "proposed_answer": "Probability calculus, model-relative uncertainty, credence and physical chance are separate claims whose interpretation must be declared.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native interpretations of probability and objective chance. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Kolmogorov, Foundations of the Theory of Probability; de Finetti, Theory of Probability.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The ontology of chance remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-004",
+      "TC-AMR-005",
+      "TC-HAL-007",
+      "TC-HAL-009"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:IS_OUGHT",
+    "canonical_problem_id": "PQA54@0.1:ETH:IS_OUGHT",
+    "aliases": [
+      "LEGACY:PD-10"
+    ],
+    "domain": "ETH",
+    "family": "is_ought",
+    "native_problem": "Hume's is–ought distinction and bridge principles.",
+    "native_reference": "Hume, Treatise of Human Nature III.i.1.",
+    "proposed_answer": "RCAB supplies a constitutive ought only inside a disclosed reciprocal public-reason practice; it is not a value-free derivation.",
+    "proposed_effect": "CONDITIONAL_RESOLUTION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native hume's is–ought distinction and bridge principles. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hume, Treatise of Human Nature III.i.1.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The general is-ought problem and moral realism remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:MORAL_REALISM",
+    "canonical_problem_id": "PQA54@0.1:ETH:MORAL_REALISM",
+    "aliases": [],
+    "domain": "ETH",
+    "family": "moral_realism_error",
+    "native_problem": "Moral realism, constructivism, pluralism and error theory.",
+    "native_reference": "Moore, Principia Ethica; Mackie, Ethics: Inventing Right and Wrong.",
+    "proposed_answer": "Definition stability, reproducibility, world adequacy and stance-independent moral truth are distinct; only the first is presently internal to the model.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native moral realism, constructivism, pluralism and error theory. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Moore, Principia Ethica; Mackie, Ethics: Inventing Right and Wrong.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Moral realism remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:EUTHYPHRO",
+    "canonical_problem_id": "PQA54@0.1:ETH:EUTHYPHRO",
+    "aliases": [],
+    "domain": "ETH",
+    "family": "euthyphro_authority",
+    "native_problem": "Normative authority and the Euthyphro dilemma.",
+    "native_reference": "Plato, Euthyphro.",
+    "proposed_answer": "Authority cannot manufacture the Good merely by command; Emergentism separately chooses Justice and exposes its price.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native normative authority and the euthyphro dilemma. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Plato, Euthyphro.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Why Justice is ultimately binding remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:RIGHTS_OUTCOMES",
+    "canonical_problem_id": "PQA54@0.1:ETH:RIGHTS_OUTCOMES",
+    "aliases": [],
+    "domain": "ETH",
+    "family": "rights_consequences",
+    "native_problem": "Deontology, consequentialism, thresholds and trolley cases.",
+    "native_reference": "Kant, Groundwork; Bentham, Introduction to the Principles of Morals and Legislation.",
+    "proposed_answer": "Justice refusals constrain a bearer-complete Pareto ledger before aggregate outcomes are considered.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native deontology, consequentialism, thresholds and trolley cases. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Kant, Groundwork; Bentham, Introduction to the Principles of Morals and Legislation.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Thresholds, conflicts and tragic cases remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:POPULATION",
+    "canonical_problem_id": "PQA54@0.1:ETH:POPULATION",
+    "aliases": [],
+    "domain": "ETH",
+    "family": "aggregation_population",
+    "native_problem": "Population ethics, aggregation and the repugnant conclusion.",
+    "native_reference": "Parfit, Reasons and Persons, Part IV.",
+    "proposed_answer": "Bearer and horizon indexing prevents automatic laundering across populations but supplies no complete population ordering.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native population ethics, aggregation and the repugnant conclusion. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Parfit, Reasons and Persons, Part IV.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Nonidentity, aggregation and repugnant-conclusion debt remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ETH:RESPONSIBILITY",
+    "canonical_problem_id": "PQA54@0.1:ETH:RESPONSIBILITY",
+    "aliases": [],
+    "domain": "ETH",
+    "family": "responsibility_partiality",
+    "native_problem": "Responsibility, reactive attitudes, demandingness and special obligations.",
+    "native_reference": "Strawson, Freedom and Resentment; Williams, Persons, Character and Morality.",
+    "proposed_answer": "Responsibility should expose agency, means, authorization, foreseeability, consent, power and correction; sacrifice is never intrinsically good.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native responsibility, reactive attitudes, demandingness and special obligations. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Strawson, Freedom and Resentment; Williams, Persons, Character and Morality.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Desert, partiality and demandingness remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-016",
+      "TC-AMR-018",
+      "TC-HAL-022",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:LEGITIMACY",
+    "canonical_problem_id": "PQA54@0.1:POL:LEGITIMACY",
+    "aliases": [],
+    "domain": "POL",
+    "family": "legitimacy_authority",
+    "native_problem": "Consent, authorization, obligation and legitimacy.",
+    "native_reference": "Hobbes, Leviathan; Locke, Second Treatise of Government.",
+    "proposed_answer": "Legitimacy requires actual authority, bounded mandate, contest, consequence accounting and feasible Exit; coordination alone cannot authorize.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native consent, authorization, obligation and legitimacy. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hobbes, Leviathan; Locke, Second Treatise of Government.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Political obligation and nonconsensual authority remain contested.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:LIBERTY_EQUALITY",
+    "canonical_problem_id": "PQA54@0.1:POL:LIBERTY_EQUALITY",
+    "aliases": [],
+    "domain": "POL",
+    "family": "liberty_equality",
+    "native_problem": "Negative and positive liberty, equal standing and institutions.",
+    "native_reference": "Berlin, Two Concepts of Liberty; Rawls, A Theory of Justice.",
+    "proposed_answer": "Liberty is viable option and non-domination for named bearers, while equality constrains standing; neither collapses into one scalar.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native negative and positive liberty, equal standing and institutions. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Berlin, Two Concepts of Liberty; Rawls, A Theory of Justice.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Institutional trade-offs remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:DISTRIBUTION",
+    "canonical_problem_id": "PQA54@0.1:POL:DISTRIBUTION",
+    "aliases": [],
+    "domain": "POL",
+    "family": "distributive_justice",
+    "native_problem": "Equality, entitlement, desert, need and capability.",
+    "native_reference": "Rawls, A Theory of Justice; Nozick, Anarchy, State, and Utopia.",
+    "proposed_answer": "Contribution, support, need, entitlement, capability and burden should remain separate ledger dimensions before any defended aggregation.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native equality, entitlement, desert, need and capability. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Rawls, A Theory of Justice; Nozick, Anarchy, State, and Utopia.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "A complete distributive rule remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:COLLECTIVE_ACTION",
+    "canonical_problem_id": "PQA54@0.1:POL:COLLECTIVE_ACTION",
+    "aliases": [],
+    "domain": "POL",
+    "family": "collective_action",
+    "native_problem": "Collective action, commons and cooperation.",
+    "native_reference": "Olson, The Logic of Collective Action; Ostrom, Governing the Commons.",
+    "proposed_answer": "Persistent trace, repeated interaction, bounded sanctions, contest and receipts make cooperation auditable without assuming harmony.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native collective action, commons and cooperation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Olson, The Logic of Collective Action; Ostrom, Governing the Commons.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Institution design remains context-specific.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:POWER",
+    "canonical_problem_id": "PQA54@0.1:POL:POWER",
+    "aliases": [],
+    "domain": "POL",
+    "family": "power_oppression_extraction",
+    "native_problem": "Structural power, exploitation, discipline and domination.",
+    "native_reference": "Marx, Capital I; Foucault, Discipline and Punish.",
+    "proposed_answer": "Power is capacity to change options; extraction is a bearer-indexed transfer that hides or sustains uncompensated loss, and the two must not be equated.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native structural power, exploitation, discipline and domination. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Marx, Capital I; Foucault, Discipline and Punish.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Measurement and structural domination remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:POL:REPRESENTATION",
+    "canonical_problem_id": "PQA54@0.1:POL:REPRESENTATION",
+    "aliases": [],
+    "domain": "POL",
+    "family": "future_nonhuman_representation",
+    "native_problem": "Guardianship, proxy standing, future people and ecological representation.",
+    "native_reference": "Singer, Animal Liberation; Jonas, The Imperative of Responsibility; Stone, Should Trees Have Standing?",
+    "proposed_answer": "GEX makes guardianship a chosen, disclosed, conflict-aware, least-restrictive and reviewable mandate rather than inferred consent.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native guardianship, proxy standing, future people and ecological representation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Singer, Animal Liberation; Jonas, The Imperative of Responsibility; Stone, Should Trees Have Standing?",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Who may bind absent bearers remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-017",
+      "TC-HAL-021"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:PLURALISM",
+    "canonical_problem_id": "PQA54@0.1:AXI:PLURALISM",
+    "aliases": [],
+    "domain": "AXI",
+    "family": "value_pluralism",
+    "native_problem": "Value pluralism, incommensurability and tragic choice.",
+    "native_reference": "Berlin, The Crooked Timber of Humanity; Williams, Moral Luck.",
+    "proposed_answer": "Real value conflicts should remain a vector or Pareto frontier unless an aggregation contract is separately defended.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native value pluralism, incommensurability and tragic choice. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Berlin, The Crooked Timber of Humanity; Williams, Moral Luck.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Tragic choice and incomparability remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:BEAUTY",
+    "canonical_problem_id": "PQA54@0.1:AXI:BEAUTY",
+    "aliases": [],
+    "domain": "AXI",
+    "family": "beauty_objectivity",
+    "native_problem": "Aesthetic judgment, universality and taste.",
+    "native_reference": "Kant, Critique of Judgment; Hume, Of the Standard of Taste.",
+    "proposed_answer": "Beauty may be relationally stable across bearer, form, context and response without being reduced to preference or proved stance-independent.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native aesthetic judgment, universality and taste. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Kant, Critique of Judgment; Hume, Of the Standard of Taste.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Aesthetic objectivity remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:ART",
+    "canonical_problem_id": "PQA54@0.1:AXI:ART",
+    "aliases": [],
+    "domain": "AXI",
+    "family": "art_interpretation",
+    "native_problem": "Artworld, expression, intention and interpretation.",
+    "native_reference": "Danto, The Artworld; Gadamer, Truth and Method.",
+    "proposed_answer": "Art is an actual carrier that opens represented possibilities; creator, work, interpretation, institution and effect remain different bearers.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native artworld, expression, intention and interpretation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Danto, The Artworld; Gadamer, Truth and Method.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Definition and interpretation limits remain contested.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:MEANING",
+    "canonical_problem_id": "PQA54@0.1:AXI:MEANING",
+    "aliases": [
+      "LEGACY:PD-16"
+    ],
+    "domain": "AXI",
+    "family": "meaning_of_life",
+    "native_problem": "Meaning, purpose, value and finitude.",
+    "native_reference": "Camus, The Myth of Sisyphus; Nagel, The Absurd.",
+    "proposed_answer": "Meaning can be enacted orientation that survives consequence and correction for a finite bearer without requiring cosmic assignment.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native meaning, purpose, value and finitude. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Camus, The Myth of Sisyphus; Nagel, The Absurd.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Whether meaning is objective remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:SUFFERING",
+    "canonical_problem_id": "PQA54@0.1:AXI:SUFFERING",
+    "aliases": [],
+    "domain": "AXI",
+    "family": "suffering_absurdity",
+    "native_problem": "Suffering, pessimism, absurdity and practical response.",
+    "native_reference": "Schopenhauer, The World as Will and Representation; Camus, The Myth of Sisyphus.",
+    "proposed_answer": "Suffering must remain bearer-visible and may never be explained away by a totalizing harmony, score or future end.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native suffering, pessimism, absurdity and practical response. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Schopenhauer, The World as Will and Representation; Camus, The Myth of Sisyphus.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Why suffering exists and how to respond remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:AXI:DEATH",
+    "canonical_problem_id": "PQA54@0.1:AXI:DEATH",
+    "aliases": [
+      "LEGACY:PD-21"
+    ],
+    "domain": "AXI",
+    "family": "death_mortality",
+    "native_problem": "Deprivation, annihilation, fear and mortality.",
+    "native_reference": "Epicurus, Letter to Menoeceus; Nagel, Death.",
+    "proposed_answer": "Death ends an actual carrier and its option cone; traces may persist, but persistence of effects does not prove personal survival.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native deprivation, annihilation, fear and mortality. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Epicurus, Letter to Menoeceus; Nagel, Death.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The badness of death and afterlife remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-AMR-015",
+      "TC-HAL-017",
+      "TC-HAL-023"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:NECESSARY_BEING",
+    "canonical_problem_id": "PQA54@0.1:ULT:NECESSARY_BEING",
+    "aliases": [
+      "LEGACY:PD-09"
+    ],
+    "domain": "ULT",
+    "family": "necessary_being",
+    "native_problem": "Cosmological arguments, necessity and regress.",
+    "native_reference": "Aquinas, Summa Theologiae I q.2; Leibniz, Principles of Nature and Grace.",
+    "proposed_answer": "A declared Ground boundary stops one explanatory grammar without proving a necessary being or necessary existent.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native cosmological arguments, necessity and regress. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Aquinas, Summa Theologiae I q.2; Leibniz, Principles of Nature and Grace.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Cosmological arguments and ultimate explanation remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:EVIL",
+    "canonical_problem_id": "PQA54@0.1:ULT:EVIL",
+    "aliases": [
+      "LEGACY:PD-15"
+    ],
+    "domain": "ULT",
+    "family": "problem_of_evil",
+    "native_problem": "Logical and evidential problems of evil.",
+    "native_reference": "Lactantius, De Ira Dei; Plantinga, God, Freedom, and Evil.",
+    "proposed_answer": "Emergentism refuses to turn suffering into required harmony and supplies no theodicy.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native logical and evidential problems of evil. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Lactantius, De Ira Dei; Plantinga, God, Freedom, and Evil.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "The logical and evidential problems of evil remain.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:HIDDENNESS",
+    "canonical_problem_id": "PQA54@0.1:ULT:HIDDENNESS",
+    "aliases": [],
+    "domain": "ULT",
+    "family": "divine_hiddenness",
+    "native_problem": "Divine hiddenness and nonbelief.",
+    "native_reference": "Schellenberg, Divine Hiddenness and Human Reason.",
+    "proposed_answer": "Apophatic limits explain why a map may fail to contain its ground but do not explain nonresistant divine hiddenness.",
+    "proposed_effect": "OPEN",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native divine hiddenness and nonbelief. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Schellenberg, Divine Hiddenness and Human Reason.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Perfect love, revelation and nonbelief remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:PLURALISM",
+    "canonical_problem_id": "PQA54@0.1:ULT:PLURALISM",
+    "aliases": [],
+    "domain": "ULT",
+    "family": "religious_pluralism",
+    "native_problem": "Pluralism, exclusivism, inclusivism and translation.",
+    "native_reference": "Hick, An Interpretation of Religion.",
+    "proposed_answer": "Rosetta can compare structures across traditions while forbidding truth transfer from resemblance or convergence.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native pluralism, exclusivism, inclusivism and translation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Hick, An Interpretation of Religion.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Incompatible truth claims remain unresolved.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:MYSTICAL",
+    "canonical_problem_id": "PQA54@0.1:ULT:MYSTICAL",
+    "aliases": [],
+    "domain": "ULT",
+    "family": "mystical_ineffability",
+    "native_problem": "Mystical experience, ineffability, testimony and interpretation.",
+    "native_reference": "James, The Varieties of Religious Experience; Stace, Mysticism and Philosophy.",
+    "proposed_answer": "Mystical experience is actual evidence about a report and life but receives no automatic public truth bonus beyond its provenance and effects.",
+    "proposed_effect": "CLARIFICATION",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native mystical experience, ineffability, testimony and interpretation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by James, The Varieties of Religious Experience; Stace, Mysticism and Philosophy.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Its metaphysical interpretation remains open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  },
+  {
+    "schema_id": "emergentism/ProblemAdjudication.v1",
+    "problem_id": "PQA54@0.1:ULT:NONDUALITY",
+    "canonical_problem_id": "PQA54@0.1:ULT:NONDUALITY",
+    "aliases": [],
+    "domain": "ULT",
+    "family": "nonduality_selfhood",
+    "native_problem": "Nonduality, selfhood, emptiness and liberation.",
+    "native_reference": "Bṛhadāraṇyaka Upaniṣad; Śaṅkara, Brahma Sūtra Bhāṣya; Nāgārjuna, Mūlamadhyamakakārikā.",
+    "proposed_answer": "Dasein and situated dasein permit a nonseparation reading while preserving finite agency, difference and Exit; the reading is not proved by the atlas.",
+    "proposed_effect": "REFRAME",
+    "earned_effect": "NO_INCREMENT",
+    "result_state": "SELECTED",
+    "assumptions": [
+      "the native problem and premises are preserved",
+      "the proposal has not been independently reviewed"
+    ],
+    "strongest_rival": "The native nonduality, selfhood, emptiness and liberation. literature plus generic decomposition explains the issue more faithfully and with less imposed vocabulary.",
+    "native_frame_control": "Answer only within the native frame anchored by Bṛhadāraṇyaka Upaniṣad; Śaṅkara, Brahma Sūtra Bhāṣya; Nāgārjuna, Mūlamadhyamakakārikā.",
+    "generic_decomposition_control": "Separate terms, levels, carriers, warrants and residuals without using Emergentist vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find incremental clarification or resolution beyond both controls while every premise and residual remains visible.",
+    "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is absent or the proposal adds no value over both controls.",
+    "remaining_debt": "Nondual ontology and liberation claims remain open.",
+    "survivor_if_killed": "The native problem, references, public denominator and explicit debt remain.",
+    "linked_drop_ids": [
+      "TC-HAL-003",
+      "TC-HAL-023",
+      "TC-HAL-024"
+    ],
+    "native_reviews": []
+  }
+]

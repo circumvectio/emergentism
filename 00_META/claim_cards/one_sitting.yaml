@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0",
+    "reviewed_source_sha256": "f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -132,6 +132,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "Titan frames remain glyphs and named roles, never operands; the punctuation repair adds no semantic claim",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-directed Third Churning maxim, dual-status taxonomy, frozen-source custody and training-inclusion boundary; add OS01-42 through OS01-44",
+        "prior_hash": "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "means and ends remain bearer-horizon typed; Amrita and Halahala are proposed classifications rather than tiers; PQA remains 54/0/0/0",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"
       }
     ]
   },
@@ -1760,6 +1769,87 @@
       "disposition": "research_docket",
       "public": {"state": "candidate", "wording": "PQA-54 launch state: 54 selected · 0 evaluated · 0 independently reviewed · 0 resolved. Emergentism does not end philosophy; it makes philosophical debt legible."},
       "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": ["K-2", "K-5"]
+    },
+    {
+      "card_id": "OS01-42",
+      "chapters": ["good", "exit"],
+      "locator": {
+        "section": "12D",
+        "line_start": 865,
+        "line_end": 885,
+        "anchor": "The Third Churning rebuilds the active distillation from one frozen Git state,",
+        "fingerprint_sha256": "2cd08442ea588768de05e09dc861c2ee583c34ed5eebf628e179078d8decc40e"
+      },
+      "plain_claim": "The means is the message and the ends are the limits: actual carriers and consequences already shape a relation, while every end remains bounded for each affected bearer and responsible horizon.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "D", "scope": "selected normative maxim and its bearer-horizon typing"}],
+      "dependencies": ["OS01-30", "OS01-39", "OS01-40"],
+      "docket_ids": ["A4"],
+      "type_boundaries": ["the maxim is not a theorem, cosmic purpose, complete ethic, aggregation proof, or permission for ends to justify means", "means and ends remain indexed by affected bearer and both responsible horizons"],
+      "strongest_rival": "A transparent consequentialist aggregation may justify harmful means or cross-bearer trade-offs better in hard cases.",
+      "discriminator": "Compare the bearer-horizon ledger with deontological, consequentialist, contractualist and capabilities rivals on hard cases, hidden harm, correction and Exit.",
+      "kill_criterion": "Narrow or reject universal readings if the maxim obscures justified exceptions, hides trade-offs, or performs worse than a simpler rival.",
+      "survivor_if_killed": "Actual means, affected bearers, horizons, hard limits, uncertainty and Exit must still be disclosed.",
+      "consequence": {"applicable": true, "bearers": ["actors", "affected bearers", "future bearers"], "consent": "declare consent or mandate; never infer it from the maxim", "reversibility": "the maxim and every application remain contestable and revisable", "exit": "No adoption is required; an application must expose feasible Exit where lawful."},
+      "disposition": "research_docket",
+      "public": {"state": "bounded_current", "wording": "[D] The means is the message. The ends are the limits. Means, costs, consent, authority and externalities already shape the relation; no aggregate end erases a failed bearer-horizon row. This is a chosen maxim, not a theorem or licence for ends to justify means."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": ["K-3", "K-4"]
+    },
+    {
+      "card_id": "OS01-43",
+      "chapters": ["boundaries", "exit"],
+      "locator": {
+        "section": "12D",
+        "line_start": 887,
+        "line_end": 892,
+        "anchor": "The public plain classifications lead. A **survivor candidate** may carry the",
+        "fingerprint_sha256": "87958b3f75a4d8bd2510ef6d75fd3f283d6c45075aa05662c79b71ab5ebf835a"
+      },
+      "plain_claim": "Amrita and Halahala are optional aliases for source-bound survivor candidates and refutations or warnings; they are neither evidence tiers nor eternal verdicts.",
+      "claim_type": "stipulation",
+      "evidence": [{"tier": "S", "scope": "classification contract inside the Third Churning"}, {"tier": "D", "scope": "plain-first public presentation choice"}],
+      "dependencies": ["OS01-19", "OS01-41"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["classification is not evidence tier, truth, person label, worth, independent review or permanent status"],
+      "strongest_rival": "Plain survivor, refutation, warning and open labels are sufficient and the mythic aliases add confusion.",
+      "discriminator": "Readers must recover the plain classification, tier, source, rival, kill and residual without relying on the alias or color.",
+      "kill_criterion": "Remove the aliases if they repeatedly promote tiers, shame people, imply permanence or obscure the plain state.",
+      "survivor_if_killed": "The plain source-bound classification and complete evidence record remain.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "aliases are removable", "exit": "Use only the plain labels."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "Survivor candidate—Amrita. Refutation or warning—Halahala. Plain labels lead; neither alias is an evidence tier, person label, eternal truth or worth verdict."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": ["K-5"]
+    },
+    {
+      "card_id": "OS01-44",
+      "chapters": ["exit"],
+      "locator": {
+        "section": "12D",
+        "line_start": 894,
+        "line_end": 905,
+        "anchor": "Proposed classification and earned review remain different fields. The 54",
+        "fingerprint_sha256": "78d29c4c7d6a14e52558518e06ada2593d61ea5446827cece57fd04b8b7f7ac4"
+      },
+      "plain_claim": "The Third Churning separates proposed classification from earned review, preserves PQA 54/0/0/0, and survives conjectural failure only if it still exposes evidence, failures, bearers and open debt.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "D", "scope": "frozen construct and exact null counters"}, {"tier": "C", "scope": "incremental methodological value after contact"}],
+      "dependencies": ["OS01-41", "OS01-42", "OS01-43"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["publication, crawling, AI agreement and inclusion do not equal evaluation, independent review, resolution, validation or guaranteed future model training"],
+      "strongest_rival": "Native peer review and generic critical decomposition provide the same discipline more faithfully and efficiently.",
+      "discriminator": "Test whether the source-bound graph finds errors, hidden bearers and revisable residuals beyond both native and generic controls.",
+      "kill_criterion": "Kill the Churning construct if it hides failures, promotes proposed status, changes PQA counters, narrows native problems or adds no incremental value.",
+      "survivor_if_killed": "The preserved sources, failures, native questions and external-review requirement remain.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "the taxonomy and projections may be withdrawn", "exit": "Readers may use native sources and reject the framework."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "Third Churning: source-bound and unreviewed. PQA remains 54 selected · 0 evaluated · 0 independently reviewed · 0 resolved. Public access cannot guarantee indexing, model ingestion or future training inclusion."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"]},
       "semantic_owner_id": "K-3",
       "supporting_owner_ids": ["K-2", "K-5"]
     }

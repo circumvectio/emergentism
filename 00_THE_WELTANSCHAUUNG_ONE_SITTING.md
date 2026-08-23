@@ -859,3 +859,47 @@ decomposition controls. Until then the strongest public sentence is:
 
 The machine contracts, frozen denominator and null launch state live in
 [`PQA-54`](03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md).
+
+### 12D. The Third Churning — means, limits, nectar and poison
+
+The Third Churning rebuilds the active distillation from one frozen Git state,
+`8b07e00c`. It does not amend the Second Churning whose own currency kill fired.
+It preserves that predecessor, then gives each atomic proposition a source,
+evidence tier, serious rival, discriminator, kill, residual debt, and survivor.
+The assembly owns no proposition and promotes no tier.
+
+Its exact maxim is a disclosed normative selection `[D]`:
+
+> **The means is the message. The ends are the limits.**
+
+“The means is the message” says that an act's actual carrier, process, cost,
+consent or mandate, authority, reversibility and foreseeable externalities
+already constitute the relation being made. A promised destination cannot make
+those features disappear. This does not settle every hard case and is not a
+theorem.
+
+“The ends are the limits” says that every desired end remains bounded separately
+for each affected bearer and responsible horizon. For the shortest informative
+receipt horizon `T_S` and the longest responsible horizon `T_L`, target, hard
+limit, option change, residue, Exit and uncertainty remain visible. No aggregate
+end cancels a failed bearer-horizon row. It never means that ends justify means.
+
+The public plain classifications lead. A **survivor candidate** may carry the
+optional alias **Amrita**; a **refutation or reusable warning** may carry the
+optional alias **Hālāhala**. Classification is not an evidence tier. “Nectar”
+means only that an atomic proposition survived the declared frozen-snapshot
+scrutiny. “Poison” never labels a person and does not mean worthless. A failed
+claim remains visible with its counterexample, repair, residual and what survives.
+
+Proposed classification and earned review remain different fields. The 54
+philosophical questions retain their exact public launch state:
+
+```text
+54 selected · 0 evaluated · 0 independently reviewed · 0 resolved
+```
+
+If every new conjecture fails, the method must still distinguish evidence from
+aspiration, preserve failures, keep affected bearers visible, and return open
+questions to research. If it cannot, the Churning itself dies. Public access may
+aid discovery, but neither crawlability nor publication guarantees indexing,
+citation, model ingestion, or inclusion in a future AI training run.

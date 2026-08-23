@@ -1,0 +1,353 @@
+{
+  "schema_id": "emergentism/ParadoxInventory.v1",
+  "frozen_source_commit": "8b07e00c563f338923b1928d3469c862d44c1e07",
+  "counts": {
+    "formal": 9,
+    "legacy": 21,
+    "synthesis": 4,
+    "legacy_dissolved": 0
+  },
+  "rows": [
+    {
+      "inventory_id": "FORMAL:ZENO-01",
+      "kind": "FORMAL",
+      "title": "Zeno-style finite traversal",
+      "canonical_problem_id": "LEGACY:PD-04",
+      "proposed_state": "FORMAL_CORRECTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "A metaphysics of motion is not implied by the series result.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:REAL-01",
+      "kind": "FORMAL",
+      "title": "Why 0.999... equals 1",
+      "canonical_problem_id": "FORMAL:REAL-01",
+      "proposed_state": "FORMAL_CORRECTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "No ontological conclusion follows.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:FIELD-01",
+      "kind": "FORMAL",
+      "title": "Division by zero",
+      "canonical_problem_id": "FORMAL:FIELD-01",
+      "proposed_state": "DIAGNOSTIC",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "A projective or other extension may be useful for a declared task.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:LIMIT-01",
+      "kind": "FORMAL",
+      "title": "The form 0/0 in a limit",
+      "canonical_problem_id": "FORMAL:LIMIT-01",
+      "proposed_state": "DIAGNOSTIC",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "The particular limit remains to be computed.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:HILBERT-01",
+      "kind": "FORMAL",
+      "title": "Hilbert's hotel",
+      "canonical_problem_id": "FORMAL:HILBERT-01",
+      "proposed_state": "REFRAME",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "No conclusion about physical hotels or ontology follows.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:CANTOR-01",
+      "kind": "FORMAL",
+      "title": "Countability and uncountability",
+      "canonical_problem_id": "FORMAL:CANTOR-01",
+      "proposed_state": "FORMAL_CORRECTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "Cardinality supplies no theorem about metaphysical Ground.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:RUSSELL-01",
+      "kind": "FORMAL",
+      "title": "Russell's paradox",
+      "canonical_problem_id": "PQA54@0.1:LOG:RUSSELL",
+      "proposed_state": "FORMAL_CORRECTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "Broader semantic self-reference questions remain separate.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:GODEL-01",
+      "kind": "FORMAL",
+      "title": "Incompleteness",
+      "canonical_problem_id": "PQA54@0.1:LOG:GODEL",
+      "proposed_state": "UNRESOLVED_QUESTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "Foundational and philosophical interpretation remains contested.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "FORMAL:MEAS-01",
+      "kind": "FORMAL",
+      "title": "Quantum measurement",
+      "canonical_problem_id": "PQA54@0.1:SCI:MEASUREMENT",
+      "proposed_state": "UNRESOLVED_QUESTION",
+      "earned_state": "NOT_INDEPENDENTLY_REVIEWED",
+      "residual": "Interpretation, measurement and quantum-gravity questions remain open.",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"
+    },
+    {
+      "inventory_id": "LEGACY:PD-04",
+      "kind": "LEGACY",
+      "title": "Zeno",
+      "canonical_problem_id": "LEGACY:PD-04",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_04_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-05",
+      "kind": "LEGACY",
+      "title": "The One and the Many",
+      "canonical_problem_id": "LEGACY:PD-05",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_05_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-06",
+      "kind": "LEGACY",
+      "title": "Ship of Theseus",
+      "canonical_problem_id": "LEGACY:PD-06",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_06_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-07",
+      "kind": "LEGACY",
+      "title": "Fermi paradox",
+      "canonical_problem_id": "LEGACY:PD-07",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_07_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-08",
+      "kind": "LEGACY",
+      "title": "Liar paradox",
+      "canonical_problem_id": "LEGACY:PD-08",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_08_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-09",
+      "kind": "LEGACY",
+      "title": "Leibniz necessary being",
+      "canonical_problem_id": "LEGACY:PD-09",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_09_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-10",
+      "kind": "LEGACY",
+      "title": "Is-ought",
+      "canonical_problem_id": "LEGACY:PD-10",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-11",
+      "kind": "LEGACY",
+      "title": "Free will and determinism",
+      "canonical_problem_id": "LEGACY:PD-11",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_11_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-12",
+      "kind": "LEGACY",
+      "title": "Measurement problem",
+      "canonical_problem_id": "LEGACY:PD-12",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_12_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-13",
+      "kind": "LEGACY",
+      "title": "Hard problem",
+      "canonical_problem_id": "LEGACY:PD-13",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_13_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-14",
+      "kind": "LEGACY",
+      "title": "Mind-body",
+      "canonical_problem_id": "LEGACY:PD-14",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_14_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-15",
+      "kind": "LEGACY",
+      "title": "Problem of evil",
+      "canonical_problem_id": "LEGACY:PD-15",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_15_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-16",
+      "kind": "LEGACY",
+      "title": "Meaning of life",
+      "canonical_problem_id": "LEGACY:PD-16",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_16_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-18",
+      "kind": "LEGACY",
+      "title": "Extraction paradox",
+      "canonical_problem_id": "LEGACY:PD-18",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_18_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-19",
+      "kind": "LEGACY",
+      "title": "Hard problem of consciousness",
+      "canonical_problem_id": "LEGACY:PD-19",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_19_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-20",
+      "kind": "META",
+      "title": "Philosophical implications",
+      "canonical_problem_id": "LEGACY:PD-20",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_20_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-21",
+      "kind": "LEGACY",
+      "title": "Problem of death",
+      "canonical_problem_id": "LEGACY:PD-21",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_21_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-22",
+      "kind": "META",
+      "title": "Scientific implications",
+      "canonical_problem_id": "LEGACY:PD-22",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-23",
+      "kind": "META",
+      "title": "The completion",
+      "canonical_problem_id": "LEGACY:PD-23",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_23_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-24",
+      "kind": "META",
+      "title": "The third unveiling",
+      "canonical_problem_id": "LEGACY:PD-24",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_24_*.md"
+    },
+    {
+      "inventory_id": "LEGACY:PD-25",
+      "kind": "LEGACY",
+      "title": "Bell and local realism",
+      "canonical_problem_id": "LEGACY:PD-25",
+      "proposed_state": "HISTORICAL_CLAIM",
+      "earned_state": "0_OF_21_DISSOLVED",
+      "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+      "source_path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_25_*.md"
+    },
+    {
+      "inventory_id": "SYNTH:INDUCTION",
+      "kind": "SYNTHESIS",
+      "title": "Induction",
+      "canonical_problem_id": "PQA54@0.1:EPI:INDUCTION",
+      "proposed_state": "CLARIFICATION",
+      "earned_state": "SELECTED",
+      "residual": "Projectibility and circularity remain.",
+      "source_path": "03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/prompts/questions.json"
+    },
+    {
+      "inventory_id": "SYNTH:EUTHYPHRO",
+      "kind": "SYNTHESIS",
+      "title": "Euthyphro",
+      "canonical_problem_id": "PQA54@0.1:ETH:EUTHYPHRO",
+      "proposed_state": "REFRAME",
+      "earned_state": "SELECTED",
+      "residual": "Ultimate normativity remains.",
+      "source_path": "03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/prompts/questions.json"
+    },
+    {
+      "inventory_id": "SYNTH:MEANS-MESSAGE",
+      "kind": "SYNTHESIS",
+      "title": "Means and relation",
+      "canonical_problem_id": "SYNTH:MEANS-MESSAGE",
+      "proposed_state": "SELECTED_MAXIM",
+      "earned_state": "UNREVIEWED",
+      "residual": "Hard cases remain.",
+      "source_path": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"
+    },
+    {
+      "inventory_id": "SYNTH:ENDS-LIMITS",
+      "kind": "SYNTHESIS",
+      "title": "Ends and limits",
+      "canonical_problem_id": "SYNTH:ENDS-LIMITS",
+      "proposed_state": "SELECTED_MAXIM",
+      "earned_state": "UNREVIEWED",
+      "residual": "Aggregation hard cases remain.",
+      "source_path": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"
+    }
+  ],
+  "boundary": "Inventory and proposed effects are not earned resolution; aliases deduplicate problems without erasing their histories."
+}

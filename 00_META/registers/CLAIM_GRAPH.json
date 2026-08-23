@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 48,
+      "primary_card_count": 51,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1817,6 +1817,141 @@
       "to": "A6"
     },
     {
+      "from": "OS01-42",
+      "kind": "depends_on",
+      "to": "OS01-30"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "depends_on",
+      "to": "OS01-39"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "depends_on",
+      "to": "OS01-40"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-42",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "depends_on",
+      "to": "OS01-19"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "depends_on",
+      "to": "OS01-41"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "supported_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-43",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "depends_on",
+      "to": "OS01-41"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "depends_on",
+      "to": "OS01-42"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "depends_on",
+      "to": "OS01-43"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "supported_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-44",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -2983,8 +3118,8 @@
     }
   ],
   "metrics": {
-    "edges": 590,
-    "nodes": 124
+    "edges": 617,
+    "nodes": 127
   },
   "nodes": [
     {
@@ -3033,7 +3168,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 48,
+      "primary_card_count": 51,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -3361,6 +3496,21 @@
     },
     {
       "id": "OS01-41",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-42",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-43",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-44",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

@@ -1887,6 +1887,124 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-42",
+      "chapters": [
+        "exit",
+        "good"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-30",
+        "OS01-39",
+        "OS01-40"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A4"
+      ],
+      "evidence_tiers": [
+        "D"
+      ],
+      "locator": {
+        "anchor": "The Third Churning rebuilds the active distillation from one frozen Git state,",
+        "fingerprint_sha256": "2cd08442ea588768de05e09dc861c2ee583c34ed5eebf628e179078d8decc40e",
+        "line_end": 885,
+        "line_start": 865,
+        "section": "12D"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-43",
+      "chapters": [
+        "boundaries",
+        "exit"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-19",
+        "OS01-41"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "D",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The public plain classifications lead. A **survivor candidate** may carry the",
+        "fingerprint_sha256": "87958b3f75a4d8bd2510ef6d75fd3f283d6c45075aa05662c79b71ab5ebf835a",
+        "line_end": 892,
+        "line_start": 887,
+        "section": "12D"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-3",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-5"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-44",
+      "chapters": [
+        "exit"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-41",
+        "OS01-42",
+        "OS01-43"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "D"
+      ],
+      "locator": {
+        "anchor": "Proposed classification and earned review remain different fields. The 54",
+        "fingerprint_sha256": "78d29c4c7d6a14e52558518e06ada2593d61ea5446827cece57fd04b8b7f7ac4",
+        "line_end": 905,
+        "line_start": 894,
+        "section": "12D"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-3",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-5"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -3111,9 +3229,9 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 87,
-    "conjecture_cards": 34,
-    "public_bounded_current": 27,
+    "cards": 90,
+    "conjecture_cards": 35,
+    "public_bounded_current": 29,
     "works_with_cards": 9
   },
   "owners": [
