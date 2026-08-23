@@ -36,6 +36,7 @@ evidence_tier: "[I] for scope routing; [B] only for source-owner boundary receip
 - `27_ULTIMATUM_GAME_STUDY_DESIGN.md`
 - `28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md`
 - `29_ULTIMATUM_PREREGISTRATION_SKELETON.md`
+- `30_DHARMA_YUDDHA_CIVIC_INQUIRY_HOLD_2026_08_23.md`
 
 ## Use This Lane For
 
