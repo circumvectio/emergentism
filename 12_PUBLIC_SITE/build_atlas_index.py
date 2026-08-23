@@ -47,7 +47,7 @@ OVERVIEW = [
     ("start", "Start and practice", ["", "plainly", "dasein", "practice", "established", "record", "read", "book", "about", "exit"]),
     ("unfolding", "The Unfolding · D0–D6", ["0", "1", "2", "3", "4", "5", "6"]),
     ("method", "Map and method", ["dimensions", "axioms", "check", "rosetta", "ecology", "journey", "fable", "compass"]),
-    ("participate", "Open research", ["f5", "map", "lab", "record/eub-1", "contribute"]),
+    ("participate", "Open research", ["f5", "map", "lab", "record/eub-1", "questions", "ethics", "record/pqa-54", "contribute"]),
 ]
 
 COLLECTIONS = [("discoveries", "Discoveries")]

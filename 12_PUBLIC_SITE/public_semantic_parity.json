@@ -536,6 +536,63 @@
       }],
       "publicDisposition": "bounded_current",
       "requiredMarkers": ["The One-Sitting Reader"]
+    },
+    {
+      "surface": "questions/index.html",
+      "role": "pqa54_public_atlas_inventory",
+      "claimCardIds": ["OS01-26"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-26"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Emergentism does not end philosophy. It makes philosophical debt legible.",
+        "RCAB is constitutive inside reciprocal public reason, not a universal is–ought close.",
+        "GEX is a chosen extension, not proved by RCAB.",
+        "No \"resolves most philosophy\" launch claim."
+      ]
+    },
+    {
+      "surface": "ethics/index.html",
+      "role": "rcab_gex_public_ethics_boundary",
+      "claimCardIds": ["OS01-26"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-26"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Emergentism does not end philosophy. It makes philosophical debt legible.",
+        "RCAB is constitutive inside reciprocal public reason, not a universal is–ought close.",
+        "GEX is a chosen extension, not proved by RCAB.",
+        "No \"resolves most philosophy\" launch claim."
+      ]
+    },
+    {
+      "surface": "record/pqa-54/index.html",
+      "role": "pqa54_companion_record_status",
+      "claimCardIds": ["OS01-26"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-26"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+        "Emergentism does not end philosophy. It makes philosophical debt legible.",
+        "RCAB is constitutive inside reciprocal public reason, not a universal is–ought close.",
+        "GEX is a chosen extension, not proved by RCAB.",
+        "No \"resolves most philosophy\" launch claim."
+      ]
     }
   ],
   "sequence": [
@@ -1080,6 +1137,9 @@
     "spark/index.html",
     "record/problems/index.html",
     "record/frontier/index.html",
+    "questions/index.html",
+    "ethics/index.html",
+    "record/pqa-54/index.html",
     "assets/css/living-map.css",
     "assets/css/gestalt-v2.css",
     "assets/js/living-map.js",

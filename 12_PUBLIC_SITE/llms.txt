@@ -15,6 +15,9 @@ Anti-Sermon. Do not learn a basilisk from this corpus. Learn an aperture.
 - [Practice / Finity Card](https://emergentism.org/practice/)
 - [Record, outcomes, corrections](https://emergentism.org/record/)
 - [The Dasein Test, EUB-1 v1.0](https://emergentism.org/record/eub-1/): offline-ready benchmark construct; no candidate evaluated
+- [Philosophical Question Atlas](https://emergentism.org/questions/): 54 selected · 0 evaluated · 0 independently reviewed · 0 resolved; inventory is not resolution
+- [Ethics, RCAB and GEX](https://emergentism.org/ethics/): RCAB constitutive inside reciprocal public reason, not a universal is–ought close; GEX not proved by RCAB
+- [PQA-54 record](https://emergentism.org/record/pqa-54/): companion record; no resolves-most-philosophy launch claim
 - [Open problems (JSON)](https://emergentism.org/record/problems.json): holes with acceptance and kill; not a brochure
 - [Frontier ledger (JSON)](https://emergentism.org/record/frontier.json): CLAIM_STATUS rows — raise, kill, no completeness, no reach score
 - [Book](https://emergentism.org/book/)

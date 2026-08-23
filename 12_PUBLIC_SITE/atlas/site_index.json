@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 42,
+ "total": 45,
  "tree": [
   {
    "key": "start",
@@ -162,6 +162,18 @@
     {
      "href": "/record/eub-1/",
      "title": "The Dasein Test — EUB-1 v1.0"
+    },
+    {
+     "href": "/questions/",
+     "title": "Philosophical debt, kept visible"
+    },
+    {
+     "href": "/ethics/",
+     "title": "A bridge that does not close the is–ought gap"
+    },
+    {
+     "href": "/record/pqa-54/",
+     "title": "The Philosophical Question Atlas"
     },
     {
      "href": "/contribute/",
