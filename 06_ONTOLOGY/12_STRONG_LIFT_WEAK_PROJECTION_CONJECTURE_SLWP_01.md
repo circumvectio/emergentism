@@ -17,6 +17,8 @@ evidence_neighbor:
   - "../05_COSMOLOGY/03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md"
   - "../05_COSMOLOGY/03_FORMAL_SYSTEM/58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md"
   - "../03_METHODOLOGY/02_THE_PAPERS/PAPER_O_STRONG_WEAK_EMERGENCE_D5.md"
+related:
+  - "SLWP_FIBER_ASYMMETRY_2026_08_23.md"
 ---
 
 # SLWP-01 — Burri Strong-Lift / Weak-Projection Conjecture
@@ -221,3 +223,20 @@ internalizes paths as members; the Titans stay outside every extension).
 **Ownership of the directional conjecture stays HERE (SLWP-01).** §5b lends an
 instance and a grading, never a second owner; BIL-01 remains the lemma both
 lean on.
+
+## Cross-reference — Fiber-Asymmetry Lemma (2026-08-23)
+
+[`SLWP_FIBER_ASYMMETRY_2026_08_23.md`](SLWP_FIBER_ASYMMETRY_2026_08_23.md)
+records `FAL-01`: if `U_n ∘ s_n = id` and some fiber of `U_n` is nontrivial,
+then `s_n ∘ U_n ≠ id`. Nontrivial fibers plus selector dependence are
+asymmetric reconstruction. The earned report tag is
+`PROJECTION_ASYMMETRY_PROVEN`. The tag
+`ONTOLOGICAL_STRONG_EMERGENCE_PROVEN` is forbidden here and there.
+
+Separate evidence slots remain fail-closed:
+`projection_loss` (earned only in declared models, including BIL-01),
+`computational_opacity`, `ontological_irreducibility`, and
+`downward_intervention` (the last three unearned). `0·∞` and division
+limits stay path-sensitive; ordinary arithmetic, extended reals, and
+limits are not the same type. Ownership of SLWP-01 stays here.
+`PA-SLWP-01` remains `PARTIAL / BRIDGE NOT ESTABLISHED`.

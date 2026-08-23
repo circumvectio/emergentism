@@ -51,6 +51,11 @@ commitments stop. The Ground remains prior to every map, including this one.
   — `SLWP-01`, a `[C]` proposal and proof program. BIL-01 is its `[A]`
   mathematical neighbor, not proof of its D-level generalization; it is not
   `W19` and is not in `CLAIM_STATUS.yaml`.
+- [Fiber-Asymmetry Lemma](SLWP_FIBER_ASYMMETRY_2026_08_23.md) — `FAL-01`,
+  dated 2026-08-23. Proves reconstruction asymmetry for a declared
+  section/retraction with nontrivial fibers. Report tag
+  `PROJECTION_ASYMMETRY_PROVEN` only; never
+  `ONTOLOGICAL_STRONG_EMERGENCE_PROVEN`. Subordinate to SLWP-01.
 - [Conjectures and proof attempts](../00_META/conjectures_and_proof_attempts/README.md)
   — corpus-wide non-owning pointer manifest; semantic and validation ownership
   remain distributed.
