@@ -19,6 +19,11 @@ ROOT = HERE.parents[1]
 DATA = HERE / "data"
 FROZEN = "8b07e00c563f338923b1928d3469c862d44c1e07"
 OWNER_DIRECTION = "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"
+CONTRACTS = {
+    "drop": HERE / "contracts" / "ChurningDrop.v1.schema.json",
+    "problem": HERE / "contracts" / "ProblemAdjudication.v1.schema.json",
+    "corpus": HERE / "contracts" / "ThirdChurningCorpus.v1.schema.json",
+}
 
 SOURCES = {
     "one": ("00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0"),  # pragma: allow-secret
@@ -49,6 +54,48 @@ def verify_sources() -> None:
         actual = hashlib.sha256(payload).hexdigest()
         if actual != expected:
             raise ValueError(f"source hash mismatch for {path}: {actual} != {expected}")
+
+
+def verify_contracts() -> None:
+    expected = {
+        "drop": "ChurningDrop.v1",
+        "problem": "ProblemAdjudication.v1",
+        "corpus": "ThirdChurningCorpus.v1",
+    }
+    for key, path in CONTRACTS.items():
+        schema = json.loads(path.read_text(encoding="utf-8"))
+        if (
+            schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema"
+            or schema.get("title") != expected[key]
+            or schema.get("type") != "object"
+            or schema.get("additionalProperties") is not False
+            or not isinstance(schema.get("required"), list)
+            or not isinstance(schema.get("properties"), dict)
+        ):
+            raise ValueError(f"malformed or weakened source contract: {path.name}")
+        if not set(schema["required"]).issubset(schema["properties"]):
+            raise ValueError(f"required field without property contract: {path.name}")
+
+
+def validate_top_level(instance: dict, schema_path: Path, *, record_id: str) -> None:
+    """Enforce the closed top-level contract without an external dependency."""
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    required = set(schema["required"])
+    properties = schema["properties"]
+    missing = required - set(instance)
+    unknown = set(instance) - set(properties)
+    if missing or (schema.get("additionalProperties") is False and unknown):
+        raise ValueError(
+            f"{record_id}: contract fields fail (missing={sorted(missing)}, "
+            f"unknown={sorted(unknown)})"
+        )
+    for field, contract in properties.items():
+        if field not in instance:
+            continue
+        if "const" in contract and instance[field] != contract["const"]:
+            raise ValueError(f"{record_id}: {field} violates const")
+        if "enum" in contract and instance[field] not in contract["enum"]:
+            raise ValueError(f"{record_id}: {field} violates enum")
 
 
 def source_ref(key: str, claim_ids: list[str] | None = None) -> dict:
@@ -402,6 +449,11 @@ def packet_outputs() -> dict[Path, str]:
         "ai_assistance": "AI assistance disclosed for research, adversarial review, formalization, implementation and editing; no AI is an independent reviewer or coauthor.",
         "external_states": {"deployed": False, "doi_archive": False, "github_release": False, "training_inclusion_guaranteed": False},
     }
+    for row in drops:
+        validate_top_level(row, CONTRACTS["drop"], record_id=row["drop_id"])
+    for row in problems:
+        validate_top_level(row, CONTRACTS["problem"], record_id=row["problem_id"])
+    validate_top_level(envelope, CONTRACTS["corpus"], record_id=envelope["release_id"])
     return {
         DATA / "churning_drops.v1.json": safe_json(drops),
         DATA / "problem_adjudications.v1.json": json.dumps(problems, ensure_ascii=False, indent=2) + "\n",
@@ -430,6 +482,7 @@ def main() -> int:
     args = parser.parse_args()
     try:
         verify_sources()
+        verify_contracts()
         outputs = packet_outputs()
     except (OSError, ValueError, subprocess.CalledProcessError, json.JSONDecodeError) as exc:
         print(f"THIRD CHURNING SOURCE: FAIL\n- {exc}")

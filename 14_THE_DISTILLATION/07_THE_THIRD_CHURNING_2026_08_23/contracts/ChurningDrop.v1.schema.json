@@ -19,7 +19,7 @@
     "mythic_alias": {"enum": ["AMRITA", "HALAHALA", "NONE"]},
     "classification": {"enum": ["SURVIVOR_CANDIDATE", "POISON_WARNING", "OPEN"]},
     "lifecycle": {"enum": ["QUEUED", "SOURCE_BOUND", "REVIEWED", "ADJUDICATED_SURVIVOR", "ADJUDICATED_POISON", "KILLED", "UNDERDETERMINED"]},
-    "evidence_tier": {"enum": ["[A]", "[B]", "[S]", "[I]", "[D]", "[C]", "[A/S]", "[I/C]", "[S/I/C]"]},
+    "evidence_tier": {"enum": ["[A]", "[B]", "[S]", "[I]", "[D]", "[C]", "[A/S]", "[D/C]", "[I/C]", "[S/I/C]"]},
     "proposition": {"type": "string", "minLength": 12},
     "scope": {"type": "string", "minLength": 4},
     "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 2}},
@@ -80,6 +80,6 @@
         "receipts": {"type": "array", "maxItems": 0}
       }
     },
-    "revision_history": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["date", "event"], "properties": {"date": {"type": "string", "format": "date"}, "event": {"type": "string"}}, "additionalProperties": false}
+    "revision_history": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["date", "event"], "properties": {"date": {"type": "string", "format": "date"}, "event": {"type": "string"}}, "additionalProperties": false}}
   }
 }
