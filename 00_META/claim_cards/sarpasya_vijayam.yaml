@@ -5,7 +5,7 @@
     "path": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
     "lifecycle": "legacy",
     "role": "historical_lineage",
-    "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436"
+    "reviewed_source_sha256": "78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2"
   },
   "cards": [
     {
@@ -18,7 +18,7 @@
         "line_start": 1,
         "line_end": 2215,
         "anchor": "# Before You Read",
-        "fingerprint_sha256": "8f7e282e2c4b5a8bc4d2d11af299e51c5f937f051aece4643110a676c0025ba3"
+        "fingerprint_sha256": "a7f69537df0c5f7fbdfd38f082e160148fd9da8ad719f976601aafb116e6ebe1"
       },
       "plain_claim": "Institutional capture is a testable change in function, cost, correction or exit, not a universal hidden-intent story.",
       "claim_type": "conjecture",
@@ -76,7 +76,7 @@
         "line_start": 2216,
         "line_end": 4977,
         "anchor": "# Chapter 5: The Equation",
-        "fingerprint_sha256": "f60b7b0cc220399c2a8e7c8c444b1ef6a82ba28d122b6fa9b39f01f8dc0d787e"
+        "fingerprint_sha256": "44bcd445106a504d667ce2475031c489da4e74b85959ca7c4faaebbc380350d3"
       },
       "plain_claim": "The historical mathematical and symbolic apparatus must be separated into native results, selected interpretation and archived type failures.",
       "claim_type": "stipulation",
