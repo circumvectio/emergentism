@@ -740,7 +740,7 @@ def record_main(
     <p class="g2-kicker">Custody · method · null-state record</p>
     <h1>Third Churning custody record</h1>
     <p class="g2-page-hero__lede">This record binds the frozen source state, exact ordering, schemas, predecessor receipt, proposed classifications, unresolved PQA denominator, and public projections without promoting any proposition.</p>
-    <div class="g2-page-meta"><span>{esc(envelope['release_id'])}</span><span>Record ceiling [D/C]</span><span>22 survivor candidates</span><span>29 refutations and warnings</span><span>{esc(PQA_STATUS)}</span></div>
+    <div class="g2-page-meta"><span>{esc(envelope['release_id'])}</span><span>Record boundary [D] · conjectures [C]</span><span>22 survivor candidates</span><span>29 refutations and warnings</span><span>{esc(PQA_STATUS)}</span></div>
     <div class="g2-corpus-actions"><a class="g2-button g2-button--primary" href="#custody">Inspect custody</a><a class="g2-button" href="/churn/">Read the ledger</a><a class="g2-button" href="/churn/manifest.json">Machine manifest</a></div>
   </header>
 
