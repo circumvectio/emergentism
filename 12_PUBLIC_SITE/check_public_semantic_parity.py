@@ -532,7 +532,9 @@ REQUIRED_SURFACE_CARDS = {
 REQUIRED_SURFACE_MARKERS = {
     "index.html": {
         "A worldview for finite beings", "Emergentism explains the architecture of Being",
-        "Dasein is the coherent whole", "four quadrant transformations",
+        "Dasein is the coherent whole", "Three roles. No scalar rank.",
+        "Finity · [I]", "Soul Loop · [S/I]", "⊙ ≠ 1_T",
+        "Related placement is not identity.", "four quadrant transformations",
         "Frame one decision", "comparative benefit untested",
         "One present, three explanations", "one of 24 possible assignments",
         "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
@@ -980,7 +982,15 @@ EXPECTED_G7_TRANSFERS = (
 )
 EXPECTED_G7_FRAMES = (
     {"id": "shiva-dissolve", "plain": "dissolution", "alias": "Śiva", "glyph": "•", "axisPosition": "bottom", "signature": "−Φ₅; −V₄"},
-    {"id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu", "glyph": "⊙", "axisPosition": "centre", "valueMarker": "1_T", "signature": "ΔΦ₅≈0; ΔV₄≈0"},
+    {
+        "id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu",
+        "glyph": "⊙",
+        "glyphMeaning": "finite-realm glyph used for the preservation-frame projection",
+        "axisPosition": "centre", "valueMarker": "1_T",
+        "valueMarkerMeaning": "selected centre-unit marker",
+        "glyphEqualsValueMarker": False,
+        "signature": "ΔΦ₅≈0; ΔV₄≈0",
+    },
     {"id": "brahma-create", "plain": "creation", "alias": "Brahmā", "glyph": "○", "axisPosition": "top", "signature": "+Φ₅; +V₄"},
 )
 EXPECTED_BURRISPHERE_G7 = {

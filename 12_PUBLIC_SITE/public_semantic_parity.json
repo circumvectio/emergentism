@@ -312,6 +312,11 @@
         "A worldview for finite beings",
         "Emergentism explains the architecture of Being",
         "Dasein is the coherent whole",
+        "Three roles. No scalar rank.",
+        "Finity · [I]",
+        "Soul Loop · [S/I]",
+        "⊙ ≠ 1_T",
+        "Related placement is not identity.",
         "four quadrant transformations",
         "Frame one decision",
         "comparative benefit untested",
@@ -1062,7 +1067,7 @@
           ],
           "frames": [
             {"id": "shiva-dissolve", "plain": "dissolution", "alias": "Śiva", "glyph": "•", "axisPosition": "bottom", "signature": "−Φ₅; −V₄"},
-            {"id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu", "glyph": "⊙", "axisPosition": "centre", "valueMarker": "1_T", "signature": "ΔΦ₅≈0; ΔV₄≈0"},
+            {"id": "vishnu-preserve", "plain": "preservation", "alias": "Viṣṇu", "glyph": "⊙", "glyphMeaning": "finite-realm glyph used for the preservation-frame projection", "axisPosition": "centre", "valueMarker": "1_T", "valueMarkerMeaning": "selected centre-unit marker", "glyphEqualsValueMarker": false, "signature": "ΔΦ₅≈0; ΔV₄≈0"},
             {"id": "brahma-create", "plain": "creation", "alias": "Brahmā", "glyph": "○", "axisPosition": "top", "signature": "+Φ₅; +V₄"}
           ],
           "burrisphereG7": {
