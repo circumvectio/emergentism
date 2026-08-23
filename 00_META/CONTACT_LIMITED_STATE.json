@@ -5,12 +5,12 @@
   "roadmap": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
   "baseline_rule": "Every baseline or lifecycle-classification change requires a new repo-relative dated receipt_ref; changing a count never changes the underlying truth.",
   "receipt_namespace": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
     "source_index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json",
     "source_checker": "09_TOOLS/01_SCRIPTS/check_receipt_citations.py",
     "target_universe": "Live-lane Markdown filenames with a 2-3 digit receipt prefix, excluding the 00_* index/readme convention.",
     "target_files": 321,
-    "prefixed_markdown_including_00_convention": 333,
+    "prefixed_markdown_including_00_convention": 334,
     "unique_prefixes": 195,
     "reused_prefixes": 101,
     "legacy_heuristic_dangerous_prefixes": 94,
@@ -20,13 +20,13 @@
       "path_set_canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
       "duplicate_group_canonicalization": "SHA-256 over canonical UTF-8 JSON mapping each reused prefix to its lexicographically sorted repo-relative paths, with object keys sorted and separators ',' and ':'.",
       "citable_targets_sha256": "34388cb58bd0d244b6b0b7b68f24a04bfdcf7f822aee21026df4f84f2aa114a1",
-      "prefixed_including_00_sha256": "f02b445a16a436fd288f7515969fedf0f8e13c2c5de65e25dfd127db4ad23763",
+      "prefixed_including_00_sha256": "462f5b3bc06874c129ffdcc7e8f0311c3515eafefeaaf470b7af6f89b7a3ef94",
       "duplicate_groups_sha256": "b2f3a82ece74a09a2e5ae75d07b93ae2b3c97bbde07c32d46974de140f271c66"
     },
     "dangling_citations": 0
   },
   "public_lifecycle": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
     "universe_definition": "One artifact per deployable HTML file after .vercelignore, plus the withheld artifact registry; classification is exclusive and frozen means a matching noindex response-header rule.",
     "sources": [
       "12_PUBLIC_SITE/public_semantic_parity.json",
@@ -37,10 +37,10 @@
     ],
     "deploy_ignore_contract": {
       "semantics": "Gitignore-style unanchored directory patterns ending in slash match that directory component at any depth.",
-      "present_html": 422,
-      "ignored_html": 208,
-      "deployable_html": 214,
-      "withheld_artifacts_added_back": 196,
+      "present_html": 424,
+      "ignored_html": 207,
+      "deployable_html": 217,
+      "withheld_artifacts_added_back": 195,
       "matcher_conformance": {
         "state": "CLOSED_LOCAL_PARITY",
         "pattern": "_archive/",
@@ -68,9 +68,9 @@
         "unclassified"
       ],
       "withheld_alias_contract": {
-        "artifacts": 196,
-        "raw_aliases": 586,
-        "canonical_aliases": 195,
+        "artifacts": 195,
+        "raw_aliases": 583,
+        "canonical_aliases": 194,
         "redirect_target": "/historical-boundary/",
         "required_response": "noindex,nofollow",
         "evidence": [
@@ -84,8 +84,8 @@
           "current",
           "provisional"
         ],
-        "routes": 54,
-        "routes_sha256": "a55314fb5b1a24a4cde30f7044285ed5c163e4c794cbc098c0b5f0a979b65d9b",
+        "routes": 57,
+        "routes_sha256": "98a3d43b645c71f347be37470348ce6a78a7634245ae409f679c8b188d22016e",
         "evidence": [
           "12_PUBLIC_SITE/public_semantic_parity.json",
           "12_PUBLIC_SITE/sitemap.xml",
@@ -153,7 +153,6 @@
             "ground/00-the-ontology-of-being/index.html",
             "ground/00-the-syncretic-map/index.html",
             "ground/01-apophatic-ground-and-field-structure/index.html",
-            "halahala/index.html",
             "log-realignment/index.html",
             "memetic/01-memes-hardware-software-conflict/index.html",
             "memetic/02-memes-hardware-software-evolution/index.html",
@@ -376,29 +375,29 @@
     },
     "membership_hash_contract": {
       "canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
-      "universe_sha256": "a883a6b0a33d9ae46dc9ccebb187353f863d4e45d5b10b20b3c187260872236c",
+      "universe_sha256": "dedf5184c91e76fd984c32ca9177275e56dff80cfb79d7a5ded57124a5accb47",
       "category_sha256": {
-        "current_sha256": "dec74d7f66b14efaf11f164e3a7c27b716ca03860ec526a4f7f21c5eb12dd0e9",
-        "provisional_sha256": "d549e227d8ed8139a7d699eb4f802f8e152e6e1027ec0fff97241b5a47492bcb",
+        "current_sha256": "11f4b25912e7ff964877295b8bcbf56fa6ef37aca784cc6b3144cccf45698bee",
+        "provisional_sha256": "082477aaec12722a63c3654d051028e91469d570383f3b04fbc9005dbebb33dc",
         "frozen_sha256": "49b3e2da9daf2170a3d61eb72ef670ad3f7196232a0372e243f813a6f9fed459",
-        "withheld_sha256": "a181fe693d6f1ca6e7a9836996924a295409c16ac1d1a6ff212ef1e2232664d3",
+        "withheld_sha256": "d182d36af45cc6bbf85c3b5370497e7f19dfe7fc7b38f3485c916c854322998b",
         "infrastructure_sha256": "fed7a7ebeffdb903282f11320e9ebf2291efa582ec0a5cdafcf16d6bfd52bfc9",
         "unclassified_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     },
     "counts": {
-      "total": 410,
-      "current": 50,
-      "provisional": 4,
+      "total": 412,
+      "current": 54,
+      "provisional": 3,
       "frozen": 92,
-      "withheld": 262,
+      "withheld": 261,
       "infrastructure": 2,
       "unclassified": 0
     },
     "unclassified": []
   },
   "claim_disposition": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
     "source": "00_META/claim_status/CLAIM_STATUS.yaml",
     "lifecycle_rows_total": 50,
     "lifecycle_rows_sha256": "ce17af307ae2c754f033427f3b112a487b168d42ee86399f24c3afa3b9f2744b",
@@ -591,7 +590,7 @@
     }
   },
   "owner_held": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "debts": [
       {
@@ -605,7 +604,7 @@
           "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md"
       },
       {
         "id": "OWNER_GATE_OPEN_TOPOLOGY",
@@ -620,12 +619,12 @@
           "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md"
       }
     ]
   },
   "world_contact": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "state": "OPEN",
     "accepted_evidence_records": 0,

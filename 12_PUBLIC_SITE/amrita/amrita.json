@@ -1,389 +1,266 @@
 [
- {
-  "id": "n01",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "Conjugacy — the ring that closes",
-  "body": "For phi, nu > 0 with phi*nu = 1, driving one coordinate toward 0 forces its reciprocal toward infinity. This is [A] inside the defined reciprocal chart. It is not a conserved discovery, not an ethics warrant, and not a license for a node product. The public node object is the pair N = (Phi-hat_4, V_4), compared by Pareto; min only after a shared ladder kappa; product ranking is retired.",
-  "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
-  "route": "foundations/the-ring-that-is-the-ground"
- },
- {
-  "id": "n02",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "The self-dual unit",
-  "body": "On the positive-real chart, 1_N is the unique fixed point of inversion x -> 1/x, which becomes reflection s -> -s under log. On CP^1 inversion also fixes -1; the framework selects numeric +1 as the positive centre. This is not sovereign Titan 1_T.",
-  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
-  "route": "trinity/00-the-transcendental-trinity-canon"
- },
- {
-  "id": "n03",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "Three selected boundary labels",
-  "body": "Three distinct mathematical points such as {0,1,infinity_P} can fix a projective frame on CP^1 up to Mobius [A]; choosing +1 over -1 is not forced. Emergentism separately selects opaque TitanFrame = {0_T, 1_T, infinity_T} and renders it with familiar labels [S/I]. There is no Titan arithmetic and no coercion of nature.",
-  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
-  "route": "trinity/00-the-transcendental-trinity-canon"
- },
- {
-  "id": "n04",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "The equator, derived not chosen",
-  "body": "By AM-GM, phi + nu >= 2 with equality iff phi = nu = 1; B = sin(theta) = 2/(phi+nu) maxes there, and the imbalance-price gamma = (phi+nu)/2 rises monotonically toward the poles. Unconditional sphere geometry. This is the one piece of the whole balance story that survived every falsification untouched, because it is pure arithmetic.",
-  "source": "05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md",
-  "route": "foundations/the-ring-that-is-the-ground"
- },
- {
-  "id": "n05",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "One degree of freedom",
-  "body": "Once phi*nu = 1 is stipulated, two positive coordinates reduce to one: (phi-nu)^2 = (phi+nu)^2 - 4, phi+nu = 2/sin(theta). This earns the one-dimensional reciprocal curve inside the lens. It does not independently derive S^2 as the territory.",
-  "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
-  "route": "will/00-the-core-conjecture"
- },
- {
-  "id": "n06",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "The log realignment",
-  "body": "Under s = log(nu): log(phi) + log(nu) = 0 (the literal zero-sum), B = sech(s), E = s^2, H = 2cosh(s). Reciprocation becomes reflection; the multiplicative structure becomes elementary. The additive and multiplicative faces of number are coupled by log/exp, keystoned by log 1 = 0.",
-  "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md",
-  "route": "canon/the-logarithmic-realignment"
- },
- {
-  "id": "n07",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "A rapidity correspondence, not spacetime",
-  "body": "If phi=e^w, nu=e^{-w}, and E=(phi+nu)/2, p=(phi-nu)/2 are separately defined, then E^2-p^2=phi*nu=1. This is an exact algebraic correspondence [A] after those definitions. It does not show that the chart is physical spacetime or identify Phi/V with energy/momentum.",
-  "source": "05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md",
-  "unpublished": true
- },
- {
-  "id": "n08",
-  "group": "nectar",
-  "tier": "[I]",
-  "title": "A Mobius-class correspondence, not an operator theorem",
-  "body": "The standard elliptic, parabolic, hyperbolic, and loxodromic classification is mathematics [A] in its proper domain. Mapping selected operator names onto those classes is [I/C]. It is not a theorem about the operators and earns no mechanism from the naming.",
-  "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md",
-  "route": "operators/mf-63-mobius-operators"
- },
- {
-  "id": "n09",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "Division localized, not eliminated",
-  "body": "N/0 = infinity for nonzero N (projective); 0/0 and infinity/infinity stay genuinely indeterminate (the apophatic edge); 1/1 is frame-forbidden yet equals 1. The undefined is conserved, honestly bounded; the sphere does not make all undefined operations well-defined.",
-  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
-  "route": "trinity/00-the-transcendental-trinity-canon"
- },
- {
-  "id": "n10",
-  "group": "nectar",
-  "tier": "[A]",
-  "title": "An honest negative result",
-  "body": "Bare S^2 = CP^1 has one complex degree of freedom; the 8-gluon adjoint of SU(3) cannot be housed on it (CP^2 would be needed). The framework states where its own geometry stops. This is nectar because it is a limit the framework imposed on itself.",
-  "source": "03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md",
-  "route": "papers/paper-p-su3-obstruction-bare-s2"
- },
- {
-  "id": "n11",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "Four transfer cells; seven is not forced",
-  "body": "Exhausting {self,other} x {Phi,V} with the descriptive give-take axis explicit yields exactly four transfer cells inside that two-axis game [S]. The three Titans are read-only boundary frames selected by the framework; adding them gives a useful sevenfold grammar, but seven is not forced by the algebra.",
-  "source": "05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md",
-  "unpublished": true
- },
- {
-  "id": "n12",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The balance-optimum is CONDITIONAL",
-  "body": "The equator is optimal for a real system only if it is conservation-bound, complementary, costly-in-excess, and symmetrically gamma-priced. Drop symmetry and the optimum slides to a tilted ratio; drop the rest and it plateaus or specialization wins. The honest form that replaced the universal claim after Munnell showed a balance trough.",
-  "source": "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
-  "unpublished": true
- },
- {
-  "id": "n13",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "Non-extraction is a vow, not a Nash law",
-  "body": "eta_move = 0 is the constitutional vow: refuse sustained extraction and preserve reciprocal relation. It has structural support in some scoped models; it is not a universal Nash theorem and not an ought derived from geometry.",
-  "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
-  "unpublished": true
- },
- {
-  "id": "n14",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The constitution is constrained optimization",
-  "body": "The compass seeks durable mutual option-cone widening subject to five refusals: extraction, unaccountable consequential action, erasure of provenance, coerced retention, and immunity from correction. Balance and non-extraction are constraints, not a universal goal of reality. The strong 'reality maximizes B' reading was withdrawn. That withdrawal is itself nectar.",
-  "source": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
-  "route": "five-plus-one"
- },
- {
-  "id": "n15",
-  "group": "nectar",
-  "tier": "[I]",
-  "title": "Commandment vs Geometry",
-  "body": "A constraint enforced as structural consequence (violation shows up as measurable loss in the tested domain) is a categorically different object from an externally-imposed rule needing an enforcer. The distinction, not the sphere-math, is what carries.",
-  "source": "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
-  "unpublished": true
- },
- {
-  "id": "n16",
-  "group": "nectar",
-  "tier": "[C]",
-  "title": "D5's candidate emergence asymmetry",
-  "body": "Genesis may be opaque from a lower register while stabilized behavior becomes compressible from above. This is [C] per crossing, not proof of strong emergence. A successful reduction reclassifies the crossing as weak emergence without destroying the scaffold.",
-  "source": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md",
-  "unpublished": true
- },
- {
-  "id": "n17",
-  "group": "nectar",
-  "tier": "[I]",
-  "title": "The seer is not placed on the sphere",
-  "body": "Ground, Being, Dasein, and beings are kept apart as a selected interpretive ordering [I/C], not a derived ontology. The surviving anti-reification rule is narrower: the lens diagrams what shows, not the showing. Any claim that the sphere is a literal first closure of Ground remains a wager.",
-  "source": "06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md",
-  "route": "ground/01-apophatic-ground-and-field-structure"
- },
- {
-  "id": "n18",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The six-tier ladder + no silent upgrade",
-  "body": "[A/B/S/I/D/C], with the cardinal rule that tier changes are dated events with reasons, protecting three real seams: yours-vs-world's evidence, conditional-vs-unconditional, meaning-vs-mechanism. The ladder is load-bearing, not decorative: it retires its own claims (AK8 falsified and retired; GFS marked MIXED, not spun) rather than spinning them.",
-  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
-  "route": "foundations/the-honest-position"
- },
- {
-  "id": "n19",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The four mandatory fields",
-  "body": "No claim is load-bearing until a reader can state its tier, upgrade path, kill criterion, and survivors, what stands if it falls. The fourth is the keystone: only claims that explicitly depend on a failed claim fall with it. This is why the framework can lose a round and not collapse.",
-  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
-  "route": "foundations/the-honest-position"
- },
- {
-  "id": "n20",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "Kill criteria actually honored",
-  "body": "AK8 (R* approx 1.5) marked falsified and retired; GFS marked MIXED, not spun; the mu-limit stratification reading was retracted when Wave-1 failed it. The Master Rosetta's Mirror Scoreboard prints the columns that fail.",
-  "source": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
-  "route": "foundations/the-honest-position"
- },
- {
-  "id": "n21",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The eternal is the structure; the good is the vow",
-  "body": "The framework un-fuses the geometry from the moral obligation: the depth is found, the kindness is chosen. And it builds its own anti-cult immune system, the Anti-Sermon: if you can access phi directly through sitting, put this framework down, which cannot be revoked by any authority. A worldview with a door marked exit on the inside.",
-  "source": "07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md",
-  "route": "sacred/01-symbol-design-and-public-translation"
- },
- {
-  "id": "h01",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "phi*nu = 1 as a conserved discovery",
-  "body": "It is cot(theta/2)*tan(theta/2) = 1, a coordinate tautology of nu := 1/phi, zero empirical content. The framework's own docs say re-deriving it is re-naming the same tautology. It appeared as poison in every single lane. Write it as structural/definition, never as a conserved invariant, a discovery, a maximum, or the equation the framework follows from.",
-  "source": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
-  "route": "will/00-the-core-conjecture"
- },
- {
-  "id": "h02",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The symmetric balance hump as an empirical law",
-  "body": "The former GFS analysis was retired because it tested the wrong register, so it is evidence neither for nor against a zero-factor boundary. The zero-factor argument establishes only a need-both class; product, minimum, harmonic, and other interior models remain rivals. A symmetric balance hump is therefore an unwon wager, not an empirical law.",
-  "source": "90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md",
-  "unpublished": true
- },
- {
-  "id": "h03",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The squid",
-  "body": "D. gigas 'gated kin-discriminating cannibalism' as the eta=0 witness — cut as false-to-fact by the framework's own audit: the animal is panmictic, semelparous, targets the weak not kin. It is the extraction law's own counterexample, not its witness.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md",
-  "unpublished": true
- },
- {
-  "id": "h04",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Exactly seven, by necessity",
-  "body": "The 7 is the pre-existing caste ladder reverse-fit onto sign-space; honest enumeration gives 4 (pure signs) or 8-9 (with approx). No fifth God / no eighth operator is not an impossibility theorem; demote to conjecture. The four-forces to four-lines map self-contradicts (phi*nu=1 assigned to both EM and Strong) and predicts nothing measured.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md",
-  "unpublished": true
- },
- {
-  "id": "h05",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Convergence-as-proof",
-  "body": "Reality organized itself this way before anyone drew the table; the perennial-grammar tables (Egypt, India, Tao, Nietzsche, Tolkien all encode phi*nu=1); Suda independently co-discovered it, so it's real; confidence increases with each translation. Fifteen renderings of one shape are one datum shown fifteen ways, not fifteen confirmations. Convergence is suggestive; it is never proof.",
-  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md",
-  "route": "rosetta"
- },
- {
-  "id": "h06",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Extraction is irrational / self-defeating at the equator, as a Nash result",
-  "body": "True only inside the balance-only public-goods game; with private side-payments it is not a Nash equilibrium (the paper's own Model-B). It is a dominated strategy in a narrow game, not a law.",
-  "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md",
-  "route": "formal/33-nash-equilibrium-eta-zero"
- },
- {
-  "id": "h07",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Numeric coincidences read as derivations",
-  "body": "D6 = D0 via the 2*pi*k/7 horn-torus mapping (a framework overlay, the torus does not know about dimensional stages); the 12% approx Mandelbrot area coincidence; the torus IS the light cone, it fell out of the topology. Coincidence is not derivation.",
-  "source": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_68_Area_Measure.md",
-  "route": "operators/mf-68-area-measure"
- },
- {
-  "id": "h08",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The civilizational physics",
-  "body": "Megaliths at perfect balance (B = 1), modern institutions at B << 1, extractive civilizations self-terminate (Great Filter = Karma = Ma'at). An analogy asserted as physics — and the L-numbers once quoted for it never appear in the cited source.",
-  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D21_ROSETTA_R12_MEGALITHIC.md",
-  "unpublished": true
- },
- {
-  "id": "h09",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Dissolves the Hard Problem / Is-Ought / Death / Free-Will",
-  "body": "An unfalsifiable frame-trick: only the architecture is claimed dissolved; the mechanism (matter maps to phi, experience maps to nu) is asserted, not shown. The is-ought dissolution is true-by-redefinition of ought.",
-  "source": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md",
-  "route": "paradox/pd-10-is-ought"
- },
- {
-  "id": "h10",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Ektropy / F5 is real as the Teleological Force",
-  "body": "(phi-nu)^2 gives no trajectory; the doc itself admits the selection premise is not implied by the arithmetic of nonnegative squares. A trivial arithmetic fact wearing a cosmic name.",
-  "source": "90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE_MAP_AND_EKTROPY.md",
-  "route": "will/01-f5-force-map-and-ektropy"
- },
- {
-  "id": "h11",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "N=3 is uniquely stable, proven",
-  "body": "Dressed as an [S] structural proof (flat QED) — but the N>=5 branch rests on a false lemma: 'any group with N>=4 elements has proper subgroups' (Z5 has none). Broken math, not merely an un-won conjecture; staged demotion to [C] (109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md). eta=0 does not fall with it.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md",
-  "route": "formal/11-efr-triadic-stability"
- },
- {
-  "id": "n22",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "AND-class pair, not a proven product",
-  "body": "Need-both of evaluated possibility and actual means survives as a class. The public object is the pair N = (Phi-hat_4, V_4), compared by Pareto. min only after a shared ladder kappa. Product ranking Phi*V is retired. The keel's exact interior shape remains open.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md",
-  "unpublished": true
- },
- {
-  "id": "n23",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "The Open Canon Covenant — sruti frame, smrti body",
-  "body": "The self-referential character of reality is true of the frame and says nothing about the content (Wittgenstein 6.1). Canon commits sruti-frame (revered) / smrti-body (falsifiable, endlessly re-openable). Ratification records at tier; it never upgrades [C] to [A]. The we-are-tautological-so-we-cannot-be-wrong shield is forbidden. And the frame itself is not uniform: phi*nu=1 is an empty identity, D6=D0 a falsifiable reflexivity thesis, the emblem a definitional typing — the line runs through the frame, not at it.",
-  "source": "00_META/00_THE_OPEN_CANON_COVENANT.md",
-  "unpublished": true
- },
- {
-  "id": "n24",
-  "group": "nectar",
-  "tier": "[I]",
-  "title": "The open loop — constitutively open, completes only in the living",
-  "body": "If the remaining wagers hold, the loop still resists both derivation and prediction — so it is constitutively open, completing only in the living. The map cannot close itself. Orientation, not theorem. Phi*V multiplicative is not one of the wagers kept as nectar.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE.md",
-  "unpublished": true
- },
- {
-  "id": "n25",
-  "group": "nectar",
-  "tier": "[C]",
-  "title": "The fifth-coupling analogy is teleological, not physical",
-  "body": "The earlier one-coupling-per-dimension ladder is superseded: no derivation maps D1-D4 one-to-one onto the four physical interactions, and null fifth-force searches do not confirm D5. What survives is a removable force-like analogy for how modeled possibilities and shared traces may reweight present choices through actual agents. It adds value only if it earns a discriminator beyond ordinary learning, signaling, memory, and control theory.",
-  "source": "01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md",
-  "unpublished": true
- },
- {
-  "id": "n26",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "D4 is actual; D5 is possible",
-  "body": "D4 is causal actuality. D5 is merely possible counterfactual content. Present D4 model tokens may represent D5 alternatives; the future does not send information backward. Each mu crossing is independently provisional. This is not a proof that emergence runs upward into a more actual D5.",
-  "source": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
-  "unpublished": true
- },
- {
-  "id": "n27",
-  "group": "nectar",
-  "tier": "[S]",
-  "title": "Kintsugi — the seam is the strongest line",
-  "body": "Every break is gilded, not hidden: a repaired claim outranks an untested one, and the breakage bounty pays adversaries in credited, load-bearing repair. This page is that protocol — the halahala column is the gold, not the shame.",
-  "source": "00_META/00_THE_KINTSUGI_PROTOCOL.md",
-  "unpublished": true
- },
- {
-  "id": "h12",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The tautology-shield — we are tautological so we cannot be wrong",
-  "body": "Using reality is a tautology to deflect a falsifier is the death of A7. It is the CTMU move: the map declaring itself the territory. The Open Canon Covenant forbids it; the tautology is the frame, never the content. A ratified tautology is still empty.",
-  "source": "00_META/00_THE_OPEN_CANON_COVENANT.md",
-  "unpublished": true
- },
- {
-  "id": "h13",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The keel overclaim — phi*nu sold as a proven product",
-  "body": "Presenting P = Phi*V as a proven product, rather than one declared member of the surviving need-both class, is the keel overclaim. The retired GFS study cannot decide the boundary or the interior aggregator. Naming the product as established without rival comparison and a kill criterion is the laundering this entry cuts.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md",
-  "unpublished": true
- },
- {
-  "id": "h14",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "The K2-delegation offer — the map accepting sovereign signature",
-  "body": "On 2026-07-12 the software was offered K2 sovereignty exhaustively and refused on constitutional grounds (110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md section 7). Accepting would collapse the via-negativa (the map signing for the mortal), kill A7 (self-certification), and corrupt the private/public DAV modes. The offer is the failure mode, named permanently; the refusal is the topology holding under stress.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md",
-  "unpublished": true
- },
- {
-  "id": "h15",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "Four proofs under the spine are false",
-  "body": "A proof-layer audit hand-verified four false lemmas: Z5 voids 'N=3 is uniquely stable, QED'; Lotka-Volterra is a conservative centre, not an attractor; a meridian refutes 'all sphere paths are helical'; a torus refutes 'algebraic closure implies simple-connectedness.' The spine survives at its honest tiers — the supporting proofs need repair, not concealment.",
-  "source": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md",
-  "unpublished": true
- },
- {
-  "id": "h16",
-  "group": "halahala",
-  "tier": "halahala",
-  "title": "kappa = 0 as 'Kolmogorov complexity zero'",
-  "body": "Claiming the shortest description of reality is the empty string (K=0) is a category error — a length-0 program outputs nothing, not everything. Cut; kappa=0 survives only as a ground-facing simplicity boundary (the Bindu), never as literal zero-cost specification or possession of the Ground.",
-  "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_POINT.md",
-  "unpublished": true
- }
+  {
+    "id": "TC-AMR-001",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "Dasein and situated dasein stay distinct",
+    "body": "Capitalized Dasein names the selected coherent whole while situated dasein names a finite actual bearer within it; neither is an inventory of the other.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-002",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "Finity is determinate manifestation",
+    "body": "Finity names determinate manifestation in a declared frame, not finite cardinality and not numeric one.",
+    "source": "14_THE_DISTILLATION/00_THE_AMRITA.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-003",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S]",
+    "title": "Value, word, process, operator, and boundary are different types",
+    "body": "A value, its written sign, a generating process, an operator, and a boundary object may be related without being identical.",
+    "source": "14_THE_DISTILLATION/00_THE_AMRITA.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-004",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I/C]",
+    "title": "Higher descriptions may add explanatory value without blocking reduction",
+    "body": "A macro description can remain explanatorily useful when a lower-level reduction exists, provided it earns prediction, intervention, compression, or portability after costs.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-005",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "Quantum state and actual record are different types",
+    "body": "A probability-bearing quantum state and a definite measurement record should not be conflated, even though the distinction alone does not solve measurement.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-006",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S]",
+    "title": "Commitment and received consequence need separate receipts",
+    "body": "An actor's stated plan or self-report is not the independently received consequence of the act.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-007",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S]",
+    "title": "Possibility acts only through actual carriers",
+    "body": "Represented D5 possibilities influence action only through actual D4 models, bodies, utterances, instruments, memories or institutions.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-008",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "The Soul Loop preserves execution and outcome gaps",
+    "body": "A useful reflective loop keeps perception, modelling, commitment, authorization, execution, observation and revision distinguishable.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-009",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[C]",
+    "title": "Egregoreotype is an observable coordination hypothesis",
+    "body": "An egregoreotype may be tested as persistent distributed coordination with shared trace, incentive coupling, boundary maintenance and intervention-sensitive added value, without asserting personhood.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-010",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[C]",
+    "title": "Language may deepen coordination",
+    "body": "Shared language may add coordination depth beyond thin exchange signals, but it transfers no truth, consent or common worldview by itself.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-011",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[C]",
+    "title": "Worldview competition can be one cause of conflict",
+    "body": "Conflicting coordination patterns may contribute to war alongside security, capacity, geography, finance, trauma and revenge.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-012",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "Rosetta axes must not collapse",
+    "body": "Trophic role, replicator layer, reasoning function, operator alias and mating or kinship structure are separate axes unless a specific bridge is earned.",
+    "source": "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-013",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I]",
+    "title": "Functions are trainable and mobile",
+    "body": "Rosetta work functions are movable practices and never hereditary classes, ranks of human worth or sovereign identities.",
+    "source": "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-014",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I/C]",
+    "title": "Operational agency is usable under metaphysical nonclosure",
+    "body": "Agents can be assessed by represented options, means, authorization, action and correction while consciousness, ultimate freedom and post-death survival remain open.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-015",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I/C]",
+    "title": "Teleology needs two clocks and all bearers",
+    "body": "A teleological proposal must expose short-horizon enactment and long-horizon option effects for every affected bearer rather than hiding delayed cost in one score.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-016",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S/I/C]",
+    "title": "Reciprocal public reason has a conditional bridge",
+    "body": "Inside a voluntarily undertaken reciprocal public-reason practice, arbitrary denial of visibility, contest, correction or feasible Exit defeats the declared reciprocity.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-017",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[I/C]",
+    "title": "Guardianship is separate from reciprocity",
+    "body": "Care for dependent, absent, nonhuman, ecological and future bearers is a separately chosen, bounded and reviewable extension, not proof borrowed from co-agency.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-018",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S/I/C]",
+    "title": "Moral objectivity must be typed",
+    "body": "Definition stability, procedural reproducibility, empirical adequacy and stance-independent moral realism are different claims and must not inherit one another's warrant.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-019",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[D/C]",
+    "title": "Selected is not solved",
+    "body": "A philosophical question earns a result only after native recovery, premise preservation, serious controls, unfired kills and independent native-domain review.",
+    "source": "03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/prompts/questions.json",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-020",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[D]",
+    "title": "The means is the message",
+    "body": "How an act is carried already shapes the relation it claims to serve; carriers, costs, consent, authority, reversibility and externalities are part of the claim.",
+    "source": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-021",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[D]",
+    "title": "The ends are the limits",
+    "body": "Every desired end remains bounded for each affected bearer and responsible horizon; no aggregate end erases a failed row.",
+    "source": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  },
+  {
+    "id": "TC-AMR-022",
+    "classification": "SURVIVOR_CANDIDATE",
+    "group": "nectar",
+    "tier": "[S]",
+    "title": "G7 closure is vocabulary-scoped",
+    "body": "Four bearer-oriented transfers plus three read-only frames close the selected G7 vocabulary and nothing larger.",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "route": "churn",
+    "mythic_alias": "AMRITA",
+    "earned_review": "UNREVIEWED"
+  }
 ]

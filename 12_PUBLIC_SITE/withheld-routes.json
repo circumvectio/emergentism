@@ -800,22 +800,6 @@
       }
     },
     {
-      "artifact": "halahala/index.html",
-      "sha256": "e2108160e348936ec9bd45d0bf9b42324c28be46185449256fc33ac9c06c923e",
-      "bytes": 36821,
-      "publicRoutes": [
-        "/halahala",
-        "/halahala/",
-        "/halahala/index.html"
-      ],
-      "reason": "matches public semantic prohibition: application authority leakage; matches public semantic prohibition: application authority leakage; matches public semantic prohibition: retired node product assignment.",
-      "policyRuleIds": [
-        "semantic-application-authority-leakage",
-        "semantic-retired-node-product-assignment"
-      ],
-      "curatedReason": "matches public semantic prohibition: application authority leakage."
-    },
-    {
       "artifact": "home/index.html",
       "sha256": "84d54bebf962f500227cdd11a9dedd1a7901b570e5d6b1214ea1c0fd636797a1",
       "bytes": 44489,

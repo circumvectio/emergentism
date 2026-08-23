@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/ChurningDrop.v1.schema.json",
+  "title": "ChurningDrop.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id", "drop_id", "plain_name", "mythic_alias", "classification",
+    "lifecycle", "evidence_tier", "proposition", "scope", "assumptions",
+    "source_refs", "strongest_rival", "discriminator", "kill_criterion",
+    "cheapest_next_test", "survivor_if_killed", "residual_debt",
+    "means_message", "ends_limits", "linked_problem_ids", "earned_review",
+    "revision_history"
+  ],
+  "properties": {
+    "schema_id": {"const": "emergentism/ChurningDrop.v1"},
+    "drop_id": {"type": "string", "pattern": "^TC-(AMR|HAL|OPEN)-[0-9]{3}$"},
+    "plain_name": {"type": "string", "minLength": 4},
+    "mythic_alias": {"enum": ["AMRITA", "HALAHALA", "NONE"]},
+    "classification": {"enum": ["SURVIVOR_CANDIDATE", "POISON_WARNING", "OPEN"]},
+    "lifecycle": {"enum": ["QUEUED", "SOURCE_BOUND", "REVIEWED", "ADJUDICATED_SURVIVOR", "ADJUDICATED_POISON", "KILLED", "UNDERDETERMINED"]},
+    "evidence_tier": {"enum": ["[A]", "[B]", "[S]", "[I]", "[D]", "[C]", "[A/S]", "[D/C]", "[I/C]", "[S/I/C]"]},
+    "proposition": {"type": "string", "minLength": 12},
+    "scope": {"type": "string", "minLength": 4},
+    "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 2}},
+    "source_refs": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "sha256", "_sha256_scan", "frozen_commit"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.).+"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "_sha256_scan": {"const": "# pragma: allow-secret"},
+          "frozen_commit": {"enum": ["8b07e00c563f338923b1928d3469c862d44c1e07", "POST_FREEZE_OWNER_DIRECTION"]},
+          "claim_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "strongest_rival": {"type": "string", "minLength": 10},
+    "discriminator": {"type": "string", "minLength": 10},
+    "kill_criterion": {"type": "string", "minLength": 10},
+    "cheapest_next_test": {"type": "string", "minLength": 8},
+    "survivor_if_killed": {"type": "string", "minLength": 8},
+    "residual_debt": {"type": "string", "minLength": 3},
+    "means_message": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bearers", "short_horizon", "long_horizon", "carrier", "cost", "consent_or_mandate", "authority", "reversibility", "externalities"],
+      "properties": {
+        "bearers": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "short_horizon": {"type": "string"},
+        "long_horizon": {"type": "string"},
+        "carrier": {"type": "string"},
+        "cost": {"type": "string"},
+        "consent_or_mandate": {"type": "string"},
+        "authority": {"type": "string"},
+        "reversibility": {"type": "string"},
+        "externalities": {"type": "string"}
+      }
+    },
+    "ends_limits": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target", "hard_limit", "option_change", "residue", "exit", "uncertainty"],
+      "properties": {
+        "target": {"type": "string"},
+        "hard_limit": {"type": "string"},
+        "option_change": {"type": "string"},
+        "residue": {"type": "string"},
+        "exit": {"type": "string"},
+        "uncertainty": {"type": "string"}
+      }
+    },
+    "linked_problem_ids": {"type": "array", "items": {"type": "string", "pattern": "^(PQA54@0\\.1:|LEGACY:|FORMAL:|SYNTH:)"}},
+    "earned_review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "independent_review_count", "receipts"],
+      "properties": {
+        "state": {"const": "UNREVIEWED"},
+        "independent_review_count": {"const": 0},
+        "receipts": {"type": "array", "maxItems": 0}
+      }
+    },
+    "revision_history": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["date", "event"], "properties": {"date": {"type": "string", "format": "date"}, "event": {"type": "string"}}, "additionalProperties": false}}
+  }
+}

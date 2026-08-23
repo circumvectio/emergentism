@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/ProblemAdjudication.v1.schema.json",
+  "title": "ProblemAdjudication.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id", "problem_id", "canonical_problem_id", "aliases", "domain",
+    "family", "native_problem", "native_reference", "proposed_answer",
+    "proposed_effect", "earned_effect", "result_state", "assumptions",
+    "strongest_rival", "native_frame_control", "generic_decomposition_control",
+    "discriminator", "kill_criterion", "remaining_debt", "survivor_if_killed",
+    "linked_drop_ids", "native_reviews"
+  ],
+  "properties": {
+    "schema_id": {"const": "emergentism/ProblemAdjudication.v1"},
+    "problem_id": {"type": "string", "pattern": "^(PQA54@0\\.1:|LEGACY:|FORMAL:|SYNTH:)"},
+    "canonical_problem_id": {"type": "string", "pattern": "^(PQA54@0\\.1:|LEGACY:|FORMAL:|SYNTH:)"},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "domain": {"type": "string", "minLength": 2},
+    "family": {"type": "string", "minLength": 2},
+    "native_problem": {"type": "string", "minLength": 8},
+    "native_reference": {"type": "string", "minLength": 3},
+    "proposed_answer": {"type": "string", "minLength": 10},
+    "proposed_effect": {"enum": ["INVENTORY", "CLARIFICATION", "FORMAL_CORRECTION", "TYPE_DISSOLUTION", "CONDITIONAL_RESOLUTION", "REFRAME", "OPEN"]},
+    "earned_effect": {"const": "NO_INCREMENT"},
+    "result_state": {"const": "SELECTED"},
+    "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "strongest_rival": {"type": "string", "minLength": 8},
+    "native_frame_control": {"type": "string", "minLength": 8},
+    "generic_decomposition_control": {"type": "string", "minLength": 8},
+    "discriminator": {"type": "string", "minLength": 8},
+    "kill_criterion": {"type": "string", "minLength": 8},
+    "remaining_debt": {"type": "string", "minLength": 3},
+    "survivor_if_killed": {"type": "string", "minLength": 3},
+    "linked_drop_ids": {"type": "array", "items": {"type": "string", "pattern": "^TC-(AMR|HAL|OPEN)-[0-9]{3}$"}},
+    "native_reviews": {"type": "array", "maxItems": 0}
+  }
+}

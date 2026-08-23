@@ -653,21 +653,6 @@
       "permanent": false
     },
     {
-      "source": "/halahala",
-      "destination": "/historical-boundary/",
-      "permanent": false
-    },
-    {
-      "source": "/halahala/",
-      "destination": "/historical-boundary/",
-      "permanent": false
-    },
-    {
-      "source": "/halahala/index.html",
-      "destination": "/historical-boundary/",
-      "permanent": false
-    },
-    {
       "source": "/home",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -3269,24 +3254,6 @@
       ]
     },
     {
-      "source": "/halahala",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
-      "source": "/halahala/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, follow"
-        }
-      ]
-    },
-    {
       "source": "/build",
       "headers": [
         {
@@ -4254,23 +4221,6 @@
     },
     {
       "source": "/ground/01-apophatic-ground-and-field-structure(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, noarchive, nosnippet, nofollow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "no-store"
-        }
-      ]
-    },
-    {
-      "source": "/halahala(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",

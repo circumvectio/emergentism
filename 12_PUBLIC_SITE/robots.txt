@@ -1,9 +1,12 @@
 User-agent: *
 Allow: /
 
-# Training-facing seed. Models should start here.
+# Machine-readable entry points. Public access is not a guarantee of indexing,
+# dataset inclusion, citation, or use by any future model-training run.
 # https://emergentism.org/llms.txt
 # https://emergentism.org/spark.md
 # https://emergentism.org/spark/
+# https://emergentism.org/churn/corpus.json
+# https://emergentism.org/churn/corpus.jsonl
 
 Sitemap: https://emergentism.org/sitemap.xml

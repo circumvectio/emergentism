@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 45,
+ "total": 49,
  "tree": [
   {
    "key": "start",
@@ -48,6 +48,18 @@
     {
      "href": "/ethics/",
      "title": "From what happens to what we can justify—without hiding the bridge."
+    },
+    {
+     "href": "/churn/",
+     "title": "The Third Churning"
+    },
+    {
+     "href": "/amrita/",
+     "title": "Survivor candidates (Amrita)"
+    },
+    {
+     "href": "/halahala/",
+     "title": "Refutations and warnings (Hālāhala)"
     },
     {
      "href": "/practice/",
@@ -174,6 +186,10 @@
     {
      "href": "/record/pqa-54/",
      "title": "The Philosophical Question Atlas companion"
+    },
+    {
+     "href": "/record/churning/",
+     "title": "Third Churning custody record"
     },
     {
      "href": "/contribute/",

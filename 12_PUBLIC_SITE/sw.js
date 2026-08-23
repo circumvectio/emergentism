@@ -1,5 +1,5 @@
 // Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
-const CACHE = 'emergentism-19a9a375119c';
+const CACHE = 'emergentism-ac0bffc0d98a';
 const SPINE = [
   "/",
   "/plainly/",
@@ -7,12 +7,16 @@ const SPINE = [
   "/f5/",
   "/questions/",
   "/ethics/",
+  "/churn/",
+  "/amrita/",
+  "/halahala/",
   "/practice/",
   "/book/",
   "/spark/",
   "/spark.md",
   "/llms.txt",
   "/record/",
+  "/record/churning/",
   "/record/pqa-54/",
   "/manifesto/",
   "/established/",
@@ -31,6 +35,9 @@ const SPINE = [
   "/living-map.json",
   "/public_semantic_parity.json",
   "/atlas/site_index.json",
+  "/churn/corpus.json",
+  "/churn/corpus.jsonl",
+  "/churn/corpus.md",
   "/assets/fonts/Roboto-latin.woff2",
   "/assets/fonts/RobotoMono-latin.woff2",
   "/assets/fonts/Newsreader-latin-variable.woff2",
@@ -166,9 +173,6 @@ const WITHHELD_ROUTES = new Set([
   "/ground/01-apophatic-ground-and-field-structure",
   "/ground/01-apophatic-ground-and-field-structure/",
   "/ground/01-apophatic-ground-and-field-structure/index.html",
-  "/halahala",
-  "/halahala/",
-  "/halahala/index.html",
   "/historical-boundary/",
   "/home",
   "/home/",

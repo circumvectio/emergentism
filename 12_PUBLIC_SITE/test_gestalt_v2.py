@@ -198,11 +198,30 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertTrue(
             {
                 "/dasein/", "/f5/", "/questions/", "/ethics/",
+                "/churn/", "/amrita/", "/halahala/", "/record/churning/",
+                "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
                 "/record/pqa-54/", "/assets/css/gestalt-v2.css",
                 "/assets/js/gestalt-v2.js", "/assets/fonts/Newsreader-latin-variable.woff2",
                 "/favicon.svg",
             }.issubset(set(pwa.safe_spine()))
         )
+
+    def test_third_churning_is_semantic_static_and_plain_first(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        section = home.split('id="churning"', 1)[1].split("</section>", 1)[0]
+        self.assertIn("The audit seam", section)
+        self.assertIn("Freeze", section)
+        self.assertIn("Rival", section)
+        self.assertIn("serious alternative", section)
+        self.assertIn("What survived scrutiny", section)
+        self.assertIn("What failed or remains dangerous", section)
+        self.assertLess(section.index("What survived scrutiny"), section.index("Amrita"))
+        self.assertLess(section.index("What failed or remains dangerous"), section.index("Hālāhala"))
+        self.assertIn("The means is the message. The ends are the limits.", section)
+        self.assertIn("0 independently reviewed", section)
+        self.assertIn("cannot guarantee", section)
+        self.assertIn("--g2-poison: #d97557", self.css)
+        self.assertIn(".g2-churn-seam__track", self.css)
 
 
 if __name__ == "__main__":

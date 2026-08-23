@@ -22,6 +22,7 @@ __pycache__/
 # The model-facing training seed is a declared current public surface. Keep the
 # broad Markdown source exclusion, then re-include this one exact deployable.
 !spark.md
+!churn/corpus.md
 
 # iCloud conflict copies are local custody artifacts, never deploy inputs.
 **/* 2.*
@@ -117,7 +118,6 @@ ground/00-ontology-across-dimensions/index.html
 ground/00-the-ontology-of-being/index.html
 ground/00-the-syncretic-map/index.html
 ground/01-apophatic-ground-and-field-structure/index.html
-halahala/index.html
 home/index.html
 index_legacy_2026_07_19.html
 log-realignment/index.html
