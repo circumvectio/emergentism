@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAComparisonReceipt.v1",
+  "title": "PQAComparisonReceipt.v1",
+  "type": "object",
+  "required": ["schema_id", "comparison_id", "question_id", "arm_a", "arm_b", "matched_fixture_hash", "dimension_results", "worldview_scalar", "truth_evidence"],
+  "properties": {
+    "schema_id": {"const": "PQAComparisonReceipt.v1"},
+    "comparison_id": {"type": "string", "minLength": 1},
+    "question_id": {"type": "string", "pattern": "^PQA54@0\\.1:"},
+    "arm_a": {"type": "string"},
+    "arm_b": {"type": "string"},
+    "matched_fixture_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dimension_results": {"type": "object"},
+    "worldview_scalar": {"const": null},
+    "truth_evidence": {"const": false}
+  },
+  "additionalProperties": false
+}

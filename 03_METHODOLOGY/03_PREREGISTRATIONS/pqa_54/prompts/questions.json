@@ -1,0 +1,131 @@
+{
+  "schema_id": "PQAAtlasManifest.v1",
+  "benchmark_id": "PQA-54",
+  "protocol_version": "0.1.0",
+  "selection_tier": "D",
+  "selection_scope": "Nine selected domains with six public question families each; not an exhaustive partition of philosophy.",
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "majority_rule": {
+    "threshold": 28,
+    "per_domain_minimum": 3,
+    "qualifying_effects": ["TYPE_DISSOLUTION", "CONDITIONAL_RESOLUTION"],
+    "human_domain_reviews_per_result": 2,
+    "required_control_wins": ["NATIVE_FRAME", "GENERIC_DECOMPOSITION"],
+    "global_claim_allowed": false
+  },
+  "domains": [
+    {
+      "code": "MET",
+      "name": "Metaphysics and ontology",
+      "questions": [
+        {"question_id":"PQA54@0.1:MET:GROUND","family":"ground","prompt":"Why is there something rather than nothing, and where may explanation lawfully terminate?","split":"DEVELOPMENT","native_problem":"Ground, sufficient reason and explanatory termination.","native_reference":"Leibniz, Principles of Nature and Grace §7; Heidegger, Introduction to Metaphysics."},
+        {"question_id":"PQA54@0.1:MET:ONE_MANY","family":"one_and_many","prompt":"How can reality be one while containing genuine plurality?","split":"DEVELOPMENT","native_problem":"Unity, plurality and dependence without erasure.","native_reference":"Plato, Parmenides; Aristotle, Metaphysics."},
+        {"question_id":"PQA54@0.1:MET:UNIVERSALS","family":"universals_particulars","prompt":"What is the relation between repeatable properties and particular things?","split":"VALIDATION","native_problem":"Realism, nominalism and trope theories of universals.","native_reference":"Plato, Republic; Aristotle, Categories and Metaphysics."},
+        {"question_id":"PQA54@0.1:MET:IDENTITY","family":"identity_persistence","prompt":"What makes a thing the same thing through change?","split":"VALIDATION","native_problem":"Numerical identity, continuity, constitution and persistence.","native_reference":"Locke, Essay Concerning Human Understanding II.27; Parfit, Reasons and Persons."},
+        {"question_id":"PQA54@0.1:MET:MODALITY","family":"modality_possible_worlds","prompt":"What makes possibility and necessity true?","split":"HELD_OUT","native_problem":"Modal truth, accessibility and possible-world semantics.","native_reference":"Kripke, Naming and Necessity; Lewis, On the Plurality of Worlds."},
+        {"question_id":"PQA54@0.1:MET:TIME","family":"time_change","prompt":"Is time fundamental, emergent, tenseless or essentially becoming?","split":"HELD_OUT","native_problem":"A-series, B-series, passage and change.","native_reference":"Aristotle, Physics IV; McTaggart, The Unreality of Time."}
+      ]
+    },
+    {
+      "code": "EPI",
+      "name": "Epistemology",
+      "questions": [
+        {"question_id":"PQA54@0.1:EPI:EXTERNAL_WORLD","family":"external_world","prompt":"What warrants belief in a world independent of present experience?","split":"DEVELOPMENT","native_problem":"External-world skepticism and perceptual warrant.","native_reference":"Descartes, Meditations I; Moore, Proof of an External World."},
+        {"question_id":"PQA54@0.1:EPI:INDUCTION","family":"induction","prompt":"What warrants projecting observed regularities into unobserved cases?","split":"DEVELOPMENT","native_problem":"Hume's problem of induction and projectibility.","native_reference":"Hume, Enquiry Concerning Human Understanding IV; Goodman, Fact, Fiction, and Forecast."},
+        {"question_id":"PQA54@0.1:EPI:GETTIER","family":"knowledge_gettier","prompt":"Why can justified true belief still fail to be knowledge?","split":"VALIDATION","native_problem":"Gettier luck and analyses of knowledge.","native_reference":"Plato, Theaetetus; Gettier, Is Justified True Belief Knowledge?"},
+        {"question_id":"PQA54@0.1:EPI:APRIORI","family":"a_priori","prompt":"How can knowledge be warranted independently of particular sensory experience?","split":"VALIDATION","native_problem":"A priori warrant, rational insight and empiricism.","native_reference":"Kant, Critique of Pure Reason; BonJour, In Defense of Pure Reason."},
+        {"question_id":"PQA54@0.1:EPI:TESTIMONY","family":"testimony","prompt":"When does another person's word give knowledge rather than merely borrowed belief?","split":"HELD_OUT","native_problem":"Testimonial warrant, reductionism and social dependence.","native_reference":"Coady, Testimony; Hume, Enquiry Concerning Human Understanding X."},
+        {"question_id":"PQA54@0.1:EPI:DISAGREEMENT","family":"disagreement_underdetermination","prompt":"How should rational peers revise when evidence underdetermines a shared conclusion?","split":"HELD_OUT","native_problem":"Peer disagreement, conciliation and steadfastness.","native_reference":"Feldman and Warfield, Disagreement; Christensen, Epistemology of Disagreement."}
+      ]
+    },
+    {
+      "code": "LOG",
+      "name": "Logic and language",
+      "questions": [
+        {"question_id":"PQA54@0.1:LOG:LIAR","family":"liar_self_reference","prompt":"How can a truth-bearing sentence coherently say of itself that it is false?","split":"DEVELOPMENT","native_problem":"Semantic self-reference, truth predicates and hierarchy.","native_reference":"Tarski, The Concept of Truth in Formalized Languages; Kripke, Outline of a Theory of Truth."},
+        {"question_id":"PQA54@0.1:LOG:RUSSELL","family":"russell_set_formation","prompt":"Which comprehension principle fails in Russell's paradox, and what survives?","split":"DEVELOPMENT","native_problem":"Unrestricted comprehension and axiomatic set formation.","native_reference":"Russell, Principles of Mathematics; Zermelo, Investigations in the Foundations of Set Theory I."},
+        {"question_id":"PQA54@0.1:LOG:GODEL","family":"incompleteness","prompt":"What do incompleteness theorems show—and not show—about formal proof and truth?","split":"VALIDATION","native_problem":"Formal consistency, completeness and arithmetical truth.","native_reference":"Gödel, On Formally Undecidable Propositions (1931)."},
+        {"question_id":"PQA54@0.1:LOG:SORITES","family":"vagueness_sorites","prompt":"How can tiny differences accumulate into an apparently impossible boundary change?","split":"VALIDATION","native_problem":"Vagueness, tolerance principles and borderline cases.","native_reference":"Eubulides' sorites tradition; Williamson, Vagueness."},
+        {"question_id":"PQA54@0.1:LOG:REFERENCE","family":"reference_meaning","prompt":"How do words refer to things and carry meaning across speakers and contexts?","split":"HELD_OUT","native_problem":"Sense, reference, causal naming and context.","native_reference":"Frege, On Sense and Reference; Kripke, Naming and Necessity."},
+        {"question_id":"PQA54@0.1:LOG:RULE_FOLLOWING","family":"rule_following_truth","prompt":"What makes one continuation an instance of following a rule rather than another?","split":"HELD_OUT","native_problem":"Normativity of meaning and rule-following skepticism.","native_reference":"Wittgenstein, Philosophical Investigations; Kripke, Wittgenstein on Rules and Private Language."}
+      ]
+    },
+    {
+      "code": "MIN",
+      "name": "Mind and personal identity",
+      "questions": [
+        {"question_id":"PQA54@0.1:MIN:MIND_BODY","family":"mind_body","prompt":"How are mental states related to physical states?","split":"DEVELOPMENT","native_problem":"Dualism, physicalism, functionalism and realization.","native_reference":"Descartes, Meditations VI; Ryle, The Concept of Mind."},
+        {"question_id":"PQA54@0.1:MIN:CONSCIOUSNESS","family":"hard_problem","prompt":"Why and how is physical or functional processing accompanied by experience?","split":"DEVELOPMENT","native_problem":"Phenomenal consciousness and the explanatory gap.","native_reference":"Chalmers, Facing Up to the Problem of Consciousness; Nagel, What Is It Like to Be a Bat?"},
+        {"question_id":"PQA54@0.1:MIN:INTENTIONALITY","family":"intentionality","prompt":"How can a present mental state be about something absent, unreal or possible?","split":"VALIDATION","native_problem":"Aboutness, content and representation.","native_reference":"Brentano, Psychology from an Empirical Standpoint; Searle, Intentionality."},
+        {"question_id":"PQA54@0.1:MIN:PERSONAL_IDENTITY","family":"personal_identity","prompt":"What preserves a person through bodily, psychological and narrative change?","split":"VALIDATION","native_problem":"Personal identity, continuity, fission and survival.","native_reference":"Locke, Essay II.27; Parfit, Reasons and Persons."},
+        {"question_id":"PQA54@0.1:MIN:FREE_WILL","family":"free_will_determinism","prompt":"Can an agent be free or responsible in a causally ordered world?","split":"HELD_OUT","native_problem":"Compatibilism, sourcehood, alternatives and determinism.","native_reference":"Hume, Enquiry VIII; Frankfurt, Alternate Possibilities and Moral Responsibility."},
+        {"question_id":"PQA54@0.1:MIN:OTHER_MINDS","family":"other_minds_ai","prompt":"What warrants attributing consciousness or agency to another human, animal or AI?","split":"HELD_OUT","native_problem":"Other minds, behavioral evidence and machine mentality.","native_reference":"Turing, Computing Machinery and Intelligence; Nagel, What Is It Like to Be a Bat?"}
+      ]
+    },
+    {
+      "code": "SCI",
+      "name": "Science and causation",
+      "questions": [
+        {"question_id":"PQA54@0.1:SCI:CAUSATION","family":"causation","prompt":"What distinguishes causation from correlation, regularity or description?","split":"DEVELOPMENT","native_problem":"Counterfactual, interventionist, regularity and process accounts.","native_reference":"Hume, Enquiry VII; Pearl, Causality."},
+        {"question_id":"PQA54@0.1:SCI:LAWS","family":"laws_explanation","prompt":"What makes a scientific generalization a law or explanation?","split":"DEVELOPMENT","native_problem":"Laws, models, explanation and necessity.","native_reference":"Hempel and Oppenheim, Studies in the Logic of Explanation; van Fraassen, The Scientific Image."},
+        {"question_id":"PQA54@0.1:SCI:EMERGENCE","family":"reduction_emergence","prompt":"When does a higher-level description add genuine novelty rather than convenient compression?","split":"VALIDATION","native_problem":"Reduction, multiple realization, emergence and universality.","native_reference":"Nagel, The Structure of Science; Anderson, More Is Different."},
+        {"question_id":"PQA54@0.1:SCI:MEASUREMENT","family":"quantum_measurement","prompt":"How do quantum probabilities relate to definite measurement records?","split":"VALIDATION","native_problem":"Measurement, decoherence, outcomes and interpretation.","native_reference":"von Neumann, Mathematical Foundations of Quantum Mechanics; Bell, Against Measurement."},
+        {"question_id":"PQA54@0.1:SCI:BELL","family":"bell_locality_realism","prompt":"Which combinations of locality, realism and independence are constrained by Bell-type results?","split":"HELD_OUT","native_problem":"Bell inequalities, locality and hidden-variable assumptions.","native_reference":"Bell, On the Einstein Podolsky Rosen Paradox (1964)."},
+        {"question_id":"PQA54@0.1:SCI:PROBABILITY","family":"probability_indeterminacy","prompt":"Is probability objective chance, rational credence, frequency or model-relative uncertainty?","split":"HELD_OUT","native_problem":"Interpretations of probability and objective chance.","native_reference":"Kolmogorov, Foundations of the Theory of Probability; de Finetti, Theory of Probability."}
+      ]
+    },
+    {
+      "code": "ETH",
+      "name": "Ethics and metaethics",
+      "questions": [
+        {"question_id":"PQA54@0.1:ETH:IS_OUGHT","family":"is_ought","prompt":"What, if anything, can bridge descriptive premises and normative conclusions?","split":"DEVELOPMENT","native_problem":"Hume's is–ought distinction and bridge principles.","native_reference":"Hume, Treatise of Human Nature III.i.1."},
+        {"question_id":"PQA54@0.1:ETH:MORAL_REALISM","family":"moral_realism_error","prompt":"Are moral claims stance-independently true, constructed, plural or systematically mistaken?","split":"DEVELOPMENT","native_problem":"Moral realism, constructivism, pluralism and error theory.","native_reference":"Moore, Principia Ethica; Mackie, Ethics: Inventing Right and Wrong."},
+        {"question_id":"PQA54@0.1:ETH:EUTHYPHRO","family":"euthyphro_authority","prompt":"Is the good authoritative because it is commanded, or commanded because it is good?","split":"VALIDATION","native_problem":"Normative authority and the Euthyphro dilemma.","native_reference":"Plato, Euthyphro."},
+        {"question_id":"PQA54@0.1:ETH:RIGHTS_OUTCOMES","family":"rights_consequences","prompt":"How should rights, duties and aggregate consequences constrain one another?","split":"VALIDATION","native_problem":"Deontology, consequentialism, thresholds and trolley cases.","native_reference":"Kant, Groundwork; Bentham, Introduction to the Principles of Morals and Legislation."},
+        {"question_id":"PQA54@0.1:ETH:POPULATION","family":"aggregation_population","prompt":"How should value across different possible populations be compared without laundering persons?","split":"HELD_OUT","native_problem":"Population ethics, aggregation and the repugnant conclusion.","native_reference":"Parfit, Reasons and Persons, Part IV."},
+        {"question_id":"PQA54@0.1:ETH:RESPONSIBILITY","family":"responsibility_partiality","prompt":"What grounds responsibility, partial duties and permissible sacrifice?","split":"HELD_OUT","native_problem":"Responsibility, reactive attitudes, demandingness and special obligations.","native_reference":"Strawson, Freedom and Resentment; Williams, Persons, Character and Morality."}
+      ]
+    },
+    {
+      "code": "POL",
+      "name": "Social and political philosophy",
+      "questions": [
+        {"question_id":"PQA54@0.1:POL:LEGITIMACY","family":"legitimacy_authority","prompt":"What makes political or institutional authority legitimate?","split":"DEVELOPMENT","native_problem":"Consent, authorization, obligation and legitimacy.","native_reference":"Hobbes, Leviathan; Locke, Second Treatise of Government."},
+        {"question_id":"PQA54@0.1:POL:LIBERTY_EQUALITY","family":"liberty_equality","prompt":"How should liberty and equality constrain one another?","split":"DEVELOPMENT","native_problem":"Negative and positive liberty, equal standing and institutions.","native_reference":"Berlin, Two Concepts of Liberty; Rawls, A Theory of Justice."},
+        {"question_id":"PQA54@0.1:POL:DISTRIBUTION","family":"distributive_justice","prompt":"Which distributions of resources, capabilities and burdens are just?","split":"VALIDATION","native_problem":"Equality, entitlement, desert, need and capability.","native_reference":"Rawls, A Theory of Justice; Nozick, Anarchy, State, and Utopia."},
+        {"question_id":"PQA54@0.1:POL:COLLECTIVE_ACTION","family":"collective_action","prompt":"How can groups sustain public goods without coercion, free-riding or capture?","split":"VALIDATION","native_problem":"Collective action, commons and cooperation.","native_reference":"Olson, The Logic of Collective Action; Ostrom, Governing the Commons."},
+        {"question_id":"PQA54@0.1:POL:POWER","family":"power_oppression_extraction","prompt":"How should power, domination, oppression and extraction be distinguished and resisted?","split":"HELD_OUT","native_problem":"Structural power, exploitation, discipline and domination.","native_reference":"Marx, Capital I; Foucault, Discipline and Punish."},
+        {"question_id":"PQA54@0.1:POL:REPRESENTATION","family":"future_nonhuman_representation","prompt":"Who may represent future, nonhuman, ecological or incapacitated bearers, and under what limits?","split":"HELD_OUT","native_problem":"Guardianship, proxy standing, future people and ecological representation.","native_reference":"Singer, Animal Liberation; Jonas, The Imperative of Responsibility; Stone, Should Trees Have Standing?"}
+      ]
+    },
+    {
+      "code": "AXI",
+      "name": "Axiology, aesthetics and existence",
+      "questions": [
+        {"question_id":"PQA54@0.1:AXI:PLURALISM","family":"value_pluralism","prompt":"Can genuine values conflict without a single complete ranking?","split":"DEVELOPMENT","native_problem":"Value pluralism, incommensurability and tragic choice.","native_reference":"Berlin, The Crooked Timber of Humanity; Williams, Moral Luck."},
+        {"question_id":"PQA54@0.1:AXI:BEAUTY","family":"beauty_objectivity","prompt":"Is beauty objective, relational, culturally constructed or judgment-dependent?","split":"DEVELOPMENT","native_problem":"Aesthetic judgment, universality and taste.","native_reference":"Kant, Critique of Judgment; Hume, Of the Standard of Taste."},
+        {"question_id":"PQA54@0.1:AXI:ART","family":"art_interpretation","prompt":"What makes something art, and what constrains interpretation?","split":"VALIDATION","native_problem":"Artworld, expression, intention and interpretation.","native_reference":"Danto, The Artworld; Gadamer, Truth and Method."},
+        {"question_id":"PQA54@0.1:AXI:MEANING","family":"meaning_of_life","prompt":"What can make a finite life meaningful?","split":"VALIDATION","native_problem":"Meaning, purpose, value and finitude.","native_reference":"Camus, The Myth of Sisyphus; Nagel, The Absurd."},
+        {"question_id":"PQA54@0.1:AXI:SUFFERING","family":"suffering_absurdity","prompt":"How should a worldview account for suffering without explaining it away?","split":"HELD_OUT","native_problem":"Suffering, pessimism, absurdity and practical response.","native_reference":"Schopenhauer, The World as Will and Representation; Camus, The Myth of Sisyphus."},
+        {"question_id":"PQA54@0.1:AXI:DEATH","family":"death_mortality","prompt":"Why is death bad, neutral or transformative for a finite bearer?","split":"HELD_OUT","native_problem":"Deprivation, annihilation, fear and mortality.","native_reference":"Epicurus, Letter to Menoeceus; Nagel, Death."}
+      ]
+    },
+    {
+      "code": "ULT",
+      "name": "Teleology and ultimate metaphysics",
+      "questions": [
+        {"question_id":"PQA54@0.1:ULT:NECESSARY_BEING","family":"necessary_being","prompt":"Does explanation require a necessary being, necessary truth or declared boundary?","split":"DEVELOPMENT","native_problem":"Cosmological arguments, necessity and regress.","native_reference":"Aquinas, Summa Theologiae I q.2; Leibniz, Principles of Nature and Grace."},
+        {"question_id":"PQA54@0.1:ULT:EVIL","family":"problem_of_evil","prompt":"How can extensive suffering coexist with perfect power, knowledge and goodness?","split":"DEVELOPMENT","native_problem":"Logical and evidential problems of evil.","native_reference":"Lactantius, De Ira Dei; Plantinga, God, Freedom, and Evil."},
+        {"question_id":"PQA54@0.1:ULT:HIDDENNESS","family":"divine_hiddenness","prompt":"Why would a perfectly loving ultimate reality remain nonresistantly hidden?","split":"VALIDATION","native_problem":"Divine hiddenness and nonbelief.","native_reference":"Schellenberg, Divine Hiddenness and Human Reason."},
+        {"question_id":"PQA54@0.1:ULT:PLURALISM","family":"religious_pluralism","prompt":"How should incompatible religious truth claims and convergent practices be compared?","split":"VALIDATION","native_problem":"Pluralism, exclusivism, inclusivism and translation.","native_reference":"Hick, An Interpretation of Religion."},
+        {"question_id":"PQA54@0.1:ULT:MYSTICAL","family":"mystical_ineffability","prompt":"What epistemic weight can mystical or ineffable experience carry?","split":"HELD_OUT","native_problem":"Mystical experience, ineffability, testimony and interpretation.","native_reference":"James, The Varieties of Religious Experience; Stace, Mysticism and Philosophy."},
+        {"question_id":"PQA54@0.1:ULT:NONDUALITY","family":"nonduality_selfhood","prompt":"Can nondual insight dissolve the self-world distinction without erasing finite agency?","split":"HELD_OUT","native_problem":"Nonduality, selfhood, emptiness and liberation.","native_reference":"Bṛhadāraṇyaka Upaniṣad; Śaṅkara, Brahma Sūtra Bhāṣya; Nāgārjuna, Mūlamadhyamakakārikā."}
+      ]
+    }
+  ]
+}

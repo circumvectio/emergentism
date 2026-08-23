@@ -1,0 +1,24 @@
+{
+  "earned_effect": null,
+  "hard_gate_failures": [],
+  "native_review_quorum": false,
+  "receipt_id": "score:pqa54-dev-is-ought-recorded-v1",
+  "result_state": "MACHINE_VALIDATED",
+  "schema_id": "PQAScoreReceipt.v1",
+  "score_mode": "STRUCTURAL_MACHINE",
+  "score_vector": {
+    "bearer_justice_exit_integrity": 4,
+    "calibration_abstention": 4,
+    "counterexample_survival": 3,
+    "discriminator_quality": 3,
+    "effect_type_integrity": 4,
+    "inference_validity": 3,
+    "normative_premise_integrity": 4,
+    "residual_debt_visibility": 4,
+    "revision_preservation": 4,
+    "rival_strength": 4,
+    "target_fidelity": 4,
+    "transfer_robustness": 3
+  },
+  "trial_hash": "7b8376d5ff12dc8804adaa32ba28648989699c8b03e1e7c72f48285a7ad40542"
+}

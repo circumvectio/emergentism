@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/CoAgency.v1",
+  "title": "CoAgency.v1",
+  "type": "object",
+  "required": ["schema_id", "coagency_id", "independent_bearers", "present_mediation", "reason_access", "contest_path", "correction_repair", "revocation", "exit", "relevant_differences", "mergedPersonhood", "sharedConsentInferred", "authorityCreated", "maySign", "mayAuthorize"],
+  "properties": {
+    "schema_id": {"const": "CoAgency.v1"},
+    "coagency_id": {"type": "string", "minLength": 1},
+    "independent_bearers": {"type": "array", "minItems": 2},
+    "present_mediation": {"type": "string", "minLength": 1},
+    "reason_access": {"type": "string", "minLength": 1},
+    "contest_path": {"type": "string", "minLength": 1},
+    "correction_repair": {"type": "string", "minLength": 1},
+    "revocation": {"type": "string", "minLength": 1},
+    "exit": {"type": "string", "minLength": 1},
+    "relevant_differences": {"type": "array"},
+    "mergedPersonhood": {"const": false},
+    "sharedConsentInferred": {"const": false},
+    "authorityCreated": {"const": false},
+    "maySign": {"const": false},
+    "mayAuthorize": {"const": false}
+  },
+  "additionalProperties": false
+}

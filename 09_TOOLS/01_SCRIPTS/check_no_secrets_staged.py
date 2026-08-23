@@ -114,7 +114,8 @@ SECRET_PATTERNS: list[tuple[str, re.Pattern, str]] = [
 GENERIC_PATTERN_NAME = "Generic high-entropy token"
 SHA256_TOKEN = re.compile(r"[0-9a-fA-F]{64}")
 HASH_CONTEXT = re.compile(
-    r"(?i)(?:sha-?256|checksum|digest|source[_-]?revision|sourcerevision)"
+    r"(?i)(?:sha-?256|checksum|digest|source[_-]?revision|sourcerevision|"
+    r"(?:[a-z0-9]+[_-])?hash(?=[^a-z0-9]|$))"
 )
 
 # Exemptions: lines containing these substrings are ignored even if they match a pattern.

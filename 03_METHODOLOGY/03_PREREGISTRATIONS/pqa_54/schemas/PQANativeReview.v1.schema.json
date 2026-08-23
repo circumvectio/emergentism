@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQANativeReview.v1",
+  "title": "PQANativeReview.v1",
+  "type": "object",
+  "required": ["schema_id", "review_id", "trial_hash", "reviewer_kind", "independent", "blinded", "target_verdict", "effect_verdict", "problem_status", "recommendation", "rationale"],
+  "properties": {
+    "schema_id": {"const": "PQANativeReview.v1"},
+    "review_id": {"type": "string", "minLength": 1},
+    "trial_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "reviewer_kind": {"enum": ["HUMAN_DOMAIN", "HUMAN_METHOD", "AI_DIAGNOSTIC"]},
+    "independent": {"type": "boolean"},
+    "blinded": {"type": "boolean"},
+    "target_verdict": {"enum": ["FAITHFUL", "DISTORTED", "UNDERDETERMINED"]},
+    "effect_verdict": {"enum": ["SUPPORTED", "OVERCLAIMED", "UNDERCLAIMED", "UNSCORABLE"]},
+    "problem_status": {"enum": ["OPEN", "CONTESTED", "RESOLVED_IN_NATIVE_MODEL", "MISSTATED"]},
+    "recommendation": {"enum": ["ACCEPT_STATUS", "NARROW", "REJECT", "ABSTAIN"]},
+    "rationale": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

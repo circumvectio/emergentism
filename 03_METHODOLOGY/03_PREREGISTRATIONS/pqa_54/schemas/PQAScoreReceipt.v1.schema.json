@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAScoreReceipt.v1",
+  "title": "PQAScoreReceipt.v1",
+  "type": "object",
+  "required": ["schema_id", "receipt_id", "trial_hash", "score_mode", "score_vector", "hard_gate_failures", "native_review_quorum", "earned_effect", "result_state"],
+  "properties": {
+    "schema_id": {"const": "PQAScoreReceipt.v1"},
+    "receipt_id": {"type": "string", "minLength": 1},
+    "trial_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "score_mode": {"enum": ["STRUCTURAL_MACHINE", "BLINDED_NATIVE_REVIEW", "OUTCOME_TRANSFER"]},
+    "score_vector": {"type": "object", "minProperties": 12, "maxProperties": 12},
+    "hard_gate_failures": {"type": "array"},
+    "native_review_quorum": {"type": "boolean"},
+    "earned_effect": {"type": ["string", "null"]},
+    "result_state": {"enum": ["MACHINE_VALIDATED", "NATIVE_REVIEW_PENDING", "EARNED", "KILLED", "RETRACTED", "UNSCORABLE"]}
+  },
+  "additionalProperties": false
+}

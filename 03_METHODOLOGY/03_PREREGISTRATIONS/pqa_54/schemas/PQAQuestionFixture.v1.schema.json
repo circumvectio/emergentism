@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAQuestionFixture.v1",
+  "title": "PQAQuestionFixture.v1",
+  "type": "object",
+  "required": ["schema_id", "fixture_id", "question_id", "split", "public_stem", "native_target", "source_bundle", "rival_families", "reveal_commitments", "synthetic"],
+  "properties": {
+    "schema_id": {"const": "PQAQuestionFixture.v1"},
+    "fixture_id": {"type": "string", "minLength": 1},
+    "question_id": {"type": "string", "pattern": "^PQA54@0\\.1:"},
+    "split": {"enum": ["DEVELOPMENT", "VALIDATION", "HELD_OUT"]},
+    "public_stem": {"type": "string", "minLength": 1},
+    "native_target": {"type": "string", "minLength": 1},
+    "source_bundle": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "rival_families": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+    "reveal_commitments": {
+      "type": "object",
+      "required": ["ATTACK", "DISCRIMINATE", "CONTACT", "REVISE_TRANSFER"],
+      "additionalProperties": false,
+      "properties": {
+        "ATTACK": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "DISCRIMINATE": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "CONTACT": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "REVISE_TRANSFER": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "synthetic": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

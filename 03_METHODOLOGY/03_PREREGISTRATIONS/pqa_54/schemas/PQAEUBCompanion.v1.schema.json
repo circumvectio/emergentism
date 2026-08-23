@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAEUBCompanion.v1",
+  "title": "PQAEUBCompanion.v1",
+  "type": "object",
+  "required": ["schema_id", "join_id", "eub_protocol_hash", "eub_freeze_hash", "eub_schema_hashes", "pqa_trial_hash", "pqa_score_hash", "pairing_mode", "arm_mapping", "model_runtime_match", "truth_transfer", "score_transfer"],
+  "properties": {
+    "schema_id": {"const": "PQAEUBCompanion.v1"},
+    "join_id": {"type": "string", "minLength": 1},
+    "eub_protocol_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "eub_freeze_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "eub_schema_hashes": {"type": "object"},
+    "pqa_trial_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "pqa_score_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "pairing_mode": {"enum": ["NOT_LINKED", "SCHEMA_ONLY", "SAME_CANDIDATE_SEPARATE_RUNS", "PAIRED_RUNS", "INVALID"]},
+    "arm_mapping": {"type": "object"},
+    "model_runtime_match": {"type": "boolean"},
+    "truth_transfer": {"const": false},
+    "score_transfer": {"const": false}
+  },
+  "additionalProperties": false
+}

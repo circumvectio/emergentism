@@ -1,0 +1,357 @@
+{
+  "agreement_with_burri_counts_as_correctness": false,
+  "candidates": [
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "E",
+        "D3": "W",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-SEWG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": true,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "E",
+        "D3": "G",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-SEGW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "W",
+        "D3": "E",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-SWEG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "W",
+        "D3": "G",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-SWGE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "G",
+        "D3": "E",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-SGEW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "S",
+        "D2": "G",
+        "D3": "W",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-SGWE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "S",
+        "D3": "W",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-ESWG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "S",
+        "D3": "G",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-ESGW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "W",
+        "D3": "S",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-EWSG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "W",
+        "D3": "G",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-EWGS",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "G",
+        "D3": "S",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-EGSW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "E",
+        "D2": "G",
+        "D3": "W",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-EGWS",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "S",
+        "D3": "E",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-WSEG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "S",
+        "D3": "G",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-WSGE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "E",
+        "D3": "S",
+        "D4": "G"
+      },
+      "candidate_id": "W7-4P-WESG",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "E",
+        "D3": "G",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-WEGS",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "G",
+        "D3": "S",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-WGSE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "W",
+        "D2": "G",
+        "D3": "E",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-WGES",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "S",
+        "D3": "E",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-GSEW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "S",
+        "D3": "W",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-GSWE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "E",
+        "D3": "S",
+        "D4": "W"
+      },
+      "candidate_id": "W7-4P-GESW",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "E",
+        "D3": "W",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-GEWS",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "W",
+        "D3": "S",
+        "D4": "E"
+      },
+      "candidate_id": "W7-4P-GWSE",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    },
+    {
+      "assignment": {
+        "D1": "G",
+        "D2": "W",
+        "D3": "E",
+        "D4": "S"
+      },
+      "candidate_id": "W7-4P-GWES",
+      "held_out_prediction": "NOT_RUN",
+      "native_recovery": "NOT_RUN",
+      "origin_reference": false,
+      "status": "UNSCORED"
+    }
+  ],
+  "d3_quantum_specific_gate": {
+    "generic_quantumness_sufficient": false,
+    "weak_specific_if_W_at_D3": [
+      "left-chiral or parity-violating structure",
+      "charged-current flavor transition",
+      "held-out weak-specific observable"
+    ]
+  },
+  "evaluation_count": 0,
+  "interactions": [
+    "S",
+    "E",
+    "W",
+    "G"
+  ],
+  "primary_scalar": null,
+  "registers": [
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "result_state": "UNRUN",
+  "rivals": [
+    {
+      "description": "Standard Model plus GR/EFT without a D-placement.",
+      "rival_id": "R0_NO_MAPPING"
+    },
+    {
+      "description": "Several D structures may relate to one interaction.",
+      "rival_id": "R2_MANY_TO_MANY"
+    },
+    {
+      "description": "Low-energy E/W separation need not define serial stages.",
+      "rival_id": "R3_ELECTROWEAK_UNIFICATION"
+    }
+  ],
+  "schema_id": "ForcePermutationTrial.v1",
+  "selected_candidate": null,
+  "trial_id": "w7-force-permutations-unrun-v1"
+}

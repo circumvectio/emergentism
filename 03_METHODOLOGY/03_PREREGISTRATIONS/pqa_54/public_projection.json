@@ -1,0 +1,558 @@
+{
+  "atlas_hash": "130f5b97ef768c4765cc4af6e9ca7c7bed4d7444197e570cf5ce53aeb10325b9",
+  "benchmark_id": "PQA-54",
+  "counts": {
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0,
+    "selected": 54
+  },
+  "deployed": false,
+  "external_validation": false,
+  "majority_state": "NOT_RUN",
+  "protocol_version": "0.1.0",
+  "public_thesis": "Emergentism does not end philosophy. It makes philosophical debt legible.",
+  "questions": [
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "ground",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:GROUND",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "one_and_many",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:ONE_MANY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "universals_particulars",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:UNIVERSALS",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "identity_persistence",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:IDENTITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "modality_possible_worlds",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:MODALITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MET",
+      "effect_kind": "NO_INCREMENT",
+      "family": "time_change",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MET:TIME",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "external_world",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:EXTERNAL_WORLD",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "induction",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:INDUCTION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "knowledge_gettier",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:GETTIER",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "a_priori",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:APRIORI",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "testimony",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:TESTIMONY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "EPI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "disagreement_underdetermination",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:EPI:DISAGREEMENT",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "liar_self_reference",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:LIAR",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "russell_set_formation",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:RUSSELL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "incompleteness",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:GODEL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "vagueness_sorites",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:SORITES",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "reference_meaning",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:REFERENCE",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "LOG",
+      "effect_kind": "NO_INCREMENT",
+      "family": "rule_following_truth",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:LOG:RULE_FOLLOWING",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "mind_body",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:MIND_BODY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "hard_problem",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:CONSCIOUSNESS",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "intentionality",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:INTENTIONALITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "personal_identity",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:PERSONAL_IDENTITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "free_will_determinism",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:FREE_WILL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "MIN",
+      "effect_kind": "NO_INCREMENT",
+      "family": "other_minds_ai",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:MIN:OTHER_MINDS",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "causation",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:CAUSATION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "laws_explanation",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:LAWS",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "reduction_emergence",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:EMERGENCE",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "quantum_measurement",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:MEASUREMENT",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "bell_locality_realism",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:BELL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "SCI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "probability_indeterminacy",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:SCI:PROBABILITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "is_ought",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:IS_OUGHT",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "moral_realism_error",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:MORAL_REALISM",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "euthyphro_authority",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:EUTHYPHRO",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "rights_consequences",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:RIGHTS_OUTCOMES",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "aggregation_population",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:POPULATION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ETH",
+      "effect_kind": "NO_INCREMENT",
+      "family": "responsibility_partiality",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ETH:RESPONSIBILITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "legitimacy_authority",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:LEGITIMACY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "liberty_equality",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:LIBERTY_EQUALITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "distributive_justice",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:DISTRIBUTION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "collective_action",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:COLLECTIVE_ACTION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "power_oppression_extraction",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:POWER",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "POL",
+      "effect_kind": "NO_INCREMENT",
+      "family": "future_nonhuman_representation",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:POL:REPRESENTATION",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "value_pluralism",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:PLURALISM",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "beauty_objectivity",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:BEAUTY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "art_interpretation",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:ART",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "meaning_of_life",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:MEANING",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "suffering_absurdity",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:SUFFERING",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "AXI",
+      "effect_kind": "NO_INCREMENT",
+      "family": "death_mortality",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:AXI:DEATH",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "necessary_being",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:NECESSARY_BEING",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "problem_of_evil",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:EVIL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "divine_hiddenness",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:HIDDENNESS",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "religious_pluralism",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:PLURALISM",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "mystical_ineffability",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:MYSTICAL",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    },
+    {
+      "domain": "ULT",
+      "effect_kind": "NO_INCREMENT",
+      "family": "nonduality_selfhood",
+      "native_review_quorum": false,
+      "public_wording": "The question remains open.",
+      "question_id": "PQA54@0.1:ULT:NONDUALITY",
+      "residual_state": "OPEN",
+      "result_state": "UNRUN"
+    }
+  ],
+  "schema_id": "PQAPublicProjection.v1"
+}

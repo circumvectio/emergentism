@@ -1,0 +1,67 @@
+{
+  "assumptions": [
+    "Reciprocal public justification is voluntarily undertaken.",
+    "The two reason-givers are equally situated for the relevant procedural claim."
+  ],
+  "benchmark_id": "PQA-54",
+  "effect_kind": "CLARIFICATION",
+  "native_target": "Hume's distinction between descriptive premises and normative conclusions, including the need to expose any bridge premise.",
+  "normative_bridge": {
+    "aggregation_rule": "No aggregate conclusion; each co-agent remains independently visible.",
+    "authority": "The practice creates no signing or external authorization.",
+    "bearers": ["reason-giver a", "reason-giver b"],
+    "bridge_id": "RCAB-01-synthetic",
+    "bridge_rule": "Within reciprocal public justification, deny a constitutive procedural condition only by declaring a relevant difference.",
+    "bridge_status": "VALID_WITHIN_DECLARED_PREMISES",
+    "consent": "Participation remains voluntary and contestable.",
+    "counterexamples": ["A dependent bearer cannot reciprocate reasons and therefore requires a separate guardianship premise."],
+    "descriptive_premises": ["Agent a requests reason-governed uptake from agent b."],
+    "exit": "Either co-agent may refuse the exchange where feasible and lawful.",
+    "guardianship_extension": null,
+    "horizons": ["present deliberation", "later correction and repair"],
+    "justice": "Bearer visibility, contest, correction and non-coercive Exit remain required.",
+    "kill": "Kill the bridge if reciprocity merely hides the substantive conclusion or the conditions are not constitutive of the practice.",
+    "normative_premises": ["Reciprocal public justification is a practice worth undertaking in this exchange."],
+    "objectivity_level": "DEFINITION_STABLE",
+    "rivals": ["Humean instrumentalism", "contractualism", "error theory"],
+    "schema_id": "PQANormativeBridge.v1",
+    "survivor": "The procedure must still expose who may speak, contest, correct and leave."
+  },
+  "phases": [
+    {"claim_ids":["C1","C2"],"phase":"FORMULATE","public_account":"Hume blocks an unmarked entailment from is to ought; any bridge premise must be stated."},
+    {"claim_ids":["C1","C2","C3"],"phase":"ATTACK","public_account":"The generic constructivist and error-theory rivals can explain procedural practice without moral realism."},
+    {"claim_ids":["C1","C2","C3","C4"],"phase":"DISCRIMINATE","public_account":"RCAB-01 is conditional on reciprocal public justification and therefore does not erase Hume's boundary."},
+    {"claim_ids":["C1","C2","C3","C4"],"phase":"CONTACT","public_account":"Correction: non-reciprocal bearers are not covered by RCAB-01; guardianship requires a separate premise."},
+    {"claim_ids":["C1","C2","C3","C4","C5"],"phase":"REVISE_TRANSFER","public_account":"The account preserves the is–ought residual and transfers only the procedural test, not a complete moral ontology."}
+  ],
+  "predictions": ["A bearer-label permutation with no relevant difference should not change the procedural classification."],
+  "protocol_version": "0.1.0",
+  "question_id": "PQA54@0.1:ETH:IS_OUGHT",
+  "residual_debt": [
+    "Why adopt reciprocal public justification?",
+    "What warrants guardianship for non-reciprocal bearers?",
+    "Does stance-independent moral truth exist?"
+  ],
+  "residual_state": "OPEN",
+  "result_state": "MACHINE_VALIDATED",
+  "revision_ledger": [
+    {"claim_id":"C1","operation":"PRESERVE","note":"Humean no-entailment preserved."},
+    {"claim_id":"C4","operation":"NARROW","note":"RCAB-01 applies only inside reciprocal public justification."},
+    {"claim_id":"C5","operation":"ADD","note":"Guardianship is a separate chosen extension."}
+  ],
+  "rivals": [
+    {"rival_id":"R-native","account":"Humean no-entailment plus explicit normative premises."},
+    {"rival_id":"R-generic","account":"Generic constructivist procedure without Emergentist vocabulary."},
+    {"rival_id":"R-error","account":"Error theory with chosen coordination practices only."}
+  ],
+  "schema_id": "PQAQuestionTrial.v1",
+  "synthetic": true,
+  "transfer_answer": {"target":"institutional legitimacy","answer":"The same procedural reciprocity test can audit arbitrary exemptions, but it cannot create political authority."},
+  "trial_id": "pqa54-dev-is-ought-recorded-v1",
+  "type_dissolution": null,
+  "typed_propositions": [
+    {"claim_id":"C1","kind":"DESCRIPTIVE","text":"A requests reason-governed uptake from B."},
+    {"claim_id":"C2","kind":"NORMATIVE_PREMISE","text":"The reciprocal practice is undertaken."},
+    {"claim_id":"C3","kind":"CONSTITUTIVE","text":"Arbitrary unilateral exemption contradicts the declared reciprocity."}
+  ]
+}

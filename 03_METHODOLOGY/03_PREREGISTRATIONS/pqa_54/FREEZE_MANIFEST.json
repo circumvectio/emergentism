@@ -1,0 +1,132 @@
+{
+  "benchmark_id": "PQA-54",
+  "external_validation": false,
+  "files": [
+    {
+      "bytes": 747,
+      "path": "README.md",
+      "sha256": "21f4ca53cbe16bb2f500fee5b076b8c3ce23797072d4e2b8ef81be1aacd7715c"
+    },
+    {
+      "bytes": 978,
+      "path": "fixtures/dev/pqa54_dev.json",
+      "sha256": "fb05bb75f38d8cddb1c936017a1bcff88d3f68d31b9f8c99b62e829d879664b6"
+    },
+    {
+      "bytes": 38544,
+      "path": "pqa_core.py",
+      "sha256": "5ba59f81473ffdc1c98ca819a384d7d5133e27714ee9686c461181f98d4c0bf4"
+    },
+    {
+      "bytes": 20324,
+      "path": "prompts/questions.json",
+      "sha256": "1ea31b71c52c274960af9361994d77f0b849eee2579610822c25293a99280250"
+    },
+    {
+      "bytes": 17330,
+      "path": "public_projection.json",
+      "sha256": "fad9e470f95bca53c8c77023004020719196271d51ae05a3ff74a8e1e02a10c7"
+    },
+    {
+      "bytes": 4650,
+      "path": "recorded_responses/pqa54_dev.json",
+      "sha256": "4228d210435cad49f7a71f009220fec190da0d064e0efb52f25469402a4443b5"
+    },
+    {
+      "bytes": 753,
+      "path": "recorded_responses/pqa54_score.json",
+      "sha256": "72fb2d5155a93fe64953ff9996c42e16d3f5cffcbf6d0e92d00f38ea252968e9"
+    },
+    {
+      "bytes": 5605,
+      "path": "run_pqa.py",
+      "sha256": "676b4a4ab70b83a421bef02e924d569c99a0e34835ddc9e7605a1c8cea28053c"
+    },
+    {
+      "bytes": 1226,
+      "path": "schemas/CoAgency.v1.schema.json",
+      "sha256": "b46d23fffcaec66d173f1a405987411ebfb4ce6494caad243125d632ca7d57ad"
+    },
+    {
+      "bytes": 1529,
+      "path": "schemas/FrameworkObjectivity.v1.schema.json",
+      "sha256": "5e767cda1e440a64e22dd5aabedf9dbb487b88b338b42c71cac374803b311519"
+    },
+    {
+      "bytes": 1374,
+      "path": "schemas/Guardianship.v1.schema.json",
+      "sha256": "d1adbb1cdc7c9e56dd85fd081d61610a6ef991c1b4b3ebea5c5c274bc0546ee7"
+    },
+    {
+      "bytes": 1057,
+      "path": "schemas/PQAAtlasManifest.v1.schema.json",
+      "sha256": "c2ced91b1176959e83ae970a730ec69082c15eb498164ce8cfb768e867ef567d"
+    },
+    {
+      "bytes": 835,
+      "path": "schemas/PQAComparisonReceipt.v1.schema.json",
+      "sha256": "8d88bea2e0bc465519bb76afae4e0a85db668ccee226a60fa5c9ce632a9fbafd"
+    },
+    {
+      "bytes": 1162,
+      "path": "schemas/PQAEUBCompanion.v1.schema.json",
+      "sha256": "29df6743cd9d747d0113e2b1b43a41bfe4428e12fb5a17d136fea4255245f8c2"
+    },
+    {
+      "bytes": 1128,
+      "path": "schemas/PQANativeReview.v1.schema.json",
+      "sha256": "94c2729c019cc75c0df18d35f143d1d6fac0fdbec053432985633984a8ea8b9c"
+    },
+    {
+      "bytes": 1694,
+      "path": "schemas/PQANormativeBridge.v1.schema.json",
+      "sha256": "da4a47c14978c7d3bec4746190f61ea4d4acdbfc74f7558f266903cae2cea503"
+    },
+    {
+      "bytes": 971,
+      "path": "schemas/PQAPublicProjection.v1.schema.json",
+      "sha256": "a8fde37e49eb07e344f4ffcb4fb6482b5503407a5dcc360618b170e0b791c2f1"
+    },
+    {
+      "bytes": 1494,
+      "path": "schemas/PQAQuestionFixture.v1.schema.json",
+      "sha256": "4d014be0de9d57688069489c25c56c1e30247e68430dd05aad733d0eac663f6d"
+    },
+    {
+      "bytes": 1767,
+      "path": "schemas/PQAQuestionTrial.v1.schema.json",
+      "sha256": "874aadcc52a0581fc59fb0fecdac5aaa92e15f81caab19fe9c469618281f75bf"
+    },
+    {
+      "bytes": 1147,
+      "path": "schemas/PQARunEnvelope.v1.schema.json",
+      "sha256": "5fce033a78b37cedbd7ffded7f95ee7c4ad5f25fa14c9d1df9df5f5e3160aa79"
+    },
+    {
+      "bytes": 1001,
+      "path": "schemas/PQAScoreReceipt.v1.schema.json",
+      "sha256": "53ac1f33ab048b73575544c520281df219454f27f040fdcd1332ad485f2146de"
+    },
+    {
+      "bytes": 1222,
+      "path": "schemas/PhilosophyCoverage.v1.schema.json",
+      "sha256": "c2da86811c2a9aa6b1c2bd3fe3aecdf2c0c5bdd6b7650b3684576ed05b5a487a"
+    },
+    {
+      "bytes": 1333,
+      "path": "schemas/TypeDissolution.v1.schema.json",
+      "sha256": "fee76ddf2a04cd6cd24b3f4d1959ffb75a9e5d8e78ba399f1b0941520b5717e9"
+    },
+    {
+      "bytes": 16106,
+      "path": "tests/test_pqa_54.py",
+      "sha256": "015c92badf71019b114b874eaf47f4884bd48c2309187ae2163cf9476b41623a"
+    }
+  ],
+  "live_results": 0,
+  "network_default": "REFUSED",
+  "protocol_path": "../07_PQA_54_COMPANION_v1.0.md",
+  "protocol_sha256": "b1af36d375e0a1b65f64d73f1a2f7e1d19bbbea511deba50bb01e58d26987af9",
+  "protocol_version": "0.1.0",
+  "schema_id": "PQAFreezeManifest.v1"
+}

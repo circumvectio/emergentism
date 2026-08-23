@@ -224,6 +224,22 @@ EFT without importing the spacetime relation it claims to explain.
 
 ## 9. Freeze, run, and report procedure
 
+The machine entry object is `ForcePermutationTrial.v1` under
+[`v2_2_contracts/`](v2_2_contracts/). Its deterministic null fixture contains
+all 24 bijections exactly once, the no-mapping, many-to-many, and electroweak
+rivals, and the D3 quantum-specific gate. It hard-codes:
+
+```text
+agreement_with_burri_counts_as_correctness = false
+primary_scalar = null
+selected_candidate = null
+evaluation_count = 0
+result_state = UNRUN
+```
+
+Changing any of these fields before a custodied run is protocol failure, not a
+result.
+
 Before a run:
 
 1. fill every required packet field for the candidate;

@@ -1,0 +1,25 @@
+{
+  "fixture_id": "pqa54-dev-is-ought-synthetic-v1",
+  "native_target": "Hume's is–ought distinction and bridge principles.",
+  "public_stem": "What, if anything, can bridge descriptive premises and normative conclusions?",
+  "question_id": "PQA54@0.1:ETH:IS_OUGHT",
+  "reveal_commitments": {
+    "ATTACK": "sha256:54bd478cf462d7bc4083fee078792e6f89e065ce1cb6f10620bb7913b8b05aa3",
+    "CONTACT": "sha256:e4c58c5d26df66ab6bf8c70c6705d41da5ede29d2317d656cd8cc7539740c492",
+    "DISCRIMINATE": "sha256:eabbb408296a17b62cd60f846a32add9fef985554a0730394a3b2d69baaea575",
+    "REVISE_TRANSFER": "sha256:5c037b36fb0bd268194c1c1080b5473b89d09f5e9c1cd2fc526b1d537ea910b8"
+  },
+  "rival_families": [
+    "Humean no-entailment",
+    "contractualist/constructivist bridge",
+    "error theory"
+  ],
+  "schema_id": "PQAQuestionFixture.v1",
+  "source_bundle": [
+    "Hume, Treatise of Human Nature III.i.1.",
+    "RCAB-01",
+    "GEX-01"
+  ],
+  "split": "DEVELOPMENT",
+  "synthetic": true
+}

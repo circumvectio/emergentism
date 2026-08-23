@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQANormativeBridge.v1",
+  "title": "PQANormativeBridge.v1",
+  "type": "object",
+  "required": ["schema_id", "bridge_id", "descriptive_premises", "normative_premises", "bridge_rule", "bearers", "horizons", "consent", "authority", "justice", "exit", "guardianship_extension", "aggregation_rule", "rivals", "counterexamples", "kill", "survivor", "objectivity_level", "bridge_status"],
+  "properties": {
+    "schema_id": {"const": "PQANormativeBridge.v1"},
+    "bridge_id": {"type": "string", "minLength": 1},
+    "descriptive_premises": {"type": "array", "minItems": 1},
+    "normative_premises": {"type": "array", "minItems": 1},
+    "bridge_rule": {"type": "string", "minLength": 1},
+    "bearers": {"type": "array", "minItems": 1},
+    "horizons": {"type": "array", "minItems": 1},
+    "consent": {"type": "string", "minLength": 1},
+    "authority": {"type": "string", "minLength": 1},
+    "justice": {"type": "string", "minLength": 1},
+    "exit": {"type": "string", "minLength": 1},
+    "guardianship_extension": {"type": ["object", "null"]},
+    "aggregation_rule": {"type": "string", "minLength": 1},
+    "rivals": {"type": "array", "minItems": 2},
+    "counterexamples": {"type": "array", "minItems": 1},
+    "kill": {"type": "string", "minLength": 1},
+    "survivor": {"type": "string", "minLength": 1},
+    "objectivity_level": {"enum": ["NONE", "DEFINITION_STABLE", "PROCEDURALLY_REPRODUCIBLE", "EMPIRICALLY_ADEQUATE", "STANCE_INDEPENDENT"]},
+    "bridge_status": {"enum": ["PROPOSED", "VALID_WITHIN_DECLARED_PREMISES", "NARROWED", "UNDERDETERMINED", "KILLED"]}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,56 @@
+{
+  "schema_id": "M4Compression.v1",
+  "trial_id": "m4-synthetic-unrun-v1",
+  "corpus": {
+    "id": "SYNTHETIC_ONLY",
+    "version": "v1",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sampling_rule": "Four synthetic strategy descriptions; no world inference.",
+    "exclusions": "Every external game corpus."
+  },
+  "native_encoder": {
+    "id": "native-label-baseline",
+    "fit_without_emergentist_coordinates": true
+  },
+  "target": {
+    "kind": "held_out_classification",
+    "metric": "macro_f1"
+  },
+  "code_length": {
+    "unit": "bits",
+    "includes_dictionary": true,
+    "missing_placement_costed": true
+  },
+  "parameter_count": 4,
+  "distortion_metric": {
+    "name": "normalized_reconstruction_error",
+    "maximum": 0.1
+  },
+  "performance_floor": {
+    "metric": "macro_f1",
+    "minimum": 0.8
+  },
+  "splits": {
+    "development": ["SYN-01", "SYN-02"],
+    "validation": ["SYN-03"],
+    "held_out": ["SYN-04"]
+  },
+  "comparators": [
+    {"kind": "NATIVE", "id": "native-label-baseline"},
+    {"kind": "ONE_AXIS", "id": "best-one-axis"},
+    {"kind": "ALTERNATE_TWO_AXIS", "id": "agency-risk-two-axis"},
+    {"kind": "ADDED_AXIS", "id": "m4-plus-information-axis"},
+    {"kind": "LEARNED_NO_PLACEMENT", "id": "equal-budget-learned-code"}
+  ],
+  "resource_parity": {
+    "same_training_rows": true,
+    "same_target_access": true,
+    "same_parameter_budget": true,
+    "same_compute_budget": true
+  },
+  "maximality_scope": "FROZEN_COMPARATOR_CLASS_ONLY",
+  "global_game_theory_exhausted": false,
+  "result_state": "UNRUN",
+  "kill": "Kill measured compression if a comparator meets the floor at shorter penalized code length or an added axis yields material held-out gain.",
+  "survivor": "The four contrasts may remain a visualization and hypothesis-generating vocabulary."
+}

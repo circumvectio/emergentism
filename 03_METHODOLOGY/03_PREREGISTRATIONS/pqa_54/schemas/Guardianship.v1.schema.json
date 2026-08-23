@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/Guardianship.v1",
+  "title": "Guardianship.v1",
+  "type": "object",
+  "required": ["schema_id", "guardianship_id", "bearer", "mandate_source", "protected_interest", "scope", "duration", "least_restrictive_test", "conflicts", "review_appeal", "revocation", "exit", "ownershipCreated", "rankCreated", "substitutedAgency", "blanketPower", "maySign", "mayAuthorize"],
+  "properties": {
+    "schema_id": {"const": "Guardianship.v1"},
+    "guardianship_id": {"type": "string", "minLength": 1},
+    "bearer": {"type": "string", "minLength": 1},
+    "mandate_source": {"type": "string", "minLength": 1},
+    "protected_interest": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "duration": {"type": "string", "minLength": 1},
+    "least_restrictive_test": {"type": "string", "minLength": 1},
+    "conflicts": {"type": "array"},
+    "review_appeal": {"type": "string", "minLength": 1},
+    "revocation": {"type": "string", "minLength": 1},
+    "exit": {"type": "string", "minLength": 1},
+    "ownershipCreated": {"const": false},
+    "rankCreated": {"const": false},
+    "substitutedAgency": {"const": false},
+    "blanketPower": {"const": false},
+    "maySign": {"const": false},
+    "mayAuthorize": {"const": false}
+  },
+  "additionalProperties": false
+}

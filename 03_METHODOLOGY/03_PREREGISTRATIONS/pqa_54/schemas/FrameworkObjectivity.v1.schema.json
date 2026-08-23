@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/FrameworkObjectivity.v1",
+  "title": "FrameworkObjectivity.v1",
+  "type": "object",
+  "required": ["schema_id", "assessment_id", "meaning", "bearers", "payer_beneficiary", "baseline", "horizon", "measure", "justice", "uncertainty", "classification", "objectivity_level", "moralRealismEstablished", "universalAcceptanceCompelled", "cosmicTelosEstablished", "adequacy_tier"],
+  "properties": {
+    "schema_id": {"const": "FrameworkObjectivity.v1"},
+    "assessment_id": {"type": "string", "minLength": 1},
+    "meaning": {"const": "decision_stable_given_declared_inputs"},
+    "bearers": {"type": "array", "minItems": 1},
+    "payer_beneficiary": {"type": "object"},
+    "baseline": {"type": "string", "minLength": 1},
+    "horizon": {"type": "string", "minLength": 1},
+    "measure": {"type": "string", "minLength": 1},
+    "justice": {"type": "string", "minLength": 1},
+    "uncertainty": {"type": "string", "minLength": 1},
+    "classification": {"enum": ["PRESERVATION", "CONTRIBUTION", "SUPPORT", "SYNTROPIC", "SACRIFICE", "EXTRACTION", "UNDERDETERMINED", "NO_ADMISSIBLE_ACTION"]},
+    "objectivity_level": {"enum": ["DEFINITION_STABLE", "PROCEDURALLY_REPRODUCIBLE", "EMPIRICALLY_ADEQUATE", "STANCE_INDEPENDENT"]},
+    "moralRealismEstablished": {"const": false},
+    "universalAcceptanceCompelled": {"const": false},
+    "cosmicTelosEstablished": {"const": false},
+    "adequacy_tier": {"const": "C"}
+  },
+  "additionalProperties": false
+}

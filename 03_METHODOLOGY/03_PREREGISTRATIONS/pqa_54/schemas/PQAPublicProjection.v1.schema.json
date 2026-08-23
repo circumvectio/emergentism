@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAPublicProjection.v1",
+  "title": "PQAPublicProjection.v1",
+  "type": "object",
+  "required": ["schema_id", "benchmark_id", "protocol_version", "atlas_hash", "counts", "majority_state", "questions", "public_thesis", "external_validation", "deployed"],
+  "properties": {
+    "schema_id": {"const": "PQAPublicProjection.v1"},
+    "benchmark_id": {"const": "PQA-54"},
+    "protocol_version": {"const": "0.1.0"},
+    "atlas_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "counts": {"type": "object"},
+    "majority_state": {"enum": ["NOT_RUN", "NOT_EARNED", "EARNED_PQA54_ONLY"]},
+    "questions": {"type": "array", "minItems": 54, "maxItems": 54},
+    "public_thesis": {"const": "Emergentism does not end philosophy. It makes philosophical debt legible."},
+    "external_validation": {"const": false},
+    "deployed": {"const": false}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/SLWPBoundaryTest.v1",
+  "title": "SLWPBoundaryTest.v1",
+  "type": "object",
+  "required": ["schema_id", "test_id", "mu_id", "lower_freeze", "higher_candidate", "projection_map", "section_map", "fiber_witness", "recovery_result", "reducible_counterexample", "novelty_discriminator", "held_out_prediction", "projection_result", "ontology_result", "strong_emergence_established", "kill", "survivor"],
+  "properties": {
+    "schema_id": {"const": "SLWPBoundaryTest.v1"},
+    "test_id": {"type": "string", "minLength": 1},
+    "mu_id": {"enum": ["mu0", "mu1", "mu2", "mu3", "mu4"]},
+    "lower_freeze": {"type": "object"},
+    "higher_candidate": {"type": "object"},
+    "projection_map": {"type": "object"},
+    "section_map": {"type": "object"},
+    "fiber_witness": {"type": "object"},
+    "recovery_result": {"type": "object"},
+    "reducible_counterexample": {"type": "object"},
+    "novelty_discriminator": {"type": "string", "minLength": 1},
+    "held_out_prediction": {"type": "string", "minLength": 1},
+    "projection_result": {"enum": ["PROJECTION_ASYMMETRY_PROVEN", "NOT_ESTABLISHED", "KILLED"]},
+    "ontology_result": {"enum": ["OPEN", "SURVIVES_BOUNDED_TEST", "REDUCED", "KILLED"]},
+    "strong_emergence_established": {"type": "boolean"},
+    "kill": {"type": "string", "minLength": 1},
+    "survivor": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

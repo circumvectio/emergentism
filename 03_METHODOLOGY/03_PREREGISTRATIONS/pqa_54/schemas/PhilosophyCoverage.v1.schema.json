@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PhilosophyCoverage.v1",
+  "title": "PhilosophyCoverage.v1",
+  "type": "object",
+  "required": ["schema_id", "coverage_id", "universe_source_hash", "unit_of_count", "inclusion_rule", "exclusion_rule", "N", "evaluated_n", "reviewed_n", "qualifying_n", "threshold", "per_domain_minimum", "majority_earned", "global_claim_allowed"],
+  "properties": {
+    "schema_id": {"const": "PhilosophyCoverage.v1"},
+    "coverage_id": {"type": "string", "minLength": 1},
+    "universe_source_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "unit_of_count": {"const": "frozen_question_family"},
+    "inclusion_rule": {"type": "string", "minLength": 1},
+    "exclusion_rule": {"type": "string", "minLength": 1},
+    "N": {"const": 54},
+    "evaluated_n": {"type": "integer", "minimum": 0, "maximum": 54},
+    "reviewed_n": {"type": "integer", "minimum": 0, "maximum": 54},
+    "qualifying_n": {"type": "integer", "minimum": 0, "maximum": 54},
+    "threshold": {"const": 28},
+    "per_domain_minimum": {"const": 3},
+    "majority_earned": {"type": "boolean"},
+    "global_claim_allowed": {"const": false}
+  },
+  "additionalProperties": false
+}

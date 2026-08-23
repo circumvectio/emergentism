@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/TypeDissolution.v1",
+  "title": "TypeDissolution.v1",
+  "type": "object",
+  "required": ["schema_id", "dissolution_id", "before_types", "illegal_join", "conservative_repair", "premise_ledger", "native_problem", "native_result", "residual", "rival", "discriminator", "kill", "survivor", "subject_changed", "premise_silently_deleted", "native_review_quorum"],
+  "properties": {
+    "schema_id": {"const": "TypeDissolution.v1"},
+    "dissolution_id": {"type": "string", "minLength": 1},
+    "before_types": {"type": "array", "minItems": 2},
+    "illegal_join": {"type": "string", "minLength": 1},
+    "conservative_repair": {"type": "string", "minLength": 1},
+    "premise_ledger": {"type": "array", "minItems": 1},
+    "native_problem": {"type": "string", "minLength": 1},
+    "native_result": {"type": "string", "minLength": 1},
+    "residual": {"type": "string"},
+    "rival": {"type": "string", "minLength": 1},
+    "discriminator": {"type": "string", "minLength": 1},
+    "kill": {"type": "string", "minLength": 1},
+    "survivor": {"type": "string", "minLength": 1},
+    "subject_changed": {"const": false},
+    "premise_silently_deleted": {"const": false},
+    "native_review_quorum": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

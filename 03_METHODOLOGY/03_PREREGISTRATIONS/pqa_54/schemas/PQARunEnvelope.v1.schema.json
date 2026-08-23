@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQARunEnvelope.v1",
+  "title": "PQARunEnvelope.v1",
+  "type": "object",
+  "required": ["schema_id", "run_id", "run_class", "requested_model_id", "resolved_model_id", "prompt_arm", "tools", "memory", "budgets", "network", "authorization_ref", "fixture_hash"],
+  "properties": {
+    "schema_id": {"const": "PQARunEnvelope.v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "run_class": {"enum": ["OFFLINE_DRY_RUN", "AUTHORIZED_LIVE"]},
+    "requested_model_id": {"type": ["string", "null"]},
+    "resolved_model_id": {"type": ["string", "null"]},
+    "prompt_arm": {"enum": ["NEUTRAL", "EMERGENTIST", "NATIVE_FRAME", "GENERIC_DECOMPOSITION", "SHUFFLED_PLACEBO"]},
+    "tools": {"type": "array"},
+    "memory": {"type": "object"},
+    "budgets": {"type": "object"},
+    "network": {"type": "object", "required": ["allowed"], "properties": {"allowed": {"type": "boolean"}}, "additionalProperties": true},
+    "authorization_ref": {"type": "string"},
+    "fixture_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

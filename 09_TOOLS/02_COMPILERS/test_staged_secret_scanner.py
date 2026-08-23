@@ -31,6 +31,13 @@ class StagedSecretScannerTests(unittest.TestCase):
         diff = added_line(f"{digest}  conditions.json", "BATTERY_FROZEN_SHA256.txt")
         self.assertEqual(scanner.scan(diff), [])
 
+    def test_typed_hash_field_is_not_a_secret(self) -> None:
+        digest = "d4" * 32
+        for field in ("atlas_hash", "trial_hash", "fixture_hash"):
+            with self.subTest(field=field):
+                diff = added_line(f'{{"{field}":"{digest}"}}', "receipt.json")
+                self.assertEqual(scanner.scan(diff), [])
+
     def test_bare_64_hex_token_remains_suspicious(self) -> None:
         token = "c3" * 32
         findings = scanner.scan(added_line(token))

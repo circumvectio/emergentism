@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/PQAAtlasManifest.v1",
+  "title": "PQAAtlasManifest.v1",
+  "type": "object",
+  "required": ["schema_id", "benchmark_id", "protocol_version", "selection_tier", "selection_scope", "launch_counts", "majority_rule", "domains"],
+  "properties": {
+    "schema_id": {"const": "PQAAtlasManifest.v1"},
+    "benchmark_id": {"const": "PQA-54"},
+    "protocol_version": {"const": "0.1.0"},
+    "selection_tier": {"const": "D"},
+    "selection_scope": {"type": "string", "minLength": 1},
+    "launch_counts": {
+      "type": "object",
+      "required": ["selected", "evaluated", "independently_reviewed", "resolved"],
+      "properties": {
+        "selected": {"const": 54},
+        "evaluated": {"const": 0},
+        "independently_reviewed": {"const": 0},
+        "resolved": {"const": 0}
+      },
+      "additionalProperties": false
+    },
+    "majority_rule": {"type": "object"},
+    "domains": {"type": "array", "minItems": 9, "maxItems": 9}
+  },
+  "additionalProperties": false
+}

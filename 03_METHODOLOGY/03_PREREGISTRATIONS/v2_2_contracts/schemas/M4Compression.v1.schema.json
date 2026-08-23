@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/M4Compression.v1",
+  "title": "M4Compression.v1",
+  "type": "object",
+  "required": ["schema_id", "trial_id", "corpus", "native_encoder", "target", "code_length", "parameter_count", "distortion_metric", "performance_floor", "splits", "comparators", "resource_parity", "maximality_scope", "global_game_theory_exhausted", "result_state", "kill", "survivor"],
+  "properties": {
+    "schema_id": {"const": "M4Compression.v1"},
+    "trial_id": {"type": "string", "minLength": 1},
+    "corpus": {"type": "object"},
+    "native_encoder": {"type": "object"},
+    "target": {"type": "object"},
+    "code_length": {"type": "object"},
+    "parameter_count": {"type": "integer", "minimum": 0},
+    "distortion_metric": {"type": "object"},
+    "performance_floor": {"type": "object"},
+    "splits": {"type": "object"},
+    "comparators": {"type": "array", "minItems": 5},
+    "resource_parity": {"type": "object"},
+    "maximality_scope": {"const": "FROZEN_COMPARATOR_CLASS_ONLY"},
+    "global_game_theory_exhausted": {"const": false},
+    "result_state": {"enum": ["UNRUN", "PARTIAL", "SURVIVES", "KILLED"]},
+    "kill": {"type": "string", "minLength": 1},
+    "survivor": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

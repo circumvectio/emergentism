@@ -29,6 +29,10 @@ result-shopping.
 | [`04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md`](04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md) | [D] protocol design; no run or result | EUB-1 two-track causal-provenance benchmark for coherent, consistent, corrigible emergence accounts. |
 | [`06_THE_DASEIN_TEST_EUB1_v1.0.md`](06_THE_DASEIN_TEST_EUB1_v1.0.md) | [D] major construct successor; offline-ready; no candidate result | The Dasein Test: typed explanatory-debt accounting, discovery, reflex, teleology, and self-lineage benchmark. v0.1 remains preserved; scores are non-comparable. |
 | [`eub_v1/`](eub_v1/) | [D] self-contained implementation | Five schemas, deterministic development fixtures, vector scorer, offline-default adapters, CLI, freeze manifest, and recorded-response tests. |
+| [`07_PQA_54_COMPANION_v1.0.md`](07_PQA_54_COMPANION_v1.0.md) | [D] companion protocol; no candidate result | Frozen 54-question denominator, typed dissolution and normative-bridge tests, native review, revision and transfer. |
+| [`pqa_54/`](pqa_54/) | [D] self-contained reference implementation | Public atlas, schemas, deterministic synthetic fixtures, vector scorer, public projection, CLI and freeze custody. |
+| [`08_M4_COMPRESSION_PROTOCOL_v0.1.md`](08_M4_COMPRESSION_PROTOCOL_v0.1.md) | [D] draft protocol; no corpus scored | Frozen-corpus compression test with native, one-axis, alternate-two-axis, added-axis, and learned/no-placement comparators. |
+| [`v2_2_contracts/`](v2_2_contracts/) | [D] deterministic research contracts | Machine contracts and synthetic tests for M4 compression, SLWP boundary asymmetry, and all 24 force assignments. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 | [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
 
@@ -60,11 +64,14 @@ result-shopping.
 6. **The toy harness is not biology evidence.** It proves that the witness
    objects can be computed in a declared model; it does not upgrade any living
    system claim.
-7. **EUB-1 is not an ASI certificate.** Until its schemas, fixtures, rivals,
-   judges, analysis plan, and hashes are frozen, it remains a non-runnable
-   design. A later pass is only a bounded capability profile for the named
+7. **EUB-1 is not an ASI certificate.** v0.1 remains the historical design;
+   v1.0 is locally offline-ready but has no candidate result or external
+   validation. Any later run is only a bounded capability profile for the named
    candidate and protocol version.
 8. **EUB-1 v1.0 supersedes only future run design.** Keep v0.1 addressable and
    never compare scores across the major-version boundary. `OFFLINE-READY`
    means locally implemented, not evaluated, validated, deposited, submitted,
    deployed, or priority-established.
+9. **PQA-54 is a companion, not a score extension.** It may bind EUB-1 hashes
+   but cannot modify EUB-1, import its scores, transfer truth, hide the public
+   denominator, or turn an inventory into a philosophical resolution.
