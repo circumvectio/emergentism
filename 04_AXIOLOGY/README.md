@@ -18,18 +18,19 @@ institution, product, or external governance framework.
 
 ## Core contract
 
-Morals name the direction `i → H`: the individual raises the durable potential
-of the sustaining whole. Ethics name `H → i`: the whole raises the durable
-potential of the individual. Strict Syntropic Dyadism requires both directions
-to rise under Justice:
+Contribution names the direction `i → H`: the individual raises the durable
+potential of the sustaining whole. Support names `H → i`: the whole raises the
+durable potential of the individual. `Moral_E` and `Ethical_E` retain those
+meanings as Emergentist technical aliases. Strict Syntropic Dyadism requires
+both directions to rise under Justice:
 
 \[
-\operatorname{Moral}(a)
+\operatorname{Contribution}(a)
 \iff \Delta_TW_H>0\land\Delta_TW_i\ge0\land J,
 \]
 
 \[
-\operatorname{Ethical}(a)
+\operatorname{Support}(a)
 \iff \Delta_TW_i>0\land\Delta_TW_H\ge0\land J,
 \]
 
@@ -81,6 +82,8 @@ unconditional maximization claim is therefore false.
 | [The Good, the Evil, and the Transcendentals](02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) | Interpretive value language |
 | [Transcendentals](02_VALUE_THEORY/01_TRANSCENDENTALS.md) | Bounded Beauty, Truth, and Justice lens; no chart-coordinate warrant |
 | [Objective Ethics Bridge Docket](02_VALUE_THEORY/02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md) | A4 research docket; Justice remains chosen while moral realism is evidence-open |
+| [RCAB-01](02_VALUE_THEORY/03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md) | Conditional constitutive bridge inside reciprocal public justification |
+| [GEX-01](02_VALUE_THEORY/04_GUARDIANSHIP_EXTENSION_GEX_01.md) | Separate guardianship extension for dependent, absent and future bearers |
 | [Bridge Laws](00_BRIDGE_LAWS_BETWEEN_LEVELS.md) | Cross-level creation, stabilization, and destruction tests |
 | [Extraction Law](00_THE_EXTRACTION_LAW.md) | Conditional extraction dynamics and counterexamples |
 | [Commandment vs Geometry](00_COMMANDMENT_VS_GEOMETRY.md) | Chosen vow versus analytic consequence |

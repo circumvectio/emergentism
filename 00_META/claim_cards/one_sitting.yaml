@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41",
+    "reviewed_source_sha256": "0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -114,6 +114,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "analytic chart weights separated from the selected horizon crosswalk, bearer-wise regret, and untested Dharma-flow transfer",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "append the owner-directed v2.2 reciprocal bridge, guardianship separation, framework-objectivity levels, and frozen PQA-54 null state; add OS01-38 through OS01-41",
+        "prior_hash": "37e21d91ed73b275d462a67d01a17cbea52d4169ec2e38cee63294ad45ad0e41", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "conditional co-agency result and separately chosen guardianship extension cannot inflate into moral realism or a philosophy-wide resolution claim",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"
       }
     ]
   },
@@ -1636,6 +1645,114 @@
       "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md"]},
       "semantic_owner_id": "K-3",
       "supporting_owner_ids": ["K-1", "K-4"]
+    },
+    {
+      "card_id": "OS01-38",
+      "chapters": ["good"],
+      "locator": {
+        "section": "12C",
+        "line_start": 823,
+        "line_end": 826,
+        "anchor": "Emergentism now separates three claims that are often collapsed. First, the",
+        "fingerprint_sha256": "06fa00b7b8cecaab3390a2163cccd6508933644917055f04c9cdbc60145ef468"
+      },
+      "plain_claim": "Part-to-whole Contribution and whole-to-part Support are definition-stable framework terms; Moral_E and Ethical_E remain technical aliases rather than universal ordinary-language definitions.",
+      "claim_type": "stipulation",
+      "evidence": [{"tier": "S", "scope": "definitions inside the selected bearer-complete value model"}],
+      "dependencies": ["OS01-22", "OS01-30"],
+      "docket_ids": ["A4"],
+      "type_boundaries": ["definition stability is not procedural reproducibility, empirical adequacy, stance-independent moral realism, or linguistic universality"],
+      "strongest_rival": "Use ordinary moral terminology or a different directional vocabulary because the Emergentist aliases add no explanatory or decision value.",
+      "discriminator": "Independent implementations must return the same classification on complete inputs and outperform simpler terminology on comprehension and hidden-bearer detection.",
+      "kill_criterion": "Retire the aliases or framework-objective label if complete identical inputs produce contradictory classifications without an explicit evidence or value difference, or if the names systematically mislead readers.",
+      "survivor_if_killed": "The explicit part-to-whole and whole-to-part directions and bearer-complete Justice test.",
+      "consequence": {"applicable": true, "bearers": ["actors", "affected parts", "affected wholes"], "consent": "declare where applicable", "reversibility": "classification is revisable", "exit": "The terminology is optional and may be replaced."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[S] Contribution and Support are stable framework definitions; Moral_E and Ethical_E are technical aliases, not proof of moral realism or universal usage."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": ["K-3", "K-4"]
+    },
+    {
+      "card_id": "OS01-39",
+      "chapters": ["good"],
+      "locator": {
+        "section": "12C",
+        "line_start": 827,
+        "line_end": 840,
+        "anchor": "shows conditionally that an agent who asks an equally situated co-agent to",
+        "fingerprint_sha256": "e53c3d70402fdaa2cc44fe36a178f6d850b9d640ed6324cb672eeffd72f57159"
+      },
+      "plain_claim": "RCAB-01 is a conditional constitutive bridge inside reciprocal public justification and does not derive an ought from value-free facts or establish stance-independent moral realism.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "S", "scope": "constitutive result inside the declared reciprocal practice"}, {"tier": "I", "scope": "adoption of the practice"}, {"tier": "C", "scope": "distinctiveness and world adequacy"}],
+      "dependencies": ["OS01-22", "OS01-38"],
+      "docket_ids": ["A4"],
+      "type_boundaries": ["conditional constitutive ought is not value-free derivation, complete Justice, moral realism, cosmic purpose, shared personhood, consent, will, or authority"],
+      "strongest_rival": "Contractualist, discourse-ethical, constructivist, Humean, realist, pluralist, or error-theoretic accounts explain the same procedural duties with less framework-specific machinery.",
+      "discriminator": "Bearer-label permutation tests and hard cases must expose arbitrary exemptions, hidden bearers, correction failures and Exit failures beyond simpler procedural rivals.",
+      "kill_criterion": "Kill or narrow the bridge if reciprocity hides the substantive conclusion, the five conditions are not constitutive of the declared practice, or the result is transferred to non-reciprocal bearers as if proved.",
+      "survivor_if_killed": "Every public-reason procedure must still declare who may speak, contest, correct and leave.",
+      "consequence": {"applicable": true, "bearers": ["independent co-agents"], "consent": "reciprocal participation remains contestable", "reversibility": "claims and participation are corrigible", "exit": "Feasible non-coercive Exit is constitutive where lawful."},
+      "disposition": "research_docket",
+      "public": {"state": "bounded_current", "wording": "[S] Inside reciprocal public justification, equally situated co-agents cannot be arbitrarily denied visibility, contest, correction or feasible Exit. The practice premise is explicit; moral realism and the general is–ought problem remain open."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-40",
+      "chapters": ["good"],
+      "locator": {
+        "section": "12C",
+        "line_start": 830,
+        "line_end": 833,
+        "anchor": "reciprocal public justification `[S]` inside that practice. Third, extending",
+        "fingerprint_sha256": "5b5bdaf2644e030e26a18627d40741816c906caf74f0831cbcf68e7ae723a9d1"
+      },
+      "plain_claim": "Guardianship for dependent, absent, nonhuman, ecological and future bearers is a separately chosen, bounded extension and cannot borrow proof from reciprocal co-agency.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "I", "scope": "selected Justice extension"}, {"tier": "C", "scope": "comparative adequacy against established safeguards"}],
+      "dependencies": ["OS01-22", "OS01-39"],
+      "docket_ids": ["A4"],
+      "type_boundaries": ["reciprocity is not a condition of worth or care; guardianship is not co-agency, ownership, consent, substituted personhood, blanket power, signing, or authorization"],
+      "strongest_rival": "Established best-interest, supported-decision, fiduciary, rights, capabilities, precautionary or stewardship safeguards dominate GEX-01.",
+      "discriminator": "Compare hidden-bearer detection, proxy capture, least-restrictive choice, conflict disclosure, review, restoration and Exit.",
+      "kill_criterion": "Kill or narrow GEX-01 if protection self-authorizes, reciprocity becomes worth, guardian and bearer are fused, conflicts are hidden, collective benefit launders harm, or a simpler safeguard performs better.",
+      "survivor_if_killed": "Dependent and absent bearers still require visible representation, conflict disclosure and protection against proxy capture.",
+      "consequence": {"applicable": true, "bearers": ["dependent bearers", "absent bearers", "nonhuman bearers", "future bearers"], "consent": "never infer consent; use the exact mandate and supported choice where possible", "reversibility": "least-restrictive and reviewable", "exit": "Mandate revocation, restoration and successor protections must be named."},
+      "disposition": "research_docket",
+      "public": {"state": "bounded_current", "wording": "[I/C] Guardianship is separately mandated, bounded, least-restrictive, reviewable and revocable; it creates no ownership, shared personhood, consent or machine authority."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": ["K-3", "K-4"]
+    },
+    {
+      "card_id": "OS01-41",
+      "chapters": ["exit"],
+      "locator": {
+        "section": "12C",
+        "line_start": 842,
+        "line_end": 861,
+        "anchor": "The Philosophy Question Atlas freezes 54 public question families across nine",
+        "fingerprint_sha256": "1005fdbf35941b9e3c9bedd4ba26d563937ceeea0ae78f3c17ad94df27a3b0fd"
+      },
+      "plain_claim": "PQA-54 freezes a public denominator and requires native recovery, exact type repair, residual preservation and independent review before a bounded philosophical resolution can be earned.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "D", "scope": "selected benchmark construct and null launch state"}, {"tier": "C", "scope": "incremental value and bounded majority wager"}],
+      "dependencies": ["OS01-26", "OS01-39", "OS01-40"],
+      "docket_ids": ["A2", "A4", "A6"],
+      "type_boundaries": ["inventory is not evaluation, review, resolution, validation or truth; clarification and reframe are not type dissolution; PQA-54 majority is not most philosophy"],
+      "strongest_rival": "Native philosophy plus generic decomposition makes the same distinctions more faithfully, and a self-selected 54-question atlas cannot establish broad coverage.",
+      "discriminator": "Run matched neutral, Emergentist, native-frame, generic-decomposition and shuffled-placebo arms with two independent native-domain reviews per earned result.",
+      "kill_criterion": "No result is earned if the question changes, a premise or residual disappears, the native account is distorted, review quorum is missing, a kill fires, or the Emergentist arm adds no value over serious controls.",
+      "survivor_if_killed": "The visible denominator, native problem accounts, typed explanatory debt and correction ledger remain useful.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "results may be narrowed, killed or retracted", "exit": "No worldview adoption or benchmark participation is required."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "PQA-54 launch state: 54 selected · 0 evaluated · 0 independently reviewed · 0 resolved. Emergentism does not end philosophy; it makes philosophical debt legible."},
+      "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"]},
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": ["K-2", "K-5"]
     }
   ]
 }

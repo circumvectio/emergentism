@@ -546,3 +546,30 @@ attributed external-neighbor crosswalk exists, but the integrated synthesis
 remains externally uncalibrated and unvalidated until it produces novel
 preregistered discriminators and independent replication. The next authority
 is contact with the world.
+
+## 8 · The reciprocal bridge and the Question Atlas
+
+The value theory now leads with `Contribution(a;i,H)` and `Support(a;H,i)`;
+`Moral_E` and `Ethical_E` remain technical aliases. Those definitions are
+stable inside the declared model `[S]`, not evidence that every moral language
+or stance converges on them.
+
+`RCAB-01` establishes one conditional constitutive result `[S]`: inside a
+practice of reciprocal public justification, a reason-giver cannot demand
+reason-governed uptake from an equally situated co-agent while arbitrarily
+denying that co-agent visibility, contest, correction and feasible Exit. The
+practice premise is normative and disclosed. The general is–ought problem and
+stance-independent moral realism remain open.
+
+`GEX-01` separately chooses guardianship duties for bearers who cannot
+reciprocate. It requires an actual mandate, named protected interest,
+least-restrictive action, conflicts, review, revocation, repair and Exit. It
+creates no ownership, shared personhood, shared consent or machine authority.
+
+PQA-54 converts the larger claim that Emergentism resolves philosophical
+questions into a frozen comparison. Its initial state is `54 selected · 0
+evaluated · 0 independently reviewed · 0 resolved`. A type dissolution counts
+only when the exact illegal join is repaired without changing the question or
+silently dropping a premise, the native result is recovered, the residual is
+shown and two native-domain reviewers accept the bounded result. Until those
+tests run, “resolves most philosophy” is a wager—not a public fact.

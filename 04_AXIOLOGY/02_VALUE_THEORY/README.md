@@ -24,8 +24,14 @@ This directory contains the pure Emergentist value owners:
 - [Objective Ethics Bridge Docket](02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md) — A4
   research comparison docket; Justice remains a declared constitutional choice
   while moral realism is evidence-open.
+- [RCAB-01](03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md) — conditional
+  constitutive requirements of reciprocal public justification;
+- [GEX-01](04_GUARDIANSHIP_EXTENSION_GEX_01.md) — separately chosen,
+  mandate-bound guardianship for non-reciprocal bearers.
 
-The formal discipline is conjunctive: both the individual and the sustaining
+Plain names lead: part-to-whole **Contribution** and whole-to-part **Support**;
+`Moral_E` and `Ethical_E` remain compatibility aliases. The formal discipline
+is conjunctive: both the individual and the sustaining
 whole must remain non-decreasing, and strict syntropy requires both to rise.
 No aggregate score may erase a harmed bearer. No symbolic, organizational, or
 external signing system supplies warrant.

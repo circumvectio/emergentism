@@ -172,15 +172,22 @@ For a declared individual `i`, sustaining whole `H`, time horizon `T`, and
 bearer-complete Justice test:
 
 ```text
-Moral(a)     iff ΔᵀW_H(a)>0 and ΔᵀW_i(a)≥0 and Justice(a)
-Ethical(a)   iff ΔᵀW_i(a)>0 and ΔᵀW_H(a)≥0 and Justice(a)
-Syntropic(a) iff ΔᵀW_i(a)>0 and ΔᵀW_H(a)>0 and Justice(a)
+Contribution(a;i,H) iff ΔᵀW_H(a)>0 and ΔᵀW_i(a)≥0 and Justice(a)
+Support(a;H,i)      iff ΔᵀW_i(a)>0 and ΔᵀW_H(a)≥0 and Justice(a)
+Syntropic(a)        iff ΔᵀW_i(a)>0 and ΔᵀW_H(a)>0 and Justice(a)
 ```
 
-These are framework definitions. They do not establish moral realism. They
+`Moral_E(a)` and `Ethical_E(a)` remain technical compatibility aliases for the
+first two definitions. These are framework definitions. They do not establish
+moral realism. They
 forbid aggregate gain from laundering the destruction of one side. Voluntary
 sacrifice is a separate costly class, never automatically syntropic and never
 demanded by a collective as proof of goodness.
+
+The reciprocal co-agency bridge supplies only a conditional constitutive ought
+inside a practice of public reason. Guardianship for bearers who cannot
+reciprocate is a separately chosen, mandate-bound extension. Neither geometry,
+emergence, efficiency nor the word *potential* supplies the normative premise.
 
 When every available action carries harm, the goal is not to fabricate a
 win–win description. It is to protect rights, widen the search, minimize

@@ -817,3 +817,45 @@ does not derive the Good.
 
 **Status: OVERLAY NOT RUN.** The horizon reading, regret transfer, and
 Dharma/flow hypothesis have no scored empirical result.
+
+### 12C. The Question Atlas — what can actually be claimed as resolved
+
+Emergentism now separates three claims that are often collapsed. First, the
+terms **part-to-whole Contribution** and **whole-to-part Support** are
+definition-stable inside the selected bearer-complete model `[S]`; the older
+`Moral_E` and `Ethical_E` names remain technical aliases. Second, `RCAB-01`
+shows conditionally that an agent who asks an equally situated co-agent to
+accept reasons cannot coherently deny that co-agent bearer visibility,
+contest, correction and feasible Exit while still calling the practice
+reciprocal public justification `[S]` inside that practice. Third, extending
+care to dependent, absent, nonhuman, ecological and future bearers is a
+separately chosen guardianship commitment `[I/C]`, not a theorem borrowed from
+reciprocity.
+
+This is a real bridge across part of the is–ought terrain, but not a deduction
+of value from value-free facts. The normative entry is the disclosed practice
+of reciprocal justification. It establishes neither stance-independent moral
+realism nor a cosmic purpose. “Framework-objective” means stable classification
+after bearers, baseline, horizon, measure, Justice and uncertainty are declared;
+its procedural reproducibility and world adequacy remain to be tested.
+
+The Philosophy Question Atlas freezes 54 public question families across nine
+domains. Every row must recover the native problem and strongest rival, expose
+the proposed type collision, preserve every premise and residual, name a kill,
+and receive two independent native-domain reviews before an earned result.
+Changing the question, deleting a premise or merely renaming the terms is a
+reframe—not a dissolution. At v2.2 launch the honest count is:
+
+```text
+54 selected · 0 evaluated · 0 independently reviewed · 0 resolved
+```
+
+The bounded “most” wager would require at least 28 of 54 earned type
+dissolutions or conditional resolutions, at least three in each of the nine
+domains, no live kill, and incremental benefit over native-frame and generic
+decomposition controls. Until then the strongest public sentence is:
+
+> Emergentism does not end philosophy. It makes philosophical debt legible.
+
+The machine contracts, frozen denominator and null launch state live in
+[`PQA-54`](03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md).

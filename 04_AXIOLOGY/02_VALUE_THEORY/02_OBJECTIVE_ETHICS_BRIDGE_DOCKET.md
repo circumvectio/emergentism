@@ -1,7 +1,7 @@
 ---
 title: "Objective Ethics Bridge Docket"
 status: "EVIDENCE-OPEN — Justice remains chosen while moral realism is investigated separately"
-date: 2026-07-28
+date: 2026-08-23
 evidence_tier: "[S] research comparison contract; [I/C] Emergentist bridge proposals"
 adequacy_docket: A4
 owner_route: "K-5 with K-3 methodological review"
@@ -51,7 +51,30 @@ evolutionary pattern or aesthetic response supplies an ought by itself.
 | capabilities approach | real opportunities to be and do what matters | select the capabilities, bearers, thresholds and trade-offs transparently |
 | error theory | ordinary moral assertions systematically fail to refer to objective facts | explain what chosen constitutional practice can still warrant without pretending realism |
 
-## Candidate Emergentist bridge `[C]`
+## Candidate Emergentist bridges
+
+### RCAB-01 — reciprocal co-agency `[S]` inside its declared practice
+
+[`RCAB-01`](03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md) is the strongest current
+internal result. Once reciprocal public justification is chosen, a reason-giver
+cannot coherently demand visibility, answerability, contest, correction and
+feasible Exit for itself while arbitrarily denying them to an equally situated
+co-agent. The normative practice premise is explicit, so this is a conditional
+constitutive bridge—not an ought derived from value-free facts.
+
+Its world-facing distinctiveness, scope and adequacy remain `[I/C]`. It neither
+establishes stance-independent moral realism nor covers bearers who cannot
+reciprocate reasons.
+
+### GEX-01 — guardianship extension `[I/C]`
+
+[`GEX-01`](04_GUARDIANSHIP_EXTENSION_GEX_01.md) separately chooses bounded,
+reviewable, least-restrictive protection for dependent, absent, nonhuman,
+ecological and future bearers. Reciprocity is never a condition of worth. The
+extension cannot borrow RCAB-01's proof and must be compared with established
+rights, fiduciary, supported-decision, capabilities and precautionary rivals.
+
+### Broader option-protection proposal `[C]`
 
 A bounded proposal may test whether bearer-complete option protection,
 correction capacity and practical exit provide public reasons that survive
@@ -73,6 +96,9 @@ fewer hidden premises than serious rivals.
 - Persistent underdetermination keeps Justice chosen and contestable.
 - A counterexample that defeats a universal bridge narrows the claim; it is not
   dismissed as a lower perspective.
+- “Framework-objective” may describe decision stability under complete declared
+  inputs. Unqualified “objective ethics” remains barred unless the relevant
+  objectivity level and its evidence are stated.
 
 ## Kill and survivor
 

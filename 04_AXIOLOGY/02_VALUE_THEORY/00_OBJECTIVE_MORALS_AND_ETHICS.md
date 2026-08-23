@@ -1,17 +1,30 @@
 ---
 title: "Objective Morals and Ethics — The Syntropic Dyad"
-status: "ACTIVE VALUE-THEORY OWNER — dimension-first Kintsugi repair; bearer-horizon amendment 2026-07-28"
-date: 2026-07-28
+status: "ACTIVE VALUE-THEORY OWNER — framework-objectivity and reciprocal-bridge amendment 2026-08-23"
+date: 2026-08-23
 evidence_tier: "[S] definitions inside the declared framework; [I] normative choice; [C] world-facing adequacy"
 supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md"
 ---
 
 # Objective Morals and Ethics — The Syntropic Dyad
 
-“Objective” here means **decision-stable after the bearer set, horizon,
-potential measure, and Justice conditions are declared**. It does not mean
-that mathematics has proved moral realism or compelled every rational being to
-accept Emergentism's values.
+“Framework-objective” here means **decision-stable after the bearer set,
+baseline, horizon, potential measure, Justice conditions and uncertainty are
+declared**. It does not mean that mathematics has proved moral realism,
+discovered a cosmic telos or compelled every rational being to accept
+Emergentism's values.
+
+Four claims must remain separate:
+
+```text
+DEFINITION_STABLE        same declared terms return the same classification
+PROCEDURALLY_REPRODUCIBLE independent implementations agree on complete inputs
+EMPIRICALLY_ADEQUATE     the classifications improve real decisions and outcomes
+STANCE_INDEPENDENT       moral truth does not depend on a chosen standpoint
+```
+
+The first is established inside this selected model `[S]`. The second is a
+local test target. The third remains `[C]`. The fourth is not established.
 
 The framework chooses a dyadic vow: neither an individual nor its sustaining
 whole may be erased to improve the other's score.
@@ -48,13 +61,13 @@ or lesser intrinsic worth.
 Justice is a chosen constraint `[I/S]`. It is not derived from `φν=1`,
 `P_node=ΦV`, natural selection, efficiency, popularity, or authority.
 
-## 3. The directional definitions
+## 3. The plain directional definitions and technical aliases
 
 ```text
-Moral(a)
+Contribution(a;i,H)
   iff Δ_T W_H(a)>0 and Δ_T W_i(a)≥0 and J(a;i,H,B(a))
 
-Ethical(a)
+Support(a;H,i)
   iff Δ_T W_i(a)>0 and Δ_T W_H(a)≥0 and J(a;i,H,B(a))
 
 Syntropic(a)
@@ -69,13 +82,40 @@ ethics = H → i
 strict Syntropic Dyadism = i ↔ H, both rise durably
 ```
 
-Morals ask what the part contributes to the whole without destroying itself.
-Ethics ask what the whole provides to the part without degrading itself.
+`Moral_E(a)` is the Emergentist technical alias for `Contribution(a;i,H)`.
+`Ethical_E(a)` is the Emergentist technical alias for `Support(a;H,i)`.
+These aliases do not claim that ordinary language or every moral tradition uses
+the words this way.
+
+Contribution asks what the part contributes to the whole without destroying
+itself. Support asks what the whole provides to the part without degrading
+itself.
 Strict syntropy requires both directions at once.
 
 These are framework definitions `[S]`, not empirical proof that every culture
 uses the words this way. Their value is tested by whether they expose harms and
 improve consequences better than rival moral grammars `[C]`.
+
+## 3A. Two bridge layers
+
+[`RCAB-01`](03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md) proves a thin conditional
+result inside the declared practice of reciprocal public justification: an
+agent cannot demand reason-governed uptake from an equally situated co-agent
+while arbitrarily denying that co-agent visibility, contest, correction and
+feasible Exit. The normative practice premise remains explicit. This is not a
+value-free derivation of an ought and does not establish moral realism.
+
+[`GEX-01`](04_GUARDIANSHIP_EXTENSION_GEX_01.md) is the separate chosen extension
+for non-reciprocal, dependent, absent, nonhuman, ecological and future bearers.
+It cannot inherit RCAB-01's proof. It must instead expose its mandate,
+protected interest, conflicts, least-restrictive test, review, revocation,
+repair and Exit.
+
+```text
+J_core  = thin reciprocal co-agency requirements
+J_guard = separately chosen guardianship requirements
+J_full  = the broader bearer-complete Justice envelope used in this framework
+```
 
 ## 4. No aggregate laundering
 
@@ -175,13 +215,17 @@ a maximum.
 A usable implementation must distinguish:
 
 1. lawful preservation (`ΔW_i=ΔW_H=0`);
-2. moral but not strictly syntropic contribution;
-3. ethical but not strictly syntropic support;
+2. Contribution / `Moral_E` but not strict syntropy;
+3. Support / `Ethical_E` but not strict syntropy;
 4. strict syntropy;
 5. hidden aggregate harm;
 6. voluntary sacrifice;
 7. coerced or obscured sacrifice;
 8. an empty admissible set.
+
+It must also reject co-agency as merged personhood or shared consent,
+guardianship as ownership or self-created authority, and a silent transfer of
+RCAB-01 from reciprocal reason-givers to bearers who cannot reciprocate.
 
 Revise the definitions if they systematically hide affected bearers, cannot
 handle nested or conflicting boundaries, reward strategic metric gaming, or
@@ -195,6 +239,8 @@ verdicts without an explicit value disagreement or evidence difference.
 - [Primitives and Type Signatures](../../05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
 - [The 5+1 Refusals](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)
 - [The Compass](../../00_META/00_THE_COMPASS.md)
+- [RCAB-01](03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md)
+- [GEX-01](04_GUARDIANSHIP_EXTENSION_GEX_01.md)
 
 *The individual is never fuel for the whole. The whole is never fuel for the
 individual. The good move lets both remain—and, in strict syntropy, both grow.*
