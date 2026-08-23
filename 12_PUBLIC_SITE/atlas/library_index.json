@@ -5,11 +5,11 @@
   "source": "reading-manifest.json",
   "excludes": "withheld-routes.json artifacts, current surfaces, missing files",
   "skipped": {
-    "withheld": 31,
-    "already_current": 1,
+    "withheld": 30,
+    "already_current": 3,
     "missing_file": 0
   },
-  "total": 82,
+  "total": 81,
   "tree": [
     {
       "key": "formal",
@@ -393,11 +393,6 @@
         {
           "href": "/egg/",
           "title": "The Egg of Infinity",
-          "status": "declared-provisional"
-        },
-        {
-          "href": "/amrita/",
-          "title": "The Amrita",
           "status": "declared-provisional"
         }
       ]
