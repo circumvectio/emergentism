@@ -16,6 +16,13 @@ ROOT = SITE.parent
 PACKAGE = ROOT / "03_METHODOLOGY" / "03_PREREGISTRATIONS" / "pqa_54"
 ATLAS_PATH = PACKAGE / "prompts" / "questions.json"
 PROJECTION_PATH = PACKAGE / "public_projection.json"
+ADJUDICATIONS_PATH = (
+    ROOT
+    / "14_THE_DISTILLATION"
+    / "07_THE_THIRD_CHURNING_2026_08_23"
+    / "data"
+    / "problem_adjudications.v1.json"
+)
 OUTPUTS = {
     SITE / "questions" / "index.html": "questions",
     SITE / "record" / "pqa-54" / "index.html": "record",
@@ -59,12 +66,17 @@ def page_document(*, title: str, description: str, canonical: str, main: str, ac
     return render_page(base, active)
 
 
-def validate_inputs(atlas: dict, projection: dict) -> None:
+def validate_inputs(atlas: dict, projection: dict, adjudications: object) -> dict[str, dict]:
     domains = atlas.get("domains")
     if not isinstance(domains, list) or len(domains) != 9:
         raise ValueError("PQA atlas must contain nine domains")
     rows = [question for domain in domains for question in domain.get("questions", [])]
-    if len(rows) != 54 or len({row.get("question_id") for row in rows}) != 54:
+    atlas_ids = [row.get("question_id") for row in rows]
+    if (
+        len(rows) != 54
+        or any(not isinstance(row_id, str) for row_id in atlas_ids)
+        or len(set(atlas_ids)) != 54
+    ):
         raise ValueError("PQA atlas must contain 54 unique questions")
     null = {"selected": 54, "evaluated": 0, "independently_reviewed": 0, "resolved": 0}
     if atlas.get("launch_counts") != null or projection.get("counts") != null:
@@ -72,8 +84,66 @@ def validate_inputs(atlas: dict, projection: dict) -> None:
     if projection.get("deployed") is not False or projection.get("external_validation") is not False:
         raise ValueError("offline PQA projection cannot claim deployment or external validation")
 
+    if not isinstance(adjudications, list) or len(adjudications) != 54:
+        raise ValueError("Third Churning must contain exactly 54 problem adjudications")
+    adjudication_ids = [row.get("problem_id") for row in adjudications if isinstance(row, dict)]
+    if len(adjudication_ids) != 54 or len(set(adjudication_ids)) != 54:
+        raise ValueError("Third Churning must contain 54 unique problem IDs")
+    if set(adjudication_ids) != set(atlas_ids):
+        missing = sorted(set(atlas_ids) - set(adjudication_ids))
+        extra = sorted(set(adjudication_ids) - set(atlas_ids))
+        raise ValueError(
+            "Third Churning problem IDs must exactly match PQA-54"
+            f" (missing={missing}, extra={extra})"
+        )
 
-def question_atlas_main(atlas: dict) -> str:
+    proposed_effects = {
+        "INVENTORY",
+        "CLARIFICATION",
+        "FORMAL_CORRECTION",
+        "TYPE_DISSOLUTION",
+        "CONDITIONAL_RESOLUTION",
+        "REFRAME",
+        "OPEN",
+    }
+    required_text = (
+        "proposed_answer",
+        "remaining_debt",
+        "strongest_rival",
+        "kill_criterion",
+    )
+    by_id: dict[str, dict] = {}
+    atlas_by_id = {row["question_id"]: row for row in rows}
+    for row in adjudications:
+        if not isinstance(row, dict):
+            raise ValueError("Third Churning adjudications must be JSON objects")
+        problem_id = row["problem_id"]
+        if row.get("schema_id") != "emergentism/ProblemAdjudication.v1":
+            raise ValueError(f"{problem_id}: wrong ProblemAdjudication schema ID")
+        if row.get("canonical_problem_id") != problem_id:
+            raise ValueError(f"{problem_id}: canonical problem ID must match problem ID")
+        if row.get("result_state") != "SELECTED":
+            raise ValueError(f"{problem_id}: result state must remain SELECTED")
+        if row.get("earned_effect") != "NO_INCREMENT":
+            raise ValueError(f"{problem_id}: earned effect must remain NO_INCREMENT")
+        if row.get("native_reviews") != []:
+            raise ValueError(f"{problem_id}: native reviews must remain empty")
+        if row.get("proposed_effect") not in proposed_effects:
+            raise ValueError(f"{problem_id}: unknown proposed effect")
+        if any(
+            not isinstance(row.get(field), str) or not row[field].strip()
+            for field in required_text
+        ):
+            raise ValueError(f"{problem_id}: public adjudication text must be non-empty")
+        atlas_row = atlas_by_id[problem_id]
+        for field in ("family", "native_problem", "native_reference"):
+            if row.get(field) != atlas_row.get(field):
+                raise ValueError(f"{problem_id}: {field} drifts from the frozen PQA atlas")
+        by_id[problem_id] = row
+    return by_id
+
+
+def question_atlas_main(atlas: dict, adjudications: dict[str, dict]) -> str:
     domain_sections: list[str] = []
     for index, domain in enumerate(atlas["domains"], start=1):
         questions = "\n".join(
@@ -82,6 +152,18 @@ def question_atlas_main(atlas: dict) -> str:
           <h3>{esc(row['prompt'])}</h3>
           <p><strong>Native target:</strong> {esc(row['native_problem'])}</p>
           <p class="g2-question__source"><strong>Native anchor:</strong> {esc(row['native_reference'])}</p>
+          <div class="g2-question__adjudication">
+            <p class="g2-question__meta">Third Churning · [D] SELECTED · [UNREVIEWED]</p>
+            <p><strong>Proposed Emergentist thesis [UNREVIEWED]:</strong> {esc(adjudications[row['question_id']]['proposed_answer'])}</p>
+            <p><strong>Proposed effect:</strong> <code>{esc(adjudications[row['question_id']]['proposed_effect'])}</code></p>
+            <p><strong>Earned effect:</strong> <code>NO_INCREMENT</code> — no evaluated, independently reviewed, or resolved count changes.</p>
+            <p><strong>Remaining debt:</strong> {esc(adjudications[row['question_id']]['remaining_debt'])}</p>
+            <details>
+              <summary>Strongest rival and kill criterion</summary>
+              <p><strong>Strongest rival:</strong> {esc(adjudications[row['question_id']]['strongest_rival'])}</p>
+              <p><strong>Kill criterion:</strong> {esc(adjudications[row['question_id']]['kill_criterion'])}</p>
+            </details>
+          </div>
         </li>'''
             for row in domain["questions"]
         )
@@ -164,13 +246,14 @@ def record_main() -> str:
 def build_outputs() -> dict[Path, str]:
     atlas = json.loads(ATLAS_PATH.read_text(encoding="utf-8"))
     projection = json.loads(PROJECTION_PATH.read_text(encoding="utf-8"))
-    validate_inputs(atlas, projection)
+    adjudication_rows = json.loads(ADJUDICATIONS_PATH.read_text(encoding="utf-8"))
+    adjudications = validate_inputs(atlas, projection, adjudication_rows)
     return {
         SITE / "questions" / "index.html": page_document(
             title="The Question Atlas — 54 open philosophical targets",
             description="PQA-54 freezes 54 public question families and keeps inventory, clarification, dissolution, resolution, and residual debt distinct.",
             canonical="https://emergentism.org/questions/",
-            main=question_atlas_main(atlas),
+            main=question_atlas_main(atlas, adjudications),
             active="worldview",
         ),
         SITE / "record" / "pqa-54" / "index.html": page_document(

@@ -18,10 +18,11 @@ Checks:
 10. Historical-withholding bytes, redirects, and search boundary agree
 11. Deployment publication boundary excludes source/control/runtime files
 12. Current/provisional public semantics match their source contract
-13. Claim cards, lifecycles, and barred-claim policy match source contracts
-14. The public book and its build manifest match deterministic source hashes
-15. The frozen-library manifest names the current reader deterministically
-16. The contact-limited public lifecycle has zero unclassified artifacts
+13. The Third Churning public projection matches its deterministic source build
+14. Claim cards, lifecycles, and barred-claim policy match source contracts
+15. The public book and its build manifest match deterministic source hashes
+16. The frozen-library manifest names the current reader deterministically
+17. The contact-limited public lifecycle has zero unclassified artifacts
 
 Exit 0 if all checks pass, 1 if any fail.
 """
@@ -3326,8 +3327,25 @@ def check_semantic_parity():
     ok(process.stdout.strip())
     return True
 
+
+def check_third_churning_build():
+    print("\n[13] Third Churning deterministic public projection")
+    process = subprocess.run(
+        [sys.executable, "-B", os.path.join(BASE_DIR, "build_churning.py"), "--check"],
+        cwd=BASE_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    ok(process.stdout.strip())
+    return True
+
 def check_claim_card_contract():
-    print("\n[13] Claim-card and lifecycle contract")
+    print("\n[14] Claim-card and lifecycle contract")
     commands = (
         [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/02_COMPILERS/compile_claim_cards.py"), "--check"],
         [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/01_SCRIPTS/check_barred_claims.py"), "--scope", "all"],
@@ -3345,7 +3363,7 @@ def check_claim_card_contract():
     return all_ok
 
 def check_public_book_build():
-    print("\n[14] Deterministic public-book build")
+    print("\n[15] Deterministic public-book build")
     process = subprocess.run(
         [sys.executable, os.path.join(BASE_DIR, "build_book.py"), "--check"],
         cwd=BASE_DIR,
@@ -3361,7 +3379,7 @@ def check_public_book_build():
     return True
 
 def check_reading_manifest_contract():
-    print("\n[15] Reading-manifest lifecycle contract")
+    print("\n[16] Reading-manifest lifecycle contract")
     process = subprocess.run(
         [sys.executable, os.path.join(BASE_DIR, "refresh_reading_manifest.py"), "--check"],
         cwd=BASE_DIR,
@@ -3378,7 +3396,7 @@ def check_reading_manifest_contract():
 
 
 def check_contact_limited_lifecycle():
-    print("\n[16] Contact-limited public lifecycle closure")
+    print("\n[17] Contact-limited public lifecycle closure")
     checker = os.path.join(
         REPO_DIR, "09_TOOLS", "01_SCRIPTS", "check_contact_limited.py"
     )
@@ -3415,6 +3433,7 @@ def main():
         check_historical_public_boundary(),
         check_publication_boundary(),
         check_semantic_parity(),
+        check_third_churning_build(),
         check_claim_card_contract(),
         check_public_book_build(),
         check_reading_manifest_contract(),

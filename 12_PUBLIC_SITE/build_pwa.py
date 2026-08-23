@@ -133,12 +133,12 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/plainly/", "/dasein/", "/f5/", "/questions/", "/ethics/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/pqa-54/",
+        "/", "/plainly/", "/dasein/", "/f5/", "/questions/", "/ethics/", "/churn/", "/amrita/", "/halahala/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/churning/", "/record/pqa-54/",
         "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
         "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
         "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/living-map.json",
-        "/public_semantic_parity.json", "/atlas/site_index.json",
+        "/public_semantic_parity.json", "/atlas/site_index.json", "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
         "/assets/fonts/Roboto-latin.woff2",
         "/assets/fonts/RobotoMono-latin.woff2", "/assets/fonts/Newsreader-latin-variable.woff2",
         "/assets/icons/icon-192.png",

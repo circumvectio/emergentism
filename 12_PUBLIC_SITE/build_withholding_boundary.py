@@ -84,6 +84,12 @@ PRODUCT_DERIVED_ETHICS = re.compile(
 # public claim.
 PRODUCT_HISTORY_EXCEPTIONS = {"axioms/index.html", "record/index.html", "halahala/index.html"}
 
+# The v2.3 Third Churning replaces the archived, policy-failing Hālāhala page
+# with a generated warning ledger that passes the current semantic firewall.
+# The predecessor remains byte-custodied under 90_ARCHIVE; only its curated
+# public-withholding lifecycle ends here.
+RETIRED_CURATED_ARTIFACTS = {"halahala/index.html"}
+
 
 def _rule_id(name: str) -> str:
     """Stable custody rule identifier for a public semantic prohibition."""
@@ -222,6 +228,12 @@ def _build_registry() -> dict:
         | set(parity.get("infrastructureRoutes", {}).get("routes", []))
         | set(parity.get("declaredProvisional", {}).get("routes", []))
     )
+    present_retired = {
+        artifact for artifact in RETIRED_CURATED_ARTIFACTS
+        if (SITE / artifact).is_file()
+    }
+    if not present_retired.issubset(current):
+        raise ValueError("retired curated artifacts must be declared current successors")
     policy_matches = _policy_matches(current)
     lookup = _manifest_lookup()
 
@@ -249,7 +261,7 @@ def _build_registry() -> dict:
     curated = {
         artifact: row
         for artifact, row in prior_rows.items()
-        if artifact in curated_reasons
+        if artifact in curated_reasons and artifact not in RETIRED_CURATED_ARTIFACTS
     }
     prior_manifest_documents = {
         row["artifact"]: row["manifestDocument"]
@@ -375,6 +387,11 @@ def _is_current_surface_header(row: dict, current_surfaces: set[str]) -> bool:
         if not artifact.endswith(".html"):
             continue
         base = _route_base(artifact)
+        if base != "/":
+            # Historical configs also carried exact route headers (for
+            # example ``/halahala``) beside subtree patterns. Once a surface
+            # is current, neither form may retain the legacy noindex policy.
+            current_routes.add(base.rstrip("/"))
         current_routes.add(base + "(.*)")
         if base != "/":
             current_routes.add(base.rstrip("/") + "/(.*)")

@@ -35,6 +35,7 @@
   --g2-possible: #78a7e8;
   --g2-conjecture: #a58be2;
   --g2-evidence: #76ceb0;
+  --g2-poison: #d97557;
   --g2-rule: #2b3341;
   --g2-rule-strong: #65748c;
   --g2-display: "Newsreader", Georgia, serif;
@@ -767,6 +768,191 @@ body.g2-page {
 
 .g2-note--conjecture { border-left-color: var(--g2-conjecture); }
 .g2-note--evidence { border-left-color: var(--g2-evidence); }
+
+/* Third Churning: a visible audit seam, never a decorative truth machine. */
+.g2-churn-seam {
+  margin: 0;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-field);
+}
+
+.g2-churn-seam > figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font-size: 0.8rem;
+}
+
+.g2-churn-seam > figcaption strong {
+  color: var(--g2-bone);
+  font: 650 0.72rem/1.4 var(--g2-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.g2-churn-seam__track {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--g2-rule-strong);
+  list-style: none;
+}
+
+.g2-churn-step {
+  position: relative;
+  min-width: 0;
+  min-height: 130px;
+  padding: 46px 14px 18px;
+  border-right: 1px solid var(--g2-rule);
+}
+
+.g2-churn-step:last-child { border-right: 0; }
+
+.g2-churn-step::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  color: var(--g2-evidence);
+  font: 650 0.65rem/1 var(--g2-mono);
+}
+
+.g2-churn-step strong,
+.g2-churn-step span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.g2-churn-step strong {
+  color: var(--g2-bone);
+  font: 650 0.72rem/1.35 var(--g2-mono);
+  text-transform: uppercase;
+}
+
+.g2-churn-step span {
+  margin-top: 8px;
+  color: var(--g2-bone-faint);
+  font-size: 0.75rem;
+}
+
+.g2-churn-branch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--g2-rule);
+}
+
+.g2-churn-branch > article {
+  min-width: 0;
+  padding: clamp(24px, 4vw, 46px);
+  background: var(--g2-surface);
+}
+
+.g2-churn-branch > article > span,
+.g2-drop__meta {
+  color: var(--g2-bone-faint);
+  font: 650 0.65rem/1.4 var(--g2-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.g2-churn-branch h3 {
+  margin: 14px 0 10px;
+  font: 430 clamp(1.75rem, 3vw, 2.8rem)/1.05 var(--g2-display);
+}
+
+.g2-churn-branch p { color: var(--g2-bone-muted); }
+.g2-churn-branch--survivor { box-shadow: inset 4px 0 var(--g2-evidence); }
+.g2-churn-branch--survivor h3 { color: var(--g2-evidence); }
+.g2-churn-branch--poison { box-shadow: inset 4px 0 var(--g2-poison); }
+.g2-churn-branch--poison h3 { color: var(--g2-poison); }
+
+.g2-churn-maxim {
+  margin: 28px 0 0;
+  padding: clamp(22px, 4vw, 38px);
+  border: 1px solid var(--g2-rule-strong);
+  border-left: 4px solid var(--g2-actual);
+  background: var(--g2-void);
+}
+
+.g2-churn-maxim p {
+  margin: 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.75rem, 3.5vw, 3rem)/1.08 var(--g2-display);
+}
+
+.g2-churn-maxim footer {
+  margin-top: 14px;
+  color: var(--g2-bone-faint);
+  font: 600 0.65rem/1.45 var(--g2-mono);
+}
+
+.g2-drop-ledger {
+  display: grid;
+  gap: 14px;
+}
+
+.g2-drop {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid var(--g2-rule);
+  background: var(--g2-field);
+}
+
+.g2-drop--survivor { box-shadow: inset 4px 0 var(--g2-evidence); }
+.g2-drop--poison { box-shadow: inset 4px 0 var(--g2-poison); }
+
+.g2-drop h2,
+.g2-drop h3 {
+  margin: 12px 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.45rem, 2.4vw, 2.2rem)/1.08 var(--g2-display);
+}
+
+.g2-drop p,
+.g2-drop dd { color: var(--g2-bone-muted); }
+
+.g2-drop__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  border: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+}
+
+.g2-drop__grid > * {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  background: var(--g2-surface);
+}
+
+.g2-drop details {
+  margin-top: 18px;
+  border-top: 1px solid var(--g2-rule);
+}
+
+.g2-drop summary {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  color: var(--g2-bone);
+  cursor: pointer;
+  font: 650 0.7rem/1.4 var(--g2-mono);
+}
+
+.g2-corpus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
 
 /* V2.1 ontological-atlas components. Every diagram retains visible text so
    layout, colour, and line style remain supplementary rather than semantic. */
@@ -2189,6 +2375,28 @@ body.g2-page.g2-legacy .footer {
   font-size: 0.75rem !important;
 }
 
+.g2-question__adjudication {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--g2-rule-strong);
+}
+
+.g2-question__adjudication code { color: var(--g2-evidence); }
+
+.g2-question__adjudication details {
+  margin-top: 14px;
+  border-top: 1px solid var(--g2-rule);
+}
+
+.g2-question__adjudication summary {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  color: var(--g2-bone);
+  cursor: pointer;
+  font: 650 0.68rem/1.4 var(--g2-mono);
+}
+
 @media (max-width: 1020px) {
   .g2-nav__desktop { display: none; }
   .g2-nav__mobile { display: flex; }
@@ -2215,11 +2423,29 @@ body.g2-page.g2-legacy .footer {
   .g2-world-return__step:nth-child(-n + 4) {
     border-bottom: 1px solid var(--g2-rule);
   }
+  .g2-churn-seam__track { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .g2-churn-step:nth-child(4) { border-right: 0; }
+  .g2-churn-step:nth-child(-n + 4) { border-bottom: 1px solid var(--g2-rule); }
 }
 
 @media (max-width: 680px) {
   .g2-question-grid { grid-template-columns: 1fr; }
   .g2-question { padding: 22px 17px; }
+  .g2-churn-seam > figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .g2-churn-seam__track { grid-template-columns: 1fr; }
+  .g2-churn-step,
+  .g2-churn-step:nth-child(4) {
+    min-height: 92px;
+    padding: 38px 16px 15px;
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+  }
+  .g2-churn-step:last-child { border-bottom: 0; }
+  .g2-churn-branch,
+  .g2-drop__grid { grid-template-columns: 1fr; }
   :root {
     --g2-page: min(100% - 28px, 1180px);
     --g2-nav-h: 64px;

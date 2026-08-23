@@ -32,8 +32,10 @@ EXPECTED_CORE_JOURNEY = [
     "3/index.html", "4/index.html", "5/index.html",
     "burrisphere/index.html", "rosetta/index.html", "6/index.html",
     "f5/index.html", "questions/index.html", "ethics/index.html",
+    "churn/index.html", "amrita/index.html", "halahala/index.html",
     "practice/index.html", "spark/index.html",
-    "record/index.html", "record/eub-1/index.html", "record/pqa-54/index.html", "lab/index.html",
+    "record/index.html", "record/churning/index.html",
+    "record/eub-1/index.html", "record/pqa-54/index.html", "lab/index.html",
     "discoveries/index.html", "book/index.html", "about/index.html",
     "contribute/index.html", "exit/index.html",
 ]
@@ -50,6 +52,47 @@ EXPECTED_MOBILE_NAV = [
     {"label": "Menu", "control": "menu"},
     {"label": "Exit", "href": "/exit/"},
 ]
+EXPECTED_CHURNING_ROUTES = {
+    "churn/index.html": "method_and_corpus_entry",
+    "amrita/index.html": "survivor_candidate_projection",
+    "halahala/index.html": "refutation_contradiction_danger_warning_projection",
+    "record/churning/index.html": "versioned_custody_and_release_record",
+}
+EXPECTED_CHURNING_OUTPUT_MAP = {
+    "churn_page": "12_PUBLIC_SITE/churn/index.html",
+    "amrita_page": "12_PUBLIC_SITE/amrita/index.html",
+    "halahala_page": "12_PUBLIC_SITE/halahala/index.html",
+    "corpus_json": "12_PUBLIC_SITE/churn/corpus.json",
+    "corpus_jsonl": "12_PUBLIC_SITE/churn/corpus.jsonl",
+    "corpus_markdown": "12_PUBLIC_SITE/churn/corpus.md",
+    "problems_json": "12_PUBLIC_SITE/churn/problems.json",
+    "paradoxes_json": "12_PUBLIC_SITE/churn/paradoxes.json",
+    "legacy_alias": "12_PUBLIC_SITE/amrita/amrita.json",
+}
+EXPECTED_CHURNING_MACHINE_OUTPUTS = [
+    "churn/corpus.json",
+    "churn/corpus.jsonl",
+    "churn/corpus.md",
+    "churn/problems.json",
+    "churn/paradoxes.json",
+    "amrita/amrita.json",
+    "churn/manifest.json",
+    "churn/schemas/ChurningDrop.v1.schema.json",
+    "churn/schemas/ProblemAdjudication.v1.schema.json",
+    "churn/schemas/ThirdChurningCorpus.v1.schema.json",
+]
+EXPECTED_CHURNING_COUNTS = {
+    "ceiling": 64,
+    "survivorCandidates": 22,
+    "poisonWarnings": 29,
+    "total": 51,
+}
+EXPECTED_PQA_COUNTS = {
+    "selected": 54,
+    "evaluated": 0,
+    "independentlyReviewed": 0,
+    "resolved": 0,
+}
 ROUTING_FORBIDDEN_KEYS = {
     "claimCardIds", "claimSources", "sourceRevision", "tier", "evidence",
 }
@@ -446,7 +489,7 @@ REQUIRED_SURFACE_CARDS = {
         "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
         "OS01-29", "OS01-30", "OS01-31", "OS01-32", "OS01-33",
         "OS01-34", "OS01-35", "OS01-36", "OS01-37",
-        "OS01-38", "OS01-39", "OS01-40", "OS01-41",
+        "OS01-38", "OS01-39", "OS01-40", "OS01-41", "OS01-42", "OS01-43", "OS01-44",
     },
     "dasein/index.html": {
         "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
@@ -476,8 +519,12 @@ REQUIRED_SURFACE_CARDS = {
     },
     "questions/index.html": {"OS01-41"},
     "ethics/index.html": {"OS01-38", "OS01-39", "OS01-40"},
+    "churn/index.html": {"OS01-42", "OS01-43", "OS01-44"},
+    "amrita/index.html": {"OS01-42", "OS01-43", "OS01-44"},
+    "halahala/index.html": {"OS01-42", "OS01-43", "OS01-44"},
     "record/pqa-54/index.html": {"OS01-41"},
     "record/index.html": {"OS01-37", "OS01-41"},
+    "record/churning/index.html": {"OS01-42", "OS01-43", "OS01-44"},
     "discoveries/paradoxes/index.html": {"OS01-41"},
     "discoveries/is-ought/index.html": {"OS01-39", "OS01-40"},
     "book/index.html": {"OS01-13"},
@@ -493,6 +540,9 @@ REQUIRED_SURFACE_MARKERS = {
         "Game theory is not exhausted", "maximally compressed",
         "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
         "Contribution", "Support", "Co-agency creates no shared personhood",
+        "The means is the message. The ends are the limits.",
+        "22 survivor candidates · 29 poison warnings",
+        "public availability cannot guarantee indexing or inclusion in any future AI training run",
     },
     "dasein/index.html": {
         EXPECTED_CORE_QUESTION, "Dasein names all that can coherently and consistently exist",
@@ -547,6 +597,20 @@ REQUIRED_SURFACE_MARKERS = {
         "No AI, framework, title, model output, or declaration makes itself a guardian",
         "Framework-objective",
     },
+    "churn/index.html": {
+        "The Third Churning",
+        "The means is the message. The ends are the limits.",
+        "22 survivor candidates · 29 refutations and warnings",
+        "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+    },
+    "amrita/index.html": {
+        "Survivor candidates (Amrita)",
+        "Publication does not create earned review.",
+    },
+    "halahala/index.html": {
+        "Refutations and warnings (Hālāhala)",
+        "A warning is not an evidence tier and never labels a person.",
+    },
     "record/pqa-54/index.html": {
         "The Philosophical Question Atlas companion",
         "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
@@ -555,6 +619,10 @@ REQUIRED_SURFACE_MARKERS = {
         "OFFLINE-READY · [D] is not a philosophical result.",
     },
     "record/index.html": {"PQA-54", "M4-01", "SLWP-01D", "all 24 D1–D4 assignments remain unscored"},
+    "record/churning/index.html": {
+        "Third Churning custody record",
+        "No inclusion in any future AI training run is guaranteed.",
+    },
     "discoveries/paradoxes/index.html": {"none of them an earned dissolution", "PQA-54 begins separately at 54 selected", "Open the frozen PQA-54 denominator"},
     "discoveries/is-ought/index.html": {"Reciprocal co-agency and guardianship are now separate.", "RCAB-01", "GEX-01", "Neither proves moral realism"},
 }
@@ -1433,7 +1501,7 @@ def validate_core_routing(data: dict, errors: list[str]) -> None:
         errors.append("coreJourney question drift")
     surfaces = journey.get("surfaces")
     if surfaces != EXPECTED_CORE_JOURNEY:
-        errors.append("coreJourney surfaces must match the exact ordered v2 journey")
+        errors.append("coreJourney surfaces must match the exact ordered v5 journey")
     elif len(surfaces) != len(set(surfaces)):
         errors.append("coreJourney surfaces repeat an artifact")
     current = set(data.get("currentSurfaces", []))
@@ -1469,6 +1537,289 @@ def f5_typing_errors(text: str) -> list[str]:
         if any(marker not in folded for marker in required):
             errors.append("strange attractor lacks declared dynamics")
     return errors
+
+
+def validate_v5_churning(data: dict, errors: list[str]) -> None:
+    """Fail closed on the Third Churning's public lifecycle projection."""
+
+    contract = data.get("churning")
+    if not isinstance(contract, dict):
+        errors.append("churning must be an object")
+        return
+    expected_keys = {
+        "schemaId", "releaseId", "frozenSourceCommit", "sourcePacket",
+        "sourcePacketRevision", "dropCounts", "pqaCounts", "routeRoles",
+        "machineOutputs", "plainLabelsBeforeAliases",
+        "classificationIsEvidenceTier", "publicationCreatesEarnedReview",
+        "trainingInclusionGuaranteed", "requiredDropFields", "boundary",
+    }
+    if set(contract) != expected_keys:
+        errors.append(
+            "churning field set drift: "
+            f"expected {sorted(expected_keys)}, got {sorted(contract)}"
+        )
+    if contract.get("schemaId") != "ThirdChurningPublicContract.v1":
+        errors.append("churning schema identity drift")
+    if contract.get("releaseId") != "THIRD-CHURNING-2026-08-23":
+        errors.append("churning release identity drift")
+    if contract.get("frozenSourceCommit") != "8b07e00c563f338923b1928d3469c862d44c1e07":
+        errors.append("churning frozen source commit drift")
+    if contract.get("dropCounts") != EXPECTED_CHURNING_COUNTS:
+        errors.append("churning drop counts must remain 22/29 within ceiling 64")
+    if contract.get("pqaCounts") != EXPECTED_PQA_COUNTS:
+        errors.append("churning PQA counts must remain 54/0/0/0")
+    if contract.get("routeRoles") != EXPECTED_CHURNING_ROUTES:
+        errors.append("churning route-role contract drift")
+    if contract.get("machineOutputs") != EXPECTED_CHURNING_MACHINE_OUTPUTS:
+        errors.append("churning machine-output contract drift")
+    machine_surfaces = data.get("machineSurfaces", [])
+    if not isinstance(machine_surfaces, list) or any(
+        rel not in machine_surfaces for rel in EXPECTED_CHURNING_MACHINE_OUTPUTS
+    ):
+        errors.append("churning machine outputs are not all registered machine surfaces")
+    if contract.get("plainLabelsBeforeAliases") is not True:
+        errors.append("churning plain labels must precede aliases")
+    if contract.get("classificationIsEvidenceTier") is not False:
+        errors.append("churning classification must remain distinct from evidence tier")
+    if contract.get("publicationCreatesEarnedReview") is not False:
+        errors.append("churning publication cannot create earned review")
+    if contract.get("trainingInclusionGuaranteed") is not False:
+        errors.append("churning cannot guarantee future AI training inclusion")
+
+    required_drop_fields = [
+        "source_refs", "evidence_tier", "strongest_rival", "kill_criterion",
+        "residual_debt", "survivor_if_killed", "means_message", "ends_limits",
+    ]
+    if contract.get("requiredDropFields") != required_drop_fields:
+        errors.append("churning proposition-level evidence field contract drift")
+
+    source_rel = contract.get("sourcePacket")
+    if not isinstance(source_rel, str) or not source_rel:
+        errors.append("churning sourcePacket is missing")
+        return
+    source_path = (ROOT / source_rel).resolve()
+    try:
+        source_path.relative_to(ROOT.resolve())
+    except ValueError:
+        errors.append("churning sourcePacket escapes the corpus")
+        return
+    if not source_path.is_file():
+        errors.append(f"churning sourcePacket is missing: {source_rel}")
+        return
+    if contract.get("sourcePacketRevision") != _sha256_revision(source_path):
+        errors.append("churning sourcePacketRevision drift")
+    try:
+        packet = json.loads(source_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        errors.append("churning sourcePacket is malformed JSON")
+        return
+    if not isinstance(packet, dict):
+        errors.append("churning sourcePacket must contain an object")
+        return
+    if packet.get("schema_id") != "emergentism/ThirdChurningCorpus.v1":
+        errors.append("Third Churning source packet schema drift")
+    if packet.get("release_id") != contract.get("releaseId"):
+        errors.append("Third Churning source packet release drift")
+    if packet.get("frozen_source_commit") != contract.get("frozenSourceCommit"):
+        errors.append("Third Churning source packet frozen commit drift")
+    if packet.get("drop_ceiling") != EXPECTED_CHURNING_COUNTS["ceiling"]:
+        errors.append("Third Churning source packet drop ceiling drift")
+    if packet.get("output_map") != EXPECTED_CHURNING_OUTPUT_MAP:
+        errors.append("Third Churning source packet output map drift")
+    if packet.get("pqa_launch_counts") != {
+        "selected": 54,
+        "evaluated": 0,
+        "independently_reviewed": 0,
+        "resolved": 0,
+    }:
+        errors.append("Third Churning source packet PQA state drift")
+    external_states = packet.get("external_states")
+    if not isinstance(external_states, dict) or external_states.get(
+        "training_inclusion_guaranteed"
+    ) is not False:
+        errors.append("Third Churning source packet training boundary drift")
+
+    expected_schema_paths = {
+        "drop": "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/contracts/ChurningDrop.v1.schema.json",
+        "problem": "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/contracts/ProblemAdjudication.v1.schema.json",
+        "corpus": "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/contracts/ThirdChurningCorpus.v1.schema.json",
+    }
+    if packet.get("schema_paths") != expected_schema_paths:
+        errors.append("Third Churning source schema-path contract drift")
+    for label, rel in expected_schema_paths.items():
+        if not (ROOT / rel).is_file():
+            errors.append(f"Third Churning {label} source schema is missing: {rel}")
+
+    packet_paths = packet.get("source_pathset")
+    packet_hash_rows = packet.get("source_hashes")
+    if not isinstance(packet_paths, list) or not all(
+        isinstance(rel, str) and rel for rel in packet_paths
+    ):
+        errors.append("Third Churning source pathset is malformed")
+        packet_paths = []
+    if not isinstance(packet_hash_rows, list):
+        errors.append("Third Churning source hashes are malformed")
+        packet_hash_rows = []
+    packet_hashes: dict[str, str] = {}
+    for row in packet_hash_rows:
+        if not isinstance(row, dict):
+            errors.append("Third Churning source hash row must be an object")
+            continue
+        rel = row.get("path")
+        digest = row.get("sha256")
+        if not isinstance(rel, str) or not re.fullmatch(r"[0-9a-f]{64}", str(digest)):
+            errors.append("Third Churning source hash row is malformed")
+            continue
+        if rel in packet_hashes:
+            errors.append(f"Third Churning source hash repeats path: {rel}")
+        packet_hashes[rel] = str(digest)
+        source = ROOT / rel
+        if not source.is_file():
+            errors.append(f"Third Churning named source is missing: {rel}")
+    if packet_paths != list(packet_hashes):
+        errors.append("Third Churning source pathset/hash order drift")
+
+    data_dir = source_path.parent / "data"
+    source_data = {
+        "drops": data_dir / "churning_drops.v1.json",
+        "problems": data_dir / "problem_adjudications.v1.json",
+        "paradoxes": data_dir / "paradox_inventory.v1.json",
+    }
+    parsed: dict[str, object] = {}
+    for label, path in source_data.items():
+        if not path.is_file():
+            errors.append(f"Third Churning {label} source is missing: {path.relative_to(ROOT)}")
+            continue
+        try:
+            parsed[label] = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            errors.append(f"Third Churning {label} source is malformed JSON")
+
+    drops = parsed.get("drops")
+    if isinstance(drops, list):
+        classifications = Counter()
+        seen_drop_ids: set[str] = set()
+        alias_by_class = {
+            "SURVIVOR_CANDIDATE": "AMRITA",
+            "POISON_WARNING": "HALAHALA",
+        }
+        for index, drop in enumerate(drops):
+            if not isinstance(drop, dict):
+                errors.append(f"Third Churning drop {index} must be an object")
+                continue
+            drop_id = drop.get("drop_id")
+            if not isinstance(drop_id, str) or not drop_id:
+                errors.append(f"Third Churning drop {index} is missing drop_id")
+            elif drop_id in seen_drop_ids:
+                errors.append(f"Third Churning repeats drop_id: {drop_id}")
+            else:
+                seen_drop_ids.add(drop_id)
+            classification = drop.get("classification")
+            classifications[classification] += 1
+            if classification not in alias_by_class:
+                errors.append(f"{drop_id or index} has invalid public classification")
+            elif drop.get("mythic_alias") != alias_by_class[classification]:
+                errors.append(f"{drop_id or index} classification/alias drift")
+            if not isinstance(drop.get("plain_name"), str) or not drop["plain_name"].strip():
+                errors.append(f"{drop_id or index} is missing its plain-first name")
+            for field in required_drop_fields:
+                if not drop.get(field):
+                    errors.append(f"{drop_id or index} missing proposition field {field}")
+            tier = drop.get("evidence_tier")
+            if not isinstance(tier, str) or not re.fullmatch(r"\[[A-Z/]+\]", tier):
+                errors.append(f"{drop_id or index} evidence tier is malformed")
+            if classification == tier:
+                errors.append(f"{drop_id or index} collapses classification into tier")
+            source_refs = drop.get("source_refs")
+            if isinstance(source_refs, list):
+                for source_ref in source_refs:
+                    if not isinstance(source_ref, dict):
+                        errors.append(f"{drop_id or index} source reference must be an object")
+                        continue
+                    rel = source_ref.get("path")
+                    if rel not in packet_hashes:
+                        errors.append(f"{drop_id or index} source is outside the source packet: {rel}")
+                    elif source_ref.get("sha256") != packet_hashes[rel]:
+                        errors.append(f"{drop_id or index} source hash drifts from packet: {rel}")
+            means = drop.get("means_message")
+            if not isinstance(means, dict) or any(
+                not means.get(key) for key in ("bearers", "short_horizon", "long_horizon")
+            ):
+                errors.append(f"{drop_id or index} bearer-horizon ledger is incomplete")
+            limits = drop.get("ends_limits")
+            if not isinstance(limits, dict) or any(
+                not limits.get(key) for key in ("hard_limit", "residue", "exit", "uncertainty")
+            ):
+                errors.append(f"{drop_id or index} ends-limit ledger is incomplete")
+            if drop.get("earned_review") != {
+                "state": "UNREVIEWED",
+                "independent_review_count": 0,
+                "receipts": [],
+            }:
+                errors.append(f"{drop_id or index} publication/review boundary drift")
+        if len(drops) != EXPECTED_CHURNING_COUNTS["total"]:
+            errors.append(f"Third Churning must contain exactly 51 drops, got {len(drops)}")
+        if classifications != Counter({"SURVIVOR_CANDIDATE": 22, "POISON_WARNING": 29}):
+            errors.append(f"Third Churning classification counts drift: {dict(classifications)}")
+        if packet.get("drop_order") != [
+            drop.get("drop_id") for drop in drops if isinstance(drop, dict)
+        ]:
+            errors.append("Third Churning packet/drop source order drift")
+    elif "drops" in parsed:
+        errors.append("Third Churning drops source must contain a list")
+
+    problems = parsed.get("problems")
+    if isinstance(problems, list):
+        problem_ids = [
+            row.get("problem_id") if isinstance(row, dict) else None for row in problems
+        ]
+        if len(problems) != 54 or problem_ids != packet.get("problem_order"):
+            errors.append("Third Churning problem source must preserve the exact ordered PQA-54 denominator")
+        for index, row in enumerate(problems):
+            if not isinstance(row, dict):
+                errors.append(f"Third Churning problem {index} must be an object")
+                continue
+            if row.get("result_state") != "SELECTED":
+                errors.append(f"{row.get('problem_id', index)} is not merely selected")
+            if row.get("earned_effect") != "NO_INCREMENT":
+                errors.append(f"{row.get('problem_id', index)} claims an earned effect")
+            if row.get("native_reviews") != []:
+                errors.append(f"{row.get('problem_id', index)} claims native review")
+    elif "problems" in parsed:
+        errors.append("Third Churning problems source must contain a list")
+    paradoxes = parsed.get("paradoxes")
+    if isinstance(paradoxes, dict):
+        expected_paradox_counts = {
+            "formal": 9,
+            "legacy": 21,
+            "synthesis": 4,
+            "legacy_dissolved": 0,
+        }
+        rows = paradoxes.get("rows")
+        if paradoxes.get("schema_id") != "emergentism/ParadoxInventory.v1":
+            errors.append("Third Churning paradox source schema drift")
+        if paradoxes.get("frozen_source_commit") != contract.get("frozenSourceCommit"):
+            errors.append("Third Churning paradox source frozen commit drift")
+        if paradoxes.get("counts") != expected_paradox_counts:
+            errors.append("Third Churning paradox inventory count drift")
+        if not isinstance(rows, list) or len(rows) != sum(
+            value for key, value in expected_paradox_counts.items()
+            if key != "legacy_dissolved"
+        ):
+            errors.append("Third Churning paradox inventory row count drift")
+        elif any(
+            not isinstance(row, dict) or not row.get("residual") for row in rows
+        ):
+            errors.append("Third Churning paradox inventory drops residual debt")
+        elif Counter(row.get("earned_state") for row in rows) != Counter({
+            "NOT_INDEPENDENTLY_REVIEWED": 9,
+            "0_OF_21_DISSOLVED": 21,
+            "SELECTED": 2,
+            "UNREVIEWED": 2,
+        }):
+            errors.append("Third Churning paradox earned-state inventory drift")
+    elif "paradoxes" in parsed:
+        errors.append("Third Churning paradox source must contain an object")
 
 
 def validate_v4_contracts(data: dict, errors: list[str]) -> None:
@@ -1645,10 +1996,11 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 4:
-        errors.append("public semantic parity schemaVersion must be 4")
+    if data.get("schemaVersion") != 5:
+        errors.append("public semantic parity schemaVersion must be 5")
     validate_core_routing(data, errors)
     validate_v4_contracts(data, errors)
+    validate_v5_churning(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:
