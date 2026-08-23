@@ -38,6 +38,7 @@ BINDING_CONTRACTS_BY_VERSION = {
     3: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md",
     4: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
     5: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+    6: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
 }
 PROVENANCE_CONTRACT_SCHEMA = "emergentism/finity-review-prerequisite-provenance/v1"
 REVIEW_PROVENANCE_ACCEPTANCE = "v4-internal-bundle-custody-only"
@@ -214,6 +215,27 @@ HISTORICAL_BUNDLE_CUSTODY = {
             },
         },
     },
+    5: {
+        "version_created_commit": "821db92909abcbec84d8e063ac3011fc7b4d5f4f",
+        "artifacts": {
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.json": {
+                "sha256": "2972880669722edc6f734dc25023b680c6faf9d13e266e1f0a900411febf367f",
+                "content_commit": "821db92909abcbec84d8e063ac3011fc7b4d5f4f",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md": {
+                "sha256": "928194ea365d87b85db03cb317c2c94303a2a53da5fe6b8911b0fd926ce1d379",
+                "content_commit": "821db92909abcbec84d8e063ac3011fc7b4d5f4f",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v5.json": {
+                "sha256": "a91fdb5ccf63888e0f5d758c9dd8209d660cfda46a4414a7cc9e1371532e727c",
+                "content_commit": "821db92909abcbec84d8e063ac3011fc7b4d5f4f",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json": {
+                "sha256": "4e1fedda736ff558fe783445d8ca8cf94cfe21af22e4f62ed8dcd60b5b52ef39",
+                "content_commit": "821db92909abcbec84d8e063ac3011fc7b4d5f4f",
+            },
+        },
+    },
 }
 
 REQUIRED_CURRENT_PACKET_FILES_BY_VERSION = {
@@ -241,6 +263,22 @@ REQUIRED_CURRENT_PACKET_FILES_BY_VERSION = {
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v5.json",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md",
+            "00_META/00_IMMUNE_PROTOCOL.md",
+            "09_TOOLS/01_SCRIPTS/claim_policy.py",
+        }
+    ),
+    6: frozenset(
+        {
+            "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+            "00_META/claim_cards/finity_practice.yaml",
+            "00_META/ADEQUACY_DOCKETS.yaml",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v6.json",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",

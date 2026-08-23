@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852",
+    "reviewed_source_sha256": "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -122,6 +122,15 @@
         "new_hash": "0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852", "_new_hash_scan": "# pragma: allow-secret",
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "conditional co-agency result and separately chosen guardianship extension cannot inflate into moral realism or a philosophy-wide resolution claim",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-23",
+        "act": "replace three Titan glyph-role slashes with non-arithmetic separators; preserve the OS01-33 claim and locator",
+        "prior_hash": "0b7c5394810478652a873a596e16f25ac19ee571163e040634f5bea3742c5852", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "Titan frames remain glyphs and named roles, never operands; the punctuation repair adds no semantic claim",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md"
       }
     ]
@@ -1519,7 +1528,7 @@
         "line_start": 691,
         "line_end": 704,
         "anchor": "The source of G7's seven is operational. Inside the selected vocabulary,",
-        "fingerprint_sha256": "8c3c3a1b5426329a97849633564eb30a5b2f898184510b892b3e15657a7d4eef"
+        "fingerprint_sha256": "81572c87610e88ed45c9c300aac1e987ab067b9f8e11ee3c349f2005e7b1ae88"
       },
       "plain_claim": "G7 closes as four bearer-oriented transfers plus three Titan frames; the Burrisphere projects those seven as four quadrants plus a bottom-centre-top Titan axis, while the separate L1-L7 mirror ladder is not G7.",
       "claim_type": "interpretation_vow",

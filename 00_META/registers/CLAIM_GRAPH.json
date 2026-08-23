@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 44,
+      "primary_card_count": 48,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1647,6 +1647,176 @@
       "to": "A6"
     },
     {
+      "from": "OS01-38",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "depends_on",
+      "to": "OS01-30"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-38",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "depends_on",
+      "to": "OS01-38"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-39",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "depends_on",
+      "to": "OS01-39"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-40",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "depends_on",
+      "to": "OS01-26"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "depends_on",
+      "to": "OS01-39"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "depends_on",
+      "to": "OS01-40"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "supported_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-41",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -2813,8 +2983,8 @@
     }
   ],
   "metrics": {
-    "edges": 556,
-    "nodes": 120
+    "edges": 590,
+    "nodes": 124
   },
   "nodes": [
     {
@@ -2863,7 +3033,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 44,
+      "primary_card_count": 48,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -3171,6 +3341,26 @@
     },
     {
       "id": "OS01-37",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-38",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-39",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-40",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-41",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

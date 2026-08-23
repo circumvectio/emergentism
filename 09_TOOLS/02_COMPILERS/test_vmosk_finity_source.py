@@ -62,7 +62,9 @@ class VmoskFinitySourceTests(unittest.TestCase):
 
     def test_homepage_keeps_one_receipt_loop_and_no_unearned_efficacy(self):
         text = (ROOT / "12_PUBLIC_SITE" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(text.count('class="receipt-loop'), 1)
+        self.assertEqual(
+            text.count('aria-label="Seven movements of the Soul Loop"'), 1
+        )
         self.assertNotIn('class="section method"', text)
         self.assertIn("comparative benefit untested", text)
         self.assertNotIn("Emergentism helps", text)

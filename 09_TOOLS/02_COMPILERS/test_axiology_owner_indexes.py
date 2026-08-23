@@ -32,6 +32,8 @@ class AxiologyOwnerIndexTests(unittest.TestCase):
             "02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md",
             "02_VALUE_THEORY/01_TRANSCENDENTALS.md",
             "02_VALUE_THEORY/02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md",
+            "02_VALUE_THEORY/03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md",
+            "02_VALUE_THEORY/04_GUARDIANSHIP_EXTENSION_GEX_01.md",
             "00_BRIDGE_LAWS_BETWEEN_LEVELS.md",
             "00_THE_EXTRACTION_LAW.md",
             "00_COMMANDMENT_VS_GEOMETRY.md",
@@ -54,6 +56,8 @@ class AxiologyOwnerIndexTests(unittest.TestCase):
             "01_RIGHTS_DUTIES_AND_DUE_PROCESS.md",
             "01_TRANSCENDENTALS.md",
             "02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md",
+            "03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md",
+            "04_GUARDIANSHIP_EXTENSION_GEX_01.md",
         }
         actual = markdown_targets(section)
         self.assertEqual(actual, expected)

@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 42,
+ "total": 45,
  "tree": [
   {
    "key": "start",
@@ -40,6 +40,14 @@
     {
      "href": "/dasein/",
      "title": "What had to emerge for you—and this moment—to be here?"
+    },
+    {
+     "href": "/questions/",
+     "title": "Fifty-four questions. None quietly counted as solved."
+    },
+    {
+     "href": "/ethics/",
+     "title": "From what happens to what we can justify—without hiding the bridge."
     },
     {
      "href": "/practice/",
@@ -162,6 +170,10 @@
     {
      "href": "/record/eub-1/",
      "title": "The Dasein Test — EUB-1 v1.0"
+    },
+    {
+     "href": "/record/pqa-54/",
+     "title": "The Philosophical Question Atlas companion"
     },
     {
      "href": "/contribute/",

@@ -38,6 +38,16 @@ def page_document(*, title: str, description: str, canonical: str, main: str, ac
   <link rel="canonical" href="{esc(canonical)}" />
   <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
   <script defer src="/assets/js/gestalt-v2.js"></script>
+<!--OG:AUTO-->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Emergentism" />
+<meta property="og:title" content="{esc(title)}" />
+<meta property="og:description" content="{esc(description)}" />
+<meta property="og:url" content="{esc(canonical)}" />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
+<!--/OG:AUTO-->
 </head>
 <body class="g2-page">
 <main id="main" class="g2-main" tabindex="-1">
@@ -88,7 +98,7 @@ def question_atlas_main(atlas: dict) -> str:
     <h1>Fifty-four questions. None quietly counted as solved.</h1>
     <p class="g2-page-hero__lede">Emergentism does not end philosophy. It makes philosophical debt legible—and tests whether an exact type distinction clarifies, dissolves within a model, conditionally resolves, reframes, or leaves each question open.</p>
     <div class="g2-actions"><a class="g2-button g2-button--primary" href="#domain-met">Open the atlas</a><a class="g2-button" href="/record/pqa-54/">Read the protocol state</a><a class="g2-button" href="/ethics/">Inspect the normative bridge</a></div>
-    <div class="g2-page-meta"><span>54 selected</span><span>0 evaluated</span><span>0 independently reviewed</span><span>0 resolved</span></div>
+    <div class="g2-page-meta"><span>[D] selected construct</span><span>54 selected</span><span>0 evaluated</span><span>0 independently reviewed</span><span>0 resolved</span></div>
   </header>
 
   <nav class="g2-shell g2-atlas-nav" aria-label="Question Atlas sections">

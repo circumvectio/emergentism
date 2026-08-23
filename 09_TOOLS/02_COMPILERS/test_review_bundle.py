@@ -22,8 +22,8 @@ assert SPEC and SPEC.loader
 CHECKER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECKER)
 BUNDLE_DIR = ROOT / "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice"
-MANIFEST_PATH = BUNDLE_DIR / "REVIEW_BUNDLE_v5.json"
-PACKET_PATH = BUNDLE_DIR / "REVIEW_BUNDLE_v5.md"
+MANIFEST_PATH = BUNDLE_DIR / "REVIEW_BUNDLE_v6.json"
+PACKET_PATH = BUNDLE_DIR / "REVIEW_BUNDLE_v6.md"
 
 
 class ReviewBundleStatusTests(unittest.TestCase):
@@ -39,7 +39,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
             manifest["files"].get(packet_relative), "sha256:" + CHECKER.sha256(PACKET_PATH)
         )
         self.assertEqual(
-            CHECKER.acyclic_binding_errors(MANIFEST_PATH, manifest, registry, gate, 5),
+            CHECKER.acyclic_binding_errors(MANIFEST_PATH, manifest, registry, gate, 6),
             [],
         )
 
@@ -72,57 +72,57 @@ class ReviewBundleStatusTests(unittest.TestCase):
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         forbidden = (
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
-            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.json",
-            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.json",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6_BINDING_RECEIPT.json",
         )
         for path in forbidden:
             with self.subTest(path=path):
                 mutated = copy.deepcopy(manifest)
                 mutated["files"][path] = "sha256:" + "0" * 64
                 errors = CHECKER.acyclic_binding_errors(
-                    MANIFEST_PATH, mutated, registry, gate, 5
+                    MANIFEST_PATH, mutated, registry, gate, 6
                 )
                 self.assertTrue(
                     any("must not hash mutable/self-binding" in error for error in errors),
                     errors,
                 )
 
-    def test_v5_cannot_downgrade_its_binding_profile(self) -> None:
+    def test_v6_cannot_downgrade_its_binding_profile(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         downgraded = copy.deepcopy(manifest)
         downgraded["registry_binding"]["mode"] = CHECKER.BINDING_MODE_V1
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, downgraded, registry, gate, 5
+            MANIFEST_PATH, downgraded, registry, gate, 6
         )
         self.assertTrue(
-            any("bundle v5 must use" in error for error in errors), errors
+            any("bundle v6 must use" in error for error in errors), errors
         )
 
-    def test_v5_cannot_rebind_its_contract_to_another_listed_artifact(self) -> None:
+    def test_v6_cannot_rebind_its_contract_to_another_listed_artifact(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         rebound = copy.deepcopy(manifest)
         rebound["registry_binding"]["binding_contract"] = "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, rebound, registry, gate, 5
+            MANIFEST_PATH, rebound, registry, gate, 6
         )
         self.assertTrue(
-            any("bundle v5 must bind" in error for error in errors), errors
+            any("bundle v6 must bind" in error for error in errors), errors
         )
 
     def test_unregistered_successor_version_fails_closed(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, manifest, registry, gate, 6
+            MANIFEST_PATH, manifest, registry, gate, 7
         )
         self.assertTrue(
-            any("bundle v6 is unsupported" in error for error in errors), errors
+            any("bundle v7 is unsupported" in error for error in errors), errors
         )
 
     def test_paired_unregistered_successor_fails_through_main(self) -> None:
-        """A discovered v6 packet must not bypass the live entrypoint guard."""
+        """A discovered v7 packet must not bypass the live entrypoint guard."""
 
         with tempfile.TemporaryDirectory() as temporary:
             corpus = Path(temporary) / "corpus"
@@ -132,7 +132,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
             proof.write_text("synthetic packet proof\n", encoding="utf-8")
             proof_relative = "proof.txt"
             document = "not sent; review received: no; does not work here; CONTACT BLOCKED.\n"
-            for version in range(1, 7):
+            for version in range(1, 8):
                 manifest = {
                     "bundleVersion": f"v{version}",
                     "supersedes": None if version == 1 else f"REVIEW_BUNDLE_v{version - 1}.json",
@@ -155,7 +155,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
                 redirect_stdout(output),
             ):
                 self.assertEqual(CHECKER.main(), 1)
-            self.assertIn("bundle v6 is unsupported", output.getvalue())
+            self.assertIn("bundle v7 is unsupported", output.getvalue())
 
     def test_empty_inventory_requires_an_explicitly_unbound_registry(self) -> None:
         registry, gate = CHECKER.review_gate_data()
@@ -237,22 +237,22 @@ class ReviewBundleStatusTests(unittest.TestCase):
                     self.assertEqual(CHECKER.main(), 1)
                 self.assertIn(expected, output.getvalue())
 
-    def test_v5_hash_locks_every_retained_historical_artifact(self) -> None:
+    def test_v6_hash_locks_every_retained_historical_artifact(self) -> None:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         files = copy.deepcopy(manifest["files"])
         self.assertEqual(
-            CHECKER.historical_custody_errors(5, files, manifest),
+            CHECKER.historical_custody_errors(6, files, manifest),
             [],
         )
         retained = next(iter(CHECKER.HISTORICAL_BUNDLE_CUSTODY[1]["artifacts"]))
         files[retained] = "sha256:" + "0" * 64
-        errors = CHECKER.historical_custody_errors(5, files, manifest)
+        errors = CHECKER.historical_custody_errors(6, files, manifest)
         self.assertTrue(
             any("does not hash-lock retained v1 artifact" in error for error in errors),
             errors,
         )
 
-    def test_v5_historical_metadata_distinguishes_creation_and_content_commits(self) -> None:
+    def test_v6_historical_metadata_distinguishes_creation_and_content_commits(self) -> None:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         custody = manifest["historical_artifact_custody"]["versions"]
         v2_markdown = (
@@ -284,7 +284,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
                 return_value=("0" * 64, None, None),
             ),
         ):
-            errors = CHECKER.historical_custody_errors(5, manifest["files"], bad_manifest)
+            errors = CHECKER.historical_custody_errors(6, manifest["files"], bad_manifest)
         self.assertTrue(
             any("content commit does not match its frozen digest" in error for error in errors),
             errors,
@@ -299,35 +299,35 @@ class ReviewBundleStatusTests(unittest.TestCase):
             side_effect=lambda _commit, label: f"{label} Git commit is not locally available",
         ):
             errors = CHECKER.historical_custody_errors(
-                5,
+                6,
                 manifest["files"],
                 manifest,
                 unavailable,
             )
         self.assertEqual(errors, [])
-        self.assertEqual(len(unavailable), 5)
+        self.assertEqual(len(unavailable), 6)
         self.assertTrue(all("not locally available" in detail for detail in unavailable))
 
-    def test_v5_requires_its_exact_current_packet_inventory(self) -> None:
+    def test_v6_requires_its_exact_current_packet_inventory(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         self.assertEqual(
             set(manifest["files"]),
-            set(CHECKER.required_manifest_files(5)),
+            set(CHECKER.required_manifest_files(6)),
         )
         removed = copy.deepcopy(manifest)
         removed["files"].pop(
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/"
             "02_INDEPENDENT_REVIEW.md"
         )
-        errors = CHECKER.acyclic_binding_errors(MANIFEST_PATH, removed, registry, gate, 5)
+        errors = CHECKER.acyclic_binding_errors(MANIFEST_PATH, removed, registry, gate, 6)
         self.assertTrue(
             any("exact current packet inventory; missing" in error for error in errors),
             errors,
         )
         added = copy.deepcopy(manifest)
         added["files"]["00_META/claim_cards/extra.yaml"] = "sha256:" + "0" * 64
-        errors = CHECKER.acyclic_binding_errors(MANIFEST_PATH, added, registry, gate, 5)
+        errors = CHECKER.acyclic_binding_errors(MANIFEST_PATH, added, registry, gate, 6)
         self.assertTrue(
             any("exact current packet inventory; unexpected" in error for error in errors),
             errors,
@@ -340,7 +340,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
         bad_gate = bad_registry["gates"][1]
         bad_gate["execution"]["prerequisites"]["bundle_manifest"]["sha256"] = "0" * 64
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, manifest, bad_registry, bad_gate, 5
+            MANIFEST_PATH, manifest, bad_registry, bad_gate, 6
         )
         self.assertTrue(any("artifact digest drifted" in error for error in errors), errors)
 
@@ -368,13 +368,13 @@ class ReviewBundleStatusTests(unittest.TestCase):
                 receipt_sha256=generic_digest,
             )
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, manifest, promoted_registry, promoted_gate, 5
+            MANIFEST_PATH, manifest, promoted_registry, promoted_gate, 6
         )
         self.assertTrue(
             any("unset owner authority requires" in error for error in errors), errors
         )
 
-    def test_locally_authored_owner_selection_is_not_a_v5_authority(self) -> None:
+    def test_locally_authored_owner_selection_is_not_a_v6_authority(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         selected_registry = copy.deepcopy(registry)
@@ -384,7 +384,7 @@ class ReviewBundleStatusTests(unittest.TestCase):
             selection={"locally_authored": True},
         )
         errors = CHECKER.acyclic_binding_errors(
-            MANIFEST_PATH, manifest, selected_registry, selected_gate, 5
+            MANIFEST_PATH, manifest, selected_registry, selected_gate, 6
         )
         self.assertTrue(
             any("v4 accepts only unset owner authority" in error for error in errors),

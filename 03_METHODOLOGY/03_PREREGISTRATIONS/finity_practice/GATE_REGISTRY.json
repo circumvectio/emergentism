@@ -139,7 +139,7 @@
       "execution": {
         "state": "blocked",
         "prerequisites": {
-          "bundle_manifest": {"state": "satisfied", "artifact": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.json", "sha256": "2972880669722edc6f734dc25023b680c6faf9d13e266e1f0a900411febf367f", "receipt": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json", "receipt_sha256": "4e1fedda736ff558fe783445d8ca8cf94cfe21af22e4f62ed8dcd60b5b52ef39"},
+          "bundle_manifest": {"state": "satisfied", "artifact": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.json", "sha256": "19bbb4b13a5917ac1fcbf14c5b6c2ef5f0f0e43046ae64b239efd31269591000", "receipt": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6_BINDING_RECEIPT.json", "receipt_sha256": "a02adffb92065ef7d2acac6cf02872ee50fe24413320ee0be1aecb633d110fe0"},
           "complete_review_materials_bundle": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "conflict_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "reviewer_scope_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},

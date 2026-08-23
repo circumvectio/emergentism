@@ -25,7 +25,7 @@
     },
     {
       "path": "00_META/claim_cards/one_sitting.yaml",
-      "reviewed_source_sha256": "fbf58c6b90ad1eda8f4a7dc1aa9f6ddf696b09b3c6fe63fc68d0da09c74a2507",
+      "reviewed_source_sha256": "925a71453163d0a23e44c84cf023249014f71dfa99f45969d7a2bdd8d31c9bb0",
       "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
@@ -84,12 +84,12 @@
     {
       "path": "13_BOOKS/manifesto/manifesto-contract.json",
       "role": "preamble_contract",
-      "sha256": "643221c336d63731317a5baf10ba3c5865e3002607c03475a572ba56b4239569"
+      "sha256": "44ae02cd6d183da7299d4283a6a96724541b32bb469e9b8c78d6eeb78871d05f"
     },
     {
       "path": "13_BOOKS/book-manifest.json",
       "role": "book_manifest_custody",
-      "sha256": "cff6c8363b07c6523b14945b7cb8dbb280a50a6ff511f1e3a52ca3dbfd1c046a"
+      "sha256": "fd0fa4cf70b395405d9b3f63b47b71df74cbc627238bfecde1398260fa71f5e0"
     }
   ],
   "modules": [
@@ -121,13 +121,13 @@
   ],
   "output": {
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-    "sha256": "ee01766bd6c78a5f0b032cc491456dc9bc00d1c59c1e422ddd19669721881375",
-    "word_count": 64280
+    "sha256": "0f2a247b5c6c37194557a73f13cc44963592329a066a57f27b5a7a0e720229da",
+    "word_count": 67135
   },
   "paragraph_ledger": {
-    "count": 642,
+    "count": 653,
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
-    "sha256": "bc2fe236991005f8224ce9dada8976fccfdf97876db67f21d09ef14c7dfc6aae"
+    "sha256": "fb73f3c964ad2656e4166b6eb3e63eb3f0d1885536eca8d70c309787e1c1303e"
   },
   "public_disposition": "not_a_public_route",
   "schema": "emergentism/full-book-build/v1"

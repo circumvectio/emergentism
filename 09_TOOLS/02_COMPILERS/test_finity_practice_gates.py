@@ -480,11 +480,11 @@ class FinityPracticeGateTests(unittest.TestCase):
                     self.assertEqual(record["state"], "satisfied")
                     self.assertEqual(
                         record["artifact"],
-                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.json",
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.json",
                     )
                     self.assertEqual(
                         record["receipt"],
-                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json",
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6_BINDING_RECEIPT.json",
                     )
                     self.assertTrue(
                         all(

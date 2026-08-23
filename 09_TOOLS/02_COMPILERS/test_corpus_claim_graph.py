@@ -93,6 +93,7 @@ def declared_external_sources() -> dict[str, dict[str, object]]:
 
 
 EXTERNAL_SOURCE_DECLARATIONS = declared_external_sources()
+EXPECTED_REPOSITORY_CARD_COUNT = 87
 
 
 def missing_federated_sources() -> list[str]:
@@ -129,6 +130,11 @@ class ClaimGraphContractTests(unittest.TestCase):
     def make_fixture(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
         temp = tempfile.TemporaryDirectory()
         root = Path(temp.name) / "corpus"
+        source_cards = json.loads(
+            (ROOT / "00_META/claim_cards/one_sitting.yaml").read_text(
+                encoding="utf-8"
+            )
+        )
         copies = [
             "00_THE_KERNEL_INDEX.md",
             "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
@@ -137,9 +143,18 @@ class ClaimGraphContractTests(unittest.TestCase):
             "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md",
             "00_META/claim_cards/one_sitting.yaml",
         ]
+        # Keep the minimal fixture complete as the reviewed One-Sitting card set
+        # grows. Review receipts are part of the compiler contract, so copying a
+        # hand-maintained subset makes unrelated mutation tests fail before they
+        # reach the property each test is meant to exercise.
+        copies.extend(
+            receipt
+            for card in source_cards["cards"]
+            for receipt in card.get("review", {}).get("receipts", [])
+        )
         schema = json.loads((ROOT / "00_META/schemas/claim-card.schema.yaml").read_text(encoding="utf-8"))
         copies.extend(schema["owner_registry"].values())
-        for rel in copies:
+        for rel in sorted(set(copies)):
             target = root / rel
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / rel, target)
@@ -149,6 +164,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         # isolate the contract mutation under test.
         fixture_cards_path = root / "00_META/claim_cards/one_sitting.yaml"
         fixture_cards = json.loads(fixture_cards_path.read_text(encoding="utf-8"))
+        fixture_card_count = len(fixture_cards["cards"])
         os12 = next(
             card for card in fixture_cards["cards"] if card["card_id"] == "OS01-12"
         )
@@ -234,15 +250,15 @@ class ClaimGraphContractTests(unittest.TestCase):
             ],
             "nonbook_claim_routes": [],
             "integrity": {
-                "existing_claim_card_count": 30,
+                "existing_claim_card_count": fixture_card_count,
                 "primary_cards_by_composition": {
-                    "COMP-ACTIVE-01-WELTANSCHAUUNG": 30,
+                    "COMP-ACTIVE-01-WELTANSCHAUUNG": fixture_card_count,
                     "COMP-ACTIVE-02-TITANS": 0,
                     "COMP-ACTIVE-03-LIVED-COMPASS": 0,
                     "COMP-HISTORICAL-01-SERPENT-CYCLE": 0,
                 },
                 "primary_cards_by_nonbook_home": {},
-                "total_primary_or_custody_routes": 30,
+                "total_primary_or_custody_routes": fixture_card_count,
             },
         }
         (root / "13_BOOKS/book-manifest.json").write_text(
@@ -411,7 +427,9 @@ class ClaimGraphContractTests(unittest.TestCase):
         self.assertEqual(register["schema"], "emergentism/claim-card-register/v2")
         self.assertEqual(graph["schema"], "emergentism/claim-owner-dependency-graph/v2")
         self.assertEqual(lifecycle["schema"], "emergentism/claim-lifecycle-inventory/v3")
-        self.assertEqual(register["metrics"]["cards"], 76)
+        self.assertEqual(
+            register["metrics"]["cards"], EXPECTED_REPOSITORY_CARD_COUNT
+        )
         self.assertEqual(register["metrics"]["works_with_cards"], 9)
         expected_owners = (
             {f"K-{i}" for i in range(1, 8)}
@@ -1231,12 +1249,12 @@ class ClaimGraphContractTests(unittest.TestCase):
         register, graph, _ = COMPILER.compile_contract(
             ROOT, allow_unavailable_external=True
         )
-        self.assertEqual(len(register["cards"]), 76)
+        self.assertEqual(len(register["cards"]), EXPECTED_REPOSITORY_CARD_COUNT)
         self.assertTrue(all(row.get("primary_projection_home") for row in register["cards"]))
         self.assertTrue(all(row.get("projection_kind") for row in register["cards"]))
         self.assertEqual(len(graph["composition_summaries"]), 4)
         projected = [edge for edge in graph["edges"] if edge["kind"] == "projected_to"]
-        self.assertEqual(len(projected), 76)
+        self.assertEqual(len(projected), EXPECTED_REPOSITORY_CARD_COUNT)
 
     def test_zero_card_legacy_source_is_in_inventory(self) -> None:
         temp, root = self.make_fixture(); self.addCleanup(temp.cleanup)

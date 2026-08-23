@@ -1553,7 +1553,7 @@
       ],
       "locator": {
         "anchor": "The source of G7's seven is operational. Inside the selected vocabulary,",
-        "fingerprint_sha256": "8c3c3a1b5426329a97849633564eb30a5b2f898184510b892b3e15657a7d4eef",
+        "fingerprint_sha256": "81572c87610e88ed45c9c300aac1e987ab067b9f8e11ee3c349f2005e7b1ae88",
         "line_end": 704,
         "line_start": 691,
         "section": "12B"
@@ -1729,6 +1729,160 @@
       "supporting_owner_ids": [
         "K-1",
         "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-38",
+      "chapters": [
+        "good"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-22",
+        "OS01-30"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A4"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "anchor": "Emergentism now separates three claims that are often collapsed. First, the",
+        "fingerprint_sha256": "06fa00b7b8cecaab3390a2163cccd6508933644917055f04c9cdbc60145ef468",
+        "line_end": 826,
+        "line_start": 823,
+        "section": "12C"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-39",
+      "chapters": [
+        "good"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-22",
+        "OS01-38"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A4"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "shows conditionally that an agent who asks an equally situated co-agent to",
+        "fingerprint_sha256": "e53c3d70402fdaa2cc44fe36a178f6d850b9d640ed6324cb672eeffd72f57159",
+        "line_end": 840,
+        "line_start": 827,
+        "section": "12C"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-40",
+      "chapters": [
+        "good"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-22",
+        "OS01-39"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A4"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I"
+      ],
+      "locator": {
+        "anchor": "reciprocal public justification `[S]` inside that practice. Third, extending",
+        "fingerprint_sha256": "5b5bdaf2644e030e26a18627d40741816c906caf74f0831cbcf68e7ae723a9d1",
+        "line_end": 833,
+        "line_start": 830,
+        "section": "12C"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-41",
+      "chapters": [
+        "exit"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-26",
+        "OS01-39",
+        "OS01-40"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A4",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "D"
+      ],
+      "locator": {
+        "anchor": "The Philosophy Question Atlas freezes 54 public question families across nine",
+        "fingerprint_sha256": "1005fdbf35941b9e3c9bedd4ba26d563937ceeea0ae78f3c17ad94df27a3b0fd",
+        "line_end": 861,
+        "line_start": 842,
+        "section": "12C"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-3",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-5"
       ],
       "work_id": "BK-ONE-SITTING"
     },
@@ -2957,9 +3111,9 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 83,
-    "conjecture_cards": 31,
-    "public_bounded_current": 24,
+    "cards": 87,
+    "conjecture_cards": 34,
+    "public_bounded_current": 27,
     "works_with_cards": 9
   },
   "owners": [

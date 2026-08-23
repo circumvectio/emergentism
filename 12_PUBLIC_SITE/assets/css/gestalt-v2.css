@@ -322,6 +322,10 @@ body.g2-page {
   margin-top: 34px;
 }
 
+.g2-actions--hero {
+  margin: 0 0 28px;
+}
+
 .g2-button {
   min-height: 50px;
   display: inline-flex;

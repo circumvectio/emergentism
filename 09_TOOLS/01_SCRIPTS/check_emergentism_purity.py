@@ -103,7 +103,7 @@ FROZEN_TOOLING_SHA256 = {
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_schema.py"): "82703f06a9fb25ac808b15b3c45286a62c6cfcd9918bd842979eac46a391b5df",  # pragma: allow-secret -- SHA-256 custody pin
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_semantics.py"): "e134e8639625831b951e07d556ce21f10cc5dfebbfdea93ed30025d68250e09c",
     Path("09_TOOLS/02_COMPILERS/test_validate_kintsugi.py"): "9ca7f87ba8f37f7648bea7ac961e0cea1dcc85441ad4fde16a7ef457c296738a",
-    Path("09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py"): "20d2c898e9bdc74aa8e99d1a6e567a91ee5c1b08e9aef056d43d1e0757579982",
+    Path("09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py"): "5a00d93af374e8fce7aff67a3eda6c5968c3f46b6f2e0b5157708dc72bfc071f",  # pragma: allow-secret -- SHA-256 custody pin
     Path("09_TOOLS/02_COMPILERS/test_dimension_first_canon.py"): "796af0e9eb360e000a4734d35e3cbfe841b07bea8efc1b62671be86e260e275c",
 }
 

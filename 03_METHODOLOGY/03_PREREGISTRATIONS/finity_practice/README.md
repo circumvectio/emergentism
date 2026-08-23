@@ -35,8 +35,8 @@ accepts no local owner or external evidence beyond its technical manifest
 binding. Comprehension and review never promote comparative efficacy.
 
 The current frozen external-review packet is
-[`REVIEW_BUNDLE_v5.md`](REVIEW_BUNDLE_v5.md), bound by
-[`REVIEW_BUNDLE_v5.json`](REVIEW_BUNDLE_v5.json). Version 2 superseded version 1
+[`REVIEW_BUNDLE_v6.md`](REVIEW_BUNDLE_v6.md), bound by
+[`REVIEW_BUNDLE_v6.json`](REVIEW_BUNDLE_v6.json). Version 2 superseded version 1
 because the Lived Compass changed materially when the retired product ranking
 was replaced by the selected ordinal minimum convention. Version 3 repairs a
 separate custody defect: v2 hashed the mutable `GATE_REGISTRY.json`, while that
@@ -54,6 +54,10 @@ Compass and Finity claim-card bytes; it retains all v1–v4 packet artifacts whi
 re-freezing the current packet in
 [`REVIEW_REGISTRY_SNAPSHOT_v5.json`](REVIEW_REGISTRY_SNAPSHOT_v5.json) under
 [`REVIEW_BUNDLE_BINDING_CONTRACT_v2.md`](REVIEW_BUNDLE_BINDING_CONTRACT_v2.md).
+Version 6 retains every v1–v5 packet artifact and re-freezes the current packet
+because the public barred-claim policy changed materially; no earlier review
+bundle covers that amendment. Its current static projection is
+[`REVIEW_REGISTRY_SNAPSHOT_v6.json`](REVIEW_REGISTRY_SNAPSHOT_v6.json).
 It keeps `D-OWNER-03` explicitly `unset`, so no generic local file can clear a
 human, external, or applicability prerequisite. The v4-profile contract accepts
 no present external-state record: owner and external evidence require a later

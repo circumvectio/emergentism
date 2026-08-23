@@ -692,9 +692,9 @@ The source of G7's seven is operational. Inside the selected vocabulary,
 `G7=M4⊎F3`: four bearer-oriented self↔other transfers plus three Titan-frame
 classes `[S]`. The owner's ego↔collective reading of the bearer direction is an
 interpretive gloss `[I]`. The v2.1 Burrisphere then projects the same classes as
-four quadrant positions and a three-station axis: Śiva `•` / dissolution at
-the bottom, Viṣṇu `⊙` / preservation at the centre-unit marker `1_T`, and
-Brahmā `○` / creation at the top `[I]`.
+four quadrant positions and a three-station axis: Śiva `•`—dissolution at
+the bottom, Viṣṇu `⊙`—preservation at the centre-unit marker `1_T`, and
+Brahmā `○`—creation at the top `[I]`.
 
 That Burrisphere projection does not independently generate or confirm seven.
 The separate `GEN7@1` L1–L7 meridian mirror ladder can be grouped `3+1+3`; its
