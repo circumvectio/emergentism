@@ -1,0 +1,24 @@
+{
+  "interface": "PQAScoreReceipt.v1",
+  "id": "emergentism/pqa_54/PQAScoreReceipt.v1.instance",
+  "status": "UNRUN_SCHEMA_BIND",
+  "schema_stub": "PQAScoreReceipt.v1.json",
+  "schema_stub_untouched": true,
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "increments_resolved": false,
+  "result_state": "unrun",
+  "evaluated": false,
+  "writes_eub_scores": false,
+  "transfers_truth": false,
+  "forbid_score_or_truth_transfer": true,
+  "note": "UNRUN bind only. No primary scalar. Score vector unrun. No EUB score transfer.",
+  "score_vector": null,
+  "no_primary_scalar": true,
+  "eub_score": null,
+  "primary_scalar": null
+}

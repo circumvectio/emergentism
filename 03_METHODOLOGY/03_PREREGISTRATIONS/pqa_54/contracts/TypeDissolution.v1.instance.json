@@ -1,0 +1,29 @@
+{
+  "interface": "TypeDissolution.v1",
+  "id": "emergentism/pqa_54/TypeDissolution.v1.instance",
+  "status": "UNRUN_SCHEMA_BIND",
+  "schema_stub": "TypeDissolution.v1.json",
+  "schema_stub_untouched": true,
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "increments_resolved": false,
+  "result_state": "unrun",
+  "evaluated": false,
+  "writes_eub_scores": false,
+  "transfers_truth": false,
+  "forbid_score_or_truth_transfer": true,
+  "note": "UNRUN bind only. Not a dissolution receipt. Residual stays open. Fake dissolution (dissolved + residual none while unrun) is a kill.",
+  "original_types": null,
+  "illegal_join": null,
+  "conservative_repair": null,
+  "native_result": "unrun",
+  "residual": "open",
+  "rival": null,
+  "kill": "fake_dissolution_or_unrun_residual_none_kills",
+  "review": "unrun",
+  "effect_kind": "no increment"
+}

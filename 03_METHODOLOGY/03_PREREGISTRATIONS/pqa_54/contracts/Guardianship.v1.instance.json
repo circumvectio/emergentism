@@ -1,0 +1,30 @@
+{
+  "interface": "Guardianship.v1",
+  "id": "emergentism/pqa_54/Guardianship.v1.instance",
+  "status": "UNRUN_SCHEMA_BIND",
+  "schema_stub": "Guardianship.v1.json",
+  "schema_stub_untouched": true,
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "increments_resolved": false,
+  "result_state": "unrun",
+  "evaluated": false,
+  "writes_eub_scores": false,
+  "transfers_truth": false,
+  "forbid_score_or_truth_transfer": true,
+  "note": "UNRUN bind only. Guardianship is not authority and is not proved by RCAB.",
+  "named_bearers": "unrun — must be named; hidden bearers kill",
+  "mandate": "unrun",
+  "least_restrictive_action": "unrun",
+  "conflicts": "unrun",
+  "review": "unrun",
+  "revocation": "unrun",
+  "Exit": "unrun",
+  "not_proved_by_RCAB": true,
+  "is_authority": false,
+  "confers_authority": false
+}

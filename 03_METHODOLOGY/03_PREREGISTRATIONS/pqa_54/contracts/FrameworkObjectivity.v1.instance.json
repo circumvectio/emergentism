@@ -1,0 +1,29 @@
+{
+  "interface": "FrameworkObjectivity.v1",
+  "id": "emergentism/pqa_54/FrameworkObjectivity.v1.instance",
+  "status": "UNRUN_SCHEMA_BIND",
+  "schema_stub": "FrameworkObjectivity.v1.json",
+  "schema_stub_untouched": true,
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "increments_resolved": false,
+  "result_state": "unrun",
+  "evaluated": false,
+  "writes_eub_scores": false,
+  "transfers_truth": false,
+  "forbid_score_or_truth_transfer": true,
+  "note": "UNRUN bind only. Framework stays underdetermined. Hidden bearers kill. No score minted.",
+  "bearers": "unrun — must be named before any syntropic claim; hidden bearers kill",
+  "baseline": "unrun",
+  "horizon": "unrun",
+  "measure": null,
+  "Justice": "unrun",
+  "uncertainty": "unrun",
+  "underdetermined_state": true,
+  "syntropic": false,
+  "score": null
+}
