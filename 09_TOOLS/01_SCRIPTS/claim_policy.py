@@ -39,10 +39,17 @@ BOUNDARY_CONTEXT = re.compile(
 )
 
 
+def _same_sentence_prefix(prefix: str) -> str:
+    """Keep only the current sentence so earlier denials cannot waive later claims."""
+
+    parts = re.split(r"(?<=[.!?])(?:[ \t\r]*\n+|[ \t]+)", prefix)
+    return parts[-1] if parts else prefix
+
+
 def violations(text: str) -> list[tuple[str, int, str]]:
     """Return positive barred assertions as ``(rule, line, snippet)`` tuples.
 
-    A local negation immediately before the match makes a denial admissible.
+    A local negation in the same sentence immediately before the match makes a denial admissible. Prior-sentence negation does not waive a later positive claim.
     The policy deliberately uses narrow positive assertions rather than broad
     vocabulary bans; historical material is controlled by lifecycle routing.
     """
@@ -51,7 +58,7 @@ def violations(text: str) -> list[tuple[str, int, str]]:
     for rule in RULES:
         for match in rule.pattern.finditer(text):
             prefix = text[max(0, match.start() - 180):match.start()]
-            if NEGATION.search(prefix) or BOUNDARY_CONTEXT.search(prefix):
+            if NEGATION.search(_same_sentence_prefix(prefix)) or BOUNDARY_CONTEXT.search(prefix):
                 continue
             line = text.count("\n", 0, match.start()) + 1
             snippet = re.sub(r"\s+", " ", text[match.start():match.end()]).strip()

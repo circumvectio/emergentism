@@ -60,10 +60,10 @@ result-shopping.
 6. **The toy harness is not biology evidence.** It proves that the witness
    objects can be computed in a declared model; it does not upgrade any living
    system claim.
-7. **EUB-1 is not an ASI certificate.** Until its schemas, fixtures, rivals,
-   judges, analysis plan, and hashes are frozen, it remains a non-runnable
-   design. A later pass is only a bounded capability profile for the named
-   candidate and protocol version.
+7. **EUB-1 is not an ASI certificate.** v0.1 remains a non-runnable design
+   (schemas and harness not frozen). v1.0 is offline-ready locally and still
+   has no candidate evaluated; a later pass is only a bounded capability
+   profile for the named candidate and protocol version.
 8. **EUB-1 v1.0 supersedes only future run design.** Keep v0.1 addressable and
    never compare scores across the major-version boundary. `OFFLINE-READY`
    means locally implemented, not evaluated, validated, deposited, submitted,

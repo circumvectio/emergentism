@@ -153,7 +153,7 @@ It does **not** yet support a full line-by-line adjudication of the wider parado
 
 - [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - [../../../05_COSMOLOGY/03_FORMAL_SYSTEM](../../../05_COSMOLOGY/03_FORMAL_SYSTEM) -- formal proof surfaces that support these dissolutions
-- Formal System: Power-Max Lemma -- the cooperation proof behind PD_10 (Is-Ought)
+- Formal System: Power-Max — Justice-constrained objective cited beside PD_10 (Is-Ought); not a proof that cooperation or ought follows from is
 - Core Concepts -- selected `P_node=min(Φ̂₄,V₄)`, the retired product fence, and evidence tiers
 - [Foreword](../../../07_THEOLOGY/00_FOREWORD.md) -- the battlefield analogy that frames these dissolutions
 

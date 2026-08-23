@@ -197,3 +197,7 @@ typed by their source cards and require their own evidence.
 ---
 
 *Six states. None collapsed.*
+
+## v2.2 worktree note — 2026-08-23
+
+This worktree may contain v2.2 / PQA draft work. **v2.2 is not public** and is not a promoted release. The v2.1 promotion rows above are unchanged.

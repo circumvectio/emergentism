@@ -41,6 +41,13 @@ class BarredClaimPolicyTests(unittest.TestCase):
             with self.subTest(sample=sample):
                 self.assertEqual(POLICY.violations(sample), [])
 
+    def test_prior_sentence_negation_does_not_waive(self) -> None:
+        sample = (
+            "Emergentism does not provide a complete ontology. "
+            "Later it provides a complete ontology."
+        )
+        self.assertTrue(POLICY.violations(sample))
+
     def test_actual_current_and_provisional_surfaces_pass(self) -> None:
         import json
         import sys
