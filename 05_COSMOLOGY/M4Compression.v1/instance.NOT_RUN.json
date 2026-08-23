@@ -1,0 +1,65 @@
+{
+  "id": "emergentism/M4Compression.v1",
+  "version": "v1",
+  "status": "NOT_RUN",
+  "barred_phrases": [
+    "game theory exhausted"
+  ],
+  "maximally_compressed_scope": "inside_comparator_class_only",
+  "frozen_corpus": {
+    "hash": "PLACEHOLDER_NO_CORPUS_SEALED",
+    "native_game_descriptions": [],
+    "bearer_indexed_changes": [],
+    "held_out_targets": [],
+    "sealed_before_encode": true
+  },
+  "encoder": {
+    "id": "M4-encoder-unrun",
+    "cells": [
+      "Taking-Φ",
+      "Taking-V",
+      "Giving-Φ",
+      "Giving-V"
+    ],
+    "residual_tag": "uncoded",
+    "total_map": "Each corpus item maps to at most one cell or uncoded. NOT_RUN: no encode executed."
+  },
+  "comparator_class": {
+    "closed": true,
+    "members": [
+      "M4",
+      "native-game-baseline",
+      "one-axis-coarser",
+      "added-axis-rival",
+      "no-placement"
+    ]
+  },
+  "coverage": {
+    "unique_cell_fraction": null,
+    "undercoverage_is_fail": true
+  },
+  "collisions": {
+    "count": null,
+    "necessary_orientation_collapse_kills": true
+  },
+  "rate_distortion": {
+    "rate_measure": "description_length_undeclared_until_run",
+    "distortion_measure": "held_out_target_loss_undeclared_until_run",
+    "curve_points": [],
+    "no_post_hoc_operating_point": true
+  },
+  "performance_floor": {
+    "kind": "distortion_ceiling",
+    "value": null,
+    "below_floor_disqualifies_shorter_code": true
+  },
+  "no_placement_option": {
+    "always_runnable": true,
+    "wins_if_meets_floor_at_leq_rate": true
+  },
+  "join_rule": {
+    "g7_operational": "4+3",
+    "burrisphere_geometric": "3+1+3",
+    "join": "named_[I]_projection_only"
+  }
+}

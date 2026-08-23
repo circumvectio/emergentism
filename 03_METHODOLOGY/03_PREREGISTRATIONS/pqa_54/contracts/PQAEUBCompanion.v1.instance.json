@@ -1,0 +1,37 @@
+{
+  "interface": "PQAEUBCompanion.v1",
+  "id": "emergentism/pqa_54/PQAEUBCompanion.v1.instance",
+  "status": "UNRUN_COMPANION_BIND",
+  "forbid_score_or_truth_transfer": true,
+  "writes_eub_scores": false,
+  "transfers_truth": false,
+  "schema_stub": "PQAEUBCompanion.v1.json",
+  "schema_stub_untouched": true,
+  "note": "Read-only sha256 of existing EUB-1 frozen files and owner protocol. Not a score or truth transfer. Schema stub stays frozen_schema_unrun. Digests are labeled sha256: (file content hashes, not credentials). # pragma: allow-secret",
+  "eub1_frozen_hashes": {
+    "algo": "sha256",
+    "source": "read existing EUB-1 files; files not modified",
+    "files": {
+      "eub_v1/CUSTODIAN_INTERFACE.md": "sha256:48e47bf455ba6dece7c080303481cc00a63f080b57c5638a56123ebbbfc3feec",
+      "eub_v1/README.md": "sha256:1f1304d40a6a3b37d3d57a7a3573df85398757eae17961a14b027cd8f5fd0a66",
+      "eub_v1/adapters.py": "sha256:1f195587af95f6479b2419d2720c1a3ef10cd71cb6d7b20fd6b5db7d959c5444",
+      "eub_v1/custodian.py": "sha256:48b8d5aecd00aee02e514aeb126164e87a0f85b08931b5592d8711be980584e6",
+      "eub_v1/eub_core.py": "sha256:39e95541b9b2ad7de31df3ad996246204f4d0a448d3ffec9af902a11d2a8b1a7",
+      "eub_v1/fixtures/dev/dasein_chain_seed_1701.json": "sha256:964cb94155946d8ae3608702d63a124ee415b2c1b5b8475d5209e82a08f7f632",
+      "eub_v1/fixtures/stress/serial_force_stress.json": "sha256:f1d11c5f40ecd447ee397e4e9880e23c187f9eecf40ea94d3e35408b5c6d64cc",
+      "eub_v1/prompts/conditions.json": "sha256:05d24c0c89ce356b635e8f924eed7920d8f8ffff1fcc1ea36227cc5c7154dedd",
+      "eub_v1/recorded_responses/dasein_account_dev.json": "sha256:245496961c6ef6ef4592b3fdd57dcd1273a4c00a27f30b25df0f5eb13949da79",
+      "eub_v1/run_eub.py": "sha256:a728bfd1f377f5252acc93ebac2024e01a2ed53d0dcdcb11bba8315bc03e9ed5",
+      "eub_v1/schemas/DaseinAccount.v1.schema.json": "sha256:8e8aedb8fa7e81d4b695ba01e3c2bc346938fcda813810f1bb66463b48a5508f",
+      "eub_v1/schemas/EUBRunReceipt.v2.schema.json": "sha256:28572f5493c6737c06fb4ab006ac2f679dc611f961cb0071b94907de05510cc6",
+      "eub_v1/schemas/EmergenceAccount.v1.schema.json": "sha256:948450c265940c8dbaa8a395fd4a7024e4ad5ee1a96f1e10cfcc999edfef12f6",
+      "eub_v1/schemas/FixtureManifest.v1.schema.json": "sha256:688905a9f373cfab7e49eaa0806c3a8cc4303da326c684db12754cb53d63ac86",
+      "eub_v1/schemas/RunEnvelope.v1.schema.json": "sha256:2957d3581dc2f15c2ea31e67638b7d2d377faf9ee4e1da8a3d47112fb7705f1b",
+      "eub_v1/tests/test_custodian.py": "sha256:57666a854e4bd8f1f9ba40f3c9cd7947fbec2a657b94b18f5f43a628fd919c1f",
+      "eub_v1/tests/test_eub_v1.py": "sha256:be52bb10c12e27d195a548d6f07f19f710b43c6c57815a62daa415239e37ebc3",
+      "eub_v1/tests/test_runtime_custody.py": "sha256:86de208e6f7b59500b80eb2acf2182e4f33d4ab9354d4939742383d7b8c5764a",
+      "03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md": "sha256:c5f413a7d61d2e39b0e55925c013673234992ad73d1035c5bc4bf6bc99738ff2",
+      "eub_v1/FREEZE_MANIFEST.json": "sha256:de2749e8cc97e8212e229a041c3fc56fa8043d436c3b3d1fd9eb4c56e4045182"
+    }
+  }
+}
