@@ -13,6 +13,80 @@ may_authorize: false
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
 
+## Current v2.1 churning-corpus custody release — 2026-08-23
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `1075e9fbc31fbd8a70d49f419ac8b9367bc296e8` — fail-closed release contract plus complete live-witness audit | clean `HEAD`, exact Git archive replay, and explicit-path commit |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream before release preparation | `git rev-parse HEAD` = `git rev-parse @{upstream}` |
+| **immutable artifact** | `dpl_FdvydjHzrLRpFTh6VR2FG5KQ4d4i` · `emergentism-ebm3mo4cy-yves-projects-c163dce1.vercel.app` · `READY` | Vercel API identity, pinned project/team, immutable strict audit |
+| **predecessor** | `dpl_CVzSeLrQk9JhMqGLwNzJudJPDde2` | observed before held deployment, rechecked immediately before promotion |
+| **promoted** | **yes** — the exact verified artifact above | receipt terminal state `PROMOTED_VERIFIED`; apex and `www` identity and body-hash verification |
+| **DNS** | **existing Vercel configuration; unchanged in this sitting** | no DNS mutation command was issued |
+| **release receipt** | external receipt SHA-256 `37ad35065c335b912476beddbe092cc00a828b387255435ed27ccf8ec2c38836` | `emergentism/VercelReleaseReceipt.v1`; checksum is integrity evidence, not authorization |
+
+### Churning-corpus deployment custody
+
+The public payload was materialized from the selected commit without Git
+metadata or the ignore file that shaped it: **290 files**, **8,507,876 bytes**,
+manifest SHA-256
+`f98f81862aa8411f2eb0360af2d5024d11c7a3953e1b534262e0c3d8ea7850f2`. <!-- pragma: allow-secret -- manifest digest -->
+The reviewed Vercel link hash remained
+`d136f60e3b6c40c01cf8ba76a72ed4ea3c50f7519acf78e205b8b74dd5dee746` <!-- pragma: allow-secret -- link digest -->
+and matched project `prj_RyoMG78ylqIWRSnz7URjkeniOKLH` and team
+`team_wtr2VOkP7ZQTWjCJXgaFpQq6`. The wrapper read no credential payload and
+logged no secret.
+
+Preparation passed the 17-section predeploy gate, the seven generated-artifact
+checks, and 60 public-site unit tests, including 20 release-contract tests. The
+held artifact then passed **722/722** route probes, **74/74** reading-manifest
+documents, the historical no-store/noindex boundary, and all **14** sampled
+served hashes. Promotion was a separate command. Before it ran, the wrapper
+rechecked the exact predecessor and its critical hashes; after alias movement,
+it verified the deployment identity and nine critical body hashes on both apex
+and `www`. Its verified rollback target remained the predecessor throughout.
+
+Federation replay was `metadata_only_explicit`: owner-authorized preparation
+allowed unavailable external source repositories to remain declared debt rather
+than silently substituting current bytes. `external_validation=false` remains
+explicit in the receipt.
+
+### Preserved failed held attempt
+
+The prior held deployment `dpl_Am7SAToDEND1ZabzqjuvkzwJdjrb` at
+`emergentism-a59psi76i-yves-projects-c163dce1.vercel.app` remains unpromoted.
+Its receipt is preserved at commit
+`c7820eb88c73f4958d621d17e22e4b7631a99ba6`, state
+`STAGE_CREATED_UNVERIFIED`, receipt SHA-256
+`7ac76022325803609df224d4191fb81bfe4f25506390034c74472d15bc29ca6a`. <!-- pragma: allow-secret -- receipt digest -->
+The payload bytes were not corrupt: the old auditor omitted standalone hash
+witnesses from its probe plan and truncated artifacts over 220,000 bytes before
+hashing. The attempt was not rewritten or promoted. A corrected auditor,
+separate commit, fresh receipt, and fresh held deployment established the
+current release.
+
+### Churning-corpus critical served hashes
+
+| Route | SHA-256 on immutable, apex, and `www` |
+|---|---|
+| `/` | `4b99e5da2669b92f454586e5685a2d697386d5f64b7e3e5a0fa23427799fa601` | <!-- pragma: allow-secret -- served digest -->
+| `/questions/` | `330603975643520b1e7c1582ee2b2e376261c0e39b46c85f0b2f2eef5aea917a` | <!-- pragma: allow-secret -- served digest -->
+| `/churn/` | `e379f69fa8439ffbf35da94d66ccecf6a899c40cc1d8b1ae56409fd287f878fb` | <!-- pragma: allow-secret -- served digest -->
+| `/churn/corpus.json` | `ca20ebd698aa0059d4056d17cd81955c751d34d40f8f5e5e1263cebc465c925e` | <!-- pragma: allow-secret -- served digest -->
+| `/churn/corpus.jsonl` | `901ce0f8d0fa0deedf33f1a5039a77299048d0ac49f42a04fe707c719e429fcb` | <!-- pragma: allow-secret -- served digest -->
+| `/amrita/` | `b79f94fb2fe60569749ade906419d7fdd2ff0b8bb05aebeb445ed09289c0d808` | <!-- pragma: allow-secret -- served digest -->
+| `/halahala/` | `02356ef3694dfbecc9b37ad2eb3a575bd0b773a136ae45087f10befe0917fdf6` | <!-- pragma: allow-secret -- served digest -->
+| `/record/churning/` | `8766b0d497e3c894e7405cead0d896eb78a1702cc7150facf41c686c3aae0499` | <!-- pragma: allow-secret -- served digest -->
+| `/sw.js` | `9183214830e04d46ddf0cdfd63c989b7ccad6933f08d798137a7079a7317952b` | <!-- pragma: allow-secret -- served digest -->
+
+### Churning-corpus boundary
+
+This release makes the new public churning, Amrita, Halahala, perennial-question,
+and paradox surfaces available through the verified v2.1 atlas. It does not
+establish the truth, novelty, priority, completeness, or scientific validation
+of Emergentism or any conjecture recorded there. Deployment evidence proves the
+served artifact and release procedure only.
+
 ## Current v2.1 horizon-balance release — 2026-08-23
 
 | State | Value | How measured |
