@@ -1,0 +1,154 @@
+{
+  "id": "emergentism/BurrisphereCoordinates.v1",
+  "date": "2026-08-23",
+  "status": "WORKTREE_DRAFT",
+  "named_projection": "BurrisphereDisplayItinerary.v1",
+  "join_rule": {
+    "g7_operational": "4+3",
+    "g7_operational_means": "M4 transfers plus F3 Titan frames",
+    "burrisphere_geometric": "3+1+3",
+    "burrisphere_geometric_means": "GEN7 meridian: three south + equator + three north",
+    "join": "named_[I]_projection_only",
+    "identity_forbidden": ["G7@1=GEN7@1", "transfer=frame", "M4=latitude-band"]
+  },
+  "chart": {
+    "convention": "south-origin polar theta on selected positive-radial meridian",
+    "identities": {
+      "phi": "cot(theta/2)",
+      "nu": "tan(theta/2)",
+      "constraint_product_phi_nu": 1,
+      "constraint_product_selects_centre": false,
+      "B": "2/(phi+nu)=sin(theta)",
+      "B_max": 1,
+      "B_max_at": { "phi": 1, "nu": 1, "theta_rad": 1.5707963267948966 }
+    },
+    "normalized_scores": {
+      "v": "nu/(phi+nu)",
+      "phi_hat": "phi/(phi+nu)",
+      "sum": 1,
+      "product": "v*phi_hat",
+      "product_max": 0.25,
+      "product_max_at": { "v": 0.5, "phi_hat": 0.5, "phi": 1, "nu": 1 },
+      "note": "Raw poles V→∞ and Φ→∞; only normalized scores are bounded. Product max is at v=φ=1 on the raw chart, i.e. v=phi_hat=1/2 after normalization."
+    },
+    "raw_poles": {
+      "V_pole": { "raw": "V→∞", "theta_rad": 3.141592653589793, "nu": "∞", "phi": 0 },
+      "Phi_pole": { "raw": "Φ→∞", "theta_rad": 0, "phi": "∞", "nu": 0 }
+    }
+  },
+  "horizon_overlay": {
+    "tier": "[I]",
+    "short_horizon_present_power": "V",
+    "long_horizon_future_potential": "Φ",
+    "Vward": "nu-dominant",
+    "Phiward": "phi-dominant",
+    "centre": {
+      "chart": "phi=nu=1",
+      "role": "min_opportunity_cost_and_Dharma_candidate",
+      "transfer_tested": false,
+      "not_a_theorem": [
+        "centre removes all tradeoffs",
+        "centre equalizes short and long clocks",
+        "geometry derives Dharma"
+      ]
+    }
+  },
+  "titan_stations": [
+    {
+      "name": "Siva",
+      "role": "dissolution",
+      "titan": "0_T",
+      "glyph": "•",
+      "theta_rad": 0,
+      "theta_deg": 0,
+      "lat_deg": -90,
+      "lambda_on_itinerary_rad": 0,
+      "phi": "∞",
+      "nu": 0,
+      "v_normalized": 0,
+      "phi_hat_normalized": 1,
+      "pole": "Φ"
+    },
+    {
+      "name": "Visnu",
+      "role": "preservation",
+      "titan": "1_T",
+      "glyph": "⊙",
+      "theta_rad": 1.5707963267948966,
+      "theta_deg": 90,
+      "lat_deg": 0,
+      "lambda_on_itinerary_rad": 3.141592653589793,
+      "phi": 1,
+      "nu": 1,
+      "v_normalized": 0.5,
+      "phi_hat_normalized": 0.5,
+      "pole": "centre"
+    },
+    {
+      "name": "Brahma",
+      "role": "creation",
+      "titan": "∞_T",
+      "glyph": "○",
+      "theta_rad": 3.141592653589793,
+      "theta_deg": 180,
+      "lat_deg": 90,
+      "lambda_on_itinerary_rad": 6.283185307179586,
+      "phi": 0,
+      "nu": "∞",
+      "v_normalized": 1,
+      "phi_hat_normalized": 0,
+      "pole": "V"
+    }
+  ],
+  "strategic_quadrants": [
+    {
+      "id": "Q1",
+      "azimuth_deg_half_open": [0, 90],
+      "cell": "Taking-Φ",
+      "direction": "self",
+      "channel": "Φ"
+    },
+    {
+      "id": "Q2",
+      "azimuth_deg_half_open": [90, 180],
+      "cell": "Taking-V",
+      "direction": "self",
+      "channel": "V"
+    },
+    {
+      "id": "Q3",
+      "azimuth_deg_half_open": [180, 270],
+      "cell": "Giving-Φ",
+      "direction": "other",
+      "channel": "Φ"
+    },
+    {
+      "id": "Q4",
+      "azimuth_deg_half_open": [270, 360],
+      "cell": "Giving-V",
+      "direction": "other",
+      "channel": "V"
+    }
+  ],
+  "ascending_projection": {
+    "degrees": 360,
+    "parameter": "s in [0,1]; theta=pi*s; lambda=2pi*s",
+    "from": "Siva",
+    "via_centre_latitude": "Visnu",
+    "to": "Brahma",
+    "encounters": ["Q1", "Q2", "Q3", "Q4"],
+    "is_not": [
+      "time",
+      "recurrence",
+      "moral_ascent",
+      "physical_dynamics",
+      "causal_mechanism",
+      "derivation_of_seven"
+    ]
+  },
+  "m4_compression": {
+    "protocol": "emergentism/M4Compression.v1",
+    "maximally_compressed_scope": "inside_comparator_class_only",
+    "barred_phrases": ["game theory exhausted"]
+  }
+}
