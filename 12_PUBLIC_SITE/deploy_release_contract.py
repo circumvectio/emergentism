@@ -265,7 +265,11 @@ def _inspect_archive(archive_bytes: bytes) -> list[dict[str, Any]]:
             rows.append(
                 {
                     "path": path.as_posix(),
-                    "mode": member.mode & 0o777,
+                    # Git trees preserve only the executable bit. `git archive`
+                    # may add group-write permission while extraction applies
+                    # the process umask, so normalize both sides to Git's two
+                    # regular-file modes before comparing the CLI input.
+                    "mode": 0o755 if member.mode & 0o111 else 0o644,
                     "size": len(payload),
                     "sha256": _sha256_bytes(payload),
                 }
@@ -288,6 +292,10 @@ def _extract_archive(archive_bytes: bytes, stage_dir: Path) -> None:
                     f"stage archive contains non-regular member: {member.name}"
                 )
         archive.extractall(stage_dir, filter="data")
+        for member in archive.getmembers():
+            if member.isfile():
+                target = stage_dir / _safe_member_path(member.name).as_posix()
+                target.chmod(0o755 if member.mode & 0o111 else 0o644)
 
 
 def _git_archive_bytes(commit: str) -> bytes:
@@ -377,6 +385,7 @@ def _stage_rows(stage_dir: Path) -> list[dict[str, Any]]:
                 "sha256": _sha256_file(path),
             }
         )
+    rows.sort(key=lambda row: row["path"])
     return rows
 
 

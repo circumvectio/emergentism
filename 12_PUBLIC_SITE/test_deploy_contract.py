@@ -16,12 +16,18 @@ from subprocess import TimeoutExpired
 import deploy_release_contract as contract
 
 
-def archive_bytes(name: str, payload: bytes, *, kind: bytes = tarfile.REGTYPE) -> bytes:
+def archive_bytes(
+    name: str,
+    payload: bytes,
+    *,
+    kind: bytes = tarfile.REGTYPE,
+    mode: int = 0o644,
+) -> bytes:
     buffer = io.BytesIO()
     with tarfile.open(fileobj=buffer, mode="w") as archive:
         info = tarfile.TarInfo(name)
         info.type = kind
-        info.mode = 0o644
+        info.mode = mode
         info.size = len(payload) if kind == tarfile.REGTYPE else 0
         archive.addfile(info, io.BytesIO(payload) if payload else None)
     return buffer.getvalue()
@@ -33,6 +39,23 @@ class DeployReleaseContractTests(unittest.TestCase):
         self.assertEqual(rows[0]["path"], "index.html")
         self.assertEqual(rows[0]["size"], 6)
         self.assertEqual(rows[0]["sha256"], contract._sha256_bytes(b"hello\n"))
+
+    def test_git_archive_modes_and_stage_order_are_canonical(self) -> None:
+        rows = contract._inspect_archive(
+            archive_bytes("index.html", b"hello\n", mode=0o664)
+        )
+        self.assertEqual(rows[0]["mode"], 0o644)
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "record" / "frontier").mkdir(parents=True)
+            (root / "record" / "frontier" / "index.html").write_text(
+                "nested", encoding="utf-8"
+            )
+            (root / "record" / "frontier.json").write_text(
+                "sibling", encoding="utf-8"
+            )
+            paths = [row["path"] for row in contract._stage_rows(root)]
+        self.assertEqual(paths, sorted(paths))
 
     def test_archive_traversal_is_rejected(self) -> None:
         with self.assertRaises(contract.ReleaseContractError):
