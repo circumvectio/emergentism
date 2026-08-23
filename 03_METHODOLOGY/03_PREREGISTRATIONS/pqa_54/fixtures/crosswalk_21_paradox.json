@@ -1,0 +1,218 @@
+{
+  "interface": "PQA21ParadoxCrosswalk.v1",
+  "status": "PREREG / UNRUN — inventory map, not a resolution receipt",
+  "source_sequence": "PD_04 through PD_24 (21 historical paradox routes; PD_25 Bell is outside this ledger)",
+  "increments_resolved": false,
+  "resolved": 0,
+  "launch_counts": {
+    "selected": 54,
+    "evaluated": 0,
+    "independently_reviewed": 0,
+    "resolved": 0
+  },
+  "rows": [
+    {
+      "pd_id": "PD_04",
+      "label": "Zeno's Paradoxes",
+      "pqa_ids": [
+        "PQA-06"
+      ],
+      "note": "time/change",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_05",
+      "label": "The One and the Many",
+      "pqa_ids": [
+        "PQA-02"
+      ],
+      "note": "one/many",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_06",
+      "label": "The Ship of Theseus",
+      "pqa_ids": [
+        "PQA-04"
+      ],
+      "note": "identity",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_07",
+      "label": "The Fermi Paradox",
+      "pqa_ids": [],
+      "note": "no PQA family increment; cosmology inventory only",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_08",
+      "label": "The Liar Paradox",
+      "pqa_ids": [
+        "PQA-13"
+      ],
+      "note": "liar",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_09",
+      "label": "Leibniz's Necessary Being",
+      "pqa_ids": [
+        "PQA-49"
+      ],
+      "note": "necessary being",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_10",
+      "label": "The Is-Ought Gap",
+      "pqa_ids": [
+        "PQA-31"
+      ],
+      "note": "is–ought",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_11",
+      "label": "Free Will vs Determinism",
+      "pqa_ids": [
+        "PQA-23"
+      ],
+      "note": "free will",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_12",
+      "label": "Measurement Problem",
+      "pqa_ids": [
+        "PQA-28"
+      ],
+      "note": "measurement",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_13",
+      "label": "The Hard Problem",
+      "pqa_ids": [
+        "PQA-20"
+      ],
+      "note": "consciousness",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_14",
+      "label": "Mind-Body Problem",
+      "pqa_ids": [
+        "PQA-19"
+      ],
+      "note": "mind-body",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_15",
+      "label": "Problem of Evil",
+      "pqa_ids": [
+        "PQA-50"
+      ],
+      "note": "evil",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_16",
+      "label": "Meaning of Life",
+      "pqa_ids": [
+        "PQA-46"
+      ],
+      "note": "meaning",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_17",
+      "label": "QM/GR Unification (archived draft)",
+      "pqa_ids": [
+        "PQA-27"
+      ],
+      "note": "reduction/emergence inventory only",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_18",
+      "label": "The Extraction Paradox",
+      "pqa_ids": [
+        "PQA-41"
+      ],
+      "note": "extraction",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_19",
+      "label": "The Hard Problem of Consciousness",
+      "pqa_ids": [
+        "PQA-20"
+      ],
+      "note": "consciousness; duplicate route of PD_13",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_20",
+      "label": "Implications (Philosophy)",
+      "pqa_ids": [],
+      "note": "meta-document; no PQA increment",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_21",
+      "label": "Problem of Death",
+      "pqa_ids": [
+        "PQA-48"
+      ],
+      "note": "death",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_22",
+      "label": "Implications (Science)",
+      "pqa_ids": [],
+      "note": "meta-document; no PQA increment",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_23",
+      "label": "The Completion",
+      "pqa_ids": [],
+      "note": "superseded meta-document; no PQA increment",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    },
+    {
+      "pd_id": "PD_24",
+      "label": "Third Unveiling / Finity",
+      "pqa_ids": [
+        "PQA-01"
+      ],
+      "note": "ground inventory only; not a resolution",
+      "increments_resolved": false,
+      "result_state": "unrun"
+    }
+  ],
+  "notes": "Crosswalk of the 21-paradox ledger does not increment PhilosophyCoverage.v1 resolved. Mapping is not evaluation."
+}
