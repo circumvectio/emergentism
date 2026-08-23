@@ -1,0 +1,13 @@
+{
+  "interface": "PQANormativeBridge.v1",
+  "required_fields": [
+    "normative_premises",
+    "bridge_rule",
+    "bearers",
+    "authority",
+    "guardianship_extension",
+    "rival",
+    "kill"
+  ],
+  "status": "frozen_schema_unrun"
+}

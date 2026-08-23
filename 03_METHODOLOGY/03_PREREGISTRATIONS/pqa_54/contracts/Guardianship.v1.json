@@ -1,0 +1,14 @@
+{
+  "interface": "Guardianship.v1",
+  "required_fields": [
+    "named_bearers",
+    "mandate",
+    "least_restrictive_action",
+    "conflicts",
+    "review",
+    "revocation",
+    "Exit",
+    "not_proved_by_RCAB"
+  ],
+  "status": "frozen_schema_unrun"
+}

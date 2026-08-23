@@ -1,0 +1,8 @@
+{
+  "interface": "PQAScoreReceipt.v1",
+  "required_fields": [
+    "score_vector",
+    "no_primary_scalar"
+  ],
+  "status": "frozen_schema_unrun"
+}

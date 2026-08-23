@@ -1,0 +1,11 @@
+{
+  "interface": "PQAQuestionTrial.v1",
+  "required_fields": [
+    "formulation",
+    "attack",
+    "discrimination",
+    "contact",
+    "revision_or_transfer"
+  ],
+  "status": "frozen_schema_unrun"
+}

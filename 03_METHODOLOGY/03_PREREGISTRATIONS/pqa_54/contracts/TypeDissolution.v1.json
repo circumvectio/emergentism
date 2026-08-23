@@ -1,0 +1,14 @@
+{
+  "interface": "TypeDissolution.v1",
+  "required_fields": [
+    "original_types",
+    "illegal_join",
+    "conservative_repair",
+    "native_result",
+    "residual",
+    "rival",
+    "kill",
+    "review"
+  ],
+  "status": "frozen_schema_unrun"
+}

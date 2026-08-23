@@ -1,0 +1,8 @@
+{
+  "interface": "PQAEUBCompanion.v1",
+  "required_fields": [
+    "eub1_frozen_hashes",
+    "forbid_score_or_truth_transfer"
+  ],
+  "status": "frozen_schema_unrun"
+}

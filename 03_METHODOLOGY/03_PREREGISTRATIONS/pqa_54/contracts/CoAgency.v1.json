@@ -1,0 +1,12 @@
+{
+  "interface": "CoAgency.v1",
+  "required_fields": [
+    "bearer_visibility",
+    "reason_access",
+    "contest",
+    "correction",
+    "feasible_Exit",
+    "forbids_conflation_of_personhood_consent_authority_protection"
+  ],
+  "status": "frozen_schema_unrun"
+}

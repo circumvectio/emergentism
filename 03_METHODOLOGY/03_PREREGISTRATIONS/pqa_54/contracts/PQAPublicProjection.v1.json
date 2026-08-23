@@ -1,0 +1,8 @@
+{
+  "interface": "PQAPublicProjection.v1",
+  "required_fields": [
+    "bounded_public_wording",
+    "counts"
+  ],
+  "status": "frozen_schema_unrun"
+}

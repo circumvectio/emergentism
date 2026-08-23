@@ -1,0 +1,13 @@
+{
+  "interface": "FrameworkObjectivity.v1",
+  "required_fields": [
+    "bearers",
+    "baseline",
+    "horizon",
+    "measure",
+    "Justice",
+    "uncertainty",
+    "underdetermined_state"
+  ],
+  "status": "frozen_schema_unrun"
+}

@@ -1,0 +1,10 @@
+{
+  "interface": "PQANativeReview.v1",
+  "required_fields": [
+    "reviewer_a",
+    "reviewer_b",
+    "domain_qualified",
+    "independent"
+  ],
+  "status": "frozen_schema_unrun"
+}
