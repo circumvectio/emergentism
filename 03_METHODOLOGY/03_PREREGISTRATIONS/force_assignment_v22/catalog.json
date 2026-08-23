@@ -1,0 +1,23 @@
+{
+  "schema": "emergentism/force_assignment_v22",
+  "protocol_id": "W7-4P-PREREG-v2.2",
+  "founder_prior": {
+    "id": "W7-4P-SEWG",
+    "map": {"D1": "S", "D2": "E", "D3": "W", "D4": "G"},
+    "status": "PRIOR_ONLY",
+    "agreement_score": 0
+  },
+  "rivals": [
+    {"id": "R-NOMAP", "kind": "no-mapping"},
+    {"id": "R-M2M", "kind": "many-to-many"},
+    {"id": "R-EWJ", "kind": "electroweak-joint"}
+  ],
+  "f5_fork": {
+    "truth_bonus": 0,
+    "arms": [
+      {"id": "F5-W", "kind": "present modeled futures"},
+      {"id": "F5-N", "kind": "D5 verification/controller null"},
+      {"id": "F5-R", "kind": "candidate future-boundary history law"}
+    ]
+  }
+}
