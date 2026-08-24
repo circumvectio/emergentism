@@ -8,6 +8,7 @@ const centreButton = document.querySelector("#centre-button");
 const overlayToggle = document.querySelector("#overlay-toggle");
 const fullscreenButton = document.querySelector("#fullscreen-button");
 const phaseReadout = document.querySelector("#phase-readout");
+const actionCells = [...document.querySelectorAll(".bi-action-plane__cell")];
 const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 
 const readouts = {
@@ -128,6 +129,73 @@ for (let meridian = 0; meridian < 8; meridian += 1) {
 }
 root.add(line([new THREE.Vector3(0, -R * 1.42, 0), new THREE.Vector3(0, R * 1.42, 0)], COLORS.bone, 0.2));
 
+const actionTerritories = new THREE.Group();
+const territoryMeshes = [];
+
+function territorySurface(azimuthStart, azimuthLength, color) {
+  const azimuthSteps = 12;
+  const thetaSteps = 32;
+  const positions = [];
+  const indices = [];
+  const radius = R + 0.009;
+
+  for (let thetaIndex = 0; thetaIndex <= thetaSteps; thetaIndex += 1) {
+    const theta = 0.025 + (thetaIndex / thetaSteps) * (Math.PI - 0.05);
+    for (let azimuthIndex = 0; azimuthIndex <= azimuthSteps; azimuthIndex += 1) {
+      const azimuth = azimuthStart + (azimuthIndex / azimuthSteps) * azimuthLength;
+      positions.push(
+        radius * Math.sin(theta) * Math.cos(azimuth),
+        -radius * Math.cos(theta),
+        radius * Math.sin(theta) * Math.sin(azimuth),
+      );
+    }
+  }
+
+  const row = azimuthSteps + 1;
+  for (let thetaIndex = 0; thetaIndex < thetaSteps; thetaIndex += 1) {
+    for (let azimuthIndex = 0; azimuthIndex < azimuthSteps; azimuthIndex += 1) {
+      const a = thetaIndex * row + azimuthIndex;
+      const b = a + row;
+      indices.push(a, b, a + 1, b, b + 1, a + 1);
+    }
+  }
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setIndex(indices);
+  const material = new THREE.MeshBasicMaterial({
+    color,
+    transparent: true,
+    opacity: 0.026,
+    side: THREE.DoubleSide,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+  });
+  return new THREE.Mesh(geometry, material);
+}
+
+phases.forEach((phase, index) => {
+  const azimuthStart = -Math.PI / 2 + index * Math.PI / 2;
+  const territory = territorySurface(azimuthStart, Math.PI / 2, phase.color);
+  territoryMeshes.push(territory);
+  actionTerritories.add(territory);
+
+  const boundary = [];
+  for (let thetaIndex = 0; thetaIndex <= 72; thetaIndex += 1) {
+    const theta = (thetaIndex / 72) * Math.PI;
+    boundary.push(new THREE.Vector3(
+      (R + 0.014) * Math.sin(theta) * Math.cos(azimuthStart),
+      -(R + 0.014) * Math.cos(theta),
+      (R + 0.014) * Math.sin(theta) * Math.sin(azimuthStart),
+    ));
+  }
+  actionTerritories.add(line(boundary, COLORS.violet, 0.22, true));
+});
+
+actionTerritories.add(line([new THREE.Vector3(-R, 0, 0), new THREE.Vector3(R, 0, 0)], COLORS.violet, 0.38));
+actionTerritories.add(line([new THREE.Vector3(0, 0, -R), new THREE.Vector3(0, 0, R)], COLORS.violet, 0.38));
+root.add(actionTerritories);
+
 function makePlane(y, color) {
   const group = new THREE.Group();
   const disk = new THREE.Mesh(
@@ -237,9 +305,18 @@ function updatePhase(theta) {
   if (index === activePhase) return;
   activePhase = index;
   const phase = phases[index];
-  phaseReadout.querySelector(".bi-phase__index").textContent = phase.index;
+  phaseReadout.querySelector(".bi-phase__index").textContent = `${phase.index} · action plane [I]`;
   phaseReadout.querySelector("strong").textContent = phase.name;
-  phaseReadout.style.borderColor = `#${phase.color.toString(16).padStart(6, "0")}`;
+  phaseReadout.querySelector(".bi-action-plane__current").style.borderColor = `#${phase.color.toString(16).padStart(6, "0")}`;
+  actionCells.forEach((cell) => {
+    const isActive = Number(cell.dataset.phase) === index;
+    cell.classList.toggle("is-active", isActive);
+    if (isActive) cell.setAttribute("aria-current", "true");
+    else cell.removeAttribute("aria-current");
+  });
+  territoryMeshes.forEach((territory, territoryIndex) => {
+    territory.material.opacity = territoryIndex === index ? 0.13 : 0.026;
+  });
 }
 
 function updateGeometry(s, updateDom = true) {
@@ -323,10 +400,11 @@ centreButton.addEventListener("click", () => {
 overlayToggle.addEventListener("click", () => {
   showItinerary = !showItinerary;
   itinerary.visible = showItinerary;
+  actionTerritories.visible = showItinerary;
   phaseReadout.hidden = !showItinerary;
   overlayToggle.setAttribute("aria-pressed", String(showItinerary));
-  overlayToggle.setAttribute("aria-label", showItinerary ? "Hide the interpretive G7 path" : "Show the interpretive G7 path");
-  overlayToggle.querySelector("span:last-child").textContent = showItinerary ? "Hide G7 path" : "Show G7 path";
+  overlayToggle.setAttribute("aria-label", showItinerary ? "Hide the interpretive G7 action plane and path" : "Show the interpretive G7 action plane and path");
+  overlayToggle.querySelector("span:last-child").textContent = showItinerary ? "Hide G7 overlay" : "Show G7 overlay";
   dirty = true;
 });
 

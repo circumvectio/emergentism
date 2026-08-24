@@ -97,13 +97,34 @@ body.bi-page {
 .bi-readout div:nth-child(2) strong { color: var(--bi-mint); }
 .bi-readout div:nth-child(4) strong { color: var(--bi-gold); }
 
-.bi-phase {
-  position: absolute; z-index: 3; left: clamp(24px, 4vw, 68px); bottom: clamp(202px, 25vh, 262px);
-  width: min(330px, 31vw); padding-left: 15px; border-left: 2px solid var(--bi-violet); pointer-events: none;
+.bi-action-plane {
+  position: absolute; z-index: 3; left: clamp(24px, 4vw, 68px); bottom: clamp(198px, 23vh, 242px);
+  width: min(370px, 32vw); pointer-events: none;
 }
-.bi-phase__index { display: block; color: var(--bi-violet); font: 600 .66rem/1 var(--g2-mono); letter-spacing: .09em; text-transform: uppercase; }
-.bi-phase strong { display: block; margin-top: 7px; font: 420 1.45rem/1.1 var(--g2-display); }
-.bi-phase small { display: block; margin-top: 5px; color: var(--bi-muted); font-size: .68rem; }
+.bi-action-plane__current { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding-left: 12px; border-left: 2px solid var(--bi-violet); }
+.bi-phase__index { display: block; color: var(--bi-violet); font: 600 .61rem/1.2 var(--g2-mono); letter-spacing: .08em; text-transform: uppercase; }
+.bi-action-plane__current > strong { color: var(--bi-bone); font: 420 1.25rem/1 var(--g2-display); }
+.bi-action-plane__map { position: relative; margin-top: 10px; padding: 19px 57px 20px; }
+.bi-action-plane__grid {
+  display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 106px;
+  border: 1px solid rgba(165,139,226,.42); background: rgba(7,9,15,.56); backdrop-filter: blur(12px);
+}
+.bi-action-plane__cell {
+  display: grid; place-content: center; gap: 4px; padding: 7px 8px; opacity: .46;
+  border-right: 1px solid rgba(165,139,226,.28); border-bottom: 1px solid rgba(165,139,226,.28);
+  transition: opacity .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+.bi-action-plane__cell:nth-child(even) { border-right: 0; }
+.bi-action-plane__cell:nth-child(n+3) { border-bottom: 0; }
+.bi-action-plane__cell strong { font: 600 .62rem/1.1 var(--g2-mono); letter-spacing: .045em; text-transform: uppercase; }
+.bi-action-plane__cell small { color: var(--bi-muted); font: 500 .49rem/1.25 var(--g2-mono); }
+.bi-action-plane__cell.is-active { opacity: 1; background: rgba(165,139,226,.15); box-shadow: inset 0 0 22px rgba(165,139,226,.12); }
+.bi-action-plane__axis { position: absolute; color: rgba(239,232,219,.58); font: 550 .49rem/1 var(--g2-mono); letter-spacing: .065em; text-transform: uppercase; white-space: nowrap; }
+.bi-action-plane__axis--top { top: 0; left: 50%; transform: translateX(-50%); color: var(--bi-blue); }
+.bi-action-plane__axis--bottom { bottom: 0; left: 50%; transform: translateX(-50%); color: var(--bi-gold); }
+.bi-action-plane__axis--left { left: 0; top: 50%; transform: translate(-42%, -50%) rotate(-90deg); }
+.bi-action-plane__axis--right { right: 0; top: 50%; transform: translate(42%, -50%) rotate(90deg); }
+.bi-action-plane__fence { display: block; margin-top: 5px; color: var(--bi-muted); font: 500 .51rem/1.3 var(--g2-mono); text-align: center; }
 
 .bi-console {
   position: absolute; z-index: 5; left: clamp(24px, 4vw, 68px); right: clamp(24px, 4vw, 68px); bottom: max(22px, env(safe-area-inset-bottom));
@@ -138,6 +159,7 @@ body.bi-page {
 .bi-drag-hint { position: absolute; z-index: 2; left: 50%; top: max(24px, env(safe-area-inset-top)); transform: translateX(-50%); color: rgba(239,232,219,.42); font: 500 .6rem/1 var(--g2-mono); text-transform: uppercase; letter-spacing: .08em; }
 
 .bi-fallback { position: absolute; z-index: 20; inset: 0; display: grid; place-content: center; padding: 30px; background: var(--bi-void); text-align: center; }
+.bi-fallback[hidden] { display: none; }
 .bi-fallback__figure { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--bi-muted); }
 .bi-fallback__figure i { width: 72px; height: 1px; background: var(--bi-rule); }
 .bi-fallback h2 { margin: 22px 0 10px; font: 420 2.4rem/1 var(--g2-display); }
@@ -148,6 +170,7 @@ body.bi-page {
   .bi-thesis { width: min(340px, 42vw); }
   .bi-chart-key { width: 260px; }
   .bi-readout { width: 260px; }
+  .bi-action-plane { width: min(340px, 40vw); }
   .bi-console { grid-template-columns: 1fr 1.6fr; }
   .bi-console__formula { display: none; }
   .bi-boundary { bottom: 190px; }
@@ -172,9 +195,17 @@ body.bi-page {
   .bi-readout div:nth-child(3) { grid-column: 1 / -1; }
   .bi-readout div:nth-child(4), .bi-readout div:nth-child(5) { display: none; }
   .bi-readout strong { margin-top: 5px; font-size: .75rem; }
-  .bi-phase { left: 18px; bottom: 330px; width: 220px; }
-  .bi-phase strong { font-size: 1.15rem; }
-  .bi-phase small { display: block; max-width: 34ch; font-size: .5rem; line-height: 1.35; }
+  .bi-action-plane { left: 16px; bottom: 324px; width: 255px; }
+  .bi-action-plane__current { gap: 10px; }
+  .bi-phase__index { font-size: .49rem; }
+  .bi-action-plane__current > strong { font-size: .95rem; }
+  .bi-action-plane__map { margin-top: 7px; padding: 15px 41px 16px; }
+  .bi-action-plane__grid { height: 74px; }
+  .bi-action-plane__cell { gap: 2px; padding: 4px; }
+  .bi-action-plane__cell strong { font-size: .48rem; }
+  .bi-action-plane__cell small { display: none; }
+  .bi-action-plane__axis { font-size: .38rem; }
+  .bi-action-plane__fence { display: none; }
   .bi-console { left: 0; right: 0; bottom: 0; min-height: 200px; padding: 14px 16px max(14px, env(safe-area-inset-bottom)); border-inline: 0; border-bottom: 0; grid-template-columns: 1fr; gap: 8px; }
   .bi-slider { grid-template-columns: 48px 1fr 48px; }
   .bi-slider__pole small { display: none; }
@@ -189,6 +220,21 @@ body.bi-page {
   .bi-boundary[open] summary { font-size: .58rem; }
   .bi-boundary[open] summary::after { content: ""; }
   .bi-drag-hint { display: none; }
+}
+
+@media (max-width: 380px) {
+  .bi-chart-key { display: none; }
+  .bi-action-plane { width: calc(100vw - 32px); }
+  .bi-action-plane__map { padding-inline: 45px; }
+}
+
+@media (max-width: 700px) and (max-height: 700px) {
+  .bi-action-plane { bottom: 272px; }
+  .bi-action-plane__current, .bi-action-plane__fence { display: none; }
+  .bi-action-plane__map { margin-top: 0; }
+  .bi-readout { bottom: 208px; }
+  .bi-chart-key { display: none; }
+  .bi-boundary { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

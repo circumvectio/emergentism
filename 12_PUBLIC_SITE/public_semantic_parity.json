@@ -709,7 +709,7 @@
         "claimCardIds": ["OS01-33", "OS01-34", "OS01-36", "OS01-37"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["One sphere.", "Two shadows.", "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1", "not two realities and not two spheres", "selected reading itinerary [I]", "not time or dynamics", "φ≠Φ₅", "ν≠V₄"]
+      "requiredMarkers": ["One sphere.", "Two shadows.", "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1", "not two realities and not two spheres", "M4 action plane", "self / individual", "other / collective", "Φ₅ · possible / model", "V₄ · actual / embodied", "not a moral verdict", "selected reading itinerary [I]", "not time or dynamics", "φ≠Φ₅", "ν≠V₄"]
     },
     {
       "surface": "rosetta/index.html",
