@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 6,
+  "schemaVersion": 7,
   "status": "release-candidate-projection",
   "sourceAuthority": "Source documents own semantics; this manifest binds public pages but creates no doctrine.",
   "coreJourney": {
@@ -138,6 +138,23 @@
       "questions/schemas/FourthChurningCorpus.v1.schema.json"
     ],
     "boundary": "Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error."
+  },
+  "decisionTransaction": {
+    "schemaId": "DecisionTransactionPublicContract.v1",
+    "sourceDirection": "00_HANDOFF/EMERGENTISM_DECISION_TRANSACTION_SITE_DIRECTION_2026_08_24.md",
+    "surfaces": ["index.html", "plainly/index.html", "practice/index.html", "exit/index.html"],
+    "stages": ["MODEL", "CLASSIFY", "PREPARE", "HUMAN_COMMIT_OR_REFUSE", "OUTCOME", "REVISE"],
+    "sectorRole": "DESCRIPTIVE_ORIENTATION_NOT_MORAL_VERDICT",
+    "preparedState": "UNSIGNED_NONEXECUTING",
+    "signatureMode": "LOCAL_ACKNOWLEDGMENT_ONLY",
+    "execution": false,
+    "transmission": false,
+    "legalEffect": false,
+    "financialEffect": false,
+    "walletConnection": false,
+    "worldviewExitDistinct": true,
+    "outcomeReceiptDistinct": true,
+    "boundary": "The action exit leaves represented possibility for an authorized actual commitment. The worldview Exit permits refusal, an unsigned packet, or leaving Emergentism entirely."
   },
   "normativeBridge": {
     "directionCard": "OS01-38",
@@ -356,7 +373,11 @@
         "Co-agency creates no shared personhood",
         "The means is the message. The ends are the limits.",
         "22 survivor candidates · 29 poison warnings",
-        "public availability cannot guarantee indexing or inclusion in any future AI training run"
+        "public availability cannot guarantee indexing or inclusion in any future AI training run",
+        "A possibility becomes a prepared transaction before it becomes an act.",
+        "Prepared decision transaction · unsigned",
+        "The action exit is the signature boundary",
+        "Leave unsigned"
       ]
     },
     {
@@ -483,7 +504,10 @@
       "publicDisposition": "bounded_current",
       "requiredMarkers": [
         "Finity Card",
-        "private two-face receipt",
+        "Prepare a private decision transaction.",
+        "Prepare unsigned transaction",
+        "The prepared packet cannot sign itself.",
+        "signature_mode: LOCAL_ACKNOWLEDGMENT_ONLY",
         "The two-horizon overlay",
         "OVERLAY NOT RUN",
         "comparative benefit over simpler decision practices remains open"
@@ -594,7 +618,7 @@
         "claimCardIds": ["OS01-09", "OS01-31", "OS01-32", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37", "OS01-38", "OS01-39", "OS01-40", "OS01-41"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed", "Question Atlas", "Contribution and Support", "Co-agency and guardianship", "Framework-objective"]
+      "requiredMarkers": ["P_node := min(Φ̂₄, V₄)", "Emergentism explains the architecture of Being", "Dasein is the whole that can be", "four quadrants plus the Titan axis", "G7@1 ≠ GEN7@1", "one complete 360° turn", "φν=1 everywhere", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed", "Question Atlas", "Contribution and Support", "Co-agency and guardianship", "Framework-objective", "The sectors prepare the move.", "The action exit is the signature boundary.", "Two exits remain distinct."]
     },
     {
       "surface": "discoveries/nonduality/index.html",

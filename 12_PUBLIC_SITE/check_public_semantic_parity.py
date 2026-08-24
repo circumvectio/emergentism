@@ -431,6 +431,9 @@ REQUIRED_PUBLIC_CONTRACTS = {
     "index.html": (
         "A worldview for finite beings", "Frame one decision",
         EXPECTED_CORE_QUESTION, "One present, three explanations",
+        "One actual present. Many possible futures.",
+        "Prepared decision transaction · unsigned",
+        "The action exit is the signature boundary",
         "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
@@ -440,6 +443,7 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "one complete 360° turn", "φν=1 everywhere",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
+        "The sectors prepare the move.", "Two exits remain distinct.",
     ),
     "dasein/index.html": (
         EXPECTED_CORE_QUESTION,
@@ -456,6 +460,8 @@ REQUIRED_PUBLIC_CONTRACTS = {
     "practice/index.html": (
         "Finity Card", "Φ₅", "V₄", "The two-horizon overlay",
         "Vward", "Φward", "OVERLAY NOT RUN",
+        "Prepare a private decision transaction.",
+        "Prepare unsigned transaction", "Sign local commitment", "Leave unsigned",
     ),
     "5/index.html": (
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
@@ -564,6 +570,9 @@ REQUIRED_SURFACE_MARKERS = {
         "The means is the message. The ends are the limits.",
         "22 survivor candidates · 29 poison warnings",
         "public availability cannot guarantee indexing or inclusion in any future AI training run",
+        "A possibility becomes a prepared transaction before it becomes an act.",
+        "Prepared decision transaction · unsigned",
+        "The action exit is the signature boundary", "Leave unsigned",
     },
     "dasein/index.html": {
         EXPECTED_CORE_QUESTION, "Dasein names all that can coherently and consistently exist",
@@ -592,6 +601,8 @@ REQUIRED_SURFACE_MARKERS = {
         "theft ↔ sacrifice", "Game theory is not exhausted", "maximally compressed",
         "Question Atlas", "Contribution and Support", "Co-agency and guardianship",
         "Framework-objective",
+        "The sectors prepare the move.", "The action exit is the signature boundary.",
+        "Two exits remain distinct.",
     },
     "burrisphere/index.html": {
         "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
@@ -1938,6 +1949,97 @@ def validate_v6_fourth_churning(data: dict, errors: list[str]) -> None:
             errors.append(f"Fourth Churning schema-copy drift: {name}")
 
 
+def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
+    """Fail closed on the local-only decision-transaction interaction."""
+
+    contract = data.get("decisionTransaction")
+    if not isinstance(contract, dict):
+        errors.append("decisionTransaction must be an object")
+        return
+    expected = {
+        "schemaId": "DecisionTransactionPublicContract.v1",
+        "sourceDirection": "00_HANDOFF/EMERGENTISM_DECISION_TRANSACTION_SITE_DIRECTION_2026_08_24.md",
+        "surfaces": ["index.html", "plainly/index.html", "practice/index.html", "exit/index.html"],
+        "stages": ["MODEL", "CLASSIFY", "PREPARE", "HUMAN_COMMIT_OR_REFUSE", "OUTCOME", "REVISE"],
+        "sectorRole": "DESCRIPTIVE_ORIENTATION_NOT_MORAL_VERDICT",
+        "preparedState": "UNSIGNED_NONEXECUTING",
+        "signatureMode": "LOCAL_ACKNOWLEDGMENT_ONLY",
+        "execution": False,
+        "transmission": False,
+        "legalEffect": False,
+        "financialEffect": False,
+        "walletConnection": False,
+        "worldviewExitDistinct": True,
+        "outcomeReceiptDistinct": True,
+        "boundary": (
+            "The action exit leaves represented possibility for an authorized actual commitment. "
+            "The worldview Exit permits refusal, an unsigned packet, or leaving Emergentism entirely."
+        ),
+    }
+    if contract != expected:
+        errors.append("decisionTransaction contract drift")
+
+    source = (ROOT / expected["sourceDirection"]).resolve()
+    try:
+        source.relative_to(ROOT.resolve())
+    except ValueError:
+        errors.append("decisionTransaction source direction escapes the corpus")
+    else:
+        if not source.is_file():
+            errors.append("decisionTransaction source direction is missing")
+
+    markers = {
+        "index.html": (
+            "A possibility becomes a prepared transaction before it becomes an act.",
+            "Prepared decision transaction · unsigned",
+            "The action exit is the signature boundary",
+            "The separate worldview Exit",
+        ),
+        "plainly/index.html": (
+            "The sectors prepare the move.",
+            "The action exit is the signature boundary.",
+            "Two exits remain distinct.",
+        ),
+        "practice/index.html": (
+            'id="receipt-builder"',
+            'name="transaction-sector"',
+            "Prepare unsigned transaction",
+            "Sign local commitment",
+            "Leave unsigned",
+            "PREPARED_UNSIGNED",
+            "COMMITTED_LOCAL",
+            "LOCAL_ACKNOWLEDGMENT_ONLY",
+            "The prepared packet cannot sign itself.",
+        ),
+        "exit/index.html": (
+            "Two exits, two different types",
+            "Action exit",
+            "Worldview Exit",
+            "leave every prepared transaction unsigned",
+        ),
+    }
+    for rel, required in markers.items():
+        path = SITE / rel
+        if not path.is_file():
+            errors.append(f"decisionTransaction surface is missing: {rel}")
+            continue
+        source_text = path.read_text(encoding="utf-8")
+        for marker in required:
+            if marker not in source_text:
+                errors.append(f"decisionTransaction marker missing from {rel}: {marker}")
+
+    practice = SITE / "practice/index.html"
+    if practice.is_file():
+        text = practice.read_text(encoding="utf-8")
+        for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "WebSocket", "ethereum.request"):
+            if forbidden in text:
+                errors.append(f"decisionTransaction practice must remain local-only: {forbidden}")
+        if "no account · no wallet · no transmission · no execution" not in text:
+            errors.append("decisionTransaction practice boundary is not explicit")
+        if not re.search(r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>\s*Sign local commitment', text):
+            errors.append("decisionTransaction local commitment must begin disabled")
+
+
 def validate_v4_contracts(data: dict, errors: list[str]) -> None:
     """Validate the v2.2 question, normative, and companion firewalls."""
 
@@ -2112,12 +2214,13 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 6:
-        errors.append("public semantic parity schemaVersion must be 6")
+    if data.get("schemaVersion") != 7:
+        errors.append("public semantic parity schemaVersion must be 7")
     validate_core_routing(data, errors)
     validate_v4_contracts(data, errors)
     validate_v5_churning(data, errors)
     validate_v6_fourth_churning(data, errors)
+    validate_v7_decision_transaction(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:

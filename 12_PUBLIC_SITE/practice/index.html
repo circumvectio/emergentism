@@ -134,6 +134,26 @@ p{margin:0 0 1.25rem}
 .receipt-output{margin:0;border-top:1px solid var(--line);border-radius:0;background:var(--void)}
 .receipt-output .bar{border-bottom:1px solid var(--line)}
 .receipt-output pre{white-space:pre-wrap;overflow-wrap:anywhere}
+.transaction-anchor{display:block;height:1px;scroll-margin-top:calc(var(--g2-nav-h) + 16px)}
+.sector-picker{margin:0;border:0;border-top:1px solid var(--line);padding:1.2rem 1.35rem 1.35rem}
+.sector-picker legend{padding:0 .4rem;color:var(--gold-deep);font:600 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.sector-help{margin:.25rem 0 1rem;color:var(--bone-dim);font-size:.9rem}
+.sector-options{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.sector-option{position:relative;display:flex;min-height:150px;flex-direction:column;justify-content:flex-end;padding:1rem;background:var(--panel);cursor:pointer}
+.sector-option:has(input:checked){box-shadow:inset 0 3px var(--gold);background:color-mix(in srgb,var(--gold) 8%,var(--panel))}
+.sector-option input{position:absolute;top:.8rem;left:.8rem;accent-color:var(--gold)}
+.sector-option b{font:500 1.2rem var(--serif);color:var(--bone)}
+.sector-option small{margin-top:.35rem;color:var(--bone-faint);font:500 .62rem/1.4 var(--mono)}
+.signature-boundary{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.65fr);gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.signature-copy,.signature-controls{padding:1.2rem 1.35rem;background:var(--panel)}
+.signature-copy h4{margin:0 0 .45rem;font:500 1.45rem var(--serif);color:var(--bone)}
+.signature-copy p{margin:0;color:var(--bone-dim);font-size:.9rem}
+.signature-controls{display:grid;gap:.75rem}
+.signature-controls label{color:var(--bone-dim);font-size:.82rem}
+.signature-controls input[type="text"]{width:100%;margin-top:.35rem}
+.signature-controls .ack{display:grid;grid-template-columns:auto 1fr;gap:.55rem;align-items:start}
+.signature-controls .ack input{margin-top:.25rem;accent-color:var(--gold)}
+.signature-actions{display:flex;gap:.55rem;flex-wrap:wrap}
 .further{border-top:1px solid var(--line-soft);padding:clamp(2.4rem,6vw,4.2rem) 0}
 .further>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center;font:500 .76rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
 .further>summary::-webkit-details-marker{display:none}
@@ -143,7 +163,8 @@ p{margin:0 0 1.25rem}
 footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-size:.92rem}
 footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
 footer.foot a{color:var(--bone-dim)}
-@media (max-width:760px){.nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}.receipt-faces{grid-template-columns:1fr}.receipt-face+.receipt-face{border-left:0;border-top:1px solid var(--line)}}
+@media (max-width:760px){.nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}.receipt-faces{grid-template-columns:1fr}.receipt-face+.receipt-face{border-left:0;border-top:1px solid var(--line)}.sector-options{grid-template-columns:1fr 1fr}.signature-boundary{grid-template-columns:1fr}}
+@media (max-width:460px){.sector-options{grid-template-columns:1fr}.sector-option{min-height:110px}}
 @media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}.mobile-actions{font-size:.62rem}.mobile-actions .nav-action{padding:.42rem .48rem}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
@@ -203,6 +224,7 @@ footer.foot a{color:var(--bone-dim)}
   </header>
 
   <section class="read reveal" id="frame">
+    <span class="transaction-anchor" id="transaction" aria-hidden="true"></span>
     <p class="kicker">Start here · five minutes</p>
     <h2 id="finity-card-practice">The Finity Card — <b>frame one decision.</b></h2>
     <div class="body">
@@ -231,13 +253,23 @@ RECEIPT       What outcome will tell me to continue, revise, or stop? What
 
     <form class="receipt-builder" id="receipt-builder" autocomplete="off">
       <div class="builder-head">
-        <h3>Make a private two-face receipt.</h3>
-        <p>Issue the commitment before acting. Return later to record what was observed, who paid, what surprised you, and whether to continue, revise, or stop.</p>
-        <span class="local">Local only · no account · no transmission · no recommendation</span>
+        <h3>Prepare a private decision transaction.</h3>
+        <p>Classify the proposed transfer, bind it to actual means and affected bearers, then inspect the unsigned packet. An authorized human may acknowledge the commitment locally, revise it, or leave it unsigned. Return later for the separate outcome receipt.</p>
+        <span class="local">Local only · no account · no wallet · no transmission · no execution</span>
       </div>
+      <fieldset class="sector-picker">
+        <legend>Transfer sector · descriptive orientation, never a verdict</legend>
+        <p class="sector-help">Choose the sector that best describes the proposed movement of possible and actual power. Giving can harm; taking can repair.</p>
+        <div class="sector-options">
+          <label class="sector-option"><input type="radio" name="transaction-sector" value="TAKING_A · possible power toward self · +Phi5,self / -V4,other" /><b>Taking-A</b><small>possible power toward self<br />+Φ₅,self · −V₄,other</small></label>
+          <label class="sector-option"><input type="radio" name="transaction-sector" value="GIVING_B · possible power toward other · -V4,self / +Phi5,other" /><b>Giving-B</b><small>possible power toward other<br />−V₄,self · +Φ₅,other</small></label>
+          <label class="sector-option"><input type="radio" name="transaction-sector" value="TAKING_B · actual power toward self · +V4,self / -Phi5,other" /><b>Taking-B</b><small>actual power toward self<br />+V₄,self · −Φ₅,other</small></label>
+          <label class="sector-option"><input type="radio" name="transaction-sector" value="GIVING_A · actual power toward other · -Phi5,self / +V4,other" /><b>Giving-A</b><small>actual power toward other<br />−Φ₅,self · +V₄,other</small></label>
+        </div>
+      </fieldset>
       <div class="receipt-faces">
         <div class="receipt-face" aria-labelledby="commitment-face">
-          <h4 id="commitment-face">Face 1 · commitment</h4>
+          <h4 id="commitment-face">Face 1 · commitment (prepared)</h4>
           <div class="field"><label for="r-decision">Decision</label><textarea id="r-decision" placeholder="What am I actually deciding?"></textarea></div>
           <div class="field"><label for="r-actual">Actual means and constraints</label><textarea id="r-actual" placeholder="What is true now? What time, tools, access, energy, and authority are really available?"></textarea></div>
           <div class="field"><label for="r-possibility">Possibility and map change</label><textarea id="r-possibility" placeholder="What remains genuinely open? What would change my map?"></textarea></div>
@@ -257,15 +289,23 @@ RECEIPT       What outcome will tell me to continue, revise, or stop? What
         </div>
       </div>
       <div class="builder-actions">
-        <button class="copybtn primary" type="submit">Build local receipt</button>
-        <button class="copybtn" id="copy-receipt" type="button" disabled>Copy receipt</button>
+        <button class="copybtn primary" type="submit">Prepare unsigned transaction</button>
+        <button class="copybtn" id="copy-receipt" type="button" disabled>Copy packet</button>
         <button class="copybtn" id="download-receipt" type="button" disabled>Download .txt</button>
         <button class="copybtn" type="reset">Clear fields</button>
         <span id="receipt-status" role="status" aria-live="polite"></span>
       </div>
       <div class="artifact receipt-output" id="receipt-output" hidden>
-        <div class="bar"><span>finity-receipt.txt · generated in this browser</span></div>
+        <div class="bar"><span>finity-transaction.txt · prepared in this browser</span></div>
         <pre id="receipt-text"></pre>
+      </div>
+      <div class="signature-boundary">
+        <div class="signature-copy"><p class="lab">Action exit · D5 possibility → D4 commitment</p><h4>The prepared packet cannot sign itself.</h4><p>Review it first. Commit only if you are the relevant human decision-maker or hold the required authority. The site records a local acknowledgment; it performs no legal, financial, contractual, governance, wallet, or institutional signature.</p></div>
+        <div class="signature-controls">
+          <label for="r-signer">Local signer label<input id="r-signer" type="text" placeholder="Your name or private label" /></label>
+          <label class="ack" for="r-ack"><input id="r-ack" type="checkbox" /><span>I have reviewed this bounded move and have the authority required for my own commitment. I understand that this site transmits and executes nothing.</span></label>
+          <div class="signature-actions"><button class="copybtn primary" id="sign-transaction" type="button" disabled>Sign local commitment</button><a class="copybtn" href="/exit/">Leave unsigned</a></div>
+        </div>
       </div>
     </form>
 
@@ -461,15 +501,30 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
   var receiptStatus=document.getElementById('receipt-status');
   var copyReceipt=document.getElementById('copy-receipt');
   var downloadReceipt=document.getElementById('download-receipt');
+  var signTransaction=document.getElementById('sign-transaction');
+  var signer=document.getElementById('r-signer');
+  var acknowledgment=document.getElementById('r-ack');
+  var preparedText='';
+  var preparedFingerprint='';
   function field(id){var el=document.getElementById(id);return el&&el.value.trim()?el.value.trim():'(not supplied)';}
+  function sector(){var el=builder&&builder.querySelector('input[name="transaction-sector"]:checked');return el?el.value:'UNCLASSIFIED · no sector selected';}
+  function hex(buffer){return Array.prototype.map.call(new Uint8Array(buffer),function(byte){return byte.toString(16).padStart(2,'0');}).join('');}
+  function fingerprint(text){
+    if(window.crypto&&window.crypto.subtle&&window.TextEncoder){return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)).then(hex,function(){return 'unavailable';});}
+    return Promise.resolve('unavailable');
+  }
   function makeReceipt(){
-    var date=new Date().toISOString().slice(0,10);
+    var date=new Date().toISOString();
     return [
-      'FINITY COMMITMENT / OUTCOME RECEIPT',
-      'created: '+date,
-      'status: '+field('r-verdict'),
+      'FINITY DECISION TRANSACTION / OUTCOME RECEIPT',
+      'prepared_at: '+date,
+      'transaction_state: PREPARED_UNSIGNED',
+      'execution_state: NOT_EXECUTED',
+      'transmission_state: LOCAL_ONLY',
       '',
-      'FACE 1 — COMMITMENT',
+      'FACE 1 — PREPARED COMMITMENT',
+      'TRANSFER SECTOR\n'+sector(),
+      '',
       'DECISION\n'+field('r-decision'),
       '\nACTUAL MEANS AND CONSTRAINTS\n'+field('r-actual'),
       '\nPOSSIBILITY AND MAP CHANGE\n'+field('r-possibility'),
@@ -485,34 +540,59 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
       '\nPROVISIONAL VERDICT\n'+field('r-verdict'),
       '\nMAP REVISION\n'+field('r-revision'),
       '',
-      'Boundary: this receipt records a decision process. It is not authorization, evidence of efficacy, or professional advice.'
+      'Boundary: this packet records a decision process. It is unsigned, non-executing, local only, and not authorization, evidence of efficacy, or professional advice.'
     ].join('\n');
   }
-  function enableReceipt(){copyReceipt.disabled=false;downloadReceipt.disabled=false;receiptOutput.hidden=false;}
+  function updateSignState(){if(signTransaction)signTransaction.disabled=!(preparedText&&signer&&signer.value.trim()&&acknowledgment&&acknowledgment.checked);}
+  function enableReceipt(){copyReceipt.disabled=false;downloadReceipt.disabled=false;receiptOutput.hidden=false;updateSignState();}
   if(builder){
     builder.addEventListener('submit',function(event){
       event.preventDefault();
-      receiptText.textContent=makeReceipt();
-      enableReceipt();
-      receiptStatus.textContent='Local receipt built. Review it before copying or downloading.';
-      receiptOutput.scrollIntoView({behavior:rm?'auto':'smooth',block:'nearest'});
+      preparedText=makeReceipt();
+      fingerprint(preparedText).then(function(value){
+        preparedFingerprint=value;
+        preparedText+='\n\nPREPARATION FINGERPRINT\nsha256:'+value;
+        receiptText.textContent=preparedText;
+        enableReceipt();
+        receiptStatus.textContent='Unsigned transaction prepared locally. Review, sign, revise, or leave it unsigned.';
+        receiptOutput.scrollIntoView({behavior:rm?'auto':'smooth',block:'nearest'});
+      });
     });
     builder.addEventListener('reset',function(){
-      window.setTimeout(function(){receiptText.textContent='';receiptOutput.hidden=true;copyReceipt.disabled=true;downloadReceipt.disabled=true;receiptStatus.textContent='Fields cleared locally.';},0);
+      window.setTimeout(function(){preparedText='';preparedFingerprint='';receiptText.textContent='';receiptOutput.hidden=true;copyReceipt.disabled=true;downloadReceipt.disabled=true;signTransaction.disabled=true;receiptStatus.textContent='Fields cleared locally. Nothing was transmitted or executed.';},0);
     });
   }
+  if(signer)signer.addEventListener('input',updateSignState);
+  if(acknowledgment)acknowledgment.addEventListener('change',updateSignState);
+  if(signTransaction)signTransaction.addEventListener('click',function(){
+    if(!preparedText||!signer.value.trim()||!acknowledgment.checked)return;
+    var signedAt=new Date().toISOString();
+    receiptText.textContent=preparedText+[
+      '',
+      'ACTION EXIT — LOCAL COMMITMENT ACKNOWLEDGMENT',
+      'transaction_state: COMMITTED_LOCAL',
+      'signed_by: '+signer.value.trim(),
+      'signed_at: '+signedAt,
+      'prepared_fingerprint: sha256:'+preparedFingerprint,
+      'signature_mode: LOCAL_ACKNOWLEDGMENT_ONLY',
+      'Boundary: no legal, financial, contractual, wallet, governance, institutional, transmission, execution, or settlement effect is created by this page.'
+    ].join('\n');
+    preparedText='';
+    signTransaction.disabled=true;
+    receiptStatus.textContent='Local commitment acknowledged. The world still owes the separate outcome receipt.';
+  });
   if(copyReceipt)copyReceipt.addEventListener('click',function(){
     var text=receiptText.textContent;
-    function done(){receiptStatus.textContent='Receipt copied locally.';}
+    function done(){receiptStatus.textContent='Transaction packet copied locally.';}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){receiptStatus.textContent='Copy unavailable; select the receipt text instead.';});}
     else{receiptStatus.textContent='Copy unavailable; select the receipt text instead.';}
   });
   if(downloadReceipt)downloadReceipt.addEventListener('click',function(){
     var blob=new Blob([receiptText.textContent],{type:'text/plain;charset=utf-8'});
     var url=URL.createObjectURL(blob);var link=document.createElement('a');
-    link.href=url;link.download='finity-receipt-'+new Date().toISOString().slice(0,10)+'.txt';
+    link.href=url;link.download='finity-transaction-'+new Date().toISOString().slice(0,10)+'.txt';
     document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);
-    receiptStatus.textContent='Receipt downloaded from this browser.';
+    receiptStatus.textContent='Transaction packet downloaded from this browser.';
   });
 })();
 </script>
