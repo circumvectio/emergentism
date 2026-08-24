@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/TypeCollision.v1.schema.json",
+  "title": "TypeCollision.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "collision_id", "axis", "plain_name", "left_roles", "right_roles", "forbidden_inference", "valid_bridge_conditions", "diagnostic_question", "conservative_repair", "evidence_tier", "status", "strongest_rival", "discriminator", "kill_criterion", "survivor_if_killed"],
+  "properties": {
+    "schema_id": {"const": "emergentism/TypeCollision.v1"},
+    "collision_id": {"type": "string", "pattern": "^TCX-[0-9]{2}$"},
+    "axis": {"enum": ["LEVEL", "MODAL", "TEMPORAL", "REPRESENTATIONAL", "EPISTEMIC", "NORMATIVE", "BEARER"]},
+    "plain_name": {"type": "string", "minLength": 4},
+    "left_roles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
+    "right_roles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
+    "forbidden_inference": {"type": "string", "minLength": 12},
+    "valid_bridge_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 4}},
+    "diagnostic_question": {"type": "string", "minLength": 8},
+    "conservative_repair": {"type": "string", "minLength": 8},
+    "evidence_tier": {"const": "[I/C]"},
+    "status": {"const": "CANDIDATE_GRAMMAR"},
+    "strongest_rival": {"type": "string", "minLength": 8},
+    "discriminator": {"type": "string", "minLength": 8},
+    "kill_criterion": {"type": "string", "minLength": 8},
+    "survivor_if_killed": {"type": "string", "minLength": 8}
+  }
+}
