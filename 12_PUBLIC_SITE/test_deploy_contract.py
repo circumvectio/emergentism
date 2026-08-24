@@ -10,12 +10,16 @@ import os
 import tarfile
 import tempfile
 import unittest
+from email.message import Message
 from pathlib import Path
 from subprocess import TimeoutExpired
 from unittest.mock import patch
 
 import audit_live_domain_against_manifest as live_audit
 import deploy_release_contract as contract
+
+
+SITE = Path(__file__).resolve().parent
 
 
 def archive_bytes(
@@ -143,6 +147,16 @@ class DeployReleaseContractTests(unittest.TestCase):
         self.assertNotIn(
             "NOT_PROBED", {row["status"] for row in sampled.values()}
         )
+
+    def test_live_audit_recognizes_current_practice_transaction_marker(self) -> None:
+        body = (SITE / "practice/index.html").read_bytes()
+        headers = Message()
+        headers["Content-Type"] = "text/html; charset=utf-8"
+        result = live_audit.build_result(
+            "practice/", 200, "https://example.invalid/practice/", body, headers
+        )
+        self.assertTrue(result.repo_finity_card)
+        self.assertTrue(result.repo_local_receipt)
 
     def test_archive_manifest_is_content_addressed(self) -> None:
         rows = contract._inspect_archive(archive_bytes("index.html", b"hello\n"))
