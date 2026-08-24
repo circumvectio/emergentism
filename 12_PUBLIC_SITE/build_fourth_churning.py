@@ -145,7 +145,7 @@ def render_main(collisions: list[dict[str, Any]], diagnoses: list[dict[str, Any]
     )
     return f'''
   <header class="g2-shell g2-page-hero">
-    <p class="g2-kicker">Fourth Churning · candidate Type Atlas · [D/I/C]</p>
+    <p class="g2-kicker">Fourth Churning · candidate Type Atlas · [D] [I] [C]</p>
     <h1>The Perennial Mystery Type Atlas</h1>
     <p>Where philosophical paradoxes break—and where they don’t.</p>
     <p class="g2-page-hero__lede">Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error.</p>

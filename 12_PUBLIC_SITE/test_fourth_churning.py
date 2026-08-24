@@ -89,6 +89,7 @@ class FourthChurningPublicTests(unittest.TestCase):
         self.assertNotIn("most philosophy solved", folded)
         self.assertNotIn("all mysteries are type errors", folded)
         self.assertIn("Fifty-four diagnoses. Zero earned resolutions.", self.page)
+        self.assertIn("candidate Type Atlas · [D] [I] [C]", self.page)
 
     def test_third_and_fourth_writers_are_disjoint(self) -> None:
         third = json.loads((ROOT / "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/ThirdChurningCorpus.v1.json").read_text())
