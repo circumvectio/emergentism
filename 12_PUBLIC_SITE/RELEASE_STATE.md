@@ -1,6 +1,6 @@
 ---
 title: "O9 release-state ledger — emergentism.org"
-date: 2026-08-23
+date: 2026-08-24
 status: "ACTIVE LEDGER — v2.1 publicly served; publication is not validation"
 evidence_tier: "[D] owner-directed deployment; [S] Vercel and HTTP receipts; [B] local and live gates; no independent outcome evidence"
 contract: _PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md · O9
@@ -12,6 +12,36 @@ may_authorize: false
 
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
+
+## Current v2.1 decision-transaction release — 2026-08-24
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `a4a0fb35771b7d7bdfaf32731fb36e891845512d` — revised decision-transaction journey plus transport-resilient live audit | clean `HEAD`, exact-path commits, and upstream equality before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream | local and upstream commit identity |
+| **immutable artifact** | `dpl_HhKjVdKm5oKWFXjdmZfvenRCM2hb` · `emergentism-84ez38cwz-yves-projects-c163dce1.vercel.app` · `READY` | pinned Vercel project/team, held deployment, immutable strict audit |
+| **predecessor** | `dpl_FdvydjHzrLRpFTh6VR2FG5KQ4d4i` | observed before staging and rechecked before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` identity and critical-hash verification |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **release receipt** | external receipt checksum field `df4ad91c0123bec0233f870e4027709eae859600cf3b2ee7bf59afca32e267b0` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization |
+
+The public payload contains **297 files** and **8,919,632 bytes**, with manifest
+SHA-256
+`cdaa77690975e1aa062f10735548349089e8eb7ad88493132b35a8ed616ac910`. <!-- pragma: allow-secret -- manifest digest -->
+Preparation passed all 17 predeploy sections, the seven deterministic artifact
+checks, and all 22 release-contract unit tests. The held artifact passed the
+strict public-route, reading-manifest, historical-boundary, and critical-hash
+audits before promotion. After promotion, both branded domains passed the same
+contract; independent probes also matched committed bytes for `/`, `/practice/`,
+`/questions/diagnoses/`, and `/public_semantic_parity.json` on apex and `www`.
+
+The first promotion attempt at commit `440e4cd45f4154086c49bf5c72889ecbc83391f2`
+was automatically rolled back after one transport-level `ERR` among the manifest
+requests. No content mismatch was observed. The auditor now retries one
+transport error only; HTTP responses remain authoritative and fail closed.
+Federation replay remained `metadata_only_explicit`, and
+`external_validation=false`: publication does not validate the worldview or its
+conjectures.
 
 ## Current v2.1 churning-corpus custody release — 2026-08-23
 
