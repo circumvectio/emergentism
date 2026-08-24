@@ -81,7 +81,7 @@ certificate or a “most good” superlative the world has not tested.
 | The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + `105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
-| Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | derived `[S/I]` anthropology; consciousness, death and ultimate identity remain open |
+| Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` + `06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md` | derived anthropology plus owner-adopted `EA-03…EA-05`; identity mechanism and survival contact remain conjectural |
 | Lived practice | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | derived `[S/I]` Soul Loop decision practice; external outcomes `[C]` |
 | One-sitting book | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` | reader synthesis only; not an eighth kernel owner |
 
@@ -130,9 +130,47 @@ Emergentism does **not** solve philosophy, complete the *sophia perennis*, or ow
 | all listed paradoxes are one error or are thereby solved | not established; forbidden as a live universal claim |
 | “first worldview,” “first fallibilist perennialism,” or “only audit-surviving form” | `[C]` historical-priority claims; do not publish without comparative evidence |
 
-The incompletenesses are load-bearing: phenomenal consciousness; Born weights; definite-outcome/selection and measure problems; why this actual world within any plenum; operational μ saturation; external adequacy of G7; the finite-node aggregation law; and the Weimar/posture wager. A future audit may add more.
+The **external debts** are load-bearing even where an internal answer has now
+been adopted: the identity conditions and contact signature of phenomenal
+actualization; Born weights and unique outcome dynamics; the physical selector
+of this history; operational μ saturation; natural adequacy of the D ladder,
+force map and G7; the finite-node aggregation law; independently evidenced
+bearer continuation; stance-independent adequacy of constitutive ethics; and
+the Weimar/posture wager. A future audit may add more.
 
 The anti-completeness kill is simple: if kills become decorative, graves disappear, debts are redescribed as victories, or exit becomes merely painted on, the final Weltanschauung has violated E9/E10 even if every sentence remains beautiful.
+
+---
+
+## 3B · Ten internal answers, ten visible debts
+
+Emergentism now gives an internal answer to the ten questions that older
+reader syntheses compressed as “not known.” The canonical packet is
+[`EAS-10@1`](06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md), with
+the machine projection at
+[`EmergentistAnswerSet.v1`](00_META/internal_answers/EmergentistAnswerSet.v1.json).
+
+In one compression: Dasein is world-tagged coherent plenitude; actuality is an
+ordered consequence-bearing D4 history; phenomenal experience is wagered as
+the bearer-side aspect of integrated actualization; noetic freedom reweights
+represented thought through an actual model before action reaches the world;
+death does not erase an actual life, though personal continuation requires a
+bearer-continuity relation; ethics begins with objective typed relations and a
+disclosed commitment to equal bearer standing; D0–D6 is the selected serial
+articulation; strong-up and weak-down emergence follow conditionally from type
+extension and forgetful projection; the force/F5 correspondences are selected
+role affinities under live nulls; and definite outcome means entry into a
+stable D4 record while native physics still owes weights and dynamics.
+
+Each answer has five independent states:
+
+```text
+owner adoption ≠ internal review ≠ empirical contact ≠ PQA adjudication ≠ publication
+```
+
+This is internal philosophical settlement at retained tiers, not external
+certification. The public-safe rule is: **ten questions, ten Emergentist
+answers, ten visible debts.**
 
 ---
 
@@ -440,6 +478,11 @@ competition:
 3. `F5-R [C]`: an actual D4 history-selection law indexed by declared later
    boundary data and a D5 option functional changes present transition weights.
 
+These arms are not pairwise exclusive as originally compressed. `F5-W0` is the
+ordinary present-model floor and is contained within `F5-N`; only an
+incremental `F5-W+` operator beyond rich planning, control and inference
+baselines competes with that null. `F5-R` remains the separate physical wager.
+
 The typed owner is
 [`F5Fork.v1`](05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json). It preserves
 the D4/D5 firewall: possible content never pushes actuality by itself. The
@@ -520,8 +563,9 @@ This document was composed from the post-recovery arc:
 - W7 — the originating five-freedoms/five-force-slots wager: five modular
   role-affinities, never an established or exclusive force↔rung bijection
   `[B]` provenance / `[I/C]` map
-- W8 / F5-W — model-mediated future causation `[I/C]`; F5-N is the
-  no-interaction/service null `[D/C]`, and F5-R the independent
+- W8 / F5-W — model-mediated future causation `[I/C]`; its ordinary `F5-W0`
+  floor is contained within F5-N, which contests an incremental `F5-W+` or
+  additional interaction `[D/C]`; F5-R is the independent
   future-boundary/history-selection wager `[C]`
 - W9 — Egregoreotype criterion `[I/C]`
 - W10 — mirror grammar travels within scoped lineages `[I/C]`
@@ -558,8 +602,11 @@ or stance converges on them.
 practice of reciprocal public justification, a reason-giver cannot demand
 reason-governed uptake from an equally situated co-agent while arbitrarily
 denying that co-agent visibility, contest, correction and feasible Exit. The
-practice premise is normative and disclosed. The general is–ought problem and
-stance-independent moral realism remain open.
+practice premise is normative and disclosed. `EA-06` adopts equal bearer
+standing as constitutive of Emergentism's many-sided Dasein and treats the
+resulting bearer-complete relations as its answer to ethics. This does not
+pretend to derive an ought from value-free physics; stance-independent world
+adequacy remains a separately killable `[C]` commitment.
 
 `GEX-01` separately chooses guardianship duties for bearers who cannot
 reciprocate. It requires an actual mandate, named protected interest,

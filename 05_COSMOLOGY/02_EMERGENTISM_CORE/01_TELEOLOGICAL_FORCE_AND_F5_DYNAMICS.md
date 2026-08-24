@@ -80,6 +80,46 @@ possible content does not become an agent or acquire an independent causal
 arrow. If `F5-R` exists, the physical work belongs to an actual D4 law over
 histories.
 
+### The selected internal orientation — F5 acts on thought `[D/I/C]`
+
+`EA-04` selects `F5-W` as Emergentism's internal answer about agency. F5 acts
+first on **represented thought-options**, not directly on the external world.
+For an actual D4 model token `M_t`, write the noetic reweighting as:
+
+\[
+q_{\lambda_5}(a\mid M_t)
+=\frac{q_0(a\mid M_t)e^{\lambda_5 R_5(a;M_t)}}
+       {\sum_{a'}q_0(a'\mid M_t)e^{\lambda_5 R_5(a';M_t)}}.
+\]
+
+`R_5` ranks represented alternatives; `q_{λ₅}` is a distribution over attention,
+intention or commitment candidates. The realized route remains:
+
+```text
+D4 actual model token
+  ─represents→ D5 options
+  → D4 noetic reweighting of thought
+  → embodied intention and ordinary physical action
+  → D4 consequence and revision.
+```
+
+The options do not push matter. Their actual carrier, computation, attention,
+decision and action are D4. In that bounded sense, thought-selection changes
+which lawful possibility becomes the bearer's next actual path. The incremental
+claim over generic planning, control and inference remains `[C]`; `F5-N` is
+still the live null, and physical `F5-R` remains a different wager. Owner
+adoption gives no branch an empirical truth bonus.
+
+The fork therefore distinguishes `F5-W0` from `F5-W+`. `F5-W0` is ordinary
+model-mediated anticipation and is contained within `F5-N`; both can be true.
+`F5-W+` is the separately testable increment claimed for `λ₅≠0` beyond rich
+planning, control and inference baselines. `F5-N` contests that increment, not
+the existence of ordinary anticipation.
+
+The symbol `λ₅` is reserved for this noetic weighting. The physically distinct
+future-boundary `F5-R` history law below retains `κ`; the parameters are not
+interchangeable and evidence for either does not transfer to the other.
+
 ### The strong F5 wager `[C]`
 
 Its minimal candidate is:

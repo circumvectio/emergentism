@@ -26,8 +26,9 @@ Owner, 2026-07-29:
 > some paradoxes."*
 
 The image is the corpus's own, the extension is not Penrose's, and the mapping
-commits a type error the corpus already forbids in three places. But one part of
-it is **well-formed by our own criterion**, and that part points somewhere real.
+contains several type promotions the corpus already forbids. The separate
+natural-decomposition wager is now well-formed at `[C]`; the direct epoch,
+chronology, and recurrence identifications are not.
 
 ## 2 · What CCC actually says `[B]` — and what it does not
 
@@ -54,7 +55,7 @@ aeons by a **conformal rescaling** of the metric.
    has lost the ability to measure scale. That is a much weaker and much more
    specific claim than "nothing has yet been articulated."
 
-## 3 · Three type errors, each already named in canon `[S]`
+## 3 · Four type checks, each named in canon `[S/C]`
 
 **3.1 `D0` is a selected boundary register, not a physical epoch.**
 
@@ -72,11 +73,13 @@ register to a physical-state claim. This is the same
 promotion doc 50 rejected one register up, where treating parallel blocks as
 actual was a D5→D4 error. Here it is D0→D4.
 
-**3.2 `KSC-05` forbids reading the scaffold as nature.** *"D0–D6 is a
-structural/interpretive scaffold, **not a necessary decomposition of nature**."*
-A cosmological identification is exactly a decomposition-of-nature claim.
-`KSC-18` adds that even the content projection is removable and "cannot define a
-rung."
+**3.2 `KSC-05` separates the selected scaffold from the natural-decomposition
+wager.** The 2026-08-24 amendment permits D0–D6 as a named `[C]` candidate
+decomposition of nature. It does not make the ladder established, necessary,
+unique, or chronological. Identifying `D0` with one physical epoch remains a
+different and stronger D0→D4 promotion; treating the whole ladder as a measured
+cosmological sequence remains forbidden. `KSC-18` continues to prevent a
+removable content projection from defining a rung.
 
 **3.3 `μ₀` is not a first moment of time.** The D1 owner states that `μ₀` is an
 origin aperture with **"no saturated lower positive register"** — it claims no
@@ -157,11 +160,54 @@ its legs. It is **one datum seen twice**, not two confirmations (`DF-15`). And i
 must not become "civilizational physics" — `DF-17`, a `[C]` analogy asserted as
 physics, buried.
 
-**And the honest boundary.** The Grand Puzzle §7 lists *"why there is an
-instantiated world"* and *"why this actual outcome obtains"* among the things
-that **cannot be filled from inside the corpus**. A cosmological origin story is
-the most tempting possible way to appear to fill them. It would not fill them; it
-would only move the question behind a different curtain.
+**And the honest boundary.** The Grand Puzzle §7 historically listed *"why
+there is an instantiated world"* and *"why this actual outcome obtains"* as
+unfilled from inside the corpus. `EA-01` and `EA-02` now supply Emergentism's
+internal answers—coherent plenitude and sequential actuality—without pretending
+that a cosmological origin story proves either one. CCC cannot pay their ontic
+instantiation or native transition-law debts; using it that way would only move
+the question behind a different curtain.
+
+<a id="ccc-boundary-role"></a>
+### 7A · The selected boundary-role self-resemblance `[D/I]`
+
+The 2026-08-24 answer amendment adopts the owner's surviving intuition in its
+typed form. Define two predicates rather than applying a "preceding register"
+condition to D0:
+
+```text
+PreBoundary(D0)  := no prior positive register is presupposed.
+PostBoundary(D6) := no further positive register is asserted.
+```
+
+Then map the two different predicates into one declared comparison class:
+
+```text
+BoundaryClass(PreBoundary(D0))
+  = BoundaryClass(PostBoundary(D6))
+  = LIMIT_ROLE,
+D0 ≠ D6.
+```
+
+This is **boundary-role self-resemblance**, not state identity, recurrence,
+isometry, formal global self-similarity, or a cosmological observation. D0 is
+pre-articulate; D6 is post-articulate nonclosure. The typed projection says why
+the snake image can return without making its head and tail the same object or
+pretending that the two ends satisfy the same native predicate.
+
+CCC is a disciplined neighbor for this image: its crossover identifies a
+conformally rescaled remote-future boundary with the next aeon's Big-Bang
+boundary while retaining a four-dimensional conformal geometry. That native
+proposal is described in [Meissner and Penrose's 2025 CCC review](https://arxiv.org/abs/2503.24263).
+It neither proves the boundary-class projection, D0–D6, dimensional emergence,
+nor physical recurrence of
+an Emergentist register. The resemblance supplies an interpretive comparator,
+not a second empirical confirmation.
+
+This section supersedes only the blanket prohibition on **any**
+self-resemblance language. `KSC-06` continues to forbid identity, recurrence
+and formal self-similarity; the newly permitted form must always name both typed
+predicates, their shared boundary class, and `D0≠D6` locally.
 
 ## 8 · Claims and kills
 
@@ -175,6 +221,7 @@ would only move the question behind a different curtain.
 | dimensional emergence is type-D but does not thereby earn μ status | `[C/S]` | pass the full KSC-05 contract and a discriminating μ test |
 | the adjacent physics is reduction 4→2 with scale, not emergence 0→4 in time | `[B]` | a program deriving dimensions emerging from zero |
 | "solves paradoxes" is unpaid until each is named | `[S]` | name them and pass the §8 policy |
+| `PreBoundary(D0)` and `PostBoundary(D6)` map to the shared `LIMIT_ROLE` class while D0 and D6 remain non-identical | `[D/I]` | the comparison cannot be stated without importing identity, recurrence, or an untyped physical claim |
 
 **What this document does not do.** It does not refute CCC — that is physics'
 business, not the corpus's. It does not forbid a dimensional-emergence

@@ -17,6 +17,16 @@ rosetta:
 
 **Claim Boundary:** `[I/C]` These questions are stabilized for navigation, not closed as public proof. "Resolved" below means register-sorted into internal commitment, public argument, and open wager; it does not mean Emergentism has exhausted `Pratyakṣa`, `S²`, consciousness, teleology, normativity, ontology, or the Real.
 
+> **2026-08-24 internal-answer amendment.** This register remains the preserved
+> question-routing and debt inventory. For the ten questions now covered by
+> [`EAS-10@1`](../06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md),
+> its older “open” language no longer means that Emergentism lacks an internal
+> answer. It means that the selected answer retains a native mechanism,
+> discriminator, contact, identity, review or publication debt. The five
+> states—owner adoption, internal review, empirical contact, PQA adjudication
+> and publication—remain independent; PQA stays `54 selected · 0 evaluated · 0
+> independently reviewed · 0 resolved`.
+
 ---
 
 ## Why This Document Exists
@@ -128,7 +138,12 @@ question by assigning awareness to a rung.
 
 ### The Register Routing
 
-The ontology of consciousness remains open. The
+`EA-03` now supplies Emergentism's adopted internal answer: phenomenal
+experience is wagered as the bearer-side aspect of integrated,
+action-available actualization in a persisting D4 organization. Its external
+adequacy remains open: the necessary and sufficient organization conditions,
+qualitative character, actualization kind, and incremental success over rival
+consciousness theories are unpaid. The
 [Synthetic Gap](../02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md)
 permits phenomenological, dual-aspect, emergent, and idealist readings without
 letting one become a D-register definition.
@@ -147,9 +162,10 @@ The current honest statement is:
 > non-μ `r₆` only compares its post-articulate boundary role with D0's
 > pre-articulate role and asserts no cycle or return in reality.**
 
-An Emergentist may hold a lived or metaphysical wager about consciousness at
-`[I/C]`, but the scaffold neither proves systemic awareness as a cosmic
-primitive nor rules it out.
+Emergentism therefore holds a lived and metaphysical wager about consciousness
+at `[I/C]`; the scaffold neither proves systemic awareness as a cosmic
+primitive nor rules it out, and owner adoption does not supply empirical
+validation.
 
 ---
 
@@ -195,12 +211,15 @@ Is normativity fully grounded, or only conditionally grounded?
 
 ### The Register Routing
 
-**Not derived from nature; explicitly chosen and conditionally reasoned.**
+**Framework-objective under disclosed constitutive premises; stronger moral
+realism remains the `[C]` wager.**
 
 No reciprocal identity, D-register, emergence claim, or Power-Max result yields
-an ought. Emergentism chooses the Justice envelope—non-extraction, consent,
-custody, contestability, reversibility where possible, consequence accounting,
-and exit—as a defeasible normative commitment.
+an ought from value-free physics. `EA-06` instead adopts equal affected-bearer
+standing and reciprocal public justification as constitutive premises. Under
+those premises, non-extraction, consent, custody, contestability, correction,
+repair, consequence accounting, and feasible Exit are framework-objective
+constraints rather than matters of taste.
 
 Once that premise and the impact boundary are declared, conditional reasoning
 can test whether an act preserves or expands durable individual and whole
@@ -209,12 +228,15 @@ be rigorous; the premise remains chosen.
 
 The full routing is:
 
-> **Normativity is a confessed commitment constrained by evidence and
-> consequence, not an ontological fact derived from the sphere.**
+> **Normativity is constitutively grounded inside Emergentism once every
+> affected bearer and the practice of reciprocal justification are admitted;
+> stance-independent adequacy beyond those premises remains the
+> moral-realism wager.**
 
-An Emergentist may live as though non-extractive flourishing answers to the
-Good. The worldview must still state that as vow and wager, not theorem.
-It is a two-register grounding.
+This is a conditional framework answer, not a retreat to subjectivism and not
+an illicit physical derivation. The descriptive relation-types are objective;
+the equal-standing premise is disclosed; the claim that this package is true
+independently of every practice remains `[C]` and can lose against rivals.
 
 ---
 

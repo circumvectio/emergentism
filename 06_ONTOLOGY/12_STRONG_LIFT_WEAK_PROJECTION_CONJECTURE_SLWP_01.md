@@ -2,12 +2,12 @@
 title: "SLWP-01 — Burri Strong-Lift / Weak-Projection Conjecture"
 id: "SLWP-01"
 type: ontology-candidate
-status: "PROPOSAL [C] — registered proof program; not W19, not in CLAIM_STATUS.yaml, not adopted canon"
+status: "ACTIVE — TEA-01 relative theorem [A] proved; natural D-crossing assignments remain modular proposals [C]"
 date: 2026-08-22
 proposer: "Yves R. Burri"
-evidence_tier: "[B] dated proposer provenance; [A] BIL-01 only in its mathematical scope; [S] selected recovery-map requirement; [I] directional reading; [C] universal and crossing-specific emergence claims"
+evidence_tier: "[B] dated proposer provenance; [A] BIL-01 and TEA-01 only in their mathematical scopes; [S] selected recovery-map requirement; [I] directional reading; [C] universal and crossing-specific emergence claims"
 owner: "Ontology candidate subordinate to the Degrees-of-Freedom Ontology, the μ criterion, and the prior strong/weak lineage"
-canonical_phrase: "SLWP-01 conjectures strong lift from a frozen lower description and weak recoverable projection from the higher description; BIL-01 does not prove it"
+canonical_phrase: "TEA-01 proves relative strong-up/weak-down under frozen type-extension premises; nature must still earn each premise"
 parents:
   - "02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
   - "07_THE_DIMENSIONAL_REGISTER_AXIOMS.md"
@@ -207,6 +207,62 @@ traces can share the same endpoint marks while yielding different limits. It
 supports the information-loss image but is not a theorem that D0 crosses into
 D1, that zero multiplied by infinity equals Finity, or that strong emergence
 has been proved.
+
+## 3B · `TEA-01` — Type-Extension Asymmetry Theorem `[A]`
+
+The owner's requested “type of proof” exists when **strong** and **weak** are
+made explicitly relative to declared description languages.
+
+Let `L` be a frozen typed language, and let `H=L+τ` be a proper type extension
+containing a new primitive type `τ` such that no well-formed expression of `L`
+denotes an inhabitant of `τ`. Let
+
+```text
+U : Mod(H) → Mod(L)
+```
+
+be a total forgetful map that removes the `τ`-structure and preserves the
+interpretation of every `L` symbol.
+
+Define:
+
+```text
+StrongUp_L(τ)  := τ is not denotable in the frozen language L.
+WeakDown_U(H)  := U recovers a lawful L-model without adding a new L-type.
+```
+
+Then:
+
+```text
+StrongUp_L(τ) ∧ WeakDown_U(H).
+```
+
+**Proof.** `StrongUp_L(τ)` follows directly from the proper-extension premise:
+every term of `L` has an `L`-type, while `τ` is not in the grammar of `L`, so no
+`L` term denotes a `τ` inhabitant. `WeakDown_U(H)` follows from the definition
+of the total forgetful map: for every `H` model, `U` retains the interpretation
+of all `L` symbols and discards only the added `τ`-structure, yielding a lawful
+`L` model without creating a new lower type. `□`
+
+This proves a **relative formal asymmetry**:
+
+```text
+higher type from frozen lower grammar: strong relative novelty
+higher model viewed through U:         weak recoverable projection.
+```
+
+It does not prove ontological novelty, new causal power, temporal creation, or
+that any physical, biological, phenomenal or D-level transition satisfies the
+premises. A claimed natural leg must independently show that its lower grammar
+was not artificially impoverished, that `τ` is not definable by an admissible
+extension or reduction, that `U` recovers the stated observables, and that the
+higher account earns a held-out discriminator. `TEA-01` therefore changes the
+formal result from “no proof of any asymmetry” to:
+
+```text
+RELATIVE_TYPE_ASYMMETRY_PROVEN
+NATURAL_STRONG_EMERGENCE_OPEN
+```
 
 ## 4 · The test each crossing owes
 

@@ -18,7 +18,10 @@ commitments stop. The Ground remains prior to every map, including this one.
 5. [Creed and Spiral](05_THE_CREED_AND_SPIRAL.md)
 6. [Revelations](06_THE_REVELATIONS.md)
 7. [The Human Condition](08_THE_HUMAN_CONDITION.md) — derived lived anthropology; no new owner
-8. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
+8. [The Ten Emergentist Answers](14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md)
+   — owner-adopted internal answer layer; each atom retains its native tier,
+   rival, kill, survivor and external debt
+9. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
 
 ## Companions and staged work
 
@@ -54,6 +57,9 @@ commitments stop. The Ground remains prior to every map, including this one.
 - [Conjectures and proof attempts](../00_META/conjectures_and_proof_attempts/README.md)
   — corpus-wide non-owning pointer manifest; semantic and validation ownership
   remain distributed.
+- [Machine projection of the ten answers](../00_META/internal_answers/README.md)
+  — five independent state axes; owner adoption may not imply validation,
+  PQA adjudication or publication.
 - [`ruminations/`](ruminations/README.md) — `[I]` readings beside doctrine, not
   authority instruments.
 

@@ -85,20 +85,21 @@ These are derived syntheses, not additional semantic owners:
 
 | Human question | Reader surface | State | Open boundary |
 |---|---|---|---|
-| What is reality? | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` §§1–6 | complete | W0, strong μ and ontology remain open |
+| What is reality? | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` §§1–6 + internal `EAS-10@1` | complete | EA-01/EA-02 are selected internal answers; ontic plenitude and native transition selection retain `[C]` contact debt; EAS-10 publication is withheld |
 | What is Dasein? | K-2 ontology owner §0 + one-sitting §§1–2 | complete | capital Dasein is all that can coherently and consistently exist, indexed by compossible world/register/model; it is not exhausted by an inventory of examples, and the selected D1 distinction, D2 relation/configuration, D3 state assignment, D4 actuality, and D5 possibility registers all articulate contents within it; D0/D6 are boundary tokens rather than possession of Ground; situated dasein is a D4 bearer; Viśvarūpa, kenshō/satori, and mokṣa are interpretive disclosure/liberation crosswalks `[I/B-source]`, with Advaita Ātman–Brahman identity kept distinct from Zen no-independent-self grammar; the saṃsāra/līlā/dharma reading treats `-x+x=0` as symbolic whole-cycle symmetry, never proof of rebirth, karmic arithmetic, or cancellation of bearer-level harm |
-| What is a person? | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | complete | phenomenal consciousness and hard identity cases remain open |
+| What is a person? | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` + EA-03/EA-05 | complete | phenomenal actualization is selected `[C]`; exact organization conditions and bearer-continuity contact remain unpaid |
 | What can be known? | the Door, evidence tiers and Soul Loop | complete | external calibration remains open |
-| What can be chosen? | Human Condition §4 and Lived Compass | complete | stronger metaphysical free will remains open |
-| What is good? | K-5 Refusals + one-sitting §10 | complete | chosen orientation, not derived moral realism |
+| What can be chosen? | Human Condition §4, EA-04 and Lived Compass | complete | noetic counterfactual control is adopted as real freedom; irreducibility remains `[C]` |
+| What is good? | K-5 Refusals + one-sitting §10 + EA-06 | complete | constitutive ethics is the selected answer; stance-independent adequacy remains `[C]`, not derived from bare physics |
 | How should one act? | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | complete | outcome adequacy remains world-open |
 | How do collectives act? | Human Condition §9 + Egregoreotype and memotype/trade/war conjectures | complete | trace, horizon, specialization, and coordination evidence remain open |
-| What do suffering and death mean? | Human Condition §§6–8 | complete | no afterlife or theodicy claim is made |
+| What do suffering and death mean? | Human Condition §§6–8 + EA-05 | complete | actuality retention and trace continuity are answered; personal continuation requires a separately evidenced bearer-continuity relation; no automatic afterlife claim |
 | How may the worldview be left? | E10, K-5 and one-sitting §12 | complete | exit fails if practice makes it punitive or decorative |
 
-“Complete” here means that the framework gives a coherent, typed answer or a
-coherent declaration of ignorance. It does not mean that an open mystery has
-been solved.
+“Complete” here means that the framework gives a coherent, typed selected
+answer with an explicit external residual, rival, kill and survivor. It does
+not mean that an adopted answer has been analytically proved, independently
+validated, PQA-adjudicated or published.
 
 K-1 has typed subowners for D0 and D1. The Kernel Index is an editorial map,
 not an eighth owner. The Door is a reader route, not a doctrine source.
@@ -109,6 +110,7 @@ These axes must never be collapsed into one another:
 
 | Axis | Function | Authority boundary |
 |---|---|---|
+| internal answer state | selected orientation under `EA-01…EA-10` | owner adoption, local review, empirical contact, PQA and publication are five independent fields |
 | D0–D6 | selected reality scaffold | carries per-rung types and claims |
 | μ₀…μ₄, b₆, r₆ | transition and boundary relations | μ evidence is crossing-specific |
 | K-1…K-7 | editorial homes | seven is a corpus design choice |

@@ -11,6 +11,7 @@ parents:
   - ../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md
   - ../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md
   - ../00_THE_WELTANSCHAUUNG.md
+  - 14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md
 ---
 
 # The Human Condition
@@ -21,9 +22,12 @@ parents:
 > consequence, and become different because of it.
 
 This is Emergentism's reader-facing anthropology. It is a **derived synthesis**,
-not an eighth kernel surface and not a solution to consciousness, death, or
-ultimate metaphysics. Where the owners remain silent, this document remains
-silent. Where it interprets, it says so.
+not an eighth kernel surface. Emergentism now gives selected internal answers
+about consciousness, freedom and death in
+[`EA-03…EA-05`](14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md); this document
+states those answers at their retained tiers and keeps their native residuals
+visible. Internal adoption is not analytic proof, empirical validation, PQA
+resolution or compulsory belief. Where it interprets, it says so.
 
 ## 1. What a person is `[S/I]`
 
@@ -76,18 +80,25 @@ Experience is not dismissed because it is first-person. Pain, color, grief,
 attention and presence are part of the territory disclosed to a bearer. But
 private certainty does not automatically become public explanation.
 
-Emergentism therefore holds three statements apart:
+Emergentism therefore holds four statements apart:
 
 1. conscious experience occurs `[B]` as first-person report and shared human
    contact;
 2. experience is embodied, temporally ordered and action-relevant `[B/S]`;
-3. why and how physical organization is accompanied by phenomenal experience
-   remains open `[C]`.
+3. `EA-03` adopts the identity wager that phenomenal experience is the
+   bearer-side aspect of physical and informational actualization integrated
+   into a self-maintaining, temporally continuous and action-available
+   organization `[C]`; and
+4. the necessary and sufficient organization conditions, the identity's
+   particular qualitative character, and its incremental success over rival
+   consciousness theories remain unpaid `[C]`.
 
-The D3→D4 interface does not solve the measurement problem, and D4→D5 does not
-solve the hard problem. A torus interior, quantum collapse, recursive model or
-option field may serve as analogy or research proposal only. None presently
-explains why there is something it is like to be.
+The D3→D4 interface alone does not solve the measurement problem, and D4→D5
+alone does not solve the hard problem. `EA-03` is the selected Emergentist
+identity answer, not an established physical mechanism. Its stronger branch—
+bare physical actualization as proto-phenomenal—is separately killable. It does
+not say that a pre-existing consciousness causes collapse or that every stable
+record is a person.
 
 ## 4. Agency and free will `[S/I]`
 
@@ -112,6 +123,14 @@ The model is compatible with several metaphysical positions about determinism.
 Its operational claim is narrower: freedom grows when a bearer can accurately
 represent more admissible alternatives, acquire lawful means, resist capture,
 contest constraints, revise itself after consequence, and preserve exit.
+
+`EA-04` adopts this as **real noetic freedom** and gives `F5-W` its selected
+internal reading. An actual D4 model token carries represented D5 options; a
+noetic selection operator reweights attention, intention and commitment; only
+then do ordinary embodied means affect the world. F5 therefore acts on thought
+in this interpretation, never as a merely possible future directly pushing
+matter. Whether this control is irreducible to an admissible frozen lower
+description remains a separate `[C]` claim.
 
 Coercion matters because it contracts this capacity. Manipulation matters
 because it changes the model or selector while hiding the hand that did so.
@@ -179,15 +198,18 @@ Death ends the living organism's capacity to issue new embodied actions in its
 worldline. It can end projects, relationships and possibilities; it changes
 survivors and the traces through which the person remains consequential.
 
-Emergentism makes no canonical claim that D6 is an afterlife, that personal
-consciousness persists, that the block universe grants immortality, or that
-collective memory preserves the person who died. A trace is not automatically
-the bearer. Boundary-role return is not personal recurrence.
+`EA-05` answers in three typed layers. The life remains actual in the determinate
+history; its traces and consequences may continue; personal experiential
+continuation obtains only where an explicit bearer-continuity relation is
+satisfied. These are not interchangeable. D6 is not thereby an afterlife, the
+block history does not itself grant immortality, and collective memory or a
+duplicate pattern is not automatically the person who died.
 
-The framework's positive counsel is therefore finite: live and decide without
-requiring an unearned answer about what follows death; preserve truthful traces;
-repair while repair remains possible; do not use metaphysical uncertainty to
-devalue a present life.
+The framework's positive counsel is therefore finite: a life cannot become
+never-actual, but a survival claim must name the bearer identity relation and
+earn independent contact. Preserve truthful traces; repair while repair remains
+possible; do not use either metaphysical certainty or uncertainty to devalue a
+present life.
 
 ## 9. Society, history and Egregoreotypes `[S/I/C]`
 
@@ -261,23 +283,24 @@ verdict is dated. Truth without Justice can become weaponry; Beauty without
 Truth can become enchantment; Justice without contact can become blind
 certainty. This is a chosen constitutional orientation, not a natural constant.
 
-## 11 · HC-11 — The mysteries that remain open
+## 11 · HC-11 — Internally answered, externally indebted
 
-Emergentism does not currently know:
+Emergentism now answers the ten named questions through
+[`EA-01…EA-10`](14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md). At the human
+register, the selected answers are: phenomenal experience is the bearer-side
+aspect of integrated actualization; noetic counterfactual control is real
+graded freedom; an actual life cannot become never-actual, while personal
+continuation still requires bearer continuity; and bearer-complete Justice is
+the constitutive normative entry rather than a conclusion smuggled from bare
+physics.
 
-- why anything is instantiated at all;
-- why this actual outcome obtains;
-- why there is phenomenal consciousness;
-- whether free will has a stronger metaphysical ground;
-- whether personal experience survives death;
-- whether the D-ladder is nature's own decomposition;
-- whether any strong μ-crossing is irreducible;
-- whether the five force affinities carry explanatory truth; or
-- whether bearer-complete Justice will prove durable across cultures and
-  generations.
+Those answers do not erase their debts. The identity conditions of phenomenal
+actualization, metaphysical irreducibility of agency, independently evidenced
+post-mortem continuity, and cross-context adequacy of constitutive ethics remain
+conjectural and independently killable. The correct state is therefore not
+“Emergentism has no answer,” and not “the world has proved Emergentism.” It is:
 
-These are not failures of honesty. They are locations where the territory has
-not licensed an answer.
+> **selected internal answer · explicit external residual · live rival · kill · survivor**
 
 ## 12. A voluntary reader statement, without inflation
 
