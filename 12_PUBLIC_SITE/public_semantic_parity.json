@@ -699,6 +699,19 @@
       "requiredMarkers": ["Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā", "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1", "shorter horizon", "longer horizon", "OVERLAY NOT RUN", "Game theory is not exhausted", "maximally compressed"]
     },
     {
+      "surface": "burrisphere/instrument/index.html",
+      "role": "dual_stereographic_fullscreen_instrument",
+      "claimCardIds": ["OS01-33", "OS01-34", "OS01-36", "OS01-37"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-33", "OS01-34", "OS01-36", "OS01-37"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["One sphere.", "Two shadows.", "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1", "not two realities and not two spheres", "selected reading itinerary [I]", "not time or dynamics", "φ≠Φ₅", "ν≠V₄"]
+    },
+    {
       "surface": "rosetta/index.html",
       "role": "selected_translation_language_boundary",
       "claimCardIds": ["OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"],
@@ -1410,6 +1423,7 @@
     "journey/index.html",
     "rosetta/index.html",
     "burrisphere/index.html",
+    "burrisphere/instrument/index.html",
     "ecology/index.html",
     "book/index.html",
     "map/index.html",
@@ -1420,8 +1434,10 @@
     "record/frontier/index.html",
     "assets/css/living-map.css",
     "assets/css/gestalt-v2.css",
+    "assets/css/burrisphere-instrument.css",
     "assets/js/living-map.js",
     "assets/js/gestalt-v2.js",
+    "assets/js/burrisphere-instrument.js",
     "living-map.json"
   ],
   "machineSurfaces": [

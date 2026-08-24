@@ -205,7 +205,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(report["receipt_namespace"]["target_files"], 321)
         self.assertEqual(
             report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
-            335,
+            336,
         )
         self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 195)
         self.assertEqual(
@@ -215,14 +215,14 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(
             report["public_lifecycle"]["ignore_counts"],
             {
-                "present_html": 425,
+                "present_html": 426,
                 "ignored_html": 207,
-                "deployable_html": 218,
+                "deployable_html": 219,
                 "withheld_artifacts_added_back": 195,
             },
         )
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 413)
-        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 55)
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 414)
+        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 56)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
@@ -1281,7 +1281,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
     def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
         contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
         self.assertEqual(contract["classes"], ["current", "provisional"])
-        self.assertEqual(contract["routes"], 58)
+        self.assertEqual(contract["routes"], 59)
 
     def test_vercel_runtime_html_does_not_change_source_census(self) -> None:
         entries = CHECKER._strict_tree_entries(

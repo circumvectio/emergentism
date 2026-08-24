@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-gestalt="v2">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07090f" />
+  <meta name="robots" content="index, follow" />
+  <title>The Burrisphere Instrument — One sphere, two charts</title>
+  <meta name="description" content="A full-screen, interactive Burrisphere instrument: one point on S² seen through reciprocal stereographic charts from the north and south poles." />
+  <link rel="canonical" href="https://emergentism.org/burrisphere/instrument/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
+  <link rel="stylesheet" href="/assets/css/burrisphere-instrument.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Emergentism" />
+  <meta property="og:title" content="The Burrisphere Instrument — One sphere, two charts" />
+  <meta property="og:description" content="Move one point across S² and watch its two reciprocal stereographic projections change together." />
+  <meta property="og:url" content="https://emergentism.org/burrisphere/instrument/" />
+  <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+</head>
+<body class="bi-page">
+  <a class="bi-skip" href="#instrument-controls">Skip to controls</a>
+
+  <main class="bi-stage" aria-labelledby="instrument-title">
+    <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. One point on a sphere is projected simultaneously from the north pole to the lower nu chart and from the south pole to the upper phi chart. A separate violet one-turn path shows the selected G7 reading itinerary."></canvas>
+
+    <div class="bi-atmosphere" aria-hidden="true"></div>
+
+    <header class="bi-header">
+      <a class="bi-back" href="/burrisphere/" aria-label="Back to the Burrisphere atlas">
+        <span aria-hidden="true">←</span><span>Burrisphere atlas</span>
+      </a>
+      <nav class="bi-nav" aria-label="Instrument navigation">
+        <a href="/practice/">Practice</a>
+        <a href="/rosetta/">Rosetta</a>
+        <a href="/exit/">Exit</a>
+      </nav>
+    </header>
+
+    <section class="bi-thesis" aria-labelledby="instrument-title">
+      <p class="bi-kicker">Live geometric instrument · <span>[A]</span> chart · <span>[I]</span> overlay</p>
+      <h1 id="instrument-title">One sphere.<br /><em>Two shadows.</em></h1>
+      <p>One point on <strong>S²</strong> is read from both poles at once. The lower <strong>ν chart</strong> and upper <strong>φ chart</strong> are reciprocal views of the same point—not two realities and not two spheres.</p>
+    </section>
+
+    <aside class="bi-chart-key" aria-label="Projection legend">
+      <div class="bi-chart-key__item bi-chart-key__item--phi">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>φ chart</strong><small>south pole → upper plane · radius/(2R)=φ</small></span>
+      </div>
+      <div class="bi-chart-key__item bi-chart-key__item--nu">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>ν chart</strong><small>north pole → lower plane · radius/(2R)=ν</small></span>
+      </div>
+      <p>Lowercase chart coordinates only: <code>φ≠Φ₅</code> and <code>ν≠V₄</code>.</p>
+    </aside>
+
+    <section class="bi-readout" aria-label="Current chart values">
+      <div><span>φ</span><strong id="phi-value">1.000</strong></div>
+      <div><span>ν</span><strong id="nu-value">1.000</strong></div>
+      <div><span>φν</span><strong id="product-value">1.000</strong></div>
+      <div><span>B</span><strong id="balance-value">1.000</strong></div>
+      <div><span>θ</span><strong id="theta-value">90.0°</strong></div>
+    </section>
+
+    <aside class="bi-phase" id="phase-readout">
+      <span class="bi-phase__index">M4 · 01</span>
+      <strong>Taking-A</strong>
+      <small>selected reading itinerary [I] · not time or dynamics</small>
+    </aside>
+
+    <section class="bi-console" id="instrument-controls" aria-label="Burrisphere controls" tabindex="-1">
+      <div class="bi-console__formula">
+        <span><code>θ∈(0,π)</code></span>
+        <strong><code>φ=cot(θ/2)</code> · <code>ν=tan(θ/2)</code></strong>
+        <span><code>φν=1</code> · <code>B=sin θ≤1</code></span>
+      </div>
+      <label class="bi-slider" for="chart-position">
+        <span class="bi-slider__pole"><b>•</b><small>toward south</small></span>
+        <input id="chart-position" type="range" min="-300" max="300" value="0" step="1" aria-describedby="slider-help" />
+        <span class="bi-slider__pole"><b>○</b><small>toward north</small></span>
+      </label>
+      <span class="bi-visually-hidden" id="slider-help">Move the shared point from a position toward the south pole, through the equator, and toward the north pole. Use arrow keys for precise movement.</span>
+      <div class="bi-actions">
+        <button id="motion-toggle" type="button" aria-pressed="true" aria-label="Pause automatic scan"><span class="bi-action-icon" aria-hidden="true">Ⅱ</span><span>Pause scan</span></button>
+        <button id="centre-button" type="button" aria-label="Move the shared point to the equator"><span class="bi-action-icon" aria-hidden="true">⊙</span><span>Centre</span></button>
+        <button id="overlay-toggle" type="button" aria-pressed="true" aria-label="Hide the interpretive G7 path"><span class="bi-action-icon" aria-hidden="true">⌁</span><span>Hide G7 path</span></button>
+        <button id="fullscreen-button" type="button" aria-label="Enter full screen"><span class="bi-action-icon" aria-hidden="true">⛶</span><span>Full screen</span></button>
+      </div>
+    </section>
+
+    <details class="bi-boundary">
+      <summary>What is mathematics—and what is interpretation?</summary>
+      <div>
+        <p><strong>[A] Inherited mathematics.</strong> Dual stereographic projection on S², the reciprocal identity <code>φν=1</code> for the normalized radial magnitudes away from the poles, and <code>B=1</code> on the equator. The selected south-to-north itinerary has one equatorial crossing; on full S² the maximum locus is the whole equator.</p>
+        <p><strong>[I] Emergentist projection.</strong> The violet south-to-north turn and its four phase names are a selected display itinerary for M4 around the three Titan frames. It is not a physical trajectory, temporal law, moral ascent, recurrence, or derivation of seven.</p>
+        <p><strong>[C] Open wager.</strong> Mapping real strategies, agents, or lives onto this visual requires separate operational definitions and tests. The figure cannot supply those by resemblance.</p>
+      </div>
+    </details>
+
+    <div class="bi-drag-hint" aria-hidden="true">drag to orbit · scroll to zoom · move the chart slider</div>
+
+    <section class="bi-fallback" id="webgl-fallback" hidden>
+      <div class="bi-fallback__figure" aria-hidden="true"><span>φ</span><i></i><b>⊙</b><i></i><span>ν</span></div>
+      <h2>The 3D instrument could not start.</h2>
+      <p>The chart remains available without it: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>.</p>
+      <a href="/burrisphere/">Read the static atlas</a>
+    </section>
+
+    <noscript>
+      <section class="bi-fallback">
+        <div class="bi-fallback__figure" aria-hidden="true"><span>φ</span><i></i><b>⊙</b><i></i><span>ν</span></div>
+        <h2>One point, two reciprocal charts.</h2>
+        <p>The animation requires JavaScript, but its claim does not: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>.</p>
+        <a href="/burrisphere/">Read the static atlas</a>
+      </section>
+    </noscript>
+  </main>
+
+  <script type="importmap">
+  {"imports":{"three":"/vendor/three-0.160.0/three.module.js","three/addons/":"/vendor/three-0.160.0/"}}
+  </script>
+  <script type="module" src="/assets/js/burrisphere-instrument.js"></script>
+</body>
+</html>
