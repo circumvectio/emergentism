@@ -1,0 +1,360 @@
+[
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-01",
+    "axis": "LEVEL",
+    "plain_name": "Ground and object",
+    "left_roles": [
+      "explanatory boundary",
+      "Ground"
+    ],
+    "right_roles": [
+      "object",
+      "cause",
+      "member"
+    ],
+    "forbidden_inference": "Treat an explanatory boundary as another object, cause, or member inside the domain it bounds.",
+    "valid_bridge_conditions": [
+      "declare a stronger metalanguage",
+      "supply a native necessary-being argument"
+    ],
+    "diagnostic_question": "Is the proposed ground being quantified over as one more grounded object?",
+    "conservative_repair": "Keep the boundary role separate from any positive object or causal hypothesis.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-02",
+    "axis": "MODAL",
+    "plain_name": "Possibility and actuality",
+    "left_roles": [
+      "possibility",
+      "represented alternative",
+      "modal content"
+    ],
+    "right_roles": [
+      "actual event",
+      "actual carrier",
+      "actual history"
+    ],
+    "forbidden_inference": "Infer actuality or causal efficacy from coherence, possibility, representation, or selection alone.",
+    "valid_bridge_conditions": [
+      "identify an actual carrier",
+      "supply a transition or realization law"
+    ],
+    "diagnostic_question": "What actual carrier or lawful transition turns the represented option into an event?",
+    "conservative_repair": "Retain the alternatives as model content until an actual transition and record occur.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-03",
+    "axis": "REPRESENTATIONAL",
+    "plain_name": "Map and territory",
+    "left_roles": [
+      "sign",
+      "map",
+      "model",
+      "carrier"
+    ],
+    "right_roles": [
+      "content",
+      "referent",
+      "territory",
+      "interpretation"
+    ],
+    "forbidden_inference": "Transfer a property, truth, or causal power from representation to represented territory without a warranted semantic or empirical bridge.",
+    "valid_bridge_conditions": [
+      "declare a reference relation",
+      "test the model against independent consequence"
+    ],
+    "diagnostic_question": "Which relation connects this carrier to that content, and what could show the relation wrong?",
+    "conservative_repair": "Name sign, carrier, content, referent, and interpretation separately.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-04",
+    "axis": "LEVEL",
+    "plain_name": "Value, process, operator and boundary",
+    "left_roles": [
+      "written value",
+      "symbol",
+      "generated result"
+    ],
+    "right_roles": [
+      "process",
+      "operator",
+      "limit",
+      "boundary role"
+    ],
+    "forbidden_inference": "Apply an operation to its own generating process or boundary label as though all were ordinary values of one algebra.",
+    "valid_bridge_conditions": [
+      "declare an extended structure",
+      "type the operator domain and limit procedure"
+    ],
+    "diagnostic_question": "Is this mark a value, a process, an operator, a limit, or a frame label in the present expression?",
+    "conservative_repair": "Evaluate only inside the declared operation domain and describe boundaries in a separate register.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-05",
+    "axis": "LEVEL",
+    "plain_name": "Type and token",
+    "left_roles": [
+      "type",
+      "class",
+      "system",
+      "metalanguage"
+    ],
+    "right_roles": [
+      "token",
+      "member",
+      "instance",
+      "object language"
+    ],
+    "forbidden_inference": "Admit a classifier or metalanguage resource as an ordinary token subject to the same unrestricted self-application.",
+    "valid_bridge_conditions": [
+      "stratify levels",
+      "restrict formation or comprehension"
+    ],
+    "diagnostic_question": "Has the classifier been made one of the things it classifies under the same rule?",
+    "conservative_repair": "Separate levels or restrict formation while preserving every valid lower-level expression.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-06",
+    "axis": "BEARER",
+    "plain_name": "Part, bearer and whole",
+    "left_roles": [
+      "part",
+      "situated bearer",
+      "individual horizon"
+    ],
+    "right_roles": [
+      "whole",
+      "collective",
+      "aggregate",
+      "absent bearer"
+    ],
+    "forbidden_inference": "Transfer identity, consent, benefit, harm, or standing between a part and a whole without an explicit aggregation or representation rule.",
+    "valid_bridge_conditions": [
+      "index every affected bearer",
+      "declare aggregation and representation mandates"
+    ],
+    "diagnostic_question": "Whose state, consent, cost, or benefit is being attributed to whom?",
+    "conservative_repair": "Keep bearer-horizon rows separate and defend any aggregation or proxy mandate.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-07",
+    "axis": "TEMPORAL",
+    "plain_name": "Cause, reason and purpose",
+    "left_roles": [
+      "cause",
+      "mechanism",
+      "enabling condition"
+    ],
+    "right_roles": [
+      "reason",
+      "function",
+      "purpose",
+      "chosen end"
+    ],
+    "forbidden_inference": "Infer a reason, function, purpose, or obligation merely from a causal history or enabling condition.",
+    "valid_bridge_conditions": [
+      "name the selecting bearer or practice",
+      "supply a function or norm bridge"
+    ],
+    "diagnostic_question": "Is this explaining how an event occurred, why an agent chose it, or what it is for?",
+    "conservative_repair": "Type causal mechanism, selected function, represented goal, and chosen end separately.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-08",
+    "axis": "NORMATIVE",
+    "plain_name": "Fact, value and authority",
+    "left_roles": [
+      "descriptive fact",
+      "capacity",
+      "outcome"
+    ],
+    "right_roles": [
+      "value",
+      "ought",
+      "Good",
+      "authority",
+      "legitimacy"
+    ],
+    "forbidden_inference": "Infer what ought to be done or who may bind others from description, power, agreement, or outcome alone.",
+    "valid_bridge_conditions": [
+      "state the normative premise",
+      "identify consent or applicable authority",
+      "keep affected bearers visible"
+    ],
+    "diagnostic_question": "Which normative premise or mandate licenses the move from is to ought or from coordination to authority?",
+    "conservative_repair": "Expose the chosen norm and authorization contract before evaluating consequences.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-09",
+    "axis": "REPRESENTATIONAL",
+    "plain_name": "Description and experience",
+    "left_roles": [
+      "physical carrier",
+      "function",
+      "access",
+      "report"
+    ],
+    "right_roles": [
+      "phenomenal experience",
+      "what-it-is-like"
+    ],
+    "forbidden_inference": "Treat a complete description of carriers, functions, access, or reports as already explaining or constituting phenomenal experience.",
+    "valid_bridge_conditions": [
+      "supply a psychophysical identity or bridge",
+      "state necessary and sufficient organization conditions"
+    ],
+    "diagnostic_question": "What makes the described process experienced rather than merely report-producing?",
+    "conservative_repair": "Keep public correlates and first-person disclosure distinct until a bridge earns contact.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-10",
+    "axis": "BEARER",
+    "plain_name": "Trace, identity and survival",
+    "left_roles": [
+      "past actuality",
+      "trace",
+      "continuity relation"
+    ],
+    "right_roles": [
+      "numerical identity",
+      "same bearer",
+      "experiential survival"
+    ],
+    "forbidden_inference": "Infer continuing bearer identity or experience from a surviving trace, effect, record, or selected continuity alone.",
+    "valid_bridge_conditions": [
+      "declare the identity criterion",
+      "test bearer continuity through fission and interruption"
+    ],
+    "diagnostic_question": "What exact relation makes the later bearer numerically the same rather than merely caused by or similar to the earlier one?",
+    "conservative_repair": "Separate actuality retention, trace persistence, continuity, identity, and survival.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-11",
+    "axis": "MODAL",
+    "plain_name": "Probability, chance and outcome",
+    "left_roles": [
+      "probability calculus",
+      "credence",
+      "model uncertainty"
+    ],
+    "right_roles": [
+      "objective chance",
+      "actual outcome",
+      "selection dynamics"
+    ],
+    "forbidden_inference": "Infer a physical chance ontology, selector, or realized outcome from a probability assignment or credence alone.",
+    "valid_bridge_conditions": [
+      "declare the probability interpretation",
+      "supply native dynamics and outcome records"
+    ],
+    "diagnostic_question": "Is the probability epistemic, model-relative, or a physical propensity, and what actual process realizes an outcome?",
+    "conservative_repair": "Keep calculus, credence, physical chance, dynamics, and record distinct.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  },
+  {
+    "schema_id": "emergentism/TypeCollision.v1",
+    "collision_id": "TCX-12",
+    "axis": "EPISTEMIC",
+    "plain_name": "Evidence, warrant and truth",
+    "left_roles": [
+      "evidence",
+      "provenance",
+      "warrant",
+      "consensus"
+    ],
+    "right_roles": [
+      "truth",
+      "fact",
+      "knowledge"
+    ],
+    "forbidden_inference": "Promote evidence, agreement, provenance, or a review process into truth without the claim-specific warrant and counterfactual connection.",
+    "valid_bridge_conditions": [
+      "identify claim-specific evidence",
+      "preserve correction and defeater paths"
+    ],
+    "diagnostic_question": "What connects this evidence to the proposition, and what would defeat the connection?",
+    "conservative_repair": "Retain provenance and warrant while withholding truth promotion until contact supports it.",
+    "evidence_tier": "[I/C]",
+    "status": "CANDIDATE_GRAMMAR",
+    "strongest_rival": "Native conceptual analysis or generic typed decomposition makes the same correction with less framework vocabulary.",
+    "discriminator": "Two blinded native-domain reviewers must find the typed diagnosis incrementally clearer or more error-sensitive than both native and generic controls.",
+    "kill_criterion": "Kill the collision family wherever no exact invalid join can be stated or its repair changes the native question rather than resolving the alleged defect.",
+    "survivor_if_killed": "The native distinctions, explicit bridges, and residual-debt discipline remain available without this collision label."
+  }
+]
