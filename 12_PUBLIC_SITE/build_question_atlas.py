@@ -23,6 +23,10 @@ ADJUDICATIONS_PATH = (
     / "data"
     / "problem_adjudications.v1.json"
 )
+FOURTH_PACKET = ROOT / "14_THE_DISTILLATION" / "08_THE_FOURTH_CHURNING_2026_08_24"
+DIAGNOSES_PATH = FOURTH_PACKET / "data" / "mystery_diagnoses.v1.json"
+COLLISIONS_PATH = FOURTH_PACKET / "data" / "type_collisions.v1.json"
+FOURTH_CORPUS_PATH = FOURTH_PACKET / "FourthChurningCorpus.v1.json"
 OUTPUTS = {
     SITE / "questions" / "index.html": "questions",
     SITE / "record" / "pqa-54" / "index.html": "record",
@@ -66,7 +70,14 @@ def page_document(*, title: str, description: str, canonical: str, main: str, ac
     return render_page(base, active)
 
 
-def validate_inputs(atlas: dict, projection: dict, adjudications: object) -> dict[str, dict]:
+def validate_inputs(
+    atlas: dict,
+    projection: dict,
+    adjudications: object,
+    diagnoses: object,
+    collisions: object,
+    fourth_corpus: object,
+) -> tuple[dict[str, dict], dict[str, dict]]:
     domains = atlas.get("domains")
     if not isinstance(domains, list) or len(domains) != 9:
         raise ValueError("PQA atlas must contain nine domains")
@@ -140,10 +151,59 @@ def validate_inputs(atlas: dict, projection: dict, adjudications: object) -> dic
             if row.get(field) != atlas_row.get(field):
                 raise ValueError(f"{problem_id}: {field} drifts from the frozen PQA atlas")
         by_id[problem_id] = row
-    return by_id
+    if not isinstance(diagnoses, list) or len(diagnoses) != 54:
+        raise ValueError("Fourth Churning must contain exactly 54 diagnoses")
+    diagnosis_ids = [row.get("problem_id") for row in diagnoses if isinstance(row, dict)]
+    if len(diagnosis_ids) != 54 or len(set(diagnosis_ids)) != 54 or set(diagnosis_ids) != set(atlas_ids):
+        raise ValueError("Fourth Churning diagnosis IDs must exactly match canonical PQA-54 IDs")
+    if not isinstance(collisions, list) or len(collisions) != 12:
+        raise ValueError("Fourth Churning must contain exactly 12 collision subtypes")
+    collision_ids = {row.get("collision_id") for row in collisions if isinstance(row, dict)}
+    if len(collision_ids) != 12:
+        raise ValueError("Fourth Churning collision IDs must be unique")
+    diagnosis_states = {
+        "TYPE_COLLISION",
+        "PARTIAL_TYPE_COLLISION",
+        "NO_COLLISION",
+        "UNDERDETERMINED",
+    }
+    fourth_by_id: dict[str, dict] = {}
+    for row in diagnoses:
+        problem_id = row["problem_id"]
+        if row.get("schema_id") != "emergentism/MysteryDiagnosis.v1":
+            raise ValueError(f"{problem_id}: wrong MysteryDiagnosis schema ID")
+        if row.get("diagnosis_state") not in diagnosis_states:
+            raise ValueError(f"{problem_id}: unknown Fourth Churning diagnosis state")
+        primary = row.get("primary_collision_id")
+        if primary is not None and primary not in collision_ids:
+            raise ValueError(f"{problem_id}: dangling primary collision ID")
+        if row.get("earned_effect") != "NO_INCREMENT":
+            raise ValueError(f"{problem_id}: Fourth Churning cannot pre-earn an effect")
+        if row.get("split_integrity") != "CONTAMINATED_FOR_FOURTH_USE":
+            raise ValueError(f"{problem_id}: Fourth Churning split must remain contaminated")
+        for field in (
+            "diagnostic_claim",
+            "repaired_formulation",
+            "legitimate_bridge",
+            "residual_debt",
+        ):
+            if not isinstance(row.get(field), str) or not row[field].strip():
+                raise ValueError(f"{problem_id}: {field} must be non-empty")
+        fourth_by_id[problem_id] = row
+    if not isinstance(fourth_corpus, dict):
+        raise ValueError("Fourth Churning corpus must be an object")
+    if fourth_corpus.get("schema_id") != "emergentism/FourthChurningCorpus.v1":
+        raise ValueError("wrong Fourth Churning corpus schema ID")
+    if fourth_corpus.get("pqa_state") != null:
+        raise ValueError("Fourth Churning corpus cannot change the PQA null state")
+    return by_id, fourth_by_id
 
 
-def question_atlas_main(atlas: dict, adjudications: dict[str, dict]) -> str:
+def question_atlas_main(
+    atlas: dict,
+    adjudications: dict[str, dict],
+    diagnoses: dict[str, dict],
+) -> str:
     domain_sections: list[str] = []
     for index, domain in enumerate(atlas["domains"], start=1):
         questions = "\n".join(
@@ -164,6 +224,14 @@ def question_atlas_main(atlas: dict, adjudications: dict[str, dict]) -> str:
               <p><strong>Kill criterion:</strong> {esc(adjudications[row['question_id']]['kill_criterion'])}</p>
             </details>
           </div>
+          <div class="g2-question__adjudication">
+            <p class="g2-question__meta">Fourth Churning · {esc(diagnoses[row['question_id']]['diagnosis_state'])} · [D] SELECTED · [UNREVIEWED]</p>
+            <p><strong>Candidate diagnosis:</strong> {esc(diagnoses[row['question_id']]['diagnostic_claim'])}</p>
+            <p><strong>Conservative repair:</strong> {esc(diagnoses[row['question_id']]['repaired_formulation'])}</p>
+            <p><strong>Legitimate bridge:</strong> {esc(diagnoses[row['question_id']]['legitimate_bridge'])}</p>
+            <p><strong>Residual debt:</strong> {esc(diagnoses[row['question_id']]['residual_debt'])}</p>
+            <p><a href="/questions/diagnoses/#{esc(row['question_id'])}">Open the typed diagnosis</a></p>
+          </div>
         </li>'''
             for row in domain["questions"]
         )
@@ -178,8 +246,9 @@ def question_atlas_main(atlas: dict, adjudications: dict[str, dict]) -> str:
     return f'''  <header class="g2-shell g2-page-hero">
     <p class="g2-kicker">Question Atlas · PQA-54 · public denominator</p>
     <h1>Fifty-four questions. None quietly counted as solved.</h1>
-    <p class="g2-page-hero__lede">Emergentism does not end philosophy. It makes philosophical debt legible—and tests whether an exact type distinction clarifies, dissolves within a model, conditionally resolves, reframes, or leaves each question open.</p>
-    <div class="g2-actions"><a class="g2-button g2-button--primary" href="#domain-met">Open the atlas</a><a class="g2-button" href="/record/pqa-54/">Read the protocol state</a><a class="g2-button" href="/ethics/">Inspect the normative bridge</a></div>
+    <p class="g2-page-hero__lede">Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error.</p>
+    <p>Its Type Atlas tests whether an exact distinction clarifies, dissolves within a model, conditionally resolves, reframes, or leaves each question open—without erasing native premises or residual debt.</p>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="#domain-met">Open the atlas</a><a class="g2-button" href="/questions/diagnoses/">Inspect typed diagnoses</a><a class="g2-button" href="/record/pqa-54/">Read the protocol state</a><a class="g2-button" href="/ethics/">Inspect the normative bridge</a></div>
     <div class="g2-page-meta"><span>[D] selected construct</span><span>54 selected</span><span>0 evaluated</span><span>0 independently reviewed</span><span>0 resolved</span></div>
   </header>
 
@@ -247,13 +316,23 @@ def build_outputs() -> dict[Path, str]:
     atlas = json.loads(ATLAS_PATH.read_text(encoding="utf-8"))
     projection = json.loads(PROJECTION_PATH.read_text(encoding="utf-8"))
     adjudication_rows = json.loads(ADJUDICATIONS_PATH.read_text(encoding="utf-8"))
-    adjudications = validate_inputs(atlas, projection, adjudication_rows)
+    diagnosis_rows = json.loads(DIAGNOSES_PATH.read_text(encoding="utf-8"))
+    collisions = json.loads(COLLISIONS_PATH.read_text(encoding="utf-8"))
+    fourth_corpus = json.loads(FOURTH_CORPUS_PATH.read_text(encoding="utf-8"))
+    adjudications, diagnoses = validate_inputs(
+        atlas,
+        projection,
+        adjudication_rows,
+        diagnosis_rows,
+        collisions,
+        fourth_corpus,
+    )
     return {
         SITE / "questions" / "index.html": page_document(
             title="The Question Atlas — 54 open philosophical targets",
             description="PQA-54 freezes 54 public question families and keeps inventory, clarification, dissolution, resolution, and residual debt distinct.",
             canonical="https://emergentism.org/questions/",
-            main=question_atlas_main(atlas, adjudications),
+            main=question_atlas_main(atlas, adjudications, diagnoses),
             active="worldview",
         ),
         SITE / "record" / "pqa-54" / "index.html": page_document(

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "status": "release-candidate-projection",
   "sourceAuthority": "Source documents own semantics; this manifest binds public pages but creates no doctrine.",
   "coreJourney": {
@@ -20,6 +20,7 @@
       "6/index.html",
       "f5/index.html",
       "questions/index.html",
+      "questions/diagnoses/index.html",
       "ethics/index.html",
       "churn/index.html",
       "amrita/index.html",
@@ -118,6 +119,26 @@
     ],
     "boundary": "A public classification is not an evidence tier, earned review, resolution, validation, person label, worth verdict, or guarantee of future AI training inclusion."
   },
+  "fourthChurning": {
+    "schemaId": "FourthChurningPublicContract.v1",
+    "releaseId": "FOURTH-CHURNING-2026-08-24",
+    "sourcePacket": "14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/FourthChurningCorpus.v1.json",
+    "candidateCounts": {"TYPE_COLLISION": 1, "PARTIAL_TYPE_COLLISION": 46, "NO_COLLISION": 2, "UNDERDETERMINED": 5},
+    "axes": ["LEVEL", "MODAL", "TEMPORAL", "REPRESENTATIONAL", "EPISTEMIC", "NORMATIVE", "BEARER"],
+    "subtypeCount": 12,
+    "earnedEffects": 0,
+    "heldOutIntegrity": "CONTAMINATED_FOR_FOURTH_USE",
+    "globalPhilosophyClaimAllowed": false,
+    "machineOutputs": [
+      "questions/collisions.json",
+      "questions/diagnoses.json",
+      "questions/fourth-churning.json",
+      "questions/schemas/TypeCollision.v1.schema.json",
+      "questions/schemas/MysteryDiagnosis.v1.schema.json",
+      "questions/schemas/FourthChurningCorpus.v1.schema.json"
+    ],
+    "boundary": "Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error."
+  },
   "normativeBridge": {
     "directionCard": "OS01-38",
     "coAgencyCard": "OS01-39",
@@ -156,7 +177,7 @@
       "surface": "index.html",
       "role": "world_contact_open_gate_status",
       "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
-      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
+      "sourceRevision": "sha256:d51c0a24801f9ac1b8cd7679071f8998bf017ad849b48216fed0fc7fe233e49f",
       "tier": "[S/B]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -182,7 +203,7 @@
       "surface": "about/index.html",
       "role": "world_contact_open_gate_status",
       "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
-      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
+      "sourceRevision": "sha256:d51c0a24801f9ac1b8cd7679071f8998bf017ad849b48216fed0fc7fe233e49f",
       "tier": "[S/B]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -677,7 +698,20 @@
         "claimCardIds": ["OS01-41"]
       }],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Fifty-four questions. None quietly counted as solved.", "54 selected", "0 evaluated", "0 independently reviewed", "0 resolved", "Inventory is not evaluation.", "Even that would not mean “most philosophy.”"]
+      "requiredMarkers": ["Fifty-four questions. None quietly counted as solved.", "Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error.", "54 selected", "0 evaluated", "0 independently reviewed", "0 resolved", "Inventory is not evaluation.", "Even that would not mean “most philosophy.”"]
+    },
+    {
+      "surface": "questions/diagnoses/index.html",
+      "role": "fourth_churning_typed_diagnosis_sidecar",
+      "claimCardIds": ["OS01-41"],
+      "claimSources": [{
+        "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "sourceRevision": "sha256:f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54",
+        "lifecycle": "reader_synthesis",
+        "claimCardIds": ["OS01-41"]
+      }],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["The Perennial Mystery Type Atlas", "many perennial problems contain malformed joins between types", "does not claim that every mystery is a type error", "Seven axes · twelve subtypes", "Fifty-four diagnoses. Zero earned resolutions."]
     },
     {
       "surface": "ethics/index.html",
@@ -1333,6 +1367,7 @@
     "fable/index.html",
     "plainly/index.html",
     "questions/index.html",
+    "questions/diagnoses/index.html",
     "ethics/index.html",
     "churn/index.html",
     "amrita/index.html",
@@ -1379,7 +1414,13 @@
     "churn/manifest.json",
     "churn/schemas/ChurningDrop.v1.schema.json",
     "churn/schemas/ProblemAdjudication.v1.schema.json",
-    "churn/schemas/ThirdChurningCorpus.v1.schema.json"
+    "churn/schemas/ThirdChurningCorpus.v1.schema.json",
+    "questions/collisions.json",
+    "questions/diagnoses.json",
+    "questions/fourth-churning.json",
+    "questions/schemas/TypeCollision.v1.schema.json",
+    "questions/schemas/MysteryDiagnosis.v1.schema.json",
+    "questions/schemas/FourthChurningCorpus.v1.schema.json"
   ],
   "frozenLibraryRoots": [
     "papers",

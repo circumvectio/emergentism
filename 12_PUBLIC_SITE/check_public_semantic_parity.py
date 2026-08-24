@@ -31,7 +31,7 @@ EXPECTED_CORE_JOURNEY = [
     "dimensions/index.html", "0/index.html", "1/index.html", "2/index.html",
     "3/index.html", "4/index.html", "5/index.html",
     "burrisphere/index.html", "rosetta/index.html", "6/index.html",
-    "f5/index.html", "questions/index.html", "ethics/index.html",
+    "f5/index.html", "questions/index.html", "questions/diagnoses/index.html", "ethics/index.html",
     "churn/index.html", "amrita/index.html", "halahala/index.html",
     "practice/index.html", "spark/index.html",
     "record/index.html", "record/churning/index.html",
@@ -93,6 +93,24 @@ EXPECTED_PQA_COUNTS = {
     "independentlyReviewed": 0,
     "resolved": 0,
 }
+EXPECTED_FOURTH_COUNTS = {
+    "TYPE_COLLISION": 1,
+    "PARTIAL_TYPE_COLLISION": 46,
+    "NO_COLLISION": 2,
+    "UNDERDETERMINED": 5,
+}
+EXPECTED_FOURTH_AXES = [
+    "LEVEL", "MODAL", "TEMPORAL", "REPRESENTATIONAL",
+    "EPISTEMIC", "NORMATIVE", "BEARER",
+]
+EXPECTED_FOURTH_MACHINE_OUTPUTS = [
+    "questions/collisions.json",
+    "questions/diagnoses.json",
+    "questions/fourth-churning.json",
+    "questions/schemas/TypeCollision.v1.schema.json",
+    "questions/schemas/MysteryDiagnosis.v1.schema.json",
+    "questions/schemas/FourthChurningCorpus.v1.schema.json",
+]
 ROUTING_FORBIDDEN_KEYS = {
     "claimCardIds", "claimSources", "sourceRevision", "tier", "evidence",
 }
@@ -518,6 +536,7 @@ REQUIRED_SURFACE_CARDS = {
         "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
     "questions/index.html": {"OS01-41"},
+    "questions/diagnoses/index.html": {"OS01-41"},
     "ethics/index.html": {"OS01-38", "OS01-39", "OS01-40"},
     "churn/index.html": {"OS01-42", "OS01-43", "OS01-44"},
     "amrita/index.html": {"OS01-42", "OS01-43", "OS01-44"},
@@ -592,6 +611,14 @@ REQUIRED_SURFACE_MARKERS = {
         "Fifty-four questions. None quietly counted as solved.", "54 selected",
         "0 evaluated", "0 independently reviewed", "0 resolved",
         "Inventory is not evaluation.", "Even that would not mean “most philosophy.”",
+        "Emergentism proposes that many perennial problems contain malformed joins between types. It does not claim that every mystery is a type error.",
+    },
+    "questions/diagnoses/index.html": {
+        "The Perennial Mystery Type Atlas",
+        "many perennial problems contain malformed joins between types",
+        "does not claim that every mystery is a type error",
+        "Seven axes · twelve subtypes",
+        "Fifty-four diagnoses. Zero earned resolutions.",
     },
     "ethics/index.html": {
         "Contribution goes part→whole", "Support goes whole→part", "RCAB-01", "GEX-01",
@@ -1511,7 +1538,7 @@ def validate_core_routing(data: dict, errors: list[str]) -> None:
         errors.append("coreJourney question drift")
     surfaces = journey.get("surfaces")
     if surfaces != EXPECTED_CORE_JOURNEY:
-        errors.append("coreJourney surfaces must match the exact ordered v5 journey")
+        errors.append("coreJourney surfaces must match the exact ordered v6 journey")
     elif len(surfaces) != len(set(surfaces)):
         errors.append("coreJourney surfaces repeat an artifact")
     current = set(data.get("currentSurfaces", []))
@@ -1832,6 +1859,85 @@ def validate_v5_churning(data: dict, errors: list[str]) -> None:
         errors.append("Third Churning paradox source must contain an object")
 
 
+def validate_v6_fourth_churning(data: dict, errors: list[str]) -> None:
+    """Fail closed on the additive Fourth Churning diagnosis sidecar."""
+
+    contract = data.get("fourthChurning")
+    if not isinstance(contract, dict):
+        errors.append("fourthChurning must be an object")
+        return
+    expected_keys = {
+        "schemaId", "releaseId", "sourcePacket", "candidateCounts", "axes",
+        "subtypeCount", "earnedEffects", "heldOutIntegrity",
+        "globalPhilosophyClaimAllowed", "machineOutputs", "boundary",
+    }
+    if set(contract) != expected_keys:
+        errors.append("fourthChurning field set drift")
+    if contract.get("schemaId") != "FourthChurningPublicContract.v1":
+        errors.append("fourthChurning schema identity drift")
+    if contract.get("releaseId") != "FOURTH-CHURNING-2026-08-24":
+        errors.append("fourthChurning release identity drift")
+    if contract.get("candidateCounts") != EXPECTED_FOURTH_COUNTS:
+        errors.append("fourthChurning candidate counts must remain 1/46/2/5")
+    if contract.get("axes") != EXPECTED_FOURTH_AXES or contract.get("subtypeCount") != 12:
+        errors.append("fourthChurning grammar must remain seven axes and twelve subtypes")
+    if contract.get("earnedEffects") != 0:
+        errors.append("fourthChurning cannot pre-earn effects")
+    if contract.get("heldOutIntegrity") != "CONTAMINATED_FOR_FOURTH_USE":
+        errors.append("fourthChurning may not launder the exposed PQA split")
+    if contract.get("globalPhilosophyClaimAllowed") is not False:
+        errors.append("fourthChurning cannot claim to solve most philosophy")
+    if contract.get("machineOutputs") != EXPECTED_FOURTH_MACHINE_OUTPUTS:
+        errors.append("fourthChurning machine-output contract drift")
+    machine = data.get("machineSurfaces", [])
+    if not isinstance(machine, list) or any(rel not in machine for rel in EXPECTED_FOURTH_MACHINE_OUTPUTS):
+        errors.append("fourthChurning machine outputs are not all registered")
+
+    source_rel = contract.get("sourcePacket")
+    if not isinstance(source_rel, str):
+        errors.append("fourthChurning sourcePacket is missing")
+        return
+    source = (ROOT / source_rel).resolve()
+    try:
+        source.relative_to(ROOT.resolve())
+    except ValueError:
+        errors.append("fourthChurning sourcePacket escapes the corpus")
+        return
+    if not source.is_file():
+        errors.append(f"fourthChurning sourcePacket is missing: {source_rel}")
+        return
+    try:
+        corpus = json.loads(source.read_text(encoding="utf-8"))
+        collisions = json.loads((SITE / "questions/collisions.json").read_text(encoding="utf-8"))
+        diagnoses = json.loads((SITE / "questions/diagnoses.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"fourthChurning public projection malformed: {exc}")
+        return
+    if corpus.get("schema_id") != "emergentism/FourthChurningCorpus.v1":
+        errors.append("Fourth Churning source packet schema drift")
+    if corpus.get("candidate_counts") != EXPECTED_FOURTH_COUNTS:
+        errors.append("Fourth Churning source candidate-count drift")
+    if corpus.get("pqa_state") != {"selected": 54, "evaluated": 0, "independently_reviewed": 0, "resolved": 0}:
+        errors.append("Fourth Churning changed the PQA null state")
+    if len(collisions) != 12 or len(diagnoses) != 54:
+        errors.append("Fourth Churning public denominator drift")
+    if any(row.get("earned_effect") != "NO_INCREMENT" for row in diagnoses):
+        errors.append("Fourth Churning public diagnosis claims an earned effect")
+    if any(row.get("split_integrity") != "CONTAMINATED_FOR_FOURTH_USE" for row in diagnoses):
+        errors.append("Fourth Churning public diagnosis launders held-out status")
+
+    schema_pairs = (
+        ("TypeCollision.v1.schema.json", "collision"),
+        ("MysteryDiagnosis.v1.schema.json", "diagnosis"),
+        ("FourthChurningCorpus.v1.schema.json", "corpus"),
+    )
+    for name, key in schema_pairs:
+        source_schema = ROOT / corpus.get("schema_paths", {}).get(key, "__missing__")
+        public_schema = SITE / "questions" / "schemas" / name
+        if not source_schema.is_file() or not public_schema.is_file() or source_schema.read_bytes() != public_schema.read_bytes():
+            errors.append(f"Fourth Churning schema-copy drift: {name}")
+
+
 def validate_v4_contracts(data: dict, errors: list[str]) -> None:
     """Validate the v2.2 question, normative, and companion firewalls."""
 
@@ -2006,11 +2112,12 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 5:
-        errors.append("public semantic parity schemaVersion must be 5")
+    if data.get("schemaVersion") != 6:
+        errors.append("public semantic parity schemaVersion must be 6")
     validate_core_routing(data, errors)
     validate_v4_contracts(data, errors)
     validate_v5_churning(data, errors)
+    validate_v6_fourth_churning(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:

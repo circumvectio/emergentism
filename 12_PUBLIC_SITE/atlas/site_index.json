@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 49,
+ "total": 50,
  "tree": [
   {
    "key": "start",
@@ -44,6 +44,10 @@
     {
      "href": "/questions/",
      "title": "Fifty-four questions. None quietly counted as solved."
+    },
+    {
+     "href": "/questions/diagnoses/",
+     "title": "The Perennial Mystery Type Atlas"
     },
     {
      "href": "/ethics/",

@@ -133,12 +133,14 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/plainly/", "/dasein/", "/f5/", "/questions/", "/ethics/", "/churn/", "/amrita/", "/halahala/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/churning/", "/record/pqa-54/",
+        "/", "/plainly/", "/dasein/", "/f5/", "/questions/", "/questions/diagnoses/", "/ethics/", "/churn/", "/amrita/", "/halahala/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/churning/", "/record/pqa-54/",
         "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
         "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css",
         "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/living-map.json",
         "/public_semantic_parity.json", "/atlas/site_index.json", "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
+        "/questions/collisions.json", "/questions/diagnoses.json", "/questions/fourth-churning.json",
+        "/questions/schemas/TypeCollision.v1.schema.json", "/questions/schemas/MysteryDiagnosis.v1.schema.json", "/questions/schemas/FourthChurningCorpus.v1.schema.json",
         "/assets/fonts/Roboto-latin.woff2",
         "/assets/fonts/RobotoMono-latin.woff2", "/assets/fonts/Newsreader-latin-variable.woff2",
         "/assets/icons/icon-192.png",
