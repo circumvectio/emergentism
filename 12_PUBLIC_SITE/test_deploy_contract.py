@@ -158,6 +158,27 @@ class DeployReleaseContractTests(unittest.TestCase):
         self.assertTrue(result.repo_finity_card)
         self.assertTrue(result.repo_local_receipt)
 
+    def test_live_audit_retries_one_transport_error_only(self) -> None:
+        failed = live_audit.ProbeResult(
+            path="plainly/", status="ERR", final_url="https://example.invalid/plainly/",
+            title="", bytes_read=0, body_sha256="", repo_worldview_identity=False,
+            repo_finity_action=False, repo_finity_card=False, repo_local_receipt=False,
+            repo_generated_manifest=False, repo_historical_boundary=False,
+            risky_withheld_body=False, old_vmgsta_markers=False,
+            google_sites_markers=False, x_robots_tag="", cache_control="",
+            cdn_cache_control="", error="URLError: transient",
+        )
+        recovered = failed.__class__(**{**failed.__dict__, "status": 200, "error": ""})
+        with patch.object(live_audit, "_probe_once", side_effect=[failed, recovered]) as once:
+            result = live_audit.probe("https://example.invalid/", "plainly/", 0.1)
+        self.assertEqual(result.status, 200)
+        self.assertEqual(once.call_count, 2)
+
+        with patch.object(live_audit, "_probe_once", return_value=recovered) as once:
+            result = live_audit.probe("https://example.invalid/", "plainly/", 0.1)
+        self.assertEqual(result.status, 200)
+        once.assert_called_once()
+
     def test_archive_manifest_is_content_addressed(self) -> None:
         rows = contract._inspect_archive(archive_bytes("index.html", b"hello\n"))
         self.assertEqual(rows[0]["path"], "index.html")

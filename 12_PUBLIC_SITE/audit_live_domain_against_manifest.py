@@ -133,7 +133,7 @@ def title_from_html(text: str) -> str:
     return re.sub(r"\s+", " ", match.group(1)).strip()[:120]
 
 
-def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
+def _probe_once(base_url: str, path: str, timeout: float) -> ProbeResult:
     url = urljoin(base_url, path)
     request = Request(
         url,
@@ -206,6 +206,19 @@ def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
             cdn_cache_control="",
             error=f"{type(exc).__name__}: {exc}",
         )
+
+
+def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
+    """Probe once, retrying only a transient transport-level failure.
+
+    HTTP responses remain authoritative and are never retried. The single retry
+    avoids rolling back a verified release because one request in the large
+    manifest/withholding audit experienced a connection-level flap.
+    """
+    result = _probe_once(base_url, path, timeout)
+    if result.status == "ERR":
+        return _probe_once(base_url, path, timeout)
+    return result
 
 
 def build_result(
