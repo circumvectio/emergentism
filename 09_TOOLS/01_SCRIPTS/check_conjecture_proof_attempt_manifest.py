@@ -236,8 +236,8 @@ def check() -> list[str]:
     _exact_keys(document, TOP_KEYS, "manifest", errors)
     if document.get("schema_version") != SCHEMA:
         errors.append(f"schema_version must be {SCHEMA}")
-    if document.get("as_of_date") != "2026-08-22":
-        errors.append("as_of_date must retain the frozen 2026-08-22 census date")
+    if document.get("as_of_date") != "2026-08-24":
+        errors.append("as_of_date must retain the frozen 2026-08-24 census date")
     if document.get("routing_role") != ROUTING_ROLE:
         errors.append("routing_role drifted from the non-owning boundary")
     if not COMMIT.fullmatch(str(document.get("baseline_commit", ""))):
@@ -434,6 +434,24 @@ def check() -> list[str]:
     elif "PARTIAL" not in str(attempt.get("outcome", "")):
         errors.append("PA-SLWP-01 must preserve its partial/failed-bridge result")
 
+    tea = by_id.get("TEA-01")
+    if tea is None:
+        errors.append("missing required TEA-01 entry")
+    else:
+        if tea.get("kind") != "FORMAL_RESULT" or tea.get("evidence_tier") != "[A]":
+            errors.append("TEA-01 must remain an [A] relative formal result")
+        if tea.get("validation_status_ref") != []:
+            errors.append("TEA-01 must not silently advance canonical claim status")
+
+    answer_set = by_id.get("EAS-10")
+    if answer_set is None:
+        errors.append("missing required EAS-10 entry")
+    else:
+        if answer_set.get("kind") != "MODEL" or answer_set.get("lifecycle") != "active":
+            errors.append("EAS-10 must remain an active non-validating answer model")
+        if answer_set.get("validation_status_ref") != []:
+            errors.append("EAS-10 owner adoption must not become canonical validation")
+
     raw_claim_ids = {
         row_id
         for section in CATALOG_SECTIONS
@@ -462,6 +480,8 @@ def check() -> list[str]:
             "not `W19`",
             "does not establish `μ₀`",
             "Noninvertibility is not strong emergence",
+            "RELATIVE_TYPE_ASYMMETRY_PROVEN",
+            "NATURAL_STRONG_EMERGENCE_OPEN",
         ):
             if token not in text:
                 errors.append(f"SLWP-01 lost required boundary token: {token!r}")

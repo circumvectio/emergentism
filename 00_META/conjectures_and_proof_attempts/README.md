@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "One non-owning manifest for conjectures, proofs, counterexamples, refutations, and failed proof attempts"
 type: meta-pointer-index
 title: "Conjectures and Proof Attempts — manifest-bounded index"
-status: "ACTIVE 2026-08-22 — routing and completeness accounting only"
+status: "ACTIVE 2026-08-24 — routing and completeness accounting only"
 owner: "00_META discoverability; semantic and validation ownership remains distributed"
 ---
 
@@ -34,8 +34,12 @@ Container membership never promotes an inner claim.
 - [`BIL-01`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md)
   is an `[A]` ordinary-analysis theorem about endpoint information loss.
 - Reading that theorem as an image of directional emergence is `[I]`.
-- [`SLWP-01`](../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md)
-  is a universal `[C]` proposal and proof program.
+- [`TEA-01`](../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md)
+  is an `[A]` theorem of relative type-extension asymmetry; mapping any natural
+  crossing to its premises remains `[C]` under `SLWP-01`.
+- [`EAS-10@1`](../../06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md)
+  records ten owner-adopted internal answers. Adoption is a lifecycle state,
+  not proof, validation, PQA adjudication or publication.
 - [`04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md) remains
   the sole W0–W12 wager ledger.
 - [`CLAIM_STATUS.yaml`](../claim_status/CLAIM_STATUS.yaml) remains the
@@ -43,12 +47,12 @@ Container membership never promotes an inner claim.
 
 ## What “all” means here
 
-The index is **manifest-complete as of 2026-08-22 under scope-rules v1**. That
+The index is **manifest-complete as of 2026-08-24 under scope-rules v1**. That
 means:
 
 1. every row in the machine claim-status catalog is snapshotted by exact ID;
 2. every dedicated source-owner packet selected by the dated conjecture/proof
-   census is represented;
+   census and the 2026-08-24 internal-answer amendment is represented;
 3. decisive proof, counterexample, refutation, and provenance surfaces cited by
    those owners are represented; and
 4. every excluded class and unresolved discovery debt is stated in
@@ -68,9 +72,11 @@ it is classified.
    entry tiers, kills, and graves.
 3. [The Claim Status Register](../00_THE_CLAIM_STATUS_REGISTER.md) — current
    validation-status vocabulary and human-readable rows.
-4. [BIL-01](../../05_COSMOLOGY/03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md)
-   and [SLWP-01](../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md)
-   — the theorem and the failed proof transfer recorded on 2026-08-22.
+4. [BIL-01](../../05_COSMOLOGY/03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md),
+   [SLWP-01 / TEA-01](../../06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md),
+   and [the ten-answer layer](../../06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md)
+   — theorem, failed transfer, relative proof, selected answers and retained
+   natural-world debts.
 
 ## How an attempt is represented
 

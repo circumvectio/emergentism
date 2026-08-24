@@ -9,6 +9,18 @@
     "ai_assistance_disclosed": true,
     "ai_coauthor": false
   },
+  "internal_orientation": {
+    "answer_id": "EA-04",
+    "owner_adoption": "ADOPTED",
+    "selected_branch": "F5-W floor; F5-W+ remains an incremental wager",
+    "statement": "F5 acts first on represented thought-options through an actual D4 model token; attention, intention, commitment, embodied means, and ordinary physical dynamics then affect the world.",
+    "equation": "q_lambda5(a|M_t) = q_0(a|M_t) exp(lambda_5 R_5(a;M_t)) / sum_a' q_0(a'|M_t) exp(lambda_5 R_5(a';M_t))",
+    "parameter_firewall": "lambda_5 belongs only to noetic F5-W+ weighting; kappa belongs only to the physically distinct F5-R future-boundary history law.",
+    "carrier_firewall": "D5 content does not push matter. Every representation, computation, selection, action, and consequence is actual D4.",
+    "branch_relation": "F5-W0 is the ordinary present-model floor contained within F5-N. F5-W+ is the incremental noetic operator contested by F5-N.",
+    "incremental_status": "F5-W+ is [C] beyond generic planning, control, inference, and the F5-N null",
+    "truth_bonus_before_contact": false
+  },
   "epistemic_contract": {
     "truth_bonus_before_contact": false,
     "agreement_is_evidence": false,
@@ -23,6 +35,9 @@
       "kind": "present-model floor",
       "statement": "Represented futures influence present action through actual present models, signals, memories, institutions, and computations.",
       "mechanism": "A D4 model token represents and reweights D5 alternatives, then ordinary present dynamics carries the effect into action.",
+      "floor": "F5-W0 is ordinary model-mediated anticipation and is compatible with F5-N.",
+      "incremental_wager": "F5-W+ is a distinct noetic operator that must add prediction beyond rich generic planning, control, and inference baselines.",
+      "relation_to_F5_N": "F5-N contains F5-W0 and contests only the F5-W+ increment or any additional interaction.",
       "strongest_rival": "Salience, demand, reward, memory, expectancy, reactive control, or ordinary planning explains the measured change without a distinct D5-capacity variable.",
       "discriminator": "Intervene on represented future content while holding relevant present means and confounds fixed; require incremental prediction beyond rich D4 baselines.",
       "kill": "A fair-baseline null or the absence of an independently measurable future-content variable kills the distinct-capacity claim.",
@@ -34,6 +49,7 @@
       "kind": "no-additional-interaction null",
       "statement": "No additional interaction couples to representation-as-such; selection, verification, correction, and revision service the D5 register.",
       "mechanism": "Known physical interactions plus biological, cognitive, social, and verification mechanisms exhaust the observed effects.",
+      "relation_to_F5_W": "F5-N includes the F5-W0 present-model floor and denies an independently evidenced F5-W+ increment unless contact defeats the null.",
       "strongest_rival": "F5-R predicts a preregistered residual dependence on later physical boundary data after ordinary channels are excluded.",
       "discriminator": "Compare the frozen accepted-physics and control baseline with the F5-R history law on a held-out intervention.",
       "kill": "A replicated force-specific residual with a defined coupling and observable kills this null in the tested range.",

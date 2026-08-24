@@ -1,0 +1,397 @@
+{
+  "schema": "emergentism/EmergentistAnswerSet.v1",
+  "id": "EAS-10@1",
+  "date": "2026-08-24",
+  "title": "The Ten Emergentist Answers",
+  "semantic_owner": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+  "direction": "00_HANDOFF/EMERGENTISM_INTERNAL_ANSWERS_OWNER_DIRECTION_2026_08_24.md",
+  "canonical_phrase": "Ten internal answers, ten visible debts",
+  "state_axes": {
+    "owner_adoption": "ADOPTED",
+    "internal_review": "PASS",
+    "empirical_contact": "NOT_RUN",
+    "pqa_adjudication": "NOT_EVALUATED",
+    "publication": "WITHHELD"
+  },
+  "epistemic_contract": {
+    "state_independence": true,
+    "owner_adoption_implies_truth": false,
+    "internal_review_implies_independent_review": false,
+    "publication_implies_validation": false,
+    "pqa_54_state": "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+    "answer_order": [
+      "selected_internal_answer",
+      "claim_atoms",
+      "residual",
+      "rivals",
+      "discriminator",
+      "kill",
+      "survivor"
+    ]
+  },
+  "answers": [
+    {
+      "id": "EA-01",
+      "name": "COHERENT-PLENITUDE",
+      "question": "Why does anything exist at all?",
+      "selected_internal_answer": "Dasein is the world-tagged plenitude of coherent and consistent determination; D0 is the pre-object boundary, not a rival object called nothing. Where a typed involution and antisymmetric quantity are declared, counterpart closure yields a local balance identity.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+      ],
+      "dependencies": ["world tags", "coherence predicate", "typed counterpart involution"],
+      "anti_dependencies": ["global numerical cancellation", "joint actuality of incompatible worlds", "harm erasure"],
+      "claim_atoms": [
+        {
+          "text": "Dasein names world-tagged coherent plenitude inside Emergentism.",
+          "claim_type": "STIPULATION",
+          "tier": "[S]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-01"
+        },
+        {
+          "text": "Every coherent world is ontically instantiated.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-01"
+        },
+        {
+          "text": "An antisymmetric quantity sums to zero across a declared involutive pair.",
+          "claim_type": "ANALYTIC",
+          "tier": "[A]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-01-balance"
+        }
+      ],
+      "forbidden_inflations": ["Everything balances numerically.", "All opposites are jointly actual.", "Suffering is cancelled elsewhere."],
+      "rivals": ["brute actuality", "necessary being", "actualism", "modal fictionalism", "sparse modal realism"],
+      "discriminator": "Supply typed instantiation semantics and a contact gain over actualist and fictionalist controls; test each proposed balance with an explicit involution, measure, and quantity.",
+      "kill": "Kill the ontic leg if no coherent instantiation semantics or contact gain can be supplied; kill any balance leg where no involution or antisymmetric quantity exists.",
+      "survivor": "World tags, compossibility, Map is not Ground, and every valid scoped pair identity survive.",
+      "residual": "Why coherence has ontic force and whether any global balance measure describes nature remain unpaid.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-02",
+      "name": "SEQUENTIAL-ACTUALITY",
+      "question": "Why is this world or outcome actual?",
+      "answer_mode": "constitutive_reframe",
+      "native_question_debt": "The native transition law, outcome weights, and any world- or branch-selection mechanism remain unpaid.",
+      "selected_internal_answer": "Actuality is the ordered, consequence-bearing D4 path whose transitions enter a declared world-tagged record-continuum. Perception discloses an actual record to a situated bearer; it does not manufacture unperceived events. Global uniqueness across all possible branch-continua is a separable conjecture.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
+      ],
+      "dependencies": ["ordered history", "record continuity", "situated bearer"],
+      "anti_dependencies": ["possibility-to-actuality inflation", "perception creates all events", "a second actuality behind actuality"],
+      "claim_atoms": [
+        {
+          "text": "Actuality is constituted as realized D4 record-continuous history.",
+          "claim_type": "STRUCTURAL",
+          "tier": "[S/I]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-02"
+        },
+        {
+          "text": "An event becomes actual-as-lived for a bearer when its record enters that bearer's experience.",
+          "claim_type": "INTERPRETIVE",
+          "tier": "[I]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-02"
+        }
+      ],
+      "forbidden_inflations": ["Perception retroactively creates every event.", "Sequential actuality supplies Born weights.", "Modeled alternatives are already actual in this history."],
+      "rivals": ["brute actuality", "Everettian self-location", "objective collapse", "hidden variables", "anthropic selection", "standard stochastic law"],
+      "discriminator": "Separate the constitutive definition from candidate transition laws and compare any added selector on held-out outcome statistics.",
+      "kill": "Kill universal eventual witnessability if admissible actual events can remain outside every bearer and record; kill an added selector if it predicts no better than native dynamics.",
+      "survivor": "Event, record, perception, actual history, and represented alternative remain distinct types.",
+      "residual": "The native physical law and weights selecting this transition rather than another remain unpaid.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-03",
+      "name": "PHENOMENAL-ACTUALIZATION",
+      "question": "Why does physical organization have phenomenal experience?",
+      "selected_internal_answer": "Phenomenal experience is the bearer-side aspect of physical and informational actualization integrated into a self-maintaining, action-available, temporally continuous organization. Bare actualization as proto-phenomenal is a stronger separable branch.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md"
+      ],
+      "dependencies": ["actualized record", "bearer integration", "action availability", "self-model update", "declared actualization_kind for EA-03S"],
+      "anti_dependencies": ["consciousness causes collapse", "every measurement is a person", "collapse interpretation smuggling"],
+      "claim_atoms": [
+        {
+          "text": "Bearer-integrated actualization and phenomenal disclosure are dual aspects of one event.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-03"
+        },
+        {
+          "text": "Bare physical actualization is proto-phenomenal.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-03s"
+        }
+      ],
+      "forbidden_inflations": ["Consciousness is established as the cause of quantum collapse.", "Every stable record has a human-like inner life.", "The hard problem is experimentally resolved."],
+      "rivals": ["global workspace", "higher-order theory", "recurrent processing", "integrated information", "illusionism", "enactivism", "panpsychism", "neutral monism", "dualism"],
+      "discriminator": "Define necessary and sufficient organization conditions and test classification and incremental prediction against matched consciousness models.",
+      "kill": "Kill the bearer identity if it adds no discrimination or systematically misclassifies conscious and unconscious record formation. Kill EA-03S separately for each declared actualization_kind if its marker fails or its required interpretation is rejected by contact.",
+      "survivor": "First-person disclosure remains territory, and D3 probability, D4 record, D5 content, and bearer integration remain separate.",
+      "residual": "Why the identity has a particular qualitative character and its exact organization threshold remain unpaid.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-04",
+      "name": "NOETIC-FREEDOM",
+      "question": "Does metaphysically stronger free will exist?",
+      "selected_internal_answer": "Freedom is the graded capacity of an actual bearer to represent alternatives, reweight attention and intention, couple reasons to means, act, receive consequence, and revise. An actual D4 model token represents D5 options and performs the noetic reweighting before ordinary action affects the world. F5-W0 is the ordinary floor contained within F5-N; an incremental F5-W+ and irreducibility remain separate wagers.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md"
+      ],
+      "dependencies": ["actual model token", "represented options", "attention and intention", "means-action coupling", "revision"],
+      "anti_dependencies": ["D5 content directly pushes matter", "uncaused choice", "responsibility without capacity"],
+      "claim_atoms": [
+        {
+          "text": "Model-mediated counterfactual control is real graded agency.",
+          "claim_type": "INTERPRETIVE",
+          "tier": "[I/B]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-04"
+        },
+        {
+          "text": "Noetic agency is irreducible to lower-level description.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-04"
+        }
+      ],
+      "forbidden_inflations": ["D5 possibilities act without a physical carrier.", "Freedom means randomness.", "F5-W is an established fifth interaction."],
+      "rivals": ["hard determinism", "compatibilism without F5 vocabulary", "epiphenomenalism", "libertarian agent causation", "stochastic indeterminism"],
+      "discriminator": "Intervene on represented option structure while holding ordinary incentives and affordances fixed; measure predicted changes in thought selection, action, and revision.",
+      "kill": "Kill the F5-W increment if generic planning and control models recover all effects; kill irreducibility if a frozen lower grammar supplies a complete reduction.",
+      "survivor": "Operational counterfactual agency, capacity-sensitive responsibility, and the D4 carrier firewall survive.",
+      "residual": "Whether noetic freedom is metaphysically irreducible rather than a useful higher description remains unpaid.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "COMPONENT_SUPPORTED", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-05",
+      "name": "DEATH-CONTINUITY",
+      "question": "Does personal experience survive death?",
+      "selected_internal_answer": "Death ends the organism's new embodied agency, but cannot make its actual life never have been actual. Actuality retention, continuing trace, and bearer continuation are distinct; personal experiential survival obtains only if an explicit bearer-continuity relation is satisfied.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md"
+      ],
+      "dependencies": ["bearer identity criterion", "embodied agency", "trace distinction"],
+      "anti_dependencies": ["trace equals subject", "duplicate equals original", "block history proves immortality"],
+      "claim_atoms": [
+        {
+          "text": "An actual life remains part of determinate history after its organism ceases.",
+          "claim_type": "STRUCTURAL",
+          "tier": "[S/I]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-05"
+        },
+        {
+          "text": "Personal experience continues after biological death when a bearer-continuity relation is satisfied.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-05"
+        }
+      ],
+      "forbidden_inflations": ["Historical actuality proves ongoing experience.", "A copied pattern is automatically the same person.", "Emergentism has observed an afterlife."],
+      "rivals": ["organismic cessation", "psychological continuity", "animalism", "pattern identity", "substance soul", "no-self accounts"],
+      "discriminator": "Declare a bearer identity relation before considering any alleged continuation and test it for branching, duplication, memory error, causal discontinuity, and independent evidence.",
+      "kill": "Kill any survival claim lacking bearer continuity and independent contact; kill any identity rule that counts incompatible branches as one token without qualification.",
+      "survivor": "The life remains actual, its consequences and traces may continue, and those facts do not imply continuing subjectivity.",
+      "residual": "No independently verified post-mortem bearer continuity has been established by this answer layer.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-06",
+      "name": "CONSTITUTIVE-ETHICS",
+      "question": "Do objective moral facts exist independently of chosen practices?",
+      "answer_mode": "conditional_framework_answer",
+      "native_question_debt": "Whether equal bearer standing and bearer-complete Justice are stance-independently true remains the moral-realism wager.",
+      "selected_internal_answer": "Contribution, Support, options, consent, hidden cost, Justice, and Exit are objective relational properties once bearers and horizons are typed. Equal bearer standing is adopted as constitutive of Dasein's many-sidedness, not deduced from value-free physics. Stance-independent adequacy is a conjectural commitment.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "04_AXIOLOGY/02_VALUE_THEORY/03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md"
+      ],
+      "dependencies": ["typed bearers", "declared horizon", "relational measurements", "equal standing premise"],
+      "anti_dependencies": ["bare is-to-ought deduction", "scalar laundering", "unseen bearer erasure", "cosmic command"],
+      "claim_atoms": [
+        {
+          "text": "Contribution and Support are objective relation-types under declared bearers and horizon.",
+          "claim_type": "ANALYTIC",
+          "tier": "[S/A]",
+          "source": "04_AXIOLOGY/02_VALUE_THEORY/03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md"
+        },
+        {
+          "text": "Equal bearer standing is a constitutive Emergentist commitment.",
+          "claim_type": "STIPULATION",
+          "tier": "[S]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-06"
+        },
+        {
+          "text": "The resulting moral facts are stance-independently world-adequate.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-06"
+        }
+      ],
+      "forbidden_inflations": ["Physics alone entails the Good.", "Balance cancels victim-level harm.", "One aggregate score may hide consent or Exit."],
+      "rivals": ["error theory", "constructivism", "contractualism", "naturalist realism", "non-natural realism", "virtue ethics", "consequentialism"],
+      "discriminator": "Compare bearer-complete judgments and interventions with rival practices on consent, hidden cost, reversibility, correction, and durable option preservation.",
+      "kill": "Kill any claimed bridge that hides a normative premise or repeatedly licenses extraction under its own bearer-complete audit; downgrade world-adequacy if rivals dominate on preregistered contact.",
+      "survivor": "Typed relational facts, visible normative premises, Justice, and Exit remain available even if strong realism fails.",
+      "residual": "The stance-independent authority of equal standing and its adequacy across hard moral conflicts remain conjectural.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "COMPONENT_SUPPORTED", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-07",
+      "name": "SERIAL-ARTICULATION",
+      "question": "Is D0-D6 nature's own decomposition?",
+      "selected_internal_answer": "D0-D6 is Emergentism's selected serial articulation of boundary, distinction, relation, quantum state, actual history, represented possibility, and nonclosure. It is proposed as a decomposition of nature, not as a temporal Big-Bang sequence. D0 and D6 remain distinct: two different typed predicates, PreBoundary and PostBoundary, map to the shared LIMIT_ROLE class.",
+      "semantic_owners": [
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md",
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md"
+      ],
+      "dependencies": ["typed register transitions", "boundary predicate", "nonclosure"],
+      "anti_dependencies": ["D0 equals D6", "CCC proves Emergentism", "seven is geometrically forced", "temporal chronology smuggling"],
+      "claim_atoms": [
+        {
+          "text": "D0-D6 is the selected Emergentist address scaffold.",
+          "claim_type": "STIPULATION",
+          "tier": "[S]",
+          "source": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+        },
+        {
+          "text": "The scaffold is a privileged decomposition of nature.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-07"
+        },
+        {
+          "text": "D0 and D6 share a selected boundary role without being identical.",
+          "claim_type": "INTERPRETIVE",
+          "tier": "[I]",
+          "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md#ccc-boundary-role"
+        }
+      ],
+      "forbidden_inflations": ["D0 and D6 are the same state.", "Conformal cyclic cosmology proves the ladder.", "The ladder is a measured cosmological chronology."],
+      "rivals": ["flat physicalism", "category pluralism", "process ontology", "information-first ontology", "alternative dimensional ladders"],
+      "discriminator": "Require each rung to add explanatory and predictive value over relabeled, shuffled, and lower-complexity scaffolds across held-out domains.",
+      "kill": "Kill privileged-natural status if the ladder produces no incremental compression or contact gain and its assignments are unstable under relabeling.",
+      "survivor": "The ladder remains an optional typed address system and D0/D6 nonidentity remains.",
+      "residual": "No experiment or theorem currently establishes D0-D6 as nature's unique decomposition.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-08",
+      "name": "RELATIVE-EMERGENCE",
+      "question": "Is any transition strongly emergent?",
+      "selected_internal_answer": "A type absent from a frozen lower grammar cannot be denoted inside that grammar, while a declared forgetful map may recover lower descriptions from a higher grammar. This proves a conditional strong-up and weak-down asymmetry relative to those chosen languages; natural crossings remain separate conjectures.",
+      "semantic_owners": [
+        "06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md",
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md"
+      ],
+      "dependencies": ["frozen lower language", "new higher type", "conservative extension", "forgetful projection"],
+      "anti_dependencies": ["currently unreduced means irreducible", "language novelty proves ontic novelty", "division-by-zero proof"],
+      "claim_atoms": [
+        {
+          "text": "Type extension creates a relative non-denotability result upward while a forgetful map can project downward.",
+          "claim_type": "ANALYTIC",
+          "tier": "[A]",
+          "source": "06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md"
+        },
+        {
+          "text": "A named natural transition satisfies the theorem's irreducibility premises.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-08"
+        }
+      ],
+      "forbidden_inflations": ["Formal non-denotability proves new physical substance.", "Missing reduction proves strong emergence.", "N divided by zero establishes emergence."],
+      "rivals": ["reductionism", "multiple realizability", "epistemic emergence", "computational irreducibility", "effective field description"],
+      "discriminator": "Freeze the admissible lower grammar before inspection, state the higher type, attempt reduction, and test whether the projection recovers lower observables without loss relevant to the claim.",
+      "kill": "Kill a natural strong-emergence assignment when an admissible reduction is found or when the higher type was smuggled into the lower language.",
+      "survivor": "The conditional type-extension theorem and useful higher-to-lower projection survive failed natural assignments.",
+      "residual": "Which, if any, physical, biological, or phenomenal crossing satisfies the premises remains a contact question.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-09",
+      "name": "MODULAR-FORCE-F5",
+      "question": "Are the force mapping and F5 physically true?",
+      "selected_internal_answer": "The selected role affinities are strong-D1, electromagnetic-D2, weak-D3, gravity-D4, and noetic F5-W-D5. The first four remain one of 24 assignments. F5-W is an internal model-mediated reading, while F5-N and physical F5-R remain live empirical rivals.",
+      "semantic_owners": [
+        "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md",
+        "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json",
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md"
+      ],
+      "dependencies": ["24-permutation comparison", "native theory recovery", "D4 carrier", "F5 null and rival"],
+      "anti_dependencies": ["aesthetic fit as evidence", "force count numerology", "future light cone as agent", "gravity is entropy"],
+      "claim_atoms": [
+        {
+          "text": "The five correspondences are Emergentism's selected internal map.",
+          "claim_type": "STIPULATION",
+          "tier": "[S]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-09"
+        },
+        {
+          "text": "The four-force ordering reflects nature rather than a role analogy.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md"
+        },
+        {
+          "text": "F5-W is a noetic model-mediated selection operator, not an established physical interaction.",
+          "claim_type": "INTERPRETIVE",
+          "tier": "[I/C]",
+          "source": "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json"
+        }
+      ],
+      "forbidden_inflations": ["The selected permutation is established physics.", "F5 is an observed fifth physical force.", "Entropic derivations prove the force ladder or a gravity time arrow."],
+      "rivals": ["23 alternative force permutations", "no role mapping", "F5-N verification controller", "generic planning", "F5-R future-boundary history law"],
+      "discriminator": "Compare all 24 force assignments against native theory recovery and held-out predictions; compare F5-W with generic planning and F5-N, and require F5-R to supply units, coupling, invariances, and a distinct observable.",
+      "kill": "Kill the ordering if alternatives perform equally or better without post hoc repair; kill F5-W's increment if controls recover it; kill F5-R if no distinct observable survives.",
+      "survivor": "Native forces, ordinary model-mediated foresight, verification practice, and the modular fork survive.",
+      "residual": "No force permutation or new physical F5 interaction is established by internal adoption.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    },
+    {
+      "id": "EA-10",
+      "name": "DEFINITE-OUTCOME",
+      "question": "What ultimately selects definite quantum outcomes?",
+      "answer_mode": "constitutive_reframe",
+      "native_question_debt": "Born weights, interpretation, and any unique physical selection dynamics remain unpaid to native quantum physics.",
+      "selected_internal_answer": "Actualization is ontological selection into a stable, consequence-bearing D4 record from a D3 probability-bearing state. Bearer-integrated actualization is the phenomenal face proposed by EA-03. This supplies the Emergentist meaning of selection, not a Born-rule derivation or unique collapse dynamics.",
+      "semantic_owners": [
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
+      ],
+      "dependencies": ["D3 probability-bearing state", "D4 stable record", "native quantum formalism"],
+      "optional_crosswalks": ["EA-03 bearer integration supplies a phenomenal interpretation when applicable; EA-10 survives if EA-03 fails."],
+      "anti_dependencies": ["ontology substitutes for dynamics", "Born weights assumed solved", "consciousness-triggered collapse smuggling"],
+      "claim_atoms": [
+        {
+          "text": "Definiteness means entry into a stable consequence-bearing D4 record.",
+          "claim_type": "STRUCTURAL",
+          "tier": "[S/I]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-10"
+        },
+        {
+          "text": "A unique ontic transition selects one outcome from the quantum state.",
+          "claim_type": "CONJECTURAL",
+          "tier": "[C]",
+          "source": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md#ea-10"
+        }
+      ],
+      "forbidden_inflations": ["Emergentism derives the Born rule.", "A record definition proves objective collapse.", "Phenomenal experience is an established quantum selector."],
+      "rivals": ["decoherence plus interpretation", "Everett", "Bohmian mechanics", "objective-collapse models", "relational quantum mechanics", "QBism", "superdeterminism"],
+      "discriminator": "Require any proposed selection mechanism to recover quantum statistics, state its ontology and dynamics, and predict a deviation or explanatory gain over native interpretations.",
+      "kill": "Kill a unique-selector claim if it adds no dynamics or observable distinction, fails Born statistics, or merely redescribes record formation.",
+      "survivor": "The D3 state, D4 record, D5 representation, and phenomenal-identity wager remain separately typed.",
+      "residual": "Born weights, interpretation, and any unique physical selection dynamics remain debts to native physics.",
+      "state": {"owner_adoption": "ADOPTED", "internal_review": "PASS", "empirical_contact": "NOT_RUN", "pqa_adjudication": "NOT_EVALUATED", "publication": "WITHHELD"}
+    }
+  ]
+}

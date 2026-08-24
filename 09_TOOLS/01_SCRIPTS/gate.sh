@@ -43,6 +43,8 @@ fi
 CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_foundation.py"
   "09_TOOLS/01_SCRIPTS/check_claim_status.py"
+  "09_TOOLS/01_SCRIPTS/check_emergentist_answer_set.py"
+  "09_TOOLS/01_SCRIPTS/check_conjecture_proof_attempt_manifest.py"
   "09_TOOLS/01_SCRIPTS/check_coherence_profile.py"
   "09_TOOLS/01_SCRIPTS/check_contact_limited.py"
   "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"

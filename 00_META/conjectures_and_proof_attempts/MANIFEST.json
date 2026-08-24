@@ -1,11 +1,11 @@
 {
  "schema_version": "emergentism/conjecture-proof-attempt-manifest/v1",
- "as_of_date": "2026-08-22",
- "baseline_commit": "8fd03698d1ebcf8442a89eb2be054471ce8ee299",
+ "as_of_date": "2026-08-24",
+ "baseline_commit": "b1ed9bb52899b58661c64c91f0f8b1aa84217086",
  "routing_role": "discoverability and dated completeness accounting only; no semantic authority, tier promotion, validation, or adoption",
  "scope_rules": {
   "version": "v1",
-  "definition_of_all": "All explicitly registered Emergentist claim objects in CLAIM_STATUS, all dedicated source-owner packets selected by the dated 2026-08-22 conjecture/proof census, and the decisive attempts, counterexamples, refutations, and provenance records directly needed to interpret them.",
+  "definition_of_all": "All explicitly registered Emergentist claim objects in CLAIM_STATUS, all dedicated source-owner packets selected by the dated 2026-08-24 conjecture/proof census, and the decisive attempts, counterexamples, refutations, internal-answer objects, and provenance records directly needed to interpret them.",
   "included_roots": [
    "00_META",
    "01_TELEOLOGY",
@@ -142,8 +142,13 @@
    "role": "status_owner"
   },
   {
+   "path": "00_META/internal_answers/EmergentistAnswerSet.v1.json",
+   "sha256": "6740318328462043d5f5de14a6e539a421b35ebfbffbe8060022e12f7c4e8c89",
+   "role": "machine_support"
+  },
+  {
    "path": "00_THE_WELTANSCHAUUNG.md",
-   "sha256": "ce4234f1c0c81e1bf13e7b65c5a19d39f928641949e41e59fea1885cd0ec3610",
+   "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
    "role": "semantic_owner"
   },
   {
@@ -228,12 +233,12 @@
   },
   {
    "path": "05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md",
-   "sha256": "59f8af6ec03d80f0ef9b81d93887b39998937ed63a860690965152a1ad592426",
+   "sha256": "8ecde9ebc5f5beba7cf620e9f66a1850fcc39c964ee9747991bb3be04ed0297c",
    "role": "conjecture_owner"
   },
   {
    "path": "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json",
-   "sha256": "09b2c5700a20fd2d90ad0c2dc11999ad048faea0baf6ce08ac327809a9c1ddb6",
+   "sha256": "97f5cd788fd56e6da4da49c2e11b61b5533a69c1d65a3a31477c7e7c5a9f1d54",
    "role": "conjecture_owner"
   },
   {
@@ -277,6 +282,11 @@
    "role": "proof_attempt"
   },
   {
+   "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md",
+   "sha256": "d896be50ad4077b8a806add6c046c68c821dd27b9328819fa6630745011e36e6",
+   "role": "research_boundary"
+  },
+  {
    "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md",
    "sha256": "ae006ae0531e056fe5126d60fd728d0a0c5ab1751faabcf74b7f91bab4cf56ed",
    "role": "formal_owner"
@@ -313,8 +323,13 @@
   },
   {
    "path": "06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md",
-   "sha256": "45f5b432d3c0855bff99e716f37077685fc105ae2c5703332e9eec83e9ab5515",
+   "sha256": "b8ac6dcd6ccd29f1b16a55bd877053e63bc2a8853c18e73146e158ae84696a11",
    "role": "conjecture_owner"
+  },
+  {
+   "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+   "sha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+   "role": "semantic_owner"
   },
   {
    "path": "07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md",
@@ -324,6 +339,11 @@
   {
    "path": "09_TOOLS/03_SIMULATIONS/formal_reap/PROOF_LEDGER.md",
    "sha256": "fdff1170bf31b9aba1b41e019682d354e65d23e5d97b93072506aaa447f15a9c",
+   "role": "machine_support"
+  },
+  {
+   "path": "09_TOOLS/01_SCRIPTS/check_emergentist_answer_set.py",
+   "sha256": "b76bcafd6b2d947bb2e4265f5c95532d5418f091234f362d2ed682cca263ca29",
    "role": "machine_support"
   },
   {
@@ -749,9 +769,9 @@
    "target_entry_ids": [
     "W7-ORIGIN"
    ],
-   "outcome": "The three-branch F5 fork is typed; no branch has received empirical support from this filing.",
+   "outcome": "The F5 fork is typed: F5-W0 is an ordinary floor contained within F5-N, F5-W+ is the incremental noetic wager, and F5-R is the physical future-boundary wager. No incremental branch has received empirical support from this filing.",
    "rival": "Standard control, agency, selection, verification, time-symmetric redescription, common cause, postselection, and accepted physical dynamics.",
-   "discriminator": "Branch-specific contact: present-content intervention for F5-W and a preregistered later-boundary residual with an exact law for F5-R.",
+   "discriminator": "Branch-specific contact: present-content intervention beyond rich planning controls for F5-W+, and a preregistered later-boundary residual with an exact law for F5-R.",
    "kill": "No incremental present-model effect kills the distinct F5-W capacity; no exact law fails F5-R admission; a preregistered null kills the promised F5-R parameter or range.",
    "survivor": "Ordinary anticipation, verification practice, the D4/D5 distinction, and the separately chosen option ethic.",
    "relations": [
@@ -782,7 +802,7 @@
    ],
    "owner_path": "05_COSMOLOGY/02_EMERGENTISM_CORE/F5Fork.v1.json",
    "partition": "live",
-   "summary": "Machine-bound three-branch F5 contract: present-model floor, no-additional-interaction null, and future-boundary/history-selection wager, with independent multiverse, entropy, and teleology propositions.",
+   "summary": "Machine-bound F5 contract: ordinary present-model floor F5-W0 contained within F5-N, incremental noetic wager F5-W+, no-additional-interaction null, and future-boundary/history-selection wager, with independent multiverse, entropy, and teleology propositions.",
    "target_entry_ids": [
     "F5-DYNAMICS",
     "W14-W18",
@@ -807,6 +827,35 @@
      "target": "W19-BALANCE"
     }
    ]
+  },
+  {
+   "entry_id": "EAS-10",
+   "source_ids": [
+    "EA-01",
+    "EA-02",
+    "EA-03",
+    "EA-04",
+    "EA-05",
+    "EA-06",
+    "EA-07",
+    "EA-08",
+    "EA-09",
+    "EA-10"
+   ],
+   "kind": "MODEL",
+   "lifecycle": "active",
+   "evidence_tier": "[D/S/A/I/C/B] per atom",
+   "validation_status_ref": [],
+   "owner_path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+   "partition": "live",
+   "summary": "One additive layer of ten owner-adopted internal Emergentist answers, each retaining its own tier, native owner, rival, discriminator, kill, survivor, and residual.",
+   "target_entry_ids": [],
+   "outcome": "OWNER_ADOPTED_INTERNAL; local Rosetta review passed. Empirical contact, PQA adjudication, independent validation, and publication are not advanced.",
+   "rival": "Keep the ten questions open internally because the selected answers add no orientation or discrimination beyond native theories and practices.",
+   "discriminator": "Test each answer independently against its named rival and kill while verifying that adoption, review, contact, PQA, and publication never collapse into one status.",
+   "kill": "Downgrade or retire the smallest failed answer atom; kill the layer if it hides residuals, inflates adoption into truth, or prevents independent failure.",
+   "survivor": "Native source owners, questions, typed distinctions, explicit debts, PQA launch state, and Exit survive the death of any or all answers.",
+   "relations": []
   },
   {
    "entry_id": "POWER-MAX",
@@ -1159,9 +1208,9 @@
    "validation_status_ref": [],
    "owner_path": "06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md",
    "partition": "live",
-   "summary": "Burri Strong-Lift / Weak-Projection proposal: strong relative to a frozen lower description, weak as declared higher-to-lower recovery.",
+   "summary": "Burri Strong-Lift / Weak-Projection proposal: TEA-01 proves the relative formal asymmetry under type-extension premises; each natural crossing remains a modular conjecture.",
    "target_entry_ids": [],
-   "outcome": "OPEN universal and crossing-specific conjecture; no W19 and no canonical claim-status row.",
+   "outcome": "RELATIVE_TYPE_ASYMMETRY_PROVEN by TEA-01; NATURAL_STRONG_EMERGENCE_OPEN per crossing; no W19 and no canonical claim-status row.",
    "rival": "Fully reducible many-to-one coarse-graining and crossings lacking effective novelty or recovery.",
    "discriminator": "Per crossing: frozen lower description, novelty, recovery map, reduction test, held-out prediction, and kill.",
    "kill": "A formal reduction kills a strong leg; failed recovery kills a weak-projection leg; one counterexample kills the universal form.",
@@ -1179,9 +1228,40 @@
      "type": "supported_as_analogy_by",
      "target": "BIL-01"
     },
+   {
+    "type": "tested_by",
+    "target": "PA-SLWP-01"
+    },
     {
-     "type": "tested_by",
-     "target": "PA-SLWP-01"
+     "type": "has_relative_theorem",
+     "target": "TEA-01"
+    }
+   ]
+  },
+  {
+   "entry_id": "TEA-01",
+   "source_ids": [
+    "TEA-01"
+   ],
+   "kind": "FORMAL_RESULT",
+   "lifecycle": "active",
+   "evidence_tier": "[A]",
+   "validation_status_ref": [],
+   "owner_path": "06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md",
+   "partition": "live",
+   "summary": "Type-Extension Asymmetry Theorem: a primitive type absent from a frozen lower grammar is non-denotable there, while a total forgetful map can recover the lower model from the extended model.",
+   "target_entry_ids": [
+    "SLWP-01"
+   ],
+   "outcome": "RELATIVE_TYPE_ASYMMETRY_PROVEN; no natural, ontological, causal, temporal, or D-level assignment follows without separately earning the premises.",
+   "rival": "The lower grammar was unfairly impoverished, the new type is definable under an admissible reduction, or no valid forgetful recovery map exists.",
+   "discriminator": "Freeze the lower grammar and admissible reductions before adding the type; prove non-denotability and demonstrate total lower-observable recovery under the declared map.",
+   "kill": "A term in the frozen grammar denoting the purported new type kills StrongUp; failed preservation of lower interpretations kills WeakDown; either failure blocks a natural application.",
+   "survivor": "The theorem remains valid under its explicit premises even if every proposed natural crossing fails to instantiate them.",
+   "relations": [
+    {
+     "type": "formalizes_relative_scope_of",
+     "target": "SLWP-01"
     }
    ]
   },
@@ -1573,5 +1653,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "ad21da9c64390ff46d0dbfd17bf41bcc3d3567455d9cf1d499c412e228ccc155"
+ "inventory_digest": "84dc1e5b0241d96c58ae0356dfa5eb561dc23845fc00e29baafa66a1f54f8dce"
 }
