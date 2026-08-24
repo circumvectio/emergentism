@@ -1,6 +1,6 @@
 ---
 title: "The D5 Rosetta Stone — G7"
-status: "ACTIVE D5 ROSETTA / GAME-VOCABULARY OWNER — Φ₅/V₄ typing amended 2026-07-27"
+status: "ACTIVE D5 ROSETTA / GAME-VOCABULARY OWNER — signature/verdict split reaffirmed 2026-08-24"
 date: 2026-07-27
 evidence_tier: "[S] closure inside the declared vocabulary; [I] names and readings; [C] adequacy beyond the game"
 supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md"
@@ -46,7 +46,7 @@ The vocabulary has:
 
 ```text
 M4 = four mixed-sign transfers over (Φ₅,V₄)
-   = two demon-polar taking forms + two god-polar giving forms
+   = two taking forms + two giving forms
 F3 = three same-sign/hold Titan-frame projections
 G7 = M4 ⊎ F3.
 ```

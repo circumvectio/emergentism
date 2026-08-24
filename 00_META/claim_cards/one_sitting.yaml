@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54",
+    "reviewed_source_sha256": "2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -141,6 +141,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "means and ends remain bearer-horizon typed; Amrita and Halahala are proposed classifications rather than tiers; PQA remains 54/0/0/0",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"
+      },
+      {
+        "date": "2026-08-24",
+        "act": "locate the four M4 sectors on the bottom action plane, reserve the world-vertical axis for F3, and prevent the rising sphere path from carrying transfers",
+        "prior_hash": "f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "M4 bottom-plane placement and F3 vertical-axis placement are explicit [I]; sphere territories and path-borne transfers are barred",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md"
       }
     ]
   },
@@ -1537,22 +1546,22 @@
         "line_start": 691,
         "line_end": 704,
         "anchor": "The source of G7's seven is operational. Inside the selected vocabulary,",
-        "fingerprint_sha256": "81572c87610e88ed45c9c300aac1e987ab067b9f8e11ee3c349f2005e7b1ae88"
+        "fingerprint_sha256": "993e3bb16db547614f2fa81d02eea612ef639fc682fbc2b3f175c3c13e231a90"
       },
-      "plain_claim": "G7 closes as four bearer-oriented transfers plus three Titan frames; the Burrisphere projects those seven as four quadrants plus a bottom-centre-top Titan axis, while the separate L1-L7 mirror ladder is not G7.",
+      "plain_claim": "G7 closes as four bearer-oriented transfers plus three Titan frames; the Burrisphere projects M4 as four coplanar bottom-action sectors and F3 as a separate bottom-centre-top Titan axis, while the L1-L7 mirror ladder is not G7.",
       "claim_type": "interpretation_vow",
       "evidence": [{"tier": "S", "scope": "closure inside the selected G7 vocabulary"}, {"tier": "I", "scope": "ego-collective gloss and Burrisphere layout"}, {"tier": "A", "scope": "mirror-ladder sine values only after seven stations are selected"}],
       "dependencies": ["OS01-11", "OS01-12"],
       "docket_ids": ["A1", "A2"],
-      "type_boundaries": ["G7@1 is not GEN7@1; Burrisphere G7 is 4 quadrants plus 3 axial frames, not the separate 3+1+3 mirror ladder; lowercase phi/nu are not uppercase Phi/V"],
+      "type_boundaries": ["G7@1 is not GEN7@1; Burrisphere M4 is four coplanar bottom-action sectors, never longitudinal sphere territories; F3 alone is the three-station world-vertical axis; lowercase phi/nu are not uppercase Phi/V"],
       "strongest_rival": "The quadrant-and-axis picture adds no explanatory value beyond the typed G7 table, while the shared count is inherited rather than convergent evidence.",
       "discriminator": "Readers and implementations must recover all four bearer-indexed transfers, all three frames, both non-identities, and no proof transfer without relying on color or aliases.",
-      "kill_criterion": "Kill the projection if it collapses the two sevenfold structures, treats the sphere as independently generating seven, or obscures bearer direction and Titan-frame status.",
+      "kill_criterion": "Kill the projection if it collapses the two sevenfold structures, puts M4 on the sphere surface, treats the sphere as generating seven, or obscures bearer direction and Titan-frame status.",
       "survivor_if_killed": "G7's typed 4+3 vocabulary, the separate mirror-ladder chart facts, and their separately preserved evidence tiers.",
       "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The geometry is a removable reader projection."},
       "disposition": "restate",
-      "public": {"state": "bounded_current", "wording": "[S] G7 selects four bearer-oriented transfers plus three Titan frames; an [I] Burrisphere projection renders them as four quadrants plus the Śiva–Viṣṇu–Brahmā axis. The separate GEN7@1 3+1+3 mirror ladder is not G7; its sine values are [A] only after seven stations are selected [S]."},
-      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "public": {"state": "bounded_current", "wording": "[S] G7 selects four bearer-oriented transfers plus three Titan frames. The [I] Burrisphere places M4 in four sectors on one bottom action plane and F3 on the Śiva–Viṣṇu–Brahmā vertical axis; it never turns M4 into sphere territories. GEN7@1 remains a separate selected ladder."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md", "00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md"]},
       "semantic_owner_id": "K-1",
       "supporting_owner_ids": ["K-2", "K-3"]
     },
@@ -1564,22 +1573,22 @@
         "line_start": 706,
         "line_end": 719,
         "anchor": "The public Burrisphere adds a selected display itinerary `[I]`: a winding path",
-        "fingerprint_sha256": "ee8e9e2966e8ecd5cda603cea8706959a4009d11a7c63638d520e249ff5c30e6"
+        "fingerprint_sha256": "16d8b0a78b26353e37d93233d6b31b94ecef9848ab72bc98f80c6857519b8d17"
       },
-      "plain_claim": "The Burrisphere may display the four typed transfers on one selected 360-degree ascent around the stationary Titan axis, provided the path remains a non-temporal reading itinerary rather than a G7 state or physical dynamic.",
+      "plain_claim": "The Burrisphere may display one selected 360-degree ascent around the stationary Titan axis while a lower-plane phase trace traverses four coplanar M4 sectors; the rising path itself carries no transfer and is not time or physical dynamics.",
       "claim_type": "interpretation_vow",
       "evidence": [{"tier": "I", "scope": "one-turn display path, phase order, and ego-collective gloss"}, {"tier": "S", "scope": "inherited full G7 transfer signatures and frame-transfer separation"}],
       "dependencies": ["OS01-33"],
       "docket_ids": ["A1", "A2"],
-      "type_boundaries": ["the winding path carries four transfers while the axis carries three non-transfer frames", "bare ego-collective signs do not recover M4; full bearer and Phi5/V4 channel signs are mandatory", "one turn is not time, recurrence, value ascent, physical dynamics, causation, or a derivation of seven"],
+      "type_boundaries": ["the bottom action plane carries four transfers while the world-vertical axis carries three non-transfer frames; the sphere path carries no transfer", "lower-chart co-location is not identity and nu is not V4", "bare ego-collective signs do not recover M4; full bearer and Phi5/V4 channel signs are mandatory", "one turn is not time, recurrence, value ascent, physical dynamics, causation, or a derivation of seven"],
       "strongest_rival": "A static quadrant table and stationary axis communicate G7 more accurately, while a winding path invites false dynamics and hierarchy.",
-      "discriminator": "Without relying on animation or color, readers and implementations must recover all four typed signatures, distinguish path from axis, and reject chronological, causal, recurrent, and moral-ascent readings.",
-      "kill_criterion": "Remove the winding path if it persistently collapses the channels into bare ego-collective signs, turns frames into moves, or implies physical dynamics, chronology, recurrence, moral rank, or geometry-generated seven.",
+      "discriminator": "Without relying on animation or color, readers and implementations must recover all four typed bottom-plane signatures, distinguish phase trace from sphere path and Titan axis, and reject chronological, causal, recurrent, and moral-ascent readings.",
+      "kill_criterion": "Remove the winding path if it carries M4 up the sphere, collapses channels into bare ego-collective signs, turns frames into moves, or implies physical dynamics, chronology, recurrence, moral rank, or geometry-generated seven.",
       "survivor_if_killed": "The typed G7 4+3 vocabulary, the stationary bottom-centre-top frame axis, and the removable flat quadrant projection.",
       "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The display path is optional and removable."},
       "disposition": "restate",
-      "public": {"state": "bounded_current", "wording": "[I] One selected 360-degree path winds from the Śiva bottom latitude past the Viṣṇu centre latitude to the Brahmā top latitude and encounters all four fully typed G7 transfer sectors. It is a reading itinerary, not time, recurrence, moral ascent, physics, causation, or a source of seven."},
-      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md"]},
+      "public": {"state": "bounded_current", "wording": "[I] One selected 360-degree sphere path rises along the Titan axis while its bottom-plane phase trace traverses the four fully typed M4 sectors. The path carries no transfer and is not time, recurrence, moral ascent, physics, causation, or a source of seven."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md", "00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md"]},
       "semantic_owner_id": "K-1",
       "supporting_owner_ids": ["K-2", "K-3"]
     },

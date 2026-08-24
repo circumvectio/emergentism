@@ -691,10 +691,10 @@ its own explanatory debt, rival, discriminator, and possible failure.
 The source of G7's seven is operational. Inside the selected vocabulary,
 `G7=M4⊎F3`: four bearer-oriented self↔other transfers plus three Titan-frame
 classes `[S]`. The owner's ego↔collective reading of the bearer direction is an
-interpretive gloss `[I]`. The v2.1 Burrisphere then projects the same classes as
-four quadrant positions and a three-station axis: Śiva `•`—dissolution at
-the bottom, Viṣṇu `⊙`—preservation at the centre-unit marker `1_T`, and
-Brahmā `○`—creation at the top `[I]`.
+interpretive gloss `[I]`. The Burrisphere places M4 on one bottom
+action/projection plane: its four sectors are coplanar, not longitudinal
+sphere territories. F3 alone occupies the world-vertical axis: Śiva `•` at
+bottom, Viṣṇu `⊙` at centre-unit marker `1_T`, and Brahmā `○` at top `[I]`.
 
 That Burrisphere projection does not independently generate or confirm seven.
 The separate `GEN7@1` L1–L7 meridian mirror ladder can be grouped `3+1+3`; its
@@ -706,17 +706,17 @@ uppercase D5/D4 powers `Φ₅,Φ̂₄,V₄`.
 The public Burrisphere adds a selected display itinerary `[I]`: a winding path
 rises from the Śiva bottom station to the Brahmā top station while completing
 one `360°` turn around the Titan axis; Viṣṇu `1_T` marks its centre latitude.
-The path encounters all four transfer sectors in a displayed reading order.
-“Ego/collective `+` and `−`” is shorthand for self/other bearer orientation
-together with the specific signed `Φ₅` or `V₄` change. Bare ego/collective
-signs are insufficient: they would merge Taking-A with Taking-B and Giving-A
-with Giving-B.
-
-The axis carries three frames; the winding path carries four transfers. The
-path is not a continuous G7 state and does not turn a frame into a move. Its
-one-turn phase and direction are selected visualization choices, not time,
+Its lower-plane phase trace traverses the four coplanar M4 sectors in a selected
+reading order; the rising sphere path itself carries no transfer. Co-location
+with the lower `ν` chart is selected `[I]`, not identity: `ν≠V₄`.
+“Ego/collective `+` and `−`” keeps the specific self/other bearer and signed
+`Φ₅` or `V₄` channel; bare signs would collapse the four transfers into two.
+The Titan axis carries three frames; the bottom plane carries four transfers.
+Neither the sphere path nor its phase trace is a continuous G7 state or turns
+a frame into a move. Phase and direction are visualization choices, not time,
 recurrence, moral ranking, developmental necessity, physical dynamics, causal
 mechanism, or a geometric derivation of seven.
+The display remains removable without altering the typed G7 vocabulary.
 
 The figure may place a second, explicitly distinct spectrum beside that display.
 On the positive reciprocal chart, the limits run from `ν→∞, φ→0` through
