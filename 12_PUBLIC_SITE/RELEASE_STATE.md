@@ -13,6 +13,43 @@ may_authorize: false
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
 
+## Current v2.1 Burrisphere release — 2026-08-25
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `7c6eacf82771f4dfefb22bba3cb37677bf99095b` — bottom-plane ontology, refined full-screen Burrisphere instrument, semantic QA, and regenerated public artifacts | clean `HEAD`, explicit-path commits, and upstream equality before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream | local and upstream commit identity |
+| **immutable artifact** | `dpl_A9563suMqhY5fLwFXo7nEvGqh4ws` · `emergentism-4k0m4zd65-yves-projects-c163dce1.vercel.app` · `READY` | pinned Vercel project/team, held deployment, immutable strict audit, and byte-hash witnesses |
+| **predecessor** | `dpl_HhKjVdKm5oKWFXjdmZfvenRCM2hb` · `emergentism-84ez38cwz-yves-projects-c163dce1.vercel.app` | observed before staging and rechecked before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` identity and critical-hash verification |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **release receipt** | receipt integrity field `3fdff3e75bb66b0d938efc6a742938d378dabe3adb07b7bb9066059e005837a2`; external JSON file SHA-256 `03ac01fc3c1e284fa564a26aac1b6a1a9b6781e1523e99b0561fc2f31e33348f` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization |
+
+The frozen public payload contains **300 files** and **8,979,014 bytes**, with
+manifest SHA-256
+`652e63b599f77785f2e0d37c6cb874559ad8e5053073f926b0e56a3260294eba`. <!-- pragma: allow-secret -- manifest digest -->
+The reviewed Vercel-link SHA-256 remained
+`d136f60e3b6c40c01cf8ba76a72ed4ea3c50f7519acf78e205b8b74dd5dee746`. <!-- pragma: allow-secret -- link digest -->
+Preparation passed the release wrapper's predeploy and deterministic-artifact
+gates. The held immutable artifact passed **724/724** public probes,
+**74/74** reading-manifest document probes, the historical no-store/noindex
+boundary, and all **14** sampled served hashes before promotion.
+
+After promotion, both `https://emergentism.org/` and
+`https://www.emergentism.org/` independently passed the same **724/724** route
+and **74/74** reading-manifest checks, with all 14 sampled hashes matching the
+frozen artifact. The homepage SHA-256 was
+`136ad4b48542e6c856a93e5b413e6738accb342be24ddca65693008a95fda351`, <!-- pragma: allow-secret -- served digest -->
+and the full-screen Burrisphere instrument SHA-256 was
+`967c7f9d34d439e6d329427547c0b67ba1d84a434e7bc121a28ef41d8bc73968` <!-- pragma: allow-secret -- served digest -->
+on local and immutable bytes.
+
+Federation replay remained `metadata_only_explicit`, and
+`external_validation=false`. The release publishes the typed Burrisphere model
+and instrument; it does not prove that the geometry exhausts game theory,
+establish its selected interpretation as nature's own decomposition, or
+validate Emergentism or any physical conjecture.
+
 ## Current v2.1 decision-transaction release — 2026-08-24
 
 | State | Value | How measured |
