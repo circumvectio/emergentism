@@ -12,7 +12,7 @@
 
   var css = [
     "#atlas-fab{position:fixed;right:18px;bottom:18px;z-index:9000;background:" + INK + ";color:" + CREAM + ";",
-    "border:1px solid rgba(255,235,59,.55);border-radius:999px;padding:10px 16px;font:600 13px/1 'Roboto','Noto Sans',sans-serif;",
+    "min-width:48px;min-height:48px;border:1px solid rgba(255,235,59,.55);border-radius:999px;padding:10px 16px;font:600 13px/1 'Roboto','Noto Sans',sans-serif;",
     "letter-spacing:0;cursor:pointer;opacity:.92}",
     "#atlas-fab:hover{background:" + GOLD + ";color:" + INK + "}",
     "#atlas-panel{position:fixed;top:0;right:0;bottom:0;width:min(380px,92vw);z-index:9001;background:rgba(5,5,5,.97);",
@@ -22,17 +22,17 @@
     "#atlas-panel.open{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;transition:clip-path .22s ease,opacity .22s ease}",
     "#atlas-head{display:flex;gap:8px;align-items:center;padding:14px 14px 10px}",
     "#atlas-head b{color:" + GOLD + ";font-size:13px;letter-spacing:0}",
-    "#atlas-close{margin-left:auto;background:none;border:0;color:" + CREAM + ";font-size:18px;cursor:pointer;opacity:.7}",
+    "#atlas-close{margin-left:auto;min-width:48px;min-height:48px;background:none;border:0;color:" + CREAM + ";font-size:18px;cursor:pointer;opacity:.7}",
     "#atlas-close:hover{opacity:1;color:" + GOLD + "}",
-    "#atlas-q{margin:0 14px 10px;padding:9px 12px;background:#111;border:1px solid #333;border-radius:8px;color:" + CREAM + ";",
+    "#atlas-q{min-height:48px;margin:0 14px 10px;padding:9px 12px;background:#111;border:1px solid #333;border-radius:8px;color:" + CREAM + ";",
     "font:400 13px/1.2 'Roboto Mono',monospace;outline:none}",
     "#atlas-q:focus{border-color:" + GOLD + "}",
     "#atlas-tree{overflow-y:auto;padding:0 8px 20px;flex:1}",
     "#atlas-tree details{margin:2px 6px}",
-    "#atlas-tree summary{cursor:pointer;padding:6px 8px;font-size:12.5px;letter-spacing:0;color:#cfcab0;list-style:none}",
+    "#atlas-tree summary{display:flex;align-items:center;min-height:48px;cursor:pointer;padding:6px 8px;font-size:12.5px;letter-spacing:0;color:#cfcab0;list-style:none}",
     "#atlas-tree summary::before{content:'▸ ';color:" + GOLD + "}",
     "#atlas-tree details[open]>summary::before{content:'▾ '}",
-    "#atlas-tree a{display:block;padding:5px 10px 5px 24px;font-size:13px;color:" + CREAM + ";text-decoration:none;",
+    "#atlas-tree a{display:flex;align-items:center;min-height:48px;padding:5px 10px 5px 24px;font-size:13px;color:" + CREAM + ";text-decoration:none;",
     "border-left:1px solid #2a2a2a;margin-left:12px;opacity:.85}",
     "#atlas-tree a:hover{color:" + GOLD + ";opacity:1}",
     "#atlas-tree a.atlas-here{color:" + GOLD + ";border-left-color:" + GOLD + ";opacity:1}",
@@ -65,6 +65,8 @@
   fab.type = "button";
   fab.setAttribute("aria-label", "Open the corpus atlas");
   fab.setAttribute("title", "Open the corpus atlas");
+  fab.setAttribute("aria-controls", "atlas-panel");
+  fab.setAttribute("aria-expanded", "false");
   fab.textContent = "☰ ATLAS";
   var bookbarNav = document.querySelector(".bookbar nav");
   (bookbarNav || document.body).appendChild(fab);
@@ -72,6 +74,7 @@
   var panel = document.createElement("aside");
   panel.id = "atlas-panel";
   panel.setAttribute("aria-label", "Corpus atlas tree");
+  panel.setAttribute("aria-hidden", "true");
   panel.innerHTML =
     '<div id="atlas-head"><b>EMERGENTISM · ATLAS</b>' +
     '<button id="atlas-close" type="button" aria-label="Close">×</button></div>' +
@@ -83,6 +86,7 @@
   var treeEl = panel.querySelector("#atlas-tree");
   var countEl = panel.querySelector("#atlas-count");
   var qEl = panel.querySelector("#atlas-q");
+  qEl.setAttribute("aria-label", "Search the corpus atlas");
   var here = location.pathname.replace(/index\.html$/, "");
 
   function band(label, note) {
@@ -175,13 +179,24 @@
     });
   }
 
-  function openPanel() { panel.classList.add("open"); load(); qEl.focus(); }
-  function closePanel() { panel.classList.remove("open"); }
+  function openPanel() {
+    panel.classList.add("open");
+    panel.setAttribute("aria-hidden", "false");
+    fab.setAttribute("aria-expanded", "true");
+    load();
+    qEl.focus();
+  }
+  function closePanel(restoreFocus) {
+    panel.classList.remove("open");
+    panel.setAttribute("aria-hidden", "true");
+    fab.setAttribute("aria-expanded", "false");
+    if (restoreFocus) fab.focus();
+  }
 
   fab.addEventListener("click", openPanel);
-  panel.querySelector("#atlas-close").addEventListener("click", closePanel);
+  panel.querySelector("#atlas-close").addEventListener("click", function () { closePanel(true); });
   qEl.addEventListener("input", function () { render(qEl.value); });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closePanel();
+    if (e.key === "Escape" && panel.classList.contains("open")) closePanel(true);
   });
 })();

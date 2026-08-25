@@ -14,7 +14,7 @@
   /* ---------- styles ---------- */
   var css = [
     "#ask-fab{position:fixed;left:18px;bottom:18px;z-index:9000;background:" + INK + ";color:" + CREAM + ";",
-    "border:1px solid rgba(255,235,59,.55);border-radius:999px;padding:10px 16px;font:600 13px/1 'Roboto','Noto Sans',sans-serif;",
+    "min-width:48px;min-height:48px;border:1px solid rgba(255,235,59,.55);border-radius:999px;padding:10px 16px;font:600 13px/1 'Roboto','Noto Sans',sans-serif;",
     "letter-spacing:0;cursor:pointer;opacity:.92}",
     "#ask-fab:hover{background:" + GOLD + ";color:" + INK + "}",
     "#ask-panel{position:fixed;top:0;left:0;bottom:0;width:min(440px,94vw);z-index:9001;background:rgba(5,5,5,.97);",
@@ -24,7 +24,7 @@
     "#ask-panel.open{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto;transition:clip-path .22s ease,opacity .22s ease}",
     "#ask-head{display:flex;gap:8px;align-items:center;padding:14px 14px 8px}",
     "#ask-head b{color:" + GOLD + ";font-size:13px;letter-spacing:0}",
-    "#ask-head button{margin-left:auto;background:none;border:0;color:" + CREAM + ";font-size:16px;cursor:pointer;opacity:.7}",
+    "#ask-head button{margin-left:auto;min-width:48px;min-height:48px;background:none;border:0;color:" + CREAM + ";font-size:16px;cursor:pointer;opacity:.7}",
     "#ask-head button:hover{opacity:1;color:" + GOLD + "}",
     "#ask-mode{padding:0 16px 8px;font:400 11px/1.4 'Roboto Mono',monospace;color:#8a8568}",
     "#ask-log{flex:1;overflow-y:auto;padding:6px 16px}",
@@ -38,10 +38,10 @@
     ".ask-src small{display:block;color:#8a8568;font-size:11.5px;margin-top:2px}",
     "#ask-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid #222}",
     "#ask-in{flex:1;padding:10px 12px;background:#111;border:1px solid #333;border-radius:8px;color:" + CREAM + ";",
-    "font:400 14px/1.3 'Roboto','Noto Sans',sans-serif;outline:none}",
+    "min-height:48px;font:400 14px/1.3 'Roboto','Noto Sans',sans-serif;outline:none}",
     "#ask-in:focus{border-color:" + GOLD + "}",
-    "#ask-go{background:" + GOLD + ";color:" + INK + ";border:0;border-radius:8px;padding:0 16px;font-weight:700;cursor:pointer}",
-    ".expand-btn{display:inline-block;margin:6px 0 0 8px;padding:3px 10px;border:1px solid rgba(255,235,59,.4);",
+    "#ask-go{min-width:48px;min-height:48px;background:" + GOLD + ";color:" + INK + ";border:0;border-radius:8px;padding:0 16px;font-weight:700;cursor:pointer}",
+    ".expand-btn{display:inline-grid;place-items:center;min-width:48px;min-height:48px;margin:6px 0 0 8px;padding:7px 12px;border:1px solid rgba(255,235,59,.4);",
     "border-radius:999px;background:none;color:" + GOLD + ";font:600 11px/1.4 'Roboto','Noto Sans',sans-serif;",
     "letter-spacing:0;cursor:pointer;vertical-align:middle;opacity:.75}",
     ".expand-btn:hover{opacity:1;background:rgba(255,235,59,.12)}",
@@ -114,6 +114,8 @@
   fab.type = "button";
   fab.setAttribute("aria-label", "Ask the book");
   fab.setAttribute("title", "Ask the book");
+  fab.setAttribute("aria-controls", "ask-panel");
+  fab.setAttribute("aria-expanded", "false");
   fab.textContent = "✦ ASK THE BOOK";
   var bookbarNav = document.querySelector(".bookbar nav");
   var atlasFab = document.getElementById("atlas-fab");
@@ -126,6 +128,7 @@
   var panel = document.createElement("aside");
   panel.id = "ask-panel";
   panel.setAttribute("aria-label", "Ask the book — corpus chat");
+  panel.setAttribute("aria-hidden", "true");
   document.body.appendChild(panel);
 
   var head = document.createElement("div"); head.id = "ask-head";
@@ -135,11 +138,12 @@
   panel.appendChild(head);
 
   var modeEl = document.createElement("div"); modeEl.id = "ask-mode"; panel.appendChild(modeEl);
-  var log = document.createElement("div"); log.id = "ask-log"; panel.appendChild(log);
+  var log = document.createElement("div"); log.id = "ask-log"; log.setAttribute("role", "log"); log.setAttribute("aria-live", "polite"); panel.appendChild(log);
 
   var form = document.createElement("form"); form.id = "ask-form";
   var input = document.createElement("input"); input.id = "ask-in"; input.type = "text";
   input.placeholder = "ask the weltanschauung…"; input.autocomplete = "off";
+  input.setAttribute("aria-label", "Ask the book");
   var go = document.createElement("button"); go.id = "ask-go"; go.type = "submit"; go.textContent = "ASK";
   form.appendChild(input); form.appendChild(go);
   panel.appendChild(form);
@@ -188,9 +192,22 @@
     });
   });
 
-  fab.addEventListener("click", function () { panel.classList.add("open"); loadIndex(); input.focus(); });
-  x.addEventListener("click", function () { panel.classList.remove("open"); });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape") panel.classList.remove("open"); });
+  function setPanelOpen(open, restoreFocus) {
+    panel.classList.toggle("open", open);
+    panel.setAttribute("aria-hidden", String(!open));
+    fab.setAttribute("aria-expanded", String(open));
+    if (open) {
+      loadIndex();
+      input.focus();
+    } else if (restoreFocus) {
+      fab.focus();
+    }
+  }
+  fab.addEventListener("click", function () { setPanelOpen(true, false); });
+  x.addEventListener("click", function () { setPanelOpen(false, true); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && panel.classList.contains("open")) setPanelOpen(false, true);
+  });
 
   /* ---------- per-section expansion (book page only) ---------- */
   if (!onBookPage) return;
@@ -222,7 +239,7 @@
     });
   }
 
-  Array.prototype.slice.call(document.querySelectorAll("h2[id]")).forEach(function (h) {
+  Array.prototype.slice.call(document.querySelectorAll(".ch-body h2[id]")).forEach(function (h) {
     var btn = document.createElement("button");
     btn.className = "expand-btn";
     btn.type = "button";

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#07090f" />
   <meta name="robots" content="index, follow" />
   <title>The Burrisphere Instrument — One sphere, two charts</title>
-  <meta name="description" content="A full-screen, interactive Burrisphere instrument: one point on S² seen through reciprocal stereographic charts from the north and south poles." />
+  <meta name="description" content="A full-screen Burrisphere instrument: one point on S², two reciprocal charts, four sectors on the bottom action plane, and a separate Titan axis." />
   <link rel="canonical" href="https://emergentism.org/burrisphere/instrument/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
@@ -14,7 +14,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Emergentism" />
   <meta property="og:title" content="The Burrisphere Instrument — One sphere, two charts" />
-  <meta property="og:description" content="Move one point across S² and watch its two reciprocal stereographic projections change together." />
+  <meta property="og:description" content="Move one point across S², watch two reciprocal projections, and read a separate four-sector bottom-plane overlay without confusing interpretation for mathematics." />
   <meta property="og:url" content="https://emergentism.org/burrisphere/instrument/" />
   <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 </head>
@@ -22,7 +22,7 @@
   <a class="bi-skip" href="#instrument-controls">Skip to controls</a>
 
   <main class="bi-stage" aria-labelledby="instrument-title">
-    <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. One point on a sphere is projected simultaneously from the north pole to the lower nu chart and from the south pole to the upper phi chart. A separate violet one-turn path shows the selected G7 reading itinerary."></canvas>
+    <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. One point on a sphere is projected simultaneously from the north pole to the lower nu chart and from the south pole to the upper phi chart. Four M4 sectors stay on the bottom action plane. A separate Titan axis runs from Shiva at bottom through Vishnu at centre to Brahma at top, while a violet sphere path supplies only the selected reading phase."></canvas>
 
     <div class="bi-atmosphere" aria-hidden="true"></div>
 
@@ -52,6 +52,10 @@
         <span class="bi-chart-key__line" aria-hidden="true"></span>
         <span><strong>ν chart</strong><small>north pole → lower plane · radius/(2R)=ν</small></span>
       </div>
+      <div class="bi-chart-key__item bi-chart-key__item--titan">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>Titan axis · [I]</strong><small>• Śiva; ⊙ Viṣṇu; ○ Brahmā</small></span>
+      </div>
       <p>Lowercase chart coordinates only: <code>φ≠Φ₅</code> and <code>ν≠V₄</code>.</p>
     </aside>
 
@@ -63,24 +67,24 @@
       <div><span>θ</span><strong id="theta-value">90.0°</strong></div>
     </section>
 
-    <aside class="bi-action-plane" id="phase-readout" aria-label="M4 action plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. Vertical channel runs from Phi five possible or modeled power above to V four actual or embodied power below.">
+    <aside class="bi-action-plane" id="phase-readout" aria-label="M4 bottom action plane. Four coplanar sectors sit on the lower projection plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. The in-plane channel direction runs from Phi five possible or modeled power above to V four actual or embodied power below.">
       <div class="bi-action-plane__current">
-        <span class="bi-phase__index">M4 action plane · 01 · [I]</span>
+        <span class="bi-phase__index">M4 bottom action plane · 01 · [I]</span>
         <strong>Taking-A</strong>
       </div>
       <div class="bi-action-plane__map">
         <span class="bi-action-plane__axis bi-action-plane__axis--top">Φ₅ · possible / model</span>
         <span class="bi-action-plane__axis bi-action-plane__axis--left">self / individual · taking</span>
         <div class="bi-action-plane__grid" role="list" aria-label="Four bearer-oriented transfer sectors">
-          <div class="bi-action-plane__cell is-active" role="listitem" data-phase="0" aria-current="true"><strong>Taking-A</strong><small>+Φ₅ self · −V₄ other</small></div>
-          <div class="bi-action-plane__cell" role="listitem" data-phase="3"><strong>Giving-B</strong><small>−V₄ self · +Φ₅ other</small></div>
-          <div class="bi-action-plane__cell" role="listitem" data-phase="1"><strong>Taking-B</strong><small>+V₄ self · −Φ₅ other</small></div>
-          <div class="bi-action-plane__cell" role="listitem" data-phase="2"><strong>Giving-A</strong><small>−Φ₅ self · +V₄ other</small></div>
+          <div class="bi-action-plane__cell is-active" role="listitem" data-phase="0" aria-current="true"><strong>Taking-A · Kali</strong><small>demon-facing · +Φ₅ self · −V₄ other</small></div>
+          <div class="bi-action-plane__cell" role="listitem" data-phase="3"><strong>Giving-B · Arjuna</strong><small>god-facing · −V₄ self · +Φ₅ other</small></div>
+          <div class="bi-action-plane__cell" role="listitem" data-phase="1"><strong>Taking-B · Kālī</strong><small>demon-facing · +V₄ self · −Φ₅ other</small></div>
+          <div class="bi-action-plane__cell" role="listitem" data-phase="2"><strong>Giving-A · Kṛṣṇa</strong><small>god-facing · −Φ₅ self · +V₄ other</small></div>
         </div>
         <span class="bi-action-plane__axis bi-action-plane__axis--right">giving · other / collective</span>
         <span class="bi-action-plane__axis bi-action-plane__axis--bottom">V₄ · actual / embodied</span>
       </div>
-      <small class="bi-action-plane__fence">selected reading itinerary [I] · bearer direction × raised channel · not time or dynamics · not a moral verdict</small>
+      <small class="bi-action-plane__fence">four sectors on the bottom action plane · selected reading itinerary [I] · not sphere territories · not time or dynamics · not a moral verdict</small>
     </aside>
 
     <section class="bi-console" id="instrument-controls" aria-label="Burrisphere controls" tabindex="-1">
@@ -97,7 +101,7 @@
       <span class="bi-visually-hidden" id="slider-help">Move the shared point from a position toward the south pole, through the equator, and toward the north pole. Use arrow keys for precise movement.</span>
       <div class="bi-actions">
         <button id="motion-toggle" type="button" aria-pressed="true" aria-label="Pause automatic scan"><span class="bi-action-icon" aria-hidden="true">Ⅱ</span><span>Pause scan</span></button>
-        <button id="centre-button" type="button" aria-label="Move the shared point to the equator"><span class="bi-action-icon" aria-hidden="true">⊙</span><span>Centre</span></button>
+        <button id="centre-button" type="button" aria-label="Move the shared point to the balance equator"><span class="bi-action-icon" aria-hidden="true">＝</span><span>Balance</span></button>
         <button id="overlay-toggle" type="button" aria-pressed="true" aria-label="Hide the interpretive G7 action plane and path"><span class="bi-action-icon" aria-hidden="true">⌁</span><span>Hide G7 overlay</span></button>
         <button id="fullscreen-button" type="button" aria-label="Enter full screen"><span class="bi-action-icon" aria-hidden="true">⛶</span><span>Full screen</span></button>
       </div>
@@ -107,7 +111,7 @@
       <summary>What is mathematics—and what is interpretation?</summary>
       <div>
         <p><strong>[A] Inherited mathematics.</strong> Dual stereographic projection on S², the reciprocal identity <code>φν=1</code> for the normalized radial magnitudes away from the poles, and <code>B=1</code> on the equator. The selected south-to-north itinerary has one equatorial crossing; on full S² the maximum locus is the whole equator.</p>
-        <p><strong>[I] Emergentist projection.</strong> The four shaded territories and the violet south-to-north turn display the M4 action plane: self/individual-facing taking ↔ other/collective-facing giving across the Φ₅ possible/model and V₄ actual/embodied channels. They are a selected reading itinerary around the three Titan frames—not a physical trajectory, temporal law, moral ascent, recurrence, or derivation of seven.</p>
+        <p><strong>[I] Emergentist projection.</strong> Four sectors stay on the bottom action plane; they are not sphere territories. The Titan axis is separate: • Śiva; ⊙ Viṣṇu; ○ Brahmā. The violet south-to-north sphere path carries no transfer; its bottom-plane phase trace supplies a selected reading itinerary across self/individual-facing taking ↔ other/collective-facing giving and the Φ₅ possible/model ↔ V₄ actual/embodied channel distinction. This is not a physical trajectory, temporal law, moral ascent, recurrence, or derivation of seven.</p>
         <p><strong>[C] Open wager.</strong> Mapping real strategies, agents, or lives onto this visual requires separate operational definitions and tests. The figure cannot supply those by resemblance.</p>
       </div>
     </details>
@@ -118,6 +122,7 @@
       <div class="bi-fallback__figure" aria-hidden="true"><span>φ</span><i></i><b>⊙</b><i></i><span>ν</span></div>
       <h2>The 3D instrument could not start.</h2>
       <p>The chart remains available without it: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>.</p>
+      <p>The interpretive overlay remains separate: M4 is four coplanar bottom-plane sectors; F3 is the Titan axis with stations •, ⊙, and ○.</p>
       <a href="/burrisphere/">Read the static atlas</a>
     </section>
 
@@ -126,6 +131,7 @@
         <div class="bi-fallback__figure" aria-hidden="true"><span>φ</span><i></i><b>⊙</b><i></i><span>ν</span></div>
         <h2>One point, two reciprocal charts.</h2>
         <p>The animation requires JavaScript, but its claim does not: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>.</p>
+        <p>The selected overlay is also static in meaning: four M4 sectors stay on the bottom plane; the Titan stations •, ⊙, and ○ stay on a distinct axis.</p>
         <a href="/burrisphere/">Read the static atlas</a>
       </section>
     </noscript>

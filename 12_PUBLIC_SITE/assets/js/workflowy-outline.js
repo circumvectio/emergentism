@@ -30,7 +30,7 @@
   var css = [
     "#wf-tab{position:fixed;right:0;top:42%;z-index:8800;writing-mode:vertical-rl;",
     "background:var(--bg2,#111);color:var(--gold,#FFEB3B);border:1px solid rgba(255,235,59,.4);",
-    "border-right:0;border-radius:8px 0 0 8px;padding:14px 7px;font:600 11px/1 'Roboto','Noto Sans',sans-serif;",
+    "min-width:48px;min-height:48px;border-right:0;border-radius:8px 0 0 8px;padding:14px 7px;font:600 11px/1 'Roboto','Noto Sans',sans-serif;",
     "letter-spacing:0;text-transform:uppercase;cursor:pointer}",
     "#wf-tab:hover{background:var(--gold,#FFEB3B);color:var(--bg,#050505)}",
     "#wf-rail{position:fixed;right:0;top:0;bottom:0;width:min(330px,90vw);z-index:8801;",
@@ -41,23 +41,24 @@
     "#wf-rail.open{clip-path:inset(0);opacity:1;visibility:visible;pointer-events:auto}",
     "#wf-head{display:flex;align-items:center;gap:8px;padding:14px 14px 8px}",
     "#wf-head b{color:var(--gold,#FFEB3B);font-size:11px;letter-spacing:0;text-transform:uppercase}",   /* Overline */
-    "#wf-head .wf-x{margin-left:auto;background:none;border:0;color:var(--ink,#FFFDE7);font-size:17px;cursor:pointer;opacity:.6;line-height:1}",
+    "#wf-head .wf-x{margin-left:auto;min-width:48px;min-height:48px;background:none;border:0;color:var(--ink,#FFFDE7);font-size:17px;cursor:pointer;opacity:.6;line-height:1}",
     "#wf-head .wf-x:hover{opacity:1;color:var(--gold,#FFEB3B)}",
     "#wf-crumb{padding:0 14px 6px;font:400 11px/1.4 'Roboto Mono',monospace;color:var(--ink-faint,#8a8568);display:none}",
     "#wf-crumb.show{display:block}",
-    "#wf-crumb a{color:var(--ink-faint,#8a8568);text-decoration:none;cursor:pointer}",
-    "#wf-crumb a:hover{color:var(--gold,#FFEB3B)}",
+    "#wf-crumb a,#wf-crumb button{min-height:48px;color:var(--ink-faint,#8a8568);text-decoration:none;cursor:pointer}",
+    "#wf-crumb button{border:0;background:none;padding:0 8px}",
+    "#wf-crumb a:hover,#wf-crumb button:hover{color:var(--gold,#FFEB3B)}",
     "#wf-tree{flex:1;overflow-y:auto;overflow-x:hidden;padding:2px 8px 28px;scrollbar-width:thin}",
-    ".wf-row{display:flex;align-items:flex-start;gap:5px;border-radius:5px;padding:2px 4px}",
+    ".wf-row{display:flex;align-items:center;min-height:48px;gap:3px;border-radius:5px;padding:2px 4px}",
     ".wf-row:hover{background:var(--bg2,rgba(255,235,59,.06))}",
-    ".wf-caret{flex:none;width:14px;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);font-size:10px;",
+    ".wf-caret{flex:none;width:48px;min-height:48px;padding:0;border:0;background:none;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);font-size:10px;",
     "line-height:1.7;user-select:none}",
     ".wf-caret:hover{color:var(--gold,#FFEB3B)}",
     ".wf-caret.leaf{visibility:hidden}",
-    ".wf-dot{flex:none;width:14px;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);line-height:1.5;font-size:13px}",
+    ".wf-dot{flex:none;width:48px;min-height:48px;padding:0;border:0;background:none;text-align:center;cursor:pointer;color:var(--ink-faint,#8a8568);line-height:1.5;font-size:13px}",
     ".wf-dot:hover{color:var(--gold,#FFEB3B)}",
     ".wf-dot.has-kids{color:var(--ink-soft,#cfcab0)}",
-    ".wf-label{flex:1;cursor:pointer;text-decoration:none;color:var(--ink-soft,#cfcab0);padding:1px 2px;min-width:0;overflow-wrap:anywhere;word-break:break-word}",
+    ".wf-label{flex:1;display:flex;align-items:center;min-height:48px;cursor:pointer;text-decoration:none;color:var(--ink-soft,#cfcab0);padding:1px 2px;min-width:0;overflow-wrap:anywhere;word-break:break-word}",
     ".wf-label:hover{color:var(--ink,#FFFDE7)}",
     ".wf-node.active>.wf-row>.wf-label{color:var(--gold,#FFEB3B)}",
     ".wf-node.active>.wf-row{background:var(--bg2,rgba(255,235,59,.08))}",
@@ -109,15 +110,19 @@
     var row = document.createElement("div"); row.className = "wf-row";
     var hasKids = node.children.length > 0;
 
-    var caret = document.createElement("span");
+    var caret = document.createElement("button");
+    caret.type = "button";
     caret.className = "wf-caret" + (hasKids ? "" : " leaf");
     caret.textContent = collapsed[node.id] ? "▸" : "▾";
+    caret.setAttribute("aria-label", "Toggle " + (node.text || "section") + " subsections");
     row.appendChild(caret);
 
-    var dot = document.createElement("span");
+    var dot = document.createElement("button");
+    dot.type = "button";
     dot.className = "wf-dot" + (hasKids ? " has-kids" : "");
     dot.textContent = "•";
-    dot.title = "zoom in";
+    dot.title = hasKids ? "Zoom into this section" : "Go to this section";
+    dot.setAttribute("aria-label", (hasKids ? "Zoom into " : "Go to ") + (node.text || "section"));
     row.appendChild(dot);
 
     var label = document.createElement("a");
@@ -130,7 +135,10 @@
     var kids = null;
     if (hasKids) {
       kids = document.createElement("div");
+      kids.id = "wf-kids-" + node.id.replace(/[^a-zA-Z0-9_-]/g, "-");
       kids.className = "wf-kids" + (collapsed[node.id] ? " collapsed" : "");
+      caret.setAttribute("aria-controls", kids.id);
+      caret.setAttribute("aria-expanded", String(!collapsed[node.id]));
       node.children.forEach(function (c) { kids.appendChild(renderNode(c)); });
       wrap.appendChild(kids);
       caret.addEventListener("click", function (e) {
@@ -138,6 +146,7 @@
         var now = !kids.classList.contains("collapsed");
         kids.classList.toggle("collapsed", now);
         caret.textContent = now ? "▸" : "▾";
+        caret.setAttribute("aria-expanded", String(!now));
         collapsed[node.id] = now; saveCollapsed();
       });
     }
@@ -169,7 +178,7 @@
     var chain = [];
     var n = zoomNode;
     while (n && n !== root) { chain.unshift(n); n = n.parent; }
-    var home = document.createElement("a"); home.textContent = "⌂"; home.title = "all chapters";
+    var home = document.createElement("button"); home.type = "button"; home.textContent = "⌂"; home.title = "All chapters"; home.setAttribute("aria-label", "Show all chapters");
     home.addEventListener("click", function () { zoomTo(root); });
     crumb.appendChild(home);
     chain.forEach(function (node, i) {
@@ -177,7 +186,7 @@
       if (i === chain.length - 1) {
         var span = document.createElement("span"); span.textContent = node.text; crumb.appendChild(span);
       } else {
-        var a = document.createElement("a"); a.textContent = node.text;
+        var a = document.createElement("button"); a.type = "button"; a.textContent = node.text;
         a.addEventListener("click", function () { zoomTo(node); });
         crumb.appendChild(a);
       }
@@ -195,10 +204,12 @@
   var tab = document.createElement("button");
   tab.id = "wf-tab"; tab.type = "button"; tab.textContent = "❯ Outline";
   tab.setAttribute("aria-label", "Open the outline");
+  tab.setAttribute("aria-controls", "wf-rail");
+  tab.setAttribute("aria-expanded", "false");
   document.body.appendChild(tab);
 
   var rail = document.createElement("aside");
-  rail.id = "wf-rail"; rail.setAttribute("aria-label", "Document outline");
+  rail.id = "wf-rail"; rail.setAttribute("aria-label", "Document outline"); rail.setAttribute("aria-hidden", "true");
   var head = document.createElement("div"); head.id = "wf-head";
   var ttl = document.createElement("b"); ttl.textContent = "Outline";
   var x = document.createElement("button"); x.className = "wf-x"; x.type = "button"; x.textContent = "×"; x.setAttribute("aria-label", "Close outline");
@@ -211,12 +222,14 @@
     rail.classList.toggle("open", open);
     document.body.classList.toggle("wf-rail-open", open);
     tab.style.display = open ? "none" : "block";
+    tab.setAttribute("aria-expanded", String(open));
+    rail.setAttribute("aria-hidden", String(!open));
     try { localStorage.setItem(LS_OPEN, open ? "1" : "0"); } catch (e) {}
   }
-  tab.addEventListener("click", function () { setOpen(true); });
-  x.addEventListener("click", function () { setOpen(false); });
+  tab.addEventListener("click", function () { setOpen(true); x.focus(); });
+  x.addEventListener("click", function () { setOpen(false); tab.focus(); });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && rail.classList.contains("open")) setOpen(false);
+    if (e.key === "Escape" && rail.classList.contains("open")) { setOpen(false); tab.focus(); }
     if (e.key === "\\" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); setOpen(!rail.classList.contains("open")); }
   });
 

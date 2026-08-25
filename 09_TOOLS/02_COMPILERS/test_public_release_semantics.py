@@ -48,7 +48,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertEqual(self.data["levels"][5]["modality"], "possible")
 
     def test_claim_card_projection_contract_is_current(self) -> None:
-        self.assertEqual(self.data["schemaVersion"], 4)
+        self.assertEqual(self.data["schemaVersion"], 7)
         contract = self.data["claimCardContract"]
         source = ROOT / contract["source"]
         self.assertEqual(
@@ -263,10 +263,15 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         patterns = predeploy.load_vercelignore_patterns()
         self.assertIsNotNone(patterns)
         declared = predeploy.declared_public_surfaces()
-        self.assertEqual(
-            set(self.data["machineSurfaces"]),
-            {"spark.md", "llms.txt", "record/problems.json", "record/frontier.json"},
-        )
+        expected_machine_surfaces = {
+            "spark.md",
+            "llms.txt",
+            "record/problems.json",
+            "record/frontier.json",
+            *parity.EXPECTED_CHURNING_MACHINE_OUTPUTS,
+            *parity.EXPECTED_FOURTH_MACHINE_OUTPUTS,
+        }
+        self.assertEqual(set(self.data["machineSurfaces"]), expected_machine_surfaces)
         self.assertTrue(set(self.data["machineSurfaces"]) <= declared)
         self.assertFalse(
             {rel for rel in declared if predeploy.is_vercel_ignored(rel, patterns)}

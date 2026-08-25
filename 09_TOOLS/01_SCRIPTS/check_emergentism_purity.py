@@ -234,10 +234,11 @@ MANAGED_AGENT_PROJECTION_ENTRIES = (
     | set(MANAGED_AGENT_PROJECTION_DIRECTORIES)
 )
 
-# The distillation is an active, projection-only reader surface with extensive
-# historical quotations.  Its complete current shape and exact reviewed bytes
-# are bound here; no future sibling or changed authority-bearing unit inherits
-# projection status automatically.
+# The distillation is an active, non-authoritative custody tree containing
+# projection documents plus their reviewed generators, schemas, deterministic
+# outputs, focused test, and successor notice.  Its complete current shape and
+# exact reviewed bytes are bound here; no future sibling or changed semantic
+# unit inherits admission automatically.
 DISTILLATION_PROJECTION_ROOT = Path("14_THE_DISTILLATION")
 DISTILLATION_PROJECTION_SHA256 = {
     DISTILLATION_PROJECTION_ROOT / "00_THE_AMRITA.md": "dce26b620dfa9b30eee9880c85c6204f1aa3dc3ce6b281ae50ce55109067e97f",
@@ -249,8 +250,47 @@ DISTILLATION_PROJECTION_SHA256 = {
     DISTILLATION_PROJECTION_ROOT / "05_THE_METHOD.md": "14c3b11399c931226129b4c186beb4c80da4f38e8b5bdddcbdf61cff576d78da",
     DISTILLATION_PROJECTION_ROOT / "06_WHAT_IS_STILL_OPEN.md": "c8c8da385b8e3f736665f803d3846598ee0046bb0b131f4d2a6d5fa6e8f5292d",
     DISTILLATION_PROJECTION_ROOT / "README.md": "bb31a71bda62db7c3a17595c3dacd63d1d806a0879b657d043ac8133a3f675d0",
+    DISTILLATION_PROJECTION_ROOT / "SUCCESSOR_NOTICE_2026_08_23.md": "764e13320d48adb8d573ec025ca20f2cafe7d3a56da3aae2b8cb3ebe6f7145ff",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/00_THE_AMRITA.md": "547172350fc30010a28cf80fab48172893ab7f7097ce0cdbd79a0821a04a63bf",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/01_WHAT_IS_PROVED.md": "c3294530e3071f5b4d31200d3259be054628b5e97f6c64592901d18c2406982b",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/02_WHAT_IS_CHOSEN.md": "abf99adf1f19d7b566344a81de1d4c88e5a9e1e06f1236ba2c4aace114f66b71",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/03_WHAT_IS_READ.md": "b2f6e256afeb9830991ce4fc89e3ed22a3ee0593e0b616c2ef5d4ca2e80e95f7",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/04_WHAT_DIED.md": "56dd5b9c29f36049f6dfb6aace6a96fe330b96edd5594b842a508f35c3510ae8",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/05_THE_METHOD.md": "2dccdfa4ba030893c8b7a33c353ac198f3ee3331c032d5c7140fcef51a8e4cef",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/06_WHAT_IS_STILL_OPEN.md": "27e18fb310bcc28962c13ddd98e86b1a7e757cf5181e5d2dba9c19e5a4919b00",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/README.md": "2238187215aa70dd54a07f03eda8c15805d47d84de3cffb0b39c2360bb6ae250",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/ThirdChurningCorpus.v1.json": "bb6ae2bcab5398c26629e28ed34b51e563deb72a92eefc52fc77d13dd6387ebc",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/build_source_packet.py": "635092e92946e2a614c3570deb8ea5215d30ea7ef637f718d91c8ceace0bbe4a",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ChurningDrop.v1.schema.json": "a27ea9660960fa347aa9ee14b56c72771630bf4c715192911e7f228693235e0b",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ProblemAdjudication.v1.schema.json": "87eda8d64823f5d9c2bac1b64e152a6096d6ed47d2e8b5d5bc6ad451c386f62f",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ThirdChurningCorpus.v1.schema.json": "2bb3840e6867dc173bf1087aa11fe0fbb39b88c836b357662dd911f7d6af428b",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/churning_drops.v1.json": "ca20ebd698aa0059d4056d17cd81955c751d34d40f8f5e5e1263cebc465c925e",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/paradox_inventory.v1.json": "53a29d948db3950ee73ec053b41225ab1e271a46bed4b3b62047c526f66485a2",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/problem_adjudications.v1.json": "7618139f3ab376c017ececaa64c88e33c097cdb0efd245f3b2453f65d78c4b8a",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/00_THE_TYPE_ATLAS.md": "c7357515695ad8e6e1dee2b8287c02c0b6bd2cb231189cedd21edb766ce26d23",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/01_PRIOR_ART_MATRIX.md": "5e391ec25e345537f591709328b94fd8c0bdc9d166a895a7a397a3ad3a3ea006",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/02_TRANSFER_PROTOCOL.md": "af7d99c2f14fdc1c86c1438738741a09942c16a3d688f2ddf568b80e43f47451",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/FourthChurningCorpus.v1.json": "9d444c9806cee5397d5de1d9b00012982edcf799f563e9b233ed9a030f0032d7",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/README.md": "a93b3120ac5635fd9ee6c09aed3a1a128c35370632671be5b0de9f679c9ddc8e",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/build_type_atlas.py": "4bec22cacb429c485796daa0db67807c82d5b1492d7ce539b587530bfa4bbafb",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/contracts/FourthChurningCorpus.v1.schema.json": "18d91ebaf2434855ed2bfe6004ed24f5e9844bda078a8757f538cf652b4cdb5f",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/contracts/MysteryDiagnosis.v1.schema.json": "c130447e222fabf838704d3186640c520b298cce103a1b7fb81bbc293aaaed38",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/contracts/TypeCollision.v1.schema.json": "9cc87584a3b59869ae3915b466ec6b46c589d40ae120f35fc9978e9804b40ea5",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/data/mystery_diagnoses.v1.json": "b1ad4113fc59223cb13017d15309e775c5d72c70313492e73bd2ef16ddbac16b",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/data/type_collisions.v1.json": "073ba1df9ce1732e97fc6f6619b062c320d7353c10c41984bd1924e24603b46f",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/test_type_atlas.py": "7deb27363ce93b451da88da0daca0312a32940bb277fbb357d152bfd2defd479",  # pragma: allow-secret
 }
-DISTILLATION_PROJECTION_ENTRIES = frozenset(DISTILLATION_PROJECTION_SHA256)
+DISTILLATION_PROJECTION_DIRECTORIES = frozenset({
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23",
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts",
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data",
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24",
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/contracts",
+    DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/data",
+})
+DISTILLATION_PROJECTION_ENTRIES = frozenset(
+    set(DISTILLATION_PROJECTION_SHA256) | set(DISTILLATION_PROJECTION_DIRECTORIES)
+)
 
 # The claim-card compiler is executable and therefore never digest-exempt.
 # These hashes bind only its reviewed external-custody semantic units.  A new
@@ -991,6 +1031,15 @@ def distillation_projection_errors() -> list[str]:
             f"missing={[str(path) for path in missing]!r}, "
             f"unexpected={[str(path) for path in unexpected]!r}"
         )
+    for rel in sorted(DISTILLATION_PROJECTION_DIRECTORIES, key=str):
+        path = ROOT / rel
+        directory_symlink = first_symlink_component(path)
+        if directory_symlink is not None:
+            errors.append(
+                f"distillation projection directory crosses symlink: {directory_symlink}"
+            )
+        elif not path.is_dir():
+            errors.append(f"distillation projection directory missing: {rel}")
     for rel, expected_digest in sorted(
         DISTILLATION_PROJECTION_SHA256.items(), key=lambda item: str(item[0])
     ):

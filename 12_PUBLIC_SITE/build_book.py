@@ -309,6 +309,7 @@ def render(contract):
     for idx, (hid, htitle, content) in enumerate(chapters):
         first = (idx == 0)
         cls = "chapter overture" if first else "chapter"
+        heading_tag = "h1" if first else "h2"
         # The chapter number badge (skip the front-matter overture).
         badge = "" if first else f'<span class="ch-num">{idx:02d}</span>'
         nav_bits = []
@@ -322,7 +323,7 @@ def render(contract):
         nav = f'<nav class="ch-nav" aria-label="Chapter navigation">{"".join(nav_bits)}</nav>' if nav_bits else ""
         sections.append(
             f'<section class="{cls}" id="{hid}">'
-            f'<header class="ch-head">{badge}<h1 id="{hid}-h">{htitle}</h1></header>'
+            f'<header class="ch-head">{badge}<{heading_tag} id="{hid}-h">{htitle}</{heading_tag}></header>'
             f'<div class="ch-body">{content}</div>{nav}</section>')
         label = "Overture" if first else htitle
         toc.append(
@@ -508,7 +509,7 @@ a{color:inherit}
   min-height:var(--target-min);display:inline-flex;align-items:center;border-radius:var(--shape-full);padding:0 .75rem;cursor:pointer;font:inherit;letter-spacing:0}
 .bookbar nav a:hover,.bookbar nav button:hover{color:var(--gold);border-color:var(--rule)}
 .book-tools{min-height:52px;display:flex;justify-content:flex-end;gap:.5rem;padding:.35rem clamp(1rem,3vw,1.6rem);background:var(--bg);border-bottom:1px solid var(--rule-soft)}
-.book-tools button{display:none;min-height:44px;padding:0 .8rem;border:1px solid var(--rule);background:var(--bg2);color:var(--ink-soft);font:600 .76rem var(--mono);cursor:pointer}
+.book-tools button{display:none;min-height:48px;padding:0 .8rem;border:1px solid var(--rule);background:var(--bg2);color:var(--ink-soft);font:600 .76rem var(--mono);cursor:pointer}
 html[data-gestalt-enhanced="true"] #theme-toggle{display:inline-flex;align-items:center}
 #toc-toggle{display:none}
 
@@ -538,11 +539,11 @@ html[data-gestalt-enhanced="true"] #theme-toggle{display:inline-flex;align-items
 .chapter:first-of-type{border-top:0}
 .ch-head{margin:0 0 1.4rem}
 .ch-num{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:0;color:var(--gold);margin-bottom:.7rem}
-.ch-body>h1:first-child,.chapter>header h1{margin-top:0}
-h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.08;
+.ch-body>h1:first-child,.chapter>header :is(h1,h2){margin-top:0}
+h1,.ch-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.08;
   letter-spacing:0;margin:.2rem 0 1rem;text-wrap:balance;overflow-wrap:anywhere}
 .overture .ch-head h1{font-size:clamp(2.6rem,6vw,4rem)}
-h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.2;
+.ch-body h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.2;
   margin:2.4rem 0 .8rem;letter-spacing:0}
 h3{font-family:var(--mono);font-weight:600;font-size:.82rem;letter-spacing:0;text-transform:uppercase;
   color:var(--ink-faint);margin:2rem 0 .6rem}

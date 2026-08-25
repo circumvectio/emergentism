@@ -30,15 +30,15 @@ def field(label: str, value: str) -> str:
 def require_g7_projection(stone: dict) -> dict:
     """Fail closed when the public D5 projection loses its typed safety fences."""
     projection = stone.get("projection")
-    if not isinstance(projection, dict) or projection.get("schema") != "emergentism/G7Projection.v1":
-        raise ValueError("D5 stone.projection must be emergentism/G7Projection.v1")
+    if not isinstance(projection, dict) or projection.get("schema") != "emergentism/G7Projection.v2":
+        raise ValueError("D5 stone.projection must be emergentism/G7Projection.v2")
 
     transfers = projection.get("transfers")
     if not isinstance(transfers, list) or len(transfers) != 4:
-        raise ValueError("G7Projection.v1 requires exactly four transfers")
+        raise ValueError("G7Projection.v2 requires exactly four transfers")
     quadrants = {item.get("quadrant") for item in transfers}
     if quadrants != {"top-left", "top-right", "bottom-left", "bottom-right"}:
-        raise ValueError("G7Projection.v1 transfers must occupy all four quadrants")
+        raise ValueError("G7Projection.v2 transfers must occupy all four quadrants")
     expected_quadrants = {
         "taking-a": "top-left",
         "taking-b": "bottom-left",
@@ -46,17 +46,18 @@ def require_g7_projection(stone: dict) -> dict:
         "giving-b": "top-right",
     }
     if {item.get("id"): item.get("quadrant") for item in transfers} != expected_quadrants:
-        raise ValueError("G7Projection.v1 transfer/quadrant assignment drift")
+        raise ValueError("G7Projection.v2 transfer/quadrant assignment drift")
     if any(not item.get("signature") or not item.get("channelPair") or not item.get("egoCollectiveSigns") for item in transfers):
-        raise ValueError("G7Projection.v1 transfers require bearer, channel, and ego/collective signs")
+        raise ValueError("G7Projection.v2 transfers require bearer, channel, and ego/collective signs")
 
     plane_axes = projection.get("planeAxes", {})
     if plane_axes != {
-        "horizontal": "self-facing to other-facing",
-        "vertical": "raised Phi5 channel to raised V4 channel",
+        "bearerDirection": "self-facing to other-facing",
+        "powerChannel": "raised Phi5 channel to raised V4 channel",
+        "planePosition": "bottom action/projection plane",
         "tier": "[I]",
     }:
-        raise ValueError("G7Projection.v1 planeAxes contract drift")
+        raise ValueError("G7Projection.v2 planeAxes contract drift")
     ego_collective_gloss = projection.get("egoCollectiveGloss", {})
     if ego_collective_gloss != {
         "self": "ego-facing",
@@ -65,16 +66,16 @@ def require_g7_projection(stone: dict) -> dict:
         "bareSignsRecoverM4": False,
         "tier": "[I]",
     }:
-        raise ValueError("G7Projection.v1 ego/collective gloss contract drift")
+        raise ValueError("G7Projection.v2 ego/collective gloss contract drift")
 
     frames = projection.get("frames")
     if not isinstance(frames, list) or len(frames) != 3:
-        raise ValueError("G7Projection.v1 requires exactly three Titan frames")
+        raise ValueError("G7Projection.v2 requires exactly three Titan frames")
     by_position = {item.get("axisPosition"): item for item in frames}
     if set(by_position) != {"bottom", "centre", "top"}:
-        raise ValueError("G7Projection.v1 frames must occupy bottom, centre, and top")
+        raise ValueError("G7Projection.v2 frames must occupy bottom, centre, and top")
     if by_position["centre"].get("alias") != "Viṣṇu" or by_position["centre"].get("valueMarker") != "1_T":
-        raise ValueError("G7Projection.v1 centre must be Viṣṇu at 1_T")
+        raise ValueError("G7Projection.v2 centre must be Viṣṇu at 1_T")
 
     count_source = projection.get("countSource", {})
     mirror = projection.get("separateMirrorLadder", {})
@@ -91,13 +92,26 @@ def require_g7_projection(stone: dict) -> dict:
         "lowercaseEqualsUppercase": False,
     }
     if any(relation.get(key) is not value for key, value in required_relations.items()):
-        raise ValueError("G7Projection.v1 proof-transfer fences are missing or changed")
+        raise ValueError("G7Projection.v2 proof-transfer fences are missing or changed")
     if burrisphere.get("generatesCount") is not False or mirror.get("generatesCount") is not False:
         raise ValueError("neither Burrisphere projection may generate the selected count")
+    expected_burrisphere = {
+        "layout": "four-bottom-plane-sectors-plus-three-world-vertical-stations",
+        "actionPlanePosition": "bottom-projection-plane",
+        "titanAxisPosition": "world-vertical",
+        "transfersOnSphereSurface": False,
+        "coLocatedWithLowerChart": True,
+        "identicalToLowerChart": False,
+        "tier": "[I]",
+        "generatesCount": False,
+        "meaningWithoutColor": True,
+    }
+    if burrisphere != expected_burrisphere:
+        raise ValueError("G7Projection.v2 Burrisphere topology drift")
 
     display_path = projection.get("displayPath", {})
     expected_path = {
-        "schema": "emergentism/G7DisplayPath.v1",
+        "schema": "emergentism/G7DisplayPath.v2",
         "geometry": "one-selected-turn-around-stationary-axis",
         "turns": 1,
         "degrees": 360,
@@ -108,6 +122,9 @@ def require_g7_projection(stone: dict) -> dict:
         "traversesAxisPoint": False,
         "phaseOrder": ["taking-a", "taking-b", "giving-a", "giving-b"],
         "phaseOrderTier": "[I]",
+        "phaseCarrier": "bottom-action-plane-trace",
+        "bottomPlaneTraceTraversesM4": True,
+        "spherePathCarriesTransfers": False,
         "semantics": "presentation-itinerary-only",
         "makesContinuousG7State": False,
         "dynamics": False,
@@ -119,7 +136,7 @@ def require_g7_projection(stone: dict) -> dict:
         "tier": "[I]",
     }
     if display_path != expected_path:
-        raise ValueError("G7DisplayPath.v1 contract drift")
+        raise ValueError("G7DisplayPath.v2 contract drift")
 
     reciprocal = projection.get("reciprocalSpectrum", {})
     expected_horizon_overlay = {
@@ -389,8 +406,9 @@ def stone_section(stone: dict) -> tuple[str, str]:
     <h3 id="g7-title">G7, neutral functions first</h3>
     <p>{esc(count_source['derivation'])}. The mythic names are aliases; they do not decide moral standing.</p>
     <div class="plane-axes" aria-label="Selected signed G7 plane axes">
-      <p><b>Horizontal axis · {esc(plane_axes['tier'])}:</b> {esc(plane_axes['horizontal'])}</p>
-      <p><b>Vertical axis · {esc(plane_axes['tier'])}:</b> {esc(plane_axes['vertical'])}</p>
+      <p><b>Bearer-direction axis · {esc(plane_axes['tier'])}:</b> {esc(plane_axes['bearerDirection'])}</p>
+      <p><b>Power-channel axis · {esc(plane_axes['tier'])}:</b> {esc(plane_axes['powerChannel'])}</p>
+      <p><b>Plane placement · {esc(plane_axes['tier'])}:</b> {esc(plane_axes['planePosition'])}</p>
     </div>
     <p><b>Bearer gloss · {esc(ego_collective_gloss['tier'])}:</b> self is {esc(ego_collective_gloss['self'])}; other is {esc(ego_collective_gloss['other'])}. These are glosses, not identities, and bare signs do not recover M4.</p>
     <div class="g7-layout">
@@ -657,7 +675,7 @@ def index_page(levels: list[dict], sequence: list[str], stone: dict) -> str:
 main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1;margin:.5rem 0 1rem}} .lede{{color:var(--text-muted);max-width:64ch;font-size:1.1rem}}
 .sequence{{font:700 .72rem/1.7 var(--font-mono);color:var(--gold);overflow-wrap:anywhere}} .spine{{margin:3rem 0;border-left:1px solid var(--gold);padding-left:1.2rem}}
 .rung,.crossing{{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:baseline;padding:1rem;border-bottom:1px solid var(--border);text-decoration:none}} .rung:hover{{background:var(--surface)}} .rung>*,.crossing>*{{min-width:0;overflow-wrap:anywhere}}
-.rung b{{color:var(--gold)}} .crossing{{margin-left:1.5rem;color:var(--text-muted);font-style:italic}} .crossing b{{color:var(--text-dim)}} small{{font:600 .68rem/1.4 var(--font-mono);color:var(--text-dim)}}
+.rung b{{color:var(--gold)}} .crossing{{margin-left:1.5rem;color:var(--text-muted);font-style:italic}} .crossing b{{color:var(--text-muted)}} small{{font:600 .68rem/1.4 var(--font-mono);color:var(--text-muted)}}
 .contract{{border:1px solid var(--border);padding:1.3rem;background:var(--surface)}} .contract li{{margin:.55rem 0;color:var(--text-muted);overflow-wrap:anywhere}}
 .handoff{{margin:2rem 0;padding:1.3rem;border:1px solid var(--gold);background:var(--surface)}}.handoff p{{color:var(--text-muted)}}.handoff-route{{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}}.handoff-route a{{display:inline-flex;min-height:48px;align-items:center;padding:.55rem .75rem;border:1px solid var(--border);text-decoration:none}}.handoff-route span{{color:var(--gold)}}
 @media(max-width:650px){{.rung,.crossing{{grid-template-columns:55px 1fr}}small{{grid-column:2}}.handoff-route{{display:grid;grid-template-columns:1fr}}.handoff-route span{{display:none}}}}

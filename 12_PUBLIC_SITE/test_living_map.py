@@ -167,6 +167,7 @@ class LivingMapContractTests(unittest.TestCase):
             "journey/index.html": {"OS01-09"},
             "rosetta/index.html": {"OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
             "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
+            "burrisphere/instrument/index.html": {"OS01-33", "OS01-34", "OS01-36", "OS01-37"},
             "questions/index.html": {"OS01-41"},
             "questions/diagnoses/index.html": {"OS01-41"},
             "ethics/index.html": {"OS01-38", "OS01-39", "OS01-40"},

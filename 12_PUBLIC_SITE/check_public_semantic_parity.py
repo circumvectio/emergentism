@@ -434,7 +434,8 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "One actual present. Many possible futures.",
         "Prepared decision transaction · unsigned",
         "The action exit is the signature boundary",
-        "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "one complete 360° turn", "bottom action/projection plane",
+        "sphere path carries no transfer", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
     ),
@@ -468,11 +469,20 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "Game theory is not exhausted", "maximally compressed",
     ),
     "burrisphere/index.html": (
-        "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
+        "Four quadrants. Three Titan stations.", "bottom action/projection plane",
+        "not longitudinal sphere territories", "sphere path carries no transfer",
+        "Śiva", "Viṣṇu", "Brahmā",
         "G7@1 ≠ GEN7@1", "one complete 360° turn", "reading itinerary",
         "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
+    ),
+    "burrisphere/instrument/index.html": (
+        "One sphere.", "Two shadows.", "M4 bottom action plane",
+        "four sectors on the bottom action plane", "not sphere territories",
+        "Titan axis", "• Śiva; ⊙ Viṣṇu; ○ Brahmā",
+        "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1",
+        "φ≠Φ₅", "ν≠V₄", "selected reading itinerary [I]",
     ),
     "rosetta/index.html": (
         "One move, translated", "G7", "possible power", "actual power",
@@ -538,6 +548,7 @@ REQUIRED_SURFACE_CARDS = {
     "axioms/index.html": {"OS01-26"},
     "journey/index.html": {"OS01-09"},
     "burrisphere/index.html": {"OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37"},
+    "burrisphere/instrument/index.html": {"OS01-33", "OS01-34", "OS01-36", "OS01-37"},
     "rosetta/index.html": {
         "OS01-11", "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
     },
@@ -562,7 +573,8 @@ REQUIRED_SURFACE_MARKERS = {
         "Related placement is not identity.", "four quadrant transformations",
         "Frame one decision", "comparative benefit untested",
         "One present, three explanations", "one of 24 possible assignments",
-        "one complete 360° turn", "B = 2/(φ+ν) ≤ 1",
+        "one complete 360° turn", "bottom action/projection plane",
+        "sphere path carries no transfer", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
         "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
@@ -587,7 +599,7 @@ REQUIRED_SURFACE_MARKERS = {
     },
     "5/index.html": {
         "P_node := min(Φ̂₄, V₄)", "Four bearer-oriented transfers",
-        "four quadrants plus three axial stations", "G7@1 ≠ GEN7@1",
+        "four bottom plane sectors plus three world vertical stations", "G7@1 ≠ GEN7@1",
         "360° display path", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
@@ -605,11 +617,23 @@ REQUIRED_SURFACE_MARKERS = {
         "Two exits remain distinct.",
     },
     "burrisphere/index.html": {
-        "Four quadrants. Three Titan stations.", "Śiva", "Viṣṇu", "Brahmā",
+        "Four quadrants. Three Titan stations.", "bottom action/projection plane",
+        "not longitudinal sphere territories", "sphere path carries no transfer",
+        "Śiva", "Viṣṇu", "Brahmā",
         "G7@1 ≠ GEN7@1",
         "one complete 360° turn", "reading itinerary", "B = 2/(φ+ν) ≤ 1",
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
         "Game theory is not exhausted", "maximally compressed",
+    },
+    "burrisphere/instrument/index.html": {
+        "One sphere.", "Two shadows.", "M4 bottom action plane",
+        "four sectors on the bottom action plane", "not sphere territories",
+        "Titan axis", "• Śiva; ⊙ Viṣṇu; ○ Brahmā",
+        "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1",
+        "not two realities and not two spheres",
+        "self / individual", "other / collective", "Φ₅ · possible / model",
+        "V₄ · actual / embodied", "not a moral verdict",
+        "selected reading itinerary [I]", "not time or dynamics", "φ≠Φ₅", "ν≠V₄",
     },
     "rosetta/index.html": {
         "One move, translated", "G7", "possible power", "actual power",
@@ -982,8 +1006,9 @@ EXPECTED_EGO_COLLECTIVE_GLOSS = {
     "tier": "[I]",
 }
 EXPECTED_G7_PLANE_AXES = {
-    "horizontal": "self-facing to other-facing",
-    "vertical": "raised Phi5 channel to raised V4 channel",
+    "bearerDirection": "self-facing to other-facing",
+    "powerChannel": "raised Phi5 channel to raised V4 channel",
+    "planePosition": "bottom action/projection plane",
     "tier": "[I]",
 }
 EXPECTED_G7_COUNT_SOURCE = {
@@ -1032,13 +1057,18 @@ EXPECTED_G7_FRAMES = (
     {"id": "brahma-create", "plain": "creation", "alias": "Brahmā", "glyph": "○", "axisPosition": "top", "signature": "+Φ₅; +V₄"},
 )
 EXPECTED_BURRISPHERE_G7 = {
-    "layout": "four-quadrants-plus-three-axial-stations",
+    "layout": "four-bottom-plane-sectors-plus-three-world-vertical-stations",
+    "actionPlanePosition": "bottom-projection-plane",
+    "titanAxisPosition": "world-vertical",
+    "transfersOnSphereSurface": False,
+    "coLocatedWithLowerChart": True,
+    "identicalToLowerChart": False,
     "tier": "[I]",
     "generatesCount": False,
     "meaningWithoutColor": True,
 }
 EXPECTED_G7_DISPLAY_PATH = {
-    "schema": "emergentism/G7DisplayPath.v1",
+    "schema": "emergentism/G7DisplayPath.v2",
     "geometry": "one-selected-turn-around-stationary-axis",
     "turns": 1,
     "degrees": 360,
@@ -1049,6 +1079,9 @@ EXPECTED_G7_DISPLAY_PATH = {
     "traversesAxisPoint": False,
     "phaseOrder": ["taking-a", "taking-b", "giving-a", "giving-b"],
     "phaseOrderTier": "[I]",
+    "phaseCarrier": "bottom-action-plane-trace",
+    "bottomPlaneTraceTraversesM4": True,
+    "spherePathCarriesTransfers": False,
     "semantics": "presentation-itinerary-only",
     "makesContinuousG7State": False,
     "dynamics": False,
@@ -1257,6 +1290,7 @@ EXPECTED_G7_SOURCE_TIERS = {
     "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md": "[S/I]",
     "00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md": "[B] direction",
     "00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md": "[B] direction",
+    "00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md": "[B] direction",
 }
 
 
@@ -1270,16 +1304,16 @@ def _validate_projection_rows(
     expected: tuple[dict, ...],
     errors: list[str],
 ) -> None:
-    """Validate an ordered, ID-addressable part of G7Projection.v1."""
+    """Validate an ordered, ID-addressable part of G7Projection.v2."""
 
     if not isinstance(rows, list):
-        errors.append(f"G7Projection.v1 {label} must be a list")
+        errors.append(f"G7Projection.v2 {label} must be a list")
         return
     expected_ids = [row["id"] for row in expected]
     actual_ids = [row.get("id") if isinstance(row, dict) else None for row in rows]
     if actual_ids != expected_ids:
         errors.append(
-            f"G7Projection.v1 {label} order/IDs drift: "
+            f"G7Projection.v2 {label} order/IDs drift: "
             f"expected {expected_ids}, got {actual_ids}"
         )
     for index, expected_row in enumerate(expected):
@@ -1287,11 +1321,11 @@ def _validate_projection_rows(
             break
         if rows[index] != expected_row:
             errors.append(
-                f"G7Projection.v1 {label} row drift: {expected_row['id']}"
+                f"G7Projection.v2 {label} row drift: {expected_row['id']}"
             )
     if len(rows) != len(expected):
         errors.append(
-            f"G7Projection.v1 {label} cardinality must be {len(expected)}, got {len(rows)}"
+            f"G7Projection.v2 {label} cardinality must be {len(expected)}, got {len(rows)}"
         )
 
 
@@ -1299,11 +1333,11 @@ def validate_g7_projection(levels: object, errors: list[str]) -> None:
     """Validate the corrected operational G7 and its two distinct projections."""
 
     if not isinstance(levels, list):
-        errors.append("levels must be a list before validating G7Projection.v1")
+        errors.append("levels must be a list before validating G7Projection.v2")
         return
     d5_rows = [row for row in levels if isinstance(row, dict) and row.get("id") == "D5"]
     if len(d5_rows) != 1:
-        errors.append("G7Projection.v1 requires exactly one D5 level")
+        errors.append("G7Projection.v2 requires exactly one D5 level")
         return
     d5 = d5_rows[0]
     if d5.get("claimCardIds") != EXPECTED_D5_CARD_IDS:
@@ -1328,11 +1362,11 @@ def validate_g7_projection(levels: object, errors: list[str]) -> None:
     }
     if set(projection) != expected_keys:
         errors.append(
-            "G7Projection.v1 field set drift: "
+            "G7Projection.v2 field set drift: "
             f"expected {sorted(expected_keys)}, got {sorted(projection)}"
         )
-    if projection.get("schema") != "emergentism/G7Projection.v1":
-        errors.append("D5 stone.projection schema must be emergentism/G7Projection.v1")
+    if projection.get("schema") != "emergentism/G7Projection.v2":
+        errors.append("D5 stone.projection schema must be emergentism/G7Projection.v2")
     for key, expected in (
         ("powers", EXPECTED_G7_POWERS),
         ("bearerIndices", ["self", "other"]),
@@ -1348,7 +1382,7 @@ def validate_g7_projection(levels: object, errors: list[str]) -> None:
         ("relation", EXPECTED_G7_GEN7_RELATION),
     ):
         if projection.get(key) != expected:
-            errors.append(f"G7Projection.v1 {key} contract drift")
+            errors.append(f"G7Projection.v2 {key} contract drift")
     _validate_projection_rows(
         "transfers", projection.get("transfers"), EXPECTED_G7_TRANSFERS, errors
     )
@@ -1358,24 +1392,24 @@ def validate_g7_projection(levels: object, errors: list[str]) -> None:
 
     sources = projection.get("sources")
     if not isinstance(sources, list):
-        errors.append("G7Projection.v1 sources must be a list")
+        errors.append("G7Projection.v2 sources must be a list")
         return
     rows_by_path: dict[str, dict] = {}
     for row in sources:
         if not isinstance(row, dict):
-            errors.append("G7Projection.v1 source row must be an object")
+            errors.append("G7Projection.v2 source row must be an object")
             continue
         source_rel = row.get("path")
         if not isinstance(source_rel, str) or not source_rel:
-            errors.append("G7Projection.v1 source row missing path")
+            errors.append("G7Projection.v2 source row missing path")
             continue
         if source_rel in rows_by_path:
-            errors.append(f"G7Projection.v1 repeats source {source_rel}")
+            errors.append(f"G7Projection.v2 repeats source {source_rel}")
             continue
         rows_by_path[source_rel] = row
     if set(rows_by_path) != set(EXPECTED_G7_SOURCE_TIERS):
         errors.append(
-            "G7Projection.v1 source set drift: "
+            "G7Projection.v2 source set drift: "
             f"expected {sorted(EXPECTED_G7_SOURCE_TIERS)}, got {sorted(rows_by_path)}"
         )
     for source_rel, expected_tier in EXPECTED_G7_SOURCE_TIERS.items():
@@ -1383,21 +1417,21 @@ def validate_g7_projection(levels: object, errors: list[str]) -> None:
         if row is None:
             continue
         if set(row) != {"path", "sha256", "tier"}:
-            errors.append(f"G7Projection.v1 source field set drift: {source_rel}")
+            errors.append(f"G7Projection.v2 source field set drift: {source_rel}")
         if row.get("tier") != expected_tier:
-            errors.append(f"G7Projection.v1 source tier drift: {source_rel}")
+            errors.append(f"G7Projection.v2 source tier drift: {source_rel}")
         source_path = ROOT / source_rel
         try:
             source_path.resolve().relative_to(ROOT.resolve())
         except ValueError:
-            errors.append(f"G7Projection.v1 source escapes corpus: {source_rel}")
+            errors.append(f"G7Projection.v2 source escapes corpus: {source_rel}")
             continue
         if not source_path.is_file():
-            errors.append(f"G7Projection.v1 source missing: {source_rel}")
+            errors.append(f"G7Projection.v2 source missing: {source_rel}")
             continue
         actual_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
         if row.get("sha256") != actual_hash:
-            errors.append(f"G7Projection.v1 source hash drift: {source_rel}")
+            errors.append(f"G7Projection.v2 source hash drift: {source_rel}")
 
 
 def deployable_html_surfaces() -> list[str]:

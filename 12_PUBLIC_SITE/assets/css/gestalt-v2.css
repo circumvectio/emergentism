@@ -340,7 +340,7 @@ body.g2-page {
   text-decoration: none !important;
 }
 
-.g2-button--primary {
+.g2-page .g2-button--primary {
   border-color: var(--g2-actual);
   background: var(--g2-actual);
   color: var(--g2-void);
@@ -1790,8 +1790,8 @@ body.g2-page {
   stroke-width: 2;
 }
 
-/* One-turn Burrisphere ascent. The axis holds F3; only the M4 transfer path
-   winds. Solid/front and dashed/back remain labelled, never colour-only. */
+/* Corrected Burrisphere topology. M4 stays on one bottom action plane; F3
+   alone occupies the vertical axis; the rising path carries reading phase. */
 .g2-burrisphere-ascent {
   margin: 0;
   border: 1px solid var(--g2-rule-strong);
@@ -1801,6 +1801,15 @@ body.g2-page {
 .g2-burrisphere-ascent__stage {
   position: relative;
   overflow: hidden;
+}
+
+.g2-diagram-scroll-cue {
+  display: none;
+  margin: 0;
+  padding: 10px 18px;
+  border-top: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font: 600 0.72rem/1.45 var(--g2-mono);
 }
 
 .g2-burrisphere-ascent svg {
@@ -1826,6 +1835,34 @@ body.g2-page {
   stroke: var(--g2-rule-strong);
   stroke-width: 1;
   stroke-dasharray: 2 7;
+}
+
+.g2-burrisphere-plane-sector {
+  stroke: var(--g2-rule-strong);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-plane-sector--possible { fill: color-mix(in srgb, var(--g2-possible) 13%, var(--g2-field)); }
+.g2-burrisphere-plane-sector--actual { fill: color-mix(in srgb, var(--g2-actual) 11%, var(--g2-field)); }
+
+.g2-burrisphere-action-outline,
+.g2-burrisphere-action-axis,
+.g2-burrisphere-action-trace {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.g2-burrisphere-action-outline,
+.g2-burrisphere-action-axis {
+  stroke: var(--g2-bone-muted);
+  stroke-width: 1.5;
+}
+
+.g2-burrisphere-action-trace {
+  stroke: var(--g2-conjecture);
+  stroke-width: 3;
+  stroke-dasharray: 7 6;
 }
 
 .g2-burrisphere-path {
@@ -1924,6 +1961,10 @@ body.g2-page {
 
 .g2-burrisphere-key--axis::before { border-color: var(--g2-bone-muted); }
 .g2-burrisphere-key--front::before { border-color: var(--g2-conjecture); }
+.g2-burrisphere-key--trace::before {
+  border-color: var(--g2-conjecture);
+  border-top-style: dashed;
+}
 .g2-burrisphere-key--back::before {
   border-color: var(--g2-conjecture);
   border-top-style: dashed;
@@ -2657,6 +2698,7 @@ body.g2-page.g2-legacy .footer {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   }
+  .g2-diagram-scroll-cue { display: block; }
   .g2-g7-map svg,
   .g2-burrisphere-ascent svg,
   .g2-helix svg {

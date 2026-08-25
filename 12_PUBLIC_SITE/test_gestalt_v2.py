@@ -166,6 +166,64 @@ class GestaltV2ContractTests(unittest.TestCase):
             self.assertIn("This illustration carries no evidence beyond the typed text above.", page)
             self.assertIn('html:not([data-gestalt-enhanced="true"]) .fallback{display:flex}', page)
 
+    def test_reader_heading_and_interaction_controls_keep_release_semantics(self) -> None:
+        book = (SITE / "book/index.html").read_text(encoding="utf-8")
+        self.assertEqual(len(re.findall(r"<h1\b", book, re.I)), 1)
+        self.assertEqual(
+            len(re.findall(r'<header class="ch-head">.*?<h2\b', book, re.I)),
+            12,
+        )
+
+        book_builder = (SITE / "build_book.py").read_text(encoding="utf-8")
+        self.assertIn('heading_tag = "h1" if first else "h2"', book_builder)
+        self.assertIn("min-height:48px", book_builder)
+
+        atlas = (SITE / "assets/js/atlas-drawer.js").read_text(encoding="utf-8")
+        book_ai = (SITE / "assets/js/book-ai.js").read_text(encoding="utf-8")
+        outline = (SITE / "assets/js/workflowy-outline.js").read_text(encoding="utf-8")
+        for source, panel_id in (
+            (atlas, "atlas-panel"),
+            (book_ai, "ask-panel"),
+            (outline, "wf-rail"),
+        ):
+            with self.subTest(panel=panel_id):
+                self.assertIn('setAttribute("aria-controls", "' + panel_id + '")', source)
+                self.assertIn('setAttribute("aria-expanded", "false")', source)
+                self.assertIn('setAttribute("aria-hidden", "true")', source)
+                self.assertIn("min-height:48px", source)
+
+        discoveries = (SITE / "discoveries/index.html").read_text(encoding="utf-8")
+        self.assertIn('<h2 class="reveal">The trial board.</h2>', discoveries)
+
+        practice = (SITE / "practice/index.html").read_text(encoding="utf-8")
+        living_map = (SITE / "assets/css/living-map.css").read_text(encoding="utf-8")
+        instrument = (SITE / "assets/css/burrisphere-instrument.css").read_text(encoding="utf-8")
+        self.assertIn("min-height:48px;display:inline-flex", practice)
+        self.assertIn(".filterbar button{min-height:48px", living_map)
+        self.assertIn(".copy-button{min-width:48px;min-height:48px", living_map)
+        self.assertIn(".bi-actions button span:last-child { display: block; }", instrument)
+        self.assertIn("bottom: 370px; width: 255px", instrument)
+        self.assertIn("font-size: .58rem", instrument)
+        self.assertIn(".bi-thesis { display: none; }", instrument)
+        self.assertIn(".g2-page .g2-button--primary", self.css)
+        self.assertIn("color:#989ca7", living_map)
+        self.assertIn("opacity: .76", instrument)
+
+        dimensions_builder = (SITE / "render_dimension_site.py").read_text(encoding="utf-8")
+        self.assertIn(".crossing b{{color:var(--text-muted)}}", dimensions_builder)
+        self.assertNotIn(".crossing b{{color:var(--text-dim)}}", dimensions_builder)
+
+        for relative, cue_id in (
+            ("index.html", "home-burrisphere-scroll-cue"),
+            ("burrisphere/index.html", "burrisphere-scroll-cue"),
+        ):
+            page = (SITE / relative).read_text(encoding="utf-8")
+            with self.subTest(scroll_region=relative):
+                self.assertIn('role="region"', page)
+                self.assertIn('tabindex="0"', page)
+                self.assertIn(f'aria-describedby="{cue_id}"', page)
+                self.assertIn("Swipe or scroll sideways", page)
+
     def test_newsreader_is_local_open_licensed_and_hash_bound(self) -> None:
         font = SITE / "assets/fonts/Newsreader-latin-variable.woff2"
         license_path = SITE / "assets/fonts/Newsreader-OFL.txt"
@@ -202,6 +260,9 @@ class GestaltV2ContractTests(unittest.TestCase):
                 "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
                 "/record/pqa-54/", "/assets/css/gestalt-v2.css",
                 "/assets/js/gestalt-v2.js", "/assets/fonts/Newsreader-latin-variable.woff2",
+                "/burrisphere/", "/burrisphere/instrument/",
+                "/assets/css/burrisphere-instrument.css", "/assets/js/burrisphere-instrument.js",
+                "/vendor/three-0.160.0/three.module.js", "/vendor/three-0.160.0/controls/OrbitControls.js",
                 "/favicon.svg",
             }.issubset(set(pwa.safe_spine()))
         )
