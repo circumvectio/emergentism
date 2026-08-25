@@ -1,5 +1,5 @@
 // Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
-const CACHE = 'emergentism-ec438c7fa392';
+const CACHE = 'emergentism-916f194401d1';
 const SPINE = [
   "/",
   "/plainly/",
@@ -27,13 +27,19 @@ const SPINE = [
   "/about/",
   "/exit/",
   "/offline/",
+  "/burrisphere/",
+  "/burrisphere/instrument/",
   "/manifest.webmanifest",
   "/favicon.svg",
   "/assets/css/living-map.css",
   "/assets/css/gestalt-v2.css",
+  "/assets/css/burrisphere-instrument.css",
   "/assets/js/living-map.js",
   "/assets/js/gestalt-v2.js",
+  "/assets/js/burrisphere-instrument.js",
   "/living-map.json",
+  "/vendor/three-0.160.0/three.module.js",
+  "/vendor/three-0.160.0/controls/OrbitControls.js",
   "/public_semantic_parity.json",
   "/atlas/site_index.json",
   "/churn/corpus.json",

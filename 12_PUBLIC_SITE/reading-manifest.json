@@ -493,7 +493,7 @@
       }
     },
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "source_revision": "sha256:f07ed2ad489444add6758d0b0d633f73ba5306ec6efb340f88e68c073d363f54",
+    "source_revision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
     "lifecycle": "reader_synthesis",
     "public_disposition": "bounded_current",
     "claim_card_ids": [
@@ -543,11 +543,11 @@
       "OS01-44"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "094884337f42c933a4bff371d53bc74a1df76d55fa8344ac5920fcd629328530",
+    "claim_card_register_sha256": "ff6642ed895a4548c5a156d41d962592f793b1ecf9cf9a06829886bdc146380f",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "0f8f47adf3925fa8afb370355fe459b5d1e9fbf39c06133af4278625846301b5",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "5028b4ce347670a64b83f15e763a1e7dcd214294b65069cfec2e29936b515dac",
+    "output_sha256": "9aad725c128e92406fd2f8ad4a911b02b7796a583d75eab6d2a1d65f750286e8",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }
