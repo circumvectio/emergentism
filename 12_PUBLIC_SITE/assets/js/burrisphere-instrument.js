@@ -2,12 +2,17 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const canvas = document.querySelector("#burrisphere-canvas");
-const slider = document.querySelector("#chart-position");
+const polarSlider = document.querySelector("#polar-angle");
+const bearingSlider = document.querySelector("#axial-rotation");
+const polarOutput = document.querySelector("#polar-angle-output");
+const bearingOutput = document.querySelector("#axial-rotation-output");
 const motionToggle = document.querySelector("#motion-toggle");
 const centreButton = document.querySelector("#centre-button");
+const bearingButton = document.querySelector("#bearing-button");
 const overlayToggle = document.querySelector("#overlay-toggle");
 const fullscreenButton = document.querySelector("#fullscreen-button");
 const phaseReadout = document.querySelector("#phase-readout");
+const motionStatus = document.querySelector("#motion-status");
 const actionCells = [...document.querySelectorAll(".bi-action-plane__cell")];
 const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
 
@@ -17,6 +22,7 @@ const readouts = {
   product: document.querySelector("#product-value"),
   balance: document.querySelector("#balance-value"),
   theta: document.querySelector("#theta-value"),
+  azimuth: document.querySelector("#azimuth-value"),
 };
 
 const COLORS = {
@@ -30,6 +36,9 @@ const COLORS = {
 };
 
 const R = 1.08;
+const TAU = Math.PI * 2;
+const POLE_EPSILON = 1e-9;
+const ITINERARY_DURATION = 12000;
 const PLANE_SIZE = 8.4;
 const LIMIT = PLANE_SIZE * 0.46;
 const ACTION_RADIUS = 2 * R;
@@ -281,14 +290,16 @@ root.add(itinerary);
 const point = pole(new THREE.Vector3(), COLORS.gold, 0.052);
 const lowerMarker = pole(new THREE.Vector3(), COLORS.mint, 0.045);
 const upperMarker = pole(new THREE.Vector3(), COLORS.blue, 0.045);
-const lowerRay = line([NORTH, new THREE.Vector3(), new THREE.Vector3()], COLORS.mint, 0.88);
-const upperRay = line([SOUTH, new THREE.Vector3(), new THREE.Vector3()], COLORS.blue, 0.88);
+const lowerRay = line([NORTH, new THREE.Vector3()], COLORS.mint, 0.88);
+const upperRay = line([SOUTH, new THREE.Vector3()], COLORS.blue, 0.88);
 root.add(lowerRay, upperRay);
 
-let autoMotion = !reducedMotion;
 let showItinerary = true;
-let manualS = Number(slider.value) / 100;
-let start = performance.now();
+let manualTheta = THREE.MathUtils.degToRad(Number(polarSlider.value));
+let manualAzimuth = THREE.MathUtils.degToRad(Number(bearingSlider.value));
+let motionState = reducedMotion ? "reduced" : "idle";
+let itineraryProgress = 0;
+let itineraryStartedAt = 0;
 let activePhase = -1;
 let dirty = true;
 let lastDomUpdate = 0;
@@ -299,24 +310,50 @@ function setLinePoints(object, points) {
   position.needsUpdate = true;
 }
 
-function clipRadial(vector) {
-  const radial = Math.hypot(vector.x, vector.z);
-  if (radial <= LIMIT) return { vector, clipped: false };
+// GeoGebra's 3D kernel projects along one declared line direction. Keep that
+// invariant explicit here: source -> shared point -> plane intersection.
+function intersectLineWithHorizontalPlane(source, through, planeY) {
+  const direction = through.clone().sub(source);
+  if (Math.abs(direction.y) <= POLE_EPSILON) return null;
+  const distance = (planeY - source.y) / direction.y;
+  return source.clone().addScaledVector(direction, distance);
+}
+
+function clipRayToRadialWindow(source, exact) {
+  const radial = Math.hypot(exact.x, exact.z);
+  if (radial <= LIMIT) return { vector: exact, clipped: false };
   const scale = LIMIT / radial;
-  return { vector: new THREE.Vector3(vector.x * scale, vector.y, vector.z * scale), clipped: true };
+  return { vector: source.clone().lerp(exact, scale), clipped: true };
 }
 
 function formatCoordinate(value) {
+  if (!Number.isFinite(value)) return "∞";
+  if (value === 0) return "0.000";
   if (value >= 100) return value.toExponential(2);
   if (value < 0.01) return value.toExponential(2);
   return value.toFixed(3);
 }
 
-function updatePhase(theta) {
-  const normalized = THREE.MathUtils.clamp(theta / Math.PI, 0, 0.999999);
-  const index = Math.min(3, Math.floor(normalized * 4));
+function phaseIndexForAzimuth(azimuth) {
+  const normalized = ((azimuth + Math.PI / 2) % TAU + TAU) % TAU;
+  return Math.min(3, Math.floor(normalized / (Math.PI / 2)));
+}
+
+function updatePhase(azimuth, atPole) {
+  const index = atPole ? -1 : phaseIndexForAzimuth(azimuth);
   if (index === activePhase) return;
   activePhase = index;
+  if (atPole) {
+    phaseReadout.querySelector(".bi-phase__index").textContent = "M4 · bearing degenerates at pole [I]";
+    phaseReadout.querySelector("strong").textContent = "Axis boundary";
+    phaseReadout.querySelector(".bi-action-plane__current").style.borderColor = `#${COLORS.violet.toString(16).padStart(6, "0")}`;
+    actionCells.forEach((cell) => {
+      cell.classList.remove("is-active");
+      cell.removeAttribute("aria-current");
+    });
+    sectorMeshes.forEach((sector) => { sector.material.opacity = 0.035; });
+    return;
+  }
   const phase = phases[index];
   phaseReadout.querySelector(".bi-phase__index").textContent = `${phase.index} · bottom action plane [I]`;
   phaseReadout.querySelector("strong").textContent = phase.name;
@@ -332,46 +369,70 @@ function updatePhase(theta) {
   });
 }
 
-function updateSliderAccessibleText() {
-  slider.setAttribute("aria-valuetext", `${readouts.theta.textContent}; ${phaseReadout.querySelector("strong").textContent}`);
+function updateSliderAccessibleText(atPole) {
+  const chartState = atPole
+    ? `${readouts.theta.textContent}; open-chart boundary; phi nu product has limiting value 1`
+    : `${readouts.theta.textContent}; phi ${readouts.phi.textContent}; nu ${readouts.nu.textContent}; B ${readouts.balance.textContent}`;
+  polarSlider.setAttribute("aria-valuetext", chartState);
+  bearingSlider.setAttribute(
+    "aria-valuetext",
+    atPole
+      ? `${bearingOutput.textContent}; bearing is degenerate at the pole`
+      : `${bearingOutput.textContent}; selected M4 reading ${phaseReadout.querySelector("strong").textContent}`,
+  );
 }
 
-function updateGeometry(s, updateDom = true) {
-  const nu = Math.exp(s);
-  const phi = Math.exp(-s);
-  const theta = 2 * Math.atan(nu);
+function updateGeometry(theta, azimuth, updateDom = true) {
+  const atSouth = theta <= POLE_EPSILON;
+  const atNorth = Math.PI - theta <= POLE_EPSILON;
+  const atPole = atSouth || atNorth;
+  const nu = atNorth ? Infinity : Math.tan(theta / 2);
+  const phi = atSouth ? Infinity : 1 / nu;
   const balance = Math.sin(theta);
-  const azimuth = 2 * theta - Math.PI / 2;
   const shared = new THREE.Vector3(
     R * Math.sin(theta) * Math.cos(azimuth),
     -R * Math.cos(theta),
     R * Math.sin(theta) * Math.sin(azimuth),
   );
 
-  const lowerExact = new THREE.Vector3(2 * R * nu * Math.cos(azimuth), -R, 2 * R * nu * Math.sin(azimuth));
-  const upperExact = new THREE.Vector3(2 * R * phi * Math.cos(azimuth), R, 2 * R * phi * Math.sin(azimuth));
-  const lower = clipRadial(lowerExact);
-  const upper = clipRadial(upperExact);
+  const lowerExact = intersectLineWithHorizontalPlane(NORTH, shared, -R);
+  const upperExact = intersectLineWithHorizontalPlane(SOUTH, shared, R);
+  const lower = lowerExact ? clipRayToRadialWindow(NORTH, lowerExact) : null;
+  const upper = upperExact ? clipRayToRadialWindow(SOUTH, upperExact) : null;
 
   phaseCursor.position.x = ACTION_CURSOR_RADIUS * Math.cos(azimuth);
   phaseCursor.position.z = ACTION_CURSOR_RADIUS * Math.sin(azimuth);
+  phaseCursor.visible = !atPole;
 
   point.position.copy(shared);
-  lowerMarker.position.copy(lower.vector);
-  upperMarker.position.copy(upper.vector);
-  lowerMarker.visible = !lower.clipped;
-  upperMarker.visible = !upper.clipped;
-  setLinePoints(lowerRay, [NORTH, shared, lower.vector]);
-  setLinePoints(upperRay, [SOUTH, shared, upper.vector]);
+  lowerRay.visible = Boolean(lower);
+  upperRay.visible = Boolean(upper);
+  lowerMarker.visible = Boolean(lower && !lower.clipped);
+  upperMarker.visible = Boolean(upper && !upper.clipped);
+  if (lower) {
+    lowerMarker.position.copy(lowerExact);
+    setLinePoints(lowerRay, [NORTH, lower.vector]);
+  }
+  if (upper) {
+    upperMarker.position.copy(upperExact);
+    setLinePoints(upperRay, [SOUTH, upper.vector]);
+  }
 
   if (updateDom) {
     readouts.phi.textContent = formatCoordinate(phi);
     readouts.nu.textContent = formatCoordinate(nu);
-    readouts.product.textContent = (phi * nu).toFixed(3);
+    readouts.product.textContent = atPole ? "limit 1" : (phi * nu).toFixed(3);
     readouts.balance.textContent = balance.toFixed(3);
     readouts.theta.textContent = `${THREE.MathUtils.radToDeg(theta).toFixed(1)}°`;
-    updatePhase(theta);
-    updateSliderAccessibleText();
+    readouts.azimuth.textContent = atPole ? "— at pole" : `${THREE.MathUtils.radToDeg(azimuth).toFixed(1)}°`;
+    polarOutput.textContent = readouts.theta.textContent;
+    bearingOutput.textContent = `${THREE.MathUtils.radToDeg(azimuth).toFixed(1)}°`;
+    updatePhase(azimuth, atPole);
+    updateSliderAccessibleText(atPole);
+    canvas.dataset.thetaDegrees = THREE.MathUtils.radToDeg(theta).toFixed(3);
+    canvas.dataset.azimuthDegrees = THREE.MathUtils.radToDeg(azimuth).toFixed(3);
+    canvas.dataset.lowerRay = lower ? (lower.clipped ? "straight-clipped" : "straight-plane") : "undefined-at-pole";
+    canvas.dataset.upperRay = upper ? (upper.clipped ? "straight-clipped" : "straight-plane") : "undefined-at-pole";
   }
   dirty = true;
 }
@@ -390,31 +451,79 @@ function frameCamera() {
 }
 
 function updateMotionButton() {
-  motionToggle.setAttribute("aria-pressed", String(autoMotion));
-  motionToggle.setAttribute("aria-label", autoMotion ? "Pause automatic scan" : "Resume automatic scan");
-  motionToggle.querySelector(".bi-action-icon").textContent = autoMotion ? "Ⅱ" : "▶";
-  motionToggle.querySelector("span:last-child").textContent = autoMotion ? "Pause scan" : "Resume scan";
+  const playing = motionState === "playing";
+  motionToggle.setAttribute("aria-pressed", String(playing));
+  if (motionState === "reduced") {
+    motionToggle.disabled = true;
+    motionToggle.setAttribute("aria-disabled", "true");
+    motionToggle.setAttribute("aria-label", "One-turn itinerary disabled by reduced-motion preference");
+    motionToggle.querySelector(".bi-action-icon").textContent = "—";
+    motionToggle.querySelector("span:last-child").textContent = "Motion off";
+    motionStatus.textContent = "Reduced-motion preference active. Use the two coordinate sliders directly.";
+    return;
+  }
+  motionToggle.disabled = false;
+  motionToggle.removeAttribute("aria-disabled");
+  if (playing) {
+    motionToggle.setAttribute("aria-label", "Pause the selected one-turn itinerary");
+    motionToggle.querySelector(".bi-action-icon").textContent = "Ⅱ";
+    motionToggle.querySelector("span:last-child").textContent = "Pause turn";
+    motionStatus.textContent = "Selected one-turn interpretive itinerary playing.";
+  } else if (motionState === "paused") {
+    motionToggle.setAttribute("aria-label", "Resume the selected one-turn itinerary");
+    motionToggle.querySelector(".bi-action-icon").textContent = "▶";
+    motionToggle.querySelector("span:last-child").textContent = "Resume turn";
+    motionStatus.textContent = "Selected one-turn interpretive itinerary paused.";
+  } else {
+    motionToggle.setAttribute("aria-label", motionState === "complete" ? "Replay the selected one-turn itinerary" : "Play the selected one-turn itinerary");
+    motionToggle.querySelector(".bi-action-icon").textContent = "▶";
+    motionToggle.querySelector("span:last-child").textContent = motionState === "complete" ? "Replay turn" : "Play 1 turn";
+    motionStatus.textContent = motionState === "complete" ? "Selected one-turn interpretive itinerary complete." : "Free coordinate inspection.";
+  }
 }
 
-slider.addEventListener("input", () => {
-  autoMotion = false;
-  manualS = Number(slider.value) / 100;
+function enterFreeMode() {
+  motionState = reducedMotion ? "reduced" : "idle";
+  itineraryProgress = 0;
   updateMotionButton();
-  updateGeometry(manualS, true);
+}
+
+polarSlider.addEventListener("input", () => {
+  enterFreeMode();
+  manualTheta = THREE.MathUtils.degToRad(Number(polarSlider.value));
+  updateGeometry(manualTheta, manualAzimuth, true);
+});
+
+bearingSlider.addEventListener("input", () => {
+  enterFreeMode();
+  manualAzimuth = THREE.MathUtils.degToRad(Number(bearingSlider.value));
+  updateGeometry(manualTheta, manualAzimuth, true);
 });
 
 motionToggle.addEventListener("click", () => {
-  autoMotion = !autoMotion;
-  if (autoMotion) start = performance.now() - Math.asin(THREE.MathUtils.clamp(manualS / 2.55, -1, 1)) / 0.00022;
+  if (motionState === "reduced") return;
+  if (motionState === "playing") {
+    motionState = "paused";
+  } else {
+    if (motionState !== "paused") itineraryProgress = 0;
+    itineraryStartedAt = performance.now() - itineraryProgress * ITINERARY_DURATION;
+    motionState = "playing";
+  }
   updateMotionButton();
 });
 
 centreButton.addEventListener("click", () => {
-  autoMotion = false;
-  manualS = 0;
-  slider.value = "0";
-  updateMotionButton();
-  updateGeometry(0, true);
+  enterFreeMode();
+  manualTheta = Math.PI / 2;
+  polarSlider.value = "90";
+  updateGeometry(manualTheta, manualAzimuth, true);
+});
+
+bearingButton.addEventListener("click", () => {
+  enterFreeMode();
+  manualAzimuth = Math.PI / 2;
+  bearingSlider.value = "90";
+  updateGeometry(manualTheta, manualAzimuth, true);
 });
 
 overlayToggle.addEventListener("click", () => {
@@ -434,6 +543,9 @@ fullscreenButton.addEventListener("click", async () => {
     if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
     else await document.exitFullscreen();
   } catch (_) {
+    fullscreenButton.disabled = true;
+    fullscreenButton.setAttribute("aria-disabled", "true");
+    fullscreenButton.setAttribute("aria-label", "Full screen unavailable");
     fullscreenButton.querySelector("span:last-child").textContent = "Unavailable";
   }
 });
@@ -445,7 +557,7 @@ document.addEventListener("fullscreenchange", () => {
 
 canvas.addEventListener("webglcontextlost", (event) => {
   event.preventDefault();
-  autoMotion = false;
+  motionState = reducedMotion ? "reduced" : "idle";
   updateMotionButton();
   document.body.dataset.webgl = "lost";
   canvas.hidden = true;
@@ -456,17 +568,24 @@ window.addEventListener("resize", frameCamera, { passive: true });
 controls.addEventListener("change", () => { dirty = true; });
 frameCamera();
 updateMotionButton();
-updateGeometry(manualS);
+updateGeometry(manualTheta, manualAzimuth);
 
 function animate(now) {
-  if (document.visibilityState === "visible" && autoMotion) {
-    manualS = 2.55 * Math.sin((now - start) * 0.00022);
-    slider.value = String(Math.round(manualS * 100));
-    const updateDom = now - lastDomUpdate >= 100;
-    updateGeometry(manualS, updateDom);
+  if (document.visibilityState === "visible" && motionState === "playing") {
+    itineraryProgress = THREE.MathUtils.clamp((now - itineraryStartedAt) / ITINERARY_DURATION, 0, 1);
+    manualTheta = Math.PI * itineraryProgress;
+    manualAzimuth = -Math.PI / 2 + TAU * itineraryProgress;
+    polarSlider.value = String(THREE.MathUtils.radToDeg(manualTheta));
+    bearingSlider.value = String(THREE.MathUtils.radToDeg(manualAzimuth));
+    const updateDom = now - lastDomUpdate >= 80 || itineraryProgress >= 1;
+    updateGeometry(manualTheta, manualAzimuth, updateDom);
     if (updateDom) lastDomUpdate = now;
+    if (itineraryProgress >= 1) {
+      motionState = "complete";
+      updateMotionButton();
+    }
   }
-  if (document.visibilityState === "visible" && (autoMotion || dirty)) {
+  if (document.visibilityState === "visible" && (motionState === "playing" || dirty)) {
     controls.update();
     renderer.render(scene, camera);
     dirty = false;
