@@ -33,6 +33,15 @@ CORE_PAGES = {
     "exit/index.html": "exit",
 }
 
+EXACT_NAV_HREFS = {
+    "index.html": "/",
+    "plainly/index.html": "/plainly/",
+    "practice/index.html": "/practice/",
+    "record/index.html": "/record/",
+    "contribute/index.html": "/contribute/",
+    "exit/index.html": "/exit/",
+}
+
 NAV_RE = re.compile(
     r"<!-- gestalt-core-nav:start -->.*?<!-- gestalt-core-nav:end -->",
     re.DOTALL,
@@ -83,12 +92,17 @@ def _partial(path: Path, kind: str) -> str:
     return text
 
 
-def render_nav(active: str | None = None) -> str:
+def render_nav(active: str | None = None, current_href: str | None = None) -> str:
     nav = _partial(NAV_PARTIAL, "nav")
     if active:
         nav = nav.replace(
             f'data-section="{active}"',
-            f'data-section="{active}" aria-current="location"',
+            f'data-section="{active}" data-current-section="true"',
+        )
+    if current_href:
+        nav = nav.replace(
+            f'href="{current_href}"',
+            f'href="{current_href}" aria-current="page"',
         )
     return nav
 
@@ -209,13 +223,13 @@ def _replace_last_legacy_footer(text: str, footer: str) -> str:
     return text[: match.start()] + "\n" + footer + text[match.end() :]
 
 
-def render_page(text: str, active: str) -> str:
+def render_page(text: str, active: str, current_href: str | None = None) -> str:
     _single_close(text, "body")
     has_nav = _validate_marker_pair(text, "nav", allow_absent=True)
     has_footer = _validate_marker_pair(text, "footer", allow_absent=True)
     text = _bind_head(text)
     text = _bind_main_target(text)
-    nav = render_nav(active)
+    nav = render_nav(active, current_href)
     footer = render_footer()
 
     if has_nav:
@@ -245,7 +259,11 @@ def outputs() -> dict[Path, str]:
         path = SITE / rel
         if not path.is_file():
             raise ValueError(f"core shell page is missing: {rel}")
-        rendered[path] = render_page(path.read_text(encoding="utf-8"), active)
+        rendered[path] = render_page(
+            path.read_text(encoding="utf-8"),
+            active,
+            EXACT_NAV_HREFS.get(rel),
+        )
     return rendered
 
 

@@ -427,7 +427,7 @@ def stone_section(stone: dict) -> tuple[str, str]:
     <h3 id="strategy-title">Four cells as a scoped strategy compression</h3>
     <p><b>Game theory is not exhausted.</b> The broader [C] conjecture is that its basic strategic orientation is <b>maximally compressed</b> by these four cells—not that the cells reproduce every game.</p>
     <p><b>Compression target:</b> {esc(strategy['compressionTarget'])}. <b>Mode:</b> <code>{esc(strategy['compressionMode'])}</code>. Inside the <b>{esc(strategy['scopedExhaustion'])}</b>, the two declared axes close exactly {esc(strategy['cells'])} cells.</p>
-    <div class="strategy-table-wrap"><table class="strategy-matrix">
+    <div class="strategy-table-wrap" role="region" tabindex="0" aria-label="Scrollable strategy comparison table"><table class="strategy-matrix">
       <caption>Selected M4 direction × channel vocabulary</caption>
       <thead><tr><th scope="col">Direction / channel</th><th scope="col">{esc(strategy['axes']['channel'][0])}</th><th scope="col">{esc(strategy['axes']['channel'][1])}</th></tr></thead>
       <tbody>

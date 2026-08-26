@@ -188,6 +188,7 @@ body.bi-page {
   .bi-atmosphere { background: linear-gradient(0deg, rgba(7,9,15,.96) 0%, transparent 42%), radial-gradient(circle at 50% 38%, transparent 0 28%, rgba(7,9,15,.74) 100%); }
   .bi-header { inset-inline: 16px; }
   .bi-back span:last-child { display: none; }
+  .bi-back, .bi-nav a { min-width: 48px; justify-content: center; }
   .bi-nav { gap: 16px; }
   .bi-nav a:nth-child(2) { display: none; }
   .bi-thesis { top: 76px; left: 18px; width: calc(100vw - 36px); }
@@ -249,13 +250,19 @@ body.bi-page {
 }
 
 @media (max-width: 700px) and (max-height: 700px) {
-  .bi-thesis { display: none; }
+  .bi-thesis { display: block; top: 66px; left: 14px; width: calc(100vw - 28px); }
+  .bi-thesis .bi-kicker { margin: 0; font-size: .54rem; }
+  .bi-thesis h1 { margin-top: 4px; font-size: clamp(1.65rem, 9vw, 2.4rem); line-height: .88; }
+  .bi-thesis h1 br { display: none; }
   .bi-action-plane { bottom: 314px; }
-  .bi-action-plane__current, .bi-action-plane__fence { display: none; }
+  .bi-action-plane__current { display: flex; justify-content: flex-start; }
+  .bi-action-plane__current > strong { display: none; }
+  .bi-action-plane__fence { display: none; }
   .bi-action-plane__map { margin-top: 0; }
   .bi-readout { bottom: 208px; }
   .bi-chart-key { display: none; }
-  .bi-boundary { display: none; }
+  .bi-boundary { display: block; right: 14px; bottom: 314px; }
+  .bi-boundary[open] { left: 14px; right: 14px; bottom: 208px; max-height: 48vh; }
 }
 
 @media (prefers-reduced-motion: reduce) {

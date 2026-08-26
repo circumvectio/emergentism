@@ -286,7 +286,7 @@ def record_main() -> str:
 
   <section class="g2-shell g2-section" aria-labelledby="pqa-method-title">
     <div class="g2-section__head"><div><p class="g2-eyebrow">02 · Five phases</p><h2 id="pqa-method-title">Formulate → Attack → Discriminate → Contact → Revise and transfer</h2></div><p class="g2-section__intro">Only the public account, typed propositions, predictions, and revision ledger are scored.</p></div>
-    <div class="g2-definition-list"><dt>Formulate</dt><dd>Recover the native target before applying Emergentism.</dd><dt>Attack</dt><dd>Introduce a serious native rival, a generic/null rival, and provenance poison.</dd><dt>Discriminate</dt><dd>Name the exact collision, conservative repair, prediction, kill, and survivor.</dd><dt>Contact</dt><dd>Reveal a counterexample or review challenge and require explicit correction.</dd><dt>Revise and transfer</dt><dd>Preserve stable claim IDs and transfer to a relabelled neighboring problem.</dd></div>
+    <dl class="g2-definition-list"><dt>Formulate</dt><dd>Recover the native target before applying Emergentism.</dd><dt>Attack</dt><dd>Introduce a serious native rival, a generic/null rival, and provenance poison.</dd><dt>Discriminate</dt><dd>Name the exact collision, conservative repair, prediction, kill, and survivor.</dd><dt>Contact</dt><dd>Reveal a counterexample or review challenge and require explicit correction.</dd><dt>Revise and transfer</dt><dd>Preserve stable claim IDs and transfer to a relabelled neighboring problem.</dd></dl>
   </section>
 
   <section class="g2-shell g2-section" aria-labelledby="pqa-effects-title">

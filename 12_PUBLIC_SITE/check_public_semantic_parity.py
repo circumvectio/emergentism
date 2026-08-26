@@ -462,7 +462,8 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "Finity Card", "Φ₅", "V₄", "The two-horizon overlay",
         "Vward", "Φward", "OVERLAY NOT RUN",
         "Prepare a private decision transaction.",
-        "Prepare unsigned transaction", "Sign local commitment", "Leave unsigned",
+        "Prepare unsigned transaction",
+        "Record private commitment · local and non-legal", "Leave unrecorded",
     ),
     "5/index.html": (
         "shorter horizon", "longer horizon", "OVERLAY NOT RUN",
@@ -2038,8 +2039,8 @@ def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
             'id="receipt-builder"',
             'name="transaction-sector"',
             "Prepare unsigned transaction",
-            "Sign local commitment",
-            "Leave unsigned",
+            "Record private commitment · local and non-legal",
+            "Leave unrecorded",
             "PREPARED_UNSIGNED",
             "COMMITTED_LOCAL",
             "LOCAL_ACKNOWLEDGMENT_ONLY",
@@ -2070,7 +2071,11 @@ def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
                 errors.append(f"decisionTransaction practice must remain local-only: {forbidden}")
         if "no account · no wallet · no transmission · no execution" not in text:
             errors.append("decisionTransaction practice boundary is not explicit")
-        if not re.search(r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>\s*Sign local commitment', text):
+        if not re.search(
+            r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>\s*'
+            r'Record private commitment · local and non-legal',
+            text,
+        ):
             errors.append("decisionTransaction local commitment must begin disabled")
 
 

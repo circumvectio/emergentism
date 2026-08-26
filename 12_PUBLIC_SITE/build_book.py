@@ -11,7 +11,7 @@ public snapshot.
 
 Run:  python3 -B build_book.py [--check]
 """
-import argparse, hashlib, json, os, re, sys
+import argparse, hashlib, html, json, os, re, sys
 import markdown
 
 from build_core_shell import head_assets, render_footer, render_nav
@@ -320,7 +320,8 @@ def render(contract):
         if idx < len(chapters) - 1:
             nhid, ntitle, _ = chapters[idx + 1]
             nav_bits.append(f'<a class="ch-next" href="#{nhid}">{ntitle} →</a>')
-        nav = f'<nav class="ch-nav" aria-label="Chapter navigation">{"".join(nav_bits)}</nav>' if nav_bits else ""
+        nav_label = "Overture" if first else htitle
+        nav = f'<nav class="ch-nav" aria-label="Chapter navigation for {html.escape(nav_label, quote=True)}">{"".join(nav_bits)}</nav>' if nav_bits else ""
         sections.append(
             f'<section class="{cls}" id="{hid}">'
             f'<header class="ch-head">{badge}<{heading_tag} id="{hid}-h">{htitle}</{heading_tag}></header>'
@@ -342,7 +343,7 @@ def render(contract):
     page = page.replace("%%NCH%%", str(n_ch))
     page = page.replace("%%WORDS%%", f"{words:,}")
     page = page.replace("%%CORE_HEAD%%", head_assets())
-    page = page.replace("%%CORE_NAV%%", render_nav("library"))
+    page = page.replace("%%CORE_NAV%%", render_nav("library", "/book/"))
     page = page.replace("%%CORE_FOOTER%%", render_footer())
 
     return page, n_ch, words, source_chapter_order
@@ -459,7 +460,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 :root{
-  --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --serif:"Newsreader","Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --measure:40rem; --shape-lg:16px; --shape-full:999px; --target-min:48px;
@@ -621,10 +622,10 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 <body class="g2-book">
 <div class="progress" id="progress"></div>
 %%CORE_NAV%%
-<div class="book-tools" aria-label="Reading controls">
+<nav class="book-tools" aria-label="Reading controls">
   <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">Contents</button>
   <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">Reading theme</button>
-</div>
+</nav>
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">

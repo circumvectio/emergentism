@@ -124,7 +124,7 @@ p{margin:0 0 1.25rem}
 .receipt-face h4{margin:0 0 1rem;font:600 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
 .field{display:grid;gap:.35rem;margin-bottom:.9rem}
 .field label{font:500 .68rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--bone-dim)}
-.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:4px;background:var(--void);color:var(--bone);font:400 .92rem/1.5 var(--sans);padding:.72rem .8rem}
+.field input,.field textarea,.field select{width:100%;min-height:48px;border:1px solid var(--line);border-radius:4px;background:var(--void);color:var(--bone);font:400 .92rem/1.5 var(--sans);padding:.72rem .8rem}
 .field textarea{min-height:5.4rem;resize:vertical}
 .field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);outline:2px solid rgba(255,235,59,.18);outline-offset:1px}
 .builder-actions{display:flex;gap:.65rem;flex-wrap:wrap;padding:1rem 1.35rem;border-top:1px solid var(--line)}
@@ -152,10 +152,11 @@ p{margin:0 0 1.25rem}
 .signature-controls label{color:var(--bone-dim);font-size:.82rem}
 .signature-controls input[type="text"]{width:100%;margin-top:.35rem}
 .signature-controls .ack{display:grid;grid-template-columns:auto 1fr;gap:.55rem;align-items:start}
+.signature-controls .ack{min-height:48px;padding-block:.35rem}
 .signature-controls .ack input{margin-top:.25rem;accent-color:var(--gold)}
 .signature-actions{display:flex;gap:.55rem;flex-wrap:wrap}
 .further{border-top:1px solid var(--line-soft);padding:clamp(2.4rem,6vw,4.2rem) 0}
-.further>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center;font:500 .76rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+.further>summary{min-height:48px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center;font:500 .76rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
 .further>summary::-webkit-details-marker{display:none}
 .further>summary::after{content:"Open +";color:var(--bone-faint);font-size:.66rem}
 .further[open]>summary::after{content:"Close −"}
@@ -188,14 +189,14 @@ footer.foot a{color:var(--bone-dim)}
     </a>
     <nav class="g2-nav__desktop" aria-label="Primary navigation">
       <a data-section="worldview" href="/plainly/">Worldview</a>
-      <a data-section="practice" aria-current="location" href="/practice/">Practice</a>
+      <a data-section="practice" data-current-section="true" href="/practice/" aria-current="page">Practice</a>
       <a data-section="research" href="/record/">Research</a>
       <a data-section="library" href="/book/">Library</a>
       <a data-section="participate" href="/contribute/">Participate</a>
       <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
     </nav>
     <nav class="g2-nav__mobile" aria-label="Mobile navigation">
-      <a class="g2-mobile__direct" data-section="practice" aria-current="location" href="/practice/">Practice</a>
+      <a class="g2-mobile__direct" data-section="practice" data-current-section="true" href="/practice/" aria-current="page">Practice</a>
       <details class="g2-menu">
         <summary>Menu</summary>
         <div class="g2-menu__panel">
@@ -232,7 +233,7 @@ footer.foot a{color:var(--bone-dim)}
     </div>
     <div class="artifact">
       <div class="bar"><span>finity-card.txt · one decision</span><button class="copybtn" type="button" data-copy-target="finity-card-template" aria-label="Copy the Finity Card to the clipboard">Copy</button></div>
-      <pre id="finity-card-template">THE FINITY CARD
+      <pre id="finity-card-template" tabindex="0" aria-label="Scrollable Finity Card template">THE FINITY CARD
 
 DECISION      What am I actually deciding?
 ACTUAL        What is true now, and what means are really available?
@@ -297,21 +298,21 @@ RECEIPT       What outcome will tell me to continue, revise, or stop? What
       </div>
       <div class="artifact receipt-output" id="receipt-output" hidden>
         <div class="bar"><span>finity-transaction.txt · prepared in this browser</span></div>
-        <pre id="receipt-text"></pre>
+        <pre id="receipt-text" tabindex="0" aria-label="Scrollable prepared decision receipt"></pre>
       </div>
       <div class="signature-boundary">
         <div class="signature-copy"><p class="lab">Action exit · D5 possibility → D4 commitment</p><h4>The prepared packet cannot sign itself.</h4><p>Review it first. Commit only if you are the relevant human decision-maker or hold the required authority. The site records a local acknowledgment; it performs no legal, financial, contractual, governance, wallet, or institutional signature.</p></div>
         <div class="signature-controls">
           <label for="r-signer">Local signer label<input id="r-signer" type="text" placeholder="Your name or private label" /></label>
           <label class="ack" for="r-ack"><input id="r-ack" type="checkbox" /><span>I have reviewed this bounded move and have the authority required for my own commitment. I understand that this site transmits and executes nothing.</span></label>
-          <div class="signature-actions"><button class="copybtn primary" id="sign-transaction" type="button" disabled>Sign local commitment</button><a class="copybtn" href="/exit/">Leave unsigned</a></div>
+          <div class="signature-actions"><button class="copybtn primary" id="sign-transaction" type="button" disabled>Record private commitment · local and non-legal</button><a class="copybtn" href="/exit/">Leave unrecorded</a></div>
         </div>
       </div>
     </form>
 
     <div class="worked" aria-label="Illustrative Finity Card example">
       <p class="lab">Illustrative worked example — a decision aid, not evidence for the framework</p>
-      <pre>DECISION      Should our six-person team replace one weekly meeting
+      <pre tabindex="0" aria-label="Scrollable worked decision example">DECISION      Should our six-person team replace one weekly meeting
               with a written-update pilot?
 ACTUAL        The meeting takes 45 minutes. An async tool is available.
               Two teammates depend on spoken clarification.
@@ -383,7 +384,7 @@ RECEIPT       Record delivery rate, missed blockers, time returned, and
 
     <div class="artifact">
       <div class="bar"><span>personal-trial-record.txt · the template</span><button class="copybtn" type="button" data-copy-target="tpl" aria-label="Copy the trial-record template to the clipboard">Copy</button></div>
-      <pre id="tpl">MY TRIAL RECORD
+      <pre id="tpl" tabindex="0" aria-label="Scrollable trial record template">MY TRIAL RECORD
 started: YYYY-MM-DD
 rule: preserve superseded entries — strike through, date, sign.
 newest entries on top. review at a declared interval.
@@ -409,7 +410,7 @@ VERDICT    —
 
     <div class="worked">
       <p class="lab">A worked entry — one correction kept visible</p>
-      <pre>No.001 · opened 2026-02-03 · status: <span class="vd">STRUCK 2026-06-28</span>
+      <pre tabindex="0" aria-label="Scrollable struck practice example">No.001 · opened 2026-02-03 · status: <span class="vd">STRUCK 2026-06-28</span>
 CLAIM      <s>My project is stalled only because I lack time.</s>
 TIER       bet
 KILL       one clear week with nothing else in it, and no progress
