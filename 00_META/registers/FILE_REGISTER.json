@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 4049,
+  "entry_count": 4050,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -4131,7 +4131,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 16,
+      "inbound_references": 17,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -19805,7 +19805,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 17,
+      "inbound_references": 18,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28653,6 +28653,23 @@
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_23.md",
       "sha256": "7617b75387d2d13226e172486bdda35ea17d4f1760c48cda6c601c16cad95db8",
       "bytes": 1448,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 0,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_26.md",
+      "sha256": "af2e5213aa0b46848e9b0ba5348232de542163d7a3752a1ff58c5f6967b62a12",
+      "bytes": 1798,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",
@@ -45254,7 +45271,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 0,
+      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
