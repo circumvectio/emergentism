@@ -1,6 +1,6 @@
 ---
 title: "O9 release-state ledger — emergentism.org"
-date: 2026-08-24
+date: 2026-08-26
 status: "ACTIVE LEDGER — v2.1 publicly served; publication is not validation"
 evidence_tier: "[D] owner-directed deployment; [S] Vercel and HTTP receipts; [B] local and live gates; no independent outcome evidence"
 contract: _PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md · O9
@@ -12,6 +12,47 @@ may_authorize: false
 
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
+
+## Current v2.1 Gestalt UI/UX release — 2026-08-26
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `19acb98afd8573bc090c25bc04fd2eff4b46f0a1` — executive atlas journey, valid local assets, repaired accessibility, claim/manifesto/receipt reconciliation, and deterministic inventories | clean `HEAD`, explicit-path commits, full repository gate including Lean |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream before preparation | release receipt records identical local and upstream commits |
+| **immutable artifact** | `dpl_8Dutbj655PJ668ibJf361VTe3ayJ` · `emergentism-7dl49nytv-yves-projects-c163dce1.vercel.app` · `READY` | pinned Vercel project/team, held deployment, immutable strict audit, and byte-hash witnesses |
+| **predecessor** | `dpl_A9563suMqhY5fLwFXo7nEvGqh4ws` · `emergentism-4k0m4zd65-yves-projects-c163dce1.vercel.app` | observed before staging and rechecked immediately before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` identity and critical-hash verification |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **release receipt** | integrity field `843077aa5ed4157aa16bc24be152eb11854688fa807a4ea90bcb4b2d8080e897`; external JSON SHA-256 `372dc91b52f5569838b689d667d4ce9a8ed742b71daf3991a91f3663027c24cf` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization |
+
+The frozen public payload contains **300 files** and **9,742,490 bytes**, with
+manifest SHA-256
+`1c2e94252eb70aea3c6dd762ca772c4a0db0e429843daf911a8ed98e18ee32c3`. <!-- pragma: allow-secret -- manifest digest -->
+The reviewed Vercel-link SHA-256 remained
+`d136f60e3b6c40c01cf8ba76a72ed4ea3c50f7519acf78e205b8b74dd5dee746`. <!-- pragma: allow-secret -- link digest -->
+
+Before release, the source passed the complete repository gate including Lean,
+all 17 predeploy sections, **91** public-site unit tests, and all eight generated
+artifact classes. A final reduced-motion browser pass covered **33/33** current
+routes at 390×844 with one visible heading and main landmark, valid local fonts,
+no duplicate IDs, console errors, overflow, or running animation. Desktop
+1440×900, mobile 390×844, and the 320×568 full-screen Burrisphere instrument
+were visually inspected after the final build.
+
+The held artifact, apex, and `www` each passed **724/724** strict live probes and
+**74/74** reading-manifest document probes. All **20** critical body hashes
+matched the frozen artifact on immutable and branded hosts. Live WOFF2 and PNG
+objects also retained their expected `font/woff2` and `image/png` MIME types.
+The homepage SHA-256 is
+`49af8d902cc9d7ee77ddf0efce771cf15090f19d5d8a161d0bcd9432da495e95`, <!-- pragma: allow-secret -- served digest -->
+and the Burrisphere instrument SHA-256 is
+`27be6214b456ec3d6542476cb8e62d21b5104915915e67cfa50152196ed8a195`. <!-- pragma: allow-secret -- served digest -->
+
+Federation replay remained `metadata_only_explicit`, and
+`external_validation=false`. This release improves the public explanation,
+interaction, accessibility, and custody of Emergentism. It does not establish
+the truth, novelty, priority, completeness, or scientific validation of the
+worldview or any physical conjecture.
 
 ## Current v2.1 Burrisphere release — 2026-08-25
 
