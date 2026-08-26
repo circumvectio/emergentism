@@ -35,6 +35,7 @@ class GestaltV2ContractTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.fork = json.loads(F5_CONTRACT.read_text(encoding="utf-8"))
         cls.css = (SITE / "assets/css/gestalt-v2.css").read_text(encoding="utf-8")
+        cls.js = (SITE / "assets/js/gestalt-v2.js").read_text(encoding="utf-8")
 
     def test_f5_fork_has_three_equal_contact_arms_and_a_real_null(self) -> None:
         self.assertEqual(self.fork["schema"], "emergentism/F5Fork.v1")
@@ -155,6 +156,11 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn("min-height: 48px", self.css)
         self.assertIn("min-width: 48px", self.css)
         self.assertIn("prefers-reduced-motion: reduce", self.css)
+        self.assertIn("forced-colors: active", self.css)
+        self.assertRegex(
+            self.css,
+            r"\.g2-signature-grid\s*>\s*\*\s*\{\s*min-width:\s*0;",
+        )
         self.assertNotRegex(self.css, r"(?:linear|radial|conic)-gradient\s*\(")
         for relative in shell.CORE_PAGES:
             page = (SITE / relative).read_text(encoding="utf-8")
@@ -170,6 +176,39 @@ class GestaltV2ContractTests(unittest.TestCase):
             page = (SITE / str(number) / "index.html").read_text(encoding="utf-8")
             self.assertIn("This illustration carries no evidence beyond the typed text above.", page)
             self.assertIn('html:not([data-gestalt-enhanced="true"]) .fallback{display:flex}', page)
+
+    def test_finite_emergence_motion_is_opt_in_static_safe_and_bounded(self) -> None:
+        self.assertIn('matchMedia?.("(prefers-reduced-motion: reduce)")', self.js)
+        self.assertIn('"IntersectionObserver" in window', self.js)
+        self.assertIn("observer.unobserve(entry.target)", self.js)
+        self.assertIn('document.querySelectorAll(".g2-menu")', self.js)
+        self.assertIn('root.dataset.gestaltMotion = "reduced"', self.js)
+        self.assertIn('root.dataset.gestaltMotion = "static"', self.js)
+        self.assertNotIn("requestAnimationFrame", self.js)
+        self.assertNotIn("setInterval", self.js)
+        self.assertNotRegex(self.js, r"\.hidden\s*=|setAttribute\([\"']aria-hidden|\binert\b")
+        self.assertLess(len(self.js.encode("utf-8")), 8_000)
+
+        self.assertIn("@keyframes g2-boundary-settle", self.css)
+        self.assertIn("@keyframes g2-path-emerge", self.css)
+        self.assertIn('html[data-gestalt-motion="active"]', self.css)
+        self.assertIn(":focus-within", self.css)
+        self.assertIn("stroke-dashoffset: 0 !important", self.css)
+
+        opted_in = {
+            relative
+            for relative in shell.CORE_PAGES
+            if "data-g2-reveal" in (SITE / relative).read_text(encoding="utf-8")
+            or "data-g2-draw" in (SITE / relative).read_text(encoding="utf-8")
+        }
+        self.assertEqual(opted_in, {"index.html", "plainly/index.html", "dasein/index.html"})
+
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        hero_copy = home.split('<div class="g2-hero__copy">', 1)[1].split("</div>", 1)[0]
+        self.assertNotIn("data-g2-reveal", hero_copy)
+        self.assertNotIn("data-g2-draw", hero_copy)
+        self.assertIn('class="guide-line"', home)
+        self.assertIn('data-g2-reveal="coins"', home)
 
     def test_reader_heading_and_interaction_controls_keep_release_semantics(self) -> None:
         book = (SITE / "book/index.html").read_text(encoding="utf-8")

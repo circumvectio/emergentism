@@ -44,6 +44,10 @@
   --g2-page: min(1180px, calc(100vw - 40px));
   --g2-reading: 760px;
   --g2-nav-h: 72px;
+  --g2-motion-fast: 160ms;
+  --g2-motion-enter: 460ms;
+  --g2-motion-draw: 760ms;
+  --g2-ease-emerge: cubic-bezier(.16, 1, .3, 1);
 }
 
 html[data-gestalt="v2"] {
@@ -351,6 +355,26 @@ body.g2-page {
   border-color: var(--g2-bone);
 }
 
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .g2-button,
+  .g2-entry-door,
+  .g2-rung,
+  .g2-panel a,
+  .g2-disclosure summary {
+    transition:
+      color var(--g2-motion-fast) ease,
+      border-color var(--g2-motion-fast) ease,
+      background-color var(--g2-motion-fast) ease,
+      transform var(--g2-motion-fast) var(--g2-ease-emerge);
+  }
+
+  .g2-button:hover,
+  .g2-entry-door:hover,
+  .g2-rung:hover {
+    transform: translateY(-2px);
+  }
+}
+
 .g2-boundary-glyphs {
   margin-top: 38px;
   color: var(--g2-bone-faint);
@@ -421,6 +445,38 @@ body.g2-page {
 .g2-atlas .label-possible { fill: var(--g2-possible); }
 .g2-atlas .label-conjecture { fill: var(--g2-conjecture); }
 .g2-atlas .label-evidence { fill: var(--g2-evidence); }
+
+@keyframes g2-boundary-settle {
+  from { opacity: .28; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes g2-path-emerge {
+  from { stroke-dashoffset: var(--g2-path-length); }
+  to { stroke-dashoffset: 0; }
+}
+
+html[data-gestalt-motion="active"] [data-g2-reveal][data-g2-emergence="visible"]:not([data-g2-reveal="coins"]),
+html[data-gestalt-motion="active"] [data-g2-reveal-group][data-g2-emergence="visible"] > [data-g2-reveal-item] {
+  animation: g2-boundary-settle var(--g2-motion-enter) var(--g2-ease-emerge) both;
+}
+
+html[data-gestalt-motion="active"] [data-g2-reveal-group][data-g2-emergence="visible"] > [data-g2-reveal-item] {
+  animation-delay: calc(var(--g2-order, 0) * 40ms);
+}
+
+html[data-gestalt-motion="active"] [data-g2-reveal][data-g2-emergence="visible"]:focus-within,
+html[data-gestalt-motion="active"] [data-g2-reveal-group][data-g2-emergence="visible"] > [data-g2-reveal-item]:focus-within {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+html[data-gestalt-motion="active"] [data-g2-draw][data-g2-emergence="visible"] [data-g2-path] {
+  stroke-dasharray: var(--g2-path-length);
+  animation: g2-path-emerge var(--g2-motion-draw) var(--g2-ease-emerge) both;
+  animation-delay: calc(var(--g2-path-order, 0) * 70ms);
+}
 
 .g2-atlas__caption {
   display: grid;
@@ -757,7 +813,11 @@ body.g2-page {
   font: 600 0.62rem/1 var(--g2-mono);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  animation: g2-coin-arrive 900ms cubic-bezier(.2,.75,.28,1) both;
+  animation: none;
+}
+
+html[data-gestalt-motion="active"] [data-g2-reveal="coins"][data-g2-emergence="visible"] .g2-transaction-coin {
+  animation: g2-coin-arrive 700ms var(--g2-ease-emerge) both;
   animation-delay: var(--coin-delay);
 }
 
@@ -2707,6 +2767,11 @@ body.g2-page.g2-legacy .footer {
   align-items: center;
 }
 
+.g2-firewall-grid > *,
+.g2-signature-grid > * {
+  min-width: 0;
+}
+
 .g2-firewall-grid .g2-power-equation { margin: 0; }
 .g2-firewall-copy > p { margin: 0 0 24px; color: var(--g2-bone-muted); }
 .g2-firewall-copy > p strong { color: var(--g2-bone); }
@@ -3123,6 +3188,50 @@ body.g2-page.g2-legacy .footer {
   .g2-helix__front,
   .g2-helix__back {
     animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+  [data-g2-reveal],
+  [data-g2-reveal-group] > [data-g2-reveal-item],
+  [data-g2-draw] [data-g2-path] {
+    opacity: 1 !important;
+    transform: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .g2-nav,
+  .g2-atlas,
+  .g2-panel,
+  .g2-entry-door,
+  .g2-rung,
+  .g2-button,
+  .g2-note,
+  .g2-definition-list,
+  .g2-disclosure,
+  .g2-power-equation,
+  .g2-g7__quadrant,
+  .g2-titan-axis__station {
+    border-color: CanvasText;
+  }
+  .g2-page .g2-button--primary {
+    border-color: Highlight;
+    background: Highlight;
+    color: HighlightText;
+  }
+  .g2-atlas path,
+  .g2-atlas circle {
+    stroke: CanvasText !important;
+  }
+  .g2-atlas text {
+    fill: CanvasText !important;
+  }
+  [data-g2-reveal],
+  [data-g2-reveal-group] > [data-g2-reveal-item],
+  [data-g2-draw] [data-g2-path] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
     stroke-dashoffset: 0 !important;
   }
 }
