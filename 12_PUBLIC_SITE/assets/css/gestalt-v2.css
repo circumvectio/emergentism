@@ -952,6 +952,7 @@ html[data-gestalt-motion="active"] [data-g2-reveal="coins"][data-g2-emergence="v
 
 .g2-loop span {
   position: relative;
+  min-width: 0;
   min-height: 120px;
   display: flex;
   align-items: flex-end;
@@ -962,6 +963,10 @@ html[data-gestalt-motion="active"] [data-g2-reveal="coins"][data-g2-emergence="v
 }
 
 .g2-loop span:last-child { border-right: 0; }
+.g2-loop--compact { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.g2-loop--compact span:nth-child(4) { border-right: 0; }
+.g2-loop--compact span:nth-child(-n + 4) { border-bottom: 1px solid var(--g2-rule); }
+.g2-loop--compact span:last-child { grid-column: span 2; }
 .g2-loop span::before {
   content: attr(data-step);
   position: absolute;
@@ -1764,6 +1769,74 @@ html[data-gestalt-motion="active"] [data-g2-reveal="coins"][data-g2-emergence="v
   border-left: 1px solid var(--g2-rule);
   color: var(--g2-bone-faint);
   font: 500 1rem/1 var(--g2-mono);
+}
+
+/* The homepage compares two registers. Its topology is term/operator/term,
+   unlike the seven-track relations on Dasein and Rosetta. Explicit role
+   classes keep ontology out of child-position selectors. */
+.g2-power-equation--binary {
+  grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr);
+  overflow: visible;
+}
+
+.g2-power-equation--binary > .g2-power-term {
+  min-width: 0;
+  min-height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(20px, 2.4vw, 28px);
+}
+
+.g2-power-equation--binary > .g2-power-term--actual {
+  border-top: 3px solid var(--g2-actual);
+}
+
+.g2-power-equation--binary > .g2-power-term--possible {
+  border-top: 3px dashed var(--g2-possible);
+}
+
+.g2-power-equation--binary .g2-power-term small {
+  margin: 0 0 18px;
+}
+
+.g2-power-equation--binary .g2-power-term strong {
+  display: grid;
+  gap: 0.12em;
+  font: 430 clamp(1.65rem, 2.4vw, 2.35rem)/0.96 var(--g2-display);
+}
+
+.g2-power-equation--binary .g2-power-term strong > span {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 0.38em minmax(0, 1fr);
+  align-items: baseline;
+}
+
+.g2-power-equation--binary .g2-power-term strong > span::before {
+  content: "·";
+  font-family: var(--g2-mono);
+  font-size: 0.58em;
+}
+
+.g2-power-equation--binary .g2-power-term--actual strong {
+  color: var(--g2-actual);
+}
+
+.g2-power-equation--binary .g2-power-term--possible strong {
+  color: var(--g2-possible);
+}
+
+.g2-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .g2-g7-map {
@@ -3014,10 +3087,6 @@ body.g2-page.g2-legacy .footer {
     border-right: 0;
     border-bottom: 1px solid var(--g2-rule);
   }
-  .g2-power-equation {
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-  }
   .g2-g7-map,
   .g2-burrisphere-ascent__stage,
   .g2-helix__stage {
@@ -3117,7 +3186,6 @@ body.g2-page.g2-legacy .footer {
   .g2-atlas__caption { grid-template-columns: 1fr 1fr; }
   .g2-section { padding: 72px 0; }
   .g2-section__head { grid-template-columns: 1fr; margin-bottom: 32px; }
-  .g2-section h2 { font-size: clamp(2.65rem, 13vw, 4.4rem); }
   .g2-page-hero h1 { font-size: clamp(3.1rem, 16vw, 5.4rem); }
   .g2-definition-list { grid-template-columns: 1fr; }
   .g2-definition-list dt { padding-bottom: 4px; border-bottom: 0; }
@@ -3144,6 +3212,30 @@ body.g2-page.g2-legacy .footer {
   .g2-footer__boundary { flex-direction: column; gap: 8px; }
 }
 
+@media (max-width: 760px) {
+  .g2-section__head {
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .g2-power-equation { grid-template-columns: 1fr; overflow: visible; }
+  .g2-power-equation > span {
+    min-height: 88px;
+    padding: 15px 16px;
+  }
+  .g2-power-equation--binary > .g2-power-term { min-height: 176px; }
+  .g2-power-equation > b {
+    min-width: 0;
+    min-height: 36px;
+    border-top: 1px solid var(--g2-rule);
+    border-right: 0;
+    border-bottom: 1px solid var(--g2-rule);
+    border-left: 0;
+  }
+}
+
 @media (max-width: 360px) {
   .g2-mobile__direct { font-size: 0.69rem; padding-inline: 8px; }
   .g2-brand__word { font-size: 0.69rem; letter-spacing: 0.04em; }
@@ -3164,26 +3256,10 @@ body.g2-page.g2-legacy .footer {
     border-right: 0;
   }
   .g2-thesis-fence p { padding: 15px 14px; }
-  .g2-power-equation {
-    grid-template-columns: 1fr;
-    overflow: visible;
-  }
   .g2-burrisphere-preview figcaption { padding-inline: 14px; }
   .g2-entry-door { min-height: 76px; padding: 12px; }
   .g2-entry-door strong { font-size: 1.05rem; }
   .g2-entry-door small { display: none; }
-  .g2-power-equation > span {
-    min-height: 88px;
-    padding: 15px 16px;
-  }
-  .g2-power-equation > b {
-    min-width: 0;
-    min-height: 30px;
-    border-top: 1px solid var(--g2-rule);
-    border-right: 0;
-    border-bottom: 1px solid var(--g2-rule);
-    border-left: 0;
-  }
   .g2-g7-map svg,
   .g2-burrisphere-ascent svg,
   .g2-helix svg { width: 560px; }

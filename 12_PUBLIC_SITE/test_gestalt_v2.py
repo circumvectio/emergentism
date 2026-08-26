@@ -203,6 +203,55 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn("solid · actual", figure)
         self.assertIn("dash · conjecture", figure)
 
+    def test_actuality_firewall_is_typed_binary_and_reflows_without_clipping(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        firewall = home.split('<section class="g2-shell g2-section g2-section--firewall"', 1)[1]
+        firewall = firewall.split("</section>", 1)[0]
+        equation = firewall.split('<div class="g2-power-equation', 1)[1]
+        equation = equation.split("</div>\n      </div>", 1)[0]
+
+        self.assertIn("g2-power-equation--binary", equation)
+        self.assertIn('role="group"', equation)
+        self.assertIn("g2-power-term--actual", equation)
+        self.assertIn("V₄ · actual power", equation)
+        self.assertIn("g2-power-term--possible", equation)
+        self.assertIn("Φ₅ · possible power", equation)
+        self.assertIn('<span class="g2-sr-only">is not equal to</span>', equation)
+        self.assertNotIn("Scrollable", equation)
+        self.assertNotIn('tabindex="0"', equation)
+        self.assertIn("g2-loop g2-loop--compact", firewall)
+        self.assertIn(".g2-loop--compact span:last-child { grid-column: span 2; }", self.css)
+
+        self.assertRegex(
+            self.css,
+            r"\.g2-power-equation--binary\s*\{[^}]*grid-template-columns:\s*"
+            r"minmax\(0, 1fr\)\s+44px\s+minmax\(0, 1fr\);",
+        )
+        self.assertRegex(
+            self.css,
+            r"\.g2-power-equation--binary\s+\.g2-power-term--actual\s+strong\s*"
+            r"\{\s*color:\s*var\(--g2-actual\);",
+        )
+        self.assertRegex(
+            self.css,
+            r"\.g2-power-equation--binary\s+\.g2-power-term--possible\s+strong\s*"
+            r"\{\s*color:\s*var\(--g2-possible\);",
+        )
+        self.assertIn("@media (max-width: 640px)", self.css)
+        self.assertIn("@media (max-width: 760px)", self.css)
+        self.assertNotIn(".g2-section h2 { font-size: clamp(2.65rem, 13vw, 4.4rem); }", self.css)
+
+        dasein = (SITE / "dasein/index.html").read_text(encoding="utf-8")
+        rosetta = (SITE / "rosetta/index.html").read_text(encoding="utf-8")
+        self.assertIn("D5 possible power is not equal to its D4 estimate", dasein)
+        self.assertIn("D5 possible power informs a present D4 evaluation", rosetta)
+        self.assertIn('class="g2-power-equation" role="group"', dasein)
+        self.assertIn('class="g2-power-equation" role="group"', rosetta)
+        self.assertNotIn('class="g2-power-equation" role="region"', dasein)
+        self.assertNotIn('class="g2-power-equation" role="region"', rosetta)
+        self.assertNotIn('aria-label="Scrollable typed power relations"', dasein)
+        self.assertNotIn('aria-label="Scrollable D5 to D4 action pathway"', rosetta)
+
     def test_static_accessibility_and_local_resource_contract(self) -> None:
         self.assertIn("min-height: 48px", self.css)
         self.assertIn("min-width: 48px", self.css)
@@ -211,6 +260,11 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertRegex(
             self.css,
             r"\.g2-signature-grid\s*>\s*\*\s*\{\s*min-width:\s*0;",
+        )
+        self.assertRegex(
+            self.css,
+            r"\.g2-firewall-grid\s*>\s*\*,\s*\.g2-signature-grid\s*>\s*\*\s*"
+            r"\{\s*min-width:\s*0;",
         )
         self.assertNotRegex(self.css, r"(?:linear|radial|conic)-gradient\s*\(")
         for relative in shell.CORE_PAGES:
