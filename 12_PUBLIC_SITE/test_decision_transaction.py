@@ -49,7 +49,8 @@ class DecisionTransactionTests(unittest.TestCase):
         self.assertIn("LOCAL_ACKNOWLEDGMENT_ONLY", self.practice)
         self.assertRegex(
             self.practice,
-            r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>Sign local commitment',
+            r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>'
+            r'Record private commitment · local and non-legal',
         )
         self.assertIn("The prepared packet cannot sign itself.", self.practice)
 

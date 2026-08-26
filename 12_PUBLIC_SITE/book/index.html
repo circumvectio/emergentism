@@ -22,7 +22,7 @@
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 :root{
-  --serif:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --serif:"Newsreader","Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --measure:40rem; --shape-lg:16px; --shape-full:999px; --target-min:48px;
@@ -195,7 +195,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
       <a data-section="worldview" href="/plainly/">Worldview</a>
       <a data-section="practice" href="/practice/">Practice</a>
       <a data-section="research" href="/record/">Research</a>
-      <a data-section="library" aria-current="location" href="/book/">Library</a>
+      <a data-section="library" data-current-section="true" href="/book/" aria-current="page">Library</a>
       <a data-section="participate" href="/contribute/">Participate</a>
       <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
     </nav>
@@ -206,7 +206,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
         <div class="g2-menu__panel">
           <a data-section="worldview" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
           <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
-          <a data-section="library" aria-current="location" href="/book/">Library <span aria-hidden="true">03</span></a>
+          <a data-section="library" data-current-section="true" href="/book/" aria-current="page">Library <span aria-hidden="true">03</span></a>
           <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
         </div>
       </details>
@@ -215,10 +215,10 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   </div>
 </header>
 <!-- gestalt-core-nav:end -->
-<div class="book-tools" aria-label="Reading controls">
+<nav class="book-tools" aria-label="Reading controls">
   <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">Contents</button>
   <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">Reading theme</button>
-</div>
+</nav>
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">
@@ -260,7 +260,7 @@ its record remains open.</p>
 <li><code><span class="tier t-c">[C]</span></code> conjecture that must be capable of losing; and</li>
 <li><code><span class="tier t-d">[D]</span></code> deliberately unresolved or awaiting a defined test.</li>
 </ul>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-next" href="#1-the-boundaries-before-the-world-is-divided">1. The Boundaries — before the world is divided →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for Overture"><a class="ch-next" href="#1-the-boundaries-before-the-world-is-divided">1. The Boundaries — before the world is divided →</a></nav></section>
 <section class="chapter" id="1-the-boundaries-before-the-world-is-divided"><header class="ch-head"><span class="ch-num">01</span><h2 id="1-the-boundaries-before-the-world-is-divided-h">1. The Boundaries — before the world is divided</h2></header><div class="ch-body">
 <p>Emergentism selects three opaque symbolic boundary labels—its Titan
 metaframes—not three objects inside D0 or an ontology by fiat:</p>
@@ -349,7 +349,7 @@ everything determinate between them has its own dimensions of freedom and its
 own mode of being. <em>Finite</em> here means determinate, situated, and bounded in
 the relevant register—not necessarily finite in cardinality, dimension,
 description length, or magnitude.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#the-emergentist-weltanschauung">← Overture</a><a class="ch-next" href="#2-difference-arithmetic-begins-after-the-frame">2. Difference — arithmetic begins after the frame →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 1. The Boundaries — before the world is divided"><a class="ch-prev" href="#the-emergentist-weltanschauung">← Overture</a><a class="ch-next" href="#2-difference-arithmetic-begins-after-the-frame">2. Difference — arithmetic begins after the frame →</a></nav></section>
 <section class="chapter" id="2-difference-arithmetic-begins-after-the-frame"><header class="ch-head"><span class="ch-num">02</span><h2 id="2-difference-arithmetic-begins-after-the-frame-h">2. Difference — arithmetic begins after the frame</h2></header><div class="ch-body">
 <p>In the selected D1 presentation, distinction is read as the first positive
 freedom <code><span class="tier t-i">[I]</span></code>. Once one thing can be told from another, orientation becomes
@@ -397,7 +397,7 @@ performed on them. This
 does not solve mathematics by renaming its problems. Some apparent
 contradictions dissolve when a declared domain or type is kept distinct; where
 no such error exists, the original problem remains.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#1-the-boundaries-before-the-world-is-divided">← 1. The Boundaries — before the world is divided</a><a class="ch-next" href="#3-relation-form-appears-between-things">3. Relation — form appears between things →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 2. Difference — arithmetic begins after the frame"><a class="ch-prev" href="#1-the-boundaries-before-the-world-is-divided">← 1. The Boundaries — before the world is divided</a><a class="ch-next" href="#3-relation-form-appears-between-things">3. Relation — form appears between things →</a></nav></section>
 <section class="chapter" id="3-relation-form-appears-between-things"><header class="ch-head"><span class="ch-num">03</span><h2 id="3-relation-form-appears-between-things-h">3. Relation — form appears between things</h2></header><div class="ch-body">
 <p>A list of elements does not tell us how they are related. D2 names
 configuration: functions, relations, graphs, geometry and organized form.</p>
@@ -415,7 +415,7 @@ construction is formally reducible.</p>
 only against a declared lower-level or alternative model with matched inputs,
 prediction horizon, intervention scope, encoding and measurement cost, and
 error metric; otherwise it remains a convenient redescription.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#2-difference-arithmetic-begins-after-the-frame">← 2. Difference — arithmetic begins after the frame</a><a class="ch-next" href="#4-probability-the-quantum-state-is-not-the-event">4. Probability — the quantum state is not the event →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 3. Relation — form appears between things"><a class="ch-prev" href="#2-difference-arithmetic-begins-after-the-frame">← 2. Difference — arithmetic begins after the frame</a><a class="ch-next" href="#4-probability-the-quantum-state-is-not-the-event">4. Probability — the quantum state is not the event →</a></nav></section>
 <section class="chapter" id="4-probability-the-quantum-state-is-not-the-event"><header class="ch-head"><span class="ch-num">04</span><h2 id="4-probability-the-quantum-state-is-not-the-event-h">4. Probability — the quantum state is not the event</h2></header><div class="ch-body">
 <p>D3 names probability-bearing quantum-state description. A density operator,
 observables and measurement context assign outcome probabilities. Fourier
@@ -431,7 +431,7 @@ weights, select an interpretation or solve quantum gravity.</p>
 state-conditioned alternatives; D4 carries the actual record. Everett and
 Copenhagen-family interpretations remain rival readings of quantum theory, not
 extra dimensions stacked into the Emergentist ladder.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#3-relation-form-appears-between-things">← 3. Relation — form appears between things</a><a class="ch-next" href="#5-actuality-one-history-receives-consequence">5. Actuality — one history receives consequence →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 4. Probability — the quantum state is not the event"><a class="ch-prev" href="#3-relation-form-appears-between-things">← 3. Relation — form appears between things</a><a class="ch-next" href="#5-actuality-one-history-receives-consequence">5. Actuality — one history receives consequence →</a></nav></section>
 <section class="chapter" id="5-actuality-one-history-receives-consequence"><header class="ch-head"><span class="ch-num">05</span><h2 id="5-actuality-one-history-receives-consequence-h">5. Actuality — one history receives consequence</h2></header><div class="ch-body">
 <p>D4 is causal actuality: the actual body, instrument, model token, interaction,
 attempted action, ordered history and outcome receipt.</p>
@@ -449,7 +449,7 @@ epistemic heart of humility and the practical heart of accountability.
 A receipt counts as correction only when its observation, provenance,
 comparison rule and contest path are declared; self-issued success reports
 remain commitments, not outcome evidence.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#4-probability-the-quantum-state-is-not-the-event">← 4. Probability — the quantum state is not the event</a><a class="ch-next" href="#6-possibility-the-wider-human-horizon">6. Possibility — the wider human horizon →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 5. Actuality — one history receives consequence"><a class="ch-prev" href="#4-probability-the-quantum-state-is-not-the-event">← 4. Probability — the quantum state is not the event</a><a class="ch-next" href="#6-possibility-the-wider-human-horizon">6. Possibility — the wider human horizon →</a></nav></section>
 <section class="chapter" id="6-possibility-the-wider-human-horizon"><header class="ch-head"><span class="ch-num">06</span><h2 id="6-possibility-the-wider-human-horizon-h">6. Possibility — the wider human horizon</h2></header><div class="ch-body">
 <p>D5 is possible counterfactual content represented by actual D4 carriers. A
 human can remember, simulate, narrate, promise, coordinate and institutionalize
@@ -490,7 +490,7 @@ beings or causal agents.</p>
 freedom. The test is intervention: change represented futures while holding
 present conditions and means as fairly as possible, then ask whether action
 changes beyond the best reactive baseline.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#5-actuality-one-history-receives-consequence">← 5. Actuality — one history receives consequence</a><a class="ch-next" href="#7-the-soul-loop-map-act-receive-revise">7. The Soul Loop — map, act, receive, revise →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 6. Possibility — the wider human horizon"><a class="ch-prev" href="#5-actuality-one-history-receives-consequence">← 5. Actuality — one history receives consequence</a><a class="ch-next" href="#7-the-soul-loop-map-act-receive-revise">7. The Soul Loop — map, act, receive, revise →</a></nav></section>
 <section class="chapter" id="7-the-soul-loop-map-act-receive-revise"><header class="ch-head"><span class="ch-num">07</span><h2 id="7-the-soul-loop-map-act-receive-revise-h">7. The Soul Loop — map, act, receive, revise</h2></header><div class="ch-body">
 <p>The Soul Loop is the Rosetta stone of the lived framework:</p>
 <pre><code class="language-text">territory
@@ -517,7 +517,7 @@ uniquely derived, not a measure of a person's worth and not a universal law;
 the historical product shorthand is not licensed to rank or compare nodes.</p>
 <p>The complete practice is given in
 <a href="../sources/"><code>The Lived Compass</code></a>.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#6-possibility-the-wider-human-horizon">← 6. Possibility — the wider human horizon</a><a class="ch-next" href="#8-the-social-loop-traces-that-outlive-their-carriers">8. The Social Loop — traces that outlive their carriers →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 7. The Soul Loop — map, act, receive, revise"><a class="ch-prev" href="#6-possibility-the-wider-human-horizon">← 6. Possibility — the wider human horizon</a><a class="ch-next" href="#8-the-social-loop-traces-that-outlive-their-carriers">8. The Social Loop — traces that outlive their carriers →</a></nav></section>
 <section class="chapter" id="8-the-social-loop-traces-that-outlive-their-carriers"><header class="ch-head"><span class="ch-num">08</span><h2 id="8-the-social-loop-traces-that-outlive-their-carriers-h">8. The Social Loop — traces that outlive their carriers</h2></header><div class="ch-body">
 <p>No person models alone. Language, norms, money, law, ritual, science and myth
 are inherited coordination traces. People enact them; the traces shape what
@@ -600,7 +600,7 @@ is symbolic <code><span class="tier t-i">[I]</span></code>; Tantra as redirectio
 practice claim plus testable hypothesis <code><span class="tier t-i">[I/C]</span></code>; Vajrayana's poison-to-path
 framing is an interpretive practice analogy <code><span class="tier t-i">[I/C]</span></code>. No physiological or
 power-effect claim is established without independent evidence.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#7-the-soul-loop-map-act-receive-revise">← 7. The Soul Loop — map, act, receive, revise</a><a class="ch-next" href="#9-the-human-condition-finite-freedom">9. The Human Condition — finite freedom →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 8. The Social Loop — traces that outlive their carriers"><a class="ch-prev" href="#7-the-soul-loop-map-act-receive-revise">← 7. The Soul Loop — map, act, receive, revise</a><a class="ch-next" href="#9-the-human-condition-finite-freedom">9. The Human Condition — finite freedom →</a></nav></section>
 <section class="chapter" id="9-the-human-condition-finite-freedom"><header class="ch-head"><span class="ch-num">09</span><h2 id="9-the-human-condition-finite-freedom-h">9. The Human Condition — finite freedom</h2></header><div class="ch-body">
 <p>A person is an embodied continuity through change, a bearer of experience and
 relationship, and a bounded counterfactual agent. The self is neither an
@@ -621,7 +621,7 @@ the person. D6 is not an afterlife theorem. Emergentism leaves survival after
 death open rather than purchasing comfort with an unearned claim.</p>
 <p>The fuller statement is
 <a href="../sources/"><code>The Human Condition</code></a>.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#8-the-social-loop-traces-that-outlive-their-carriers">← 8. The Social Loop — traces that outlive their carriers</a><a class="ch-next" href="#10-the-good-chosen-under-an-open-sky">10. The Good — chosen under an open sky →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 9. The Human Condition — finite freedom"><a class="ch-prev" href="#8-the-social-loop-traces-that-outlive-their-carriers">← 8. The Social Loop — traces that outlive their carriers</a><a class="ch-next" href="#10-the-good-chosen-under-an-open-sky">10. The Good — chosen under an open sky →</a></nav></section>
 <section class="chapter" id="10-the-good-chosen-under-an-open-sky"><header class="ch-head"><span class="ch-num">10</span><h2 id="10-the-good-chosen-under-an-open-sky-h">10. The Good — chosen under an open sky</h2></header><div class="ch-body">
 <p>The declared teleology is to widen <strong>durable, bearer-complete potential</strong> inside
 Justice, not to maximize raw options or power over others. It uses two clocks,
@@ -663,7 +663,7 @@ the optional verdict language calls a move demon-polar when it raises local or
 short-term potential by exporting hidden cost, and god-polar when it widens
 durable mutual possibility. These are revisable predicates of completed move
 records, not signatures or permanent kinds of people.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#9-the-human-condition-finite-freedom">← 9. The Human Condition — finite freedom</a><a class="ch-next" href="#11-the-five-apertures-the-wager-about-emergence">11. The Five Apertures — the wager about emergence →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 10. The Good — chosen under an open sky"><a class="ch-prev" href="#9-the-human-condition-finite-freedom">← 9. The Human Condition — finite freedom</a><a class="ch-next" href="#11-the-five-apertures-the-wager-about-emergence">11. The Five Apertures — the wager about emergence →</a></nav></section>
 <section class="chapter" id="11-the-five-apertures-the-wager-about-emergence"><header class="ch-head"><span class="ch-num">11</span><h2 id="11-the-five-apertures-the-wager-about-emergence-h">11. The Five Apertures — the wager about emergence</h2></header><div class="ch-body">
 <p>The selected scaffold is:</p>
 <pre><code class="language-text">D0 boundary/frame
@@ -706,7 +706,7 @@ experiment order and unpaid gates live in the
 <a href="../lab/#questions"><code>Grand Puzzle Assembly Ledger</code></a>.</p>
 <p>The five force affinities remain the historical spark and an open modular wager.
 No current row unifies physics.</p>
-</div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#10-the-good-chosen-under-an-open-sky">← 10. The Good — chosen under an open sky</a><a class="ch-next" href="#12-the-exit-what-the-worldview-refuses-to-possess">12. The Exit — what the worldview refuses to possess →</a></nav></section>
+</div><nav class="ch-nav" aria-label="Chapter navigation for 11. The Five Apertures — the wager about emergence"><a class="ch-prev" href="#10-the-good-chosen-under-an-open-sky">← 10. The Good — chosen under an open sky</a><a class="ch-next" href="#12-the-exit-what-the-worldview-refuses-to-possess">12. The Exit — what the worldview refuses to possess →</a></nav></section>
 <section class="chapter" id="12-the-exit-what-the-worldview-refuses-to-possess"><header class="ch-head"><span class="ch-num">12</span><h2 id="12-the-exit-what-the-worldview-refuses-to-possess-h">12. The Exit — what the worldview refuses to possess</h2></header><div class="ch-body">
 <p>D6 is the instruction not to convert every remainder into another positive
 object. It resembles D0 only in boundary role: the beginning precedes
@@ -993,7 +993,7 @@ philosophical questions retain their exact public launch state:</p>
 aspiration, preserve failures, keep affected bearers visible, and return open
 questions to research. If it cannot, the Churning itself dies. Public access may
 aid discovery, but neither crawlability nor publication guarantees indexing,
-citation, model ingestion, or inclusion in a future AI training run.</p></div><nav class="ch-nav" aria-label="Chapter navigation"><a class="ch-prev" href="#11-the-five-apertures-the-wager-about-emergence">← 11. The Five Apertures — the wager about emergence</a></nav></section>
+citation, model ingestion, or inclusion in a future AI training run.</p></div><nav class="ch-nav" aria-label="Chapter navigation for 12. The Exit — what the worldview refuses to possess"><a class="ch-prev" href="#11-the-five-apertures-the-wager-about-emergence">← 11. The Five Apertures — the wager about emergence</a></nav></section>
       <footer class="book-foot">
         <div class="phi">P_node := min(Φ̂₄, V₄) · ordinal AND-class; Φ̂₄V₄ ranking retired</div>
         <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>

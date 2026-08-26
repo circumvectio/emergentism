@@ -106,7 +106,7 @@
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "9aad725c128e92406fd2f8ad4a911b02b7796a583d75eab6d2a1d65f750286e8"
+    "sha256": "5ff8c52eac6e31efdda60229e68e6f27103bb5af1070910c76832f49f17fb661"
   },
   "renderer": {
     "extensions": [

@@ -102,6 +102,11 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn('data-gestalt="v2"', shell.render_page(uppercase, "worldview"))
 
         nav = shell.render_nav("worldview")
+        self.assertNotIn('aria-current="location"', nav)
+        self.assertIn('data-current-section="true"', nav)
+        exact_nav = shell.render_nav("worldview", "/plainly/")
+        self.assertIn('href="/plainly/" aria-current="page"', exact_nav)
+        self.assertNotIn('href="/" aria-current="page"', exact_nav)
         malformed = {
             "orphan nav marker": base.replace("<main>", "<!-- gestalt-core-nav:start --><main>"),
             "duplicate nav markers": base.replace("<main>", nav + nav + "<main>"),
@@ -204,7 +209,8 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn(".bi-actions button span:last-child { display: block; }", instrument)
         self.assertIn("bottom: 370px; width: 255px", instrument)
         self.assertIn("font-size: .58rem", instrument)
-        self.assertIn(".bi-thesis { display: none; }", instrument)
+        self.assertNotIn(".bi-thesis { display: none; }", instrument)
+        self.assertIn(".bi-boundary { display: block;", instrument)
         self.assertIn(".g2-page .g2-button--primary", self.css)
         self.assertIn("color:#989ca7", living_map)
         self.assertIn("opacity: .76", instrument)
@@ -213,8 +219,26 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn(".crossing b{{color:var(--text-muted)}}", dimensions_builder)
         self.assertNotIn(".crossing b{{color:var(--text-dim)}}", dimensions_builder)
 
+        record = (SITE / "record/index.html").read_text(encoding="utf-8")
+        self.assertEqual(record.count('class="case'), 30)
+        self.assertEqual(record.count('<h3 class="claimline" id="case-'), 29)
+        self.assertEqual(record.count('aria-labelledby="case-'), 29)
+
+    def test_definition_lists_use_native_list_markup(self) -> None:
+        for relative in (
+            "plainly/index.html",
+            "dasein/index.html",
+            "rosetta/index.html",
+            "ethics/index.html",
+            "record/pqa-54/index.html",
+        ):
+            page = (SITE / relative).read_text(encoding="utf-8")
+            with self.subTest(page=relative):
+                self.assertNotIn('<div class="g2-definition-list"', page)
+                self.assertIn('<dl class="g2-definition-list"', page)
+
+    def test_wide_burrisphere_atlas_is_named_and_keyboard_scrollable(self) -> None:
         for relative, cue_id in (
-            ("index.html", "home-burrisphere-scroll-cue"),
             ("burrisphere/index.html", "burrisphere-scroll-cue"),
         ):
             page = (SITE / relative).read_text(encoding="utf-8")
@@ -267,20 +291,17 @@ class GestaltV2ContractTests(unittest.TestCase):
             }.issubset(set(pwa.safe_spine()))
         )
 
-    def test_third_churning_is_semantic_static_and_plain_first(self) -> None:
+    def test_third_churning_is_compact_semantic_and_plain_first(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        section = home.split('id="churning"', 1)[1].split("</section>", 1)[0]
-        self.assertIn("The audit seam", section)
-        self.assertIn("Freeze", section)
-        self.assertIn("Rival", section)
-        self.assertIn("serious alternative", section)
-        self.assertIn("What survived scrutiny", section)
-        self.assertIn("What failed or remains dangerous", section)
-        self.assertLess(section.index("What survived scrutiny"), section.index("Amrita"))
-        self.assertLess(section.index("What failed or remains dangerous"), section.index("Hālāhala"))
+        section = home.split('id="research"', 1)[1].split("</section>", 1)[0]
+        self.assertIn("Third Churning", section)
+        self.assertIn("Survivors and poisons stay visible together", section)
+        self.assertIn("22 survivor candidates · 29 poison warnings", section)
         self.assertIn("The means is the message. The ends are the limits.", section)
         self.assertIn("0 independently reviewed", section)
-        self.assertIn("cannot guarantee", section)
+        self.assertIn("Public classification is not validation", section)
+        self.assertIn('href="/churn/"', section)
+        self.assertIn('href="/record/"', section)
         self.assertIn("--g2-poison: #d97557", self.css)
         self.assertIn(".g2-churn-seam__track", self.css)
 

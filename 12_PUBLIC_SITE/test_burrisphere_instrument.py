@@ -100,6 +100,15 @@ class BurrisphereInstrumentTests(unittest.TestCase):
     def test_accessibility_and_failure_modes_remain_text_complete(self) -> None:
         self.assertIn('aria-label="M4 bottom action plane.', self.instrument)
         self.assertIn('aria-describedby="slider-help"', self.instrument)
+        self.assertIn(
+            'aria-label="Burrisphere chart position, south pole through equator to north pole"',
+            self.instrument,
+        )
+        short_mobile = self.css.split(
+            "@media (max-width: 700px) and (max-height: 700px)", 1
+        )[1].split("@media (prefers-reduced-motion", 1)[0]
+        self.assertNotIn(".bi-thesis { display: none; }", short_mobile)
+        self.assertNotIn(".bi-boundary { display: none; }", short_mobile)
         self.assertIn("updateSliderAccessibleText", self.script)
         self.assertIn("prefers-reduced-motion: reduce", self.css)
         self.assertIn(".bi-fallback[hidden] { display: none; }", self.css)
