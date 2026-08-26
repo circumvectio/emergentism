@@ -365,6 +365,11 @@
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md",
    "sha256": "74c51a881a9f8a09ef2d3ac10f1466eb48ea96c0e1242e89fc025aa4c4051427",
    "role": "research_boundary"
+  },
+  {
+   "path": "14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md",
+   "sha256": "5a72acd1e19d91ab9c135a0cb81ce6e9374133336da420d6b8029e134117a83b",
+   "role": "semantic_owner"
   }
  ],
  "entries": [
@@ -1649,6 +1654,31 @@
      "target": "W0-W12"
     }
    ]
+  },
+  {
+   "entry_id": "SEVEN-ACTS-COMPRESSION",
+   "source_ids": [
+    "SEVEN-ACTS-COMPRESSION"
+   ],
+   "kind": "STAGED_DRAFT",
+   "lifecycle": "staged",
+   "evidence_tier": "[D/S/I]",
+   "validation_status_ref": [],
+   "owner_path": "14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md",
+   "partition": "live",
+   "summary": "Seven-sentence compression of the Weltanschauung, one Rosetta reasoning power per sentence; compression claim scoped to declared comparator class and loss; reconstruction-vs-control test RUN same day: PASS narrowly — the seed's cargo is the formal spine (min-form, cut-origin, record-collapse, debt vocabulary, ethics triad, tiers), while the philosophical postures live in strong-model priors.",
+   "target_entry_ids": [],
+   "outcome": "Candidate compression with one measured trial; not a successor to the One-Sitting, Kernel, or Amrita.",
+   "rival": "A shorter seed matching fidelity; or control parity (refuted in trial 1 on 4 of 7 questions).",
+   "discriminator": "The reconstruction test of its §3; re-run with fresh agents and blinded grading for confirmation.",
+   "kill": "Control parity on re-run; a shorter comparator-class seed with equal fidelity; quotation of the one-sentence form without its tier mark.",
+   "survivor": "The seven-acts structure survives as a display form even if the compression claim dies.",
+   "relations": [
+    {
+     "type": "not_adopted_by",
+     "target": "W0-W12"
+    }
+   ]
   }
  ],
  "excluded_with_reason": [
@@ -1691,5 +1721,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "55953f9eb9d4527fe0d5720002e4673072f9e3c2125d48d86303ab20905818d7"
+ "inventory_digest": "b2b455b2f4430cbdfbda79f140995fb74bce21a2ae1988983690fa7bb4d0da23"
 }
