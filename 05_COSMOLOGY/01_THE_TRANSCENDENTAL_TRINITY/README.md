@@ -29,6 +29,9 @@ repaired formal system. Where an older document conflicts, those owners rule.
   beside v1/v2, never over them; adoption via the 00_HANDOFF docket.
   — typed narrative formulation of The Infinite, Finity, and Infinity as
   research modes; it interprets but does not redefine the canonical Titan seats.
+- [`54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md`](54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md)
+  — `[B]` 127 register-typed impossibility theorems with scope fences; the
+  outline drawn by what forbids. D2 is the sparsest and least-fenced register.
 - [`10_THE_SOUL_LOOP.md`](10_THE_SOUL_LOOP.md) — modeled future, commitment,
   environment outcome, and reflexive return.
 - [`12_THE_POLES.md`](12_THE_POLES.md) — boundary reading with literal identity retired.

@@ -360,6 +360,11 @@
    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md",
    "sha256": "9346ce848b4d20a3e359f78577a098ab4b6a1de0213b7f986c685cde186793e2",
    "role": "semantic_owner"
+  },
+  {
+   "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md",
+   "sha256": "74c51a881a9f8a09ef2d3ac10f1466eb48ea96c0e1242e89fc025aa4c4051427",
+   "role": "research_boundary"
   }
  ],
  "entries": [
@@ -1228,9 +1233,9 @@
      "type": "supported_as_analogy_by",
      "target": "BIL-01"
     },
-   {
-    "type": "tested_by",
-    "target": "PA-SLWP-01"
+    {
+     "type": "tested_by",
+     "target": "PA-SLWP-01"
     },
     {
      "type": "has_relative_theorem",
@@ -1611,6 +1616,39 @@
      "target": "W0-W12"
     }
    ]
+  },
+  {
+   "entry_id": "NEGATIVE-SPACE-OUTLINE",
+   "source_ids": [
+    "NEGATIVE-SPACE-OUTLINE"
+   ],
+   "kind": "RESEARCH_BOUNDARY",
+   "lifecycle": "active",
+   "evidence_tier": "[B/A/S/I]",
+   "validation_status_ref": [],
+   "owner_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md",
+   "partition": "live",
+   "summary": "Census of 127 register-typed impossibility and limit theorems with scope fences; the placement rule (crossings are conjunctive prohibitions only); D2 identified as sparsest and the corpus's least-fenced region; the three-legged L_D5 instrument (Tarski, Rice, Touchette-Lloyd) with its gate-adversary prediction.",
+   "target_entry_ids": [
+    "LEDGER-ASSEMBLY",
+    "W19-BALANCE",
+    "W14-W18"
+   ],
+   "outcome": "Method and census; no theorem is corpus property and each carries its owner's hypotheses. The gate-adversary prediction is a one-day binary experiment awaiting a preregistered target list.",
+   "rival": "Affirmative-system renderings as more constraining than theorems; the six-legged L_D5 assembly the census refuted.",
+   "discriminator": "The gate-adversary construction; the D2 dig (Donaldson/Freedman/Milnor) against the corpus's geometric claims.",
+   "kill": "A rendering constraining more tightly than a theorem; the gate prediction failing on a Turing-complete artifact class that is not a sufficient statistic.",
+   "survivor": "The scope fences survive any kill as citation discipline.",
+   "relations": [
+    {
+     "type": "bounds",
+     "target": "LEDGER-ASSEMBLY"
+    },
+    {
+     "type": "not_adopted_by",
+     "target": "W0-W12"
+    }
+   ]
   }
  ],
  "excluded_with_reason": [
@@ -1653,5 +1691,5 @@
   "No systematic global priority audit is supplied for SLWP-01 or BIL-01; the only priority claim here is dated first-party corpus provenance.",
   "Any newly discovered dedicated source owner must be added or excluded explicitly before manifest-complete language is reused."
  ],
- "inventory_digest": "84dc1e5b0241d96c58ae0356dfa5eb561dc23845fc00e29baafa66a1f54f8dce"
+ "inventory_digest": "55953f9eb9d4527fe0d5720002e4673072f9e3c2125d48d86303ab20905818d7"
 }
