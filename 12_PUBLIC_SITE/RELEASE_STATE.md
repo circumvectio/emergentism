@@ -1,6 +1,6 @@
 ---
 title: "O9 release-state ledger — emergentism.org"
-date: 2026-08-26
+date: 2026-08-27
 status: "ACTIVE LEDGER — v2.1 publicly served; publication is not validation"
 evidence_tier: "[D] owner-directed deployment; [S] Vercel and HTTP receipts; [B] local and live gates; no independent outcome evidence"
 contract: _PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md · O9
@@ -12,6 +12,55 @@ may_authorize: false
 
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
+
+## Current v2.1 exact-custody UI and Burrisphere release — 2026-08-27
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `24e4563895957dfc4d1248828758e99b2e80b1d1` — clean corpus head containing the repaired actuality firewall, corrected Burrisphere geometry, opt-in motion, and Design Constitution | exact Git commit frozen before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream before and after preparation | release receipt records identical local and upstream commits |
+| **immutable artifact** | `dpl_8dUed92a4NKsnVHqD1b2C5UpCz4M` · `emergentism-hohjwtf51-yves-projects-c163dce1.vercel.app` · `READY` | pinned Vercel project/team, held deployment, immutable strict audit, and independent byte witnesses |
+| **predecessor** | `dpl_8Dutbj655PJ668ibJf361VTe3ayJ` · `emergentism-7dl49nytv-yves-projects-c163dce1.vercel.app` | observed before staging and compare-and-swap rechecked before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` resolve to the same deployment |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **release receipt** | integrity field `99c2e258048b71ded5af1341f8836edcb8d621d079b950f4b91e5a73f57f7f77`; external JSON SHA-256 `c01d120aede84cf190f4f4f38cb85575bea2edde9a1b49a0585dbf21fa59ee6a` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization |
+
+The frozen public payload contains **301 files** and **9,796,220 bytes**, with
+manifest SHA-256
+`6da87a209ff055aedc393e861f0317f4098cc7c02007702b97c136f3bf182f78`. <!-- pragma: allow-secret -- manifest digest -->
+The Vercel project-link digest remained bound by the release receipt. No
+credential file was read, copied into the stage, or logged.
+
+Preparation passed all **18** predeploy sections and the deterministic
+site-artifact gate. Unlike the three immediately preceding releases, federation
+replay was `exact_or_not_required`, with unavailable-source fallback disabled.
+A complete, non-symlinked Git archive of Skyzai commit
+`76a4a58ea678ee3ae96804042a0a73d9102839d5` supplied all six reviewed sibling
+source digests. The companion external replay receipt has integrity field
+`83cf8d3df79132feac68898a38314aa5bf77797e3d0db0c4d08fbe8bb35a9119` <!-- # pragma: allow-secret -- replay receipt integrity -->
+and file SHA-256
+`bd94a4697901b0d8410b6307c44b5990548b2a0cb7ccb7651f5c36a024d5a989`. <!-- pragma: allow-secret -- replay receipt digest -->
+
+The held artifact, apex, and `www` passed the wrapper's strict manifest audits
+and all **20** receipted critical-body comparisons. Independent post-promotion
+probes confirmed that apex and `www` resolve to the promoted deployment and
+matched the frozen bytes for the homepage, Burrisphere overview, full-screen
+instrument, shared stylesheet, Burrisphere runtime, and service worker. The
+homepage SHA-256 is
+`f9fb87a17063fd049a9804da5fbe56ab18792350fa9c4b200cf416cbf9c8514f`, <!-- pragma: allow-secret -- served digest -->
+and the full-screen Burrisphere instrument SHA-256 is
+`aebaaabf698097612a1a2d6300200e56f3205e027360928e76c76183d4a56fe8`. <!-- pragma: allow-secret -- served digest -->
+
+A final live-browser capture inspected the actuality firewall at 1440×900 and
+390×844 and the animated Burrisphere instrument at 390×844. The repaired
+actual/possible power structure stacks cleanly on mobile; the instrument keeps
+its straight-ray geometry, independent polar and axial controls, bottom action
+plane, and visible boundary text.
+
+`external_validation=false`. This release publishes and verifies the current
+public artifact. It does not independently validate Emergentism, the
+Burrisphere interpretation, F5, the serial-force assignment, novelty, priority,
+or any scientific, ethical, or philosophical claim.
 
 ## Current v2.1 Gestalt UI/UX release — 2026-08-26
 
