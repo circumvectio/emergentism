@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "d3c8288162545ad83f3fb191b50539e040bdf99915ef2affa84183bd23be2e58"
+source_sha256: "58f374f85d13767eb44348dd95b7a2b44ef94080273c4d7395bb7132eab26302"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "B — THE METHOD (how we know)"
@@ -126,11 +126,9 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 - **Tier** `[I]`/`[S]` named defect shape, NAMED 2026-08-06.
 - **Owner** **CORPUS.**
 - **The attack it survives** "The file that names this violates it fourteen lines later at `…`." **It does — and that is not a refutation, it is DF-22's confirming instance.** The diagnosis is sound; only its own practice failed. Distinct from DF-20 (numeric coincidence read as derivation) and from ordinary miscounting: *"the correction always arrives by recount, never by re-argument."* **Countermeasure, exact and adoptable tomorrow: "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it."** This manifest is written under it.
-- ⚠️ **Its ID is allocated three ways** — `04_WHAT_DIED.md` and `…` both read `| DF-22 |`, and the register of record at `00_META/00_THE_CLAIM_STATUS_REGISTER.md` assigns DF-22 to the fired-falsifier row. **VERIFIED (L4)** and independently by Śiva. **Preserve the finding; it needs DF-23.** See `04_CREATE.md` C-08 — this collision is the one technical blocker on the dead-forms archive.
+- ⚠️ **Its ID is allocated three ways** — `14_THE_DISTILLATION/04_WHAT_DIED.md` and `…` both read `| DF-22 |`, and the register of record at `00_META/00_THE_CLAIM_STATUS_REGISTER.md` assigns DF-22 to the fired-falsifier row. **VERIFIED (L4)** and independently by Śiva. **Preserve the finding; it needs DF-23.** See `04_CREATE.md` C-08 — this collision is the one technical blocker on the dead-forms archive.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-22 · DF-22 — "the escorted number""
-  - `14_THE_DISTILLATION/04_WHAT_DIED.md` — "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it"
-  - `14_THE_DISTILLATION/04_WHAT_DIED.md` — "the correction always arrives by recount, never by re-argument"
   - `14_THE_DISTILLATION/04_WHAT_DIED.md` — "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it"
   - `14_THE_DISTILLATION/04_WHAT_DIED.md` — "the correction always arrives by recount, never by re-argument"
   - `15_THE_TITAN_PASS_2026_08_06/04_CREATE.md` — "a figure entering a headline must carry the command that produces it"

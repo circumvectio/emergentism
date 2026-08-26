@@ -12,6 +12,55 @@ parents:
 
 # The Whole Board
 
+> ## UPDATE 4 — 2026-08-27. **THE SITE IS LIVE. World contact is no longer 0.**
+>
+> `emergentism.org` and `www` answer HTTP 200 — *"Emergentism — The Gestalt of
+> Dasein."* `C3`, the chokepoint atop every prior update, is CLOSED. A 77-agent
+> UI/journey rewrite is in flight on the Documents-repo branch — do not collide.
+>
+> **State:** work branch `theory/parasite-load-2026-08-17` in sync with origin;
+> **main is 128 commits behind** (merge = chair). Manifest gate PASS 50/50.
+> Emission regressed to 1 failure (churnings made `04_WHAT_DIED.md` ambiguous)
+> and was repaired at source same hour — PASS 339.
+>
+> **Closed this arc:** six-candidate prior-art audit (ALL PRE-EMPTED, filed) ·
+> ledger-assembly audit (OCCUPANT-FOUND; heuristic survives at `53`) ·
+> negative-space outline (127 fenced theorems, `54`) · Seven Acts compression
+> **tested against control, PASS narrow** (`14/09`) · Titan v3 + W19 + the
+> family staged and manifested.
+>
+> ### AGENT — executable now, by leverage
+> 1. **The gate-adversary experiment** (`54 §4`): preregister the target list,
+>    one adversarial artifact per syntactic PASS/FAIL gate. One day, binary.
+>    Converts `D-06` into a test — the estate's first `L_D5` contact on its own
+>    data.
+> 2. **`W17-TRANSLATE` retrodictive test**: blind-code graves vs survivors for
+>    record-renderability at entry. Cheapest contact in the estate; still not
+>    run.
+> 3. **Seven Acts blinded re-run** (its own discriminator) + the **transfer
+>    log** (three entries already earned: SMD→DAV, D2-sparseness, L_D5
+>    decomposition).
+>
+> ### CHAIR — one decision each
+> 1. **THE ADOPTION DOCKET** — one act over the staged family (v3 · W19 ·
+>    ledger heuristic · Seven Acts). Everything is manifested and waiting.
+> 2. **THE DECREE** — the emergence-account in three scripts. Its spine now
+>    exists and is TESTED (the Seven Acts); the site that will carry it is
+>    LIVE. This is the wedge ladder's remaining rung before external pramāṇa.
+> 3. **Merge main** (128 behind — content decision).
+> 4. **External pramāṇa venue** — a dated public artifact (the negative-space
+>    outline is the most publishable object the estate owns; priority claims
+>    zero, citation armor complete).
+>
+> ### RESEARCH — next digs, named by the audits
+> D2 (Donaldson/Freedman/Milnor — before building further on a sphere) · the
+> three open slots (two-mode typing theorem vs Hamkins–Linnebo; the Butterfield
+> discriminator; **pole-consumption as general law — the only priority path**)
+> · the kañcuka citation lane (Trika's finitude-mechanism vs the stipulated ⊙).
+>
+> **Standing refusals unchanged.** Every claim travels with its kill.
+
+
 > ## UPDATE 3 — 2026-08-22, after consolidation. **Updates 1 and 2 are superseded on
 > every custody fact below; their gate findings still stand.**
 >

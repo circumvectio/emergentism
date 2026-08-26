@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "d3c8288162545ad83f3fb191b50539e040bdf99915ef2affa84183bd23be2e58"
+source_sha256: "58f374f85d13767eb44348dd95b7a2b44ef94080273c4d7395bb7132eab26302"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "A — THE LADDER (what is)"
