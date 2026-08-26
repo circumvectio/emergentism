@@ -210,24 +210,23 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8")
         self.assertIn('<span class="k">21</span>…and the remaining sixteen', paradoxes)
 
-    def test_home_unfolds_the_gestalt_in_order_with_one_hero_action(self) -> None:
+    def test_home_unfolds_the_gestalt_in_order_with_four_entry_paths(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
         self.assertIn(parity.EXPECTED_CORE_QUESTION, home)
         markers = [
-            'id="whole"',
             'id="emergence"',
-            'id="powers"',
-            'id="g7"',
-            'id="translation"',
-            'id="questions"',
-            'id="practice"',
+            'id="actuality"',
+            'id="burrisphere"',
+            'id="transaction"',
             'id="research"',
-            'id="authorship"',
+            'id="record"',
         ]
         positions = [home.index(marker) for marker in markers]
         self.assertEqual(positions, sorted(positions))
         hero = home.split('<section class="g2-shell g2-hero', 1)[1].split("</section>", 1)[0]
-        self.assertEqual(hero.count('g2-button--primary'), 1)
+        for door in ("Understand", "Experience", "Apply", "Audit"):
+            self.assertIn(door, hero)
+        self.assertEqual(hero.count('<a class="g2-entry-door'), 4)
         self.assertIn("comparative benefit untested", hero)
 
     def test_atlas_generator_check_binds_full_provenance_payload(self) -> None:

@@ -136,7 +136,7 @@ class TitanInversionStructureTests(unittest.TestCase):
         self.assertEqual(module["claim_card_ids"], ["TIT01-06"])
 
         integrity = self.manifest["editorial_architecture"]["integrity"]
-        self.assertEqual(integrity["existing_claim_card_count"], 87)
+        self.assertEqual(integrity["existing_claim_card_count"], 90)
         self.assertEqual(
             integrity["primary_cards_by_composition"]["COMP-ACTIVE-02-TITANS"],
             7,
@@ -145,7 +145,7 @@ class TitanInversionStructureTests(unittest.TestCase):
             integrity["primary_cards_by_nonbook_home"]["historical_custody_only"],
             7,
         )
-        self.assertEqual(integrity["total_primary_or_custody_routes"], 87)
+        self.assertEqual(integrity["total_primary_or_custody_routes"], 90)
 
     def test_staged_edition_retains_only_the_bounded_summary(self) -> None:
         self.assertIn("claim_cards: [TIT01-01, TIT01-02, TIT01-03, TIT01-04, TIT01-05, TIT01-06]", self.edition)

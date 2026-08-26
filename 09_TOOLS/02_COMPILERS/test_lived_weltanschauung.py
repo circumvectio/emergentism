@@ -134,10 +134,13 @@ class LivedWeltanschauungTests(unittest.TestCase):
             "Society, history and Egregoreotypes",
         ):
             self.assertIn(heading, self.human)
-        self.assertIn("why and how physical organization is accompanied", self.human)
-        self.assertIn("remains open", self.human)
-        self.assertIn("A trace is not automatically\nthe bearer", self.human)
-        self.assertIn("makes no canonical claim that D6 is an afterlife", self.human)
+        human_flat = re.sub(r"\s+", " ", self.human)
+        self.assertIn("phenomenal experience is the bearer-side aspect", human_flat)
+        self.assertIn("necessary and sufficient organization conditions", human_flat)
+        self.assertIn("remain unpaid", human_flat)
+        self.assertIn("not an established physical mechanism", human_flat)
+        self.assertIn("collective memory or a duplicate pattern is not automatically the person", human_flat)
+        self.assertIn("D6 is not thereby an afterlife", self.human)
 
     def test_lived_compass_handles_tragedy_sacrifice_and_exit(self) -> None:
         for heading in (
@@ -328,7 +331,13 @@ class LivedWeltanschauungTests(unittest.TestCase):
             "How may the worldview be left?",
         ):
             self.assertIn(question, completion)
-        self.assertIn("coherent declaration of ignorance", completion)
+        completion_flat = re.sub(r"\s+", " ", completion)
+        self.assertIn(
+            "coherent, typed selected answer with an explicit external residual, "
+            "rival, kill and survivor",
+            completion_flat,
+        )
+        self.assertIn("not mean that an adopted answer has been analytically proved", completion_flat)
 
 
 if __name__ == "__main__":

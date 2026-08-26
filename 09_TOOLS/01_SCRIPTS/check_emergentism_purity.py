@@ -103,7 +103,7 @@ FROZEN_TOOLING_SHA256 = {
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_schema.py"): "82703f06a9fb25ac808b15b3c45286a62c6cfcd9918bd842979eac46a391b5df",  # pragma: allow-secret -- SHA-256 custody pin
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_semantics.py"): "e134e8639625831b951e07d556ce21f10cc5dfebbfdea93ed30025d68250e09c",
     Path("09_TOOLS/02_COMPILERS/test_validate_kintsugi.py"): "9ca7f87ba8f37f7648bea7ac961e0cea1dcc85441ad4fde16a7ef457c296738a",
-    Path("09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py"): "5a00d93af374e8fce7aff67a3eda6c5968c3f46b6f2e0b5157708dc72bfc071f",  # pragma: allow-secret -- SHA-256 custody pin
+    Path("09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py"): "e43e904d55b7c222e0a5fdffaf949a2a1cfda635c2f3c3d01d99c51f365ec8c3",  # pragma: allow-secret -- SHA-256 custody pin
     Path("09_TOOLS/02_COMPILERS/test_dimension_first_canon.py"): "796af0e9eb360e000a4734d35e3cbfe841b07bea8efc1b62671be86e260e275c",
 }
 
@@ -260,12 +260,12 @@ DISTILLATION_PROJECTION_SHA256 = {
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/06_WHAT_IS_STILL_OPEN.md": "27e18fb310bcc28962c13ddd98e86b1a7e757cf5181e5d2dba9c19e5a4919b00",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/README.md": "2238187215aa70dd54a07f03eda8c15805d47d84de3cffb0b39c2360bb6ae250",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/ThirdChurningCorpus.v1.json": "bb6ae2bcab5398c26629e28ed34b51e563deb72a92eefc52fc77d13dd6387ebc",  # pragma: allow-secret
-    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/build_source_packet.py": "635092e92946e2a614c3570deb8ea5215d30ea7ef637f718d91c8ceace0bbe4a",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/build_source_packet.py": "6d00ac85ce6a644b5daf1b25070c95c9f9fa4aa149a4f30ce28ebb640935ca4e",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ChurningDrop.v1.schema.json": "a27ea9660960fa347aa9ee14b56c72771630bf4c715192911e7f228693235e0b",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ProblemAdjudication.v1.schema.json": "87eda8d64823f5d9c2bac1b64e152a6096d6ed47d2e8b5d5bc6ad451c386f62f",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/contracts/ThirdChurningCorpus.v1.schema.json": "2bb3840e6867dc173bf1087aa11fe0fbb39b88c836b357662dd911f7d6af428b",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/churning_drops.v1.json": "ca20ebd698aa0059d4056d17cd81955c751d34d40f8f5e5e1263cebc465c925e",  # pragma: allow-secret
-    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/paradox_inventory.v1.json": "53a29d948db3950ee73ec053b41225ab1e271a46bed4b3b62047c526f66485a2",  # pragma: allow-secret
+    DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/paradox_inventory.v1.json": "be3fe88c4208cc5be77f7ac4623b760383f2db0870f99573156ed5b7dc8db347",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "07_THE_THIRD_CHURNING_2026_08_23/data/problem_adjudications.v1.json": "7618139f3ab376c017ececaa64c88e33c097cdb0efd245f3b2453f65d78c4b8a",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/00_THE_TYPE_ATLAS.md": "c7357515695ad8e6e1dee2b8287c02c0b6bd2cb231189cedd21edb766ce26d23",  # pragma: allow-secret
     DISTILLATION_PROJECTION_ROOT / "08_THE_FOURTH_CHURNING_2026_08_24/01_PRIOR_ART_MATRIX.md": "5e391ec25e345537f591709328b94fd8c0bdc9d166a895a7a397a3ad3a3ea006",  # pragma: allow-secret

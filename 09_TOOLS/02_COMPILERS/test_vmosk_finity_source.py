@@ -52,7 +52,7 @@ class VmoskFinitySourceTests(unittest.TestCase):
             'id="receipt-builder"',
             "Face 1 · commitment",
             "Face 2 · observed outcome",
-            "Local only · no account · no transmission · no recommendation",
+            "Local only · no account · no wallet · no transmission · no execution · no recommendation",
             "This receipt is not authorization.",
             "The strongest rival is a component-matched ordinary worksheet.",
         ):

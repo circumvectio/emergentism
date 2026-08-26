@@ -2069,7 +2069,11 @@ def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
         for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "WebSocket", "ethereum.request"):
             if forbidden in text:
                 errors.append(f"decisionTransaction practice must remain local-only: {forbidden}")
-        if "no account · no wallet · no transmission · no execution" not in text:
+        local_boundary = (
+            "Local only · no account · no wallet · no transmission · "
+            "no execution · no recommendation"
+        )
+        if local_boundary not in text:
             errors.append("decisionTransaction practice boundary is not explicit")
         if not re.search(
             r'<button[^>]+id="sign-transaction"[^>]+disabled[^>]*>\s*'

@@ -40,7 +40,7 @@ RECEIPT_INDEX = Path(
 )
 RECEIPT_REF = Path(
     "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
-    "ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_23.md"
+    "ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_26.md"
 )
 PUBLIC_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
 REGISTRY_DIGEST = re.compile(
@@ -78,7 +78,7 @@ EXPECTED_REUSED_PREFIXES = 101
 EXPECTED_ACTIVE_OCCURRENCES_BEFORE_PLURAL_AUDIT = 186
 EXPECTED_REPAIR_BASELINE = 182
 EXPECTED_ACTIVE_SOURCE_SET_SHA256 = (
-    "762349611e159f655a858ed2c0454f7dca6d82dee18373054abdc4b7ebe98e1b"  # pragma: allow-secret
+    "67c2172c539197a3089fe61a0e5456af0e83ec9defc6b04ef4e2e5e8a2c676ca"  # pragma: allow-secret
 )
 PROGRAM_PLAN_DIAGNOSTIC_SHA256 = (
     "ad043098565d406743474397d23cc7276ef9ae7ce341d76c977788636dda5953"  # pragma: allow-secret
@@ -203,21 +203,29 @@ AUDITED_ACTIVE_SOURCES = (
     "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md",
     "11_UPLINK/50_AUDITS_AND_EXECUTIONS/README.md",
     "11_UPLINK/60_SESSION_PACKETS/README.md",
-    "12_PUBLIC_SITE/amrita/amrita.css",
     "12_PUBLIC_SITE/amrita/amrita.json",
     "12_PUBLIC_SITE/amrita/index.html",
     "12_PUBLIC_SITE/assets/js/pwa.js",
+    "12_PUBLIC_SITE/book/rag_index.json",
     "12_PUBLIC_SITE/build_pwa.py",
+    "12_PUBLIC_SITE/churn/corpus.json",
+    "12_PUBLIC_SITE/churn/index.html",
     "12_PUBLIC_SITE/discoveries/mass-shell/index.html",
     "12_PUBLIC_SITE/discoveries/the-crossing/index.html",
     "12_PUBLIC_SITE/ecology/index.html",
     "12_PUBLIC_SITE/exit/README.md",
+    "12_PUBLIC_SITE/halahala/index.html",
     "12_PUBLIC_SITE/journey/index.html",
     "12_PUBLIC_SITE/predeploy_check.py",
     "12_PUBLIC_SITE/public_semantic_parity.json",
     "12_PUBLIC_SITE/record/index.html",
     "12_PUBLIC_SITE/record/frontier/index.html",
+    "12_PUBLIC_SITE/record/churning/index.html",
     "12_PUBLIC_SITE/sw.js",
+    "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/ThirdChurningCorpus.v1.json",
+    "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/build_source_packet.py",
+    "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/data/churning_drops.v1.json",
+    "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/data/paradox_inventory.v1.json",
 )
 KNOWN_REPORT_ONLY_RESOLVED = {
     "05_COSMOLOGY/00_THE_TORUS_REVELATION.md",

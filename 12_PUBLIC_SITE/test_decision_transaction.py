@@ -58,7 +58,11 @@ class DecisionTransactionTests(unittest.TestCase):
         for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "WebSocket", "ethereum.request"):
             with self.subTest(forbidden=forbidden):
                 self.assertNotIn(forbidden, self.practice)
-        self.assertIn("no account · no wallet · no transmission · no execution", self.practice)
+        self.assertIn(
+            "Local only · no account · no wallet · no transmission · "
+            "no execution · no recommendation",
+            self.practice,
+        )
 
     def test_action_and_worldview_exits_remain_distinct(self) -> None:
         self.assertIn("The action exit is the signature boundary.", self.plainly)

@@ -93,7 +93,7 @@ def declared_external_sources() -> dict[str, dict[str, object]]:
 
 
 EXTERNAL_SOURCE_DECLARATIONS = declared_external_sources()
-EXPECTED_REPOSITORY_CARD_COUNT = 87
+EXPECTED_REPOSITORY_CARD_COUNT = 90
 
 
 def missing_federated_sources() -> list[str]:

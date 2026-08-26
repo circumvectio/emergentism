@@ -394,7 +394,7 @@ def build_paradox_inventory() -> dict:
         "canonical_problem_id": f"LEGACY:PD-{number:02d}",
         "proposed_state": "HISTORICAL_CLAIM",
         "earned_state": "0_OF_21_DISSOLVED",
-        "residual": "See Receipt 188; the historical route does not earn a dissolution.",
+        "residual": "See Receipt 188 (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/188_THE_PARADOX_INVENTORY_2026_07_30.md`); the historical route does not earn a dissolution.",
         "source_path": f"08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_{number:02d}_*.md",
     } for number, title in legacy_names.items()]
     synthesis = [

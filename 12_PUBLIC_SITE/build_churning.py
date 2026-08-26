@@ -595,8 +595,33 @@ def churning_seam() -> str:
 
 
 def page_document(
-    *, title: str, description: str, canonical: str, active: str, main: str
+    *,
+    title: str,
+    description: str,
+    canonical: str,
+    active: str,
+    main: str,
+    robots: str | None = None,
+    q4_status: str | None = None,
 ) -> str:
+    robots_meta = (
+        f'  <meta name="robots" content="{esc(robots)}" />\n' if robots else ""
+    )
+    q4_meta = (
+        f'  <meta name="emergentism:status" content="{esc(q4_status.lower())}; '
+        'not warranted; ruling Q4 2026-07-31" />\n'
+        if q4_status
+        else ""
+    )
+    q4_declaration = (
+        '<aside class="q4decl g2-note" aria-label="Publication declaration">'
+        f'<strong>{esc(q4_status)}</strong> — this page is reachable, indexable and '
+        'registered. The corpus does not warrant what it claims; a coherence test is '
+        'not a capability test. Ruling Q4, signed 2026-07-31.'
+        '</aside>\n'
+        if q4_status
+        else ""
+    )
     base = f'''<!doctype html>
 <html lang="en" data-gestalt="v2">
 <head>
@@ -605,7 +630,7 @@ def page_document(
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}" />
   <meta name="theme-color" content="#07090f" />
-  <link rel="canonical" href="{esc(canonical)}" />
+{robots_meta}{q4_meta}  <link rel="canonical" href="{esc(canonical)}" />
   <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
 <!--OG:AUTO-->
 <meta property="og:type" content="website" />
@@ -619,7 +644,7 @@ def page_document(
 <!--/OG:AUTO-->
 </head>
 <body class="g2-page">
-<main id="main" class="g2-main" tabindex="-1">
+{q4_declaration}<main id="main" class="g2-main" tabindex="-1">
 {main}
 </main>
 </body>
@@ -911,6 +936,8 @@ def build_outputs() -> dict[Path, bytes]:
             canonical="https://emergentism.org/amrita/",
             active="research",
             main=branch_main(survivors, survivor=True),
+            robots="index, follow",
+            q4_status="DECLARED-PROVISIONAL",
         ).encode("utf-8"),
         SITE / "halahala" / "index.html": page_document(
             title="Refutations and warnings (Hālāhala) — The Third Churning",

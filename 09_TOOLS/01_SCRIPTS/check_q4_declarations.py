@@ -29,6 +29,7 @@ Usage: python3 check_q4_declarations.py   (no arguments — gate.sh invokes it b
 
 from __future__ import annotations
 
+import html as html_lib
 import re
 import sys
 from pathlib import Path
@@ -38,16 +39,17 @@ SITE = ROOT / "12_PUBLIC_SITE"
 
 # route -> (expected status token, expected robots directive)
 GOVERNED = {
-    "amrita": ("DECLARED", "index, follow"),
-    "egg": ("DECLARED", "index, follow"),
-    "riemann": ("DECLARED", "index, follow"),
-    "suda": ("DECLARED", "index, follow"),
+    "amrita": ("DECLARED-PROVISIONAL", "index, follow"),
+    "egg": ("DECLARED-PROVISIONAL", "index, follow"),
+    "riemann": ("DECLARED-PROVISIONAL", "index, follow"),
+    "suda": ("DECLARED-PROVISIONAL", "index, follow"),
     "offline": ("INFRASTRUCTURE", "noindex, follow"),
 }
 
 # Generators that OWN a governed route's file. Editing the output alone is not durable:
 # the next run of the generator wins. The generator's source must carry the declaration.
 OWNED_BY_GENERATOR = {
+    "amrita": SITE / "build_churning.py",
     "offline": SITE / "build_pwa.py",
 }
 
@@ -64,6 +66,9 @@ def main() -> int:
             problems.append(f"{route}/index.html is missing entirely")
             continue
         html = page.read_text(encoding="utf-8", errors="replace")
+        declaration_text = html_lib.unescape(html)
+        for dash in "‐‑‒–—−":
+            declaration_text = declaration_text.replace(dash, "-")
         checked += 1
 
         if "q4decl" not in html:
@@ -71,7 +76,7 @@ def main() -> int:
                 f"/{route}/ has lost its ruling-Q4 declaration block (no .q4decl element). "
                 f"If a generator overwrote it, fix the GENERATOR, not the output."
             )
-        elif token not in html:
+        elif token not in declaration_text:
             problems.append(
                 f"/{route}/ has a declaration block but not the '{token}' status word"
             )
