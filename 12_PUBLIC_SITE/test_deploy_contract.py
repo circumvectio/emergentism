@@ -210,6 +210,59 @@ class DeployReleaseContractTests(unittest.TestCase):
         with self.assertRaises(contract.ReleaseContractError):
             contract._inspect_archive(archive_bytes("link", b"", kind=tarfile.SYMTYPE))
 
+    def test_stage_rejects_lfs_pointer_and_invalid_binary_magic(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            pointer = root / "font.woff2"
+            pointer.write_bytes(
+                b"version https://git-lfs.github.com/spec/v1\n"
+                b"oid sha256:" + b"0" * 64 + b"\nsize 123\n"
+            )
+            with self.assertRaisesRegex(contract.ReleaseContractError, "Git LFS pointer"):
+                contract._stage_rows(root)
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "card.png").write_bytes(b"not-a-png")
+            with self.assertRaisesRegex(contract.ReleaseContractError, "invalid .png signature"):
+                contract._stage_rows(root)
+
+    def test_live_asset_verification_requires_magic_mime_and_hash(self) -> None:
+        payload = b"wOF2" + b"font"
+        route = "assets/fonts/Roboto-latin.woff2"
+        expected = {route: contract._sha256_bytes(payload)}
+        with (
+            patch.object(contract, "CRITICAL_ARTIFACTS", {route: route}),
+            patch.object(
+                contract,
+                "_fetch",
+                return_value=(payload, {"content-type": "font/woff2"}),
+            ),
+        ):
+            self.assertEqual(
+                contract._verify_critical_live(
+                    "https://example.invalid/",
+                    expected,
+                    require_indexable_halahala=False,
+                ),
+                expected,
+            )
+
+        with (
+            patch.object(contract, "CRITICAL_ARTIFACTS", {route: route}),
+            patch.object(
+                contract,
+                "_fetch",
+                return_value=(payload, {"content-type": "text/plain"}),
+            ),
+            self.assertRaisesRegex(contract.ReleaseContractError, "invalid content type"),
+        ):
+            contract._verify_critical_live(
+                "https://example.invalid/",
+                expected,
+                require_indexable_halahala=False,
+            )
+
     def test_json_parser_accepts_only_a_trailing_object(self) -> None:
         self.assertEqual(
             contract._parse_json_object('progress\n{"status":"ok"}'),

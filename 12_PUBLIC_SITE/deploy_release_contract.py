@@ -69,6 +69,26 @@ CRITICAL_ARTIFACTS = {
     "churn/corpus.json": "churn/corpus.json",
     "churn/corpus.jsonl": "churn/corpus.jsonl",
     "sw.js": "sw.js",
+    "assets/fonts/Newsreader-latin-variable.woff2": "assets/fonts/Newsreader-latin-variable.woff2",
+    "assets/fonts/Roboto-greek.woff2": "assets/fonts/Roboto-greek.woff2",
+    "assets/fonts/Roboto-latin.woff2": "assets/fonts/Roboto-latin.woff2",
+    "assets/fonts/RobotoMono-greek.woff2": "assets/fonts/RobotoMono-greek.woff2",
+    "assets/fonts/RobotoMono-latin.woff2": "assets/fonts/RobotoMono-latin.woff2",
+    "assets/icons/apple-touch-icon.png": "assets/icons/apple-touch-icon.png",
+    "assets/icons/icon-192.png": "assets/icons/icon-192.png",
+    "assets/icons/icon-512.png": "assets/icons/icon-512.png",
+    "assets/icons/maskable-512.png": "assets/icons/maskable-512.png",
+    "assets/icons/og-image.png": "assets/icons/og-image.png",
+    "assets/og/og-card.png": "assets/og/og-card.png",
+}
+LFS_POINTER_PREFIX = b"version https://git-lfs.github.com/spec/v1"
+BINARY_ASSET_SIGNATURES = {
+    ".png": b"\x89PNG\r\n\x1a\n",
+    ".woff2": b"wOF2",
+}
+BINARY_ASSET_CONTENT_TYPES = {
+    ".png": "image/png",
+    ".woff2": "font/woff2",
 }
 FORBIDDEN_STAGE_PARTS = {
     ".env",
@@ -115,6 +135,27 @@ def _redact(text: str) -> str:
         redacted,
     )
     return redacted
+
+
+def _assert_binary_asset(
+    name: str,
+    payload: bytes,
+    *,
+    content_type: str | None = None,
+) -> None:
+    if payload.startswith(LFS_POINTER_PREFIX):
+        raise ReleaseContractError(f"Git LFS pointer is not deployable asset bytes: {name}")
+    suffix = PurePosixPath(name).suffix.lower()
+    signature = BINARY_ASSET_SIGNATURES.get(suffix)
+    if signature is not None and not payload.startswith(signature):
+        raise ReleaseContractError(f"invalid {suffix} signature: {name}")
+    expected_type = BINARY_ASSET_CONTENT_TYPES.get(suffix)
+    if content_type is not None and expected_type is not None:
+        observed_type = content_type.split(";", 1)[0].strip().lower()
+        if observed_type != expected_type:
+            raise ReleaseContractError(
+                f"invalid content type for {name}: {observed_type or '<missing>'}"
+            )
 
 
 def _utc_now() -> str:
@@ -375,6 +416,7 @@ def _stage_rows(stage_dir: Path) -> list[dict[str, Any]]:
         ):
             raise ReleaseContractError(f"stage contains forbidden credential path: {rel}")
         payload = path.read_bytes()
+        _assert_binary_asset(rel, payload)
         if any(marker in payload for marker in FORBIDDEN_CONTENT_MARKERS):
             raise ReleaseContractError(f"stage contains a private credential marker: {rel}")
         rows.append(
@@ -759,6 +801,7 @@ def _verify_critical_live(
     expected: dict[str, str],
     *,
     require_indexable_halahala: bool,
+    require_valid_binary_assets: bool = True,
 ) -> dict[str, str]:
     if not base_url.endswith("/"):
         base_url += "/"
@@ -766,6 +809,12 @@ def _verify_critical_live(
     for route in CRITICAL_ARTIFACTS:
         label = route or "/"
         payload, headers = _fetch(base_url + route)
+        if require_valid_binary_assets:
+            _assert_binary_asset(
+                route,
+                payload,
+                content_type=headers.get("content-type"),
+            )
         digest = _sha256_bytes(payload)
         if expected.get(label) != digest:
             raise ReleaseContractError(f"live critical hash mismatch: {label}")
@@ -1070,6 +1119,7 @@ def _verified_rollback_hashes(receipt: dict[str, Any]) -> dict[str, dict[str, st
             base_url,
             expected_for_host,
             require_indexable_halahala=True,
+            require_valid_binary_assets=False,
         )
     return rollback_hashes
 
