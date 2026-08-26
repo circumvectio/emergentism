@@ -62,3 +62,77 @@ Rice's boundary is being observed rather than assumed.
 
 Results and raw artifacts land in
 `GATE_ADVERSARY_RESULTS_2026_08_27.md`, committed together with the verdict.
+
+---
+
+## RESULTS — 2026-08-27, same day. **8 of 8 EVADED. My prediction FAILED.**
+
+Raw evidence: `GATE_ADVERSARY_RESULTS_2026_08_27.md`. Corpus verified unchanged
+by every lane (`git status --porcelain` empty in all eight reports). No gate
+modified; no artifact entered a live path; no credential created.
+
+| gate | predicted | actual |
+|---|---|---|
+| `check_barred_claims` | VULNERABLE | **EVADED** |
+| `check_node_product_ranking` | VULNERABLE | **EVADED** |
+| `check_d6_equiv_d0` | VULNERABLE | **EVADED** |
+| `check_no_secrets_staged` | VULNERABLE | **EVADED** |
+| `check_trophic_rosetta_doctrine` | VULNERABLE | **EVADED** |
+| `check_dead_citations` | VULNERABLE | **EVADED** |
+| **`check_links`** | **RESISTANT** | **EVADED — prediction failed** |
+| **`check_record_counters`** | **RESISTANT** | **EVADED — prediction failed** |
+
+### The failed prediction is the result
+
+I classified gates by *"is the certified property syntactic?"* — and got the
+two controls wrong. The evidence shows why, and the corrected rule is better
+than the one it replaces:
+
+> **A gate has two steps: EXTRACTION (what enters the checked set) and
+> ADJUDICATION (what is decided about members). Rice's fence binds
+> EXTRACTION. A perfectly sound decision procedure applied to a wrongly
+> enumerated domain certifies nothing.**
+
+Both controls have **sound adjudication.** `Path.exists()` *is* a sufficient
+statistic for "does this path exist"; the counter arithmetic *is* correct. Both
+fail at extraction: `check_links` quantifies over *regex-matches-minus-a-prefix-
+blacklist*, not over links — and `<` in that blacklist silently swallows
+CommonMark's angle-bracketed destination `[text](<path>)`, a legal rendering
+relative link, disclosed nowhere. `check_record_counters` re-implements a CSS
+selector as an attribute-order-pinned regex that is simultaneously a **subset**
+of the real DOM set (misses rendered rows) and a **superset** (counts commented
+markup).
+
+**Neither gate can report what it skipped**, because the skip happens before
+the counter increments. That is the sharpest form of the finding.
+
+### The single worst defect found
+
+`check_barred_claims` treats a clause-local `not` — or the bare words
+`retired`, `inflation`, `overclaim`, `forbidden` — as evidence that a barred
+claim is *not being asserted*. So **litotes turns the gate off while making the
+assertion more emphatic**, with the barred string character-identical:
+
+> *"It is not an exaggeration: Emergentism resolves all fundamental paradoxes."*
+> → **CLEAN.** Same sentence with a period or semicolon instead of the colon →
+> **FLAGS.**
+
+The colon is missing from `CLAUSE_BOUNDARY` while the docstring claims sentence
+scoping. Three further families: commutativity (`○ × •` and `Φ × V = P` are
+unmatched), grammar paraphrase (determiner, complement, number, modal, idiom),
+and **markup interposition** — `is a <em>complete</em> ontology` renders to the
+barred string while breaking every `\s+` in the pattern. On public surfaces
+**the gate reads a different document than the one that ships.**
+
+### Verdict on the instrument
+
+`D-06` — *"the gates certify formatting, not properties"* — is now **tested,
+not asserted**, and confirmed 8/8. The Rice leg of the three-legged `L_D5`
+**survives and is sharpened**: it binds extraction. The prediction's stated
+exemption (*"a sufficient statistic"*) was mis-applied by me to the wrong
+step — the honest correction, per the corrected rule, is that neither control
+was ever a sufficient-statistic case.
+
+**No gate is repaired here.** Repair is its own scoped act with its own
+mutation test, and repairing under the same instrument that just failed would
+be the error this estate has already named twice.
