@@ -34,6 +34,9 @@ class GestaltV2ContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.fork = json.loads(F5_CONTRACT.read_text(encoding="utf-8"))
+        cls.design = json.loads(
+            (SITE / "emergentism-design.v1.json").read_text(encoding="utf-8")
+        )
         cls.css = (SITE / "assets/css/gestalt-v2.css").read_text(encoding="utf-8")
         cls.js = (SITE / "assets/js/gestalt-v2.js").read_text(encoding="utf-8")
 
@@ -81,6 +84,48 @@ class GestaltV2ContractTests(unittest.TestCase):
                 self.assertIn('/assets/js/gestalt-v2.js', body)
                 self.assertEqual(body.count('/favicon.svg'), 1)
                 self.assertEqual(body.count('rel="icon"'), 1)
+                relative = path.relative_to(SITE).as_posix()
+                self.assertIn('data-emergentism-design="v1"', body)
+                self.assertIn(
+                    f'data-emergentism-surface="{shell.SURFACE_FAMILIES[relative]}"',
+                    body,
+                )
+                self.assertEqual(body.count('data-g2-semantic-key="v1"'), 1)
+
+    def test_design_constitution_is_public_source_bound_and_checkable(self) -> None:
+        self.assertEqual(self.design["schema"], "emergentism/PublicDesignContract.v1")
+        self.assertEqual(self.design["version"], "1.0.0")
+        self.assertEqual(
+            set(self.design["semanticRoles"]),
+            {"boundary", "actual", "possible", "conjecture", "evidence", "poison"},
+        )
+        self.assertEqual(len(self.design["routes"]), 32)
+        self.assertTrue(self.design["boundary"]["projection_only"])
+        self.assertFalse(self.design["boundary"]["creates_evidence"])
+        self.assertFalse(self.design["boundary"]["creates_authority"])
+        self.assertFalse(self.design["boundary"]["proves_comprehension"])
+        self.assertEqual(self.design["adoptionState"]["reader_comprehension"], "untested")
+        self.assertEqual(
+            self.design["adoptionState"]["independent_accessibility_review"],
+            "not_run",
+        )
+        for row in self.design["routes"]:
+            with self.subTest(route=row["path"]):
+                body = (SITE / row["path"]).read_text(encoding="utf-8")
+                self.assertIn('data-emergentism-design="v1"', body)
+                self.assertIn(
+                    f'data-emergentism-surface="{row["family"]}"',
+                    body,
+                )
+                self.assertEqual(body.count('data-g2-semantic-key="v1"'), 1)
+
+        result = subprocess.run(
+            [sys.executable, str(SITE / "check_design_constitution.py")],
+            cwd=SITE,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
     def test_shell_rejects_malformed_ownership_and_preserves_article_footer(self) -> None:
         base = (
@@ -112,6 +157,12 @@ class GestaltV2ContractTests(unittest.TestCase):
             "orphan nav marker": base.replace("<main>", "<!-- gestalt-core-nav:start --><main>"),
             "duplicate nav markers": base.replace("<main>", nav + nav + "<main>"),
             "wrong Gestalt version": base.replace("<html", '<html data-gestalt="v1"'),
+            "wrong design version": base.replace(
+                "<html", '<html data-emergentism-design="v0"'
+            ),
+            "wrong surface family": base.replace(
+                "<body", '<body data-emergentism-surface="product"'
+            ),
             "missing head close": base.replace("</head>", ""),
         }
         for name, fixture in malformed.items():
@@ -202,6 +253,7 @@ class GestaltV2ContractTests(unittest.TestCase):
             or "data-g2-draw" in (SITE / relative).read_text(encoding="utf-8")
         }
         self.assertEqual(opted_in, {"index.html", "plainly/index.html", "dasein/index.html"})
+        self.assertEqual(opted_in, set(self.design["motion"]["optInRoutes"]))
 
         home = (SITE / "index.html").read_text(encoding="utf-8")
         hero_copy = home.split('<div class="g2-hero__copy">', 1)[1].split("</div>", 1)[0]
@@ -323,7 +375,8 @@ class GestaltV2ContractTests(unittest.TestCase):
                 "/churn/", "/amrita/", "/halahala/", "/record/churning/",
                 "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
                 "/record/pqa-54/", "/assets/css/gestalt-v2.css",
-                "/assets/js/gestalt-v2.js", "/assets/fonts/Newsreader-latin-variable.woff2",
+                "/assets/js/gestalt-v2.js", "/emergentism-design.v1.json",
+                "/assets/fonts/Newsreader-latin-variable.woff2",
                 "/burrisphere/", "/burrisphere/instrument/",
                 "/assets/css/burrisphere-instrument.css", "/assets/js/burrisphere-instrument.js",
                 "/vendor/three-0.160.0/three.module.js", "/vendor/three-0.160.0/controls/OrbitControls.js",

@@ -8,7 +8,7 @@ import html
 import json
 from pathlib import Path
 
-from build_core_shell import render_page
+from build_core_shell import render_page, surface_for
 
 
 SITE = Path(__file__).resolve().parent
@@ -37,7 +37,15 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def page_document(*, title: str, description: str, canonical: str, main: str, active: str) -> str:
+def page_document(
+    *,
+    title: str,
+    description: str,
+    canonical: str,
+    main: str,
+    active: str,
+    surface: str,
+) -> str:
     base = f'''<!doctype html>
 <html lang="en" data-gestalt="v2">
 <head>
@@ -67,7 +75,7 @@ def page_document(*, title: str, description: str, canonical: str, main: str, ac
 </body>
 </html>
 '''
-    return render_page(base, active)
+    return render_page(base, active, surface=surface)
 
 
 def validate_inputs(
@@ -334,6 +342,7 @@ def build_outputs() -> dict[Path, str]:
             canonical="https://emergentism.org/questions/",
             main=question_atlas_main(atlas, adjudications, diagnoses),
             active="worldview",
+            surface=surface_for("questions/index.html"),
         ),
         SITE / "record" / "pqa-54" / "index.html": page_document(
             title="PQA-54 record — The Philosophical Question Atlas",
@@ -341,6 +350,7 @@ def build_outputs() -> dict[Path, str]:
             canonical="https://emergentism.org/record/pqa-54/",
             main=record_main(),
             active="research",
+            surface=surface_for("record/pqa-54/index.html"),
         ),
     }
 

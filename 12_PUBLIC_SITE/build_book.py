@@ -14,7 +14,7 @@ Run:  python3 -B build_book.py [--check]
 import argparse, hashlib, html, json, os, re, sys
 import markdown
 
-from build_core_shell import head_assets, render_footer, render_nav
+from build_core_shell import head_assets, render_footer, render_nav, surface_for
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
@@ -345,6 +345,7 @@ def render(contract):
     page = page.replace("%%CORE_HEAD%%", head_assets())
     page = page.replace("%%CORE_NAV%%", render_nav("library", "/book/"))
     page = page.replace("%%CORE_FOOTER%%", render_footer())
+    page = page.replace("%%DESIGN_SURFACE%%", surface_for("book/index.html"))
 
     return page, n_ch, words, source_chapter_order
 
@@ -439,7 +440,7 @@ def build(check=False):
 
 
 TEMPLATE = r"""<!DOCTYPE html>
-<html lang="en" data-reading-theme="light" data-gestalt="v2">
+<html lang="en" data-reading-theme="light" data-gestalt="v2" data-emergentism-design="v1">
 <head>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Emergentism" />
@@ -619,7 +620,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 }
 </style>
 </head>
-<body class="g2-book">
+<body class="g2-book" data-emergentism-surface="%%DESIGN_SURFACE%%">
 <div class="progress" id="progress"></div>
 %%CORE_NAV%%
 <nav class="book-tools" aria-label="Reading controls">

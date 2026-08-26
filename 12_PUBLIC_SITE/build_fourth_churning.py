@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from build_core_shell import render_page
+from build_core_shell import render_page, surface_for
 
 
 SITE = Path(__file__).resolve().parent
@@ -68,7 +68,11 @@ def page_document(main: str) -> bytes:
 </head>
 <body class="g2-page"><main id="main" class="g2-main" tabindex="-1">{main}</main></body>
 </html>'''
-    return render_page(base, "worldview").encode("utf-8")
+    return render_page(
+        base,
+        "worldview",
+        surface=surface_for("questions/diagnoses/index.html"),
+    ).encode("utf-8")
 
 
 def validate_inputs(

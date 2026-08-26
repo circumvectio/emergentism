@@ -8,7 +8,7 @@ import html
 import json
 from pathlib import Path
 
-from build_core_shell import head_assets, render_footer, render_nav
+from build_core_shell import head_assets, render_footer, render_nav, surface_for
 
 
 SITE = Path(__file__).resolve().parent
@@ -576,7 +576,7 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
     if stone := item.get("stone"):
         stone_html, stone_style = stone_section(stone)
     return f"""<!DOCTYPE html>
-<html lang="en" data-gestalt="v2">
+<html lang="en" data-gestalt="v2" data-emergentism-design="v1">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -612,7 +612,7 @@ html:not([data-gestalt-enhanced="true"]) .fallback{{display:flex}}
 </style>
 {head_assets()}
 </head>
-<body class="g2-page g2-legacy g2-dimension">
+<body class="g2-page g2-legacy g2-dimension" data-emergentism-surface="{esc(surface_for(f'{number}/index.html'))}">
 {render_nav("worldview")}
 <main id="main" tabindex="-1">
 <section class="hero">
@@ -668,7 +668,7 @@ def index_page(levels: list[dict], sequence: list[str], stone: dict) -> str:
             ret = item["return"]
             rows.append(f"<div class='crossing'><b>{esc(ret['id'])}</b><span>{esc(ret['label'])}</span><small>interpretive edge only</small></div>")
     return f"""<!DOCTYPE html>
-<html lang="en" data-gestalt="v2"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-gestalt="v2" data-emergentism-design="v1"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The dimension-first spine · Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6 with five typed μ-interfaces — two standing, one owing a discriminator, two adjudicated failed — one exit boundary, and one interpretive return." />
 <link rel="stylesheet" href="../assets/css/xai.css" /><style>
@@ -682,7 +682,7 @@ main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clam
 /* a11y-floor-2026-08-13 */
 :focus-visible{{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}}
 @media (prefers-reduced-motion: reduce){{*,*::before,*::after{{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}}}
-</style>{head_assets()}<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#070A12"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><script src="/assets/js/pwa.js" defer></script></head><body class="g2-page g2-legacy g2-dimensions-index">
+</style>{head_assets()}<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#070A12"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><script src="/assets/js/pwa.js" defer></script></head><body class="g2-page g2-legacy g2-dimensions-index" data-emergentism-surface="{esc(surface_for('dimensions/index.html'))}">
 {render_nav("worldview")}
 <main id="main" tabindex="-1"><p class="sequence">{esc(' → '.join(pretty_id(x) for x in sequence))}</p><h1>The dimension-first spine</h1><p class="lede">A scaffold, not a census forced on nature. Each page separates inherited mathematics or science from Emergentist interpretation, and every crossing carries a prediction and a way to fail.</p>
 <section class="contract"><h2>How to read it</h2><ul><li>D4 is actual; D5 is possible. An actual D4 model token may represent D5 possible content.</li><li>μ₀…μ₄ are candidate apertures. Empty evidence remains unassessed.</li><li>b₆ and r₆ are boundary relations, not additional μ-crossings.</li><li>The matter→bond→life→mind→choice story is an optional interpretation, not the owner of the formal registers.</li><li><b>The numbering is dependency priority, and nothing else.</b> Three orders must not collapse into it: <b>dependency priority</b> asks what rules and carriers a realization presupposes; <b>actuality</b> asks what causally occurred; <b>psychological salience</b> asks what is vivid or important to someone now. A higher number therefore implies <b>no</b> greater reality, vividness, moral worth, causal power, or standing of any person or thing placed near it. A ladder invites exactly that misreading, so it is refused here in writing.</li></ul></section>

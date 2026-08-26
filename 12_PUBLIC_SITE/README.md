@@ -72,6 +72,9 @@ No step depends on membership, belief, payment, or delegated truth authority.
 ## Source and projection boundary
 
 - `public_semantic_parity.json` binds pages to current source owners.
+- [`EMERGENTISM_DESIGN_CONSTITUTION.md`](EMERGENTISM_DESIGN_CONSTITUTION.md)
+  owns the projection grammar; `emergentism-design.v1.json` exposes its route,
+  semantic-role, motion, and adoption-state contract without becoming doctrine.
 - `living-map.json` routes open work and contribution modes; it cannot create or
   promote doctrine.
 - `render_dimension_site.py` deterministically renders `/dimensions/` and
@@ -95,6 +98,12 @@ No step depends on membership, belief, payment, or delegated truth authority.
 ```text
 python3 -B build_core_shell.py
 python3 -B build_core_shell.py --check
+python3 -B build_churning.py
+python3 -B build_churning.py --check
+python3 -B build_fourth_churning.py
+python3 -B build_fourth_churning.py --check
+python3 -B build_question_atlas.py
+python3 -B build_question_atlas.py --check
 python3 -B render_dimension_site.py
 python3 -B render_dimension_site.py --check
 python3 -B build_book.py
@@ -113,6 +122,7 @@ python3 -B build_rag_index.py
 python3 -B build_rag_index.py --check
 python3 -B build_sw_version.py
 python3 -B check_public_semantic_parity.py
+python3 -B check_design_constitution.py
 python3 -B predeploy_check.py
 python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py
 ```

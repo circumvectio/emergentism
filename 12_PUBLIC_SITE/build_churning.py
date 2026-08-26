@@ -17,7 +17,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from build_core_shell import render_page
+from build_core_shell import render_page, surface_for
 
 
 SITE = Path(__file__).resolve().parent
@@ -650,7 +650,11 @@ def page_document(
 </body>
 </html>
 '''
-    rendered = render_page(base, active).replace(SCRIPT_TAG, "")
+    rendered = render_page(
+        base,
+        active,
+        surface=surface_for("churn/index.html"),
+    ).replace(SCRIPT_TAG, "")
     if re.search(r"<script\b", rendered, flags=re.IGNORECASE):
         raise ValueError(f"static no-JavaScript contract failed for {canonical}")
     return rendered

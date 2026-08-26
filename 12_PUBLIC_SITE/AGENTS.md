@@ -60,7 +60,7 @@ criterion.
 
 ## Release gate
 
-Run `python3 predeploy_check.py`. Its 16 checks include semantic parity, public
+Run `python3 predeploy_check.py`. Its 18 checks include semantic parity, public
 purity, links, tiers, static assets, and deployment-boundary checks; they do not
 verify the generated artifact set. Then separately run
 `python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py`. Local passes are

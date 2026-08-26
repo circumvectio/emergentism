@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -11,36 +12,43 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 NAV_PARTIAL = SITE / "partials" / "core-nav.html"
 FOOTER_PARTIAL = SITE / "partials" / "core-footer.html"
+DESIGN_CONTRACT_PATH = SITE / "emergentism-design.v1.json"
 
-CORE_PAGES = {
-    "index.html": "worldview",
-    "plainly/index.html": "worldview",
-    "dasein/index.html": "worldview",
-    "burrisphere/index.html": "worldview",
-    "rosetta/index.html": "worldview",
-    "questions/index.html": "worldview",
-    "ethics/index.html": "worldview",
-    "f5/index.html": "research",
-    "practice/index.html": "practice",
-    "spark/index.html": "research",
-    "record/index.html": "research",
-    "record/eub-1/index.html": "research",
-    "record/pqa-54/index.html": "research",
-    "lab/index.html": "research",
-    "discoveries/index.html": "library",
-    "about/index.html": "worldview",
-    "contribute/index.html": "participate",
-    "exit/index.html": "exit",
-}
 
+def _load_design_routes() -> list[dict[str, str]]:
+    try:
+        payload = json.loads(DESIGN_CONTRACT_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"invalid design contract: {exc}") from exc
+    if payload.get("schema") != "emergentism/PublicDesignContract.v1":
+        raise ValueError("design contract schema must be emergentism/PublicDesignContract.v1")
+    routes = payload.get("routes")
+    if not isinstance(routes, list) or not routes:
+        raise ValueError("design contract routes must be a non-empty list")
+    paths = [row.get("path") for row in routes if isinstance(row, dict)]
+    if len(paths) != len(routes) or len(set(paths)) != len(paths):
+        raise ValueError("design contract routes must have unique string paths")
+    return routes
+
+
+DESIGN_ROUTES = _load_design_routes()
+ALL_SURFACE_FAMILIES = {row["path"]: row["family"] for row in DESIGN_ROUTES}
+CORE_ROUTES = [row for row in DESIGN_ROUTES if row.get("shell") == "core"]
+CORE_PAGES = {row["path"]: row["navigationSection"] for row in CORE_ROUTES}
 EXACT_NAV_HREFS = {
-    "index.html": "/",
-    "plainly/index.html": "/plainly/",
-    "practice/index.html": "/practice/",
-    "record/index.html": "/record/",
-    "contribute/index.html": "/contribute/",
-    "exit/index.html": "/exit/",
+    row["path"]: row["canonicalHref"]
+    for row in CORE_ROUTES
+    if row.get("canonicalHref")
 }
+SURFACE_FAMILIES = {row["path"]: row["family"] for row in CORE_ROUTES}
+
+
+def surface_for(path: str) -> str:
+    """Return the design-contract family for one declared current route."""
+    try:
+        return ALL_SURFACE_FAMILIES[path]
+    except KeyError as exc:
+        raise ValueError(f"route is absent from the design contract: {path}") from exc
 
 NAV_RE = re.compile(
     r"<!-- gestalt-core-nav:start -->.*?<!-- gestalt-core-nav:end -->",
@@ -131,7 +139,7 @@ def _insert_before_close(text: str, tag: str, insertion: str) -> str:
     return text[: close.start()] + insertion + "\n" + text[close.start() :]
 
 
-def _bind_head(text: str) -> str:
+def _bind_head(text: str, surface: str) -> str:
     _single_close(text, "head")
     text = LEGACY_ICON_RE.sub("\n", text)
     text = _insert_before_close(
@@ -166,6 +174,24 @@ def _bind_head(text: str) -> str:
             count=1,
             flags=re.IGNORECASE,
         )
+    html_match = re.search(r"<html\b([^>]*)>", text, re.IGNORECASE)
+    if not html_match:
+        raise ValueError("page has no html element after Gestalt binding")
+    design = re.findall(
+        r'\bdata-emergentism-design\s*=\s*["\']([^"\']+)["\']',
+        html_match.group(1),
+        re.IGNORECASE,
+    )
+    if design and design != ["v1"]:
+        raise ValueError(f"incompatible data-emergentism-design value: {design}")
+    if not design:
+        text = re.sub(
+            r"<html\b([^>]*)>",
+            r'<html\1 data-emergentism-design="v1">',
+            text,
+            count=1,
+            flags=re.IGNORECASE,
+        )
     body = re.search(r"<body\b([^>]*)>", text, re.IGNORECASE)
     if not body:
         raise ValueError("page has no body")
@@ -185,7 +211,18 @@ def _bind_head(text: str) -> str:
             attrs = attrs[: match.start()] + replacement + attrs[match.end() :]
         else:
             attrs += ' class="' + " ".join(classes) + '"'
-        text = text[: body.start()] + f"<body{attrs}>" + text[body.end() :]
+    surface_values = re.findall(
+        r'\bdata-emergentism-surface\s*=\s*["\']([^"\']+)["\']',
+        attrs,
+        re.IGNORECASE,
+    )
+    if surface_values and surface_values != [surface]:
+        raise ValueError(
+            f"incompatible data-emergentism-surface value: {surface_values}; expected {surface}"
+        )
+    if not surface_values:
+        attrs += f' data-emergentism-surface="{surface}"'
+    text = text[: body.start()] + f"<body{attrs}>" + text[body.end() :]
     return text
 
 
@@ -223,11 +260,16 @@ def _replace_last_legacy_footer(text: str, footer: str) -> str:
     return text[: match.start()] + "\n" + footer + text[match.end() :]
 
 
-def render_page(text: str, active: str, current_href: str | None = None) -> str:
+def render_page(
+    text: str,
+    active: str,
+    current_href: str | None = None,
+    surface: str = "atlas",
+) -> str:
     _single_close(text, "body")
     has_nav = _validate_marker_pair(text, "nav", allow_absent=True)
     has_footer = _validate_marker_pair(text, "footer", allow_absent=True)
-    text = _bind_head(text)
+    text = _bind_head(text, surface)
     text = _bind_main_target(text)
     nav = render_nav(active, current_href)
     footer = render_footer()
@@ -263,6 +305,7 @@ def outputs() -> dict[Path, str]:
             path.read_text(encoding="utf-8"),
             active,
             EXACT_NAV_HREFS.get(rel),
+            SURFACE_FAMILIES[rel],
         )
     return rendered
 

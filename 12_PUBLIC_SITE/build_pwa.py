@@ -139,6 +139,7 @@ def safe_spine() -> list[str]:
         "/burrisphere/", "/burrisphere/instrument/",
         "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css", "/assets/css/burrisphere-instrument.css",
         "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/assets/js/burrisphere-instrument.js", "/living-map.json",
+        "/emergentism-design.v1.json",
         "/vendor/three-0.160.0/three.module.js", "/vendor/three-0.160.0/controls/OrbitControls.js",
         "/public_semantic_parity.json", "/atlas/site_index.json", "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
         "/questions/collisions.json", "/questions/diagnoses.json", "/questions/fourth-churning.json",

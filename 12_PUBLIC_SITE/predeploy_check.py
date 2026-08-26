@@ -3451,6 +3451,23 @@ def check_contact_limited_lifecycle():
     ok(summary[0] if summary else "contact-limited lifecycle ratchet passed")
     return True
 
+
+def check_design_constitution():
+    print("\n[18] Emergentism design constitution")
+    process = subprocess.run(
+        [sys.executable, "-B", os.path.join(BASE_DIR, "check_design_constitution.py")],
+        cwd=BASE_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    ok(process.stdout.strip())
+    return True
+
 def main():
     print("=" * 60)
     print("Pre-deploy supply-chain gate — 12_PUBLIC_SITE")
@@ -3474,6 +3491,7 @@ def main():
         check_public_book_build(),
         check_reading_manifest_contract(),
         check_contact_limited_lifecycle(),
+        check_design_constitution(),
     ]
 
     # `results` was built and never read: the exit decision used only the global ERRORS

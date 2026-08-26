@@ -44,10 +44,15 @@ GLOBS = ("assets/js/*.js", "assets/css/*.css", "atlas/*.json", "*.webmanifest")
 EXTRA = (
     "reading-manifest.json",
     "public_semantic_parity.json",
+    "emergentism-design.v1.json",
     "living-map.json",
     "book/rag_index.json",
 )
-REQUIRED_RUNTIME_JSON = {"living-map.json", "book/rag_index.json"}
+REQUIRED_RUNTIME_JSON = {
+    "living-map.json",
+    "book/rag_index.json",
+    "emergentism-design.v1.json",
+}
 
 # HTML COUNTS TOO, and leaving it out was a real hole in the first version of this script.
 # The worker runs stale-while-revalidate on navigations, so a page whose PROSE changed —
