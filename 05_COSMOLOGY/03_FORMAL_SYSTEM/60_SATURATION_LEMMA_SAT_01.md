@@ -240,6 +240,24 @@ and the corpus keeps discovering it does not own them, *within hours*, before
 anything is published. That second half is the only part that is ours, and this
 document is one more receipt of it.
 
+## 8b · A process debt I did not discharge, recorded against myself
+
+The 2026-08-22 audit licensed exactly two conditional `CANDIDATE-FIRST` slots. Slot
+(a) is the pole-consumption clause — **claimable only if stated as a general law with
+the verification-register pole actually worked out, and only after Dumbrava ch. 23 is
+read in full.**
+
+**I did not read Dumbrava.** SAT-01 was written against that slot without discharging
+its stated precondition. The sweep pre-empted the lemma on other grounds, so nothing
+turns on it for priority — but the process error stands and is recorded, because a
+precondition skipped when the result happens not to need it is still a precondition
+skipped.
+
+Two further verification debts from the same ruling remain open and unpaid:
+**Barukčić 2020** (the doors) and **Sagawa–Ueda 2009 at full text** (the
+witness-fraction). The audit named all three explicitly *"so the pre-emption ledger
+does not itself commit the corpus's named disease."* It has now done so once.
+
 ## 9 · Kills
 
 | claim | dies if |

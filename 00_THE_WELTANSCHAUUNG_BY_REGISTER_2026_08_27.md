@@ -389,9 +389,18 @@ against the corpus's own most flattering external corroboration) · the escorted
 ours.** What is ours is the selection, the typing, the fences, the kills, and the
 discipline that produced this table instead of hiding it.
 
-That is a smaller claim than the corpus once made and a more defensible one than any
-rival tradition offers — because Whitehead, Abhinavagupta, and Peirce cannot tell you
-which of their claims would be false if the world were otherwise, **and this table can.**
+That is a smaller claim than the corpus once made. **Corrected 2026-08-27, same day:**
+this paragraph previously continued *"— and a more defensible one than any rival
+tradition offers, because Whitehead, Abhinavagupta, and Peirce cannot tell you which
+of their claims would be false if the world were otherwise."* That is an **unaudited
+comparative**. Nobody here has read those three traditions looking for their
+falsification conditions, and the apparatus that made the claim was measured, the same
+week, at four-of-six optimistic bias about rival literatures. It is the same species of
+overclaim this document exists to catch.
+
+**The non-comparative form is what survives, and it is enough:** we state what would
+make each of our claims false, and we can show it. **Whether anyone else does, we have
+not measured.**
 
 ## 14 · Kills
 
