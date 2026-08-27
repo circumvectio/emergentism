@@ -201,9 +201,18 @@ kills the claim in one sentence.
   classes and was retracted. Future outline work must use the combined current,
   provisional, frozen, withheld, and infrastructure classifier rather than
   infer publication status from directory presence.
-- **Do not build navigation on the seven-fold.** The count is `[S]`, and the
+- **Do not build navigation on the seven-fold** — but **corrected 2026-08-27**,
+  because the reason I first gave was false. This bullet previously read: *"the
   registered inter-coder test found the frame-half (`L5–L7`) reshuffled under
-  independent coding. The register ladder is the stable spine; the seats are not.
+  independent coding."* **`R2_OLOGY_DIVERGENCE@1` concerns the -ology ladder, not
+  the `M4`/`F3` cells.** I read one column's coding divergence and reported it as a
+  structural result about the move/frame split — a category error, repeated across
+  several documents, and **the M4/F3 double-coding has never been run.** The
+  surviving reason stands on its own and needs no measurement: **the count is
+  `[S]`, selected** — three, five, or nine stations satisfy the same symmetry — and
+  navigation should not rest on a selection when a `[S]` ladder with the same
+  authority is available. The register ladder is the stable spine; the seats are
+  a chosen vocabulary.
 
 ## 9 · Kills
 
