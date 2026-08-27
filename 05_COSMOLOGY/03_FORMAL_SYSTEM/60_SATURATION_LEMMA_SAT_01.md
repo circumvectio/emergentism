@@ -17,7 +17,7 @@ rosetta:
 type: formal-result
 title: "The Saturation Lemma — SAT-01"
 date: 2026-08-27
-status: "[A/C] ACTIVE — the lemma is elementary and proved within its premises. Its APPLICATION to any physical, biological, or institutional register is [C] and separately owed. PRIORITY IS UNESTABLISHED: a four-lane prior-art sweep was launched before this was written and had not returned at the time of writing. No novelty is claimed."
+status: "[A/C] ACTIVE · PRE-EMPTED — the lemma is elementary and proved within its premises, and it is OWNED ELSEWHERE. The four-lane sweep returned PRE-EMPTED on all four lanes, same day. See §8. What survives is the counterexample of §4 and the necessity proofs of §5; the lemma itself is a citation."
 evidence_tier: "[A] the lemma, its closed form, and both counterexamples — machine-verified; [I] the reading of W19's pole clause as this structure; [C] every register application"
 proposer: "Yves R. Burri — the pole clause, stated 2026-08-22: 'at its extreme the compensator consumes the freedom it services.'"
 assistance: "Formalization, proof, numerical verification and adversarial probing by the session AI. No AI coauthor, authority, or priority."
@@ -188,6 +188,57 @@ economics; Deacon and Juarrero on enabling constraint.
 pre-empted.** The prior on this one being unowned is therefore low, and this
 document claims nothing. If the sweep finds an occupant, SAT-01 becomes a citation
 with a machine-verified counterexample attached — which is worth having either way.
+
+## 8a · THE SWEEP RETURNED — PRE-EMPTED, ALL FOUR LANES, SAME DAY
+
+The sweep landed within the hour. **Every lane returned PRE-EMPTED.** The lemma is
+owned, and the occupants are better than it.
+
+| what | owner |
+|---|---|
+| the mathematics — *"product of two opposed factors, zero at both endpoints ⇒ interior maximum"* | **Laffer / Rolle**, outright, in public finance |
+| **the multiplicative form WITH the enabler-consumes semantics** | **HARQ / coding-rate throughput** — `F = rate × P(decode)`, zero at both ends, glossed in the literature as *overhead consumes the channel it makes usable* |
+| **the coupling** — control variable *is* the compensator, strictly interior optimum | **Kirkwood's disposable soma theory** (somatic repair) |
+| the two-premise derivation of an interior optimum | **Coombs & Avrunin 1977** — and they prove **more**: single-peakedness |
+| the ubiquity-of-inverted-U thesis | **Suedfeld 1969**, *"the ubiquitous U"*; Grant & Schwartz 2011; Pierce & Aguinis 2013 |
+| decomposition into two opposed monotonic processes as the general explanation | **McGuire 1997**, Heuristic K34 |
+| each premise separately, as a universal bound | **P1**: thermodynamic uncertainty relation, Bode's sensitivity integral, Landauer · **P2**: Braun–Le Chatelier, einselection, screening sum rules, confinement |
+
+**The coding-theory occupant is the sharpest.** `F = rate × P(decode)` is SAT-01's
+exact functional form, with both boundary zeros, *and* the sentence "overhead
+consumes the channel it makes usable" is the pole clause in the literature already.
+I believed the multiplicative-with-coupling form was the residue. It is not.
+
+**The residue, stated as narrowly as the evidence allows, and it is thin:** no
+source states this as a **single domain-neutral principle** over an abstract
+`(freedom, compensator)` pair. The lanes call that *"a weak residue"* and warn
+against papering over why — the mathematics is owned outright, and the explanandum
+is owned outright. Only the *joining* is unclaimed, and a joining is not a theorem.
+
+### What actually survives, and it is small and real
+
+**§4's counterexample earns its keep by cutting against the strongest occupant.**
+Coombs & Avrunin derive **single-peakedness** — strictly more than SAT-01 — but
+from **curvature** premises (concave benefit, convex cost). SAT-01 assumes only
+**monotonicity plus boundary zeros**, and §4 exhibits a case satisfying exactly
+those where the peak count is **five**.
+
+> **That is a demonstration that Coombs–Avrunin's curvature conditions cannot be
+> weakened to monotonicity.** Their extra premises are load-bearing, not
+> stylistic — and §4 shows precisely what they buy.
+
+That is a footnote to a fifty-year-old result rather than a result. It is also
+honest, machine-checked, and worth citing. **§5's necessity proofs survive on the
+same terms**: each boundary condition is shown indispensable by explicit
+counterexample.
+
+### The count is now seven
+
+Six candidates pre-empted on 2026-08-22; SAT-01 on 2026-08-27. **Seven for seven.**
+The generator keeps landing on real structures — which is the finding, repeated —
+and the corpus keeps discovering it does not own them, *within hours*, before
+anything is published. That second half is the only part that is ours, and this
+document is one more receipt of it.
 
 ## 9 · Kills
 
