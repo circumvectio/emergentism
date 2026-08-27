@@ -13,6 +13,51 @@ may_authorize: false
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
 
+## Current homepage UI/UX exact-custody release — 2026-08-27
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `e2d122bcf5a571ee19eb2b84b76bf5f73884b127` — bounded homepage field prompt, canonical tier decoder, active journey compass, mobile diagram access, authority wording, and atlas-title regression guard | exact clean Git commit frozen before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream at the release commit | explicit push and release-contract upstream identity check |
+| **immutable artifact** | `dpl_7ZhXd7kVGi1iUVvKrUz1Cx2ijEGB` · `emergentism-9uwnu4dcz-yves-projects-c163dce1.vercel.app` · `READY` | independently resolved Vercel project/team, held deployment, immutable strict audit, and byte witness |
+| **predecessor** | `dpl_3TcBw2GGyLaquhhbQDq5oBsd3Vo9` | observed before staging and rechecked immediately before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` deployment-identity and byte audits |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **served hash** | homepage `e62cc9ce87c0f6cd00dcf6e655027220bcb26992a5b87d8495036bd897bbf679` matches on apex and `www` | SHA-256 over both branded responses | <!-- pragma: allow-secret -- served digest -->
+| **release receipt** | integrity field `c886883b7bccb370bd6edfcb9776681a934b03606aad8475dd5aeb958afbd45e`; external JSON SHA-256 `40639b775feaa4a66d703e038b0a0fc4c4be6049cbe2355c0c5754f379003f08` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization | <!-- pragma: allow-secret -- receipt digests -->
+
+The frozen public payload contains **300 files** and **9,788,982 bytes**, with
+manifest SHA-256
+`895af62a7b7f69f3c36069de4c4a01d38f35b6bd12e1c62135a39c902707b204`. <!-- pragma: allow-secret -- manifest digest -->
+Preparation passed all **18** predeploy sections in the documented
+`metadata_only_explicit` federation mode, the deterministic site-artifact gate,
+and the deployment target and rollback self-tests. A separate strict federation
+replay remains open because the reviewed Sarpasya source digest is
+`aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436` <!-- pragma: allow-secret -- reviewed source digest -->
+while the current sibling bytes hash to
+`78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`. <!-- pragma: allow-secret -- observed sibling digest -->
+This release neither updated that pin nor treated the current sibling bytes as
+reviewed custody.
+
+The held artifact was verified before promotion. After promotion, the strict
+live-domain audit returned **734/734** successful probes, including **72/72**
+reading-manifest documents, the historical redirect/noindex/no-store boundary,
+and all **14** sampled body hashes. Both `https://emergentism.org/` and
+`https://www.emergentism.org/` returned HTTP 200 and identical homepage bytes.
+The independently queried Vercel account surface identified the artifact as
+production `READY` under project `emergentism-org`.
+
+The release carries the completed responsive and accessibility QA at 1280,
+768, 390, and 320 CSS pixels: no page overflow, 48-pixel targets, keyboard
+diagram exit, no-JavaScript content, reduced-motion content, and zero observed
+console errors. These are local interaction checks, not a novice-comprehension
+result.
+
+`external_validation=false`. This release improves the public instrument and
+its legibility. It does not establish Emergentism, the D-registers, the
+Burrisphere interpretation, F5, the serial-force assignment, novelty, priority,
+or any scientific, ethical, or philosophical claim.
+
 ## Current cartographic-spine exact-custody release — 2026-08-27
 
 | State | Value | How measured |
