@@ -40,11 +40,12 @@ human or model — holding these seven sentences plus ordinary knowledge can
 **regenerate** the load-bearing positions at roughly correct tier.
 
 Two fences before the text. **The count is `[S]`** — seven acts because the
-corpus selected seven seats; nothing forces it. **The last three sentences
-stand on softer ground than the first four**: the registered inter-coder
-divergence (`R2_OLOGY_DIVERGENCE@1`) found L2–L4 assignments stable across
-independent coders and **L5–L7 a genuine reshuffle** — the compression
-inherits exactly that asymmetry.
+corpus selected seven seats; nothing forces it. An earlier draft overstated
+`R2_OLOGY_DIVERGENCE@1`: that receipt concerns an opportunistic comparison of
+the seven-ology ladder, not a preregistered independent coding of this text or
+of the M4/F3 split. The preregistered double-coding protocol has not run. The
+last three sentences may still prove softer than the first four, but that is a
+question for the unrun coding rather than a measured result.
 
 ## 1 · The Seven Acts
 
@@ -133,7 +134,7 @@ well-formatted decoration; it says so here in advance.
 
 | claim | dies if |
 |---|---|
-| the seven-act structure | the inter-coder reshuffle (L5–L7) worsens under a second coding of THIS text — the acts inherit the seats' softness |
+| the seven-act structure | a preregistered coding of this text does not recover the selected acts, or a simpler non-seven partition reconstructs the same cargo with less loss |
 | the compression claim | the reconstruction test fails its own pass condition, or a shorter seed within the comparator class matches its fidelity |
 | the one-sentence form | it is quoted without its tier mark as if proved |
 | **this document** | if cited as replacing the One-Sitting edition, the Kernel, or the Amrita — it is a seed, and a seed is not the tree |

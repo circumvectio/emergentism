@@ -273,12 +273,15 @@ procedure for any non-trivial semantic property).
 Together they say one thing: **a collective may have a rule, and members with
 preferences, and thereby has no mind, no preference ordering, and no demand function.**
 
-**Ours.** `G7 = M4 ⊎ F3` `[S]`, with the finding that justifies the disjoint union:
-independent re-coding **agreed on all four move-cells and reshuffled all three frames.**
-The two halves behave differently under test. Also the witness-fraction bound (`W16`,
-`[C]`) and the settled/serviced axis (`[I]`) — the observation that `V`-transfers close
-as transactions while `Φ`-transfers can only be serviced as relationships, and that
-**give-Φ is the only act whose completion is not in the giver's control.**
+**Ours.** `G7 = M4 ⊎ F3` `[S]` as a selected projection. A repeated justification for
+the disjoint union is **not available**: `R2_OLOGY_DIVERGENCE@1` records a divergence
+on the seven-ology ladder, not an independent recoding that preserved all four M4
+move-cells and reshuffled all three F3 frames. The preregistered double-coding protocol
+has not run. The `4+3` split therefore remains selected, not measured. Also the
+witness-fraction bound (`W16`, `[C]`) and the settled/serviced axis (`[I]`) — the
+observation that `V`-transfers close as transactions while `Φ`-transfers can only be
+serviced as relationships, and that **give-Φ is the only act whose completion is not
+in the giver's control.**
 
 **Exposure — and this is the most consequential finding in the document.**
 **The estate reads collectives as agents everywhere.** Holobiont, organism, DAV, board,
@@ -287,12 +290,13 @@ that move, and no gate in the estate tests for it.** This is not a distant objec
 it is a theorem-grade prohibition pointed at the corpus's largest standing affirmative
 structure.
 
-Second exposure, freshly measured: **the gates certify formatting, not properties.** On
-2026-08-27 a preregistered adversarial test ran against eight frozen gates. **All eight
-admitted an artifact that passes while violating what it certifies** — including both
-gates predicted to resist. The corrected rule: **a gate has an extraction step and an
-adjudication step, and Rice's fence binds extraction.** A sound decision procedure over
-a wrongly enumerated domain certifies nothing.
+Second exposure, freshly measured and kept local: on 2026-08-27 a preregistered
+adversarial test ran against eight frozen gates. **All eight admitted an artifact that
+passes while violating the advertised property** — including both gates predicted to
+resist, so the prediction failed. The run exposed extraction before adjudication in
+those gates. Extraction/adjudication is standard abstraction discipline in program
+analysis; what is new here is the receipt over this estate, not the principle. The run
+does not confirm Rice and does not show that every gate certifies only formatting.
 
 **Crossing out.** D5 hands the next register **a rule with no mind.** Every structure
 it builds — option field, ranking, move alphabet, board, gate — passes upward only
@@ -352,9 +356,10 @@ published as a value-free closure of Hume's gap."*
 
 It cannot say why there is something rather than nothing — four owners record that as
 permanently open. It cannot certify its own ground (Gödel II). It cannot define its own
-truth predicate in its own language (Tarski). It cannot decide non-trivial semantic
-properties of its own artifacts (Rice — now confirmed 8/8 against its own gates). It
-cannot exhibit the whole, because no seat sees the whole and remains a seat.
+truth predicate in its own language (Tarski). Rice supplies a scoped undecidability
+fence for non-trivial semantic properties; the local 8-of-8 gate result is not a proof
+or confirmation of Rice. It cannot exhibit the whole, because no seat sees the whole
+and remains a seat.
 
 **None of these is a gap awaiting a later filling.** Each is a proved limit on
 *anything* of this kind. The silence has a shape, and the shape is the outline — which
