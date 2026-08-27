@@ -1861,6 +1861,33 @@
       "review": {"state": "implemented", "receipts": ["00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md"]},
       "semantic_owner_id": "K-3",
       "supporting_owner_ids": ["K-2", "K-5"]
+    },
+    {
+      "card_id": "OS01-45",
+      "chapters": ["boundaries"],
+      "locator": {
+        "section": "1",
+        "line_start": 138,
+        "line_end": 144,
+        "anchor": "**Finity** is this Dasein viewed under the aspect of determinate finite",
+        "fingerprint_sha256": "8d0421ae395de9d41ddfc2d68c0e7ca563d8ebca5b58ec59e3c97dc3803d06c0"
+      },
+      "plain_claim": "Finity is Dasein viewed under the aspect of determinate finite manifestation; finite means determinate, situated, and bounded in the relevant register, not necessarily finite in cardinality, dimension, description length, or magnitude.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "I", "scope": "selected Dasein and Finity relation"}],
+      "dependencies": ["OS01-31", "OS01-32"],
+      "docket_ids": ["A2"],
+      "type_boundaries": ["Dasein is not identical to one situated dasein", "Finity is an aspect of determinate manifestation, not proof that Dasein literally has the selected chart geometry", "finite does not mean finite cardinality or exhaustive inventory"],
+      "strongest_rival": "Ordinary modal, phenomenological, and finitude vocabulary expresses the whole-to-situated relation more clearly and with less imposed machinery.",
+      "discriminator": "Readers must recover the distinction among the whole, determinate manifestation, one situated standpoint, and the selected chart without literalizing the geometry or mistaking boundedness for small cardinality.",
+      "kill_criterion": "Retire or rename the Finity relation if it repeatedly collapses Dasein into one standpoint, turns the Burrisphere into literal world geometry, or communicates less clearly than a simpler rival.",
+      "survivor_if_killed": "Determinate manifestation, situated disclosure, and the whole remain distinct explanatory roles even if the Finity name is retired.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The terminology and chart are optional and replaceable."},
+      "disposition": "restate",
+      "public": {"state": "bounded_current", "wording": "[I] Finity is Dasein viewed under the aspect of determinate, situated manifestation. It is not a claim that Dasein literally has the Burrisphere's geometry or that finite means finite cardinality."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/CARTOGRAPHIC_SPINE_SOURCE_AND_PROJECTION_AUDIT_2026_08_27.md"]},
+      "semantic_owner_id": "K-2",
+      "supporting_owner_ids": ["K-3"]
     }
   ]
 }
