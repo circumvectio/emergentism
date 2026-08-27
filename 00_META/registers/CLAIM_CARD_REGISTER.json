@@ -2005,6 +2005,42 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-45",
+      "chapters": [
+        "boundaries"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-31",
+        "OS01-32"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "anchor": "**Finity** is this Dasein viewed under the aspect of determinate finite",
+        "fingerprint_sha256": "8d0421ae395de9d41ddfc2d68c0e7ca563d8ebca5b58ec59e3c97dc3803d06c0",
+        "line_end": 144,
+        "line_start": 138,
+        "section": "1"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -3229,9 +3265,9 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 90,
+    "cards": 91,
     "conjecture_cards": 35,
-    "public_bounded_current": 29,
+    "public_bounded_current": 30,
     "works_with_cards": 9
   },
   "owners": [

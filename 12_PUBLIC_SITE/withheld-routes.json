@@ -435,6 +435,24 @@
       }
     },
     {
+      "artifact": "formal/29-primitives-and-type-signatures/index.html",
+      "sha256": "58e319472fd01f0aaec48b9f64654ba148945feea5c27f215b1842c151de6bef",
+      "bytes": 19592,
+      "publicRoutes": [
+        "/formal/29-primitives-and-type-signatures",
+        "/formal/29-primitives-and-type-signatures/",
+        "/formal/29-primitives-and-type-signatures/index.html"
+      ],
+      "reason": "Frozen formal index applies the retired Titan multiplication as a primitive definition.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/29-primitives-and-type-signatures/"
+      }
+    },
+    {
       "artifact": "formal/31-falsifiers-index/index.html",
       "sha256": "0b9b577319344d9e10e9b27bcbd7ad02452de39875ac55121071513b2c598c6e",
       "bytes": 22039,
@@ -1292,6 +1310,24 @@
       "curatedReason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation."
     },
     {
+      "artifact": "operators/mf-297-alpha-is-the-coupling/index.html",
+      "sha256": "4647557261db43fba3293e8966665d3ae77ade4e8f7f91228316354fbb2e665e",
+      "bytes": 19419,
+      "publicRoutes": [
+        "/operators/mf-297-alpha-is-the-coupling",
+        "/operators/mf-297-alpha-is-the-coupling/",
+        "/operators/mf-297-alpha-is-the-coupling/index.html"
+      ],
+      "reason": "Frozen operator page treats retired Titan multiplication as a physical coupling claim.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-297-alpha-is-the-coupling/"
+      }
+    },
+    {
       "artifact": "operators/mf-298-dark-matter-is-mutual-information/index.html",
       "sha256": "5cf0f1c29555713e2ad366a527258bcae90c237ecca9c4bf0f5994ae567094ca",
       "bytes": 17788,
@@ -1380,6 +1416,20 @@
       "curatedReason": "matches public semantic prohibition: application authority leakage."
     },
     {
+      "artifact": "outline/index.html",
+      "sha256": "8d176f1bb0f521ebad1d52091038ea96ddf15a6dece8bd5e81886877b4ea03a7",
+      "bytes": 27053,
+      "publicRoutes": [
+        "/outline",
+        "/outline/",
+        "/outline/index.html"
+      ],
+      "reason": "Unadopted outline experiment asserts stronger totality, independence, and universal-projection claims than its reviewed source owners permit.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
+    },
+    {
       "artifact": "papers/index.html",
       "sha256": "1ac1088f51af5f2663e368e71d05a85948b370491163f8446772f279e4222ca2",
       "bytes": 13413,
@@ -1412,6 +1462,20 @@
         "href": "papers/paper-c-photon-unit-of-account/"
       },
       "curatedReason": "asserts the retired literal D6/D0 identity."
+    },
+    {
+      "artifact": "papers/paper-f-k-minimal/index.html",
+      "sha256": "f11b6683c20e372498ee3125fba8dbc650a85cfa9e15491e22cfdd4d5d1d6cc6",
+      "bytes": 24269,
+      "publicRoutes": [
+        "/papers/paper-f-k-minimal",
+        "/papers/paper-f-k-minimal/",
+        "/papers/paper-f-k-minimal/index.html"
+      ],
+      "reason": "Frozen paper repeatedly uses retired Titan multiplication as an affirmative self-contained construction.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
     },
     {
       "artifact": "papers/paper-h-dimensional-cosmological/index.html",

@@ -161,12 +161,6 @@
     },
     {
       "section": "formal",
-      "title": "PRIMITIVES AND TYPE SIGNATURES",
-      "href": "formal/29-primitives-and-type-signatures/",
-      "source": "docs/handoff/formal-public/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
-    },
-    {
-      "section": "formal",
       "title": "OPERATIONAL DEFINITIONS",
       "href": "formal/30-operational-definitions/",
       "source": "docs/handoff/formal-public/30_OPERATIONAL_DEFINITIONS.md"
@@ -383,12 +377,6 @@
     },
     {
       "section": "operators",
-      "title": "MF-297: α AS COUPLING",
-      "href": "operators/mf-297-alpha-is-the-coupling/",
-      "source": "docs/handoff/operators-public/MF_297_Alpha_Is_the_Coupling.md"
-    },
-    {
-      "section": "operators",
       "title": "MF-299: HAWKING RADIATION IS A7",
       "href": "operators/mf-299-hawking-radiation-is-a7/",
       "source": "docs/handoff/operators-public/MF_299_Hawking_Radiation_Is_A7.md"
@@ -471,7 +459,7 @@
         "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
       ],
       "source_count": 1,
-      "claim_card_count": 44,
+      "claim_card_count": 45,
       "covered_chapters": [
         "actuality",
         "boundaries",
@@ -540,12 +528,13 @@
       "OS01-41",
       "OS01-42",
       "OS01-43",
-      "OS01-44"
+      "OS01-44",
+      "OS01-45"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "ff6642ed895a4548c5a156d41d962592f793b1ecf9cf9a06829886bdc146380f",
+    "claim_card_register_sha256": "398e048cf815cadb98fb60c584e6afef50fac17cdc75f3ec2985fb0b36b633ff",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
-    "claim_graph_sha256": "0f8f47adf3925fa8afb370355fe459b5d1e9fbf39c06133af4278625846301b5",
+    "claim_graph_sha256": "fc3f37655b4b2b49d21e6cdba100459f673f02760b9d9efc51b03fe550cea21d",
     "build_manifest": "book/build-manifest.json",
     "output_sha256": "71eebef3f2acab8dbfb8bfc2e6ff6680a9beee6528c677013e0333e828abd93b",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."

@@ -368,6 +368,21 @@
       "permanent": false
     },
     {
+      "source": "/formal/29-primitives-and-type-signatures",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/29-primitives-and-type-signatures/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/formal/29-primitives-and-type-signatures/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
       "source": "/formal/31-falsifiers-index",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -1073,6 +1088,21 @@
       "permanent": false
     },
     {
+      "source": "/operators/mf-297-alpha-is-the-coupling",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-297-alpha-is-the-coupling/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-297-alpha-is-the-coupling/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
       "source": "/operators/mf-298-dark-matter-is-mutual-information",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -1148,6 +1178,21 @@
       "permanent": false
     },
     {
+      "source": "/outline",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/outline/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/outline/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
       "source": "/papers",
       "destination": "/historical-boundary/",
       "permanent": false
@@ -1174,6 +1219,21 @@
     },
     {
       "source": "/papers/paper-c-photon-unit-of-account/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-f-k-minimal",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-f-k-minimal/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/papers/paper-f-k-minimal/index.html",
       "destination": "/historical-boundary/",
       "permanent": false
     },
@@ -3914,6 +3974,23 @@
       ]
     },
     {
+      "source": "/formal/29-primitives-and-type-signatures(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
       "source": "/formal/31-falsifiers-index(.*)",
       "headers": [
         {
@@ -4713,6 +4790,23 @@
       ]
     },
     {
+      "source": "/operators/mf-297-alpha-is-the-coupling(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
       "source": "/operators/mf-298-dark-matter-is-mutual-information(.*)",
       "headers": [
         {
@@ -4798,6 +4892,23 @@
       ]
     },
     {
+      "source": "/outline(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
       "source": "/papers(.*)",
       "headers": [
         {
@@ -4816,6 +4927,23 @@
     },
     {
       "source": "/papers/paper-c-photon-unit-of-account(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/papers/paper-f-k-minimal(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",

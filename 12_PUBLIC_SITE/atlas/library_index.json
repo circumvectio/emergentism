@@ -9,7 +9,7 @@
     "already_current": 3,
     "missing_file": 0
   },
-  "total": 81,
+  "total": 79,
   "tree": [
     {
       "key": "formal",
@@ -80,10 +80,6 @@
           "title": "The Hygiene Boundary Hypothesis"
         },
         {
-          "href": "/formal/29-primitives-and-type-signatures/",
-          "title": "PRIMITIVES AND TYPE SIGNATURES"
-        },
-        {
           "href": "/formal/30-operational-definitions/",
           "title": "OPERATIONAL DEFINITIONS"
         },
@@ -152,10 +148,6 @@
         {
           "href": "/operators/mf-295-c-bounds-the-moral-circle/",
           "title": "MF-295: c BOUNDS THE MORAL CIRCLE"
-        },
-        {
-          "href": "/operators/mf-297-alpha-is-the-coupling/",
-          "title": "MF-297: α AS COUPLING"
         },
         {
           "href": "/operators/mf-299-hawking-radiation-is-a7/",
