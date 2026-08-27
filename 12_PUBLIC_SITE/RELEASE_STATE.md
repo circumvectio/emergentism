@@ -1,7 +1,7 @@
 ---
 title: "O9 release-state ledger — emergentism.org"
 date: 2026-08-27
-status: "ACTIVE LEDGER — v2.1 publicly served; publication is not validation"
+status: "ACTIVE LEDGER — cartographic spine and survivor ledger publicly served; publication is not validation"
 evidence_tier: "[D] owner-directed deployment; [S] Vercel and HTTP receipts; [B] local and live gates; no independent outcome evidence"
 contract: _PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md · O9
 may_sign: false
@@ -13,7 +13,47 @@ may_authorize: false
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
 
-## Current v2.1 exact-custody UI and Burrisphere release — 2026-08-27
+## Current cartographic-spine exact-custody release — 2026-08-27
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `b9eced39bd01bbf2f4ab7a7e58e24ee95f258294` — corrected cartographic spine, Survivor Ledger, Convergence, Frontier, lifecycle closure, and M4/F3 evidence retraction | exact clean Git commit frozen before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its upstream | wrapper and direct Git checks observed identical local and upstream commits |
+| **immutable artifact** | `dpl_3TcBw2GGyLaquhhbQDq5oBsd3Vo9` · `emergentism-clfucskmm-yves-projects-c163dce1.vercel.app` · `READY` | pinned Vercel target, held deployment, immutable strict audit, and byte witness |
+| **predecessor** | `dpl_8dUed92a4NKsnVHqD1b2C5UpCz4M` | observed before staging and rechecked immediately before promotion |
+| **promoted** | **yes** — exact staged artifact | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` strict audits and byte witnesses |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **release receipt** | integrity field `51d734128e03cb03e6d77645ea922ff9fd2ffc621b2a3acad39aaff0ab6eb1d6`; external JSON SHA-256 `bed9ce0e7ff0fd6d9da540f2704974d4c28350c79661cb778bcdd113d98d0e64` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization |
+
+The frozen public payload contains **300 files** and **9,776,779 bytes**, with
+manifest SHA-256
+`660106db2b171c428e221d871d148eb3de835becc41fe7e523334416da9cde27`. <!-- pragma: allow-secret -- manifest digest -->
+Preparation passed the current predeploy and deterministic-artifact gates.
+Federation replay was `exact_or_not_required`, with unavailable-source fallback
+disabled. Complete Git archives of this Emergentism commit and Skyzai commit
+`76a4a58ea678ee3ae96804042a0a73d9102839d5` resolved all six reviewed sibling
+digests; the claim-card compiler passed 91 cards and 624 edges.
+
+The durable external companion replay receipt has SHA-256
+`b9f51d83b2d5094f2156cc99a27068d7641a7c27f2bff06fdb5032538ce70c83`. <!-- pragma: allow-secret -- receipt digest -->
+
+The held artifact, apex, and `www` passed strict manifest and critical-body
+audits. Independent post-promotion probes matched local bytes on both branded
+hosts for the homepage, semantic contract, Burrisphere instrument, and service
+worker. Their SHA-256 values are respectively
+`363a88b3d7493bdee211adbe2771e572c27d803ccd798f0191ebd79608d5162f`, <!-- pragma: allow-secret -- served digest -->
+`1e1f81c5db4b79e87a42422a10824bca3326e0a1d44cc8470ea5323c6d55b95a`, <!-- pragma: allow-secret -- served digest -->
+`aebaaabf698097612a1a2d6300200e56f3205e027360928e76c76183d4a56fe8`, <!-- pragma: allow-secret -- served digest -->
+and
+`2f1a35bcd3763e0bc4b55ff2df556839bff012fe519b323f77d0b0fd688f691b`. <!-- pragma: allow-secret -- served digests -->
+`/outline/` remained withheld and redirected to `/historical-boundary/`.
+
+`external_validation=false`. The release publishes the corrected instrument
+and its own retractions. It does not establish Emergentism, the D-registers,
+the Burrisphere interpretation, M4 compression, F5, a force assignment,
+novelty, priority, or any scientific, ethical, or philosophical claim.
+
+## Prior v2.1 exact-custody UI and Burrisphere release — 2026-08-27
 
 | State | Value | How measured |
 |---|---|---|
