@@ -24,6 +24,43 @@
     });
   });
 
+  const pageRail = document.querySelector("[data-g2-rail]");
+  const railLinks = pageRail
+    ? Array.from(pageRail.querySelectorAll("[data-g2-rail-link]"))
+    : [];
+  const railStops = railLinks
+    .map((link) => {
+      const target = document.querySelector(link.getAttribute("href"));
+      return target ? { link, target } : null;
+    })
+    .filter(Boolean);
+  const updatePageRail = () => {
+    if (!pageRail || !railStops.length) return;
+
+    const navHeight = Number.parseFloat(
+      getComputedStyle(root).getPropertyValue("--g2-nav-h")
+    ) || 0;
+    const threshold = navHeight + pageRail.getBoundingClientRect().height + 16;
+    let active = railStops[0];
+
+    railStops.forEach((stop) => {
+      if (stop.target.getBoundingClientRect().top <= threshold) active = stop;
+    });
+
+    railStops.forEach((stop) => {
+      if (stop === active) stop.link.setAttribute("aria-current", "location");
+      else stop.link.removeAttribute("aria-current");
+    });
+    pageRail.dataset.activeSection = active.link.textContent.trim();
+  };
+
+  if (pageRail && railStops.length) {
+    window.addEventListener("scroll", updatePageRail, { passive: true });
+    window.addEventListener("resize", updatePageRail, { passive: true });
+    window.addEventListener("hashchange", updatePageRail);
+    updatePageRail();
+  }
+
   const revealTargets = Array.from(
     document.querySelectorAll("[data-g2-reveal], [data-g2-reveal-group], [data-g2-draw]")
   );

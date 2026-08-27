@@ -91,7 +91,7 @@
     {"path":"exit/index.html","family":"accountability","shell":"core","navigationSection":"exit","canonicalHref":"/exit/"}
   ],
   "requiredVisibleKey": [
-    "Actual · solid and settled",
+    "Actual · solid and instantiated",
     "Possible · branching and represented",
     "Conjecture · dashed and killable",
     "Evidence · returned and revising"

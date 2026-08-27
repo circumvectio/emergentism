@@ -54,15 +54,21 @@ COLLECTIONS = [("discoveries", "Discoveries")]
 
 TITLE_RE = re.compile(r"<title>([^<]+)</title>", re.IGNORECASE)
 H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
+EXPLICIT_TITLE_RE = re.compile(
+    r'data-atlas-title=["\']([^"\']+)["\']', re.IGNORECASE
+)
 TAG_RE = re.compile(r"<[^>]+>")
 
 
 def page_title(path: Path) -> str:
     try:
+        # Preserve the established bounded scan for ordinary pages. A page whose
+        # intended drawer title sits below the prefix must declare it explicitly
+        # near the document start, so unrelated body growth cannot change it.
         head = path.read_text(encoding="utf-8", errors="replace")[:4000]
     except OSError:
         return path.parent.name
-    m = H1_RE.search(head) or TITLE_RE.search(head)
+    m = EXPLICIT_TITLE_RE.search(head) or H1_RE.search(head) or TITLE_RE.search(head)
     if not m:
         return path.parent.name.replace("-", " ")
     text = TAG_RE.sub("", m.group(1))

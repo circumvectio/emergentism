@@ -179,7 +179,9 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIsNotNone(match)
         overview = match.group(0)
         self.assertIn('role="img"', overview)
-        self.assertRegex(overview, r'aria-labelledby="[^"]+ [^"]+"')
+        self.assertIn('aria-labelledby="world-title"', overview)
+        self.assertIn('aria-describedby="world-desc"', overview)
+        self.assertNotRegex(overview, r'<figure[^>]+aria-labelledby=')
         self.assertIn("<title", overview)
         self.assertIn("<desc", overview)
         self.assertIn("possible-line", overview)
@@ -547,6 +549,93 @@ class GestaltV2ContractTests(unittest.TestCase):
             self.assertIn(branch, research)
         self.assertIn("OFFLINE-READY", research)
         self.assertIn("no candidate has been evaluated", research)
+
+    def test_homepage_post_audit_refinement_contract(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        legend = home.split('class="g2-tier-legend g2-tier-legend--early"', 1)[1].split(
+            "</div>", 1
+        )[0]
+        ladder_offset = home.index('data-cartographic-node="ladder"')
+        legend_offset = home.index('class="g2-tier-legend g2-tier-legend--early"')
+        self.assertLess(legend_offset, ladder_offset)
+        self.assertIn("the letters price claims, not people", home)
+        for tier, meaning in (
+            ("[A]", "proved within stated definitions or hypotheses"),
+            ("[B]", "sourced, receipted, or observed"),
+            ("[S]", "structural consequence inside a declared framework"),
+            ("[I]", "interpretation, not derivation"),
+            ("[C]", "a conjecture that can lose, with its kill stated"),
+            ("[D]", "unresolved, staged, or awaiting a test"),
+        ):
+            self.assertIn(tier, legend)
+            self.assertIn(meaning, legend)
+
+        self.assertIn("One-minute field prompt", home)
+        self.assertIn("The instrument does not decide.", home)
+        self.assertIn("authority and any later act remain external", home)
+        self.assertIn("This is a prompt—not a promised result.", home)
+
+        self.assertEqual(home.count('class="g2-atlas__viewport"'), 2)
+        self.assertEqual(home.count('role="region" tabindex="0"'), 4)
+        self.assertRegex(
+            home,
+            r'<svg[^>]+role="img"[^>]+aria-labelledby="world-title"[^>]+'
+            r'aria-describedby="world-desc"',
+        )
+        self.assertRegex(
+            home,
+            r'<svg[^>]+role="img"[^>]+aria-labelledby="atlas-title"[^>]+'
+            r'aria-describedby="atlas-desc"',
+        )
+        self.assertNotRegex(home, r'<figure[^>]+aria-labelledby=')
+        self.assertGreaterEqual(home.count('<g aria-hidden="true">'), 2)
+        self.assertEqual(home.count("Swipe to inspect"), 2)
+
+        action_groups = re.findall(r'<div class="g2-actions">(.*?)</div>', home, re.S)
+        self.assertEqual(len(action_groups), 6)
+        for group in action_groups:
+            self.assertEqual(group.count("g2-button--primary"), 1)
+            self.assertNotIn('class="g2-button"', group)
+        self.assertEqual(home.count("g2-action-link"), 11)
+
+        self.assertIn('data-g2-rail data-active-section="Whole"', home)
+        self.assertEqual(home.count("data-g2-rail-link"), 8)
+        self.assertEqual(home.count('aria-current="location"'), 1)
+        self.assertIn('.g2-atlas-rail a[aria-current="location"]', self.css)
+        self.assertIn('content: "Current · " attr(data-active-section)', self.css)
+        self.assertIn("width: 760px", self.css)
+        self.assertIn(".g2-action-link", self.css)
+        self.assertIn('document.querySelector("[data-g2-rail]")', self.js)
+        self.assertIn('setAttribute("aria-current", "location")', self.js)
+        self.assertNotIn("scrollIntoView", self.js)
+
+        self.assertIn(
+            "transaction means a structured decision packet—not money, signing, or execution",
+            home,
+        )
+        self.assertIn("The prepared record is not outcome evidence", home)
+        self.assertIn("solid and instantiated", home)
+        self.assertNotIn("solid and settled", home)
+        self.assertIn("Actual · solid and instantiated", self.design["requiredVisibleKey"])
+
+    def test_homepage_h1_is_the_atlas_index_title(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", home, re.I | re.S)
+        self.assertIsNotNone(h1)
+        expected = re.sub(r"<[^>]+>", "", h1.group(1)).strip()
+        explicit = re.search(r'data-atlas-title="([^"]+)"', home)
+        self.assertIsNotNone(explicit)
+        self.assertEqual(explicit.group(1), expected)
+        atlas = json.loads((SITE / "atlas/site_index.json").read_text(encoding="utf-8"))
+        indexed = {
+            page["href"]: page["title"]
+            for section in atlas["tree"]
+            for page in section["pages"]
+        }
+        self.assertEqual(indexed["/"], expected)
+        self.assertEqual(indexed["/0/"], "/0 — Boundary frames")
+        self.assertEqual(indexed["/practice/"], "The Practice — what a person actually does")
+        self.assertEqual(indexed["/record/"], "The Trial Record")
 
 
 if __name__ == "__main__":

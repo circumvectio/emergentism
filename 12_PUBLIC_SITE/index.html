@@ -20,7 +20,7 @@
   <script defer src="/assets/js/gestalt-v2.js"></script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </head>
-<body class="g2-page" data-emergentism-surface="panorama">
+<body class="g2-page" data-emergentism-surface="panorama" data-atlas-title="One actual present. Many possible futures.">
 <!-- gestalt-core-nav:start -->
 <a class="g2-skip" href="#main">Skip to content</a>
 <header class="g2-nav" data-core-shell="v2">
@@ -55,15 +55,33 @@
 <!-- gestalt-core-nav:end -->
 
 <main id="main" class="g2-main" tabindex="-1">
-  <nav class="g2-shell g2-atlas-rail" aria-label="This page">
-    <a href="#whole">Whole</a><a href="#levels">Levels</a><a href="#hinge">Hinge</a><a href="#instrument">Instrument</a><a href="#practice">Practice</a><a href="#evidence">Evidence</a><a href="#research">Research</a><a href="#exit-field">Exit</a>
+  <nav class="g2-shell g2-atlas-rail" aria-label="This page" data-g2-rail data-active-section="Whole">
+    <a href="#whole" data-g2-rail-link aria-current="location">Whole</a><a href="#levels" data-g2-rail-link>Levels</a><a href="#hinge" data-g2-rail-link>Hinge</a><a href="#instrument" data-g2-rail-link>Instrument</a><a href="#practice" data-g2-rail-link>Practice</a><a href="#evidence" data-g2-rail-link>Evidence</a><a href="#research" data-g2-rail-link>Research</a><a href="#exit-field" data-g2-rail-link>Exit</a>
   </nav>
 
   <section class="g2-shell g2-hero g2-hero--portal" id="whole" data-cartographic-node="gestalt" aria-labelledby="hero-title">
     <div class="g2-hero__copy">
       <p class="g2-kicker">What had to emerge for you—and this moment—to be here?</p>
       <h1 id="hero-title">One actual present. Many possible futures.</h1>
-      <div class="g2-actions"><a class="g2-button g2-button--primary" href="#levels">Follow the emergence</a><a class="g2-button" href="/plainly/">Read it plainly</a><a class="g2-button" href="/record/">Audit every claim</a></div>
+      <div class="g2-actions"><a class="g2-button g2-button--primary" href="#levels">Follow the emergence</a><a class="g2-action-link" href="/plainly/">Read it plainly</a><a class="g2-action-link" href="/record/">Inspect the record</a></div>
+      <aside class="g2-field-kit" aria-labelledby="field-kit-title">
+        <div><p class="g2-field-kit__label">One-minute field prompt</p><h2 id="field-kit-title">Put one live decision through the map.</h2><p>For example: accept a new role, negotiate it, or keep searching. This is a prompt—not a promised result.</p></div>
+        <ol>
+          <li><span>01 · Actual</span><strong>Name what exists now.</strong><small>Offer, savings, obligations, deadline.</small></li>
+          <li><span>02 · Possible</span><strong>Keep alternatives as models.</strong><small>Accept, negotiate, decline; none is actual yet.</small></li>
+          <li><span>03 · Bearers</span><strong>Make every affected party visible.</strong><small>Consent, cost, authority, reversibility, Exit.</small></li>
+          <li><span>04 · Contact</span><strong>Choose the cheapest honest test.</strong><small>One question, one trial, one review date.</small></li>
+        </ol>
+        <p class="g2-field-kit__boundary"><strong>The instrument does not decide.</strong> Prepare an unsigned record; authority and any later act remain external. <a href="/practice/#transaction">Open the full Finity Card →</a></p>
+      </aside>
+      <div class="g2-tier-legend g2-tier-legend--early" role="region" tabindex="0" aria-label="Evidence tier legend; the letters price claims, not people">
+        <span><b>[A] · Analytic</b>proved within stated definitions or hypotheses</span>
+        <span><b>[B] · Observed</b>sourced, receipted, or observed</span>
+        <span><b>[S] · Structural</b>structural consequence inside a declared framework</span>
+        <span><b>[I] · Interpretive</b>interpretation, not derivation</span>
+        <span><b>[C] · Conjecture</b>a conjecture that can lose, with its kill stated</span>
+        <span><b>[D] · Staged</b>unresolved, staged, or awaiting a test</span>
+      </div>
       <p class="g2-hero__promise">A bounded atlas of Being—its limits and distortions are printed on it.</p>
       <p class="g2-hero__lede"><strong>Emergentism is a bounded instrument for unfolding determinate Being.</strong> It traces what must become available for a finite bearer to distinguish, relate, model, act, receive consequence, and revise.</p>
       <p class="g2-hero__thesis"><strong>Dasein names the typed coherent-consistent whole.</strong> A <strong>situated dasein</strong> is one finite actual bearer within it: never outside the whole, never in possession of the whole.</p>
@@ -71,10 +89,12 @@
       <p class="g2-source"><strong>A worldview for finite beings</strong> · fallibilist · evidence-tiered · comparative benefit untested · no belief required</p>
     </div>
 
-    <figure class="g2-atlas g2-world-figure" aria-labelledby="world-title world-desc" data-g2-draw>
-      <svg viewBox="0 0 760 520" role="img">
+    <figure class="g2-atlas g2-world-figure" data-g2-draw>
+      <div class="g2-atlas__viewport" role="region" tabindex="0" aria-label="Emergence atlas viewport; scroll horizontally on narrow screens">
+      <svg viewBox="0 0 760 520" role="img" aria-labelledby="world-title" aria-describedby="world-desc">
         <title id="world-title">The Emergentist Gestalt of Being</title>
         <desc id="world-desc">A sequence rises from a declared boundary through distinction, relation, quantum state, and actual history. At the present, a situated bearer represents several possible futures. A return line carries observed consequence back to revise the model. An open horizon marks nonclosure.</desc>
+        <g aria-hidden="true">
         <path class="guide-line" d="M70 434 C128 402 152 352 204 328 S270 276 320 252 S386 214 428 188" />
         <circle cx="70" cy="434" r="7" class="g2-svg-fill--muted" /><text x="45" y="472">D0 · BOUNDARY</text>
         <circle cx="148" cy="365" r="7" class="g2-svg-fill--actual" /><text x="102" y="344">D1 · DISTINCTION</text>
@@ -87,7 +107,10 @@
         <path class="evidence-line" d="M650 388 C548 456 418 468 314 412 C260 382 292 322 390 214" /><text class="label-evidence" x="432" y="474">CONSEQUENCE → REVISION</text>
         <path class="conjecture-line" d="M698 54 C724 130 725 318 688 402" /><text x="618" y="432">D6 · NONCLOSURE</text>
         <text x="502" y="250">situated dasein</text><text x="502" y="270">models · selects · acts</text><text x="40" y="72">DASEIN · THE COHERENT WHOLE</text>
+        </g>
       </svg>
+      </div>
+      <p class="g2-diagram-cue" aria-hidden="true">Swipe to inspect the full atlas →</p>
       <figcaption class="g2-atlas__caption"><span class="g2-key g2-key--actual">solid · actual</span><span class="g2-key g2-key--possible">branch · represented</span><span class="g2-key g2-key--evidence">return · observed</span></figcaption>
     </figure>
   </section>
@@ -110,7 +133,7 @@
       <article><span>Soul Loop · [S/I]</span><h3>The return</h3><p>Territory → model → alternatives → selection → commitment → consequence → revision.</p></article>
     </div>
     <p class="g2-note"><strong>D6 ≠ D0.</strong> Nonclosure returns the finite reader to revision; it does not prove recurrence, completion, or a hidden final register.</p>
-    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/plainly/">Read the whole story</a><a class="g2-button" href="/dasein/">Open the exact atlas</a><a class="g2-button" href="/dimensions/">Compare all levels</a></div>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/plainly/">Read the whole story</a><a class="g2-action-link" href="/dasein/">Open the exact atlas</a><a class="g2-action-link" href="/dimensions/">Compare all levels</a></div>
   </section>
 
   <section class="g2-shell g2-section g2-section--firewall" id="hinge" data-cartographic-node="hinge" aria-labelledby="hinge-title">
@@ -134,10 +157,12 @@
     <span id="burrisphere" class="g2-anchor-alias" aria-hidden="true"></span>
     <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">03 · The instrument · [A/S/I/C]</p><h2 id="instrument-title">Burrisphere visualizes. Rosetta translates. Neither transfers proof.</h2></div><p class="g2-section__intro">The mathematical chart, selected action map, and mythic aliases remain visibly separate.</p></div>
     <div class="g2-signature-grid">
-      <figure class="g2-atlas g2-double-atlas" aria-labelledby="atlas-title atlas-desc" data-g2-draw>
-        <svg viewBox="0 0 760 540" role="img">
+      <figure class="g2-atlas g2-double-atlas" data-g2-draw>
+        <div class="g2-atlas__viewport" role="region" tabindex="0" aria-label="Double atlas viewport; scroll horizontally on narrow screens">
+        <svg viewBox="0 0 760 540" role="img" aria-labelledby="atlas-title" aria-describedby="atlas-desc">
           <title id="atlas-title">The Double Atlas: one sphere, two reciprocal charts</title>
           <desc id="atlas-desc">A point on a sphere is projected by two straight rays from opposite poles onto two tangent planes. The construction is exact mathematics. Its use as an atlas of situated viewpoints is an explicitly marked interpretation.</desc>
+          <g aria-hidden="true">
           <path class="guide-line g2-double-atlas__sphere" d="M380 104 A166 166 0 1 1 379.9 104" />
           <ellipse class="g2-double-atlas__equator" cx="380" cy="270" rx="166" ry="48" />
           <line class="g2-double-atlas__axis" x1="380" y1="64" x2="380" y2="476" />
@@ -150,7 +175,10 @@
           <circle class="g2-svg-node--possible" cx="486.549" cy="92" r="7" /><circle class="g2-svg-node--evidence" cx="607.170" cy="448" r="7" />
           <text class="label-possible" x="84" y="72">UPPER RECIPROCAL CHART · [A]</text><text class="label-evidence" x="84" y="480">LOWER RECIPROCAL CHART · [A]</text>
           <text class="label-actual" x="466" y="204">ONE POINT · ACTUAL</text><text x="90" y="258">straight projection rays</text><text x="90" y="280">opposite poles · two views</text><text x="500" y="286">sphere as selected atlas · [I]</text><text x="500" y="308">map ≠ territory</text>
+          </g>
         </svg>
+        </div>
+        <p class="g2-diagram-cue" aria-hidden="true">Swipe to inspect both reciprocal charts →</p>
         <figcaption class="g2-atlas__caption"><span class="g2-key g2-key--actual">solid · actual point</span><span class="g2-key g2-key--possible">blue · upper chart</span><span class="g2-key g2-key--evidence">mint · reciprocal chart</span></figcaption>
       </figure>
       <div class="g2-signature-copy">
@@ -165,19 +193,19 @@
       <article><span>2 · Place the map · [I]</span><h3>Burrisphere</h3><p>The bottom action/projection plane carries four transfers; the vertical axis carries three read-only frames: dissolution, preservation, creation. The display makes one complete 360° turn as a selected reading itinerary; the sphere path carries no transfer.</p></article>
       <article><span>3 · Translate · [S/I]</span><h3>Rosetta</h3><p><code>G7=M4⊎F3</code> closes the selected vocabulary. Mythic aliases come after plain functions. <code>G7@1 ≠ GEN7@1</code>.</p></article>
     </div>
-    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/burrisphere/instrument/">Move the full-screen sphere</a><a class="g2-button" href="/burrisphere/">Read the derivation</a><a class="g2-button" href="/rosetta/">See the Rosetta translation</a></div>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/burrisphere/instrument/">Move the full-screen sphere</a><a class="g2-action-link" href="/burrisphere/">Read the derivation</a><a class="g2-action-link" href="/rosetta/">See the Rosetta translation</a></div>
   </section>
 
   <section class="g2-shell g2-section g2-transaction g2-transaction--compact" id="practice" data-cartographic-node="practice" aria-labelledby="practice-title">
     <span id="transaction" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">04 · Practice</p><h2 id="practice-title">A possibility becomes a prepared transaction before it becomes an act.</h2></div><p class="g2-section__intro">The Finity Card [S] is a selected decision compression, not an authorization or proven improvement. Its chosen direction [I/C] is durable, bearer-complete potential inside Justice—not raw options or power over others. No equation derives this ought.</p></div>
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">04 · Practice</p><h2 id="practice-title">A possibility becomes a prepared transaction before it becomes an act.</h2></div><p class="g2-section__intro"><strong>Here, transaction means a structured decision packet—not money, signing, or execution.</strong> The Finity Card [S] is a selected decision compression, not an authorization or proven improvement. Its chosen direction [I/C] is durable, bearer-complete potential inside Justice—not raw options or power over others. No equation derives this ought.</p></div>
     <div class="g2-role-strip" data-g2-reveal-group>
       <article><span>Direction · [I]</span><h3>Keep every bearer visible</h3><p>Name consent, costs, uncertainty, irreversibility, affected-whole options, and feasible Exit before calling a move good.</p></article>
       <article><span>Two clocks · [I/S]</span><h3>Orient long; learn soon</h3><p>The longer horizon is the longest responsible horizon still nameable; the shorter horizon is the shortest informative horizon that can return an honest discriminating receipt.</p></article>
       <article><span>Authority boundary · [S]</span><h3>Ability is not permission</h3><p>The map may prepare. Only an actually authorized bearer may commit, revise, or refuse.</p></article>
     </div>
     <div class="g2-transaction-stage">
-      <div class="g2-transaction-board" aria-label="Four descriptive transfer sectors receiving decision coins">
+      <div class="g2-transaction-board" aria-label="Four descriptive transfer sectors receiving decision inputs">
         <article class="g2-transaction-sector g2-transaction-sector--possible"><span>Taking-A</span><strong>possible power toward self</strong><small>+Φ₅,self · −V₄,other</small></article>
         <article class="g2-transaction-sector g2-transaction-sector--possible"><span>Giving-B</span><strong>possible power toward other</strong><small>−V₄,self · +Φ₅,other</small></article>
         <article class="g2-transaction-sector g2-transaction-sector--actual"><span>Taking-B</span><strong>actual power toward self</strong><small>+V₄,self · −Φ₅,other</small></article>
@@ -185,10 +213,10 @@
         <span class="g2-transaction-coin" style="--coin-x:24%;--coin-y:26%;--coin-delay:0ms" aria-hidden="true">means</span><span class="g2-transaction-coin" style="--coin-x:70%;--coin-y:27%;--coin-delay:80ms" aria-hidden="true">future</span><span class="g2-transaction-coin" style="--coin-x:28%;--coin-y:72%;--coin-delay:160ms" aria-hidden="true">cost</span><span class="g2-transaction-coin" style="--coin-x:73%;--coin-y:71%;--coin-delay:240ms" aria-hidden="true">bearer</span>
       </div>
       <div class="g2-transaction-packet">
-        <p class="g2-claim-id">Prepared decision transaction · unsigned</p>
+        <p class="g2-claim-id">Prepared decision transaction · unsigned <small>decision packet · no financial execution</small></p>
         <dl><dt>Move</dt><dd>one bounded next act</dd><dt>Bearers</dt><dd>named without aggregation</dd><dt>Authority</dt><dd>checked outside the map</dd><dt>Review</dt><dd>predeclared signal</dd></dl>
-        <p><strong>The action exit is the signature boundary:</strong> an authorized human commits, revises, or refuses. The site transmits and executes nothing. The world issues the outcome receipt later. The Soul Loop must change both map and mapper when it arrives. The separate worldview Exit permits refusing the packet—or leaving Emergentism entirely.</p>
-        <div class="g2-actions"><a class="g2-button g2-button--primary" href="/practice/#transaction">Frame one decision</a><a class="g2-button" href="/exit/">Leave unsigned</a></div>
+        <p><strong>The action exit is the signature boundary:</strong> an authorized human commits, revises, or refuses. The site transmits and executes nothing. The prepared record is not outcome evidence. The world issues the outcome receipt later. The Soul Loop must change both map and mapper when it arrives. The separate worldview Exit permits refusing the packet—or leaving Emergentism entirely.</p>
+        <div class="g2-actions"><a class="g2-button g2-button--primary" href="/practice/#transaction">Frame one decision</a><a class="g2-action-link" href="/exit/">Leave unsigned</a></div>
       </div>
     </div>
     <p class="g2-note">Sector placement is descriptive, not a moral verdict. No wallet, legal signature, financial instruction, authorization, execution, or settlement is created here.</p>
@@ -214,7 +242,7 @@
       <article class="g2-panel g2-panel--evidence"><span class="g2-tier g2-tier--evidence">The Dasein Test · [D]</span><h3>Can an AI unfold—and revise—the account?</h3><p>EUB-1 tests typed emergence, bridge debt, discovery, self-location, teleology, and correction. It is <strong>OFFLINE-READY</strong>; no candidate has been evaluated.</p><p><a href="/record/eub-1/">Inspect EUB-1 →</a></p></article>
       <article class="g2-panel"><span class="g2-tier">Question Atlas · [D]</span><h3>Perennial questions remain earned results</h3><p><strong>54 selected · 0 evaluated · 0 independently reviewed · 0 resolved.</strong> Reframing, dissolution, conditional resolution, and residual debt remain distinct.</p><p><a href="/questions/">Inspect the questions →</a> · <a href="/lab/">Choose a gap →</a></p></article>
     </div>
-    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/lab/">Test a live wager</a><a class="g2-button" href="/contribute/">Challenge or extend the map</a><a class="g2-button" href="/record/">Audit the full record</a></div>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/lab/">Open a live wager</a><a class="g2-action-link" href="/contribute/">Challenge or extend the map</a><a class="g2-action-link" href="/record/">Inspect the full record</a></div>
   </section>
 
   <section class="g2-shell g2-section g2-exit-band" id="exit-field" data-cartographic-node="exit" aria-labelledby="exit-title">
@@ -223,7 +251,7 @@
     <blockquote class="g2-churn-maxim"><p>The means is the message. The ends are the limits.</p><footer>chosen methodological and ethical maxim [D]</footer></blockquote>
     <details class="g2-workshop-disclosure"><summary>How the confidence marks were earned</summary><div><p>The public workshop preserves sources, tests, corrections, survivor candidates, and poison warnings. Classification is not validation, and chronology is not truth.</p><nav aria-label="Workshop records"><a href="/record/">Trial Record</a><a href="/churn/">Churning</a><a href="/amrita/">Survivors</a><a href="/halahala/">Warnings</a></nav></div></details>
     <p class="g2-authorship">Proposed by <strong>Yves R. Burri</strong>, with disclosed AI assistance and no AI coauthor.</p>
-    <div class="g2-actions"><a class="g2-button" href="/about/">Authorship and method</a><a class="g2-button" href="/contribute/">Test or challenge it</a><a class="g2-button g2-button--primary" href="/exit/">Exit with your agency</a></div>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/exit/">Exit with your agency</a><a class="g2-action-link" href="/about/">Authorship and method</a><a class="g2-action-link" href="/contribute/">Test or challenge it</a></div>
   </section>
 </main>
 
@@ -240,7 +268,7 @@
       <a href="/exit/">Exit</a>
     </nav>
     <div class="g2-footer__key" data-g2-semantic-key="v1" aria-label="How to read the Emergentism interface">
-      <span class="g2-footer__key-item g2-footer__key-item--actual"><i aria-hidden="true"></i><b>Actual</b><small>solid and settled</small></span>
+      <span class="g2-footer__key-item g2-footer__key-item--actual"><i aria-hidden="true"></i><b>Actual</b><small>solid and instantiated</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--possible"><i aria-hidden="true"></i><b>Possible</b><small>branching and represented</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--conjecture"><i aria-hidden="true"></i><b>Conjecture</b><small>dashed and killable</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--evidence"><i aria-hidden="true">↩</i><b>Evidence</b><small>returned and revising</small></span>
