@@ -41,11 +41,20 @@ class BarredClaimPolicyTests(unittest.TestCase):
             with self.subTest(sample=sample):
                 self.assertEqual(POLICY.violations(sample), [])
 
+    def test_line_wrapping_does_not_break_a_scoped_denial(self) -> None:
+        sample = (
+            "This route is not being presented as established mathematics,\n"
+            "physics, medicine, or a complete account of reality."
+        )
+        self.assertEqual(POLICY.violations(sample), [])
+
     def test_negation_cannot_launder_a_later_sentence(self) -> None:
         samples = (
             "Emergentism is not a religion. Finity resolves all paradoxes.",
             "Emergentism does not provide a complete ontology. It provides a complete ontology.",
             "Finity does not resolve all paradoxes. Finity resolves all paradoxes.",
+            "Emergentism does not provide a complete ontology.\n\nIt provides a complete ontology.",
+            "<p>Emergentism does not provide a complete ontology.</p><p>It provides a complete ontology.</p>",
         )
         for sample in samples:
             with self.subTest(sample=sample):
@@ -84,6 +93,11 @@ class BarredClaimPolicyTests(unittest.TestCase):
             self.assertTrue(
                 set(manifest["declaredProvisional"]["routes"]) <= scanned
             )
+            deployable_html = {
+                path.relative_to(ROOT / "12_PUBLIC_SITE").as_posix()
+                for path in checker._deployable_public_html_paths()
+            }
+            self.assertTrue(deployable_html <= scanned)
             self.assertEqual(checker.check("all"), [])
         finally:
             sys.path.remove(scripts)

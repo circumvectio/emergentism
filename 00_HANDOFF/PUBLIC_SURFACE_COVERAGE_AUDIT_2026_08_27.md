@@ -1,7 +1,7 @@
 ---
-title: "Public-surface coverage audit — the barred-claims gate sees less than half the live site"
+title: "Public-surface coverage audit — two route-count claims retracted; deployable gate repair survives"
 date: 2026-08-27
-status: "[B] audit receipt — every count recomputed on disk 2026-08-27 and re-runnable by the commands given. Changes nothing; one item requires a chair ruling."
+status: "[B] corrected audit receipt — the initial 41-route and later 17-route gaps are both retracted; exact lifecycle reports zero unclassified artifacts. The deployable-page claim scan and bounded title defect survive."
 evidence_tier: "[B] all counts measured in-session; [I] the false-positive judgements, each with quoted context"
 owner: "Chair for the publication ruling in §3; agent-executable items in §5."
 parents:
@@ -193,3 +193,45 @@ to every lookup, and the generalisation is now on the record.
 **Nothing was edited, withheld, or repointed on the strength of §3.** The
 retraction arrives before the action, which is the only reason it costs
 nothing but the writing.
+
+---
+
+# SECOND CORRECTION — same day, after the exact lifecycle was run
+
+The later statement that **17 routes are genuinely unaccounted** is also
+false. It is retracted.
+
+That number came from comparing route-directory names with only the
+`currentSurfaces`, `declaredProvisional`, and withholding registry. The estate's
+actual lifecycle is a combined artifact classifier with six states: current,
+provisional, frozen, withheld, infrastructure, and unclassified. On the exact
+checker at the then-current baseline it reported:
+
+```text
+public=414 [56 current / 3 provisional / 92 frozen / 261 withheld /
+            2 infrastructure / 0 unclassified]
+alias-collisions=0
+```
+
+Several of the alleged 17 are frozen library roots; `offline` is
+infrastructure; `historical-boundary` is the boundary destination. Directory
+presence was never proof of missing lifecycle custody.
+
+## Findings that survive both corrections
+
+1. The barred-claims checker duplicated only the current/provisional manifest
+   scope instead of asking the release boundary which HTML files were actually
+   deployable. That is a **gate-scope defect**, not a lifecycle hole.
+2. Expanding the exact deployable scan exposed three frozen artifacts that
+   affirmatively carried retired Titan arithmetic. They are now proposed for
+   the existing reversible withholding mechanism; no content deletion is
+   required.
+3. The historical-boundary denial was a real clause-parser false positive:
+   one source-wrapping newline incorrectly ended the negation context.
+4. Only eight deployable source pages—not 26—carry duplicated terminal title
+   branding. Withheld artifacts remain byte-custodied and are not rewritten.
+
+The governing lesson is now stronger: a route count is a claim about the
+instrument until the exact delivery and lifecycle semantics have classified
+the artifact. The corrected implementation must scan all deployable HTML,
+preserve exact withholding custody, and keep zero unclassified artifacts.

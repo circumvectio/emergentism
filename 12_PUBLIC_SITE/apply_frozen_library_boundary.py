@@ -34,6 +34,12 @@ FROZEN_BANNER = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 META_TAG = re.compile(r"<meta\b[^>]*>", re.IGNORECASE)
+TITLE_TAG = re.compile(r"(<title\b[^>]*>)(.*?)(</title>)", re.IGNORECASE | re.DOTALL)
+CONTENT_ATTRIBUTE = re.compile(r"(\bcontent\s*=\s*)([\"'])(.*?)(\2)", re.IGNORECASE | re.DOTALL)
+TERMINAL_SITE_BRAND = re.compile(
+    r"(?:\s*(?:—|–|·|-)\s*(?:Emergentism|Magnum Opus))+\s*$",
+    re.IGNORECASE,
+)
 WITHHELD_ROUTE_KEYS = {
     route.rstrip("/")
     for row in WITHHELD["artifacts"]
@@ -44,6 +50,53 @@ DECLARED_CURRENT_OR_PROVISIONAL = {
     *MANIFEST.get("currentSurfaces", []),
     *MANIFEST.get("declaredProvisional", {}).get("routes", []),
 }
+
+
+def normalize_existing_document_title(value: str) -> str:
+    """Collapse an existing terminal site brand without branding new titles."""
+
+    stripped = value.strip()
+    match = TERMINAL_SITE_BRAND.search(stripped)
+    if not match:
+        return value
+    base = stripped[:match.start()].rstrip()
+    if not base:
+        return value
+    return f"{base} — Emergentism"
+
+
+def normalize_brand_metadata(text: str) -> str:
+    """Normalize `<title>` and `og:title`; never rewrite visible page prose."""
+
+    target = TITLE_TAG.sub(
+        lambda match: (
+            match.group(1)
+            + normalize_existing_document_title(match.group(2))
+            + match.group(3)
+        ),
+        text,
+    )
+
+    def replace_meta(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        if not re.search(
+            r"\bproperty\s*=\s*[\"']og:title[\"']",
+            tag,
+            re.IGNORECASE,
+        ):
+            return tag
+        return CONTENT_ATTRIBUTE.sub(
+            lambda attr: (
+                attr.group(1)
+                + attr.group(2)
+                + normalize_existing_document_title(attr.group(3))
+                + attr.group(4)
+            ),
+            tag,
+            count=1,
+        )
+
+    return META_TAG.sub(replace_meta, target)
 
 
 def frozen_paths() -> set[Path]:
@@ -109,7 +162,7 @@ def _targets_withheld_artifact(page: Path, href: str) -> bool:
 
 
 def desired(text: str, page: Path, *, frozen: bool) -> str:
-    target = text
+    target = normalize_brand_metadata(text)
     relative = page.relative_to(SITE).as_posix()
     if frozen:
         robots = re.compile(r'<meta\b[^>]*\bname=["\']robots["\'][^>]*>', re.IGNORECASE)

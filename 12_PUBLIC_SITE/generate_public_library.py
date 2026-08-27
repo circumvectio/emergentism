@@ -346,8 +346,9 @@ teleology-public L1_L7_REFINEMENT_AUDIT, glossary-public, formal-public 25/29/30
 formal-public 12, trinity-public 31/33,
 teleology-public 00_A_SQUARE/05_EXHAUSTIVE_OBSERVATIONS, formal-public 20, and operators-public
 MF-68/MF-290/MF-292/MF-294/MF-70), or this generator will overwrite
-the hand-patches and reintroduce the over-claims. Also fix the title-doubling: when a source heading already ends in
-"— Emergentism", `page_shell(title=...)` appends a second one.
+the hand-patches and reintroduce the over-claims. Title metadata is normalized
+by `public_document_title()` so a source heading ending in either historical
+site brand cannot acquire a second suffix on a future regeneration.
 """
 
 from __future__ import annotations
@@ -675,6 +676,22 @@ def public_footer(depth: int) -> str:
 """
 
 
+TERMINAL_SITE_BRAND = re.compile(
+    r"(?:\s*(?:—|–|·|-)\s*(?:Emergentism|Magnum Opus))+\s*$",
+    re.IGNORECASE,
+)
+
+
+def public_document_title(title: str) -> str:
+    """Return exactly one current site-brand suffix for document metadata."""
+
+    value = title.strip()
+    match = TERMINAL_SITE_BRAND.search(value)
+    if match:
+        value = value[:match.start()].rstrip()
+    return f"{value} — Emergentism"
+
+
 def page_html(
     *,
     title: str,
@@ -691,7 +708,7 @@ def page_html(
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{html.escape(title)} — Emergentism</title>
+<title>{html.escape(public_document_title(title))}</title>
 <meta name="description" content="{html.escape(description)}">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="{prefix}assets/css/xai.css">

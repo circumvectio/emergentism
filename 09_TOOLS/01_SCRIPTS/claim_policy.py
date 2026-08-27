@@ -48,15 +48,19 @@ BOUNDARY_CONTEXT = re.compile(
     re.I | re.S,
 )
 
-CLAUSE_BOUNDARY = re.compile(r"[.!?;\n]")
+CLAUSE_BOUNDARY = re.compile(
+    r"[.!?;]|</(?:p|li|h[1-6]|div|section|article|blockquote)>|\n\s*\n",
+    re.I,
+)
 
 
 def _local_prefix(text: str, start: int) -> str:
     """Return only the unfinished clause immediately preceding a match.
 
-    A denial in a previous sentence cannot launder a later affirmative claim.
-    The 180-character cap remains a defense against pathological unpunctuated
-    input while sentence, semicolon, and newline boundaries control scope.
+    A denial in a previous sentence or HTML block cannot launder a later
+    affirmative claim. A single newline is only source wrapping, not a semantic
+    clause boundary; blank lines and closing block tags remain boundaries. The
+    180-character cap remains a defense against pathological unpunctuated input.
     """
 
     prefix = text[max(0, start - 180):start]

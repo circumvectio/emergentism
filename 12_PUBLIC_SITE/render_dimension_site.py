@@ -8,6 +8,7 @@ import html
 import json
 from pathlib import Path
 
+from apply_frozen_library_boundary import desired as apply_public_link_boundary
 from build_core_shell import head_assets, render_footer, render_nav, surface_for
 
 
@@ -705,7 +706,14 @@ def render() -> dict[Path, str]:
             levels[i - 1]["id"] if i else None,
             levels[i + 1]["id"] if i + 1 < len(levels) else None,
         )
-    return outputs
+    # These eight routes are declared current. Their canonical renderer must
+    # therefore include the same title normalization and withheld-link rewrite
+    # as the public boundary pass; otherwise the two deterministic builders
+    # oscillate forever and each --check invalidates the other.
+    return {
+        path: apply_public_link_boundary(content, path, frozen=False)
+        for path, content in outputs.items()
+    }
 
 
 def main() -> int:
