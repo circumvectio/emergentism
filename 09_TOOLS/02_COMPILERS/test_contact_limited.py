@@ -205,7 +205,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(report["receipt_namespace"]["target_files"], 321)
         self.assertEqual(
             report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
-            336,
+            337,
         )
         self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 195)
         self.assertEqual(
@@ -215,14 +215,16 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(
             report["public_lifecycle"]["ignore_counts"],
             {
-                "present_html": 426,
-                "ignored_html": 207,
-                "deployable_html": 219,
-                "withheld_artifacts_added_back": 195,
+                "present_html": 427,
+                "ignored_html": 211,
+                "deployable_html": 216,
+                "withheld_artifacts_added_back": 199,
             },
         )
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 414)
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 415)
         self.assertEqual(report["public_lifecycle"]["counts"]["current"], 56)
+        self.assertEqual(report["public_lifecycle"]["counts"]["frozen"], 90)
+        self.assertEqual(report["public_lifecycle"]["counts"]["withheld"], 264)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []

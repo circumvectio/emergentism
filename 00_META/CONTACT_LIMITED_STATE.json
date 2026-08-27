@@ -5,12 +5,12 @@
   "roadmap": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
   "baseline_rule": "Every baseline or lifecycle-classification change requires a new repo-relative dated receipt_ref; changing a count never changes the underlying truth.",
   "receipt_namespace": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md",
     "source_index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json",
     "source_checker": "09_TOOLS/01_SCRIPTS/check_receipt_citations.py",
     "target_universe": "Live-lane Markdown filenames with a 2-3 digit receipt prefix, excluding the 00_* index/readme convention.",
     "target_files": 321,
-    "prefixed_markdown_including_00_convention": 336,
+    "prefixed_markdown_including_00_convention": 337,
     "unique_prefixes": 195,
     "reused_prefixes": 101,
     "legacy_heuristic_dangerous_prefixes": 94,
@@ -20,13 +20,13 @@
       "path_set_canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
       "duplicate_group_canonicalization": "SHA-256 over canonical UTF-8 JSON mapping each reused prefix to its lexicographically sorted repo-relative paths, with object keys sorted and separators ',' and ':'.",
       "citable_targets_sha256": "34388cb58bd0d244b6b0b7b68f24a04bfdcf7f822aee21026df4f84f2aa114a1",
-      "prefixed_including_00_sha256": "50fc6247ed7387ee2845652bf9ea1139c02cb7dd2d9f9fcf1f381f12f90614bb",
+      "prefixed_including_00_sha256": "874f56711ee72505a6fa749de8f74c0976418a7125bc888ef2835eb914952570",
       "duplicate_groups_sha256": "b2f3a82ece74a09a2e5ae75d07b93ae2b3c97bbde07c32d46974de140f271c66"
     },
     "dangling_citations": 0
   },
   "public_lifecycle": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md",
     "universe_definition": "One artifact per deployable HTML file after .vercelignore, plus the withheld artifact registry; classification is exclusive and frozen means a matching noindex response-header rule.",
     "sources": [
       "12_PUBLIC_SITE/public_semantic_parity.json",
@@ -37,10 +37,10 @@
     ],
     "deploy_ignore_contract": {
       "semantics": "Gitignore-style unanchored directory patterns ending in slash match that directory component at any depth.",
-      "present_html": 426,
-      "ignored_html": 207,
-      "deployable_html": 219,
-      "withheld_artifacts_added_back": 195,
+      "present_html": 427,
+      "ignored_html": 211,
+      "deployable_html": 216,
+      "withheld_artifacts_added_back": 199,
       "matcher_conformance": {
         "state": "CLOSED_LOCAL_PARITY",
         "pattern": "_archive/",
@@ -68,9 +68,9 @@
         "unclassified"
       ],
       "withheld_alias_contract": {
-        "artifacts": 195,
-        "raw_aliases": 583,
-        "canonical_aliases": 194,
+        "artifacts": 199,
+        "raw_aliases": 595,
+        "canonical_aliases": 198,
         "redirect_target": "/historical-boundary/",
         "required_response": "noindex,nofollow",
         "evidence": [
@@ -134,6 +134,7 @@
             "formal/21-triadic-stability-correspondence/index.html",
             "formal/23-dimensional-closure-proof/index.html",
             "formal/27-dimensional-architecture-clarification/index.html",
+            "formal/29-primitives-and-type-signatures/index.html",
             "formal/31-falsifiers-index/index.html",
             "formal/33-nash-equilibrium-eta-zero/index.html",
             "formal/34-d4-d5-canonical-reference/index.html",
@@ -179,6 +180,7 @@
             "operators/mf-285-dreams-are-unanchored-d5/index.html",
             "operators/mf-294-egregores-are-horn-networks/index.html",
             "operators/mf-296-gravity-is-time/index.html",
+            "operators/mf-297-alpha-is-the-coupling/index.html",
             "operators/mf-298-dark-matter-is-mutual-information/index.html",
             "operators/mf-301-photosynthesis-is-the-original-f5/index.html",
             "operators/mf-63-mobius-operators/index.html",
@@ -375,29 +377,29 @@
     },
     "membership_hash_contract": {
       "canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
-      "universe_sha256": "093b4bd67a1e1679cff8430039184d4752d99c4d9d2c83f8f665543ecb2e5213",
+      "universe_sha256": "97f698e07e20513fb4e5446eef4195c1f8db0e198c023d7872892dd54960c1a7",
       "category_sha256": {
         "current_sha256": "bfb66b74371e4e37b07e343db5b1451627456bb568c620ff9572f1771403d0c2",
         "provisional_sha256": "082477aaec12722a63c3654d051028e91469d570383f3b04fbc9005dbebb33dc",
-        "frozen_sha256": "49b3e2da9daf2170a3d61eb72ef670ad3f7196232a0372e243f813a6f9fed459",
-        "withheld_sha256": "d182d36af45cc6bbf85c3b5370497e7f19dfe7fc7b38f3485c916c854322998b",
+        "frozen_sha256": "a78fe901c757df99d38e7d39f38e983fe6f8d737f0028c6251d45e615a8c5334",
+        "withheld_sha256": "00a684138e7c94c79da72df63df8558d0850c8699a43492b67ff551ea2736d50",
         "infrastructure_sha256": "fed7a7ebeffdb903282f11320e9ebf2291efa582ec0a5cdafcf16d6bfd52bfc9",
         "unclassified_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     },
     "counts": {
-      "total": 414,
+      "total": 415,
       "current": 56,
       "provisional": 3,
-      "frozen": 92,
-      "withheld": 261,
+      "frozen": 90,
+      "withheld": 264,
       "infrastructure": 2,
       "unclassified": 0
     },
     "unclassified": []
   },
   "claim_disposition": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md",
     "source": "00_META/claim_status/CLAIM_STATUS.yaml",
     "lifecycle_rows_total": 50,
     "lifecycle_rows_sha256": "ce17af307ae2c754f033427f3b112a487b168d42ee86399f24c3afa3b9f2744b",
@@ -590,7 +592,7 @@
     }
   },
   "owner_held": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "debts": [
       {
@@ -604,7 +606,7 @@
           "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md"
       },
       {
         "id": "OWNER_GATE_OPEN_TOPOLOGY",
@@ -619,12 +621,12 @@
           "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md"
       }
     ]
   },
   "world_contact": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "state": "OPEN",
     "accepted_evidence_records": 0,
