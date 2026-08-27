@@ -2810,6 +2810,7 @@ body.g2-page.g2-legacy .footer {
 }
 
 .g2-hero--portal .g2-hero__lede { font-size: clamp(1rem, 1.35vw, 1.16rem); }
+.g2-hero--portal .g2-actions + .g2-hero__promise { margin-top: 28px; }
 
 .g2-entry-doors {
   display: grid;
@@ -2979,13 +2980,18 @@ body.g2-page.g2-legacy .footer {
 .g2-transaction--compact .g2-transaction-coin { --coin-size: clamp(48px, 5.2vw, 62px); font-size: 0.54rem; }
 
 .g2-section--research-sockets .g2-research-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.g2-section--research-sockets .g2-research-grid article > p:last-child a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
 .g2-section--trust .g2-churn-maxim { margin-top: 30px; }
 
 /* V2.4 cartographic spine: one bounded, self-legending atlas. */
 .g2-atlas-rail {
   min-height: 54px;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   border-bottom: 1px solid var(--g2-rule);
 }
 
@@ -3307,6 +3313,7 @@ body.g2-page.g2-legacy .footer {
 .g2-exit-band .g2-actions { grid-column: 1 / -1; margin-top: 0; }
 
 @media (max-width: 1020px) {
+  .g2-atlas-rail { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .g2-hero--cartographic { grid-template-columns: 1fr; }
   .g2-hero--cartographic .g2-atlas { max-width: 760px; }
   .g2-rung--detail > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }

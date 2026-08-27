@@ -1,9 +1,10 @@
 ---
 title: "The Cartographic Spine — a map that prints its own projection distortions"
 date: 2026-08-27
-status: "[D] DESIGN SPEC — precision-amended after source audit; staged for chair adoption. Nothing is built by this document. It proposes the public site's organizing principle and the outline that follows from it."
+status: "[D] SUPERSEDED FOR HOMEPAGE INFORMATION ARCHITECTURE — projection legend and epistemic fences retained"
 evidence_tier: "[A] Gauss 1827 and the named impossibility theorems at their owners under stated hypotheses; [B] the census and audit results cited; [S] the outline selection; [I] the cartographic reading; [D] the spec"
-owner: "Chair. Supersedes no existing spec; the honest-spine design (2026-07-03) governs until adopted."
+owner: "Yves R. Burri; retained as the historical predecessor to the adopted Soul Loop homepage contract."
+superseded_by: 2026-08-27-soul-loop-homepage-design.md
 parents:
   - 2026-07-03-emergentism-honest-spine-design.md
   - ../../../00_HANDOFF/NEGATIVE_SPACE_OUTLINE_127_THEOREMS_2026_08_27.md
@@ -12,6 +13,14 @@ parents:
 ---
 
 # The Cartographic Spine
+
+> **Adoption outcome · 2026-08-27.** The map/territory discipline, projection
+> legend, cited-neighbour boundary, and no-first fence remain active. The
+> six-node homepage order in §3 and the absolute homepage exclusion in §4 were
+> superseded by the owner-adopted Soul Loop homepage contract. That contract
+> permits one compact local failed-prediction receipt after Practice, never as
+> hero proof or worldview validation. This document remains the predecessor
+> record; it is not silently rewritten into the successor.
 
 ## 0 · The framing, and why it replaces the one before it
 

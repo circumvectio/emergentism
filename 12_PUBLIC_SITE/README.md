@@ -39,35 +39,45 @@ The detailed spine remains available at [`dimensions/`](dimensions/) and
 [`0/`](0/) through [`6/`](6/). The older [`compass/`](compass/) remains a
 compressed reading, not the primary research interface.
 
-## Founder value architecture
+## Homepage executive panorama
 
-The public front assumes a short attention window and opens with the Golden
-Circle sequence **Why → How → What**, not with corpus architecture:
+The global doors above remain stable. Inside `/`, the executive panorama now
+enacts the Soul Loop as one source-bound page journey:
 
-1. **Why — finite action.** Reality exceeds every map, yet finite
-   beings still have to choose and act.
-2. **How — the receipt loop.** Keep map and territory, possibility and
-   actuality, choice and consequence distinct; make one bounded move; let an
-   observed outcome revise the map.
-3. **What — Finity.** A visitor can use seven prompts to frame one
-   live decision, predeclare a review point, and record an observed outcome
-   without accepting the wider worldview. Comparative benefit remains `[C]`.
-4. **Identity — Emergentism.** The deeper worldview remains available after
-   the reader understands the problem, method, and first action.
-5. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
-   enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
-   correspondences are optional research mnemonics, not ranks or proof.
-6. **Trust — consequence before adherence.** The laboratory, trial record,
-   rivals, kill criteria, and exit remain available beside the practical
-   offer. A worked example demonstrates format, not efficacy.
-7. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
-   bounded contribution is enough; membership and assent are never required.
+1. **Whole — Dasein and situated dasein.** The question and answer come first:
+   one actual present, many represented possible futures, inside a whole no
+   finite witness possesses.
+2. **Levels — D0–D6.** The selected dependency grammar unfolds before any
+   instrument is offered.
+3. **Hinge — actuality and possibility.** D4 actual power and D5 represented
+   possible power remain typed and causally firewalled.
+4. **Instrument — Burrisphere and Rosetta.** The sphere visualizes; Rosetta
+   translates; neither transfers proof. Plain functions precede mythic aliases.
+5. **Practice — Finity.** One live decision can be prepared with bearers,
+   means, horizons, authority, review, and Exit visible. It remains unsigned.
+6. **Evidence — consequence.** Local receipts and counterexamples can revise
+   the apparatus; they cannot certify the worldview.
+7. **Research — revision.** Wagers, nulls, rivals, discriminators, kills, and
+   survivors form the live frontier.
+8. **Exit — nonclosure.** A reader may use the instrument, reject the
+   metaphysics, revise the selections, or leave.
+
+The Golden Circle remains nested inside this sequence: the hero supplies the
+**Why**, the Levels/Hinge/Instrument sequence supplies the **How**, and Finity
+supplies one bounded **What**. Identity is stated early because the page must
+distinguish Dasein from its situated bearer before unfolding the map; no
+identity claim creates adherence.
 
 The intended value loop is:
 
 `fallible map → possible futures → Finity → actual move → observed outcome → revised map`
 
 No step depends on membership, belief, payment, or delegated truth authority.
+
+The adopted contract is
+[`_PLANS/specs/2026-08-27-soul-loop-homepage-design.md`](_PLANS/specs/2026-08-27-soul-loop-homepage-design.md).
+It supersedes the Cartographic Spine's six-node homepage order while retaining
+its projection legend and epistemic fences.
 
 ## Source and projection boundary
 

@@ -472,75 +472,81 @@ class GestaltV2ContractTests(unittest.TestCase):
         nodes = re.findall(r'data-cartographic-node="([^"]+)"', home)
         self.assertEqual(
             nodes,
-            ["gestalt", "ladder", "insights", "convergence", "frontier", "exit"],
+            [
+                "gestalt", "ladder", "hinge", "instrument",
+                "practice", "evidence", "research", "exit",
+            ],
         )
         ladder = home.split('data-cartographic-node="ladder"', 1)[1].split(
-            'data-cartographic-node="insights"', 1
+            'data-cartographic-node="hinge"', 1
         )[0]
         for number in range(7):
             self.assertIn(f'href="/{number}/"', ladder)
         for tier in ("[A]", "[B]", "[S]", "[I]", "[C]", "[D]"):
-            self.assertIn(tier, home.split('class="g2-tier-legend"', 1)[1].split("</div>", 1)[0])
-        convergence = home.split('data-cartographic-node="convergence"', 1)[1].split(
-            'data-cartographic-node="frontier"', 1
+            self.assertIn(tier, home)
+        evidence = home.split('data-cartographic-node="evidence"', 1)[1].split(
+            'data-cartographic-node="research"', 1
         )[0]
-        self.assertIn("research lead, never truth evidence", convergence)
-        self.assertIn("Convergence selects research questions", convergence)
+        self.assertIn("research lead, never truth evidence", evidence)
+        self.assertIn("Convergence selects research questions", evidence)
         exit_field = home.split('data-cartographic-node="exit"', 1)[1].split("</section>", 1)[0]
         self.assertIn("The map remains optional.", exit_field)
         self.assertIn('href="/record/"', exit_field)
         self.assertIn('href="/churn/"', exit_field)
         self.assertIn('href="/exit/"', exit_field)
         self.assertNotIn("22 survivor candidates · 29 poison warnings", home)
-        self.assertNotIn("54 selected · 0 evaluated", home)
+        self.assertIn(
+            "54 selected · 0 evaluated · 0 independently reviewed · 0 resolved",
+            home,
+        )
         self.assertIn("--g2-poison: #d97557", self.css)
         self.assertIn(".g2-churn-seam__track", self.css)
 
-    def test_homepage_survivor_ledger_contracts_without_reclaiming_graves(self) -> None:
+    def test_homepage_instrument_practice_evidence_and_research_contracts(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        insights = home.split('data-cartographic-node="insights"', 1)[1].split(
-            'data-cartographic-node="convergence"', 1
+        instrument = home.split('data-cartographic-node="instrument"', 1)[1].split(
+            'data-cartographic-node="practice"', 1
         )[0]
-        self.assertIn("no theorem is claimed as ours", insights)
-        for heading in (
-            "Selections that do work",
-            "Types before claims",
-            "Measurements of this apparatus",
-            "Counterexamples with teeth",
-        ):
-            self.assertIn(heading, insights)
-        self.assertIn("eight frozen gates admitted eight constructed evasions", insights)
-        self.assertIn("the prediction failed", insights)
-        self.assertIn("does not confirm Rice, Emergentism, or a world claim", insights)
-        self.assertIn("The preregistered seven-ology double-coding protocol has not run", insights)
-        self.assertIn("R2 says nothing about M4/F3", insights)
-        self.assertNotIn("independent coders preserved all four", insights)
+        self.assertIn("g2-double-atlas", instrument)
+        self.assertIn("Burrisphere visualizes. Rosetta translates. Neither transfers proof.", instrument)
+        self.assertIn("bottom action/projection plane", instrument)
+        self.assertIn("sphere path carries no transfer", instrument)
+        self.assertIn("G7@1 ≠ GEN7@1", instrument)
+        self.assertIn("OVERLAY NOT RUN", instrument)
 
-        frontier = home.split('data-cartographic-node="frontier"', 1)[1].split(
+        practice = home.split('data-cartographic-node="practice"', 1)[1].split(
+            'data-cartographic-node="evidence"', 1
+        )[0]
+        self.assertIn("The Finity Card", practice)
+        self.assertIn("No equation derives this ought.", practice)
+        self.assertIn("Prepared decision transaction · unsigned", practice)
+        self.assertIn("The action exit is the signature boundary", practice)
+        self.assertIn("The separate worldview Exit", practice)
+
+        evidence = home.split('data-cartographic-node="evidence"', 1)[1].split(
+            'data-cartographic-node="research"', 1
+        )[0]
+        self.assertIn("no theorem is claimed as ours", evidence)
+        self.assertIn("Selections that do work", evidence)
+        self.assertIn("Counterexamples with teeth", evidence)
+        self.assertIn("eight frozen gates admitted eight constructed evasions", evidence)
+        self.assertIn("the prediction failed", evidence)
+        self.assertNotIn("R2 says nothing about M4/F3", evidence)
+
+        research = home.split('data-cartographic-node="research"', 1)[1].split(
             'data-cartographic-node="exit"', 1
         )[0]
         for heading in (
-            "The Butterfield discriminator",
-            "Can two modes be exhaustive?",
-            "One complete ledger instance at D5",
-            "The describer-residual control",
+            "One of 24 assignments",
+            "One present, three explanations",
+            "Can an AI unfold—and revise—the account?",
+            "Perennial questions remain earned results",
         ):
-            self.assertIn(heading, frontier)
-        self.assertEqual(frontier.count("<dt>Next test</dt>"), 4)
-        self.assertEqual(frontier.count("<dt>Dies if</dt>"), 4)
-        self.assertEqual(frontier.count("<dt>Survivor</dt>"), 4)
-        self.assertNotIn("The serial-force wager", frontier)
-        self.assertNotIn("One present, three explanations", frontier)
-
-        self.assertRegex(
-            self.css,
-            r"\.g2-spine\.g2-spine--home\s*\{[^}]*grid-template-columns:\s*1fr;",
-        )
-        self.assertRegex(
-            self.css,
-            r"\.g2-rung--detail\s*>\s*div\s*\{[^}]*"
-            r"grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\);",
-        )
+            self.assertIn(heading, research)
+        for branch in ("F5-W", "F5-N", "F5-R"):
+            self.assertIn(branch, research)
+        self.assertIn("OFFLINE-READY", research)
+        self.assertIn("no candidate has been evaluated", research)
 
 
 if __name__ == "__main__":
