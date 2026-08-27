@@ -114,3 +114,82 @@ paraphrase, or markup. Coverage and soundness are different repairs, and this
 receipt claims only the first.
 
 **Canonical path:** `01_EMERGENTISM/00_HANDOFF/PUBLIC_SURFACE_COVERAGE_AUDIT_2026_08_27.md`
+
+---
+
+# RETRACTION — same day, before any action was taken on §3
+
+**§3 of this document is WRONG and is retracted in full. `complete-ontology` is
+not a live public defect. It was already withheld before I wrote a word about
+it.**
+
+## What I got wrong, and how
+
+I wrote: *"`withheld-routes.json` contains **zero** entries, so these are
+unscanned by omission, not by declaration."*
+
+The file contains **195 declared artifacts**, each with a `sha256`, a byte
+count, its `publicRoutes`, a `reason`, and `policyRuleIds`. I queried it for a
+`routes` or `withheld` key. **The key is `artifacts`.** I read a registry, found
+nothing at the name I guessed, and reported an absence.
+
+## The corrected measurement
+
+| | |
+|---|---|
+| live route directories | 81 |
+| in the scan manifest | 40 |
+| **declared withheld, under sha256 custody** | **24** |
+| genuinely unaccounted | **17** (not 41) |
+| **violations on genuinely-unaccounted routes** | **1 — and it is a false positive** |
+
+The single hit is `historical-boundary`, which is the **withholding destination
+page itself**, and its text reads *"is **not** being presented as … a complete
+account of reality."* A disclaimer, flagged by a negation-suppression miss.
+
+**Every route I named as a defect is declared and custodied:**
+`complete-ontology` — **WITHHELD**. `corrections` — **WITHHELD**. `test` —
+**WITHHELD**, so it is not "a test route live in production." The retired Titan
+arithmetic I called *"REAL. LIVE. SERIOUS."* sits behind a redirect to
+`/historical-boundary/`, `noindex, noarchive, nosnippet, nofollow`,
+`no-store`, and out of the sitemap. **The estate had already solved this, with
+better machinery than the fix I was about to propose.**
+
+The gate does not scan those routes **because they are not published.** That is
+correct behaviour, not a hole.
+
+## What actually survives
+
+1. **17 routes are genuinely unaccounted** — in neither the scan manifest nor
+   the withholding registry. They carry **zero** genuine violations. This is a
+   bookkeeping gap, not a contamination: `cosmology`, `epistemology`, `formal`,
+   `foundations`, `ground`, `memetic`, `meta`, `method`, `methodology`,
+   `offline`, `ontology`, `operators`, `paradox`, `sacred`, `sources`,
+   `theology`, and `historical-boundary` itself. Each should be *declared* one
+   way or the other — published-and-scanned, or withheld-and-custodied.
+2. **The doubled title suffix on 26 pages** stands, and is still a documented
+   TODO in the generator.
+3. **The duplicate route clusters** stand — though `rosettad`,
+   `rosetta-d-series`, `suda-notes`, `geometric-ontology` and `complete-ontology`
+   are all *withheld*, which is most of what "consolidation" would have
+   achieved. **Already done, by someone who read the registry.**
+4. **The adversary result is untouched.** The gate remains evadable inside its
+   scope, 8 of 8. That finding was measured against the gate's own source and
+   does not depend on any of this.
+
+## The lesson, recorded because it is the fourth of its kind today
+
+This session has now produced four measurement errors, each corrected only by
+re-measuring: the sealed-nave claim (`grep -c` counts lines, not occurrences),
+two stale counts inherited from `04_WHAT_DIED.md` and transmitted without
+re-running, and this one — **an absence reported from a wrong key.**
+
+The pattern is identical every time: **a query returned nothing, and I reported
+that as a fact about the world rather than a fact about my query.** A null
+result is a claim about the instrument until it is a claim about the territory.
+The estate already holds this rule for `grep` and `.gitignore`; it generalises
+to every lookup, and the generalisation is now on the record.
+
+**Nothing was edited, withheld, or repointed on the strength of §3.** The
+retraction arrives before the action, which is the only reason it costs
+nothing but the writing.
