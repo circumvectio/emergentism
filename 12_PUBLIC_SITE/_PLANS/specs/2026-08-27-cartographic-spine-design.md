@@ -1,7 +1,7 @@
 ---
 title: "The Cartographic Spine — a map that prints its own projection distortions"
 date: 2026-08-27
-status: "[D] DESIGN SPEC — staged for chair adoption. Nothing is built by this document. It proposes the public site's organizing principle and the outline that follows from it."
+status: "[D] DESIGN SPEC — precision-amended after source audit; staged for chair adoption. Nothing is built by this document. It proposes the public site's organizing principle and the outline that follows from it."
 evidence_tier: "[A] Gauss 1827 and the named impossibility theorems at their owners under stated hypotheses; [B] the census and audit results cited; [S] the outline selection; [I] the cartographic reading; [D] the spec"
 owner: "Chair. Supersedes no existing spec; the honest-spine design (2026-07-03) governs until adopted."
 parents:
@@ -20,13 +20,13 @@ specifically:
 
 > **A map that prints its own projection distortions on itself.**
 
-Every worldview is a projection of a territory that cannot be flattened without
-lying. That is not a metaphor. It is **Gauss's Theorema Egregium (1827)**:
-Gaussian curvature is *intrinsic*, so no isometry exists from a sphere to a
-plane. Every flat map of the globe must distort something. Mercator chose to
-distort area — Greenland reads the size of Africa and is fourteen times
-smaller — in exchange for preserving angle, because a navigator needs true
-bearings more than true areas.
+Every worldview is a finite representation of a territory it does not become.
+The cartographic comparison is `[I]`; its mathematical anchor is exact:
+**Gauss's Theorema Egregium (1827)** makes Gaussian curvature intrinsic, so no
+isometry exists from an open patch of a sphere to a plane. A flat world map
+therefore cannot preserve every spherical metric relation. Mercator preserves
+local angle at the price of severe area distortion because its declared use
+favours bearings over equal area.
 
 **Carry the census's own fence, because it is what makes this useful rather
 than mystical:** *"Surfaces — cylinder, cone — DO flatten exactly. The
@@ -36,45 +36,60 @@ sense."* The theorem does not say *curved things cannot be flattened*. It says
 legend, not a lament.
 
 **One `[A]` fact the site may state and one `[I]` resonance it must fence.**
-The stereographic projection defining the Burrisphere and the Mercator
-projection are the same *kind* of map: both conformal, both sending a pole to
-infinity. That is a fact about projection families. That Mercator's poles run
-to `±∞` and the corpus's chart does too is a **resonance, not evidence** —
-`DF-15` governs; renderings are one datum shown twice.
+Stereographic and Mercator projections are distinct constructions that are
+both conformal on their stated domains. A stereographic chart omits one sphere
+point and represents it as the point at infinity; Mercator excludes both poles
+as its vertical coordinate diverges. Their shared conformality and boundary
+behaviour make a useful comparison. They do not form one projection family or
+provide evidence for the Burrisphere's interpretation — `DF-15` governs;
+renderings are not independent confirmations.
 
 ## 1 · The claim this framing permits, and the one it forbids
 
-**Forbidden — the site may not say this:** *"the gestalt of the thing-in-itself."*
-The corpus's own doctrine forbids it (`09 §5`; the noumenon is never grasped as
-an object) and **even the globe is a map** — `D6 ≢ D0`, map ≠ ground. A better
-projection is still a projection.
+**Forbidden — the site may not say:** *"we possess, enumerate, or finally unveil
+the thing-in-itself as an object."* The current ontology uses *Dasein* for the
+modal-real whole and, in its own extended sense, calls that whole the
+thing-in-itself in its totality. It simultaneously denies that a situated
+finite witness can inventory or possess it. A **Gestalt of Dasein** is therefore
+permitted only as the relational figure disclosed across bounded views — not a
+view from nowhere and not proof that Dasein literally has the chart's geometry.
+Even the globe is a map: `D6 ≢ D0`, map ≠ ground.
 
 **Permitted, and stronger:**
 
 > Every worldview projects. Most do not tell you where they distort.
 > **This one prints its legend.**
 
-The tier marks *are* the legend. `[A]` = true to scale here. `[S]` = a chosen
-projection, and here is the choice. `[C]` = distorted here, and this is the
-direction. The impossibility theorems are the printed note on the margin:
-**these regions cannot be flattened — the tear is unavoidable and here is
-exactly where it falls.**
+The tier marks *are* the epistemic legend. `[A]` means proved within stated
+definitions or hypotheses; `[B]` means sourced or receipted; `[S]` means
+selected inside a declared framework; `[I]` means interpretation; `[C]` means a
+killable conjecture; `[D]` means unresolved. A tier is not a distortion metric.
+The named map, scope, omitted structure, rival, and kill say what a view
+preserves, forgets, or risks getting wrong. The impossibility theorems are
+margin notes only within their exact premises: **this preservation target is
+unavailable here, and this is where the proof places the obstruction.**
 
 ## 2 · The generalization the framing earns
 
-The projection problem is not D2's alone. **Every register crossing is a lossy
-projection, and the corpus has the bound for each floor:**
+The projection problem is not D2's alone, but the recurrence must remain typed.
 
-- **D3 → D4** — Holevo: `n` qubits yield at most `n` classical bits of
-  accessible information. The measurement is a projection and its loss is
-  proven, not estimated.
-- **D_{n+1} → D_n** — the forgetful map is non-injective, so the lower
-  description cannot reconstruct the higher. *A globe cannot be forced onto a
-  plane* is the D2 instance of what happens at every door.
+- **Geometry `[A]`** — Gauss locates the obstruction to a spherical isometry.
+- **Abstract reconstruction `[A]`** — `SLWP-01D` proves projection asymmetry
+  when a declared forgetful map has a nontrivial fibre and a section; `TEA-01`
+  proves relative strong-up/weak-down only for a frozen language and a proper
+  type extension.
+- **Quantum-information neighbour `[A/B]`** — Holevo bounds accessible
+  classical information for a declared quantum ensemble and measurement
+  channel. That result does not by itself identify all measurement with the
+  D3→D4 crossing.
+- **Natural register crossings `[C]`** — whether each selected D-crossing
+  instantiates a non-injective projection, real information loss, or strong
+  emergence remains separately open. Noninvertibility alone does not prove
+  ontological novelty.
 
-So the negative-space census is not a list of prohibitions. **It is the atlas
-of where each projection tears** — one theorem-shape (intrinsic structure lost
-under projection) recurring at every register.
+So the negative-space census can become an atlas of **typed limits and proposed
+tear-lines**, not a claim that one theorem has already proved the same loss at
+every door.
 
 ## 3 · The outline
 
@@ -114,30 +129,26 @@ need.
 the safety rating, not the crash footage — and the tier mark **is** the rating.
 
 So: the graves, the eight-of-eight adversary result, the retractions, and the
-trial record are **reachable at full disclosure depth and never on the printed
-map.** Not hidden — a program that conceals its retractions and is found out
-loses everything, and `/record/` and `/corrections/` keep their routes. But
-they are the surveyor's notebook, available to anyone who asks whether the
-rating was earned.
+trial record are **reachable at full disclosure depth and never the homepage
+pitch.** Not hidden — `/record/` carries the current public workshop and the
+withholding boundary preserves retired artifacts under exact custody. The
+surveyor's notebook remains available to anyone who asks whether the rating was
+earned; a withheld historical artifact is not silently presented as current.
 
-## 5 · Why Convergence carries the pitch
+## 5 · Why Convergence carries the comparison
 
-It is the only fully positive framing of the audit results, and it is true.
-**Six independent arrivals at one structure is evidence the structure is real** —
-`W10-SPARK`'s own cross-architecture discriminator, applied at the scale of
-intellectual history. Kauffman never cited Jenber. Weyl's cheque-semantics and
-Beer's System 3\* never met.
+Convergence is the positive face of the audit only when stated as a research
+lead. The located works are **cited neighbours**, not six established
+independent confirmations of one structure. Git timestamps can receipt the
+order in which this corpus recorded an idea and a citation; they cannot prove
+cognitive independence, causal separation, or truth.
 
-And **three separate authors published the cosmic-ledger picture within
-eighteen months of each other.** A Mertonian multiple caught while forming —
-historians normally find those decades later.
-
-**With its fence, which is what makes it evidence rather than flattery:**
-convergence counts only where derivations are independent, and common ancestry
-mimics independence. The rare asset here is that this corpus's rediscoveries
-are **receipted-independent** — the transcript timestamps derivation before
-citation, in git. Most convergence claims cannot prove the blind men did not
-peek.
+`W10-SPARK` is controlling: cross-architecture or cross-author agreement is a
+robustness/disagreement diagnostic, **never truth evidence**. Common ancestry,
+shared culture, shared data, and shared model training can imitate
+independence. The public section may therefore show who reached neighbouring
+forms, what the exact overlap is, and where premises differ. Held-out
+prediction and intervention—not resemblance—select among competing models.
 
 ## 6 · The generative extension
 
@@ -185,9 +196,11 @@ kills the claim in one sentence.
 - **Adaptation, not implementation.** `D-20` holds `<sky-outline-nav>` as
   specification-only and adapts the grammar locally. This spec does the same and
   claims no implementation of that component.
-- **17 routes are declared neither published nor withheld.** A route that cannot
-  be placed in the outline is a route nobody has declared — so building the
-  outline surfaces the bookkeeping gap for free.
+- **The exact lifecycle currently reports zero unclassified artifacts.** The
+  earlier 17-route heuristic compared directory names with only two manifest
+  classes and was retracted. Future outline work must use the combined current,
+  provisional, frozen, withheld, and infrastructure classifier rather than
+  infer publication status from directory presence.
 - **Do not build navigation on the seven-fold.** The count is `[S]`, and the
   registered inter-coder test found the frame-half (`L5–L7`) reshuffled under
   independent coding. The register ladder is the stable spine; the seats are not.
@@ -197,12 +210,12 @@ kills the claim in one sentence.
 | claim | dies if |
 |---|---|
 | the cartographic framing | a worldview is exhibited that projects without distortion, or the legend is shown to mislead more than a bare claim would |
-| projection-at-every-register | a register crossing is exhibited that loses nothing |
-| Convergence as evidence | the independent arrivals are shown to share ancestry — then they are one datum, per `DF-15` |
+| projection-at-every-register `[C]` | one proposed crossing is lossless, lacks the declared map, or is ordinary reducible coarse-graining; that leg dies without deciding the others |
+| Convergence as research lead | the proposed overlaps do not survive source comparison or generate a useful discriminator |
 | the generative extension | proposed neighbours are found to be citation-shaped noise no reader can use |
-| **this spec** | if built as *"the gestalt of the thing-in-itself,"* or if any tier mark is dropped from the legend — the legend is the whole claim |
+| **this spec** | if built as possession of the thing-in-itself, if a tier is used as a distortion metric, or if any tier mark is dropped from the legend — the legend is the whole claim |
 
 **Canonical path:**
 `01_EMERGENTISM/12_PUBLIC_SITE/_PLANS/specs/2026-08-27-cartographic-spine-design.md`
 
-•   ⊙   ○ — *every map lies somewhere; this one prints where.*
+•   ⊙   ○ — *no map is its territory; this one prints its legend.*

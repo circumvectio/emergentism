@@ -1923,6 +1923,11 @@ html[data-gestalt-motion="active"] [data-g2-reveal="coins"][data-g2-emergence="v
   stroke: var(--g2-possible);
   stroke-width: 2;
 }
+.g2-atlas .g2-svg-node--evidence {
+  fill: var(--g2-field);
+  stroke: var(--g2-evidence);
+  stroke-width: 2;
+}
 
 /* Corrected Burrisphere topology. M4 stays on one bottom action plane; F3
    alone occupies the vertical axis; the rising path carries reading phase. */
@@ -2975,6 +2980,380 @@ body.g2-page.g2-legacy .footer {
 
 .g2-section--research-sockets .g2-research-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .g2-section--trust .g2-churn-maxim { margin-top: 30px; }
+
+/* V2.4 cartographic spine: one bounded, self-legending atlas. */
+.g2-atlas-rail {
+  min-height: 54px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  border-bottom: 1px solid var(--g2-rule);
+}
+
+.g2-atlas-rail a {
+  min-width: 0;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font: 600 0.66rem/1.2 var(--g2-mono);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.g2-atlas-rail a:last-child { border-right: 0; }
+.g2-atlas-rail a:hover { color: var(--g2-bone); background: var(--g2-field); }
+
+.g2-hero--cartographic {
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  min-height: auto;
+  gap: clamp(38px, 6vw, 96px);
+  padding-block: clamp(42px, 5vw, 72px) 40px;
+}
+
+.g2-hero--cartographic h1 {
+  max-width: 11.5ch;
+  margin-bottom: 12px;
+  font-size: clamp(3.5rem, 6vw, 6.25rem);
+}
+
+.g2-hero__promise {
+  max-width: 24ch;
+  margin: 0 0 26px;
+  color: var(--g2-bone);
+  font: 430 clamp(1.35rem, 2.2vw, 2.05rem)/1.1 var(--g2-display);
+}
+
+.g2-hero__thesis {
+  max-width: 58ch;
+  margin: 18px 0 0;
+  color: var(--g2-bone-muted);
+}
+
+.g2-map-maxim {
+  max-width: 28ch;
+  margin: 28px 0 0;
+  color: var(--g2-bone);
+  font: 430 clamp(1.55rem, 2.5vw, 2.35rem)/1.08 var(--g2-display);
+}
+
+.g2-hero--cartographic .g2-source { margin-top: 22px; line-height: 1.65; }
+.g2-double-atlas { min-width: 0; }
+.g2-double-atlas::before { content: "DOUBLE ATLAS · ONE POINT · TWO CHARTS"; }
+.g2-double-atlas__sphere,
+.g2-double-atlas__equator,
+.g2-double-atlas__axis,
+.g2-double-atlas__plane,
+.g2-double-atlas__ray {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+.g2-double-atlas__sphere { stroke: var(--g2-bone-muted); stroke-width: 1.5; }
+.g2-double-atlas__equator { stroke: var(--g2-rule-strong); stroke-width: 1; stroke-dasharray: 7 7; fill: none; }
+.g2-double-atlas__axis { stroke: var(--g2-rule-strong); stroke-width: 1; }
+.g2-double-atlas__plane { stroke-width: 1.5; }
+.g2-double-atlas__plane--upper { stroke: var(--g2-possible); }
+.g2-double-atlas__plane--lower { stroke: var(--g2-evidence); }
+.g2-double-atlas__ray { stroke-dasharray: none !important; }
+
+.g2-tier-legend {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 4px;
+  border: 1px solid var(--g2-rule-strong);
+  background: var(--g2-rule);
+  gap: 1px;
+}
+
+.g2-tier-legend span {
+  min-width: 0;
+  min-height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 14px;
+  background: var(--g2-field);
+  color: var(--g2-bone-faint);
+  font: 550 0.66rem/1.4 var(--g2-mono);
+}
+
+.g2-tier-legend b { color: var(--g2-bone); font-size: 0.76rem; }
+.g2-tier-legend span:nth-child(2) b { color: var(--g2-evidence); }
+.g2-tier-legend span:nth-child(5) b { color: var(--g2-conjecture); }
+
+.g2-seven-acts {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin-top: 22px;
+  border-block: 1px solid var(--g2-rule);
+}
+
+.g2-seven-acts span {
+  min-width: 0;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-right: 1px solid var(--g2-rule);
+  color: var(--g2-bone-muted);
+  font: 550 0.62rem/1.3 var(--g2-mono);
+  text-align: center;
+}
+
+.g2-seven-acts span:last-child { border-right: 0; }
+.g2-fence {
+  grid-column: 1 / -1;
+  margin: 10px 0 0;
+  color: var(--g2-bone-faint);
+  font: 550 0.68rem/1.55 var(--g2-mono);
+}
+
+.g2-anchor-alias {
+  position: relative;
+  top: calc(-1 * var(--g2-nav-h));
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.g2-spine.g2-spine--home {
+  grid-template-columns: 1fr;
+  align-items: start;
+  background: var(--g2-rule);
+  gap: 1px;
+}
+
+.g2-rung--detail {
+  min-width: 0;
+  min-height: 0;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: var(--g2-void);
+}
+
+.g2-rung--detail:hover { transform: none; }
+.g2-rung--detail summary {
+  min-height: 84px;
+  display: grid;
+  grid-template-columns: 58px minmax(180px, 0.62fr) minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+}
+.g2-rung--detail summary::-webkit-details-marker { display: none; }
+.g2-rung--detail summary::after {
+  content: "+ inspect";
+  color: var(--g2-bone-faint);
+  font: 550 0.62rem/1 var(--g2-mono);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.g2-rung--detail[open] summary::after { content: "− close"; }
+.g2-rung--detail summary > span { color: var(--g2-actual); font: 650 0.72rem/1 var(--g2-mono); }
+.g2-rung--detail:nth-child(6) summary > span { color: var(--g2-possible); }
+.g2-rung--detail:nth-child(7) summary > span { color: var(--g2-bone-faint); }
+.g2-rung--detail summary > strong { margin: 0; }
+.g2-rung--detail summary > small { margin: 0; }
+.g2-rung--detail > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  padding: 0;
+  border-top: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+}
+.g2-rung--detail > div p {
+  min-width: 0;
+  min-height: 118px;
+  margin: 0;
+  padding: 18px;
+  background: var(--g2-field);
+  color: var(--g2-bone-muted);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+.g2-rung--detail > div b { color: var(--g2-bone); }
+.g2-rung__link {
+  grid-column: 1 / -1;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  background: var(--g2-void);
+  font: 600 0.68rem/1.3 var(--g2-mono);
+  text-decoration: none;
+}
+
+.g2-register-hinge {
+  margin-top: 36px;
+  padding-top: 36px;
+  border-top: 1px solid var(--g2-rule-strong);
+}
+
+.g2-insight-grid,
+.g2-frontier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+}
+
+.g2-insight-card,
+.g2-claim-compact {
+  min-width: 0;
+  padding: clamp(24px, 3vw, 38px);
+  background: var(--g2-field);
+}
+
+.g2-insight-card h3,
+.g2-claim-compact h3,
+.g2-map-act h3 {
+  margin: 14px 0 12px;
+  font: 430 clamp(1.65rem, 2.7vw, 2.55rem)/1.05 var(--g2-display);
+  letter-spacing: -0.025em;
+}
+
+.g2-claim-compact h3 {
+  font-size: clamp(1.55rem, 2.25vw, 2.15rem);
+  overflow-wrap: anywhere;
+}
+
+.g2-insight-card p,
+.g2-claim-compact p,
+.g2-map-act p { color: var(--g2-bone-muted); }
+.g2-insight-card p b,
+.g2-insight-card p strong,
+.g2-map-act p strong { color: var(--g2-bone); }
+.g2-insight-card > a,
+.g2-claim-compact > a { display: inline-flex; min-height: 48px; align-items: center; font: 600 0.72rem/1.3 var(--g2-mono); }
+
+.g2-map-act {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(22px, 4vw, 56px);
+  align-items: start;
+  margin-top: 30px;
+  padding: clamp(24px, 3vw, 42px);
+  border: 1px solid var(--g2-rule-strong);
+  box-shadow: inset 3px 0 var(--g2-actual);
+  background: var(--g2-field);
+}
+
+.g2-map-act > * { min-width: 0; }
+.g2-map-act .g2-claim-id { margin: 0; color: var(--g2-actual); }
+.g2-map-act h3 { margin-bottom: 0; }
+.g2-map-act ol {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 1px;
+  background: var(--g2-rule);
+  list-style-position: inside;
+}
+.g2-map-act li { min-height: 48px; padding: 13px 15px; background: var(--g2-void); color: var(--g2-bone-muted); }
+.g2-map-act .g2-button { margin-top: 0; justify-self: start; }
+
+.g2-convergence-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--g2-rule);
+  background: var(--g2-rule);
+}
+.g2-convergence-ledger article { min-width: 0; padding: clamp(22px, 2.7vw, 34px); background: var(--g2-field); }
+.g2-convergence-ledger span { color: var(--g2-evidence); font: 650 0.62rem/1.4 var(--g2-mono); letter-spacing: 0.06em; }
+.g2-convergence-ledger h3 { margin: 16px 0 10px; font: 430 clamp(1.4rem, 2.2vw, 2rem)/1.06 var(--g2-display); }
+.g2-convergence-ledger p { margin: 0; color: var(--g2-bone-muted); }
+
+.g2-claim-compact { box-shadow: inset 0 3px var(--g2-conjecture); }
+.g2-claim-compact:nth-child(2) { box-shadow: inset 0 3px var(--g2-possible); }
+.g2-claim-compact:nth-child(4) { box-shadow: inset 0 3px var(--g2-evidence); }
+.g2-claim-compact dl { display: grid; grid-template-columns: minmax(82px, 0.26fr) minmax(0, 1fr); margin: 18px 0; }
+.g2-claim-compact dt,
+.g2-claim-compact dd { margin: 0; padding: 10px 0; border-top: 1px solid var(--g2-rule); }
+.g2-claim-compact dt { color: var(--g2-bone-faint); font: 600 0.64rem/1.45 var(--g2-mono); text-transform: uppercase; }
+.g2-claim-compact dd { color: var(--g2-bone-muted); overflow-wrap: anywhere; }
+
+.g2-exit-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  gap: clamp(26px, 5vw, 72px);
+  border-top: 1px solid var(--g2-rule-strong);
+  border-bottom: 1px solid var(--g2-rule-strong);
+}
+.g2-exit-band > * { min-width: 0; }
+.g2-exit-band h2 { max-width: 12ch; }
+.g2-exit-band .g2-churn-maxim { margin: 0; align-self: start; }
+.g2-workshop-disclosure { grid-column: 1 / -1; border-top: 1px solid var(--g2-rule); border-bottom: 1px solid var(--g2-rule); }
+.g2-workshop-disclosure summary { min-height: 58px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; color: var(--g2-bone); font: 600 0.72rem/1.4 var(--g2-mono); text-transform: uppercase; }
+.g2-workshop-disclosure summary::after { content: "+"; color: var(--g2-evidence); font-size: 1.1rem; }
+.g2-workshop-disclosure[open] summary::after { content: "−"; }
+.g2-workshop-disclosure > div { padding: 0 0 24px; }
+.g2-workshop-disclosure p { max-width: 72ch; color: var(--g2-bone-muted); }
+.g2-workshop-disclosure nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.g2-workshop-disclosure a { min-height: 48px; display: inline-flex; align-items: center; font: 600 0.72rem/1.3 var(--g2-mono); }
+.g2-authorship { align-self: end; margin: 0; color: var(--g2-bone-muted); }
+.g2-exit-band .g2-actions { grid-column: 1 / -1; margin-top: 0; }
+
+@media (max-width: 1020px) {
+  .g2-hero--cartographic { grid-template-columns: 1fr; }
+  .g2-hero--cartographic .g2-atlas { max-width: 760px; }
+  .g2-rung--detail > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g2-tier-legend { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .g2-convergence-ledger { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .g2-atlas-rail {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+  }
+  .g2-atlas-rail a { flex: 0 0 112px; border-bottom: 0; }
+  .g2-atlas-rail a:nth-child(3) { border-right: 1px solid var(--g2-rule); }
+  .g2-hero--cartographic { padding-top: 38px; }
+  .g2-hero--cartographic h1 { font-size: clamp(3rem, 14vw, 4.7rem); }
+  .g2-tier-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g2-seven-acts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g2-seven-acts span:nth-child(even) { border-right: 0; }
+  .g2-seven-acts span { border-bottom: 1px solid var(--g2-rule); }
+  .g2-seven-acts span:last-child { grid-column: 1 / -1; border-bottom: 0; }
+  .g2-spine--home,
+  .g2-insight-grid,
+  .g2-convergence-ledger,
+  .g2-frontier-grid,
+  .g2-map-act,
+  .g2-exit-band { grid-template-columns: 1fr; }
+  .g2-rung--detail summary {
+    min-height: 112px;
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 14px;
+  }
+  .g2-rung--detail summary > small { grid-column: 2 / -1; }
+  .g2-rung--detail > div { grid-template-columns: 1fr; }
+  .g2-rung--detail > div p { min-height: 0; }
+  .g2-register-hinge { margin-top: 24px; padding-top: 24px; }
+  .g2-map-act .g2-button { width: 100%; }
+  .g2-claim-compact dl { grid-template-columns: 1fr; }
+  .g2-claim-compact dt { padding-bottom: 2px; }
+  .g2-claim-compact dd { padding-top: 4px; border-top: 0; }
+  .g2-exit-band .g2-churn-maxim,
+  .g2-workshop-disclosure,
+  .g2-exit-band .g2-actions { grid-column: 1; }
+}
 
 @media (max-width: 1020px) {
   .g2-transaction-stage { grid-template-columns: 1fr; }

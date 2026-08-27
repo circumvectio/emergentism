@@ -203,12 +203,40 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn("solid · actual", figure)
         self.assertIn("dash · conjecture", figure)
 
+    def test_double_atlas_projection_rays_are_collinear_with_the_point(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        atlas = home.split('<figure class="g2-atlas g2-double-atlas"', 1)[1].split(
+            "</figure>", 1
+        )[0]
+        point_match = re.search(
+            r'<circle class="g2-svg-fill--actual" cx="([^"]+)" cy="([^"]+)"',
+            atlas,
+        )
+        self.assertIsNotNone(point_match)
+        point = tuple(float(value) for value in point_match.groups())
+
+        for ray_class, plane_y in (
+            ("possible-line", 92.0),
+            ("evidence-line", 448.0),
+        ):
+            match = re.search(
+                rf'<line class="{ray_class} g2-double-atlas__ray" '
+                r'x1="([^"]+)" y1="([^"]+)" x2="([^"]+)" y2="([^"]+)"',
+                atlas,
+            )
+            self.assertIsNotNone(match)
+            x1, y1, x2, y2 = (float(value) for value in match.groups())
+            px, py = point
+            cross_product = (px - x1) * (y2 - y1) - (py - y1) * (x2 - x1)
+            self.assertAlmostEqual(cross_product, 0.0, delta=0.15)
+            self.assertEqual(y2, plane_y)
+
     def test_actuality_firewall_is_typed_binary_and_reflows_without_clipping(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        firewall = home.split('<section class="g2-shell g2-section g2-section--firewall"', 1)[1]
+        firewall = home.split('id="actuality"', 1)[1]
         firewall = firewall.split("</section>", 1)[0]
         equation = firewall.split('<div class="g2-power-equation', 1)[1]
-        equation = equation.split("</div>\n      </div>", 1)[0]
+        equation = equation.split('<div class="g2-firewall-copy">', 1)[0]
 
         self.assertIn("g2-power-equation--binary", equation)
         self.assertIn('role="group"', equation)
@@ -313,8 +341,9 @@ class GestaltV2ContractTests(unittest.TestCase):
         hero_copy = home.split('<div class="g2-hero__copy">', 1)[1].split("</div>", 1)[0]
         self.assertNotIn("data-g2-reveal", hero_copy)
         self.assertNotIn("data-g2-draw", hero_copy)
-        self.assertIn('class="guide-line"', home)
-        self.assertIn('data-g2-reveal="coins"', home)
+        self.assertIn("guide-line", home)
+        self.assertNotIn('data-g2-reveal="coins"', home)
+        self.assertIn('data-cartographic-node="gestalt"', home)
 
     def test_reader_heading_and_interaction_controls_keep_release_semantics(self) -> None:
         book = (SITE / "book/index.html").read_text(encoding="utf-8")
@@ -438,19 +467,80 @@ class GestaltV2ContractTests(unittest.TestCase):
             }.issubset(set(pwa.safe_spine()))
         )
 
-    def test_third_churning_is_compact_semantic_and_plain_first(self) -> None:
+    def test_homepage_is_ordered_showroom_with_reachable_workshop(self) -> None:
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        section = home.split('id="research"', 1)[1].split("</section>", 1)[0]
-        self.assertIn("Third Churning", section)
-        self.assertIn("Survivors and poisons stay visible together", section)
-        self.assertIn("22 survivor candidates · 29 poison warnings", section)
-        self.assertIn("The means is the message. The ends are the limits.", section)
-        self.assertIn("0 independently reviewed", section)
-        self.assertIn("Public classification is not validation", section)
-        self.assertIn('href="/churn/"', section)
-        self.assertIn('href="/record/"', section)
+        nodes = re.findall(r'data-cartographic-node="([^"]+)"', home)
+        self.assertEqual(
+            nodes,
+            ["gestalt", "ladder", "insights", "convergence", "frontier", "exit"],
+        )
+        ladder = home.split('data-cartographic-node="ladder"', 1)[1].split(
+            'data-cartographic-node="insights"', 1
+        )[0]
+        for number in range(7):
+            self.assertIn(f'href="/{number}/"', ladder)
+        for tier in ("[A]", "[B]", "[S]", "[I]", "[C]", "[D]"):
+            self.assertIn(tier, home.split('class="g2-tier-legend"', 1)[1].split("</div>", 1)[0])
+        convergence = home.split('data-cartographic-node="convergence"', 1)[1].split(
+            'data-cartographic-node="frontier"', 1
+        )[0]
+        self.assertIn("research lead, never truth evidence", convergence)
+        self.assertIn("Convergence selects research questions", convergence)
+        exit_field = home.split('data-cartographic-node="exit"', 1)[1].split("</section>", 1)[0]
+        self.assertIn("The map remains optional.", exit_field)
+        self.assertIn('href="/record/"', exit_field)
+        self.assertIn('href="/churn/"', exit_field)
+        self.assertIn('href="/exit/"', exit_field)
+        self.assertNotIn("22 survivor candidates · 29 poison warnings", home)
+        self.assertNotIn("54 selected · 0 evaluated", home)
         self.assertIn("--g2-poison: #d97557", self.css)
         self.assertIn(".g2-churn-seam__track", self.css)
+
+    def test_homepage_survivor_ledger_contracts_without_reclaiming_graves(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        insights = home.split('data-cartographic-node="insights"', 1)[1].split(
+            'data-cartographic-node="convergence"', 1
+        )[0]
+        self.assertIn("no theorem is claimed as ours", insights)
+        for heading in (
+            "Selections that do work",
+            "Types before claims",
+            "Measurements of this apparatus",
+            "Counterexamples with teeth",
+        ):
+            self.assertIn(heading, insights)
+        self.assertIn("eight frozen gates admitted eight constructed evasions", insights)
+        self.assertIn("the prediction failed", insights)
+        self.assertIn("does not confirm Rice, Emergentism, or a world claim", insights)
+        self.assertIn("The preregistered seven-ology double-coding protocol has not run", insights)
+        self.assertIn("R2 says nothing about M4/F3", insights)
+        self.assertNotIn("independent coders preserved all four", insights)
+
+        frontier = home.split('data-cartographic-node="frontier"', 1)[1].split(
+            'data-cartographic-node="exit"', 1
+        )[0]
+        for heading in (
+            "The Butterfield discriminator",
+            "Can two modes be exhaustive?",
+            "One complete ledger instance at D5",
+            "The describer-residual control",
+        ):
+            self.assertIn(heading, frontier)
+        self.assertEqual(frontier.count("<dt>Next test</dt>"), 4)
+        self.assertEqual(frontier.count("<dt>Dies if</dt>"), 4)
+        self.assertEqual(frontier.count("<dt>Survivor</dt>"), 4)
+        self.assertNotIn("The serial-force wager", frontier)
+        self.assertNotIn("One present, three explanations", frontier)
+
+        self.assertRegex(
+            self.css,
+            r"\.g2-spine\.g2-spine--home\s*\{[^}]*grid-template-columns:\s*1fr;",
+        )
+        self.assertRegex(
+            self.css,
+            r"\.g2-rung--detail\s*>\s*div\s*\{[^}]*"
+            r"grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\);",
+        )
 
 
 if __name__ == "__main__":
