@@ -1,0 +1,105 @@
+/* The cartographic spine — WorkFlowy-derived outline grammar.
+   A local adaptation per D-20; <sky-outline-nav> remains specification-only.
+   Layered over xai.css; introduces no new palette, only structure. */
+
+.o-main { max-width: 62rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+
+/* ── head ───────────────────────────────────────────────────────── */
+.o-head { margin-bottom: 2.5rem; }
+.o-glyph { font-size: 1.5rem; letter-spacing: .6em; opacity: .55; margin: 0 0 .75rem; }
+.o-head h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.2; margin: 0 0 .5rem; }
+.o-lede { font-size: 1.05rem; line-height: 1.6; opacity: .85; max-width: 44rem; margin: 0; }
+
+/* ── legend ─────────────────────────────────────────────────────── */
+.o-legend {
+  border: 1px solid currentColor; border-radius: .5rem;
+  padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; opacity: .95;
+}
+.o-legend h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 .75rem; }
+.o-legend p { line-height: 1.6; margin: 0 0 .75rem; max-width: 46rem; }
+.o-fence { font-size: .92rem; opacity: .8; border-left: 2px solid currentColor; padding-left: .9rem; }
+.o-tierkey { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .4rem; }
+.o-tierkey li { display: flex; gap: .6rem; align-items: baseline; font-size: .92rem; }
+.o-notclaimed { margin-top: 1rem; font-size: .92rem; }
+.o-notclaimed summary { cursor: pointer; opacity: .8; }
+.o-notclaimed ul { margin: .6rem 0 0; padding-left: 1.1rem; line-height: 1.55; }
+
+/* ── the tier chip: the legend mark, never dropped ──────────────── */
+.o-tier {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .74rem; letter-spacing: .04em;
+  padding: .1rem .38rem; border-radius: .25rem;
+  border: 1px solid currentColor; opacity: .75;
+  flex: 0 0 auto; cursor: help;
+}
+.o-tier--a { opacity: 1; }
+.o-tier--c, .o-tier--d { border-style: dashed; }
+
+/* ── the tree ───────────────────────────────────────────────────── */
+.o-tree h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 .4rem; }
+.o-hint { font-size: .92rem; opacity: .7; margin: 0 0 1.5rem; max-width: 42rem; }
+
+.o-node { margin: 0; }
+.o-node > summary {
+  display: flex; gap: .6rem; align-items: baseline; flex-wrap: wrap;
+  padding: .5rem 0; cursor: pointer; list-style: none;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+}
+.o-node > summary::-webkit-details-marker { display: none; }
+.o-node > summary:hover { background: color-mix(in srgb, currentColor 4%, transparent); }
+.o-node > summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
+/* branch ring · leaf dot — D-20's grammar */
+.o-ring, .o-dot { flex: 0 0 auto; width: 1rem; text-align: center; opacity: .6; }
+.o-ring { font-size: .8rem; }
+.o-dot  { font-size: 1.1rem; }
+.o-node[open] > summary .o-ring { opacity: 1; }
+
+.o-label { font-weight: 600; }
+.o-label a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; }
+.o-label a:hover { opacity: .75; }
+
+/* the collapsed state IS the fable */
+.o-fable { flex: 1 1 16rem; font-size: .93rem; opacity: .68; }
+.o-node[open] > summary .o-fable { opacity: .45; }
+
+/* the first expansion IS plainly */
+.o-plainly { margin: .6rem 0 .6rem 1.6rem; line-height: 1.6; max-width: 46rem; }
+
+/* the full expansion IS the record */
+.o-record {
+  margin: 0 0 .9rem 1.6rem; padding: .8rem 1rem;
+  border-left: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+  font-size: .9rem;
+}
+.o-record h4 {
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .1em;
+  opacity: .6; margin: 0 0 .3rem;
+}
+.o-record ul { margin: 0 0 .8rem; padding-left: 1.1rem; line-height: 1.55; }
+.o-crossing, .o-owner { margin: .4rem 0; line-height: 1.5; }
+.o-crossing span, .o-owner span {
+  display: inline-block; font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .1em; opacity: .6; margin-right: .5rem;
+}
+.o-owner code { font-size: .82rem; word-break: break-all; opacity: .8; }
+
+/* nesting: indent without runaway depth on small screens */
+.o-children { margin-left: 1.6rem; }
+@media (max-width: 40rem) {
+  .o-children { margin-left: .8rem; }
+  .o-plainly, .o-record { margin-left: .8rem; }
+  .o-fable { flex-basis: 100%; }
+}
+
+/* ── foot ───────────────────────────────────────────────────────── */
+.o-foot {
+  margin-top: 3rem; padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  font-size: .9rem; opacity: .75;
+}
+.o-foot p { margin: 0 0 .5rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .o-node > summary { transition: background .15s ease; }
+}

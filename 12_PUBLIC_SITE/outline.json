@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "contractState": "staged-outline-data-only",
+  "updated": "2026-08-27",
+  "spec": "_PLANS/specs/2026-08-27-cartographic-spine-design.md",
+  "sourceAuthority": "This file carries navigation structure and one-line summaries only. Every claim's tier, owner, rival, discriminator and kill live at the source owner named in `owner`. Nothing here promotes a tier or creates doctrine.",
+  "legend": {
+    "principle": "Every worldview is a finite representation of a territory it does not become. The cartographic comparison is a reading; its mathematical anchor is exact — Gauss's Theorema Egregium (1827) makes Gaussian curvature intrinsic, so no isometry exists from an open patch of a sphere to a plane.",
+    "fence": "Cylinders and cones DO flatten exactly. The obstruction is nonzero Gaussian curvature, not curvature in the everyday sense. The theorem names which regions must tear, not that all curved things must.",
+    "tiers": {
+      "A": "proved within stated definitions or hypotheses",
+      "B": "sourced, receipted, or observed",
+      "S": "selected inside a declared framework",
+      "I": "interpretation, not derivation",
+      "C": "a conjecture that can lose, with its kill stated",
+      "D": "unresolved, staged, or awaiting a test"
+    },
+    "notClaimed": [
+      "Not the gestalt of the thing-in-itself. The noumenon is never grasped as an object, and even a globe is a map.",
+      "Not first. A bounded map whose limits are drawn is Kant's critical project, the Tractatus, and the via negativa. What is distinctive is the instrument, not the idea.",
+      "Not more accurate. No projection is more accurate simpliciter. This map declares its purpose and its distortions; it does not claim to escape them."
+    ],
+    "tierNote": "A tier is not a distortion metric. The named scope, omitted structure, rival and kill at each source owner say what a view preserves, forgets, or risks getting wrong.",
+    "projectionNote": "Stereographic and Mercator projections are distinct constructions, both conformal on their stated domains. Their shared conformality and boundary behaviour make a useful comparison; they do not form one projection family and are not evidence for any interpretation here."
+  },
+  "root": {
+    "id": "root",
+    "glyph": "•  ⊙  ○",
+    "kind": "root",
+    "fable": "A map that prints its own distortions.",
+    "plainly": "Every worldview is a projection of a territory that cannot be flattened without lying. This one marks where it lies.",
+    "children": [
+      {
+        "id": "gestalt",
+        "kind": "branch",
+        "label": "The Gestalt",
+        "route": "/plainly/",
+        "fable": "The whole, in one screen.",
+        "plainly": "Finite actuality is the only mode of existence — opened by cuts, kept by laws, known by maps that are never the ground, and continued by beings servicing a debt that never settles.",
+        "tier": "I",
+        "owner": "14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md",
+        "children": [
+          {
+            "id": "seven-acts",
+            "kind": "leaf",
+            "label": "The seven acts",
+            "fable": "One sentence per reasoning power.",
+            "plainly": "Dialectical, inductive, deductive, abductive, systematic, apophatic, transcendental — each performed exactly once. Tested against an unseeded control the day it was written; it carries the formal spine, not the postures.",
+            "tier": "S",
+            "owner": "14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md"
+          },
+          {
+            "id": "why-finitude",
+            "kind": "leaf",
+            "label": "Why finitude is the point",
+            "fable": "The gap is not the failure. It is the life.",
+            "plainly": "A being that could give a complete account of itself would have an empty self-possibility-space — a record, not a being. Both exits from representation, refusing to act and completing the account, land in the same place.",
+            "tier": "I",
+            "owner": "06_ONTOLOGY/09_THE_THREE_SCRIPTS_AND_THE_LIMIT_v0.1_DRAFT.md"
+          },
+          {
+            "id": "not-claimed",
+            "kind": "leaf",
+            "label": "What this is not",
+            "fable": "The claims we retired, kept visible.",
+            "plainly": "No total ontology, no dissolved hard problem, no closed is–ought gap, no proof of objective morality, no arithmetic over the boundary glyphs. Each was held here once and each was retired with its killer named.",
+            "tier": "B",
+            "owner": "14_THE_DISTILLATION/04_WHAT_DIED.md"
+          }
+        ]
+      },
+      {
+        "id": "ladder",
+        "kind": "branch",
+        "label": "The Ladder",
+        "route": "/dimensions/",
+        "fable": "Distinction, relation, state, actuality, representation.",
+        "plainly": "Typed freedoms — doors passed, not axes possessed. The index is not a spatial dimension: the tempting rhyme snaps at the probability register, where states live in spaces of arbitrary dimension.",
+        "tier": "S",
+        "owner": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "children": [
+          {
+            "id": "titans",
+            "kind": "branch",
+            "label": "Before the registers",
+            "route": "/titans/",
+            "fable": "The infinite zero, the diagonal-act, the finite actual.",
+            "plainly": "Three boundary labels, not objects inside any register. No arithmetic operation admits one in any operand position — a type discipline, after Ryle and Russell.",
+            "tier": "S",
+            "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
+            "convergence": [
+              "Aristotle, Physics III.6 — potential and process infinity",
+              "Spencer-Brown, Laws of Form (1969)",
+              "Kauffman, EigenForm (2005)"
+            ]
+          },
+          {
+            "id": "d0",
+            "kind": "branch",
+            "label": "D0 · ground-facing boundary",
+            "route": "/0/",
+            "fable": "Lived, never listed.",
+            "plainly": "Not an entity, cause, or possessed object. Why there is something rather than nothing is recorded in four owners as permanently open — unanswerable from inside.",
+            "tier": "I",
+            "crossing": "The cut. {∅} = 1 — the first form is absence held.",
+            "owner": "10_SEED/01_THE_SEED_LADDER/D0_THE_FLOOR.md"
+          },
+          {
+            "id": "d1",
+            "kind": "branch",
+            "label": "D1 · distinction",
+            "route": "/1/",
+            "fable": "Where difference first exists.",
+            "plainly": "Arithmetic and logic. Inherited entire — no theorem here is ours.",
+            "tier": "B",
+            "crossing": "Hands D2 one thing: the relation lift. Distinction becomes configuration only when a relation is adjoined.",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+            "convergence": [
+              "Cantor (1891)",
+              "Gödel (1931)",
+              "Tarski (1933)",
+              "Rice (1953)",
+              "Löwenheim–Skolem, fenced by Tennenbaum",
+              "Lindström (1969) — the price list"
+            ],
+            "forbidden": [
+              "Self-indexing",
+              "Self-certification",
+              "The total truth-mirror",
+              "A universal decision procedure"
+            ]
+          },
+          {
+            "id": "d2",
+            "kind": "branch",
+            "label": "D2 · configuration",
+            "route": "/2/",
+            "fable": "Relation, geometry, the chart.",
+            "plainly": "The thinnest fence over the heaviest objects — fourteen theorems, and the least-defended register in the map. Said here rather than hidden.",
+            "tier": "S",
+            "crossing": "Hands D3 the chart. The passage costs basis-independence.",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+            "convergence": [
+              "Gauss, Theorema Egregium (1827)",
+              "Möbius — 3-transitivity, so {0,1,∞} is convention",
+              "Cauchy (1821) — AM–GM",
+              "Hilbert (1901) / Efimov (1964), fenced by Nash–Kuiper"
+            ],
+            "forbidden": [
+              "Squaring the circle",
+              "Trisecting the angle",
+              "Doubling the cube",
+              "Flattening nonzero Gaussian curvature",
+              "Complete C² isometric immersion of the hyperbolic plane in ℝ³ — and NOT C¹"
+            ]
+          },
+          {
+            "id": "d3",
+            "kind": "branch",
+            "label": "D3 · probability-bearing state",
+            "route": "/3/",
+            "fable": "Before the record.",
+            "plainly": "Almost entirely made of crossings — fourteen of its twenty-five. That is the register's shape, not a shortage: it forbids little alone and much in conjunction.",
+            "tier": "S",
+            "crossing": "What crosses is a distribution over possible records; what arrives is one record. The toll is Holevo.",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+            "convergence": [
+              "Gleason",
+              "Kochen–Specker",
+              "Holevo (1973)",
+              "Bell — with locality, realism and free choice as joint hypotheses",
+              "Tsirelson"
+            ],
+            "forbidden": [
+              "Cloning an unknown state exactly",
+              "Non-contextual value assignment",
+              "Extracting more than n classical bits from n qubits"
+            ]
+          },
+          {
+            "id": "d4",
+            "kind": "branch",
+            "label": "D4 · causal actuality",
+            "route": "/4/",
+            "fable": "One history. One record.",
+            "plainly": "Coherence buys possibility; only lawful reachability buys actuality. Twenty-two inherited fences and no result of ours — stated plainly so it cannot be mistaken later.",
+            "tier": "B",
+            "crossing": "Hands D5 the actual carrier. No possibility is causally relevant unless some actual token carries it — and the lease is metered.",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+            "convergence": [
+              "Lieb–Yngvason — the Second Law, not 'disorder'",
+              "Carnot, at zero power",
+              "Landauer — pricing erasure, not computation",
+              "Penrose–Hawking — geodesic incompleteness, not beginnings"
+            ],
+            "forbidden": [
+              "Signalling outside the light cone",
+              "Erasing information without paying",
+              "Exceeding the Margolus–Levitin rate"
+            ]
+          },
+          {
+            "id": "d5",
+            "kind": "branch",
+            "label": "D5 · represented possibility",
+            "route": "/5/",
+            "fable": "Strategy, collective, the merely possible.",
+            "plainly": "The densest and best-fenced register — thirty theorems from four literatures never before read as one.",
+            "tier": "S",
+            "crossing": "Hands upward a rule with no mind. Every structure passes on only after the agent has been crossed out of it.",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+            "convergence": [
+              "Arrow",
+              "Sonnenschein–Mantel–Debreu",
+              "List–Pettit",
+              "Holmström",
+              "Ashby — conditional on column-distinctness",
+              "Tarski and Rice, at their home register, as corollaries here"
+            ],
+            "forbidden": [
+              "Reducing a collective to a representative agent",
+              "A non-dictatorial strategy-proof rule over three or more options",
+              "Budget-balanced efficient allocation under moral hazard",
+              "A total decision procedure for any non-trivial semantic property"
+            ]
+          },
+          {
+            "id": "d6",
+            "kind": "branch",
+            "label": "D6 · apophatic exit",
+            "route": "/6/",
+            "fable": "No totality closes.",
+            "plainly": "A posture, not a sixth freedom. The rim resembles the ground in role and is never identical to it. No exit may be walled shut.",
+            "tier": "I",
+            "crossing": "Returns to the ground it resembles and is not.",
+            "owner": "06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md"
+          }
+        ]
+      },
+      {
+        "id": "insights",
+        "kind": "branch",
+        "label": "The Insights",
+        "route": "/discoveries/",
+        "fable": "What we brought, tiered.",
+        "plainly": "Mostly selections and readings. Almost no theorem here is ours, and each entry says which.",
+        "tier": "S",
+        "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md",
+        "children": [
+          {
+            "id": "closure-rule",
+            "kind": "leaf",
+            "label": "The Closure Rule",
+            "fable": "Dividing by zero is a realm error.",
+            "plainly": "Arithmetic is closed within a register; the boundary glyphs are not register members. Multiplication by zero is the unique operation that erases all information about its co-operand — division by zero asks arithmetic to remember what absence erased.",
+            "tier": "S",
+            "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
+            "convergence": [
+              "Ryle — the category mistake",
+              "Russell — types, built to block the diagonal"
+            ]
+          },
+          {
+            "id": "the-doors",
+            "kind": "leaf",
+            "label": "The Doors",
+            "fable": "Every creation-equation lands on the same seven points.",
+            "plainly": "The classical indeterminate forms are where endpoint values underdetermine the result and a completion rule must be invoked. Four attempts, four doors — the rule is never in the endpoints.",
+            "tier": "I",
+            "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
+            "convergence": [
+              "Jenber (2016) — the cosmogenesis equation over indeterminate forms",
+              "Berry (2002) / Batterman — emergence at singular limits"
+            ]
+          },
+          {
+            "id": "settled-serviced",
+            "kind": "leaf",
+            "label": "Settled and serviced",
+            "fable": "Some debts close. Some are only carried.",
+            "plainly": "A consistency debt is either paid once by a law or carried by a practice — and which one it admits types the register. Algebraic numbers are settled; transcendentals are serviced.",
+            "tier": "I",
+            "owner": "06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md",
+            "convergence": [
+              "Weyl (1921) and Ramsey (1926) — mathematical existence as financial instrument",
+              "Turing (1936) — the computable reals"
+            ]
+          },
+          {
+            "id": "compensation",
+            "kind": "leaf",
+            "label": "The compensation wager",
+            "fable": "Every freedom arrives with its constraint.",
+            "plainly": "An opened freedom may require a mechanism maintaining a named quantity — and at its extreme the compensator can consume the freedom it services. Staged, conditional, and its gauge language is not yet earned.",
+            "tier": "C",
+            "owner": "06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md",
+            "convergence": [
+              "Weyl (1918/1929), Yang–Mills (1954) — the gauge argument",
+              "Noether (1918)",
+              "Anaximander — coming-to-be as reparation under time"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "convergence",
+        "kind": "branch",
+        "label": "The Convergence",
+        "route": "/discoveries/",
+        "fable": "Others reached here first, or alongside.",
+        "plainly": "Independent-looking arrival at one structure is a research lead, not proof. Six candidate contributions were audited and all six were pre-empted — these are cited neighbours, and that is the finding, not the failure.",
+        "tier": "B",
+        "owner": "00_HANDOFF/PRIOR_ART_AUDIT_SIX_CANDIDATES_2026_08_22.md",
+        "children": [
+          {
+            "id": "the-giants",
+            "kind": "leaf",
+            "label": "The giants, by register",
+            "fable": "Named first, always.",
+            "plainly": "Aristotle, Gauss, Cantor, Noether, Weyl, von Neumann, Tarski, Ashby, Landauer, Bell, Holevo, Arrow, Lindström, Kauffman — each cited at their own register under their own hypotheses.",
+            "tier": "B",
+            "owner": "00_HANDOFF/NEGATIVE_SPACE_OUTLINE_127_THEOREMS_2026_08_27.md"
+          },
+          {
+            "id": "tattvas",
+            "kind": "leaf",
+            "label": "Kashmir Śaivism's thirty-six tattvas",
+            "fable": "A mechanism for finitude, where we have a stipulation.",
+            "plainly": "The five kañcukas convert unlimited attributes into limited ones — limited agency from all-doership, time from eternity, causal restriction from freedom. Whether or not one accepts the metaphysics, it proposes a mechanism where this map assumes one.",
+            "tier": "I",
+            "owner": "00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md"
+          },
+          {
+            "id": "the-multiple",
+            "kind": "leaf",
+            "label": "Independently, this year",
+            "fable": "The same picture, three times, in eighteen months.",
+            "plainly": "Bhak (2025), Engidaw (2026) and Hudock (2026) each published a cosmic-ledger account without citing one another. A cluster worth noting; co-occurrence in time is not confirmation.",
+            "tier": "B",
+            "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md"
+          },
+          {
+            "id": "independence-fence",
+            "kind": "leaf",
+            "label": "When agreement counts",
+            "fable": "Fifteen renderings of one shape are one datum.",
+            "plainly": "Agreement is a robustness diagnostic, never truth evidence. Common ancestry mimics independence, and timestamps can receipt the order this corpus recorded an idea and a citation — they cannot prove cognitive independence.",
+            "tier": "B",
+            "owner": "14_THE_DISTILLATION/04_WHAT_DIED.md"
+          }
+        ]
+      },
+      {
+        "id": "frontier",
+        "kind": "branch",
+        "label": "The Frontier",
+        "route": "/record/frontier/",
+        "fable": "The unmapped edge.",
+        "plainly": "Every gap carries a discriminator and a kill. A gap that cannot say what would settle it is not yet a gap — it is fog.",
+        "tier": "D",
+        "owner": "12_PUBLIC_SITE/living-map.json",
+        "children": [
+          {
+            "id": "open-questions",
+            "kind": "leaf",
+            "label": "Open questions",
+            "fable": "What would settle each one.",
+            "plainly": "Whether finitude can be derived rather than stipulated. Whether erasure-in-a-limit yields genuine underdetermination or only simulation-hardness. Whether a compensator, at saturation, provably consumes its freedom.",
+            "tier": "D",
+            "owner": "12_PUBLIC_SITE/living-map.json"
+          },
+          {
+            "id": "extend",
+            "kind": "leaf",
+            "label": "Extend the map",
+            "fable": "One citation is a contribution.",
+            "plainly": "Each node carries its independent arrivals. A neighbour nothing here yet links is the next edge — proposing one costs a citation, not a manuscript.",
+            "tier": "D",
+            "owner": "12_PUBLIC_SITE/_PLANS/specs/2026-08-27-cartographic-spine-design.md"
+          }
+        ]
+      },
+      {
+        "id": "exit",
+        "kind": "leaf",
+        "label": "Exit",
+        "route": "/exit/",
+        "fable": "Always reachable. Never walled.",
+        "plainly": "Leaving costs nothing and is not tracked. A worldview that traps its readers has already failed its own test.",
+        "tier": "S",
+        "owner": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+      }
+    ]
+  }
+}
