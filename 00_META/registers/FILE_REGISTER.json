@@ -32391,8 +32391,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/RELEASE_STATE.md",
-      "sha256": "ec292097d3363cdc947c0b3edfa5eeddd70b52f5188e502edc5d088ba0e004db",
-      "bytes": 38124,
+      "sha256": "b6878d0bbab51529b458779f7f5a007770e82e45e9569150c9329ce35387b82d",
+      "bytes": 41029,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",

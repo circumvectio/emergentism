@@ -1,7 +1,7 @@
 ---
 title: "O9 release-state ledger — emergentism.org"
-date: 2026-08-27
-status: "ACTIVE LEDGER — cartographic spine and survivor ledger publicly served; publication is not validation"
+date: 2026-08-29
+status: "ACTIVE LEDGER — reciprocal-object homepage publicly served; publication is not validation"
 evidence_tier: "[D] owner-directed deployment; [S] Vercel and HTTP receipts; [B] local and live gates; no independent outcome evidence"
 contract: _PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md · O9
 may_sign: false
@@ -12,6 +12,39 @@ may_authorize: false
 
 A local green is not a deploy. A deploy is not empirical contact, scientific
 validation, priority, or evidence that any Emergentist conjecture is true.
+
+## Current reciprocal-object homepage exact-custody release — 2026-08-29
+
+| State | Value | How measured |
+|---|---|---|
+| **committed** | `419b763af5197a897b824c5e7f9f8c2eea2e2295` — refined homepage as one reciprocal object | exact clean Git commit frozen before preparation |
+| **pushed** | **yes** — `theory/parasite-load-2026-08-17` matched its configured upstream at the release commit | direct Git check and release-contract upstream identity check |
+| **immutable artifact** | `dpl_8a2GupkfmvtM5bfGHSxmwqNfkS6Y` · `emergentism-lahrf6lqo-yves-projects-c163dce1.vercel.app` · `READY` | independently resolved Vercel project/team, held deployment, immutable audit, and byte witness |
+| **predecessor** | `dpl_7ZhXd7kVGi1iUVvKrUz1Cx2ijEGB` | observed before staging and rechecked immediately before promotion |
+| **promoted** | **yes** — exact staged artifact at `2026-08-29T04:01:37Z` | terminal receipt state `PROMOTED_VERIFIED`; apex and `www` deployment-identity and byte audits |
+| **DNS** | **existing Vercel configuration; unchanged** | no DNS mutation command was issued |
+| **served hash** | homepage `9b696c45bb5c09e2042b30ed78f24938f083f63c6b6ad7c72a290b185ee33ffd` matches on apex and `www` | SHA-256 over both branded responses | <!-- pragma: allow-secret -- served digest -->
+| **release receipt** | integrity field `725eed8f77bd163014b161b43f639a820803e0583f84edaff8b38671e97ee4e5`; external JSON SHA-256 `56d6cb96994b7a60006ac31e8536a6e5a4e669b43b47c3d4e13edf7a7407af4c` | `emergentism/VercelReleaseReceipt.v1`; integrity evidence, not authorization | <!-- pragma: allow-secret -- receipt digests -->
+
+The frozen public payload contains **300 files** and **9,796,428 bytes**, with
+manifest SHA-256
+`e5d27f9ac0b67c950efa5a354d1fda127d5da6a656ac9cde51dbaf948d9ba767`. <!-- pragma: allow-secret -- manifest digest -->
+Preparation passed the current predeploy and deterministic-artifact gates in
+the documented `metadata_only_explicit` federation mode. The reviewed
+Sarpasya source pin was not changed; strict archived-source replay remains
+separate release debt rather than evidence supplied by this deployment.
+
+The candidate stayed held through immutable verification. Promotion then
+verified the same critical bytes at `https://emergentism.org/` and
+`https://www.emergentism.org/`; their branded audit receipts are respectively
+`ee13e968279b2aa9669f9c1caa9d6d3225e919f89cd7ec29de500074b5b27937` and <!-- pragma: allow-secret -- branded audit digest -->
+`b2d9e9df5c596a666f2c2fb3bdbc9ff8618c3ef001be884f67335daa9e311576`. <!-- pragma: allow-secret -- branded audit digests -->
+
+`external_validation=false`; `may_sign=false`; `may_authorize=false`. This
+release publishes the refined instrument. It does not independently validate
+Emergentism, the D-registers, the Burrisphere interpretation, F5, a force
+assignment, novelty, priority, or any scientific, ethical, or philosophical
+claim.
 
 ## Current homepage UI/UX exact-custody release — 2026-08-27
 
