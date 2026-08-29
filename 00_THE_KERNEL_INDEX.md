@@ -29,7 +29,7 @@ quote a conjecture as a result.
 |---|---|---|
 | **Established** | `00_ESTABLISHED/README.md` | only what a machine or an exhaustive computation verifies, with a command that re-checks every entry |
 | **Work in progress** | `00_WORK_IN_PROGRESS/README.md` | what is open, and what each item is waiting on — open owner rulings, the live claim queue, and what is specified but unrun |
-| **Archive** | `90_ARCHIVE/` | what is superseded, kept with provenance and a `superseded_by:` pointer; 30 subdirectories |
+| **Archive** | `90_ARCHIVE/` | what is superseded, kept with provenance and a `superseded_by:` pointer; 30 subdirectories. Count note 2026-08-29: 34 subdirectories on disk |
 
 **None of the three owns anything.** Each is an index that points at the owner, and
 each may be re-checked: `bash 09_TOOLS/01_SCRIPTS/gate.sh` validates the first two
@@ -49,6 +49,8 @@ an open question filed nowhere reads as forgotten.
 > transition period. New active prose should prefer `KER-n`. The dual-write
 > below shows both forms side-by-side so the meaning is unambiguous.
 > See `00_HANDOFF/RULE_GLOSSARY_v0.md` §"KER" + `00_HANDOFF/NAMING_RECONCILIATION_DOCKET_2026_08_03.md` §2.5.
+> `00_HANDOFF/RULE_GLOSSARY_v0.md` unlocated on disk 2026-08-29; do not treat as live.
+> `00_HANDOFF/NAMING_RECONCILIATION_DOCKET_2026_08_03.md` unlocated on disk 2026-08-29; do not treat as live.
 
 | # | KER- tag | Surface | Canonical owner | Standing |
 |---|---|---|---|---|

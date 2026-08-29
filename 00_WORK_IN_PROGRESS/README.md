@@ -24,6 +24,7 @@ The corpus had two declared tiers and needed three.
 00_WORK_IN_PROGRESS/  what is open and what it awaits  — this manifest
 90_ARCHIVE/        what is superseded, with provenance — 24 subdirectories
 ```
+Count note 2026-08-29: 34 subdirectories on disk (`ls -1 90_ARCHIVE | wc` = 44 entries). Do not treat 24 as current.
 
 Without the middle tier, everything not yet established looked either finished or
 dead. **An open question filed next to a settled one reads as settled**; an open

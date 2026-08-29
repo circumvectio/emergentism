@@ -43,8 +43,10 @@ Per K3, content here is preserved as evidence, not silently erased.
 
 The 2026-06-04 Agentz deployment receipt for this lane is
 [`../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.md`](../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.md);
+`../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.md` unlocated on disk 2026-08-29; do not treat as live.
 the exact folder/file manifest is
 [`../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.csv).
+`../00_META/03_AGENTZ_DEPLOYMENT_90_ARCHIVE_2026_06_04.csv` unlocated on disk 2026-08-29; do not treat as live.
 It covers this lane as archive-only provenance. Do not cite archive material as
 current doctrine unless an active source-owner surface explicitly reopens it.
 

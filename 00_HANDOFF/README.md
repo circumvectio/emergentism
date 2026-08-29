@@ -9,7 +9,7 @@ canonical_phrase: "00_HANDOFF lane — session handoffs and release receipts (on
 
 Session handoffs and release receipts, one dated directory each. The `YYYY_MM_DD` prefix is
 zero-padded, so lexical order is date order — `ls` lists them oldest first
-(`2026_07_19_broken_66_second_look`) to newest (`2026_07_31_tidy_and_handoff`). Directories
+(`2026_07_19_broken_66_second_look`) to newest dated directory (`2026_08_21_worktree_consolidation` as of 2026-08-29). Older text named `2026_07_31_tidy_and_handoff`; that directory remains. Loose dated receipts also live at this folder root (`00_INDEX.md`: named working packets, not one-directory-only). Directories
 sharing a date carry no order within that day. The newest packet is the last *dated
 directory* `ls` prints, not the last line — `AGENTS.md`, `CLAUDE.md` and `README.md` sort
 after it.
@@ -39,7 +39,7 @@ reproduced by the commands it names is wrong and should be repaired rather than 
 
 ## Reading order for a new session
 
-1. The newest `00_HANDOFF.md` — current state, the traps, and what is next.
+1. The newest `00_THE_HANDOFF.md` — current state, the traps, and what is next. (There is no `00_HANDOFF.md` at this path.)
 2. [`../00_WORK_IN_PROGRESS/README.md`](../00_WORK_IN_PROGRESS/README.md) — what is open
    and what each item is waiting on.
 3. [`../00_ESTABLISHED/README.md`](../00_ESTABLISHED/README.md) — the short list of what

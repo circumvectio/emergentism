@@ -149,13 +149,15 @@ its largest exposed surface, because **an entry that names its attacker has told
 exactly where to push.** Six routes, ordered by how fast they do damage. The first one
 works today.
 
-### Attack 1 — run the gate. It is red. *(fastest; succeeds now)*
+### Attack 1 — run the gate. It is red. *(fastest; succeeds now)* *(historical; superseded as live measurement 2026-08-29 — still not Established)*
 
 ```
 cd 16_THE_EMISSION && python3 check_anchors.py ; echo $?
 ```
 
 Result this pass: **exit 1, 233 failures.** The breakdown, by class:
+
+Currency note 2026-08-29 (Magnum): live measurement EXIT 0, PASS 339 anchors, 0 failures, 51 warnings. The historical exit 1 / 233 in this section is not live. Do not treat this exit 0 as Established admission or world evidence. 51 warnings remain. 44 of 168 prose anchors absent from `ANCHORS.jsonl` ledger. Attack 1's "It is red / succeeds now" is superseded as measurement, not as a world result.
 
 | failures | class |
 |---|---|
@@ -302,11 +304,13 @@ citation by receipt number can therefore be ambiguous — which is the §4 of
 is F0 NOT PASSED, F1 OPEN, and F2, F3 **and** F4 NOT STARTED. The true position is worse
 than the one I was handed, so it is the one published.)*
 
-### And this tree's own gate is red
+### And this tree's own gate is red *(historical; superseded as live measurement 2026-08-29 — still not Established)*
 
 Stated in §4 and repeated here so that nobody has to reach §4 to find it: **233
 failures, 35 of them violations of this tree's single law.** No document in this folder
-may be cited as clean until that number is zero.
+may be cited as clean until that number is zero. *(superseded as live measurement 2026-08-29; still not Established)*
+
+Currency note 2026-08-29 (Magnum): `python3 check_anchors.py` measured EXIT 0, PASS 339 anchors, 0 failures, 51 warnings. Historical exit 1 / 233 is not live. Do not treat this exit 0 as Established admission or world evidence. 51 warnings remain. 44 of 168 prose anchors absent from `ANCHORS.jsonl` ledger.
 
 ---
 

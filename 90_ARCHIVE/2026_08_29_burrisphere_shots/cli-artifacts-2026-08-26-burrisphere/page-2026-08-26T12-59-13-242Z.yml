@@ -1,0 +1,84 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to controls" [ref=f1e2] [cursor=pointer]:
+    - /url: "#instrument-controls"
+  - main "One sphere. Two shadows." [ref=f1e3]:
+    - generic "Interactive three-dimensional Burrisphere. Polar angle theta moves one shared point from the selected south boundary to the north boundary; axial bearing psi rotates it around the sphere. Straight pole-to-point rays meet the lower nu and upper phi projection planes. Four M4 sectors stay on the bottom action plane. A separate Titan axis runs from Shiva at bottom through Vishnu at centre to Brahma at top, while a violet one-turn path remains a selected interpretive itinerary." [ref=f1e4]
+    - generic [ref=f1e5]:
+      - link "Back to the Burrisphere atlas" [ref=f1e6] [cursor=pointer]:
+        - /url: /burrisphere/
+        - generic [ref=f1e7]: ←
+      - navigation "Instrument navigation" [ref=f1e8]:
+        - link "Practice" [ref=f1e9] [cursor=pointer]:
+          - /url: /practice/
+        - link "Exit" [ref=f1e10] [cursor=pointer]:
+          - /url: /exit/
+    - region "One sphere. Two shadows.":
+      - paragraph: Live geometric instrument · [A] chart · [I] overlay
+      - heading "One sphere. Two shadows." [level=1]:
+        - text: One sphere.
+        - emphasis: Two shadows.
+    - region "Current chart values":
+      - generic:
+        - generic: φ
+        - strong: "1.000"
+      - generic:
+        - generic: ν
+        - strong: "1.000"
+      - generic:
+        - generic: φν
+        - strong: "1.000"
+    - complementary "M4 bottom action plane. Four coplanar sectors sit on the lower projection plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. The in-plane channel direction runs from Phi five possible or modeled power above to V four actual or embodied power below.":
+      - generic: M4 · 03 · bottom action plane [I]
+      - generic:
+        - generic: Φ₅ · possible / modelΦ₅ · possible
+        - generic: self / individual · takingself / ego · taking
+        - list "Four bearer-oriented transfer sectors":
+          - listitem:
+            - strong: Taking-A · Kali
+          - listitem:
+            - strong: Giving-B · Arjuna
+          - listitem:
+            - strong: Taking-B · Kālī
+          - listitem:
+            - strong: Giving-A · Kṛṣṇa
+        - generic: giving · other / collectivegiving · other / collective
+        - generic: V₄ · actual / embodiedV₄ · actual
+    - region "Burrisphere controls" [ref=f1e11]:
+      - generic [ref=f1e12]:
+        - generic [ref=f1e13]:
+          - generic [ref=f1e14]:
+            - generic [ref=f1e15]: Polar angle θ [A]
+            - status [ref=f1e16]: 90.0°
+          - generic [ref=f1e17]:
+            - generic [ref=f1e18]: •
+            - slider "Polar angle theta from selected south boundary to north boundary" [ref=f1e20]: "90"
+            - generic [ref=f1e21]: ○
+        - generic [ref=f1e23]:
+          - generic [ref=f1e24]:
+            - generic [ref=f1e25]: Axial bearing ψ [A]
+            - status [ref=f1e26]: 90.0°
+          - generic [ref=f1e27]:
+            - generic [ref=f1e28]: ↺
+            - slider "Axial bearing psi around the sphere" [ref=f1e30]: "90"
+            - generic [ref=f1e31]: ↻
+      - generic [ref=f1e33]: Move the shared point from the selected south boundary through the balance equator to the north boundary. Theta changes phi, nu, and B but leaves axial bearing unchanged.
+      - generic [ref=f1e34]: Rotate the shared point around the vertical axis. Psi changes bearing and the selected interpretive M4 reading but leaves theta, phi, nu, and B unchanged.
+      - generic [ref=f1e35]: Free coordinate inspection.
+      - generic [ref=f1e36]:
+        - button "Play the selected one-turn itinerary" [ref=f1e37] [cursor=pointer]:
+          - generic [ref=f1e38]: ▶
+          - generic [ref=f1e39]: Play 1 turn
+        - button "Reset polar angle theta to the balance equator" [ref=f1e40] [cursor=pointer]:
+          - generic [ref=f1e41]: ＝
+          - generic [ref=f1e42]: Reset θ
+        - button "Reset axial bearing psi to 90 degrees" [ref=f1e43] [cursor=pointer]:
+          - generic [ref=f1e44]: ↺
+          - generic [ref=f1e45]: Reset ψ
+        - button "Hide the interpretive G7 action plane and path" [pressed] [ref=f1e46] [cursor=pointer]:
+          - generic [ref=f1e47]: ⌁
+          - generic [ref=f1e48]: Hide G7 overlay
+        - button "Enter full screen" [ref=f1e49] [cursor=pointer]:
+          - generic [ref=f1e50]: ⛶
+          - generic [ref=f1e51]: Full screen
+    - group [ref=f1e52]:
+      - generic "What is mathematics—and what is interpretation? A / I / C ?" [ref=f1e53] [cursor=pointer]

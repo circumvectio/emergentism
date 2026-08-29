@@ -40,12 +40,18 @@ None of the three owns anything; each points at the owner. Re-check the first tw
 
 ## About the files in this directory
 
-There are twenty-two markdown files at the repository root and **most of them are
+There are twenty-six markdown files at the repository root and **most of them are
 forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
 They exist so that older links keep resolving, and deleting them would break the thing they
-are for. As of 2026-08-04 there are **22** markdown files at the root: **9 forwarding stubs,
+are for. As of 2026-08-04 there were **22** markdown files at the root: **9 forwarding stubs,
 3 agent routes, 6 documents with actual content, 2 dated natural-person signature
-records, and 2 non-semantic work-programme control projections.** The six content documents —
+records, and 2 non-semantic work-programme control projections.** As of 2026-08-29 the root
+holds **26** `.md` files: that 22 plus four later files that stay here (not stubs):
+[`00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md`](00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md)
+(`[D]` STAGED companion, successor to neither), [`CONTRIBUTING.md`](CONTRIBUTING.md)
+(Kintsugi bounty / 5+1 as PR rules), [`LICENSE.md`](LICENSE.md)
+(dual CC BY-SA 4.0 / Apache-2.0), and [`VMOSK_A_v1_2026_07_28.md`](VMOSK_A_v1_2026_07_28.md)
+(SUPERSEDED provenance; `VMOSK_A.md` already names this path). The six content documents —
 
 - [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
@@ -114,8 +120,8 @@ tests. Consequential action uses a complete, scoped, contestable
 
 ## Repository map
 
-> **Reading the root directory.** Twenty-two `.md` files sit at this root (as of
-> 2026-08-04): **6 are live content** — `README.md`, `ROSETTA.md` (a routing shim),
+> **Reading the root directory.** Twenty-six `.md` files sit at this root (as of
+> 2026-08-29; 22 as of 2026-08-04 plus four later files named above). Of the 2026-08-04 set, **6 are live content** — `README.md`, `ROSETTA.md` (a routing shim),
 > `00_THE_KERNEL_INDEX.md`, `00_THE_WELTANSCHAUUNG.md`,
 > `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`, `00_THE_FOUNDATION.md`; **3 are agent
 > routes** — `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`; **2 are dated
@@ -157,9 +163,11 @@ tests. Consequential action uses a complete, scoped, contestable
 | `13_BOOKS/` | projection-only critical editions; never K-8 |
 | `14_THE_DISTILLATION/` | the compressed reading; owns no claim it did not inherit |
 | `15_THE_TITAN_PASS_2026_08_06/` | disposition manifests — preserve / archive / false / create. **Proposals only; nothing here has been executed** |
-| `16_THE_EMISSION/` | the `• → D1..D5 → ○` ladder as a generated projection. ⚠ `check_anchors.py` exits 1 — **do not cite until it exits 0** |
+| `16_THE_EMISSION/` | the `• → D1..D5 → ○` ladder as a generated projection. ⚠ `check_anchors.py` exits 1 — **do not cite until it exits 0** *(superseded as live measurement 2026-08-29; still not Established — currency note below)* |
 | `90_ARCHIVE/` | cold provenance and superseded bodies |
 | `91_COMPATIBILITY/` | forwarding paths only — *never doctrine* |
+
+Currency note 2026-08-29 (Magnum): `python3 check_anchors.py` in `16_THE_EMISSION` measured EXIT 0, PASS 339 anchors, 0 failures, 51 warnings. Historical README exit 1 / 233 is not live. The sentence above is superseded as measurement, not deleted. Do not treat this exit 0 as Established admission or world evidence. 51 warnings remain. 44 of 168 prose anchors absent from `ANCHORS.jsonl` ledger.
 
 ## Current standing
 
