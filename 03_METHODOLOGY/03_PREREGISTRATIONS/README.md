@@ -33,6 +33,7 @@ result-shopping.
 | [`pqa_54/`](pqa_54/) | [D] self-contained reference implementation | Public atlas, schemas, deterministic synthetic fixtures, vector scorer, public projection, CLI and freeze custody. |
 | [`08_M4_COMPRESSION_PROTOCOL_v0.1.md`](08_M4_COMPRESSION_PROTOCOL_v0.1.md) | [D] draft protocol; no corpus scored | Frozen-corpus compression test with native, one-axis, alternate-two-axis, added-axis, and learned/no-placement comparators. |
 | [`v2_2_contracts/`](v2_2_contracts/) | [D] deterministic research contracts | Machine contracts and synthetic tests for M4 compression, SLWP boundary asymmetry, and all 24 force assignments. |
+| [`frontier_protocol/`](frontier_protocol/) | [D] offline-ready reference protocol; no live service or accepted result | Five-object Gap → Candidate → Frozen Test → World Receipt → Revision contract, deterministic twelve-gap projection, static machine surfaces, and launch-null tests. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
 | [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
 
