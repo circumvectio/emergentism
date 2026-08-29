@@ -83,6 +83,7 @@
     {"path":"record/churning/index.html","family":"churning","shell":"churning"},
     {"path":"record/eub-1/index.html","family":"research","shell":"core","navigationSection":"research"},
     {"path":"record/pqa-54/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"frontier/index.html","family":"research","shell":"core","navigationSection":"research"},
     {"path":"lab/index.html","family":"research","shell":"core","navigationSection":"research"},
     {"path":"discoveries/index.html","family":"library","shell":"core","navigationSection":"library"},
     {"path":"book/index.html","family":"library","shell":"book"},

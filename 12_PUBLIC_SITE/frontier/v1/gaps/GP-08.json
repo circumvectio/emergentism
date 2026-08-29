@@ -1,0 +1,43 @@
+{
+  "accepted_domain_recovery": "Recover all shared operational predictions.",
+  "candidate_ids": [],
+  "execution_requirement": "discriminator-or-nonidentifiability-required",
+  "gap_id": "frontier-gap:GP-08",
+  "held_out_incremental_prediction": "An observation sensitive to ontic plurality rather than epistemic support.",
+  "independent_replication": "Independent foundations analysis and empirical replication if identifiable.",
+  "kill_criterion": "No interpretation-sensitive discriminator exists.",
+  "maturity_state": "deferred",
+  "native_equations": "Shared native formalism plus interpretation-specific predictions if any.",
+  "native_objects": "Operational observations and rival quantum or cosmological interpretations.",
+  "no_placement_rival": "One actual history plus epistemic uncertainty.",
+  "permutation_challenge": "Exchange interpretation labels without changing observables.",
+  "public_href": "/frontier/v1/gaps/GP-08.json",
+  "public_routing_state": {
+    "execution": "discriminator-or-nonidentifiability-required",
+    "maturity": "deferred",
+    "program": "deferred"
+  },
+  "question": "Is there any observation that distinguishes ontic plurality of complete histories from epistemic support over alternatives?",
+  "receipt_ids": [],
+  "revision_ids": [],
+  "schema_id": "FrontierGap.v1",
+  "source_gap_id": "GP-08",
+  "source_refs": [
+    {
+      "authority": "canonical_gap_owner",
+      "json_pointer": "/rows/10",
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "authority": "public_routing_overlay",
+      "json_pointer": "/openQuestions/8",
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "survivor": "History-space modeling remains valid mathematics.",
+  "test_ids": [],
+  "tier": "[C]",
+  "title": "Ontology-sensitive plurality"
+}

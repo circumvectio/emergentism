@@ -46,12 +46,14 @@ EXTRA = (
     "public_semantic_parity.json",
     "emergentism-design.v1.json",
     "living-map.json",
+    "frontier/v1/catalog.json",
     "book/rag_index.json",
 )
 REQUIRED_RUNTIME_JSON = {
     "living-map.json",
     "book/rag_index.json",
     "emergentism-design.v1.json",
+    "frontier/v1/catalog.json",
 }
 
 # HTML COUNTS TOO, and leaving it out was a real hole in the first version of this script.

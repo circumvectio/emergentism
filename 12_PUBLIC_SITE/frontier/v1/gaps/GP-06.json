@@ -1,0 +1,43 @@
+{
+  "accepted_domain_recovery": "Recover carrier, incentive, command and environment effects first.",
+  "candidate_ids": [],
+  "execution_requirement": "composite-test-required",
+  "gap_id": "frontier-gap:GP-06",
+  "held_out_incremental_prediction": "Trace intervention predicts later selection across turnover beyond rivals.",
+  "independent_replication": "A second site reproduces all five markers with bearer costs.",
+  "kill_criterion": "Any marker fails or rivals absorb the intervention effect.",
+  "maturity_state": "component-supported",
+  "native_equations": "Native causal or organizational models for trace and choice intervention.",
+  "native_objects": "Trace, carriers, turnover, choices, recurrent bias and attributed substrate costs.",
+  "no_placement_rival": "Carrier identity, incentives, direct coordination, environment or observer narrative.",
+  "permutation_challenge": "Remove, scramble and replace traces and carriers separately.",
+  "public_href": "/frontier/v1/gaps/GP-06.json",
+  "public_routing_state": {
+    "execution": "composite-test-required",
+    "maturity": "component-supported",
+    "program": "queued"
+  },
+  "question": "Does a persistent shared trace survive carrier turnover and measurably reweight later choices beyond current incentives and direct coordination?",
+  "receipt_ids": [],
+  "revision_ids": [],
+  "schema_id": "FrontierGap.v1",
+  "source_gap_id": "GP-06",
+  "source_refs": [
+    {
+      "authority": "canonical_gap_owner",
+      "json_pointer": "/rows/4",
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "authority": "public_routing_overlay",
+      "json_pointer": "/openQuestions/5",
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "survivor": "Trace-mediated coordination in its native scope.",
+  "test_ids": [],
+  "tier": "[I/C]",
+  "title": "Egregoreotype trace intervention"
+}

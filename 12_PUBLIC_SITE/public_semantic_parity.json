@@ -31,6 +31,7 @@
       "record/churning/index.html",
       "record/eub-1/index.html",
       "record/pqa-54/index.html",
+      "frontier/index.html",
       "lab/index.html",
       "discoveries/index.html",
       "book/index.html",
@@ -243,6 +244,40 @@
     "truthTransfer": false,
     "scoreTransfer": false,
     "boundary": "A companion join may bind exact hashes; neither benchmark validates the other."
+  },
+  "frontierProtocol": {
+    "schemaId": "FrontierGraph.v1",
+    "protocolVersion": "1.0.0",
+    "semanticOwner": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md",
+    "publicPage": "frontier/index.html",
+    "catalog": "frontier/v1/catalog.json",
+    "schema": "frontier/v1/schema.json",
+    "gapOutputPrefix": "frontier/v1/gaps/",
+    "launchCounts": {
+      "gaps": 12,
+      "candidates": 0,
+      "frozenTests": 0,
+      "worldReceipts": 0,
+      "revisions": 0
+    },
+    "sourceInputs": [
+      {
+        "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+        "sha256": "775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f",
+        "role": "canonical_gap_owner"
+      },
+      {
+        "path": "12_PUBLIC_SITE/living-map.json",
+        "sha256": "89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16",
+        "role": "public_routing_overlay"
+      }
+    ],
+    "completenessClaim": false,
+    "worldContactAccepted": 0,
+    "liveService": false,
+    "modelAgreementIsTruthEvidence": false,
+    "paymentCanBuyStanding": false,
+    "boundary": "A model answer is raw intake. Static retrieval and schema validity create no candidate acceptance, frozen test, world receipt, revision, evidence tier, authority, deployment, institutional status, or truth."
   },
   "statusSourceClaims": [
     {
@@ -2069,6 +2104,7 @@
     "ecology/index.html",
     "book/index.html",
     "map/index.html",
+    "frontier/index.html",
     "lab/index.html",
     "contribute/index.html",
     "spark/index.html",
@@ -2077,6 +2113,7 @@
     "assets/css/living-map.css",
     "assets/css/gestalt-v2.css",
     "assets/css/burrisphere-instrument.css",
+    "assets/css/frontier.css",
     "assets/js/living-map.js",
     "assets/js/gestalt-v2.js",
     "assets/js/burrisphere-instrument.js",
@@ -2102,7 +2139,21 @@
     "questions/fourth-churning.json",
     "questions/schemas/TypeCollision.v1.schema.json",
     "questions/schemas/MysteryDiagnosis.v1.schema.json",
-    "questions/schemas/FourthChurningCorpus.v1.schema.json"
+    "questions/schemas/FourthChurningCorpus.v1.schema.json",
+    "frontier/v1/catalog.json",
+    "frontier/v1/schema.json",
+    "frontier/v1/gaps/GP-01.json",
+    "frontier/v1/gaps/GP-02.json",
+    "frontier/v1/gaps/GP-03.json",
+    "frontier/v1/gaps/GP-04.json",
+    "frontier/v1/gaps/GP-05.json",
+    "frontier/v1/gaps/GP-06.json",
+    "frontier/v1/gaps/GP-07.json",
+    "frontier/v1/gaps/GP-08.json",
+    "frontier/v1/gaps/GP-09.json",
+    "frontier/v1/gaps/GP-10.json",
+    "frontier/v1/gaps/GP-11.json",
+    "frontier/v1/gaps/GP-12.json"
   ],
   "frozenLibraryRoots": [
     "papers",

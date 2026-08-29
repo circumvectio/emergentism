@@ -1,0 +1,43 @@
+{
+  "accepted_domain_recovery": "Recover the native domain baseline and show that each candidate preserves its declared order and boundary behavior before outcome contact.",
+  "candidate_ids": [],
+  "execution_requirement": "scale-contract-required",
+  "gap_id": "frontier-gap:GP-03",
+  "held_out_incremental_prediction": "Only after the scale contract survives, compare held-out calibration and prediction; otherwise publish non-identifiability.",
+  "independent_replication": "An external custodian audits the scale contract, reruns any lawful frozen comparison, and publishes nulls.",
+  "kill_criterion": "No conclusion survives admissible reparameterization, rank reversals are arbitrary, or the measures encode the desired result.",
+  "maturity_state": "packet-complete",
+  "native_equations": "The selected minimum convention and other conjunctive rules; a product is admissible as a ranking only under separately defended cardinal scales.",
+  "native_objects": "Ordinal foresight and usable-means ranks, declared admissible transformations, and outcome; cardinal variables only if separately validated and commensurate.",
+  "no_placement_rival": "No cross-factor scalar ranking, or an ordinary domain aggregator selected without D-level placement.",
+  "permutation_challenge": "Reparameterize inputs over the declared admissible class and test whether the conclusion and ranking survive.",
+  "public_href": "/frontier/v1/gaps/GP-03.json",
+  "public_routing_state": {
+    "execution": "discriminator-or-nonidentifiability-required",
+    "maturity": "packet-complete",
+    "program": "deferred"
+  },
+  "question": "Does any cross-factor AND-class conclusion survive the admissible strictly increasing reparameterizations of the declared ordinal inputs?",
+  "receipt_ids": [],
+  "revision_ids": [],
+  "schema_id": "FrontierGap.v1",
+  "source_gap_id": "GP-03",
+  "source_refs": [
+    {
+      "authority": "canonical_gap_owner",
+      "json_pointer": "/rows/0",
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "authority": "public_routing_overlay",
+      "json_pointer": "/openQuestions/2",
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "survivor": "Joint necessity and the selected minimum convention; a local product only under a defended cardinal scale.",
+  "test_ids": [],
+  "tier": "[C]",
+  "title": "Ordinal AND-class aggregation"
+}

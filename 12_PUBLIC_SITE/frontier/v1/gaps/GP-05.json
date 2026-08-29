@@ -1,0 +1,43 @@
+{
+  "accepted_domain_recovery": "Each row recovers its lower register independently.",
+  "candidate_ids": [],
+  "execution_requirement": "row-by-row-only",
+  "gap_id": "frontier-gap:GP-05",
+  "held_out_incremental_prediction": "One frozen discriminator per seam before any census result.",
+  "independent_replication": "Every row requires separate external replication.",
+  "kill_criterion": "Rows are arbitrary or a proposed irreducible freedom escapes the scaffold.",
+  "maturity_state": "packet-complete",
+  "native_equations": "Native lower and candidate upper models for each seam.",
+  "native_objects": "One declared system and candidate new freedom per crossing.",
+  "no_placement_rival": "Continuous multiscale description or another rung count.",
+  "permutation_challenge": "Change rung order and labels; test whether each row remains nonarbitrary.",
+  "public_href": "/frontier/v1/gaps/GP-05.json",
+  "public_routing_state": {
+    "execution": "row-by-row-only",
+    "maturity": "packet-complete",
+    "program": "queued"
+  },
+  "question": "Does each proposed aperture possess an independent novelty discriminator and a lower-register recovery test?",
+  "receipt_ids": [],
+  "revision_ids": [],
+  "schema_id": "FrontierGap.v1",
+  "source_gap_id": "GP-05",
+  "source_refs": [
+    {
+      "authority": "canonical_gap_owner",
+      "json_pointer": "/rows/8",
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "authority": "public_routing_overlay",
+      "json_pointer": "/openQuestions/4",
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "survivor": "A non-exhaustive address system.",
+  "test_ids": [],
+  "tier": "[I/C]",
+  "title": "Five-crossing census"
+}

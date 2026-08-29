@@ -191,6 +191,8 @@ A longer manifesto manuscript is not the current reader. Titans / Serpent / Reci
 - Record and corrections: https://emergentism.org/record/
 - Open problems (run these, or fail honestly): https://emergentism.org/record/problems.json
 - Frontier ledger (tier movement only): https://emergentism.org/record/frontier.json
+- Frontier research-object catalogue (12 gaps; launch state 12/0/0/0/0): https://emergentism.org/frontier/v1/catalog.json
+- Frontier human index: https://emergentism.org/frontier/
 - Book: https://emergentism.org/book/
 - Exit: https://emergentism.org/exit/
 - Crawler map: https://emergentism.org/llms.txt

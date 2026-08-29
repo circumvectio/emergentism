@@ -26,6 +26,9 @@ or use by any future model-training run.
 - [The Dasein Test, EUB-1 v1.0](https://emergentism.org/record/eub-1/): offline-ready benchmark construct; no candidate evaluated
 - [Open problems (JSON)](https://emergentism.org/record/problems.json): holes with acceptance and kill; not a brochure
 - [Frontier ledger (JSON)](https://emergentism.org/record/frontier.json): CLAIM_STATUS rows — raise, kill, no completeness, no reach score
+- [The Frontier](https://emergentism.org/frontier/): twelve W7 gaps as inspectable, source-bound research objects
+- [Frontier catalogue (JSON)](https://emergentism.org/frontier/v1/catalog.json): deterministic Gap → Candidate → Frozen Test → World Receipt → Revision launch graph; 12/0/0/0/0
+- [Frontier schema (JSON Schema)](https://emergentism.org/frontier/v1/schema.json): five object shapes; schema validity is not truth or evidence
 - [Book](https://emergentism.org/book/)
 - [Exit](https://emergentism.org/exit/)
 

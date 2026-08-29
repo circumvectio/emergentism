@@ -1,0 +1,43 @@
+{
+  "accepted_domain_recovery": "Recover accepted theory in its tested domain before any crosswalk.",
+  "candidate_ids": [],
+  "execution_requirement": "24-permutation-preregistration-draft",
+  "gap_id": "frontier-gap:GP-10",
+  "held_out_incremental_prediction": "One novel quantitative row-specific prediction.",
+  "independent_replication": "Independent physics group reproduces prediction and recovery.",
+  "kill_criterion": "Rows permute freely, lack mechanism or fail recovery.",
+  "maturity_state": "deferred",
+  "native_equations": "Standard Model, general relativity or effective native equations as applicable.",
+  "native_objects": "Native fields, states, symmetries, observables and interactions for each row.",
+  "no_placement_rival": "Native theories with no Emergentist grammar.",
+  "permutation_challenge": "Test all 24 row permutations and matched decorative maps.",
+  "public_href": "/frontier/v1/gaps/GP-10.json",
+  "public_routing_state": {
+    "execution": "native-row-maps-missing",
+    "maturity": "deferred",
+    "program": "deferred"
+  },
+  "question": "Does each proposed force-affinity row recover its native theory and outperform every permutation on a quantitative discriminator?",
+  "receipt_ids": [],
+  "revision_ids": [],
+  "schema_id": "FrontierGap.v1",
+  "source_gap_id": "GP-10",
+  "source_refs": [
+    {
+      "authority": "canonical_gap_owner",
+      "json_pointer": "/rows/9",
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "authority": "public_routing_overlay",
+      "json_pointer": "/openQuestions/10",
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "survivor": "Historical origin and D-scaffold translation only.",
+  "test_ids": [],
+  "tier": "[C]",
+  "title": "Force and freedom affinities"
+}

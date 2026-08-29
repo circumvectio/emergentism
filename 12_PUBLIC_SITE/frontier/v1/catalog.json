@@ -1,0 +1,575 @@
+{
+  "candidate_records": [],
+  "completeness_claim": false,
+  "counts": {
+    "candidates": 0,
+    "frozen_tests": 0,
+    "gaps": 12,
+    "revisions": 0,
+    "world_receipts": 0
+  },
+  "frozen_test_records": [],
+  "gaps": [
+    {
+      "accepted_domain_recovery": "Recover the native domain baseline and show that each candidate preserves its declared order and boundary behavior before outcome contact.",
+      "candidate_ids": [],
+      "execution_requirement": "scale-contract-required",
+      "gap_id": "frontier-gap:GP-03",
+      "held_out_incremental_prediction": "Only after the scale contract survives, compare held-out calibration and prediction; otherwise publish non-identifiability.",
+      "independent_replication": "An external custodian audits the scale contract, reruns any lawful frozen comparison, and publishes nulls.",
+      "kill_criterion": "No conclusion survives admissible reparameterization, rank reversals are arbitrary, or the measures encode the desired result.",
+      "maturity_state": "packet-complete",
+      "native_equations": "The selected minimum convention and other conjunctive rules; a product is admissible as a ranking only under separately defended cardinal scales.",
+      "native_objects": "Ordinal foresight and usable-means ranks, declared admissible transformations, and outcome; cardinal variables only if separately validated and commensurate.",
+      "no_placement_rival": "No cross-factor scalar ranking, or an ordinary domain aggregator selected without D-level placement.",
+      "permutation_challenge": "Reparameterize inputs over the declared admissible class and test whether the conclusion and ranking survive.",
+      "public_href": "/frontier/v1/gaps/GP-03.json",
+      "public_routing_state": {
+        "execution": "discriminator-or-nonidentifiability-required",
+        "maturity": "packet-complete",
+        "program": "deferred"
+      },
+      "question": "Does any cross-factor AND-class conclusion survive the admissible strictly increasing reparameterizations of the declared ordinal inputs?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-03",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/0",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/2",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Joint necessity and the selected minimum convention; a local product only under a defended cardinal scale.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Ordinal AND-class aggregation"
+    },
+    {
+      "accepted_domain_recovery": "Recover resource accounting and task-performance baselines.",
+      "candidate_ids": [],
+      "execution_requirement": "ready-to-freeze",
+      "gap_id": "frontier-gap:GP-04",
+      "held_out_incremental_prediction": "Predict outcome and remaining means in held-out states.",
+      "independent_replication": "Independent lab repeats the measurement design.",
+      "kill_criterion": "No recurrent trade-off or a simpler surface predicts as well.",
+      "maturity_state": "packet-complete",
+      "native_equations": "No-tradeoff, additive, nonlinear and state-dependent resource-surface rivals.",
+      "native_objects": "Measured modeling cost, usable means, task state and outcome.",
+      "no_placement_rival": "Ordinary resource-allocation model without Phi/V interpretation.",
+      "permutation_challenge": "Exchange labels and functional forms while holding measured budgets fixed.",
+      "public_href": "/frontier/v1/gaps/GP-04.json",
+      "public_routing_state": {
+        "execution": "ready-to-freeze",
+        "maturity": "packet-complete",
+        "program": "queued"
+      },
+      "question": "What measurable budget surface, if any, relates option-model quality, its resource cost, and remaining usable means?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-04",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/1",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/3",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Joint necessity may remain a task-specific description.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Foresight and usable-means surface"
+    },
+    {
+      "accepted_domain_recovery": "Reproduce known control effects without an Emergentist variable.",
+      "candidate_ids": [],
+      "execution_requirement": "new-preregistration-required",
+      "gap_id": "frontier-gap:GP-07",
+      "held_out_incremental_prediction": "Content-specific change in present action beyond matched controls.",
+      "independent_replication": "Independent sample and analysts reproduce the effect.",
+      "kill_criterion": "Effect vanishes under fair controls or does not replicate.",
+      "maturity_state": "component-supported",
+      "native_equations": "Native behavioral or cognitive model selected before data contact.",
+      "native_objects": "Present representations, salience, demand, reward, memory, expectancy and action.",
+      "no_placement_rival": "Generic framing, salience, demand, memory or reward model.",
+      "permutation_challenge": "Permute content while matching salience, demand and reward.",
+      "public_href": "/frontier/v1/gaps/GP-07.json",
+      "public_routing_state": {
+        "execution": "new-preregistration-required",
+        "maturity": "component-supported",
+        "program": "queued"
+      },
+      "question": "Does changing represented future content alter present selection beyond salience, demand, reward framing, memory, and expectancy?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-07",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/2",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/7",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Present models can guide ordinary present action.",
+      "test_ids": [],
+      "tier": "[I/C]",
+      "title": "Controlled future-content effect"
+    },
+    {
+      "accepted_domain_recovery": "Both models recover training-domain behavior before intervention.",
+      "candidate_ids": [],
+      "execution_requirement": "real-domain-freeze-required",
+      "gap_id": "frontier-gap:GP-01",
+      "held_out_incremental_prediction": "Relation-aware model predicts held-out intervention outcome.",
+      "independent_replication": "Independent domain team repeats the intervention.",
+      "kill_criterion": "Relations add no discrimination or fail to recover element behavior.",
+      "maturity_state": "packet-complete",
+      "native_equations": "Element-only and relation-aware native models.",
+      "native_objects": "Identical element inventories, intervenable relation structures and outcomes.",
+      "no_placement_rival": "Feature engineering or definitional expansion without emergence language.",
+      "permutation_challenge": "Randomize relation labels and structures while preserving inventories.",
+      "public_href": "/frontier/v1/gaps/GP-01.json",
+      "public_routing_state": {
+        "execution": "real-domain-freeze-required",
+        "maturity": "packet-complete",
+        "program": "queued"
+      },
+      "question": "Can a relation-aware model predict an intervention better than a model with the same elements but no explicit relation structure?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-01",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/3",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/0",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "D2 remains a useful configuration address.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Relation intervention"
+    },
+    {
+      "accepted_domain_recovery": "Recover carrier, incentive, command and environment effects first.",
+      "candidate_ids": [],
+      "execution_requirement": "composite-test-required",
+      "gap_id": "frontier-gap:GP-06",
+      "held_out_incremental_prediction": "Trace intervention predicts later selection across turnover beyond rivals.",
+      "independent_replication": "A second site reproduces all five markers with bearer costs.",
+      "kill_criterion": "Any marker fails or rivals absorb the intervention effect.",
+      "maturity_state": "component-supported",
+      "native_equations": "Native causal or organizational models for trace and choice intervention.",
+      "native_objects": "Trace, carriers, turnover, choices, recurrent bias and attributed substrate costs.",
+      "no_placement_rival": "Carrier identity, incentives, direct coordination, environment or observer narrative.",
+      "permutation_challenge": "Remove, scramble and replace traces and carriers separately.",
+      "public_href": "/frontier/v1/gaps/GP-06.json",
+      "public_routing_state": {
+        "execution": "composite-test-required",
+        "maturity": "component-supported",
+        "program": "queued"
+      },
+      "question": "Does a persistent shared trace survive carrier turnover and measurably reweight later choices beyond current incentives and direct coordination?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-06",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/4",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/5",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Trace-mediated coordination in its native scope.",
+      "test_ids": [],
+      "tier": "[I/C]",
+      "title": "Egregoreotype trace intervention"
+    },
+    {
+      "accepted_domain_recovery": "Recover fixed-plan, ordinary-role, generalist-team, and standard multi-objective governance baselines before adding the placement.",
+      "candidate_ids": [],
+      "execution_requirement": "ready-to-preregister",
+      "gap_id": "frontier-gap:GP-12",
+      "held_out_incremental_prediction": "Compare held-out delivery, correction, delayed harm, lock-in, and real exit against the strongest ordinary-governance rival.",
+      "independent_replication": "An external team repeats the preregistered comparison with bearer costs and nulls visible.",
+      "kill_criterion": "No out-of-sample gain, proxy harm or lock-in appears, or an ordinary-governance rival performs as well.",
+      "maturity_state": "packet-complete",
+      "native_equations": "Standard multi-objective and receding-horizon governance comparators; Rosetta labels are never measurements.",
+      "native_objects": "Long and short horizons T_L and T_S, bearer vector, voluntary role assignments, tie-breakers, exit costs, tragic residue, and delivery and harm outcomes.",
+      "no_placement_rival": "Transparent ordinary governance with explicit horizons, responsibilities, appeals, and exit but no Emergentist or Rosetta placement.",
+      "permutation_challenge": "Swap horizons and role assignments while holding tasks, bearers, authority, and resources fixed.",
+      "public_href": "/frontier/v1/gaps/GP-12.json",
+      "public_routing_state": {
+        "execution": "ready-to-freeze",
+        "maturity": "packet-complete",
+        "program": "queued"
+      },
+      "question": "Do nested learning and responsibility horizons with explicit bearers, tie-breakers, and exit outperform ordinary governance rivals without proxy harm or lock-in?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-12",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/5",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/6",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "An explicit horizon, bearer, tie-breaker, tragic-residue, and exit record.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Nested-horizon coordination"
+    },
+    {
+      "accepted_domain_recovery": "Recover reactive and planning performance before positing a distinct capacity.",
+      "candidate_ids": [],
+      "execution_requirement": "fair-D4-baselines-required",
+      "gap_id": "frontier-gap:GP-02",
+      "held_out_incremental_prediction": "Independent D5 measure predicts action beyond rich D4 baselines.",
+      "independent_replication": "Independent lab and task family reproduce the delta.",
+      "kill_criterion": "No effect beyond fair D4 baselines.",
+      "maturity_state": "component-supported",
+      "native_equations": "Native model-based, model-free, memory and search baselines.",
+      "native_objects": "Represented alternatives, present state, means, search, policy and action.",
+      "no_placement_rival": "Ordinary model-based control or cached policy.",
+      "permutation_challenge": "Manipulate future content with present state and means matched.",
+      "public_href": "/frontier/v1/gaps/GP-02.json",
+      "public_routing_state": {
+        "execution": "fair-D4-baselines-required",
+        "maturity": "component-supported",
+        "program": "queued"
+      },
+      "question": "Does a separately measured capacity to represent alternatives predict action beyond rich reactive, planning, memory, and search baselines?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-02",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/6",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/1",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Model-mediated anticipation remains ordinary causal cognition.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Distinct counterfactual capacity"
+    },
+    {
+      "accepted_domain_recovery": "Recover ordinary causal-volume results first.",
+      "candidate_ids": [],
+      "execution_requirement": "independent-metric-missing",
+      "gap_id": "frontier-gap:GP-09",
+      "held_out_incremental_prediction": "History metric predicts something beyond causal volume and search budget.",
+      "independent_replication": "Independent mathematical and empirical review.",
+      "kill_criterion": "Metric tracks only causal volume or model resolution.",
+      "maturity_state": "deferred",
+      "native_equations": "Native spacetime geometry plus an independently warranted history metric.",
+      "native_objects": "Minkowski causal volume, model resolution and independently defined history entropy.",
+      "no_placement_rival": "Ordinary spacetime volume and model-complexity accounting.",
+      "permutation_challenge": "Vary model resolution independently of physical cone geometry.",
+      "public_href": "/frontier/v1/gaps/GP-09.json",
+      "public_routing_state": {
+        "execution": "independent-metric-missing",
+        "maturity": "deferred",
+        "program": "deferred"
+      },
+      "question": "Can history entropy be defined independently of Minkowski causal volume, model resolution, and search budget?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-09",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/7",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/9",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Physical cone and option bundle remain distinct useful objects.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "History-bundle metric"
+    },
+    {
+      "accepted_domain_recovery": "Each row recovers its lower register independently.",
+      "candidate_ids": [],
+      "execution_requirement": "row-by-row-only",
+      "gap_id": "frontier-gap:GP-05",
+      "held_out_incremental_prediction": "One frozen discriminator per seam before any census result.",
+      "independent_replication": "Every row requires separate external replication.",
+      "kill_criterion": "Rows are arbitrary or a proposed irreducible freedom escapes the scaffold.",
+      "maturity_state": "packet-complete",
+      "native_equations": "Native lower and candidate upper models for each seam.",
+      "native_objects": "One declared system and candidate new freedom per crossing.",
+      "no_placement_rival": "Continuous multiscale description or another rung count.",
+      "permutation_challenge": "Change rung order and labels; test whether each row remains nonarbitrary.",
+      "public_href": "/frontier/v1/gaps/GP-05.json",
+      "public_routing_state": {
+        "execution": "row-by-row-only",
+        "maturity": "packet-complete",
+        "program": "queued"
+      },
+      "question": "Does each proposed aperture possess an independent novelty discriminator and a lower-register recovery test?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-05",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/8",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/4",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "A non-exhaustive address system.",
+      "test_ids": [],
+      "tier": "[I/C]",
+      "title": "Five-crossing census"
+    },
+    {
+      "accepted_domain_recovery": "Recover accepted theory in its tested domain before any crosswalk.",
+      "candidate_ids": [],
+      "execution_requirement": "24-permutation-preregistration-draft",
+      "gap_id": "frontier-gap:GP-10",
+      "held_out_incremental_prediction": "One novel quantitative row-specific prediction.",
+      "independent_replication": "Independent physics group reproduces prediction and recovery.",
+      "kill_criterion": "Rows permute freely, lack mechanism or fail recovery.",
+      "maturity_state": "deferred",
+      "native_equations": "Standard Model, general relativity or effective native equations as applicable.",
+      "native_objects": "Native fields, states, symmetries, observables and interactions for each row.",
+      "no_placement_rival": "Native theories with no Emergentist grammar.",
+      "permutation_challenge": "Test all 24 row permutations and matched decorative maps.",
+      "public_href": "/frontier/v1/gaps/GP-10.json",
+      "public_routing_state": {
+        "execution": "native-row-maps-missing",
+        "maturity": "deferred",
+        "program": "deferred"
+      },
+      "question": "Does each proposed force-affinity row recover its native theory and outperform every permutation on a quantitative discriminator?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-10",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/9",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/10",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Historical origin and D-scaffold translation only.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Force and freedom affinities"
+    },
+    {
+      "accepted_domain_recovery": "Recover all shared operational predictions.",
+      "candidate_ids": [],
+      "execution_requirement": "discriminator-or-nonidentifiability-required",
+      "gap_id": "frontier-gap:GP-08",
+      "held_out_incremental_prediction": "An observation sensitive to ontic plurality rather than epistemic support.",
+      "independent_replication": "Independent foundations analysis and empirical replication if identifiable.",
+      "kill_criterion": "No interpretation-sensitive discriminator exists.",
+      "maturity_state": "deferred",
+      "native_equations": "Shared native formalism plus interpretation-specific predictions if any.",
+      "native_objects": "Operational observations and rival quantum or cosmological interpretations.",
+      "no_placement_rival": "One actual history plus epistemic uncertainty.",
+      "permutation_challenge": "Exchange interpretation labels without changing observables.",
+      "public_href": "/frontier/v1/gaps/GP-08.json",
+      "public_routing_state": {
+        "execution": "discriminator-or-nonidentifiability-required",
+        "maturity": "deferred",
+        "program": "deferred"
+      },
+      "question": "Is there any observation that distinguishes ontic plurality of complete histories from epistemic support over alternatives?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-08",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/10",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/8",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "History-space modeling remains valid mathematics.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Ontology-sensitive plurality"
+    },
+    {
+      "accepted_domain_recovery": "All earlier row recoveries and nulls remain visible.",
+      "candidate_ids": [],
+      "execution_requirement": "runs-last",
+      "gap_id": "frontier-gap:GP-11",
+      "held_out_incremental_prediction": "One novel frozen discriminator not inherited from component theories.",
+      "independent_replication": "External red team, independent replication and published null route.",
+      "kill_criterion": "No incremental prediction or recurring harmful overreach.",
+      "maturity_state": "deferred",
+      "native_equations": "Every native science retains its accepted equations; common dynamics must be separately supplied.",
+      "native_objects": "Plural native-domain objects plus predeclared common task and consequences.",
+      "no_placement_rival": "Plural native sciences with no common Emergentist placement.",
+      "permutation_challenge": "Compare the complete grammar with reordered mappings and a no-placement rival.",
+      "public_href": "/frontier/v1/gaps/GP-11.json",
+      "public_routing_state": {
+        "execution": "runs-last",
+        "maturity": "deferred",
+        "program": "deferred"
+      },
+      "question": "Can the complete grammar make one novel frozen prediction with consequence value beyond serious plural-domain rivals?",
+      "receipt_ids": [],
+      "revision_ids": [],
+      "schema_id": "FrontierGap.v1",
+      "source_gap_id": "GP-11",
+      "source_refs": [
+        {
+          "authority": "canonical_gap_owner",
+          "json_pointer": "/rows/11",
+          "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+          "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+        },
+        {
+          "authority": "public_routing_overlay",
+          "json_pointer": "/openQuestions/11",
+          "path": "12_PUBLIC_SITE/living-map.json",
+          "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+        }
+      ],
+      "survivor": "Tier, rival, kill, receipt, repair and exit discipline.",
+      "test_ids": [],
+      "tier": "[C]",
+      "title": "Integrated worldview adequacy"
+    }
+  ],
+  "lifecycle": [
+    "FrontierGap.v1",
+    "FrontierCandidate.v1",
+    "FrontierFrozenTest.v1",
+    "FrontierWorldReceiptRef.v1",
+    "FrontierRevision.v1"
+  ],
+  "live_service": {
+    "accepts_credentials": false,
+    "accepts_payment": false,
+    "accepts_private_data": false,
+    "accepts_submissions": false,
+    "enabled": false,
+    "may_authorize": false,
+    "may_sign": false,
+    "model_execution": false,
+    "sensor_ingestion": false
+  },
+  "projection_state": "OFFLINE_READY_DRAFT",
+  "protocol_version": "1.0.0",
+  "revision_records": [],
+  "role_firewall": {
+    "emergentism": "TYPING_VERSIONING_CUSTODY_AND_EXIT_PROTOCOL",
+    "evidence_custodian": "INDEPENDENT_PROVENANCE_AND_RESULT_REFERENCE",
+    "model": "CANDIDATE_CONTRIBUTOR_NO_AUTHORITY",
+    "principal": "EXTERNAL_MANDATE_AND_AUTHORIZATION_BEARER",
+    "sensor": "OBSERVATION_CARRIER_NOT_INDEPENDENT_WITNESS"
+  },
+  "schema_id": "FrontierGraph.v1",
+  "semantic_owner": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md",
+  "source_authority": "The W7 register owns canonical gap contracts; living-map.json owns public routing only; this graph is a deterministic reference projection.",
+  "source_inputs": [
+    {
+      "path": "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml",
+      "role": "canonical_gap_owner",
+      "sha256": "sha256:775800070a05ca119a52874e34c86cfb3515ae5c55d1292c06e9115d369f843f"
+    },
+    {
+      "path": "12_PUBLIC_SITE/living-map.json",
+      "role": "public_routing_overlay",
+      "sha256": "sha256:89361e816e74ae838e00013d70ebeddfa4bf9741a7db5e4ce986aa64b4ba9e16"
+    }
+  ],
+  "world_contact_accepted": 0,
+  "world_receipt_refs": []
+}

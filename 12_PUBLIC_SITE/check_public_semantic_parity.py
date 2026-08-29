@@ -35,7 +35,7 @@ EXPECTED_CORE_JOURNEY = [
     "churn/index.html", "amrita/index.html", "halahala/index.html",
     "practice/index.html", "spark/index.html",
     "record/index.html", "record/churning/index.html",
-    "record/eub-1/index.html", "record/pqa-54/index.html", "lab/index.html",
+    "record/eub-1/index.html", "record/pqa-54/index.html", "frontier/index.html", "lab/index.html",
     "discoveries/index.html", "book/index.html", "about/index.html",
     "contribute/index.html", "exit/index.html",
 ]
@@ -2223,6 +2223,139 @@ def validate_v4_contracts(data: dict, errors: list[str]) -> None:
         errors.append("researchCompanions PQA-54 boundary drift")
 
 
+def validate_frontier_protocol(data: dict, errors: list[str]) -> None:
+    """Keep the AI-facing Frontier a source-bound, launch-null projection."""
+
+    contract = data.get("frontierProtocol")
+    if not isinstance(contract, dict):
+        errors.append("frontierProtocol must be an object")
+        return
+    expected_keys = {
+        "schemaId", "protocolVersion", "semanticOwner", "publicPage", "catalog",
+        "schema", "gapOutputPrefix", "launchCounts", "sourceInputs",
+        "completenessClaim", "worldContactAccepted", "liveService",
+        "modelAgreementIsTruthEvidence", "paymentCanBuyStanding", "boundary",
+    }
+    if set(contract) != expected_keys:
+        errors.append("frontierProtocol field set drift")
+    if contract.get("schemaId") != "FrontierGraph.v1" or contract.get("protocolVersion") != "1.0.0":
+        errors.append("frontierProtocol identity drift")
+    owner_rel = "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md"
+    if contract.get("semanticOwner") != owner_rel or not (ROOT / owner_rel).is_file():
+        errors.append("frontierProtocol semantic owner drift")
+    if contract.get("launchCounts") != {
+        "gaps": 12,
+        "candidates": 0,
+        "frozenTests": 0,
+        "worldReceipts": 0,
+        "revisions": 0,
+    }:
+        errors.append("frontierProtocol launch counts must remain 12/0/0/0/0")
+    for field, expected in (
+        ("completenessClaim", False),
+        ("worldContactAccepted", 0),
+        ("liveService", False),
+        ("modelAgreementIsTruthEvidence", False),
+        ("paymentCanBuyStanding", False),
+    ):
+        if contract.get(field) != expected:
+            errors.append(f"frontierProtocol.{field} boundary drift")
+
+    expected_sources = {
+        "03_METHODOLOGY/00_W7_SCIENCE_INTEGRATION_EXECUTION_REGISTER.yaml": "canonical_gap_owner",
+        "12_PUBLIC_SITE/living-map.json": "public_routing_overlay",
+    }
+    sources = contract.get("sourceInputs")
+    if not isinstance(sources, list) or len(sources) != 2:
+        errors.append("frontierProtocol must bind exactly two source inputs")
+        sources = []
+    seen: set[str] = set()
+    for source in sources:
+        if not isinstance(source, dict) or set(source) != {"path", "sha256", "role"}:
+            errors.append("frontierProtocol source-input shape drift")
+            continue
+        rel = source.get("path")
+        seen.add(str(rel))
+        if expected_sources.get(rel) != source.get("role"):
+            errors.append(f"frontierProtocol source role drift: {rel}")
+        path = ROOT / str(rel)
+        if not path.is_file():
+            errors.append(f"frontierProtocol source missing: {rel}")
+        elif source.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
+            errors.append(f"frontierProtocol source hash drift: {rel}")
+    if seen != set(expected_sources):
+        errors.append("frontierProtocol source set drift")
+
+    page_rel = contract.get("publicPage")
+    catalog_rel = contract.get("catalog")
+    schema_rel = contract.get("schema")
+    for rel in (page_rel, catalog_rel, schema_rel):
+        if not isinstance(rel, str) or not (SITE / rel).is_file():
+            errors.append(f"frontierProtocol output missing: {rel}")
+    if page_rel not in data.get("currentSurfaces", []):
+        errors.append("frontierProtocol public page is not a current surface")
+    machine = set(data.get("machineSurfaces", []))
+    gap_outputs = {f"frontier/v1/gaps/GP-{index:02d}.json" for index in range(1, 13)}
+    expected_machine = {str(catalog_rel), str(schema_rel), *gap_outputs}
+    if not expected_machine.issubset(machine):
+        errors.append("frontierProtocol machine outputs are not all registered")
+    if isinstance(catalog_rel, str) and (SITE / catalog_rel).is_file():
+        catalog = json.loads((SITE / catalog_rel).read_text(encoding="utf-8"))
+        if catalog.get("schema_id") != "FrontierGraph.v1":
+            errors.append("frontier catalog schema drift")
+        if catalog.get("counts") != {
+            "gaps": 12,
+            "candidates": 0,
+            "frozen_tests": 0,
+            "world_receipts": 0,
+            "revisions": 0,
+        }:
+            errors.append("frontier catalog launch counts drift")
+        if catalog.get("completeness_claim") is not False or catalog.get("world_contact_accepted") != 0:
+            errors.append("frontier catalog result boundary drift")
+        gaps = catalog.get("gaps")
+        if not isinstance(gaps, list) or len(gaps) != 12:
+            errors.append("frontier catalog must contain twelve gaps")
+        elif len({row.get("gap_id") for row in gaps if isinstance(row, dict)}) != 12:
+            errors.append("frontier catalog gap IDs are not unique")
+    if isinstance(schema_rel, str) and (SITE / schema_rel).is_file():
+        source_schema = ROOT / "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/FrontierGraph.v1.schema.json"
+        if not source_schema.is_file() or (SITE / schema_rel).read_bytes() != source_schema.read_bytes():
+            errors.append("frontier public schema differs from its source sidecar")
+    if isinstance(page_rel, str) and (SITE / page_rel).is_file():
+        page = (SITE / page_rel).read_text(encoding="utf-8")
+        for marker in (
+            "Every intelligence", "OFFLINE-READY · [D]", "The Socket Rack",
+            "No model is connected", "Fund the search.", "Never purchase standing.",
+        ):
+            if marker not in page:
+                errors.append(f"frontier page missing boundary marker: {marker}")
+        if page.count('class="fr-socket"') != 12:
+            errors.append("frontier page must render twelve static sockets")
+
+    atlas_path = SITE / "atlas/site_index.json"
+    if atlas_path.is_file():
+        atlas = json.loads(atlas_path.read_text(encoding="utf-8"))
+        atlas_hrefs = {
+            page.get("href")
+            for section in atlas.get("tree", [])
+            if isinstance(section, dict)
+            for page in section.get("pages", [])
+            if isinstance(page, dict)
+        }
+        if "/frontier/" not in atlas_hrefs:
+            errors.append("frontier page is absent from the public Atlas index")
+
+    rag_path = SITE / "book/rag_index.json"
+    if rag_path.is_file():
+        rag = json.loads(rag_path.read_text(encoding="utf-8"))
+        if not any(
+            isinstance(row, dict) and row.get("href") == "/frontier/"
+            for row in rag.get("passages", [])
+        ):
+            errors.append("frontier page is absent from the current RAG index")
+
+
 def main() -> int:
     errors: list[str] = []
     for fixture in NODE_PRODUCT_REJECT_FIXTURES:
@@ -2288,6 +2421,7 @@ def main() -> int:
     validate_v5_churning(data, errors)
     validate_v6_fourth_churning(data, errors)
     validate_v7_decision_transaction(data, errors)
+    validate_frontier_protocol(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
     for key in required_contract:

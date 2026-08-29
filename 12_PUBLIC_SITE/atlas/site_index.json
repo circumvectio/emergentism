@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 50,
+ "total": 51,
  "tree": [
   {
    "key": "start",
@@ -171,6 +171,10 @@
    "key": "participate",
    "label": "Open research",
    "pages": [
+    {
+     "href": "/frontier/",
+     "title": "Every intelligencemeets a gap."
+    },
     {
      "href": "/f5/",
      "title": "One present. Three explanations."

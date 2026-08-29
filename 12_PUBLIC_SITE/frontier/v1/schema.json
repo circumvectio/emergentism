@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emergentism/FrontierGraph.v1",
+  "title": "FrontierGraph.v1",
+  "description": "Shape contract for a source-referenced Emergentism Frontier graph. The schema owns no doctrine, evidence, authority, or register movement.",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "protocol_version",
+    "projection_state",
+    "semantic_owner",
+    "source_authority",
+    "source_inputs",
+    "role_firewall",
+    "lifecycle",
+    "gaps",
+    "candidate_records",
+    "frozen_test_records",
+    "world_receipt_refs",
+    "revision_records",
+    "counts",
+    "completeness_claim",
+    "world_contact_accepted",
+    "live_service"
+  ],
+  "properties": {
+    "schema_id": {"const": "FrontierGraph.v1"},
+    "protocol_version": {"const": "1.0.0"},
+    "projection_state": {"const": "OFFLINE_READY_DRAFT"},
+    "semantic_owner": {"const": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md"},
+    "source_authority": {"type": "string", "minLength": 1},
+    "source_inputs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/SourceInput"}
+    },
+    "role_firewall": {"$ref": "#/$defs/RoleFirewall"},
+    "lifecycle": {
+      "const": [
+        "FrontierGap.v1",
+        "FrontierCandidate.v1",
+        "FrontierFrozenTest.v1",
+        "FrontierWorldReceiptRef.v1",
+        "FrontierRevision.v1"
+      ]
+    },
+    "gaps": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {"$ref": "#/$defs/FrontierGap"}
+    },
+    "candidate_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/FrontierCandidate"}
+    },
+    "frozen_test_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/FrontierFrozenTest"}
+    },
+    "world_receipt_refs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/FrontierWorldReceiptRef"}
+    },
+    "revision_records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/FrontierRevision"}
+    },
+    "counts": {
+      "type": "object",
+      "required": ["gaps", "candidates", "frozen_tests", "world_receipts", "revisions"],
+      "properties": {
+        "gaps": {"type": "integer", "minimum": 0},
+        "candidates": {"type": "integer", "minimum": 0},
+        "frozen_tests": {"type": "integer", "minimum": 0},
+        "world_receipts": {"type": "integer", "minimum": 0},
+        "revisions": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "completeness_claim": {"const": false},
+    "world_contact_accepted": {"const": 0},
+    "live_service": {
+      "type": "object",
+      "required": [
+        "enabled",
+        "accepts_submissions",
+        "accepts_payment",
+        "accepts_credentials",
+        "accepts_private_data",
+        "sensor_ingestion",
+        "model_execution",
+        "may_sign",
+        "may_authorize"
+      ],
+      "properties": {
+        "enabled": {"const": false},
+        "accepts_submissions": {"const": false},
+        "accepts_payment": {"const": false},
+        "accepts_credentials": {"const": false},
+        "accepts_private_data": {"const": false},
+        "sensor_ingestion": {"const": false},
+        "model_execution": {"const": false},
+        "may_sign": {"const": false},
+        "may_authorize": {"const": false}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "Hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "StringList": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "SourceInput": {
+      "type": "object",
+      "required": ["path", "sha256", "role"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/Hash"},
+        "role": {"enum": ["canonical_gap_owner", "public_routing_overlay"]}
+      },
+      "additionalProperties": false
+    },
+    "SourceRef": {
+      "type": "object",
+      "required": ["path", "json_pointer", "sha256", "authority"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "json_pointer": {"type": "string", "pattern": "^/"},
+        "sha256": {"$ref": "#/$defs/Hash"},
+        "authority": {"enum": ["canonical_gap_owner", "public_routing_overlay"]}
+      },
+      "additionalProperties": false
+    },
+    "RoleFirewall": {
+      "type": "object",
+      "required": ["model", "sensor", "principal", "evidence_custodian", "emergentism"],
+      "properties": {
+        "model": {"const": "CANDIDATE_CONTRIBUTOR_NO_AUTHORITY"},
+        "sensor": {"const": "OBSERVATION_CARRIER_NOT_INDEPENDENT_WITNESS"},
+        "principal": {"const": "EXTERNAL_MANDATE_AND_AUTHORIZATION_BEARER"},
+        "evidence_custodian": {"const": "INDEPENDENT_PROVENANCE_AND_RESULT_REFERENCE"},
+        "emergentism": {"const": "TYPING_VERSIONING_CUSTODY_AND_EXIT_PROTOCOL"}
+      },
+      "additionalProperties": false
+    },
+    "PublicRoutingState": {
+      "type": "object",
+      "required": ["maturity", "execution", "program"],
+      "properties": {
+        "maturity": {"type": "string", "minLength": 1},
+        "execution": {"type": "string", "minLength": 1},
+        "program": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "FrontierGap": {
+      "type": "object",
+      "required": [
+        "schema_id",
+        "gap_id",
+        "source_gap_id",
+        "title",
+        "tier",
+        "maturity_state",
+        "execution_requirement",
+        "public_routing_state",
+        "question",
+        "native_objects",
+        "native_equations",
+        "accepted_domain_recovery",
+        "permutation_challenge",
+        "held_out_incremental_prediction",
+        "independent_replication",
+        "no_placement_rival",
+        "kill_criterion",
+        "survivor",
+        "source_refs",
+        "candidate_ids",
+        "test_ids",
+        "receipt_ids",
+        "revision_ids",
+        "public_href"
+      ],
+      "properties": {
+        "schema_id": {"const": "FrontierGap.v1"},
+        "gap_id": {"type": "string", "pattern": "^frontier-gap:GP-[0-9]{2}$"},
+        "source_gap_id": {"type": "string", "pattern": "^GP-[0-9]{2}$"},
+        "title": {"type": "string", "minLength": 1},
+        "tier": {"enum": ["[C]", "[I/C]"]},
+        "maturity_state": {"type": "string", "minLength": 1},
+        "execution_requirement": {"type": "string", "minLength": 1},
+        "public_routing_state": {"$ref": "#/$defs/PublicRoutingState"},
+        "question": {"type": "string", "minLength": 1},
+        "native_objects": {"type": "string", "minLength": 1},
+        "native_equations": {"type": "string", "minLength": 1},
+        "accepted_domain_recovery": {"type": "string", "minLength": 1},
+        "permutation_challenge": {"type": "string", "minLength": 1},
+        "held_out_incremental_prediction": {"type": "string", "minLength": 1},
+        "independent_replication": {"type": "string", "minLength": 1},
+        "no_placement_rival": {"type": "string", "minLength": 1},
+        "kill_criterion": {"type": "string", "minLength": 1},
+        "survivor": {"type": "string", "minLength": 1},
+        "source_refs": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"$ref": "#/$defs/SourceRef"}
+        },
+        "candidate_ids": {"$ref": "#/$defs/StringList"},
+        "test_ids": {"$ref": "#/$defs/StringList"},
+        "receipt_ids": {"$ref": "#/$defs/StringList"},
+        "revision_ids": {"$ref": "#/$defs/StringList"},
+        "public_href": {"type": "string", "pattern": "^/frontier/v1/gaps/GP-[0-9]{2}\\.json$"}
+      },
+      "additionalProperties": false
+    },
+    "FrontierCandidate": {
+      "type": "object",
+      "required": [
+        "schema_id", "candidate_id", "gap_id", "status", "claim", "tier",
+        "native_frame", "native_sources", "assumptions", "formal_map",
+        "strongest_rivals", "no_placement_rival", "discriminator",
+        "kill_criterion", "survivor", "run_provenance", "may_sign",
+        "may_authorize", "changes_gap"
+      ],
+      "properties": {
+        "schema_id": {"const": "FrontierCandidate.v1"},
+        "candidate_id": {"type": "string", "minLength": 1},
+        "gap_id": {"type": "string", "pattern": "^frontier-gap:GP-[0-9]{2}$"},
+        "status": {"const": "RAW_INTAKE"},
+        "claim": {"type": "string", "minLength": 1},
+        "tier": {"enum": ["[D]", "[C]", "[I/C]"]},
+        "native_frame": {"type": "string", "minLength": 1},
+        "native_sources": {"$ref": "#/$defs/StringList"},
+        "assumptions": {"$ref": "#/$defs/StringList"},
+        "formal_map": {"type": "string", "minLength": 1},
+        "strongest_rivals": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+        "no_placement_rival": {"type": "string", "minLength": 1},
+        "discriminator": {"type": "string", "minLength": 1},
+        "kill_criterion": {"type": "string", "minLength": 1},
+        "survivor": {"type": "string", "minLength": 1},
+        "run_provenance": {"type": "object"},
+        "may_sign": {"const": false},
+        "may_authorize": {"const": false},
+        "changes_gap": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "FrontierFrozenTest": {
+      "type": "object",
+      "required": [
+        "schema_id", "test_id", "gap_id", "candidate_ids", "status",
+        "frozen_at", "freeze_hash", "measures", "controls", "exclusions",
+        "predictions", "artifacts", "null_result", "kill_criterion",
+        "survivor", "no_start_gates", "result_created"
+      ],
+      "properties": {
+        "schema_id": {"const": "FrontierFrozenTest.v1"},
+        "test_id": {"type": "string", "minLength": 1},
+        "gap_id": {"type": "string", "pattern": "^frontier-gap:GP-[0-9]{2}$"},
+        "candidate_ids": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+        "status": {"const": "FROZEN_UNRUN"},
+        "frozen_at": {"type": "string", "format": "date-time"},
+        "freeze_hash": {"$ref": "#/$defs/Hash"},
+        "measures": {"$ref": "#/$defs/StringList"},
+        "controls": {"$ref": "#/$defs/StringList"},
+        "exclusions": {"$ref": "#/$defs/StringList"},
+        "predictions": {"type": "object", "minProperties": 2},
+        "artifacts": {"type": "object", "minProperties": 1},
+        "null_result": {"type": "string", "minLength": 1},
+        "kill_criterion": {"type": "string", "minLength": 1},
+        "survivor": {"type": "string", "minLength": 1},
+        "no_start_gates": {"$ref": "#/$defs/StringList"},
+        "result_created": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "FrontierWorldReceiptRef": {
+      "type": "object",
+      "required": [
+        "schema_id", "receipt_id", "test_id", "artifact_uri", "artifact_hash",
+        "observed_at", "source_provenance", "calibration", "custodian",
+        "test_actor", "custodian_independent_of_test_actor", "authorization_ref",
+        "result_summary", "nulls", "harms", "attrition", "replication_state",
+        "adjudicates_claim"
+      ],
+      "properties": {
+        "schema_id": {"const": "FrontierWorldReceiptRef.v1"},
+        "receipt_id": {"type": "string", "minLength": 1},
+        "test_id": {"type": "string", "minLength": 1},
+        "artifact_uri": {"type": "string", "minLength": 1},
+        "artifact_hash": {"$ref": "#/$defs/Hash"},
+        "observed_at": {"type": "string", "format": "date-time"},
+        "source_provenance": {"type": "string", "minLength": 1},
+        "calibration": {"type": "string", "minLength": 1},
+        "custodian": {"type": "string", "minLength": 1},
+        "test_actor": {"type": "string", "minLength": 1},
+        "custodian_independent_of_test_actor": {"const": true},
+        "authorization_ref": {"type": "string", "minLength": 1},
+        "result_summary": {"type": "string", "minLength": 1},
+        "nulls": {"$ref": "#/$defs/StringList"},
+        "harms": {"$ref": "#/$defs/StringList"},
+        "attrition": {"type": "string", "minLength": 1},
+        "replication_state": {"enum": ["NOT_REPLICATED", "REPLICATION_PENDING", "REPLICATED", "FAILED_REPLICATION"]},
+        "adjudicates_claim": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "FrontierRevision": {
+      "type": "object",
+      "required": [
+        "schema_id", "revision_id", "gap_id", "prior_gap_hash", "candidate_ids",
+        "test_ids", "receipt_ids", "disposition", "changes", "removed_claims",
+        "preserved_survivor", "successor_gap_id", "created_at",
+        "append_only", "silent_deletion"
+      ],
+      "properties": {
+        "schema_id": {"const": "FrontierRevision.v1"},
+        "revision_id": {"type": "string", "minLength": 1},
+        "gap_id": {"type": "string", "pattern": "^frontier-gap:GP-[0-9]{2}$"},
+        "prior_gap_hash": {"$ref": "#/$defs/Hash"},
+        "candidate_ids": {"$ref": "#/$defs/StringList"},
+        "test_ids": {"$ref": "#/$defs/StringList"},
+        "receipt_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "disposition": {"enum": ["NARROW", "KILL", "DEFER", "FREEZE", "REOPEN"]},
+        "changes": {"$ref": "#/$defs/StringList"},
+        "removed_claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "reason"],
+            "properties": {
+              "claim": {"type": "string", "minLength": 1},
+              "reason": {"type": "string", "minLength": 1}
+            },
+            "additionalProperties": false
+          }
+        },
+        "preserved_survivor": {"type": "string", "minLength": 1},
+        "successor_gap_id": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "format": "date-time"},
+        "append_only": {"const": true},
+        "silent_deletion": {"const": false}
+      },
+      "additionalProperties": false
+    }
+  }
+}
