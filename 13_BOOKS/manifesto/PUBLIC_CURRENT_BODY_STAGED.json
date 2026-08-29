@@ -29,7 +29,7 @@
   "retargets_book_builder": false,
   "schema": "emergentism/manifesto-public-current-body/v1",
   "source": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-  "source_sha256": "257c3cc1ccb75f58c47482386ed945d42c6f881ea896be9dad08cdcc5cf22135",
+  "source_sha256": "3543964eeaaedce58800bd9925fb32bd379d72ba38a4662d6a410e9f1cf2a309",
   "status": "staged_not_public",
   "word_count": 28919
 }

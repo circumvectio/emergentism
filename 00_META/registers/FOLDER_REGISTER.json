@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 893,
+  "entry_count": 900,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 4050,
+      "tracked_file_count": 4103,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup;",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 155,
+      "tracked_file_count": 166,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -558,7 +558,7 @@
       "owns": "03_METHODOLOGY — Truth Tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 280,
+      "tracked_file_count": 286,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -701,7 +701,7 @@
       "owns": "**Corpus:** Emergentism",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 98,
+      "tracked_file_count": 104,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -819,6 +819,45 @@
       "must_not_own": null,
       "status": "staged",
       "tracked_file_count": 28,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol",
+      "type": "lane",
+      "nearest_front_door": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md",
+      "front_door_requirement": "present",
+      "owns": "**Status:** `OFFLINE-READY · [D]` only after the local checks below pass. This is",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 6,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/templates",
+      "type": "lane",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/tests",
+      "type": "lane",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1052,7 +1091,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 147,
+      "tracked_file_count": 149,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1117,7 @@
       "owns": "The Transcendental Trinity — active route",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 55,
+      "tracked_file_count": 56,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1104,7 +1143,7 @@
       "owns": "> **[金] reconciliation — 2026-07-20.** The triadic frame is selected, not",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 56,
+      "tracked_file_count": 57,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1468,7 +1507,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 249,
+      "tracked_file_count": 250,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1481,7 +1520,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 58,
+      "tracked_file_count": 59,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1767,7 +1806,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 449,
+      "tracked_file_count": 451,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1897,7 +1936,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 227,
+      "tracked_file_count": 229,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2027,7 +2066,7 @@
       "owns": "Emergentism public site",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 684,
+      "tracked_file_count": 713,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2287,7 +2326,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 11,
+      "tracked_file_count": 16,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2326,7 +2365,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 6,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2365,7 +2404,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 35,
+      "tracked_file_count": 37,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2378,7 +2417,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 10,
+      "tracked_file_count": 12,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -4347,6 +4386,45 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "12_PUBLIC_SITE/frontier",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/frontier/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!doctype html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 15,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/frontier/v1",
+      "type": "site",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 14,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/frontier/v1/gaps",
+      "type": "site",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 12,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "12_PUBLIC_SITE/game",
       "type": "site",
       "nearest_front_door": "12_PUBLIC_SITE/game/index.html",
@@ -5379,6 +5457,19 @@
       "nearest_front_door": "12_PUBLIC_SITE/operators/mf-70-kali-closes-sphere/index.html",
       "front_door_requirement": "present",
       "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/outline",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/outline/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!doctype html>",
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,
@@ -8475,7 +8566,7 @@
       "owns": "The Second Churning — what stands, as of 2026-08-05",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 38,
+      "tracked_file_count": 39,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

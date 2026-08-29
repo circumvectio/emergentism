@@ -48,7 +48,7 @@ EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
         frozenset({"book_manifest"}),
     ),
     "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md": (
-        "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",  # pragma: allow-secret -- published source digest
+        "78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2",  # pragma: allow-secret -- reviewed source digest
         "legacy",
         "BK-SARPASYA",
         frozenset({"claim_card", "book_manifest"}),
@@ -80,7 +80,7 @@ EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
 }
 EXTERNAL_CARD_LOCATOR_INVENTORY_COUNT = 28
 EXTERNAL_CARD_LOCATOR_INVENTORY_SHA256 = (
-    "451376e64053e93c511433cb8d27778afb08a25f9ca602db1c5466f911649ce6"  # pragma: allow-secret -- locator inventory digest
+    "89bb8fbc607b816e408448a941d28f5a572df3f6733f50c98e67e7aa180f1e46"  # pragma: allow-secret -- locator inventory digest
 )
 
 ALLOWED_COMPOSITION_CLASSES = {

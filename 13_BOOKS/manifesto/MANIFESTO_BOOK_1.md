@@ -3442,7 +3442,7 @@ withdrawn.
 **Historical source:**
 `../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md`.
 **Revision hash:**
-`aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+`78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`. <!-- pragma: allow-secret -- reviewed source digest -->
 **Critical edition:** `13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md`
 (projection SHA-256
 `01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c`).
@@ -5571,6 +5571,20 @@ Source cards: `OS01-43`.
 - **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94`.
 Source cards: `OS01-44`.
 
+<!-- FULLBOOK-P: atlas_os01_45 -->
+### OS01-45 — Finity is Dasein viewed under the aspect of determinate finite manifestation; finite means determinate, situated, and bounded in the relevant register, not necessarily finite in cardinality, dimension, description length, or magnitude.
+- **Work / owner:** `BK-ONE-SITTING` / `K-2`.
+- **Classification:** `interpretation_vow`; **evidence:** [I] selected Dasein and Finity relation.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `bounded_current` — [I] Finity is Dasein viewed under the aspect of determinate, situated manifestation. It is not a claim that Dasein literally has the Burrisphere's geometry or that finite means finite cardinality.
+- **Type boundary:** Dasein is not identical to one situated dasein; Finity is an aspect of determinate manifestation, not proof that Dasein literally has the selected chart geometry; finite does not mean finite cardinality or exhaustive inventory.
+- **Strongest rival:** Ordinary modal, phenomenological, and finitude vocabulary expresses the whole-to-situated relation more clearly and with less imposed machinery.
+- **Discriminator:** Readers must recover the distinction among the whole, determinate manifestation, one situated standpoint, and the selected chart without literalizing the geometry or mistaking boundedness for small cardinality.
+- **Kill or narrowing route:** Retire or rename the Finity relation if it repeatedly collapses Dasein into one standpoint, turns the Burrisphere into literal world geometry, or communicates less clearly than a simpler rival.
+- **Survivor if killed:** Determinate manifestation, situated disclosure, and the whole remain distinct explanatory roles even if the Finity name is retired.
+- **Consequence / exit:** not applicable.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94`.
+Source cards: `OS01-45`.
+
 
 
 ## BK-FINITY-PRACTICE
@@ -6072,7 +6086,7 @@ Source cards: `SL01-08`.
 - **Kill or narrowing route:** Retire capture language when fair ordinary rivals explain as well.
 - **Survivor if killed:** Ask who benefits, pays, corrects and exits.
 - **Consequence / exit:** bearers: institution members; affected outsiders; consent: participation is not assent; reversibility: diagnosis is contestable; exit: no enemy or pathology label.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-01`.
 
 <!-- FULLBOOK-P: atlas_sv01_02 -->
@@ -6086,7 +6100,7 @@ Source cards: `SV01-01`.
 - **Kill or narrowing route:** Archive any mapping that creates causal μ, D6/D0 identity, human rank or ethics from geometry.
 - **Survivor if killed:** Native mathematics plus an explicit historical record.
 - **Consequence / exit:** bearers: people classified by the old model; consent: no classification authority; reversibility: historical claims remain withdrawn; exit: symbols are optional.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-02`.
 
 <!-- FULLBOOK-P: atlas_sv01_03 -->
@@ -6100,7 +6114,7 @@ Source cards: `SV01-02`.
 - **Kill or narrowing route:** Withdraw the mapping when differences or multicausal rivals absorb it.
 - **Survivor if killed:** Historical cases remain sources of questions and counterexamples.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-03`.
 
 <!-- FULLBOOK-P: atlas_sv01_04 -->
@@ -6114,7 +6128,7 @@ Source cards: `SV01-03`.
 - **Kill or narrowing route:** Remove any language that creates enemies, compulsion or martial instruction.
 - **Survivor if killed:** Nonviolent, bearer-aware local repair.
 - **Consequence / exit:** bearers: participants; affected parties; consent: voluntary; reversibility: smallest reversible act; exit: no loyalty or retaliation.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-04`.
 
 <!-- FULLBOOK-P: atlas_sv01_05 -->
@@ -6128,7 +6142,7 @@ Source cards: `SV01-04`.
 - **Kill or narrowing route:** Remove any element that implies universal dose, health effect or privileged access.
 - **Survivor if killed:** Optional reflection with no loyalty test.
 - **Consequence / exit:** bearers: practitioners; consent: voluntary; reversibility: stop at any time; exit: no adherence cost.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-05`.
 
 <!-- FULLBOOK-P: atlas_sv01_06 -->
@@ -6142,7 +6156,7 @@ Source cards: `SV01-05`.
 - **Kill or narrowing route:** Use the simpler institution when it protects bearers as well or better.
 - **Survivor if killed:** A voluntary institutional checklist.
 - **Consequence / exit:** bearers: participants; customers; affected outsiders; consent: required; reversibility: sunset and repair; exit: property, data and claims remain portable.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-06`.
 
 <!-- FULLBOOK-P: atlas_sv01_07 -->
@@ -6156,7 +6170,7 @@ Source cards: `SV01-06`.
 - **Kill or narrowing route:** Reject dissolution rhetoric that hides failure or unfinished obligation.
 - **Survivor if killed:** Visible record, repair and practical exit.
 - **Consequence / exit:** bearers: affected parties; record custodians; consent: departure cannot waive another's claim; reversibility: archive preserved; exit: leave with claims intact.
-- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2`.
 Source cards: `SV01-07`.
 
 

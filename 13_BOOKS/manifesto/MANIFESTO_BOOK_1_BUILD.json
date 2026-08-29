@@ -37,7 +37,7 @@
     },
     {
       "path": "00_META/claim_cards/sarpasya_vijayam.yaml",
-      "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
+      "reviewed_source_sha256": "78595afc40e9535ffd6c197dc047a802486b61315864c0ffa0de0195b97174c2",
       "source": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
       "work_id": "BK-SARPASYA"
     },
@@ -89,7 +89,7 @@
     {
       "path": "13_BOOKS/book-manifest.json",
       "role": "book_manifest_custody",
-      "sha256": "9deba52b69b6c6fa29f30479ff9631ff6500c857a17f793b9aa5424919f48fa1"
+      "sha256": "850174915370588bd7a59893b17300ac0218273a260953853703bfbddcfc5271"
     }
   ],
   "modules": [
@@ -111,7 +111,7 @@
     {
       "path": "13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md",
       "role": "part_iv_v",
-      "sha256": "b2e120f22bb789a9862795116cf2beff7e6b40d43a9ab20af3b915e8c7099804"
+      "sha256": "79f828e3f219f712c95ded7d2250b384082f71bdfb27b3a4dc18fa864aac7c14"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/APPENDICES_AND_WORKSHEETS.md",
@@ -121,13 +121,13 @@
   ],
   "output": {
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-    "sha256": "257c3cc1ccb75f58c47482386ed945d42c6f881ea896be9dad08cdcc5cf22135",
-    "word_count": 67806
+    "sha256": "3543964eeaaedce58800bd9925fb32bd379d72ba38a4662d6a410e9f1cf2a309",
+    "word_count": 68048
   },
   "paragraph_ledger": {
-    "count": 656,
+    "count": 657,
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
-    "sha256": "831e05c630ca76277a07732df0dd7cbe1ab56d51d6c588e3a1f04738634e2218"
+    "sha256": "5ad4ddcf82075ce55a1d4bdd1453529a023b7e1fad6a9c8f87a8581a7f44ffd1"
   },
   "public_disposition": "not_a_public_route",
   "schema": "emergentism/full-book-build/v1"

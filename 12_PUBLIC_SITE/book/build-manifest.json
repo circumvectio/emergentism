@@ -5,7 +5,7 @@
     "public_route": "../12_PUBLIC_SITE/book/index.html",
     "release_state": "source_active_current_public_reader",
     "schema": "emergentism/book-manifest/v2",
-    "sha256": "c1e15c45d138d5f0d48afd3395dd7211b2ddb3b56020a3b39ed17d799c6fb02e"
+    "sha256": "850174915370588bd7a59893b17300ac0218273a260953853703bfbddcfc5271"
   },
   "claim_card_contract": {
     "coverage": {
@@ -98,7 +98,7 @@
     "graph_sha256": "fc3f37655b4b2b49d21e6cdba100459f673f02760b9d9efc51b03fe550cea21d",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "register_sha256": "398e048cf815cadb98fb60c584e6afef50fac17cdc75f3ec2985fb0b36b633ff",
+    "register_sha256": "20b5d15857bf9fdc78a099e0a1153b6c163cb9c20d6fe795f0c13bc3f68155ca",
     "schema": "emergentism/claim-card-set/v2",
     "sha256": "2ba4a30e7359de05d69ceaeb074f7646b701303ab55c6421963e9c4acb0ff6cc"
   },
