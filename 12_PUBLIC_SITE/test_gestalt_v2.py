@@ -340,7 +340,9 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertEqual(opted_in, set(self.design["motion"]["optInRoutes"]))
 
         home = (SITE / "index.html").read_text(encoding="utf-8")
-        hero_copy = home.split('<div class="g2-hero__copy">', 1)[1].split("</div>", 1)[0]
+        hero_copy = home.split(
+            '<div class="g2-hero__copy g2-hero__opening">', 1
+        )[1].split('<figure class="g2-atlas g2-world-figure"', 1)[0]
         self.assertNotIn("data-g2-reveal", hero_copy)
         self.assertNotIn("data-g2-draw", hero_copy)
         self.assertIn("guide-line", home)
@@ -574,6 +576,10 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn("The instrument does not decide.", home)
         self.assertIn("authority and any later act remain external", home)
         self.assertIn("This is a prompt—not a promised result.", home)
+        self.assertGreater(
+            home.index('class="g2-field-kit g2-field-kit--practice"'),
+            home.index('data-cartographic-node="practice"'),
+        )
 
         self.assertEqual(home.count('class="g2-atlas__viewport"'), 2)
         self.assertEqual(home.count('role="region" tabindex="0"'), 4)
@@ -589,22 +595,23 @@ class GestaltV2ContractTests(unittest.TestCase):
         )
         self.assertNotRegex(home, r'<figure[^>]+aria-labelledby=')
         self.assertGreaterEqual(home.count('<g aria-hidden="true">'), 2)
-        self.assertEqual(home.count("Swipe to inspect"), 2)
+        self.assertEqual(home.count("Swipe to inspect"), 1)
 
         action_groups = re.findall(r'<div class="g2-actions">(.*?)</div>', home, re.S)
         self.assertEqual(len(action_groups), 6)
         for group in action_groups:
             self.assertEqual(group.count("g2-button--primary"), 1)
             self.assertNotIn('class="g2-button"', group)
-        self.assertEqual(home.count("g2-action-link"), 11)
+        self.assertEqual(home.count("g2-action-link"), 6)
 
         self.assertIn('data-g2-rail data-active-section="Whole"', home)
         self.assertEqual(home.count("data-g2-rail-link"), 8)
         self.assertEqual(home.count('aria-current="location"'), 1)
         self.assertIn('.g2-atlas-rail a[aria-current="location"]', self.css)
-        self.assertIn('content: "Current · " attr(data-active-section)', self.css)
+        self.assertIn('content: "Journey"', self.css)
         self.assertIn("width: 760px", self.css)
         self.assertIn(".g2-action-link", self.css)
+        self.assertIn('grid-template-columns: 1fr;', self.css)
         self.assertIn('document.querySelector("[data-g2-rail]")', self.js)
         self.assertIn('setAttribute("aria-current", "location")', self.js)
         self.assertNotIn("scrollIntoView", self.js)

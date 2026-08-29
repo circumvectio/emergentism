@@ -3480,6 +3480,238 @@ body.g2-page.g2-legacy .footer {
 .g2-authorship { align-self: end; margin: 0; color: var(--g2-bone-muted); }
 .g2-exit-band .g2-actions { grid-column: 1 / -1; margin-top: 0; }
 
+/* V2.5 Reciprocal Object: the opening is one thesis and one integrated field.
+   Application moves to Practice; epistemic pricing remains complete and early. */
+body.g2-page[data-emergentism-surface="panorama"] .g2-atlas-rail {
+  min-height: 46px;
+  padding-inline: clamp(0px, 2vw, 24px);
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-atlas-rail a {
+  min-height: 46px;
+  border-right: 0;
+  font-size: 0.8rem;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-atlas-rail a[aria-current="location"] {
+  background: transparent;
+  box-shadow: inset 0 -2px var(--g2-actual);
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-hero--portal {
+  grid-template-areas:
+    "opening atlas"
+    "context context"
+    "legend legend";
+  grid-template-columns: minmax(0, 0.84fr) minmax(460px, 1.16fr);
+  align-items: center;
+  column-gap: clamp(46px, 7vw, 116px);
+  row-gap: clamp(34px, 4.5vw, 64px);
+  min-height: auto;
+  padding-block: clamp(58px, 7vw, 98px) clamp(42px, 6vw, 82px);
+}
+
+.g2-hero__opening {
+  grid-area: opening;
+  align-self: center;
+}
+
+.g2-hero__opening .g2-actions {
+  align-items: center;
+  margin-top: 30px;
+}
+
+.g2-hero__actual,
+.g2-hero__future {
+  display: block;
+}
+
+.g2-hero__future {
+  position: relative;
+  width: fit-content;
+  margin: 0.08em 0 0 clamp(0.25em, 2vw, 0.62em);
+  color: var(--g2-bone-muted);
+  font-size: 0.78em;
+  line-height: 0.94;
+}
+
+.g2-hero__future::before {
+  content: "↗";
+  position: absolute;
+  top: 0.15em;
+  right: calc(100% + 0.5em);
+  color: var(--g2-possible);
+  font: 650 0.18em/1 var(--g2-mono);
+  letter-spacing: 0;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-hero--portal h1 {
+  max-width: 11.5ch;
+  margin-bottom: 0;
+  font-size: clamp(4rem, 6.2vw, 6.65rem);
+  line-height: 0.88;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure {
+  grid-area: atlas;
+  align-self: center;
+  margin-top: 0;
+  border: 0;
+  background: transparent;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure::before {
+  top: 0;
+  left: 0;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure .g2-atlas__viewport {
+  padding-top: 24px;
+  border-bottom: 1px solid var(--g2-rule);
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure .g2-atlas__caption {
+  padding-inline: 0;
+  border-top: 0;
+}
+
+.g2-hero__context {
+  grid-area: context;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.78fr) minmax(340px, 1.32fr) minmax(190px, 0.62fr);
+  gap: clamp(24px, 4vw, 58px);
+  align-items: start;
+  padding-block: clamp(26px, 3vw, 38px);
+  border-block: 1px solid var(--g2-rule-strong);
+}
+
+.g2-hero__context p {
+  margin: 0;
+}
+
+.g2-hero__context-thesis,
+.g2-hero__context-definition {
+  min-width: 0;
+}
+
+.g2-hero__context-thesis {
+  display: grid;
+  gap: 18px;
+}
+
+.g2-hero__context .g2-hero__promise {
+  max-width: 25ch;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+}
+
+.g2-hero__context .g2-map-maxim {
+  max-width: 28ch;
+  margin: 0;
+  color: var(--g2-bone-muted);
+  font-size: clamp(1.12rem, 1.6vw, 1.42rem);
+}
+
+.g2-hero__context-definition {
+  display: grid;
+  gap: 16px;
+}
+
+.g2-hero__context .g2-hero__lede,
+.g2-hero__context .g2-hero__thesis {
+  max-width: 62ch;
+  color: var(--g2-bone-muted);
+  font-size: 0.98rem;
+}
+
+.g2-hero__context .g2-hero__lede strong,
+.g2-hero__context .g2-hero__thesis strong {
+  color: var(--g2-bone);
+}
+
+.g2-hero__context .g2-source {
+  align-self: end;
+  margin: 0;
+  color: var(--g2-bone-faint);
+  font-size: 0.72rem;
+  line-height: 1.65;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early {
+  grid-area: legend;
+  width: 100%;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: -12px;
+  overflow: visible;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early span {
+  min-height: 68px;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early b {
+  font-size: 0.8rem;
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-section {
+  padding-block: clamp(68px, 7.5vw, 108px);
+}
+
+body.g2-page[data-emergentism-surface="panorama"] .g2-section h2 {
+  font-size: clamp(2.65rem, 5vw, 5.1rem);
+}
+
+.g2-field-kit--practice {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 42px);
+  align-items: start;
+  margin: 0 0 34px;
+  padding-block: 24px;
+}
+
+.g2-field-kit--practice > div {
+  align-self: center;
+}
+
+.g2-field-kit h2,
+.g2-field-kit h3 {
+  margin: 5px 0 0;
+  font: 430 clamp(1.35rem, 2.2vw, 1.7rem)/1.05 var(--g2-display);
+  letter-spacing: -0.025em;
+}
+
+.g2-field-kit--practice ol {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.g2-field-kit--practice li {
+  min-height: 148px;
+}
+
+.g2-field-kit--practice .g2-field-kit__boundary {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.g2-field-kit li span,
+.g2-field-kit li small,
+.g2-field-kit__label,
+.g2-atlas__caption,
+.g2-role-strip span,
+.g2-trust-grid span {
+  font-size: 0.8rem;
+}
+
+.g2-field-kit li span,
+.g2-field-kit li small,
+.g2-field-kit__label {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 1020px) {
   .g2-atlas-rail { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .g2-hero--cartographic { grid-template-columns: 1fr; }
@@ -3487,6 +3719,22 @@ body.g2-page.g2-legacy .footer {
   .g2-rung--detail > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .g2-tier-legend { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .g2-convergence-ledger { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-hero--portal {
+    grid-template-areas:
+      "opening"
+      "atlas"
+      "context"
+      "legend";
+    grid-template-columns: 1fr;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure { max-width: 760px; }
+  .g2-hero__context { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g2-hero__context .g2-source { grid-column: 1 / -1; }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .g2-field-kit--practice { grid-template-columns: 1fr; }
+  .g2-field-kit--practice ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 680px) {
@@ -3496,13 +3744,20 @@ body.g2-page.g2-legacy .footer {
     overscroll-behavior-inline: contain;
     scrollbar-width: thin;
   }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-atlas-rail {
+    position: static;
+    top: auto;
+    min-height: 44px;
+    padding-inline: 0;
+    backdrop-filter: none;
+  }
   .g2-atlas-rail::before {
-    content: "Current · " attr(data-active-section);
+    content: "Journey";
     position: sticky;
     left: 0;
     z-index: 2;
-    flex: 0 0 104px;
-    min-height: 54px;
+    flex: 0 0 84px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     padding: 8px 10px;
@@ -3513,7 +3768,7 @@ body.g2-page.g2-legacy .footer {
     letter-spacing: 0.055em;
     text-transform: uppercase;
   }
-  .g2-atlas-rail a { flex: 0 0 104px; border-bottom: 0; }
+  .g2-atlas-rail a { flex: 0 0 92px; min-height: 44px; border-bottom: 0; }
   .g2-atlas-rail a:nth-child(3) { border-right: 1px solid var(--g2-rule); }
   .g2-hero--cartographic { padding-top: 38px; }
   .g2-hero--cartographic h1 { font-size: clamp(3rem, 14vw, 4.7rem); }
@@ -3545,6 +3800,41 @@ body.g2-page.g2-legacy .footer {
   .g2-exit-band .g2-churn-maxim,
   .g2-workshop-disclosure,
   .g2-exit-band .g2-actions { grid-column: 1; }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-hero--portal {
+    row-gap: 30px;
+    padding-block: 42px 54px;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-hero--portal h1 {
+    max-width: 9.6ch;
+    font-size: clamp(3.25rem, 15vw, 4.55rem);
+  }
+  .g2-hero__future {
+    margin-left: 0.34em;
+    font-size: 0.76em;
+  }
+  .g2-hero__context { grid-template-columns: 1fr; gap: 18px; }
+  .g2-hero__context .g2-source { grid-column: 1; }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0;
+    overflow: visible;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early span {
+    min-height: 76px;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure .g2-atlas__viewport {
+    overflow: visible;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure .g2-atlas__viewport svg {
+    width: 100%;
+    max-width: 100%;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure text {
+    font-size: 22px;
+  }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure .g2-diagram-cue {
+    display: none;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -3621,14 +3911,13 @@ body.g2-page.g2-legacy .footer {
     padding: 11px 12px;
   }
   .g2-field-kit ol {
-    grid-template-columns: repeat(4, 176px);
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    scrollbar-width: thin;
+    grid-template-columns: 1fr;
+    overflow: visible;
   }
   .g2-tier-legend--early {
-    grid-template-columns: repeat(6, 176px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 18px;
+    overflow: visible;
   }
   .g2-atlas__viewport {
     width: 100%;
@@ -3853,6 +4142,18 @@ body.g2-page.g2-legacy .footer {
   .g2-footer__boundary { flex-direction: column; gap: 8px; }
 }
 
+@media (max-width: 520px) {
+  body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early,
+  .g2-field-kit--practice ol {
+    grid-template-columns: 1fr;
+  }
+
+  body.g2-page[data-emergentism-surface="panorama"] .g2-tier-legend--early span,
+  .g2-field-kit--practice li {
+    min-height: 0;
+  }
+}
+
 @media (max-width: 760px) {
   .g2-section__head {
     grid-template-columns: 1fr;
@@ -3905,6 +4206,9 @@ body.g2-page.g2-legacy .footer {
   .g2-entry-door { min-height: 76px; padding: 12px; }
   .g2-entry-door strong { font-size: 1.05rem; }
   .g2-entry-door small { display: none; }
+  body.g2-page[data-emergentism-surface="panorama"] .g2-world-figure text {
+    font-size: 25px;
+  }
   .g2-g7-map svg,
   .g2-burrisphere-ascent svg,
   .g2-helix svg { width: 560px; }
