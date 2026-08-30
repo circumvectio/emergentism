@@ -23,6 +23,7 @@ Checks:
 15. The public book and its build manifest match deterministic source hashes
 16. The frozen-library manifest names the current reader deterministically
 17. The contact-limited public lifecycle has zero unclassified artifacts
+18. The Emergentism design constitution (current routes, roles, and shared-motion constraints)
 
 Exit 0 if all checks pass, 1 if any fail.
 """
