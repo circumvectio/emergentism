@@ -9,6 +9,9 @@ is offered as a **lens and compass**, not a completed theory of everything.
 Its formal grammar is internally testable; its stronger world-facing wagers
 remain externally uncalibrated until independent contact decides them.
 
+**L7 mark** (Yves ranked COMPLETE 2026-08-30). Seed of Life: six circles + hexagram. Distinct from Cortex (nested circle ⊃ hexagon ⊃ 6-fold star). Not EN. Not a SKU. Not a sign.
+Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity return. L7↝L1 is the chair ouroboros (compressed law re-enters as objective function). Do not merge them. D5→D1 is one compression `[I/C]`, not `[S]`, and does not replace the D0–D6 ladder. `12_PUBLIC_SITE` is a projection, not this kernel.
+
 ## Read in one sitting
 
 0. [The Foundation](00_THE_FOUNDATION.md) — an **active subordinate typed projection**: `R0` and `B1–B3` are assembled without coercing the opaque Titan vocabulary; K-1, K-5, `KSC-04`, the Formula Block, and Primitive/Type Signatures remain the controlling owners.

@@ -12,6 +12,9 @@ actualities, how agents act among modeled futures, how consequences return, and 
 finite beings may widen durable mutual possibility without confusing a map for the
 territory.
 
+**L7 mark** (Yves ranked COMPLETE 2026-08-30). Seed of Life: six circles + hexagram. Distinct from Cortex (nested circle ⊃ hexagon ⊃ 6-fold star). Not EN. Not a SKU. Not a sign.
+Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity return. L7↝L1 is the chair ouroboros (compressed law re-enters as objective function). Do not merge them. D5→D1 is one compression `[I/C]`, not `[S]`, and does not replace the D0–D6 ladder. `12_PUBLIC_SITE` is a projection, not this kernel.
+
 ## The ladder
 
 | Register | Compressed reading | Modality |
