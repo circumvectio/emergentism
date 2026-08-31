@@ -22,6 +22,8 @@ Emergentism. It is a candidate compression grammar, not a theory of everything.
 9. [Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
 10. [G7 vocabulary](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)
 11. [Egregoreotype owner](00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+12. [Emergentotype carrier map and Strategic Egregoreotype candidate](00_EMERGENTOTYPE_CARRIER_VARIATION_AND_STRATEGIC_EGREGOREOTYPE.md) — selected carrier-profile instrument `[S]`, empirical generality and strategic subtype `[I/C]`; never a seventh layer or consciousness claim
+13. [Egregoreotype candidate machine contract](00_EGREGOREOTYPE_CANDIDATE_CONTRACT.v1.schema.json) — fail-closed structure only; validation is not evidence
 
 The [Burrisphere](00_THE_BURRISPHERE.md) is a compatibility route to the
 visual synthesis; it is not a semantic owner.

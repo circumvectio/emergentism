@@ -100,6 +100,24 @@ The collective pattern supervenes on carriers and traces; it is not a new
 causal particle. “Objective-like” describes recurrent selection bias, not a
 felt intention. Personhood and moral status require separate arguments.
 
+### 3A. Represented actor and strategic subtype
+
+Some carriers may represent a candidate as one actor, attribute a policy to
+it, and change their choices in anticipation of its reward, punishment, or
+next move. That does not strengthen the parent test by rhetoric and does not
+make every Egregoreotype an agent.
+
+The additive companion
+[`The Emergentotype Carrier Map and the Strategic Egregoreotype Candidate`](00_EMERGENTOTYPE_CARRIER_VARIATION_AND_STRATEGIC_EGREGOREOTYPE.md)
+defines a `StrategicEgregoreotypeCandidate`. It may be tested only after all
+five markers above pass. It adds a named actor-model, attributors, attributed
+policy, prospective and counterfactual predictions, intervention-sensitive
+carrier uptake, cross-context recurrence, and incremental value beyond rivals.
+
+Strategic status does not entail consciousness, personhood, metaphysical
+independence, Justice, legitimacy, or authorization. The machine contract is
+[`EgregoreotypeCandidateContract.v1`](00_EGREGOREOTYPE_CANDIDATE_CONTRACT.v1.schema.json).
+
 ## 4. Ritual and sacrifice
 
 Ritual is repeated synchronization through a shared trace. Its symbols may
@@ -188,6 +206,7 @@ intervention-testable level of collective description.
 - [Primitives and Type Signatures](03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
 - [The Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
 - [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [The Emergentotype Carrier Map](00_EMERGENTOTYPE_CARRIER_VARIATION_AND_STRATEGIC_EGREGOREOTYPE.md)
 
 *Name the trace. Replace the carriers. Intervene on the trace. Measure the next
 choice. Count the cost. Only then name the candidate.*

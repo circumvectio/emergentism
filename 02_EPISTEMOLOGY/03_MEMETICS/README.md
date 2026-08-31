@@ -85,6 +85,7 @@ real memetic defense.
 | [`04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md`](04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md) | Defensive architectures against harmful memes |
 | [`05_ANCIENT_EGREGORE_ARCHITECTURES.md`](05_ANCIENT_EGREGORE_ARCHITECTURES.md) | Historical egregore and collective-mind structures |
 | [`06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md`](06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md) | Open conjecture: language as a principal memotype protocol; trade and war as thin/deep coordination stress tests with genetic, material, ritual, institutional, and coercive rivals |
+| [`07_WORD_TOKEN_CONCEPT_AND_MEMOTYPE_CARRIERS.md`](07_WORD_TOKEN_CONCEPT_AND_MEMOTYPE_CARRIERS.md) | Selected token/type/concept/carrier distinctions; the *chair* and vector-database boundary; route from memotype to the separate strategic Egregoreotype candidate |
 | [Applied memetic-defense strategies — historical application](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/02_EPISTEMOLOGY/03_MEMETICS/06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md) | Archived application; not current worldview authority |
 
 ## Read First

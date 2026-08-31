@@ -62,6 +62,17 @@ collective trace—religion, state, market, institution, platform, or other
 coordination system—that may stabilize or suppress memotypes and may survive
 turnover of individual carriers.
 
+### Token, concept and carrier boundary
+
+A word token is not a complete meme or memotype. Word type, actual token,
+concept record, carrier instance, and recurrent cultural pattern remain
+different types connected by many-to-many relations. The companion
+[`Word, Token, Concept and Memotype Carriers`](07_WORD_TOKEN_CONCEPT_AND_MEMOTYPE_CARRIERS.md)
+owns those distinctions and the *chair* / vector-database boundary. It also
+routes represented actor-models to the separate Cosmology subtype test rather
+than treating repetition, a shared name, or semantic similarity as collective
+agency.
+
 ## The middle bridge: extended phenotype.trade
 
 The stack already contains an interoperability layer between bodies and rich

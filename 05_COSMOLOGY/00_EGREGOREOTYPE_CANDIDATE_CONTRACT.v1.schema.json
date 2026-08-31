@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/EgregoreotypeCandidateContract.v1.schema.json",
+  "title": "EgregoreotypeCandidateContract.v1",
+  "description": "Structural contract for an existing five-marker Egregoreotype candidate and its optional consciousness-neutral strategic subtype. Validation establishes shape only, never empirical truth, consciousness, personhood, Justice, legitimacy, or authority.",
+  "type": "object",
+  "required": [
+    "schema",
+    "recordId",
+    "profile",
+    "baseCandidate",
+    "agentRepresentation",
+    "strategicAssessment",
+    "separateClaimRefs",
+    "resultState",
+    "killCriterion",
+    "survivorIfKilled"
+  ],
+  "properties": {
+    "schema": {"const": "emergentism/EgregoreotypeCandidateContract.v1"},
+    "recordId": {"$ref": "#/$defs/nonEmptyString"},
+    "profile": {"$ref": "#/$defs/emergentotypeProfile"},
+    "baseCandidate": {"$ref": "#/$defs/baseCandidate"},
+    "agentRepresentation": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/agentRepresentationRecord"}
+      ]
+    },
+    "strategicAssessment": {"$ref": "#/$defs/strategicAssessment"},
+    "separateClaimRefs": {"$ref": "#/$defs/separateClaimRefs"},
+    "resultState": {
+      "enum": ["UNRUN", "PARTIAL", "SURVIVES", "KILLED", "UNDERDETERMINED"]
+    },
+    "killCriterion": {"$ref": "#/$defs/nonEmptyString"},
+    "survivorIfKilled": {"$ref": "#/$defs/nonEmptyString"}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "baseCandidate": {
+            "properties": {"verdict": {"const": "PASS"}},
+            "required": ["verdict"]
+          }
+        },
+        "required": ["baseCandidate"]
+      },
+      "then": {
+        "properties": {
+          "baseCandidate": {
+            "properties": {
+              "markers": {
+                "properties": {
+                  "persistentTrace": {"properties": {"status": {"const": "PASS"}}},
+                  "carrierTurnover": {"properties": {"status": {"const": "PASS"}}},
+                  "selectionReweighting": {"properties": {"status": {"const": "PASS"}}},
+                  "recurrentObjectiveLikeBias": {"properties": {"status": {"const": "PASS"}}},
+                  "visibleSubstrateCost": {"properties": {"status": {"const": "PASS"}}}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "strategicAssessment": {
+            "properties": {"verdict": {"const": "PASS"}},
+            "required": ["verdict"]
+          }
+        },
+        "required": ["strategicAssessment"]
+      },
+      "then": {
+        "properties": {
+          "baseCandidate": {
+            "properties": {"verdict": {"const": "PASS"}}
+          },
+          "agentRepresentation": {"$ref": "#/$defs/agentRepresentationRecord"},
+          "strategicAssessment": {
+            "properties": {
+              "tests": {
+                "properties": {
+                  "prospectivePrediction": {"properties": {"status": {"const": "PASS"}}},
+                  "counterfactualPrediction": {"properties": {"status": {"const": "PASS"}}},
+                  "interventionSensitiveUptake": {"properties": {"status": {"const": "PASS"}}},
+                  "crossContextRecurrence": {"properties": {"status": {"const": "PASS"}}},
+                  "incrementalValueBeyondRivals": {"properties": {"status": {"const": "PASS"}}}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "nonEmptyString": {"type": "string", "minLength": 1},
+    "stringArray": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/nonEmptyString"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "testStatus": {
+      "enum": ["UNTESTED", "PASS", "FAIL", "UNDERDETERMINED"]
+    },
+    "testRecord": {
+      "type": "object",
+      "required": ["status", "measure", "evidenceRefs"],
+      "properties": {
+        "status": {"$ref": "#/$defs/testStatus"},
+        "measure": {"$ref": "#/$defs/nonEmptyString"},
+        "evidenceRefs": {"$ref": "#/$defs/stringArray"}
+      },
+      "additionalProperties": false
+    },
+    "emergentotypeProfile": {
+      "type": "object",
+      "required": [
+        "replicatorLayer",
+        "patternIdentity",
+        "carrierClass",
+        "carrierInstanceIds",
+        "admittedCarrierVariation",
+        "persistenceCriterion",
+        "intervention",
+        "rivalModels",
+        "evidenceRefs",
+        "tier",
+        "killCriterion"
+      ],
+      "properties": {
+        "replicatorLayer": {"const": "EGREGOREOTYPE"},
+        "patternIdentity": {"$ref": "#/$defs/nonEmptyString"},
+        "carrierClass": {"$ref": "#/$defs/nonEmptyString"},
+        "carrierInstanceIds": {"$ref": "#/$defs/stringArray"},
+        "admittedCarrierVariation": {"$ref": "#/$defs/nonEmptyString"},
+        "persistenceCriterion": {"$ref": "#/$defs/nonEmptyString"},
+        "intervention": {"$ref": "#/$defs/nonEmptyString"},
+        "rivalModels": {"$ref": "#/$defs/stringArray"},
+        "evidenceRefs": {"$ref": "#/$defs/stringArray"},
+        "tier": {"$ref": "#/$defs/nonEmptyString"},
+        "killCriterion": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "baseCandidate": {
+      "type": "object",
+      "required": [
+        "id",
+        "systemBoundary",
+        "individualCarrierIds",
+        "whole",
+        "sharedTraceRef",
+        "tracePersistenceWindow",
+        "turnoverEvidence",
+        "selectionReweightingEstimate",
+        "recurrentBiasMeasure",
+        "substrateCost",
+        "affectedBearerIds",
+        "payerIds",
+        "beneficiaryIds",
+        "etaObserved",
+        "custody",
+        "consent",
+        "reversibility",
+        "exit",
+        "rivalModels",
+        "evidenceRefs",
+        "tier",
+        "killCriterion",
+        "markers",
+        "verdict"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonEmptyString"},
+        "systemBoundary": {"$ref": "#/$defs/nonEmptyString"},
+        "individualCarrierIds": {"$ref": "#/$defs/stringArray"},
+        "whole": {"$ref": "#/$defs/nonEmptyString"},
+        "sharedTraceRef": {"$ref": "#/$defs/nonEmptyString"},
+        "tracePersistenceWindow": {"$ref": "#/$defs/nonEmptyString"},
+        "turnoverEvidence": {"$ref": "#/$defs/nonEmptyString"},
+        "selectionReweightingEstimate": {"$ref": "#/$defs/nonEmptyString"},
+        "recurrentBiasMeasure": {"$ref": "#/$defs/nonEmptyString"},
+        "substrateCost": {"$ref": "#/$defs/nonEmptyString"},
+        "affectedBearerIds": {"$ref": "#/$defs/stringArray"},
+        "payerIds": {"$ref": "#/$defs/stringArray"},
+        "beneficiaryIds": {"$ref": "#/$defs/stringArray"},
+        "etaObserved": {"$ref": "#/$defs/nonEmptyString"},
+        "custody": {"$ref": "#/$defs/nonEmptyString"},
+        "consent": {"$ref": "#/$defs/nonEmptyString"},
+        "reversibility": {"$ref": "#/$defs/nonEmptyString"},
+        "exit": {"$ref": "#/$defs/nonEmptyString"},
+        "rivalModels": {"$ref": "#/$defs/stringArray"},
+        "evidenceRefs": {"$ref": "#/$defs/stringArray"},
+        "tier": {"$ref": "#/$defs/nonEmptyString"},
+        "killCriterion": {"$ref": "#/$defs/nonEmptyString"},
+        "markers": {
+          "type": "object",
+          "required": [
+            "persistentTrace",
+            "carrierTurnover",
+            "selectionReweighting",
+            "recurrentObjectiveLikeBias",
+            "visibleSubstrateCost"
+          ],
+          "properties": {
+            "persistentTrace": {"$ref": "#/$defs/testRecord"},
+            "carrierTurnover": {"$ref": "#/$defs/testRecord"},
+            "selectionReweighting": {"$ref": "#/$defs/testRecord"},
+            "recurrentObjectiveLikeBias": {"$ref": "#/$defs/testRecord"},
+            "visibleSubstrateCost": {"$ref": "#/$defs/testRecord"}
+          },
+          "additionalProperties": false
+        },
+        "verdict": {"$ref": "#/$defs/testStatus"}
+      },
+      "additionalProperties": false
+    },
+    "agentRepresentationRecord": {
+      "type": "object",
+      "required": [
+        "targetCandidateId",
+        "attributorIds",
+        "actorModelRef",
+        "representationTraceRefs",
+        "attributedPolicy",
+        "scope",
+        "horizon",
+        "uptakeMeasure",
+        "evidenceRefs",
+        "tier",
+        "rivalModels",
+        "killCriterion"
+      ],
+      "properties": {
+        "targetCandidateId": {"$ref": "#/$defs/nonEmptyString"},
+        "attributorIds": {"$ref": "#/$defs/stringArray"},
+        "actorModelRef": {"$ref": "#/$defs/nonEmptyString"},
+        "representationTraceRefs": {"$ref": "#/$defs/stringArray"},
+        "attributedPolicy": {"$ref": "#/$defs/nonEmptyString"},
+        "scope": {"$ref": "#/$defs/nonEmptyString"},
+        "horizon": {"$ref": "#/$defs/nonEmptyString"},
+        "uptakeMeasure": {"$ref": "#/$defs/nonEmptyString"},
+        "evidenceRefs": {"$ref": "#/$defs/stringArray"},
+        "tier": {"$ref": "#/$defs/nonEmptyString"},
+        "rivalModels": {"$ref": "#/$defs/stringArray"},
+        "killCriterion": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "strategicAssessment": {
+      "type": "object",
+      "required": ["tests", "verdict", "evidenceRefs", "rivalModels", "killCriterion"],
+      "properties": {
+        "tests": {
+          "type": "object",
+          "required": [
+            "prospectivePrediction",
+            "counterfactualPrediction",
+            "interventionSensitiveUptake",
+            "crossContextRecurrence",
+            "incrementalValueBeyondRivals"
+          ],
+          "properties": {
+            "prospectivePrediction": {"$ref": "#/$defs/testRecord"},
+            "counterfactualPrediction": {"$ref": "#/$defs/testRecord"},
+            "interventionSensitiveUptake": {"$ref": "#/$defs/testRecord"},
+            "crossContextRecurrence": {"$ref": "#/$defs/testRecord"},
+            "incrementalValueBeyondRivals": {"$ref": "#/$defs/testRecord"}
+          },
+          "additionalProperties": false
+        },
+        "verdict": {"$ref": "#/$defs/testStatus"},
+        "evidenceRefs": {"$ref": "#/$defs/stringArray"},
+        "rivalModels": {"$ref": "#/$defs/stringArray"},
+        "killCriterion": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "separateClaimRefs": {
+      "type": "object",
+      "required": [
+        "consciousnessClaimRef",
+        "personhoodClaimRef",
+        "metaphysicalIndependenceClaimRef",
+        "justiceAssessmentRef",
+        "legitimacyAssessmentRef",
+        "authorizationRef"
+      ],
+      "properties": {
+        "consciousnessClaimRef": {"type": ["string", "null"], "minLength": 1},
+        "personhoodClaimRef": {"type": ["string", "null"], "minLength": 1},
+        "metaphysicalIndependenceClaimRef": {"type": ["string", "null"], "minLength": 1},
+        "justiceAssessmentRef": {"type": ["string", "null"], "minLength": 1},
+        "legitimacyAssessmentRef": {"type": ["string", "null"], "minLength": 1},
+        "authorizationRef": {"type": ["string", "null"], "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  }
+}
