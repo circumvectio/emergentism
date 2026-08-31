@@ -67,6 +67,7 @@
     {"path":"3/index.html","family":"dimension","shell":"dimension"},
     {"path":"4/index.html","family":"dimension","shell":"dimension"},
     {"path":"5/index.html","family":"dimension","shell":"dimension"},
+    {"path":"ecology/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
     {"path":"burrisphere/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
     {"path":"rosetta/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
     {"path":"6/index.html","family":"dimension","shell":"dimension"},

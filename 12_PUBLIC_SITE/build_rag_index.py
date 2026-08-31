@@ -25,13 +25,13 @@ BUILD_MANIFEST = ROOT / "book" / "build-manifest.json"
 
 LIBRARY = []
 
-LANDING_PAGES = ["compass", "frontier", "map", "lab", "contribute", "dimensions", "check", "plainly", "dasein", "f5", "questions", "questions/diagnoses", "ethics", "churn", "amrita", "halahala", "practice", "record", "record/eub-1", "record/pqa-54", "record/churning", "exit"]
+LANDING_PAGES = ["compass", "frontier", "map", "lab", "contribute", "dimensions", "check", "plainly", "dasein", "ecology", "f5", "questions", "questions/diagnoses", "ethics", "churn", "amrita", "halahala", "practice", "record", "record/eub-1", "record/pqa-54", "record/churning", "exit"]
 
 # Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
 # RAG corpus stays current with the front-of-house surfaces — these carry the
 # 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
 # book prose does not yet hold.
-OVERVIEW_PAGES = ["compass", "frontier", "map", "lab", "contribute", "dimensions", "check", "plainly", "dasein", "f5", "questions", "questions/diagnoses", "ethics", "churn", "amrita", "halahala", "practice", "record", "record/eub-1", "record/pqa-54", "record/churning", "exit",
+OVERVIEW_PAGES = ["compass", "frontier", "map", "lab", "contribute", "dimensions", "check", "plainly", "dasein", "ecology", "f5", "questions", "questions/diagnoses", "ethics", "churn", "amrita", "halahala", "practice", "record", "record/eub-1", "record/pqa-54", "record/churning", "exit",
                   "0", "1", "2", "3", "4", "5", "6"]
 
 MAX_PASSAGE = 700          # chars of text per passage

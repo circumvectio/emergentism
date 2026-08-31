@@ -37,7 +37,10 @@ footers without competing with the six primary doors.
 
 The detailed spine remains available at [`dimensions/`](dimensions/) and
 [`0/`](0/) through [`6/`](6/). The older [`compass/`](compass/) remains a
-compressed reading, not the primary research interface.
+compressed reading, not the primary research interface. The existing
+[`ecology/`](ecology/) route now carries the source-bound Emergentotype Carrier
+Map: six selected carrier profiles, their non-collapse rules, and the killable
+Strategic Egregoreotype test. It is neither a D-register nor a Rosetta rank.
 
 ## Homepage executive panorama
 
@@ -58,7 +61,8 @@ enacts the Soul Loop as one source-bound page journey:
 6. **Evidence — consequence.** Local receipts and counterexamples can revise
    the apparatus; they cannot certify the worldview.
 7. **Research — revision.** Wagers, nulls, rivals, discriminators, kills, and
-   survivors form the live frontier.
+   survivors form the live frontier. A compact carrier-persistence disclosure
+   opens the detailed `/ecology/` map without adding a new homepage stage.
 8. **Exit — nonclosure.** A reader may use the instrument, reject the
    metaphysics, revise the selections, or leave.
 

@@ -5,11 +5,11 @@
     "public_route": "../12_PUBLIC_SITE/book/index.html",
     "release_state": "source_active_current_public_reader",
     "schema": "emergentism/book-manifest/v2",
-    "sha256": "850174915370588bd7a59893b17300ac0218273a260953853703bfbddcfc5271"
+    "sha256": "add00bb3a275730b5cab7f3c5d6ff4b0c420c36a343da8d6ed07953f65c5ce87"
   },
   "claim_card_contract": {
     "coverage": {
-      "claim_card_count": 45,
+      "claim_card_count": 48,
       "claim_card_ids": [
         "OS01-01",
         "OS01-02",
@@ -55,7 +55,10 @@
         "OS01-42",
         "OS01-43",
         "OS01-44",
-        "OS01-45"
+        "OS01-45",
+        "OS01-46",
+        "OS01-47",
+        "OS01-48"
       ],
       "covered_chapters": [
         "actuality",
@@ -95,19 +98,19 @@
       ]
     },
     "graph_path": "00_META/registers/CLAIM_GRAPH.json",
-    "graph_sha256": "fc3f37655b4b2b49d21e6cdba100459f673f02760b9d9efc51b03fe550cea21d",
+    "graph_sha256": "109fdd3fd3bfc0844c19fc8d1495a2f567d2a55abb04676466450a899693980b",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "register_sha256": "20b5d15857bf9fdc78a099e0a1153b6c163cb9c20d6fe795f0c13bc3f68155ca",
+    "register_sha256": "3f9a63f4a61dee68081684819c7f9bfd4864283a63bc6af2f17723cc6779fd1d",
     "schema": "emergentism/claim-card-set/v2",
-    "sha256": "2ba4a30e7359de05d69ceaeb074f7646b701303ab55c6421963e9c4acb0ff6cc"
+    "sha256": "9f569bdc4ee02a53ae630a9e3c988059f134b223dcf54fac65c21f67aa0621d3"
   },
   "ordered_source_paths": [
     "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "1e4fb3e9a2f7382e4a8dcbd396d5fb72ab3ee5af7da244342f85913cf7495f58"
+    "sha256": "80ed229e752eb73278b07d3f6f9a0e3457ea120fcb4e5f1e66057c2233c0c601"
   },
   "renderer": {
     "extensions": [
@@ -125,7 +128,7 @@
       "lifecycle": "reader_synthesis",
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "public_eligible": true,
-      "sha256": "2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94"
+      "sha256": "6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475"
     }
   ],
   "withheld_provenance": {

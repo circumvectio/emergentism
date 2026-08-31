@@ -15,6 +15,7 @@
       "3/index.html",
       "4/index.html",
       "5/index.html",
+      "ecology/index.html",
       "burrisphere/index.html",
       "rosetta/index.html",
       "6/index.html",
@@ -285,7 +286,7 @@
       "surface": "about/index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:6f464ef15a0903e481fdc1033a886fa7a899c013d39d86f1d1b7e2f660a47539",
+      "sourceRevision": "sha256:2ea4081718f541f57f6c5dae11ae46d706885c8530983e945d60a30c3e8a5118",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -344,7 +345,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+    "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -381,7 +382,10 @@
         "OS01-37",
         "OS01-41",
         "OS01-42",
-        "OS01-45"
+        "OS01-45",
+        "OS01-46",
+        "OS01-47",
+        "OS01-48"
       ],
       "claimSources": [
         {
@@ -394,7 +398,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-01",
@@ -423,7 +427,10 @@
             "OS01-37",
             "OS01-41",
             "OS01-42",
-            "OS01-45"
+            "OS01-45",
+            "OS01-46",
+            "OS01-47",
+            "OS01-48"
           ]
         }
       ],
@@ -472,7 +479,55 @@
         "Prepared decision transaction · unsigned",
         "The action exit is the signature boundary",
         "The separate worldview Exit",
+        "When does a shared pattern survive its carriers?",
+        "Replace the carriers. Does the pattern survive?",
+        "Persistence names an intervention result, not an extra substance behind the carriers.",
+        "word token ≠ word type ≠ concept record ≠ Memotype candidate",
+        "A passed strategic test supports only a bounded predictive model",
         "The map remains optional."
+      ]
+    },
+    {
+      "surface": "ecology/index.html",
+      "role": "carrier_persistence_and_strategic_collective_trace",
+      "claimCardIds": [
+        "OS01-12",
+        "OS01-19",
+        "OS01-46",
+        "OS01-47",
+        "OS01-48"
+      ],
+      "claimSources": [
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-12",
+            "OS01-19",
+            "OS01-46",
+            "OS01-47",
+            "OS01-48"
+          ]
+        }
+      ],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "One pattern.",
+        "Replace the carriers. Does the pattern survive?",
+        "Persistence names an intervention result, not an extra substance behind the carriers.",
+        "Genotype",
+        "Epigenotype",
+        "Phenotype",
+        "Extended Phenotype",
+        "Memotype",
+        "Egregoreotype",
+        "The word is not the pattern.",
+        "GEN7 ≠ G7.",
+        "Five markers before subtype",
+        "A passed strategic test supports only a bounded predictive model.",
+        "Bottom-up carriers. Top-down constraints—only through actual mechanisms.",
+        "The projection owns no claim."
       ]
     },
     {
@@ -503,7 +558,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-01",
@@ -564,7 +619,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-27",
@@ -606,7 +661,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -679,7 +734,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -705,7 +760,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13"
@@ -732,7 +787,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-09",
@@ -780,7 +835,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-09",
@@ -831,7 +886,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-09"
@@ -852,7 +907,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-26"
@@ -873,7 +928,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13"
@@ -894,7 +949,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-26"
@@ -915,7 +970,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-09"
@@ -940,7 +995,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-33",
@@ -983,7 +1038,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-33",
@@ -1032,7 +1087,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-11",
@@ -1071,7 +1126,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-41"
@@ -1099,7 +1154,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-41"
@@ -1126,7 +1181,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-38",
@@ -1158,7 +1213,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-42",
@@ -1186,7 +1241,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-42",
@@ -1212,7 +1267,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-42",
@@ -1236,7 +1291,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-41"
@@ -1262,7 +1317,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-37",
@@ -1289,7 +1344,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-42",
@@ -1313,7 +1368,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-41"
@@ -1337,7 +1392,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-39",
@@ -1362,7 +1417,7 @@
       "claimSources": [
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+          "sourceRevision": "sha256:6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13"
