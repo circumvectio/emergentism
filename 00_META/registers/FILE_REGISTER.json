@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 4128,
+  "entry_count": 4129,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -4352,7 +4352,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 17,
+      "inbound_references": 18,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -6647,7 +6647,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 5,
+      "inbound_references": 6,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -12257,7 +12257,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 6,
+      "inbound_references": 7,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -20230,7 +20230,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 18,
+      "inbound_references": 19,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29163,6 +29163,23 @@
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_26.md",
       "sha256": "af2e5213aa0b46848e9b0ba5348232de542163d7a3752a1ff58c5f6967b62a12",
       "bytes": 1798,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_31.md",
+      "sha256": "0c36fd33701f681620bfeb2929f7c76d4ea213eb2da3c4f67abe5161b45d295a",
+      "bytes": 1635,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",
