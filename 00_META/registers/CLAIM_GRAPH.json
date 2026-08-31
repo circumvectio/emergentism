@@ -5,7 +5,7 @@
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 52,
+      "primary_card_count": 55,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -1987,6 +1987,151 @@
       "to": "A2"
     },
     {
+      "from": "OS01-46",
+      "kind": "depends_on",
+      "to": "OS01-05"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-46",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "depends_on",
+      "to": "OS01-12"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "depends_on",
+      "to": "OS01-46"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-47",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "depends_on",
+      "to": "OS01-10"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "depends_on",
+      "to": "OS01-46"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "depends_on",
+      "to": "OS01-47"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "supported_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "OS01-48",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
       "from": "RIP01-01",
       "kind": "owned_by",
       "to": "K-4"
@@ -3153,8 +3298,8 @@
     }
   ],
   "metrics": {
-    "edges": 624,
-    "nodes": 128
+    "edges": 653,
+    "nodes": 131
   },
   "nodes": [
     {
@@ -3203,7 +3348,7 @@
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
       "output_state": "private_full_book_completed_not_public",
-      "primary_card_count": 52,
+      "primary_card_count": 55,
       "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
@@ -3551,6 +3696,21 @@
     },
     {
       "id": "OS01-45",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-46",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-47",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-48",
       "kind": "claim",
       "lifecycle": "reader_synthesis"
     },

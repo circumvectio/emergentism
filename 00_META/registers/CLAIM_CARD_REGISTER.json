@@ -2041,6 +2041,131 @@
       "work_id": "BK-ONE-SITTING"
     },
     {
+      "card_id": "OS01-46",
+      "chapters": [
+        "boundaries",
+        "social-loop"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-05",
+        "OS01-09"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The Emergentotype Carrier Map asks one operational question at every selected",
+        "fingerprint_sha256": "753748fef0af6668445517bd552275e6e77a6d5cda30acf64ab7e93d19f469d0",
+        "line_end": 927,
+        "line_start": 909,
+        "section": "12E"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-47",
+      "chapters": [
+        "possibility",
+        "social-loop"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-12",
+        "OS01-46"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "The map joins six existing profiles without claiming one universal mechanism:",
+        "fingerprint_sha256": "f0415ba6f3a1f70c451819b14cf334407fe1dc2896c53f3e67f41d28e75802cc",
+        "line_end": 965,
+        "line_start": 929,
+        "section": "12E"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-48",
+      "chapters": [
+        "boundaries",
+        "possibility",
+        "social-loop"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-09",
+        "OS01-10",
+        "OS01-46",
+        "OS01-47"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A3",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C",
+        "I",
+        "S"
+      ],
+      "locator": {
+        "anchor": "At the collective edge, the parent Egregoreotype test must come before every",
+        "fingerprint_sha256": "162b1365acc24deeeef1a408507ea6fc82cc3b7e6fe4034af979954394bd94c5",
+        "line_end": 1009,
+        "line_start": 967,
+        "section": "12E"
+      },
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-2",
+        "K-3"
+      ],
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
       "card_id": "RIP01-01",
       "chapters": [
         "diagnosis-without-villain"
@@ -3265,8 +3390,8 @@
     "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 91,
-    "conjecture_cards": 35,
+    "cards": 94,
+    "conjecture_cards": 38,
     "public_bounded_current": 30,
     "works_with_cards": 9
   },

@@ -5,7 +5,7 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94",
+    "reviewed_source_sha256": "6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475",
     "review_history": [
       {
         "date": "2026-08-04",
@@ -150,6 +150,15 @@
         "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
         "ratchet": "M4 bottom-plane placement and F3 vertical-axis placement are explicit [I]; sphere territories and path-borne transfers are barred",
         "authoritative_receipt": "00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md"
+      },
+      {
+        "date": "2026-08-31",
+        "act": "append the owner-directed Emergentotype carrier-substitution synthesis without shifting prior claim slices; add OS01-46 through OS01-48",
+        "prior_hash": "2f49308cbb8a6159ba49c5afb256639180e63560aed0f272be83251c37fc3c94", "_prior_hash_scan": "# pragma: allow-secret",
+        "new_hash": "6fb94d0614e73e7948b1f80f2cb12879ee4147be40e0246e786141f5d7af7475", "_new_hash_scan": "# pragma: allow-secret",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "carrier persistence requires declared variation, intervention, rivals and kill; strategic recurrence cannot inflate into consciousness, personhood, legitimacy or authority",
+        "authoritative_receipt": "00_HANDOFF/EMERGENTOTYPE_PUBLIC_PROJECTION_OWNER_DIRECTION_2026_08_31.md"
       }
     ]
   },
@@ -1888,6 +1897,87 @@
       "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/CARTOGRAPHIC_SPINE_SOURCE_AND_PROJECTION_AUDIT_2026_08_27.md"]},
       "semantic_owner_id": "K-2",
       "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-46",
+      "chapters": ["social-loop", "boundaries"],
+      "locator": {
+        "section": "12E",
+        "line_start": 909,
+        "line_end": 927,
+        "anchor": "The Emergentotype Carrier Map asks one operational question at every selected",
+        "fingerprint_sha256": "753748fef0af6668445517bd552275e6e77a6d5cda30acf64ab7e93d19f469d0"
+      },
+      "plain_claim": "An Emergentotype profile is a selected analytic record that tests a claimed pattern through declared carrier variation, intervention, rivals and a kill; persistence is not an extra substance behind the carriers.",
+      "claim_type": "stipulation",
+      "evidence": [{"tier": "S", "scope": "selected carrier-profile contract"}, {"tier": "C", "scope": "cross-domain adequacy and generality"}],
+      "dependencies": ["OS01-05", "OS01-09"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["pattern is neither one carrier nor the undifferentiated set of all carriers", "operational persistence is not a metaphysical essence, natural kind, universal mechanism, D-register, Rosetta row, social rank, or proof of strong emergence"],
+      "strongest_rival": "Layer-native identity criteria and ordinary causal models explain every useful case without one cross-layer carrier-profile vocabulary.",
+      "discriminator": "For each declared layer, preregister admitted carrier substitutions, a pattern-relevant intervention, matched native and carrier-only rivals, prediction targets, and the loss that would demote the profile.",
+      "kill_criterion": "Retire or narrow the cross-layer map if its profiles cannot distinguish persistence from convenient renaming or add no predictive, intervention, or compression value beyond layer-native accounts.",
+      "survivor_if_killed": "The layer-native identity tests, explicit carrier boundaries, intervention discipline, and refusal to infer essence from naming survive.",
+      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "the selected vocabulary is fully revisable", "exit": "Use layer-native terms and reject the joined map."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[S/I/C] Replace the carriers. Does the pattern survive? Emergentotype is a selected carrier-test map, not a discovered hierarchy or hidden substance."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTOTYPE_PUBLIC_PROJECTION_OWNER_DIRECTION_2026_08_31.md"]},
+      "semantic_owner_id": "K-2",
+      "supporting_owner_ids": ["K-3", "K-4"]
+    },
+    {
+      "card_id": "OS01-47",
+      "chapters": ["social-loop", "possibility"],
+      "locator": {
+        "section": "12E",
+        "line_start": 929,
+        "line_end": 965,
+        "anchor": "The map joins six existing profiles without claiming one universal mechanism:",
+        "fingerprint_sha256": "f0415ba6f3a1f70c451819b14cf334407fe1dc2896c53f3e67f41d28e75802cc"
+      },
+      "plain_claim": "Genotype, Epigenotype, Phenotype, Extended Phenotype, Memotype and Egregoreotype form a selected six-profile carrier map, while word token, word type, concept record and Memotype candidate remain many-to-many and non-identical.",
+      "claim_type": "interpretation_vow",
+      "evidence": [{"tier": "S", "scope": "framework type distinctions and six-profile selection"}, {"tier": "I", "scope": "cross-layer ordering"}, {"tier": "C", "scope": "generality and explanatory utility"}],
+      "dependencies": ["OS01-12", "OS01-46"],
+      "docket_ids": ["A2", "A6"],
+      "type_boundaries": ["gene or genotype is not organism, individual, or clone", "epigenotype is not one static molecular inventory", "extended phenotype is not every environmental event", "word token, word type, concept, meme, Memotype candidate and carrier instance are not identities", "six profiles are not D0-D6, G7, GEN7, trophic rank, person type, or moral hierarchy"],
+      "strongest_rival": "The joined sequence conflates heterogeneous native categories and adds no value over genetics, developmental biology, cultural evolution, distributed cognition, and institutional analysis kept separate.",
+      "discriminator": "Test whether the typed join improves reconstruction, substitution design, error detection, or held-out prediction over native-only and shuffled-layer controls without increasing type leakage.",
+      "kill_criterion": "Remove the join or any profile if it repeatedly collapses native meanings, promotes a carrier into its pattern, or adds no declared task value over the strongest simpler rival.",
+      "survivor_if_killed": "The native terms and the token/type/concept/carrier non-identity distinctions remain.",
+      "consequence": {"applicable": true, "bearers": ["people classified through the map", "institutions and affected participants"], "consent": "the map creates no identity, status, mandate, or consent", "reversibility": "labels are replaceable and classifications contestable", "exit": "No person must accept a profile, hierarchy, or Rosetta identity."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[S/I/C] Six selected carrier profiles; six different identity tests. A word is not a concept, a token is not a memotype, and no layer is a human rank."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTOTYPE_PUBLIC_PROJECTION_OWNER_DIRECTION_2026_08_31.md"]},
+      "semantic_owner_id": "K-2",
+      "supporting_owner_ids": ["K-3"]
+    },
+    {
+      "card_id": "OS01-48",
+      "chapters": ["social-loop", "possibility", "boundaries"],
+      "locator": {
+        "section": "12E",
+        "line_start": 967,
+        "line_end": 1009,
+        "anchor": "At the collective edge, the parent Egregoreotype test must come before every",
+        "fingerprint_sha256": "162b1365acc24deeeef1a408507ea6fc82cc3b7e6fe4034af979954394bd94c5"
+      },
+      "plain_claim": "A Strategic Egregoreotype candidate must first pass the complete persistent-trace parent test, then add a represented actor-policy with prospective, intervention-sensitive, recurrent value beyond ordinary rivals; passing establishes no collective consciousness, personhood, legitimacy, or authority.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "S", "scope": "selected parent-before-subtype and non-entailment contract"}, {"tier": "I", "scope": "carrier-mediated reflexive game interpretation"}, {"tier": "C", "scope": "empirical incidence and incremental strategic effect"}],
+      "dependencies": ["OS01-09", "OS01-10", "OS01-46", "OS01-47"],
+      "docket_ids": ["A2", "A3", "A6"],
+      "type_boundaries": ["represented actor-model is actual D4 carrier content; D5 content does not act without a D4 carrier", "strategic efficacy does not entail consciousness, phenomenal unity, personhood, independent existence, moral worth, Justice, legitimacy, consent, signing, authorization, or legal status", "schema validity and public recurrence are not empirical contact"],
+      "strongest_rival": "Incentive, command, sanction, reputation, current-carrier state, memory, common cause, demand, or observer story explains the same behavior without one strategic collective actor-model.",
+      "discriminator": "Before observing outcomes, preregister the represented policy, counterfactual predictions, carrier-uptake intervention, cross-context recurrence measure, matched rivals, incremental threshold, substrate cost, and null.",
+      "kill_criterion": "Kill strategic status when actor framing or attributed policy adds no reliable prospective or intervention value over ordinary rivals, or when the parent five-marker trace fails.",
+      "survivor_if_killed": "The six carrier profiles, parent collective-trace test, token/type/concept distinctions, and ordinary institutional, incentive, memory, or coordination models remain.",
+      "consequence": {"applicable": true, "bearers": ["actual carriers", "people affected by attributed collective policy"], "consent": "representation creates no consent or mandate", "reversibility": "the subtype may be demoted or killed without erasing the carriers or record", "exit": "Actors may reject the collective attribution and use ordinary rival models."},
+      "disposition": "research_docket",
+      "public": {"state": "candidate", "wording": "[C] A shared actor-model is strategically useful only if it prospectively changes prediction or intervention beyond ordinary rivals. Passing grants no consciousness, personhood, legitimacy, Justice, consent, or authority."},
+      "review": {"state": "l3_audited", "receipts": ["00_HANDOFF/EMERGENTOTYPE_PUBLIC_PROJECTION_OWNER_DIRECTION_2026_08_31.md"]},
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": ["K-2", "K-3"]
     }
   ]
 }

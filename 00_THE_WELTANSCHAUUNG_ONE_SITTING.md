@@ -903,3 +903,110 @@ aspiration, preserve failures, keep affected bearers visible, and return open
 questions to research. If it cannot, the Churning itself dies. Public access may
 aid discovery, but neither crawlability nor publication guarantees indexing,
 citation, model ingestion, or inclusion in a future AI training run.
+
+### 12E. The Emergentotype Carrier Map — identity through change
+
+The Emergentotype Carrier Map asks one operational question at every selected
+layer `[S/I]`:
+
+> **What pattern is being identified, which actual carriers instantiate it,
+> what carrier differences are admitted, and what intervention would destroy
+> the claimed identity?**
+
+Its compact rule is:
+
+```text
+pattern at layer L  !=  one carrier at L
+pattern at layer L  !=  the undifferentiated set of all carriers at L
+claimed identity at L = persistence under declared variation and intervention
+```
+
+The final line is a selected operational rule `[S]`, not a theorem about
+metaphysical identity. Persistence names an intervention result, not an extra
+substance behind the carriers. A profile that cannot state admitted variation,
+a discriminating intervention, rivals, and a kill is only a name.
+
+The map joins six existing profiles without claiming one universal mechanism:
+
+1. **Genotype** — a declared heritable sequence configuration, not an organism,
+   individual, or clone.
+2. **Epigenotype** — a developmental and regulatory process-profile at a named
+   tissue, time, assay, and environment, not one static inventory.
+3. **Phenotype** — an observed trait, behavior, or organismal profile at a
+   declared boundary, not merely genotype made visible.
+4. **Extended Phenotype** — an external effect, artifact, or niche modification
+   connected by a declared organism-mediated causal chain; not every event in
+   an environment.
+5. **Memotype** — a recurrent cultural carrier-pattern that may span words,
+   images, rituals, habits, interfaces, algorithms, and other actual traces.
+6. **Egregoreotype** — a candidate persistent collective trace that must retain
+   the complete five-marker parent test across people, artifacts, procedures,
+   institutions, databases, model sessions, and their shared traces.
+
+The sequence is an Emergentist selection `[S/I]`, not an inherited scientific
+taxonomy, social rank, seventh register, D-register, Rosetta row, or proof of
+strong emergence. Its generality remains `[C]`. Each layer keeps its native
+identity criterion: genetic sequence, development, observed trait, causal
+attribution, semantic recurrence, and collective-trace persistence are not one
+test wearing six names.
+
+The word *chair* makes the distinction concrete. One spoken or written token is
+not the word type, a chair-concept, a chair, a meme, or the complete recurrent
+pattern. Different words, images, demonstrations, artifacts, habits, and
+interfaces may cue or carry related distinctions. The relations are
+many-to-many:
+
+```text
+word token != word type != concept record != Memotype candidate
+```
+
+No token contains the whole pattern, and no word becomes an actor. A vector
+database can implement one retrieval surface; it is not the ontology of
+meaning.
+
+At the collective edge, the parent Egregoreotype test must come before every
+strategic subtype:
+
+```text
+persistent trace
++ carrier turnover
++ intervention-sensitive selection reweighting
++ recurrent objective-like bias
++ visible substrate and bearer cost
+```
+
+A **StrategicEgregoreotypeCandidate** then adds an explicit represented actor,
+named attributors and traces, prospective and counterfactual policy
+predictions, intervention-sensitive uptake by actual carriers, cross-context
+recurrence or adaptation, and incremental predictive value beyond commands,
+incentives, current-carrier state, memory, common cause, demand, and observer
+story `[S/I/C]`.
+
+The causal route remains entirely actual:
+
+```text
+represented actor-model in actual carriers
+  -> expected response in actual carrier-models
+  -> carrier choices
+  -> distributed enactment
+  -> outcome and attribution
+  -> trace revision
+```
+
+This is the lawful return from an upper pattern to its carriers: not magic
+downward reach, but actual constraints, expectations, artifacts, incentives,
+and revised traces. Lower-level carriers realize the pattern; an upper-level
+description earns causal novelty only if it improves prospective prediction or
+intervention beyond carrier-only rivals. The map therefore gives strong and
+weak emergence a test programme, not a proof.
+
+A passed strategic test supports only a bounded predictive model. It grants no
+consciousness, phenomenal unity, personhood, independent existence, moral
+worth, Justice, legitimacy, consent, signing, or authority. Kill strategic
+status when the actor framing adds no prospective, intervention-sensitive
+value over ordinary rivals. If it dies, the six carrier profiles, the parent
+trace test, the token/type/concept distinctions, and ordinary institutional or
+incentive explanations survive.
+
+The detailed source contract is
+[`The Emergentotype Carrier Map and the Strategic Egregoreotype Candidate`](05_COSMOLOGY/00_EMERGENTOTYPE_CARRIER_VARIATION_AND_STRATEGIC_EGREGOREOTYPE.md).
