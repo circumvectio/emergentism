@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 900,
+  "entry_count": 904,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 4103,
+      "tracked_file_count": 4128,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup;",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 166,
+      "tracked_file_count": 168,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -519,7 +519,7 @@
       "owns": "02 Epistemology — How a pattern earns a claim",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 30,
+      "tracked_file_count": 31,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -545,7 +545,7 @@
       "owns": "This is the Data Science sublane for memetic evolution, attention dynamics, and memetic defense architectures.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 11,
+      "tracked_file_count": 12,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1091,7 +1091,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 149,
+      "tracked_file_count": 151,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1507,7 +1507,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 250,
+      "tracked_file_count": 251,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1520,7 +1520,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 59,
+      "tracked_file_count": 60,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8709,7 +8709,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1123,
+      "tracked_file_count": 1142,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -10075,6 +10075,58 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 3,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_29_burrisphere_shots",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 17,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_29_burrisphere_shots/cli-artifacts-2026-08-26-burrisphere",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_29_nested_wave2",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_30_nested_leftover",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
