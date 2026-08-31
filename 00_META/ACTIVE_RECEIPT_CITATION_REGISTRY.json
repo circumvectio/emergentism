@@ -3,7 +3,7 @@
   "status": "ACTIVE_INTERNAL_CITATION_CUSTODY",
   "boundary": "A registered exact filename/path token disambiguates a receipt citation; it does not ratify the receipt, promote evidence, or rewrite historical custody.",
   "custody": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_26.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_31.md",
     "digest_marker": "active_receipt_citation_registry_canonical_sha256",
     "rebaseline_rule": "A changed registry requires a new dated receipt path."
   },

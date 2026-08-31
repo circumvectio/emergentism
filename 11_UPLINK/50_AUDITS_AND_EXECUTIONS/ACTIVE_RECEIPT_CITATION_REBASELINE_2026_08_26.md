@@ -31,7 +31,7 @@ custody. The 2026-08-23 predecessor receipt remains immutable.
 
 ## Machine binding
 
-active_receipt_citation_registry_canonical_sha256: 3cc0cfb4cbd929ad970afa3415be23b7496bb9a792846fdbf2f4a54c07e31a48
+active_receipt_citation_registry_canonical_sha256: a67db843e521068f224f0bb61fa96b35c4abbc28749addc9be160de5b0b27e89
 
 ## Boundary
 
