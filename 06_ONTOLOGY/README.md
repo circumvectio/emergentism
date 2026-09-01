@@ -21,7 +21,11 @@ commitments stop. The Ground remains prior to every map, including this one.
 8. [The Ten Emergentist Answers](14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md)
    — owner-adopted internal answer layer; each atom retains its native tier,
    rival, kill, survivor and external debt
-9. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
+9. [The Emergent Ladder](15_THE_EMERGENT_LADDER_2026_09_01.md) — `[S]`
+   selected promotion instrument from Signal to Public; `[I]` emergence,
+   wisdom, value and diffusion account; functions, object rungs and grants
+   remain orthogonal, and the machine projection remains `[D]` and non-live
+10. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
 
 ## Companions and staged work
 
