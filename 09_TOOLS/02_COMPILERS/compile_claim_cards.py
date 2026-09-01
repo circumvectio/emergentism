@@ -459,6 +459,12 @@ def _resolve_hash_bound_relocation(
     SHA-256, and select the unique candidate with the longest common path suffix.
     A tied best match is an ownership ambiguity and fails closed. The returned
     count records how many byte-identical custody copies were observed.
+
+    Linked-worktree carriers are not custody locations. In particular, nested
+    ``.codex-worktrees`` and ``.claude/worktrees`` trees may contain replayed
+    copies of the same Git blob and must not manufacture an ambiguity. Git
+    administration directories are excluded for the same reason. Two genuine
+    locations inside the owning pillar still fail closed when equally specific.
     """
     if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
         raise ContractError("hash-bound relocation requires a lowercase SHA-256")
@@ -478,8 +484,17 @@ def _resolve_hash_bound_relocation(
         directory_path = Path(directory)
         # Never traverse symlinked directories. A matching-name symlink is an
         # explicit contract failure rather than an invisible non-match.
+        relative_directory = directory_path.relative_to(pillar)
+        excluded_here: set[str] = {".git"}
+        if relative_directory == Path("."):
+            excluded_here.add(".codex-worktrees")
+        if relative_directory == Path(".claude"):
+            excluded_here.add("worktrees")
         dirnames[:] = [
-            name for name in dirnames if not (directory_path / name).is_symlink()
+            name
+            for name in dirnames
+            if name not in excluded_here
+            and not (directory_path / name).is_symlink()
         ]
         if parts[-1] not in filenames:
             continue

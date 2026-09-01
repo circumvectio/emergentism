@@ -1345,6 +1345,39 @@ class ClaimGraphContractTests(unittest.TestCase):
             )
         self.assertEqual(resolved, (preferred.resolve(), 2))
 
+    def test_hash_bound_relocation_excludes_worktree_and_git_carriers(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        federation = Path(temp.name) / "Documents"
+        primary = federation / "01_EMERGENTISM"
+        pillar = federation / "02_SKYZAI"
+        archive = pillar / "90_ARCHIVE/custody/old/tree/frozen.md"
+        replay_paths = (
+            pillar / ".codex-worktrees/replay/old/tree/frozen.md",
+            pillar / ".claude/worktrees/replay/old/tree/frozen.md",
+            pillar / ".git/worktrees/replay/old/tree/frozen.md",
+        )
+        primary.mkdir(parents=True)
+        (primary / "AGENTS.md").write_text("route", encoding="utf-8")
+        (primary / "00_THE_KERNEL_INDEX.md").write_text("kernel", encoding="utf-8")
+        archive.parent.mkdir(parents=True)
+        archive.write_text("same frozen bytes", encoding="utf-8")
+        for replay in replay_paths:
+            replay.parent.mkdir(parents=True)
+            replay.write_text("same frozen bytes", encoding="utf-8")
+        expected = hashlib.sha256(b"same frozen bytes").hexdigest()
+
+        with mock.patch.dict(
+            os.environ,
+            {COMPILER.PRIMARY_CHECKOUT_ENV: primary.as_posix()},
+            clear=True,
+        ):
+            resolved = COMPILER._resolve_hash_bound_relocation(
+                primary,
+                Path("../02_SKYZAI/old/tree/frozen.md"),
+                expected,
+            )
+        self.assertEqual(resolved, (archive.resolve(), 1))
+
     def test_explicit_current_checkout_enables_hash_bound_relocation(self) -> None:
         temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
         federation = Path(temp.name) / "Documents"
