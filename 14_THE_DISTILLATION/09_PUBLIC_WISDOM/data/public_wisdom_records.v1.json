@@ -1,0 +1,93 @@
+{
+  "schema_id": "emergentism/PublicWisdomRecordSet.v1",
+  "record_order": ["EM-WISDOM-001@1"],
+  "records": [
+    {
+      "schema_id": "emergentism/PublicWisdomRecord.v1",
+      "stable_id": "EM-WISDOM-001@1",
+      "title": "The Public Wisdom Compact",
+      "kind": "WISDOM_POLICY",
+      "maturity": "PROVISIONAL",
+      "projection": "AUTHORIZED_NOT_LIT",
+      "epistemic_type": "chosen editorial policy with empirical support debt",
+      "evidence_tier": "[D]",
+      "scope": "Emergentism editorial, research, and public-projection practice only",
+      "proposition": "A public reasoning practice should preserve source ancestry, separate promotion and consequence states, expose authority and bearer ledgers, and remain correctable after publication.",
+      "clauses": [
+        "Nothing promotes itself.",
+        "Keep possibility wide; make commitment accountable.",
+        "Preserve ancestry; correction creates a successor rather than silently overwriting.",
+        "Capability, intelligence, popularity, product position, or consensus grants no authority.",
+        "Keep proposal, Judgment, authorization, execution, receipt, outcome, and revision distinct.",
+        "Count creation, destruction, and preservation separately by bearer and horizon; never hide them inside one unsupported scalar.",
+        "Publicity begins another feedback loop: reach is not truth, and correction, contestability, and Exit remain available."
+      ],
+      "compression": "Keep possibility wide. Make commitment accountable. Nothing promotes itself. Reality retains the right to correct every map.",
+      "source_ids": [
+        "SRC-EM-CLAIM-STATUS",
+        "SRC-EM-WELTANSCHAUUNG",
+        "SRC-EM-AMRITA",
+        "SRC-EM-METHOD",
+        "SRC-EM-THIRD-CHURNING",
+        "SRC-EM-FOURTH-CHURNING",
+        "SRC-EM-SOUL-LOOP",
+        "SRC-MENEXUS-RUNTIME"
+      ],
+      "lineage": {
+        "predecessor_id": null,
+        "successor_id": null,
+        "correction_of": null
+      },
+      "bearer_ledgers": [
+        {
+          "bearer": "source owners",
+          "horizon": "present and successor revisions",
+          "creation": "legible attribution and correction lineage",
+          "destruction": "additional review and maintenance cost",
+          "preservation": "semantic ownership and predecessor bytes",
+          "consent": "no product adoption is inferred from inclusion",
+          "exit": "source owner may reject the candidate application without losing its native record"
+        },
+        {
+          "bearer": "readers and contributors",
+          "horizon": "first reading through later correction",
+          "creation": "a compact map of warrant, decision, policy, and publicity",
+          "destruction": "attention cost and risk of framework vocabulary crowding out native terms",
+          "preservation": "access to sources, rivals, kills, corrections, and genuine Exit",
+          "consent": "worldview adoption is never required to inspect or contribute",
+          "exit": "the map can be put down; citations and native distinctions remain"
+        },
+        {
+          "bearer": "affected people and future publics",
+          "horizon": "downstream use and institutional reuse",
+          "creation": "visible authorization, consequence, and correction boundaries",
+          "destruction": "possible delay where urgent action is justified",
+          "preservation": "bearer-indexed harms, contestability, and non-self-certification",
+          "consent": "no proxy mandate or public consent is manufactured by the Compact",
+          "exit": "separately applicable rights, deletion duties, withdrawal, and challenge remain controlling"
+        }
+      ],
+      "authority": {
+        "bearer": "Yves R. Burri",
+        "scope": "local Emergentism editorial policy candidate",
+        "may_bind_products": false,
+        "may_sign": false,
+        "may_authorize_external_act": false
+      },
+      "rivals": [
+        "ordinary source criticism, audit trails, version control, decision journals, and scientific peer review may supply the same discipline with less vocabulary",
+        "a faster risk-proportionate process may outperform the full stack for reversible low-consequence work"
+      ],
+      "kill_criteria": [
+        "supersede or narrow the policy if it systematically blocks justified action, hides real authority, or makes correction harder",
+        "retract any clause that preserves harmful data against valid privacy, deletion, revocation, contract, or legal duties",
+        "do not promote to SUPPORTED unless admitted independent outcomes beat named simpler controls on error detection, correction, reversibility, or bearer protection"
+      ],
+      "outcomes": [],
+      "corrections": [],
+      "supported_by_outcome_count": 0,
+      "public_digest": "A compact for turning ideas into accountable, revisable guidance without confusing visibility, consensus, capability, or receipts with truth or authority.",
+      "state_note": "Locally authorized for the Emergentism v3 candidate; not lit, externally validated, product-adopted, or Supported."
+    }
+  ]
+}

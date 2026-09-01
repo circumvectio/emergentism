@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/EstateApplicationCard.v1.schema.json",
+  "title": "EstateApplicationCard.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "stable_id", "name", "source_owner", "coverage_state", "application_status", "source_ids", "stack_contact", "candidate_application", "adoption_state", "authority_effect", "may_sign", "may_authorize", "self_promotion_forbidden", "evidence_tier", "survivor_if_rejected"],
+  "properties": {
+    "schema_id": {"const": "emergentism/EstateApplicationCard.v1"},
+    "stable_id": {"type": "string", "pattern": "^EAC-[A-Z0-9-]+@[1-9][0-9]*$"},
+    "name": {"type": "string", "minLength": 2},
+    "source_owner": {"type": "string", "minLength": 3},
+    "coverage_state": {"enum": ["ADMITTED_APPLICATION", "CANDIDATE_ONLY"]},
+    "application_status": {"enum": ["LOCAL_DOCTRINE_APPLICATION", "SOURCE_OWNED_CANDIDATE"]},
+    "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^SRC-[A-Z0-9-]+$"}},
+    "stack_contact": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["Signal", "Data", "Information", "Knowledge", "Judgment", "Wisdom", "Public"]}},
+    "candidate_application": {"type": "string", "minLength": 20},
+    "adoption_state": {"enum": ["ADOPTED_IN_EMERGENTISM", "NOT_ADOPTED_BY_PRODUCT"]},
+    "authority_effect": {"const": "none"},
+    "may_sign": {"const": false},
+    "may_authorize": {"const": false},
+    "self_promotion_forbidden": {"const": true},
+    "evidence_tier": {"type": "string", "pattern": "^\\[[A-Z/]+\\]$"},
+    "survivor_if_rejected": {"type": "string", "minLength": 12}
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_id": "emergentism/EmergenceStack.v1",
+  "stack_id": "EMERGENCE-STACK@1",
+  "version": 1,
+  "scope": "A source-separation and persistence discipline for human and machine records; not an ontology of reality or a folder taxonomy.",
+  "stages": [
+    {
+      "stage_id": "ES-1",
+      "ordinal": 1,
+      "name": "Signal",
+      "object_definition": "A sensed, voiced, clicked, or streamed event before an admitted semantic structure.",
+      "default_retention": "transient",
+      "writers": ["device", "sensor", "human intake"],
+      "expires_when": "Its declared intake window closes unless a Data object is created.",
+      "promotion_requires": []
+    },
+    {
+      "stage_id": "ES-2",
+      "ordinal": 2,
+      "name": "Data",
+      "object_definition": "Addressable bytes with content identity, size, time, source boundary, and retention state; still semantically mute.",
+      "default_retention": "transient or hot",
+      "writers": ["bounded ingest"],
+      "expires_when": "Its retention purpose or service window ends unless a structured successor is created.",
+      "promotion_requires": ["exact bytes", "content identity", "source and time", "retention basis"]
+    },
+    {
+      "stage_id": "ES-3",
+      "ordinal": 3,
+      "name": "Information",
+      "object_definition": "Data plus an explicit schema, transformation, interpretation boundary, and provenance trail.",
+      "default_retention": "hot",
+      "writers": ["parser", "human editor", "agent inside grant"],
+      "expires_when": "Its usefulness or rights basis expires and no cited claim depends on it.",
+      "promotion_requires": ["schema", "transformation digest", "provenance", "unknowns and loss"]
+    },
+    {
+      "stage_id": "ES-4",
+      "ordinal": 4,
+      "name": "Knowledge",
+      "object_definition": "A typed proposition linked to admitted Information, explicit warrant, confidence, rivals, and defeaters; not truth by label.",
+      "default_retention": "warm",
+      "writers": ["human claimant", "agent proposing inside grant"],
+      "expires_when": "It is revoked, contradicted, unsupported, or superseded; the predecessor record remains traceable.",
+      "promotion_requires": ["proposition", "source citations", "warrant", "rivals", "defeaters", "claim bearer"]
+    },
+    {
+      "stage_id": "ES-5",
+      "ordinal": 5,
+      "name": "Judgment",
+      "object_definition": "Knowledge joined to a scoped decision by a named bearer, with authority state, reversibility, cost, and expected consequence visible.",
+      "default_retention": "warm audit",
+      "writers": ["authorized human", "agent only within an already valid charter"],
+      "expires_when": "The decision is revoked or superseded; the audit receipt remains under applicable retention law.",
+      "promotion_requires": ["decision", "bearer", "scope", "authority state", "reversibility", "expected consequence"]
+    },
+    {
+      "stage_id": "ES-6",
+      "ordinal": 6,
+      "name": "Wisdom",
+      "object_definition": "A reusable, versioned policy distilled from Judgment with scope, outcome evidence, rivals, kills, correction lineage, and authority boundary.",
+      "default_retention": "cold or policy",
+      "writers": ["named policy bearer under separate authority"],
+      "expires_when": "It is contested, superseded, retracted, or its mandate ends; lineage remains visible where lawful.",
+      "promotion_requires": ["reusable policy form", "outcome evidence", "scope", "kill criteria", "correction path", "policy authority"]
+    }
+  ],
+  "promotions": [
+    {
+      "promotion_id": "ESP-1",
+      "from": "ES-1",
+      "to": "ES-2",
+      "requires_new_object": true,
+      "requirements": ["capture exact signal bytes", "bind source, time, rights, and retention"]
+    },
+    {
+      "promotion_id": "ESP-2",
+      "from": "ES-2",
+      "to": "ES-3",
+      "requires_new_object": true,
+      "requirements": ["declare schema and transformation", "preserve provenance and transformation loss"]
+    },
+    {
+      "promotion_id": "ESP-3",
+      "from": "ES-3",
+      "to": "ES-4",
+      "requires_new_object": true,
+      "requirements": ["state one typed proposition", "cite admitted sources and expose warrant, rivals, and defeaters"]
+    },
+    {
+      "promotion_id": "ESP-4",
+      "from": "ES-4",
+      "to": "ES-5",
+      "requires_new_object": true,
+      "requirements": ["record a scoped decision by a named bearer", "bind authority state, cost, reversibility, and expected consequence"]
+    },
+    {
+      "promotion_id": "ESP-5",
+      "from": "ES-5",
+      "to": "ES-6",
+      "requires_new_object": true,
+      "requirements": ["derive a reusable policy without erasing the Judgment", "bind independent outcomes, scope, rivals, kills, correction, and policy authority"]
+    }
+  ],
+  "forbidden_skips": [
+    "A raw signal or byte object may not be called Knowledge.",
+    "A structured transcript or model output may not promote itself to Knowledge.",
+    "A claim, recommendation, or proposal may not be presented as Judgment without a decision bearer.",
+    "A repeated Judgment may not become Wisdom without policy scope, outcomes, kills, correction, and authority.",
+    "A commit, receipt, publication event, model consensus, or polished interface may not be presented as an outcome or truth upgrade.",
+    "A grave may not be resurrected in place; any renewed proposition needs a successor ID and fresh warrant.",
+    "A product may apply or contest Emergentism but may not promote its own application into Emergentism doctrine."
+  ],
+  "public_projection": {
+    "is_stage": false,
+    "changes_truth": false,
+    "changes_maturity": false,
+    "requires": ["separate authorization", "minimized public bytes", "source and correction links", "lighting receipt"],
+    "states": ["DRAFT", "AUTHORIZED_NOT_LIT", "LIT", "CORRECTED", "RETRACTED"]
+  }
+}

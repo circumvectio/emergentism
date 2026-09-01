@@ -10,7 +10,7 @@ supersedes: "07_THEOLOGY/00_THE_AMRITA.md (DISTILLATION, 2026-07-03, recovery-in
 
 # The Second Churning
 
-> **Currency 2026-08-29.** This README remains the 2026-08-05 Second Churning projection. It is withdrawn as a *current* assembly (`SUCCESSOR_NOTICE_2026_08_23.md`). Later assemblies live beside it: `07_THE_THIRD_CHURNING_2026_08_23/`, `08_THE_FOURTH_CHURNING_2026_08_24/`, `09_THE_SEVEN_ACTS_2026_08_27.md`. Upstream sources still own every proposition.
+> **Currency 2026-09-01.** This README remains the 2026-08-05 Second Churning projection. It is withdrawn as a *current* assembly (`SUCCESSOR_NOTICE_2026_08_23.md`). Later assemblies live beside it: `07_THE_THIRD_CHURNING_2026_08_23/`, `08_THE_FOURTH_CHURNING_2026_08_24/`, `09_THE_SEVEN_ACTS_2026_08_27.md`, and the source-separated [`09_PUBLIC_WISDOM/`](09_PUBLIC_WISDOM/) instrument. The latter begins with one Provisional editorial policy, zero Supported wisdom, and Public typed as a separate lighting event. Upstream sources still own every proposition.
 
 
 > **The poison comes first. Before the treasures. Before the nectar.**

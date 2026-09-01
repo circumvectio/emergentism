@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/PublicWisdomRecord.v1.schema.json",
+  "title": "PublicWisdomRecord.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "stable_id", "title", "kind", "maturity", "projection", "epistemic_type", "evidence_tier", "scope", "proposition", "clauses", "compression", "source_ids", "lineage", "bearer_ledgers", "authority", "rivals", "kill_criteria", "outcomes", "corrections", "supported_by_outcome_count", "public_digest", "state_note"],
+  "properties": {
+    "schema_id": {"const": "emergentism/PublicWisdomRecord.v1"},
+    "stable_id": {"type": "string", "pattern": "^EM-WISDOM-[0-9]{3}@[1-9][0-9]*$"},
+    "title": {"type": "string", "minLength": 3},
+    "kind": {"enum": ["PUBLIC_KNOWLEDGE", "POLICY_CANDIDATE", "WISDOM_POLICY"]},
+    "maturity": {"enum": ["N/A", "PROVISIONAL", "SUPPORTED", "CONTESTED", "SUPERSEDED"]},
+    "projection": {"enum": ["DRAFT", "AUTHORIZED_NOT_LIT", "LIT", "CORRECTED", "RETRACTED"]},
+    "epistemic_type": {"type": "string", "minLength": 8},
+    "evidence_tier": {"type": "string", "pattern": "^\\[[A-Z/]+\\]$"},
+    "scope": {"type": "string", "minLength": 8},
+    "proposition": {"type": "string", "minLength": 20},
+    "clauses": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 8}},
+    "compression": {"type": "string", "minLength": 20},
+    "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^SRC-[A-Z0-9-]+$"}},
+    "lineage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["predecessor_id", "successor_id", "correction_of"],
+      "properties": {
+        "predecessor_id": {"type": ["string", "null"]},
+        "successor_id": {"type": ["string", "null"]},
+        "correction_of": {"type": ["string", "null"]}
+      }
+    },
+    "bearer_ledgers": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["bearer", "horizon", "creation", "destruction", "preservation", "consent", "exit"],
+        "properties": {
+          "bearer": {"type": "string", "minLength": 3},
+          "horizon": {"type": "string", "minLength": 3},
+          "creation": {"type": "string", "minLength": 3},
+          "destruction": {"type": "string", "minLength": 3},
+          "preservation": {"type": "string", "minLength": 3},
+          "consent": {"type": "string", "minLength": 3},
+          "exit": {"type": "string", "minLength": 3}
+        }
+      }
+    },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bearer", "scope", "may_bind_products", "may_sign", "may_authorize_external_act"],
+      "properties": {
+        "bearer": {"type": "string", "minLength": 3},
+        "scope": {"type": "string", "minLength": 5},
+        "may_bind_products": {"const": false},
+        "may_sign": {"const": false},
+        "may_authorize_external_act": {"const": false}
+      }
+    },
+    "rivals": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 8}},
+    "kill_criteria": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 8}},
+    "outcomes": {"type": "array", "items": {"type": "object"}},
+    "corrections": {"type": "array", "items": {"type": "object"}},
+    "supported_by_outcome_count": {"type": "integer", "minimum": 0},
+    "public_digest": {"type": "string", "minLength": 20},
+    "state_note": {"type": "string", "minLength": 12}
+  }
+}

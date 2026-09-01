@@ -1,0 +1,188 @@
+{
+  "schema_id": "emergentism/PublicWisdomSourceManifest.v1",
+  "manifest_id": "PUBLIC-WISDOM-SOURCES@1",
+  "date": "2026-09-01",
+  "federation_root_name": "Documents",
+  "source_policy": "Only exact committed Git blobs named below are admissible. Working-tree bytes, generated mirrors, agent consensus, and worktree replay carriers are excluded.",
+  "claim_compiler_environment": {
+    "variable": "EMERGENTISM_PRIMARY_CHECKOUT_ROOT",
+    "meaning": "Absolute path to the primary 01_EMERGENTISM checkout inside the source federation.",
+    "excluded_carriers": [".codex-worktrees", ".claude/worktrees", ".git"]
+  },
+  "repositories": [
+    {
+      "repo_id": "REPO-EMERGENTISM",
+      "root": "01_EMERGENTISM",
+      "commit": "a55e01c7a04d32671c07f8cb63f2472164500935"
+    },
+    {
+      "repo_id": "REPO-SKYZAI",
+      "root": "02_SKYZAI",
+      "commit": "3b7d3fd5c2e4eef8131216acb078692ceb5b5240"
+    },
+    {
+      "repo_id": "REPO-VENTURES",
+      "root": "03_VENTURES",
+      "commit": "c14c54a5003c840bb07ff506c2ae862910d5b9c3"
+    },
+    {
+      "repo_id": "REPO-MENEXUS",
+      "root": "03_VENTURES/01_RECORDED_LEGAL_PERSONS/MENEXUS",
+      "commit": "7e74716077773bc2417631df7cb99aea34b48545"
+    },
+    {
+      "repo_id": "REPO-OFN",
+      "root": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+      "commit": "8d1c460da9ff0aa580a9949d28ce4c4352980eac"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-EM-CLAIM-STATUS",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "00_META/claim_status/CLAIM_STATUS.yaml",
+      "sha256": "805f28a7c25547991fe4800e43df8898e1cb35f63c68f591eaea3dfe4d68e7d5",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-WELTANSCHAUUNG",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "00_THE_WELTANSCHAUUNG.md",
+      "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-AMRITA",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "14_THE_DISTILLATION/00_THE_AMRITA.md",
+      "sha256": "dce26b620dfa9b30eee9880c85c6204f1aa3dc3ce6b281ae50ce55109067e97f",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-METHOD",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "14_THE_DISTILLATION/05_THE_METHOD.md",
+      "sha256": "14c3b11399c931226129b4c186beb4c80da4f38e8b5bdddcbdf61cff576d78da",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-THIRD-CHURNING",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/README.md",
+      "sha256": "2238187215aa70dd54a07f03eda8c15805d47d84de3cffb0b39c2360bb6ae250",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-FOURTH-CHURNING",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/README.md",
+      "sha256": "a93b3120ac5635fd9ee6c09aed3a1a128c35370632671be5b0de9f679c9ddc8e",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-EM-SOUL-LOOP",
+      "repo_id": "REPO-EMERGENTISM",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_09_THE_SOUL_LOOP.md",
+      "sha256": "8e6a8859f27f644b85e8f3627d582d3e6ec54b9ef9619e6689c7776a519fa13c",
+      "role": "SEMANTIC_INPUT"
+    },
+    {
+      "source_id": "SRC-SKY-APU",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L4_AGENTZ/00_APU_BOT_OPEN_GATES_SPEC_2026_08_15.md",
+      "sha256": "85aef83e03c61e51e27dcd13d7f097d134109c17934567668873914e467f997e",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-CIRCLE",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L2_CIRCLE/00_NORMATIVE_BLUEPRINT.md",
+      "sha256": "6f555239e1cfe5e79176f79f1408288cd5f8bc4f02b7a772f4026f570d5414f1",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-REALITYFUTURES",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L3_REALITYFUTURES/app/APPLIED_SOUL_LOOP.md",
+      "sha256": "921e76c143ebddae5a32d0085a7a40de41847e344124991f19e96807076ac6d4",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-AGENTZ",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/15_APPLIED_ROSETTA/README.md",
+      "sha256": "3d54df8516d8e58c115518547f1b76a201167e2a8c8a6dd1c20d43ff13a2a62f",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-WHOLE",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L6_SKYZAI_WHOLE/README.md",
+      "sha256": "d1db8d84ae04e7a6364209fb141690979df27c22453992d1c8da351fb7ae14a4",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-EVONET-ORGAN",
+      "repo_id": "REPO-SKYZAI",
+      "path": "01_LEVELS/L1_EVOLUTIONARY_NETWORK/README.md",
+      "sha256": "a4f6df70be10a3c5df032fbc14ed5ebf163fcd6671f35bfcfd42437b237963f4",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-SKY-SIX-LENSES-CUSTODY",
+      "repo_id": "REPO-SKYZAI",
+      "path": "90_ARCHIVE/2026_08_14_SIX_LENSES_HISTORICAL_SOURCE_CUSTODY/ORIGINAL_PATH/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
+      "role": "HISTORICAL_CUSTODY"
+    },
+    {
+      "source_id": "SRC-MENEXUS-RUNTIME",
+      "repo_id": "REPO-MENEXUS",
+      "path": "00_CONTROL/ORGANISM_RUNTIME_TRUTH.md",
+      "sha256": "d0183c01264427ec194f043f26a5859e2615889f721877a505b0880d7d7422e8",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-VENTURES-REGISTRY",
+      "repo_id": "REPO-VENTURES",
+      "path": "AGENTS.md",
+      "sha256": "b18db1ee53641668924bf090c087c92ae7845708c0e2eddc6fcf25fcaf1d9f3e",
+      "role": "COVERAGE_REGISTRY"
+    },
+    {
+      "source_id": "SRC-VENTURES-EVONET",
+      "repo_id": "REPO-VENTURES",
+      "path": "03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK/README.md",
+      "sha256": "6e7615d4a2794c1dd7060ffcec99547e99e43a6938af29612d91b51b53121469",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-VENTURES-EVONET-CHARTER",
+      "repo_id": "REPO-VENTURES",
+      "path": "03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK/2026_08_31_SEVEN_FUNCTION_PEOPLE_NETWORK_CHARTER_v1.md",
+      "sha256": "d86eda154b07db79e84242c47fef2fd7463d7949d1a59e0828c3880ea5870373",
+      "role": "APPLICATION_CONTEXT"
+    },
+    {
+      "source_id": "SRC-OFN-MENEXUS-GUIDE",
+      "repo_id": "REPO-OFN",
+      "path": "01_LAYER/09_BRAND/SITES/_shared/ofn_parent_guide/menexus-brand-guide.html",
+      "sha256": "fd3d6069da1b546631e71aeebda7a1e2d0a5807b10920fb031dce240b808d818",
+      "role": "DESIGN_CRAFT_INPUT"
+    }
+  ],
+  "excluded_inputs": [
+    {
+      "path": "04_CODE/03_VENTURES/MENEXUS/menexus-public-site",
+      "reason": "Uncommitted implementation experiment; not an admitted semantic source."
+    },
+    {
+      "path": "02_SKYZAI/.codex-worktrees and 02_SKYZAI/.claude/worktrees",
+      "reason": "Replay carriers; never independent custody or evidence."
+    },
+    {
+      "path": "Concurrent dirty Skyzai, Ventures, and OFN files not named above",
+      "reason": "Foreign or unreviewed working-tree material."
+    }
+  ]
+}

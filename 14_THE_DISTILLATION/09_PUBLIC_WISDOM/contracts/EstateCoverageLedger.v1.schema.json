@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/schemas/EstateCoverageLedger.v1.schema.json",
+  "title": "EstateCoverageLedger.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_id", "ledger_id", "date", "registry_source_id", "entries", "counts", "zero_unclassified"],
+  "properties": {
+    "schema_id": {"const": "emergentism/EstateCoverageLedger.v1"},
+    "ledger_id": {"const": "ESTATE-COVERAGE@1"},
+    "date": {"const": "2026-09-01"},
+    "registry_source_id": {"type": "string", "pattern": "^SRC-[A-Z0-9-]+$"},
+    "entries": {
+      "type": "array", "minItems": 10,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["lane_id", "name", "lane_kind", "owner_repository", "coverage_state", "application_card_id", "source_ids", "note"],
+        "properties": {
+          "lane_id": {"type": "string", "pattern": "^LANE-[A-Z0-9-]+$"},
+          "name": {"type": "string", "minLength": 2},
+          "lane_kind": {"enum": ["DOCTRINE", "PRODUCT", "VENTURE", "PROGRAMME"]},
+          "owner_repository": {"type": "string", "minLength": 3},
+          "coverage_state": {"enum": ["ADMITTED_APPLICATION", "CANDIDATE_ONLY", "NO_ADMISSIBLE_RECORD", "EXCLUDED_PRIVATE", "HELD_CUSTODY", "HISTORICAL"]},
+          "application_card_id": {"type": ["string", "null"]},
+          "source_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^SRC-[A-Z0-9-]+$"}},
+          "note": {"type": "string", "minLength": 8}
+        }
+      }
+    },
+    "counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "zero_unclassified": {"const": true}
+  }
+}

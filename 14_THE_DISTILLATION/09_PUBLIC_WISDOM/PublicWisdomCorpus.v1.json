@@ -1,0 +1,80 @@
+{
+  "schema_id": "emergentism/PublicWisdomCorpus.v1",
+  "release_id": "PUBLIC-WISDOM-2026-09-01",
+  "date": "2026-09-01",
+  "authorship": "Yves R. Burri",
+  "ai_assistance": "AI assistance disclosed; no AI coauthor, authority bearer, or independent outcome source.",
+  "license": "CC BY-SA 4.0",
+  "source_manifest_sha256": "46caee2657580f26baa102bb8f678d980f5af167d8bc0b72ecad0872b378541a",
+  "input_hashes": {
+    "manifest_sha256": "46caee2657580f26baa102bb8f678d980f5af167d8bc0b72ecad0872b378541a",
+    "stack_sha256": "4037006592871cf2c1d9e014de1ebf085e5d1bd5071cfeedcddf311047ead444",
+    "records_sha256": "ed211c9e447064d3c30d7e7ec881e0ba2651c52e6665e87b8f96a7bd11d5ad4e",
+    "cards_sha256": "cd2ec5f3fca88f05f2a776576451d3a781fb58f73e371f70ceb2f54c8d348f01",
+    "ledger_sha256": "4ed3b02894eb40b44cfc35ea13480b35f1e716a4a079419beb84fd00b0ae6a03"
+  },
+  "schema_hashes": {
+    "stack_sha256": "007739499cc65dae1949e34103b6197bc610da66421d5878076e3baa2d9d6f0d",
+    "record_sha256": "836c99fd017b21a9e5f6a09870ffc1af485170efd27ee394f3b7899f4de1a659",
+    "card_sha256": "bb5cb8095b456d49b3da57075fdb19aad8e3741e51cf3829d859cbe63b86cc25",
+    "ledger_sha256": "7979a7307ee444c12770ea57c4ad0ff05e483421de9111bbdadcfbb27d6b875a"
+  },
+  "record_order": [
+    "EM-WISDOM-001@1"
+  ],
+  "application_card_order": [
+    "EAC-EMERGENTISM@1",
+    "EAC-APU@1",
+    "EAC-CIRCLE@1",
+    "EAC-REALITYFUTURES@1",
+    "EAC-AGENTZ@1",
+    "EAC-SKYZAI@1",
+    "EAC-MENEXUS@1",
+    "EAC-EVOLUTIONARY-NETWORK@1"
+  ],
+  "counts": {
+    "kind": {
+      "PUBLIC_KNOWLEDGE": 0,
+      "POLICY_CANDIDATE": 0,
+      "WISDOM_POLICY": 1
+    },
+    "maturity": {
+      "N/A": 0,
+      "PROVISIONAL": 1,
+      "SUPPORTED": 0,
+      "CONTESTED": 0,
+      "SUPERSEDED": 0
+    },
+    "projection": {
+      "DRAFT": 0,
+      "AUTHORIZED_NOT_LIT": 1,
+      "LIT": 0,
+      "CORRECTED": 0,
+      "RETRACTED": 0
+    },
+    "coverage": {
+      "ADMITTED_APPLICATION": 1,
+      "CANDIDATE_ONLY": 7,
+      "NO_ADMISSIBLE_RECORD": 9,
+      "EXCLUDED_PRIVATE": 0,
+      "HELD_CUSTODY": 0,
+      "HISTORICAL": 0
+    }
+  },
+  "supported_wisdom": 0,
+  "supported_count_is_derived": 0,
+  "zero_unclassified_lanes": true,
+  "public_is_truth_rung": false,
+  "external_states": {
+    "site_published": false,
+    "site_deployed": false,
+    "product_adoptions": 0,
+    "independent_outcomes": 0,
+    "external_validation": false
+  },
+  "notes": [
+    "Formal validity, survival, publication, agent agreement, and polish cannot promote a record to Supported Wisdom.",
+    "Estate applications are source-owned candidates unless the coverage ledger says ADMITTED_APPLICATION.",
+    "Public projection changes visibility only and begins another correction loop."
+  ]
+}

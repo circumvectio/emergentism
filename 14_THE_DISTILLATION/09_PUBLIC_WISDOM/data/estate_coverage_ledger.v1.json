@@ -1,0 +1,187 @@
+{
+  "schema_id": "emergentism/EstateCoverageLedger.v1",
+  "ledger_id": "ESTATE-COVERAGE@1",
+  "date": "2026-09-01",
+  "registry_source_id": "SRC-VENTURES-REGISTRY",
+  "entries": [
+    {
+      "lane_id": "LANE-EMERGENTISM",
+      "name": "Emergentism",
+      "lane_kind": "DOCTRINE",
+      "owner_repository": "01_EMERGENTISM",
+      "coverage_state": "ADMITTED_APPLICATION",
+      "application_card_id": "EAC-EMERGENTISM@1",
+      "source_ids": ["SRC-EM-WELTANSCHAUUNG", "SRC-EM-METHOD"],
+      "note": "The Compact is admitted only as Provisional Emergentism editorial policy."
+    },
+    {
+      "lane_id": "LANE-APU",
+      "name": "APU",
+      "lane_kind": "PRODUCT",
+      "owner_repository": "02_SKYZAI",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-APU@1",
+      "source_ids": ["SRC-SKY-APU"],
+      "note": "Candidate intake reading; no product adoption or runtime claim."
+    },
+    {
+      "lane_id": "LANE-CIRCLE",
+      "name": "Circle",
+      "lane_kind": "PRODUCT",
+      "owner_repository": "02_SKYZAI",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-CIRCLE@1",
+      "source_ids": ["SRC-SKY-CIRCLE"],
+      "note": "Candidate sourced-IS application; Circle keeps its own semantics."
+    },
+    {
+      "lane_id": "LANE-REALITYFUTURES",
+      "name": "RealityFutures",
+      "lane_kind": "PRODUCT",
+      "owner_repository": "02_SKYZAI",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-REALITYFUTURES@1",
+      "source_ids": ["SRC-SKY-REALITYFUTURES"],
+      "note": "Candidate COULD application; forecasts do not self-promote."
+    },
+    {
+      "lane_id": "LANE-AGENTZ",
+      "name": "Agentz",
+      "lane_kind": "PRODUCT",
+      "owner_repository": "02_SKYZAI",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-AGENTZ@1",
+      "source_ids": ["SRC-SKY-AGENTZ"],
+      "note": "Candidate SHOULD application; proposal remains non-authorizing."
+    },
+    {
+      "lane_id": "LANE-SKYZAI",
+      "name": "Skyzai",
+      "lane_kind": "PRODUCT",
+      "owner_repository": "02_SKYZAI",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-SKYZAI@1",
+      "source_ids": ["SRC-SKY-WHOLE"],
+      "note": "Candidate constraint-boundary application; PASS is not authority."
+    },
+    {
+      "lane_id": "LANE-MENEXUS",
+      "name": "Menexus",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES/01_RECORDED_LEGAL_PERSONS/MENEXUS",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-MENEXUS@1",
+      "source_ids": ["SRC-MENEXUS-RUNTIME"],
+      "note": "Cortex, AIA, and Nexus remain organs of one product, not separate ventures or ladder rungs."
+    },
+    {
+      "lane_id": "LANE-EVOLUTIONARY-NETWORK",
+      "name": "Evolutionary.Network",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_card_id": "EAC-EVOLUTIONARY-NETWORK@1",
+      "source_ids": ["SRC-VENTURES-EVONET", "SRC-VENTURES-EVONET-CHARTER", "SRC-SKY-EVONET-ORGAN"],
+      "note": "Candidate field-practice application; Ventures network and Skyzai L1 organ remain distinct."
+    },
+    {
+      "lane_id": "LANE-AUREUS",
+      "name": "Aureus",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-HELIOS",
+      "name": "Helios",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-LQID",
+      "name": "LQID",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-YANTRA",
+      "name": "Yantra",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-OFN",
+      "name": "Open Finance Network",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "The reviewed Menexus guide contributes design craft only; it is not a wisdom application."
+    },
+    {
+      "lane_id": "LANE-TOKENCEN",
+      "name": "Tokencen",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-QNTM",
+      "name": "QNTM",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-NOSTR-VPN",
+      "name": "NOSTR_VPN",
+      "lane_kind": "VENTURE",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+    },
+    {
+      "lane_id": "LANE-COMMERCE-PROGRAMMES",
+      "name": "Commerce programmes",
+      "lane_kind": "PROGRAMME",
+      "owner_repository": "03_VENTURES",
+      "coverage_state": "NO_ADMISSIBLE_RECORD",
+      "application_card_id": null,
+      "source_ids": ["SRC-VENTURES-REGISTRY"],
+      "note": "Registered programme class; no Public Wisdom application is inferred from commerce material."
+    }
+  ],
+  "counts": {
+    "ADMITTED_APPLICATION": 1,
+    "CANDIDATE_ONLY": 7,
+    "NO_ADMISSIBLE_RECORD": 9,
+    "EXCLUDED_PRIVATE": 0,
+    "HELD_CUSTODY": 0,
+    "HISTORICAL": 0
+  },
+  "zero_unclassified": true
+}
