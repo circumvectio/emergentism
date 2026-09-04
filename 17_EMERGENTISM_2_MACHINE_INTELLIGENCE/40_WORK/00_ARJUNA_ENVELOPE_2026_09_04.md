@@ -170,6 +170,55 @@ W5 after W2, so the discriminator tests a procedure rather than a posture.
 | W2's premise | the scattered pieces are shown to already constitute a runnable protocol somewhere in 1.0 |
 | **this envelope** | if any line is read as a decision taken — L4 stages, and nothing here is signed |
 
+---
+
+## §8 · Audit returned — appended 2026-09-04, after the envelope was staged
+
+**VERDICT: `PRE-EMPTED`. Do not publish.** Full document at
+`40_WORK/01_WIGNER_AUDIT_VERDICT_2026_09_04.md`. 4 lanes, 20 findings,
+6 surviving and **all six blocking**, 14 refuted, 25 agents, 0 errors.
+
+It confirmed §4 independently and added two things §4 did not have.
+
+**The inference itself was separated and denied in 1972.** P. W. Anderson,
+*More Is Different*, Science 177(4047):393 — verified first-hand by the lane:
+
+> *"the reductionist hypothesis does not by any means imply a 'constructionist'
+> one: The ability to reduce everything to simple fundamental laws does not imply
+> the ability to start from those laws and reconstruct the universe."*
+
+The claim needs exactly the constructionist converse. Anderson is not an
+occupant to be cited around — he is a **refuter**, 54 years early. Laughlin &
+Pines (PNAS 97(1):28–31, 2000) add the same denial from the physics side:
+*"a hierarchy of Theories of Things, each emerging from its parent."*
+
+**Wolfram is the strongest standing OBJECTION, not a pre-emptor.** Computational
+irreducibility denies the reducibility half. Filing him as prior art inverts him.
+
+**A citation this envelope's author gave the owner in conversation was wrong.**
+Worrall 1989 founded structural realism against the **pessimistic
+meta-induction**, not against Wigner. It should not be cited here at all. Sixth
+correction to the session AI, and the only one that was a bare citation error.
+
+**The internal number that matters most.** `TEA-01`'s filled crossing rows at
+`[A]`/`[B]`: **zero of five** (`06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md:558`
+— *"Mapping a natural `μ_n` to TEA-01 remains `[C]` per crossing"*). The
+emergence conjecture has no filled crossing. Tenet 6's `dies_if` says *shown*,
+not asserted; the proposed claim asserts the kill condition and exhibits nothing.
+
+**What survives, and it is not a breakthrough.** The audit's repaired sentence:
+
+> *Phenomena and the mathematics that describes them are typed articulations
+> within one Dasein. Where a crossing is lossless, its higher description reduces
+> to the lower; where it is not, it does not. Which crossings are which is an
+> open empirical question, one crossing at a time.*
+
+It keeps emergence, asserts nothing killed, and **cannot carry the word "solves."**
+
+**This validates `W2`.** *"One crossing at a time"* is precisely an adjudication
+procedure. The audit did not merely block a claim — it named the instrument the
+block implies, which is the thing worth building.
+
 **Canonical path:**
 `01_EMERGENTISM/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/00_ARJUNA_ENVELOPE_2026_09_04.md`
 
