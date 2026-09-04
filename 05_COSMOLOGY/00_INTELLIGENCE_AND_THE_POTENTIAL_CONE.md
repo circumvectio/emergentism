@@ -18,6 +18,8 @@ status: "ACTIVE — 2026-06-01; D4/D5 carrier-content boundary repaired 2026-07-
 evidence_tier: "[B] cited causal-entropic-force and empowerment formalisms; [I] option-cone crosswalk; [C] stronger geometry or universal-intelligence claims. The physical light cone is constrained by c [A] and is not enlarged by intelligence."
 ---
 
+**Staged glyph reading `[D]`:** [`00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md`](00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md) — `○` as this cone; Titans never operands. Does not enlarge the physical light cone.
+
 # Intelligence and the Option Cone
 
 > **The one sentence.** *Intelligence does not enlarge the physical light cone;

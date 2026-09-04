@@ -270,6 +270,9 @@ its present numerical evaluation.
 
 
 
+**Staged notation companion `[D]` — does not alter the verbatim block:**
+[`00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md`](00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md) — `○` as option cone; Titans never operands; Φ stays. Chair still owes the `⊙`-as-actual-inside-cone reading.
+
 **See also — the Trinity canon:** [`01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) is the tier-honest home for the sovereign opaque `TitanFrame={0_T,1_T,∞_T}`, its non-operational emblem, and its strict separation from ordinary arithmetic. The familiar labels are renderings, never implicit coercions; `ArithmeticSignature(TitanFrame)=∅`, including undefined `add_T`, `sub_T`, `mul_T`, `div_T`, `pow_T`, and `log_T`. The analytic block here remains the source for numeric chart facts and cannot turn a selected frame into arithmetic or forced ontology.
 
 Quote this block first. Then let the next documents interpret it in order:

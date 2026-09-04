@@ -12,6 +12,7 @@ Emergentism. It is a candidate compression grammar, not a theory of everything.
 ## Read first
 
 1. [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md)
+1a. [Option-cone notation amendment `[D]`](00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md) — staged beside the block; no new glyph; Φ stays
 2. [Burri Rules](00_THE_BURRI_RULES.md)
 3. [D0 Titans](01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md)
 4. [D1 arithmetic](03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md)
