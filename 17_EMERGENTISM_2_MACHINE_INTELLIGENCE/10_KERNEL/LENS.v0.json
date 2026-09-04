@@ -110,8 +110,8 @@
       {
         "seat": "L1",
         "letter": null,
-        "role": "the ground",
-        "act": "not a planning stage — what execution happens ON",
+        "role": "firewall — isolate contradiction and boundary",
+        "act": "not a planning stage and not a substrate. The seat that isolates the boundary the act is about; execution is not 'on' L1.",
         "addresses": null,
         "restated": null
       }
@@ -161,6 +161,8 @@
       "n": 6,
       "name": "Novelty is real and it climbs",
       "statement": "Lifts into new freedom are strong; projections back down are weak. Reachable from the first act, never reducible to it.",
+      "home": "D-crossings (μ↑ / U↓ / χ↓). Not Rosetta L. TEA-01's L is a frozen language, not a work seat.",
+      "relative_proof": "TEA-01 / EA-08 — relative representational strong-up/weak-down under a frozen description. Nature remains [C] per crossing. Filled natural rows at [A]/[B]: zero of five.",
       "tier": "[A] in the frozen-language case; [C] for nature, crossing by crossing",
       "dies_if": "a candidate crossing is shown lossless and reducible"
     },
@@ -222,6 +224,10 @@
       {
         "id": "restates-existing",
         "test": "Does the proposal add anything the target does not already carry?"
+      },
+      {
+        "id": "axis-mix",
+        "test": "Is a D-crossing claim seated on a Rosetta L, or a TEA-01 language L read as a Rosetta level? Three tokens named L are not one object. Strong-up/weak-down lives on D; L staffs the test."
       }
     ]
   },
@@ -267,10 +273,23 @@
     }
   },
   "axis_discipline": {
-    "note": "The most confusable thing in this corpus, and the axis a July 2026 audit and a September 2026 audit both had to correct. Stated here once so no reader repeats it.",
+    "note": "The most confusable thing in this corpus. A July 2026 audit, a September 2026 Wigner audit, and W3 (2026-09-04) all had to correct it. Stated here so no reader repeats it.",
     "L1_to_L7": "ROSETTA WORK SEATS — roles in a division of labour (firewall, truth-cut, audit, staging, architecture, dissolution, witness). NOT registers of phenomena. NOT a substrate. NOT an ordering of reality.",
     "D0_to_D6": "TYPED FREEDOMS — the ontological register ladder, owned by 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md. NOT spatial dimensions.",
     "neither_is_a_substrate_ladder": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md:74-75 — 'A row is not itself a biological trophic level, and row order alone creates no causal edge.' Any claim of the form 'level X reduces to level 1' needs an ordering the corpus explicitly declines to supply.",
-    "consequence": "A phenomenon does not live at an L. Work about a phenomenon is seated at an L. Confusing the two produces claims that look ontological and are actually about staffing."
+    "consequence": "A phenomenon does not live at an L. Work about a phenomenon is seated at an L. Confusing the two produces claims that look ontological and are actually about staffing.",
+    "L_homonym": {
+      "TEA_L": "frozen typed LANGUAGE in TEA-01 / EA-08. Not a Rosetta seat.",
+      "SLWP_L_n": "frozen lower DESCRIPTION at D_n. Not a Rosetta seat.",
+      "Rosetta_L": "work SEAT. Staffs the test of a D-crossing; does not host the crossing."
+    },
+    "strong_weak": {
+      "finding": "2026-07-10 K2: the ladder reads two ways at once. Receipt 106 applied. EA-08 / TEA-01: relative proof of bottom-up strong and top-down weak, under a frozen description.",
+      "home": "D-crossings. Strong = μ↑ (wins a new freedom, not derivable from frozen lower). Weak-down is THREE maps, not one: U forgetful projection (SLWP-01B), χ↓ selective commitment (receipt 106), and higher constraint on lower-law-admissible transitions (EA-08). Do not collapse them into 'reconciliation'.",
+      "not_on_rosetta_L": "Putting strong/weak 'on the L levels' is this axis error. Work about a crossing is seated at an L; the crossing is a μ on D.",
+      "anderson": "P. W. Anderson, More Is Different, Science 177(4047):393 (1972) is a NEIGHBOR of the split (reductionism does not imply constructionism), already calibrated 2026-07-20. Not identity. Not a filled μ row. Refuter of the Wigner dissolution, which needed the constructionist converse.",
+      "filled_natural_crossings_AB": 0,
+      "of": 5
+    }
   }
 }

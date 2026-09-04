@@ -124,11 +124,12 @@ July audit's own verdict — *"`[C]` per rung-pair · `[I]` as world-reading · 
 turns Emergentism from a position into an instrument, and §4 is the demonstration
 that the instrument already works.**
 
-**W3 — Fix the D/L axis confusion in the 2.0 kernel.** `[L4 may stage]`
-The audit shows this is the corpus's most confusable axis. The kernel's held-open
-sphere mapping uses `L3/L2/L1` as substrate levels — the conflation §4(b) names.
-Add the explicit distinction: **L = work seats, D = typed freedoms, neither is a
-substrate ladder.**
+**W3 — Fix the D/L axis confusion in the 2.0 kernel.** `[L4 staged 2026-09-04]`
+Done as seating, not as a 1.0 edit. The finding (strong = bottom-up, weak =
+top-down) is seated on **D-crossings**; Rosetta L staffs the test; TEA-01's `L`
+is a frozen language. Cascade L1 no longer reads as a substrate. Receipt:
+`40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md`. The sphere mapping stays `[D]`
+unabsorbed — W3 stops it being restated as ontology, it does not settle it.
 
 **W4 — EN tidy and restart as `EN : ⊙`.** `[L4 may stage the tidy; owner signs the repurpose]`
 19 files, 192K, at `03_VENTURES/03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK`. Survey,
@@ -144,8 +145,9 @@ blinded. Still the only path from assertion to `V`.
 The geosphere/biosphere/noosphere mapping and the seven-aspect Justice-at-L4
 column. Both need the mirror test scored before either is absorbed.
 
-**Order:** W1 now. W2 and W3 next and independent of each other. W4 in parallel.
-W5 after W2, so the discriminator tests a procedure rather than a posture.
+**Order:** W3 staged 2026-09-04 (this seating). W1 still owner-signs (live
+superseded MF-287 page). W2 next — the adjudication procedure, now that the
+crossing is typed onto D. W4 in parallel. W5 after W2.
 
 ---
 

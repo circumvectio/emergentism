@@ -59,6 +59,13 @@ all.** Unseededness is therefore neither necessary nor sufficient, and only the
 second limb ever did any work. Found by an adversarial lane applying this
 corpus's own record against this file.
 
+## Axis (W3, 2026-09-04)
+
+Strong-up / weak-down lives on **D-crossings**. Rosetta L staffs the test.
+TEA-01's `L` is a frozen language. Those three uses of L are not one object.
+Owner: `10_KERNEL/LENS.v0.json` `axis_discipline`. Seating receipt:
+`40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md`.
+
 ## The layers
 
 | | what it holds |
