@@ -1,0 +1,21 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "credit-as-d5-crossing",
+  "phenomenon": "Credit expands present option cone by contracting the future one, claimed as a D4→D5 emergence crossing.",
+  "register": "D5",
+  "register_kind": "D",
+  "claim_type": "ill_typed",
+  "mu_id": null,
+  "claimed_inference": "none",
+  "representation_relation": true,
+  "axis": "PASS",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "C",
+  "verdict": "ILL_TYPED",
+  "kill": "A loan contract is a D4 token whose content is D5 possibility. That is CASE-01's repair, not a lift. As a finding it is occupied: Fisher 1930 intertemporal budget; Myers 1977 debt overhang / real options. DF-19 forbids reading 'force' as a teleological gradient.",
+  "survivor": "The D4-token / D5-content typing remains useful as a re-description. Consistency-debt (W14–W18) is a different object and is not this claim."
+}

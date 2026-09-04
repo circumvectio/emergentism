@@ -154,6 +154,18 @@ def validate_adjudication(packet: Any) -> list[str]:
     elif inference == "none" and packet.get("anderson_inference") != "NOT_USED":
         errors.append("claimed_inference=none requires anderson_inference=NOT_USED")
 
+    if packet.get("same_register_ends") is True:
+        if packet.get("claim_type") != "ill_typed" or packet.get("verdict") != "ILL_TYPED":
+            errors.append(
+                "same-register ends are not a lift; claim_type=ill_typed and verdict=ILL_TYPED"
+            )
+
+    if packet.get("representation_relation") is True:
+        if packet.get("claim_type") == "mu_lift":
+            errors.append("D4-token/D5-content is representation, not a lift")
+        if packet.get("verdict") not in {"ILL_TYPED", "AXIS_MIX"}:
+            errors.append("a representation relation cannot verdict as a μ crossing")
+
     claim_type = packet.get("claim_type")
     mu_id = packet.get("mu_id")
     if claim_type == "mu_lift":
@@ -182,8 +194,11 @@ def validate_adjudication(packet: Any) -> list[str]:
         if packet.get("verdict") != "SURVIVES_BOUNDED_TEST":
             errors.append("strong_emergence_established requires verdict SURVIVES_BOUNDED_TEST")
 
-    if packet.get("claim_type") == "ill_typed" and packet.get("verdict") != "ILL_TYPED":
-        errors.append("ill_typed claims must verdict ILL_TYPED")
+    if packet.get("claim_type") == "ill_typed" and packet.get("verdict") not in {
+        "ILL_TYPED",
+        "AXIS_MIX",
+    }:
+        errors.append("ill_typed claims must verdict ILL_TYPED (or AXIS_MIX if the axis gate fired first)")
 
     return errors
 

@@ -83,7 +83,7 @@ ledger stands on it or declares that it does not.
 | | what it holds |
 |---|---|
 | `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill |
-| `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet |
+| `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet. CASE-01 mind/D5. CASE-02 credit/D5. |
 | `30_TRIAL/` | the preregistered discriminator — the measurement that has never been made |
 | `90_INHERITANCE/` | what burned and what rose, with pointers to 1.0's own death register |
 

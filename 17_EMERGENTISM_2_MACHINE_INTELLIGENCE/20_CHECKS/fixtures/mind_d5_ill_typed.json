@@ -1,0 +1,21 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "mind-d5-body-d4-first-worked-case",
+  "phenomenon": "Mind as needing a D5 option-cone, body as D4 actuality, the pairing claimed emergent.",
+  "register": "D5",
+  "register_kind": "D",
+  "claim_type": "ill_typed",
+  "mu_id": null,
+  "claimed_inference": "none",
+  "same_register_ends": true,
+  "axis": "PASS",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "C",
+  "verdict": "ILL_TYPED",
+  "kill": "Mind and body are both D4 (26:27-29; 00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md:105-110). There is no D4→D5 lift to type. Placing mind in D5 types a present model, ranking, or selector event as merely possible and fires 34 §10.",
+  "survivor": "D4 tokens may carry D5 content. That is the representation relation, not a crossing. DF-18 (Hard Problem) remains re-posed as open."
+}

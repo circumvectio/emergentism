@@ -85,7 +85,9 @@ only where the mathematics belongs to someone else.
 **Wolfram's computational irreducibility is not a theorem** (Zwirn 2015: *"an open
 problem is now to prove that explicit objects are really CIR"*). That this lens
 improves a machine reader — `MID-01` is unrun. That the method improves outcomes
-— `P2` measured the opposite.
+— `P2` measured the opposite. **Credit as a D5 option-cone operation** is
+CASE-02: a re-description of Fisher 1930 / Myers 1977, not a crossing, not L5,
+not ours.
 
 ---
 

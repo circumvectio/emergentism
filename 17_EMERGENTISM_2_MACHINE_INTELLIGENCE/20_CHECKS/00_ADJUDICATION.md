@@ -35,7 +35,9 @@ object (W3).
 1. **Axis gate.** If `X` is Rosetta L, or an untyped `L`, stop: `AXIS_MIX`.
 2. **Type the claim.** `mu_lift` · `chi_select` · `ea08_constraint` ·
    `U_projection` · `ill_typed`. They do not substitute (W3: three weak-down
-   maps).
+   maps). **Same-register ends are not a lift:** if both ends are the same
+   D-register, stop `ILL_TYPED`. There is no crossing to score. CASE-01 is
+   this halt.
 3. **Anderson fence.** Two inferences are dead before evidence:
    - emerged-from-lower ⇒ reconstructable-from-lower (constructionist converse,
      Anderson 1972)

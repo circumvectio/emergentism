@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "l5-is-capital-axis-mix",
+  "phenomenon": "Capital, credit and debt seated on Rosetta L5",
+  "register": "L5",
+  "register_kind": "Rosetta",
+  "claim_type": "ill_typed",
+  "mu_id": null,
+  "claimed_inference": "none",
+  "axis": "AXIS_MIX",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "D",
+  "verdict": "AXIS_MIX",
+  "kill": "L5 is a work seat (architect / counsel-only). Capital-as-claims-on-futures is D5 content on D4 tokens. Seating it on L is the axis error.",
+  "survivor": "Rosetta L staffs the test. D4/D5 remain the registers."
+}

@@ -25,7 +25,9 @@ class AdjudicationTests(unittest.TestCase):
             "noninvertible_as_strong.json",
             "slwp_reduced_wrap.json",
             "incomplete_mu.json",
-            "mind_d5_incomplete.json",
+            "mind_d5_ill_typed.json",
+            "l5_capital_axis_mix.json",
+            "credit_d5_ill_typed.json",
         ):
             with self.subTest(name=name):
                 errors = validate_adjudication(load(name))
@@ -69,6 +71,22 @@ class AdjudicationTests(unittest.TestCase):
             validate_adjudication({"schema_id": "nope"}),
             ["Adjudication identity mismatch"],
         )
+
+    def test_same_register_scored_as_mu_is_red(self) -> None:
+        packet = load("mind_d5_ill_typed.json")
+        packet["claim_type"] = "mu_lift"
+        packet["mu_id"] = "mu4"
+        packet["verdict"] = "INCOMPLETE"
+        errors = validate_adjudication(packet)
+        self.assertTrue(any("same-register" in row for row in errors), errors)
+
+    def test_credit_scored_as_mu_is_red(self) -> None:
+        packet = load("credit_d5_ill_typed.json")
+        packet["claim_type"] = "mu_lift"
+        packet["mu_id"] = "mu4"
+        packet["verdict"] = "INCOMPLETE"
+        errors = validate_adjudication(packet)
+        self.assertTrue(any("representation" in row for row in errors), errors)
 
     def test_mutation_does_not_edit_fixture_bytes(self) -> None:
         original = (FIXTURES / "axis_mix.json").read_bytes()
