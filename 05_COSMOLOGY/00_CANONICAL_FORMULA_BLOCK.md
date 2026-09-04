@@ -266,6 +266,9 @@ Likewise, do not write either finite-node factor as lowercase chart notation:
 other chart coordinate, while uppercase `Φ` names D5 possible power and `Φ̂₄`
 its present numerical evaluation.
 
+**Staged `[D]` rival (chair disposes; does not yet replace the line above):**
+bare `V` is always Vision (VMOSK-A); viability is always written `V₄`. Seed-local names: `reach` / `hold` (`10_SEED/03_REACH_HOLD_SEED_NOTATION_2026_09_03.md`). No estate-wide rename of `Φ`.
+
 ## Paired Canonical Documents
 
 

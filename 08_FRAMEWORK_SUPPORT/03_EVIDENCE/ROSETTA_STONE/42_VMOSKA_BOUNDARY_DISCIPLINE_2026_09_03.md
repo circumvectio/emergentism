@@ -47,6 +47,24 @@ K naming variance, declared: 38 says “measured triggers”; `00_VMOSK-A/README
 
 L1 has no cell. Six letters on seven seats, ground empty. Selected, not forced.
 
+**Descent, reading the same column down `[I]`:**
+
+```text
+L7  V · Vision            sees the cone
+L6  M · Mission           defines the worldline
+L5  O · Objectives    ┐
+L4  S · Strategies    ├─ recursive disambiguation: cone → path
+L3  K · triggers      ┘
+L2  A · Agents            execution, bound by the substrate's laws
+L1  —  (no cell)          the ground itself, not a planning stage
+```
+
+VMOSK-A is the descent from option cone to executed act, one narrowing per rung. L1 has no cell because the ground is what you execute *on*, not a stage of the plan.
+
+**Letter collision `[S]`:** bare `V` is Vision in this column and viability in `P = min(Φ, V)`. Under the unification they sit on opposite sides: Vision sees the cone (`Φ`). Seed notation refuses the clash (`10_SEED/03_REACH_HOLD_SEED_NOTATION_2026_09_03.md`: `reach` / `hold`). Corpus proposal, one line, no rename: **bare `V` is always Vision; viability is always `V₄`.** That line is `[D]` and rivals the formula block's current “uppercase `V` is D4 actual power.” Chair disposes. Φ is not renamed; the glyph-as-P reading stays mnemonic.
+
+**Not folded:** geosphere / biosphere / noosphere onto L1–L3.
+
 ## 1 · The two limits are the two failure modes `[I]`
 
 38 §3, L7 pole, verbatim:

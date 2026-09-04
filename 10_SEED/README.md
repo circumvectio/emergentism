@@ -23,6 +23,7 @@ override its source owners:
 | [`00_THE_SEED.md`](00_THE_SEED.md) | `[S]` typed compression; `[I/C]` where marked | Active compressed route; current source owners win. |
 | [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[I]` active reader projection | Active `[I/S]` cold-reader surface; not an eighth kernel owner. |
 | [`01_THE_SEED_POETRY.md`](01_THE_SEED_POETRY.md) | `[I]` poetic compression | Active derivative; poetry is never proof and source owners win. |
+| [`03_REACH_HOLD_SEED_NOTATION_2026_09_03.md`](03_REACH_HOLD_SEED_NOTATION_2026_09_03.md) | `[D]` staged | Seed-local names `cone`/`path`/`reach`/`hold`; no corpus rename; VMOSK-A is not a seed premise. |
 
 [`02_THE_REAP.md`](02_THE_REAP.md) is a forwarding stub only. Its former mixed
 harvest text remains preserved in
