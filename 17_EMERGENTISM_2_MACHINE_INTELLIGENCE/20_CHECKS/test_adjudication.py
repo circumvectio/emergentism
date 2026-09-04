@@ -25,6 +25,7 @@ class AdjudicationTests(unittest.TestCase):
             "noninvertible_as_strong.json",
             "slwp_reduced_wrap.json",
             "incomplete_mu.json",
+            "mind_d5_incomplete.json",
         ):
             with self.subTest(name=name):
                 errors = validate_adjudication(load(name))

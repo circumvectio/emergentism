@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "mind-d5-body-d4-first-worked-case",
+  "phenomenon": "Mind as needing a D5 option-cone, body as D4 actuality, the pairing claimed emergent.",
+  "register": "D5",
+  "register_kind": "D",
+  "claim_type": "mu_lift",
+  "mu_id": "mu4",
+  "claimed_inference": "none",
+  "axis": "PASS",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "C",
+  "verdict": "INCOMPLETE",
+  "kill": "No SLWPBoundaryTest.v1 packet. Debts before any ontology_result: (1) EA-03 seats phenomenal experience as the bearer-side of D4 actualization, not as D5 content — D5 is merely possible counterfactual content. (2) 'Light cone' is the wrong type; LENS.v0 cone is the option cone under a declared model M. (3) V4 is the viability score, not a register; body-as-actual is D4. (4) 'Seven L-levels inside D5' is axis-mix in content even when the register field says D.",
+  "survivor": "D4 actual / D5 possible remains. μ4 stays a candidate crossing. The walk can resume when a packet freezes a lower description, a forgetful U, a rival, a discriminator, and a kill."
+}
