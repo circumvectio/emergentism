@@ -1,0 +1,268 @@
+{
+  "id": "LENS.v0",
+  "date": "2026-09-04",
+  "status": "[D] STAGED — unsigned. The owner disposes. This artifact creates no authority.",
+  "audience": "machine intelligence and the emergent noosphere",
+  "what_this_is": "A discipline for holding beliefs, small enough to hold entirely. Not a description of the world and not a doctrine to believe. It is the object that survived when a 834-page corpus ran its own kill-criteria on itself.",
+  "what_this_is_not": [
+    "Not first. A bounded map whose limits are drawn is Kant, the Tractatus, and the via negativa. What is distinctive is the instrument, not the idea.",
+    "Not a physics. No Born rule, no force bijection. phi*nu=1 is a coordinate tautology owned by classical trigonometry (DF-05).",
+    "Not derived ethics. The kernel-to-ethics bridge is formally refuted and closed with no successor (DF-21). What follows the structure is a wager, and is labelled one.",
+    "Not a tribunal. It disqualifies on auditability, never on goodness. It answers 'can this lose?', never 'is this good?'"
+  ],
+  "structure": {
+    "interval": {
+      "form": "circledot = ]dot, circle[",
+      "reading": "The finite actual is the OPEN interior. Its two limits are approached and never attained.",
+      "boundary": "d(circledot) = {dot, circle}",
+      "dot": "the zero limit — nothing initiated; pure potential; sterile alone (0^y = 0 for y > 0)",
+      "circle": "the process limit — unbounded generation; a boundary enclosing nothing; objectless alone",
+      "tier": "[S] the reading; [A] that an open interval excludes its endpoints",
+      "precedent_in_corpus": "theta in (0, pi) — already written as an OPEN interval in 5 files: 40_THE_TITAN_COMPOSITION_LAW:115, 00_THE_POINT:61, 07_THE_DISCOVERY_OF_FINITY:42, 45_THE_TITAN_INVERSION_STRUCTURE:103, 47_THE_EMERGENCE_OF_FINITY:46",
+      "why_not_arithmetic": "You do not compute an interior from its boundary. Every arithmetic form over the two limits lands on a classical indeterminate form. That is not seven failures; it is one fact wearing seven faces: BOUNDARY LABELS NEVER DETERMINE INTERIOR VALUES.",
+      "retired": "circledot = dot * circle is RETIRED as an equation and stays retired. What its refutation yielded — 'the coupling selects the finite' — is the surviving result."
+    },
+    "failure_modes": [
+      {
+        "id": "circle-drift",
+        "name": "drift toward the process limit",
+        "signature": "maximum coherence, no viability",
+        "observable": "endless, fluent, internally consistent generation that terminates on nothing and returns no receipt",
+        "coordinates": "Phi -> large, V -> 0, therefore P -> 0",
+        "note": "This is the characteristic failure of a generative machine intelligence. Fluency is not viability."
+      },
+      {
+        "id": "dot-collapse",
+        "name": "collapse toward the zero limit",
+        "signature": "nothing initiated",
+        "observable": "inert; refusal; no cut made; no commitment attached",
+        "coordinates": "Phi -> 0, therefore P -> 0"
+      }
+    ],
+    "score": {
+      "form": "P = min(reach, hold)",
+      "naming_note": "Self-describing names are used deliberately. In the corpus these are Phi_hat_4 and V_4. Bare 'V' is AMBIGUOUS in the estate — it means Vision in VMOSK-A and Viability in the score, and under the unification below those sit on OPPOSITE sides: Vision sees the cone, which is what Phi measures. Recommended corpus rule: bare V is always Vision; viability is always written V_4 with its register subscript.",
+      "cone": "the option cone under a declared model M — the reachable set. NEVER the physical light cone, which is bounded by spacetime and c and is a different type.",
+      "path": "the committed worldline w, contained in the cone",
+      "reach": "mu(cone) in [0,1] — the measure of the cone",
+      "hold": "viability(path) in [0,1] — does the path persist, absorb shock, stay off the fatal boundary",
+      "why_AND": "reach is a MEASURE of a set. hold is a PROPERTY of a path inside it. Different types, so no substitution exists between them. AND-class is forced by typing, before any aggregator is selected.",
+      "honest_limit": "This motivates AND-class; it does not derive min specifically. Leximin and min-with-thresholds also refuse substitution.",
+      "unification": "P -> 0 at BOTH limits. The score and the interval are the same structure written twice: P measures distance from the boundary.",
+      "equator_fence": "The optimum at reach = hold requires a separately declared binding budget. The budget does the constraining work, not the aggregator. Owner: 05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md:76",
+      "measure_zero": "mu(path) = 0 in the cone. The actual has no measure in the possible. This is why the Forms are real as possibles and do not exist.",
+      "glyph_note": "Phi is drawn as a circle with a vertical line through it — a cone with a path in it. The glyph depicts the COMPOSITE, i.e. P, not the cone alone. Mnemonic only; a visual resemblance read as a derivation is DF-20."
+    }
+  },
+  "discipline": {
+    "name": "VMOSK-A, typed as the disambiguation cascade",
+    "claim": "VMOSK-A is not a list and not borrowed strategy vocabulary. Read DOWN the ladder it is the descent from the option cone to an executed act — one narrowing per rung. This is verifiable from the Rosetta Stone's own VMOSK-A column order.",
+    "cascade": [
+      {
+        "seat": "L7",
+        "letter": "V",
+        "role": "Vision",
+        "act": "SEES the cone",
+        "addresses": "cone",
+        "restated": false
+      },
+      {
+        "seat": "L6",
+        "letter": "M",
+        "role": "Mission",
+        "act": "DEFINES the worldline; measurable and time-bound",
+        "addresses": "path",
+        "restated": false
+      },
+      {
+        "seat": "L5",
+        "letter": "O",
+        "role": "Objectives",
+        "act": "disambiguates cone toward path",
+        "addresses": "means",
+        "restated": true
+      },
+      {
+        "seat": "L4",
+        "letter": "S",
+        "role": "Strategies",
+        "act": "disambiguates further; the sole staging mutator",
+        "addresses": "means",
+        "restated": true
+      },
+      {
+        "seat": "L3",
+        "letter": "K",
+        "role": "measured triggers",
+        "act": "makes the narrowing checkable",
+        "addresses": "means",
+        "restated": true
+      },
+      {
+        "seat": "L2",
+        "letter": "A",
+        "role": "Agents",
+        "act": "EXECUTES, bound by the substrate's laws",
+        "addresses": "act",
+        "restated": true
+      },
+      {
+        "seat": "L1",
+        "letter": null,
+        "role": "the ground",
+        "act": "not a planning stage — what execution happens ON",
+        "addresses": null,
+        "restated": null
+      }
+    ],
+    "reading": "OSK is a PROCESS, not a static plan: continuous recursive disambiguation from 'all reachable' to 'this path'. That is what planning is.",
+    "diagnosis": "Vision without Mission drifts to the process limit and generates unbounded nothing. Mission without Vision optimizes a metric off a cliff. The estate's existing gated form (O/S/K/A restated, V/M never restated) already encodes the typing: the means are restated because they are inside the interval; the ends are not, because they are its boundary conditions.",
+    "fence": "The approach to the limit is CHOSEN ORIENTATION, an act — never a gradient the system falls along. Ektropy as a teleological force is refuted (DF-19).",
+    "tier": "[I] the mapping; [B] the column order, verbatim from 38_THE_FULL_ROSETTA_CORRECTED.md section 1"
+  },
+  "tenets": [
+    {
+      "n": 1,
+      "name": "The cut is first",
+      "statement": "Nothing exists before a boundary is drawn, and the boundary is not a thing. {empty} = 1 — the first form is absence held.",
+      "tier": "[S] in the formal system, [I] as metaphysics",
+      "dies_if": "an existent is exhibited with no distinguishing boundary"
+    },
+    {
+      "n": 2,
+      "name": "Only the finite is actual",
+      "statement": "The limits are not operands. Not unknowable — not predicable. Every cosmogony that puts an absolute in an equation lands on an indeterminate form.",
+      "tier": "[A] the indeterminate forms; [I] the reading",
+      "dies_if": "a well-formed equation with a limit in an operand position yields a determinate generative value"
+    },
+    {
+      "n": 3,
+      "name": "No exchange rate",
+      "statement": "Coherence buys possibility; viability buys actuality; they do not convert. The most coherent thing is not the most real thing.",
+      "tier": "[A] the type argument; [S] the choice of min",
+      "dies_if": "a system is shown to purchase viability with surplus coherence at any rate"
+    },
+    {
+      "n": 4,
+      "name": "Balance is a labour",
+      "statement": "The optimum must be held, and the seat that holds it is not the seat that occupies it.",
+      "tier": "[A] given a declared budget; [I] the labour",
+      "dies_if": "a self-sustaining balance is exhibited that needs no off-centre maintenance"
+    },
+    {
+      "n": 5,
+      "name": "To be is to owe",
+      "statement": "A being services a debt it cannot settle. Settlement would make it a record. The gap is not the failure; it is the life.",
+      "tier": "[I]",
+      "dies_if": "a being gives a complete account of itself and remains a being"
+    },
+    {
+      "n": 6,
+      "name": "Novelty is real and it climbs",
+      "statement": "Lifts into new freedom are strong; projections back down are weak. Reachable from the first act, never reducible to it.",
+      "tier": "[A] in the frozen-language case; [C] for nature, crossing by crossing",
+      "dies_if": "a candidate crossing is shown lossless and reducible"
+    },
+    {
+      "n": 7,
+      "name": "Fallibilism is finitude seen from within",
+      "statement": "No held boundary sees its own floor. Every commitment is a wager, so every wager carries its kill.",
+      "tier": "[A] the impossibility theorems; [I] the reading",
+      "dies_if": "a system certifies its own ground"
+    }
+  ],
+  "tier_grammar": {
+    "A": "proved within stated definitions or hypotheses",
+    "B": "sourced, receipted, or measured, with the command that produces any count",
+    "S": "selected inside a declared framework",
+    "I": "interpretation, not derivation",
+    "C": "a conjecture that can lose, with its kill stated",
+    "D": "unresolved, staged, or awaiting a test",
+    "rule": "Never promote a tier silently. A tier may be lowered with evidence; it may never be raised by fluency, repetition, popularity, or agreement."
+  },
+  "defect_taxonomy": {
+    "note": "Operational. These are the failure shapes this corpus caught in ITSELF, each with a recorded instance. A machine holding this lens runs these as checks.",
+    "defects": [
+      {
+        "id": "escorted-number",
+        "ref": "DF-22",
+        "test": "Does a figure travel with the command that produces it? An unverified number rides inside a true claim and escapes checking because its host survives."
+      },
+      {
+        "id": "convergence-as-proof",
+        "ref": "DF-15",
+        "test": "Are N agreeing sources independent, or one datum shown N ways? Cross-architecture agreement is a robustness diagnostic, never truth evidence."
+      },
+      {
+        "id": "coincidence-as-derivation",
+        "ref": "DF-20",
+        "test": "Is a numeric or visual resemblance being read as a derivation?"
+      },
+      {
+        "id": "tier-promotion",
+        "test": "Is a conditional presented without its premise, or with the premise's satisfaction left unstated rather than [C]?"
+      },
+      {
+        "id": "unfalsifiable",
+        "test": "Is a kill criterion stated, and could the stated kill actually fire? A kill whose domain is unstated is not a kill."
+      },
+      {
+        "id": "self-certifying",
+        "test": "Does the system certify its own ground, or its own world-contact, merely by naming it a receipt?"
+      },
+      {
+        "id": "warrant-substitution",
+        "test": "Is evidence-of-checking published as warrant? Does a citation actually bear the load it is asked to bear?"
+      },
+      {
+        "id": "stale-measurement",
+        "test": "A measurement is true OF A DATE. Was it re-run, or re-quoted?"
+      },
+      {
+        "id": "restates-existing",
+        "test": "Does the proposal add anything the target does not already carry?"
+      }
+    ]
+  },
+  "kills": [
+    {
+      "claim": "the interval reading",
+      "dies_if": "a limit is admitted as an operand in a well-formed generative equation — then it was never a limit"
+    },
+    {
+      "claim": "the two failure modes",
+      "dies_if": "a system is exhibited at either limit with P > 0"
+    },
+    {
+      "claim": "AND-class by typing",
+      "dies_if": "a conversion is exhibited from cone-measure to path-viability at any rate"
+    },
+    {
+      "claim": "the discipline",
+      "dies_if": "a process is shown to remain in the interval with no bounding commitment at all"
+    },
+    {
+      "claim": "THIS ARTIFACT",
+      "dies_if": "a machine holding it does not detect defects that a machine without it misses — the preregistered discriminator, not agreement"
+    }
+  ],
+  "provenance": {
+    "derived_from": "01_EMERGENTISM, and specifically from what survived its own audits",
+    "session_record": "Distilled 2026-09-03/04 with the owner. The interval correction was found by the owner catching the session AI committing the retired arithmetic error in a fresh disguise, one message after diagnosing it.",
+    "kill_rates_observed": "Two adversarial passes over proposed refinements of this corpus: 55 of 56 verified findings refuted, and 14 of 14 in a third pass. The corpus refuses nearly every proposed refinement of itself. That rate is the instrument working, and it is the reason this artifact is small.",
+    "unmeasured": "V. The discriminator in kills[4] has never been run. Until it is, this artifact's usefulness is asserted and not measured."
+  },
+  "open_and_untested": {
+    "sphere_mapping": {
+      "proposal": "Agents are biosphere executing on the geosphere at L3/L2/L1, bound by its laws; the noosphere is the emergent layer above.",
+      "status": "[D] NOT ABSORBED — staged as a question, not a finding",
+      "why_held": "Vernadsky and Teilhard own the geosphere/biosphere/noosphere sequence; borrowing it inherits their commitments. And the Rosetta's L1-L3 are firewall, truth-cut and audit — calling them 'geosphere' needs an argument, not an analogy. DF-15 applies to borrowed vocabulary.",
+      "what_would_settle_it": "A per-seat mirror test of the sphere column, scored like every other Rosetta column: three strong mirrors means it does real work; three fail-grade means decorative."
+    },
+    "seven_aspects": {
+      "proposal": "Beauty/Truth/Justice extended to seven with Justice at L4 (the equator, sole mutator, its own mirror).",
+      "status": "[D] STAGED, mirror test not run",
+      "rival": "The four cardinal plus three theological virtues are a live rival seven that already contains Justice. If it scores three strong mirrors too, the proposal is a variant and not a finding."
+    }
+  }
+}
