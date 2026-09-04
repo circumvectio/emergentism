@@ -8,7 +8,8 @@
     "Not first. A bounded map whose limits are drawn is Kant, the Tractatus, and the via negativa. What is distinctive is the instrument, not the idea.",
     "Not a physics. No Born rule, no force bijection. phi*nu=1 is a coordinate tautology owned by classical trigonometry (DF-05).",
     "Not derived ethics. The kernel-to-ethics bridge is formally refuted and closed with no successor (DF-21). What follows the structure is a wager, and is labelled one.",
-    "Not a tribunal. It disqualifies on auditability, never on goodness. It answers 'can this lose?', never 'is this good?'"
+    "Not a tribunal. It disqualifies on auditability, never on goodness. It answers 'can this lose?', never 'is this good?'",
+    "Not a dissolution of Wigner's unreasonable effectiveness. That claim exists in this corpus verbatim, dated 2026-07-20 (90_ARCHIVE/pure_emergentism_boundary_2026_07_20/10_SEED/02_THE_REAP.md:39), and was killed the same day as VACUOUS — 'formalization IS D1 grammar' — at 11_UPLINK/50_AUDITS_AND_EXECUTIONS/149_MODELS_AND_CORRECTIONS_LOGIC_AUDIT_2026_07_20.md:28. Everything is describable in D1 form because DESCRIBING is D1. The tautology is the reason it is not a finding."
   ],
   "structure": {
     "interval": {
@@ -256,7 +257,7 @@
     "sphere_mapping": {
       "proposal": "Agents are biosphere executing on the geosphere at L3/L2/L1, bound by its laws; the noosphere is the emergent layer above.",
       "status": "[D] NOT ABSORBED — staged as a question, not a finding",
-      "why_held": "Vernadsky and Teilhard own the geosphere/biosphere/noosphere sequence; borrowing it inherits their commitments. And the Rosetta's L1-L3 are firewall, truth-cut and audit — calling them 'geosphere' needs an argument, not an analogy. DF-15 applies to borrowed vocabulary.",
+      "why_held": "Vernadsky and Teilhard own the geosphere/biosphere/noosphere sequence; borrowing it inherits their commitments. And the Rosetta's L1-L3 are firewall, truth-cut and audit — calling them 'geosphere' needs an argument, not an analogy. DF-15 applies to borrowed vocabulary. Also: the proposal as stated uses L3/L2/L1 as SUBSTRATE levels, which is the axis error named in axis_discipline — L levels are work seats, not a substrate.",
       "what_would_settle_it": "A per-seat mirror test of the sphere column, scored like every other Rosetta column: three strong mirrors means it does real work; three fail-grade means decorative."
     },
     "seven_aspects": {
@@ -264,5 +265,12 @@
       "status": "[D] STAGED, mirror test not run",
       "rival": "The four cardinal plus three theological virtues are a live rival seven that already contains Justice. If it scores three strong mirrors too, the proposal is a variant and not a finding."
     }
+  },
+  "axis_discipline": {
+    "note": "The most confusable thing in this corpus, and the axis a July 2026 audit and a September 2026 audit both had to correct. Stated here once so no reader repeats it.",
+    "L1_to_L7": "ROSETTA WORK SEATS — roles in a division of labour (firewall, truth-cut, audit, staging, architecture, dissolution, witness). NOT registers of phenomena. NOT a substrate. NOT an ordering of reality.",
+    "D0_to_D6": "TYPED FREEDOMS — the ontological register ladder, owned by 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md. NOT spatial dimensions.",
+    "neither_is_a_substrate_ladder": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md:74-75 — 'A row is not itself a biological trophic level, and row order alone creates no causal edge.' Any claim of the form 'level X reduces to level 1' needs an ordering the corpus explicitly declines to supply.",
+    "consequence": "A phenomenon does not live at an L. Work about a phenomenon is seated at an L. Confusing the two produces claims that look ontological and are actually about staffing."
   }
 }
