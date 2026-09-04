@@ -92,6 +92,8 @@ w ⊂ ○           the worldline lies inside the cone, always
 | ○ as option cone | the chair keeps v3's process-act reading and refuses the extensional set |
 | ⊙ as actual-inside-cone | the chair refuses the depiction reading (already `[I]` at `52` :71 / `41` §1) |
 
+**Operational half `[D]`:** [`../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md`](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md) — VMOSK-A as remaining in `]•, ○[`; P as distance from the limits.
+
 **Canonical path:**
 `01_EMERGENTISM/05_COSMOLOGY/00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md`
 
