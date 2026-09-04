@@ -4,3 +4,4 @@
 2026-09-04T21:11:05Z PASS-4 — NO-CONTACT: rotation scan of tenets/operator/cascade/MID-01-prep surfaced no candidate; 12/12 tenet dies_if anchors present; queue not churned
 2026-09-04T21:16:16Z PASS-5 — NO-CONTACT: MID-01 prereg tail fully read (86/86 lines) — pass/kill/void conditions, blinding, analyzer-freeze, grader-agreement declaration all present; N/margin reserved as owner pre-run statements by the document's own terms. Trial is runnable the moment owner mints N+margin and rules it live.
 2026-09-04T21:21:59Z PROP_2026-09-05_0421_stale-citation-integrity-row.md — stale-measurement fired on ledger §B row 47 (citation counts re-quoted from 08-29, pre-refoundation); re-run staged
+2026-09-04T21:27:05Z PROP_2026-09-05_0427_drift-gauge.md — drift gauge staged [D]: gauge: staged=4 disposed=0 drift=4; threshold 10 → cadence reduction, never more proposals
