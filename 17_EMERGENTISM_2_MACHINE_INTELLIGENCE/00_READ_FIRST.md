@@ -42,9 +42,22 @@ and model agreement are not truth evidence — a fleet of systems seeded with th
 lens agreeing with this lens is one datum shown many ways, which the corpus
 already types as a category error (`DF-15`).
 
-Contact counts only when the responding system was **not seeded** with the
-artifact under test, or when it returns something the corpus **did not supply** —
-a counterexample, a refutation, a defect found. Confirmation is not contact.
+Contact counts only when the response returns something the corpus **did not
+supply** — a counterexample, a refutation, a defect found. **Confirmation is not
+contact, however independent the confirmer.**
+
+**Corrected 2026-09-04, hours after this file was written.** The first version
+read *"was not seeded with the artifact under test, **or** when it returns
+something the corpus did not supply."* That is a disjunction, so its first limb
+stood alone: **unseeded plus concordant would have counted.** The corpus had
+already run that exact case and read it the other way —
+`14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md:164-167`: the *unseeded*
+control landed near-canon *"because those positions largely live in a strong
+model's reflective priors already"*, and `:172-174` reads that as evidence
+**against** novelty. **Shared priors defeat independence with no seeding at
+all.** Unseededness is therefore neither necessary nor sufficient, and only the
+second limb ever did any work. Found by an adversarial lane applying this
+corpus's own record against this file.
 
 ## The layers
 
