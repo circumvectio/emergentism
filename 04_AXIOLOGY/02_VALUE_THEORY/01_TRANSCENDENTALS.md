@@ -97,3 +97,4 @@ recoverable at Git blob `8ba48f914f41eb9f8b66ca1ee493d45e38727e88`.
 - [Objective Morals and Ethics](00_OBJECTIVE_MORALS_AND_ETHICS.md)
 - [Rights, Duties, Authorization, and Due Process](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md)
 - [Power-Max](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
+- [Justice over Goodness — selection defence `[D]`](05_JUSTICE_OVER_GOODNESS_SELECTION_2026_09_03.md)

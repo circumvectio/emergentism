@@ -16,6 +16,7 @@ tradition natively contains seven levels.
 
 - [Master Rosetta](00_THE_MASTER_ROSETTA.md) — the governing partial-map and
   non-transfer laws, not a principal universal table.
+- [Aspect column — Justice at the equator `[D]`](41_ASPECT_COLUMN_JUSTICE_EQUATOR_2026_09_03.md) — staged; not harvested into `37`; not an edit of `38`.
 - [Rosetta vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md) — native-pack
   namespaces, directional projection revisions, cardinality and loss
   discipline, recursive disambiguation, and the generic application-return

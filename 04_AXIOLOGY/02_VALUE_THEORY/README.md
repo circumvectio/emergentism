@@ -28,6 +28,8 @@ This directory contains the pure Emergentist value owners:
   constitutive requirements of reciprocal public justification;
 - [GEX-01](04_GUARDIANSHIP_EXTENSION_GEX_01.md) — separately chosen,
   mandate-bound guardianship for non-reciprocal bearers.
+- [Justice over Goodness `[D]`](05_JUSTICE_OVER_GOODNESS_SELECTION_2026_09_03.md) —
+  three reasons for the BTJ selection already owned at Transcendentals; not a discovery.
 
 Plain names lead: part-to-whole **Contribution** and whole-to-part **Support**;
 `Moral_E` and `Ethical_E` remain compatibility aliases. The formal discipline
