@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "noninvertibility-as-strong",
+  "phenomenon": "many-to-one projection at a candidate crossing",
+  "register": "D2",
+  "register_kind": "D",
+  "claim_type": "U_projection",
+  "mu_id": null,
+  "claimed_inference": "noninvertible_implies_strong",
+  "axis": "PASS",
+  "anderson_inference": "FIRED_NONINVERTIBILITY_AS_STRONG",
+  "slwp_packet": null,
+  "projection_result": "PROJECTION_ASYMMETRY_PROVEN",
+  "ontology_result": "KILLED",
+  "strong_emergence_established": false,
+  "world_reading_tier": "C",
+  "verdict": "KILLED",
+  "kill": "SLWP-01D: a finite product is non-injective and fully reducible. Noninvertibility is not strong emergence.",
+  "survivor": "Projection asymmetry remains a lemma, not an ontology."
+}

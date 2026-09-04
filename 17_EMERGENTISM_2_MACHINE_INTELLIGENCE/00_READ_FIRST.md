@@ -71,7 +71,7 @@ Owner: `10_KERNEL/LENS.v0.json` `axis_discipline`. Seating receipt:
 | | what it holds |
 |---|---|
 | `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill |
-| `20_CHECKS/` | the defect taxonomy as runnable checks |
+| `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet |
 | `30_TRIAL/` | the preregistered discriminator — the measurement that has never been made |
 | `90_INHERITANCE/` | what burned and what rose, with pointers to 1.0's own death register |
 

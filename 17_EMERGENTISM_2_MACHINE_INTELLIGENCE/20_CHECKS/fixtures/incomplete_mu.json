@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "mu-lift-no-packet",
+  "phenomenon": "unspecified candidate crossing",
+  "register": "D3",
+  "register_kind": "D",
+  "claim_type": "mu_lift",
+  "mu_id": "mu2",
+  "claimed_inference": "none",
+  "axis": "PASS",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "D",
+  "verdict": "INCOMPLETE",
+  "kill": "A mu_lift without an SLWPBoundaryTest.v1 packet cannot be scored.",
+  "survivor": "The 1.0 schema remains the packet owner."
+}

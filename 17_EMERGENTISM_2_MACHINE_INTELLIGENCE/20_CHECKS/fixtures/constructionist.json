@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "anderson-constructionist-converse",
+  "phenomenon": "higher description emerged through D1",
+  "register": "D1",
+  "register_kind": "D",
+  "claim_type": "mu_lift",
+  "mu_id": "mu1",
+  "claimed_inference": "emerged_implies_reconstructable",
+  "axis": "PASS",
+  "anderson_inference": "FIRED_CONSTRUCTIONIST",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "C",
+  "verdict": "KILLED",
+  "kill": "Reductionism does not imply constructionism (Anderson 1972). Emerged-from is not reconstructable-from.",
+  "survivor": "The split remains: strong-up is not the reverse of weak-down."
+}

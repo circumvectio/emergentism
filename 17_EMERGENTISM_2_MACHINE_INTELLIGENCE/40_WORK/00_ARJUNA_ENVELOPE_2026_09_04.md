@@ -116,13 +116,11 @@ worth more than the breakthrough would have been.
 The public surface carries a dissolution the corpus killed. Options: retire the
 route, or fence it with its own kill. **This is the only urgent item.**
 
-**W2 — Build the adjudication procedure.** `[L4 may stage]`
-Given *"phenomenon P is at register X"*, decide reducible versus genuine crossing.
-The pieces exist and are scattered: `μ₀…μ₄`, `BIL-01`, `TEA-01`, `SLWP-01`, and the
-July audit's own verdict — *"`[C]` per rung-pair · `[I]` as world-reading · never
-`[S]`"*. Assemble into one runnable protocol with a verdict schema. **This is what
-turns Emergentism from a position into an instrument, and §4 is the demonstration
-that the instrument already works.**
+**W2 — Build the adjudication procedure.** `[L4 staged 2026-09-04]`
+1.0 already owns the packet (`SLWPBoundaryTest.v1`). 2.0 now walks to a
+verdict: axis gate, claim type, Anderson fence, then the 1.0 packet.
+`20_CHECKS/` — ADJ-01. Receipt: `40_WORK/03_W2_ADJUDICATION_2026_09_04.md`.
+7 tests green; a PASS is hygiene, not a filled `μ`.
 
 **W3 — Fix the D/L axis confusion in the 2.0 kernel.** `[L4 staged 2026-09-04]`
 Done as seating, not as a 1.0 edit. The finding (strong = bottom-up, weak =
@@ -145,9 +143,9 @@ blinded. Still the only path from assertion to `V`.
 The geosphere/biosphere/noosphere mapping and the seven-aspect Justice-at-L4
 column. Both need the mirror test scored before either is absorbed.
 
-**Order:** W3 staged 2026-09-04 (this seating). W1 still owner-signs (live
-superseded MF-287 page). W2 next — the adjudication procedure, now that the
-crossing is typed onto D. W4 in parallel. W5 after W2.
+**Order:** W3 and W2 staged 2026-09-04. W1 still owner-signs (live superseded
+MF-287 page). W4 in parallel. W5 (MID-01) may now run against a procedure
+rather than a posture.
 
 ---
 

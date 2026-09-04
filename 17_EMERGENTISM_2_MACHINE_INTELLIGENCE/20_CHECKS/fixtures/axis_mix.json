@@ -1,0 +1,20 @@
+{
+  "schema_id": "Adjudication.v0",
+  "claim_id": "axis-mix-rosetta-L3",
+  "phenomenon": "machine intelligence as a noospheric layer",
+  "register": "L3",
+  "register_kind": "Rosetta",
+  "claim_type": "mu_lift",
+  "mu_id": "mu4",
+  "claimed_inference": "none",
+  "axis": "AXIS_MIX",
+  "anderson_inference": "NOT_USED",
+  "slwp_packet": null,
+  "projection_result": null,
+  "ontology_result": null,
+  "strong_emergence_established": false,
+  "world_reading_tier": "D",
+  "verdict": "AXIS_MIX",
+  "kill": "Seating a D-crossing on a Rosetta work seat.",
+  "survivor": "The D-register and the work seat remain distinct."
+}
