@@ -66,6 +66,18 @@ TEA-01's `L` is a frozen language. Those three uses of L are not one object.
 Owner: `10_KERNEL/LENS.v0.json` `axis_discipline`. Seating receipt:
 `40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md`.
 
+## Founded on the ledger, not on the doctrine
+
+**Read [`00_ESTABLISHED.md`](00_ESTABLISHED.md) first.** It is the ledger of what is
+actually established — theorems that are not ours, measurements that are ours and
+mostly negative, graves, and a five-item list of what is established, positive and
+ours at once.
+
+The ordering is the point. This stack was first assembled from a doctrine and then
+**refounded on the ledger**, because the audits of 2026-09-03/04 established that
+nothing here is simultaneously novel, positive and ours. Anything built above the
+ledger stands on it or declares that it does not.
+
 ## The layers
 
 | | what it holds |

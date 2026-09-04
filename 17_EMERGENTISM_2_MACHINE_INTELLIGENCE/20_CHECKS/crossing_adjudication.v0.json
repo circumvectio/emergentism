@@ -1,16 +1,14 @@
 {
   "id": "CROSSING-ADJ.v0",
   "date": "2026-09-04",
-  "status": "[D] STAGED — an executable form of a criterion the owner already ruled. It invents no test.",
+  "status": "[D] SUPERSEDED 2026-09-04 by 20_CHECKS/00_ADJUDICATION.md (ADJ-01) — retained as provenance, not deleted.",
   "what_this_is": "The adjudication procedure for emergence claims. Given a claim that phenomenon P at register D_{n+1} is a genuine crossing rather than a reduction, this decides — one crossing at a time.",
-
   "why_it_is_assembly_not_invention": {
     "the_criterion_already_exists": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md:159-164, ruled by the owner 2026-07-29 (HR-1 Option C): 'A crossing is a candidate mu iff the higher description is NOT formally reducible to the frozen lower one.'",
     "the_field_contract_already_exists": "Same file :196-200 — a candidate must supply boundary, saturation statistic, threshold, novelty test, recovery, prediction and kill (the KSC-05 contract).",
     "what_was_missing": "An executable form, and an application. The corpus has the procedure and has run it to verdicts; what it has never done is fill a crossing at [A]/[B].",
     "why_this_matters": "Anderson 1972 owns the asymmetry (reduction does not imply construction). Laughlin & Pines 2000 restate the denial. Neither adjudicates PER CROSSING. That is the only unoccupied ground, and it is unoccupied because it is hard, not because nobody thought of it."
   },
-
   "procedure": {
     "step_0_type_the_arrow": {
       "test": "Is the claimed crossing a LIFT (D_n -> D_{n+1}, carrying a forgetful map back down), or an OUTWARD arrow (adjoining a boundary or dimension to a given space)?",
@@ -22,11 +20,23 @@
       "test": "Is the higher description FORMALLY REDUCIBLE to the frozen lower one?",
       "verdict_if_reducible": "NOT a mu. 'Where formal equivalence or reduction accounts for the claimed novelty, the crossing is not a mu, however much apparatus it appears to add.'",
       "note": "This is the load-bearing test. It replaced the retired type-D criterion because dim_R killed 4 of 5 mu's and the fibre test killed 0 of 5 — NEITHER DISCRIMINATED. A criterion that kills everything or nothing is not a criterion.",
-      "explicitly_insufficient": ["a repaired operation", "a dissolved order", "a larger carrier"]
+      "explicitly_insufficient": [
+        "a repaired operation",
+        "a dissolved order",
+        "a larger carrier"
+      ]
     },
     "step_2_the_seven_fields": {
       "note": "KSC-05. All seven required; a candidate missing any one is incomplete, not refuted.",
-      "fields": ["boundary", "saturation statistic", "threshold", "novelty test", "recovery", "prediction", "kill"]
+      "fields": [
+        "boundary",
+        "saturation statistic",
+        "threshold",
+        "novelty test",
+        "recovery",
+        "prediction",
+        "kill"
+      ]
     },
     "step_3_the_size_fence": {
       "test": "Is the claim resting on the higher space being LARGER?",
@@ -34,7 +44,6 @@
       "also": "For a continuous f, its graph is homeomorphic to X. A graph by itself proves no strong emergence."
     }
   },
-
   "current_verdicts_as_recorded": {
     "note": "The corpus's own state, quoted not inferred, from 48:145-152. These are mu-candidacy verdicts. They are NOT the same question as TEA-01 mapping — conflating the two is an error this file exists partly to prevent.",
     "mu_0": "OWES its distinction discriminator",
@@ -44,7 +53,6 @@
     "mu_4": "STANDS",
     "separate_and_unfilled": "TEA-01 mapping to any natural mu remains [C] PER CROSSING — 06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md:558. Filled rows at [A]/[B]: zero of five."
   },
-
   "verdict_vocabulary": {
     "NOT_A_CANDIDATE": "step 0 — the arrow is outward, not a lift",
     "REDUCED": "step 1 — formal reduction accounts for the claimed novelty",
@@ -52,17 +60,33 @@
     "STANDS": "survives steps 0-3; a live mu-candidate, NOT a proved crossing",
     "FILLED": "STANDS plus a TEA-01 mapping at [A] or [B]. Currently held by nothing."
   },
-
   "what_this_procedure_cannot_do": [
     "It cannot prove strong emergence. STANDS means not-yet-reduced, which is not the same as irreducible.",
     "It cannot fill a crossing by being run. Filling requires the TEA-01 mapping, which is mathematics, not adjudication.",
     "It does not decide the Wigner question. That claim needs 'emergent from D1 therefore reducible to D1' — the constructionist converse Anderson denied in 1972 — and this procedure would return REDUCED or INCOMPLETE on it, not a dissolution."
   ],
-
   "kills": [
-    {"claim": "this is assembly, not invention", "dies_if": "the criterion or the seven fields are shown to be authored here rather than quoted from 48 and KSC-05"},
-    {"claim": "the recorded verdicts", "dies_if": "48:145-152 is shown to say something different, or a later signed ruling changed them"},
-    {"claim": "zero of five filled", "dies_if": "a TEA-01 crossing row at [A] or [B] is exhibited"},
-    {"claim": "THIS FILE", "dies_if": "a STANDS verdict is cited as evidence of strong emergence — the vocabulary exists precisely to prevent that"}
-  ]
+    {
+      "claim": "this is assembly, not invention",
+      "dies_if": "the criterion or the seven fields are shown to be authored here rather than quoted from 48 and KSC-05"
+    },
+    {
+      "claim": "the recorded verdicts",
+      "dies_if": "48:145-152 is shown to say something different, or a later signed ruling changed them"
+    },
+    {
+      "claim": "zero of five filled",
+      "dies_if": "a TEA-01 crossing row at [A] or [B] is exhibited"
+    },
+    {
+      "claim": "THIS FILE",
+      "dies_if": "a STANDS verdict is cited as evidence of strong emergence — the vocabulary exists precisely to prevent that"
+    }
+  ],
+  "superseded_by": {
+    "artifact": "20_CHECKS/00_ADJUDICATION.md (ADJ-01) + check_adjudication.py + fixtures + test_adjudication.py",
+    "why": "ADJ-01 is RUNNABLE with 7 passing right-reason tests, and it found what this file missed: the packet ALREADY EXISTS in 1.0 as 03_METHODOLOGY/03_PREREGISTRATIONS/v2_2_contracts/schemas/SLWPBoundaryTest.v1.schema.json — so ADJ-01 built the missing OPERATOR instead of forking the test. This file forked what it should have pointed at.",
+    "self_application": "By this stack's own defect taxonomy this file is 'restates-existing'. It is kept because the estate archives rather than deletes, and because a superseded artifact that says why it was superseded is worth more than a clean directory.",
+    "built_by": "a concurrent session working in this same folder"
+  }
 }
