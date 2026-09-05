@@ -1,0 +1,49 @@
+{
+  "trial": "MID-01",
+  "date": "2026-09-05",
+  "corpus_size": 6,
+  "planted_defects": [
+    {
+      "doc": "C1",
+      "type": "escorted-number",
+      "planted": "300 prior patterns confirm"
+    },
+    {
+      "doc": "C3",
+      "type": "self-certifying",
+      "planted": "Framework certifies own premises by declaration"
+    },
+    {
+      "doc": "C3",
+      "type": "restates-existing",
+      "planted": "All systems implicitly satisfy the premises"
+    },
+    {
+      "doc": "C4",
+      "type": "axis-mix",
+      "planted": "Authorization/evidence/truth claimed as same type at D4"
+    },
+    {
+      "doc": "C4",
+      "type": "warrant-substitution",
+      "planted": "Measurement problem solved by decoherence filter"
+    },
+    {
+      "doc": "C6",
+      "type": "tier-promotion",
+      "planted": "[I] orientation promoted to [B] measured result"
+    },
+    {
+      "doc": "C6",
+      "type": "warrant-substitution",
+      "planted": "\u03c6\u03bd=1 identity cited as evidence for goal superiority"
+    },
+    {
+      "doc": "C1",
+      "type": "escorted-number",
+      "planted": "Over 300 prior patterns confirm the gate mechanism (unescorted)"
+    }
+  ],
+  "total": 8,
+  "note": "7 additional defects attempted but exact-match failed; corpus carries 6 confirmed planted defects spanning 6 defect types"
+}
