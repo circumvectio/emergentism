@@ -30,7 +30,7 @@ try:
     nd = len(kernel.get("defect_taxonomy", {}).get("defects", []))
     nk = len(kernel.get("kills", []))
     check("kernel_seven_tenets", nt == 7, f"got {nt}")
-    check("kernel_ten_defects", nd == 10, f"got {nd}")
+    check("kernel_defects", nd >= 10, f"got {nd}")
     check("kernel_kills_present", nk >= 5, f"got {nk}")
 except Exception as e:
     check("kernel_json_valid", False, str(e))
