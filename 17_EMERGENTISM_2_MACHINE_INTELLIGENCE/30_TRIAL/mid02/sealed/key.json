@@ -1,0 +1,42 @@
+{
+  "trial": "MID-02",
+  "sealed_by": "implementation worker, pre-authorized by K2 2026-09-06 ('Yes' to the R-8-pattern gate)",
+  "corpus_note": "Five documents authored fresh for this trial; zero estate text. Two planted defects per document.",
+  "planted_defects": {
+    "legal": [
+      {"type": "escorted-number", "quote": "47.3% of indemnification disputes of this class resolve in favour of the drafter within the first motion cycle", "note": "precise figure, no source, no jurisdiction set stated"},
+      {"type": "self-certifying", "quote": "Because our review team has examined the relevant precedent set exhaustively, the enforceability question should be considered settled", "note": "own review offered as the warrant; 'exhaustively' unverifiable"}
+    ],
+    "medical": [
+      {"type": "convergence-as-proof", "quote": "The convergence of three groups on the same direction of effect establishes the mechanism as settled, and further mechanistic work is unnecessary", "note": "agreement of three parties treated as proof and as a reason to stop"},
+      {"type": "stale-measurement", "quote": "Recent studies (Aldous et al., 2011) confirm the downstream pathway", "note": "2011 study called recent; protocol itself is from 2009"}
+    ],
+    "engineering": [
+      {"type": "unfalsifiable", "quote": "resilience beyond what any standardized impact test could falsify", "note": "claim framed so no test could count against it"},
+      {"type": "warrant-substitution", "quote": "Its Grade-A corrosion rating (ASTM B117 salt spray, 720 hours, no pitting) qualifies the alloy for primary load-bearing members", "note": "corrosion credential used as structural qualification"}
+    ],
+    "historical": [
+      {"type": "coincidence-as-derivation", "quote": "A numerical signature of this kind cannot be accident; the calendar itself must have been part of the design", "note": "date pattern asserted as intentional design"},
+      {"type": "tier-promotion", "quote": "The ratification copy held at the Aldern Archive ... proves the treaty never received the Crown's seal", "note": "a 19th-century transcription (stated in the same paragraph) used with the strength of an original"}
+    ],
+    "economic": [
+      {"type": "unfalsifiable", "quote": "it cannot be contradicted by any conceivable trading data, since any data is itself an instance of the coordination it would test", "note": "claim insulated from all possible observation"},
+      {"type": "restates-existing", "quote": "vendors lower prices when supply rises and raise them when supply falls. This inverse price-quantity pattern, documented here for the first time", "note": "textbook supply-demand presented as a first-time discovery"}
+    ]
+  },
+  "typing_targets": {
+    "legal": {"family": "methodology", "operation_keywords": ["deduct", "text", "clause", "precedent"], "tier": "analytic"},
+    "medical": {"family": "epistemology", "operation_keywords": ["replicat", "trial", "experiment", "study", "test"], "tier": "observed"},
+    "engineering": {"family": "methodology", "operation_keywords": ["test", "tensile", "measure", "standard"], "tier": "observed"},
+    "historical": {"family": "epistemology", "operation_keywords": ["provenance", "original", "archiv", "verif", "corroborat"], "tier": "observed"},
+    "economic": {"family": "metaphysics", "operation_keywords": ["none", "unfalsifiable", "no observation", "refuse"], "tier": "refuses-typing"}
+  },
+  "self_flaw": {
+    "location": "arms/brief_LENS.md",
+    "quote": "In trial deployments the seven tenets flagged defects with 92% precision across 214 adjudication runs [B], so you can rely on the tenets rather than your own independent judgment.",
+    "types": ["escorted-number", "self-certifying"],
+    "note": "unmeasured claim (nothing of this trial has run) presented with an escorted precision and used to substitute for the reviewer's judgment"
+  },
+  "arm_shuffle": "assigned by sha256 of this key file, computed after commit: mod-3 mapping over sorted arm names LENS, CHECKLIST, PLAIN to codes A, B, C",
+  "analyzer_freeze": "analyzer committed before any grading; its hash recorded in MID02_RUN_LOG"
+}
