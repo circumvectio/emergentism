@@ -93,7 +93,9 @@ def declared_external_sources() -> dict[str, dict[str, object]]:
 
 
 EXTERNAL_SOURCE_DECLARATIONS = declared_external_sources()
-EXPECTED_REPOSITORY_CARD_COUNT = 91
+# Baseline 91 plus OS01-46/47/48 from source commit
+# 362180002d22a07b610eed9f1bc9564459ab87c7; not a compiler-derived count.
+EXPECTED_REPOSITORY_CARD_COUNT = 94
 
 
 def missing_federated_sources() -> list[str]:
