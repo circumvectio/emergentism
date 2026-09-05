@@ -4,6 +4,57 @@
   const root = document.documentElement;
   root.dataset.gestaltEnhanced = "true";
 
+  const themeKey = "emergentism-theme";
+  const themeStates = ["system", "light", "dark"];
+  const themeButtons = Array.from(document.querySelectorAll("[data-g2-theme-toggle]"));
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const readTheme = () => {
+    try {
+      const stored = window.localStorage.getItem(themeKey);
+      return themeStates.includes(stored) ? stored : "system";
+    } catch {
+      return "system";
+    }
+  };
+
+  const paintThemeControl = (theme) => {
+    const resolved = theme === "system" ? (systemTheme.matches ? "dark" : "light") : theme;
+    themeButtons.forEach((button) => {
+      const label = button.querySelector("[data-g2-theme-label]");
+      if (label) label.textContent = theme[0].toUpperCase() + theme.slice(1);
+      button.setAttribute("aria-label", `Appearance: ${theme}; currently ${resolved}`);
+      button.dataset.themeState = theme;
+    });
+  };
+
+  const applyTheme = (theme, persist = false) => {
+    if (theme === "system") delete root.dataset.theme;
+    else root.dataset.theme = theme;
+    if (persist) {
+      try {
+        if (theme === "system") window.localStorage.removeItem(themeKey);
+        else window.localStorage.setItem(themeKey, theme);
+      } catch {
+        /* The complete system-theme reading remains available without storage. */
+      }
+    }
+    paintThemeControl(theme);
+  };
+
+  let activeTheme = readTheme();
+  applyTheme(activeTheme);
+  themeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeTheme = themeStates[(themeStates.indexOf(activeTheme) + 1) % themeStates.length];
+      applyTheme(activeTheme, true);
+    });
+    button.hidden = false;
+  });
+  systemTheme.addEventListener?.("change", () => {
+    if (activeTheme === "system") paintThemeControl(activeTheme);
+  });
+
   const menus = Array.from(document.querySelectorAll(".g2-menu"));
 
   const closeMenu = (menu, restoreFocus = false) => {

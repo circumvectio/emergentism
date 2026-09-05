@@ -1,0 +1,136 @@
+{
+  "schema": "emergentism/PublicDesignContract.v2",
+  "version": "2.0.0",
+  "date": "2026-09-01",
+  "status": "ACTIVE_LOCAL_SOURCE_CONTRACT",
+  "owner": "EMERGENTISM_DESIGN_CONSTITUTION.md",
+  "supersedes": {
+    "path": "90_ARCHIVE/2026_09_01_EMERGENTISM_DESIGN_V1/emergentism-design.v1.json",
+    "sha256": "a92bbcd377102be866400fc5af47784bf064324f98c363b21eee6bb3b3409f23"
+  },
+  "boundary": {
+    "projection_only": true,
+    "creates_doctrine": false,
+    "creates_evidence": false,
+    "creates_authority": false,
+    "proves_comprehension": false,
+    "proves_deployment": false,
+    "public_changes_truth": false
+  },
+  "identity": {
+    "owned": [
+      "Dasein question and selected D0-D6 atlas",
+      "boundary glyphs • ⊙ ○",
+      "actual-possible firewall",
+      "Emergence Stack and Public Wisdom Compact",
+      "Burrisphere and Rosetta translation",
+      "Soul Loop and Finity practice",
+      "evidence tiers, source ancestry, correction, and Exit",
+      "semantic role grammar"
+    ],
+    "consulted_not_copied": [
+      "Menexus guide craft at SHA-256 fd3d6069da1b546631e71aeebda7a1e2d0a5807b10920fb031dce240b808d818",
+      "open web platform conventions",
+      "current accessibility standards",
+      "mature component and motion research"
+    ],
+    "transferred_craft": [
+      "generous spacing and editorial hierarchy",
+      "clear content and chrome separation",
+      "responsive component anatomy",
+      "native controls with keyboard, focus, and ARIA discipline",
+      "computed-style, contrast, overflow, and unique-SVG-ID quality gates",
+      "adaptive system, light, and dark appearance"
+    ],
+    "foreign_identity_forbidden": [
+      "Menexus marks or product language",
+      "Menexus blue and yellow identity",
+      "Liquid Glass material language",
+      "Skyzai Lattice or Torus marks",
+      "Skyzai substrate green",
+      "ambient Game of Life fields"
+    ]
+  },
+  "semanticRoles": {
+    "boundary": {"token": "--g2-bone-faint", "cue": "dotted or labelled edge", "motion": "still"},
+    "actual": {"token": "--g2-actual", "cue": "solid", "motion": "settles"},
+    "possible": {"token": "--g2-possible", "cue": "branch", "motion": "finite unfold"},
+    "conjecture": {"token": "--g2-conjecture", "cue": "dash plus tier", "motion": "never proof"},
+    "evidence": {"token": "--g2-evidence", "cue": "return plus receipt", "motion": "returns then rests"},
+    "poison": {"token": "--g2-poison", "cue": "warning plus named failure", "motion": "interrupts"}
+  },
+  "appearance": {
+    "default": "system",
+    "choices": ["system", "light", "dark"],
+    "persisted_key": "emergentism-theme",
+    "no_javascript": "system",
+    "meaning_changes_with_theme": false
+  },
+  "motion": {
+    "shared_default": "static",
+    "shared_states": ["static", "active", "reduced"],
+    "optInRoutes": ["index.html", "plainly/index.html", "dasein/index.html"],
+    "continuous_shared_runtime": false,
+    "instrumentExceptions": [
+      {
+        "path": "burrisphere/instrument/index.html",
+        "mode": "explicitly started bounded itinerary",
+        "requiredControls": ["play or pause", "reset", "direct coordinate sliders", "reduced-motion fallback"]
+      }
+    ]
+  },
+  "routes": [
+    {"path":"index.html","family":"panorama","shell":"core","navigationSection":"worldview","canonicalHref":"/"},
+    {"path":"plainly/index.html","family":"narrative","shell":"core","navigationSection":"worldview","canonicalHref":"/plainly/"},
+    {"path":"dasein/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"dimensions/index.html","family":"dimension","shell":"dimension"},
+    {"path":"0/index.html","family":"dimension","shell":"dimension"},
+    {"path":"1/index.html","family":"dimension","shell":"dimension"},
+    {"path":"2/index.html","family":"dimension","shell":"dimension"},
+    {"path":"3/index.html","family":"dimension","shell":"dimension"},
+    {"path":"4/index.html","family":"dimension","shell":"dimension"},
+    {"path":"5/index.html","family":"dimension","shell":"dimension"},
+    {"path":"ecology/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"burrisphere/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"rosetta/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"6/index.html","family":"dimension","shell":"dimension"},
+    {"path":"f5/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"questions/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"questions/diagnoses/index.html","family":"research","shell":"diagnostic"},
+    {"path":"ethics/index.html","family":"atlas","shell":"core","navigationSection":"worldview"},
+    {"path":"wisdom/index.html","family":"wisdom","shell":"core","navigationSection":"wisdom","canonicalHref":"/wisdom/"},
+    {"path":"wisdom/EM-WISDOM-001@1/index.html","family":"wisdom","shell":"core","navigationSection":"wisdom","canonicalHref":"/wisdom/EM-WISDOM-001@1/"},
+    {"path":"churn/index.html","family":"churning","shell":"churning"},
+    {"path":"amrita/index.html","family":"churning","shell":"churning"},
+    {"path":"halahala/index.html","family":"churning","shell":"churning"},
+    {"path":"practice/index.html","family":"practice","shell":"core","navigationSection":"practice","canonicalHref":"/practice/"},
+    {"path":"spark/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"record/index.html","family":"research","shell":"core","navigationSection":"research","canonicalHref":"/record/"},
+    {"path":"record/wisdom/index.html","family":"research","shell":"core","navigationSection":"research","canonicalHref":"/record/wisdom/"},
+    {"path":"record/churning/index.html","family":"churning","shell":"churning"},
+    {"path":"record/eub-1/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"record/pqa-54/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"frontier/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"lab/index.html","family":"research","shell":"core","navigationSection":"research"},
+    {"path":"discoveries/index.html","family":"library","shell":"core","navigationSection":"library"},
+    {"path":"book/index.html","family":"library","shell":"book"},
+    {"path":"about/index.html","family":"accountability","shell":"core","navigationSection":"worldview"},
+    {"path":"contribute/index.html","family":"accountability","shell":"core","navigationSection":"participate","canonicalHref":"/contribute/"},
+    {"path":"exit/index.html","family":"accountability","shell":"core","navigationSection":"exit","canonicalHref":"/exit/"}
+  ],
+  "requiredVisibleKey": [
+    "Actual · solid and instantiated",
+    "Possible · branching and represented",
+    "Conjecture · dashed and killable",
+    "Evidence · returned and revising"
+  ],
+  "adoptionState": {
+    "source_contract": "implemented",
+    "machine_contract": "implemented",
+    "core_shell_consumption": "implemented",
+    "route_structural_check": "implemented",
+    "reader_comprehension": "untested",
+    "independent_accessibility_review": "not_run",
+    "production_deployment": "separate_receipt_required"
+  }
+}

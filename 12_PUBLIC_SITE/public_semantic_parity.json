@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 7,
+  "schemaVersion": 8,
   "status": "release-candidate-projection",
   "sourceAuthority": "Source documents own semantics; this manifest binds public pages but creates no doctrine.",
   "coreJourney": {
@@ -23,12 +23,15 @@
       "questions/index.html",
       "questions/diagnoses/index.html",
       "ethics/index.html",
+      "wisdom/index.html",
+      "wisdom/EM-WISDOM-001@1/index.html",
       "churn/index.html",
       "amrita/index.html",
       "halahala/index.html",
       "practice/index.html",
       "spark/index.html",
       "record/index.html",
+      "record/wisdom/index.html",
       "record/churning/index.html",
       "record/eub-1/index.html",
       "record/pqa-54/index.html",
@@ -48,6 +51,10 @@
       {
         "label": "Worldview",
         "href": "/plainly/"
+      },
+      {
+        "label": "Wisdom",
+        "href": "/wisdom/"
       },
       {
         "label": "Practice",
@@ -84,6 +91,34 @@
         "href": "/exit/"
       }
     ]
+  },
+  "publicWisdom": {
+    "schemaId": "emergentism/PublicWisdomAtlas.v1",
+    "sourcePacket": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/PublicWisdomCorpus.v1.json",
+    "sourcePacketRevision": "sha256:4bd160df80bd837ccbfe55c9f7939761b803cada66c6688db098032b36dbb877",
+    "counts": {
+      "records": 1,
+      "provisional": 1,
+      "supported": 0,
+      "independentOutcomes": 0,
+      "applicationCards": 8,
+      "coverageLanes": 17,
+      "admittedApplications": 1,
+      "candidateOnly": 7,
+      "noAdmissibleRecord": 9,
+      "productAdoptions": 0
+    },
+    "routeRoles": {
+      "wisdom/index.html": "human_instrument_and_promotion_ladder",
+      "wisdom/EM-WISDOM-001@1/index.html": "versioned_public_wisdom_dossier",
+      "record/wisdom/index.html": "source_custody_counts_and_release_boundary"
+    },
+    "machineOutputs": [
+      "wisdom/atlas.json",
+      "wisdom/atlas.jsonl",
+      "wisdom/rag.jsonl"
+    ],
+    "boundary": "Public is a separate lighting event, not a higher truth rung. Nothing promotes itself. Local generation, polish, receipts, or publication cannot create Supported wisdom, product adoption, independent outcome evidence, or external validation."
   },
   "questionAtlas": {
     "schemaId": "PQAAtlasManifest.v1",
@@ -286,7 +321,7 @@
       "surface": "about/index.html",
       "role": "kernel_editorial_map_boundary",
       "source": "00_THE_KERNEL_INDEX.md",
-      "sourceRevision": "sha256:2ea4081718f541f57f6c5dae11ae46d706885c8530983e945d60a30c3e8a5118",
+      "sourceRevision": "sha256:dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
       "tier": "[I]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -1050,8 +1085,8 @@
       ],
       "publicDisposition": "bounded_current",
       "requiredMarkers": [
-        "One sphere.",
-        "Two shadows.",
+        "One point on S² is read from both poles at once.",
+        "reciprocal views of the same point",
         "φ=cot(θ/2)",
         "ν=tan(θ/2)",
         "φν=1",
@@ -2138,6 +2173,8 @@
     "questions/index.html",
     "questions/diagnoses/index.html",
     "ethics/index.html",
+    "wisdom/index.html",
+    "wisdom/EM-WISDOM-001@1/index.html",
     "churn/index.html",
     "amrita/index.html",
     "halahala/index.html",
@@ -2147,6 +2184,7 @@
     "practice/index.html",
     "manifesto/index.html",
     "record/index.html",
+    "record/wisdom/index.html",
     "record/churning/index.html",
     "record/eub-1/index.html",
     "record/pqa-54/index.html",
@@ -2172,7 +2210,8 @@
     "assets/js/living-map.js",
     "assets/js/gestalt-v2.js",
     "assets/js/burrisphere-instrument.js",
-    "living-map.json"
+    "living-map.json",
+    "emergentism-design.v2.json"
   ],
   "machineSurfaces": [
     "spark.md",
@@ -2195,6 +2234,9 @@
     "questions/schemas/TypeCollision.v1.schema.json",
     "questions/schemas/MysteryDiagnosis.v1.schema.json",
     "questions/schemas/FourthChurningCorpus.v1.schema.json",
+    "wisdom/atlas.json",
+    "wisdom/atlas.jsonl",
+    "wisdom/rag.jsonl",
     "frontier/v1/catalog.json",
     "frontier/v1/schema.json",
     "frontier/v1/gaps/GP-01.json",

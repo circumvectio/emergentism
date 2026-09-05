@@ -1,0 +1,960 @@
+{
+  "schema_id": "emergentism/PublicWisdomAtlas.v1",
+  "release_id": "PUBLIC-WISDOM-2026-09-01",
+  "boundary": {
+    "public_is_truth_rung": false,
+    "public_changes_visibility_only": true,
+    "nothing_promotes_itself": true
+  },
+  "counts": {
+    "kind": {
+      "PUBLIC_KNOWLEDGE": 0,
+      "POLICY_CANDIDATE": 0,
+      "WISDOM_POLICY": 1
+    },
+    "maturity": {
+      "N/A": 0,
+      "PROVISIONAL": 1,
+      "SUPPORTED": 0,
+      "CONTESTED": 0,
+      "SUPERSEDED": 0
+    },
+    "projection": {
+      "DRAFT": 0,
+      "AUTHORIZED_NOT_LIT": 1,
+      "LIT": 0,
+      "CORRECTED": 0,
+      "RETRACTED": 0
+    },
+    "coverage": {
+      "ADMITTED_APPLICATION": 1,
+      "CANDIDATE_ONLY": 7,
+      "NO_ADMISSIBLE_RECORD": 9,
+      "EXCLUDED_PRIVATE": 0,
+      "HELD_CUSTODY": 0,
+      "HISTORICAL": 0
+    }
+  },
+  "supported_wisdom": 0,
+  "external_states": {
+    "site_published": false,
+    "site_deployed": false,
+    "product_adoptions": 0,
+    "independent_outcomes": 0,
+    "external_validation": false
+  },
+  "source_manifest": {
+    "schema_id": "emergentism/PublicWisdomSourceManifest.v1",
+    "manifest_id": "PUBLIC-WISDOM-SOURCES@1",
+    "date": "2026-09-01",
+    "federation_root_name": "Documents",
+    "source_policy": "Only exact committed Git blobs named below are admissible. Working-tree bytes, generated mirrors, agent consensus, and worktree replay carriers are excluded.",
+    "claim_compiler_environment": {
+      "variable": "EMERGENTISM_PRIMARY_CHECKOUT_ROOT",
+      "meaning": "Absolute path to the primary 01_EMERGENTISM checkout inside the source federation.",
+      "excluded_carriers": [
+        ".codex-worktrees",
+        ".claude/worktrees",
+        ".git"
+      ]
+    },
+    "repositories": [
+      {
+        "repo_id": "REPO-EMERGENTISM",
+        "root": "01_EMERGENTISM",
+        "commit": "a55e01c7a04d32671c07f8cb63f2472164500935"
+      },
+      {
+        "repo_id": "REPO-SKYZAI",
+        "root": "02_SKYZAI",
+        "commit": "3b7d3fd5c2e4eef8131216acb078692ceb5b5240"
+      },
+      {
+        "repo_id": "REPO-VENTURES",
+        "root": "03_VENTURES",
+        "commit": "c14c54a5003c840bb07ff506c2ae862910d5b9c3"
+      },
+      {
+        "repo_id": "REPO-MENEXUS",
+        "root": "03_VENTURES/01_RECORDED_LEGAL_PERSONS/MENEXUS",
+        "commit": "7e74716077773bc2417631df7cb99aea34b48545"
+      },
+      {
+        "repo_id": "REPO-OFN",
+        "root": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+        "commit": "8d1c460da9ff0aa580a9949d28ce4c4352980eac"
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "SRC-EM-CLAIM-STATUS",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "00_META/claim_status/CLAIM_STATUS.yaml",
+        "sha256": "805f28a7c25547991fe4800e43df8898e1cb35f63c68f591eaea3dfe4d68e7d5",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-WELTANSCHAUUNG",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "00_THE_WELTANSCHAUUNG.md",
+        "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-AMRITA",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "14_THE_DISTILLATION/00_THE_AMRITA.md",
+        "sha256": "dce26b620dfa9b30eee9880c85c6204f1aa3dc3ce6b281ae50ce55109067e97f",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-METHOD",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "14_THE_DISTILLATION/05_THE_METHOD.md",
+        "sha256": "14c3b11399c931226129b4c186beb4c80da4f38e8b5bdddcbdf61cff576d78da",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-THIRD-CHURNING",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/README.md",
+        "sha256": "2238187215aa70dd54a07f03eda8c15805d47d84de3cffb0b39c2360bb6ae250",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-FOURTH-CHURNING",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/README.md",
+        "sha256": "a93b3120ac5635fd9ee6c09aed3a1a128c35370632671be5b0de9f679c9ddc8e",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-EM-SOUL-LOOP",
+        "repo_id": "REPO-EMERGENTISM",
+        "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_09_THE_SOUL_LOOP.md",
+        "sha256": "8e6a8859f27f644b85e8f3627d582d3e6ec54b9ef9619e6689c7776a519fa13c",
+        "role": "SEMANTIC_INPUT"
+      },
+      {
+        "source_id": "SRC-SKY-APU",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L4_AGENTZ/00_APU_BOT_OPEN_GATES_SPEC_2026_08_15.md",
+        "sha256": "85aef83e03c61e51e27dcd13d7f097d134109c17934567668873914e467f997e",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-CIRCLE",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L2_CIRCLE/00_NORMATIVE_BLUEPRINT.md",
+        "sha256": "6f555239e1cfe5e79176f79f1408288cd5f8bc4f02b7a772f4026f570d5414f1",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-REALITYFUTURES",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L3_REALITYFUTURES/app/APPLIED_SOUL_LOOP.md",
+        "sha256": "921e76c143ebddae5a32d0085a7a40de41847e344124991f19e96807076ac6d4",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-AGENTZ",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/15_APPLIED_ROSETTA/README.md",
+        "sha256": "3d54df8516d8e58c115518547f1b76a201167e2a8c8a6dd1c20d43ff13a2a62f",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-WHOLE",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L6_SKYZAI_WHOLE/README.md",
+        "sha256": "d1db8d84ae04e7a6364209fb141690979df27c22453992d1c8da351fb7ae14a4",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-EVONET-ORGAN",
+        "repo_id": "REPO-SKYZAI",
+        "path": "01_LEVELS/L1_EVOLUTIONARY_NETWORK/README.md",
+        "sha256": "a4f6df70be10a3c5df032fbc14ed5ebf163fcd6671f35bfcfd42437b237963f4",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-SKY-SIX-LENSES-CUSTODY",
+        "repo_id": "REPO-SKYZAI",
+        "path": "90_ARCHIVE/2026_08_14_SIX_LENSES_HISTORICAL_SOURCE_CUSTODY/ORIGINAL_PATH/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+        "sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
+        "role": "HISTORICAL_CUSTODY"
+      },
+      {
+        "source_id": "SRC-MENEXUS-RUNTIME",
+        "repo_id": "REPO-MENEXUS",
+        "path": "00_CONTROL/ORGANISM_RUNTIME_TRUTH.md",
+        "sha256": "d0183c01264427ec194f043f26a5859e2615889f721877a505b0880d7d7422e8",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-VENTURES-REGISTRY",
+        "repo_id": "REPO-VENTURES",
+        "path": "AGENTS.md",
+        "sha256": "b18db1ee53641668924bf090c087c92ae7845708c0e2eddc6fcf25fcaf1d9f3e",
+        "role": "COVERAGE_REGISTRY"
+      },
+      {
+        "source_id": "SRC-VENTURES-EVONET",
+        "repo_id": "REPO-VENTURES",
+        "path": "03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK/README.md",
+        "sha256": "6e7615d4a2794c1dd7060ffcec99547e99e43a6938af29612d91b51b53121469",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-VENTURES-EVONET-CHARTER",
+        "repo_id": "REPO-VENTURES",
+        "path": "03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK/2026_08_31_SEVEN_FUNCTION_PEOPLE_NETWORK_CHARTER_v1.md",
+        "sha256": "d86eda154b07db79e84242c47fef2fd7463d7949d1a59e0828c3880ea5870373",
+        "role": "APPLICATION_CONTEXT"
+      },
+      {
+        "source_id": "SRC-OFN-MENEXUS-GUIDE",
+        "repo_id": "REPO-OFN",
+        "path": "01_LAYER/09_BRAND/SITES/_shared/ofn_parent_guide/menexus-brand-guide.html",
+        "sha256": "fd3d6069da1b546631e71aeebda7a1e2d0a5807b10920fb031dce240b808d818",
+        "role": "DESIGN_CRAFT_INPUT"
+      }
+    ],
+    "excluded_inputs": [
+      {
+        "path": "04_CODE/03_VENTURES/MENEXUS/menexus-public-site",
+        "reason": "Uncommitted implementation experiment; not an admitted semantic source."
+      },
+      {
+        "path": "02_SKYZAI/.codex-worktrees and 02_SKYZAI/.claude/worktrees",
+        "reason": "Replay carriers; never independent custody or evidence."
+      },
+      {
+        "path": "Concurrent dirty Skyzai, Ventures, and OFN files not named above",
+        "reason": "Foreign or unreviewed working-tree material."
+      }
+    ]
+  },
+  "source_manifest_sha256": "46caee2657580f26baa102bb8f678d980f5af167d8bc0b72ecad0872b378541a",
+  "input_hashes": {
+    "manifest_sha256": "46caee2657580f26baa102bb8f678d980f5af167d8bc0b72ecad0872b378541a",
+    "stack_sha256": "4037006592871cf2c1d9e014de1ebf085e5d1bd5071cfeedcddf311047ead444",
+    "records_sha256": "ed211c9e447064d3c30d7e7ec881e0ba2651c52e6665e87b8f96a7bd11d5ad4e",
+    "cards_sha256": "cd2ec5f3fca88f05f2a776576451d3a781fb58f73e371f70ceb2f54c8d348f01",
+    "ledger_sha256": "4ed3b02894eb40b44cfc35ea13480b35f1e716a4a079419beb84fd00b0ae6a03"
+  },
+  "stack": {
+    "schema_id": "emergentism/EmergenceStack.v1",
+    "stack_id": "EMERGENCE-STACK@1",
+    "version": 1,
+    "scope": "A source-separation and persistence discipline for human and machine records; not an ontology of reality or a folder taxonomy.",
+    "stages": [
+      {
+        "stage_id": "ES-1",
+        "ordinal": 1,
+        "name": "Signal",
+        "object_definition": "A sensed, voiced, clicked, or streamed event before an admitted semantic structure.",
+        "default_retention": "transient",
+        "writers": [
+          "device",
+          "sensor",
+          "human intake"
+        ],
+        "expires_when": "Its declared intake window closes unless a Data object is created.",
+        "promotion_requires": []
+      },
+      {
+        "stage_id": "ES-2",
+        "ordinal": 2,
+        "name": "Data",
+        "object_definition": "Addressable bytes with content identity, size, time, source boundary, and retention state; still semantically mute.",
+        "default_retention": "transient or hot",
+        "writers": [
+          "bounded ingest"
+        ],
+        "expires_when": "Its retention purpose or service window ends unless a structured successor is created.",
+        "promotion_requires": [
+          "exact bytes",
+          "content identity",
+          "source and time",
+          "retention basis"
+        ]
+      },
+      {
+        "stage_id": "ES-3",
+        "ordinal": 3,
+        "name": "Information",
+        "object_definition": "Data plus an explicit schema, transformation, interpretation boundary, and provenance trail.",
+        "default_retention": "hot",
+        "writers": [
+          "parser",
+          "human editor",
+          "agent inside grant"
+        ],
+        "expires_when": "Its usefulness or rights basis expires and no cited claim depends on it.",
+        "promotion_requires": [
+          "schema",
+          "transformation digest",
+          "provenance",
+          "unknowns and loss"
+        ]
+      },
+      {
+        "stage_id": "ES-4",
+        "ordinal": 4,
+        "name": "Knowledge",
+        "object_definition": "A typed proposition linked to admitted Information, explicit warrant, confidence, rivals, and defeaters; not truth by label.",
+        "default_retention": "warm",
+        "writers": [
+          "human claimant",
+          "agent proposing inside grant"
+        ],
+        "expires_when": "It is revoked, contradicted, unsupported, or superseded; the predecessor record remains traceable.",
+        "promotion_requires": [
+          "proposition",
+          "source citations",
+          "warrant",
+          "rivals",
+          "defeaters",
+          "claim bearer"
+        ]
+      },
+      {
+        "stage_id": "ES-5",
+        "ordinal": 5,
+        "name": "Judgment",
+        "object_definition": "Knowledge joined to a scoped decision by a named bearer, with authority state, reversibility, cost, and expected consequence visible.",
+        "default_retention": "warm audit",
+        "writers": [
+          "authorized human",
+          "agent only within an already valid charter"
+        ],
+        "expires_when": "The decision is revoked or superseded; the audit receipt remains under applicable retention law.",
+        "promotion_requires": [
+          "decision",
+          "bearer",
+          "scope",
+          "authority state",
+          "reversibility",
+          "expected consequence"
+        ]
+      },
+      {
+        "stage_id": "ES-6",
+        "ordinal": 6,
+        "name": "Wisdom",
+        "object_definition": "A reusable, versioned policy distilled from Judgment with scope, outcome evidence, rivals, kills, correction lineage, and authority boundary.",
+        "default_retention": "cold or policy",
+        "writers": [
+          "named policy bearer under separate authority"
+        ],
+        "expires_when": "It is contested, superseded, retracted, or its mandate ends; lineage remains visible where lawful.",
+        "promotion_requires": [
+          "reusable policy form",
+          "outcome evidence",
+          "scope",
+          "kill criteria",
+          "correction path",
+          "policy authority"
+        ]
+      }
+    ],
+    "promotions": [
+      {
+        "promotion_id": "ESP-1",
+        "from": "ES-1",
+        "to": "ES-2",
+        "requires_new_object": true,
+        "requirements": [
+          "capture exact signal bytes",
+          "bind source, time, rights, and retention"
+        ]
+      },
+      {
+        "promotion_id": "ESP-2",
+        "from": "ES-2",
+        "to": "ES-3",
+        "requires_new_object": true,
+        "requirements": [
+          "declare schema and transformation",
+          "preserve provenance and transformation loss"
+        ]
+      },
+      {
+        "promotion_id": "ESP-3",
+        "from": "ES-3",
+        "to": "ES-4",
+        "requires_new_object": true,
+        "requirements": [
+          "state one typed proposition",
+          "cite admitted sources and expose warrant, rivals, and defeaters"
+        ]
+      },
+      {
+        "promotion_id": "ESP-4",
+        "from": "ES-4",
+        "to": "ES-5",
+        "requires_new_object": true,
+        "requirements": [
+          "record a scoped decision by a named bearer",
+          "bind authority state, cost, reversibility, and expected consequence"
+        ]
+      },
+      {
+        "promotion_id": "ESP-5",
+        "from": "ES-5",
+        "to": "ES-6",
+        "requires_new_object": true,
+        "requirements": [
+          "derive a reusable policy without erasing the Judgment",
+          "bind independent outcomes, scope, rivals, kills, correction, and policy authority"
+        ]
+      }
+    ],
+    "forbidden_skips": [
+      "A raw signal or byte object may not be called Knowledge.",
+      "A structured transcript or model output may not promote itself to Knowledge.",
+      "A claim, recommendation, or proposal may not be presented as Judgment without a decision bearer.",
+      "A repeated Judgment may not become Wisdom without policy scope, outcomes, kills, correction, and authority.",
+      "A commit, receipt, publication event, model consensus, or polished interface may not be presented as an outcome or truth upgrade.",
+      "A grave may not be resurrected in place; any renewed proposition needs a successor ID and fresh warrant.",
+      "A product may apply or contest Emergentism but may not promote its own application into Emergentism doctrine."
+    ],
+    "public_projection": {
+      "is_stage": false,
+      "changes_truth": false,
+      "changes_maturity": false,
+      "requires": [
+        "separate authorization",
+        "minimized public bytes",
+        "source and correction links",
+        "lighting receipt"
+      ],
+      "states": [
+        "DRAFT",
+        "AUTHORIZED_NOT_LIT",
+        "LIT",
+        "CORRECTED",
+        "RETRACTED"
+      ]
+    }
+  },
+  "records": [
+    {
+      "schema_id": "emergentism/PublicWisdomRecord.v1",
+      "stable_id": "EM-WISDOM-001@1",
+      "title": "The Public Wisdom Compact",
+      "kind": "WISDOM_POLICY",
+      "maturity": "PROVISIONAL",
+      "projection": "AUTHORIZED_NOT_LIT",
+      "epistemic_type": "chosen editorial policy with empirical support debt",
+      "evidence_tier": "[D]",
+      "scope": "Emergentism editorial, research, and public-projection practice only",
+      "proposition": "A public reasoning practice should preserve source ancestry, separate promotion and consequence states, expose authority and bearer ledgers, and remain correctable after publication.",
+      "clauses": [
+        "Nothing promotes itself.",
+        "Keep possibility wide; make commitment accountable.",
+        "Preserve ancestry; correction creates a successor rather than silently overwriting.",
+        "Capability, intelligence, popularity, product position, or consensus grants no authority.",
+        "Keep proposal, Judgment, authorization, execution, receipt, outcome, and revision distinct.",
+        "Count creation, destruction, and preservation separately by bearer and horizon; never hide them inside one unsupported scalar.",
+        "Publicity begins another feedback loop: reach is not truth, and correction, contestability, and Exit remain available."
+      ],
+      "compression": "Keep possibility wide. Make commitment accountable. Nothing promotes itself. Reality retains the right to correct every map.",
+      "source_ids": [
+        "SRC-EM-CLAIM-STATUS",
+        "SRC-EM-WELTANSCHAUUNG",
+        "SRC-EM-AMRITA",
+        "SRC-EM-METHOD",
+        "SRC-EM-THIRD-CHURNING",
+        "SRC-EM-FOURTH-CHURNING",
+        "SRC-EM-SOUL-LOOP",
+        "SRC-MENEXUS-RUNTIME"
+      ],
+      "lineage": {
+        "predecessor_id": null,
+        "successor_id": null,
+        "correction_of": null
+      },
+      "bearer_ledgers": [
+        {
+          "bearer": "source owners",
+          "horizon": "present and successor revisions",
+          "creation": "legible attribution and correction lineage",
+          "destruction": "additional review and maintenance cost",
+          "preservation": "semantic ownership and predecessor bytes",
+          "consent": "no product adoption is inferred from inclusion",
+          "exit": "source owner may reject the candidate application without losing its native record"
+        },
+        {
+          "bearer": "readers and contributors",
+          "horizon": "first reading through later correction",
+          "creation": "a compact map of warrant, decision, policy, and publicity",
+          "destruction": "attention cost and risk of framework vocabulary crowding out native terms",
+          "preservation": "access to sources, rivals, kills, corrections, and genuine Exit",
+          "consent": "worldview adoption is never required to inspect or contribute",
+          "exit": "the map can be put down; citations and native distinctions remain"
+        },
+        {
+          "bearer": "affected people and future publics",
+          "horizon": "downstream use and institutional reuse",
+          "creation": "visible authorization, consequence, and correction boundaries",
+          "destruction": "possible delay where urgent action is justified",
+          "preservation": "bearer-indexed harms, contestability, and non-self-certification",
+          "consent": "no proxy mandate or public consent is manufactured by the Compact",
+          "exit": "separately applicable rights, deletion duties, withdrawal, and challenge remain controlling"
+        }
+      ],
+      "authority": {
+        "bearer": "Yves R. Burri",
+        "scope": "local Emergentism editorial policy candidate",
+        "may_bind_products": false,
+        "may_sign": false,
+        "may_authorize_external_act": false
+      },
+      "rivals": [
+        "ordinary source criticism, audit trails, version control, decision journals, and scientific peer review may supply the same discipline with less vocabulary",
+        "a faster risk-proportionate process may outperform the full stack for reversible low-consequence work"
+      ],
+      "kill_criteria": [
+        "supersede or narrow the policy if it systematically blocks justified action, hides real authority, or makes correction harder",
+        "retract any clause that preserves harmful data against valid privacy, deletion, revocation, contract, or legal duties",
+        "do not promote to SUPPORTED unless admitted independent outcomes beat named simpler controls on error detection, correction, reversibility, or bearer protection"
+      ],
+      "outcomes": [],
+      "corrections": [],
+      "supported_by_outcome_count": 0,
+      "public_digest": "A compact for turning ideas into accountable, revisable guidance without confusing visibility, consensus, capability, or receipts with truth or authority.",
+      "state_note": "Locally authorized for the Emergentism v3 candidate; not lit, externally validated, product-adopted, or Supported."
+    }
+  ],
+  "application_cards": [
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-EMERGENTISM@1",
+      "name": "Emergentism",
+      "source_owner": "01_EMERGENTISM",
+      "coverage_state": "ADMITTED_APPLICATION",
+      "application_status": "LOCAL_DOCTRINE_APPLICATION",
+      "source_ids": [
+        "SRC-EM-CLAIM-STATUS",
+        "SRC-EM-WELTANSCHAUUNG",
+        "SRC-EM-METHOD",
+        "SRC-EM-SOUL-LOOP"
+      ],
+      "stack_contact": [
+        "Signal",
+        "Data",
+        "Information",
+        "Knowledge",
+        "Judgment",
+        "Wisdom",
+        "Public"
+      ],
+      "candidate_application": "Emergentism uses the stack to keep raw arrivals, structured maps, claims, editorial Judgments, reusable policy, and public projection source-separated while the Soul Loop returns consequence to revision.",
+      "adoption_state": "ADOPTED_IN_EMERGENTISM",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[D]",
+      "survivor_if_rejected": "The cited sources, ordinary versioning, native audit practices, and correction records remain."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-APU@1",
+      "name": "APU",
+      "source_owner": "02_SKYZAI/01_LEVELS/L4_AGENTZ",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-SKY-APU"
+      ],
+      "stack_contact": [
+        "Signal",
+        "Data",
+        "Information"
+      ],
+      "candidate_application": "APU may be read as a bounded intake and gate surface that keeps untrusted arrivals below durable claim or decision status until explicit checks and promotion events occur.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "APU's native gate specification and source ownership remain unchanged."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-CIRCLE@1",
+      "name": "Circle / IS",
+      "source_owner": "02_SKYZAI/01_LEVELS/L2_CIRCLE",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-SKY-CIRCLE"
+      ],
+      "stack_contact": [
+        "Signal",
+        "Data",
+        "Information",
+        "Public"
+      ],
+      "candidate_application": "Circle may preserve sourced observations and reported claims as provenance-bearing Information while refusing to manufacture cause, likelihood, recommendation, decision, or outcome; any public field remains a separate projection.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "Circle's sourced-IS boundary and correction chain remain authoritative in its own lane."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-REALITYFUTURES@1",
+      "name": "RealityFutures / COULD",
+      "source_owner": "02_SKYZAI/01_LEVELS/L3_REALITYFUTURES",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-SKY-REALITYFUTURES"
+      ],
+      "stack_contact": [
+        "Information",
+        "Knowledge"
+      ],
+      "candidate_application": "RealityFutures may transform sourced Information into uncertainty-bearing forecasts and calibration records without promoting COULD into IS, SHOULD, Judgment, authority, or execution; resolution evidence returns through a separate loop.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "RealityFutures retains its native forecast, uncertainty, calibration, and ownership boundaries."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-AGENTZ@1",
+      "name": "Agentz / SHOULD",
+      "source_owner": "02_SKYZAI/01_LEVELS/L4_AGENTZ",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-SKY-AGENTZ"
+      ],
+      "stack_contact": [
+        "Knowledge",
+        "Judgment"
+      ],
+      "candidate_application": "Agentz may compile sourced IS and uncertainty-bearing COULD into an unsigned SHOULD proposal while keeping proposal distinct from the Judgment, mandate, execution, receipt, and independent outcome that only later bearers may supply.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "Agentz remains a non-authorizing decision compiler under its own Applied Rosetta boundary."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-SKYZAI@1",
+      "name": "Skyzai constraint boundary",
+      "source_owner": "02_SKYZAI/01_LEVELS/L6_SKYZAI_WHOLE",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-SKY-WHOLE"
+      ],
+      "stack_contact": [
+        "Judgment",
+        "Wisdom"
+      ],
+      "candidate_application": "Skyzai's whole-boundary may be read as a non-authorizing constraint and coherence check around Judgment and policy reuse; HOLD, RETURN, or PASS cannot become approval, signing authority, execution, or evidence of outcome.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "Skyzai's native constraint dispositions and external-authority firewall remain."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-MENEXUS@1",
+      "name": "Menexus / Cortex · AIA · Nexus",
+      "source_owner": "03_VENTURES/01_RECORDED_LEGAL_PERSONS/MENEXUS",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-MENEXUS-RUNTIME"
+      ],
+      "stack_contact": [
+        "Signal",
+        "Data",
+        "Information",
+        "Knowledge",
+        "Judgment",
+        "Wisdom",
+        "Public"
+      ],
+      "candidate_application": "Menexus may render the stack as an explanatory promotion lens over typed records: Cortex preserves accepted lineage, AIA requests or explains bounded transformations, and Nexus carries scoped views; none of the seven labels becomes a folder, domain type, truth rank, or authority source.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "Menexus retains its native commitment kernel, domain kinds, promotion states, retention, visibility, and external-authority separation."
+    },
+    {
+      "schema_id": "emergentism/EstateApplicationCard.v1",
+      "stable_id": "EAC-EVOLUTIONARY-NETWORK@1",
+      "name": "Evolutionary.Network field practice",
+      "source_owner": "03_VENTURES/03_DOMAIN_VENTURES/EVOLUTIONARY_NETWORK",
+      "coverage_state": "CANDIDATE_ONLY",
+      "application_status": "SOURCE_OWNED_CANDIDATE",
+      "source_ids": [
+        "SRC-VENTURES-EVONET",
+        "SRC-VENTURES-EVONET-CHARTER",
+        "SRC-SKY-EVONET-ORGAN"
+      ],
+      "stack_contact": [
+        "Judgment",
+        "Wisdom",
+        "Public"
+      ],
+      "candidate_application": "Evolutionary.Network may test whether selected guidance survives voluntary seven-function practice in the actual world, returning independent consequence rather than self-certification; the Ventures network and Skyzai L1 organ remain distinct source owners.",
+      "adoption_state": "NOT_ADOPTED_BY_PRODUCT",
+      "authority_effect": "none",
+      "may_sign": false,
+      "may_authorize": false,
+      "self_promotion_forbidden": true,
+      "evidence_tier": "[I/C]",
+      "survivor_if_rejected": "The selected people-network charter, functions-not-ranks fence, and separate Skyzai organ remain unchanged."
+    }
+  ],
+  "coverage_ledger": {
+    "schema_id": "emergentism/EstateCoverageLedger.v1",
+    "ledger_id": "ESTATE-COVERAGE@1",
+    "date": "2026-09-01",
+    "registry_source_id": "SRC-VENTURES-REGISTRY",
+    "entries": [
+      {
+        "lane_id": "LANE-EMERGENTISM",
+        "name": "Emergentism",
+        "lane_kind": "DOCTRINE",
+        "owner_repository": "01_EMERGENTISM",
+        "coverage_state": "ADMITTED_APPLICATION",
+        "application_card_id": "EAC-EMERGENTISM@1",
+        "source_ids": [
+          "SRC-EM-WELTANSCHAUUNG",
+          "SRC-EM-METHOD"
+        ],
+        "note": "The Compact is admitted only as Provisional Emergentism editorial policy."
+      },
+      {
+        "lane_id": "LANE-APU",
+        "name": "APU",
+        "lane_kind": "PRODUCT",
+        "owner_repository": "02_SKYZAI",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-APU@1",
+        "source_ids": [
+          "SRC-SKY-APU"
+        ],
+        "note": "Candidate intake reading; no product adoption or runtime claim."
+      },
+      {
+        "lane_id": "LANE-CIRCLE",
+        "name": "Circle",
+        "lane_kind": "PRODUCT",
+        "owner_repository": "02_SKYZAI",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-CIRCLE@1",
+        "source_ids": [
+          "SRC-SKY-CIRCLE"
+        ],
+        "note": "Candidate sourced-IS application; Circle keeps its own semantics."
+      },
+      {
+        "lane_id": "LANE-REALITYFUTURES",
+        "name": "RealityFutures",
+        "lane_kind": "PRODUCT",
+        "owner_repository": "02_SKYZAI",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-REALITYFUTURES@1",
+        "source_ids": [
+          "SRC-SKY-REALITYFUTURES"
+        ],
+        "note": "Candidate COULD application; forecasts do not self-promote."
+      },
+      {
+        "lane_id": "LANE-AGENTZ",
+        "name": "Agentz",
+        "lane_kind": "PRODUCT",
+        "owner_repository": "02_SKYZAI",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-AGENTZ@1",
+        "source_ids": [
+          "SRC-SKY-AGENTZ"
+        ],
+        "note": "Candidate SHOULD application; proposal remains non-authorizing."
+      },
+      {
+        "lane_id": "LANE-SKYZAI",
+        "name": "Skyzai",
+        "lane_kind": "PRODUCT",
+        "owner_repository": "02_SKYZAI",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-SKYZAI@1",
+        "source_ids": [
+          "SRC-SKY-WHOLE"
+        ],
+        "note": "Candidate constraint-boundary application; PASS is not authority."
+      },
+      {
+        "lane_id": "LANE-MENEXUS",
+        "name": "Menexus",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES/01_RECORDED_LEGAL_PERSONS/MENEXUS",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-MENEXUS@1",
+        "source_ids": [
+          "SRC-MENEXUS-RUNTIME"
+        ],
+        "note": "Cortex, AIA, and Nexus remain organs of one product, not separate ventures or ladder rungs."
+      },
+      {
+        "lane_id": "LANE-EVOLUTIONARY-NETWORK",
+        "name": "Evolutionary.Network",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "CANDIDATE_ONLY",
+        "application_card_id": "EAC-EVOLUTIONARY-NETWORK@1",
+        "source_ids": [
+          "SRC-VENTURES-EVONET",
+          "SRC-VENTURES-EVONET-CHARTER",
+          "SRC-SKY-EVONET-ORGAN"
+        ],
+        "note": "Candidate field-practice application; Ventures network and Skyzai L1 organ remain distinct."
+      },
+      {
+        "lane_id": "LANE-AUREUS",
+        "name": "Aureus",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-HELIOS",
+        "name": "Helios",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-LQID",
+        "name": "LQID",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-YANTRA",
+        "name": "Yantra",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-OFN",
+        "name": "Open Finance Network",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "The reviewed Menexus guide contributes design craft only; it is not a wisdom application."
+      },
+      {
+        "lane_id": "LANE-TOKENCEN",
+        "name": "Tokencen",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES/02_ENTITY_AND_INSTITUTION_PATHS/OPEN_FINANCE_NETWORK",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-QNTM",
+        "name": "QNTM",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-NOSTR-VPN",
+        "name": "NOSTR_VPN",
+        "lane_kind": "VENTURE",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered lane; no source-owned Public Wisdom application admitted in this release."
+      },
+      {
+        "lane_id": "LANE-COMMERCE-PROGRAMMES",
+        "name": "Commerce programmes",
+        "lane_kind": "PROGRAMME",
+        "owner_repository": "03_VENTURES",
+        "coverage_state": "NO_ADMISSIBLE_RECORD",
+        "application_card_id": null,
+        "source_ids": [
+          "SRC-VENTURES-REGISTRY"
+        ],
+        "note": "Registered programme class; no Public Wisdom application is inferred from commerce material."
+      }
+    ],
+    "counts": {
+      "ADMITTED_APPLICATION": 1,
+      "CANDIDATE_ONLY": 7,
+      "NO_ADMISSIBLE_RECORD": 9,
+      "EXCLUDED_PRIVATE": 0,
+      "HELD_CUSTODY": 0,
+      "HISTORICAL": 0
+    },
+    "zero_unclassified": true
+  }
+}

@@ -33,15 +33,17 @@ EXPECTED_CORE_JOURNEY = [
     "ecology/index.html",
     "burrisphere/index.html", "rosetta/index.html", "6/index.html",
     "f5/index.html", "questions/index.html", "questions/diagnoses/index.html", "ethics/index.html",
+    "wisdom/index.html", "wisdom/EM-WISDOM-001@1/index.html",
     "churn/index.html", "amrita/index.html", "halahala/index.html",
     "practice/index.html", "spark/index.html",
-    "record/index.html", "record/churning/index.html",
+    "record/index.html", "record/wisdom/index.html", "record/churning/index.html",
     "record/eub-1/index.html", "record/pqa-54/index.html", "frontier/index.html", "lab/index.html",
     "discoveries/index.html", "book/index.html", "about/index.html",
     "contribute/index.html", "exit/index.html",
 ]
 EXPECTED_PRIMARY_NAV = [
     {"label": "Worldview", "href": "/plainly/"},
+    {"label": "Wisdom", "href": "/wisdom/"},
     {"label": "Practice", "href": "/practice/"},
     {"label": "Research", "href": "/record/"},
     {"label": "Library", "href": "/book/"},
@@ -492,7 +494,7 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "Game theory is not exhausted", "maximally compressed",
     ),
     "burrisphere/instrument/index.html": (
-        "One sphere.", "Two shadows.", "M4 bottom action plane",
+        "One point on S² is read from both poles at once.", "reciprocal views of the same point", "M4 bottom action plane",
         "four sectors on the bottom action plane", "not sphere territories",
         "Titan axis", "• Śiva; ⊙ Viṣṇu; ○ Brahmā",
         "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1",
@@ -667,7 +669,7 @@ REQUIRED_SURFACE_MARKERS = {
         "Game theory is not exhausted", "maximally compressed",
     },
     "burrisphere/instrument/index.html": {
-        "One sphere.", "Two shadows.", "M4 bottom action plane",
+        "One point on S² is read from both poles at once.", "reciprocal views of the same point", "M4 bottom action plane",
         "four sectors on the bottom action plane", "not sphere territories",
         "Titan axis", "• Śiva; ⊙ Viṣṇu; ○ Brahmā",
         "φ=cot(θ/2)", "ν=tan(θ/2)", "φν=1", "B=sin θ≤1",
@@ -995,6 +997,42 @@ def record_has_only_historical_k2(text: str) -> bool:
         return False
     matches = list(FORBIDDEN["application authority leakage"].finditer(text))
     return bool(matches) and all(match.group(0).casefold() == "k2" for match in matches)
+
+
+def public_wisdom_authority_scan(artifact: str, text: str) -> str:
+    """Remove only exact, reviewed candidate fragments; scan everything else.
+
+    Disclaimers are prerequisites, never page-wide permission. A changed
+    candidate or an authority claim elsewhere must still fail the same gate.
+    """
+    if artifact not in {"index.html", "wisdom/index.html"} or not all(
+        marker in text
+        for marker in (
+            "No product has adopted this Compact.",
+            "source-owned",
+        )
+    ):
+        return text
+    if artifact == "index.html":
+        fragments = ("<h3>Agentz / SHOULD</h3>", "<h3>Skyzai</h3>")
+    else:
+        from build_wisdom_atlas import application_markup, load_source
+        try:
+            bundle, _ = load_source()
+        except (OSError, ValueError, KeyError, TypeError):
+            return text
+        fragments = (application_markup(bundle["cards"]),)
+    for fragment in fragments:
+        # Repeating a candidate is not an additional exemption.
+        if text.count(fragment) == 1:
+            text = text.replace(fragment, "", 1)
+    return text
+
+
+def without_theme_boot(text: str) -> str:
+    """Exempt the exact read-only appearance bootstrap, not arbitrary scripts."""
+    from build_core_shell import THEME_BOOT
+    return text.replace(THEME_BOOT, "", 1)
 
 
 STATUS_SOURCE_CONTRACTS = {
@@ -1624,7 +1662,7 @@ def validate_core_routing(data: dict, errors: list[str]) -> None:
         errors.append("coreJourney question drift")
     surfaces = journey.get("surfaces")
     if surfaces != EXPECTED_CORE_JOURNEY:
-        errors.append("coreJourney surfaces must match the exact ordered v6 journey")
+        errors.append("coreJourney surfaces must match the exact ordered v8 journey")
     elif len(surfaces) != len(set(surfaces)):
         errors.append("coreJourney surfaces repeat an artifact")
     current = set(data.get("currentSurfaces", []))
@@ -2106,8 +2144,9 @@ def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
     practice = SITE / "practice/index.html"
     if practice.is_file():
         text = practice.read_text(encoding="utf-8")
+        practice_scan = without_theme_boot(text)
         for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "WebSocket", "ethereum.request"):
-            if forbidden in text:
+            if forbidden in practice_scan:
                 errors.append(f"decisionTransaction practice must remain local-only: {forbidden}")
         local_boundary = (
             "Local only · no account · no wallet · no transmission · "
@@ -2121,6 +2160,121 @@ def validate_v7_decision_transaction(data: dict, errors: list[str]) -> None:
             text,
         ):
             errors.append("decisionTransaction local commitment must begin disabled")
+
+
+def validate_v8_public_wisdom(data: dict, errors: list[str]) -> None:
+    """Bind the local Public Wisdom projection to its canonical source packet."""
+
+    contract = data.get("publicWisdom")
+    if not isinstance(contract, dict):
+        errors.append("publicWisdom must be an object")
+        return
+    expected_routes = {
+        "wisdom/index.html": "human_instrument_and_promotion_ladder",
+        "wisdom/EM-WISDOM-001@1/index.html": "versioned_public_wisdom_dossier",
+        "record/wisdom/index.html": "source_custody_counts_and_release_boundary",
+    }
+    expected_outputs = ["wisdom/atlas.json", "wisdom/atlas.jsonl", "wisdom/rag.jsonl"]
+    if contract.get("schemaId") != "emergentism/PublicWisdomAtlas.v1":
+        errors.append("publicWisdom schemaId drift")
+    if contract.get("routeRoles") != expected_routes:
+        errors.append("publicWisdom routeRoles drift")
+    if contract.get("machineOutputs") != expected_outputs:
+        errors.append("publicWisdom machineOutputs drift")
+    if any(key in contract for key in ROUTING_FORBIDDEN_KEYS):
+        errors.append("publicWisdom must not impersonate a claim-card binding")
+
+    source_rel = contract.get("sourcePacket")
+    if not isinstance(source_rel, str):
+        errors.append("publicWisdom sourcePacket is missing")
+        return
+    source = ROOT / source_rel
+    if not source.is_file():
+        errors.append("publicWisdom sourcePacket is missing on disk")
+        return
+    if contract.get("sourcePacketRevision") != _sha256_revision(source):
+        errors.append("publicWisdom sourcePacketRevision drift")
+    try:
+        corpus = json.loads(source.read_text(encoding="utf-8"))
+        record_set = json.loads((source.parent / "data/public_wisdom_records.v1.json").read_text(encoding="utf-8"))
+        cards = json.loads((source.parent / "data/estate_application_cards.v1.json").read_text(encoding="utf-8"))
+        ledger = json.loads((source.parent / "data/estate_coverage_ledger.v1.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        errors.append(f"publicWisdom source data is invalid: {exc}")
+        return
+
+    expected_counts = {
+        "records": 1,
+        "provisional": 1,
+        "supported": 0,
+        "independentOutcomes": 0,
+        "applicationCards": 8,
+        "coverageLanes": 17,
+        "admittedApplications": 1,
+        "candidateOnly": 7,
+        "noAdmissibleRecord": 9,
+        "productAdoptions": 0,
+    }
+    if contract.get("counts") != expected_counts:
+        errors.append("publicWisdom public counts drift")
+    if corpus.get("supported_wisdom") != 0 or corpus.get("supported_count_is_derived") != 0:
+        errors.append("publicWisdom falsely reports Supported wisdom")
+    if corpus.get("public_is_truth_rung") is not False:
+        errors.append("publicWisdom source collapses Public into truth")
+    external = corpus.get("external_states", {})
+    if external != {
+        "site_published": False,
+        "site_deployed": False,
+        "product_adoptions": 0,
+        "independent_outcomes": 0,
+        "external_validation": False,
+    }:
+        errors.append("publicWisdom external-state boundary drift")
+    records = record_set.get("records", [])
+    if len(records) != 1:
+        errors.append("publicWisdom requires exactly one source record in v1")
+    else:
+        record = records[0]
+        if (record.get("stable_id"), record.get("kind"), record.get("maturity"), record.get("projection")) != (
+            "EM-WISDOM-001@1", "WISDOM_POLICY", "PROVISIONAL", "AUTHORIZED_NOT_LIT"
+        ):
+            errors.append("publicWisdom source record state drift")
+        if record.get("outcomes") or record.get("corrections") or record.get("supported_by_outcome_count") != 0:
+            errors.append("publicWisdom source record manufactures outcome support")
+    if len(cards.get("cards", [])) != 8:
+        errors.append("publicWisdom application-card denominator drift")
+    if len(ledger.get("entries", [])) != 17 or ledger.get("zero_unclassified") is not True:
+        errors.append("publicWisdom coverage denominator drift")
+
+    page_markers = {
+        "wisdom/index.html": (
+            "Signal → Data → Information → Knowledge → Judgment → Wisdom",
+            "Public is a separate lighting event, not a higher truth rung.",
+            "Nothing promotes itself.",
+            "0 supported",
+            "No product has adopted this Compact.",
+        ),
+        "wisdom/EM-WISDOM-001@1/index.html": (
+            "EM-WISDOM-001@1", "PROVISIONAL", "AUTHORIZED_NOT_LIT",
+            "Seven clauses. Every one remains correctable.",
+        ),
+        "record/wisdom/index.html": (
+            "13 tests", "8 cards", "17 lanes", "0 Supported",
+            "OFFLINE-READY is not public.",
+        ),
+    }
+    for rel, markers in page_markers.items():
+        path = SITE / rel
+        if not path.is_file():
+            errors.append(f"publicWisdom surface missing: {rel}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        for marker in markers:
+            if marker not in text:
+                errors.append(f"publicWisdom marker missing from {rel}: {marker}")
+    for rel in expected_outputs:
+        if not (SITE / rel).is_file():
+            errors.append(f"publicWisdom machine output missing: {rel}")
 
 
 def validate_v4_contracts(data: dict, errors: list[str]) -> None:
@@ -2430,13 +2584,14 @@ def main() -> int:
     except ValueError as exc:
         errors.append(str(exc))
         excluded_routes = set()
-    if data.get("schemaVersion") != 7:
-        errors.append("public semantic parity schemaVersion must be 7")
+    if data.get("schemaVersion") != 8:
+        errors.append("public semantic parity schemaVersion must be 8")
     validate_core_routing(data, errors)
     validate_v4_contracts(data, errors)
     validate_v5_churning(data, errors)
     validate_v6_fourth_churning(data, errors)
     validate_v7_decision_transaction(data, errors)
+    validate_v8_public_wisdom(data, errors)
     validate_frontier_protocol(data, errors)
     contract = data.get("claimCardContract", {})
     required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
@@ -2662,6 +2817,8 @@ def main() -> int:
                     errors.append(f"{rel}: {name}")
                 continue
             scan_text = text
+            if name == "application authority leakage":
+                scan_text = public_wisdom_authority_scan(rel, text)
             # Tier-claim patterns must survive inline markup: the site writes
             # "They <b>multiply</b>", which no raw-text regex can cross. Strip
             # tags for these two only, leaving the tuned legacy patterns alone.

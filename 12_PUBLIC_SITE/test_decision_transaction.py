@@ -55,9 +55,18 @@ class DecisionTransactionTests(unittest.TestCase):
         self.assertIn("The prepared packet cannot sign itself.", self.practice)
 
     def test_practice_has_no_network_wallet_or_persistence_api(self) -> None:
+        theme_boots = re.findall(
+            r'<script data-g2-theme-boot>.*?</script>',
+            self.practice,
+            flags=re.DOTALL,
+        )
+        self.assertEqual(len(theme_boots), 1)
+        from build_core_shell import THEME_BOOT
+        self.assertEqual(theme_boots[0], THEME_BOOT)
+        transaction_surface = self.practice.replace(theme_boots[0], "")
         for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "WebSocket", "ethereum.request"):
             with self.subTest(forbidden=forbidden):
-                self.assertNotIn(forbidden, self.practice)
+                self.assertNotIn(forbidden, transaction_surface)
         self.assertIn(
             "Local only · no account · no wallet · no transmission · "
             "no execution · no recommendation",

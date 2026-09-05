@@ -198,6 +198,9 @@ let THREE;
 let OrbitControls;
 
 function initThemeControls() {
+  // Current pages have one owner for System/Light/Dark. Do not overwrite its
+  // system preference when the legacy instrument module finishes loading.
+  if (rootElement.dataset.emergentismDesign === "v2") return;
   let stored = null;
   try {
     stored = window.localStorage.getItem("emergentism-theme");

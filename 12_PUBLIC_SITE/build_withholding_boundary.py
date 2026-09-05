@@ -20,6 +20,7 @@ from check_public_semantic_parity import (
     LIFECYCLE_AWARE_FORBIDDEN,
     has_unretired_forbidden_match,
     has_titan_infix,
+    public_wisdom_authority_scan,
     record_has_only_historical_k2,
 )
 
@@ -129,6 +130,8 @@ def _semantic_policy_matches(artifact: str, text: str) -> tuple[list[str], list[
             matched = has_titan_infix(text)
         else:
             scan_text = text
+            if name == "application authority leakage":
+                scan_text = public_wisdom_authority_scan(artifact, text)
             if name in ("product uniqueness asserted as settled", "ethic derived from arithmetic"):
                 scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":

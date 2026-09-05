@@ -44,15 +44,21 @@ GLOBS = ("assets/js/*.js", "assets/css/*.css", "atlas/*.json", "*.webmanifest")
 EXTRA = (
     "reading-manifest.json",
     "public_semantic_parity.json",
-    "emergentism-design.v1.json",
+    "emergentism-design.v2.json",
     "living-map.json",
+    "wisdom/atlas.json",
+    "wisdom/atlas.jsonl",
+    "wisdom/rag.jsonl",
     "frontier/v1/catalog.json",
     "book/rag_index.json",
 )
 REQUIRED_RUNTIME_JSON = {
     "living-map.json",
     "book/rag_index.json",
-    "emergentism-design.v1.json",
+    "emergentism-design.v2.json",
+    "wisdom/atlas.json",
+    "wisdom/atlas.jsonl",
+    "wisdom/rag.jsonl",
     "frontier/v1/catalog.json",
 }
 

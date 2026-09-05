@@ -140,12 +140,13 @@ class LivingMapContractTests(unittest.TestCase):
     def test_surface_claims_bind_current_cards_sources_and_markers(self):
         expected = {
             "index.html": {
-                "FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-23",
-                "OS01-24", "OS01-25", "OS01-26", "OS01-27", "OS01-28",
-                "OS01-29", "OS01-30", "OS01-31", "OS01-32", "OS01-33",
-                "OS01-34", "OS01-35", "OS01-36", "OS01-37",
-                "OS01-38", "OS01-39", "OS01-40", "OS01-41", "OS01-42",
-                "OS01-43", "OS01-44",
+                "FIN01-01", "OS01-01", "OS01-06", "OS01-08", "OS01-09",
+                "OS01-10", "OS01-11", "OS01-12", "OS01-13", "OS01-20",
+                "OS01-22", "OS01-23", "OS01-24", "OS01-25", "OS01-27",
+                "OS01-28", "OS01-29", "OS01-30", "OS01-31", "OS01-32",
+                "OS01-33", "OS01-34", "OS01-35", "OS01-36", "OS01-37",
+                "OS01-41", "OS01-42", "OS01-45", "OS01-46", "OS01-47",
+                "OS01-48",
             },
             "dasein/index.html": {
                 "OS01-01", "OS01-05", "OS01-06", "OS01-10", "OS01-12",
@@ -180,6 +181,7 @@ class LivingMapContractTests(unittest.TestCase):
             "discoveries/paradoxes/index.html": {"OS01-41"},
             "discoveries/is-ought/index.html": {"OS01-39", "OS01-40"},
             "book/index.html": {"OS01-13"},
+            "ecology/index.html": {"OS01-12", "OS01-19", "OS01-46", "OS01-47", "OS01-48"},
         }
         bindings = {item["surface"]: item for item in self.parity["surfaceClaims"]}
         self.assertEqual(set(bindings), set(expected))
@@ -208,11 +210,16 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertEqual(errors, [])
 
         cross_corpus = copy.deepcopy(self.parity)
-        cross_corpus["statusSourceClaims"][0]["source"] = "../03_VENTURES/README.md"
+        kernel_status = next(
+            item
+            for item in cross_corpus["statusSourceClaims"]
+            if item["id"] == "KERNEL-STATUS-ABOUT"
+        )
+        kernel_status["source"] = "../03_VENTURES/README.md"
         errors = []
         validate_status_source_claims(cross_corpus, errors)
         self.assertIn(
-            "KERNEL-STATUS-HOME status source is not an approved owner-status source",
+            "KERNEL-STATUS-ABOUT status source is not an approved owner-status source",
             errors,
         )
 
@@ -239,7 +246,11 @@ class LivingMapContractTests(unittest.TestCase):
         sw = (ROOT / "sw.js").read_text(encoding="utf-8")
         offline = (ROOT / "offline" / "index.html").read_text(encoding="utf-8")
         withheld = json.loads((ROOT / "withheld-routes.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["name"], "Emergentism — The Gestalt of Dasein")
+        self.assertEqual(manifest["name"], "Emergentism — Public Wisdom Instrument")
+        self.assertEqual(
+            manifest["description"],
+            "A bounded atlas of Being and a source-bound promotion instrument from Signal to Wisdom.",
+        )
         self.assertEqual(manifest["id"], "/")
         self.assertEqual(manifest["start_url"], "/")
         self.assertNotIn("A Compass, Not a Cathedral", manifest["name"])

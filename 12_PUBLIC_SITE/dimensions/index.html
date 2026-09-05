@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-gestalt="v2" data-emergentism-design="v1"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-gestalt="v2" data-emergentism-design="v2"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The dimension-first spine — Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6 with five typed μ-interfaces — two standing, one owing a discriminator, two adjudicated failed — one exit boundary, and one interpretive return." />
 <link rel="stylesheet" href="../assets/css/xai.css" /><style>
@@ -13,7 +13,8 @@ main{max-width:900px;margin:0 auto;padding:120px 22px 80px} h1{font-size:clamp(2
 /* a11y-floor-2026-08-13 */
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
-</style><link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</style><script data-g2-theme-boot>(function(){try{var t=localStorage.getItem("emergentism-theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}})();</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
 <script defer src="/assets/js/gestalt-v2.js"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#070A12"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><script src="/assets/js/pwa.js" defer></script></head><body class="g2-page g2-legacy g2-dimensions-index" data-emergentism-surface="dimension">
 <!-- gestalt-core-nav:start -->
@@ -26,10 +27,14 @@ main{max-width:900px;margin:0 auto;padding:120px 22px 80px} h1{font-size:clamp(2
     </a>
     <nav class="g2-nav__desktop" aria-label="Primary navigation">
       <a data-section="worldview" data-current-section="true" href="/plainly/">Worldview</a>
+      <a data-section="wisdom" href="/wisdom/">Wisdom</a>
       <a data-section="practice" href="/practice/">Practice</a>
       <a data-section="research" href="/record/">Research</a>
       <a data-section="library" href="/book/">Library</a>
       <a data-section="participate" href="/contribute/">Participate</a>
+      <button class="g2-theme-toggle" type="button" data-g2-theme-toggle aria-label="Appearance: system" hidden>
+        <span aria-hidden="true">◐</span><span data-g2-theme-label>System</span>
+      </button>
       <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
     </nav>
     <nav class="g2-nav__mobile" aria-label="Mobile navigation">
@@ -38,9 +43,13 @@ main{max-width:900px;margin:0 auto;padding:120px 22px 80px} h1{font-size:clamp(2
         <summary>Menu</summary>
         <div class="g2-menu__panel">
           <a data-section="worldview" data-current-section="true" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
-          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
-          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
-          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+          <a data-section="wisdom" href="/wisdom/">Wisdom <span aria-hidden="true">02</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">03</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">04</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">05</span></a>
+          <button class="g2-theme-toggle g2-theme-toggle--menu" type="button" data-g2-theme-toggle aria-label="Appearance: system" hidden>
+            <span>Appearance</span><span data-g2-theme-label>System</span>
+          </button>
         </div>
       </details>
       <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
@@ -57,20 +66,21 @@ main{max-width:900px;margin:0 auto;padding:120px 22px 80px} h1{font-size:clamp(2
     <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
     <nav aria-label="Footer navigation">
       <a href="/plainly/">Worldview</a>
+      <a href="/wisdom/">Wisdom</a>
       <a href="/practice/">Practice</a>
       <a href="/record/">Research</a>
       <a href="/book/">Library</a>
       <a href="/about/">About</a>
       <a href="/exit/">Exit</a>
     </nav>
-    <div class="g2-footer__key" data-g2-semantic-key="v1" aria-label="How to read the Emergentism interface">
+    <div class="g2-footer__key" data-g2-semantic-key="v2" aria-label="How to read the Emergentism interface">
       <span class="g2-footer__key-item g2-footer__key-item--actual"><i aria-hidden="true"></i><b>Actual</b><small>solid and instantiated</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--possible"><i aria-hidden="true"></i><b>Possible</b><small>branching and represented</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--conjecture"><i aria-hidden="true"></i><b>Conjecture</b><small>dashed and killable</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--evidence"><i aria-hidden="true">↩</i><b>Evidence</b><small>returned and revising</small></span>
     </div>
     <div class="g2-footer__boundary">
-      <span>Public projection · source owners govern · no external validation implied</span>
+      <span>Public is visibility, not truth · source owners govern · no external validation implied</span>
       <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
     </div>
   </div>

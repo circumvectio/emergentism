@@ -35,7 +35,7 @@ class GestaltV2ContractTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.fork = json.loads(F5_CONTRACT.read_text(encoding="utf-8"))
         cls.design = json.loads(
-            (SITE / "emergentism-design.v1.json").read_text(encoding="utf-8")
+            (SITE / "emergentism-design.v2.json").read_text(encoding="utf-8")
         )
         cls.css = (SITE / "assets/css/gestalt-v2.css").read_text(encoding="utf-8")
         cls.js = (SITE / "assets/js/gestalt-v2.js").read_text(encoding="utf-8")
@@ -85,21 +85,22 @@ class GestaltV2ContractTests(unittest.TestCase):
                 self.assertEqual(body.count('/favicon.svg'), 1)
                 self.assertEqual(body.count('rel="icon"'), 1)
                 relative = path.relative_to(SITE).as_posix()
-                self.assertIn('data-emergentism-design="v1"', body)
+                self.assertIn('data-emergentism-design="v2"', body)
                 self.assertIn(
                     f'data-emergentism-surface="{shell.SURFACE_FAMILIES[relative]}"',
                     body,
                 )
-                self.assertEqual(body.count('data-g2-semantic-key="v1"'), 1)
+                self.assertEqual(body.count('data-g2-semantic-key="v2"'), 1)
+                self.assertEqual(body.count("data-g2-theme-boot"), 1)
 
     def test_design_constitution_is_public_source_bound_and_checkable(self) -> None:
-        self.assertEqual(self.design["schema"], "emergentism/PublicDesignContract.v1")
-        self.assertEqual(self.design["version"], "1.0.0")
+        self.assertEqual(self.design["schema"], "emergentism/PublicDesignContract.v2")
+        self.assertEqual(self.design["version"], "2.0.0")
         self.assertEqual(
             set(self.design["semanticRoles"]),
             {"boundary", "actual", "possible", "conjecture", "evidence", "poison"},
         )
-        self.assertEqual(len(self.design["routes"]), 32)
+        self.assertEqual(len(self.design["routes"]), 37)
         self.assertTrue(self.design["boundary"]["projection_only"])
         self.assertFalse(self.design["boundary"]["creates_evidence"])
         self.assertFalse(self.design["boundary"]["creates_authority"])
@@ -112,12 +113,16 @@ class GestaltV2ContractTests(unittest.TestCase):
         for row in self.design["routes"]:
             with self.subTest(route=row["path"]):
                 body = (SITE / row["path"]).read_text(encoding="utf-8")
-                self.assertIn('data-emergentism-design="v1"', body)
+                self.assertIn('data-emergentism-design="v2"', body)
                 self.assertIn(
                     f'data-emergentism-surface="{row["family"]}"',
                     body,
                 )
-                self.assertEqual(body.count('data-g2-semantic-key="v1"'), 1)
+                self.assertEqual(body.count('data-g2-semantic-key="v2"'), 1)
+                self.assertEqual(
+                    body.count("data-g2-theme-boot"),
+                    0 if row["shell"] == "churning" else 1,
+                )
 
         result = subprocess.run(
             [sys.executable, str(SITE / "check_design_constitution.py")],
@@ -321,7 +326,10 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn('root.dataset.gestaltMotion = "static"', self.js)
         self.assertNotIn("requestAnimationFrame", self.js)
         self.assertNotIn("setInterval", self.js)
-        self.assertNotRegex(self.js, r"\.hidden\s*=|setAttribute\([\"']aria-hidden|\binert\b")
+        # Revealing the theme control after its handler is installed is the
+        # sole enhancement exception; animation still cannot hide content.
+        self.assertEqual(self.js.count("button.hidden = false;"), 1)
+        self.assertNotRegex(self.js.replace("button.hidden = false;", ""), r"\.hidden\s*=|setAttribute\([\"']aria-hidden|\binert\b")
         self.assertLess(len(self.js.encode("utf-8")), 8_000)
 
         self.assertIn("@keyframes g2-boundary-settle", self.css)
@@ -384,15 +392,18 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertIn("min-height:48px;display:inline-flex", practice)
         self.assertIn(".filterbar button{min-height:48px", living_map)
         self.assertIn(".copy-button{min-width:48px;min-height:48px", living_map)
-        self.assertIn(".bi-actions button span:last-child { display: block; }", instrument)
-        self.assertIn("bottom: 402px; width: 255px", instrument)
-        self.assertIn("min-height: 232px", instrument)
-        self.assertIn("font-size: .58rem", instrument)
+        self.assertIn(".bi-actions button { min-height:48px;", instrument)
+        self.assertIn(".bi-action-icon { display:block;", instrument)
+        self.assertRegex(instrument, r"\.bi-workbench \{[^}]*overflow:auto;")
+        self.assertRegex(instrument, r"\.bi-workbench \{[^}]*overflow:visible;")
+        self.assertIn(".bi-page :focus-visible { outline:3px", instrument)
+        self.assertIn("prefers-reduced-motion:reduce", instrument)
         self.assertNotIn(".bi-thesis { display: none; }", instrument)
-        self.assertIn(".bi-boundary { display: block;", instrument)
+        instrument_page = (SITE / "burrisphere/instrument/index.html").read_text(encoding="utf-8")
+        for control in ("motion-toggle", "centre-button", "bearing-button", "overlay-toggle", "fullscreen-button", "camera-button"):
+            self.assertRegex(instrument_page, rf'<button\b[^>]*id="{control}"[^>]*aria-label="[^"]+"')
         self.assertIn(".g2-page .g2-button--primary", self.css)
         self.assertIn("color:#989ca7", living_map)
-        self.assertIn("opacity: .76", instrument)
 
         dimensions_builder = (SITE / "render_dimension_site.py").read_text(encoding="utf-8")
         self.assertIn(".crossing b{{color:var(--text-muted)}}", dimensions_builder)
@@ -458,11 +469,13 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertEqual(before, {path: path.read_bytes() for path in protected})
         self.assertTrue(
             {
-                "/dasein/", "/f5/", "/questions/", "/ethics/",
+                "/dasein/", "/f5/", "/questions/", "/ethics/", "/wisdom/",
+                "/wisdom/EM-WISDOM-001@1/", "/record/wisdom/",
                 "/churn/", "/amrita/", "/halahala/", "/record/churning/",
                 "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
                 "/record/pqa-54/", "/assets/css/gestalt-v2.css",
-                "/assets/js/gestalt-v2.js", "/emergentism-design.v1.json",
+                "/assets/js/gestalt-v2.js", "/emergentism-design.v2.json",
+                "/wisdom/atlas.json", "/wisdom/atlas.jsonl", "/wisdom/rag.jsonl",
                 "/assets/fonts/Newsreader-latin-variable.woff2",
                 "/burrisphere/", "/burrisphere/instrument/",
                 "/assets/css/burrisphere-instrument.css", "/assets/js/burrisphere-instrument.js",
@@ -477,7 +490,7 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertEqual(
             nodes,
             [
-                "gestalt", "ladder", "hinge", "instrument",
+                "gestalt", "ladder", "hinge", "promotion", "wisdom", "instrument",
                 "practice", "evidence", "research", "exit",
             ],
         )
@@ -598,14 +611,18 @@ class GestaltV2ContractTests(unittest.TestCase):
         self.assertEqual(home.count("Swipe to inspect"), 1)
 
         action_groups = re.findall(r'<div class="g2-actions">(.*?)</div>', home, re.S)
-        self.assertEqual(len(action_groups), 6)
+        self.assertEqual(len(action_groups), 8)
         for group in action_groups:
-            self.assertEqual(group.count("g2-button--primary"), 1)
-            self.assertNotIn('class="g2-button"', group)
-        self.assertEqual(home.count("g2-action-link"), 6)
+            if "Open the carrier map" in group:
+                self.assertEqual(group.count("g2-button--primary"), 0)
+                self.assertEqual(group.count('class="g2-button"'), 1)
+            else:
+                self.assertEqual(group.count("g2-button--primary"), 1)
+                self.assertNotIn('class="g2-button"', group)
+        self.assertEqual(home.count("g2-action-link"), 9)
 
         self.assertIn('data-g2-rail data-active-section="Whole"', home)
-        self.assertEqual(home.count("data-g2-rail-link"), 8)
+        self.assertEqual(home.count("data-g2-rail-link"), 10)
         self.assertEqual(home.count('aria-current="location"'), 1)
         self.assertIn('.g2-atlas-rail a[aria-current="location"]', self.css)
         self.assertIn('content: "Journey"', self.css)

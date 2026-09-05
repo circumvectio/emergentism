@@ -12,7 +12,15 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 NAV_PARTIAL = SITE / "partials" / "core-nav.html"
 FOOTER_PARTIAL = SITE / "partials" / "core-footer.html"
-DESIGN_CONTRACT_PATH = SITE / "emergentism-design.v1.json"
+DESIGN_CONTRACT_PATH = SITE / "emergentism-design.v2.json"
+
+THEME_BOOT = (
+    '<script data-g2-theme-boot>'
+    '(function(){try{var t=localStorage.getItem("emergentism-theme");'
+    'if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}'
+    'catch(e){}})();'
+    '</script>'
+)
 
 
 def _load_design_routes() -> list[dict[str, str]]:
@@ -20,8 +28,8 @@ def _load_design_routes() -> list[dict[str, str]]:
         payload = json.loads(DESIGN_CONTRACT_PATH.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"invalid design contract: {exc}") from exc
-    if payload.get("schema") != "emergentism/PublicDesignContract.v1":
-        raise ValueError("design contract schema must be emergentism/PublicDesignContract.v1")
+    if payload.get("schema") != "emergentism/PublicDesignContract.v2":
+        raise ValueError("design contract schema must be emergentism/PublicDesignContract.v2")
     routes = payload.get("routes")
     if not isinstance(routes, list) or not routes:
         raise ValueError("design contract routes must be a non-empty list")
@@ -121,6 +129,7 @@ def render_footer() -> str:
 
 def head_assets() -> str:
     return (
+        f"{THEME_BOOT}\n"
         '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />\n'
         '<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />\n'
         '<script defer src="/assets/js/gestalt-v2.js"></script>'
@@ -141,12 +150,10 @@ def _insert_before_close(text: str, tag: str, insertion: str) -> str:
 
 def _bind_head(text: str, surface: str) -> str:
     _single_close(text, "head")
-    text = LEGACY_ICON_RE.sub("\n", text)
-    text = _insert_before_close(
-        text,
-        "head",
-        '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />',
-    )
+    canonical_icon = '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />'
+    if canonical_icon not in text:
+        text = LEGACY_ICON_RE.sub("\n", text)
+        text = _insert_before_close(text, "head", canonical_icon)
     if "/assets/css/gestalt-v2.css" not in text:
         text = _insert_before_close(
             text, "head", '<link rel="stylesheet" href="/assets/css/gestalt-v2.css" />'
@@ -155,6 +162,8 @@ def _bind_head(text: str, surface: str) -> str:
         text = _insert_before_close(
             text, "head", '<script defer src="/assets/js/gestalt-v2.js"></script>'
         )
+    if "data-g2-theme-boot" not in text:
+        text = _insert_before_close(text, "head", THEME_BOOT)
     html_matches = list(re.finditer(r"<html\b([^>]*)>", text, re.IGNORECASE))
     if len(html_matches) != 1:
         raise ValueError(f"page must have exactly one html element; found {len(html_matches)}")
@@ -182,12 +191,20 @@ def _bind_head(text: str, surface: str) -> str:
         html_match.group(1),
         re.IGNORECASE,
     )
-    if design and design != ["v1"]:
+    if design and design not in (["v1"], ["v2"]):
         raise ValueError(f"incompatible data-emergentism-design value: {design}")
-    if not design:
+    if design == ["v1"]:
+        text = re.sub(
+            r'(\bdata-emergentism-design\s*=\s*["\'])v1(["\'])',
+            r'\1v2\2',
+            text,
+            count=1,
+            flags=re.IGNORECASE,
+        )
+    elif not design:
         text = re.sub(
             r"<html\b([^>]*)>",
-            r'<html\1 data-emergentism-design="v1">',
+            r'<html\1 data-emergentism-design="v2">',
             text,
             count=1,
             flags=re.IGNORECASE,

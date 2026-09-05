@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import importlib.util
+import hashlib
 import json
 import re
 import sys
@@ -11,7 +12,7 @@ from pathlib import Path
 
 
 SITE = Path(__file__).resolve().parent
-CONTRACT_PATH = SITE / "emergentism-design.v1.json"
+CONTRACT_PATH = SITE / "emergentism-design.v2.json"
 CONSTITUTION_PATH = SITE / "EMERGENTISM_DESIGN_CONSTITUTION.md"
 PARITY_PATH = SITE / "public_semantic_parity.json"
 CSS_PATH = SITE / "assets/css/gestalt-v2.css"
@@ -52,10 +53,10 @@ def check() -> list[str]:
     except ValueError as exc:
         return [str(exc)]
 
-    if contract.get("schema") != "emergentism/PublicDesignContract.v1":
-        errors.append("contract schema is not emergentism/PublicDesignContract.v1")
-    if contract.get("version") != "1.0.0":
-        errors.append("contract version is not 1.0.0")
+    if contract.get("schema") != "emergentism/PublicDesignContract.v2":
+        errors.append("contract schema is not emergentism/PublicDesignContract.v2")
+    if contract.get("version") != "2.0.0":
+        errors.append("contract version is not 2.0.0")
     if contract.get("owner") != CONSTITUTION_PATH.name:
         errors.append("contract owner does not name EMERGENTISM_DESIGN_CONSTITUTION.md")
 
@@ -71,6 +72,17 @@ def check() -> list[str]:
             errors.append(f"boundary.{key} must be false")
     if boundary.get("projection_only") is not True:
         errors.append("boundary.projection_only must be true")
+    if boundary.get("public_changes_truth") is not False:
+        errors.append("boundary.public_changes_truth must be false")
+
+    supersedes = contract.get("supersedes", {})
+    predecessor = SITE / str(supersedes.get("path", ""))
+    if not predecessor.is_file():
+        errors.append("archived v1 design predecessor is missing")
+    else:
+        actual = hashlib.sha256(predecessor.read_bytes()).hexdigest()
+        if actual != supersedes.get("sha256"):
+            errors.append("archived v1 design predecessor hash drift")
 
     try:
         constitution = CONSTITUTION_PATH.read_text(encoding="utf-8")
@@ -82,6 +94,7 @@ def check() -> list[str]:
         "Colour never carries a role alone.",
         "Motion signals state; it never supplies meaning",
         "A passing design gate proves bounded byte and structural agreement only.",
+        "Public is a visibility state, not a truth state.",
     ):
         if marker not in constitution:
             errors.append(f"constitution missing marker: {marker}")
@@ -113,6 +126,11 @@ def check() -> list[str]:
         "border-top-style: dashed",
         "@media (prefers-reduced-motion: reduce)",
         "@media (forced-colors: active)",
+        "@media (prefers-color-scheme: dark)",
+        ':root[data-theme="light"]',
+        ':root[data-theme="dark"]',
+        ".g2-promotion-rail",
+        ".g2-public-lamp",
     ):
         if marker not in css:
             errors.append(f"shared CSS missing governed marker: {marker}")
@@ -137,6 +155,8 @@ def check() -> list[str]:
         'root.dataset.gestaltMotion = "active"',
         'root.dataset.gestaltMotion = "reduced"',
         "observer.unobserve(entry.target)",
+        'const themeKey = "emergentism-theme"',
+        'querySelectorAll("[data-g2-theme-toggle]")',
     ):
         if marker not in js:
             errors.append(f"shared reader runtime missing finite-state marker: {marker}")
@@ -157,7 +177,7 @@ def check() -> list[str]:
 
     allowed_families = {
         "panorama", "narrative", "atlas", "dimension", "instrument",
-        "practice", "research", "churning", "library", "accountability",
+        "practice", "research", "churning", "library", "accountability", "wisdom",
     }
     allowed_shells = {"core", "dimension", "diagnostic", "churning", "book"}
     core_rows = [row for row in routes if row.get("shell") == "core"]
@@ -199,13 +219,18 @@ def check() -> list[str]:
             errors.append(f"{path}: data-gestalt=v2 is missing")
         if "data-g2-reveal" in text or "data-g2-draw" in text:
             opted_in.add(path)
-        if 'data-emergentism-design="v1"' not in text:
+        if 'data-emergentism-design="v2"' not in text:
             errors.append(f"{path}: design contract version attribute is missing")
         expected_surface = f'data-emergentism-surface="{row.get("family")}"'
         if expected_surface not in text:
             errors.append(f"{path}: missing surface family attribute {expected_surface}")
-        if text.count('data-g2-semantic-key="v1"') != 1:
+        if text.count('data-g2-semantic-key="v2"') != 1:
             errors.append(f"{path}: must contain one visible semantic footer key")
+        expected_theme_boot = 0 if row.get("shell") == "churning" else 1
+        if text.count("data-g2-theme-boot") != expected_theme_boot:
+            errors.append(
+                f"{path}: expected {expected_theme_boot} prepaint theme boundaries"
+            )
         page_visible = visible_text(text)
         for phrase in required_key:
             if phrase.replace(" · ", " ") not in page_visible.replace(" · ", " "):
@@ -231,7 +256,7 @@ def check() -> list[str]:
     about = (SITE / "about/index.html").read_text(encoding="utf-8")
     for marker in (
         'id="interface-contract"',
-        'href="/emergentism-design.v1.json"',
+        'href="/emergentism-design.v2.json"',
         "The medium carries <b>types, not truth</b>.",
     ):
         if marker not in about:

@@ -74,9 +74,9 @@ def build_icons():
 
 def manifest_document() -> str:
     manifest = {
-        "name": "Emergentism — The Gestalt of Dasein",
+        "name": "Emergentism — Public Wisdom Instrument",
         "short_name": "Emergentism",
-        "description": "An ontological atlas asking what had to emerge for you—and this moment—to be here.",
+        "description": "A bounded atlas of Being and a source-bound promotion instrument from Signal to Wisdom.",
         "id": "/",
         "start_url": "/",
         "scope": "/",
@@ -133,13 +133,13 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/plainly/", "/dasein/", "/ecology/", "/f5/", "/questions/", "/questions/diagnoses/", "/ethics/", "/churn/", "/amrita/", "/halahala/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/churning/", "/record/pqa-54/",
+        "/", "/plainly/", "/dasein/", "/ecology/", "/f5/", "/questions/", "/questions/diagnoses/", "/ethics/", "/wisdom/", "/wisdom/EM-WISDOM-001@1/", "/churn/", "/amrita/", "/halahala/", "/practice/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/", "/record/wisdom/", "/record/churning/", "/record/pqa-54/",
         "/manifesto/", "/established/",
         "/map/", "/frontier/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
         "/burrisphere/", "/burrisphere/instrument/",
         "/manifest.webmanifest", "/favicon.svg", "/assets/css/living-map.css", "/assets/css/gestalt-v2.css", "/assets/css/burrisphere-instrument.css", "/assets/css/frontier.css",
         "/assets/js/living-map.js", "/assets/js/gestalt-v2.js", "/assets/js/burrisphere-instrument.js", "/living-map.json",
-        "/emergentism-design.v1.json", "/frontier/v1/catalog.json", "/frontier/v1/schema.json",
+        "/emergentism-design.v2.json", "/wisdom/atlas.json", "/wisdom/atlas.jsonl", "/wisdom/rag.jsonl", "/frontier/v1/catalog.json", "/frontier/v1/schema.json",
         "/vendor/three-0.160.0/three.module.js", "/vendor/three-0.160.0/controls/OrbitControls.js",
         "/public_semantic_parity.json", "/atlas/site_index.json", "/churn/corpus.json", "/churn/corpus.jsonl", "/churn/corpus.md",
         "/questions/collisions.json", "/questions/diagnoses.json", "/questions/fourth-churning.json",
@@ -346,7 +346,7 @@ def offline_document() -> str:
   </aside>
   <div class="dot"></div>
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
-  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/dasein/">Dasein</a> · <a href="/f5/">F5 fork</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/spark/">spark</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
+  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/dasein/">Dasein</a> · <a href="/wisdom/">Wisdom</a> · <a href="/f5/">F5 fork</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/spark/">spark</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
 </div>
 </main>
 </body>

@@ -197,6 +197,8 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                 CHECKER.check(root)
 
     def test_live_contract_passes_with_exact_scope(self) -> None:
+        # Exact adopted census: 00_PUBLIC_WISDOM_LIFECYCLE_REBASELINE_2026_09_01.md.
+        # Keep literal pins as well as computed equality; a new census needs review.
         report = CHECKER.check(ROOT)
         self.assertEqual(
             report["receipt_namespace"]["target_files"],
@@ -205,7 +207,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(report["receipt_namespace"]["target_files"], 321)
         self.assertEqual(
             report["receipt_namespace"]["prefixed_markdown_including_00_convention"],
-            337,
+            339,
         )
         self.assertEqual(report["receipt_namespace"]["unique_prefixes"], 195)
         self.assertEqual(
@@ -215,14 +217,14 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(
             report["public_lifecycle"]["ignore_counts"],
             {
-                "present_html": 427,
+                "present_html": 431,
                 "ignored_html": 211,
-                "deployable_html": 216,
+                "deployable_html": 220,
                 "withheld_artifacts_added_back": 199,
             },
         )
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 415)
-        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 56)
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 419)
+        self.assertEqual(report["public_lifecycle"]["counts"]["current"], 60)
         self.assertEqual(report["public_lifecycle"]["counts"]["frozen"], 90)
         self.assertEqual(report["public_lifecycle"]["counts"]["withheld"], 264)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
@@ -1283,7 +1285,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
     def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
         contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
         self.assertEqual(contract["classes"], ["current", "provisional"])
-        self.assertEqual(contract["routes"], 59)
+        self.assertEqual(contract["routes"], 63)
 
     def test_vercel_runtime_html_does_not_change_source_census(self) -> None:
         entries = CHECKER._strict_tree_entries(

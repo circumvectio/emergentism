@@ -14,7 +14,7 @@ follow dated corrections, and keep an exit visible throughout.
 
 ## Primary journey
 
-Six stable doors organize the public journey; Exit is always adjacent:
+Seven stable doors organize the public journey; Exit is always adjacent:
 
 1. **Practice** — [`practice/`](practice/) carries the source-owned Finity Card,
    a local commitment/outcome receipt builder, a clearly illustrative worked
@@ -22,14 +22,17 @@ Six stable doors organize the public journey; Exit is always adjacent:
 2. **Worldview** — [`plainly/`](plainly/) introduces Emergentism in ordinary
    language. [`rosetta/`](rosetta/) leads with seven functional moves; symbolic
    and cross-tradition correspondences remain an optional, tiered appendix.
-3. **Research** — [`record/`](record/) is the trust hub. It routes to
+3. **Wisdom** — [`wisdom/`](wisdom/) exposes the source-bound Emergence Stack,
+   the Provisional Public Wisdom Compact, honest zeroes, and candidate estate
+   applications. Public remains visibility, not a truth rung.
+4. **Research** — [`record/`](record/) is the trust hub. It routes to
    [`discoveries/`](discoveries/), [`lab/`](lab/), [`map/`](map/), sources,
    tests, and dated corrections without turning open work into doctrine.
-4. **Library** — [`book/`](book/) is the current reader. [`read/`](read/) remains
+5. **Library** — [`book/`](book/) is the current reader. [`read/`](read/) remains
    the wider reading index and visibly distinguishes current from frozen work.
-5. **Participate** — [`contribute/`](contribute/) starts with three human acts:
+6. **Participate** — [`contribute/`](contribute/) starts with three human acts:
    share a Finity receipt, attack a claim, or contribute bounded evidence.
-6. **Exit** — [`exit/`](exit/) lets a visitor put the map down without penalty.
+7. **Exit** — [`exit/`](exit/) lets a visitor put the map down without penalty.
 
 [`about/`](about/) is the accountability surface for authorship, category,
 boundaries, and missing independent review; it remains available from page
@@ -54,16 +57,21 @@ enacts the Soul Loop as one source-bound page journey:
    instrument is offered.
 3. **Hinge — actuality and possibility.** D4 actual power and D5 represented
    possible power remain typed and causally firewalled.
-4. **Instrument — Burrisphere and Rosetta.** The sphere visualizes; Rosetta
+4. **Emergence Stack — Signal to Wisdom.** Each promotion creates a successor
+   object or receipt; nothing promotes itself. Public remains a separate light.
+5. **Public Wisdom — Compact and ledger.** The present state is one Provisional
+   policy, zero Supported wisdom, zero independent outcomes, and zero product
+   adoptions.
+6. **Instrument — Burrisphere and Rosetta.** The sphere visualizes; Rosetta
    translates; neither transfers proof. Plain functions precede mythic aliases.
-5. **Practice — Finity.** One live decision can be prepared with bearers,
+7. **Practice — Finity.** One live decision can be prepared with bearers,
    means, horizons, authority, review, and Exit visible. It remains unsigned.
-6. **Evidence — consequence.** Local receipts and counterexamples can revise
+8. **Evidence — consequence.** Local receipts and counterexamples can revise
    the apparatus; they cannot certify the worldview.
-7. **Research — revision.** Wagers, nulls, rivals, discriminators, kills, and
+9. **Research — revision.** Wagers, nulls, rivals, discriminators, kills, and
    survivors form the live frontier. A compact carrier-persistence disclosure
    opens the detailed `/ecology/` map without adding a new homepage stage.
-8. **Exit — nonclosure.** A reader may use the instrument, reject the
+10. **Exit — nonclosure.** A reader may use the instrument, reject the
    metaphysics, revise the selections, or leave.
 
 The Golden Circle remains nested inside this sequence: the hero supplies the
@@ -87,7 +95,7 @@ its projection legend and epistemic fences.
 
 - `public_semantic_parity.json` binds pages to current source owners.
 - [`EMERGENTISM_DESIGN_CONSTITUTION.md`](EMERGENTISM_DESIGN_CONSTITUTION.md)
-  owns the projection grammar; `emergentism-design.v1.json` exposes its route,
+  owns the projection grammar; `emergentism-design.v2.json` exposes its route,
   semantic-role, motion, and adoption-state contract without becoming doctrine.
 - `living-map.json` routes open work and contribution modes; it cannot create or
   promote doctrine.
@@ -112,6 +120,8 @@ its projection legend and epistemic fences.
 ```text
 python3 -B build_core_shell.py
 python3 -B build_core_shell.py --check
+python3 -B build_wisdom_atlas.py
+python3 -B build_wisdom_atlas.py --check
 python3 -B build_churning.py
 python3 -B build_churning.py --check
 python3 -B build_fourth_churning.py

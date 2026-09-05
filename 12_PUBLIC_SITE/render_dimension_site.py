@@ -577,7 +577,7 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
     if stone := item.get("stone"):
         stone_html, stone_style = stone_section(stone)
     return f"""<!DOCTYPE html>
-<html lang="en" data-gestalt="v2" data-emergentism-design="v1">
+<html lang="en" data-gestalt="v2" data-emergentism-design="v2">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -669,7 +669,7 @@ def index_page(levels: list[dict], sequence: list[str], stone: dict) -> str:
             ret = item["return"]
             rows.append(f"<div class='crossing'><b>{esc(ret['id'])}</b><span>{esc(ret['label'])}</span><small>interpretive edge only</small></div>")
     return f"""<!DOCTYPE html>
-<html lang="en" data-gestalt="v2" data-emergentism-design="v1"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" data-gestalt="v2" data-emergentism-design="v2"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The dimension-first spine · Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6 with five typed μ-interfaces — two standing, one owing a discriminator, two adjudicated failed — one exit boundary, and one interpretive return." />
 <link rel="stylesheet" href="../assets/css/xai.css" /><style>

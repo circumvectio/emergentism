@@ -440,7 +440,7 @@ def build(check=False):
 
 
 TEMPLATE = r"""<!DOCTYPE html>
-<html lang="en" data-reading-theme="light" data-gestalt="v2" data-emergentism-design="v1">
+<html lang="en" data-reading-theme="light" data-gestalt="v2" data-emergentism-design="v2">
 <head>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Emergentism" />

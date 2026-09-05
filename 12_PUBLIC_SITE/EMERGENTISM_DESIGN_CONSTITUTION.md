@@ -1,18 +1,19 @@
 ---
 title: "Emergentism Design Constitution"
-version: "1.0.0"
-date: 2026-08-26
+version: "2.0.0"
+date: 2026-09-01
 status: "ACTIVE SOURCE CONTRACT — local adoption; public state follows the release receipt"
 evidence_tier: "[S] selected projection rules; [I] design translation; no worldview claim is promoted"
 owner: "12_PUBLIC_SITE"
-machine_contract: "emergentism-design.v1.json"
+machine_contract: "emergentism-design.v2.json"
+supersedes: "emergentism-design.v1.json; exact predecessor archived under 90_ARCHIVE/2026_09_01_EMERGENTISM_DESIGN_V1/"
 ---
 
 # Emergentism Design Constitution
 
 The interface is part of the argument. It must keep possibility from
-impersonating actuality, conjecture from impersonating evidence, and elegance
-from impersonating truth.
+impersonating actuality, conjecture from impersonating evidence, Public from
+impersonating truth, and elegance from impersonating wisdom.
 
 This document governs the public projection only. It creates no doctrine,
 evidence, authority, validation, or obligation to believe. Source owners remain
@@ -27,6 +28,7 @@ Emergentism owns the visual translation of its own distinctions:
 - the `• ⊙ ○` boundary grammar;
 - the D4 actuality / D5 represented-possibility firewall;
 - the Burrisphere, Rosetta, Soul Loop, Finity, and genuine Exit;
+- the Emergence Stack, Public Wisdom Compact, and source-separated Wisdom Atlas;
 - evidence tiers, rivals, discriminators, kills, survivors, and correction;
 - the semantic roles below and their non-colour cues.
 
@@ -34,6 +36,12 @@ Common controls, responsive behavior, focus behavior, platform accessibility,
 and ordinary component anatomy follow current open web standards and mature
 human-interface research. Those sources inform implementation but cannot govern
 Emergentism's claims, meanings, authorship, or evidence tiers.
+
+The Menexus guide was consulted at the reviewed SHA-256 recorded in the machine
+contract. Only craft transfers: spacing, editorial hierarchy, content/chrome
+separation, responsive anatomy, native controls, adaptive appearance, and QA
+discipline. Menexus marks, product language, Liquid Glass, and blue/yellow
+identity are forbidden here.
 
 ## 2. The six semantic roles
 
@@ -74,7 +82,21 @@ encode containment or information architecture—not prestige. Elevated proof
 objects remain crisp. Glows, gradients, glass, and ambient motion are not part
 of the core atlas grammar.
 
-## 5. Motion signals state; it never supplies meaning
+The Emergence Stack is therefore drawn as a promotion rail, while Public sits
+beside it as an independently switched lamp. Maturity, kind, and projection are
+three labelled axes; colour never collapses them into one status.
+
+Public is a visibility state, not a truth state.
+
+## 5. Appearance changes light, not meaning
+
+The interface offers System, Light, and Dark using one semantic token set. The
+operating-system preference is the default, a reader choice may persist locally,
+and no-JavaScript falls back to the system preference. Every role keeps its
+label, border, line form, and contrast in both appearances, forced colours, and
+print. A theme choice changes neither claim state nor evidence tier.
+
+## 6. Motion signals state; it never supplies meaning
 
 The shared reader is complete and visible before JavaScript. Its default state
 is static. On the three declared unfolding surfaces, eligible boundaries and
@@ -87,7 +109,7 @@ continuous decorative cycle. A bounded instrument may animate only when the
 reader explicitly starts it, exposes pause/reset/direct controls, declares what
 the motion represents, and supplies a reduced-motion path to the same state.
 
-## 6. Voice
+## 7. Voice
 
 1. Ask the human question before naming the system.
 2. Put plain function before mythic alias.
@@ -97,20 +119,22 @@ the motion represents, and supplies a reduced-motion path to the same state.
 6. Name affected bearers and human authority where consequence matters.
 7. Show serious rivals without contempt.
 8. Keep Exit visible and usable from inside the worldview.
+9. Say whether a record is Knowledge, policy candidate, or Wisdom; then state
+   maturity and Public projection separately.
 
 Bold language may frame a conjecture; it may not silently price it as fact.
 
-## 7. Route families
+## 8. Route families
 
 The machine contract classifies every current journey surface as panorama,
 narrative, atlas, dimension, instrument, practice, research, churning, library,
-or accountability. The family controls density and interaction—not claim truth.
+wisdom, or accountability. The family controls density and interaction—not claim truth.
 Historical pages remain preserved behind their declared boundary and do not
 become current merely by sharing a stylesheet.
 
-## 8. Change and verification
+## 9. Change and verification
 
-- `emergentism-design.v1.json` is the machine-readable route and role contract.
+- `emergentism-design.v2.json` is the machine-readable route, appearance, and role contract.
 - `build_core_shell.py` consumes it for current core-page ownership, navigation,
   and surface labels.
 - `check_design_constitution.py` compares it with the semantic-parity journey,
@@ -122,6 +146,7 @@ A passing design gate proves bounded byte and structural agreement only. It does
 not prove beauty, comprehension, accessibility with every assistive technology,
 reader benefit, deployment, indexing, or inclusion in any training run.
 
-Predecessor v2/v2.1/v2.2 plans remain preserved under `_PLANS/`. A later version
-must archive or supersede this contract explicitly; silent replacement is a
-design-governance failure.
+The exact v1 machine contract and its custody receipt are preserved under
+`90_ARCHIVE/2026_09_01_EMERGENTISM_DESIGN_V1/`. Predecessor v2/v2.1/v2.2 plans
+remain under `_PLANS/`. A later version must archive or supersede this contract
+explicitly; silent replacement is a design-governance failure.

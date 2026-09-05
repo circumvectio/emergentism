@@ -68,6 +68,25 @@ class NodeProductRankingTests(unittest.TestCase):
             with self.subTest(text=text):
                 self.assert_allowed(text)
 
+    def test_conditional_brand_warning_is_exact_and_occurrence_scoped(self) -> None:
+        warning = (r"If this \(P\) co-appears with brand \(P=\Phi\times V\), "
+                   r"a projection note is required (name collision).")
+        self.assert_allowed(warning)
+        self.assert_allowed(warning.replace("brand ", "brand\n").replace(", a ", ",\n  a "))
+        assertion = r"The brand formula \(P=\Phi\times V\) ranks current nodes."
+        for text in (
+            assertion, warning + " " + assertion, assertion + " " + warning,
+            warning + "\n" + assertion, assertion + "\n" + warning,
+            warning[:-1] + "; " + assertion,
+            warning.replace(", a projection", " ranks current nodes, a projection"),
+            warning.replace(r"If this \(P\) co-appears with ", ""),
+            warning.replace("a projection note is required (name collision).", ""),
+            warning.replace("required", "optional"),
+            warning.replace("required", "not required"),
+        ):
+            with self.subTest(text=text):
+                self.assert_barred(text)
+
     def test_scope_includes_declared_current_and_provisional_public_routes_only(self) -> None:
         active = ROOT / "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
         excluded = (

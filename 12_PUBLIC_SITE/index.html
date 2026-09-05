@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-gestalt="v2" data-emergentism-design="v1">
+<html lang="en" data-gestalt="v2" data-emergentism-design="v2">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/gestalt-v2.css" />
   <script defer src="/assets/js/gestalt-v2.js"></script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script data-g2-theme-boot>(function(){try{var t=localStorage.getItem("emergentism-theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}})();</script>
 </head>
 <body class="g2-page" data-emergentism-surface="panorama" data-atlas-title="One actual present. Many possible futures.">
 <!-- gestalt-core-nav:start -->
@@ -31,10 +32,14 @@
     </a>
     <nav class="g2-nav__desktop" aria-label="Primary navigation">
       <a data-section="worldview" data-current-section="true" href="/plainly/">Worldview</a>
+      <a data-section="wisdom" href="/wisdom/">Wisdom</a>
       <a data-section="practice" href="/practice/">Practice</a>
       <a data-section="research" href="/record/">Research</a>
       <a data-section="library" href="/book/">Library</a>
       <a data-section="participate" href="/contribute/">Participate</a>
+      <button class="g2-theme-toggle" type="button" data-g2-theme-toggle aria-label="Appearance: system" hidden>
+        <span aria-hidden="true">◐</span><span data-g2-theme-label>System</span>
+      </button>
       <a class="g2-nav__exit" data-section="exit" href="/exit/">Exit</a>
     </nav>
     <nav class="g2-nav__mobile" aria-label="Mobile navigation">
@@ -43,9 +48,13 @@
         <summary>Menu</summary>
         <div class="g2-menu__panel">
           <a data-section="worldview" data-current-section="true" href="/plainly/">Worldview <span aria-hidden="true">01</span></a>
-          <a data-section="research" href="/record/">Research <span aria-hidden="true">02</span></a>
-          <a data-section="library" href="/book/">Library <span aria-hidden="true">03</span></a>
-          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">04</span></a>
+          <a data-section="wisdom" href="/wisdom/">Wisdom <span aria-hidden="true">02</span></a>
+          <a data-section="research" href="/record/">Research <span aria-hidden="true">03</span></a>
+          <a data-section="library" href="/book/">Library <span aria-hidden="true">04</span></a>
+          <a data-section="participate" href="/contribute/">Participate <span aria-hidden="true">05</span></a>
+          <button class="g2-theme-toggle g2-theme-toggle--menu" type="button" data-g2-theme-toggle aria-label="Appearance: system" hidden>
+            <span>Appearance</span><span data-g2-theme-label>System</span>
+          </button>
         </div>
       </details>
       <a class="g2-mobile__direct" data-section="exit" href="/exit/">Exit</a>
@@ -56,7 +65,7 @@
 
 <main id="main" class="g2-main" tabindex="-1">
   <nav class="g2-shell g2-atlas-rail" aria-label="This page" data-g2-rail data-active-section="Whole">
-    <a href="#whole" data-g2-rail-link aria-current="location">Whole</a><a href="#levels" data-g2-rail-link>Levels</a><a href="#hinge" data-g2-rail-link>Hinge</a><a href="#instrument" data-g2-rail-link>Instrument</a><a href="#practice" data-g2-rail-link>Practice</a><a href="#evidence" data-g2-rail-link>Evidence</a><a href="#research" data-g2-rail-link>Research</a><a href="#exit-field" data-g2-rail-link>Exit</a>
+    <a href="#whole" data-g2-rail-link aria-current="location">Whole</a><a href="#levels" data-g2-rail-link>Levels</a><a href="#hinge" data-g2-rail-link>Hinge</a><a href="#stack" data-g2-rail-link>Stack</a><a href="#wisdom" data-g2-rail-link>Wisdom</a><a href="#instrument" data-g2-rail-link>Instrument</a><a href="#practice" data-g2-rail-link>Practice</a><a href="#evidence" data-g2-rail-link>Evidence</a><a href="#research" data-g2-rail-link>Research</a><a href="#exit-field" data-g2-rail-link>Exit</a>
   </nav>
 
   <section class="g2-shell g2-hero g2-hero--portal" id="whole" data-cartographic-node="gestalt" aria-labelledby="hero-title">
@@ -150,9 +159,45 @@
     <p class="g2-note"><strong>Compression:</strong> model the possible; act through the actual; let the world issue the receipt.</p>
   </section>
 
+  <section class="g2-shell g2-section" id="stack" data-cartographic-node="promotion" aria-labelledby="stack-title">
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">03 · The Emergence Stack</p><h2 id="stack-title">Signal → Data → Information → Knowledge → Judgment → Wisdom</h2></div><p class="g2-section__intro">A promotion ladder for what may persist, guide action, and become reusable policy. It is a source-separation discipline—not an ontology of reality, folder taxonomy, or truth machine.</p></div>
+    <div class="g2-promotion-instrument">
+      <ol class="g2-promotion-rail" aria-label="Signal to Wisdom promotion ladder">
+        <li><strong>Signal</strong><small>A sensed or streamed event before admitted semantic structure.</small></li>
+        <li><strong>Data</strong><small>Addressable bytes with identity, source, time, and retention.</small></li>
+        <li><strong>Information</strong><small>Data plus schema, transformation, provenance, and loss.</small></li>
+        <li><strong>Knowledge</strong><small>A typed claim with sources, warrant, rivals, and defeaters.</small></li>
+        <li><strong>Judgment</strong><small>Knowledge joined to a scoped decision by a named bearer.</small></li>
+        <li><strong>Wisdom</strong><small>Reusable policy with outcomes, scope, kills, correction, and authority.</small></li>
+      </ol>
+      <aside class="g2-public-lamp"><span>orthogonal projection</span><strong>Public</strong><p>Public is a separate lighting event, not a higher truth rung.</p></aside>
+    </div>
+    <p class="g2-note"><strong>Nothing promotes itself.</strong> A model output, receipt, commit, repeated claim, consensus, or polished page cannot name its own next rung.</p>
+  </section>
+
+  <section class="g2-shell g2-section" id="wisdom" data-cartographic-node="wisdom" aria-labelledby="wisdom-title">
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">04 · Public Wisdom</p><h2 id="wisdom-title">Keep possibility wide. Make commitment accountable.</h2></div><p class="g2-section__intro">The Public Wisdom Compact is one Provisional Emergentism editorial policy `[D]`. It is locally source-bound and <strong>AUTHORIZED_NOT_LIT</strong>; it is not Supported wisdom or a product mandate.</p></div>
+    <div class="g2-compact-block">
+      <blockquote>Keep possibility wide. Make commitment accountable. Nothing promotes itself. Reality retains the right to correct every map.</blockquote>
+      <dl class="g2-wisdom-ledger"><div><dt>Supported wisdom</dt><dd>0</dd></div><div><dt>Provisional</dt><dd>1</dd></div><div><dt>Product adoptions</dt><dd>0</dd></div></dl>
+    </div>
+    <div class="g2-application-grid" aria-label="Estate application status">
+      <article class="g2-application-card" data-state="ADMITTED_APPLICATION"><span class="g2-claim-id">ADMITTED · [D]</span><h3>Emergentism</h3><p>Local editorial, research, and projection discipline.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>APU</h3><p>Bounded intake and promotion gates.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>Circle / IS</h3><p>Sourced observation before inference.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>RealityFutures / COULD</h3><p>Forecasts remain distinct from fact and decision.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>Agentz / SHOULD</h3><p>Unsigned proposals remain distinct from Judgment.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>Skyzai</h3><p>Constraint disposition is never authorization.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>Menexus</h3><p>A promotion lens over typed records, not a truth rank.</p></article>
+      <article class="g2-application-card" data-state="CANDIDATE_ONLY"><span class="g2-claim-id">CANDIDATE · [I/C]</span><h3>Evolutionary.Network</h3><p>A possible field test that must return independent consequence.</p></article>
+    </div>
+    <p class="g2-note"><strong>No product has adopted this Compact.</strong> Every non-Emergentism card remains a source-owned candidate. Seventeen lanes are classified: 1 admitted · 7 candidate-only · 9 honest absences · zero unclassified.</p>
+    <div class="g2-actions"><a class="g2-button g2-button--primary" href="/wisdom/">Open the Wisdom Instrument</a><a class="g2-action-link" href="/record/wisdom/">Inspect source and denominator</a></div>
+  </section>
+
   <section class="g2-shell g2-section g2-section--signature" id="instrument" data-cartographic-node="instrument" aria-labelledby="instrument-title">
     <span id="burrisphere" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">03 · The instrument · [A/S/I/C]</p><h2 id="instrument-title">Burrisphere visualizes. Rosetta translates. Neither transfers proof.</h2></div><p class="g2-section__intro">The mathematical chart, selected action map, and mythic aliases remain visibly separate.</p></div>
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">05 · The instrument · [A/S/I/C]</p><h2 id="instrument-title">Burrisphere visualizes. Rosetta translates. Neither transfers proof.</h2></div><p class="g2-section__intro">The mathematical chart, selected action map, and mythic aliases remain visibly separate.</p></div>
     <div class="g2-signature-grid">
       <figure class="g2-atlas g2-double-atlas" data-g2-draw>
         <div class="g2-atlas__viewport" role="region" tabindex="0" aria-label="Double atlas viewport; scroll horizontally on narrow screens">
@@ -195,7 +240,7 @@
 
   <section class="g2-shell g2-section g2-transaction g2-transaction--compact" id="practice" data-cartographic-node="practice" aria-labelledby="practice-title">
     <span id="transaction" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">04 · Practice</p><h2 id="practice-title">A possibility becomes a prepared transaction before it becomes an act.</h2></div><p class="g2-section__intro"><strong>Here, transaction means a structured decision packet—not money, signing, or execution.</strong> The Finity Card [S] is a selected decision compression, not an authorization or proven improvement. Its chosen direction [I/C] is durable, bearer-complete potential inside Justice—not raw options or power over others. No equation derives this ought.</p></div>
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">06 · Practice</p><h2 id="practice-title">A possibility becomes a prepared transaction before it becomes an act.</h2></div><p class="g2-section__intro"><strong>Here, transaction means a structured decision packet—not money, signing, or execution.</strong> The Finity Card [S] is a selected decision compression, not an authorization or proven improvement. Its chosen direction [I/C] is durable, bearer-complete potential inside Justice—not raw options or power over others. No equation derives this ought.</p></div>
     <aside class="g2-field-kit g2-field-kit--practice" aria-labelledby="field-kit-title">
       <div><p class="g2-field-kit__label">One-minute field prompt</p><h3 id="field-kit-title">Put one live decision through the map.</h3><p>For example: accept a new role, negotiate it, or keep searching. This is a prompt—not a promised result.</p></div>
       <ol>
@@ -231,7 +276,7 @@
 
   <section class="g2-shell g2-section g2-section--trust" id="evidence" data-cartographic-node="evidence" aria-labelledby="evidence-title">
     <span id="insights" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">05 · Evidence</p><h2 id="evidence-title">What survives is an instrument—not a conquered totality.</h2></div><p class="g2-section__intro">In the current 127-entry census, no theorem is claimed as ours. The mathematics stays with its named owners. [B]</p></div>
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">07 · Evidence</p><h2 id="evidence-title">What survives is an instrument—not a conquered totality.</h2></div><p class="g2-section__intro">In the current 127-entry census, no theorem is claimed as ours. The mathematics stays with its named owners. [B]</p></div>
     <div class="g2-trust-grid" data-g2-reveal-group>
       <article><span>Selections · [S/I/C]</span><h3>Selections that do work</h3><p>D0–D6, the reciprocal sphere, G7, and the selected min convention are judged by preservation, reconstruction, comparison, and declared distortion—not by novelty or necessity.</p></article>
       <article><span>Local receipts · [B]</span><h3>Tests that changed the map</h3><p>In one local run, eight frozen gates admitted eight constructed evasions, including both predicted controls: the prediction failed. One same-model reconstruction probe was mixed. Neither result validates the worldview.</p></article>
@@ -242,7 +287,7 @@
 
   <section class="g2-shell g2-section g2-section--research-sockets" id="research" data-cartographic-node="research" aria-labelledby="research-title">
     <span id="convergence" class="g2-anchor-alias" aria-hidden="true"></span><span id="frontier" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">06 · Research</p><h2 id="research-title">The living edge is where the map can still lose.</h2></div><p class="g2-section__intro">Each socket carries its tier, null or rival, discriminator, kill, and survivor. Agreement with Emergentism earns no correctness bonus.</p></div>
+    <div class="g2-section__head" data-g2-reveal="boundary"><div><p class="g2-eyebrow">08 · Research</p><h2 id="research-title">The living edge is where the map can still lose.</h2></div><p class="g2-section__intro">Each socket carries its tier, null or rival, discriminator, kill, and survivor. Agreement with Emergentism earns no correctness bonus.</p></div>
     <div class="g2-research-grid" data-g2-reveal-group>
       <article class="g2-panel g2-panel--conjecture"><span class="g2-tier g2-tier--conjecture">Serial-force wager · [C]</span><h3>One of 24 assignments</h3><p>D1–D4 are tentatively paired with strong, electromagnetic, weak, and gravity. Native physics recovery, rival permutations, distinct predictions, and restraint decide—not resemblance.</p><p><a href="/discoveries/">Inspect the docket →</a></p></article>
       <article class="g2-panel g2-panel--possible"><span class="g2-tier g2-tier--possible">F5 fork · [I/C/D]</span><h3>One present, three explanations</h3><p><strong>F5-W:</strong> futures matter through present models. <strong>F5-N:</strong> no additional interaction. <strong>F5-R:</strong> a candidate later-boundary history law. Null, rival, kill, and survivor stay together.</p><p><a href="/f5/">Open the fork →</a></p></article>
@@ -282,7 +327,7 @@
 
   <section class="g2-shell g2-section g2-exit-band" id="exit-field" data-cartographic-node="exit" aria-labelledby="exit-title">
     <span id="record" class="g2-anchor-alias" aria-hidden="true"></span>
-    <div><p class="g2-eyebrow">07 · Exit</p><h2 id="exit-title">The map remains optional.</h2><p>Use the instrument, reject the metaphysics, revise the selections, or put the atlas down. No belief is required.</p></div>
+    <div><p class="g2-eyebrow">09 · Exit</p><h2 id="exit-title">The map remains optional.</h2><p>Use the instrument, reject the metaphysics, revise the selections, or put the atlas down. No belief is required.</p></div>
     <blockquote class="g2-churn-maxim"><p>The means is the message. The ends are the limits.</p><footer>chosen methodological and ethical maxim [D]</footer></blockquote>
     <details class="g2-workshop-disclosure"><summary>How the confidence marks were earned</summary><div><p>The public workshop preserves sources, tests, corrections, survivor candidates, and poison warnings. Classification is not validation, and chronology is not truth.</p><nav aria-label="Workshop records"><a href="/record/">Trial Record</a><a href="/churn/">Churning</a><a href="/amrita/">Survivors</a><a href="/halahala/">Warnings</a></nav></div></details>
     <p class="g2-authorship">Proposed by <strong>Yves R. Burri</strong>, with disclosed AI assistance and no AI coauthor.</p>
@@ -296,20 +341,21 @@
     <p><strong>Emergentism</strong> is a fallibilist worldview and open research programme by Yves R. Burri. Claims keep their evidence tiers, rivals, kills, and survivors.</p>
     <nav aria-label="Footer navigation">
       <a href="/plainly/">Worldview</a>
+      <a href="/wisdom/">Wisdom</a>
       <a href="/practice/">Practice</a>
       <a href="/record/">Research</a>
       <a href="/book/">Library</a>
       <a href="/about/">About</a>
       <a href="/exit/">Exit</a>
     </nav>
-    <div class="g2-footer__key" data-g2-semantic-key="v1" aria-label="How to read the Emergentism interface">
+    <div class="g2-footer__key" data-g2-semantic-key="v2" aria-label="How to read the Emergentism interface">
       <span class="g2-footer__key-item g2-footer__key-item--actual"><i aria-hidden="true"></i><b>Actual</b><small>solid and instantiated</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--possible"><i aria-hidden="true"></i><b>Possible</b><small>branching and represented</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--conjecture"><i aria-hidden="true"></i><b>Conjecture</b><small>dashed and killable</small></span>
       <span class="g2-footer__key-item g2-footer__key-item--evidence"><i aria-hidden="true">↩</i><b>Evidence</b><small>returned and revising</small></span>
     </div>
     <div class="g2-footer__boundary">
-      <span>Public projection · source owners govern · no external validation implied</span>
+      <span>Public is visibility, not truth · source owners govern · no external validation implied</span>
       <span aria-label="Ground, lived whole, and open horizon">•&nbsp;&nbsp;⊙&nbsp;&nbsp;○</span>
     </div>
   </div>

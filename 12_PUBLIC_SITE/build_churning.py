@@ -17,7 +17,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from build_core_shell import render_page, surface_for
+from build_core_shell import THEME_BOOT, render_page, surface_for
 
 
 SITE = Path(__file__).resolve().parent
@@ -654,7 +654,13 @@ def page_document(
         base,
         active,
         surface=surface_for("churn/index.html"),
-    ).replace(SCRIPT_TAG, "")
+    ).replace(SCRIPT_TAG, "").replace(THEME_BOOT, "")
+    rendered = re.sub(
+        r'<button\b[^>]*class="[^"]*g2-theme-toggle[^"]*"[^>]*>.*?</button>',
+        '<span class="g2-theme-static" aria-label="Appearance follows system settings">System</span>',
+        rendered,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
     if re.search(r"<script\b", rendered, flags=re.IGNORECASE):
         raise ValueError(f"static no-JavaScript contract failed for {canonical}")
     return rendered

@@ -1,0 +1,327 @@
+{
+  "schema": "emergentism/ScopedChangeReceipt.v1",
+  "boundary": "Reviewed implementation pathset; metadata only, not authority or outcome evidence.",
+  "base_commit": "c33b293898ad4b49238604edda57da2775325069",
+  "paths": [
+    {
+      "path": "00_META/CONTACT_LIMITED_STATE.json",
+      "sha256": "8e8e2e3fcf1187bac0a6a637d6b6604a740db40f07548050b1998f6d5b106870"
+    },
+    {
+      "path": "09_TOOLS/01_SCRIPTS/check_node_product_ranking.py",
+      "sha256": "3633e977c11d3320e16ba8e16ea2591be49aeacb565c73c26663d0b54e74143c"
+    },
+    {
+      "path": "09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py",
+      "sha256": "c1b699a12fa22670d92c4d06241bff0def34f84268a4e9bc1ee8daf54888fa40"
+    },
+    {
+      "path": "09_TOOLS/02_COMPILERS/test_contact_limited.py",
+      "sha256": "005943904b05740ca0c0c60ffd86e6ce7746277802bc6772e4644b902347b5ad"
+    },
+    {
+      "path": "09_TOOLS/02_COMPILERS/test_node_product_ranking.py",
+      "sha256": "ce79d3309737f76ce1460ba37f994f4c36b5101bc0184175880c23c48e052497"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_PUBLIC_WISDOM_LIFECYCLE_REBASELINE_2026_09_01.md",
+      "sha256": "913b3915229cfd9943a3ee97be4b4b1e7645454031eb798b3c71a83a40249978"
+    },
+    {
+      "path": "12_PUBLIC_SITE/0/index.html",
+      "sha256": "e1edc5d78b459c8bd381dfcbf5742d9749005ac90f269f0f0f7b5229e84bfed1"
+    },
+    {
+      "path": "12_PUBLIC_SITE/1/index.html",
+      "sha256": "2b62d797947a61ccecd2f88b3371e560cda6023c468fcd7b1c4dc3b9527eaf87"
+    },
+    {
+      "path": "12_PUBLIC_SITE/2/index.html",
+      "sha256": "095c7bf609c0a80366c4718d8f3d3208d3c7fe6b8438e62f2061ba3c865ac4b7"
+    },
+    {
+      "path": "12_PUBLIC_SITE/3/index.html",
+      "sha256": "8223444eb03d20131d7b3ef987a68161c9505daa06fbb351386d36bf44db1f59"
+    },
+    {
+      "path": "12_PUBLIC_SITE/4/index.html",
+      "sha256": "d9ecbfc5dd7f73183647caed5aa7e507b03b50db9105d7806e30cb70bc5bb6a5"
+    },
+    {
+      "path": "12_PUBLIC_SITE/5/index.html",
+      "sha256": "fb5bedac2fba2079f1cfad001c34cca67b74ca7368d19bfc8002821850e21a36"
+    },
+    {
+      "path": "12_PUBLIC_SITE/6/index.html",
+      "sha256": "5f62be55bda35b9e2c877fb81b6cde9e5c372fccefb4e3d7d7c9f70154e66561"
+    },
+    {
+      "path": "12_PUBLIC_SITE/90_ARCHIVE/2026_09_01_EMERGENTISM_DESIGN_V1/README.md",
+      "sha256": "cd57c27779d0bff873abb080f2ba3555972c372256d2b217565b42171ab013e6"
+    },
+    {
+      "path": "12_PUBLIC_SITE/90_ARCHIVE/2026_09_01_EMERGENTISM_DESIGN_V1/emergentism-design.v1.json",
+      "sha256": "a92bbcd377102be866400fc5af47784bf064324f98c363b21eee6bb3b3409f23"
+    },
+    {
+      "path": "12_PUBLIC_SITE/EMERGENTISM_DESIGN_CONSTITUTION.md",
+      "sha256": "16f2d42cf3319cd1924a3c3f3eb5fe6ee46bfeffb968e69a568011bd574c6c65"
+    },
+    {
+      "path": "12_PUBLIC_SITE/README.md",
+      "sha256": "117f318d98e0d2654d8b9d43a3af3c7b88b9db861be8501cc2bdb84c102a0f68"
+    },
+    {
+      "path": "12_PUBLIC_SITE/about/index.html",
+      "sha256": "9b67694376c24f9c9dc942f6ddf30828c257a9ea7e7619b4fef14e6e1c9ae66f"
+    },
+    {
+      "path": "12_PUBLIC_SITE/amrita/index.html",
+      "sha256": "d548a9da137a44de230d20711bbe748e9a514161c15c9912814cf876d8b59bba"
+    },
+    {
+      "path": "12_PUBLIC_SITE/assets/css/gestalt-v2.css",
+      "sha256": "80a6ccc445b477db90003a0a54ad30d12370327a000faf99d392a03e0a875c76"
+    },
+    {
+      "path": "12_PUBLIC_SITE/assets/js/gestalt-v2.js",
+      "sha256": "a0ce7af96384d8f2417027929ffecb1e062b86b2ee9f1ef2939594e5534ec37d"
+    },
+    {
+      "path": "12_PUBLIC_SITE/atlas/site_index.json",
+      "sha256": "206b28653a1eca682ca1285a952031c0a63cad98285ab1921a4e7f22daa6927e"
+    },
+    {
+      "path": "12_PUBLIC_SITE/book/build-manifest.json",
+      "sha256": "93fb31af2b2901715622e6ff31818ffb60eb0068bd253f2b901c2064eb0f76a4"
+    },
+    {
+      "path": "12_PUBLIC_SITE/book/index.html",
+      "sha256": "238cc6e372ed15005fd7ccd470a7e5fda6ca061299807b41415b4e68580bed17"
+    },
+    {
+      "path": "12_PUBLIC_SITE/book/rag_index.json",
+      "sha256": "d3b9ed153b8c070980c605b55659304e5a4e9372db54749b14eca600a1e4c200"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_book.py",
+      "sha256": "34341b765bfba2943a66a8fcedae912efc20635849f1e238d93bf062ef3dd4ad"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_churning.py",
+      "sha256": "1ab5027a23f95cd27dcfd5b6d7d81acf086121eb9bdeca2b93780f093680df5d"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_core_shell.py",
+      "sha256": "1b7fdb1d8386f34309eb57f68a132c96074dbac8f0a80eec95fbcc37930fb3e9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_pwa.py",
+      "sha256": "a5a287c3d644ba85a3ea6729f60fa57614e55d5fcede7cc19446ed9c53471357"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_sw_version.py",
+      "sha256": "927a19b7eb70c993fdfaeaf0d5f6310472f26f683d48c1b696c1f3e04d67823e"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_wisdom_atlas.py",
+      "sha256": "5e30474ca8cbb0b785187f3751da01be92739dee4550a100a9e310a855fd04d3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/build_withholding_boundary.py",
+      "sha256": "820a5f2d6001625a21499c268575b478dbf4ccba422d3082bd44363e4e1b810c"
+    },
+    {
+      "path": "12_PUBLIC_SITE/burrisphere/index.html",
+      "sha256": "eb8d445614e8067055d85c381ecf4b3063acad8f1ba4c54d9d83b772eae093b3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/check_design_constitution.py",
+      "sha256": "4fc2cc0160e30a1b735acceda823ac9f1a829202fba8a9acf677400eec4711e3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/check_public_semantic_parity.py",
+      "sha256": "54ae4709d8303c41ac92ceff7ebf61c76c9420658d111d0adfaf759d1c3e8851"
+    },
+    {
+      "path": "12_PUBLIC_SITE/churn/index.html",
+      "sha256": "d36045f2146a5cce5243b2d7a99ec8280e27b776eb4adaa14901fbebd88f07f9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/contribute/index.html",
+      "sha256": "f70dc3951c9baea73829f1564468697282cc84340a74f4ab6d921e488d10fee5"
+    },
+    {
+      "path": "12_PUBLIC_SITE/dasein/index.html",
+      "sha256": "44bf18b1f3d138516562ba3d6db93b8379f6bea884ce7b1bdb980b2ce18ca13a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/dimensions/dimensions.js",
+      "sha256": "eac4d4773448999ecc44e0b07fa9ae03987cc0cf60e2f168266815e3eb9c6396"
+    },
+    {
+      "path": "12_PUBLIC_SITE/dimensions/index.html",
+      "sha256": "f959d9a7e540888a761d140e91612819b646d6d621b7518fea5c74633eacbfa5"
+    },
+    {
+      "path": "12_PUBLIC_SITE/discoveries/index.html",
+      "sha256": "d5b8def3e486b73102f71c34ef015aac871f889c95630cffe3d229f5648a67cc"
+    },
+    {
+      "path": "12_PUBLIC_SITE/ecology/index.html",
+      "sha256": "73c2fef07de41eeca762c2aeedaa3294f2f3b24e832d629823e58e6bbbb032a0"
+    },
+    {
+      "path": "12_PUBLIC_SITE/emergentism-design.v1.json",
+      "sha256": "ENOENT"
+    },
+    {
+      "path": "12_PUBLIC_SITE/emergentism-design.v2.json",
+      "sha256": "6bdf6a70e8a50e99bd8a8e0ff07d47fff4d64c31221a9d85672260e795abb9c3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/ethics/index.html",
+      "sha256": "1f62599aeeb9692c957508a27c6f60e2b70008f69e339351ecc29c41af6b977b"
+    },
+    {
+      "path": "12_PUBLIC_SITE/exit/index.html",
+      "sha256": "32ec4c60c542d143d780f7a1c6e710fbcd5e4e97d069a679e404980692eeb78e"
+    },
+    {
+      "path": "12_PUBLIC_SITE/f5/index.html",
+      "sha256": "474903b9c7617f28db988b3de58f0b4049fb7c6f287b4318f7126bfe9a62f3f2"
+    },
+    {
+      "path": "12_PUBLIC_SITE/frontier/index.html",
+      "sha256": "4007ea9cfc73b3ab04b53f9370950ca03fd17621cd689ae3988e0ae3c68c0fe7"
+    },
+    {
+      "path": "12_PUBLIC_SITE/halahala/index.html",
+      "sha256": "2a979d71a427b918aeb57d1ca2f63fa492da8c386e65f6095f7fafa52f1b1895"
+    },
+    {
+      "path": "12_PUBLIC_SITE/index.html",
+      "sha256": "c59a8da7c4350e4da843f2750f35b3605d7536814f503fabbfdc8e8296c24ee6"
+    },
+    {
+      "path": "12_PUBLIC_SITE/lab/index.html",
+      "sha256": "2fad762dd2aaf3081fec4ca651f8554ff2ed9dd32c704df0f33188c7a548478e"
+    },
+    {
+      "path": "12_PUBLIC_SITE/manifest.webmanifest",
+      "sha256": "1a0c199a16b26281ab423164199c3156017414c49562beaeb08a1e71af6304e1"
+    },
+    {
+      "path": "12_PUBLIC_SITE/offline/index.html",
+      "sha256": "f7a11c726fed665bbd9cd50a3d535e7a797df154b77af93efcb87210fb9cc28a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/partials/core-footer.html",
+      "sha256": "e1e6742f4679e98a6181b38b5beb972bfc1ff14b6f4ab14d7870dd1bc95db85a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/partials/core-nav.html",
+      "sha256": "340b7f310ccffb5738573d9f152dc32b29a2e675fd08874ae029426df1e457fb"
+    },
+    {
+      "path": "12_PUBLIC_SITE/plainly/index.html",
+      "sha256": "e2e50bcf7c0d360a94fb61e16b31ceb9caf2ba6a3a691c80ff337099826b93e2"
+    },
+    {
+      "path": "12_PUBLIC_SITE/practice/index.html",
+      "sha256": "f2f1a5f34046933d7a8bd45bffbeaeff72f2f00cb711a2e6ed8cf4be2502bec6"
+    },
+    {
+      "path": "12_PUBLIC_SITE/public_semantic_parity.json",
+      "sha256": "b1a4bc2478b4a7ae78e606b5c43c869f5615218a77fd4a886758c29991ff1205"
+    },
+    {
+      "path": "12_PUBLIC_SITE/questions/diagnoses/index.html",
+      "sha256": "8c19bce986157d1ff95aee79a37426b20fa5e4ee0b430e3e77431d81b1a9a6ca"
+    },
+    {
+      "path": "12_PUBLIC_SITE/questions/index.html",
+      "sha256": "c08d453227e08950612715670834a0e1fff37bcea727531406326773b26b70b9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/reading-manifest.json",
+      "sha256": "421306962dd202ff2b417b0993a5de9399d115eb436bf25ec4da954a45dd278a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/churning/index.html",
+      "sha256": "e1308e1b5e982a50e3ef526e850c1575ceaf869309873fec97a2a9627ce6cacd"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/eub-1/index.html",
+      "sha256": "945d0384173bf2e4d5cbbaecce8ab0a91b1cdd5ae5a2558da75449e150ed734b"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/index.html",
+      "sha256": "27d047ed8ea7cc21a1e20596e63b25413c15e49bb2ec2d2192038156fc264cff"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/pqa-54/index.html",
+      "sha256": "e14fa1e634e8d35421f10cdbe97100f3c43297bb9b6b88d4cf39f8dfdf2f55ce"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/wisdom/index.html",
+      "sha256": "b5aebf27a300dc8aa7b2a43e6700153215a253450dde24fe58326c242cbb41f8"
+    },
+    {
+      "path": "12_PUBLIC_SITE/render_dimension_site.py",
+      "sha256": "b5c7dd26eac93d3f069f4a3d46158fe7356ed632a7caa702647c3517c78efdb4"
+    },
+    {
+      "path": "12_PUBLIC_SITE/rosetta/index.html",
+      "sha256": "8a112e3d296150a39e655f306793d3b4e2f21aa2bfd4042e5346cea8f60e2b36"
+    },
+    {
+      "path": "12_PUBLIC_SITE/sitemap.xml",
+      "sha256": "1cfbe81c533fbe2bf58d07f2384c47e1206dc0a4e339b7b9ab9d418e3e451216"
+    },
+    {
+      "path": "12_PUBLIC_SITE/spark/index.html",
+      "sha256": "4880fcea971c35047493991b1b006fc36dd855cd4e09f211798cb763edab3fb6"
+    },
+    {
+      "path": "12_PUBLIC_SITE/sw.js",
+      "sha256": "d2a4e073dcd350d96cf84d2686436bce9b1678e8cc863705ba2b43413549808a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/test_decision_transaction.py",
+      "sha256": "fe369c6f0880af9361b4d570c02b99fe32a9ccd7c1985cd26244b4d52b32107a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/test_gestalt_v2.py",
+      "sha256": "5e0cd4b5fef1a74a0a600cc7a69cd3103d714d88fab0d0837ddfd0360cd97a17"
+    },
+    {
+      "path": "12_PUBLIC_SITE/test_living_map.py",
+      "sha256": "8ee26a913da44aa743bb67a288d1633af6507cb03be28ea856d4a8c45337823f"
+    },
+    {
+      "path": "12_PUBLIC_SITE/test_public_wisdom_release.py",
+      "sha256": "eb31b2df5ffc0d1ecf6fac0756bc0678fdaaff06ee7e67e252098ed1aecab147"
+    },
+    {
+      "path": "12_PUBLIC_SITE/wisdom/EM-WISDOM-001@1/index.html",
+      "sha256": "9103a8c6d7c7a7598e785547a4a5fee0e14946e213c87d2913c8f56612dfab80"
+    },
+    {
+      "path": "12_PUBLIC_SITE/wisdom/atlas.json",
+      "sha256": "7c4dabaee112baa55ddecd0e9813392df0357a9df11bc187e63cce63a80dbdd9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/wisdom/atlas.jsonl",
+      "sha256": "f9460c7280128a46cd0d6abc8d7d623706b2f4eb999d354588e00da085ca8b25"
+    },
+    {
+      "path": "12_PUBLIC_SITE/wisdom/index.html",
+      "sha256": "463dfa27cba8f08c4e45c1030b3bddf4ac7ebec7116b28b903e4bae51151ef90"
+    },
+    {
+      "path": "12_PUBLIC_SITE/wisdom/rag.jsonl",
+      "sha256": "e7c9521f2008a86d8f2da37fdb5909a7586867b30ce51ba9792b3a7aacefde17"
+    }
+  ]
+}

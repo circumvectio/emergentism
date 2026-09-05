@@ -103,6 +103,14 @@ NEGATION_LANGUAGE = re.compile(
 
 DATED_EXPERIMENT = re.compile(r"^11_UPLINK/25_EXPERIMENTS/20\d\d-\d\d-\d\d_[^/]+/")
 
+# One complete metalinguistic warning, not permission to define or rank nodes
+# by the brand formula. Full-context equality admits only whitespace wrapping;
+# adjacent assertions and weakened conditions do not inherit this exception.
+BRAND_COLLISION_WARNING = (
+    r"If this \(P\) co-appears with brand \(P=\Phi\times V\), "  # Not the current node ranking: warning literal.
+    r"a projection note is required (name collision)."
+)
+
 
 def _starts_markdown_unit(line: str) -> bool:
     stripped = line.lstrip()
@@ -250,6 +258,8 @@ def violations_in_text(text: str, rel: Path = Path("fixture.md")) -> list[tuple[
                 continue
 
         context = _clause_context(lines, index)
+        if " ".join(context.split()) == BRAND_COLLISION_WARNING:
+            continue
         governing_label = _direct_governing_label(lines, index)
         qualified_context = "\n".join(part for part in (governing_label, context) if part)
         qualified_plain = re.sub(r"[`*_]", "", qualified_context)
