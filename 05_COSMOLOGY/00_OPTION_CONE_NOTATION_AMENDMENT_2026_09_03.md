@@ -98,3 +98,8 @@ w ⊂ ○           the worldline lies inside the cone, always
 `01_EMERGENTISM/05_COSMOLOGY/00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md`
 
 •   ⊙   ○ — *the cone is the reachable set; the actual is a path in it; only shadows compute.*
+
+## Child owner — capital inside the cone (2026-09-05)
+
+Yves ranked COMPLETE: [`../04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md`](../04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md). Capital’s force acts on this **option cone** inside the physical light cone; it does not widen `c` and does not rewrite this amendment’s glyph count.
+

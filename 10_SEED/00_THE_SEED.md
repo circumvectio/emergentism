@@ -15,6 +15,8 @@ territory.
 **L7 mark** (Yves ranked COMPLETE 2026-08-30). Seed of Life: six circles + hexagram. Distinct from Cortex (nested circle ⊃ hexagon ⊃ 6-fold star). Not EN. Not a SKU. Not a sign.
 Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity return. L7↝L1 is the chair ouroboros (compressed law re-enters as objective function). Do not merge them. D5→D1 is one compression `[I/C]`, not `[S]`, and does not replace the D0–D6 ladder. `12_PUBLIC_SITE` is a projection, not this kernel.
 
+Capital inside the cone (`04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md`, Yves ranked COMPLETE 2026-09-05) is L7→L1 objective-function talk in the axiology lane — not this Seed mark and not a merge with `r₆`.
+
 ## The ladder
 
 | Register | Compressed reading | Modality |

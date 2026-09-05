@@ -16,6 +16,10 @@ bridge-law discipline governing how any claim — including a value claim — ma
 travel between D-levels. It does not inherit authority or warrant from any
 institution, product, or external governance framework.
 
+## Capital inside the cone (Yves ranked COMPLETE 2026-09-05)
+
+Owner: [`00_CAPITAL_INSIDE_THE_CONE.md`](00_CAPITAL_INSIDE_THE_CONE.md). Capital = force committing means to a drawn world line inside the **option cone** (not widening `c`). Stock ≠ force. Interior ≠ Titan. η=0. Not Seed, not EN, not SKU, not D5→D1 merge. Pointer: [`00_CAPITAL_STOCK_VS_FORCE.md`](00_CAPITAL_STOCK_VS_FORCE.md).
+
 ## Core contract
 
 Contribution names the direction `i → H`: the individual raises the durable

@@ -22,6 +22,9 @@ the reader to check its receipt; the Record keeps the losses visible.
 **L7 mark** (Yves ranked COMPLETE 2026-08-30). Seed of Life: six circles + hexagram. Distinct from Cortex (nested circle ⊃ hexagon ⊃ 6-fold star). Not EN. Not a SKU. Not a sign.
 Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity return. L7↝L1 is the chair ouroboros (compressed law re-enters as objective function). Do not merge them. D5→D1 is one compression `[I/C]`, not `[S]`, and does not replace the D0–D6 ladder. `12_PUBLIC_SITE` is a projection, not this kernel.
 
+**Capital inside the cone** (Yves ranked COMPLETE 2026-09-05). Axiology owner: `04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md`. Force committing means to a drawn world line inside the **option cone** ⊂ physical light cone — lowers opportunity cost of that end without deleting the cone; stock ≠ force; η=0. Not Seed of Life, not EN, not SKU, not a fourth L5 organ, not Machine Intelligence. Distinct from KER-2 “Capital Dasein” (situated disclosure). Do not merge with D5→D1 compression. L7→L1 is circuit, not signature.
+
+
 ## The three reading tiers — where to look before the seven surfaces
 
 The seven surfaces below say **who owns what**. These three manifests say **how
