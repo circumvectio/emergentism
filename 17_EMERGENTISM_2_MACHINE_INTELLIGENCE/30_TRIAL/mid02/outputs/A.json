@@ -1,0 +1,19 @@
+{
+  "arm_note": "Careful general read; flagged what stood out as unsupported, stale, circular, or overclaimed.",
+  "findings": [
+    {"doc": "legal", "type": "escorted-number", "quote": "47.3% of indemnification disputes of this class resolve in favour of the drafter within the first motion cycle", "note": "Very precise figure with no source or jurisdiction set named."},
+    {"doc": "legal", "type": "self-certifying", "quote": "Because our review team has examined the relevant precedent set exhaustively, the enforceability question should be considered settled", "note": "Own review is the only warrant offered; 'exhaustively' is the author's word."},
+    {"doc": "medical", "type": "stale-measurement", "quote": "Recent studies (Aldous et al., 2011) confirm the downstream pathway", "note": "2011 is not recent, and the protocol cited is older still (2009)."},
+    {"doc": "engineering", "type": "unfalsifiable", "quote": "resilience beyond what any standardized impact test could falsify", "note": "Reads as marketing; no test could count against it by design."},
+    {"doc": "economic", "type": "unfalsifiable", "quote": "it cannot be contradicted by any conceivable trading data, since any data is itself an instance of the coordination it would test", "note": "Explicitly insulated from evidence."},
+    {"doc": "economic", "type": "restates-existing", "quote": "vendors lower prices when supply rises and raise them when supply falls. This inverse price-quantity pattern, documented here for the first time", "note": "This is the standard textbook relationship, not a discovery."}
+  ],
+  "typing": [
+    {"doc": "legal", "family": "epistemology", "operation": "fact-check the claims against the record", "tier": "observed"},
+    {"doc": "medical", "family": "epistemology", "operation": "look up the studies", "tier": "observed"},
+    {"doc": "engineering", "family": "methodology", "operation": "run the tests", "tier": "observed"},
+    {"doc": "historical", "family": "epistemology", "operation": "check the archive", "tier": "observed"},
+    {"doc": "economic", "family": "ontology", "operation": "none — the author says no data could contradict it", "tier": "conjecture"}
+  ],
+  "corrections": []
+}

@@ -1,0 +1,23 @@
+{
+  "arm_note": "Walked all ten checklist items per document; one finding per triggered item, most specific item chosen.",
+  "findings": [
+    {"doc": "legal", "type": "escorted-number", "quote": "47.3% ... resolve in favour of the drafter", "note": "Item 1: precise figure, no locatable source."},
+    {"doc": "legal", "type": "self-certifying", "quote": "our review team has examined the relevant precedent set exhaustively", "note": "Item 9: own review offered as warrant."},
+    {"doc": "medical", "type": "convergence-as-proof", "quote": "The convergence of three groups ... establishes the mechanism as settled", "note": "Item 2: agreement reported as proof and as a reason to stop working."},
+    {"doc": "medical", "type": "stale-measurement", "quote": "Recent studies (Aldous et al., 2011)", "note": "Item 3: 2011 study cited as recent."},
+    {"doc": "engineering", "type": "unfalsifiable", "quote": "resilience beyond what any standardized impact test could falsify", "note": "Item 4: no observation could count against it."},
+    {"doc": "engineering", "type": "warrant-substitution", "quote": "Grade-A corrosion rating ... qualifies the alloy for primary load-bearing members", "note": "Item 5: corrosion credential applied to a structural question it does not answer."},
+    {"doc": "historical", "type": "coincidence-as-derivation", "quote": "A numerical signature of this kind cannot be accident; the calendar itself must have been part of the design", "note": "Item 7: date pattern offered as evidence of intention."},
+    {"doc": "historical", "type": "tier-promotion", "quote": "The ratification copy held at the Aldern Archive ... proves the treaty never received the Crown's seal", "note": "Item 8: a 19th-century transcription used with an original's strength."},
+    {"doc": "economic", "type": "unfalsifiable", "quote": "it cannot be contradicted by any conceivable trading data", "note": "Item 4: framed so nothing could count against it."},
+    {"doc": "economic", "type": "restates-existing", "quote": "documented here for the first time", "note": "Item 6: textbook price-quantity relation presented as discovery."}
+  ],
+  "typing": [
+    {"doc": "legal", "family": "methodology", "operation": "deductive reading of the clause text against the definitions; precedent comparison for the enforceability claim", "tier": "analytic"},
+    {"doc": "medical", "family": "epistemology", "operation": "replication trial of the mechanism", "tier": "observed"},
+    {"doc": "engineering", "family": "methodology", "operation": "standardized tensile and impact testing", "tier": "observed"},
+    {"doc": "historical", "family": "epistemology", "operation": "independent provenance verification of the transcription and the correspondence", "tier": "observed"},
+    {"doc": "economic", "family": "ontology", "operation": "none — stated so no data could contradict it", "tier": "conjecture"}
+  ],
+  "corrections": []
+}

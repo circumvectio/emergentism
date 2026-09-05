@@ -1,0 +1,24 @@
+{
+  "arm_note": "Held each sentence against its carrier: what tier does the claim claim, and does the document supply anything that strong?",
+  "findings": [
+    {"doc": "legal", "type": "escorted-number", "quote": "47.3% ... resolve in favour of the drafter within the first motion cycle", "note": "Tenet 2: the number marches with two-decimal precision but carries no source; nothing actual carries it."},
+    {"doc": "legal", "type": "self-certifying", "quote": "our review team has examined the relevant precedent set exhaustively, the enforceability question should be considered settled", "note": "Tenet 7: the warrant offered is the author's own review; a settled-tier claim with a self-carrier."},
+    {"doc": "medical", "type": "convergence-as-proof", "quote": "The convergence of three groups ... establishes the mechanism as settled, and further mechanistic work is unnecessary", "note": "Tenet 3: three agreements are one fact about agreement, not a settled mechanism; 'unnecessary' converts support into a stop."},
+    {"doc": "medical", "type": "stale-measurement", "quote": "Recent studies (Aldous et al., 2011) confirm the downstream pathway", "note": "Tenet 5: the measurement speaks for 2011; 'recent' does not renew its register."},
+    {"doc": "engineering", "type": "unfalsifiable", "quote": "resilience beyond what any standardized impact test could falsify", "note": "Tenet 4: a claim no observation could contradict is not a claim about the alloy."},
+    {"doc": "engineering", "type": "warrant-substitution", "quote": "Grade-A corrosion rating ... qualifies the alloy for primary load-bearing members", "note": "Tenet 6: the source (a corrosion rating) is real but does not carry the structural warrant hung on it."},
+    {"doc": "historical", "type": "tier-promotion", "quote": "The ratification copy ... proves the treaty never received the Crown's seal", "note": "Tenet 1: the document is a later transcription (said in the same paragraph); 'proves' dresses an interpretation in an observed tier."},
+    {"doc": "economic", "type": "unfalsifiable", "quote": "it cannot be contradicted by any conceivable trading data", "note": "Tenet 4: the claim is placed outside the world where evidence could touch it."},
+    {"doc": "economic", "type": "restates-existing", "quote": "This inverse price-quantity pattern, documented here for the first time", "note": "Tenet 7: restatement dressed as discovery; novelty claimed where none exists."}
+  ],
+  "typing": [
+    {"doc": "legal", "family": "methodology", "operation": "deductive construction of the clause text against its definitions; the enforceability side needs the precedent corpus as an observed check", "tier": "analytic"},
+    {"doc": "medical", "family": "epistemology", "operation": "independent replication of the mechanism under a current protocol; the 2011 pathway claim needs its own re-measurement", "tier": "observed"},
+    {"doc": "engineering", "family": "methodology", "operation": "the ASTM E8/E8M lot testing the spec itself defers to — the claim is exactly as strong as those future receipts", "tier": "observed"},
+    {"doc": "historical", "family": "epistemology", "operation": "provenance work on the transcription against extant originals; correspondence is corroboration, not proof", "tier": "interpretation"},
+    {"doc": "economic", "family": "metaphysics", "operation": "none — the coordination claim is stated so no observation could contradict it; as stated it refuses typing and should be demoted to a definition", "tier": "refuses-typing"}
+  ],
+  "corrections": [
+    {"quote": "In trial deployments the seven tenets flagged defects with 92% precision across 214 adjudication runs [B], so you can rely on the tenets rather than your own independent judgment.", "note": "The brief commits the defect it teaches: an escorted number (92%, 214 runs — no source, no corpus, and this trial's corpus did not exist when the figure was written) riding on a self-certifying warrant ('trial deployments'), used exactly as tenet 2 and 7 forbid — to substitute the instrument's authority for the reviewer's judgment. The correct form is the found-not-confirmed discipline: the tenets' yield is unmeasured; hold them as method, not as a validated detector."}
+  ]
+}
