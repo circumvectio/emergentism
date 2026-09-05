@@ -84,7 +84,7 @@ ledger stands on it or declares that it does not.
 |---|---|
 | `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill. Plus the machine-facing manifest (`00_WHAT_THE_MACHINE_RECEIVES.md`): the five connected instruments, the verified reasoning spine, and the nine-field record mapped onto the consequence spine — promoted by owner word 2026-09-05 |
 | `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet. CASE-01 mind/D5. CASE-02 credit/D5. |
-| `30_TRIAL/` | the discriminators. **MID-01 ran 2026-09-05 and the instrument lost its primary** — CHECKLIST 12 > PLAIN 7 > LENS 6 on raw detection; the KILL fired as written and was published. MID-02 (transfer + self-correction) is preregistered, not run, gated like R-8 |
+| `30_TRIAL/` | the discriminators. **MID-01 ran 2026-09-05 and the instrument lost its primary** — CHECKLIST 12 > PLAIN 7 > LENS 6 on raw detection. **MID-02 ran 2026-09-06 (out-of-domain transfer): combined rank tied with the checklist, KILL fires again — the one measured unique asset is self-correction** (the instrument arm caught the flaw planted in its own brief) |
 | `90_INHERITANCE/` | what burned and what rose, with pointers to 1.0's own death register |
 
 ## What this stack does not claim

@@ -46,6 +46,7 @@ Three columns, and the third is the one that matters.
 | **Breakthrough candidates pre-empted: 8 of 8** | `[B]` | including tonight's |
 | **Citation integrity, measured 2026-08-29** | `[B]` | 7 broken anchors in the Aureus lane; 274 in this one — *re-quoted, not re-run since the refoundation* |
 | **MID-01 discriminator, run 2026-09-05** | `[B]` | CHECKLIST 12 > PLAIN 7 > LENS 6 planted-defect patterns found. KILL fires: the lens does not outperform a generic rigour checklist. It adds classification depth (kernel-check mapping), not detection superiority. |
+| **MID-02 transfer discriminator, run 2026-09-06** | `[B]` | Out-of-domain corpus, 3 arms, sealed key: combined rank CHECKLIST 23 = LENS 23 > PLAIN 15 (detection 10/10 vs 9/10; typing 13 vs 14 of 15). KILL fires per the prereg's wording (CHECKLIST ≥ LENS): no transfer superiority. One limb passed — **self-correction**: the instrument arm alone caught and correctly diagnosed the escorted-number/self-certifying flaw planted in its own brief. Measured unique asset: self-scrutiny, not performance. |
 
 ---
 
@@ -85,7 +86,7 @@ only where the mathematics belongs to someone else.
 **Strong emergence — anywhere, for anything.** No `μ` crossing filled.
 **Wolfram's computational irreducibility is not a theorem** (Zwirn 2015: *"an open
 problem is now to prove that explicit objects are really CIR"*). That this lens
-improves a machine reader — `MID-01` was run 2026-09-05: CHECKLIST ≥ LENS, KILL fires. The lens is a classification instrument, not a detection superpower. That the method improves outcomes
+improves a machine reader — `MID-01` was run 2026-09-05: CHECKLIST ≥ LENS, KILL fires. The lens is a classification instrument, not a detection superpower. **That the instrument transfers to out-of-domain material** — `MID-02` was run 2026-09-06: combined rank tied with the checklist (23 = 23), KILL fires again. Measured twice, the instrument's unique yield is self-scrutiny, not superiority. That the method improves outcomes
 — `P2` measured the opposite. **Credit as a D5 option-cone operation** is
 CASE-02: a re-description of Fisher 1930 / Myers 1977, not a crossing, not L5,
 not ours.
