@@ -15,6 +15,7 @@ from unittest import mock
 import build_wisdom_atlas as wisdom
 import check_public_semantic_parity as parity
 import build_withholding_boundary as withholding
+import predeploy_check as predeploy
 from build_core_shell import THEME_BOOT
 
 
@@ -63,6 +64,27 @@ class PublicWisdomReleaseTests(unittest.TestCase):
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         self.assertIn("build_wisdom_atlas.py", module.BUILDERS)
+
+    def test_local_browser_artifacts_never_enter_manual_deployment(self):
+        patterns = predeploy.load_vercelignore_patterns()
+        self.assertIn("/output/", patterns)
+        for rel in ("output/playwright/capture.png", "output/playwright/report.json", "output/playwright/.playwright-cli/page.yml", "output/accidental/index.html"):
+            with self.subTest(rel=rel):
+                self.assertTrue(predeploy.is_vercel_ignored(rel, patterns))
+        for rel in ("index.html", "wisdom/index.html", "wisdom/atlas.json", "wisdom/rag.jsonl", "assets/og/og-card.png", "assets/output/capture.png", "outputish/capture.png", "output.png", "wisdom/output/nested.json"):
+            with self.subTest(rel=rel):
+                self.assertFalse(predeploy.is_vercel_ignored(rel, patterns))
+        # The new anchored rule closes the output hole rather than relying on
+        # an unrelated ignore, and does not change Git visibility or custody.
+        without_output = [p for p in patterns if p != "/output/"]
+        self.assertFalse(predeploy.is_vercel_ignored("output/playwright/capture.png", without_output))
+
+    def test_predeploy_refuses_missing_or_negated_output_boundary(self):
+        patterns = predeploy.load_vercelignore_patterns()
+        for damaged in ([p for p in patterns if p != "/output/"], patterns + ["!/output/"]):
+            with mock.patch.object(predeploy, "load_vercelignore_patterns", return_value=damaged), mock.patch.object(predeploy, "check_declared_public_head_custody", return_value=True), mock.patch.object(predeploy, "error") as error, contextlib.redirect_stdout(io.StringIO()):
+                self.assertFalse(predeploy.check_publication_boundary())
+                self.assertTrue(any("output/" in str(call) for call in error.call_args_list))
 
     def test_machine_exports_keep_independent_status_axes(self):
         bundle, compiled = wisdom.load_source()

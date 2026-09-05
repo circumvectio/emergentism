@@ -14,6 +14,8 @@ withheld-routes.json
 
 # Source/control bundles and local/generated tooling.
 docs/
+# Local QA captures and browser state are retained, never uploaded as site assets.
+/output/
 __pycache__/
 *.pyc
 *.py

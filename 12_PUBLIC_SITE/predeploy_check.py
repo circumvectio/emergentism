@@ -3166,6 +3166,7 @@ def check_publication_boundary():
         "_archive/",
         "_STAGING_COMPASS_RESTRUCTURE/",
         "docs/",
+        "/output/",
         "__pycache__/",
         "*.py",
         "*.sh",
@@ -3211,6 +3212,10 @@ def check_publication_boundary():
         "__pycache__/predeploy_check.cpython-311.pyc",
         "compass/_archive/index_2026_07_12_pre_restructure.html",
         "a/b/_archive/c.html",
+        "output/playwright/capture.png",
+        "output/playwright/report.json",
+        "output/playwright/.playwright-cli/page.yml",
+        "output/index.html",
     ]
     leaked = [rel for rel in risky_paths if not is_vercel_ignored(rel, patterns)]
     if leaked:
@@ -3223,6 +3228,9 @@ def check_publication_boundary():
         "compass/_archiveish/index.html",
         "compass/archive/index.html",
         "_archive.html",
+        "assets/output/capture.png",
+        "outputish/capture.png",
+        "output.png",
     ]
     overmatched = [rel for rel in safe_paths if is_vercel_ignored(rel, patterns)]
     if overmatched:
