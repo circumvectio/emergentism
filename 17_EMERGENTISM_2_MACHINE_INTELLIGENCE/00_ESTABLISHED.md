@@ -45,6 +45,7 @@ Three columns, and the third is the one that matters.
 | **Receipted outcome-changes in the grammar's lifetime: one** | `[B]` | see `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` receipt log (escorted 2026-09-05) |
 | **Breakthrough candidates pre-empted: 8 of 8** | `[B]` | including tonight's |
 | **Citation integrity, measured 2026-08-29** | `[B]` | 7 broken anchors in the Aureus lane; 274 in this one — *re-quoted, not re-run since the refoundation* |
+| **MID-01 discriminator, run 2026-09-05** | `[B]` | CHECKLIST 12 > PLAIN 7 > LENS 6 planted-defect patterns found. KILL fires: the lens does not outperform a generic rigour checklist. It adds classification depth (kernel-check mapping), not detection superiority. |
 
 ---
 
@@ -84,7 +85,7 @@ only where the mathematics belongs to someone else.
 **Strong emergence — anywhere, for anything.** No `μ` crossing filled.
 **Wolfram's computational irreducibility is not a theorem** (Zwirn 2015: *"an open
 problem is now to prove that explicit objects are really CIR"*). That this lens
-improves a machine reader — `MID-01` is unrun. That the method improves outcomes
+improves a machine reader — `MID-01` was run 2026-09-05: CHECKLIST ≥ LENS, KILL fires. The lens is a classification instrument, not a detection superpower. That the method improves outcomes
 — `P2` measured the opposite. **Credit as a D5 option-cone operation** is
 CASE-02: a re-description of Fisher 1930 / Myers 1977, not a crossing, not L5,
 not ours.
