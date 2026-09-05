@@ -22,73 +22,41 @@
   <a class="bi-skip" href="#instrument-controls">Skip to controls</a>
 
   <main class="bi-stage" aria-labelledby="instrument-title">
-    <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. Polar angle theta moves one shared point from the selected south boundary to the north boundary; axial bearing psi rotates it around the sphere. Straight pole-to-point rays meet the lower nu and upper phi projection planes. Four M4 sectors stay on the bottom action plane. A separate Titan axis runs from Shiva at bottom through Vishnu at centre to Brahma at top, while a violet one-turn path remains a selected interpretive itinerary."></canvas>
-
-    <div class="bi-atmosphere" aria-hidden="true"></div>
-
     <header class="bi-header">
       <a class="bi-back" href="/burrisphere/" aria-label="Back to the Burrisphere atlas">
         <span aria-hidden="true">←</span><span>Burrisphere atlas</span>
       </a>
+      <span class="bi-identity" aria-label="Emergentism: dot, less than, finite centre, greater than, circle">• &lt; ⊙ &gt; ○</span>
       <nav class="bi-nav" aria-label="Instrument navigation">
+        <a href="#operator-inspector">Rules</a>
         <a href="/practice/">Practice</a>
-        <a href="/rosetta/">Rosetta</a>
         <a href="/exit/">Exit</a>
       </nav>
     </header>
 
+    <div class="bi-visual" id="sphere-viewport">
+    <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. Polar angle theta moves one shared point from the selected south boundary to the north boundary; axial bearing psi rotates it around the sphere. Straight pole-to-point rays meet the lower nu and upper phi projection planes. Four M4 sectors stay on the bottom action plane. A separate Titan axis runs from Shiva at bottom through Vishnu at centre to Brahma at top, while a violet one-turn path remains a selected interpretive itinerary."></canvas>
     <section class="bi-thesis" aria-labelledby="instrument-title">
       <p class="bi-kicker">Live geometric instrument · <span>[A]</span> chart · <span>[I]</span> overlay</p>
-      <h1 id="instrument-title">One sphere.<br /><em>Two shadows.</em></h1>
+      <h1 id="instrument-title">One sphere. <em>Two shadows.</em></h1>
       <p>One point on <strong>S²</strong> is read from both poles at once. The lower <strong>ν chart</strong> and upper <strong>φ chart</strong> are reciprocal views of the same point—not two realities and not two spheres.</p>
     </section>
-
-    <aside class="bi-chart-key" aria-label="Projection legend">
-      <div class="bi-chart-key__item bi-chart-key__item--phi">
-        <span class="bi-chart-key__line" aria-hidden="true"></span>
-        <span><strong>φ chart</strong><small>south pole → upper plane · radius/(2R)=φ</small></span>
-      </div>
-      <div class="bi-chart-key__item bi-chart-key__item--nu">
-        <span class="bi-chart-key__line" aria-hidden="true"></span>
-        <span><strong>ν chart</strong><small>north pole → lower plane · radius/(2R)=ν</small></span>
-      </div>
-      <div class="bi-chart-key__item bi-chart-key__item--titan">
-        <span class="bi-chart-key__line" aria-hidden="true"></span>
-        <span><strong>Titan axis · [I]</strong><small>• Śiva; ⊙ Viṣṇu; ○ Brahmā</small></span>
-      </div>
-      <p>Lowercase chart coordinates only: <code>φ≠Φ₅</code> and <code>ν≠V₄</code>. A ray leaving this finite window is clipped along its own line—never bent.</p>
-    </aside>
 
     <section class="bi-readout" aria-label="Current chart values">
       <div><span>φ</span><strong id="phi-value">1.000</strong></div>
       <div><span>ν</span><strong id="nu-value">1.000</strong></div>
-      <div><span>φν</span><strong id="product-value">1.000</strong></div>
-      <div><span>B</span><strong id="balance-value">1.000</strong></div>
+      <div><span>φν · constant</span><strong id="product-value">1.000</strong></div>
+      <div><span>B · balance</span><strong id="balance-value">1.000</strong></div>
       <div><span>θ</span><strong id="theta-value">90.0°</strong></div>
       <div><span>ψ</span><strong id="azimuth-value">90.0°</strong></div>
     </section>
+    <p class="bi-drag-hint">Drag to orbit · scroll to zoom · coordinates stay independent</p>
+    </div>
 
-    <aside class="bi-action-plane" id="phase-readout" aria-label="M4 bottom action plane. Four coplanar sectors sit on the lower projection plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. The in-plane channel direction runs from Phi five possible or modeled power above to V four actual or embodied power below.">
-      <div class="bi-action-plane__current">
-        <span class="bi-phase__index">M4 · 03 · bottom action plane [I]</span>
-        <strong>Giving-A</strong>
-      </div>
-      <div class="bi-action-plane__map">
-        <span class="bi-action-plane__axis bi-action-plane__axis--top">Φ₅ · possible / model</span>
-        <span class="bi-action-plane__axis bi-action-plane__axis--left">self / individual · taking</span>
-        <div class="bi-action-plane__grid" role="list" aria-label="Four bearer-oriented transfer sectors">
-          <div class="bi-action-plane__cell" role="listitem" data-phase="0"><strong>Taking-A · Kali</strong><small>demon-facing · +Φ₅ self · −V₄ other</small></div>
-          <div class="bi-action-plane__cell" role="listitem" data-phase="3"><strong>Giving-B · Arjuna</strong><small>god-facing · −V₄ self · +Φ₅ other</small></div>
-          <div class="bi-action-plane__cell" role="listitem" data-phase="1"><strong>Taking-B · Kālī</strong><small>demon-facing · +V₄ self · −Φ₅ other</small></div>
-          <div class="bi-action-plane__cell is-active" role="listitem" data-phase="2" aria-current="true"><strong>Giving-A · Kṛṣṇa</strong><small>god-facing · −Φ₅ self · +V₄ other</small></div>
-        </div>
-        <span class="bi-action-plane__axis bi-action-plane__axis--right">giving · other / collective</span>
-        <span class="bi-action-plane__axis bi-action-plane__axis--bottom">V₄ · actual / embodied</span>
-      </div>
-      <small class="bi-action-plane__fence">four sectors on the bottom action plane · selected reading itinerary [I] · not sphere territories · not time or dynamics · not a moral verdict</small>
-    </aside>
-
+    <div class="bi-workbench" aria-label="Instrument workbench">
     <section class="bi-console" id="instrument-controls" aria-label="Burrisphere controls" tabindex="-1">
+      <h2>Explore the geometry</h2>
+      <fieldset id="geometry-controls" disabled><legend class="bi-visually-hidden">Coordinate, motion and view controls</legend>
       <div class="bi-console__formula">
         <span><code>θ∈(0,π)</code></span>
         <strong><code>φ=cot(θ/2)</code> · <code>ν=tan(θ/2)</code></strong>
@@ -121,7 +89,116 @@
         <button id="bearing-button" type="button" aria-label="Reset axial bearing psi to 90 degrees"><span class="bi-action-icon" aria-hidden="true">↺</span><span>Reset ψ</span></button>
         <button id="overlay-toggle" type="button" aria-pressed="true" aria-label="Hide the interpretive G7 action plane and path"><span class="bi-action-icon" aria-hidden="true">⌁</span><span>Hide G7 overlay</span></button>
         <button id="fullscreen-button" type="button" aria-label="Enter full screen"><span class="bi-action-icon" aria-hidden="true">⛶</span><span>Full screen</span></button>
+        <button id="camera-button" type="button" aria-label="Reset camera view without changing coordinates"><span class="bi-action-icon" aria-hidden="true">↖</span><span>Reset view</span></button>
       </div>
+      </fieldset>
+      <p class="bi-runtime-status" id="runtime-status" role="status">Controls require the local 3D module. All seven rules below are readable without it.</p>
+    </section>
+
+    <aside class="bi-action-plane" id="phase-readout" aria-label="M4 bottom action plane. Four coplanar sectors sit on the lower projection plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. The in-plane channel direction runs from Phi five possible or modeled power above to V four actual or embodied power below.">
+      <div class="bi-action-plane__current">
+        <span class="bi-phase__index">M4 · 03 · bottom action plane [I]</span>
+        <strong>Giving-A</strong>
+      </div>
+      <div class="bi-action-plane__map">
+        <span class="bi-action-plane__axis bi-action-plane__axis--top">Φ₅ · possible / model</span>
+        <span class="bi-action-plane__axis bi-action-plane__axis--left">self / individual · taking</span>
+        <div class="bi-action-plane__grid" role="list" aria-label="Four bearer-oriented transfer sectors">
+          <div class="bi-action-plane__cell" role="listitem" data-phase="0"><a href="#kali_take_phi"><strong>Taking-A · Kali</strong><small>+Φ₅ self · −V₄ other</small></a></div>
+          <div class="bi-action-plane__cell" role="listitem" data-phase="3"><a href="#arjuna_give_phi"><strong>Giving-B · Arjuna</strong><small>−V₄ self · +Φ₅ other</small></a></div>
+          <div class="bi-action-plane__cell" role="listitem" data-phase="1"><a href="#kali_take_v"><strong>Taking-B · Kālī</strong><small>+V₄ self · −Φ₅ other</small></a></div>
+          <div class="bi-action-plane__cell is-active" role="listitem" data-phase="2" aria-current="true"><a href="#krishna_give_v"><strong>Giving-A · Kṛṣṇa</strong><small>−Φ₅ self · +V₄ other</small></a></div>
+        </div>
+        <span class="bi-action-plane__axis bi-action-plane__axis--right">giving · other / collective</span>
+        <span class="bi-action-plane__axis bi-action-plane__axis--bottom">V₄ · actual / embodied</span>
+      </div>
+      <small class="bi-action-plane__fence">four sectors on the bottom action plane · selected reading itinerary [I] · not sphere territories · not time or dynamics · not a moral verdict</small>
+      <nav class="bi-titan-links" aria-label="Separate Titan axis, bottom to top">
+        <a href="#shiva_dissolve">• Śiva <small>bottom</small></a>
+        <a href="#vishnu_preserve">⊙ Viṣṇu <small>centre</small></a>
+        <a href="#brahma_create">○ Brahmā <small>top</small></a>
+      </nav>
+    </aside>
+
+    <section class="bi-inspector" id="operator-inspector" aria-labelledby="operator-heading">
+      <p class="bi-kicker">G7 · four transfers + three frames</p>
+      <h2 id="operator-heading">Read the move.</h2>
+      <p>Choose a rule to inspect its signature. The four god/demon aliases describe possible moves, not kinds of people. Selecting a rule does not move the sphere.</p>
+      <!-- burrisphere-operators:start -->
+<div class="bi-equation-list">
+<details class="bi-equation" id="kali_take_phi" data-operator="kali_take_phi">
+<summary><span>Taking-A</span><strong>Kali 🎲</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">transfer · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>+Φ₅,self, −V₄,other</code></p>
+<p>Raise own possible power while reducing another’s actual power.</p>
+<p class="bi-equation__scope">self and other must be identified. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:kali_take_phi<br>GEN7@1:L1 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §3 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="kali_take_v" data-operator="kali_take_v">
+<summary><span>Taking-B</span><strong>Kālī 💀</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">transfer · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>+V₄,self, −Φ₅,other</code></p>
+<p>Raise own actual power while cutting another’s represented possibility structure.</p>
+<p class="bi-equation__scope">self and other must be identified. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:kali_take_v<br>GEN7@1:L2 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §3 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="krishna_give_v" data-operator="krishna_give_v">
+<summary><span>Giving-A</span><strong>Kṛṣṇa ◇</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">transfer · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>−Φ₅,self, +V₄,other</code></p>
+<p>Spend own modeling or attention to build another’s actual power.</p>
+<p class="bi-equation__scope">self and other must be identified. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:krishna_give_v<br>GEN7@1:L3 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §3 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="arjuna_give_phi" data-operator="arjuna_give_phi">
+<summary><span>Giving-B</span><strong>Arjuna ⚔</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">transfer · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>−V₄,self, +Φ₅,other</code></p>
+<p>Spend own actual power to improve another’s possible power.</p>
+<p class="bi-equation__scope">self and other must be identified. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:arjuna_give_phi<br>GEN7@1:L4 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §3 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="brahma_create" data-operator="brahma_create">
+<summary><span>Creation</span><strong>Brahmā ○</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">frame · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>+Φ₅,+V₄</code></p>
+<p>Read joint growth of the two factors within a declared scope.</p>
+<p class="bi-equation__scope">bearer scope must be declared; this is a frame, not an actor. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:brahma_create<br>GEN7@1:L5 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §4 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="shiva_dissolve" data-operator="shiva_dissolve">
+<summary><span>Dissolution</span><strong>Śiva •</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">frame · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>−Φ₅,−V₄</code></p>
+<p>Read joint reduction of the two factors within a declared scope.</p>
+<p class="bi-equation__scope">bearer scope must be declared; this is a frame, not an actor. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:shiva_dissolve<br>GEN7@1:L6 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §4 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+<details class="bi-equation" id="vishnu_preserve" data-operator="vishnu_preserve">
+<summary><span>Preservation</span><strong>Viṣṇu ⊙</strong></summary>
+<div class="bi-equation__body"><p class="bi-equation__type">frame · [S] vocabulary · [I] reading</p>
+<p class="bi-equation__signature"><code>ΔΦ₅≈0,ΔV₄≈0</code></p>
+<p>Read preservation, not maximization. The source leaves the meaning of approximate hold uncalibrated.</p>
+<p class="bi-equation__scope">bearer scope must be declared; this is a frame, not an actor. Signs describe intended direction, not measured deltas or an exchange rate.</p>
+<p class="bi-equation__seat">G7@1:vishnu_preserve<br>GEN7@1:L7 · interpretive correspondence, not identity or a sphere latitude.</p>
+<p class="bi-equation__source">Source: G7 §4 · <a href="/atlas/burrisphere-operators.v1.json">source hashes and machine record</a></p>
+</div></details>
+</div>
+<p class="bi-inspector__fence">No rule is a verdict about a person. Bearers, consent, authority, costs and observed outcomes remain separate. Titan glyphs are not arithmetic operands.</p>
+<!-- burrisphere-operators:end -->
+      <details class="bi-derivation">
+        <summary>Where do the seven come from?</summary>
+        <p>Two mixed-sign patterns, each with two bearer orientations, supply four transfer forms. Joint growth, joint reduction and hold supply three frames: <code>2 × 2 + 3 = 7</code> within that vocabulary.</p>
+        <p>This constructs an alphabet. It does not yet prove seven disjoint classes of every action, their L1–L7 order, or strong emergence. One-factor changes and overlapping signatures test the missing classification rule. <code>G7 ≠ GEN7</code>.</p>
+        <p>The sphere’s product <code>φν=1</code> is constant across the open chart. The balance coordinate <code>B=sin θ</code> reaches 1 at the equator. A real capability optimum or flow state needs a separate model and evidence.</p>
+        <a href="/rosetta/">Continue into the Rosetta</a>
+      </details>
     </section>
 
     <details class="bi-boundary">
@@ -133,7 +210,22 @@
       </div>
     </details>
 
-    <div class="bi-drag-hint" aria-hidden="true">drag to orbit view · scroll to zoom · adjust θ and ψ below</div>
+    <aside class="bi-chart-key" aria-label="Projection legend">
+      <div class="bi-chart-key__item bi-chart-key__item--phi">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>φ chart</strong><small>south pole → upper plane · radius/(2R)=φ</small></span>
+      </div>
+      <div class="bi-chart-key__item bi-chart-key__item--nu">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>ν chart</strong><small>north pole → lower plane · radius/(2R)=ν</small></span>
+      </div>
+      <div class="bi-chart-key__item bi-chart-key__item--titan">
+        <span class="bi-chart-key__line" aria-hidden="true"></span>
+        <span><strong>Titan axis · [I]</strong><small>• Śiva; ⊙ Viṣṇu; ○ Brahmā</small></span>
+      </div>
+      <p>Lowercase chart coordinates only: <code>φ≠Φ₅</code> and <code>ν≠V₄</code>. A ray leaving this finite window is clipped along its own line—never bent.</p>
+    </aside>
+    </div>
 
     <section class="bi-fallback" id="webgl-fallback" hidden>
       <div class="bi-fallback__figure" aria-hidden="true"><span>φ</span><i></i><b>⊙</b><i></i><span>ν</span></div>
@@ -141,6 +233,7 @@
       <p>The chart remains available without it: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>. Independent axial bearing <code>ψ</code> completes the sphere coordinate and changes neither reciprocal magnitude.</p>
       <p>The interpretive overlay remains separate: M4 is four coplanar bottom-plane sectors; F3 is the Titan axis with stations •, ⊙, and ○.</p>
       <a href="/burrisphere/">Read the static atlas</a>
+      <a href="#operator-inspector">Read the seven rules below</a>
     </section>
 
     <noscript>
@@ -150,6 +243,7 @@
         <p>The animation requires JavaScript, but its claim does not: for <code>θ∈(0,π)</code>, <code>φ=cot(θ/2)</code>, <code>ν=tan(θ/2)</code>, <code>φν=1</code>, and <code>B=sinθ≤1</code>. Independent axial bearing <code>ψ</code> completes the sphere coordinate and changes neither reciprocal magnitude.</p>
         <p>The selected overlay is also static in meaning: four M4 sectors stay on the bottom plane; the Titan stations •, ⊙, and ○ stay on a distinct axis.</p>
         <a href="/burrisphere/">Read the static atlas</a>
+        <a href="#operator-inspector">Read the seven rules below</a>
       </section>
     </noscript>
   </main>
@@ -157,6 +251,7 @@
   <script type="importmap">
   {"imports":{"three":"/vendor/three-0.160.0/three.module.js","three/addons/":"/vendor/three-0.160.0/"}}
   </script>
+  <script src="/assets/js/burrisphere-inspector.js" defer></script>
   <script type="module" src="/assets/js/burrisphere-instrument.js"></script>
 </body>
 </html>

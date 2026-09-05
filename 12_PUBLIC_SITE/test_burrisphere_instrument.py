@@ -24,6 +24,7 @@ class BurrisphereInstrumentTests(unittest.TestCase):
         cls.instrument = (SITE / "burrisphere/instrument/index.html").read_text(encoding="utf-8")
         cls.script = (SITE / "assets/js/burrisphere-instrument.js").read_text(encoding="utf-8")
         cls.css = (SITE / "assets/css/burrisphere-instrument.css").read_text(encoding="utf-8")
+        cls.math_script = (SITE / "assets/js/burrisphere-math.js").read_text(encoding="utf-8")
 
     def test_source_locates_m4_below_and_f3_on_the_vertical_axis(self) -> None:
         self.assertIn("one bottom\naction/projection plane", self.source)
@@ -108,13 +109,13 @@ class BurrisphereInstrumentTests(unittest.TestCase):
         )
         self.assertIn('aria-label="Axial bearing psi around the sphere"', self.instrument)
         short_mobile = self.css.split(
-            "@media (max-width: 700px) and (max-height: 700px)", 1
+            "@media (max-width:700px) and (max-height:700px)", 1
         )[1].split("@media (prefers-reduced-motion", 1)[0]
         self.assertNotIn(".bi-thesis { display: none; }", short_mobile)
         self.assertNotIn(".bi-boundary { display: none; }", short_mobile)
         self.assertIn("updateSliderAccessibleText", self.script)
-        self.assertIn("prefers-reduced-motion: reduce", self.css)
-        self.assertIn(".bi-fallback[hidden] { display: none; }", self.css)
+        self.assertIn("prefers-reduced-motion:reduce", self.css)
+        self.assertIn(".bi-fallback[hidden] { display:none; }", self.css)
         self.assertIn("The 3D instrument could not start.", self.instrument)
         self.assertIn("The selected overlay is also static in meaning", self.instrument)
         self.assertNotRegex(self.instrument, r'<(?:script|img)\b[^>]*\bsrc=["\']https?://')
@@ -132,16 +133,26 @@ class BurrisphereInstrumentTests(unittest.TestCase):
         self.assertIn("leaves theta, phi, nu, and B unchanged.", self.instrument)
 
     def test_projection_uses_one_line_direction_and_collinear_clipping(self) -> None:
-        self.assertIn("function intersectLineWithHorizontalPlane(source, through, planeY)", self.script)
-        self.assertIn("source.clone().addScaledVector(direction, distance)", self.script)
+        self.assertIn("function intersectLineWithHorizontalPlane(source, through, planeY)", self.math_script)
+        self.assertIn('from "./burrisphere-math.js"', self.script)
+        self.assertIn("source.x + t * (through.x - source.x)", self.math_script)
         self.assertIn("function clipRayToRadialWindow(source, exact)", self.script)
-        self.assertIn("source.clone().lerp(exact, scale)", self.script)
+        self.assertIn("source.y + (exact.y - source.y) * scale", self.math_script)
         self.assertIn("setLinePoints(lowerRay, [NORTH, lower.vector])", self.script)
         self.assertIn("setLinePoints(upperRay, [SOUTH, upper.vector])", self.script)
         self.assertNotIn("clipRadial", self.script)
         self.assertNotIn("[NORTH, shared, lower.vector]", self.script)
         self.assertNotIn("[SOUTH, shared, upper.vector]", self.script)
         self.assertIn("never bent", self.instrument)
+
+    def test_all_rules_are_static_native_disclosures_and_coordinates_are_not_seats(self) -> None:
+        self.assertEqual(len(re.findall(r'<details class="bi-equation"', self.instrument)), 7)
+        self.assertIn("G7 ≠ GEN7", self.instrument)
+        self.assertIn("not identity or a sphere latitude", self.instrument)
+        self.assertIn('id="geometry-controls" disabled', self.instrument)
+        self.assertIn("cameraInitialized", self.script)
+        self.assertIn("ResizeObserver(() => frameCamera())", self.script)
+        self.assertIn('if (reset || !cameraInitialized)', self.script)
 
     def test_sampled_dual_projection_is_reciprocal_and_collinear(self) -> None:
         radius = 1.08

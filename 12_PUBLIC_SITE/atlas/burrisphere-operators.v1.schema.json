@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emergentism.org/atlas/burrisphere-operators.v1.schema.json",
+  "title": "Burrisphere operator catalogue: syntax only; source-row binding is checked by the builder",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "identity",
+    "scope",
+    "sources",
+    "partition",
+    "operators"
+  ],
+  "properties": {
+    "schema": {
+      "const": "emergentism/BurrisphereOperatorCatalogue.v1"
+    },
+    "identity": {
+      "const": "• < ⊙ > ○"
+    },
+    "scope": {
+      "const": "derived inspector, not an empirical evaluator or new doctrine"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "enum": [
+              "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+              "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
+              "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "partition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "transfers",
+        "frames",
+        "countStatus",
+        "orderStatus",
+        "strongEmergenceStatus"
+      ],
+      "properties": {
+        "transfers": {
+          "const": 4
+        },
+        "frames": {
+          "const": 3
+        },
+        "countStatus": {
+          "const": "conditional vocabulary construction"
+        },
+        "orderStatus": {
+          "const": "not derived"
+        },
+        "strongEmergenceStatus": {
+          "const": "not established"
+        }
+      }
+    },
+    "operators": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "$ref": "#/$defs/operator"
+      }
+    }
+  },
+  "$defs": {
+    "operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "id",
+        "kind",
+        "expressionKind",
+        "status",
+        "units",
+        "magnitude",
+        "outcomeEvidence",
+        "plain",
+        "alias",
+        "expression",
+        "tier",
+        "domain",
+        "explanation",
+        "requiredContext",
+        "missingContext",
+        "assumptions",
+        "clauses",
+        "variables",
+        "gen7Projection",
+        "displayProjection",
+        "source",
+        "idSource"
+      ],
+      "properties": {
+        "schema": {
+          "const": "emergentism/OperatorEquation.v1"
+        },
+        "id": {
+          "enum": [
+            "G7@1:kali_take_phi",
+            "G7@1:kali_take_v",
+            "G7@1:krishna_give_v",
+            "G7@1:arjuna_give_phi",
+            "G7@1:brahma_create",
+            "G7@1:shiva_dissolve",
+            "G7@1:vishnu_preserve"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "transfer",
+            "frame"
+          ]
+        },
+        "expressionKind": {
+          "const": "source-direction-signature"
+        },
+        "status": {
+          "const": "INTENDED_NOT_OBSERVED"
+        },
+        "units": {
+          "type": "null"
+        },
+        "magnitude": {
+          "type": "null"
+        },
+        "outcomeEvidence": {
+          "type": "null"
+        },
+        "plain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alias": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requiredContext": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "missingContext": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "clauses": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "factor",
+              "bearer",
+              "direction"
+            ],
+            "properties": {
+              "factor": {
+                "enum": [
+                  "Phi5",
+                  "V4"
+                ]
+              },
+              "bearer": {
+                "enum": [
+                  "self",
+                  "other",
+                  "declared-scope"
+                ]
+              },
+              "direction": {
+                "enum": [
+                  "increase",
+                  "decrease",
+                  "hold-unresolved"
+                ]
+              }
+            }
+          }
+        },
+        "variables": {
+          "type": "object",
+          "required": [
+            "Phi5",
+            "V4"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "Phi5": {
+              "type": "string"
+            },
+            "V4": {
+              "type": "string"
+            }
+          }
+        },
+        "gen7Projection": {
+          "type": "object",
+          "required": [
+            "seat",
+            "tier",
+            "identity",
+            "chartSample"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "seat": {
+              "type": "string",
+              "pattern": "^GEN7@1:L[1-7]$"
+            },
+            "tier": {
+              "const": "[I]"
+            },
+            "identity": {
+              "const": false
+            },
+            "chartSample": {
+              "type": "null"
+            }
+          }
+        },
+        "displayProjection": {
+          "type": "object",
+          "required": [
+            "location",
+            "tier",
+            "selectingMovesCoordinates"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "location": {
+              "enum": [
+                "top-left",
+                "bottom-left",
+                "bottom-right",
+                "top-right",
+                "top",
+                "bottom",
+                "centre"
+              ]
+            },
+            "tier": {
+              "const": "[I]"
+            },
+            "selectingMovesCoordinates": {
+              "const": false
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "section",
+            "sha256"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "enum": [
+                "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+                "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"
+              ]
+            },
+            "section": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        },
+        "idSource": {
+          "type": "object",
+          "required": [
+            "path",
+            "section",
+            "sha256"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "enum": [
+                "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+                "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"
+              ]
+            },
+            "section": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

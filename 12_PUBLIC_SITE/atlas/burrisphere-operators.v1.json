@@ -1,0 +1,533 @@
+{
+  "schema": "emergentism/BurrisphereOperatorCatalogue.v1",
+  "identity": "• < ⊙ > ○",
+  "scope": "derived inspector, not an empirical evaluator or new doctrine",
+  "sources": [
+    {
+      "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+      "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+    },
+    {
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252"
+    },
+    {
+      "path": "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
+      "sha256": "ebe6014b60c0b7d3f83f506a5d2a02dd70b241a055b69fb9fc089550ca81fbaa"
+    },
+    {
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+      "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+    }
+  ],
+  "partition": {
+    "transfers": 4,
+    "frames": 3,
+    "countStatus": "conditional vocabulary construction",
+    "orderStatus": "not derived",
+    "strongEmergenceStatus": "not established"
+  },
+  "operators": [
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:kali_take_phi",
+      "plain": "Taking-A",
+      "alias": "Kali 🎲",
+      "kind": "transfer",
+      "expressionKind": "source-direction-signature",
+      "expression": "+Φ₅,self, −V₄,other",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "Phi5",
+          "bearer": "self",
+          "direction": "increase"
+        },
+        {
+          "factor": "V4",
+          "bearer": "other",
+          "direction": "decrease"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L1",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "top-left",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "3. Four transfers",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Raise own possible power while reducing another’s actual power."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:kali_take_v",
+      "plain": "Taking-B",
+      "alias": "Kālī 💀",
+      "kind": "transfer",
+      "expressionKind": "source-direction-signature",
+      "expression": "+V₄,self, −Φ₅,other",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "V4",
+          "bearer": "self",
+          "direction": "increase"
+        },
+        {
+          "factor": "Phi5",
+          "bearer": "other",
+          "direction": "decrease"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L2",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "bottom-left",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "3. Four transfers",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Raise own actual power while cutting another’s represented possibility structure."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:krishna_give_v",
+      "plain": "Giving-A",
+      "alias": "Kṛṣṇa ◇",
+      "kind": "transfer",
+      "expressionKind": "source-direction-signature",
+      "expression": "−Φ₅,self, +V₄,other",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "Phi5",
+          "bearer": "self",
+          "direction": "decrease"
+        },
+        {
+          "factor": "V4",
+          "bearer": "other",
+          "direction": "increase"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L3",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "bottom-right",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "3. Four transfers",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Spend own modeling or attention to build another’s actual power."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:arjuna_give_phi",
+      "plain": "Giving-B",
+      "alias": "Arjuna ⚔",
+      "kind": "transfer",
+      "expressionKind": "source-direction-signature",
+      "expression": "−V₄,self, +Φ₅,other",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "V4",
+          "bearer": "self",
+          "direction": "decrease"
+        },
+        {
+          "factor": "Phi5",
+          "bearer": "other",
+          "direction": "increase"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L4",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "top-right",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "3. Four transfers",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Spend own actual power to improve another’s possible power."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:brahma_create",
+      "plain": "Creation",
+      "alias": "Brahmā ○",
+      "kind": "frame",
+      "expressionKind": "source-direction-signature",
+      "expression": "+Φ₅,+V₄",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "Phi5",
+          "bearer": "declared-scope",
+          "direction": "increase"
+        },
+        {
+          "factor": "V4",
+          "bearer": "declared-scope",
+          "direction": "increase"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context",
+        "frame bearer scope"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L5",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "top",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "4. Three frames",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Read joint growth of the two factors within a declared scope."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:shiva_dissolve",
+      "plain": "Dissolution",
+      "alias": "Śiva •",
+      "kind": "frame",
+      "expressionKind": "source-direction-signature",
+      "expression": "−Φ₅,−V₄",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "Phi5",
+          "bearer": "declared-scope",
+          "direction": "decrease"
+        },
+        {
+          "factor": "V4",
+          "bearer": "declared-scope",
+          "direction": "decrease"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context",
+        "frame bearer scope"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L6",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "bottom",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "4. Three frames",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Read joint reduction of the two factors within a declared scope."
+    },
+    {
+      "schema": "emergentism/OperatorEquation.v1",
+      "id": "G7@1:vishnu_preserve",
+      "plain": "Preservation",
+      "alias": "Viṣṇu ⊙",
+      "kind": "frame",
+      "expressionKind": "source-direction-signature",
+      "expression": "ΔΦ₅≈0,ΔV₄≈0",
+      "tier": "[S] vocabulary / [I] interpretation",
+      "status": "INTENDED_NOT_OBSERVED",
+      "units": null,
+      "magnitude": null,
+      "outcomeEvidence": null,
+      "clauses": [
+        {
+          "factor": "Phi5",
+          "bearer": "declared-scope",
+          "direction": "hold-unresolved"
+        },
+        {
+          "factor": "V4",
+          "bearer": "declared-scope",
+          "direction": "hold-unresolved"
+        }
+      ],
+      "variables": {
+        "Phi5": "possible power; modeled through a present Eval4 token",
+        "V4": "actual usable capability"
+      },
+      "domain": "declared ordered domains; no cross-factor arithmetic",
+      "requiredContext": [
+        "bearer identities",
+        "horizon",
+        "model token",
+        "comparison contract",
+        "consent",
+        "authority",
+        "costs",
+        "outcome receipt"
+      ],
+      "missingContext": [
+        "all instance-specific context",
+        "frame bearer scope",
+        "hold comparison or defended tolerance"
+      ],
+      "assumptions": [
+        "signs indicate direction, not numeric deltas",
+        "no conservation or exchange rate inferred",
+        "a signature is not a moral verdict"
+      ],
+      "gen7Projection": {
+        "seat": "GEN7@1:L7",
+        "tier": "[I]",
+        "identity": false,
+        "chartSample": null
+      },
+      "displayProjection": {
+        "location": "centre",
+        "tier": "[I]",
+        "selectingMovesCoordinates": false
+      },
+      "source": {
+        "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "section": "4. Three frames",
+        "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+      },
+      "idSource": {
+        "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "section": "1. The row",
+        "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+      },
+      "explanation": "Read preservation, not maximization. The source leaves the meaning of approximate hold uncalibrated."
+    }
+  ]
+}

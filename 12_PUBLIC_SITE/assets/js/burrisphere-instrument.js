@@ -1,5 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { chartPoint, phaseIndexForAzimuth, intersectLineWithHorizontalPlane,
+  clipRayToRadialWindow as clipChartRay } from "./burrisphere-math.js";
 
 const canvas = document.querySelector("#burrisphere-canvas");
 const polarSlider = document.querySelector("#polar-angle");
@@ -11,10 +13,14 @@ const centreButton = document.querySelector("#centre-button");
 const bearingButton = document.querySelector("#bearing-button");
 const overlayToggle = document.querySelector("#overlay-toggle");
 const fullscreenButton = document.querySelector("#fullscreen-button");
+const cameraButton = document.querySelector("#camera-button");
+const viewport = document.querySelector("#sphere-viewport");
+const runtimeStatus = document.querySelector("#runtime-status");
 const phaseReadout = document.querySelector("#phase-readout");
 const motionStatus = document.querySelector("#motion-status");
 const actionCells = [...document.querySelectorAll(".bi-action-plane__cell")];
-const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+let reducedMotion = motionPreference.matches;
 
 const readouts = {
   phi: document.querySelector("#phi-value"),
@@ -37,7 +43,6 @@ const COLORS = {
 
 const R = 1.08;
 const TAU = Math.PI * 2;
-const POLE_EPSILON = 1e-9;
 const ITINERARY_DURATION = 12000;
 const PLANE_SIZE = 8.4;
 const LIMIT = PLANE_SIZE * 0.46;
@@ -61,6 +66,9 @@ try {
   document.querySelector("#webgl-fallback")?.removeAttribute("hidden");
 }
 if (renderer) {
+document.body.dataset.webgl = "ready";
+document.querySelector("#geometry-controls").disabled = false;
+runtimeStatus.textContent = "Ready. Move θ or ψ independently; choose a rule below without changing the geometry.";
 renderer.setClearColor(COLORS.void, 1);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, window.innerWidth < 700 ? 1.25 : 1.6));
@@ -69,8 +77,9 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(COLORS.void, 0.055);
 const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
 const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true;
-controls.dampingFactor = 0.055;
+// Direct manipulation: no residual orbit velocity to advance on resize or
+// fullscreen. The explicit one-turn itinerary is the only automatic motion.
+controls.enableDamping = false;
 controls.enablePan = false;
 controls.minDistance = 4.2;
 controls.maxDistance = 12;
@@ -303,6 +312,8 @@ let itineraryStartedAt = 0;
 let activePhase = -1;
 let dirty = true;
 let lastDomUpdate = 0;
+let framePending = false;
+let cameraInitialized = false;
 
 function setLinePoints(object, points) {
   const position = object.geometry.attributes.position;
@@ -310,20 +321,8 @@ function setLinePoints(object, points) {
   position.needsUpdate = true;
 }
 
-// GeoGebra's 3D kernel projects along one declared line direction. Keep that
-// invariant explicit here: source -> shared point -> plane intersection.
-function intersectLineWithHorizontalPlane(source, through, planeY) {
-  const direction = through.clone().sub(source);
-  if (Math.abs(direction.y) <= POLE_EPSILON) return null;
-  const distance = (planeY - source.y) / direction.y;
-  return source.clone().addScaledVector(direction, distance);
-}
-
 function clipRayToRadialWindow(source, exact) {
-  const radial = Math.hypot(exact.x, exact.z);
-  if (radial <= LIMIT) return { vector: exact, clipped: false };
-  const scale = LIMIT / radial;
-  return { vector: source.clone().lerp(exact, scale), clipped: true };
+  return clipChartRay(source, exact, LIMIT);
 }
 
 function formatCoordinate(value) {
@@ -332,11 +331,6 @@ function formatCoordinate(value) {
   if (value >= 100) return value.toExponential(2);
   if (value < 0.01) return value.toExponential(2);
   return value.toFixed(3);
-}
-
-function phaseIndexForAzimuth(azimuth) {
-  const normalized = ((azimuth + Math.PI / 2) % TAU + TAU) % TAU;
-  return Math.min(3, Math.floor(normalized / (Math.PI / 2)));
 }
 
 function updatePhase(azimuth, atPole) {
@@ -383,17 +377,7 @@ function updateSliderAccessibleText(atPole) {
 }
 
 function updateGeometry(theta, azimuth, updateDom = true) {
-  const atSouth = theta <= POLE_EPSILON;
-  const atNorth = Math.PI - theta <= POLE_EPSILON;
-  const atPole = atSouth || atNorth;
-  const nu = atNorth ? Infinity : Math.tan(theta / 2);
-  const phi = atSouth ? Infinity : 1 / nu;
-  const balance = Math.sin(theta);
-  const shared = new THREE.Vector3(
-    R * Math.sin(theta) * Math.cos(azimuth),
-    -R * Math.cos(theta),
-    R * Math.sin(theta) * Math.sin(azimuth),
-  );
+  const {atPole, nu, phi, balance, point: shared} = chartPoint(theta, azimuth, R);
 
   const lowerExact = intersectLineWithHorizontalPlane(NORTH, shared, -R);
   const upperExact = intersectLineWithHorizontalPlane(SOUTH, shared, R);
@@ -435,22 +419,30 @@ function updateGeometry(theta, azimuth, updateDom = true) {
     canvas.dataset.upperRay = upper ? (upper.clipped ? "straight-clipped" : "straight-plane") : "undefined-at-pole";
   }
   dirty = true;
+  queueFrame();
 }
 
-function frameCamera() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
+function frameCamera(reset = false) {
+  const width = viewport.clientWidth;
+  const height = viewport.clientHeight;
   renderer.setSize(width, height, false);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, width < 700 ? 1.25 : 1.6));
   camera.aspect = width / height;
   camera.fov = width < 700 ? 44 : 38;
-  camera.position.set(width < 700 ? 3.2 : 4.65, width < 700 ? 2.75 : 3.25, width < 700 ? 6.9 : 7.6);
+  if (reset || !cameraInitialized) {
+    camera.position.set(4.65, 3.25, 7.6);
+    controls.target.set(0, 0, 0);
+    cameraInitialized = true;
+  }
   camera.updateProjectionMatrix();
   controls.update();
   dirty = true;
+  queueFrame();
 }
 
 function updateMotionButton() {
+  dirty = true;
+  queueFrame();
   const playing = motionState === "playing";
   motionToggle.setAttribute("aria-pressed", String(playing));
   if (motionState === "reduced") {
@@ -536,23 +528,24 @@ overlayToggle.addEventListener("click", () => {
   overlayToggle.setAttribute("aria-label", showItinerary ? "Hide the interpretive G7 action plane and path" : "Show the interpretive G7 action plane and path");
   overlayToggle.querySelector("span:last-child").textContent = showItinerary ? "Hide G7 overlay" : "Show G7 overlay";
   dirty = true;
+  queueFrame();
 });
+
+cameraButton.addEventListener("click", () => frameCamera(true));
 
 fullscreenButton.addEventListener("click", async () => {
   try {
     if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
     else await document.exitFullscreen();
   } catch (_) {
-    fullscreenButton.disabled = true;
-    fullscreenButton.setAttribute("aria-disabled", "true");
-    fullscreenButton.setAttribute("aria-label", "Full screen unavailable");
-    fullscreenButton.querySelector("span:last-child").textContent = "Unavailable";
+    runtimeStatus.textContent = "Full screen was unavailable or declined. The same instrument and all rules remain available in this window.";
   }
 });
 
 document.addEventListener("fullscreenchange", () => {
   fullscreenButton.setAttribute("aria-label", document.fullscreenElement ? "Exit full screen" : "Enter full screen");
   fullscreenButton.querySelector("span:last-child").textContent = document.fullscreenElement ? "Exit full screen" : "Full screen";
+  fullscreenButton.focus({preventScroll:true});
 });
 
 canvas.addEventListener("webglcontextlost", (event) => {
@@ -560,17 +553,32 @@ canvas.addEventListener("webglcontextlost", (event) => {
   motionState = reducedMotion ? "reduced" : "idle";
   updateMotionButton();
   document.body.dataset.webgl = "lost";
+  document.querySelector("#geometry-controls").disabled = true;
+  runtimeStatus.textContent = "Graphics context lost. Read the seven rules below; reload to retry graphics.";
   canvas.hidden = true;
   document.querySelector("#webgl-fallback")?.removeAttribute("hidden");
 });
 
-window.addEventListener("resize", frameCamera, { passive: true });
-controls.addEventListener("change", () => { dirty = true; });
+new ResizeObserver(() => frameCamera()).observe(viewport);
+controls.addEventListener("change", () => { dirty = true; queueFrame(); });
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden && motionState === "playing") {
+    motionState = "paused";
+    updateMotionButton();
+  }
+  if (!document.hidden) { dirty = true; queueFrame(); }
+});
+motionPreference.addEventListener("change", event => {
+  reducedMotion = event.matches;
+  enterFreeMode();
+});
 frameCamera();
 updateMotionButton();
 updateGeometry(manualTheta, manualAzimuth);
 
 function animate(now) {
+  framePending = false;
+  if (document.hidden || document.body.dataset.webgl === "lost") return;
   if (document.visibilityState === "visible" && motionState === "playing") {
     itineraryProgress = THREE.MathUtils.clamp((now - itineraryStartedAt) / ITINERARY_DURATION, 0, 1);
     manualTheta = Math.PI * itineraryProgress;
@@ -586,11 +594,21 @@ function animate(now) {
     }
   }
   if (document.visibilityState === "visible" && (motionState === "playing" || dirty)) {
-    controls.update();
-    renderer.render(scene, camera);
     dirty = false;
+    const moving = controls.update();
+    renderer.render(scene, camera);
+    // Read-only QA observations, not scientific or outcome evidence.
+    canvas.dataset.camera = camera.position.toArray().map(x => x.toFixed(5)).join(",");
+    canvas.dataset.renderCount = String(Number(canvas.dataset.renderCount || 0) + 1);
+    dirty = dirty || moving;
   }
-  requestAnimationFrame(animate);
+  if (motionState === "playing" || dirty) queueFrame();
 }
-requestAnimationFrame(animate);
+function queueFrame() {
+  if (!framePending && !document.hidden && document.body.dataset.webgl !== "lost") {
+    framePending = true;
+    requestAnimationFrame(animate);
+  }
+}
+queueFrame();
 }
