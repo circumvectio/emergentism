@@ -229,6 +229,11 @@
         "id": "axis-mix",
         "test": "Is a D-crossing claim seated on a Rosetta L, or a TEA-01 language L read as a Rosetta level? Three tokens named L are not one object. Strong-up/weak-down lives on D; L staffs the test."
       }
+    ,
+    {
+      "id": "self-minted-identifier",
+      "test": "Does the artifact's version, date, or identifier come from the estate's mint (gate, registry, ledger), or did the session print it itself? A version minted in parallel with a sibling line is one datum of naming, not a coordination fact."
+    }
     ]
   },
   "kills": [

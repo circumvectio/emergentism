@@ -42,9 +42,9 @@ Three columns, and the third is the one that matters.
 | **Seven Acts: the unseeded control landed near-canon on 4 of 7** | `[B]` | the seed's cargo is the formal spine; the postures were ambient |
 | **Adversarial refutation, three passes: 55/56 · 14/14 · 25/25** | `[B]` | the corpus refuses nearly every proposed refinement of itself |
 | **`TEA-01` crossings filled at `[A]`/`[B]`: zero of five** | `[B]` | the emergence conjecture has no filled crossing |
-| **Receipted outcome-changes in the grammar's lifetime: one** | `[B]` | |
+| **Receipted outcome-changes in the grammar's lifetime: one** | `[B]` | see `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` receipt log (escorted 2026-09-05) |
 | **Breakthrough candidates pre-empted: 8 of 8** | `[B]` | including tonight's |
-| **Citation integrity, measured 2026-08-29** | `[B]` | 7 broken anchors in the Aureus lane; 274 in this one |
+| **Citation integrity, measured 2026-08-29** | `[B]` | 7 broken anchors in the Aureus lane; 274 in this one — *re-quoted, not re-run since the refoundation* |
 
 ---
 
@@ -55,7 +55,7 @@ lands on `0·∞` · the kernel→ethics bridge fails because the catastrophe ca
 requires `Φ×V = 0`, which is *off* the kernel · `(φ−ν)²` is a nonnegative square
 and supplies **no gradient and no trajectory** · Gödel does not lift universally
 (Presburger; real-closed fields) · seven-as-forced dies to a confound · **mind is
-D4**, and placing it in D5 fires a registered falsifier.
+D4** (formally confirmed by CASE-01, verdict ILL_TYPED, 2026-09-04), and placing it in D5 fires a registered falsifier.
 
 ---
 
