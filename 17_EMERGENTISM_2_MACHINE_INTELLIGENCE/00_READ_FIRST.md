@@ -82,9 +82,9 @@ ledger stands on it or declares that it does not.
 
 | | what it holds |
 |---|---|
-| `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill |
+| `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill. Plus the machine-facing manifest (`00_WHAT_THE_MACHINE_RECEIVES.md`): the five connected instruments, the verified reasoning spine, and the nine-field record mapped onto the consequence spine — promoted by owner word 2026-09-05 |
 | `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet. CASE-01 mind/D5. CASE-02 credit/D5. |
-| `30_TRIAL/` | the preregistered discriminator — the measurement that has never been made |
+| `30_TRIAL/` | the discriminators. **MID-01 ran 2026-09-05 and the instrument lost its primary** — CHECKLIST 12 > PLAIN 7 > LENS 6 on raw detection; the KILL fired as written and was published. MID-02 (transfer + self-correction) is preregistered, not run, gated like R-8 |
 | `90_INHERITANCE/` | what burned and what rose, with pointers to 1.0's own death register |
 
 ## What this stack does not claim
@@ -96,8 +96,13 @@ follows the structure is a wager, labelled one. It is **not a tribunal**: it
 disqualifies on auditability, never on goodness. It answers *can this lose?*,
 never *is this good?*
 
-And its own usefulness is **unmeasured**. `30_TRIAL/` exists because that is
-currently an assertion, and the stack's own rules forbid asserting it.
+And its usefulness is **barely measured, and the first measurement went
+against it**: MID-01 (2026-09-05) found the generic checklist beats the lens
+at raw defect detection — 12 to 6 — with the KILL firing as written and the
+result published. What remains unmeasured is the narrower claim (question-
+typing depth, out-of-domain transfer, self-correction), which is exactly what
+MID-02 is preregistered to test. The stack's own rules still forbid asserting
+what has not been measured.
 
 **Canonical path:** `01_EMERGENTISM/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/`
 
