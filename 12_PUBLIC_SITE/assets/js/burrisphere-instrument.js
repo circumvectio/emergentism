@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { chartPoint, phaseIndexForAzimuth, intersectLineWithHorizontalPlane,
+import { chartPoint, chartMotion, phaseIndexForAzimuth, phaseBoundaryForAzimuth, intersectLineWithHorizontalPlane,
   clipRayToRadialWindow as clipChartRay } from "./burrisphere-math.js";
 
 const canvas = document.querySelector("#burrisphere-canvas");
@@ -18,6 +18,11 @@ const viewport = document.querySelector("#sphere-viewport");
 const runtimeStatus = document.querySelector("#runtime-status");
 const phaseReadout = document.querySelector("#phase-readout");
 const motionStatus = document.querySelector("#motion-status");
+const liveLegend = document.querySelector("#live-legend");
+const legendMove = document.querySelector("#legend-move");
+const legendSeam = document.querySelector("#legend-seam");
+const legendDirection = document.querySelector("#legend-direction");
+const legendStatus = document.querySelector("#legend-status");
 const actionCells = [...document.querySelectorAll(".bi-action-plane__cell")];
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
 let reducedMotion = motionPreference.matches;
@@ -56,6 +61,21 @@ const phases = [
   { index: "M4 · 03", name: "Giving-A", color: COLORS.gold },
   { index: "M4 · 04", name: "Giving-B", color: COLORS.blue },
 ];
+// Read identities and signatures from the source-generated rules, not a second
+// handwritten catalogue. Opening a rule remains separate from moving the point.
+phases.forEach((phase, index) => {
+  const link = actionCells.find(cell => Number(cell.dataset.phase) === index).querySelector("a");
+  phase.operator = link.getAttribute("href").slice(1);
+  const rule = document.getElementById(phase.operator);
+  phase.name = rule.querySelector("summary span").textContent;
+  phase.alias = rule.querySelector("summary strong").textContent;
+  phase.signature = rule.querySelector(".bi-equation__signature code").textContent;
+});
+const referenceNames = Object.fromEntries([
+  ["south", "shiva_dissolve", "south"],
+  ["equator", "vishnu_preserve", "balance"],
+  ["north", "brahma_create", "north"],
+].map(([key, id, place]) => [key, `${document.getElementById(id).querySelector("summary strong").textContent} · ${place}`]));
 
 let renderer;
 try {
@@ -314,6 +334,61 @@ let dirty = true;
 let lastDomUpdate = 0;
 let framePending = false;
 let cameraInitialized = false;
+let legendMode = "still";
+let cameraActive = false;
+let lastLegendTheta = manualTheta;
+let lastLegendAzimuth = manualAzimuth;
+let legendMovement = chartMotion(manualTheta, manualTheta, manualAzimuth, manualAzimuth);
+
+function setText(element, value) {
+  if (element.textContent !== value) element.textContent = value;
+}
+
+function refreshLegend() {
+  const atPole = chartPoint(manualTheta, manualAzimuth).atPole;
+  const phase = atPole ? null : phases[phaseIndexForAzimuth(manualAzimuth)];
+  const seam = atPole ? null : phaseBoundaryForAzimuth(manualAzimuth);
+  setText(legendMove, !showItinerary ? "G7 overlay hidden" : phase ? `${phase.alias} · ${phase.name}` : "No move · pole boundary");
+  setText(legendSeam, showItinerary && seam ? "Sector seam · next sector shown" : "");
+  legendSeam.title = seam ? `${phases[seam.previous].name} / ${phases[seam.next].name}; increasing-ψ convention` : "";
+  const {direction, toward, atReference} = legendMovement;
+  let text, target = "", state = legendMode;
+  if (!showItinerary) {
+    text = "Interpretive direction hidden";
+    state = "hidden";
+  } else if (cameraActive && motionState !== "playing") {
+    text = "Camera only · point held";
+    state = "camera";
+  } else if (motionState === "paused") {
+    text = "Paused · no approach";
+    state = "paused";
+  } else if (legendMode === "reset") {
+    text = `Reset · ${atReference ? referenceNames[atReference] : "position held"}`;
+  } else if ((motionState === "playing" || legendMode === "theta") && ["up", "down"].includes(direction)) {
+    target = toward;
+    text = atReference ? `At ${referenceNames[atReference]}` : `${direction === "up" ? "↑" : "↓"} toward ${referenceNames[toward]}`;
+    state = atReference ? "at-reference" : "moving";
+  } else if (legendMode === "bearing" && direction === "around") {
+    text = "ψ only · no Titan approach";
+    state = "around";
+  } else {
+    text = `Still · ${atReference ? referenceNames[atReference] : "no Titan approach"}`;
+    state = "still";
+  }
+  setText(legendDirection, text);
+  liveLegend.dataset.operator = showItinerary && phase ? phase.operator : "";
+  liveLegend.dataset.seam = String(Boolean(showItinerary && seam));
+  liveLegend.dataset.target = target;
+  liveLegend.dataset.motion = state;
+  // Only meaningful label transitions are announced, never per-frame numbers.
+  setText(legendStatus, `${legendMove.textContent}. ${legendSeam.textContent} ${text}. Interpretive reference only.`);
+}
+
+function settleLegend() {
+  if (motionState === "playing") return;
+  legendMode = "still";
+  refreshLegend();
+}
 
 function setLinePoints(object, points) {
   const position = object.geometry.attributes.position;
@@ -340,6 +415,7 @@ function updatePhase(azimuth, atPole) {
   if (atPole) {
     phaseReadout.querySelector(".bi-phase__index").textContent = "M4 · bearing degenerates at pole [I]";
     phaseReadout.querySelector("strong").textContent = "Axis boundary";
+    document.querySelector("#phase-signature").textContent = "No transfer signature at the pole.";
     phaseReadout.querySelector(".bi-action-plane__current").style.borderColor = `#${COLORS.violet.toString(16).padStart(6, "0")}`;
     actionCells.forEach((cell) => {
       cell.classList.remove("is-active");
@@ -350,7 +426,8 @@ function updatePhase(azimuth, atPole) {
   }
   const phase = phases[index];
   phaseReadout.querySelector(".bi-phase__index").textContent = `${phase.index} · bottom action plane [I]`;
-  phaseReadout.querySelector("strong").textContent = phase.name;
+  phaseReadout.querySelector("strong").textContent = `${phase.name} · ${phase.alias}`;
+  document.querySelector("#phase-signature").textContent = phase.signature;
   phaseReadout.querySelector(".bi-action-plane__current").style.borderColor = `#${phase.color.toString(16).padStart(6, "0")}`;
   actionCells.forEach((cell) => {
     const isActive = Number(cell.dataset.phase) === index;
@@ -412,6 +489,10 @@ function updateGeometry(theta, azimuth, updateDom = true) {
     polarOutput.textContent = readouts.theta.textContent;
     bearingOutput.textContent = `${THREE.MathUtils.radToDeg(azimuth).toFixed(1)}°`;
     updatePhase(azimuth, atPole);
+    legendMovement = chartMotion(theta, lastLegendTheta, azimuth, lastLegendAzimuth);
+    lastLegendTheta = theta;
+    lastLegendAzimuth = azimuth;
+    refreshLegend();
     updateSliderAccessibleText(atPole);
     canvas.dataset.thetaDegrees = THREE.MathUtils.radToDeg(theta).toFixed(3);
     canvas.dataset.azimuthDegrees = THREE.MathUtils.radToDeg(azimuth).toFixed(3);
@@ -444,6 +525,8 @@ function updateMotionButton() {
   dirty = true;
   queueFrame();
   const playing = motionState === "playing";
+  if (!playing) legendMode = "still";
+  refreshLegend();
   motionToggle.setAttribute("aria-pressed", String(playing));
   if (motionState === "reduced") {
     motionToggle.disabled = true;
@@ -482,30 +565,48 @@ function enterFreeMode() {
 
 polarSlider.addEventListener("input", () => {
   enterFreeMode();
+  legendMode = "theta";
   manualTheta = THREE.MathUtils.degToRad(Number(polarSlider.value));
   updateGeometry(manualTheta, manualAzimuth, true);
 });
 
 bearingSlider.addEventListener("input", () => {
   enterFreeMode();
+  legendMode = "bearing";
   manualAzimuth = THREE.MathUtils.degToRad(Number(bearingSlider.value));
   updateGeometry(manualTheta, manualAzimuth, true);
 });
+
+for (const slider of [polarSlider, bearingSlider]) {
+  for (const event of ["change", "blur", "pointercancel"]) slider.addEventListener(event, settleLegend);
+}
 
 motionToggle.addEventListener("click", () => {
   if (motionState === "reduced") return;
   if (motionState === "playing") {
     motionState = "paused";
+    // Flush the last displayed sample before freezing; labels and point agree.
+    updateGeometry(manualTheta, manualAzimuth, true);
   } else {
-    if (motionState !== "paused") itineraryProgress = 0;
+    if (motionState !== "paused") {
+      itineraryProgress = 0;
+      manualTheta = 0;
+      manualAzimuth = -Math.PI / 2;
+      polarSlider.value = "0";
+      bearingSlider.value = "-90";
+      legendMode = "reset";
+      updateGeometry(manualTheta, manualAzimuth, true);
+    }
     itineraryStartedAt = performance.now() - itineraryProgress * ITINERARY_DURATION;
     motionState = "playing";
+    legendMode = "itinerary";
   }
   updateMotionButton();
 });
 
 centreButton.addEventListener("click", () => {
   enterFreeMode();
+  legendMode = "reset";
   manualTheta = Math.PI / 2;
   polarSlider.value = "90";
   updateGeometry(manualTheta, manualAzimuth, true);
@@ -513,6 +614,7 @@ centreButton.addEventListener("click", () => {
 
 bearingButton.addEventListener("click", () => {
   enterFreeMode();
+  legendMode = "reset";
   manualAzimuth = Math.PI / 2;
   bearingSlider.value = "90";
   updateGeometry(manualTheta, manualAzimuth, true);
@@ -524,6 +626,7 @@ overlayToggle.addEventListener("click", () => {
   bottomActionPlane.visible = showItinerary;
   titanGlyphs.visible = showItinerary;
   phaseReadout.hidden = !showItinerary;
+  refreshLegend();
   overlayToggle.setAttribute("aria-pressed", String(showItinerary));
   overlayToggle.setAttribute("aria-label", showItinerary ? "Hide the interpretive G7 action plane and path" : "Show the interpretive G7 action plane and path");
   overlayToggle.querySelector("span:last-child").textContent = showItinerary ? "Hide G7 overlay" : "Show G7 overlay";
@@ -531,7 +634,13 @@ overlayToggle.addEventListener("click", () => {
   queueFrame();
 });
 
-cameraButton.addEventListener("click", () => frameCamera(true));
+cameraButton.addEventListener("click", () => {
+  frameCamera(true);
+  if (motionState !== "playing") {
+    settleLegend();
+    runtimeStatus.textContent = "Camera reset only. The selected move and chart coordinates are unchanged.";
+  }
+});
 
 fullscreenButton.addEventListener("click", async () => {
   try {
@@ -560,6 +669,8 @@ canvas.addEventListener("webglcontextlost", (event) => {
 });
 
 new ResizeObserver(() => frameCamera()).observe(viewport);
+controls.addEventListener("start", () => { cameraActive = true; refreshLegend(); });
+controls.addEventListener("end", () => { cameraActive = false; refreshLegend(); });
 controls.addEventListener("change", () => { dirty = true; queueFrame(); });
 document.addEventListener("visibilitychange", () => {
   if (document.hidden && motionState === "playing") {

@@ -37,9 +37,12 @@
     <div class="bi-visual" id="sphere-viewport">
     <canvas id="burrisphere-canvas" aria-label="Interactive three-dimensional Burrisphere. Polar angle theta moves one shared point from the selected south boundary to the north boundary; axial bearing psi rotates it around the sphere. Straight pole-to-point rays meet the lower nu and upper phi projection planes. Four M4 sectors stay on the bottom action plane. A separate Titan axis runs from Shiva at bottom through Vishnu at centre to Brahma at top, while a violet one-turn path remains a selected interpretive itinerary."></canvas>
     <section class="bi-thesis" aria-labelledby="instrument-title">
-      <p class="bi-kicker">Live geometric instrument · <span>[A]</span> chart · <span>[I]</span> overlay</p>
-      <h1 id="instrument-title">One sphere. <em>Two shadows.</em></h1>
-      <p>One point on <strong>S²</strong> is read from both poles at once. The lower <strong>ν chart</strong> and upper <strong>φ chart</strong> are reciprocal views of the same point—not two realities and not two spheres.</p>
+      <h1 id="instrument-title">Burrisphere <span>[A] chart · [I] reading</span></h1>
+      <dl class="bi-live-legend" id="live-legend" aria-label="Selected move and Titan direction" aria-describedby="legend-help">
+        <div><dt>Move [I]</dt><dd><strong id="legend-move">Waiting for geometry</strong><small id="legend-seam"></small></dd></div>
+        <div><dt>Direction</dt><dd id="legend-direction">No motion</dd></div>
+      </dl>
+      <span class="bi-visually-hidden" id="legend-status" role="status" aria-atomic="true"></span>
     </section>
 
     <section class="bi-readout" aria-label="Current chart values">
@@ -93,6 +96,10 @@
       </div>
       </fieldset>
       <p class="bi-runtime-status" id="runtime-status" role="status">Controls require the local 3D module. All seven rules below are readable without it.</p>
+      <details class="bi-legend-help"><summary>Reading the legend <span>[I]</span></summary>
+        <p class="bi-runtime-status" id="legend-help">The live legend names the god/demon alias of the move shown, not an executed act or a moral verdict. θ motion approaches a Titan reference; ψ changes the move reading. Camera orbit changes neither. At a sector seam the increasing-ψ sector is displayed. Viṣṇu’s balance-equator reference is not the sphere’s interior centre. Pausing or releasing a slider ends the direction reading. These are position changes, not physical momentum, acceleration or relativistic rapidity.</p>
+        <p class="bi-runtime-status">One point on S² is read from both poles at once. The lower ν chart and upper φ chart are reciprocal views of the same point—not two realities and not two spheres.</p>
+      </details>
     </section>
 
     <aside class="bi-action-plane" id="phase-readout" aria-label="M4 bottom action plane. Four coplanar sectors sit on the lower projection plane. Horizontal direction runs from self or individual-facing taking on the left to other or collective-facing giving on the right. The in-plane channel direction runs from Phi five possible or modeled power above to V four actual or embodied power below.">
@@ -100,6 +107,7 @@
         <span class="bi-phase__index">M4 · 03 · bottom action plane [I]</span>
         <strong>Giving-A</strong>
       </div>
+      <p class="bi-phase-signature" id="phase-signature">−Φ₅,self, +V₄,other</p>
       <div class="bi-action-plane__map">
         <span class="bi-action-plane__axis bi-action-plane__axis--top">Φ₅ · possible / model</span>
         <span class="bi-action-plane__axis bi-action-plane__axis--left">self / individual · taking</span>

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {chartPoint, intersectLineWithHorizontalPlane, clipRayToRadialWindow,
-  phaseIndexForAzimuth} from './assets/js/burrisphere-math.js';
+  phaseIndexForAzimuth, phaseBoundaryForAzimuth, chartMotion} from './assets/js/burrisphere-math.js';
 
 const near = (a, b, eps = 1e-9) => assert.ok(Math.abs(a-b) <= eps, `${a} != ${b}`);
 const sub = (a, b) => [a.x-b.x, a.y-b.y, a.z-b.z];
@@ -65,4 +65,44 @@ test('invalid numeric inputs and non-axis clipping origins fail closed', () => {
   assert.throws(()=>chartPoint(1, NaN), RangeError);
   assert.throws(()=>chartPoint(1, 0, 0), RangeError);
   assert.throws(()=>clipRayToRadialWindow({x:1,y:0,z:0},{x:2,y:1,z:0},2), RangeError);
+});
+
+test('direction depends on a coordinate change, not position or presumed dynamics', () => {
+  const rad = x => x * Math.PI / 180;
+  for (const [before, after, direction, toward] of [
+    [20,30,'up','equator'], [100,110,'up','north'],
+    [160,150,'down','equator'], [80,70,'down','south'],
+    [70,110,'up','north'], [110,70,'down','south'],
+  ]) {
+    assert.deepEqual(chartMotion(rad(after),rad(before),0,0),{direction,toward,atReference:null});
+  }
+  for (const theta of [0,.5,Math.PI/2,2,Math.PI]) {
+    assert.equal(chartMotion(theta,theta,0,0).direction,'still');
+    assert.equal(chartMotion(theta,theta,0,0).toward,null);
+  }
+  assert.equal(chartMotion(1,1,.2,0).direction,'around');
+  assert.equal(chartMotion(0,0,.2,0).direction,'still');
+  assert.equal(chartMotion(Math.PI,Math.PI,.2,0).direction,'still');
+  assert.equal(chartMotion(1,1,2*Math.PI,0).direction,'still');
+  assert.throws(()=>chartMotion(1,NaN,0,0),RangeError);
+});
+
+test('arrival references do not imply crossings or numerical Titan operations', () => {
+  for (const [before,after,atReference] of [[.1,0,'south'],[1,Math.PI/2,'equator'],[3,Math.PI,'north']]) {
+    assert.equal(chartMotion(after,before,0,0).atReference,atReference);
+  }
+  assert.equal(chartMotion(2,1,0,0).atReference,null,'jump must not claim observed equator arrival');
+});
+
+test('all quadrant seams, wraparound and neighbouring interiors are explicit', () => {
+  for (let turn=-2; turn<=2; turn++) for (let next=0; next<4; next++) {
+    const psi=-Math.PI/2+next*Math.PI/2+turn*2*Math.PI;
+    assert.deepEqual(phaseBoundaryForAzimuth(psi),{previous:(next+3)%4,next});
+    assert.equal(phaseIndexForAzimuth(psi),next);
+    assert.equal(phaseIndexForAzimuth(psi-1e-7),(next+3)%4);
+    assert.equal(phaseIndexForAzimuth(psi+1e-7),next);
+    assert.equal(phaseBoundaryForAzimuth(psi-1e-7),null);
+    assert.equal(phaseBoundaryForAzimuth(psi+1e-7),null);
+  }
+  assert.throws(()=>phaseBoundaryForAzimuth(NaN),RangeError);
 });

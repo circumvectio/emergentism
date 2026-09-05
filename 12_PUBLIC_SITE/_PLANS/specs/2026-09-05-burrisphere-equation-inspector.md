@@ -191,3 +191,74 @@ public source SHA-256 literals. Each was already recomputed against its named
 file. Only those four digest lines received the hook’s documented
 `allow-secret` annotation, explicitly identifying their non-credential role;
 the secret hook itself was not disabled or skipped.
+
+## Live legend refinement — 2026-09-05
+
+Owner direction: show which god/demon move the instrument is reading and which
+Titan reference it approaches during movement. This is a presentation change,
+not promotion of an executed transfer, a moral verdict or a dynamical law.
+
+The compact viewport legend replaces the large introductory title. It reads
+operator names and signatures from the existing source-generated seven-rule
+disclosures. Bearing selects the four M4 aliases; no fresh catalogue is added.
+The workbench repeats the current alias and its exact transfer signature.
+The neutral signature/verdict distinction in G7 §5 remains intact.
+
+The direction reading uses successive chart coordinates:
+
+| Observed θ change | Selected reference [I] |
+|---|---|
+| Up, below the equator | Viṣṇu's balance-equator reference |
+| Up, above the equator | Brahmā's north reference |
+| Down, above the equator | Viṣṇu's balance-equator reference |
+| Down, below the equator | Śiva's south reference |
+
+At a reference the label says `At`; a reset says `Reset`, never a traversed
+history. Viṣṇu's equator correspondence is not identity with the sphere's
+interior centre. A coordinate jump does not establish a continuous crossing.
+The one-turn itinerary resets explicitly to its start before playback.
+
+Pause, slider release, reduced-motion transition and completion clear current
+approach language. Bearing-only motion has no Titan approach. Camera orbit
+changes neither coordinate nor the selected move, and does not mask concurrent
+itinerary motion. At poles bearing is degenerate and no M4 move is assigned.
+Sector seams explicitly retain the increasing-bearing sector; the independent
+seam tolerance is `1e-10` quarter-turn units, not rounded display precision.
+Live announcements change only with semantic labels, not every numeric frame.
+
+Owner's further observation — Titans appear on changes of momentum/rapidity,
+while gods/demons are static — remains a proposed interpretation [C], not an
+implemented physical claim. This instrument has chart position changes but no
+physical mass, momentum, acceleration or relativistic-rapidity model. Moreover,
+the preservation frame can describe a maintained state. Testing a stronger
+dynamical interpretation needs separately declared state variables and a law.
+
+Local verification [B, apparatus-only]:
+
+- Seven-rule source builder `--check`: PASS; generated disclosures and source
+  hashes unchanged.
+- 29 existing focused Python tests and 8 Node test groups: PASS, including the
+  existing 7,200-point straight-projection test and new direction/seam tests.
+- Existing local Playwright 1.49.0 harness: PASS at 1440×1000, 1024×768,
+  768×1024, 390×844, 320×568 and 844×390. All six readouts remain visible;
+  legend/readout separation, overflow, keyboard rules and 48px targets checked.
+- All four aliases and four direction cases; poles, seam exit within the same
+  sector, overlay hiding, camera-only input, concurrent orbit/playback,
+  pause/resume, real one-turn completion and reduced-motion transition: PASS.
+- No-JavaScript rules, fullscreen/denial fallback, context loss and existing
+  idle-render checks: PASS. Zero observed page errors or external resource
+  requests. Desktop/mobile and moving-state screenshots visually inspected.
+- `git diff --check`: PASS. These checks do not certify screen-reader
+  comprehension, all devices, public release, or scientific interpretation.
+
+Rosetta routing: bounded L1 git-path observation; L2 compact-layout alternatives;
+L3 independent review of boundary, reset and stop-state semantics; L4 owns the
+implementation and narrow commit. The standing A3 frozen-record drift HOLD
+remains and no dispatch recorder was retried or bypassed.
+
+Commit boundary: only this receipt, the instrument HTML/CSS/JS, existing math
+module and its Node/browser tests. They form one independently revertible
+feature; source catalogues and canonical claims remain unchanged. Foreign
+website work and shared PWA/service-worker manifests remain untouched. The
+earlier whole-site release blockers are not cleared by this local feature.
+No push or deployment.

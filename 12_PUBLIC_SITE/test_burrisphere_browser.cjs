@@ -36,6 +36,14 @@ const results = [], errors = [], external = [];
         assert.ok(await page.locator('#'+id+'-value').isVisible(), `${id} hidden`);
       }
       assert.ok(await page.locator('.bi-nav a[href="/exit/"]').isVisible());
+      assert.ok(await page.locator('#live-legend').isVisible());
+      assert.match(await page.locator('#legend-move').textContent(),/Kṛṣṇa.*Giving-A/);
+      const legendSpace = await page.evaluate(()=>{
+        const legend=document.querySelector('.bi-thesis').getBoundingClientRect();
+        const hint=document.querySelector('.bi-drag-hint').getBoundingClientRect();
+        return hint.top-legend.bottom;
+      });
+      assert.ok(legendSpace>=45,`legend covers chart ${width}x${height}: ${legendSpace}`);
       const before = await page.locator('#burrisphere-canvas').getAttribute('data-theta-degrees');
       await page.locator('#kali_take_phi summary').focus();
       await page.keyboard.press('Enter');
@@ -56,6 +64,41 @@ const results = [], errors = [], external = [];
     const {ctx,page} = await context({viewport:{width:1440,height:1000}});
     await page.waitForFunction(()=>document.querySelector('#burrisphere-canvas').dataset.camera);
     const canvas = page.locator('#burrisphere-canvas');
+    async function slider(id,value,event='input') {
+      await page.locator('#'+id).evaluate((el,{value,event})=>{el.value=String(value);el.dispatchEvent(new Event(event,{bubbles:true}));},{value,event});
+    }
+    const legend=page.locator('#live-legend');
+    for (const [bearing,operator,alias] of [[-45,'kali_take_phi','Kali'],[45,'kali_take_v','Kālī'],[135,'krishna_give_v','Kṛṣṇa'],[225,'arjuna_give_phi','Arjuna']]) {
+      await slider('axial-rotation',bearing);
+      assert.equal(await legend.getAttribute('data-operator'),operator);
+      assert.ok((await page.locator('#legend-move').textContent()).includes(alias));
+      assert.equal(await legend.getAttribute('data-target'),'','bearing invented Titan approach');
+      assert.match(await page.locator('#phase-signature').textContent(),/[ΦV]/);
+    }
+    await slider('axial-rotation',90);
+    assert.equal(await legend.getAttribute('data-seam'),'true');
+    await slider('axial-rotation',91);
+    assert.equal(await legend.getAttribute('data-seam'),'false','seam retained within same sector');
+    for (const [before,after,target] of [[20,30,'equator'],[100,110,'north'],[160,150,'equator'],[80,70,'south']]) {
+      await slider('polar-angle',before); await slider('polar-angle',after);
+      assert.equal(await legend.getAttribute('data-target'),target);
+      assert.equal(await legend.getAttribute('data-motion'),'moving');
+      await slider('polar-angle',after,'change');
+      assert.equal(await legend.getAttribute('data-motion'),'still');
+      assert.equal(await legend.getAttribute('data-target'),'');
+    }
+    for (const pole of [0,180]) {
+      await slider('polar-angle',pole);
+      assert.equal(await legend.getAttribute('data-operator'),'');
+      assert.match(await page.locator('#legend-move').textContent(),/pole boundary/);
+    }
+    await page.locator('#centre-button').click();
+    assert.match(await page.locator('#legend-direction').textContent(),/Reset.*Viṣṇu/);
+    await page.locator('#overlay-toggle').click();
+    assert.equal(await legend.getAttribute('data-motion'),'hidden');
+    assert.equal(await legend.getAttribute('data-operator'),'');
+    await page.locator('#overlay-toggle').click();
+    await page.locator('#bearing-button').click();
     await page.evaluate(() => {
       document.querySelector('#kali_take_phi summary').click();
       document.querySelector('#kali_take_v summary').click();
@@ -71,8 +114,15 @@ const results = [], errors = [], external = [];
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('#phi-value').textContent(), radial);
     const box = await canvas.boundingBox();
+    const operatorBeforeOrbit = await legend.getAttribute('data-operator');
+    const thetaBeforeOrbit = await canvas.getAttribute('data-theta-degrees');
     await page.mouse.move(box.x+box.width/2,box.y+box.height/2);
-    await page.mouse.down(); await page.mouse.move(box.x+box.width/2+75,box.y+box.height/2+40,{steps:8}); await page.mouse.up();
+    await page.mouse.down(); await page.mouse.move(box.x+box.width/2+75,box.y+box.height/2+40,{steps:8});
+    assert.equal(await legend.getAttribute('data-motion'),'camera');
+    assert.equal(await legend.getAttribute('data-target'),'');
+    await page.mouse.up();
+    assert.equal(await canvas.getAttribute('data-theta-degrees'),thetaBeforeOrbit);
+    assert.equal(await legend.getAttribute('data-operator'),operatorBeforeOrbit);
     await page.waitForFunction(() => {
       const canvas = document.querySelector('#burrisphere-canvas');
       const state = canvas.dataset.camera;
@@ -104,8 +154,33 @@ const results = [], errors = [], external = [];
     await page.waitForFunction(()=>document.querySelector('#runtime-status').textContent.includes('unavailable or declined'));
     await page.locator('#motion-toggle').click();
     await page.waitForTimeout(200);
+    assert.equal(await legend.getAttribute('data-target'),'equator');
+    await page.locator('#motion-toggle').click();
+    assert.equal(await legend.getAttribute('data-motion'),'paused');
+    assert.equal(await legend.getAttribute('data-target'),'');
+    await page.locator('#motion-toggle').click();
     await page.locator('#polar-angle').focus(); await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('#motion-toggle').getAttribute('aria-pressed'),'false');
+    // Let the real 12-second itinerary cross the equator and finish once.
+    await page.locator('#motion-toggle').click();
+    await page.waitForFunction(()=>Number(document.querySelector('#burrisphere-canvas').dataset.thetaDegrees)>105,null,{timeout:15000});
+    assert.equal(await legend.getAttribute('data-target'),'north');
+    await page.mouse.move(box.x+box.width/2,box.y+box.height/2);
+    await page.mouse.down(); await page.mouse.move(box.x+box.width/2+10,box.y+box.height/2+10);
+    assert.equal(await legend.getAttribute('data-motion'),'moving','camera masked concurrent itinerary');
+    await page.mouse.up();
+    await page.screenshot({path:path.join(OUT,'legend-moving.png')});
+    await page.waitForFunction(()=>document.querySelector('#motion-toggle').textContent.includes('Replay'),null,{timeout:15000});
+    assert.equal(await legend.getAttribute('data-motion'),'still');
+    assert.equal(await legend.getAttribute('data-target'),'');
+    assert.equal(await legend.getAttribute('data-operator'),'','completed pole retained move');
+    await page.locator('#motion-toggle').click();
+    await page.waitForTimeout(200);
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await page.waitForFunction(()=>document.querySelector('#motion-toggle').disabled);
+    assert.equal(await legend.getAttribute('data-motion'),'still');
+    assert.equal(await legend.getAttribute('data-target'),'');
+    await page.emulateMedia({reducedMotion:'no-preference'});
     // Actual context loss, not a simulated success status.
     await canvas.evaluate(el=>el.getContext('webgl2').getExtension('WEBGL_lose_context').loseContext());
     await page.waitForFunction(()=>document.body.dataset.webgl==='lost');
@@ -114,7 +189,7 @@ const results = [], errors = [], external = [];
     await page.locator('#vishnu_preserve summary').click();
     assert.ok(await page.locator('#vishnu_preserve').evaluate(el=>el.open));
     await page.screenshot({path:path.join(OUT,'context-lost.png')});
-    results.push({independentCoordinates:true, latestRuleSelection:true, resizePreservesCamera:true, idleRenders:false, fullscreen, denialFallback:true, contextLoss:true});
+    results.push({liveMoveAliases:4,titanDirections:4,seamsAndPoles:true,noCameraMove:true,pauseClearsDirection:true,completeClearsDirection:true,reducedMotionClearsDirection:true,concurrentCameraAndItinerary:true,independentCoordinates:true, latestRuleSelection:true, resizePreservesCamera:true, idleRenders:false, fullscreen, denialFallback:true, contextLoss:true});
     await ctx.close();
 
     for (const mode of ['no-js','reduced']) {
