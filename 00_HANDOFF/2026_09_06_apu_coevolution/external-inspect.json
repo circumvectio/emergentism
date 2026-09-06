@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "questions": [],
+  "inspectPaths": [
+    "README.md",
+    "LICENSE.txt"
+  ]
+}

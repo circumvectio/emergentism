@@ -1,0 +1,73 @@
+{
+  "receipt": {
+    "kind": "apu.local_investigation_receipt",
+    "version": 1,
+    "inputHashes": [
+      {
+        "role": "snapshot",
+        "sha256": "211c131a66c8524763c0073f1201df96fcc97a2e4f163a09e9dad538bacee793"
+      },
+      {
+        "role": "request",
+        "sha256": "82063274fcbb4b6277f2a9ff3d99f573cf3a1094d2b06bad1f92f67747d6ab9d"
+      }
+    ],
+    "engineFiles": [
+      {
+        "path": "scripts/ask_library.mjs",
+        "sha256": "6429715084cc558cff7cd59f50041d5e7f75572bf344217b23c9aac456bdaa43"
+      },
+      {
+        "path": "src/lib/libraryInvestigation.ts",
+        "sha256": "a5d40dd4bd2c47860490dab91b4112b403705aa6f3a59e1342ee55ce4df36944"
+      },
+      {
+        "path": "src/lib/corpusPassages.ts",
+        "sha256": "e6db0d458133288201bc828406068a3e7dd31857ed6b34137360c0bed5a94390"
+      }
+    ],
+    "nodeVersion": "v22.22.3",
+    "reportSha256": "474ce186eaf845bfe8e7dc84c480cc637d49a95ee67cd3bf0dd2da90fddc3de7",
+    "inputsUnchangedAtCheckpoints": true,
+    "networkAttemptsObserved": 0,
+    "providerCalls": 0,
+    "sourceWrites": 0,
+    "output": "stdout-only",
+    "limits": [
+      "Not an OS sandbox",
+      "No normal-app read-only lock",
+      "No connected Soul Loop",
+      "Snapshot provenance is caller-declared",
+      "No semantic answer or authority claim"
+    ]
+  },
+  "inspections": [
+    {
+      "path": "README.md",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "73147458477d90cd6236627cdd9b0871df12e6e8a21d2d0fda6d1ad2826bdc0e",
+      "sourceKind": "reference",
+      "scopeId": "external-author-typescript-5_9_3",
+      "revision": "typescript-5.9.3-installed-package",
+      "capturedAt": "2026-09-06T06:30:46Z",
+      "startLine": 1,
+      "endLine": 51,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    },
+    {
+      "path": "LICENSE.txt",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "sourceKind": "reference",
+      "scopeId": "external-author-typescript-5_9_3",
+      "revision": "typescript-5.9.3-installed-package",
+      "capturedAt": "2026-09-06T06:30:46Z",
+      "startLine": 1,
+      "endLine": 56,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    }
+  ],
+  "indexNote": "Full source text is in external-snapshot.json, omitted here. Inspection does not count as search discovery. Repeated query results must equal the frozen search-only run."
+}

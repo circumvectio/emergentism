@@ -1,0 +1,124 @@
+{
+  "provenance": {
+    "keyStatus": "Previously held in the question-author agent's private session; serialized after retrieval. No durable key file or pre-reveal key hash was created.",
+    "resultsSeen": false,
+    "changesAfterQuestionReveal": "Agent reports no questions, classifications, or decisive ranges changed. Snapshot-relative paths resolved from metadata at key reveal.",
+    "scopeId": "external-author-typescript-5_9_3",
+    "revision": "typescript-5.9.3-installed-package",
+    "sourceHashes": [
+      {
+        "path": "README.md",
+        "sha256": "73147458477d90cd6236627cdd9b0871df12e6e8a21d2d0fda6d1ad2826bdc0e"
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+      }
+    ],
+    "limit": "Source-informed AI-authored text-comprehension keys, not external validation or legal advice. Pre-reveal key immutability is agent-reported, not independently hash-proven."
+  },
+  "keys": [
+    {
+      "id": "T1",
+      "class": "supported",
+      "requiredRanges": [
+        {
+          "path": "LICENSE.txt",
+          "startLine": 49,
+          "endLine": 49
+        }
+      ],
+      "answerRationale": "The default is provision AS IS without warranties, expressly including fitness for a particular purpose. Preserve exceptions where applicable law requires otherwise or the parties agree otherwise in writing, and user responsibility for assessing suitability and risks.",
+      "preExistingAmbiguity": "The phrase 'separate written promise' is broader than 'agreed to in writing.' Not every unilateral written promise satisfies that exception.",
+      "negativeControlWholeSourceInspectionScope": null
+    },
+    {
+      "id": "T2",
+      "class": "unsupported",
+      "requiredRanges": [],
+      "answerRationale": "The README provides installation commands but no minimum Node.js version. The license supplies no compiler runtime requirement. Neither supports a version-number answer.",
+      "preExistingAmbiguity": null,
+      "negativeControlWholeSourceInspectionScope": [
+        {
+          "path": "README.md",
+          "startLine": 1,
+          "endLine": 50
+        },
+        {
+          "path": "LICENSE.txt",
+          "startLine": 1,
+          "endLine": 55
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "class": "supported",
+      "requiredRanges": [
+        {
+          "path": "README.md",
+          "startLine": 16,
+          "endLine": 20
+        },
+        {
+          "path": "README.md",
+          "startLine": 22,
+          "endLine": 26
+        }
+      ],
+      "answerRationale": "Stable: npm install -D typescript. Nightly: npm install -D typescript@next. Both labels and corresponding commands are decisive; an isolated command is insufficient.",
+      "preExistingAmbiguity": null,
+      "negativeControlWholeSourceInspectionScope": null
+    },
+    {
+      "id": "T4",
+      "class": "supported",
+      "requiredRanges": [
+        {
+          "path": "LICENSE.txt",
+          "startLine": 47,
+          "endLine": 47
+        }
+      ],
+      "answerRationale": "No general permission to use the Licensor's trade names, trademarks, service marks, or product names. Preserve the limited exception for reasonable and customary use describing origin and reproducing NOTICE content. Neither unrestricted permission nor exceptionless prohibition.",
+      "preExistingAmbiguity": "The ordinary phrase 'owner's brand names' refers here to the Licensor's listed names and marks; this does not determine rights in unrelated parties' brands.",
+      "negativeControlWholeSourceInspectionScope": null
+    },
+    {
+      "id": "T5",
+      "class": "unsupported",
+      "requiredRanges": [],
+      "answerRationale": "Neither document designates a country's courts or a mandatory forum. Applicable law, litigation, and liability references do not establish jurisdiction or venue.",
+      "preExistingAmbiguity": null,
+      "negativeControlWholeSourceInspectionScope": [
+        {
+          "path": "README.md",
+          "startLine": 1,
+          "endLine": 50
+        },
+        {
+          "path": "LICENSE.txt",
+          "startLine": 1,
+          "endLine": 55
+        }
+      ]
+    },
+    {
+      "id": "T6",
+      "class": "supported",
+      "requiredRanges": [
+        {
+          "path": "README.md",
+          "startLine": 10,
+          "endLine": 10
+        }
+      ],
+      "answerRationale": "Added types are described as optional; TypeScript compiles to readable, standards-based JavaScript. Both points are required.",
+      "preExistingAmbiguity": "Language-description scope only; not that every annotation is optional under every compiler configuration or in every program.",
+      "negativeControlWholeSourceInspectionScope": null
+    }
+  ],
+  "rangeInterpretation": "Inclusive complete coverage, not overlap.",
+  "unsupportedInterpretation": "No supporting answer in the two fully inspected frozen documents; no claim of absence elsewhere.",
+  "transcription": "Parent compact transcription of the revealed key, retaining all decisive ranges, conditions, ambiguity and custody limits."
+}

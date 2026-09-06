@@ -1,0 +1,800 @@
+{
+  "report": {
+    "kind": "apu.library_investigation_batch",
+    "version": 1,
+    "policy": {
+      "version": 1,
+      "maxQuestions": 10,
+      "maxReformulations": 3,
+      "meaning": "Search attempts and source inspections, not answers or semantic support."
+    },
+    "results": [
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T1",
+        "question": "Does the license guarantee that the software will suit my purpose, or can a separate written promise change that?",
+        "original": {
+          "query": "Does the license guarantee that the software will suit my purpose, or can a separate written promise change that?",
+          "contentTerms": [
+            "license",
+            "guarantee",
+            "software",
+            "will",
+            "suit",
+            "purpose",
+            "separate",
+            "written",
+            "promise",
+            "change"
+          ],
+          "guardTerms": [],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 17,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "license fitness for purpose warranty separate written promise",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Treats suitability as fitness for purpose; warranty terminology may narrow the meaning of promise.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "license fitness for purpose warranty separate written promise",
+              "contentTerms": [
+                "license",
+                "fitness",
+                "purpose",
+                "warranty",
+                "separate",
+                "written",
+                "promise"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "CANDIDATES",
+              "hits": [
+                {
+                  "passage": {
+                    "path": "LICENSE.txt",
+                    "kind": "reference",
+                    "sourceSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+                    "revision": "typescript-5.9.3-installed-package",
+                    "startLine": 1,
+                    "endLine": 56,
+                    "excerptSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+                  },
+                  "matchedTerms": [
+                    "license",
+                    "fitness",
+                    "purpose",
+                    "warranty"
+                  ],
+                  "coverage": 0.5714285714285714,
+                  "score": 5.44759086,
+                  "breadcrumb": [],
+                  "documentDeclarations": {},
+                  "sectionComplete": true,
+                  "qualificationCoverage": "NOT_ASSESSED",
+                  "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+                }
+              ],
+              "matchingBlocks": 16,
+              "qualifiedBlocks": 1,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "guarantee",
+              "software",
+              "will",
+              "suit",
+              "change"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "fitness",
+              "warranty"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "software suitability guarantee exception agreed in writing",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Searches for a written exception without assuming one exists; agreement may imply more than a unilateral promise.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "software suitability guarantee exception agreed in writing",
+              "contentTerms": [
+                "software",
+                "suitability",
+                "guarantee",
+                "exception",
+                "agreed",
+                "writing"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 4,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "license",
+              "will",
+              "suit",
+              "purpose",
+              "separate",
+              "written",
+              "promise",
+              "change"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "suitability",
+              "exception",
+              "agreed",
+              "writing"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      },
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T2",
+        "question": "What minimum Node.js version is required to run the compiler?",
+        "original": {
+          "query": "What minimum Node.js version is required to run the compiler?",
+          "contentTerms": [
+            "minimum",
+            "node",
+            "js",
+            "version",
+            "required",
+            "run",
+            "compiler"
+          ],
+          "guardTerms": [],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 7,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "compiler minimum required Node.js version",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Preserves the runtime version question; the compiler remains unspecified.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "compiler minimum required Node.js version",
+              "contentTerms": [
+                "compiler",
+                "minimum",
+                "required",
+                "node",
+                "js",
+                "version"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 7,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "run"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "compiler runtime requirements oldest supported Node.js",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Uses support terminology, which may differ from the oldest version technically capable of running it.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "compiler runtime requirements oldest supported Node.js",
+              "contentTerms": [
+                "compiler",
+                "runtime",
+                "requirements",
+                "oldest",
+                "supported",
+                "node",
+                "js"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "NO_LEXICAL_MATCH",
+              "hits": [],
+              "matchingBlocks": 0,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "minimum",
+              "version",
+              "required",
+              "run"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "runtime",
+              "requirements",
+              "oldest",
+              "supported"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      },
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T3",
+        "question": "How do I install the overnight development build instead of the normal stable release?",
+        "original": {
+          "query": "How do I install the overnight development build instead of the normal stable release?",
+          "contentTerms": [
+            "install",
+            "overnight",
+            "development",
+            "build",
+            "instead",
+            "normal",
+            "stable",
+            "release"
+          ],
+          "guardTerms": [],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 3,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "install nightly development build instead of stable release",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Interprets overnight as nightly; assumes that release label matches the intended build.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "install nightly development build instead of stable release",
+              "contentTerms": [
+                "install",
+                "nightly",
+                "development",
+                "build",
+                "instead",
+                "stable",
+                "release"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 4,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "overnight",
+              "normal"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "nightly"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "development snapshot installation stable release alternative",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Uses snapshot as an alternative term; a snapshot need not be produced overnight.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "development snapshot installation stable release alternative",
+              "contentTerms": [
+                "development",
+                "snapshot",
+                "installation",
+                "stable",
+                "release",
+                "alternative"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 1,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "install",
+              "overnight",
+              "build",
+              "instead",
+              "normal"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "snapshot",
+              "installation",
+              "alternative"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      },
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T4",
+        "question": "Does receiving this license let me use the owner's brand names however I want?",
+        "original": {
+          "query": "Does receiving this license let me use the owner's brand names however I want?",
+          "contentTerms": [
+            "receiving",
+            "license",
+            "let",
+            "use",
+            "owner's",
+            "brand",
+            "names",
+            "however",
+            "want"
+          ],
+          "guardTerms": [],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 16,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "license permission restrictions owner brand names",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Preserves the permission question without assuming unrestricted use is granted.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "license permission restrictions owner brand names",
+              "contentTerms": [
+                "license",
+                "permission",
+                "restrictions",
+                "owner",
+                "brand",
+                "names"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "CANDIDATES",
+              "hits": [
+                {
+                  "passage": {
+                    "path": "LICENSE.txt",
+                    "kind": "reference",
+                    "sourceSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+                    "revision": "typescript-5.9.3-installed-package",
+                    "startLine": 1,
+                    "endLine": 56,
+                    "excerptSha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+                  },
+                  "matchedTerms": [
+                    "license",
+                    "permission",
+                    "names"
+                  ],
+                  "coverage": 0.5,
+                  "score": 3.63779712,
+                  "breadcrumb": [],
+                  "documentDeclarations": {},
+                  "sectionComplete": true,
+                  "qualificationCoverage": "NOT_ASSESSED",
+                  "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+                }
+              ],
+              "matchingBlocks": 16,
+              "qualifiedBlocks": 1,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "receiving",
+              "let",
+              "use",
+              "owner's",
+              "however",
+              "want"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "permission",
+              "restrictions",
+              "owner"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "license trademark trade name rights grant exclusions",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Maps brand names to trademarks and trade names; these categories may not cover every branding use.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "license trademark trade name rights grant exclusions",
+              "contentTerms": [
+                "license",
+                "trademark",
+                "trade",
+                "name",
+                "rights",
+                "grant",
+                "exclusions"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 16,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "receiving",
+              "let",
+              "use",
+              "owner's",
+              "brand",
+              "names",
+              "however",
+              "want"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "trademark",
+              "trade",
+              "name",
+              "rights",
+              "grant",
+              "exclusions"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      },
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T5",
+        "question": "Which country's courts must hear a dispute about this license?",
+        "original": {
+          "query": "Which country's courts must hear a dispute about this license?",
+          "contentTerms": [
+            "country's",
+            "courts",
+            "hear",
+            "dispute",
+            "license"
+          ],
+          "guardTerms": [
+            "must"
+          ],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 15,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "license disputes required court jurisdiction country",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Targets the courts and country; a mandatory forum may not be specified.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "license disputes required court jurisdiction country",
+              "contentTerms": [
+                "license",
+                "disputes",
+                "required",
+                "court",
+                "jurisdiction",
+                "country"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 15,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "country's",
+              "courts",
+              "hear",
+              "dispute"
+            ],
+            "omittedOriginalGuardTerms": [
+              "must"
+            ],
+            "addedContentTerms": [
+              "disputes",
+              "required",
+              "court",
+              "jurisdiction",
+              "country"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "license dispute forum venue exclusive courts",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Uses forum terminology; exclusive may be narrower than the actual dispute clause.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "license dispute forum venue exclusive courts",
+              "contentTerms": [
+                "license",
+                "dispute",
+                "forum",
+                "venue",
+                "exclusive",
+                "courts"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 15,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "country's",
+              "hear"
+            ],
+            "omittedOriginalGuardTerms": [
+              "must"
+            ],
+            "addedContentTerms": [
+              "forum",
+              "venue",
+              "exclusive"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      },
+      {
+        "kind": "apu.library_investigation",
+        "version": 1,
+        "id": "T6",
+        "question": "Do the extra types have to be used, and what language does the compiler output?",
+        "original": {
+          "query": "Do the extra types have to be used, and what language does the compiler output?",
+          "contentTerms": [
+            "extra",
+            "types",
+            "used",
+            "language",
+            "compiler",
+            "output"
+          ],
+          "guardTerms": [],
+          "scopeId": "external-author-typescript-5_9_3",
+          "revision": "typescript-5.9.3-installed-package",
+          "meaning": "Lexical candidates only, not answers, truth, or permission.",
+          "status": "INSUFFICIENT_COVERAGE",
+          "hits": [],
+          "matchingBlocks": 2,
+          "qualifiedBlocks": 0,
+          "omittedForContext": 0
+        },
+        "reformulated": [
+          {
+            "query": "extra types optional or required compiler output language",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Preserves both questions; extra types remains ambiguous.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "extra types optional or required compiler output language",
+              "contentTerms": [
+                "extra",
+                "types",
+                "optional",
+                "required",
+                "compiler",
+                "output",
+                "language"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 5,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "used"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "optional",
+              "required"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          },
+          {
+            "query": "type annotations mandatory emitted code language",
+            "proposedBy": "question-only agent",
+            "basis": "question-only",
+            "rationale": "Interprets extra types as annotations and compiler output as emitted code; either interpretation could narrow the question.",
+            "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+            "result": {
+              "query": "type annotations mandatory emitted code language",
+              "contentTerms": [
+                "type",
+                "annotations",
+                "mandatory",
+                "emitted",
+                "code",
+                "language"
+              ],
+              "guardTerms": [],
+              "scopeId": "external-author-typescript-5_9_3",
+              "revision": "typescript-5.9.3-installed-package",
+              "meaning": "Lexical candidates only, not answers, truth, or permission.",
+              "status": "INSUFFICIENT_COVERAGE",
+              "hits": [],
+              "matchingBlocks": 7,
+              "qualifiedBlocks": 0,
+              "omittedForContext": 0
+            },
+            "omittedOriginalContentTerms": [
+              "extra",
+              "types",
+              "used",
+              "compiler",
+              "output"
+            ],
+            "omittedOriginalGuardTerms": [],
+            "addedContentTerms": [
+              "type",
+              "annotations",
+              "mandatory",
+              "emitted",
+              "code"
+            ],
+            "semanticEquivalence": "NOT_ASSESSED"
+          }
+        ],
+        "qualificationCoverage": "NOT_ASSESSED",
+        "meaning": "Search attempts and source inspections, not answers or semantic support.",
+        "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+      }
+    ],
+    "inspections": [],
+    "actions": [],
+    "providerCalls": 0,
+    "warning": "No answer or adoption verdict. No source, application state, or permissions changed. Caller provenance labels are not attestations."
+  },
+  "receipt": {
+    "kind": "apu.local_investigation_receipt",
+    "version": 1,
+    "inputHashes": [
+      {
+        "role": "snapshot",
+        "sha256": "211c131a66c8524763c0073f1201df96fcc97a2e4f163a09e9dad538bacee793"
+      },
+      {
+        "role": "request",
+        "sha256": "2d231057983bcd1fa5a9351a728d8f216f4258fe09b01cf94dc7c5f439f7f192"
+      }
+    ],
+    "engineFiles": [
+      {
+        "path": "scripts/ask_library.mjs",
+        "sha256": "6429715084cc558cff7cd59f50041d5e7f75572bf344217b23c9aac456bdaa43"
+      },
+      {
+        "path": "src/lib/libraryInvestigation.ts",
+        "sha256": "a5d40dd4bd2c47860490dab91b4112b403705aa6f3a59e1342ee55ce4df36944"
+      },
+      {
+        "path": "src/lib/corpusPassages.ts",
+        "sha256": "e6db0d458133288201bc828406068a3e7dd31857ed6b34137360c0bed5a94390"
+      }
+    ],
+    "nodeVersion": "v22.22.3",
+    "reportSha256": "f83910cc0283499edec1625082517d9e9bedea5555370d559202f1d99fef4194",
+    "inputsUnchangedAtCheckpoints": true,
+    "networkAttemptsObserved": 0,
+    "providerCalls": 0,
+    "sourceWrites": 0,
+    "output": "stdout-only",
+    "limits": [
+      "Not an OS sandbox",
+      "No normal-app read-only lock",
+      "No connected Soul Loop",
+      "Snapshot provenance is caller-declared",
+      "No semantic answer or authority claim"
+    ]
+  },
+  "indexNote": "Compact citation index: passage text is omitted, not an altered report. Reconstruct exact quotes from external-snapshot.json. receipt.reportSha256 hashes the original full report."
+}

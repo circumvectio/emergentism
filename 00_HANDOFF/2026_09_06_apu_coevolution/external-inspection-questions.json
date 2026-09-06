@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "T1",
+      "question": "Does the license guarantee that the software will suit my purpose, or can a separate written promise change that?",
+      "reformulations": [
+        {
+          "query": "license fitness for purpose warranty separate written promise",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Treats suitability as fitness for purpose; warranty terminology may narrow the meaning of promise."
+        },
+        {
+          "query": "software suitability guarantee exception agreed in writing",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Searches for a written exception without assuming one exists; agreement may imply more than a unilateral promise."
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "question": "What minimum Node.js version is required to run the compiler?",
+      "reformulations": [
+        {
+          "query": "compiler minimum required Node.js version",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Preserves the runtime version question; the compiler remains unspecified."
+        },
+        {
+          "query": "compiler runtime requirements oldest supported Node.js",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Uses support terminology, which may differ from the oldest version technically capable of running it."
+        }
+      ]
+    },
+    {
+      "id": "T3",
+      "question": "How do I install the overnight development build instead of the normal stable release?",
+      "reformulations": [
+        {
+          "query": "install nightly development build instead of stable release",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Interprets overnight as nightly; assumes that release label matches the intended build."
+        },
+        {
+          "query": "development snapshot installation stable release alternative",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Uses snapshot as an alternative term; a snapshot need not be produced overnight."
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "question": "Does receiving this license let me use the owner's brand names however I want?",
+      "reformulations": [
+        {
+          "query": "license permission restrictions owner brand names",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Preserves the permission question without assuming unrestricted use is granted."
+        },
+        {
+          "query": "license trademark trade name rights grant exclusions",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Maps brand names to trademarks and trade names; these categories may not cover every branding use."
+        }
+      ]
+    },
+    {
+      "id": "T5",
+      "question": "Which country's courts must hear a dispute about this license?",
+      "reformulations": [
+        {
+          "query": "license disputes required court jurisdiction country",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Targets the courts and country; a mandatory forum may not be specified."
+        },
+        {
+          "query": "license dispute forum venue exclusive courts",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Uses forum terminology; exclusive may be narrower than the actual dispute clause."
+        }
+      ]
+    },
+    {
+      "id": "T6",
+      "question": "Do the extra types have to be used, and what language does the compiler output?",
+      "reformulations": [
+        {
+          "query": "extra types optional or required compiler output language",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Preserves both questions; extra types remains ambiguous."
+        },
+        {
+          "query": "type annotations mandatory emitted code language",
+          "proposedBy": "question-only agent",
+          "basis": "question-only",
+          "rationale": "Interprets extra types as annotations and compiler output as emitted code; either interpretation could narrow the question."
+        }
+      ]
+    }
+  ],
+  "inspectPaths": [
+    "README.md",
+    "LICENSE.txt"
+  ]
+}

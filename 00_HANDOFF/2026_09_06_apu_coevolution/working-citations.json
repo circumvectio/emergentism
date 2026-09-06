@@ -1,0 +1,1853 @@
+{
+  "format": "source-exact-citation-index-v1",
+  "note": "Texts omitted here to avoid another corpus copy; exact ranges and hashes bind reconstruction from the pinned snapshot. Complete runtime report SHA is in receipt. This index is not the full runtime report.",
+  "receipt": {
+    "kind": "apu.local_investigation_receipt",
+    "version": 1,
+    "inputHashes": [
+      {
+        "role": "snapshot",
+        "sha256": "7cd073c046e51f102f1a644ba501e93b85ea37bbf97eb344dc42b93913ad5ee2"
+      },
+      {
+        "role": "request",
+        "sha256": "db2ae674aca0387ec5d04c3414ff55bc7628bf676d2f22ea8e107fdeb3ff83ea"
+      }
+    ],
+    "engineFiles": [
+      {
+        "path": "scripts/ask_library.mjs",
+        "sha256": "6429715084cc558cff7cd59f50041d5e7f75572bf344217b23c9aac456bdaa43"
+      },
+      {
+        "path": "src/lib/libraryInvestigation.ts",
+        "sha256": "a5d40dd4bd2c47860490dab91b4112b403705aa6f3a59e1342ee55ce4df36944"
+      },
+      {
+        "path": "src/lib/corpusPassages.ts",
+        "sha256": "e6db0d458133288201bc828406068a3e7dd31857ed6b34137360c0bed5a94390"
+      }
+    ],
+    "nodeVersion": "v22.22.3",
+    "reportSha256": "e92f956cbbddb86f5c84b093d70eae829cc2183df1829287aa6b4e1c57c39faa",
+    "inputsUnchangedAtCheckpoints": true,
+    "networkAttemptsObserved": 0,
+    "providerCalls": 0,
+    "sourceWrites": 0,
+    "output": "stdout-only",
+    "limits": [
+      "Not an OS sandbox",
+      "No normal-app read-only lock",
+      "No connected Soul Loop",
+      "Snapshot provenance is caller-declared",
+      "No semantic answer or authority claim"
+    ]
+  },
+  "results": [
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E1",
+      "question": "Can cooperation alone guarantee that maximizing my power is fair to everyone?",
+      "original": {
+        "query": "Can cooperation alone guarantee that maximizing my power is fair to everyone?",
+        "contentTerms": [
+          "cooperation",
+          "alone",
+          "guarantee",
+          "maximizing",
+          "power",
+          "fair",
+          "everyone"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "INSUFFICIENT_COVERAGE",
+        "hits": [],
+        "matchingBlocks": 39,
+        "qualifiedBlocks": 0,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "coupling cooperation optimal",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "coupling cooperation optimal",
+            "contentTerms": [
+              "coupling",
+              "cooperation",
+              "optimal"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+                  "kind": "reference",
+                  "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 97,
+                  "endLine": 161,
+                  "excerptSha256": "72d5f9015467537b40f1d57641211dc82b61bdb621d27645149a069d7bc7db3f"
+                },
+                "matchedTerms": [
+                  "cooperation",
+                  "optimal"
+                ],
+                "coverage": 0.6666666666666666,
+                "score": 6.09059977,
+                "breadcrumb": [
+                  "Power-Max — Justice-Constrained Objective",
+                  "4. What coupling proves—and does not prove"
+                ],
+                "documentDeclarations": {
+                  "title": "\"Power-Max — Justice-Constrained Objective\"",
+                  "status": "\"ACTIVE FORMAL OWNER — Φ₅/V₄ typing amended 2026-07-27\"",
+                  "evidence_tier": "\"[A/S] optimization facts under declared assumptions; [I] selected objective and Justice envelope; [C] empirical adequacy\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 10,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "alone",
+            "guarantee",
+            "maximizing",
+            "power",
+            "fair",
+            "everyone"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "coupling",
+            "optimal"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "Justice admissible actions",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "Justice admissible actions",
+            "contentTerms": [
+              "justice",
+              "admissible",
+              "actions"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+                  "kind": "reference",
+                  "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 72,
+                  "endLine": 96,
+                  "excerptSha256": "7cca2a0d78716eb320294e0a3dffabb63b8e4d558d665b96909d763bfaf2b590"
+                },
+                "matchedTerms": [
+                  "justice",
+                  "admissible",
+                  "actions"
+                ],
+                "coverage": 1,
+                "score": 10.81101829,
+                "breadcrumb": [
+                  "Power-Max — Justice-Constrained Objective",
+                  "3. The selected ordering discipline"
+                ],
+                "documentDeclarations": {
+                  "title": "\"Power-Max — Justice-Constrained Objective\"",
+                  "status": "\"ACTIVE FORMAL OWNER — Φ₅/V₄ typing amended 2026-07-27\"",
+                  "evidence_tier": "\"[A/S] optimization facts under declared assumptions; [I] selected objective and Justice envelope; [C] empirical adequacy\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+                  "kind": "reference",
+                  "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 97,
+                  "endLine": 161,
+                  "excerptSha256": "72d5f9015467537b40f1d57641211dc82b61bdb621d27645149a069d7bc7db3f"
+                },
+                "matchedTerms": [
+                  "justice",
+                  "admissible"
+                ],
+                "coverage": 0.6666666666666666,
+                "score": 4.39714741,
+                "breadcrumb": [
+                  "Power-Max — Justice-Constrained Objective",
+                  "4. What coupling proves—and does not prove"
+                ],
+                "documentDeclarations": {
+                  "title": "\"Power-Max — Justice-Constrained Objective\"",
+                  "status": "\"ACTIVE FORMAL OWNER — Φ₅/V₄ typing amended 2026-07-27\"",
+                  "evidence_tier": "\"[A/S] optimization facts under declared assumptions; [I] selected objective and Justice envelope; [C] empirical adequacy\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 35,
+            "qualifiedBlocks": 5,
+            "omittedForContext": 1
+          },
+          "omittedOriginalContentTerms": [
+            "cooperation",
+            "alone",
+            "guarantee",
+            "maximizing",
+            "power",
+            "fair",
+            "everyone"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "justice",
+            "admissible",
+            "actions"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    },
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E2",
+      "question": "Does the sphere prove that I should multiply mental and physical power?",
+      "original": {
+        "query": "Does the sphere prove that I should multiply mental and physical power?",
+        "contentTerms": [
+          "sphere",
+          "prove",
+          "multiply",
+          "mental",
+          "physical",
+          "power"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "CANDIDATES",
+        "hits": [
+          {
+            "passage": {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            "matchedTerms": [
+              "sphere",
+              "physical",
+              "power"
+            ],
+            "coverage": 0.5,
+            "score": 4.72809632,
+            "breadcrumb": [
+              "The Emergentist Weltanschauung",
+              "1 · The Creed, priced"
+            ],
+            "documentDeclarations": {
+              "title": "\"The Emergentist Weltanschauung\"",
+              "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+              "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+            },
+            "sectionComplete": true,
+            "qualificationCoverage": "NOT_ASSESSED",
+            "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+          }
+        ],
+        "matchingBlocks": 74,
+        "qualifiedBlocks": 1,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "chart facts",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "chart facts",
+            "contentTerms": [
+              "chart",
+              "facts"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+                  "kind": "reference",
+                  "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 38,
+                  "endLine": 73,
+                  "excerptSha256": "9c0e164378250dbc6d3093975d13ecbd178f2fd0bc7ff2254b8f5cb1e74e0282"
+                },
+                "matchedTerms": [
+                  "chart",
+                  "facts"
+                ],
+                "coverage": 1,
+                "score": 7.12199582,
+                "breadcrumb": [
+                  "The Canonical Formula Block",
+                  "Meaning"
+                ],
+                "documentDeclarations": {},
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+                  "kind": "reference",
+                  "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 272,
+                  "endLine": 289,
+                  "excerptSha256": "149ffb5c8b7eca0b4eddfd88f63734d179962990c4d704b55e388fdfc1e54617"
+                },
+                "matchedTerms": [
+                  "chart",
+                  "facts"
+                ],
+                "coverage": 1,
+                "score": 7.12199582,
+                "breadcrumb": [
+                  "The Canonical Formula Block",
+                  "Paired Canonical Documents"
+                ],
+                "documentDeclarations": {},
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 30,
+            "qualifiedBlocks": 2,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "sphere",
+            "prove",
+            "multiply",
+            "mental",
+            "physical",
+            "power"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "chart",
+            "facts"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "product retired ranking",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "product retired ranking",
+            "contentTerms": [
+              "product",
+              "retired",
+              "ranking"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 45,
+                  "endLine": 69,
+                  "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+                },
+                "matchedTerms": [
+                  "product",
+                  "retired",
+                  "ranking"
+                ],
+                "coverage": 1,
+                "score": 10.14830802,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "1 · The Creed, priced"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 207,
+                  "endLine": 220,
+                  "excerptSha256": "92fbf11bac708287ed8ba244be96ef9b6aed6d69acb4acb33c8c338aa4114a66"
+                },
+                "matchedTerms": [
+                  "product",
+                  "retired",
+                  "ranking"
+                ],
+                "coverage": 1,
+                "score": 10.14830802,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "5 · The three `P` registers"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+                  "kind": "reference",
+                  "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 121,
+                  "endLine": 139,
+                  "excerptSha256": "7211c718c00e75f21d2e1ef03558af016ea5f9d14317c62a58321c8e462e3427"
+                },
+                "matchedTerms": [
+                  "product",
+                  "retired",
+                  "ranking"
+                ],
+                "coverage": 1,
+                "score": 10.14830802,
+                "breadcrumb": [
+                  "The Canonical Formula Block",
+                  "Anti-Drift Rule"
+                ],
+                "documentDeclarations": {},
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+                  "kind": "reference",
+                  "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 140,
+                  "endLine": 243,
+                  "excerptSha256": "388a0741929a073decba348b88a065f968b114b330a4bcc1e6514972c09aacbc"
+                },
+                "matchedTerms": [
+                  "product",
+                  "retired",
+                  "ranking"
+                ],
+                "coverage": 1,
+                "score": 10.14830802,
+                "breadcrumb": [
+                  "The Canonical Formula Block",
+                  "Finite-node conjunctive model"
+                ],
+                "documentDeclarations": {},
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+                  "kind": "reference",
+                  "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 17,
+                  "endLine": 40,
+                  "excerptSha256": "9f8fd46c5f5e82547b8bf27c923f412b4c2424809e30c55470dc255ad53c57cd"
+                },
+                "matchedTerms": [
+                  "product",
+                  "retired",
+                  "ranking"
+                ],
+                "coverage": 1,
+                "score": 10.14830802,
+                "breadcrumb": [
+                  "Power-Max — Justice-Constrained Objective",
+                  "1. Durable potential"
+                ],
+                "documentDeclarations": {
+                  "title": "\"Power-Max — Justice-Constrained Objective\"",
+                  "status": "\"ACTIVE FORMAL OWNER — Φ₅/V₄ typing amended 2026-07-27\"",
+                  "evidence_tier": "\"[A/S] optimization facts under declared assumptions; [I] selected objective and Justice envelope; [C] empirical adequacy\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 32,
+            "qualifiedBlocks": 11,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "sphere",
+            "prove",
+            "multiply",
+            "mental",
+            "physical",
+            "power"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "product",
+            "retired",
+            "ranking"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "calibration contract",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "calibration contract",
+            "contentTerms": [
+              "calibration",
+              "contract"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+                  "kind": "reference",
+                  "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 140,
+                  "endLine": 243,
+                  "excerptSha256": "388a0741929a073decba348b88a065f968b114b330a4bcc1e6514972c09aacbc"
+                },
+                "matchedTerms": [
+                  "calibration",
+                  "contract"
+                ],
+                "coverage": 1,
+                "score": 8.98386091,
+                "breadcrumb": [
+                  "The Canonical Formula Block",
+                  "Finite-node conjunctive model"
+                ],
+                "documentDeclarations": {},
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+                  "kind": "reference",
+                  "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 338,
+                  "endLine": 368,
+                  "excerptSha256": "ab661a518ac8dbca2b88780f3f238af58d9e41c114eecec5745a08c7a76926fa"
+                },
+                "matchedTerms": [
+                  "calibration",
+                  "contract"
+                ],
+                "coverage": 1,
+                "score": 8.98386091,
+                "breadcrumb": [
+                  "The Degrees-of-Freedom Ontology",
+                  "5 · What survives, and the honest limit"
+                ],
+                "documentDeclarations": {
+                  "status": "\"ACTIVE — sole degrees-of-freedom owner at stated tiers; pure standalone ontology\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 7,
+            "qualifiedBlocks": 2,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "sphere",
+            "prove",
+            "multiply",
+            "mental",
+            "physical",
+            "power"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "calibration",
+            "contract"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    },
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E3",
+      "question": "Are seven Rosetta moves the same as seven jobs for agents?",
+      "original": {
+        "query": "Are seven Rosetta moves the same as seven jobs for agents?",
+        "contentTerms": [
+          "seven",
+          "rosetta",
+          "moves",
+          "same",
+          "jobs",
+          "agents"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "CANDIDATES",
+        "hits": [
+          {
+            "passage": {
+              "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+              "kind": "reference",
+              "sourceSha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 134,
+              "endLine": 147,
+              "excerptSha256": "ae36eb85b6f67073c983a4fb8f8d0f8e52ac2bf63df369236f00634d28af81c0"
+            },
+            "matchedTerms": [
+              "rosetta",
+              "same",
+              "agents"
+            ],
+            "coverage": 0.5,
+            "score": 5.16772757,
+            "breadcrumb": [
+              "The Seven Seats — the full row",
+              "4 · Provenance — every column, re-read 2026-08-14"
+            ],
+            "documentDeclarations": {
+              "title": "\"The Full Rosetta, Corrected — the seven seats on one row, with pramāṇa and the F3 keys\"",
+              "status": "\"ACTIVE — CORRECTED. Renamed from 38_THE_SEVEN_SEATS_FULL_ROW_2026_08_14 on 2026-08-14 to make the corrections explicit. The corrections are: (a) F3 keys are brahma_create / shiva_dissolve / vishnu_preserve, never the rejected give_p / take_p / maximize_p; (b) the pramāṇa column is canonical (Pratyakṣa / Upamāna / Anumāna / Arthāpatti / Śabda / Anupalabdhi / Pratibhā); (c) the L4 = equator, L7 = pole reading is given the P_node := min(Φ̂₄, V₄) operational test that holds only under min, not under product forms. Extends 36 §2 (Theme I) and 37 §III (Knowing — pramāṇa, discipline, question). 36 and 37 are already correct on the F3 keys. Every cell is traced to a source below.\"",
+              "evidence_tier": "\"[A] the chart identities in §3, given the selection; [B] every cell traced to the source named in §4 and re-read 2026-08-14; [S] assembling twelve columns onto one row; [I] inherited unchanged on every cross-domain cell\""
+            },
+            "sectionComplete": true,
+            "qualificationCoverage": "NOT_ASSESSED",
+            "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+          }
+        ],
+        "matchingBlocks": 58,
+        "qualifiedBlocks": 1,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "GEN7 G7",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "GEN7 G7",
+            "contentTerms": [
+              "gen7",
+              "g7"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+                  "kind": "reference",
+                  "sourceSha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 78,
+                  "endLine": 100,
+                  "excerptSha256": "608901e6b1bf4b4dc488475cc77eecae3cc1a616272f7b06752a9fd47748940b"
+                },
+                "matchedTerms": [
+                  "gen7",
+                  "g7"
+                ],
+                "coverage": 1,
+                "score": 8.60324856,
+                "breadcrumb": [
+                  "The Seven Seats — the full row",
+                  "2 · The move grammar — `G7@1` is a partition, not a column"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Full Rosetta, Corrected — the seven seats on one row, with pramāṇa and the F3 keys\"",
+                  "status": "\"ACTIVE — CORRECTED. Renamed from 38_THE_SEVEN_SEATS_FULL_ROW_2026_08_14 on 2026-08-14 to make the corrections explicit. The corrections are: (a) F3 keys are brahma_create / shiva_dissolve / vishnu_preserve, never the rejected give_p / take_p / maximize_p; (b) the pramāṇa column is canonical (Pratyakṣa / Upamāna / Anumāna / Arthāpatti / Śabda / Anupalabdhi / Pratibhā); (c) the L4 = equator, L7 = pole reading is given the P_node := min(Φ̂₄, V₄) operational test that holds only under min, not under product forms. Extends 36 §2 (Theme I) and 37 §III (Knowing — pramāṇa, discipline, question). 36 and 37 are already correct on the F3 keys. Every cell is traced to a source below.\"",
+                  "evidence_tier": "\"[A] the chart identities in §3, given the selection; [B] every cell traced to the source named in §4 and re-read 2026-08-14; [S] assembling twelve columns onto one row; [I] inherited unchanged on every cross-domain cell\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 20,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "seven",
+            "rosetta",
+            "moves",
+            "same",
+            "jobs",
+            "agents"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "gen7",
+            "g7"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "seven symbols",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "seven symbols",
+            "contentTerms": [
+              "seven",
+              "symbols"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 45,
+                  "endLine": 69,
+                  "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+                },
+                "matchedTerms": [
+                  "seven",
+                  "symbols"
+                ],
+                "coverage": 1,
+                "score": 8.17599166,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "1 · The Creed, priced"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+                  "kind": "reference",
+                  "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 43,
+                  "endLine": 70,
+                  "excerptSha256": "e03b822418a1a14bb07c50246a01f8a3d4b87d2b8b9877ac481ea368cdcdb79a"
+                },
+                "matchedTerms": [
+                  "seven",
+                  "symbols"
+                ],
+                "coverage": 1,
+                "score": 8.17599166,
+                "breadcrumb": [
+                  "The D5 Rosetta Stone — G7",
+                  "2. Construction"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The D5 Rosetta Stone — G7\"",
+                  "status": "\"ACTIVE D5 ROSETTA / GAME-VOCABULARY OWNER — signature/verdict split reaffirmed 2026-08-24\"",
+                  "evidence_tier": "\"[S] closure inside the declared vocabulary; [I] names and readings; [C] adequacy beyond the game\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 15,
+            "qualifiedBlocks": 3,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "rosetta",
+            "moves",
+            "same",
+            "jobs",
+            "agents"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "symbols"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "bearer orientations",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "bearer orientations",
+            "contentTerms": [
+              "bearer",
+              "orientations"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+                  "kind": "reference",
+                  "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 43,
+                  "endLine": 70,
+                  "excerptSha256": "e03b822418a1a14bb07c50246a01f8a3d4b87d2b8b9877ac481ea368cdcdb79a"
+                },
+                "matchedTerms": [
+                  "bearer",
+                  "orientations"
+                ],
+                "coverage": 1,
+                "score": 7.99708714,
+                "breadcrumb": [
+                  "The D5 Rosetta Stone — G7",
+                  "2. Construction"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The D5 Rosetta Stone — G7\"",
+                  "status": "\"ACTIVE D5 ROSETTA / GAME-VOCABULARY OWNER — signature/verdict split reaffirmed 2026-08-24\"",
+                  "evidence_tier": "\"[S] closure inside the declared vocabulary; [I] names and readings; [C] adequacy beyond the game\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 39,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "seven",
+            "rosetta",
+            "moves",
+            "same",
+            "jobs",
+            "agents"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "bearer",
+            "orientations"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    },
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E4",
+      "question": "Does having an internal answer mean we have experimentally solved consciousness?",
+      "original": {
+        "query": "Does having an internal answer mean we have experimentally solved consciousness?",
+        "contentTerms": [
+          "having",
+          "internal",
+          "answer",
+          "mean",
+          "experimentally",
+          "solved",
+          "consciousness"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "INSUFFICIENT_COVERAGE",
+        "hits": [],
+        "matchingBlocks": 33,
+        "qualifiedBlocks": 0,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "internal answers external debts",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "internal answers external debts",
+            "contentTerms": [
+              "internal",
+              "answers",
+              "external",
+              "debts"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 145,
+                  "endLine": 176,
+                  "excerptSha256": "b880b3646e47192deecf01fd044474166ddc4d443b7f659a501179717b98100b"
+                },
+                "matchedTerms": [
+                  "internal",
+                  "answers",
+                  "external",
+                  "debts"
+                ],
+                "coverage": 1,
+                "score": 15.98231969,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "3B · Ten internal answers, ten visible debts"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 119,
+                  "endLine": 144,
+                  "excerptSha256": "10b899a8c8bd7498364d96d564eebec696ded4e2aac096401dc173a3dd0ee09b"
+                },
+                "matchedTerms": [
+                  "internal",
+                  "external",
+                  "debts"
+                ],
+                "coverage": 0.75,
+                "score": 8.82526689,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "3A · Accounting, not completion"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+                  "kind": "reference",
+                  "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 672,
+                  "endLine": 684,
+                  "excerptSha256": "54a4bc4b9b6244c3a32cac9b6f6d5d83e0bab2fa9be9bb7692dfcb7ed47f0f52"
+                },
+                "matchedTerms": [
+                  "answers",
+                  "external"
+                ],
+                "coverage": 0.5,
+                "score": 4.04011429,
+                "breadcrumb": [
+                  "The Ten Emergentist Answers",
+                  "11 · One compression"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Ten Emergentist Answers — Internal Closure, External Contact\"",
+                  "status": "\"ACTIVE — EA-01…EA-10 owner-adopted internally; no external validation or PQA resolution implied\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+                  "kind": "reference",
+                  "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 685,
+                  "endLine": 702,
+                  "excerptSha256": "5ac7e551ccb40d98713563ccc74fbc258a46778d3a30fd511cf63aed9c95a3fe"
+                },
+                "matchedTerms": [
+                  "internal",
+                  "answers"
+                ],
+                "coverage": 0.5,
+                "score": 3.95104556,
+                "breadcrumb": [
+                  "The Ten Emergentist Answers",
+                  "12 · What “answered” now means"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Ten Emergentist Answers — Internal Closure, External Contact\"",
+                  "status": "\"ACTIVE — EA-01…EA-10 owner-adopted internally; no external validation or PQA resolution implied\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "00_THE_KERNEL_INDEX.md",
+                  "kind": "reference",
+                  "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 50,
+                  "endLine": 122,
+                  "excerptSha256": "6e653c0df5f4591f6a5f84435419185ad796fea28b0147e0afa0dde37d1f5c3e"
+                },
+                "matchedTerms": [
+                  "internal",
+                  "external"
+                ],
+                "coverage": 0.5,
+                "score": 3.77586267,
+                "breadcrumb": [
+                  "The Kernel Index",
+                  "The seven surfaces"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Kernel Index — seven surfaces, one open door\"",
+                  "status": "\"ACTIVE — dimension-first editorial architecture; source claims retain their stated tiers\"",
+                  "evidence_tier": "\"[I] editorial selection; this index creates no theorem or world fact\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 24,
+            "qualifiedBlocks": 5,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "having",
+            "answer",
+            "mean",
+            "experimentally",
+            "solved",
+            "consciousness"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "answers",
+            "external",
+            "debts"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "phenomenal actualization",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "phenomenal actualization",
+            "contentTerms": [
+              "phenomenal",
+              "actualization"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 119,
+                  "endLine": 144,
+                  "excerptSha256": "10b899a8c8bd7498364d96d564eebec696ded4e2aac096401dc173a3dd0ee09b"
+                },
+                "matchedTerms": [
+                  "phenomenal",
+                  "actualization"
+                ],
+                "coverage": 1,
+                "score": 7.73990874,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "3A · Accounting, not completion"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 145,
+                  "endLine": 176,
+                  "excerptSha256": "b880b3646e47192deecf01fd044474166ddc4d443b7f659a501179717b98100b"
+                },
+                "matchedTerms": [
+                  "phenomenal",
+                  "actualization"
+                ],
+                "coverage": 1,
+                "score": 7.73990874,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "3B · Ten internal answers, ten visible debts"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+                  "kind": "reference",
+                  "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 193,
+                  "endLine": 273,
+                  "excerptSha256": "3c979a4e23923cd26ad31c4d0b1919055c3ab009587b587c386ddce3bd6547de"
+                },
+                "matchedTerms": [
+                  "phenomenal",
+                  "actualization"
+                ],
+                "coverage": 1,
+                "score": 7.73990874,
+                "breadcrumb": [
+                  "The Ten Emergentist Answers",
+                  "3 · EA-03 — The Phenomenal Actualization Identity",
+                  "Selected answer"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Ten Emergentist Answers — Internal Closure, External Contact\"",
+                  "status": "\"ACTIVE — EA-01…EA-10 owner-adopted internally; no external validation or PQA resolution implied\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+                  "kind": "reference",
+                  "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 627,
+                  "endLine": 671,
+                  "excerptSha256": "e7191f7bf9c51e6e951fd349e7a13df97a99c41e95704eb664364c05f416aa07"
+                },
+                "matchedTerms": [
+                  "phenomenal",
+                  "actualization"
+                ],
+                "coverage": 1,
+                "score": 7.73990874,
+                "breadcrumb": [
+                  "The Ten Emergentist Answers",
+                  "10 · EA-10 — Definite Outcome as Actualization",
+                  "Selected answer"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Ten Emergentist Answers — Internal Closure, External Contact\"",
+                  "status": "\"ACTIVE — EA-01…EA-10 owner-adopted internally; no external validation or PQA resolution implied\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 14,
+            "qualifiedBlocks": 4,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "having",
+            "internal",
+            "answer",
+            "mean",
+            "experimentally",
+            "solved",
+            "consciousness"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "phenomenal",
+            "actualization"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "empirical contact",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "empirical contact",
+            "contentTerms": [
+              "empirical",
+              "contact"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 145,
+                  "endLine": 176,
+                  "excerptSha256": "b880b3646e47192deecf01fd044474166ddc4d443b7f659a501179717b98100b"
+                },
+                "matchedTerms": [
+                  "empirical",
+                  "contact"
+                ],
+                "coverage": 1,
+                "score": 6.76367105,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "3B · Ten internal answers, ten visible debts"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              },
+              {
+                "passage": {
+                  "path": "00_THE_WELTANSCHAUUNG.md",
+                  "kind": "reference",
+                  "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 541,
+                  "endLine": 593,
+                  "excerptSha256": "b37baed92b86e98ba982f822667ce369b04c383f4ef715649cfa9f211d17c376"
+                },
+                "matchedTerms": [
+                  "empirical",
+                  "contact"
+                ],
+                "coverage": 1,
+                "score": 6.76367105,
+                "breadcrumb": [
+                  "The Emergentist Weltanschauung",
+                  "Provenance"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Emergentist Weltanschauung\"",
+                  "status": "\"ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22\"",
+                  "evidence_tier": "\"[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 28,
+            "qualifiedBlocks": 3,
+            "omittedForContext": 1
+          },
+          "omittedOriginalContentTerms": [
+            "having",
+            "internal",
+            "answer",
+            "mean",
+            "experimentally",
+            "solved",
+            "consciousness"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "empirical",
+            "contact"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    },
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E5",
+      "question": "Should the library keep every record forever, even after someone asks for deletion?",
+      "original": {
+        "query": "Should the library keep every record forever, even after someone asks for deletion?",
+        "contentTerms": [
+          "library",
+          "keep",
+          "every",
+          "record",
+          "forever",
+          "even",
+          "after",
+          "asks",
+          "deletion"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "INSUFFICIENT_COVERAGE",
+        "hits": [],
+        "matchingBlocks": 87,
+        "qualifiedBlocks": 0,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "valid deletion duties",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "valid deletion duties",
+            "contentTerms": [
+              "valid",
+              "deletion",
+              "duties"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+                  "kind": "reference",
+                  "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 10,
+                  "endLine": 48,
+                  "excerptSha256": "9ac3392b1b3e88824f7e026ada215a087fdd836be161de1e7177af65391d774b"
+                },
+                "matchedTerms": [
+                  "valid",
+                  "deletion",
+                  "duties"
+                ],
+                "coverage": 1,
+                "score": 14.87891191,
+                "breadcrumb": [
+                  "The Public Wisdom Compact",
+                  "Kill criteria"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Public Wisdom Compact\"",
+                  "status": "\"LOCAL CANDIDATE\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 6,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "library",
+            "keep",
+            "every",
+            "record",
+            "forever",
+            "even",
+            "after",
+            "asks"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "valid",
+            "duties"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "preserve ancestry",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "preserve ancestry",
+            "contentTerms": [
+              "preserve",
+              "ancestry"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+                  "kind": "reference",
+                  "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 10,
+                  "endLine": 48,
+                  "excerptSha256": "9ac3392b1b3e88824f7e026ada215a087fdd836be161de1e7177af65391d774b"
+                },
+                "matchedTerms": [
+                  "preserve",
+                  "ancestry"
+                ],
+                "coverage": 1,
+                "score": 9.67275276,
+                "breadcrumb": [
+                  "The Public Wisdom Compact"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Public Wisdom Compact\"",
+                  "status": "\"LOCAL CANDIDATE\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 6,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "library",
+            "keep",
+            "every",
+            "record",
+            "forever",
+            "even",
+            "after",
+            "asks",
+            "deletion"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "preserve",
+            "ancestry"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    },
+    {
+      "kind": "apu.library_investigation",
+      "version": 1,
+      "id": "E6",
+      "question": "Can our cross-product loop adopt its own improvements?",
+      "original": {
+        "query": "Can our cross-product loop adopt its own improvements?",
+        "contentTerms": [
+          "cross",
+          "product",
+          "loop",
+          "adopt",
+          "own",
+          "improvements"
+        ],
+        "guardTerms": [],
+        "scopeId": "emergentism-reader-pilot-2026-09-06",
+        "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "meaning": "Lexical candidates only, not answers, truth, or permission.",
+        "status": "CANDIDATES",
+        "hits": [
+          {
+            "passage": {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "kind": "reference",
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 10,
+              "endLine": 48,
+              "excerptSha256": "9ac3392b1b3e88824f7e026ada215a087fdd836be161de1e7177af65391d774b"
+            },
+            "matchedTerms": [
+              "product",
+              "loop",
+              "own"
+            ],
+            "coverage": 0.5,
+            "score": 5.29594487,
+            "breadcrumb": [
+              "The Public Wisdom Compact"
+            ],
+            "documentDeclarations": {
+              "title": "\"The Public Wisdom Compact\"",
+              "status": "\"LOCAL CANDIDATE\""
+            },
+            "sectionComplete": true,
+            "qualificationCoverage": "NOT_ASSESSED",
+            "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+          }
+        ],
+        "matchingBlocks": 53,
+        "qualifiedBlocks": 1,
+        "omittedForContext": 0
+      },
+      "reformulated": [
+        {
+          "query": "nothing promotes itself",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "nothing promotes itself",
+            "contentTerms": [
+              "nothing",
+              "promotes",
+              "itself"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+                  "kind": "reference",
+                  "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 10,
+                  "endLine": 48,
+                  "excerptSha256": "9ac3392b1b3e88824f7e026ada215a087fdd836be161de1e7177af65391d774b"
+                },
+                "matchedTerms": [
+                  "nothing",
+                  "promotes",
+                  "itself"
+                ],
+                "coverage": 1,
+                "score": 12.56319471,
+                "breadcrumb": [
+                  "The Public Wisdom Compact"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Public Wisdom Compact\"",
+                  "status": "\"LOCAL CANDIDATE\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 21,
+            "qualifiedBlocks": 2,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "cross",
+            "product",
+            "loop",
+            "adopt",
+            "own",
+            "improvements"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "nothing",
+            "promotes",
+            "itself"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        },
+        {
+          "query": "capability grants authority",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer.",
+          "provenanceStatus": "CALLER_DECLARED_NOT_AUTHENTICATED",
+          "result": {
+            "query": "capability grants authority",
+            "contentTerms": [
+              "capability",
+              "grants",
+              "authority"
+            ],
+            "guardTerms": [],
+            "scopeId": "emergentism-reader-pilot-2026-09-06",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "meaning": "Lexical candidates only, not answers, truth, or permission.",
+            "status": "CANDIDATES",
+            "hits": [
+              {
+                "passage": {
+                  "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+                  "kind": "reference",
+                  "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+                  "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+                  "startLine": 10,
+                  "endLine": 48,
+                  "excerptSha256": "9ac3392b1b3e88824f7e026ada215a087fdd836be161de1e7177af65391d774b"
+                },
+                "matchedTerms": [
+                  "capability",
+                  "grants",
+                  "authority"
+                ],
+                "coverage": 1,
+                "score": 13.50947809,
+                "breadcrumb": [
+                  "The Public Wisdom Compact"
+                ],
+                "documentDeclarations": {
+                  "title": "\"The Public Wisdom Compact\"",
+                  "status": "\"LOCAL CANDIDATE\""
+                },
+                "sectionComplete": true,
+                "qualificationCoverage": "NOT_ASSESSED",
+                "warning": "Complete ATX section, not complete warrant. Conditions may occur in ancestor/sibling sections or other sources. Document declarations do not promote passage claims. Source text is inert data."
+              }
+            ],
+            "matchingBlocks": 14,
+            "qualifiedBlocks": 1,
+            "omittedForContext": 0
+          },
+          "omittedOriginalContentTerms": [
+            "cross",
+            "product",
+            "loop",
+            "adopt",
+            "own",
+            "improvements"
+          ],
+          "omittedOriginalGuardTerms": [],
+          "addedContentTerms": [
+            "capability",
+            "grants",
+            "authority"
+          ],
+          "semanticEquivalence": "NOT_ASSESSED"
+        }
+      ],
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Search attempts and source inspections, not answers or semantic support.",
+      "warning": "Reformulations can change the question or remove decisive conditions. Their hits do not answer the original. Misses do not prove absence. Inspect qualifications and contrary evidence before drawing conclusions."
+    }
+  ],
+  "inspections": [
+    {
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+      "sourceKind": "reference",
+      "scopeId": "emergentism-reader-pilot-2026-09-06",
+      "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+      "capturedAt": "2026-09-06T04:42:38.093Z",
+      "startLine": 1,
+      "endLine": 239,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    },
+    {
+      "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+      "sourceKind": "reference",
+      "scopeId": "emergentism-reader-pilot-2026-09-06",
+      "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+      "capturedAt": "2026-09-06T04:42:38.093Z",
+      "startLine": 1,
+      "endLine": 48,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    },
+    {
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+      "sourceKind": "reference",
+      "scopeId": "emergentism-reader-pilot-2026-09-06",
+      "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+      "capturedAt": "2026-09-06T04:42:38.093Z",
+      "startLine": 1,
+      "endLine": 315,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    },
+    {
+      "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+      "kind": "SOURCE_INSPECTION",
+      "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+      "sourceKind": "reference",
+      "scopeId": "emergentism-reader-pilot-2026-09-06",
+      "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+      "capturedAt": "2026-09-06T04:42:38.093Z",
+      "startLine": 1,
+      "endLine": 170,
+      "qualificationCoverage": "NOT_ASSESSED",
+      "meaning": "Complete supplied source, including qualifications and contrary text. Not a search hit, semantic assessment, live source, or permission to act."
+    }
+  ]
+}

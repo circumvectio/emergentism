@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "date": "2026-09-06",
+  "state": "LOCAL_READ_ONLY_CYCLE_COMPLETE",
+  "scope": "Headless investigation desk plus source-owner proposal docket; not normal app integration",
+  "commits": {
+    "engine": "80098f2",
+    "protocolAndSources": "00b39402",
+    "queriesBeforeKey": "b092b833"
+  },
+  "working": {
+    "reportSha256": "e92f956cbbddb86f5c84b093d70eae829cc2183df1829287aa6b4e1c57c39faa",
+    "repeatIdentical": true,
+    "sourceInformed": true,
+    "questionCount": 6,
+    "originalCandidateCases": 3,
+    "assistedCandidateCases": 6,
+    "semanticAccuracy": "NOT_MEASURED",
+    "sourceProposals": [
+      {
+        "id": "P1",
+        "kind": "exposition_repair",
+        "state": "NOT_ADOPTED"
+      },
+      {
+        "id": "P2",
+        "kind": "comparability_clarification",
+        "state": "NOT_ADOPTED"
+      },
+      {
+        "id": "P3",
+        "kind": "nearby_qualification_pointer",
+        "state": "NOT_ADOPTED"
+      }
+    ]
+  },
+  "external": {
+    "reportSha256": "f83910cc0283499edec1625082517d9e9bedea5555370d559202f1d99fef4194",
+    "repeatIdentical": true,
+    "inspectionReportSha256": "474ce186eaf845bfe8e7dc84c480cc637d49a95ee67cd3bf0dd2da90fddc3de7",
+    "inspectionDoesNotChangeQueryResults": true,
+    "supportedQuestions": 4,
+    "originalComplete": 0,
+    "assistedComplete": 2,
+    "unsupportedControls": 2,
+    "originalControlCandidates": 0,
+    "assistedControlCandidates": 0,
+    "unsupportedAdjudicatedSupport": 0,
+    "utilityCriterion": "MET_WITH_RECORDED_CUSTODY_AND_SCOPE_LIMITS",
+    "keyPreRevealImmutability": "AGENT_REPORTED_NOT_HASH_PROVEN",
+    "misleadingSuccessRisk": "Two whole-document licence hits; not independent sources or precise localization"
+  },
+  "failures": [
+    {
+      "phase": "pre-freeze unit test",
+      "error": "Inspection discriminator overwritten by source kind",
+      "resolution": "Fixed before freeze; regression passes"
+    },
+    {
+      "phase": "external inspection CLI",
+      "input": "external-inspect.json",
+      "exitCode": 1,
+      "error": "question_count_limit",
+      "resultJson": false,
+      "observedBy": "parent",
+      "resolution": "Repeated unchanged frozen queries plus explicit inspections; no query tuning"
+    }
+  ],
+  "tests": {
+    "fullCheckpoint": {
+      "files": 43,
+      "testsPassed": 462,
+      "typecheck": "PASS",
+      "lint": "PASS",
+      "scope": "Before concurrent 93c7840 change"
+    },
+    "focusedAfter93c7840": {
+      "files": 2,
+      "testsPassed": 26
+    },
+    "exactCitationCheckCount": 36,
+    "finalCheckpointAfter93c7840": {
+      "files": 43,
+      "testsPassed": 469,
+      "typecheck": "PASS",
+      "ownedRuntimeTestCliLint": "PASS",
+      "warnings": "Two inherited Pydantic field-shadow warnings",
+      "otherLaneAddedTests": 7
+    }
+  },
+  "boundaries": {
+    "apuPermissions": "READ_ONLY",
+    "normalBrowserIntegration": false,
+    "modelProviderCallsByDesk": 0,
+    "observedFetchTcpAttempts": 0,
+    "sourceWritesByDesk": 0,
+    "osSandbox": false,
+    "canonAdoption": false,
+    "publicProjection": false,
+    "push": false,
+    "deploy": false,
+    "recurringJobInstalled": false,
+    "economicValidation": false,
+    "rosettaRecorder": "HOLD_FROZEN_V0_DRIFT"
+  }
+}

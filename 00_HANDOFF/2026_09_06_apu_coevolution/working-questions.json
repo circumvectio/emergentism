@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "E1",
+      "question": "Can cooperation alone guarantee that maximizing my power is fair to everyone?",
+      "reformulations": [
+        {
+          "query": "coupling cooperation optimal",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "Justice admissible actions",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "question": "Does the sphere prove that I should multiply mental and physical power?",
+      "reformulations": [
+        {
+          "query": "chart facts",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "product retired ranking",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "calibration contract",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "question": "Are seven Rosetta moves the same as seven jobs for agents?",
+      "reformulations": [
+        {
+          "query": "GEN7 G7",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "seven symbols",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "bearer orientations",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "question": "Does having an internal answer mean we have experimentally solved consciousness?",
+      "reformulations": [
+        {
+          "query": "internal answers external debts",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "phenomenal actualization",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "empirical contact",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "question": "Should the library keep every record forever, even after someone asks for deletion?",
+      "reformulations": [
+        {
+          "query": "valid deletion duties",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "preserve ancestry",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    },
+    {
+      "id": "E6",
+      "question": "Can our cross-product loop adopt its own improvements?",
+      "reformulations": [
+        {
+          "query": "nothing promotes itself",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        },
+        {
+          "query": "capability grants authority",
+          "proposedBy": "Codex source-informed working librarian",
+          "basis": "source-informed",
+          "rationale": "Vocabulary chosen after reading the source; navigation assistance, not a held-out paraphrase or answer."
+        }
+      ]
+    }
+  ],
+  "inspectPaths": [
+    "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+    "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+    "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md"
+  ]
+}
