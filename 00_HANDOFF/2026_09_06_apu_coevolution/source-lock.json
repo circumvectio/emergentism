@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "emergentism": {
+    "priorLock": "../2026_09_06_apu_readonly_pilot/source-lock.json",
+    "currentEqualityCheckpoint": "13be41b70423fd56921f49b1fc1755639257da61",
+    "copiedSnapshot": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8/snapshot.json"
+  },
+  "external": {
+    "origin": "Already installed Microsoft TypeScript package; not a network fetch",
+    "repoUrl": "https://github.com/microsoft/TypeScript",
+    "packageVersion": "5.9.3",
+    "sourceDirectory": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU/apu.bot/node_modules/typescript",
+    "sources": [
+      {
+        "path": "README.md",
+        "kind": "reference",
+        "sha256": "73147458477d90cd6236627cdd9b0871df12e6e8a21d2d0fda6d1ad2826bdc0e"
+      },
+      {
+        "path": "LICENSE.txt",
+        "kind": "reference",
+        "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+      }
+    ]
+  }
+}
