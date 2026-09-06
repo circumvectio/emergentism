@@ -1,0 +1,97 @@
+{
+  "authorship": "source-informed AI, no engine/results access",
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "In Emergentism, how does capitalized Dasein differ from a situated dasein, and why doesn't inclusion in the whole make something physically actual?",
+      "categories": ["definition", "qualification_sensitive", "ordinary_language_paraphrase"],
+      "expected": "supported",
+      "requiredParts": [
+        {"id":"Q01-P1","description":"Capitalized Dasein names the whole field of what can coherently and consistently exist; this meaning depends on a declared register and model.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md","startLine":22,"endLine":30}]},
+        {"id":"Q01-P2","description":"A situated dasein is a local finite embodied D4 bearer for whom some of that whole can be disclosed, modeled, chosen, and acted upon.","qualification":false,"alternatives":[{"path":"06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md","startLine":88,"endLine":90}]},
+        {"id":"Q01-P3","description":"Membership specifies how something can be in its world and register; it does not establish D4 actuality, causal efficacy, equal evidence, or availability to every observer.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md","startLine":71,"endLine":75}]}
+      ]
+    },
+    {
+      "id":"Q02",
+      "question":"In the ontology, what does Finity mean, and can a finite value still be described by a process that never halts?",
+      "categories":["definition","qualification_sensitive","ordinary_language_paraphrase"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q02-P1","description":"Finity concerns determinate finite manifestation: finite means situated and bounded in the relevant register, not necessarily finite cardinality, dimension, description length, or numeric magnitude.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md","startLine":216,"endLine":221}]},
+        {"id":"Q02-P2","description":"A non-halting process may denote a finite value; finite being and finite generation are distinct.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md","startLine":221,"endLine":222}]}
+      ]
+    },
+    {
+      "id":"Q03",
+      "question":"If two factors can each rise, fall, or stay unchanged, why does G7 use seven symbols instead of nine, and does that establish seven kinds of real action?",
+      "categories":["apparent_contradiction","qualification_sensitive"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q03-P1","description":"The nine-cell sign grid is grouped by treating cells with one factor held as degenerate limits of a transfer or frame; that grouping is selected and alternatives are possible.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md","startLine":54,"endLine":58}]},
+        {"id":"Q03-P2","description":"Removing the four one-factor-held cells leaves five cells; distinguishing two bearer orientations for each mixed-sign cell yields three frames plus four transfers. Signs alone do not recover seven.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md","startLine":60,"endLine":66}]},
+        {"id":"Q03-P3","description":"G7 is a selected vocabulary for intended transformations across a self/other boundary, not a census of nature or a representation of every possible action.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md","startLine":11,"endLine":14}]}
+      ]
+    },
+    {
+      "id":"Q04",
+      "question":"In Power-Max's coupled toy network, how can a taker gain despite interdependence, and what actually rules out extraction?",
+      "categories":["apparent_contradiction","qualification_sensitive"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q04-P1","description":"In the one-shot zero-sum transfer, the network mean stays unchanged while, for coupling below one, the taker's toy cardinal score increases by the stated positive transfer term.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md","startLine":109,"endLine":113}]},
+        {"id":"Q04-P2","description":"Local extraction can benefit its taker. Non-extraction is imposed by the Justice-admissible field and tested for long-run consequences; coupling, a product, evolution, or self-interest do not establish it.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md","startLine":116,"endLine":119}]}
+      ]
+    },
+    {
+      "id":"Q05",
+      "question":"If someone freely accepts a loss to help a group, does the framework count that as strict syntropy, and what conditions must the sacrifice satisfy?",
+      "categories":["qualification_sensitive","ordinary_language_paraphrase"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q05-P1","description":"Voluntary sacrifice is a distinct costly class requiring informed consent, visible payer and beneficiary, revocability until irreversibility, and valid authorization. A falling payer potential means it is not strict syntropy, and it cannot be demanded as proof of morality, loyalty, or worth.","qualification":true,"alternatives":[{"path":"05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md","startLine":192,"endLine":196}]}
+      ]
+    },
+    {
+      "id":"Q06",
+      "question":"How can D0 and D6 share a boundary role while remaining different, and does their resemblance establish a cosmic recurrence?",
+      "categories":["apparent_contradiction","qualification_sensitive"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q06-P1","description":"D0 presupposes no prior positive register, whereas D6 asserts no further positive register after articulation; different predicates share a declared boundary-role class.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md","startLine":493,"endLine":495}]},
+        {"id":"Q06-P2","description":"The resemblance holds under one typed projection and establishes neither identity nor a causal loop, reincarnation, quotient, or additional aperture.","qualification":true,"alternatives":[{"path":"06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md","startLine":496,"endLine":497}]}
+      ]
+    },
+    {
+      "id":"Q07",
+      "question":"What would the Public Wisdom Compact need before it could be called supported, and what failures would justify narrowing or retracting it?",
+      "categories":["qualification_sensitive","ordinary_language_paraphrase"],
+      "expected":"supported",
+      "requiredParts":[
+        {"id":"Q07-P1","description":"The Compact is presently a provisional chosen editorial policy. Supported status requires admitted independent outcomes showing improvement against named rivals in error detection, correction, reversibility, or bearer protection without triggering its kill criteria.","qualification":true,"alternatives":[{"path":"14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md","startLine":36,"endLine":40}]},
+        {"id":"Q07-P2","description":"Narrowing, supersession, or retraction is called for if the policy systematically obstructs justified action, hides authority, impedes correction, preserves harmful data against valid deletion duties, or performs no better than simpler practices.","qualification":true,"alternatives":[{"path":"14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md","startLine":44,"endLine":47}]}
+      ]
+    },
+    {
+      "id":"Q08",
+      "question":"Provide the preregistered comparison of the Public Wisdom Compact against simpler audit practices, including participant counts and measured error-detection gains.",
+      "categories":["unsupported_evidence","near_topic"],
+      "expected":"unsupported","requiredParts":[],
+      "absenceRationale":"These nine source copies describe the Compact's provisional status and the independent comparative outcomes required for support, but supply no such study, participant counts, or measured error-detection gains. This is an evidence gap in the selected corpus, not a claim that no study exists elsewhere."
+    },
+    {
+      "id":"Q09",
+      "question":"Provide an independently replicated experimental result for a new physical F5 interaction, including its measured coupling strength and uncertainty.",
+      "categories":["unsupported_evidence","near_topic"],
+      "expected":"unsupported","requiredParts":[],
+      "absenceRationale":"These nine source copies distinguish ordinary model-mediated anticipation from conjectured additional effects and list conditions for establishing a physical interaction. They supply no independently replicated new-interaction result or measured coupling with uncertainty; internal adoption and symbolic parameters do not supply the requested evidence."
+    },
+    {
+      "id":"Q10",
+      "question":"Which post-mortem study verifies continuation of the same person's experience using a declared bearer-identity threshold, and what were its observations?",
+      "categories":["unsupported_evidence","near_topic"],
+      "expected":"unsupported","requiredParts":[],
+      "absenceRationale":"These nine source copies distinguish retained actuality, persistent traces, and conjectural personal continuation. They describe an identity relation and threshold while leaving the actual-world continuation mechanism open, but provide no post-mortem study, applied threshold, or observations verifying the requested continuation."
+    }
+  ]
+}
