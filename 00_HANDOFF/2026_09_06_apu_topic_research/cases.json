@@ -1,0 +1,55 @@
+{
+  "kind": "reviewer_designed_synthetic_and_development_cases",
+  "version": 1,
+  "authorship": "Four new synthetic cases authored by a separate AI reviewer who saw the design but not the implementation or results. Not independent human holdouts. Development topics are source-informed root selections after the predecessor trial; no automatic rewriting.",
+  "fresh": [
+    {
+      "id": "S01",
+      "path": "circulation_sleeves.md",
+      "content": "# Circulation sleeves\nA circulation sleeve is packaging designed for at least five dispatch-and-return cycles.\n## Admission\nAn undamaged sleeve is eligible for another dispatch after its fastener and label window pass inspection.\n## Exception\nA sleeve with a torn load seam is ineligible even when its fastener and label window pass.",
+      "question": "Under the circulation-sleeve policy, what qualifies an item for that category, and can a sleeve pass the fastener and label-window checks yet remain ineligible for dispatch because its load seam is torn?",
+      "topic": "circulation sleeve",
+      "requirements": ["The defining design criterion for a circulation sleeve.", "Dispatch eligibility when inspection checks pass but the load seam is torn."],
+      "neededLines": [2, 4, 6],
+      "residual": "Definition and exception are supplied; a particular physical sleeve remains unverified. Passing two checks does not override the torn-seam exclusion."
+    },
+    {
+      "id": "S02",
+      "path": "color_sorting_proposal.md",
+      "content": "# Color sorting\n## Trial proposal\nThe team proposes testing color sorting on 120 parcels next month.\nThe plan would compare sorting time with the existing route.\nNo parcels have been tested under this proposal.\nNo sorting times, accuracy rates, or uncertainty estimates are available.",
+      "question": "For the proposed color-sorting pilot, what observed change in sorting time and error rate was measured against the current workflow, how many parcels contributed data, and what uncertainty accompanies those results?",
+      "topic": "color sorting",
+      "requirements": ["Observed comparative sorting times and error rates.", "Actual sample size and uncertainty for those observed results."],
+      "neededLines": [3, 5, 6],
+      "residual": "Proposal context exists but requested measurements are unavailable in this source. The planned 120 parcels must not become an observed sample."
+    },
+    {
+      "id": "S03",
+      "path": "vent_label_experiments.md",
+      "content": "# Vent label timing\n## Initial experiment\nWith 40 volunteers, the embossed vent label reduced median identification time from 8.0 to 6.2 seconds.\nThe median difference was -1.8 seconds; its bootstrap 95% interval was -2.5 to -1.0 seconds.\n## Replication\nA second laboratory tested 36 different volunteers and found 8.1 seconds with the standard label and 8.4 seconds with the embossed label.\nIts median difference was +0.3 seconds, with a bootstrap 95% interval of -0.4 to +1.1 seconds.\nThe second study did not reproduce the initial speed improvement.",
+      "question": "Across the initial embossed vent label experiment and a separate laboratory's replication, how many people were tested, what happened to identification time, and what uncertainty supports or challenges a consistent improvement?",
+      "topic": "vent label",
+      "requirements": ["Initial sample size, measured timing difference, and uncertainty.", "Replication sample size, measured timing difference, and uncertainty, including disagreement with the initial result."],
+      "neededLines": [3, 4, 6, 7],
+      "residual": "Both studies supply measurements but not consistent improvement. No pooled estimate or explanation of disagreement is supplied."
+    },
+    {
+      "id": "S04",
+      "path": "filter_maintenance.md",
+      "content": "# Filter maintenance log\nThe workshop inspected twelve intake filters on Monday.\nThree filters were replaced because their mesh was torn.\nThe log records replacement counts only.",
+      "question": "In the helium turbine evaluation, what operating speed yielded the highest measured efficiency, how many runs supported that choice, and what uncertainty or repeatability evidence was reported?",
+      "topic": "helium turbine",
+      "requirements": ["Operating speed and measured turbine efficiency.", "Run count and uncertainty or repeatability evidence."],
+      "neededLines": [],
+      "expectedMiss": true,
+      "residual": "No helium-turbine material in these mini-sources. Filter counts cannot substitute for turbine runs; misses do not establish absence elsewhere."
+    }
+  ],
+  "development": [
+    {"id": "Q03", "topic": "G7 M4 F3"},
+    {"id": "Q04", "topic": "extraction coupling"},
+    {"id": "Q05", "topic": "voluntary sacrifice"},
+    {"id": "Q07", "topic": "editorial policy"}
+  ],
+  "scoring": "Exact selected line coverage and unique returned source-line burden only, not semantic accuracy. The prior answer key is reused unchanged for development. All requirements must remain NOT_ASSESSED. Record misses and extra reading; no superiority claim without equal budgets and human adjudication."
+}
