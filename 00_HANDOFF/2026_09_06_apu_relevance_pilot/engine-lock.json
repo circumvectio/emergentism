@@ -1,0 +1,7 @@
+{
+  "repo": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU",
+  "module": "apu.bot/src/lib/corpusPassages.ts",
+  "sha256": "e6db0d458133288201bc828406068a3e7dd31857ed6b34137360c0bed5a94390",
+  "mode": "opt-in-read-only-module-not-wired-to-live-provider",
+  "sourceOwner": "APU product repository; corpus is caller-supplied inert data"
+}
