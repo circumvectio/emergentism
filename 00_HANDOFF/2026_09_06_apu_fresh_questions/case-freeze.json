@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "keyLocation": "questions.json requiredParts and expected",
+  "protocolCommit": "5db1d5112489bed67d9525e51a77b12eaab6afa5",
+  "inputsCommit": "25ce6a10a5177462792562dc17b53ae5efa9f3bc",
+  "freezeSha256": "207f831feb170c1da69050792e915dbc4be962d5a9111a31dc1ee45e0d978b2b",
+  "files": [
+    {
+      "path": "questions.json",
+      "sha256": "3afbbe0f6df3c30541c880a9ae99d6bfdf6641d0ec9c2bc8002420f3e9ac91aa"
+    },
+    {
+      "path": "query-aids.json",
+      "sha256": "21714edfb7f7cc705b277d2adb04b83137f388f3d4f26e69d049a00800bfb587"
+    }
+  ]
+}
