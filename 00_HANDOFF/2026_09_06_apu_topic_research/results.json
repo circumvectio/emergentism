@@ -1,0 +1,383 @@
+{
+  "kind": "apu_topic_research_local_diagnostics",
+  "version": 1,
+  "fresh": [
+    {
+      "id": "S01",
+      "originalStatus": "CANDIDATES",
+      "original": {
+        "neededParts": 3,
+        "partsReturned": 3,
+        "uniqueLines": 6,
+        "passages": [
+          {
+            "path": "circulation_sleeves.md",
+            "startLine": 1,
+            "endLine": 6
+          }
+        ]
+      },
+      "assisted": {
+        "neededParts": 3,
+        "partsReturned": 3,
+        "uniqueLines": 6,
+        "passages": [
+          {
+            "path": "circulation_sleeves.md",
+            "startLine": 1,
+            "endLine": 6
+          },
+          {
+            "path": "circulation_sleeves.md",
+            "startLine": 1,
+            "endLine": 6
+          },
+          {
+            "path": "circulation_sleeves.md",
+            "startLine": 1,
+            "endLine": 6
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The defining design criterion for a circulation sleeve.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "R2",
+          "text": "Dispatch eligibility when inspection checks pass but the load seam is torn.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 3,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 3,
+        "partsReturned": 3,
+        "uniqueLines": 6,
+        "passages": [
+          {
+            "path": "color_sorting_proposal.md",
+            "startLine": 1,
+            "endLine": 6
+          },
+          {
+            "path": "color_sorting_proposal.md",
+            "startLine": 1,
+            "endLine": 6
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Observed comparative sorting times and error rates.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "R2",
+          "text": "Actual sample size and uncertainty for those observed results.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 4,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 4,
+        "partsReturned": 4,
+        "uniqueLines": 8,
+        "passages": [
+          {
+            "path": "vent_label_experiments.md",
+            "startLine": 1,
+            "endLine": 8
+          },
+          {
+            "path": "vent_label_experiments.md",
+            "startLine": 1,
+            "endLine": 8
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Initial sample size, measured timing difference, and uncertainty.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "R2",
+          "text": "Replication sample size, measured timing difference, and uncertainty, including disagreement with the initial result.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 0,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 0,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "control": {
+        "expected": "NO_CANDIDATES",
+        "originalPass": true,
+        "assistedPass": true
+      },
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Operating speed and measured turbine efficiency.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "R2",
+          "text": "Run count and uncertainty or repeatability evidence.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    }
+  ],
+  "development": [
+    {
+      "id": "Q03",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 3,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 3,
+        "partsReturned": 2,
+        "uniqueLines": 81,
+        "passages": [
+          {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "startLine": 177,
+            "endLine": 206
+          },
+          {
+            "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "startLine": 43,
+            "endLine": 70
+          },
+          {
+            "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "startLine": 78,
+            "endLine": 100
+          },
+          {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "startLine": 177,
+            "endLine": 206
+          },
+          {
+            "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "startLine": 43,
+            "endLine": 70
+          },
+          {
+            "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "startLine": 78,
+            "endLine": 100
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "Q03-P1",
+          "text": "The nine-cell sign grid is grouped by treating cells with one factor held as degenerate limits of a transfer or frame; that grouping is selected and alternatives are possible.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "Q03-P2",
+          "text": "Removing the four one-factor-held cells leaves five cells; distinguishing two bearer orientations for each mixed-sign cell yields three frames plus four transfers. Signs alone do not recover seven.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "Q03-P3",
+          "text": "G7 is a selected vocabulary for intended transformations across a self/other boundary, not a census of nature or a representation of every possible action.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 2,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 2,
+        "partsReturned": 2,
+        "uniqueLines": 65,
+        "passages": [
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 97,
+            "endLine": 161
+          },
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 97,
+            "endLine": 161
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "Q04-P1",
+          "text": "In the one-shot zero-sum transfer, the network mean stays unchanged while, for coupling below one, the taker's toy cardinal score increases by the stated positive transfer term.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "Q04-P2",
+          "text": "Local extraction can benefit its taker. Non-extraction is imposed by the Justice-admissible field and tested for long-run consequences; coupling, a product, evolution, or self-interest do not establish it.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 1,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 1,
+        "partsReturned": 1,
+        "uniqueLines": 49,
+        "passages": [
+          {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "startLine": 424,
+            "endLine": 446
+          },
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 190,
+            "endLine": 197
+          },
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 212,
+            "endLine": 229
+          },
+          {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "startLine": 424,
+            "endLine": 446
+          },
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 190,
+            "endLine": 197
+          },
+          {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "startLine": 212,
+            "endLine": 229
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "Q05-P1",
+          "text": "Voluntary sacrifice is a distinct costly class requiring informed consent, visible payer and beneficiary, revocability until irreversibility, and valid authorization. A falling payer potential means it is not strict syntropy, and it cannot be demanded as proof of morality, loyalty, or worth.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "originalStatus": "INSUFFICIENT_COVERAGE",
+      "original": {
+        "neededParts": 2,
+        "partsReturned": 0,
+        "uniqueLines": 0,
+        "passages": []
+      },
+      "assisted": {
+        "neededParts": 2,
+        "partsReturned": 2,
+        "uniqueLines": 39,
+        "passages": [
+          {
+            "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+            "startLine": 10,
+            "endLine": 48
+          },
+          {
+            "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+            "startLine": 10,
+            "endLine": 48
+          }
+        ]
+      },
+      "control": null,
+      "requirements": [
+        {
+          "id": "Q07-P1",
+          "text": "The Compact is presently a provisional chosen editorial policy. Supported status requires admitted independent outcomes showing improvement against named rivals in error detection, correction, reversibility, or bearer protection without triggering its kill criteria.",
+          "status": "NOT_ASSESSED"
+        },
+        {
+          "id": "Q07-P2",
+          "text": "Narrowing, supersession, or retraction is called for if the policy systematically obstructs justified action, hides authority, impedes correction, preserves harmful data against valid deletion duties, or performs no better than simpler practices.",
+          "status": "NOT_ASSESSED"
+        }
+      ]
+    }
+  ],
+  "legacyReportAndNavigationUnchanged": true,
+  "requirementsPreservedNotAssessed": 16,
+  "verifiedPassageInstances": 23,
+  "repeatByteIdentical": true,
+  "providerCalls": 0,
+  "sourceWrites": 0,
+  "limits": "Exact selected line coverage and unique returned source-line burden only, not semantic accuracy. The prior answer key is reused unchanged for development. All requirements must remain NOT_ASSESSED. Record misses and extra reading; no superiority claim without equal budgets and human adjudication.",
+  "authorship": "Four new synthetic cases authored by a separate AI reviewer who saw the design but not the implementation or results. Not independent human holdouts. Development topics are source-informed root selections after the predecessor trial; no automatic rewriting.",
+  "engineCommit": "795878e01ba6fedb4a0e16135da7b34da52d0208",
+  "freezeCommit": "fd16aa6d2bb93a142c68c1d72305ff03347241e3",
+  "archiveSha256": "564bead7c531af9ac7f48ed612847dddf2a8671dda2e4d2de4608ab1e968f05b"
+}
