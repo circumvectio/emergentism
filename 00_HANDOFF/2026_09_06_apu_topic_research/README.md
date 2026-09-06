@@ -63,8 +63,8 @@ Loop. The A3 frozen-record HOLD remains; no recorder is called or bypassed.
 
 # Return boundary
 
-L4 will inspect the resulting source passages and add a source-linked reading
-ledger here. Findings about the corpus remain distinct from reader performance.
+L4 inspected the resulting source passages; the source-linked reading ledger
+below records the return. Findings about the corpus remain distinct from reader performance.
 No source claim becomes true because APU retrieved it, and no doctrine is
 silently changed to improve search results. Rollback affects only the owned APU
 implementation; this receipt and its predecessor remain as history.

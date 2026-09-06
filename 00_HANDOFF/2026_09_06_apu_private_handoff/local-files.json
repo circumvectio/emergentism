@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "disposition": "PRESERVED_IN_PLACE_LOCAL_ONLY_NOT_COMMITTED",
+  "files": [
+    {
+      "path": ".hermes/plans/2026-09-04_055214-circle-news-rollout.md",
+      "bytes": 10767,
+      "mtime": "2026-09-04T05:53:27.382Z",
+      "sha256": "318bf3b31ccce5d1d362cec75512fb2e253bbcfee202bfa8ceebf47b80411481"
+    },
+    {
+      "path": ".hermes/plans/2026-09-04_070401-four-face-sprints.md",
+      "bytes": 13443,
+      "mtime": "2026-09-04T07:07:08.863Z",
+      "sha256": "3da34845a34f30973e36fe82501ba7ad23f88c7aed4d8175ffbefc356aeb1cab"
+    },
+    {
+      "path": ".hermes/plans/2026-09-04_152955-next-work.md",
+      "bytes": 4988,
+      "mtime": "2026-09-04T08:30:27.145Z",
+      "sha256": "2420f2cbf5c2979abff8a7011a7451cf8e2721f0b09edb829de44d26626d8266"
+    },
+    {
+      "path": ".hermes/plans/2026-09-04_155028-circle-ramesh-sprints-release-gtm.md",
+      "bytes": 23162,
+      "mtime": "2026-09-04T08:52:37.948Z",
+      "sha256": "cbc5260ea6c0ebc27f7e353f4bbdce11893cf8fdf192a48b97e4500c6cd73756"
+    },
+    {
+      "path": ".hermes/plans/2026-09-04_155842-circle-gtm-website-press.md",
+      "bytes": 16985,
+      "mtime": "2026-09-04T09:00:47.496Z",
+      "sha256": "fd96eb42658866a2ec1ae53b8abbef581b95ab71cab8117fe123fd068f530083"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/1024x768.png",
+      "bytes": 224807,
+      "mtime": "2026-09-05T15:34:00.245Z",
+      "sha256": "568471be5de245ac3210a53f3eba3bca21d1b6a2fa2357a09d6523a1d5bd1796"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/1440x1000.png",
+      "bytes": 350109,
+      "mtime": "2026-09-05T15:33:59.503Z",
+      "sha256": "f1b485d4c9a84a7b9f21876132eb5f07a1372a9840ad76f175f0c0a4234ffd37"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/320x568.png",
+      "bytes": 74503,
+      "mtime": "2026-09-05T15:34:02.458Z",
+      "sha256": "aaf6c44fd7a751cd6bd3249188d22a414feac2f4610bf820bdbd3e87afc038fb"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/390x844.png",
+      "bytes": 110231,
+      "mtime": "2026-09-05T15:34:01.731Z",
+      "sha256": "094e512d76c742437be388a0447e13c9cc4ac6289cfe0a59ed8732d29ba13385"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/768x1024.png",
+      "bytes": 260126,
+      "mtime": "2026-09-05T15:34:00.978Z",
+      "sha256": "1793eca4e07ac7c4901b119daf0d6fd7ffc7d90b9474d530339bed565da447c0"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/844x390.png",
+      "bytes": 121194,
+      "mtime": "2026-09-05T15:34:03.164Z",
+      "sha256": "eb0d67292ab85461ce253e75a349db2a5ed96f2f37e35b3d32c0c27f2818d1a1"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/context-lost.png",
+      "bytes": 122180,
+      "mtime": "2026-09-05T15:34:19.129Z",
+      "sha256": "538252f0a920d22cb4eac930563cbe36b00539c81f2c1b8438ff90f4d3aafa0b"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/legend-moving.png",
+      "bytes": 294169,
+      "mtime": "2026-09-05T15:34:13.842Z",
+      "sha256": "553550ae64fc6bc1ac83052d816485ec4b39bb62ee5ace0abd88e7bea6093fe1"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/mobile-reading.png",
+      "bytes": 61967,
+      "mtime": "2026-09-05T14:21:46.002Z",
+      "sha256": "8e25bad597c16476f422b64cdb4a73647f1bba0e2755f45a0fec9fa4ed88c12e"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/no-js.png",
+      "bytes": 33180,
+      "mtime": "2026-09-05T15:34:19.804Z",
+      "sha256": "b75ab0976903154e76af8004c0147c96a8ad8049e8f246e2c2bde61ae91d0646"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/reduced.png",
+      "bytes": 78063,
+      "mtime": "2026-09-05T15:34:20.493Z",
+      "sha256": "8a71cf35fe1bcff08b45eaf068e5fd681d8549aad1685ac70112b9547cacc3f5"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/burrisphere-20260905/report.json",
+      "bytes": 1838,
+      "mtime": "2026-09-05T15:34:20.496Z",
+      "sha256": "3c86cf6170b1ab573d456d630b5343e50ba55241a3c76bb9599b1cef5c1d68b0"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-20-16-031Z.yml",
+      "bytes": 34159,
+      "mtime": "2026-09-05T18:20:16.032Z",
+      "sha256": "9bf518dc8c0cff04a8814f6058764480c377666eb0c4157c4926a10b60f761bb"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-20-48-123Z.yml",
+      "bytes": 35127,
+      "mtime": "2026-09-05T18:20:48.124Z",
+      "sha256": "6f93002c026ed478a53c287a858351e3000eef64c84f24d738764c689701c2fa"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-21-04-914Z.yml",
+      "bytes": 35126,
+      "mtime": "2026-09-05T18:21:04.915Z",
+      "sha256": "a4f89ad5f1617408cfc5af13f3a46a2df95c0824fd0b699bfe319feb24163291"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-21-05-631Z.yml",
+      "bytes": 35123,
+      "mtime": "2026-09-05T18:21:05.632Z",
+      "sha256": "1705477f0b1c15d6c529aa71b8b46252230869bedfa0b054063e5ae8e5e779b9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-21-30-116Z.yml",
+      "bytes": 35572,
+      "mtime": "2026-09-05T18:21:30.117Z",
+      "sha256": "5e7f3d1fae0f6ede11cccdaff45a3fc1d8b8aba0862ed77efcfe59be64273024"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-21-30-333Z.png",
+      "bytes": 52384,
+      "mtime": "2026-09-05T18:21:30.334Z",
+      "sha256": "292330ff98e03c022587f24ee75520e3eb288e6e23d75afcf83ff1477d141424"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/.playwright-cli/page-2026-09-05T18-21-30-784Z.yml",
+      "bytes": 12200,
+      "mtime": "2026-09-05T18:21:30.785Z",
+      "sha256": "c2997540c9bb586bdf512415447c8111eff68aecdfea45b53b3b264d8ac1d2c9"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-1440.png",
+      "bytes": 85053,
+      "mtime": "2026-09-05T18:22:47.567Z",
+      "sha256": "c882aa70e794b5bfe6c06e42c1802342768e9be2af3aeee077ca59704b758f3f"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-320.png",
+      "bytes": 37004,
+      "mtime": "2026-09-05T18:22:49.271Z",
+      "sha256": "f3e24ca3b9dcfb1d1f5ff1b9c0678569b4cbdfbf3c101195dab14f5b0d121de3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-final-1440-true.png",
+      "bytes": 94217,
+      "mtime": "2026-09-05T18:26:49.276Z",
+      "sha256": "751d019ddf8134ce02b288a107ac29f3d79ac691eccf7d4a0e256e06c94cec98"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-final-320-false.png",
+      "bytes": 39234,
+      "mtime": "2026-09-05T18:26:56.656Z",
+      "sha256": "1672f5ee2fddb1e844c7e9c664b04b0885e1f9d231331da8e3789b94862b5c7a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-final-320-true.png",
+      "bytes": 39234,
+      "mtime": "2026-09-05T18:26:50.956Z",
+      "sha256": "1672f5ee2fddb1e844c7e9c664b04b0885e1f9d231331da8e3789b94862b5c7a"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-nojs-320.png",
+      "bytes": 38779,
+      "mtime": "2026-09-05T18:24:20.005Z",
+      "sha256": "68315e83873e3079e28cd3c278900cfe996cc080eadf95d926b0572111cf2bc4"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-20260906/wisdom-storage-denied-320.png",
+      "bytes": 39324,
+      "mtime": "2026-09-05T18:25:20.871Z",
+      "sha256": "637e4dc1b9c0509c828282f631f2f690b8944d9a641a45272db69047e2bf9d69"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-v3/.playwright-cli/page-2026-09-01T09-25-19-781Z.yml",
+      "bytes": 34019,
+      "mtime": "2026-09-01T09:25:19.784Z",
+      "sha256": "642a3617c190bf2040ee0157a02d371057477388dea9410092604d0f5fe298e0"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-v3/.playwright-cli/page-2026-09-01T09-25-22-868Z.png",
+      "bytes": 157905,
+      "mtime": "2026-09-01T09:25:22.869Z",
+      "sha256": "7084e5f6591994c031710106dff4ebf476a61f8f77efe37634f7cffc04edd0b3"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-v3/.playwright-cli/page-2026-09-01T09-25-43-152Z.yml",
+      "bytes": 12749,
+      "mtime": "2026-09-01T09:25:43.153Z",
+      "sha256": "99e98c57cfd7e80dfcc39f0bb2d78e00a22ad0dadd85335af7b66855c652e131"
+    },
+    {
+      "path": "12_PUBLIC_SITE/output/playwright/public-wisdom-v3/.playwright-cli/page-2026-09-01T09-25-45-320Z.png",
+      "bytes": 85053,
+      "mtime": "2026-09-01T09:25:45.321Z",
+      "sha256": "c882aa70e794b5bfe6c06e42c1802342768e9be2af3aeee077ca59704b758f3f"
+    }
+  ]
+}

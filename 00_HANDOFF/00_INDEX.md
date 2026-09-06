@@ -8,11 +8,24 @@ rosetta:
 # Handoff index
 
 Root-level files are named working packets. Dated subfolders collect bounded
-waves from 2026-07-19 and 2026-07-22. Use filenames and dates for routing; use
+waves, including the 2026-09-06 copied-source APU trials below. Use filenames and dates for routing; use
 the corpus source owners for truth.
 
 This index is deliberately descriptive rather than exhaustive. The generated
 file register provides the machine inventory.
+
+## APU copied-source return — 2026-09-06
+
+- [Frozen ten-question trial](2026_09_06_apu_fresh_questions/README.md): original
+  questions, misses, qualification checks and portable evidence replay [B].
+- [Topic-research successor](2026_09_06_apu_topic_research/README.md): explicitly
+  source-assisted discovery, unchanged strict baseline and source-linked reading
+  ledger [B/I]. Requirements remain `NOT_ASSESSED`; retrieval is not warrant.
+- [Private handoff and local custody](2026_09_06_apu_private_handoff/README.md):
+  backup scope, verification limits, local-only files and the separate mail route [B/D].
+
+These are distinct dated experiments, not successive truth upgrades. Their
+frozen inputs and raw evidence remain at their existing paths.
 
 ## Named here because nothing else names them
 
