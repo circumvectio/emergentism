@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "status": "DRAFT_NOT_ADOPTED",
+  "authoring": "Assistant-authored proposals for owner review, not outputs of an autonomous APU model.",
+  "aliases": [
+    {"trigger":"cheating","add":["extraction"],"caution":"A retrieval aid only: cheating and extraction are not equivalent concepts.","path":"05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md","startLine":107,"endLine":119},
+    {"trigger":"tested","add":["validated"],"caution":"A retrieval aid only: being tested does not imply validation.","path":"14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md","startLine":34,"endLine":47}
+  ],
+  "outline": [
+    {"label":"Read the worldview, then inspect its warrant","path":"00_THE_WELTANSCHAUUNG.md","startLine":521,"endLine":527,"proposal":"Keep adoption distinct from evidence in the source drawer, rather than implying that publication proved the worldview."},
+    {"label":"Use the model with its conditions","path":"05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md","startLine":164,"endLine":178,"proposal":"Place the comparability assumptions beside any comparison widget; preserve a Pareto reading when the axes are only independently ordinal."},
+    {"label":"Cooperate without erasing the counterexample","path":"05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md","startLine":107,"endLine":119,"proposal":"Link the cooperation story to its explicit one-shot counterexample and distinguish model interdependence from chosen admissibility."},
+    {"label":"Practice provisional public wisdom","path":"14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md","startLine":34,"endLine":47,"proposal":"Show the Compact's provisional warrant and kill criteria together; invite evidence and correction without promoting the policy to a proven result."}
+  ]
+}
