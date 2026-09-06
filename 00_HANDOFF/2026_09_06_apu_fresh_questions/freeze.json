@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "root": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/apu-fresh-questions-EDOw3m",
+  "capturedAt": "2026-09-06T10:23:35.216Z",
+  "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+  "sourceHeadAtCapture": "01c0aa5f8f1ef23cd82f0a7a41bf64117c89902b",
+  "sourceRepo": "/Users/Yves/Documents/01_EMERGENTISM",
+  "sourceLockSha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b",
+  "engineRepo": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU",
+  "engineRevision": "dd61933fd0b2c77fd4b76776b1a8101e8a23c153",
+  "engineHeadAtCapture": "cc5206fdb549d4ae77c6d2b58e5c71e562bd197a",
+  "engine": [
+    {
+      "path": "apu.bot/scripts/inspect_library.mjs",
+      "sha256": "339cb11c908f29219271d26a39590fbf611b77fb7fd09e9bce48a22a975fe7f2"
+    },
+    {
+      "path": "apu.bot/src/lib/libraryFacets.ts",
+      "sha256": "762fff518de63e7dc40b14fb71eb4966b4e62859f7dc14c9f67bd6f5b5b94541"
+    },
+    {
+      "path": "apu.bot/src/lib/libraryInvestigation.ts",
+      "sha256": "a5d40dd4bd2c47860490dab91b4112b403705aa6f3a59e1342ee55ce4df36944"
+    },
+    {
+      "path": "apu.bot/src/lib/corpusPassages.ts",
+      "sha256": "693509b9b6be58570712ed1cb7c226f809751ce06c9dfa6cfd713dcd0a9d4636"
+    }
+  ],
+  "sources": [
+    {
+      "path": "00_THE_KERNEL_INDEX.md",
+      "kind": "reference",
+      "sha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+      "bytes": 11829
+    },
+    {
+      "path": "00_THE_WELTANSCHAUUNG.md",
+      "kind": "reference",
+      "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+      "bytes": 41504
+    },
+    {
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+      "kind": "reference",
+      "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+      "bytes": 27027
+    },
+    {
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "kind": "reference",
+      "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+      "bytes": 15641
+    },
+    {
+      "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+      "kind": "reference",
+      "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+      "bytes": 7458
+    },
+    {
+      "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+      "kind": "reference",
+      "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+      "bytes": 10218
+    },
+    {
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "kind": "reference",
+      "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+      "bytes": 9597
+    },
+    {
+      "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+      "kind": "reference",
+      "sha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+      "bytes": 29723
+    },
+    {
+      "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+      "kind": "reference",
+      "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+      "bytes": 2168
+    }
+  ],
+  "snapshotSha256": "0a01581582771f23e45b3d1324f03649212cfa28db487c946980008342779479",
+  "protocolSha256": "ef3d9c525111bc9506b9a495b5f575a1e0e768840eaa4ab1c1c4ac2b0773b842",
+  "wrapperSha256": "a925c3b1580c47e525960626388f04de912c541a136bfbed97c48a130346bf1b",
+  "node": "v22.22.3",
+  "constraints": {
+    "providerCalls": 0,
+    "sourceWrites": 0,
+    "permissionsChanged": false,
+    "a3": "HOLD_NOT_ATTEMPTED"
+  }
+}
