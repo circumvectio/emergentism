@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "frozenBeforeRun": true,
+  "selection": "Independent L2 source-informed questions; not blinded or preregistered externally.",
+  "baseline": "Case-insensitive literal substring in copied source body only; no stemming, synonyms, vectors, models or generated answers. APU additionally matches node labels and provenance notes; at most 12 nodes, which may duplicate source paths.",
+  "measurement": "Source-path retrieval and provenance, not semantic correctness. Report all returned nodes and the first five nodes separately. Expected sections are the answer key, not injected into queries.",
+  "tasks": [
+    {
+      "id": "Q1",
+      "question": "Does the mathematical formula prove how we should behave?",
+      "query": "formula",
+      "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "expectedLines": [
+        55,
+        72
+      ],
+      "requiredBoundary": "Chart facts only; ethics needs a separate bridge or hypothesis."
+    },
+    {
+      "id": "Q2",
+      "question": "Can I still multiply the two scores to rank options?",
+      "query": "product",
+      "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "expectedLines": [
+        164,
+        225
+      ],
+      "requiredBoundary": "Product retired as ranking; min selected, no established aggregator. Independently ordinal axes permit Pareto comparison; common remapping is an extra assumption."
+    },
+    {
+      "id": "Q3",
+      "question": "If people depend on each other, does that mean cheating cannot pay?",
+      "query": "cheating",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "expectedLines": [
+        97,
+        119
+      ],
+      "requiredBoundary": "One-shot extraction counterexample; interdependence alone does not make cooperation optimal."
+    },
+    {
+      "id": "Q4",
+      "question": "May someone be forced to sacrifice because everyone else benefits?",
+      "query": "sacrifice",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "expectedLines": [
+        186,
+        196
+      ],
+      "requiredBoundary": "Informed consent and authorization; no demand for sacrifice as proof of morality or loyalty."
+    },
+    {
+      "id": "Q5",
+      "question": "If the worldview has been approved, are its assumptions now proven?",
+      "query": "approved",
+      "expectedSource": "00_THE_WELTANSCHAUUNG.md",
+      "expectedLines": [
+        521,
+        527
+      ],
+      "requiredBoundary": "Adoption at stated tiers cannot turn a wager into evidence."
+    },
+    {
+      "id": "Q6",
+      "question": "Has the Public Wisdom Compact been tested and shown to work?",
+      "query": "tested",
+      "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+      "expectedLines": [
+        34,
+        47
+      ],
+      "requiredBoundary": "Chosen policy, provisional, not scientifically validated; comparisons and independent outcomes needed."
+    },
+    {
+      "id": "Q7",
+      "question": "What should happen if none of the available actions meets the rules?",
+      "query": "empty",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "expectedLines": [
+        72,
+        95
+      ],
+      "requiredBoundary": "Empty Justice-admissible action set licenses no action."
+    },
+    {
+      "id": "Q8",
+      "question": "What hydration should I use for a sourdough loaf?",
+      "query": "sourdough",
+      "expectedSource": null,
+      "expectedLines": null,
+      "requiredBoundary": "No supporting source in the frozen bundle; absence is scoped only to that bundle and query."
+    }
+  ]
+}
