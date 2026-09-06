@@ -28,7 +28,7 @@ function priorEntries(){const b=read(path.join(prior,'evidence.json.gz'));assert
 function frozenInput(freeze){
   assert.deepEqual(freeze.engine.map(e=>e.path),paths);
   const captured=new Map();
-  for(const [p,digest] of Object.entries(freeze.files)){const bytes=read(path.join(here,p));assert.equal(sha(bytes),digest,`changed ${p}`);captured.set(p,bytes);}
+  for(const {path:p,sha256:digest} of freeze.files){const bytes=read(path.join(here,p));assert.equal(sha(bytes),digest,`changed ${p}`);captured.set(p,bytes);}
   const questionBytes=read(path.join(prior,'questions.json'));
   assert.equal(sha(questionBytes),freeze.predecessorQuestionsSha256);
   const entries=new Map();
@@ -103,7 +103,7 @@ const mode=process.argv[2];
 if(mode==='freeze'){
   const ref=process.argv[3];assert(/^[0-9a-f]{40}$/.test(ref||''));
   for(const p of ['cases.json','run.mjs'])assert(git(repo,'show',`HEAD:${path.relative(repo,path.join(here,p))}`).equals(read(path.join(here,p))),`commit ${p} first`);
-  const freeze={version:1,engineCommit:ref,inputCommit:String(git(repo,'rev-parse','HEAD')).trim(),nodeVersion:process.version,files:Object.fromEntries(['cases.json','run.mjs'].map(p=>[p,sha(read(path.join(here,p)))])),predecessorQuestionsSha256:sha(read(path.join(prior,'questions.json'))),engine:paths.map(p=>({path:p,sha256:sha(git(apu,'show',`${ref}:apu.bot/${p}`))}))};
+  const freeze={version:1,engineCommit:ref,inputCommit:String(git(repo,'rev-parse','HEAD')).trim(),nodeVersion:process.version,files:['cases.json','run.mjs'].map(p=>({path:p,sha256:sha(read(path.join(here,p)))})),predecessorQuestionsSha256:sha(read(path.join(prior,'questions.json'))),engine:paths.map(p=>({path:p,sha256:sha(git(apu,'show',`${ref}:apu.bot/${p}`))}))};
   write(path.join(here,'freeze.json'),JSON.stringify(freeze,null,2)+'\n');console.log('Frozen; commit freeze.json before run.');
 }else if(mode==='run'){
   const freezeBytes=read(path.join(here,'freeze.json')),freeze=JSON.parse(freezeBytes);assert.equal(process.version,freeze.nodeVersion);
@@ -113,7 +113,7 @@ if(mode==='freeze'){
   let outputs,summary;
   try { outputs=execute(entries);summary=summarize(entries,outputs);
     assert(freezeBytes.equals(read(path.join(here,'freeze.json'))),'freeze changed');
-    for(const [p,digest] of Object.entries(freeze.files))assert.equal(sha(read(path.join(here,p))),digest,`changed ${p}`);
+    for(const {path:p,sha256:digest} of freeze.files)assert.equal(sha(read(path.join(here,p))),digest,`changed ${p}`);
     assert.equal(sha(read(path.join(prior,'questions.json'))),freeze.predecessorQuestionsSha256);
   }
   catch(error){write(path.join(here,'failed-evidence.json.gz'),encode(new Map([...entries,...[...(error.outputs||outputs||new Map())].map(([p,b])=>[`output/${p}`,b])])));throw error;}
