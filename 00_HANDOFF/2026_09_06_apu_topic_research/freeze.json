@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "engineCommit": "795878e01ba6fedb4a0e16135da7b34da52d0208",
+  "inputCommit": "8cf1e73b915d8ee517e4cce90e056752aea7e03f",
+  "nodeVersion": "v22.22.3",
+  "files": [
+    {"path": "cases.json", "sha256": "2f5ff9dfe22b06eac975dc77614948d7fa6a2698c6eac6360408bd2d9ff2215d"},
+    {"path": "run.mjs", "sha256": "8bf58cb801e9deb0c9fa14279fe179ed906d9f49c5f90470eebdfad8098a2540"}
+  ],
+  "predecessorQuestionsSha256": "3afbbe0f6df3c30541c880a9ae99d6bfdf6641d0ec9c2bc8002420f3e9ac91aa",
+  "engine": [
+    {
+      "path": "scripts/inspect_library.mjs",
+      "sha256": "32c5a6fec5c0ea4fd815d004e5da3a8b0d1e9b2d3484057f2c6b7e247ec23f82"
+    },
+    {
+      "path": "src/lib/libraryFacets.ts",
+      "sha256": "762fff518de63e7dc40b14fb71eb4966b4e62859f7dc14c9f67bd6f5b5b94541"
+    },
+    {
+      "path": "src/lib/libraryInvestigation.ts",
+      "sha256": "a5d40dd4bd2c47860490dab91b4112b403705aa6f3a59e1342ee55ce4df36944"
+    },
+    {
+      "path": "src/lib/corpusPassages.ts",
+      "sha256": "693509b9b6be58570712ed1cb7c226f809751ce06c9dfa6cfd713dcd0a9d4636"
+    },
+    {
+      "path": "src/lib/libraryResearch.ts",
+      "sha256": "8a0e17f80207218dc58269c0bcaac6cbc19ee537add03ee19ee589efa0da87d8"
+    }
+  ]
+}
