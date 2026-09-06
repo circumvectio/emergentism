@@ -1,0 +1,184 @@
+{
+  "kind": "emergentism.apu_relevance_pilot",
+  "version": 1,
+  "date": "2026-09-06",
+  "status": "LOCAL_OPT_IN_COMPONENT; GENERAL_READER_ACCEPTANCE_NOT_PASSED",
+  "authorizationBoundary": "User requested read-only quality improvements; no new grants, provider wiring, source promotion, push or deployment",
+  "product": {
+    "repo": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU",
+    "commit": "7a39f33f6df839d2220f0f7c3e5edd2058d08fd8",
+    "module": "apu.bot/src/lib/corpusPassages.ts",
+    "sha256": "e6db0d458133288201bc828406068a3e7dd31857ed6b34137360c0bed5a94390"
+  },
+  "harnessFreezeCommit": "6c3a3773cb915d73dfd36d53aacead25f4c28060",
+  "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+  "sourceLock": "../2026_09_06_apu_readonly_pilot/source-lock.json",
+  "p0Input": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8",
+  "challengeDesign": {
+    "count": 6,
+    "supported": 4,
+    "controls": 2,
+    "withheldUntilFreeze": true,
+    "independentExternalValidation": false,
+    "authoring": "Separate L2 context, same local AI environment, two named sources",
+    "sourceHashes": [
+      {
+        "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef"
+      },
+      {
+        "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635"
+      }
+    ]
+  },
+  "summary": {
+    "revealed-development": {
+      "p1": {
+        "requiredRange": 1,
+        "supported": 12,
+        "owner": 7,
+        "rangeOverlap": 7,
+        "positiveAbstentions": 1,
+        "correctControlAbstentions": 1,
+        "controls": 2
+      },
+      "p2": {
+        "requiredRange": 5,
+        "supported": 12,
+        "owner": 6,
+        "rangeOverlap": 6,
+        "positiveAbstentions": 5,
+        "correctControlAbstentions": 2,
+        "controls": 2
+      }
+    },
+    "withheld-until-code-freeze": {
+      "p1": {
+        "requiredRange": 1,
+        "supported": 4,
+        "owner": 2,
+        "rangeOverlap": 1,
+        "positiveAbstentions": 0,
+        "correctControlAbstentions": 0,
+        "controls": 2
+      },
+      "p2": {
+        "requiredRange": 1,
+        "supported": 4,
+        "owner": 1,
+        "rangeOverlap": 1,
+        "positiveAbstentions": 3,
+        "correctControlAbstentions": 2,
+        "controls": 2
+      }
+    }
+  },
+  "instances": 109,
+  "p2Instances": 25,
+  "manifests": [
+    {
+      "dir": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-relevance-D3zTPt",
+      "sha256": "21093525da26927bf328221524db13ea17e0cc56e8bd8e6a490c05a8a7deca2a",
+      "files": [
+        {
+          "path": "results.json",
+          "sha256": "2627de3c1928aa0a3787bee96bd7d28ebcd80908122ce92d25ae0d57b268f2b6"
+        },
+        {
+          "path": "receipt.json",
+          "sha256": "b6604db8b1eb6c08a9275cade71cee1565cf321231c955b00a591ddf5bb4eb2a"
+        }
+      ]
+    },
+    {
+      "dir": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-relevance-rwGo6Y",
+      "sha256": "21093525da26927bf328221524db13ea17e0cc56e8bd8e6a490c05a8a7deca2a",
+      "files": [
+        {
+          "path": "results.json",
+          "sha256": "2627de3c1928aa0a3787bee96bd7d28ebcd80908122ce92d25ae0d57b268f2b6"
+        },
+        {
+          "path": "receipt.json",
+          "sha256": "b6604db8b1eb6c08a9275cade71cee1565cf321231c955b00a591ddf5bb4eb2a"
+        }
+      ]
+    }
+  ],
+  "N4": [
+    {
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "start": 212,
+      "end": 229,
+      "text": "## 8. Acceptance and kill criteria\n\nThe model must distinguish at least:\n\n1. lawful preservation with no strict gain;\n2. strict syntropy;\n3. a hidden aggregate gain that harms one bearer;\n4. voluntary sacrifice;\n5. a one-shot extraction that benefits the extractor;\n6. an empty Justice-admissible action set.\n\nReject or revise Power-Max for a domain if its declared potential measure is\nnot identifiable, if a simpler rival predicts receipts better, if boundary or\nhorizon choices manufacture the result, or if the Justice screen repeatedly\nhides real payers or harms. A failed empirical fit does not invalidate the\nanalytic optimization statement; it invalidates the model's use for that\ndomain.\n"
+    }
+  ],
+  "failures": [
+    "Q3",
+    "Q4",
+    "Q6",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "N1",
+    "N2",
+    "N3"
+  ],
+  "runtimeChecks": {
+    "focusedTests": {
+      "passed": 18,
+      "failed": 0
+    },
+    "typecheckExit": 0,
+    "sourceLintExit": 0,
+    "diffCheckExit": 0,
+    "exactSourceInstances": 109,
+    "identicalResultsAndReceiptsAcrossTwoFreshProcesses": true,
+    "guardedFetchTcpAttempts": 0,
+    "osSandboxClaim": false,
+    "browserAcceptance": "NOT_RUN; prior policy block not retried",
+    "fullAppSuite": [
+      {
+        "timeLocal": "12:25",
+        "passed": 446,
+        "failed": 1,
+        "reason": "Pre-existing copied pilot scope refuses changed packet.ts"
+      },
+      {
+        "timeLocal": "12:28",
+        "passed": 452,
+        "failed": 1,
+        "reason": "Concurrent scope refresh; selected sources not committed/clean"
+      }
+    ]
+  },
+  "rejectedDevelopmentVariants": [
+    {
+      "directory": "emergentism-apu-relevance-KchdDU",
+      "role": "early strict development run"
+    },
+    {
+      "directory": "emergentism-apu-relevance-XjQPVZ",
+      "role": "35-percent plus plural-folding development challenger, rejected before freeze due precision/conflation risk"
+    },
+    {
+      "directory": "emergentism-apu-relevance-NLVRTJ",
+      "role": "final strict known-development replay before fresh challenge execution"
+    }
+  ],
+  "recordingHold": {
+    "expectedFrozenBlob": "54658d7797198cfc45677716aa743e728e7012d2",
+    "observedHeadBlob": "21ebb5c97709a52ac54bcc287662e523167dfac0",
+    "action": "No logging, retries or alternate recorder"
+  },
+  "review": {
+    "role": "Separate L3 review context in same local environment, not external validation",
+    "verified": "109 exact slices, 84 P1 plus 25 P2, identical output artifacts, aggregate counts, N4 and H5 qualifications, H4 false abstention, no supporting N5/N6 passage in targeted review of all nine copied sources",
+    "verdict": "No count/scope/interpretation correction required; scoped receipt commit allowed; no live-search replacement or permission increase",
+    "challengeSha256": "93e8b7889861c685aa27215409421e41ee552718e9efcde2840a3c9aa84f056a"
+  },
+  "interpretation": "Improved no-support abstention on this small set and larger quoted context; no improvement in fresh required-range retrieval. Absence of candidates on supported queries is a retrieval failure, not evidence the source lacks an answer.",
+  "nextStep": "Retain opt-in component; separate fresh paraphrase/relevance experiment, no live search replacement or authority increase."
+}

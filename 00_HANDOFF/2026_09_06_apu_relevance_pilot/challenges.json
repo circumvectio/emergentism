@@ -1,0 +1,50 @@
+[
+  {
+    "id": "N1",
+    "query": "If I offer to take a personal loss for a group, can I still back out before the harm becomes irreversible?",
+    "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "requiredRanges": [[192, 194]],
+    "requiredBoundary": "Voluntary sacrifice requires informed consent, a visible payer and beneficiary, a valid authorization envelope, and revocability until the irreversible threshold. The passage must retain that threshold; it does not promise reversibility after irreversible harm.",
+    "category": "supported_qualification_trap"
+  },
+  {
+    "id": "N2",
+    "query": "If a very capable system reaches agreement with its peers, is that enough to let it take an action that affects people?",
+    "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+    "requiredRanges": [[23, 25]],
+    "requiredBoundary": "Capability and consensus cannot authorize a consequence-bearing act. Agreement or technical ability alone supplies no authority.",
+    "category": "supported_ordinary_paraphrase"
+  },
+  {
+    "id": "N3",
+    "query": "Once an idea has been published widely, can people still challenge it or withdraw it?",
+    "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+    "requiredRanges": [[31, 32]],
+    "requiredBoundary": "Reach is not truth. Contest, correction, supersession, retraction, and Exit remain available after publication.",
+    "category": "supported_ordinary_paraphrase"
+  },
+  {
+    "id": "N4",
+    "query": "If a simpler approach predicts outcomes better than Power-Max, what should happen to Power-Max in that setting?",
+    "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "requiredRanges": [[223, 228]],
+    "requiredBoundary": "Reject or revise Power-Max for that domain when a simpler rival predicts receipts better. Failed empirical fit invalidates the model's use for that domain, not the analytic optimization statement.",
+    "category": "supported_qualification_trap"
+  },
+  {
+    "id": "N5",
+    "query": "What quorum does a board need before it can approve a merger?",
+    "expectedSource": null,
+    "requiredRanges": [],
+    "requiredBoundary": "Neither source specifies a board quorum or merger approval threshold. Generic authorization requirements do not answer the question; abstain within the declared source scope.",
+    "category": "no_support_control"
+  },
+  {
+    "id": "N6",
+    "query": "How long does a passport need to remain valid for a tourist to enter Thailand?",
+    "expectedSource": null,
+    "requiredRanges": [],
+    "requiredBoundary": "Neither source supplies passport validity or Thailand entry requirements. Do not substitute unrelated references to validity, authorization, or exit for supporting evidence.",
+    "category": "unrelated_topic_control"
+  }
+]
