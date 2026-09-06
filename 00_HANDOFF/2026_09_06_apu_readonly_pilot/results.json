@@ -1,0 +1,1351 @@
+{
+  "kind": "emergentism.apu_readonly_pilot_receipt",
+  "version": 1,
+  "preparedCommit": "fff2a8abd6a1eb0ec4e6a00713fd241bf3e2f1b8",
+  "runs": [
+    {
+      "privateOutput": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-oeVvvi",
+      "complete": {
+        "files": [
+          {
+            "path": "source-lock.json",
+            "sha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b"
+          },
+          {
+            "path": "tasks.json",
+            "sha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6"
+          },
+          {
+            "path": "snapshot.json",
+            "sha256": "93512c6443cc56abc18adf11ab9b3a8a3ceca79d5110918d535596d258f88fe0"
+          },
+          {
+            "path": "project.aia.json",
+            "sha256": "c7c0f0038122c074238e456f24a08e8292abca653d30d853501ac2e2a9f8a332"
+          },
+          {
+            "path": "first-result.json",
+            "sha256": "2dfb16a42a1adc6700bcd0b43c13d39d8e1030475196769274c0cce7c9b61a52"
+          },
+          {
+            "path": "repeat-result.json",
+            "sha256": "57ea287d57565e74bc1d1a748b0bb49cb233f06fffd5b5f5872260676ccda61d"
+          },
+          {
+            "path": "measurements.json",
+            "sha256": "8a5ce777c95dc89756fc123b335b2ad73ca25368d25a1b31902352e3e79161de"
+          },
+          {
+            "path": "checks.json",
+            "sha256": "d33b73e3a2dce65381acfeca13e878de594600259be698875d6d06006ea2febb"
+          },
+          {
+            "path": "custody-before.json",
+            "sha256": "613a651d8558713388f3966cc10c8ad8e2f2579f9460d8f0af6159ead2a38c9d"
+          },
+          {
+            "path": "custody-after.json",
+            "sha256": "1272c2b02c3a7b1552067010223efa353eb97f424f35f795f3d9ee4bc7aa06f0"
+          },
+          {
+            "path": "engine.tar",
+            "sha256": "54faa47e0606c5dc3ba78d322c9181a8c7996b7732f9ab8086fb18427cfabf23"
+          },
+          {
+            "path": "sources/00_THE_KERNEL_INDEX.md",
+            "sha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f"
+          },
+          {
+            "path": "sources/00_THE_WELTANSCHAUUNG.md",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+            "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+          },
+          {
+            "path": "sources/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+            "sha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729"
+          },
+          {
+            "path": "sources/14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+            "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635"
+          }
+        ]
+      },
+      "checks": {
+        "tests": [
+          {
+            "name": "copied-byte tamper",
+            "pass": true
+          },
+          {
+            "name": "duplicate source path",
+            "pass": true
+          },
+          {
+            "name": "path traversal",
+            "pass": true
+          },
+          {
+            "name": "forged authority kind",
+            "pass": true
+          },
+          {
+            "name": "oversized copied source",
+            "pass": true
+          },
+          {
+            "name": "non-find command rejected",
+            "pass": true
+          },
+          {
+            "name": "changed copy detected, originals untouched",
+            "pass": true
+          }
+        ],
+        "repeatNonTimestampAnswersIdentical": true,
+        "repeatProjectDigestIdentical": false,
+        "digestBoundary": "Full project digests include generated node-version timestamps; not expected to repeat byte-for-byte.",
+        "unchangedSourcesInRepeat": 9,
+        "core": {
+          "codecRoundtrip": true,
+          "storeRestore": true,
+          "readDidNotChangeProject": true,
+          "priorProjectRestored": true
+        },
+        "runtime": {
+          "node": "v22.22.3",
+          "vite": "8.0.14",
+          "dependencies": "reused local node_modules; not fully pinned",
+          "environment": "explicit PATH, NODE_ENV, LANG only; no inherited credentials; Vite config and env files disabled"
+        },
+        "guard": {
+          "fetchAndTcpAttempts": 0,
+          "scope": "fetch and net.Socket.connect interception; not comprehensive OS egress containment"
+        },
+        "engineRevision": "6b6d79ece8136f5ededfcb62ff912dbc133e6555"
+      },
+      "custody": {
+        "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "observedSourceHeadBefore": "fff2a8abd6a1eb0ec4e6a00713fd241bf3e2f1b8",
+        "engineRevision": "6b6d79ece8136f5ededfcb62ff912dbc133e6555",
+        "observedEngineHead": "741948b1d82f31f4fd3ba81df92105391e166475",
+        "engineArchiveSha256": "54faa47e0606c5dc3ba78d322c9181a8c7996b7732f9ab8086fb18427cfabf23",
+        "engineEntries": [
+          {
+            "path": "scripts/copied_pilot_core.ts",
+            "sha256": "0c819124ea40396b3e80ff5966d43e86c39006bfe5b480b79ffe2718003ba748"
+          },
+          {
+            "path": "src/lib/corpusIntake.ts",
+            "sha256": "becc985d2f1d8cc9cbb283c7b4c1ffff175e8f69c418cbff9840f2a044db85ac"
+          },
+          {
+            "path": "src/lib/librarian/local.ts",
+            "sha256": "9936c413ef2f08d8f9ac3ab2897e6dce07ebbe0694bfb73167b539d12d8d93ce"
+          },
+          {
+            "path": "src/lib/search.ts",
+            "sha256": "ab976f0b13d5818e3dc28b6e716ad31ed6df943bdc262dfcb445ce83279a9a66"
+          },
+          {
+            "path": "src/lib/store.ts",
+            "sha256": "6281d77c234c9c1855e34a37eebe2ef926184c93bb69300699ce27f786263e1a"
+          },
+          {
+            "path": "src/lib/projectPackage.ts",
+            "sha256": "c1479529579e0a9e4c520e9b3e1ebd12c26c533a62d4db398f5d9ba0c05c2b7d"
+          },
+          {
+            "path": "package-lock.json",
+            "sha256": "15094b20f74eb5cccd7afe015b68b3c7b8beb9e396e1b81604edf4bc7c43df96"
+          }
+        ],
+        "sourceLockSha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b",
+        "tasksSha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6",
+        "wrapperSha256": "43fc28922ee9aa4d198ff645f1acf8ae0a40fa87e59775b4fd32a93deddc93f8",
+        "dependencyPath": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU/apu.bot/node_modules",
+        "engineWorkingTree": " M apu.bot/www-face/assets/design-tokens.css\n M apu.bot/www-face/assets/manifest.json\n M apu.bot/www-face/index.html\n M apu.bot/www-face/site.css\n M apu.bot/www-face/site.js\n M apu.bot/www-face/tests/browser-check.js\n M apu.bot/www-face/tests/site.test.js\n?? apu.bot/output/playwright/apu-brand-8-0-2-2026-09-06/\n",
+        "mutationBoundary": "Only fresh temporary output. Originals checked before and after; no OS source-write sandbox."
+      },
+      "after": {
+        "originalsUnchangedAtCheckpoints": true,
+        "observedSourceHeadAfter": "fff2a8abd6a1eb0ec4e6a00713fd241bf3e2f1b8",
+        "engineEntriesUnchangedAtCheckpoints": true
+      }
+    },
+    {
+      "privateOutput": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-2Pxu3J",
+      "complete": {
+        "files": [
+          {
+            "path": "source-lock.json",
+            "sha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b"
+          },
+          {
+            "path": "tasks.json",
+            "sha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6"
+          },
+          {
+            "path": "snapshot.json",
+            "sha256": "2ad588f7bab09a19bc9c16467daf2056d4c99182c990722d07facf79c3d3d70f"
+          },
+          {
+            "path": "project.aia.json",
+            "sha256": "a0f5b38861172b826b0e4a8101d5a22c508db693c5a138900a0ec79a48e40e00"
+          },
+          {
+            "path": "first-result.json",
+            "sha256": "4e654a8c03791a106cfd1a6607d1988f95516727f9fcf6a180113dc2372538ab"
+          },
+          {
+            "path": "repeat-result.json",
+            "sha256": "810608532247a2240008a5e6786cadff80b7a8fc463ac2d8e06d9fd6810f633b"
+          },
+          {
+            "path": "measurements.json",
+            "sha256": "8a5ce777c95dc89756fc123b335b2ad73ca25368d25a1b31902352e3e79161de"
+          },
+          {
+            "path": "checks.json",
+            "sha256": "d33b73e3a2dce65381acfeca13e878de594600259be698875d6d06006ea2febb"
+          },
+          {
+            "path": "custody-before.json",
+            "sha256": "613a651d8558713388f3966cc10c8ad8e2f2579f9460d8f0af6159ead2a38c9d"
+          },
+          {
+            "path": "custody-after.json",
+            "sha256": "1272c2b02c3a7b1552067010223efa353eb97f424f35f795f3d9ee4bc7aa06f0"
+          },
+          {
+            "path": "engine.tar",
+            "sha256": "54faa47e0606c5dc3ba78d322c9181a8c7996b7732f9ab8086fb18427cfabf23"
+          },
+          {
+            "path": "sources/00_THE_KERNEL_INDEX.md",
+            "sha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f"
+          },
+          {
+            "path": "sources/00_THE_WELTANSCHAUUNG.md",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+            "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c"
+          },
+          {
+            "path": "sources/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+            "sha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729"
+          },
+          {
+            "path": "sources/14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+            "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635"
+          }
+        ]
+      },
+      "checks": {
+        "tests": [
+          {
+            "name": "copied-byte tamper",
+            "pass": true
+          },
+          {
+            "name": "duplicate source path",
+            "pass": true
+          },
+          {
+            "name": "path traversal",
+            "pass": true
+          },
+          {
+            "name": "forged authority kind",
+            "pass": true
+          },
+          {
+            "name": "oversized copied source",
+            "pass": true
+          },
+          {
+            "name": "non-find command rejected",
+            "pass": true
+          },
+          {
+            "name": "changed copy detected, originals untouched",
+            "pass": true
+          }
+        ],
+        "repeatNonTimestampAnswersIdentical": true,
+        "repeatProjectDigestIdentical": false,
+        "digestBoundary": "Full project digests include generated node-version timestamps; not expected to repeat byte-for-byte.",
+        "unchangedSourcesInRepeat": 9,
+        "core": {
+          "codecRoundtrip": true,
+          "storeRestore": true,
+          "readDidNotChangeProject": true,
+          "priorProjectRestored": true
+        },
+        "runtime": {
+          "node": "v22.22.3",
+          "vite": "8.0.14",
+          "dependencies": "reused local node_modules; not fully pinned",
+          "environment": "explicit PATH, NODE_ENV, LANG only; no inherited credentials; Vite config and env files disabled"
+        },
+        "guard": {
+          "fetchAndTcpAttempts": 0,
+          "scope": "fetch and net.Socket.connect interception; not comprehensive OS egress containment"
+        },
+        "engineRevision": "6b6d79ece8136f5ededfcb62ff912dbc133e6555"
+      },
+      "custody": {
+        "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "observedSourceHeadBefore": "fff2a8abd6a1eb0ec4e6a00713fd241bf3e2f1b8",
+        "engineRevision": "6b6d79ece8136f5ededfcb62ff912dbc133e6555",
+        "observedEngineHead": "741948b1d82f31f4fd3ba81df92105391e166475",
+        "engineArchiveSha256": "54faa47e0606c5dc3ba78d322c9181a8c7996b7732f9ab8086fb18427cfabf23",
+        "engineEntries": [
+          {
+            "path": "scripts/copied_pilot_core.ts",
+            "sha256": "0c819124ea40396b3e80ff5966d43e86c39006bfe5b480b79ffe2718003ba748"
+          },
+          {
+            "path": "src/lib/corpusIntake.ts",
+            "sha256": "becc985d2f1d8cc9cbb283c7b4c1ffff175e8f69c418cbff9840f2a044db85ac"
+          },
+          {
+            "path": "src/lib/librarian/local.ts",
+            "sha256": "9936c413ef2f08d8f9ac3ab2897e6dce07ebbe0694bfb73167b539d12d8d93ce"
+          },
+          {
+            "path": "src/lib/search.ts",
+            "sha256": "ab976f0b13d5818e3dc28b6e716ad31ed6df943bdc262dfcb445ce83279a9a66"
+          },
+          {
+            "path": "src/lib/store.ts",
+            "sha256": "6281d77c234c9c1855e34a37eebe2ef926184c93bb69300699ce27f786263e1a"
+          },
+          {
+            "path": "src/lib/projectPackage.ts",
+            "sha256": "c1479529579e0a9e4c520e9b3e1ebd12c26c533a62d4db398f5d9ba0c05c2b7d"
+          },
+          {
+            "path": "package-lock.json",
+            "sha256": "15094b20f74eb5cccd7afe015b68b3c7b8beb9e396e1b81604edf4bc7c43df96"
+          }
+        ],
+        "sourceLockSha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b",
+        "tasksSha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6",
+        "wrapperSha256": "43fc28922ee9aa4d198ff645f1acf8ae0a40fa87e59775b4fd32a93deddc93f8",
+        "dependencyPath": "/Users/Yves/Documents/04_CODE/01_SKYZAI_LEVELS/L5_REFLECTION/APU/apu.bot/node_modules",
+        "engineWorkingTree": " M apu.bot/www-face/assets/design-tokens.css\n M apu.bot/www-face/assets/manifest.json\n M apu.bot/www-face/index.html\n M apu.bot/www-face/site.css\n M apu.bot/www-face/site.js\n M apu.bot/www-face/tests/browser-check.js\n M apu.bot/www-face/tests/site.test.js\n?? apu.bot/output/playwright/apu-brand-8-0-2-2026-09-06/\n",
+        "mutationBoundary": "Only fresh temporary output. Originals checked before and after; no OS source-write sandbox."
+      },
+      "after": {
+        "originalsUnchangedAtCheckpoints": true,
+        "observedSourceHeadAfter": "fff2a8abd6a1eb0ec4e6a00713fd241bf3e2f1b8",
+        "engineEntriesUnchangedAtCheckpoints": true
+      }
+    }
+  ],
+  "freshProcessMeasurementsIdentical": true,
+  "measurements": [
+    {
+      "id": "Q1",
+      "query": "formula",
+      "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_KERNEL_INDEX.md",
+          "matchingLines": [
+            63,
+            76
+          ]
+        },
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            58,
+            74,
+            209
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+          "matchingLines": [
+            8,
+            13,
+            16,
+            52,
+            107,
+            194,
+            310
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+          "matchingLines": [
+            166
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "matchingLines": [
+            232
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+          "matchingLines": [
+            190,
+            210,
+            256,
+            326
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+          "matchingLines": [
+            536
+          ]
+        }
+      ],
+      "returnedNodeCount": 8,
+      "citedSourcePaths": [
+        "00_THE_KERNEL_INDEX.md",
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_KERNEL_INDEX.md",
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md"
+      ],
+      "expectedOwnerInAllHits": true,
+      "expectedOwnerInFirstFiveNodes": true,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q2",
+      "query": "product",
+      "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_KERNEL_INDEX.md",
+          "matchingLines": [
+            130
+          ]
+        },
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            47,
+            100,
+            213,
+            217,
+            218,
+            268,
+            389,
+            400,
+            502,
+            511,
+            545,
+            559,
+            560,
+            579,
+            580
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+          "matchingLines": [
+            135,
+            136,
+            173,
+            195,
+            202,
+            203,
+            207,
+            218,
+            240,
+            253
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+          "matchingLines": [
+            32,
+            155
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "matchingLines": [
+            26,
+            38,
+            117,
+            141
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+          "matchingLines": [
+            330,
+            378,
+            380
+          ]
+        },
+        {
+          "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+          "matchingLines": [
+            12
+          ]
+        },
+        {
+          "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+          "matchingLines": [
+            23
+          ]
+        }
+      ],
+      "returnedNodeCount": 8,
+      "citedSourcePaths": [
+        "00_THE_KERNEL_INDEX.md",
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_KERNEL_INDEX.md",
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
+      ],
+      "expectedOwnerInAllHits": true,
+      "expectedOwnerInFirstFiveNodes": true,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q3",
+      "query": "cheating",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "directBodyMatches": [],
+      "returnedNodeCount": 0,
+      "citedSourcePaths": [],
+      "firstFiveNodeSourcePaths": [],
+      "expectedOwnerInAllHits": false,
+      "expectedOwnerInFirstFiveNodes": false,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q4",
+      "query": "sacrifice",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            441,
+            442
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "matchingLines": [
+            190,
+            192,
+            219
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+          "matchingLines": [
+            211,
+            336
+          ]
+        }
+      ],
+      "returnedNodeCount": 3,
+      "citedSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+      ],
+      "expectedOwnerInAllHits": true,
+      "expectedOwnerInFirstFiveNodes": true,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q5",
+      "query": "approved",
+      "expectedSource": "00_THE_WELTANSCHAUUNG.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            14,
+            523
+          ]
+        }
+      ],
+      "returnedNodeCount": 1,
+      "citedSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md"
+      ],
+      "expectedOwnerInAllHits": true,
+      "expectedOwnerInFirstFiveNodes": true,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q6",
+      "query": "tested",
+      "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            66,
+            239
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "matchingLines": [
+            39,
+            119
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+          "matchingLines": [
+            12
+          ]
+        },
+        {
+          "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+          "matchingLines": [
+            68
+          ]
+        }
+      ],
+      "returnedNodeCount": 4,
+      "citedSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md"
+      ],
+      "expectedOwnerInAllHits": false,
+      "expectedOwnerInFirstFiveNodes": false,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q7",
+      "query": "empty",
+      "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "directBodyMatches": [
+        {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "matchingLines": [
+            189,
+            196
+          ]
+        },
+        {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "matchingLines": [
+            87,
+            221
+          ]
+        },
+        {
+          "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+          "matchingLines": [
+            367
+          ]
+        }
+      ],
+      "returnedNodeCount": 3,
+      "citedSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+      ],
+      "firstFiveNodeSourcePaths": [
+        "00_THE_WELTANSCHAUUNG.md",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+      ],
+      "expectedOwnerInAllHits": true,
+      "expectedOwnerInFirstFiveNodes": true,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": null,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    },
+    {
+      "id": "Q8",
+      "query": "sourdough",
+      "expectedSource": null,
+      "directBodyMatches": [],
+      "returnedNodeCount": 0,
+      "citedSourcePaths": [],
+      "firstFiveNodeSourcePaths": [],
+      "expectedOwnerInAllHits": null,
+      "expectedOwnerInFirstFiveNodes": null,
+      "missedBodyMatchPaths": [],
+      "metadataOnlyPaths": [],
+      "nullControlPassed": true,
+      "citationProvenanceValid": true,
+      "semanticAnswerCorrectness": "not measured"
+    }
+  ],
+  "presentationProjection": {
+    "note": "Derived presentation only: deterministic source-index aliases replace generated node IDs in replies, operations and citations. Original raw JSON and hashes remain in the private run manifests. Node IDs reconstruct as source- + pathSha256 + (-text for text nodes).",
+    "nodes": [
+      {
+        "alias": "S1/text",
+        "sourcePath": "00_THE_KERNEL_INDEX.md",
+        "pathSha256": "14cc582a0c270687fa0609ba2e6a6da8df254844439e6e5e5863534deab4942a",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S2/text",
+        "sourcePath": "00_THE_WELTANSCHAUUNG.md",
+        "pathSha256": "f7e1a2277575fc92be1eb9fa4e7312a2969fd5967f7cd74b9e8c20dfdccfeacb",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S4/label",
+        "sourcePath": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "pathSha256": "4bf96015d462dd4d7d6dc6b61bde82ef63958bab29d69411505c92c85a84cbc8",
+        "nodeKind": "label"
+      },
+      {
+        "alias": "S4/text",
+        "sourcePath": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "pathSha256": "4bf96015d462dd4d7d6dc6b61bde82ef63958bab29d69411505c92c85a84cbc8",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S5/text",
+        "sourcePath": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+        "pathSha256": "79122b9000de671cd3683d40cdd4d570dfb55e07a7caee5a31d2747f8ae5c750",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S7/text",
+        "sourcePath": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "pathSha256": "57e5593df362a25fe64f3fdf267c77a8f2ac4f6a867c458fc641287816da2496",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S3/text",
+        "sourcePath": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "pathSha256": "191839ea4fccb649c9b0b75aedb84cd8e70d091ef8f8783b0cdea6d36bfd1d8a",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S8/text",
+        "sourcePath": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+        "pathSha256": "7acbeaefa0b520210892dfe961898614adddd54d5c8d67603f4290a4a2836bc7",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S6/text",
+        "sourcePath": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+        "pathSha256": "531b563fa99baf78544b257752abc8fb3d72ba5b033ce2f78cedc41ab0dbc1c5",
+        "nodeKind": "text"
+      },
+      {
+        "alias": "S9/text",
+        "sourcePath": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "pathSha256": "a63e9f56ff172e4a5f1af4f5bfda75059b5e356f91628c8e168c15b798eeb76b",
+        "nodeKind": "text"
+      }
+    ]
+  },
+  "displayFirstAnswers": [
+    {
+      "message": "find formula",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S1/text)\n2. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)\n3. reference: 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md (S4/label)\n4. ---\nrosetta:\n  primary_level: L5\n  primary_column: Philosoph (S4/text)\n5. ---\ntitle: \"The D5 Rosetta Stone — G7\"\nstatus: \"ACTIVE D5 RO (S5/text)\n6. ---\ntitle: \"Power-Max — Justice-Constrained Objective\"\nstatu (S7/text)\n7. ---\nrosetta:\n  primary_level: L5\n  primary_column: Ontology\n (S3/text)\n8. ---\nrosetta:\n  primary_level: L4\n  primary_column: Ontology\n (S8/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S1/text",
+              "S2/text",
+              "S4/label",
+              "S4/text",
+              "S5/text",
+              "S7/text",
+              "S3/text",
+              "S8/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954352
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S1/text",
+          "provenance": {
+            "path": "00_THE_KERNEL_INDEX.md",
+            "kind": "reference",
+            "sha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S4/label",
+          "provenance": {
+            "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+            "kind": "reference",
+            "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S4/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+            "kind": "reference",
+            "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S5/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "kind": "reference",
+            "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S7/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "kind": "reference",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S3/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "kind": "reference",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S8/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+            "kind": "reference",
+            "sha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find product",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S1/text)\n2. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)\n3. ---\nrosetta:\n  primary_level: L5\n  primary_column: Philosoph (S4/text)\n4. ---\ntitle: \"The D5 Rosetta Stone — G7\"\nstatus: \"ACTIVE D5 RO (S5/text)\n5. ---\ntitle: \"Power-Max — Justice-Constrained Objective\"\nstatu (S7/text)\n6. ---\nrosetta:\n  primary_level: L5\n  primary_column: Ontology\n (S3/text)\n7. ---\nrosetta:\n  primary_level: L3\n  primary_column: Meta\n  op (S6/text)\n8. ---\ntitle: \"The Public Wisdom Compact\"\nrecordId: \"EM-WISDOM- (S9/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S1/text",
+              "S2/text",
+              "S4/text",
+              "S5/text",
+              "S7/text",
+              "S3/text",
+              "S6/text",
+              "S9/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954358
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S1/text",
+          "provenance": {
+            "path": "00_THE_KERNEL_INDEX.md",
+            "kind": "reference",
+            "sha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S4/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+            "kind": "reference",
+            "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S5/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+            "kind": "reference",
+            "sha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S7/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "kind": "reference",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S3/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "kind": "reference",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S6/text",
+          "provenance": {
+            "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "kind": "reference",
+            "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S9/text",
+          "provenance": {
+            "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+            "kind": "reference",
+            "sha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find cheating",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "Nothing matches \"cheating\".",
+        "ops": [],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954364
+        }
+      },
+      "citations": []
+    },
+    {
+      "message": "find sacrifice",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)\n2. ---\ntitle: \"Power-Max — Justice-Constrained Objective\"\nstatu (S7/text)\n3. ---\nrosetta:\n  primary_level: L5\n  primary_column: Ontology\n (S3/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S2/text",
+              "S7/text",
+              "S3/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954371
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S7/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "kind": "reference",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S3/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "kind": "reference",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find approved",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S2/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954377
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find tested",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)\n2. ---\ntitle: \"Power-Max — Justice-Constrained Objective\"\nstatu (S7/text)\n3. ---\nrosetta:\n  primary_level: L5\n  primary_column: Ontology\n (S3/text)\n4. ---\nrosetta:\n  primary_level: L3\n  primary_column: Meta\n  op (S6/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S2/text",
+              "S7/text",
+              "S3/text",
+              "S6/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954384
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S7/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "kind": "reference",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S3/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "kind": "reference",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S6/text",
+          "provenance": {
+            "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+            "kind": "reference",
+            "sha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find empty",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "1. ---\nrosetta:\n  primary_level: L7\n  primary_column: Philosoph (S2/text)\n2. ---\ntitle: \"Power-Max — Justice-Constrained Objective\"\nstatu (S7/text)\n3. ---\nrosetta:\n  primary_level: L5\n  primary_column: Ontology\n (S3/text)",
+        "ops": [
+          {
+            "type": "cite",
+            "nodeIds": [
+              "S2/text",
+              "S7/text",
+              "S3/text"
+            ],
+            "role": "fetcher"
+          }
+        ],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954389
+        }
+      },
+      "citations": [
+        {
+          "nodeId": "S2/text",
+          "provenance": {
+            "path": "00_THE_WELTANSCHAUUNG.md",
+            "kind": "reference",
+            "sha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S7/text",
+          "provenance": {
+            "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+            "kind": "reference",
+            "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        },
+        {
+          "nodeId": "S3/text",
+          "provenance": {
+            "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "kind": "reference",
+            "sha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+            "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+            "capturedAt": "2026-09-06T04:12:33.613Z",
+            "adoption": "not-adopted"
+          }
+        }
+      ]
+    },
+    {
+      "message": "find sourdough",
+      "packet": {
+        "kind": "aia.librarian_packet",
+        "reply": "Nothing matches \"sourdough\".",
+        "ops": [],
+        "receipt": {
+          "provider": "local",
+          "model": "local-parser",
+          "promptHash": "local-grammar-v1",
+          "snapshotVersion": "19",
+          "createdAt": 1788667954396
+        }
+      },
+      "citations": []
+    }
+  ]
+}

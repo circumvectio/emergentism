@@ -8,6 +8,9 @@ evidence_tier: "[S] selected scope; [I] evaluation design; no world validation"
 
 # APU reader pilot
 
+Execution is complete; see [the result and its limits](RESULTS.md). The frozen
+preparation below is retained, not rewritten to fit the observations.
+
 The owner asked to use APU on Emergentism and incrementally expand its scope.
 This packet tests one prerequisite: can its existing local librarian retrieve
 source-bound material without adopting it or changing the original project?
