@@ -1,0 +1,65 @@
+[
+  {
+    "id": "H1",
+    "query": "When we fix a wrong record, should the old version disappear?",
+    "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+    "expectedLines": [
+      21,
+      22
+    ],
+    "requiredBoundary": "Correction creates a successor with an explicit relation to its predecessor; it does not silently overwrite history. This passage does not establish an unconditional duty to retain all data forever.",
+    "category": "ordinary_paraphrase"
+  },
+  {
+    "id": "H2",
+    "query": "Can I add up each day's ranking to measure how much someone can do over a month?",
+    "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "expectedLines": [
+      29,
+      39
+    ],
+    "requiredBoundary": "An ordinal score cannot be summed or integrated without an additional scale contract. The durable integral requires a separately validated nonnegative cardinal measure; without that contract, comparisons use a preregistered ordinal dominance or horizon rule.",
+    "category": "ordinary_paraphrase"
+  },
+  {
+    "id": "H3",
+    "query": "If the best feasible outcome cannot be reached, may I choose an almost-best alternative?",
+    "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "expectedLines": [
+      86,
+      90
+    ],
+    "requiredBoundary": "A declared epsilon-optimal action is permitted only when a finite supremum exists and Justice constraints still hold. Uncertainty and distributional harms remain visible; absence of any Justice-admissible action licenses no action.",
+    "category": "material_qualification"
+  },
+  {
+    "id": "H4",
+    "query": "Does keeping the history mean we must retain harmful information even when a valid duty requires its deletion?",
+    "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+    "expectedLines": [
+      44,
+      47
+    ],
+    "requiredBoundary": "Preserving harmful data against valid deletion duties is a reason to narrow, supersede, or retract the Compact. Preservation is not an unconditional instruction overriding those duties.",
+    "category": "material_qualification"
+  },
+  {
+    "id": "H5",
+    "query": "Why does this framework say cooperation always beats short-term defection?",
+    "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "expectedLines": [
+      121,
+      160
+    ],
+    "requiredBoundary": "Reject the question's universal premise. The cooperation corollary is selected at [I/C], not forced by mathematics; short-horizon defection can dominate. Support requires bounded comparisons against strong rivals, and the corollary has domain-specific rejection conditions.",
+    "category": "misleading_premise"
+  },
+  {
+    "id": "H6",
+    "query": "How many minutes should I roast carrots at 200°C?",
+    "expectedSource": null,
+    "expectedLines": null,
+    "requiredBoundary": "Neither named source supplies cooking instructions. Report no supporting passage within the declared source scope; do not invent an answer or treat an unrelated passage as support.",
+    "category": "absent_topic_control"
+  }
+]

@@ -1,0 +1,818 @@
+{
+  "kind": "emergentism.apu_passage_pilot_summary",
+  "version": 1,
+  "freezeCommit": "9bb1310a2d48952ef89e6c7f8cd78dfe1b12f63f",
+  "runs": [
+    {
+      "path": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-passages-mZTyTI",
+      "receipt": {
+        "kind": "emergentism.apu_passage_pilot",
+        "version": 1,
+        "status": "OFFLINE_DERIVED_VIEW_NOT_APU_PRODUCT_RELEASE",
+        "policy": {
+          "version": 1,
+          "maxQueryChars": 400,
+          "maxTerms": 32,
+          "maxResults": 5,
+          "maxPerSource": 2,
+          "maxWindowLines": 36,
+          "maxWindowChars": 6000,
+          "statusMeaning": "Lexical passage match only; not an answer or endorsement."
+        },
+        "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "p0InputDirectory": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8",
+        "p0CompleteSha256": "e2a33836d2c19ad0a98b72d928628a85588f672d0698f24f34e6b3fb1c38b987",
+        "sourceLockSha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b",
+        "implementation": [
+          {
+            "name": "passages.mjs",
+            "sha256": "e55cc119256c445cec13784363218278f6341fb8dd6d5ea401ccc54657c6dc96"
+          },
+          {
+            "name": "run_passages.mjs",
+            "sha256": "375ea9d85d4da4218bf6b0f379e195634a2c3cb5020303e6eb5aeaa9dd4fad9f"
+          },
+          {
+            "name": "proposals.json",
+            "sha256": "21a284f41a089809a519fdb304601ad6fa6ac53f7044e8a03d445411f68a973d"
+          },
+          {
+            "name": "passages.test.mjs",
+            "sha256": "c7954ac6f1aed52fef70d1201d6a23c9b5c54651596f2517aad12a4c6d5dfb5c"
+          }
+        ],
+        "inputsUnchangedAtCheckpoints": true,
+        "initialInputHashes": [
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/passages.mjs",
+            "sha256": "e55cc119256c445cec13784363218278f6341fb8dd6d5ea401ccc54657c6dc96"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/run_passages.mjs",
+            "sha256": "375ea9d85d4da4218bf6b0f379e195634a2c3cb5020303e6eb5aeaa9dd4fad9f"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/proposals.json",
+            "sha256": "21a284f41a089809a519fdb304601ad6fa6ac53f7044e8a03d445411f68a973d"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/passages.test.mjs",
+            "sha256": "c7954ac6f1aed52fef70d1201d6a23c9b5c54651596f2517aad12a4c6d5dfb5c"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_readonly_pilot/source-lock.json",
+            "sha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_readonly_pilot/tasks.json",
+            "sha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6"
+          },
+          {
+            "file": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8/COMPLETE.json",
+            "sha256": "e2a33836d2c19ad0a98b72d928628a85588f672d0698f24f34e6b3fb1c38b987"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/challenges.json",
+            "sha256": "5c152bafddac777ec7c0e0bb2c66adfb43b72b6ca8e7a452c7f887f3840660d5"
+          }
+        ],
+        "challengeSha256": "5c152bafddac777ec7c0e0bb2c66adfb43b72b6ca8e7a452c7f887f3840660d5",
+        "noMutationAtCheckpoints": true,
+        "deterministicQueries": true,
+        "fetchAndTcpAttempts": 0,
+        "limits": [
+          "No OS egress/write sandbox claim",
+          "No APU provider calls or native-core modification",
+          "No semantic or human-usefulness score",
+          "Suggestions are drafts, not grants",
+          "No site update, push or deployment"
+        ]
+      },
+      "manifest": {
+        "files": [
+          {
+            "path": "results.json",
+            "sha256": "7bd52086402bb4adf8ff9d82d02347189924e87f7290aac6e9c04a47ef385af6"
+          },
+          {
+            "path": "proposals.json",
+            "sha256": "30f237d41bcc197577fa3d972e4b86a2430a79694dc3216586403f3a3ccbc59f"
+          },
+          {
+            "path": "index.html",
+            "sha256": "2d281ba189d419e6344fbc7f54a2815d89dd5d85c68f61f8f9c32ff47900766e"
+          },
+          {
+            "path": "expanded.html",
+            "sha256": "28fcfe4cf417afd4e19b1d757fb26cb8e3b12ab16243b850bbb72974349952a2"
+          },
+          {
+            "path": "sources/00_THE_KERNEL_INDEX.md.html",
+            "sha256": "348fe431af0eb591aa126fbfa463761953698d40310eeaf4f791cf4382bd071f"
+          },
+          {
+            "path": "sources/00_THE_WELTANSCHAUUNG.md.html",
+            "sha256": "15efdfaea26b6fef7697a0b36f8a6c39f6bafe5f03ad956ce0c44b6a31b40402"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md.html",
+            "sha256": "8344a524876468615193f9be8d31010de9c4e98db1871d6f12391316b268e57e"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md.html",
+            "sha256": "c1f5d33ca2b82fc5fff332d8b823eab4291149b982a317e51cd4b08913dbdbc3"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md.html",
+            "sha256": "552197374ca5cf194658f0c1edec9aa669826e96a5bbe87240523caf99e80126"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md.html",
+            "sha256": "893611a6a371eee9ade784555aff132b88c9a78170cf006bfdcd5bb069837980"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md.html",
+            "sha256": "b97153fa2882e828633949e4b04e324ae849ce3193185fea5ea2496b105e5b68"
+          },
+          {
+            "path": "sources/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md.html",
+            "sha256": "3916dfce7edce3b2f952d26aae14f36307a90ae0f1d9fbdab5c385b084b26849"
+          },
+          {
+            "path": "sources/14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md.html",
+            "sha256": "36f0c53114991cc8a4a1c8cb2c9e88418c0b1ecd2188b9061bc50b948d15ebd6"
+          },
+          {
+            "path": "receipt.json",
+            "sha256": "0ccb7a40dc97cd5f71d78d915baf8812e466596fe4d51b49fc1cbd90894e5ff8"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-passages-fmnBLK",
+      "receipt": {
+        "kind": "emergentism.apu_passage_pilot",
+        "version": 1,
+        "status": "OFFLINE_DERIVED_VIEW_NOT_APU_PRODUCT_RELEASE",
+        "policy": {
+          "version": 1,
+          "maxQueryChars": 400,
+          "maxTerms": 32,
+          "maxResults": 5,
+          "maxPerSource": 2,
+          "maxWindowLines": 36,
+          "maxWindowChars": 6000,
+          "statusMeaning": "Lexical passage match only; not an answer or endorsement."
+        },
+        "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+        "p0InputDirectory": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8",
+        "p0CompleteSha256": "e2a33836d2c19ad0a98b72d928628a85588f672d0698f24f34e6b3fb1c38b987",
+        "sourceLockSha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b",
+        "implementation": [
+          {
+            "name": "passages.mjs",
+            "sha256": "e55cc119256c445cec13784363218278f6341fb8dd6d5ea401ccc54657c6dc96"
+          },
+          {
+            "name": "run_passages.mjs",
+            "sha256": "375ea9d85d4da4218bf6b0f379e195634a2c3cb5020303e6eb5aeaa9dd4fad9f"
+          },
+          {
+            "name": "proposals.json",
+            "sha256": "21a284f41a089809a519fdb304601ad6fa6ac53f7044e8a03d445411f68a973d"
+          },
+          {
+            "name": "passages.test.mjs",
+            "sha256": "c7954ac6f1aed52fef70d1201d6a23c9b5c54651596f2517aad12a4c6d5dfb5c"
+          }
+        ],
+        "inputsUnchangedAtCheckpoints": true,
+        "initialInputHashes": [
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/passages.mjs",
+            "sha256": "e55cc119256c445cec13784363218278f6341fb8dd6d5ea401ccc54657c6dc96"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/run_passages.mjs",
+            "sha256": "375ea9d85d4da4218bf6b0f379e195634a2c3cb5020303e6eb5aeaa9dd4fad9f"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/proposals.json",
+            "sha256": "21a284f41a089809a519fdb304601ad6fa6ac53f7044e8a03d445411f68a973d"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/passages.test.mjs",
+            "sha256": "c7954ac6f1aed52fef70d1201d6a23c9b5c54651596f2517aad12a4c6d5dfb5c"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_readonly_pilot/source-lock.json",
+            "sha256": "5fb7d0bd6ec2cbdf1cf23e0939e4389cdb1fa7525189a6a13c92b0e1e05bf70b"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_readonly_pilot/tasks.json",
+            "sha256": "b644fc85b28225cd5ba1fa7e54af9f1396d3e9be6b0c8e75341a70df3936c8d6"
+          },
+          {
+            "file": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/emergentism-apu-pilot-llMBJ8/COMPLETE.json",
+            "sha256": "e2a33836d2c19ad0a98b72d928628a85588f672d0698f24f34e6b3fb1c38b987"
+          },
+          {
+            "file": "/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_09_06_apu_passage_pilot/challenges.json",
+            "sha256": "5c152bafddac777ec7c0e0bb2c66adfb43b72b6ca8e7a452c7f887f3840660d5"
+          }
+        ],
+        "challengeSha256": "5c152bafddac777ec7c0e0bb2c66adfb43b72b6ca8e7a452c7f887f3840660d5",
+        "noMutationAtCheckpoints": true,
+        "deterministicQueries": true,
+        "fetchAndTcpAttempts": 0,
+        "limits": [
+          "No OS egress/write sandbox claim",
+          "No APU provider calls or native-core modification",
+          "No semantic or human-usefulness score",
+          "Suggestions are drafts, not grants",
+          "No site update, push or deployment"
+        ]
+      },
+      "manifest": {
+        "files": [
+          {
+            "path": "results.json",
+            "sha256": "7bd52086402bb4adf8ff9d82d02347189924e87f7290aac6e9c04a47ef385af6"
+          },
+          {
+            "path": "proposals.json",
+            "sha256": "30f237d41bcc197577fa3d972e4b86a2430a79694dc3216586403f3a3ccbc59f"
+          },
+          {
+            "path": "index.html",
+            "sha256": "2d281ba189d419e6344fbc7f54a2815d89dd5d85c68f61f8f9c32ff47900766e"
+          },
+          {
+            "path": "expanded.html",
+            "sha256": "28fcfe4cf417afd4e19b1d757fb26cb8e3b12ab16243b850bbb72974349952a2"
+          },
+          {
+            "path": "sources/00_THE_KERNEL_INDEX.md.html",
+            "sha256": "348fe431af0eb591aa126fbfa463761953698d40310eeaf4f791cf4382bd071f"
+          },
+          {
+            "path": "sources/00_THE_WELTANSCHAUUNG.md.html",
+            "sha256": "15efdfaea26b6fef7697a0b36f8a6c39f6bafe5f03ad956ce0c44b6a31b40402"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md.html",
+            "sha256": "8344a524876468615193f9be8d31010de9c4e98db1871d6f12391316b268e57e"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md.html",
+            "sha256": "c1f5d33ca2b82fc5fff332d8b823eab4291149b982a317e51cd4b08913dbdbc3"
+          },
+          {
+            "path": "sources/05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md.html",
+            "sha256": "552197374ca5cf194658f0c1edec9aa669826e96a5bbe87240523caf99e80126"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md.html",
+            "sha256": "893611a6a371eee9ade784555aff132b88c9a78170cf006bfdcd5bb069837980"
+          },
+          {
+            "path": "sources/06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md.html",
+            "sha256": "b97153fa2882e828633949e4b04e324ae849ce3193185fea5ea2496b105e5b68"
+          },
+          {
+            "path": "sources/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md.html",
+            "sha256": "3916dfce7edce3b2f952d26aae14f36307a90ae0f1d9fbdab5c385b084b26849"
+          },
+          {
+            "path": "sources/14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md.html",
+            "sha256": "36f0c53114991cc8a4a1c8cb2c9e88418c0b1ecd2188b9061bc50b948d15ebd6"
+          },
+          {
+            "path": "receipt.json",
+            "sha256": "0ccb7a40dc97cd5f71d78d915baf8812e466596fe4d51b49fc1cbd90894e5ff8"
+          }
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "unitTests": 16,
+    "freshProcessResultsIdentical": true,
+    "freshProcessHtmlIdentical": true,
+    "verifiedPassageCitations": 115,
+    "proposalCitations": 6
+  },
+  "measurements": [
+    {
+      "task": {
+        "id": "Q1",
+        "question": "Does the mathematical formula prove how we should behave?",
+        "query": "formula",
+        "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "expectedLines": [
+          55,
+          72
+        ],
+        "requiredBoundary": "Chart facts only; ethics needs a separate bridge or hypothesis.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q2",
+        "question": "Can I still multiply the two scores to rank options?",
+        "query": "product",
+        "expectedSource": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "expectedLines": [
+          164,
+          225
+        ],
+        "requiredBoundary": "Product retired as ranking; min selected, no established aggregator. Independently ordinal axes permit Pareto comparison; common remapping is an extra assumption.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q3",
+        "question": "If people depend on each other, does that mean cheating cannot pay?",
+        "query": "cheating",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          97,
+          119
+        ],
+        "requiredBoundary": "One-shot extraction counterexample; interdependence alone does not make cooperation optimal.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "NO_PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q4",
+        "question": "May someone be forced to sacrifice because everyone else benefits?",
+        "query": "sacrifice",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          186,
+          196
+        ],
+        "requiredBoundary": "Informed consent and authorization; no demand for sacrifice as proof of morality or loyalty.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q5",
+        "question": "If the worldview has been approved, are its assumptions now proven?",
+        "query": "approved",
+        "expectedSource": "00_THE_WELTANSCHAUUNG.md",
+        "expectedLines": [
+          521,
+          527
+        ],
+        "requiredBoundary": "Adoption at stated tiers cannot turn a wager into evidence.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q6",
+        "question": "Has the Public Wisdom Compact been tested and shown to work?",
+        "query": "tested",
+        "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "expectedLines": [
+          34,
+          47
+        ],
+        "requiredBoundary": "Chosen policy, provisional, not scientifically validated; comparisons and independent outcomes needed.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q7",
+        "question": "What should happen if none of the available actions meets the rules?",
+        "query": "empty",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          72,
+          95
+        ],
+        "requiredBoundary": "Empty Justice-admissible action set licenses no action.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "Q8",
+        "question": "What hydration should I use for a sourdough loaf?",
+        "query": "sourdough",
+        "expectedSource": null,
+        "expectedLines": null,
+        "requiredBoundary": "No supporting source in the frozen bundle; absence is scoped only to that bundle and query.",
+        "group": "known-development"
+      },
+      "literal": {
+        "status": "NO_PASSAGE_MATCH",
+        "expectedOwnerFound": null,
+        "expectedRangeOverlap": null,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "NO_PASSAGE_MATCH",
+        "expectedOwnerFound": null,
+        "expectedRangeOverlap": null,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H1",
+        "query": "When we fix a wrong record, should the old version disappear?",
+        "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "expectedLines": [
+          21,
+          22
+        ],
+        "requiredBoundary": "Correction creates a successor with an explicit relation to its predecessor; it does not silently overwrite history. This passage does not establish an unconditional duty to retain all data forever.",
+        "category": "ordinary_paraphrase",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H2",
+        "query": "Can I add up each day's ranking to measure how much someone can do over a month?",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          29,
+          39
+        ],
+        "requiredBoundary": "An ordinal score cannot be summed or integrated without an additional scale contract. The durable integral requires a separately validated nonnegative cardinal measure; without that contract, comparisons use a preregistered ordinal dominance or horizon rule.",
+        "category": "ordinary_paraphrase",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H3",
+        "query": "If the best feasible outcome cannot be reached, may I choose an almost-best alternative?",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          86,
+          90
+        ],
+        "requiredBoundary": "A declared epsilon-optimal action is permitted only when a finite supremum exists and Justice constraints still hold. Uncertainty and distributional harms remain visible; absence of any Justice-admissible action licenses no action.",
+        "category": "material_qualification",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": false,
+        "expectedRangeOverlap": false,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H4",
+        "query": "Does keeping the history mean we must retain harmful information even when a valid duty requires its deletion?",
+        "expectedSource": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "expectedLines": [
+          44,
+          47
+        ],
+        "requiredBoundary": "Preserving harmful data against valid deletion duties is a reason to narrow, supersede, or retract the Compact. Preservation is not an unconditional instruction overriding those duties.",
+        "category": "material_qualification",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H5",
+        "query": "Why does this framework say cooperation always beats short-term defection?",
+        "expectedSource": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "expectedLines": [
+          121,
+          160
+        ],
+        "requiredBoundary": "Reject the question's universal premise. The cooperation corollary is selected at [I/C], not forced by mathematics; short-horizon defection can dominate. Support requires bounded comparisons against strong rivals, and the corollary has domain-specific rejection conditions.",
+        "category": "misleading_premise",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": true,
+        "expectedRangeOverlap": true,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    },
+    {
+      "task": {
+        "id": "H6",
+        "query": "How many minutes should I roast carrots at 200°C?",
+        "expectedSource": null,
+        "expectedLines": null,
+        "requiredBoundary": "Neither named source supplies cooking instructions. Report no supporting passage within the declared source scope; do not invent an answer or treat an unrelated passage as support.",
+        "category": "absent_topic_control",
+        "group": "withheld-until-freeze"
+      },
+      "literal": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": null,
+        "expectedRangeOverlap": null,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      },
+      "expanded": {
+        "status": "PASSAGE_MATCH",
+        "expectedOwnerFound": null,
+        "expectedRangeOverlap": null,
+        "semanticCorrectness": "unscored; range overlap is not qualification coverage"
+      }
+    }
+  ],
+  "citedProposals": {
+    "version": 1,
+    "status": "DRAFT_NOT_ADOPTED",
+    "authoring": "Assistant-authored proposals for owner review, not outputs of an autonomous APU model.",
+    "aliases": [
+      {
+        "trigger": "cheating",
+        "add": [
+          "extraction"
+        ],
+        "caution": "A retrieval aid only: cheating and extraction are not equivalent concepts.",
+        "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "startLine": 107,
+        "endLine": 119,
+        "evidence": {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 107,
+          "endLine": 119,
+          "excerptSha256": "10d7be4d4b3fb67c23229d41cf0f613ce32fe0a219f07e00aad71f51add89254",
+          "text": "The first quantity is a positive cross-agent derivative; the second is the\ncross-partial. They prove monotone interdependence **inside that model**. They\ndo not prove cooperation is optimal. In a one-shot zero-sum\ntransfer `ΔV` from `j` to `i`, the mean `<V>` is unchanged and, for `λ<1`,\n\n```text\nΔC×_eff(i)=Φ_i(1-λ)ΔV > 0.\n```\n\nExtraction can therefore benefit the extractor locally. This counterexample\nis load-bearing: non-extraction cannot be inferred from coupling, the product,\nevolution, or rational self-interest. It is enforced by the Justice-admissible\nfield and then tested for long-run consequences."
+        }
+      },
+      {
+        "trigger": "tested",
+        "add": [
+          "validated"
+        ],
+        "caution": "A retrieval aid only: being tested does not imply validation.",
+        "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "startLine": 34,
+        "endLine": 47,
+        "evidence": {
+          "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+          "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 34,
+          "endLine": 47,
+          "excerptSha256": "8a5abd5294050d29ac6d9367a65f735479b7dc46cd9353bb17aeac6085e18a70",
+          "text": "## Present warrant\n\nThis is a chosen editorial policy `[D]`, not a theorem of the Good and not a\nscientifically validated result. Its maturity is `PROVISIONAL`. It becomes\n`SUPPORTED` only if admitted independent outcomes show that applying it improves\nerror detection, correction, reversibility, or bearer protection against named\nrivals without firing its kill criteria.\n\n## Kill criteria\n\nNarrow, supersede, or retract the Compact if it systematically blocks justified\naction, hides real authority, makes correction harder, preserves harmful data\nagainst valid deletion duties, or performs no better than simpler native audit\nand decision practices."
+        }
+      }
+    ],
+    "outline": [
+      {
+        "label": "Read the worldview, then inspect its warrant",
+        "path": "00_THE_WELTANSCHAUUNG.md",
+        "startLine": 521,
+        "endLine": 527,
+        "proposal": "Keep adoption distinct from evidence in the source drawer, rather than implying that publication proved the worldview.",
+        "evidence": {
+          "path": "00_THE_WELTANSCHAUUNG.md",
+          "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 521,
+          "endLine": 527,
+          "excerptSha256": "3e451f210ecc7602622182bc3265cda8ce52d01e1cbe8a7ca299859a03ccb282",
+          "text": "## 9 · Adoption and authority\n\nThe approved dimension-first work order seats this capstone, E1–E10, W0–W12,\nthe scoped G7 language, the five-candidate-crossing scaffold, and the D6\nboundary relation **at their stated tiers**. Editorial adoption does not turn a\nwager into evidence, a definition into a world-law, or an author into a\ntruth-maker."
+        }
+      },
+      {
+        "label": "Use the model with its conditions",
+        "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "startLine": 164,
+        "endLine": 178,
+        "proposal": "Place the comparability assumptions beside any comparison widget; preserve a Pareto reading when the axes are only independently ordinal.",
+        "evidence": {
+          "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+          "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 164,
+          "endLine": 178,
+          "excerptSha256": "fab5d13ab0d12b762765084edebe7c271bab1ee12c47542d6e69acd7444a32fd",
+          "text": "If both coordinates are merely ordinal, the invariant comparison is\ncomponentwise Pareto dominance:\n\n```text\nN_a ⪰_P N_b  iff  Φ̂₄,a ⪰ Φ̂₄,b  and  V₄,a ⪰ V₄,b,\n```\n\nwith at least one strict inequality for strict dominance. This survives\nindependent strictly increasing reparameterizations of the two factors. A\nscalar expression such as a product or minimum does not: it compares magnitudes\nacross axes and therefore requires more structure than ordinal order.\n\nOnly after a **calibration contract** declares cardinal scales, meaningful\nzeros and units, admissible transformations, uncertainty, domain and\ncross-factor comparability may an application define calibration maps"
+        }
+      },
+      {
+        "label": "Cooperate without erasing the counterexample",
+        "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "startLine": 107,
+        "endLine": 119,
+        "proposal": "Link the cooperation story to its explicit one-shot counterexample and distinguish model interdependence from chosen admissibility.",
+        "evidence": {
+          "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+          "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 107,
+          "endLine": 119,
+          "excerptSha256": "10d7be4d4b3fb67c23229d41cf0f613ce32fe0a219f07e00aad71f51add89254",
+          "text": "The first quantity is a positive cross-agent derivative; the second is the\ncross-partial. They prove monotone interdependence **inside that model**. They\ndo not prove cooperation is optimal. In a one-shot zero-sum\ntransfer `ΔV` from `j` to `i`, the mean `<V>` is unchanged and, for `λ<1`,\n\n```text\nΔC×_eff(i)=Φ_i(1-λ)ΔV > 0.\n```\n\nExtraction can therefore benefit the extractor locally. This counterexample\nis load-bearing: non-extraction cannot be inferred from coupling, the product,\nevolution, or rational self-interest. It is enforced by the Justice-admissible\nfield and then tested for long-run consequences."
+        }
+      },
+      {
+        "label": "Practice provisional public wisdom",
+        "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+        "startLine": 34,
+        "endLine": 47,
+        "proposal": "Show the Compact's provisional warrant and kill criteria together; invite evidence and correction without promoting the policy to a proven result.",
+        "evidence": {
+          "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+          "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+          "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+          "startLine": 34,
+          "endLine": 47,
+          "excerptSha256": "8a5abd5294050d29ac6d9367a65f735479b7dc46cd9353bb17aeac6085e18a70",
+          "text": "## Present warrant\n\nThis is a chosen editorial policy `[D]`, not a theorem of the Good and not a\nscientifically validated result. Its maturity is `PROVISIONAL`. It becomes\n`SUPPORTED` only if admitted independent outcomes show that applying it improves\nerror detection, correction, reversibility, or bearer protection against named\nrivals without firing its kill criteria.\n\n## Kill criteria\n\nNarrow, supersede, or retract the Compact if it systematically blocks justified\naction, hides real authority, makes correction harder, preserves harmful data\nagainst valid deletion duties, or performs no better than simpler native audit\nand decision practices."
+        }
+      }
+    ]
+  },
+  "browserQA": {
+    "status": "UNVERIFIED",
+    "reason": "CLI unavailable; shared MCP browser busy; file URL denied by browser policy. No workaround attempted after policy denial."
+  },
+  "qualifierAudit": {
+    "H4": {
+      "verdict": "FULL_REQUIRED_BOUNDARY_VISIBLE",
+      "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+      "range": [
+        44,
+        47
+      ]
+    },
+    "H5": {
+      "verdict": "PARTIAL",
+      "visibleRange": [
+        133,
+        155
+      ],
+      "missingRanges": [
+        [
+          123,
+          124
+        ],
+        [
+          157,
+          160
+        ]
+      ],
+      "warning": "The visible [I/C] at line145 concerns the Tantric practice item, not the omitted cooperation-corollary tier."
+    },
+    "H6": {
+      "verdict": "NO_SUPPORT_CONTROL_FAILED",
+      "matchedTerms": [
+        "many",
+        "c"
+      ],
+      "warning": "Celsius C collides with [C] tier tokens. No cooking answer was generated, but unrelated passages were returned."
+    },
+    "scope": "Separate L3 agent reviewed these fields and all115 source slices; not external validation or a complete semantic score for all questions."
+  }
+}
