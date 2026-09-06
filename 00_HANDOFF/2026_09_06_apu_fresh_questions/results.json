@@ -1,0 +1,1938 @@
+{
+  "kind": "local_required_span_diagnostics",
+  "version": 1,
+  "summary": {
+    "original": {
+      "supportedQuestionsAllPartsCovered": 1,
+      "supportedQuestionDenominator": 7,
+      "requiredPartsCovered": 2,
+      "requiredPartsDenominator": 15,
+      "qualificationPartsCovered": 2,
+      "qualificationPartsDenominator": 14,
+      "unsupportedEmpty": 3,
+      "unsupportedDenominator": 3,
+      "returnedUniqueLinesSummedAcrossQuestions": 112
+    },
+    "assisted": {
+      "supportedQuestionsAllPartsCovered": 2,
+      "supportedQuestionDenominator": 7,
+      "requiredPartsCovered": 4,
+      "requiredPartsDenominator": 15,
+      "qualificationPartsCovered": 4,
+      "qualificationPartsDenominator": 14,
+      "unsupportedEmpty": 2,
+      "unsupportedDenominator": 3,
+      "returnedUniqueLinesSummedAcrossQuestions": 615
+    },
+    "ordinarySearch": {
+      "supportedQuestionsAllPartsCovered": 1,
+      "supportedQuestionDenominator": 7,
+      "requiredPartsCovered": 5,
+      "requiredPartsDenominator": 15,
+      "qualificationPartsCovered": 5,
+      "qualificationPartsDenominator": 14,
+      "unsupportedEmpty": 1,
+      "unsupportedDenominator": 3,
+      "returnedUniqueLinesSummedAcrossQuestions": 767
+    }
+  },
+  "citationsChecked": 121,
+  "records": [
+    {
+      "id": "Q01",
+      "question": "In Emergentism, how does capitalized Dasein differ from a situated dasein, and why doesn't inclusion in the whole make something physically actual?",
+      "expected": "supported",
+      "requiredParts": 3,
+      "qualificationParts": 2,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "CANDIDATES"
+        ],
+        "originalNavigation": "NAVIGATION_CANDIDATES",
+        "rephraseNavigation": [
+          "NAVIGATION_CANDIDATES"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 3,
+        "originalNavigation": 2,
+        "rephraseNavigation": 5
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q01-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q01-P2",
+              "qualification": false,
+              "covered": false
+            },
+            {
+              "id": "Q01-P3",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 10,
+          "uniqueLines": 279,
+          "partResults": [
+            {
+              "id": "Q01-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q01-P2",
+              "qualification": false,
+              "covered": false
+            },
+            {
+              "id": "Q01-P3",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 369,
+              "endLine": 388,
+              "excerptSha256": "b4ffb3efe4291af9d564685a989dd3c0e438727d96453a078cd7d82d321675fd"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 120,
+              "endLine": 160,
+              "excerptSha256": "c0a7ed802ba05b3daa012167c04a1f9dabcc08aaa4a9e80bdf7db247581debde"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 250,
+              "endLine": 324,
+              "excerptSha256": "c7fe7a6a5d9ba2c6587fdf05925953ce8a3b3fab36e40eb0b16f6b032123a722"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 120,
+              "endLine": 160,
+              "excerptSha256": "c0a7ed802ba05b3daa012167c04a1f9dabcc08aaa4a9e80bdf7db247581debde"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 390,
+              "endLine": 444,
+              "excerptSha256": "93efb4889883b8be056f06aaaa7294176f4c0b3869f0c08423684db44df2ac55"
+            }
+          ]
+        },
+        "ordinarySearch": {
+          "candidates": 12,
+          "uniqueLines": 107,
+          "partResults": [
+            {
+              "id": "Q01-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q01-P2",
+              "qualification": false,
+              "covered": false
+            },
+            {
+              "id": "Q01-P3",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 22,
+              "endLine": 28,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "7e5bd6fb84e560fa840000f5729342c15d4e281b72683f8568241c6479c7c93f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 68,
+              "endLine": 74,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "ff77b072b1c3a79e9e1266e9d9bf4de48e6814066b15bec9a816c636e4d1b832",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 88,
+              "endLine": 94,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "610cda97e71df875b0c18748547e2afcb3f1a4f17f5be7e8f1ed624e9f335377",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 103,
+              "endLine": 117,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "4cf0e94165eff71fb9f188cd288c876ab9a0a4a1a19a4d4d6798f841ac3b5302",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 44,
+              "endLine": 58,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "65a2e70ae45b4d50cf1173df019c613297fabd7c620345932e2939ce471ad0ab",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 73,
+              "endLine": 79,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "88d9688e986a56a0823d89e030c879f9c62e0b30d9e32732aa9ff89f8c1470fa",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 150,
+              "endLine": 156,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "4f1b779b645f2de0b4687450daab4160994b8772042cc04b6b1e1e433e133ede",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 269,
+              "endLine": 280,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "842090ac0a26a9f0a0685ffc24d7664de745f21c27e26f017dae23c9ca06e126",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 283,
+              "endLine": 289,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "fdf3063a15525e0e3297111c3378decc0053a58b85bde25f40adb61fb6af0a3f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 421,
+              "endLine": 427,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "aaca80f97ae434419b3ec43b2eba80e975db57872caa614a941ef1d4bbf04eb4",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 433,
+              "endLine": 440,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "2aa37cd4d1cfff37a7c72750ceb60f80efbf060a402e079b1747218ab51f635e",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 454,
+              "endLine": 461,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "8295f0d775b5a13b5c5de01bf2e8e2cd4952eec292ea59c5f5eea186de9ae325",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "question": "In the ontology, what does Finity mean, and can a finite value still be described by a process that never halts?",
+      "expected": "supported",
+      "requiredParts": 2,
+      "qualificationParts": 2,
+      "status": {
+        "original": "CANDIDATES",
+        "rephrase": [
+          "CANDIDATES"
+        ],
+        "originalNavigation": "NAVIGATION_CANDIDATES",
+        "rephraseNavigation": [
+          "NAVIGATION_CANDIDATES"
+        ]
+      },
+      "channels": {
+        "original": 1,
+        "rephrase": 1,
+        "originalNavigation": 2,
+        "rephraseNavigation": 2
+      },
+      "arms": {
+        "original": {
+          "candidates": 1,
+          "uniqueLines": 63,
+          "partResults": [
+            {
+              "id": "Q02-P1",
+              "qualification": true,
+              "covered": true
+            },
+            {
+              "id": "Q02-P2",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 2,
+          "coveredQualifications": 2,
+          "allParts": true,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            }
+          ]
+        },
+        "assisted": {
+          "candidates": 6,
+          "uniqueLines": 138,
+          "partResults": [
+            {
+              "id": "Q02-P1",
+              "qualification": true,
+              "covered": true
+            },
+            {
+              "id": "Q02-P2",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 2,
+          "coveredQualifications": 2,
+          "allParts": true,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 250,
+              "endLine": 324,
+              "excerptSha256": "c7fe7a6a5d9ba2c6587fdf05925953ce8a3b3fab36e40eb0b16f6b032123a722"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 250,
+              "endLine": 324,
+              "excerptSha256": "c7fe7a6a5d9ba2c6587fdf05925953ce8a3b3fab36e40eb0b16f6b032123a722"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "kind": "reference",
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 161,
+              "endLine": 223,
+              "excerptSha256": "51d43be2eaf07a4aabe768d658877ce4a6839a44017329e5f941f96d26581d85"
+            }
+          ]
+        },
+        "ordinarySearch": {
+          "candidates": 9,
+          "uniqueLines": 80,
+          "partResults": [
+            {
+              "id": "Q02-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q02-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 61,
+              "endLine": 71,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "9d6aa95215e5f18283488ca68a6521972918dfd8cbc75fd11490a11682665256",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 111,
+              "endLine": 118,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "aadb86a622d945b05740c32af08f6f7733367009f2d7ce2a0a000460ec0e9303",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 159,
+              "endLine": 165,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "8cfd82639a0f9629a2f5c840c01006e827ddb6486ac2bde366178f20d9801aa7",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 18,
+              "endLine": 25,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "2d88be6bdb9695c5799d0a5fa385c02191c495554b9e7e991fed4468b04edafa",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 34,
+              "endLine": 42,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "7ecf354c2773d414a0300b50448378b22cf07cfa3ebc781605264234b541a29e",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 72,
+              "endLine": 87,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "1332aa20ea20ce5bece991dc78a1da3505782fc2eff36d56d2c75f088fe259e6",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 146,
+              "endLine": 152,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "cc537ebcd6583345e658a38ae85764c12bd4bd99f6a279cd7e5dc31875da20b3",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 252,
+              "endLine": 258,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "06046c0f1be8b72672212a83293dda10ca798154e30f163a9d4f2888b7b9c728",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 282,
+              "endLine": 288,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "dddb600728ceb55c4836d1264acbd49b271a0a0d9122715b2ed6caee7c149d24",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "question": "If two factors can each rise, fall, or stay unchanged, why does G7 use seven symbols instead of nine, and does that establish seven kinds of real action?",
+      "expected": "supported",
+      "requiredParts": 3,
+      "qualificationParts": 3,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q03-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q03-P2",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q03-P3",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q03-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q03-P2",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q03-P3",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 14,
+          "uniqueLines": 124,
+          "partResults": [
+            {
+              "id": "Q03-P1",
+              "qualification": true,
+              "covered": true
+            },
+            {
+              "id": "Q03-P2",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q03-P3",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 2,
+          "coveredQualifications": 2,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 44,
+              "endLine": 50,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "b16d5a89111aaf32b05d58bd3c1b460ee6b95b1e03bbc2ba77c69bf35cddb4a5",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 77,
+              "endLine": 83,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "9d629bb38c14465a606b2a823fea60158c0592dc412494a696b057c484731177",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 134,
+              "endLine": 140,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "4c5da71573845b259f9694091460a2eb6f3d5887c4d1317065f2f38373a82184",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 179,
+              "endLine": 192,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "db5077080112470f78080fd8ab4ce5574fcacde51c4f19ff6f1caad9d689bc18",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 200,
+              "endLine": 206,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "fbb15243ddb16f5ef4894a1d72bf442f3aa74317a5d97c8a09729194570b6046",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 521,
+              "endLine": 527,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "3e451f210ecc7602622182bc3265cda8ce52d01e1cbe8a7ca299859a03ccb282",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+              "startLine": 169,
+              "endLine": 175,
+              "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+              "excerptSha256": "85de12ec5cca210f16a6f32aaab2379b3129819a44cfe96618a7cc10db39f7a9",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 1,
+              "endLine": 14,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "297cf8d9767c530e5d8930354dee601f389fbcfd25fb23d1229578857955963c",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 27,
+              "endLine": 33,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "ab191f3d7485485c65b9ed5aaeebe552821c0b0e057151332aea56842388fd0a",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 37,
+              "endLine": 43,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "91056cedaca19033d29bd0be98e853f31963b2ee0212a24fcb91984d4bbb9775",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 48,
+              "endLine": 60,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "2874c0ef41d0a9b44aa6ef46bd455e247e77ddbbbbf8298f249fb917acaab8c5",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 94,
+              "endLine": 100,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "be31c847cd7683bdeeacd4b4f419e5c8d2afe0985c0e5a32996fd4146edf5050",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 117,
+              "endLine": 129,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "bb2fe8156a0b507c8553e92a28630796791d926360bd7af90ba54baac2467f72",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 145,
+              "endLine": 151,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "3264debb93ff28a1961d0baa21a65cf4eb21eb6efcf9b6fba0a7834ae4aa9aea",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "question": "In Power-Max's coupled toy network, how can a taker gain despite interdependence, and what actually rules out extraction?",
+      "expected": "supported",
+      "requiredParts": 2,
+      "qualificationParts": 2,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q04-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q04-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q04-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q04-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 12,
+          "uniqueLines": 101,
+          "partResults": [
+            {
+              "id": "Q04-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q04-P2",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 1,
+          "coveredQualifications": 1,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 57,
+              "endLine": 63,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "76125112be70840c339701e1ffdb7c9503ac4c8b68bf3e4830a0b28cf9ba1e79",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 559,
+              "endLine": 565,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "befda7b6d0d3026743ce87578fc2a012e475ff20f60410bcab61b9d292ad12c1",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 1,
+              "endLine": 14,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "7e5d73dcb98dc06cb9bbb6402ebf9c68dde7a388674543f46e5d58c23809ef77",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 63,
+              "endLine": 69,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "5d16e30599d74f547f61d914d2899e6217c88085f1ad03b811d32a8e65e1c8ca",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 83,
+              "endLine": 89,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "6402fa4d7052bc70883b2eb70bfcaccf1c2b8aedfc046b9b477ab777e5674163",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 105,
+              "endLine": 111,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "455c68c614b8b6199370e82b78bac9649b810da8c0bece4c9288b0ea8faaef85",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 113,
+              "endLine": 126,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "5038ee2d47ecb6ebe02de6253fed09064162e84d8ef539e0877c1699463f2ed4",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 157,
+              "endLine": 163,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "22e1b2320446c8e4dbc5a20724b58a9d725ec906d7caf8898cbc1c3cd8eef4b8",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 197,
+              "endLine": 203,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "6533cada50fcf8e5f30005f85082a19e6fe2e6e4961543e924672927b45bda8a",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 217,
+              "endLine": 226,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "7bcb75451dbc067ae60eddd29c6909a8656cea1023c4d707316148a148d7b0f8",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 383,
+              "endLine": 389,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "4d59f28b7926d3cce18c7e3bca5f59e260e09fb556499bcb168d6a2d4c15024f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md",
+              "startLine": 151,
+              "endLine": 157,
+              "sourceSha256": "dccca8c6c5a769fc1e3e25c9571bcbac3b71a876974b64e4081c32c8c67e6c8b",
+              "excerptSha256": "f21521be9739628caf34a47c089d740db2ef110a62372303c08f0a7e54157e2a",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "question": "If someone freely accepts a loss to help a group, does the framework count that as strict syntropy, and what conditions must the sacrifice satisfy?",
+      "expected": "supported",
+      "requiredParts": 1,
+      "qualificationParts": 1,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q05-P1",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q05-P1",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 14,
+          "uniqueLines": 114,
+          "partResults": [
+            {
+              "id": "Q05-P1",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 1,
+          "coveredQualifications": 1,
+          "allParts": true,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 17,
+              "endLine": 23,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "94177f5f5dff9aaa7faad15cb863b42f4144ffa3ba2a03af44eb7b6d86e0b1ae",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 54,
+              "endLine": 61,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "a41d32077a1513136853294f22ae22a283fcb4cf3f12ce34693d408b7f2dde78",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 200,
+              "endLine": 206,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "fbb15243ddb16f5ef4894a1d72bf442f3aa74317a5d97c8a09729194570b6046",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 438,
+              "endLine": 445,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "173b5ca057a352e1c87f33cd0900f2b3ce45fe270a32be332489325ba128a162",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 455,
+              "endLine": 461,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "64ad739610db79f8eb7e0693e3a3479a0d73251bf843548d4ae052eb009edb34",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 70,
+              "endLine": 76,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "fb83c9efed783edf07d0cf904fa35e6b9392314d1fb8d24cd90d2cad0b42aaa5",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 180,
+              "endLine": 198,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "d194b312041a65e8c26dc3ad18c07d3670ae27599eecb46a91df77258184c43c",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 214,
+              "endLine": 222,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "b00dffda2ca4794a535272e18c21633a23045f6e66353b644e8ccd3c22e7d8e5",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 111,
+              "endLine": 117,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "96d2462f5b4db12b74367eba751fbe8354a84ff7dd27a85912cd58917fc727a0",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 162,
+              "endLine": 168,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "4bc56628276a1a1630793d3344176871a2fefc8f5700fd438bb78000b187a21e",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 174,
+              "endLine": 180,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "7b62975aaeefc3101e9760a733b057af51d04e89d2951a3758a59f8d3d7d3eeb",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 208,
+              "endLine": 214,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "ac4e8c480a8b903423bb9e9e57925a3143ffe682fcc5b1650d1390d6c3253999",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 333,
+              "endLine": 339,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "5edc0c171351cfc1ecb1d3bf4f066aa7d55d726d22e24d59748ac7e6b017ea1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "startLine": 436,
+              "endLine": 442,
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "excerptSha256": "f1b4aa45edbe97cfa9478d8d8570fb3b9aba25f3391b86df9e2b1c7fd8868a6d",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "question": "How can D0 and D6 share a boundary role while remaining different, and does their resemblance establish a cosmic recurrence?",
+      "expected": "supported",
+      "requiredParts": 2,
+      "qualificationParts": 2,
+      "status": {
+        "original": "CANDIDATES",
+        "rephrase": [
+          "CANDIDATES"
+        ],
+        "originalNavigation": "NAVIGATION_CANDIDATES",
+        "rephraseNavigation": [
+          "NAVIGATION_CANDIDATES"
+        ]
+      },
+      "channels": {
+        "original": 2,
+        "rephrase": 3,
+        "originalNavigation": 3,
+        "rephraseNavigation": 3
+      },
+      "arms": {
+        "original": {
+          "candidates": 2,
+          "uniqueLines": 49,
+          "partResults": [
+            {
+              "id": "Q06-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q06-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 221,
+              "endLine": 244,
+              "excerptSha256": "0da13364ee88540e608dbbced96552615528c0d2f32f36fef71acb18aa013636"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            }
+          ]
+        },
+        "assisted": {
+          "candidates": 11,
+          "uniqueLines": 146,
+          "partResults": [
+            {
+              "id": "Q06-P1",
+              "qualification": true,
+              "covered": true
+            },
+            {
+              "id": "Q06-P2",
+              "qualification": true,
+              "covered": true
+            }
+          ],
+          "coveredParts": 2,
+          "coveredQualifications": 2,
+          "allParts": true,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 221,
+              "endLine": 244,
+              "excerptSha256": "0da13364ee88540e608dbbced96552615528c0d2f32f36fef71acb18aa013636"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 221,
+              "endLine": 244,
+              "excerptSha256": "0da13364ee88540e608dbbced96552615528c0d2f32f36fef71acb18aa013636"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 445,
+              "endLine": 518,
+              "excerptSha256": "ad4c53dfcae3a73ffe79c771cd9483ffd4b335f72357ab883d089adf825b408b"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 221,
+              "endLine": 244,
+              "excerptSha256": "0da13364ee88540e608dbbced96552615528c0d2f32f36fef71acb18aa013636"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 445,
+              "endLine": 518,
+              "excerptSha256": "ad4c53dfcae3a73ffe79c771cd9483ffd4b335f72357ab883d089adf825b408b"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 45,
+              "endLine": 69,
+              "excerptSha256": "b25055628f0263c669b9284d4498b253153465aad27443f3a1dcc1ee48818dcf"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "kind": "reference",
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 96,
+              "endLine": 118,
+              "excerptSha256": "1119025aca4437efb8209e7570a9e7b08f671d68ec641d33957e92b13bbaee23"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 445,
+              "endLine": 518,
+              "excerptSha256": "ad4c53dfcae3a73ffe79c771cd9483ffd4b335f72357ab883d089adf825b408b"
+            }
+          ]
+        },
+        "ordinarySearch": {
+          "candidates": 15,
+          "uniqueLines": 133,
+          "partResults": [
+            {
+              "id": "Q06-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q06-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 20,
+              "endLine": 26,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "6bb1a7d090a816b682adf71af53ac17191e30b3ecdb75630761f13881a01ede2",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_KERNEL_INDEX.md",
+              "startLine": 60,
+              "endLine": 66,
+              "sourceSha256": "dd2df37e10f54ec8b25e35de06f85def6426de3abeea37b91aeb58d48dddae9f",
+              "excerptSha256": "1b5e6319fe1547ba34a5dd9921cf4fd48b79a8c1f66275c23474d2fab7858936",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 44,
+              "endLine": 50,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "b16d5a89111aaf32b05d58bd3c1b460ee6b95b1e03bbc2ba77c69bf35cddb4a5",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 71,
+              "endLine": 84,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "c0d807da63ec65695c104b505f42ffe7ad329e3a415ac254ed035584d3afaad4",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 112,
+              "endLine": 118,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "a7aa3f662b8a9d0f1dcee1a65532e7e3c66de7173ef1f6d4d7143efc08ea7e33",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 156,
+              "endLine": 162,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "9e0a3ad2c8e8dc5f1ecdb4535a7eae68485acd57fddf16466f353913ce69e357",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 223,
+              "endLine": 238,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "676d2743ebfbb737bfad3e3fddd3013ad1cbe468c70ff185d15124ba0af45604",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 327,
+              "endLine": 339,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "9359fdd2ea42404c407a1631c4f95d2a6a3458baf7a5d92344e7798e8b36fa33",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 344,
+              "endLine": 350,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "bef59c0b73169cd28d2139353f88191547bc1f49e5f647fd8430b1dc65c9c767",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 521,
+              "endLine": 527,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "3e451f210ecc7602622182bc3265cda8ce52d01e1cbe8a7ca299859a03ccb282",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 581,
+              "endLine": 587,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "db5bec28e182498d5375f72e84d39f3738c429b846c417966845ebe83b5438ab",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
+              "startLine": 90,
+              "endLine": 96,
+              "sourceSha256": "a39a3e01255d208b852c158635507083127d46719e446ef88d2904b8a742a25c",
+              "excerptSha256": "fcac8d57396e7ead717f647b0bb6fb6724336e201e151c86edd80affd1228b64",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 50,
+              "endLine": 62,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "c18daf5f1f5e5fbc6e740ecafc3b8ee48d528285f5bb1f6b7a9d17ec73ab25cd",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 64,
+              "endLine": 70,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "51d7a96ffa26bcd66f652d83ec13d818892f277e66e45095f0e299075f7bfbfa",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "startLine": 229,
+              "endLine": 235,
+              "sourceSha256": "9adde945fc0162e594f483603aff8e9a955e57a1a1145d0df62b543aa04999c2",
+              "excerptSha256": "47fe690e2d00ecb5af04b623c52c72abf54d1d88b3fbe051944ff908ee5f9171",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "question": "What would the Public Wisdom Compact need before it could be called supported, and what failures would justify narrowing or retracting it?",
+      "expected": "supported",
+      "requiredParts": 2,
+      "qualificationParts": 2,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q07-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q07-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [
+            {
+              "id": "Q07-P1",
+              "qualification": true,
+              "covered": false
+            },
+            {
+              "id": "Q07-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 7,
+          "uniqueLines": 47,
+          "partResults": [
+            {
+              "id": "Q07-P1",
+              "qualification": true,
+              "covered": true
+            },
+            {
+              "id": "Q07-P2",
+              "qualification": true,
+              "covered": false
+            }
+          ],
+          "coveredParts": 1,
+          "coveredQualifications": 1,
+          "allParts": false,
+          "emptyOnUnsupported": null,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 554,
+              "endLine": 560,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "4a770c374c473ba63f2ee50d4b3f2fa9cb64b0e4a56bd2a4b1e03b3f73b8a501",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "startLine": 39,
+              "endLine": 45,
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "excerptSha256": "431cfbd361cb8dc8932b29f3a0d90dd2e930e70d0fcb14ed73e31f8ee37b1267",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "startLine": 51,
+              "endLine": 57,
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "excerptSha256": "5dbe8f43750a5522c0bc844d0a5e196dcc8b0bb786932f7982012284d0837146",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 1,
+              "endLine": 5,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "4a6a89b90ba950a099b838443e392f52bed178cbf532ba5ac56b119a69df16f9",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 8,
+              "endLine": 14,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "8879868a2ff2c63bcaacd6eb15371225ecff49f4334a9feabb10c127c08e0951",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 26,
+              "endLine": 32,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "5d6e7eee5e3af9b8f529812f23af6e6aaee6bf93fb0358da9e8791e977fbe834",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 35,
+              "endLine": 41,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "c9d6a7dde3443b799e79e31e7e0399d54cea28e501f7664b378c34b9b6bb7b2f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "question": "Provide the preregistered comparison of the Public Wisdom Compact against simpler audit practices, including participant counts and measured error-detection gains.",
+      "expected": "unsupported",
+      "requiredParts": 0,
+      "qualificationParts": 0,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 2,
+          "uniqueLines": 12,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": false,
+          "passages": [
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 1,
+              "endLine": 5,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "4a6a89b90ba950a099b838443e392f52bed178cbf532ba5ac56b119a69df16f9",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md",
+              "startLine": 8,
+              "endLine": 14,
+              "sourceSha256": "f26469f31c41cf64f910d1ac48e31648a071c7b8ed1a96383048095b3dc92635",
+              "excerptSha256": "8879868a2ff2c63bcaacd6eb15371225ecff49f4334a9feabb10c127c08e0951",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "question": "Provide an independently replicated experimental result for a new physical F5 interaction, including its measured coupling strength and uncertainty.",
+      "expected": "unsupported",
+      "requiredParts": 0,
+      "qualificationParts": 0,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "INSUFFICIENT_COVERAGE",
+        "rephraseNavigation": [
+          "INSUFFICIENT_COVERAGE"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 0,
+        "rephraseNavigation": 0
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        },
+        "ordinarySearch": {
+          "candidates": 7,
+          "uniqueLines": 49,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": false,
+          "passages": [
+            {
+              "path": "00_THE_WELTANSCHAUUNG.md",
+              "startLine": 202,
+              "endLine": 208,
+              "sourceSha256": "3935336907c127f913c4de5eb6a0f699ab86001ba90a06a1d5145832d0665b1f",
+              "excerptSha256": "9991f8e1bbe01ff96b9e386cedca8dd3eba5858bb6f91b2a484a2988def5c86f",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+              "startLine": 174,
+              "endLine": 180,
+              "sourceSha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252",
+              "excerptSha256": "57d34b491f7e166bd9beb01083ed3eab226c1bfbd37325962c8bebb80f3bd27d",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 11,
+              "endLine": 17,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "a071d179aa154a7fa77bd9e7436318b2bbf6217c53bf1e8e3152801b7d32750b",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 64,
+              "endLine": 70,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "7797b518770d4a865c7287d052b66655f5e3b6b99e3f48d178d07266a58a9bbb",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+              "startLine": 87,
+              "endLine": 93,
+              "sourceSha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef",
+              "excerptSha256": "8ad15269dea4cb86ecf3bde00b8acecb2143e8c4d2af0a29889e1620659412e6",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "startLine": 465,
+              "endLine": 471,
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "excerptSha256": "7ddc611a815ac866ac4ce5fc866e27481dc501ac702ce005468b3868b5430e05",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "startLine": 614,
+              "endLine": 620,
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "excerptSha256": "96bf98cd433358213ad3df17ccb68d0a83d775c222ea5d6ad35664f839d6e12c",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "question": "Which post-mortem study verifies continuation of the same person's experience using a declared bearer-identity threshold, and what were its observations?",
+      "expected": "unsupported",
+      "requiredParts": 0,
+      "qualificationParts": 0,
+      "status": {
+        "original": "INSUFFICIENT_COVERAGE",
+        "rephrase": [
+          "INSUFFICIENT_COVERAGE"
+        ],
+        "originalNavigation": "NAVIGATION_CANDIDATES",
+        "rephraseNavigation": [
+          "NAVIGATION_CANDIDATES"
+        ]
+      },
+      "channels": {
+        "original": 0,
+        "rephrase": 0,
+        "originalNavigation": 1,
+        "rephraseNavigation": 1
+      },
+      "arms": {
+        "original": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        },
+        "assisted": {
+          "candidates": 2,
+          "uniqueLines": 52,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": false,
+          "passages": [
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 338,
+              "endLine": 389,
+              "excerptSha256": "4e26639353095ac64677f3bdc971b835c8270ed7bbfc69595c6c610a1b898c5b"
+            },
+            {
+              "path": "06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md",
+              "kind": "reference",
+              "sourceSha256": "cc7448de5e1f9c5965167ab1389fd94241aee9bacf609bf6310d15ec8f458729",
+              "revision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+              "startLine": 338,
+              "endLine": 389,
+              "excerptSha256": "4e26639353095ac64677f3bdc971b835c8270ed7bbfc69595c6c610a1b898c5b"
+            }
+          ]
+        },
+        "ordinarySearch": {
+          "candidates": 0,
+          "uniqueLines": 0,
+          "partResults": [],
+          "coveredParts": 0,
+          "coveredQualifications": 0,
+          "allParts": null,
+          "emptyOnUnsupported": true,
+          "passages": []
+        }
+      }
+    }
+  ],
+  "protocolCommit": "5db1d5112489bed67d9525e51a77b12eaab6afa5",
+  "casesCommit": "25ce6a10a5177462792562dc17b53ae5efa9f3bc",
+  "caseManifestSha256": "f323cf80c5a4d5ebe5e17f17c0bca4b23b6e9363f75fa2c52e4de183bffd572a",
+  "engineRevision": "dd61933fd0b2c77fd4b76776b1a8101e8a23c153",
+  "sourceRevision": "5ae7ced74867c923eb73eba9f8eb19e314c56b4f",
+  "rawRunPath": "/private/var/folders/sn/q9tf_8ws7691b5t82fdnfdch0000gn/T/apu-fresh-questions-EDOw3m/run",
+  "rawManifest": {
+    "deterministic": true,
+    "sourceHashesUnchanged": true,
+    "engineHashesUnchanged": true,
+    "files": [
+      {
+        "path": "baseline.json",
+        "bytes": 101007,
+        "sha256": "07e40a7882ea403820f240dc271276b708677e6d20afc56d8b374e5941fd628b"
+      },
+      {
+        "path": "case-freeze.json",
+        "bytes": 567,
+        "sha256": "f323cf80c5a4d5ebe5e17f17c0bca4b23b6e9363f75fa2c52e4de183bffd572a"
+      },
+      {
+        "path": "first.json",
+        "bytes": 258968,
+        "sha256": "7e7881f82f8d0295b786220174a3e35fa7235cbc9ec054064fa8cbed79ea86a4"
+      },
+      {
+        "path": "query-aids.json",
+        "bytes": 3713,
+        "sha256": "21714edfb7f7cc705b277d2adb04b83137f388f3d4f26e69d049a00800bfb587"
+      },
+      {
+        "path": "questions.json",
+        "bytes": 9792,
+        "sha256": "3afbbe0f6df3c30541c880a9ae99d6bfdf6641d0ec9c2bc8002420f3e9ac91aa"
+      },
+      {
+        "path": "repeat.json",
+        "bytes": 258968,
+        "sha256": "7e7881f82f8d0295b786220174a3e35fa7235cbc9ec054064fa8cbed79ea86a4"
+      },
+      {
+        "path": "request.json",
+        "bytes": 6525,
+        "sha256": "71d6d467c011b3b54b5c4b74bbc688ac3b043a2d76ffc8a1682cdf94a257bbc6"
+      }
+    ],
+    "caseManifestSha256": "f323cf80c5a4d5ebe5e17f17c0bca4b23b6e9363f75fa2c52e4de183bffd572a",
+    "inputsUnchangedAtCheckpoints": true,
+    "networkBoundary": "APU CLI fetch/TCP refusal; sanitized child environment; not OS sandbox",
+    "providerCalls": 0,
+    "caveat": "Completion is execution only, not retrieval adequacy or permission."
+  },
+  "independentHumanReview": false,
+  "limits": [
+    "Not semantic answer accuracy",
+    "Unequal text budgets and AI query assistance",
+    "Source-informed AI question author",
+    "Exact-span key is one selected warrant, not exhaustive equivalent evidence",
+    "No permission or publication promotion"
+  ]
+}
