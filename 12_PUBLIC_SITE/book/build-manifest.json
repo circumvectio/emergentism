@@ -101,7 +101,7 @@
     "graph_sha256": "109fdd3fd3bfc0844c19fc8d1495a2f567d2a55abb04676466450a899693980b",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "register_sha256": "3f9a63f4a61dee68081684819c7f9bfd4864283a63bc6af2f17723cc6779fd1d",
+    "register_sha256": "6e99b0b6864e5e519bbf2aef3276e7f10626846a5d6c8895f91118968967e304",
     "schema": "emergentism/claim-card-set/v2",
     "sha256": "9f569bdc4ee02a53ae630a9e3c988059f134b223dcf54fac65c21f67aa0621d3"
   },
