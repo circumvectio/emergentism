@@ -535,7 +535,7 @@
       "OS01-48"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "3f9a63f4a61dee68081684819c7f9bfd4864283a63bc6af2f17723cc6779fd1d",
+    "claim_card_register_sha256": "fee0cad1fd4af7d87ee0c1a318ca50530c0c0668100ab561c96964180bc04900",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "109fdd3fd3bfc0844c19fc8d1495a2f567d2a55abb04676466450a899693980b",
     "build_manifest": "book/build-manifest.json",

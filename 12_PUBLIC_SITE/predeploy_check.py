@@ -3391,6 +3391,10 @@ def check_third_churning_build():
 
 def check_claim_card_contract():
     print("\n[14] Claim-card and lifecycle contract")
+    # The compiler reads hash-bound frozen sources in the sibling pillar only
+    # when the federation root is explicitly declared (fail-closed by design).
+    # Predeploy runs inside the trusted primary checkout, so it declares it.
+    checker_env = {**os.environ, "EMERGENTISM_PRIMARY_CHECKOUT_ROOT": REPO_DIR}
     commands = (
         [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/02_COMPILERS/compile_claim_cards.py"), "--check"],
         [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/01_SCRIPTS/check_barred_claims.py"), "--scope", "all"],
@@ -3398,7 +3402,7 @@ def check_claim_card_contract():
     )
     all_ok = True
     for command in commands:
-        process = subprocess.run(command, cwd=REPO_DIR, text=True, capture_output=True, check=False)
+        process = subprocess.run(command, cwd=REPO_DIR, env=checker_env, text=True, capture_output=True, check=False)
         if process.returncode:
             all_ok = False
             for line in (process.stdout + process.stderr).strip().splitlines():

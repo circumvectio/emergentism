@@ -80,7 +80,7 @@ EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
 }
 EXTERNAL_CARD_LOCATOR_INVENTORY_COUNT = 28
 EXTERNAL_CARD_LOCATOR_INVENTORY_SHA256 = (
-    "89bb8fbc607b816e408448a941d28f5a572df3f6733f50c98e67e7aa180f1e46"  # pragma: allow-secret -- locator inventory digest
+    "18736ff209b8e06ad29aabfddbcd90cb57e16dd4cc1f5c90f6e9c8a5e1af19c6"  # pragma: allow-secret -- locator inventory digest; re-pinned 2026-09-06 after AIA->APU custody repoint (claim cards + registers + compiler table), drift pre-dated this session per SUITE_EXECUTION_VERIFICATION_2026_09_06
 )
 
 ALLOWED_COMPOSITION_CLASSES = {
