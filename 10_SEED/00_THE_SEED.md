@@ -3,6 +3,10 @@ title: The Seed — pure Emergentism
 status: ACTIVE ROUTE — compressed derivative, not a doctrine owner
 evidence_tier: "[S] typed compression of active owners; [I/C] where marked"
 date: 2026-07-20
+updated: 2026-09-07
+depends_on:
+  - ../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md
+  - ../07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md
 ---
 
 # The Seed
@@ -19,15 +23,20 @@ Capital inside the cone (`04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md`, Yves ranke
 
 ## The ladder
 
-| Register | Compressed reading | Modality |
+| Register | Compressed reading | Reading boundary |
 |---|---|---|
-| D0 | ground-limit | actual boundary frame |
-| D1 | distinction | actual |
-| D2 | configuration | actual |
-| D3 | probability-bearing quantum state; measurement-relative distributions | actual state assignment |
-| D4 | causal actuality, embodied means, action, and record | actual |
-| D5 | counterfactual possibility, modeled futures, represented rankings, and selection candidates | possible |
-| D6 | apophatic recognition/exit; no added positive freedom | actual recognition |
+| D0 | ground-limit | structural boundary role, not possession of Ground |
+| D1 | distinction | structural predicate; an actual discrimination event or inscription is D4 |
+| D2 | configuration | structural predicate; an actual configured carrier or observation is D4 |
+| D3 | probability-bearing quantum-state content; measurement-relative distributions | structural state content; an actual preparation or assignment act is D4 |
+| D4 | causal actuality, embodied means, present model tokens, action, and record | actual carriers and events |
+| D5 | counterfactual possibility, modeled futures, represented rankings, and selection candidates | merely possible content; its present model token and ranking act are D4 |
+| D6 | exit/nonclosure; no added positive freedom | structural boundary role; a recognition or withdrawal act is D4 |
+
+This is the selected register reading `[I]`, not actuality indexed separately
+by rung. The [D4/D5 owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+distinguishes abstract predicates and boundaries from actual tokens/events
+and merely possible content. No table entry proves nature's decomposition.
 
 Exactly five candidate positive crossings, `μ₀…μ₄`, open D1 through D5. Each is a
 testable emergence claim, not a proof of irreducibility. `b₆:D5↝D6` marks exit or
@@ -56,6 +65,20 @@ Before consequential action, ask:
 The worldview's strongest honesty rule is simple: analytic identities do not become
 empirical laws, correspondences do not transfer proof, and beauty does not rescue a
 broken derivation.
+
+## What to preserve and return `[I]`
+
+Carry a wider question back to a finite situation: what could be done, with
+which actual means, for whose benefit and at whose cost? Return an observation,
+a bounded proposal, or an explicit unresolved question—not a claim to see the
+whole from outside. Preserve contrary evidence alongside useful insight.
+If an explanation fails, keep only what retains its own support. The instrument
+is allowed to change; the reader is allowed to leave.
+
+The optional [witness-and-return exercise](../07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md#witness-and-return--an-optional-use-i)
+shows how a person or machine can unpack a compressed image, retain its
+limits, and name a next check. Its benefit over simpler practice is untested;
+it creates no authority to act or obligation to adopt the framework.
 
 Read the [Weltanschauung](../00_THE_WELTANSCHAUUNG.md), the
 [Kernel Index](../00_THE_KERNEL_INDEX.md), and the
