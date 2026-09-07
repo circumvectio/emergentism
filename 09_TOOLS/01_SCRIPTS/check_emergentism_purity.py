@@ -181,6 +181,10 @@ SELF_CHECKER_UNIT_SHA256: tuple[str, ...] = (
     "d58244993cc2051fb9d4096f4e4cf7d172b6d4532985f7fb08090aa3bb688aa9",
     "e9d54950b99340dccc4e3a5d8a41f2ceae4f3411d50dbd5d758671cec7f97387",
     "e4b3f8ac66e884dc5bf70cef426deceef786c31a2878969205b687bf568e5805",
+    "fb4ccf6c723f10db6c256512696ddf290048e26cd0d78857d4d325b41b4680e5",  # sha256: exact v3 path
+    "52e44dcf6559ce30d34493b149162dbcb9d79c91304f01f0bee499fbc063dad1",  # sha256: exact v3 link
+    "079c104b66c73796d2be6b6da7511d15813679fb28a76eafc80f6786200f699b",  # sha256: exact v3 key
+    "eaf2ee6ea18a0d95c7aa47e2a5716dd7c518836009a61b66a6ada10bad58ede8",  # sha256: retained v1 reference
 )
 
 # The former gate-health diagnostic was intentionally reverted in 00e68c83.
@@ -589,11 +593,16 @@ LEGACY_ALIAS_EXCEPTIONS = {
 CONTROL_PROJECTION_PATHS = (
     Path("VMOSK_A.md"),
     Path("VMOSK_A_v2_2026_07_31.md"),
+    Path("VMOSK_A_v3_2026_09_07.md"),
 )
 CONTROL_PROJECTION_REFERENCE_PATHS = {Path("README.md"), Path("AGENTS.md")}
-CONTROL_PROJECTION_REFERENCE_NAMES = CONTROL_PROJECTION_PATHS
+CONTROL_PROJECTION_REFERENCE_NAMES = (
+    *CONTROL_PROJECTION_PATHS,
+    Path("VMOSK_A_v1_2026_07_28.md"),
+)
 CONTROL_PROJECTION_REFERENCE_MARKDOWN_LINKS = (
     ("VMOSK-A v2", "VMOSK_A_v2_2026_07_31.md"),
+    ("VMOSK-A v3", "VMOSK_A_v3_2026_09_07.md"),
 )
 
 # Only the current reviewed vocabulary-bearing lines of each mutable control
@@ -604,11 +613,12 @@ CONTROL_PROJECTION_UNIT_SHA256 = {
     Path("VMOSK_A.md"): frozenset({
         "ed50ff3220b8a438a30e7a42febd231b4928f2648c5b6b94afffeec6985af712",
         "8986335b62bb955b8dfac4515321867e56227bb3dd25b9a29169c72c110d55b4",
-        "d412b82266fbad7e7fa4c51c42497de050e152befb0ab0da025ca4e5818b1dea",
+        "bfd81fefaff3f29af29e6c09fcadcf90ef7c2f7595d109f411dab21446f164ca",  # sha256: source pointer
         "ab78dc77fb4c00ea585f13b4ccb81571597256250c239af9993c238146e8eed9",
         "faaea77245622eef1a7f4704bb23fa3e56f83b09beceeeef77c7b7462bd6348c",
         "16dd65152f4fcb0d673945016a7ba9897ef0ddbece4afedb8040904c3968997d",
-        "58178b54c3ba0840c2e6cf561756e809fd6188e305da0dd3bc62a6bd36ba4dfa",
+        "aa977b2c9dc2362f186558111bb71e415f38e29fe5379377f08e7506395c3373",  # sha256: current pointer
+        "2e3b56306dffed4e38ebc1426eff1aa765e603d8c509ba4b34b3be858cacbf61",  # sha256: predecessor pointer
         "9d68f67a1b868440fb348305488a76e49076c4dc2fe25c80fe9486b1a948ccdb",
     }),
     Path("VMOSK_A_v2_2026_07_31.md"): frozenset({
@@ -628,6 +638,11 @@ CONTROL_PROJECTION_UNIT_SHA256 = {
         "d7db09185e578b7fd7ae9e71ccaaac41284a832dd77bf7e93e484414a56e173a",
         "fe4650e0c2d4a572eeddfa5d73a9233931570f42c183732590ceea0b430088b1",
         "6c2ed874d4167cc286a6130d31439b4ecb03cc5211978217779f1d206afad8d0",
+    }),
+    Path("VMOSK_A_v3_2026_09_07.md"): frozenset({
+        "52af677f09918e46341df77cbe1d26d2c61add06e38ad2f0720eaf26623a2843",  # sha256: title
+        "1276c4a7a9708eb68518019be58aab26ee8975336ee4e5c8b787c0b4a1a69a29",  # sha256: predecessor
+        "3c071408547a4603426b58296992d922a8d29712690782dd4e08429903c09d79",  # sha256: history links
     }),
 }
 

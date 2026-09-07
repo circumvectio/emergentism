@@ -20,7 +20,7 @@ Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity 
 3. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.
 4. [The Human Condition](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) — self, consciousness, agency, suffering, meaning and death.
 5. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
-6. [VMOSK-A v2](VMOSK_A_v2_2026_07_31.md) — non-semantic work programme for maintaining, testing and publishing the worldview; supersedes `VMOSK_A.md` (2026-07-31), which is retained per archive-first.
+6. [VMOSK-A v3](VMOSK_A_v3_2026_09_07.md) — current unsigned, non-semantic work programme: purpose, deliverables, measures and L7 witness role; the bare-name pointer resolves here and the signed predecessor remains unchanged.
 7. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and twelve world-contact sockets.
 8. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model and type boundaries.
 9. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) and [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the active axiom and wager ledgers.
@@ -43,8 +43,8 @@ None of the three owns anything; each points at the owner. Re-check the first tw
 
 ## About the files in this directory
 
-There are twenty-six markdown files at the repository root and **most of them are
-forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
+The root contains current documents, dated editions and **forwarding stubs** —
+short files that point at the real owner elsewhere in the tree.
 They exist so that older links keep resolving, and deleting them would break the thing they
 are for. As of 2026-08-04 there were **22** markdown files at the root: **9 forwarding stubs,
 3 agent routes, 6 documents with actual content, 2 dated natural-person signature
@@ -53,8 +53,8 @@ holds **26** `.md` files: that 22 plus four later files that stay here (not stub
 [`00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md`](00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md)
 (`[D]` STAGED companion, successor to neither), [`CONTRIBUTING.md`](CONTRIBUTING.md)
 (Kintsugi bounty / 5+1 as PR rules), [`LICENSE.md`](LICENSE.md)
-(dual CC BY-SA 4.0 / Apache-2.0), and [`VMOSK_A_v1_2026_07_28.md`](VMOSK_A_v1_2026_07_28.md)
-(SUPERSEDED provenance; `VMOSK_A.md` already names this path). The six content documents —
+(dual CC BY-SA 4.0 / Apache-2.0), and the non-semantic [`VMOSK_A_v1_2026_07_28.md`](VMOSK_A_v1_2026_07_28.md)
+(SUPERSEDED provenance; the non-semantic `VMOSK_A.md` names this path). The six content documents —
 
 - [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
@@ -64,7 +64,7 @@ The two dated natural-person signature records remain at this root:
 [`00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md`](00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md)
 and [`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md`](00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md).
 The latter was restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`.
-The work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md` — are cited as non-semantic filename references only, since neither owns doctrine.
+The work-programme pointer, retained v2 and current v3 — `VMOSK_A.md`, `VMOSK_A_v2_2026_07_31.md` and `VMOSK_A_v3_2026_09_07.md` — are non-semantic control surfaces; none owns doctrine. The dated counts above are historical snapshots, not a current census.
 
 (`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
 version of this list counted it as content and still arrived at six, while claiming seven.
@@ -146,8 +146,9 @@ tests. Consequential action uses a complete, scoped, contestable
 
 | Path | Role |
 |---|---|
-| `VMOSK_A_v2_2026_07_31.md` | non-semantic control projection, current; supersedes `VMOSK_A.md`; never a doctrine owner |
-| `VMOSK_A.md` | non-semantic control projection v1.0, superseded 2026-07-31; retained per archive-first |
+| `VMOSK_A_v3_2026_09_07.md` | current unsigned, non-semantic work programme; never a doctrine owner |
+| `VMOSK_A_v2_2026_07_31.md` | signed non-semantic predecessor and appendices, retained unchanged |
+| `VMOSK_A.md` | non-semantic bare-name pointer to the current work programme |
 | `00_CONTROL/` | receipts, boundaries, and verification; never a doctrine owner |
 | `00_HANDOFF/` | dated session handoffs and release receipts; never a doctrine owner |
 | `00_META/` | canon registry, Compass, Refusals, corpus maps |
