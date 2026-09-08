@@ -84,7 +84,7 @@ ledger stands on it or declares that it does not.
 |---|---|
 | `10_KERNEL/` | the lens itself — the interval, the two failure modes, the score, the cascade, seven tenets, each with its kill. Plus the machine-facing manifest (`00_WHAT_THE_MACHINE_RECEIVES.md`): the five connected instruments, the verified reasoning spine, and the nine-field record mapped onto the consequence spine — promoted by owner word 2026-09-05 |
 | `20_CHECKS/` | ADJ-01 — the walk from a claim to a verdict; 1.0 owns the SLWP packet. CASE-01 mind/D5. CASE-02 credit/D5. |
-| `30_TRIAL/` | the discriminators. **MID-01 ran 2026-09-05 and the instrument lost its primary** — CHECKLIST 12 > PLAIN 7 > LENS 6 on raw detection. **MID-02 ran 2026-09-06 (out-of-domain transfer): combined rank tied with the checklist, KILL fires again — the one measured unique asset is self-correction** (the instrument arm caught the flaw planted in its own brief) |
+| `30_TRIAL/` | the discriminators. **MID-01 ran 2026-09-05 and the instrument lost its primary** — CHECKLIST 12 > PLAIN 7 > LENS 6 on raw detection. **MID-02 ran 2026-09-06 (out-of-domain transfer): combined rank tied with the checklist, KILL fires again — the one measured unique asset is self-correction** (the instrument arm caught the flaw planted in its own brief). **MID-03 preregistered 2026-09-08** — the self-correction claim, tested competitively across seeds; neutral candidate pool in `sourcing/` under the quarantine protocol |
 | `90_INHERITANCE/` | what burned and what rose, with pointers to 1.0's own death register |
 
 ## What this stack does not claim
@@ -96,12 +96,18 @@ follows the structure is a wager, labelled one. It is **not a tribunal**: it
 disqualifies on auditability, never on goodness. It answers *can this lose?*,
 never *is this good?*
 
-And its usefulness is **barely measured, and the first measurement went
-against it**: MID-01 (2026-09-05) found the generic checklist beats the lens
-at raw defect detection — 12 to 6 — with the KILL firing as written and the
-result published. What remains unmeasured is the narrower claim (question-
-typing depth, out-of-domain transfer, self-correction), which is exactly what
-MID-02 is preregistered to test. The stack's own rules still forbid asserting
+And its usefulness is **measured twice, and both measurements went against
+its competitive form**: MID-01 (2026-09-05) found the generic checklist beats
+the lens at raw defect detection — 12 to 6 — KILL fired as written; MID-02
+(2026-09-06, out-of-domain transfer) tied the checklist on combined rank —
+KILL fired again. What survives measurement is **self-correction**: the one
+limb where the instrument arm caught the flaw planted in its own brief — with
+the honest caveat that only its brief carried a flaw, so the pass was
+structural, not competitive. MID-03 is preregistered (2026-09-08) to test
+that surviving claim competitively — every arm's brief flawed, across seeds,
+against bare honesty norms; its neutral candidate pool sits in
+`30_TRIAL/sourcing/` under the quarantine protocol
+(`00_SOURCING_PROTOCOL_v0.md`). The stack's own rules still forbid asserting
 what has not been measured.
 
 **Canonical path:** `01_EMERGENTISM/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/`
