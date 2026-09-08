@@ -115,6 +115,11 @@ objective. No retired measure is re-run.
   run is not.
 - **Fresh out-of-domain corpus + one-hand planting + sealed key:** requires a
   sourcing channel this lane does not have unsigned. Declared, not solved.
+- *Amendment 2026-09-08 (additive):* the sourcing channel now exists —
+  `30_TRIAL/00_SOURCING_PROTOCOL_v0.md` + `30_TRIAL/sourcing/` quarantine
+  pipeline with mechanical freshness validation (`validate_intake.py`). What
+  remains gated is unchanged and unchanged in owner: candidate selection,
+  flaw planting, sealing, and the run — all authorized-hand (K2) acts.
 - Runtime, grader count, inter-rater agreement or its named absence, brief
   word counts, sealed-key hash, and frozen analyzer hash reported with any
   result — the MID-02 standing conditions, carried.
