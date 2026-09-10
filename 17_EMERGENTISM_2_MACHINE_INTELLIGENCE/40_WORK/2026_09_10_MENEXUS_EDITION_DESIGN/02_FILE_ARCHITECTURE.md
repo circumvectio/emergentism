@@ -6,6 +6,24 @@ status: "PROPOSED [D] — no source relocation or runtime migration"
 
 # One existing stack, two reading surfaces
 
+## Agreed public experiences — 2026-09-10 [S/D]
+
+The [outline amendment](01_OUTLINE.md) defines a website invitation and an
+atlas/workbench app. **Explore** and **Apply** are experience modes, not new
+repositories, ontological levels or permission classes.
+
+| Experience | Content responsibility | Implementation boundary |
+|---|---|---|
+| Website invitation | Selected Start, Lens and Worked cases | Existing `12_PUBLIC_SITE` owner; no duplicate theory tree |
+| App / Explore | D0/D6 boundary framing, D1–D5 panels and source-bound tool views | Reuse reviewed register, Rosetta and Burrisphere sources; final routes remain undecided |
+| App / Apply | Existing practice and compatible human/machine case records | Local/portable use first; connected APU/Menexus features qualified separately |
+| Shared evidence access | Sources, Research, status, corrections and Exit | One source identity and qualification set across presentations |
+
+The atlas's visual containment does not determine filesystem nesting. Do not move
+Rosetta sources into a D5 folder, make Burrisphere a new ontology owner, or create
+an app backend merely to mirror navigation. Reconcile the source-owned visual
+guide at UI implementation; this direction introduces no replacement brand guide.
+
 [S, inspected structure] The machine-intelligence successor already exists.
 Its source owners remain in the wider Emergentism corpus. Reuse it:
 

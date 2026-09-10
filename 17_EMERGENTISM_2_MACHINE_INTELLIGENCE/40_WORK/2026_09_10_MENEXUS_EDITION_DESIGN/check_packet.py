@@ -47,7 +47,7 @@ def validate_inventory(data):
         require(HEX.fullmatch(data[field]), "invalid revision")
     ids = set()
     covered = set()
-    require(len(data["sources"]) == 12, "source inventory count drift")
+    require(len(data["sources"]) == 14, "source inventory count drift")
     for item in data["sources"]:
         require(item["id"] not in ids, "duplicate source ID")
         ids.add(item["id"])
@@ -105,7 +105,7 @@ def check(tree=None, delivered_only=False):
         if tree:
             require(git(repo, "rev-parse", tree + ":" + item["path"]) == item["delivery_blob"], "delivery source drift")
     scope = "delivered pins only; local planning pins NOT VERIFIED" if delivered_only else "both delivered and local planning pins"
-    print("PASS: 7 design files, 6 reader sections, 12 sources, " + scope + "; structure only, no efficacy or release claim.")
+    print("PASS: 7 design files, 6 reader sections, 14 sources, " + scope + "; structure only, no efficacy or release claim.")
 
 
 class InventoryTests(unittest.TestCase):

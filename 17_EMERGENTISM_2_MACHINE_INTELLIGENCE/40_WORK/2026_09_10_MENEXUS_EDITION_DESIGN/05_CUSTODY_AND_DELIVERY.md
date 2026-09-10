@@ -87,3 +87,42 @@ No code-product change, corpus ingestion, private-memory acceptance, provider
 call, new benchmark run, agent mail, deployment or source-truth promotion is
 part of this task. Broader repository gates retain their separate dated status;
 the packet checker does not replace them.
+
+## Post-delivery direction amendment — 2026-09-10 [S/B/D]
+
+The initial seven-file design packet was recorded in local source commit
+`0bdb11c6f5238e7da14fc66035094a3db6ae9f50` and delivered separately as
+`858d6832e43debe432ff6223f997b602b7a4fa1c`, parented to the inspected private
+revision above. Those predecessor records remain unchanged. Their delivery is
+not evidence that this later amendment was pushed.
+
+The owner subsequently agreed to one source-owned instrument with an inviting
+website and an atlas/workbench app. This records that design direction in the
+existing packet; it does not modify doctrine, create routes or authorize a build,
+connected intake, inference, publication or deployment. It serves O21–O23/O25 of
+the pinned work programme without declaring those objectives complete.
+
+The exact group remains these seven packet files. Two direct source pins are
+added for the atlas: the ontology's register/Finity definitions and the Trinity
+owner's boundary-glyph/operand distinction. Both match in the recorded delivered
+and local planning snapshots; no source body is transferred or changed. The
+inventory now has fourteen sources; the twelve-source observation above describes
+the original delivery. Existing schema and section identities remain unchanged.
+
+L3's bounded pre-edit review retained the distinction between Finity and finite
+cardinality, D5 navigation and D4 execution, and public inspection versus private
+capabilities. The narrowed route records an agreed editorial direction inside an
+already reviewed packet, not a fresh architecture or namespace choice. No new
+L1/L2 or higher-boundary design wave is claimed; L4 alone edits and commits.
+
+[B/I] Final L3 delta review accepted this group with the stated limits: source
+distinctions, permission boundaries and predecessor/current accounting passed
+bounded review. Both-snapshot validation of fourteen sources, all eleven packet
+self-tests and whitespace checks passed locally. These checks do not establish
+reader benefit, app behavior or release readiness.
+
+The new A3 probe `emergentism-website-atlas-agreement-20260910`, ordinal 1,
+returned the same frozen-v0 HOLD recorded above. No alternate-identity retry,
+carrier repair or recorded-Soul-Loop completion is claimed. This amendment ends
+at a bounded local commit; a subsequent private transfer must reconcile the
+distinct source/delivery histories explicitly. Nothing is pushed in this turn.

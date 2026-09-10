@@ -6,6 +6,91 @@ status: "PROPOSED [D] — editorial contracts, not completed chapters"
 
 # An outline organized around understanding and use
 
+## Owner-direction amendment — website and atlas/workbench, 2026-09-10
+
+[S, owner direction] Following the recommendation of one source-owned instrument
+with a public website and an atlas/workbench app, the owner replied **"agreed"**.
+This adopts the experience direction below. It does not adopt every source claim,
+complete implementation, approve a deployment or grant connected permissions.
+The original six-section reading journey remains available beneath these views.
+
+### Website — the invitation [D]
+
+**Emergentism — Fire for the mind.** Identity: `• < ⊙ > ○`.
+
+**What is this? → How does it see the world? → Show me an example → Open the instrument.**
+
+Offer a short explanation, one worked case, and access to the app. Full theory,
+sources, qualifications, research and corrections remain reachable. A visitor
+need not learn every symbol or adopt the worldview before gaining something useful.
+
+### App / Explore — the atlas [D]
+
+```text
+•  D0 — Ground-facing boundary
+│
+⊙  Finity
+├─ D1 — Distinction
+├─ D2 — Configuration and relation
+├─ D3 — State and probability
+├─ D4 — Actual history and causal consequence
+└─ D5 — Possibility, representation and deliberation
+│
+○  D6 — Horizon / nonclosure boundary
+```
+
+[I, source-bound presentation] This is an editorial shorthand for the ontology
+owner, not a replacement definition or an exhaustive inventory of Dasein. Finity
+means determinate, situated and bounded in the relevant register; it does not
+require finite cardinality, dimension, description length or numeric magnitude.
+The diagram is not a demonstrated physical emergence sequence.
+
+"Zero" and "infinity" name boundary roles here. D0 and D6 are articulated boundary
+tokens, not ordinary numbered rooms containing the Ground or all reality. The
+glyphs and the identity's angle marks are not numerical operands or inequalities;
+`⊙` names the realm, not the numeral `1`. Mathematical infinity and its native
+definitions remain available within their declared mathematical structures.
+
+- **Rosetta:** opens from D5 as a representation/reasoning map. This navigation
+  choice does not establish that operators inhabit a separate causal realm.
+  Reasoning stations, game moves, replicators and permissions remain distinct.
+- **Burrisphere:** an interactive explanatory chart relating represented
+  possibilities and actual means, with equations, assumptions and accessible
+  alternatives to animation. It does not prove a physical D4/D5 bridge, an ethic,
+  or an operational optimum merely by showing chart balance.
+- **Soul Loop:** the route from deliberation to a bounded proposal, actual
+  returned evidence and explicit revision. Execution remains a D4 process under
+  separately granted authority; a represented option does not execute itself.
+- **Wisdom stack:** information, supported claims, decisions and adopted policy
+  remain distinct. Public is a disclosure choice, not automatic epistemic ascent.
+
+Each atlas panel should offer a plain definition, diagram or example, practical
+use, and recoverable source/status/limits. Tools remain directly accessible;
+repeated work must not require clicking through five registers.
+
+Source references: `ontology`, `titan_boundary`, `kernel_owners`, `formula`,
+`machine_manifest`, `work_programme` in the [source map](04_SOURCE_BINDINGS.json).
+
+### App / Apply — bring a question [D]
+
+**Locate the relevant distinctions → inspect evidence → compare alternatives →
+propose a test → record what happened → revise.**
+
+Use the existing source-owned practice and machine contracts, not a new mandatory
+Soul Loop or a hidden chain-of-thought request. Return an inspectable record of
+sources, qualifications, alternatives, public rationales, proposed tests and
+revisions. The same case should have compatible human and machine views.
+
+Public explanation and atlas inspection should need no account. Saved work,
+private context, model inference, sharing and consequential actions retain their
+own consent, capabilities and release gates. APU can assist source assembly and
+preserve disagreement; Menexus can supply qualified source/context/record services.
+Neither is a truth oracle or a prerequisite for the portable edition.
+
+The next authored slice remains the executive explanation and `EDD-DEMO-01`
+below, now designed to connect Explore and Apply. This amendment does not report
+that the walkthrough, app, connected integration or a user test has been built.
+
 [I] Use a reader-facing journey over a source-bound technical structure. A purely
 technical index exposes ownership well but asks too much of a newcomer. A purely
 persuasive narrative is approachable but can hide assumptions. The proposed

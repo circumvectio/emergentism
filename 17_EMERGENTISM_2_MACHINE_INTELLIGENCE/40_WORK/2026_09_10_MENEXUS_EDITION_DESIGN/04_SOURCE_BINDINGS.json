@@ -164,6 +164,24 @@
       "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_RESULTS_2026_09_05.md"
     },
     {
+      "id": "ontology",
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+      "sections": ["lens", "instrument"],
+      "delivery_blob": "724d8ab96c1c79adee65a5c6bb2b557d94862471",
+      "local_blob": "724d8ab96c1c79adee65a5c6bb2b557d94862471",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+    },
+    {
+      "id": "titan_boundary",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "sections": ["lens"],
+      "delivery_blob": "91987cf716cb8ad296c5d7ecb68ef5fef816bd72",
+      "local_blob": "91987cf716cb8ad296c5d7ecb68ef5fef816bd72",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
+    },
+    {
       "id": "mid02",
       "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID02_RESULTS_2026_09_06.md",
       "sections": [

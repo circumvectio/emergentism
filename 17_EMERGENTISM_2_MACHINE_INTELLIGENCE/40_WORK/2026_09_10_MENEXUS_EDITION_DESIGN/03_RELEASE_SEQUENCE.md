@@ -6,6 +6,13 @@ status: "PLANNED [D] — design delivery is not instrument release"
 
 # Local first, then an exact private GitHub delivery
 
+## Direction amendment — 2026-09-10 [S/D]
+
+The owner agreed to the website invitation plus atlas/workbench app described in
+the [outline](01_OUTLINE.md). The initial packet was delivered separately; this
+amendment is a local design record, not another delivery or implementation run.
+The phases below remain gates, not permissions inferred from that agreement.
+
 ## 0. Complete the design packet — this task
 
 [D] Create the outline, map it to existing owners, record current source/version
@@ -31,6 +38,27 @@ The reported self-correction case does not establish competitive superiority.
 Exit: a reader can explain the lens, attempt the case, locate the source and name
 what remains uncertain. Record assistance, sample size and observed failures;
 these tasks have not been run by creating this plan.
+
+### First experience slice — planned acceptance, not results [D]
+
+Before expanding the UI, connect the executive explanation, one source-bound
+atlas panel (the D4/D5 distinction) and the selected `EDD-DEMO-01` scenario.
+Keep this a development demonstration, never relabel it a held-out evaluation.
+
+- A newcomer can go from the invitation to Explore or directly to Apply.
+- The panel preserves its native definitions, source version, tier, qualification
+  and correction route; D5 representation is not an execution permission.
+- The same question moves through human and machine views without losing facts,
+  uncertainty, rivals, affected bearers, the proposed test or the revision point.
+- A result is labeled unobserved until evidence is supplied. Compare the case
+  with the same plain decision journal and preserve any simpler-method advantage.
+- Accountless public inspection, keyboard access, a static/reduced-motion
+  alternative, source inspection and Exit work without optional model services.
+- Saved/private work, inference, sharing and execution are not silently enabled
+  by opening the atlas or following the walkthrough.
+
+Content review precedes UI construction. Record the actual test, audience, sample
+size, assistance and failures when run; checking this plan measures none of them.
 
 ## 2. Qualify a portable instrument edition
 

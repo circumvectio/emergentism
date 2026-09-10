@@ -2,7 +2,7 @@
 type: edition-design-packet
 title: "Emergentism — the Menexus GitHub edition"
 date: 2026-09-10
-status: "DESIGN ONLY — outline prepared; instrument release not qualified"
+status: "DESIGN ONLY — website and atlas/workbench direction agreed; implementation not qualified"
 evidence_tier: "[D] proposed edition; [I] editorial design; source claims retain their own tiers"
 may_sign: false
 may_authorize: false
@@ -20,6 +20,21 @@ Menexus database, a third corpus, a website deployment or a finished instrument.
 The primary audience is machine intelligence; humans must also be able to read,
 teach, question and maintain the same edition. A reader should be able to use a
 part without adopting the whole worldview.
+
+## Agreed experience direction — 2026-09-10 [S/D]
+
+**One source-owned instrument, two public experiences:** an inviting website and
+an interactive atlas/workbench app. The owner agreed to this direction after the
+initial packet delivery; the [outline](01_OUTLINE.md) records its exact scope.
+
+The identity remains `• < ⊙ > ○`. The app centres the Finity atlas: D1–D5 framed
+by D0 and D6 boundary roles. **Explore** explains the map; **Apply** lets a person
+or machine work through a question. Rosetta opens from D5; Burrisphere explains
+the declared relationship between represented possibilities and actual means.
+These are navigation and presentation choices, not new doctrine or proof.
+
+This amendment records local design agreement only. No app, new route, runtime
+permission, public release or further GitHub delivery is implied.
 
 ## The reader journey [D]
 
