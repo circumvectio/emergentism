@@ -1,0 +1,185 @@
+{
+  "type": "edition-design-inventory",
+  "status": "DESIGN_ONLY",
+  "date": "2026-09-10",
+  "semantic_authority": "none",
+  "may_sign": false,
+  "may_authorize": false,
+  "destination": {
+    "repository": "Menexus-GmbH/emergentism",
+    "visibility": "private",
+    "branch": "theory/parasite-load-2026-08-17"
+  },
+  "delivered_source_revision": "998d8025d0f36d2c38c1d1c932d212e533f67d45",
+  "local_planning_revision": "4150a25f7d4be810afe2e1cc743f1052a6c5d6d4",
+  "packet_files": [
+    "README.md",
+    "01_OUTLINE.md",
+    "02_FILE_ARCHITECTURE.md",
+    "03_RELEASE_SEQUENCE.md",
+    "04_SOURCE_BINDINGS.json",
+    "05_CUSTODY_AND_DELIVERY.md",
+    "check_packet.py"
+  ],
+  "reader_sections": [
+    "start",
+    "lens",
+    "instrument",
+    "cases",
+    "research",
+    "sources"
+  ],
+  "metadata_sections": [
+    "release"
+  ],
+  "sources": [
+    {
+      "id": "kernel_owners",
+      "path": "00_THE_KERNEL_INDEX.md",
+      "sections": [
+        "lens",
+        "instrument",
+        "sources"
+      ],
+      "delivery_blob": "c2592750386c50052bb32a8f4d942fb4862da62e",
+      "local_blob": "c2592750386c50052bb32a8f4d942fb4862da62e",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/00_THE_KERNEL_INDEX.md"
+    },
+    {
+      "id": "work_programme",
+      "path": "VMOSK_A_v3_2026_09_07.md",
+      "sections": [
+        "start",
+        "release"
+      ],
+      "delivery_blob": "58ae962cbd0af834b74744fb3c0e1e2e5367ea53",
+      "local_blob": "58ae962cbd0af834b74744fb3c0e1e2e5367ea53",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/VMOSK_A_v3_2026_09_07.md"
+    },
+    {
+      "id": "worldview",
+      "path": "00_THE_WELTANSCHAUUNG.md",
+      "sections": [
+        "lens"
+      ],
+      "delivery_blob": "a556fe02ba4007b05c9465b6776ba730fbe44795",
+      "local_blob": "a556fe02ba4007b05c9465b6776ba730fbe44795",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/00_THE_WELTANSCHAUUNG.md"
+    },
+    {
+      "id": "formula",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "sections": [
+        "lens",
+        "instrument"
+      ],
+      "delivery_blob": "893ca0a402ba201cbcd438d7931caced573bec34",
+      "local_blob": "893ca0a402ba201cbcd438d7931caced573bec34",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "practice",
+      "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "sections": [
+        "instrument",
+        "cases"
+      ],
+      "delivery_blob": "c86f76d33bf26e4597cc0ec0887166b53f7fb5e1",
+      "local_blob": "c86f76d33bf26e4597cc0ec0887166b53f7fb5e1",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+    },
+    {
+      "id": "machine_entry",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_READ_FIRST.md",
+      "sections": [
+        "start",
+        "release"
+      ],
+      "delivery_blob": "400a8b3e6e51b8030b4285235ebc76dda9ba75d0",
+      "local_blob": "3799360005e3022bcd3830d0af6424fe523dd21d",
+      "local_differs": true,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_READ_FIRST.md"
+    },
+    {
+      "id": "machine_ledger",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_ESTABLISHED.md",
+      "sections": [
+        "research",
+        "sources"
+      ],
+      "delivery_blob": "7b3e1c329318680d98b78f8954bdda8743fd767a",
+      "local_blob": "7b3e1c329318680d98b78f8954bdda8743fd767a",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_ESTABLISHED.md"
+    },
+    {
+      "id": "machine_kernel",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/LENS.v0.json",
+      "sections": [
+        "instrument"
+      ],
+      "delivery_blob": "98672cf77add0d635f26a11f1ae1db8b866977c0",
+      "local_blob": "98672cf77add0d635f26a11f1ae1db8b866977c0",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/LENS.v0.json"
+    },
+    {
+      "id": "machine_manifest",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md",
+      "sections": [
+        "lens",
+        "instrument"
+      ],
+      "delivery_blob": "1f5f4999dd07ae2908ea9a999c4013865f16b29b",
+      "local_blob": "1f5f4999dd07ae2908ea9a999c4013865f16b29b",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md"
+    },
+    {
+      "id": "adjudication",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/00_ADJUDICATION.md",
+      "sections": [
+        "cases",
+        "instrument"
+      ],
+      "delivery_blob": "6fef390e5ea475235d5794cbe2700c9a281abd63",
+      "local_blob": "6fef390e5ea475235d5794cbe2700c9a281abd63",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/00_ADJUDICATION.md"
+    },
+    {
+      "id": "mid01",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_RESULTS_2026_09_05.md",
+      "sections": [
+        "research"
+      ],
+      "delivery_blob": "8e131c22537b6c313b9cdcaf6f67138e461c3b18",
+      "local_blob": "8e131c22537b6c313b9cdcaf6f67138e461c3b18",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_RESULTS_2026_09_05.md"
+    },
+    {
+      "id": "mid02",
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID02_RESULTS_2026_09_06.md",
+      "sections": [
+        "research"
+      ],
+      "delivery_blob": "c888e525e54a04735b82a8f2ddb911891a83f5fa",
+      "local_blob": "c888e525e54a04735b82a8f2ddb911891a83f5fa",
+      "local_differs": false,
+      "url": "https://github.com/Menexus-GmbH/emergentism/blob/998d8025d0f36d2c38c1d1c932d212e533f67d45/17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID02_RESULTS_2026_09_06.md"
+    }
+  ],
+  "limits": [
+    "Dependency identity and routing only; not claim acceptance or semantic validation.",
+    "Sources are pinned to the already-delivered revision; the local blob records separately expose drift.",
+    "Current local-source history is not transferred by delivering this design packet.",
+    "No private Menexus store, credentials, sealed payloads or new model output is included.",
+    "No portable instrument, product runtime or public deployment is qualified by this inventory."
+  ]
+}
