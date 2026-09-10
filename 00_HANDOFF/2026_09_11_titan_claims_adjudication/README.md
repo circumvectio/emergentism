@@ -354,6 +354,76 @@ identify the notion with any structure's object.
 
 ---
 
+## 1a · R5 executed — the corrected `[A]` statement for C1
+
+The KSC-21 defect flagged in §1 was **in the audit brief and in this receipt's
+first draft, not in the corpus.** Verified 2026-09-11: the tree already holds
+signed ruling **Z1** — `14_THE_DISTILLATION/00_THE_RUNGS_2026_08_05.md`: *"0 ∈ ℝ
+· 0 ∉ ℝ^×    Z1. Say ℝ^×, never ℝ."* — and `53_THE_NUMBER_CHART.md`: *"`∞ ∉ ℝ`.
+It enters only by declared compac[tification]"*, a *"THEOREM, unqualified"*. The
+corpus is **stricter than the draft that audited it.** No repair is owed to the
+tree on this point; the repair is below, and it is owed to us.
+
+**`[A]` — the inherited mathematics, chart declared.**
+
+Write `ι` for the Möbius map `z ↦ 1/z`, **and say so explicitly**: "inversion"
+standardly names `z ↦ 1/z̄` in inversive geometry, whose fixed locus is the whole
+unit circle *pointwise*. Under that reading everything below is false.
+
+Fix the affine real chart with a named orientation and cut.
+
+- On the compactified positive ray, `ι(x) = x` with `x > 0` has the unique
+  solution `x = 1`.
+- On `ℝ^×` — and on `ℂ^×` — `ι` fixes exactly `+1` and `−1`, and exchanges the
+  pair `{0, ∞}`, the exchange being a fact about the **compactification**, not
+  about either group.
+
+Both are already carried as `FV-06` and `FV-07` in the claim register. Neither is
+new here.
+
+**And neither is a fact about the sphere.** In any group, `g = g⁻¹` exactly when
+`g² = e`. `ℝ₊` is torsion-free, so the identity is its only self-inverse element;
+`ℂ^×` has exactly one element of order two. `FV-06` and `FV-07` are **one
+group-theoretic fact instantiated twice.** Sphere, stereographic projection and
+the word "equator" are *presentation*. Under the logarithm the whole statement is
+the one already on disk at `40_THE_LOGARITHMIC_REALIGNMENT.md`: *"The reciprocal
+map on ℝ₊ is the reflection map on ℝ."* Sources: Ahlfors 1979; Needham 1997;
+Freudenthal 1931 for ends.
+
+**`[A]` — the realm, stated once and symmetrically, per Z1.**
+
+`(ℝ₊, ×)` is an abelian group, isomorphic to `(ℝ, +)` by `log`. Its two-point
+compactification `[0, ∞]` adjoins exactly two **ends**; an end of a group is not
+an element of it, and `[0, ∞]` is a **monoid**, not a group. Say it that way, and
+observe four constraints:
+
+1. **Do not pair** *"zero has no inverse"* with *"infinity is not in the field."*
+   Two different kinds of reason about two objects of different types — and the
+   first places zero in an **operand position**, which is the move the `[I]` leg
+   exists to forbid.
+2. Per Z1: `0 ∈ ℝ` and `0 ∉ ℝ^×`. **Say `ℝ^×`, never `ℝ`.** *"0 is not a number"*
+   is banned as bare phrasing by signed ruling.
+3. `∞ ∉ ℝ` is a theorem, unqualified. `∞` enters only by declared compactification.
+4. `Ĉ` is not a field. Arithmetic here is **chart-local**, and every arithmetic
+   claim must name its chart.
+
+**`[A]` — what is *not* singled out. Disclosed, not omitted.**
+
+The unit-modulus latitude is `ι`-invariant only **setwise**: `ι` acts on it as
+conjugation and fixes two of its points, `+1` and `−1`. **The positive-ray
+restriction does all the discriminating work.** `47_THE_EMERGENCE_OF_FINITY.md`
+already concedes it — *"The *entire* equator `|z|=1` is at that latitude."*
+Infinitely many circles are `ι`-invariant, `ι` being the half-turn about the axis
+through `±1`. And sharp 3-transitivity remains a live `[A]` row against any
+privilege argument: `48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md`, *"sharp
+3-transitivity confers **no** privilege on `{0,1,∞}`"*.
+
+**`[I]` — the naming, typed.** Per the corpus's own equivocation warning, write
+`Finity_F` where the realm is meant. Bare "finity" ranges over
+`Finity_F`/`Finity_G`/`Finity_L`/`Finity_R` and is a documented live ambiguity.
+
+---
+
 ## 2 · Cross-cutting findings
 
 **1. Eight-for-eight becomes thirteen-for-thirteen.** Every claim pre-empted at
@@ -386,10 +456,10 @@ Ordered by leverage. None is executed by this receipt.
 | # | Work | Why | Effort |
 |---|---|---|---|
 | **R1** | **Open `CLAIM_STATUS_REGISTER` rows** for finity, the ground seat, the horizon seat, and the realm/throne, each with a `last_move` triple. | `grep -c -i "finity"` returns **0**. This is the sole reason four restatements passed uncaught, and it is the cheapest gate in the tree. | S |
-| **R2** | **Withdraw the Dedekind attribution** on `V ∪ {x} = V` across the **10 live files** carrying it (verified 2026-09-11, excluding `90_ARCHIVE`); substitute Cantor (*Mitteilungen* 1887–88; Dedekind letter 1899; Burali-Forti). Keep Dedekind on the middle line, and note its countable-choice dependency. Sites include `14_THE_DISTILLATION/{00_THE_AMRITA,00_THE_RUNGS_2026_08_05,01_WHAT_IS_PROVED,04_WHAT_DIED}.md`, `49_THE_THREE_MODES_OF_COUNTING.md`, `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md`, `16_THE_EMISSION/A_THE_LADDER/07_HORIZON.md`, and one public-site copy. | A misattribution the corpus repeats, including in the Emission spine and on the public site. Mechanical, verifiable. | S |
+| ~~**R2**~~ | ~~Withdraw the Dedekind attribution on `V ∪ {x} = V`.~~ **DONE 2026-09-11** — see §3a. | | |
 | **R3** | **Dispose doc 49 §4** — sign or refuse the horizon/realm reassignment. Pending **37 days**, tracked in **no** WIP row or register (verified across the whole `00_WORK_IN_PROGRESS/` tree and all three registers). Propagation debt is small and enumerable. | The only limb of C3 with live work. And the tracking gap is itself a defect: the manifest's rule is that an entry leaves only on a ruling, but this one never *entered*. | M |
 | **R4** | **Add three missing fences:** `NoCoercion(TitanFrame, Set)` in signature form plus a gate in `test_foundation_type_firewall.py`; the **operation-relativity** fence on the identity/absorber duality; the **four-way non-fusion** fence on the throne. | All three are absent in machine form. R4 is the one place the corpus adds something genuinely its own. | M |
-| **R5** | **Repair the C1 sentence** before any publication: `ℝ^×` never `ℝ`; name `ι(z) = 1/z`; drop the "zero has no inverse / infinity not in the field" pairing; add the setwise-invariance disclosure. | KSC-21 kill currently fires on our own wording. | S |
+| ~~**R5**~~ | ~~Repair the C1 sentence.~~ **DONE 2026-09-11** — corrected statement at §1a. The defect was in the audit brief and in this receipt's first draft, **not in the corpus**: signed ruling Z1 and `53_THE_NUMBER_CHART.md` already hold the strict form. Nothing owed to the tree. | | |
 | **R6** | **Delete the `[historical]` leg**, do not demote it. Refuted at `[B]` on disk (Nothaft; "Brahmagupta did not discover zero"; adoption by coexistence). | The analogy has no antecedent. | S |
 | **R7** | **Cite von Staudt** at `09_EFR_GODEL_CLARIFICATION.md` and wherever the typing rule is stated; record that all three seats are frame points. | Hands the `[I]` leg its actual owner. | S |
 | **R8** | **Print the wheels/meadows bill** wherever the frame/operand rule is asserted, per the corpus's own standing instruction. | Otherwise the corpus stands where it puts Brahmagupta. | S |
@@ -397,6 +467,61 @@ Ordered by leverage. None is executed by this receipt.
 
 **Not proposed:** opening the glut RQ (not well-posed until it names its
 ordering); publishing any `[C]` transfer (R1's own kill is unrun); anything in C5.
+
+---
+
+## 3a · R2 and R5 executed — repair record
+
+`[B]` Executed 2026-09-11 under owner instruction covering the two mechanical
+repairs only. **R1 and R3 were explicitly withheld** as constitutional acts:
+opening register rows and disposing doc 49 §4 remain the owner's.
+
+**R2 — attribution corrected in 12 source files, not 10.** §3's original count was
+itself incomplete: it was derived by grepping the formula literal `V ∪ {x} = V`,
+which misses sites phrasing the claim as bare "absorption". A second sweep on
+`Dedekind 1888` found two more owners —
+`14_THE_DISTILLATION/03_WHAT_IS_READ.md` and
+`05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`. **The
+census instrument was wrong before the repair was.** Recorded here rather than
+silently corrected, because a census that under-reports is the same defect class
+this receipt exists to name.
+
+| file | sites | note |
+|---|---|---|
+| `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` | 1 | **the owner doc** — correction block added, incl. the analyticity disclosure |
+| `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` | 1 | found by the second sweep |
+| `14_THE_DISTILLATION/00_THE_AMRITA.md` | 1 | |
+| `14_THE_DISTILLATION/00_THE_RUNGS_2026_08_05.md` | 5 | incl. two ASCII panels |
+| `14_THE_DISTILLATION/01_WHAT_IS_PROVED.md` | 1 | the inverted *"Cantor's absolute is company, not evidence"* |
+| `14_THE_DISTILLATION/03_WHAT_IS_READ.md` | 1 | found by the second sweep |
+| `14_THE_DISTILLATION/04_WHAT_DIED.md` | 1 | |
+| `10_SEED/01_THE_SEED_LADDER/ASCENT_D6_RETURN_AND_O_2026_08_05.md` | 2 | |
+| `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` | 3 | P-02 owner, attack (1), attack (3) |
+| `12_PUBLIC_SITE/00_THE_RUNGS_2026_08_05.md` | 1 | stray projection — **verified not deployed, not referenced by any builder, absent from `.vercel/output/static/`**. No public surface changed. |
+| `16_THE_EMISSION/emit.py` | 1 | generator template |
+| `16_THE_EMISSION/A_THE_LADDER/07_HORIZON.md` + 9 siblings | — | **regenerated, not hand-edited**, per that tree's law. `--verify` reports byte-identical on re-run. Sibling diffs are `source_sha256` re-pins only. |
+
+**Left intact, deliberately.** `00_HANDOFF/D2_REPAIR_WAVE_RECEIPT_2026_08_05.md`
+and `00_HANDOFF/SESSION_AUDIT_2026_08_05.md` carry the old attribution. They are
+**dated records of what was found on a date**; rewriting them would falsify the
+history the one-way rule exists to protect. The D2 receipt records writing the
+misattribution into `12_PUBLIC_SITE/6/index.html`; **that page now carries zero
+occurrences** — superseded by later regeneration, verified 2026-09-11.
+
+**A second defect found and repaired at the same site.** `01_PRESERVE.md` P-02
+attack (3) and the Emission's prose head both read *"A kill that is decidable and
+cannot fire is a result."* That kill — *"exhibit a finite set unchanged by
+adjoining a new element"* — tests the **finite** clause only; the horizon clause
+`V ∪ {x} = V` is analytic and carries **no kill at all**. Both sites now concede
+it. This matters because the corpus's own rule reads: *"A guard that cannot fail
+is worse than no guard, because it reports success."*
+
+**R5 — no repair owed to the tree.** See §1a. The corpus already holds signed
+ruling Z1 and the unqualified `∞ ∉ ℝ` theorem. The defect was ours.
+
+**What was NOT done:** no register row opened (R1), no ruling signed or refused
+(R3), no fence added (R4), no gate re-run, no public surface modified, no build
+regenerated beyond the Emission's own deterministic tree.
 
 ---
 

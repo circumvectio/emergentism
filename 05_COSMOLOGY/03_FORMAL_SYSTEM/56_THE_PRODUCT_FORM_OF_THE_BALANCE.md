@@ -70,7 +70,8 @@ points in the declared chart, not Titan marks.
 > two factors `d_N(θ)`, `d_S(θ)` below as chordal distances between a chart
 > point `θ` and those named poles — **not** distances between Titan marks. The
 > opposite-refusals content rests on **absorption**
-> (Dedekind 1888), with no geometry in it at all.
+> (**Cantor** 1887–88; corrected 2026-09-11 — Dedekind 1888 owns the middle
+> line only), with no geometry in it at all.
 
 The chord subtending polar angles `θ` and `0` has length `2 sin(θ/2)`; the
 chord subtending `θ` and `π` has length `2 cos(θ/2)`. Normalise each so that

@@ -79,4 +79,4 @@ These are not wrong. Nothing has been shown against them. They failed gate 4 —
 
 ## Routed elsewhere, not repeated here
 
-Absorption (`[A]`, Dedekind 1888) and the fact that non-self-membership discriminates nothing (`[A]`, ZF Foundation) belong to the inherited-mathematics ledger. The ground seat's empty slot — three candidate neighbours tried, each matched on a shared effect rather than a shared cause, an empty slot chosen over a fourth wrong match — is one finding and is filed once, as a priced refusal and as a death. It is not counted again here.
+Absorption (`[A]`, **Cantor** 1887–88 — attribution corrected 2026-09-11; Dedekind 1888 owns the middle line only) and the fact that non-self-membership discriminates nothing (`[A]`, ZF Foundation) belong to the inherited-mathematics ledger. The ground seat's empty slot — three candidate neighbours tried, each matched on a shared effect rather than a shared cause, an empty slot chosen over a fourth wrong match — is one finding and is filed once, as a priced refusal and as a death. It is not counted again here.

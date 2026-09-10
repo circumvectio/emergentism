@@ -141,7 +141,8 @@ begins.**
 ## VI. Where counting cannot complete
 
 `○` is not "very large." `○` is **absorption**: `V ∪ {x} = V`, literally,
-by Dedekind 1888. You can always add one more and *nothing you do registers*.
+by **Cantor** (*Mitteilungen zur Lehre vom Transfiniten*, 1887–88; corrected
+2026-09-11 — Dedekind 1888 owns the middle line only). You can always add one more and *nothing you do registers*.
 The set that contains everything is the set to which adding one more changes
 nothing.
 
@@ -176,7 +177,7 @@ conclusion follows from those typed refusals.
 >
 > **What survives:** `• ≠ ○` — distinctness is structural and type-safe —
 > and the opposite-refusals content, which rests on **absorption**
-> (`V ∪ {x} = V`, Dedekind 1888) with no geometry in it at all. The ontology
+> (`V ∪ {x} = V`, Cantor 1887–88; corr. 2026-09-11) with no geometry in it at all. The ontology
 > was never resting on the picture.
 >
 > The exact superseded 2026-08-05/06 Möbius, successor, and self-correction

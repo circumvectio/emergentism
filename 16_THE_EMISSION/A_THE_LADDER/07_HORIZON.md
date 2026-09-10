@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "58f374f85d13767eb44348dd95b7a2b44ef94080273c4d7395bb7132eab26302"
+source_sha256: "7b50212e5f5b5a4d4b4757fda5581f94708dfb20e13288240e2790593e8bedd3"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "A — THE LADDER (what is)"
@@ -46,21 +46,27 @@ picture is `ι` **exchanging** the poles: one two-element orbit of two distinct 
   what the entry claims. Drop the word *literally* and the entry becomes false.
 - **An unfalsifiable horizon.** The kill is decidable — *exhibit a finite set unchanged
   by adjoining a new element* — and it cannot fire. A kill that is decidable and cannot
-  fire is a result; a kill that cannot be stated is a decoration.
+  fire is a result; a kill that cannot be stated is a decoration. **Conceded
+  2026-09-11:** that kill tests the *finite* clause only. `V ∪ {x} = V` is analytic
+  from `V` being the universal class and carries no kill at all. Honest for an `[A]`
+  row; not a guard on the horizon, and not to be cited as one.
 - **Ratification as a truth-maker.** The host document reads STAGED PROPOSAL. The fact
-  is Dedekind's, 1888. Ratification governs the seat assignment, never the theorem.
+  is **Cantor's** — *Mitteilungen zur Lehre vom Transfiniten* (1887–88), letter to
+  Dedekind of 28 July 1899, Burali-Forti (1897); **corrected 2026-09-11**, previously
+  credited to Dedekind 1888, who owns the middle line only. Ratification governs the
+  seat assignment, never the theorem.
 
 ## The entries — 2
 
 ### P-02 · Absorption — `V ∪ {x} = V`
 
 - **Tier** `[A]` the set-theoretic fact (host document is `[S]`/STAGED).
-- **Owner** **INHERITED** — Dedekind, *Was sind und was sollen die Zahlen?* (1888).
-- **The attack it survives** *(1)* "The host reads STAGED PROPOSAL — unratified, so nothing in it stands." The fact is Dedekind's; ratification governs the seat assignment, never the theorem. *(2)* The real one — "this is just Dedekind-infiniteness, and ℕ is Dedekind-infinite too." **The source anticipated it at `…`**: the third line is strictly stronger — `V ∪ {x} = V` holds **literally, as classes**, not merely up to bijection. ℕ ∪ {x} ≈ ℕ but ℕ ∪ {x} ≠ ℕ. That one word is the discriminating step and it was written before anyone attacked it. *(3)* "The kill is unfalsifiable." It is "exhibit a finite set unchanged by adjoining a new element" — decidable, and it cannot fire.
+- **Owner** **INHERITED** — **Cantor**, *Mitteilungen zur Lehre vom Transfiniten* (1887–88), letter to Dedekind of 28 July 1899, Burali-Forti (1897); lattice structure Huntington (1904), Birkhoff (1940). **Corrected 2026-09-11** — previously credited to Dedekind, *Was sind und was sollen die Zahlen?* (1888), who owns the **middle** line only (infinite iff equinumerous with a proper subset; depends on countable choice).
+- **The attack it survives** *(1)* "The host reads STAGED PROPOSAL — unratified, so nothing in it stands." The fact is Cantor's (corrected 2026-09-11); ratification governs the seat assignment, never the theorem. *(2)* The real one — "this is just Dedekind-infiniteness, and ℕ is Dedekind-infinite too." **The source anticipated it at `…`**: the third line is strictly stronger — `V ∪ {x} = V` holds **literally, as classes**, not merely up to bijection. ℕ ∪ {x} ≈ ℕ but ℕ ∪ {x} ≠ ℕ. That one word is the discriminating step and it was written before anyone attacked it. *(3)* "The kill is unfalsifiable." It is "exhibit a finite set unchanged by adjoining a new element" — decidable, and it cannot fire. **Conceded 2026-09-11:** that kill tests the **finite** clause only. The horizon clause `V ∪ {x} = V` is *analytic* from `V` being the universal class and carries **no** kill at all. Honest for an `[A]` row; but the kill column is not a guard on the horizon, and must not be cited as one.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-02 · Absorption — `V ∪ {x} = V`"
-  - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "exhibit a finite set unchanged by adjoining a new element"
-  - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "Was sind und was sollen die Zahlen?* (1888)"
+  - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "Was sind und was sollen die Zahlen?*"
+  - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "classes, not merely up to bijection"
 
 ### P-14 · KSC-06 — D6 ≢ D0, a duality not an identity
 

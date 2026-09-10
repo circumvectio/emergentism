@@ -69,8 +69,27 @@ infinite    S ∪ {x} ≈ S                     adding changes its membership, n
 totality    V ∪ {x} = V                     adding changes nothing at all — x was already in V
 ```
 
-This is Dedekind's, from *Was sind und was sollen die Zahlen?* (1888): a set is
-infinite exactly when it is equinumerous with a proper subset of itself. `[A]`
+The **middle** line is Dedekind's, from *Was sind und was sollen die Zahlen?*
+(1888): a set is infinite exactly when it is equinumerous with a proper subset of
+itself. `[A]` That equivalence additionally depends on countable choice, which
+travels nowhere in this corpus.
+
+> **ATTRIBUTION CORRECTED 2026-09-11.** The **third** line — `V ∪ {x} = V` at the
+> totality — is **not Dedekind's**. It is **Cantor's**: his own criterion
+> separating the *Transfinitum* (*vermehrbar*, increasable) from the *Absolutum*
+> (*unvermehrbar*, unincreasable), *Mitteilungen zur Lehre vom Transfiniten*
+> (1887–88), with the set-theoretic form in the letter to Dedekind of 28 July 1899
+> and in Burali-Forti's `Ω + 1 ≤ Ω` (1897). The identity/absorber pair itself is
+> bounded-lattice structure — Huntington's universal bounds (1904), Birkhoff
+> (1940). Dedekind owns the middle line and no more.
+>
+> **And the third line is analytic.** As literal class identity it follows from `V`
+> being the universal class — it says `V` has no non-members. §8's kill for this
+> row, *"exhibit a finite set unchanged by adjoining a new element"*, tests the
+> **finite** clause only and cannot bear on the horizon clause at all. That is
+> honest for an `[A]` row, but the kill column must not be read as a guard on the
+> horizon. Citations produced from model memory; physical source check owed.
+> Receipt: `00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md`.
 
 **Why this succeeds where the previous attempts failed.** Absorption is *false*
 of every finite collection and *true* at the totality. It discriminates. By

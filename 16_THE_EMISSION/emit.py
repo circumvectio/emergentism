@@ -299,9 +299,15 @@ picture is `ι` **exchanging** the poles: one two-element orbit of two distinct 
   what the entry claims. Drop the word *literally* and the entry becomes false.
 - **An unfalsifiable horizon.** The kill is decidable — *exhibit a finite set unchanged
   by adjoining a new element* — and it cannot fire. A kill that is decidable and cannot
-  fire is a result; a kill that cannot be stated is a decoration.
+  fire is a result; a kill that cannot be stated is a decoration. **Conceded
+  2026-09-11:** that kill tests the *finite* clause only. `V ∪ {x} = V` is analytic
+  from `V` being the universal class and carries no kill at all. Honest for an `[A]`
+  row; not a guard on the horizon, and not to be cited as one.
 - **Ratification as a truth-maker.** The host document reads STAGED PROPOSAL. The fact
-  is Dedekind's, 1888. Ratification governs the seat assignment, never the theorem.""",
+  is **Cantor's** — *Mitteilungen zur Lehre vom Transfiniten* (1887–88), letter to
+  Dedekind of 28 July 1899, Burali-Forti (1897); **corrected 2026-09-11**, previously
+  credited to Dedekind 1888, who owns the middle line only. Ratification governs the
+  seat assignment, never the theorem.""",
     },
 ]
 
