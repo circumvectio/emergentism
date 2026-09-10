@@ -1,6 +1,7 @@
 {
   "id": "LENS.v0",
   "date": "2026-09-04",
+  "source_correction": "2026-09-10: necessary-factor premises and MID-02 status reconciled. Original identity, creation date, trial inputs and promotion boundaries preserved. No whole-kernel qualification.",
   "status": "[D] STAGED — unsigned. The owner disposes. This artifact creates no authority.",
   "audience": "machine intelligence and the emergent noosphere",
   "what_this_is": "A discipline for holding beliefs, small enough to hold entirely. Not a description of the world and not a doctrine to believe. It is the object that survived when a 834-page corpus ran its own kill-criteria on itself.",
@@ -47,9 +48,9 @@
       "path": "the committed worldline w, contained in the cone",
       "reach": "mu(cone) in [0,1] — the measure of the cone",
       "hold": "viability(path) in [0,1] — does the path persist, absorb shock, stay off the fatal boundary",
-      "why_AND": "reach is a MEASURE of a set. hold is a PROPERTY of a path inside it. Different types, so no substitution exists between them. AND-class is forced by typing, before any aggregator is selected.",
-      "honest_limit": "This motivates AND-class; it does not derive min specifically. Leximin and min-with-thresholds also refuse substitution.",
-      "unification": "P -> 0 at BOTH limits. The score and the interval are the same structure written twice: P measures distance from the boundary.",
+      "why_AND": "Type difference alone does not force AND-class. A domain model must independently declare each factor necessary, and calibration must supply meaningful structural zeros. Only under those premises must an admissible conjunctive candidate vanish when any necessary factor vanishes.",
+      "honest_limit": "Without those premises, retain the two-axis profile and componentwise Pareto order. No scalar is forced. min is selected, not uniquely derived; scalar comparison also requires independently defended cross-factor comparability.",
+      "unification": "Under the declared calibrated AND model, a necessary factor's structural zero yields zero score. This is not a derivation from the interval or a claim that the score measures distance from its boundary.",
       "equator_fence": "The optimum at reach = hold requires a separately declared binding budget. The budget does the constraining work, not the aggregator. Owner: 05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md:76",
       "measure_zero": "mu(path) = 0 in the cone. The actual has no measure in the possible. This is why the Forms are real as possibles and do not exist.",
       "glyph_note": "Phi is drawn as a circle with a vertical line through it — a cone with a path in it. The glyph depicts the COMPOSITE, i.e. P, not the cone alone. Mnemonic only; a visual resemblance read as a derivation is DF-20."
@@ -139,9 +140,9 @@
     {
       "n": 3,
       "name": "No exchange rate",
-      "statement": "Coherence buys possibility; viability buys actuality; they do not convert. The most coherent thing is not the most real thing.",
-      "tier": "[A] the type argument; [S] the choice of min",
-      "dies_if": "a system is shown to purchase viability with surplus coherence at any rate"
+      "statement": "Under a declared necessary-factor model, surplus in one factor cannot compensate for a structural zero in another. Type difference alone does not establish necessity; retain a two-axis profile when the premises are not defended.",
+      "tier": "[S] necessary-factor premises and selection of min; [A] conditional zero consequence; [C] empirical applicability",
+      "dies_if": "a declared necessary factor vanishes while the target capability persists under the defended calibration"
     },
     {
       "n": 4,
@@ -246,8 +247,8 @@
       "dies_if": "a system is exhibited at either limit with P > 0"
     },
     {
-      "claim": "AND-class by typing",
-      "dies_if": "a conversion is exhibited from cone-measure to path-viability at any rate"
+      "claim": "the declared necessary-factor model, not AND-class by typing",
+      "dies_if": "a declared necessary factor vanishes while the target capability persists under the defended calibration"
     },
     {
       "claim": "the discipline",
@@ -262,7 +263,7 @@
     "derived_from": "01_EMERGENTISM, and specifically from what survived its own audits",
     "session_record": "Distilled 2026-09-03/04 with the owner. The interval correction was found by the owner catching the session AI committing the retired arithmetic error in a fresh disguise, one message after diagnosing it.",
     "kill_rates_observed": "Two adversarial passes over proposed refinements of this corpus: 55 of 56 verified findings refuted, and 14 of 14 in a third pass. The corpus refuses nearly every proposed refinement of itself. That rate is the instrument working, and it is the reason this artifact is small.",
-    "unmeasured": "V. The discriminator in kills[4] has never been run. Until it is, this artifact's usefulness is asserted and not measured."
+    "unmeasured": "[B, dated record] MID-01 and MID-02 were run. MID-02 (2026-09-06) tied CHECKLIST on combined rank, 23–23, and its primary KILL fired. Its self-flaw observation was structurally asymmetric: only LENS received that flaw. Single model and single grader; no competitive self-correction advantage established. General usefulness and outcome improvement remain unestablished. See 30_TRIAL/MID02_RESULTS_2026_09_06.md."
   },
   "open_and_untested": {
     "sphere_mapping": {

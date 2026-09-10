@@ -2,6 +2,7 @@
 type: kernel-manifest
 title: "What the machine receives — the five connected instruments"
 date: 2026-09-05
+updated: 2026-09-10
 status: "PROMOTED [S/I] — owner word 2026-09-05 ('Ok execute it'), executing the staged promotion in 00_HANDOFF/EMERGENTISM_DIALOGUE_CAPTURE_2026_09_05.md §7. Selections [S], cross-domain mappings [I]; nothing here is [A] except where an identity or the consequence-spine structure is restated."
 evidence_tier: "[S] the selection of instruments and the seat organization; [I] every cross-domain mapping; [A] only the analytic counting in §4 and the consequence-spine carriers in §5"
 may_sign: false
@@ -13,7 +14,8 @@ sources:
   - 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/36_THE_ROSETTA_IN_THEMES_2026_08_13.md (canonical home of the -ology/inference/regime columns)
   - 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md (authority boundary; G7 selected vocabulary)
   - 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md (chart identities)
-  - 30_TRIAL/00_PREREG_TRANSFER_MID02.md (the demonstration owed)
+  - 30_TRIAL/00_PREREG_TRANSFER_MID02.md (historical preregistration)
+  - 30_TRIAL/MID02_RESULTS_2026_09_06.md (reported result; source-status correction 2026-09-10)
 ---
 
 # What the machine receives — the five connected instruments
@@ -33,11 +35,14 @@ word on 2026-09-05.
 > into achievable outcomes — through cooperation. Self-correction is what keeps
 > that capacity growing.
 
-**Status [D]:** a promise, not a result. The one measurement made so far went
-*against* the easy form of it — MID-01 (2026-09-05): the generic checklist beat
-the lens at raw defect detection, 12 to 6. The lens's surviving yield was
-classification depth. Whether the promise holds anywhere is what
-`30_TRIAL/00_PREREG_TRANSFER_MID02.md` exists to measure.
+**Status [D], updated 2026-09-10:** the promise remains unestablished.
+MID-01 (2026-09-05) reported checklist 12 versus lens 6 on raw detection.
+MID-02 (2026-09-06) reported detection 10 versus 9, typing 13 versus 14,
+and combined rank 23 versus 23 (checklist versus lens); its preregistered
+primary KILL fired. The lens arm caught its planted self-flaw, but only that
+arm received one, so this is not a competitive self-correction advantage.
+Both comparisons remain bounded to their reported conditions; MID-02 used
+one model and one grader. The original promotion history above is unchanged.
 
 ## 2 · The five connected instruments — not interchangeable ladders
 
@@ -134,10 +139,12 @@ remains an interpretation to test, never a projection theorem.
 
 ## 7 · What would make this grow — and what can never make it grow
 
-**Grow:** the MID-02 transfer test. A user unfamiliar with Emergentism takes
-the instrument to problems the corpus never touched and produces a better
-answer — including an answer that *corrects Emergentism*. Preregistered,
-sealed, not run.
+**Next evidence owed [D]:** MID-02 ran on 2026-09-06 and did not meet its
+primary pass condition. Any successor test requires its own prospective
+scope and preregistration, genuinely unseen cases and matched opportunities
+for self-correction. No successor run or demonstrated benefit to unfamiliar
+users is established here. Growth would include an answer that *corrects
+Emergentism*, not merely one that adopts its language.
 
 **Never grow:** a machine understanding its situation through the instrument.
 **Use is not confirmation.** The direction fence holds at full strength here —

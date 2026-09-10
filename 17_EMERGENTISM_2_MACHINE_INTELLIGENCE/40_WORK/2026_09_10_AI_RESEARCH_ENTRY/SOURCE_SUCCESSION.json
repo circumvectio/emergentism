@@ -1,0 +1,21 @@
+{
+  "type": "bounded-editorial-source-succession",
+  "date": "2026-09-10",
+  "predecessor_revision": "d4316b446a69f80dbc3fd4ca3005d8cc6b733749",
+  "authority_effect": "none",
+  "scope": "MID-02 status and necessary-factor qualification only; not whole-kernel validation",
+  "sources": [
+    {
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/LENS.v0.json",
+      "predecessor_blob": "98672cf77add0d635f26a11f1ae1db8b866977c0",
+      "successor_blob": "88835cdb92f3d3be8641f47dc5b7ad1e213a916c",
+      "reason": "Correct type-difference to independently defended necessary-factor premises, and preserve MID-02's measured loss and asymmetric self-flaw exposure."
+    },
+    {
+      "path": "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md",
+      "predecessor_blob": "1f5f4999dd07ae2908ea9a999c4013865f16b29b",
+      "successor_blob": "64c88e943788732fe1e59b423c7f73a15f92d257",
+      "reason": "Replace stale not-run language with the dated MID-02 result; preserve original promotion history and nine-field reference."
+    }
+  ]
+}

@@ -90,12 +90,26 @@ def check_sources():
     for name in ("04_SOURCE_BINDINGS.json", "01_OUTLINE.md"):
         require(git("hash-object", str(DESIGN / name)) == git("rev-parse", DESIGN_REVISION + ":" + prefix + "/" + name), "agreed design changed; review required")
     data = json.loads(inventory.read_text(encoding="utf-8"))
+    succession = json.loads((HERE.parent / "2026_09_10_AI_RESEARCH_ENTRY" / "SOURCE_SUCCESSION.json").read_text())
+    require(succession["type"] == "bounded-editorial-source-succession" and succession["authority_effect"] == "none", "source succession boundary changed")
+    successors = {item["path"]: item for item in succession["sources"]}
+    expected_successors = {
+        "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/LENS.v0.json",
+        "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md",
+    }
+    require(set(successors) == expected_successors and len(succession["sources"]) == 2, "succession scope changed")
     for item in data["sources"]:
         path = ROOT / item["path"]
         require(path.resolve().is_relative_to(ROOT) and path.is_file() and not path.is_symlink(), "source path refused")
         for revision, blob in ((data["delivered_source_revision"], item["delivery_blob"]), (data["local_planning_revision"], item["local_blob"])):
             require(git("rev-parse", revision + ":" + item["path"]) == blob, "source snapshot mismatch")
-        require(git("hash-object", str(path)) == item["local_blob"], "live source changed; reopen review: " + item["id"])
+        expected = item["local_blob"]
+        if item["path"] in successors:
+            adopted = successors[item["path"]]
+            require(adopted["predecessor_blob"] == expected, "succession predecessor mismatch")
+            require(git("rev-parse", succession["predecessor_revision"] + ":" + item["path"]) == expected, "succession history mismatch")
+            expected = adopted["successor_blob"]
+        require(git("hash-object", str(path)) == expected, "live source changed; reopen review: " + item["id"])
     manifest = (ROOT / "17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md").read_text()
     section = manifest.split("## 5 ·", 1)[1].split("## 6 ·", 1)[0]
     source_fields = tuple(re.findall(r"^\| ([a-z][a-z -]+) \|", section, re.M))
