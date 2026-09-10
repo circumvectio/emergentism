@@ -33,7 +33,9 @@ requires a declared space and limit.
 rendering and equality, not arithmetic. The narrative modes—The Infinite,
 Finity and Infinity—are selected readings of ground-facing pre-countability,
 accountability to a finite limit, and countably unending traversal. They are
-not a census of reality.
+not a census of reality. *(Staged 2026-09-11, `49 §4` → `43`: countably
+unending traversal is reseated in the realm; the horizon is the un-gatherable.
+Owner disposes.)*
 
 ## 3. Typed inversion `[A/I]`
 

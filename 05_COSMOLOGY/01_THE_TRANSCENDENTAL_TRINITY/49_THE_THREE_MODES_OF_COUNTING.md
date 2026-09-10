@@ -8,7 +8,7 @@ rosetta:
   register: "[A] the set-theoretic facts; [S] the seat reassignment and the mark ruling; [I] the three-mode reading; [C] the crossing proposal"
   canonical_phrase: "Counting cannot begin; counting is meaningful; counting cannot complete"
 title: "The Three Modes of Counting — the seats distinguished by what counting does at each"
-status: "STAGED PROPOSAL — unratified. Supersedes the 2026-08-05 mark ruling in 07 (reversed by the owner, recorded in §3). The canon emblem-map amendment it forced was EXECUTED 2026-08-05 (§3 resolution note, staged for owner disposition); the §4 reassignment in 43 remains a staged [S] owner call. Defines no arithmetic. The crossing operator in §7 is STAGED WITH ITS CONTRACT UNMET and must not be cited as established."
+status: "STAGED PROPOSAL — unratified. Supersedes the 2026-08-05 mark ruling in 07 (reversed by the owner, recorded in §3). The canon emblem-map amendment it forced was EXECUTED 2026-08-05 (§3 resolution note, staged for owner disposition); the §4 reassignment in 43 was STAGED INTO 43 on 2026-09-11 (owner disposes; a revert is refusal). Defines no arithmetic. The crossing operator in §7 is STAGED WITH ITS CONTRACT UNMET and must not be cited as established."
 date: 2026-08-05
 evidence_tier: "[A] Dedekind-infiniteness, Foundation, proper classes, Russell/barber unsatisfiability; [S] the seat assignments; [I] the three-mode reading; [C] the crossing"
 owner: "Subordinate to 00_THE_TRANSCENDENTAL_TRINITY_CANON.md. Proposes amendments to it and to 43; adopts neither unilaterally."
@@ -18,6 +18,7 @@ parents:
   - 48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md
   - 07_THE_DISCOVERY_OF_FINITY.md
   - ../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md
+  - ../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md
 ---
 
 # The Three Modes of Counting
@@ -90,6 +91,16 @@ travels nowhere in this corpus.
 > honest for an `[A]` row, but the kill column must not be read as a guard on the
 > horizon. Citations produced from model memory; physical source check owed.
 > Receipt: `00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md`.
+
+> **FENCE — the duality is operation-relative (staged 2026-09-11).** Under
+> union, `∅` is the identity and `V` the absorber. Under **intersection the
+> assignment inverts exactly**: `V ∩ S = S` makes the horizon the identity and
+> `∅ ∩ S = ∅` makes the ground the absorber. "Ground = what is absorbed,
+> horizon = the absorber" is therefore a **choice of union over intersection**,
+> and must be stated as one. It is not an asymmetry the seats possess. Any
+> sentence assigning identity/absorber roles to the seats without naming the
+> operation is ill-formed under this fence. Kill: exhibit an operation-free
+> statement of the duality that survives the `∩` inversion.
 
 **Why this succeeds where the previous attempts failed.** Absorption is *false*
 of every finite collection and *true* at the totality. It discriminates. By
@@ -171,6 +182,15 @@ The three modes separate them:
 **Proposed amendment to `43`:** move countable-unending traversal into the realm
 and leave the horizon to what genuinely cannot be listed. This resolves the
 tension rather than papering it; it is `[S]`, and it is an owner call.
+
+> **STAGED 2026-09-11.** The amendment is now written into `43` §4, §5 and §7
+> as boxed staging notes, with the original founder text retained. Receipt 242
+> — same day as this document, and already naming Aristotle *Physics* III.6 and
+> Linnebo–Shapiro 2019 as the owners of the distinction — is added to this
+> document's parents; it was missing (UNFINDABILITY, caught 2026-09-11). The
+> owner disposes the staged commit; **a revert is refusal.** Tracking row:
+> `00_WORK_IN_PROGRESS/README.md`. Receipt:
+> `00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md` §3b.
 
 ## 5 · The category error, three-fold and precise `[A]`
 

@@ -173,6 +173,25 @@ the product.
 
 ---
 
+### 3a · Pending owner ruling — four Titan-seat compounds, SCHEMA-BLOCKED (2026-09-11)
+
+Not rows. A record that rows are owed and cannot yet be opened. A thirty-agent
+adjudication (`00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md`)
+found that **finity**, **the ground seat as what "nothing" reaches for**, **the
+horizon seat as absorber**, and **the realm/throne of the unit** were each
+already settled on disk — and that a fifth restatement of finity passed uncaught
+because this register carried no row for it. The rows are drafted at
+`COMPONENT-SUPPORTED` with `last_move` triples, in
+`00_HANDOFF/2026_09_11_titan_claims_adjudication/PROPOSED_REGISTER_ROWS.yaml`.
+
+They could not be opened lawfully: `typed_survivors` admits `FORMALLY-VALID`
+only and rejects `last_move`; `investigations` is pinned to exactly nine `RQ`
+ids; `open` takes wager ids owned elsewhere; `graves` is constitutional. **The
+validator was not widened to admit them** — a gate loosened by the actor it
+would gate is the failure this register exists to forbid. The owner rules on the
+bucket. Until then this note is what a `grep` for "finity" finds, and it says:
+*owed, blocked, not opened.*
+
 ## 4 · W-scope — wager rows and current status
 
 The machine schema retains the historical bucket name `open`; it is a W-row

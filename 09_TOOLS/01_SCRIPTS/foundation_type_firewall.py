@@ -44,7 +44,7 @@ FORBIDDEN_TITAN_ARITHMETIC = (
     rf"[a-z_][a-z0-9_]*\([^)]*{TITAN_TOKEN}",
     rf"\b(?:sqrt|root|log|exp|sin|cos|tan)\s+{TITAN_TOKEN}",
     rf"\b(?:cast|coerce|to|as)_[a-z0-9_]*\s*\([^)]*{TITAN_TOKEN}",
-    rf"{TITAN_TOKEN}\s*(?:∈|:)\s*\b(?:number|projectivepoint|carrier|group|ring|field|real|integer)\b",
+    rf"{TITAN_TOKEN}\s*(?:∈|:)\s*\b(?:number|projectivepoint|carrier|group|ring|field|real|integer|set|class)\b",
     rf"\b(?:e|a|b)\s*(?:=|:=|↦|→|≅|≈)\s*{TITAN_TOKEN}",
     rf"{TITAN_TOKEN}\s*(?:=|:=|↦|→|≅|≈)\s*\b(?:e|a|b)\b",
     rf"{TITAN_TOKEN}\s*(?:=|:=|↦|→|≅|≈)\s*{FOREIGN_TYPED_TERM}",
@@ -58,7 +58,10 @@ FORBIDDEN_TITAN_ARITHMETIC = (
     rf"\b(?:chordal\s+)?distance\s+between\s+{TITAN_PAIR}\s*(?:is|=|:=)\s*2\b",
     rf"{TITAN_TOKEN}\s+(?:is\s+)?(?:at|on)\s+(?:the\s+)?"
     rf"(?:north|south)?\s*(?:chart\s+)?(?:pole\s*)?(?:θ|theta)\s*=\s*(?:0|π|pi)\b",
-    rf"\bno\s*coercion\s*\(\s*titanframe\s*,\s*projectivepoint\s*\)"
+    # 2026-09-11: Set joins ProjectivePoint. 45 §8 already denies it in prose
+    # ("no Titan role becomes a point, set, class, number, or group element");
+    # this is the machine form, so a "remains open" cannot reopen it silently.
+    rf"\bno\s*coercion\s*\(\s*titanframe\s*,\s*(?:projectivepoint|set|class)\s*\)"
     rf"[^.;!?]{{0,80}}\b(?:is|remains?)\s+(?:open|unresolved|undecided)\b",
 )
 

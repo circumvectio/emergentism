@@ -150,6 +150,22 @@ So the selected positive centre is not obtained by averaging the poles. It is
 the unique fixed point after the positive-ray restriction; on the full sphere
 there are two.
 
+> **FENCE — four results, never fused (staged 2026-09-11).** What is said of
+> the unit is four separate results with four separate owners, and no sentence
+> may run them together as one:
+>
+> | | result | owner | tier |
+> |---|---|---|---|
+> | (i) | on the compactified positive ray, `ι(x) = x`, `x > 0`, has the unique solution `x = 1` — forced there, **not exportable** (no angular structure, no fourfold, no seven) | `KSC-04`; receipt 187 | `[A]` |
+> | (ii) | uniqueness of an identity is a theorem in any structure that *has* one; **existence is presupposed** — `ι` cannot be written without naming the unit; `F2` WITHDRAWN AS FALSE | `KSC-28`; `at_most_one_identity` in `EmergentismCheck.lean` | `[A]` |
+> | (iii) | in the generative base the unit is **reachable only from itself**; seeded elsewhere the construction reaches `ℚ⁺ \ {1}` | `10_SEED/01_THE_SEED_LADDER/ASCENT_D1_ARITHMETIC_2026_08_05.md` §VI; root property of the Stern–Brocot / Calkin–Wilf tree — *cite, do not claim* | `[A]` inherited |
+> | (iv) | *a unit is that by virtue of which each of the things that exist is called one* | Euclid, *Elements* VII Defs 1–2 | `[B]` |
+>
+> "It has a throne, therefore it accounts" fuses (i)–(iv) with the numeral's
+> counting role and is a type error: the throne is `1_T`, the accounting is
+> `1_N`, and `render_T` is the only bridge. Kill: a sentence citing one row as
+> warrant for another.
+
 ## 6 · Two different finities are being fused `[A]`
 
 *"Finity is infinitely many ones added together."* Two objects are running

@@ -138,6 +138,7 @@ Carrier(AlgebraWitness) := G
 NoCoercion(TitanFrame, Carrier(AlgebraWitness))
 NoCoercion(TitanFrame, Number)
 NoCoercion(TitanFrame, ProjectivePoint)
+NoCoercion(TitanFrame, Set)
 ```
 
 | Type | Lawful content | Not licensed |

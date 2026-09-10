@@ -97,6 +97,7 @@ render_T : TitanFrame → Glyph
 TitanFrame ↛ Number
 TitanFrame ↛ Field[F]
 TitanFrame ↛ ProjectivePoint[P1(F)]
+TitanFrame ↛ Set
 ```
 
 Similar display glyphs never create an implicit coercion. `zero_T`, the

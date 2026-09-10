@@ -525,6 +525,80 @@ regenerated beyond the Emission's own deterministic tree.
 
 ---
 
+## 3b · R1, R3, R4 — execution record, 2026-09-11
+
+`[B]` Executed under owner instruction ("yes yes yes" to the three items as
+listed). Each item is recorded at what actually happened, not at what was asked.
+
+### R4 — three fences, staged. DONE.
+
+| fence | machine form | homes | gate |
+|---|---|---|---|
+| **`TitanFrame ↛ Set`** — the empty set is a *rendering* of the ground seat, not the seat; without it `∅ = 0` (von Neumann) makes the seat the numeral by construction | `NoCoercion(TitanFrame, Set)` added to the typed-witness block; `TitanFrame ↛ Set` added to the signature block; the firewall regex now treats *"NoCoercion(TitanFrame, Set) remains open"* as a forbidden reopening and `• ∈ Set` / `○ : Class` as cross-type identification | `00_THE_FOUNDATION.md` · `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` · `00_THE_TRANSCENDENTAL_TRINITY_CANON.md` · `29_PRIMITIVES_AND_TYPE_SIGNATURES.md` · `47_FINITY_BOUNDARY_CALCULUS_SPEC.md` | `check_foundation.py` `TYPED_WITNESS_REQUIRED` + `FENCES`; `test_foundation_type_firewall.py` (+4 examples). **Firewall module: 24 tests, OK.** |
+| **Operation-relativity of the identity/absorber duality** — under `∩` the assignment inverts exactly; "ground = absorbed, horizon = absorber" is a choice of union, not a property of the seats | prose fence with a kill | `49_THE_THREE_MODES_OF_COUNTING.md` §2 | none yet — a prose fence; a gate is owed if the duality is ever cited on a public surface |
+| **Four-way non-fusion on the unit** — (i) forced on the ray, *not exportable*; (ii) unique as identity, existence presupposed; (iii) reachable only from itself; (iv) Euclid VII — four owners, four tiers, never one sentence | tabled fence with owners and a kill | `47_THE_EMERGENCE_OF_FINITY.md` §5 | none yet — prose |
+
+One defect of this session's own making, found by the gate and repaired before
+commit: the new `FENCES` regex first accepted only the `NoCoercion(...)` spelling
+and reported *"fence lost … absent from 29"* against the `↛` spelling 29
+actually uses. Widened to accept both. **A gate that fired on its own author is a
+gate working.**
+
+### R3 — doc 49 §4 reassignment, STAGED INTO 43. Not signed.
+
+Countable-unending traversal reseated from the horizon to the realm, as boxed
+staging notes in `43` §4, §5 and §7 with the founder text retained; `49`'s status
+line and §4 updated; receipt **242** added to `49`'s parents (it named Aristotle
+*Physics* III.6 and Linnebo–Shapiro 2019 the same day, and was missing — an
+UNFINDABILITY instance caught here); staging notes added to both `13_BOOKS/titans`
+research editions. **A WIP row now tracks it** — the first time in 37 days.
+
+**The owner disposes; a revert is refusal** — `49` §3's own protocol. No signature
+was written. The receipt `SESSION_AUDIT_2026_08_05.md` still carries the old
+reading; it is a dated record and was left intact.
+
+### R1 — four register rows. SCHEMA-BLOCKED. Not opened.
+
+Every bucket of `CLAIM_STATUS.yaml` refuses a `COMPONENT-SUPPORTED` compound with a
+`last_move` triple: `typed_survivors` is `FORMALLY-VALID`-only and rejects
+`last_move`; `investigations` is pinned to exactly `RQ-01…09` (a tenth fires
+*"RQ inventory drifted"*); `open` takes wager ids owned by
+`06_ONTOLOGY/04_THE_CONJECTURES.md`; `graves` is one-way constitutional.
+
+**The validator was not widened.** A gate loosened by the actor it would gate is
+the defect this receipt exists to name. Instead: the four rows are drafted at
+`PROPOSED_REGISTER_ROWS.yaml` in this directory (proposed id family `TC-nn`,
+proposed bucket `compounds`, mover string deliberately non-placeholder); a prose
+note §3a in the register says *owed, blocked, not opened* — so a `grep` for
+"finity" now finds the block rather than nothing; and a WIP row
+`CLAIM-REGISTER-SCHEMA-TITAN-COMPOUNDS` carries the owner call. `grep -c -i
+"finity"` on the register moves from **0 to 1**, and the 1 is a disclosure, not a
+row. **The bucket is your ruling.**
+
+### Gate classification — every red line, owned
+
+Run on the working tree and on a **clean worktree at HEAD `1900be27`** (the commit
+before R3/R4), so that "pre-existing" is measured, not asserted.
+
+| gate | clean HEAD | after R3/R4 | owned by |
+|---|---|---|---|
+| `check_claim_status.py` | PASS | **PASS** | — |
+| `check_claim_last_move.py` | PASS | **PASS** | — |
+| `check_anchors.py` (Emission) | PASS 339/0 | **PASS 339/0** | — |
+| `emit.py --verify` | identical | **identical** | — |
+| `test_foundation_type_firewall` (24) | OK | **OK** — three failures of this session's own making (`1 != 0` on the fixture corpus, because `00_THE_FOUNDATION.md` lacked the `Set` line the widened witness list demanded) were found and repaired before commit | — |
+| four compiler modules (117) | 7 FAIL | **7 FAIL, same seven by name** | pre-existing: six `test_purity_*` + `test_manifest_routes_card…` (`VMOSK_A_v3` tuple drift; already listed in the 09-09 audit) |
+| `test_work_in_progress` (7) | 2 FAIL | **2 FAIL, same two by name** — `test_each_open_row_must_retain_its_exact_id_docket_and_boundary`, `test_live_source_mirror_contract_passes` | pre-existing, on the two `OWNER_GATE_*` rows this change does not touch (the 09-09 audit's "owner-gate contract drift") |
+| `check_foundation.py` | FAIL — 10 glyph-arithmetic hits in 4 files | **FAIL — the same 10 hits, nothing added** | pre-existing: `42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md`, `00_ARJUNA_ENVELOPE_2026_09_04.md`, `PROP_2026-09-05_…soul-loop-mu4-engine.md`, `00_FROM_THE_ASHES.md` — all clean in git, none touched here |
+
+One more defect of this session found by structure rather than by a gate: the two
+WIP rows were first inserted *after* the table's closing `---` rule — an orphan
+table with no header. Moved inside the table before commit. The WIP checker
+regex pins only `OWNER_GATE_*`/`FPE-REVIEW-*` rows, so placement did not affect its
+result either way; the markdown was simply wrong.
+
+---
+
 ## 4 · Method, custody, and what this receipt does not do
 
 30 agents, 0 errors, ~4.9M subagent tokens, 990 tool uses, 51 minutes. Per-claim:

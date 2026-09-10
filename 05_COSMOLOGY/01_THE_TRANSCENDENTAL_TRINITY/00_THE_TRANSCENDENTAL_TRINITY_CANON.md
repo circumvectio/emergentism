@@ -64,6 +64,7 @@ Carrier(D0) := {ground_0}                    # one opaque object-level role
 PositiveFreedom(Carrier(D0))=∅
 TitanFrame : Type_Meta                       # vocabulary about boundary seats
 NoCoercion(TitanFrame,Carrier(D0))
+NoCoercion(TitanFrame,Set)
 μ₀ opens first positive object-level distinction, not first written label
 ```
 

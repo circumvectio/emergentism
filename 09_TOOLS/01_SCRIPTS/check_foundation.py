@@ -150,12 +150,21 @@ FENCES = [
     ("arithmetic is chart-local",
      [r"chart-local"],
      [PROJECTION, REGISTRY, FORMAL_DOCS[0]]),
+    # 2026-09-11: the empty set is a rendering of the ground seat, not the seat.
+    # Prose fence at 45 §8; machine form here. Without it, ∅ = 0 (von Neumann)
+    # makes the ground seat the numeral by construction.
+    ("no Titan role coerces to Set",
+     # K5 and the canon write NoCoercion(TitanFrame, Set); 29 writes the
+     # signature form TitanFrame ↛ Set. Both spellings carry the fence.
+     [r"nocoercion\(titanframe,\s*set\)|titanframe\s*↛\s*set\b"],
+     [K5, PRIMITIVES, TITAN_CANON]),
 ]
 
 TYPED_WITNESS_REQUIRED = [
     "algebrawitness := (g, ·, e, a, b)",
     "carrier(algebrawitness) := g",
     "nocoercion(titanframe, carrier(algebrawitness))",
+    "nocoercion(titanframe, set)",
     "arithmeticsignature(titanframe)=∅",
 ]
 

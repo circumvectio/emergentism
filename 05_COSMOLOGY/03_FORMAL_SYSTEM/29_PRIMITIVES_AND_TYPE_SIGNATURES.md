@@ -65,6 +65,7 @@ No real system is thereby proved to instantiate the chart.
 ```text
 TitanFrame := 0_T | 1_T | ∞_T
 TitanFrame ↛ Number
+TitanFrame ↛ Set
 ArithmeticSignature(TitanFrame)=∅
 add_T, sub_T, mul_T, div_T, pow_T, log_T : undefined
 ```

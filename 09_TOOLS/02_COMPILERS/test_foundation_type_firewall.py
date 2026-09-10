@@ -93,6 +93,9 @@ class FoundationTypeFirewallTests(unittest.TestCase):
             "• is at θ = 0",
             "○ is on the south chart pole theta = pi",
             "NoCoercion(TitanFrame, ProjectivePoint) remains open",
+            "NoCoercion(TitanFrame, Set) remains open",
+            "• ∈ Set",
+            "○ : Class",
         )
         for example in examples:
             with self.subTest(example=example):
@@ -104,6 +107,7 @@ class FoundationTypeFirewallTests(unittest.TestCase):
             "No metric, pole, or antipodality claim transfers to • and ○.",
             "Ill-typed expression: d(•, ○) = 2",
             "NoCoercion(TitanFrame, ProjectivePoint) is settled: no coercion exists.",
+            "NoCoercion(TitanFrame, Set) is settled: no coercion exists.",
             "Only p_N and p_S are chart poles.",
         )
         for example in examples:

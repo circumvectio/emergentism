@@ -1,0 +1,127 @@
+# PROPOSED rows for 00_META/claim_status/CLAIM_STATUS.yaml — NOT LOADED BY ANY VALIDATOR.
+#
+# Status: SCHEMA-BLOCKED, 2026-09-11. No existing bucket admits a COMPONENT-SUPPORTED
+# compound carrying a last_move triple:
+#   typed_survivors  — FORMALLY-VALID only; exact keys; last_move rejected
+#   investigations   — pinned to exactly RQ-01…RQ-09 ("RQ inventory drifted")
+#   open             — wager ids (W\d+…) owned by 06_ONTOLOGY/04_THE_CONJECTURES.md
+#   graves           — DF-nn, constitutional, one-way
+# The validator was NOT widened by the actor it would gate. The owner rules on the
+# bucket (see 00_WORK_IN_PROGRESS/README.md, CLAIM-REGISTER-SCHEMA-TITAN-COMPOUNDS).
+#
+# Proposed id family: TC-nn (Titan Compound). Proposed home: a new bucket
+# `compounds` with exact keys {id, status, tier, claim, components, gap, graves,
+# owner, last_move}, status ∈ LIVE, and the forward-only last_move contract.
+# Mover string deliberately fails the PLACEHOLDER regex on purpose: it is an
+# executor under instruction, not a signer.
+
+compounds:
+  - id: TC-01
+    status: COMPONENT-SUPPORTED
+    tier: I
+    claim: >-
+      Finity — the name, within Emergentism, for the open interior between the two
+      boundary seats: (ℝ₊, ×), identity 1, whose two-point compactification adjoins
+      ends that are not elements. The integrated claim (finity as a discovery; the
+      transfer "one error across metaphysics, economics, optimization"; the analogy
+      with zero's resistance) does NOT inherit the [A] of its components.
+    components:
+      - FV-06
+      - FV-07
+      - "projective canonical frame: (∞,0,1), third point the unit point — Möbius 1827, von Staudt 1847 (uncited in corpus proper)"
+    gap: >-
+      No register row existed; four prior restatements passed uncaught. F0 type
+      integrity NOT PASSED (42). R1's own kill (Lawvere/Inclosure witness for 0/0)
+      UNRUN. KSC-21 kill fired on the draft's own wording (ℝ for ℝ^×) — repaired.
+    graves:
+      - "the [historical] leg: refuted at [B] on disk (Nothaft; 'Brahmagupta did not discover zero'; adoption by coexistence)"
+      - "the [C] transfer as stated: R1 §7 refuses metaphysics; optimization has no owner row"
+    owner: 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md
+    last_move:
+      mover: "L4 executor (Claude, session f071a4fb) under owner instruction R1, 2026-09-11 — a staging, not a signature"
+      date: "2026-09-11"
+      evidence: 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md
+
+  - id: TC-02
+    status: COMPONENT-SUPPORTED
+    tier: I
+    claim: >-
+      The ground seat is what the tradition's nothing-terms — Leibniz's question,
+      ex nihilo, śūnyatā, das Nichts — reach for: a boundary role, not a state, a
+      number, or a set. The numeral, the empty set, and the projective south pole
+      are neighbouring READINGS of the seat, not typed maps and not a convergence
+      proof (DF-15).
+    components:
+      - "46 §2/§6 — already the corpus position at [I], with the Hegelian cost attached"
+      - "45 §8 — 'no Titan role becomes a point, set, class, number, or group element' (prose fence); machine form NoCoercion(TitanFrame, Set) staged 2026-09-11"
+      - "Frege 1884 §74; Lawvere 1964; Benacerraf 1965; Nishida 1926; Kant A290/B346"
+    gap: >-
+      The discriminator does not yet discriminate: Heidegger's das Nichts is already
+      non-entitative on the standard reading (Käufer 2005). "THE referent" is a
+      uniqueness claim nothing on disk supports. 43 deliberately left this seat
+      without a mathematical neighbour.
+    graves:
+      - "'THE referent of nothing' — definite-article uniqueness, unsupported"
+      - "three renderings as typed maps — pre-killed by DF-15 and by 29's single render_T"
+    owner: 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md
+    last_move:
+      mover: "L4 executor (Claude, session f071a4fb) under owner instruction R1, 2026-09-11 — a staging, not a signature"
+      date: "2026-09-11"
+      evidence: 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md
+
+  - id: TC-03
+    status: COMPONENT-SUPPORTED
+    tier: S
+    claim: >-
+      The horizon seat's discriminating behaviour is absorption, V ∪ {x} = V,
+      literally as classes — an inherited bounded-lattice fact whose horizon
+      instance is Cantor's (vermehrbar/unvermehrbar). Countably unending traversal
+      belongs to the realm, not the horizon (49 §4, staged into 43 on 2026-09-11).
+    components:
+      - "Huntington 1904 universal bounds; Birkhoff 1940"
+      - "Cantor, Mitteilungen zur Lehre vom Transfiniten 1887–88; letter to Dedekind 28 July 1899; Burali-Forti 1897"
+      - "Aristotle Physics III.6; Linnebo–Shapiro 2019 (named in receipt 242)"
+    gap: >-
+      The identity/absorber duality is operation-relative (inverts under ∩) —
+      fence staged in 49 §2. As literal class identity the horizon line is
+      analytic; 49 §8's kill tests the finite clause only. The glut RQ is not
+      well-posed until it names its bilattice ordering (B ∨ T = T under LP).
+    graves:
+      - "'the horizon seat is the barber paradox / an object that loops' — FAILS, 49 §6; the barber does not exist; theorem of pure FOL"
+      - "self-non-inclusion as any seat's defining property — discriminates nothing under Foundation"
+      - "Dedekind 1888 as owner of V ∪ {x} = V — misattribution, corrected across 12 files 2026-09-11"
+    owner: 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md
+    last_move:
+      mover: "L4 executor (Claude, session f071a4fb) under owner instruction R1, 2026-09-11 — a staging, not a signature"
+      date: "2026-09-11"
+      evidence: 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md
+
+  - id: TC-04
+    status: COMPONENT-SUPPORTED
+    tier: S
+    claim: >-
+      The middle glyph marks the realm, read distributively — every admissible
+      finite determination, one at a time; collectively it is the horizon. The
+      unit's throne is four separate results that must never be fused: forced on
+      the ray (not exportable); unique as identity, existence presupposed;
+      reachable only from itself; Euclid VII Defs 1–2. "It has a throne, therefore
+      it accounts" is a type error.
+    components:
+      - "seat reversal — STAGED, UNDISPOSED (2026-08-05, commit a4a3a493); owner disposes"
+      - "distributive fence — 52 §1, [D] STAGED"
+      - "KSC-04 (ray forcing + non-exportability); KSC-28 (F2 withdrawn; at_most_one_identity); ASCENT_D1 §VI (reachable only from 1); Euclid VII"
+      - "E4 plenitude filter [C] — admitted, never actual; REACHABLE debt unpaid (Leibniz compossibility-circularity)"
+    gap: >-
+      Frege, Grundlagen §§29–44 and §38, is the standing counter-position the corpus
+      has never engaged. The four-way non-fusion fence was not stated anywhere on
+      disk until 2026-09-11 (47 §5). The numéraire reading belongs to Skyzai, not
+      the worldview.
+    graves:
+      - "'recorded and executed' for the seat reversal — warrant substitution; it is STAGED"
+      - "'the three seats are FORCED' without the non-exportability fence — DF-09 returning"
+      - "'the most sustained attack in the literature' — unbounded superlative, struck"
+    owner: 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md
+    last_move:
+      mover: "L4 executor (Claude, session f071a4fb) under owner instruction R1, 2026-09-11 — a staging, not a signature"
+      date: "2026-09-11"
+      evidence: 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md

@@ -269,6 +269,19 @@ mathematical object.
 
 ## 4. The horizon-facing Titan: Infinity as count without end
 
+> **STAGED REASSIGNMENT — 2026-09-11, executing `49 §4`. The owner disposes; a
+> revert is refusal (per `49 §3`'s own rule).** A countably unending traversal
+> is a *listable* process — a first step, a next step, an `ℕ`-indexing — and
+> every one of its stages is finite, so **it belongs to the realm seat**, not
+> the horizon. The horizon keeps only what **cannot be listed at all**: the
+> un-gatherable totality, the proper class, Cantor's Absolute. The paragraphs
+> below are retained as the founder formulation of 2026-07-27; under this
+> staging they describe **the realm's open successor**, and the horizon row of
+> §7 is amended accordingly. Owners of the distinction being applied: Aristotle,
+> *Physics* III.6; Linnebo & Shapiro, "Actual and Potential Infinity", *Noûs*
+> 53 (2019) — both already named in receipt 242 the same day `49` was written.
+> Pending 37 days untracked; now tracked in `00_WORK_IN_PROGRESS/README.md`.
+
 Infinity is what remains countable without becoming completed by the act of
 counting. It is the open successor:
 
@@ -329,6 +342,10 @@ unit or midpoint. This chapter does not amend that definition. It stages
 finite boundary. Where a lawful normalization exists, a selected finite nonzero
 limit may be placed at numeric `1_N`; that explicit coordinate choice never
 identifies `L`, `1_N`, and `1_T`. `[S/I/C]`
+
+> **STAGED 2026-09-11 (`49 §4`):** countable-unending traversal — `0, 1, 2, …`,
+> every stage finite, `ℕ`-indexed — lands **here**, in the realm, where approach
+> is meaningful. It is not a horizon phenomenon.
 
 The proposed `Finity_R` is thus both limit and discipline:
 
@@ -391,7 +408,7 @@ Ground_T   Unit_T     Horizon_T
 |---|---|---|---|
 | ground glyph; ground token; `Ground_T` role | **`TheInfinite_R`:** pre-countability; inexhaustibility is the selected reading | numeric `0_N`. **No mathematical neighbour is claimed for pre-countability** (corrected 2026-08-05, §3): uncountability failed because it is *defined by* countability; the proper class failed because it is overfull where the ground is pre-full. Uncountability remains the neighbour of the *inexhaustible* reading only, once a set has been declared. | “zero is an uncountable number”; treating the Ground as a set; **reading the ground as a proper class** |
 | unit glyph; unit token; `Unit_T` role | **`Finity_R`:** accountability to an approachable finite boundary | convergence to ordinary `L`; selected positive unit `1_N` | “every limit is one”; treating a Titan as an operand |
-| horizon glyph; horizon token; `Horizon_T` role | **`Infinity_R`:** count without end | `ℕ`; an unbounded sequence; `∞_P` in a named extension | “infinity is the largest field number”; silent coercion among extensions |
+| horizon glyph; horizon token; `Horizon_T` role | **`Infinity_R`:** ~~count without end~~ → **counting cannot complete; the un-gatherable** *(STAGED 2026-09-11 per `49 §4`; owner disposes)* | proper class `V`; Cantor's Absolute (*Mitteilungen* 1887–88); absorption `V ∪ {x} = V` — count-without-end moves to the realm row | “infinity is the largest field number”; silent coercion among extensions; a countably unending traversal seated here |
 
 The display is an operator-free emblem. The Titans do not multiply, divide, or
 cause one another. The Śiva, Viṣṇu, and Brahmā names are selected symbolic

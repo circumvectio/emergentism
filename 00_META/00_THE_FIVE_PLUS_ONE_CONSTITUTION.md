@@ -84,6 +84,7 @@ BASE — posited. Three typed clauses, killable, nothing forced.
   B2  a is a selected element of G.
   B3  b is defined inside G by b := a⁻¹.
   NoCoercion(TitanFrame, Carrier(AlgebraWitness))
+  NoCoercion(TitanFrame, Set)
   ArithmeticSignature(TitanFrame)=∅
 
 EMERGENT — selected constructions, none forced; narrative, not a μ-crossing.
