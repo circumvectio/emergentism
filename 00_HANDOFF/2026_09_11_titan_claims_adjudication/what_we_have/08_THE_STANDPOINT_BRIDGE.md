@@ -274,6 +274,120 @@ Cite these; do not claim them.
 
 ---
 
+## 8a · Why evil is a different word from bad — the limit `[I]`
+
+*Owner, 2026-09-11: "evil is evil because taken to its limit the entire D5
+geosphere would vanish and only the geosphere remain. the last individual
+standing and not repenting from evil would only have himself to cannibalize
+until nothing would remain of what is life."*
+
+### The boundary first, because the corpus's own kill is aimed here
+
+**This is not the claim that extraction self-terminates.** That claim is refuted
+on disk and must stay refuted: `00_THE_EXTRACTION_LAW.md` — *"Extraction is neither
+mathematically impossible nor universally self-terminating"* — and
+Power-Max §4's counterexample is marked load-bearing. A parasite can prosper. An
+extractive arrangement can be stable for centuries. **Nothing below predicts that
+any particular evil act fails.**
+
+The claim is about a **direction and its limit**, not about trajectories. And the
+slot is one Power-Max §4 leaves open in its own sentence: non-extraction is
+*"enforced by the Justice-admissible field **and then tested for long-run
+consequences.**"* This is the long-run test. It is not, and may never be cited
+as, the inference.
+
+### The argument
+
+1. A bearer maintains itself by exchange with a sustaining field — it takes order
+   in and exports entropy out. `[A]`, Schrödinger. **There is no bearer without a
+   field.** An organism with no environment is not an isolated organism; it is a
+   corpse.
+2. `Evil(a)` names the direction in which `Δ_T W_H < 0` is the **mechanism** of
+   `Δ_T W_i > 0` (§5).
+3. Extend that direction to its limit: `W_H → 0`.
+4. By (1), at `W_H → 0` the bearer goes with it. *"The last individual standing…
+   would only have himself to cannibalize."*
+5. Therefore **the limit of evil is the annihilation of the vantage point that
+   made "gain" meaningful in the first place.**
+
+### Self-annulling, not self-defeating — and that is the whole distinction
+
+Self-defeat would mean: you lose the game. Refuted; often you win it.
+
+**Self-annulment means: at the limit, the game ceases to have a board.** The
+objective function evil maximizes has its own domain as an argument — and the
+maximization destroys the domain. That is a structural property of the direction,
+entirely compatible with every local success along the way.
+
+**This is why evil is a different word from bad, and not merely more of it.**
+
+| | |
+|---|---|
+| **bad** | reduces durable potential |
+| **evil** | reduces it *in the direction whose limit is the end of durable potential as such* |
+
+A magnitude difference would make evil a lot of bad. This is a **category**
+difference: evil is distinguished by where it points, not by how much it costs.
+
+### In the lens's own vocabulary
+
+The telos refinement gives this its exact form. Three directed-motion cases:
+
+| | motion | telos | least upper bound |
+|---|---|---|---|
+| the circle | yes | **none** | none — it oscillates |
+| a digit computation | yes | yes | a real number |
+| **evil** | yes | **yes** | **the empty bearer-field** |
+
+**Evil is the one directed process whose bound is the end of direction.** It is
+not aimless — that is the circle, and the circle is merely a defect of
+specification. Evil has a telos, pursues it coherently, and arrives at the
+extinction of telos.
+
+### What actually vanishes — D5, not D4
+
+The owner's phrasing wants one correction, and it makes the claim sharper.
+
+Dead matter is not the ground seat. A sterile planet still has determinate finite
+form — it is D4 actual, fully counted. What the limit destroys is **D5**: *"the
+set of reachable, selectable futures"*, *"the D5 potential cone, not the D4 light
+cone."* A cone requires a selector. No bearers, no selection, no cone.
+
+> **The limit of evil is `D4` persisting with `D5 = ∅`.** The actual remains and
+> the possible does not. Matter that cannot do anything — which is exactly
+> *"only the geosphere remain."*
+
+`[I]` **A third failure mode, proposed.** The corpus names two, both scoring
+zero: drift at the horizon seat (maximum coherence, no viability) and collapse
+at the ground seat (nothing initiated). This is a third and it is neither:
+**full actuality, zero possibility.** Not incoherence, not inaction. A world that is entirely there and
+can do nothing. *(Note: no folding of geosphere/biosphere/noosphere onto L1–L3 is
+performed or implied — `42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md` fences that,
+and this stays clear of it.)*
+
+### And it closes the vow
+
+`E8`'s object is *"durable mutual option-cone widening."* The option cone is D5.
+**Evil's limit is D5 → ∅.** Not a narrowing — the terminus of narrowing.
+
+So the vow and the definition of evil are the same statement with opposite signs,
+and neither had to be derived from the geometry to be exact.
+
+### What this does not prove
+
+- Not that evil is imprudent. A sub-maximal extractor — take a tenth, let the
+  field regenerate — never approaches the limit in any humanly relevant time, and
+  Power-Max §4 stands untouched.
+- Not that the limit is ever reached. It is a limit, in the order-theoretic
+  sense: the bound of the direction, not a prediction about arrival.
+- Not a new empirical result. Every ingredient is inherited — Schrödinger for (1),
+  the corpus's own `Δ_T W` contract for (2), ordinary limits for (3).
+
+**What it does supply is the reason the word is different**, which is what was
+asked and what nothing on disk currently answers.
+
+---
+
 ## 9 · Claims and kills
 
 | claim | tier | kill |
@@ -285,6 +399,9 @@ Cite these; do not claim them.
 | `Evil(a)` as defined names the excluded fourth quadrant | `[S]` proposal | exhibit an act meeting all three clauses that the Justice envelope should permit — or show the telos clause does no work |
 | Grounding the sun case in `Δ_T W_H` rather than perceived risk | `[S]` | show a case where option-cone contraction and the wrong come apart |
 | The individual→collective coupling | `[C]` **conditional, and not assumed here** | Power-Max §4's counterexample already stands: extraction can benefit the extractor locally. **The argument must never route through "extraction fails."** |
+| Evil's limit is the annihilation of the bearer-field, hence self-annulling | `[I]` | show a coherent bearer that persists with its sustaining field at zero — i.e. break Schrödinger's premise, not the arithmetic |
+| The limit is `D4` persisting with `D5 = ∅` — full actuality, zero possibility | `[I]` proposal | show that a selectable-future cone survives the last selector, or that the state collapses to `•` rather than to inert actuality |
+| Evil differs from bad in category, not magnitude | `[I]` | exhibit a bad act whose direction has the same limit, or an evil act whose direction does not |
 
 **This document's own kill.** If any sentence here is cited as reopening
 `DF-21`, as deriving the ethic from the geometry, or as showing extraction to be
