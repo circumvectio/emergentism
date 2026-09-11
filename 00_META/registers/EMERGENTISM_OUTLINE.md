@@ -1,0 +1,2265 @@
+# Emergentism
+
+- •  ⊙  ○ — the frame
+  - A Titan is a seat in the vocabulary you use to talk about a boundary, held at a different level from everything it talks about.
+  - ArithmeticSignature(TitanFrame) = the empty set. A frame is never an operand.
+  - V · M · O are the three Titan-frame projections, and exactly the three seats that cannot be deployed.
+  - S · K · A are the three deployable operators inside the realm.
+  - L1 carries no VMOSK-A letter. The off-by-one between six letters and seven seats is the firewall.
+  - Read the display as interval notation: lower bound | realm | upper bound. Inserting an operator between the marks destroys it.
+- The seven seats
+  - 591 of 1702 live documents declare a seat. The rest are unfiled below, never guessed into one.
+  - L1 · Caṇḍāla · Kali 🎲 · objective-function — 35 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Caṇḍāla
+      - Operator — Kali 🎲
+      - G7@1 cell — kali_take_phi
+      - Pramāṇa — Pratyakṣa
+      - REP6@1 — — external ground / firewall; no REP6@1 term
+      - VMOSK-A [I/C] — — (outside the letters)
+      - B = sin θ — →0 (limiting)
+      - Inference — dialectical
+      - -ology — objective-function
+      - Regime — tyranny
+      - Deploy — yes
+    - documents filed here (35)
+      - 00_HANDOFF (7)
+        - L1.1 — 3 cross-insight tensions, 3 deeply held, 3 humility-required; P7 icon-survives is exemplary (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.1_CONTRADICTION_SCAN_7_INSIGHTS_2026_07_20.md [I] [D]
+        - L1.2 — 00_META contradiction firewall; A1 dual frontmatter, A2 [E] tier invention, A3 BROKEN-66 triple (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.2_CONTRADICTION_FIREWALL_00_META_2026_07_20.md [S] [I] [D]
+        - L1.2 shadow — 3 fatal failure modes (vitalist, perennialism, self-sealing); qualifiers must travel with claims (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.2_SHADOW_SCAN_7_INSIGHTS_2026_07_20.md [I]
+        - L1.3 — 06_ONTOLOGY firewall; HIGH W0 collision, HIGH R4/R10a, HIGH S² drift (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md [S] [I] [D]
+        - L1.3 ruthlessness — the Reduction Asymmetry is the load-bearing sentimental attachment the doctrine cannot self-kill (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.3_RUTHLESSNESS_DOES_THE_FOUNDER_KEEP_IT_2026_07_20.md [S] [I] [D]
+        - L1.4 — 11+12 contradiction firewall; F-01 critical (NODE_MODULES_TOMBSTONE frontmatter lie) (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.4_CONTRADICTION_FIREWALL_11_12_2026_07_20.md [S] [I] [D]
+        - L1 corpus firewall — 4 real findings (C-1 through C-4), 11/11 tombstones verified, 5 ACTIVE banners consistent (counsel-only audit; interpretive verdict) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1_CORPUS_CONTRADICTION_FIREWALL_2026_07_20.md [S] [I]
+      - 01_TELEOLOGY (23)
+        - Neoteny as delayed closure and extended plasticity — 01_TELEOLOGY/00_NEOTENY_THE_HARDWARE_UPGRADE.md [I]
+        - Saturation and Return — 01_TELEOLOGY/00_SATURATION_AND_RETURN.md [I]
+        - Framework on its own objective function spectrum — 01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md [I]
+        - A conditional grammar of admissible becoming — 01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md [A] [S] [I]
+        - Hidden Center — 01_TELEOLOGY/00_THE_HIDDEN_CENTER_OF_THE_FRAMEWORK.md [I]
+        - Tantric/Vajrayana transmutation of trophic friction — 01_TELEOLOGY/00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md [I]
+        - The Serpent as an [I] F₅ reading — helix and *h₂r̥tó-* — 01_TELEOLOGY/01_F5_FORCE/02_THE_SERPENT_IS_F5.md [I]
+        - 01_F5_FORCE — 01_TELEOLOGY/01_F5_FORCE/README.md [I]
+        - Viable completion is durable option widening inside Justice — 01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md [S] [I] [C]
+        - The Three-Stage Process Question — Discovery or Mirror? — 01_TELEOLOGY/02_THE_DERIVATION/01_THE_ROSETTA_QUESTION.md [I]
+        - Why The Constraint Matters — Ethics as Arithmetic — 01_TELEOLOGY/02_THE_DERIVATION/03_WHY_THE_CONSTRAINT_MATTERS.md [S]
+        - What We Haven't Said Yet — The Unarticulated Core — 01_TELEOLOGY/02_THE_DERIVATION/08_WHAT_WE_HAVENT_SAID.md [B]
+        - The Lagrangian Question — Kintsugi tombstone — 01_TELEOLOGY/02_THE_DERIVATION/09A_THE_LAGRANGIAN_QUESTION.md [A] [S] [C]
+        - Path D: The AM-GM Geometry — 01_TELEOLOGY/02_THE_DERIVATION/09_PATH_D_THE_AMGM_GEOMETRY.md [S]
+        - Path D computation — Kintsugi tombstone — 01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md [A] [S] [C]
+        - The Spectrum Results — 01_TELEOLOGY/02_THE_DERIVATION/12_THE_SPECTRUM_RESULTS.md [B] [S] [I]
+        - Paths A, B, C — Kintsugi tombstone — 01_TELEOLOGY/02_THE_DERIVATION/13_PATHS_ABC_ANALYSIS.md [A] [S] [C]
+        - Log Form of the Power-Max Lemma — 01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md [A] [S] [I]
+        - 15_LOG_FORM_OF_THE_POWER_MAX_LEMMA — 01_TELEOLOGY/02_THE_DERIVATION/15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md [S]
+        - 16_OPERATOR_CONSISTENCY_AUDIT — 01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md [I]
+        - L1–L7 Refinement Audit — 01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md [I]
+        - 02_THE_DERIVATION — Seed, Identity, and First Consequence — 01_TELEOLOGY/02_THE_DERIVATION/README.md [A] [S] [I]
+        - 01 Teleology — How to choose and act — 01_TELEOLOGY/README.md [S]
+      - 08_FRAMEWORK_SUPPORT (2)
+        - PD-07 — Fermi Bifurcation Filter — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_07_FERMI_PARADOX.md [I] [C]
+        - PD-16 — Meaning as Coherence Orientation — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_16_MEANING_OF_LIFE.md [I]
+      - 11_UPLINK (3)
+        - The firewall counts what the doctrine cannot afford to own — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L1_CONTAMINATION_INVENTORY.md [S] [I]
+        - The Reap enters the mandala: no primacy seized, five doors unlinked, five guards receipted — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20/L1_FIREWALL.md [S] [I]
+        - Caṇḍāla Capture & Overclaim Audit — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/70_CANDALA_CAPTURE_AUDIT_2026_05_04.md [B] [I]
+  - L2 · Śūdra · Kālī 💀 · epistemology — 53 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Śūdra
+      - Operator — Kālī 💀
+      - G7@1 cell — kali_take_v
+      - Pramāṇa — Upamāna
+      - REP6@1 — genotype
+      - VMOSK-A [I/C] — A · Agents
+      - B = sin θ — ½
+      - Inference — inductive
+      - -ology — epistemology
+      - Regime — democracy
+      - Deploy — yes
+    - documents filed here (53)
+      - 00_HANDOFF (5)
+        - L2.2 — E1–E10 / W0–W12 truth-cut; the on-disk working tree presents a 144/146 fork no receipt sanctions (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.2_CLAIM_VS_EVIDENCE_E1-10_W0-12_2026_07_20.md [S] [I] [D]
+        - L2.2 Kālī — 4 of 7 insights are not present in the corpus (corrected 2026-07-22 from 5); refuse to invent (counsel-only; K2 ask) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.2_DEEPEST_READING_PER_INSIGHT_2026_07_20.md [S] [I] [D]
+        - L2.3 — 5+1 ACTIVE header overclaim (A1), public-site retracted slogan live (A3/B1), Settled Canon 07-18 K2 source unverified (D3) (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.3_CLAIM_VS_EVIDENCE_5+1_22_DEAD_2026_07_20.md [S] [I] [D]
+        - L2.3 cross-rung — 7 rungs are 7 cross-sections of one self-intersecting topology; monist structure, pluralist vantage (interpretive synthesis; no tier movements) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.3_CROSS_RUNG_CONSEQUENCES_2026_07_20.md [I]
+        - L2.4 — Reap↔D6 self-pricing tension (S11), K-5 path gap in Map (M5), 2 [C]-bridges — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.4_CLAIM_VS_EVIDENCE_REAP_SEED_DOOR_2026_07_20.md [S] [I] [D]
+      - 02_EPISTEMOLOGY (16)
+        - Flow is a separate high-ν conjecture; the equator names balance — 02_EPISTEMOLOGY/00_FLOW_STATE_AS_EPISTEMIC_MODE.md [I] [C]
+        - I is used as an equatorial symbol — 02_EPISTEMOLOGY/00_I_IS_THE_EQUATOR.md [S] [I]
+        - Opaque from below, legible from above — 02_EPISTEMOLOGY/00_OPAQUE_FROM_BELOW_LEGIBLE_FROM_ABOVE.md [I] [S]
+        - Pratyakṣa is primary disclosure — 02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md [I] [B]
+        - The Synthetic Gap and the Four Postures — 02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md [I]
+        - Every load-bearing claim wears its actual tier — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md [S]
+        - 01_EVIDENCE_TIERS — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/README.md [I]
+        - The Honesty Protocol — a portable method for claiming under uncertainty — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md [S] [B]
+        - When Pattern Becomes Candidate Claim — 02_EPISTEMOLOGY/02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md [S] [I]
+        - **The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking** — 02_EPISTEMOLOGY/03_MEMETICS/01_MEMES_HARDWARE_SOFTWARE_CONFLICT.md [I]
+        - **The Human Architecture and Memetic Software: An Interdisciplinary Analysis of Cultural Parasitism, Algorithmic Epidemiology, and Evolutionary Conflict** — 02_EPISTEMOLOGY/03_MEMETICS/02_MEMES_HARDWARE_SOFTWARE_EVOLUTION.md [I]
+        - **The Architecture of Mind and Culture: A Comprehensive Analysis of Memetic Theory** — 02_EPISTEMOLOGY/03_MEMETICS/03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md [I]
+        - **Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture** — 02_EPISTEMOLOGY/03_MEMETICS/04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md [I]
+        - **The Architecture of Capture and Syntropy: Reverse-Engineering Ancient Egregoric Systems as Societal Operating Systems** — 02_EPISTEMOLOGY/03_MEMETICS/05_ANCIENT_EGREGORE_ARCHITECTURES.md [I]
+        - 03_MEMETICS — 02_EPISTEMOLOGY/03_MEMETICS/README.md [I]
+        - 02 Epistemology — How a pattern earns a claim — 02_EPISTEMOLOGY/README.md [S]
+      - 06_ONTOLOGY (3)
+        - Exploitation is cheap to generate; defense is costly to maintain; the defense of layer n is constructed at layer n+1 — 06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md [S] [I] [C]
+        - One axis through five registers — a consistency debt may be settled by a law or serviced by a practice; W14 is the no-F5 null, not a theorem (staged W14–W18 candidates) — 06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md [A] [B] [I]
+        - Every emergent freedom may require a compensator that maintains a named register quantity, with independently measurable freedom-loss predicted at saturation (staged W19-BALANCE candidate; gauge language conditional) — 06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md [A] [B] [S]
+      - 08_FRAMEWORK_SUPPORT (23)
+        - Egregore Steward/Parasite Analogy Note — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/EGREGORE_STEWARD_PARASITE_ANALOGY_NOTE_2026_05_16.md [I]
+        - COMPARATIVE — Comparative Evidence Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/README.md [I]
+        - PD-00 — Master Paradox Index — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_00_INDEX.md [I] [S] [C]
+        - PD-25 — Bell Local Realism Boundary — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_25_BELL_LOCAL_REALISM.md [A] [B] [I]
+        - PARADOX_DISSOLUTIONS — Paradox Slice Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/README.md [I] [S]
+        - Quantum Physics Confirmations — Source Ledger and Boundary — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/QUANTUM_PHYSICS_CONFIRMATIONS.md [B] [I] [C]
+        - 03_EVIDENCE — Evidence Root Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/README.md [I]
+        - Three Non-Western Traditions and the Emergentism L-Level Structure — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md [I]
+        - Preregistered double-coding — the stability-band conjecture gets its discriminator before anyone codes anything — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/40_PREREGISTERED_DOUBLE_CODING_v0.md [S] [I] [C]
+        - Śūdra Regime and the Kālī Operator: A Comprehensive Systems Analysis of Democratic Topographies (cross-domain analysis; interpretive projections) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_AGENTS/D35_L2_SUDRA_KALI_ANALYSIS.md [S] [I]
+        - D_SERIES_AGENTS — Front Door (front door; cross-domain agent-analysis projections interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_AGENTS/README.md [S] [I]
+        - Psychology and Development Cross-Domain Mappings (Rosetta alignment interpretive; extensions untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D24_PSYCHOLOGY.md [B] [I] [C]
+        - Neuroscience and Cognition L-Level Correlates (proposed correlates; L7 hypothesis untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D25_NEUROSCIENCE.md [B] [I] [C]
+        - Mythology and Archetypal Cross-Traditions (interpretive; independent validation still required) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D28_MYTHOLOGY.md [I]
+        - D_SERIES_DOMAINS — Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/README.md [S]
+        - Rosetta R4 — Egyptian Ma'at correspondence (interpretive correspondence; not proof) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D13_ROSETTA_R4_EGYPTIAN_MAAT.md [I]
+        - Rosetta R5 — Nietzsche correspondence — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D14_ROSETTA_R5_NIETZSCHE.md [B]
+        - Rosetta R7 — brain as complex-plane proxy (interpretive neuroscience proxy) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D16_ROSETTA_R7_BRAIN.md [I]
+        - Rosetta R12 — megalithic coordination evidence — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D21_ROSETTA_R12_MEGALITHIC.md [B] [I] [C]
+        - D_SERIES_ROWS — Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/README.md [S]
+        - Rosetta Stone — mythology and archetype — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_MYTHOLOGY.md [I]
+        - Rosetta Stone — neuroscience and cognition — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_NEUROSCIENCE.md [B] [I] [C]
+        - Rosetta Stone — psychology and development — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_PSYCHOLOGY.md [B] [I] [C]
+      - 09_TOOLS (1)
+        - 04_DATA_PIPELINES — 09_TOOLS/04_DATA_PIPELINES/README.md [B] [I] [C]
+      - 11_UPLINK (4)
+        - The Truth-Cut — fire only at η > 0 / false coherence; every strike receipted (target, method, verdict, tier) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L2_TRUTH_CUT.md [S] [I] [C]
+        - Fire only at false coherence, never at cooperators — every strike receipted: target, method, verdict, tier — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20/L2_TRUTH_CUT.md [S]
+        - Śūdra Gap Exploration — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/71_SUDRAGAP_EXPLORATION_2026_05_04.md [I] [D]
+        - Session-packet index #100–#231 — 11_UPLINK/60_SESSION_PACKETS/00_PACKET_INDEX.md [B]
+      - 17_EMERGENTISM_2_MACHINE_INTELLIGENCE (1)
+        - When Pattern Becomes Candidate Claim — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C1_pattern_to_claim.md [S] [I]
+  - L3 · Vaiśya · Kṛṣṇa ◇ · methodology — 154 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Vaiśya
+      - Operator — Kṛṣṇa ◇
+      - G7@1 cell — krishna_give_v
+      - Pramāṇa — Anumāna
+      - REP6@1 — epigenotype
+      - VMOSK-A [I/C] — K · measured triggers
+      - B = sin θ — √3⁄2
+      - Inference — deductive
+      - -ology — methodology
+      - Regime — oligarchy
+      - Deploy — yes
+    - documents filed here (154)
+      - 00_HANDOFF (9)
+        - L3.2 — 7 broken parent receipts (139), 4 receipt-number collisions, 5 ACTIVE banners on DISPUTED 145 (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L3.2_CITATIONS_00_META_11_UPLINK_2026_07_20.md [S] [I] [D]
+        - L3.2 frontmatter — 7 insights with proposed castes, tiers, parents, paths (audit-instance; interpretive proposals) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L3.2_FRONTMATTER_CANONICAL_PHRASES_2026_07_20.md [I]
+        - L3.4 — 0 hard-broken hrefs in shipped pages; 1 nested empty shell needs K3; 40 OG-meta gaps (audit-instance; interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L3.4_CITATIONS_12_90_91_2026_07_20.md [S] [I]
+        - check_foundation.py Quotation-Blindness Fix — P2.2 — 2026-08-06 — 00_HANDOFF/CHECK_FOUNDATION_QUOTE_FIX_2026_08_06.md [A] [B] [I]
+        - Fair re-adjudication protocol — the prior 18/18 was rigged (refuted: true as default, running tally); this instrument has stands as a live verdict and already-owned as cite-it not kill-it — 00_HANDOFF/FAIR_RE_ADJUDICATION_PROTOCOL_2026_08_06.md [S] [I]
+        - Fair re-adjudication complete — of 12 contestable verdicts, 1 KILLED, 5 NEEDS REPAIR, 4 STANDS WITH CITATION, 2 STANDS; the is-ought argument NEEDS REPAIR (already repaired) — 00_HANDOFF/FAIR_RE_ADJUDICATION_RESULTS_2026_08_06.md [S] [A] [I]
+        - P2.1 Gate Mutation Report — 26 gates in '_run_standing_gate_figure.py' — 00_HANDOFF/GATE_MUTATION_REPORT_2026_08_06.md [A] [B] [S]
+        - P2.1 Mutation Test — All Gates in 09_TOOLS/01_SCRIPTS/ — 00_HANDOFF/MUTATION_TEST_GATES_2026_08_06.md [A] [B] [I]
+        - WO-C1 opening report — six candidate pairs audited, none survives the conservation+commensurability filter, scope condition extracted, preregistration standing [B/S] — 00_HANDOFF/WO_C1_OPENING_REPORT_BIOLOGICAL_PAIR_2026_08_05.md [B] [S] [C]
+      - 00_META (4)
+        - Settled Canon — repair source truth, do not re-litigate it — 00_META/00_SETTLED_CANON_REGISTRY.md [S]
+        - Validation status is a second axis — a tier says how strong, a status says how it stands ([S] status ladder; [I] per-grave adjudications) — 00_META/00_THE_CLAIM_STATUS_REGISTER.md [B] [S] [I]
+        - One non-owning manifest for conjectures, proofs, counterexamples, refutations, and failed proof attempts — 00_META/conjectures_and_proof_attempts/README.md [S]
+        - Canonical registers — derived inventory, additive-only, never hand-edited — 00_META/registers/README.md [S]
+      - 03_METHODOLOGY (68)
+        - Canonical Claim Matrix — 03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md [A] [B] [S]
+        - Constitutional Science — 03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md [I]
+        - Science Stack Status — 03_METHODOLOGY/00_SCIENCE_STACK_STATUS.md [I]
+        - Syntropic Egregore Executive Summary — 03_METHODOLOGY/00_SYNTROPIC_EGREGORE_EXECUTIVE_SUMMARY.md [S] [I]
+        - Syntropic Known Unknowns — 03_METHODOLOGY/00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md [S] [I]
+        - The Doctrinal Ladder — 03_METHODOLOGY/00_THE_DOCTRINAL_LADDER.md [S] [I]
+        - The Lens-Not-Law Rule — 03_METHODOLOGY/00_THE_LENS_NOT_LAW_RULE.md [S]
+        - What actually tests the theory — 03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md [I]
+        - Stigmergic Deployment — 03_METHODOLOGY/01_STIGMERGIC_DEPLOYMENT_AND_PHASE_TRANSITION.md [S] [I]
+        - The Inferential Logic Audit Protocol — 03_METHODOLOGY/01_THE_ANUMANA_AUDIT_PROTOCOL.md [S] [I]
+        - The derivation stops where mathematics stops — 03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md [A] [I] [C]
+        - Burri Rules derivation ledger — proof burden, source distance, and claim movement — 03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md [B] [S] [I]
+        - 01_THE_DERIVATION — 03_METHODOLOGY/01_THE_DERIVATION/README.md [I]
+        - Paper 1 — the typed D5 Landauer boundary — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_1_THE_D5_LANDAUER_BARRIER.md [A] [B] [S]
+        - PAPER 2: WORLDLINE FORESIGHT IS PHYSICAL — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_2_WORLDLINE_FORESIGHT_IS_PHYSICAL.md [S] [I]
+        - PAPER 3: THE REFLEXIVE DEMON — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_3_THE_REFLEXIVE_DEMON.md [S] [I]
+        - PAPER 4: PATH ENTROPY IS NOT THERMODYNAMIC ENTROPY — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md [A] [S] [I]
+        - PAPER 5: ENTROPY EXPORT AND OBJECTIVE ETHICS — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md [S] [I]
+        - PAPER 6: THE OMEGA HOLOBIONT CANNOT CLOSE — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md [S] [I]
+        - Paper 7 — present awareness as an actual fulcrum — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_7_PRESENT_AWARENESS_AS_FULCRUM.md [S] [I] [C]
+        - The D5 Landauer Barrier Program — typed successor — 03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/README.md [A] [B] [S]
+        - The Finity Papers — what to write next, and what to refuse — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_NEXT_SLATE_EVALUATION.md [S]
+        - Suda value extraction for the Finity theory — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md [A] [S] [I]
+        - The product displays conjunction; it does not legislate value — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md [A] [I] [C]
+        - Change the algebra explicitly; do not pretend field division survived — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_II_DIVISION_BY_ZERO_AS_CATEGORY_CORRECTION.md [A] [I]
+        - The Two Faces of Number — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_I_THE_TWO_FACES_OF_NUMBER.md [A] [I]
+        - The Finity Papers — index — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/README.md [A] [S] [I]
+        - Suda corpus convergence analysis — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_CONVERGENCE_ANALYSIS.md [S] [I]
+        - Suda Dimensional Cross-Reference — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_DIMENSIONAL_CROSS_REFERENCE.md [B] [A] [I]
+        - Suda formal structures compendium — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_FORMAL_STRUCTURES_COMPENDIUM.md [A] [I] [C]
+        - The Egg and the Sphere — two optional readings of reciprocal symmetry — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/THE_EGG_AND_THE_SPHERE.md [A] [B] [I]
+        - Finity Papers — external source provenance (Suda 2025–2026) — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/README.md [B]
+        - Bloch–Burri correspondence — same carrier, different structure — 03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md [A] [B] [I]
+        - Photon analogy — retraction and research boundary — 03_METHODOLOGY/02_THE_PAPERS/PAPER_C_PHOTON_UNIT_OF_ACCOUNT.md [A] [B] [I]
+        - Wave-particle correspondence — physics first, Burri inset removable — 03_METHODOLOGY/02_THE_PAPERS/PAPER_D_WAVE_PARTICLE_DUALITY.md [A] [B] [C]
+        - Uncertainty belongs to the state; the receipt belongs to actuality — 03_METHODOLOGY/02_THE_PAPERS/PAPER_E_UNCERTAINTY_PRINCIPLE.md [A] [B] [I]
+        - Compression depends on a language; the Titans are selected roles — 03_METHODOLOGY/02_THE_PAPERS/PAPER_F_K_MINIMAL.md [A] [I] [C]
+        - Biological predictions must discriminate — 03_METHODOLOGY/02_THE_PAPERS/PAPER_G_BIOLOGICAL_PREDICTIONS.md [C]
+        - Known unknowns — a typed research inventory — 03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md [A] [S] [I]
+        - PAPER K: AMRITA REFRAMED — 03_METHODOLOGY/02_THE_PAPERS/PAPER_K_AMRITA_AT_ZERO_COST.md [C] [I]
+        - PAPER L: THE PHI-METER — 03_METHODOLOGY/02_THE_PAPERS/PAPER_L_PHI_METER_CORRELATION.md [I]
+        - Sphere translation — typed mathematical boundary — 03_METHODOLOGY/02_THE_PAPERS/PAPER_M_SPHERE_AS_TRANSLATION_LAYER.md [A] [I] [C]
+        - PAPER N: PRODUCTIVE TRANSCENDENTAL WAGERS — 03_METHODOLOGY/02_THE_PAPERS/PAPER_N_PRODUCTIVE_TRANSCENDENTAL_WAGERS.md [I]
+        - Paper O — opacity is not irreducibility; test the macro-constraint — 03_METHODOLOGY/02_THE_PAPERS/PAPER_O_STRONG_WEAK_EMERGENCE_D5.md [B] [I] [C]
+        - Paper P — failed SU(3) obstruction retained as a boundary result — 03_METHODOLOGY/02_THE_PAPERS/PAPER_P_SU3_OBSTRUCTION_BARE_S2.md [A] [I]
+        - PAPER T: ANTI-IDOLATRY AT SCALE — 03_METHODOLOGY/02_THE_PAPERS/PAPER_T_ANTI_IDOLATRY_AT_SCALE.md [I]
+        - PAPER U: THE PRACTICE BRIDGE — 03_METHODOLOGY/02_THE_PAPERS/PAPER_U_THE_PRACTICE_BRIDGE.md [I]
+        - PAPER V — Internally commissioned adversarial steelman — 03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md [I]
+        - Information topology as macro-constraint causation — 03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md [S] [I]
+        - Next experiments — the three tier-moving tests — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_NEXT_EXPERIMENTS_SPECS.md [S] [C] [A]
+        - AX1 — a zero in either factor (Φ=0 or V=0) collapses the whole; the manifold identity φ·ν=1 holds on S²; P_node=Φ×V can fall below 1 — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX1_THE_EQUATION.md [S] [A] [I]
+        - AX2 — an act is ethical exactly when the individual node and the sustaining boundary rise together without extraction (ΔP_node > 0 and ΔP_boundary > 0 under η=0) — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX2_THE_ETHIC.md [I]
+        - AX3 — reality unfolds as a graded D0–D6 emergence ladder where each level emerges at its μ-saturation limit; the force↔dimension assignment is numerology — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX3_THE_SCAFFOLD.md [S] [C]
+        - AX4 — good and evil are the sign of the extraction coefficient η on a move, not a property of the agent; stable cooperation is conditional enforcement of a signed-extraction boundary — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX4_THE_BOUNDARY.md [S]
+        - AX5 — a shared collective trace (Egregoreotype) can survive its carriers and causally reweight later selection — a research program, not a proved apex being — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX5_THE_EGREGORE.md [B] [I] [C]
+        - AX6 — function is multiply realizable across substrates, but the stakes of genuine sacrifice are not; mattering depends on finitude — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX6_THE_ARCHITECTURE.md [A] [S] [I]
+        - 02_THE_PAPERS — 03_METHODOLOGY/02_THE_PAPERS/README.md [I]
+        - The Recursive Trivium — a teleological loop that subsumes OODA and the classical Trivium — 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM.md [B] [S] [I]
+        - Executive briefing — teleological cognition in three recursive passes — 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_BRIEFING.md [S] [I]
+        - Competitive survival, neurobiological substrates, cliodynamical extraction, and graph-theoretic PKM architectures — 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md [S] [I]
+        - Equatorial Balance-Maximum Pre-Registration — 03_METHODOLOGY/03_PREREGISTRATIONS/00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md [C] [S] [A]
+        - Paper V — bounded internal pilot receipt and interpretation — 03_METHODOLOGY/03_PREREGISTRATIONS/01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md
+        - Macro-Constraint Causal-Emergence Measurement Protocol — 03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md [S] [I] [C]
+        - Physics-to-Biology Macro-Constraint Run Sheet — 03_METHODOLOGY/03_PREREGISTRATIONS/03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md [C] [S]
+        - EUB-1 asks whether a candidate can causally, consistently, and corrigibly unfold a typed emergence account without inventing inaccessible facts — 03_METHODOLOGY/03_PREREGISTRATIONS/04_EMERGENCE_UNFOLDING_BENCHMARK_v0.1.md [S] [I] [C]
+        - No explanatory debt may disappear through fluency — 03_METHODOLOGY/03_PREREGISTRATIONS/06_THE_DASEIN_TEST_EUB1_v1.0.md [S] [B] [I]
+        - 03_PREREGISTRATIONS — Prediction Designs and Results — 03_METHODOLOGY/03_PREREGISTRATIONS/README.md [C] [B] [S]
+        - 03_METHODOLOGY — Truth Tests — 03_METHODOLOGY/README.md [I]
+      - 05_COSMOLOGY (6)
+        - Derivation pointer — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/33_THE_DERIVATION.md [S]
+        - The living case pays to stay at the optimum — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md [B] [A] [C]
+        - Finity_L killed — no biological conserved-product pair exists in eight searched domains; the conjecture is vacuously untestable — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/51B_FINITY_L_C1_KILL_2026_08_05.md [B] [A] [I]
+        - Finity_L C1 — predictions committed before comparison; the cardiovascular pair refutes, Hill is shifted — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/51_FINITY_L_C1_PREDICTION_2026_08_05.md [C] [B]
+        - B is a product of the two distances to the poles — 05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md [A] [B] [S]
+        - SAT-01 — a costly stabiliser whose absence is fatal forces an interior optimum; the mechanism that enables a freedom consumes it at saturation — 05_COSMOLOGY/03_FORMAL_SYSTEM/60_SATURATION_LEMMA_SAT_01.md [A] [I] [C]
+      - 08_FRAMEWORK_SUPPORT (46)
+        - The Derivation — Compatibility Stub — 08_FRAMEWORK_SUPPORT/00_THE_DERIVATION.md [I]
+        - The Knife — Strongest Objections — 08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md [I] [S]
+        - The Protocol — Sitting Practice Experimental Specification — 08_FRAMEWORK_SUPPORT/00_THE_PROTOCOL.md [I] [C] [S]
+        - A geometric area measure is not a prior over systems — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_68_Area_Measure.md [A] [I]
+        - 04_VRS_SHEETS — Applied Review Front Door — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/README.md [I]
+        - VRS Sheet 08 — Antenna Tuning — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/VRS_SHEET_08_ANTENNA_TUNING.md [S] [I] [C]
+        - VRS Sheet 08 — Resonance Selection and Antenna Tuning — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/VRS_SHEET_08_RESONANCE.md [S] [I]
+        - Comparative evidence filename repair receipt — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/2026_06_05_FILENAME_REPAIR_RECEIPT.md [B]
+        - Paradox Suite Audit — Local Integrity Bridge — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_PARADOX_SUITE_AUDIT.md [I]
+        - PD-12 — measurement correspondence, not dissolution — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_12_MEASUREMENT_PROBLEM.md [A] [B] [C]
+        - Type discipline does not solve open physics — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_22_SCIENTIFIC_IMPLICATIONS.md [A] [B] [I]
+        - Rosetta Stone Selection Methodology — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SELECTION_METHODOLOGY.md [I] [S]
+        - Suda reciprocal-symmetry convergence — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md [A] [S] [I]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md [S] [I]
+        - Alternative Geometries and Contradicting Traditions — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md [I]
+        - Rosetta Rows and Columns: Deepening Note — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/02_ROWS_COLUMNS_DEEPENING_2026_04_25.md [S] [I]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/05_L3_AUDIT_HOLOBIONT_REGISTER_CORRECTION_2026_08_03.md [S] [B] [D]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_L3_AUDIT_VIRTUE_VICE_BIOLOGY_ETHICS_2026_08_03.md [S] [D]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/07_L3_AUDIT_MAGNUM_OPUS_OPERATIONAL_VS_EMERGENTISM_2026_08_03.md [S] [D]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/07_L3_AUDIT_OPERATIONAL_OVERCLAIMS_2026_08_03.md [S] [I] [D]
+        - Rosetta translates claims without transferring warrant — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md [S] [I] [D]
+        - Refine the Rosetta inward before expanding it outward — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/30_ROSETTA_VNEXT_REFINEMENT_2026_07_31.md [D]
+        - SOUL4 → GEN7 — three rows definitional, one informative — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/31_CELL_SOUL4_TO_GEN7_2026_07_31.md [D]
+        - Core + Packs + Ledger — Rosetta as a translation system, not a law of the cosmos — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/31_ROSETTA_CORE_v0.md [S] [I]
+        - ECO7 — ecology offers coevolution, not hierarchy (forward conjecture; not adopted) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/32_PACK_ECO7_CANDIDATE_2026_07_31.md [C]
+        - Elegance mistaken for warrant — the recurring failure mode (interpretive reading of the drift pattern) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/33_LIVE_DRIFT_RECONCILIATION_v0.md [S] [I]
+        - Named bio-rules add prediction only where they name a mechanism the dependency-graph does not (forward conjecture; not adopted) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/33_PACK_ECO7_EXTENSIONS_BIO_RULES_2026_08_03.md [C]
+        - Every cell's strongest rival must be named, auditable, and applied (rule architecture; particular rival content interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/34_COUNTER_ROSETTA_LIBRARY_v0.md [S] [I]
+        - Batch-2 bio-rules: genetics, allometry, neutrality, and the fidelity critique that constrains the holobiont image (forward conjecture; not adopted) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/34_PACK_ECO7_EXTENSIONS_2_BIO_RULES_2026_08_03.md [C]
+        - Seven is overdetermined; the two derivations disagree on the partition (the two-partition reading; interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md [A] [S] [I]
+        - The full Rosetta — every harvested L1-L7 column, grouped into eleven themes (generated catalogue; grouping selected, cells interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md [S] [B] [I]
+        - The seven seats on one row — every verified column together, with the F3 keys, the limiting poles, and the equator reading (consolidation; cells interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md [A] [B] [S]
+        - The canonical column set — the deduplication register over the 187-column harvest as measured 2026-08-15; measured, not estimated, and true of that date — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/39_THE_CANONICAL_COLUMN_SET_v0.md [S] [B] [I]
+        - The sphere and the seven — where G7 came from, and why VMOSK-A has six letters — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/43_THE_SPHERE_AND_THE_SEVEN_2026_09_11.md [I] [S] [A]
+        - Egregoreotype candidates are persistent, testable collective traces (candidate grammar interpretive; autonomy claims untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D33_EGREGORES.md [I] [C]
+        - Daoist Internal Alchemy Pre-Registered Test (structural alignment attempt; individual mappings interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D35_DAOIST_INTERNAL_ALCHEMY.md [S] [I]
+        - Sub-Saharan African Cosmological Systems Pre-Registered Test (test inconclusive; mappings interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D36_SUB_SAHARAN_AFRICAN_COSMOLOGY.md [S] [I]
+        - A selected row catalogue, never a causal chain (catalogue; cross-domain rows interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md [B] [S] [I]
+        - Torus geometry does not assign dimensions (geometry itself; Emergentist correspondence interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D15_ROSETTA_R6_TORUS.md [A] [I] [C]
+        - Rosetta R9 — German etymological convergence (etymology attributed; Burri Sphere mapping interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D18_ROSETTA_R9_GERMAN.md [B] [I]
+        - Rosetta R10 — Greek philology (lexical attribution [B]; Burri Sphere mapping interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D19a_ROSETTA_R10_GREEK_PHILOLOGY.md [B] [I]
+        - Rosetta R14 — PIE comparative linguistics — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D24_ROSETTA_R14_PIE_COMPARATIVE_LINGUISTICS.md [B] [I]
+        - Failed mappings and testing queue — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/FAILED_MAPPINGS_AND_TESTING_QUEUE.md [B] [S] [I]
+        - Rosetta is a translation audit, never evidence — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md [S] [I]
+        - Rosetta Stone — operator pathology and shadow — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_OPERATOR_PATHOLOGY.md [B] [I] [C]
+        - Psychology convergence research brief — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md [B] [S] [I]
+      - 09_TOOLS (2)
+        - R* Simulation Results — 2026-04-04 — 09_TOOLS/03_SIMULATIONS/R_STAR_SIMULATION_RESULTS.md [B] [S] [C]
+        - 08_AUDIT_ARTIFACTS — 09_TOOLS/08_AUDIT_ARTIFACTS/README.md [B] [I] [D]
+      - 11_UPLINK (19)
+        - Flagship Paper Brief — multiplicative collapse — 11_UPLINK/25_EXPERIMENTS/25_FLAGSHIP_PAPER_BRIEF.md [I] [D] [B]
+        - UPLINK EXPERIMENT LANE — 11_UPLINK/25_EXPERIMENTS/README.md [D] [B] [I]
+        - Receipt — Second Look on the 66 BROKEN claims (per receipt 126) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md [B]
+        - Rosetta drift + operator-register audit, 2026-07-02 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md [S] [D]
+        - Formal-logic audit of the corpus: one theorem, one wager, a taxonomy sold as necessity — K2-countersigned via receipt 115 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/103_FORMAL_LOGIC_AUDIT_K2_PACKET_2026_07_04.md
+        - Kill the false form; name the surviving register. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md [B] [A] [S]
+        - Audit the coherence; stage the repair; never dispose — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L3_CONSISTENCY_DRIFT.md [S] [I]
+        - Folder tidy + ledger census — register green, census complete, strays reported, every stub resolves — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20/L3_VAISYA_FOLDER_TIDY_AND_LEDGER_CENSUS_2026_07_20.md [S] [B] [I]
+        - Titan council independently corroborates KSC-24; humans-as-ant-castes REFUSED_WITH_FENCED_SURVIVOR — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/169_TITAN_COUNCIL_CASTE_MAP_TRIAL_2026_07_23.md [S] [I] [B]
+        - TRR-24 Ruling — the crosswalk lives; the necessity does not — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/170_TRR24_SEXUAL_SELECTION_CROSSWALK_RULING_2026_07_23.md [S]
+        - L7-Rumination Evidence-Tier Audit Report — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/2026-05-24_L7_RUMINATION_EVIDENCE_AUDIT_REPORT.md [B] [I] [D]
+        - Titan v3 + W19 six-candidate audit — broad components inherited, two proof claims refuted, bounded synthesis residue retained, priority blocked — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/246_TITAN_V3_W19_SIX_CANDIDATE_PRIOR_ART_AND_REFUTATION_AUDIT_2026_08_22.md [S] [A] [B]
+        - Ledger-assembly audit — broad priority occupied, literal thirteen-dot entailment refuted, test-bearing heuristic retained — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/247_CONNECTED_PICTURE_LEDGER_ASSEMBLY_PRIOR_ART_AND_RETYPE_AUDIT_2026_08_22.md [S] [B] [I]
+        - UPLINK AND WIKI ROUTING AUDIT — 2026-04-19 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md [I]
+        - INTAKE CHURN-DOWN DELTA — Developer Guide — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/62_INTAKE_CHURNDOWN_DELTA_2026_04_23.md [I] [B] [D]
+        - Vaiśya Evidence Tier Audit — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/72_VAISYA_TIER_AUDIT_2026_05_04.md [B] [I] [S]
+        - Session Packet Numbering Gap Note — 11_UPLINK/60_SESSION_PACKETS/190-191_GAP_NOTE.md [I] [B]
+        - YieldFront's first LeWorldModel job is Opportunity Ranking — L3 Vaiśya (anumāna/deductive) work that ranks yield strategies by risk, return, liquidity, and constitutional fit. The model proposes; K2 signs every deployment. — 11_UPLINK/60_SESSION_PACKETS/219a_YIELDFRONT_FIRST_LEWORLDMODEL_JOB_OPPORTUNITY_RANKING_2026_04_29.md [I] [S]
+        - Session Packet Lane — 11_UPLINK/60_SESSION_PACKETS/README.md [I]
+  - L4 · Kṣatriya · Arjuna ⚔ · axiology — 91 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Kṣatriya
+      - Operator — Arjuna ⚔
+      - G7@1 cell — arjuna_give_phi
+      - Pramāṇa — Arthāpatti
+      - REP6@1 — phenotype
+      - VMOSK-A [I/C] — S · Strategies
+      - B = sin θ — 1 (the peak; its own mirror)
+      - Inference — abductive
+      - -ology — axiology
+      - Regime — timocracy
+      - Deploy — yes
+    - documents filed here (91)
+      - 00_CANONICAL_TREE_OUTLINE.md (1)
+        - 00 CANONICAL TREE OUTLINE — 00_CANONICAL_TREE_OUTLINE.md [S]
+      - 00_HANDOFF (7)
+        - Audit-trio handoff — 5 verdicts, 1 knot, 1 K2 ask, 7 additive fixes (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/K2_PACKET_AUDIT_TRIO_HANDOFF_2026_07_20.md [S] [I] [D]
+        - L4 — Land Reduction Asymmetry first; everything else hangs off it (staging counsel; no commits) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L4_STAGING_WHERE_DO_THEY_LIVE_2026_07_20.md [I]
+        - TIDY-2026-07-22 Receipt — root tidy of 01_EMERGENTISM/ — 00_HANDOFF/2026_07_22_tidy/00_TIDY_RECEIPT.md [S]
+        - Chapter content wave receipt — 2026-08-05 — 00_HANDOFF/CHAPTER_CONTENT_WAVE_RECEIPT_2026_08_05.md [S] [B] [A]
+        - Site revision wave receipt — 2026-08-05 — 00_HANDOFF/SITE_REVISION_WAVE_RECEIPT_2026_08_05.md [S] [B] [I]
+        - Standing gate figure — the 27 gates, ran twice, the headline counts and the ones the runner could not classify — 00_HANDOFF/STANDING_GATE_FIGURE_RUN_2026_08_06.md [S]
+        - Execution plan — work orders, the anti-rederivation protocol, and the owner-only fence; findability and contact before doctrine ([S] dispatch surface; [I] frame in §1) — 00_HANDOFF/THE_EXECUTION_PLAN_2026_08_05.md [B] [S] [I]
+      - 00_K6_REVELATIONS.md (1)
+        - 00_K6_REVELATIONS.md — tombstoned 2026-07-20 — 00_K6_REVELATIONS.md [D]
+      - 00_META (3)
+        - 00 FOLDER LAYOUT v0.1 — 00_META/00_FOLDER_LAYOUT_v0.1.md [S]
+        - 00 FOUNDATION READER GUIDE — 00_META/00_FOUNDATION_READER_GUIDE.md [S]
+        - Five refusals plus one direction — no commandments (chosen practice constraints; not laws derived from nature) — 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md [S] [I]
+      - 00_SEVENFOLD_FOUNDATION_ROOT.md (1)
+        - 00 SEVENFOLD FOUNDATION ROOT — 00_SEVENFOLD_FOUNDATION_ROOT.md [S]
+      - 00_THE_DEAD_FORMS_CATALOG_v0.1.md (1)
+        - 00 THE DEAD FORMS CATALOG v0.1 — 00_THE_DEAD_FORMS_CATALOG_v0.1.md [S]
+      - 00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md (1)
+        - 00 WELTANSCHAUUNG KERNEL v0.2 EMERGENTISM ONLY — 00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md [S]
+      - 04_AXIOLOGY (14)
+        - Anmut and Demut — 04_AXIOLOGY/00_ANMUT_AND_DEMUT.md [I] [C]
+        - Bridge laws between levels — 04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md [S] [I]
+        - Capital = force committing means to a drawn world line inside the option cone — 04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md [S]
+        - Commandment vs geometry — analytic constraints do not manufacture oughts — 04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md [A] [S] [I]
+        - Extraction law — local gain, visible bearer, conditional substrate collapse — 04_AXIOLOGY/00_THE_EXTRACTION_LAW.md [S] [I] [C]
+        - 00 THE RELEASE DOCTRINE — 04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md [D]
+        - Strategic implementation — accountable commitment at the D5/D4 boundary — 04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md [S] [I] [C]
+        - Strategic implementation — commit, receive, correct — 04_AXIOLOGY/01_THEURGY/README.md [S] [I] [C]
+        - The good is declared as Beauty, Truth, and Justice, then tested by consequence — 04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md [I] [C]
+        - Rights, duties, authorization, and due process — 04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md [I] [S]
+        - Beauty, Truth, and Justice — chosen value lens — 04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md [I]
+        - Justice over Goodness is a defended selection, not a discovery — 04_AXIOLOGY/02_VALUE_THEORY/05_JUSTICE_OVER_GOODNESS_SELECTION_2026_09_03.md [I] [S] [D]
+        - Value theory — individual and whole rise together — 04_AXIOLOGY/02_VALUE_THEORY/README.md [S] [I]
+        - 04_AXIOLOGY — Justice constrains commitment — 04_AXIOLOGY/README.md [S] [I]
+      - 05_COSMOLOGY (2)
+        - Balance optimality requires a declared constraint — 05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md [A] [I] [C]
+        - Dharma Yuddha — accountable nonviolent resistance under Justice — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md [S] [I] [C]
+      - 06_ONTOLOGY (3)
+        - K-6 The Revelations — earned up, receipted, killable — 06_ONTOLOGY/06_THE_REVELATIONS.md
+        - Ten internal answers, ten visible debts — 06_ONTOLOGY/14_THE_TEN_EMERGENTIST_ANSWERS_2026_08_24.md [D] [S] [A]
+        - Front door — the ruminations shelf: illuminating readings, not doctrine — 06_ONTOLOGY/ruminations/README.md [S]
+      - 07_THEOLOGY (1)
+        - The Amrita — the distilled nectar of the corpus, with the halāhala named beside it — 07_THEOLOGY/00_THE_AMRITA.md [A] [S] [I]
+      - 08_FRAMEWORK_SUPPORT (13)
+        - The Knife — Public Summary — 08_FRAMEWORK_SUPPORT/00_THE_KNIFE.public.md [S] [I]
+        - Emergentist Core Concepts — typed downstream reference — 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md [S] [I]
+        - Archetype Operator Protocol — selected action grammar — 08_FRAMEWORK_SUPPORT/02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md [S] [I]
+        - PD-11 — Agency at the Equator — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_11_FREE_WILL_VS_DETERMINISM.md [S] [I]
+        - Aspect column — Justice at the equator is a selected vow-articulation, not a finding — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/41_ASPECT_COLUMN_JUSTICE_EQUATOR_2026_09_03.md [S] [I] [D]
+        - VMOSK-A as remaining in the open interval — [I] mapping, not a derivation — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md [S] [A] [I]
+        - Game Theory and Strategy L-Level Mapping (L-level mapping interpretive; L6-L7 categories untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D27_GAME_THEORY.md [B] [I] [C]
+        - Social and Political Mappings (L-level mapping interpretive; Triple Lock claims untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D30_SOCIAL_POLITICAL.md [B] [I] [C]
+        - Rosetta Stone naming doctrine — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/NAMING_DOCTRINE.md [B]
+        - Breakthrough Hardening Program — Compatibility Stub — 08_FRAMEWORK_SUPPORT/BREAKTHROUGH_HARDENING_PROGRAM.md [I]
+        - Breakthrough Prediction Register — Compatibility Stub — 08_FRAMEWORK_SUPPORT/BREAKTHROUGH_PREDICTION_REGISTER.md [I]
+        - Sprint 003 — Compatibility Stub — 08_FRAMEWORK_SUPPORT/SPRINT_003_PLAN.md [I]
+        - Sprint 004 — Compatibility Stub — 08_FRAMEWORK_SUPPORT/SPRINT_004_PLAN.md [I]
+      - 09_TOOLS (2)
+        - 01_SCRIPTS — Script Front Door — 09_TOOLS/01_SCRIPTS/README.md [B] [I]
+        - 07_AGENT_OPS — 09_TOOLS/07_AGENT_OPS/README.md [B] [D] [I]
+      - 10_SEED (3)
+        - D4 — Causal Actuality and Receipt: actual carriers, interactions, attempted actions, outcomes and provenance-bearing records; spacetime, bodies and cognition are application lenses, none defines the rung — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D4_SPACETIME.md [I]
+        - D5 — The Game: strategic relation, the dyadic grid, and the vow — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D5_THE_GAME.md [I]
+        - Front door — the seven-rung Seed Ladder, active reader projection, not canon — 10_SEED/01_THE_SEED_LADDER/README.md [S]
+      - 11_UPLINK (30)
+        - K-7 The Record — every kill fired, every grave dated, the next entry written by contact — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md [B] [S] [I]
+        - Seven-Operator Refinement — K2 packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md [S] [D]
+        - Burrisphere equator-optimum — conditional-transfer propagation packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/102_BURRISPHERE_OPTIMUM_PROPAGATION_K2_PACKET_2026_07_03.md [S] [D]
+        - The Separation Envelope — stage everything, move nothing — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L4_SEPARATION_ENVELOPE.md [D] [S]
+        - Receipt 135 — provisional agent-executed docket; no completed founder promotion — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/135_K2_PROMOTION_EMERGENT_AXIOMS_2026_07_19.md [S] [D]
+        - Restore the trophic rule without turning human functions into prey — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md [B] [S] [I]
+        - Limit B — Replicator-Alignment Disambiguation Packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md [I] [S] [B]
+        - Kṣatriya Runtime Integrity Audit — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/75_KSATRIYA_RUNTIME_INTEGRITY_2026_05_04.md [B] [I] [C]
+        - 194 — Replicator stack as universal grammar; biosphere-holobiont as anti-capture apparatus (2026-04-28) — 11_UPLINK/60_SESSION_PACKETS/194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT_2026_04_28.md [I] [S] [C]
+        - Session Packet 197 — Phoenician Franchise Model — 11_UPLINK/60_SESSION_PACKETS/197_PHOENICIAN_FRANCHISE_MODEL_2026_04_28/README.md [I]
+        - Session Packet 198 — Rome Capture Protocol — 11_UPLINK/60_SESSION_PACKETS/198_ROME_CAPTURE_PROTOCOL_2026_04_28/README.md [I]
+        - Packet 201 — YieldFront Charter K2 Ratification — 11_UPLINK/60_SESSION_PACKETS/201_YIELDFRONT_K2_RATIFICATION_2026_04_28.md [S] [B]
+        - Packet 204 — Bin-2 K2-Authorized Cycle Closure — 11_UPLINK/60_SESSION_PACKETS/204_BIN2_CLOSURE_2026_04_28.md [S] [I]
+        - Packet 205 — K2 Ratification: Trilogy Volume I EXPAND — 11_UPLINK/60_SESSION_PACKETS/205_K2_TRILOGY_VOL_I_EXPAND_RATIFICATION_2026_04_28.md [S] [I] [D]
+        - Packet 206 — Nexus UX: VMOSK Workflowy replaces projects — 11_UPLINK/60_SESSION_PACKETS/206_NEXUS_UX_VMOSK_WORKFLOWY_REPLACES_PROJECTS_2026_04_28.md [S] [B] [I]
+        - Packet 207 — K2 Scope Boundary: Private DACs Only — 11_UPLINK/60_SESSION_PACKETS/207_K2_PRIVATE_DAC_BOUNDARY_PRISM_PUBLIC_DAC_2026_04_29.md [S] [B]
+        - Private K2 DACs fill VMOSK-A bottom-up; public PRISM DACs start Mission-top-down, with Vision often inherited at the industry level. — 11_UPLINK/60_SESSION_PACKETS/213_VMOSK_A_CONSTRUCTION_DIRECTION_K2_PRIVATE_VS_PRISM_PUBLIC_2026_04_29.md [S] [I]
+        - APU's first proactivity feature is a reconciliation question-loop. As long as Objectives are missing any of When/Where/Who/What/Why or harbor unreconciled contradictions, APU asks until the workflowy is reconciled, coherent, and consistent. — 11_UPLINK/60_SESSION_PACKETS/214_APU_FIRST_PROACTIVITY_FEATURE_OBJECTIVE_FIVE_WS_2026_04_29.md [I] [S]
+        - Intent-authored, AI-mediated, ephemeral peer-to-peer messaging over Nostr. The user expresses intent via @-mention; the AI drafts and transmits a DM peer-to-peer; the message auto-deletes after read; the recipient's AI mediates accept/decline; acceptance creates a K2-signed binding receipt. WHISPER… — 11_UPLINK/60_SESSION_PACKETS/215_INTENT_AUTHORED_EPHEMERAL_MESSAGING_WHISPER_PRIMITIVE_2026_04_29.md [I] [S]
+        - Every DAC runs two continuous models — on-device BitNet (Microsoft, ternary {-1,0,+1}) + private-server LeCun world model (JEPA-style), with server compute paid via API PAY. Both 24h. Both sovereign. No third-party API extraction. — 11_UPLINK/60_SESSION_PACKETS/216_DUAL_MODEL_SOVEREIGN_SUBSTRATE_BITNET_LECUN_2026_04_29.md [I] [S] [C]
+        - YieldFront's first LeWorldModel proof pack covers all four outputs over F.I.R.E.: world-state brief, opportunity ranking, Vision crystallization, and autonomous watchman. — 11_UPLINK/60_SESSION_PACKETS/219b_YIELDFRONT_LEWORLD_MODEL_FIRE_PROOF_PACK_2026_04_29.md [I] [C]
+        - Eight-sprint plan for the packets 213-222 implementation lane: substrate spine → WHISPER → APU proactivity → niche-graph → SCC standup → 90-day YieldFront baseline → Mission 2 → Vision crystallization. Critical path with parallel lanes; each sprint has explicit definition of done. — 11_UPLINK/60_SESSION_PACKETS/223_SPRINT_PLAN_PACKETS_213_222_IMPLEMENTATION_2026_04_29.md [I]
+        - Every DAC instantiates a virtual C-Suite (7 permanent roles mapped to L1-L7 castes) and a set of Consulting Experts (12 on-demand domain specialists). The C-Suite IS the polygenic tree at organizational scale; experts are queryable bodies of expertise reached via WHISPER + API PAY. Both run on the… — 11_UPLINK/60_SESSION_PACKETS/224_VIRTUAL_C_SUITE_AND_CONSULTING_EXPERTS_2026_04_29.md [I] [S]
+        - Every workflowy Objective bullet carries a full schema: title (What), datetime subtitle (When), location (Where), contact (Who), inherited Mission (Why), and dataLocation. The bullet is the unit of K2-acceptance; nested Strategies and KPIs inherit Why from the parent and may have their own When/Whe… — 11_UPLINK/60_SESSION_PACKETS/225_WORKFLOWY_BULLET_OPERATIONAL_SPEC_2026_04_29.md [I] [S]
+        - Packet 226 — APU polar-pair canon shift and Circle.news audit — 11_UPLINK/60_SESSION_PACKETS/226_APU_POLAR_PAIR_CANON_SHIFT_AND_CIRCLE_AUDIT_2026_05_18.md [I] [B] [S]
+        - Packet 227 — APU doctrine fork resolution — 11_UPLINK/60_SESSION_PACKETS/227_APU_DOCTRINE_FORK_RESOLUTION_2026_05_18.md [I]
+        - Packet 228 — APU Route B direct K2 ratification — 11_UPLINK/60_SESSION_PACKETS/228_APU_ROUTE_B_DIRECT_K2_RATIFICATION_2026_05_18.md [A] [S]
+        - Packet 230 — Evolutionary.Network entity elevation fixes and audit closure — 11_UPLINK/60_SESSION_PACKETS/230_EVOLUTIONARY_NETWORK_ENTITY_ELEVATION_FIXES_2026_05_24.md [S] [B]
+        - Packet 231 — Constitution 5+1 K2 ruling — 11_UPLINK/60_SESSION_PACKETS/231_CONSTITUTION_5_PLUS_1_K2_RULING_2026_05_30.md [B] [S] [A]
+        - Each WHISPER recipient stores their own accepted assignments. The sender stores a counter-receipt. No central database. — 11_UPLINK/60_SESSION_PACKETS/RECONCILE_Q7_WHISPER_WHO_PERSISTENCE_LOCALITY.md [S]
+      - 12_PUBLIC_SITE (6)
+        - Compass restructure deployed — 7 wings live, predeploy gate green, K2 signature honored — 12_PUBLIC_SITE/00_COMPASS_DEPLOYMENT_RECEIPT.md [S] [B]
+        - K2 envelope — migrate current 12_PUBLIC_SITE/book-pwa source to 02_SKYZAI/03_AIA/app — 12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md [S] [B] [D]
+        - Infinite Book PWA — Agent Route — 12_PUBLIC_SITE/book-pwa/AGENTS.md [I] [C]
+        - AIA dialectical layer — integration contract — 12_PUBLIC_SITE/book-pwa/src/lib/aia/INTEGRATION.md [I] [C] [B]
+        - K4 Grace Exit — the door is marked on the inside — 12_PUBLIC_SITE/exit/README.md [S] [B]
+        - The Map — one grammar, all sciences, honest about where it frays — 12_PUBLIC_SITE/map/README.md [S] [B]
+      - 17_EMERGENTISM_2_MACHINE_INTELLIGENCE (2)
+        - Extraction law — local gain, visible bearer, conditional substrate collapse — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C2_extraction_law.md [S] [I] [C]
+        - Balance optimality requires a declared constraint — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C3_balance_optimum.md [A] [I] [C]
+  - L5 · Brāhmaṇa · Brahmā ○ · ontology — 164 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Brāhmaṇa
+      - Operator — Brahmā ○
+      - G7@1 cell — brahma_create
+      - Pramāṇa — Śabda
+      - REP6@1 — extended phenotype
+      - VMOSK-A [I/C] — O · Objectives
+      - B = sin θ — √3⁄2
+      - Inference — systematic
+      - -ology — ontology
+      - Regime — aristocracy
+      - Deploy — NO — a frame cannot be staffed
+    - documents filed here (164)
+      - 00_HANDOFF (12)
+        - L5 — Adopt Models Ladder as K-2 spine; AUM+torus form a glyph dyad bracketing the doctrine (architecture counsel; no commits) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L5_BRAHMANA_ARCHITECTURE_REVIEW_7_INSIGHTS_2026_07_20.md [I]
+        - L5 — schema sound, 7 surfaces seated, 5+1 holds, drift in connective tissue not load-bearing walls (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L5_BRAHMANA_ARCHITECT_REVIEW_2026_07_20.md [S] [I] [D]
+        - D2 Repair Wave Receipt — 2026-08-05 — 00_HANDOFF/D2_REPAIR_WAVE_RECEIPT_2026_08_05.md [S] [B] [A]
+        - D3 Repair Wave Receipt — 2026-08-05 — 00_HANDOFF/D3_REPAIR_WAVE_RECEIPT_2026_08_05.md [S] [B] [A]
+        - D4 Repair Wave Receipt — 2026-08-05 — 00_HANDOFF/D4_REPAIR_WAVE_RECEIPT_2026_08_05.md [S] [B] [A]
+        - D5 Repair Wave Receipt — 2026-08-05 — The closing receipt of the rungs project — 00_HANDOFF/D5_REPAIR_WAVE_RECEIPT_2026_08_05.md [S] [B] [A]
+        - The great mystery — structure exposes consequences; the vow chooses the meaning — 00_HANDOFF/EMERGENTISM_GREAT_MYSTERY_2026_08_20.md [I] [C]
+        - Emergentism Refinement — issues, resolutions, developments, open empirical, brainstorm — 00_HANDOFF/EMERGENTISM_REFINEMENT_2026_08_20.md [A] [B] [S]
+        - Emergentism Refinement — Follow-up #1: Axiology, Formal System, and the Syntropic Dyad owner — 00_HANDOFF/EMERGENTISM_REFINEMENT_2026_08_20_FOLLOWUP.md [A] [B] [S]
+        - Emergentism Refinement — Follow-up #2: D1 Axioms, μ-Limit, Strategic Exclusion, Perennial Loop — 00_HANDOFF/EMERGENTISM_REFINEMENT_2026_08_20_FOLLOWUP_2.md [A] [B] [S]
+        - Emergentism Refinement — Follow-up #3: Pratyakṣa, D2, D3, Dimensional Closure + Final Synthesis — 00_HANDOFF/EMERGENTISM_REFINEMENT_2026_08_20_FOLLOWUP_3.md [A] [B] [S]
+        - Instrument-Rebuild Wave Receipt — 2026-08-06 — The new headline — 00_HANDOFF/INSTRUMENT_REBUILD_WAVE_RECEIPT_2026_08_06.md [S] [B] [A]
+      - 00_META (3)
+        - Subfolder Organization Standard — 00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md [S]
+        - Discipline and dimension are two axes; the corpus is filed on one and indexed on the other ([S] index; [I] correspondence not load-bearing) — 00_META/00_THE_CORPUS_SPINE.md [S] [I] [B]
+        - 01_EMERGENTISM Tidy Plan v0.1 — 00_META/00_TIDY_PLAN_v0.1.md [S]
+      - 05_COSMOLOGY (75)
+        - Canonical Formula Block — 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md [A] [I] [C]
+        - D5 register — 05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md [S] [I] [C]
+        - D5 Mutualism Limit — Selected Exchange Correspondence — 05_COSMOLOGY/00_D5_THE_MUTUALISM_LIMIT.md [A] [B] [I]
+        - ○ is the option cone; only shadows enter arithmetic — 05_COSMOLOGY/00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md [A] [S] [I]
+        - Emergence as a corrigible lens on finite disclosure — 05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md [A] [S] [I]
+        - THE BURRI RULES — A GRAPHICAL GRAMMAR OF EMERGENCE, AGENCY, AND RECEIPT — 05_COSMOLOGY/00_THE_BURRI_RULES.md [I] [C]
+        - Computational Sphere — 05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md [S]
+        - Coupling is modeled; Justice is declared and receipted — 05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md [A] [I] [C]
+        - Seven exhaust the declared G7 language, not reality — 05_COSMOLOGY/00_THE_EXHAUSTION_OF_THE_GAME.md [S] [I]
+        - Four Metamorphoses — optional Nietzschean lens — 05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md [I]
+        - Life-Science Register — 05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md [A] [B] [S]
+        - Syntropic Imperative — 05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md [S] [I]
+        - Weltanschauung compatibility route — 05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md [S]
+        - The simulation renders the scaffold; it does not prove genesis — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_GENESIS_SIMULATION.md [S] [I] [C]
+        - The point is a selected D0 boundary marker, not a generator — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_POINT.md [A] [I] [C]
+        - The Titans — selected symbolic roles — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md [A] [I]
+        - Emergence is a candidate crossing, not point inflation — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/01_THE_EMERGENCE.md [A] [I] [C]
+        - THE TRINITY — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/02_THE_TRINITY.md [S]
+        - Finity — the selected finite realm and its centred unit — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md [A] [I] [C]
+        - Co-emergence is mutual constraint under separately visible consequences — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/08_CO_EMERGENCE.md [I] [C]
+        - THE TRIADIC CASCADE — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md [I] [S]
+        - The poles are distinct; the return is a typed resemblance — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/12_THE_POLES.md [A] [I]
+        - Wave-packet correspondence — removable and non-load-bearing — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/13_THE_WAVE_PACKET.md [A] [B] [C]
+        - THE GREAT FILTER — DEVELOPMENTAL HYPOTHESIS — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/16_THE_GREAT_FILTER.md [C]
+        - The Egregorocene is a future-facing hypothesis about accelerated collective traces — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/17_THE_EGREGOROCENE.md [I] [C]
+        - Persistent traces can bias selection without becoming minds — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/18_THE_STRANGE_ATTRACTOR.md [I] [C]
+        - A-BRAHMANISM — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/19_A_BRAHMANISM.md [I]
+        - THE TIGHTROPE — REMOVABLE CORRESPONDENCE — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/21_THE_TIGHTROPE.md [C]
+        - A public inversion must preserve types, tiers, and the Justice gap — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/26_THE_EXOTERIC_INVERSION.md [I] [C]
+        - THE SAMUDRA MANTHAN — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/27_THE_SAMUDRA_MANTHAN.md [I]
+        - THE COMPASS AND THE SEXTANT — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/29_THE_COMPASS_AND_THE_SEXTANT.md [S]
+        - The Four Lines — analytic compression with inference fence — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/32_THE_FOUR_LINES.md [A] [I]
+        - Research Brief: The Fork — Physicalism vs Idealism in the Emergentist Framework — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/34_RESEARCH_BRIEF_THE_FORK.md [I]
+        - Research Brief: The Objective Function Spectrum — Can You Have Objective Function Without Volition? — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md [I]
+        - Trophic, replicator, and Rosetta axes correspond without collapsing — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md [I] [C]
+        - Sexual Selection as Visible F5 — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md [S] [I] [C]
+        - Neoteny as F5 Delay and Cultural Womb — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md [A] [S] [I]
+        - Pole-Axis Möbius Composition — maps compose; Titans do not — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md [A] [I]
+        - The Glyph Transformations — typed commentary, never field rearrangement — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md [A] [I]
+        - Finity — a forward discipline for typed boundaries — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/42_THE_CASE_FOR_FINITY.md [A] [B] [S]
+        - The Infinite cannot be exhausted by count; Infinity is count without end; Finity is the finite limit count can approach. — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md [A] [B] [S]
+        - Typed Inversion Neighbors — reciprocal chart, projective sphere, and sovereign Titan frames — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md [A] [S] [I]
+        - Neither pole nor interior is prior; the demand for an order is the category error — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md [A] [I] [S]
+        - Counting cannot begin; counting is meaningful; counting cannot complete — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md [A] [S] [I]
+        - Titan semantics v3 — the infinite zero, infinity as process, finity as the sole mode of actuality; ⊙ = ○(•); staged beside v1 and v2, never over them (owner adoption withheld; priority blocked) — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md [A] [B] [S]
+        - Across thirteen historical neighbours, Emergentism conjectures that selected register transitions may admit a common ledger model; the model earns more than metaphor only through typed mechanisms and held-out prediction — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md [B] [I] [C]
+        - SIMULATION SPECIFICATION — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/SIMULATION_SPEC.md [D] [S]
+        - Teleological Force — weak teleonomy and strong wager separated — 05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md [I] [C]
+        - 02_EMERGENTISM_CORE — 05_COSMOLOGY/02_EMERGENTISM_CORE/README.md [I]
+        - CORRECTION: Wolfram NKS Integration — 05_COSMOLOGY/03_FORMAL_SYSTEM/00_CORRECTION_WOLFRAM_NKS.md [S] [I]
+        - K-star and eta notation — no shared theorem — 05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md [A] [I]
+        - GÖDEL CLARIFICATION — 05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md [B]
+        - μ-CROSSING RECORD — 05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md [I] [C]
+        - THE EXTRACTION COEFFICIENT (η_ratio) — 05_COSMOLOGY/03_FORMAL_SYSTEM/12_EFR_EXTRACTION_COEFFICIENT.md [S]
+        - Reasoning is D4 work over typed contents; geometry is optional — 05_COSMOLOGY/03_FORMAL_SYSTEM/14_EFR_EPISTEMOLOGY_TRIAD.md [A] [B] [I]
+        - EFR & MAXIMUM REDUCIBILITY — 05_COSMOLOGY/03_FORMAL_SYSTEM/15_EFR_WOLFRAM_NKS_INTEGRATION.md [C]
+        - THE THREE TRANSCENDENTALS ON THE BURRI SPHERE — 05_COSMOLOGY/03_FORMAL_SYSTEM/16_EFR_TRANSCENDENTALS.md [I]
+        - PART IV: METHODOLOGY — 05_COSMOLOGY/03_FORMAL_SYSTEM/18_EFR_METHODOLOGY_COMPLETE.md [S]
+        - THE STRATEGIC EXCLUSION — 05_COSMOLOGY/03_FORMAL_SYSTEM/19_EFR_GEOMETRIC_EXCLUSION.md [I] [S]
+        - THE FOUR OPERATORS ON THE COMPLEX PLANE — 05_COSMOLOGY/03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md [S]
+        - Selected projective triad — no stability theorem — 05_COSMOLOGY/03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md [A] [I]
+        - THE POWER-MAX LEMMA — 05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md [S]
+        - DIMENSIONAL CLOSURE RECORD — 05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md [I]
+        - THE STRATEGIC EXCLUSION: FORMAL CONVERGENCE THAT EXTRACTION IS IRRATIONAL AT THE EQUATOR — 05_COSMOLOGY/03_FORMAL_SYSTEM/24_GEOMETRIC_EXCLUSION_CONVERGENCE.md [S]
+        - Former derivation axioms — analytic residue and retraction — 05_COSMOLOGY/03_FORMAL_SYSTEM/26_THE_DERIVATION_AXIOMS.md [A] [I] [C]
+        - PRIMITIVES AND TYPE SIGNATURES — 05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md [A] [I] [C]
+        - Operational definitions — independent measurement candidates — 05_COSMOLOGY/03_FORMAL_SYSTEM/30_OPERATIONAL_DEFINITIONS.md [D] [C] [B]
+        - Claim upgrade protocol — evidence types do not ladder silently — 05_COSMOLOGY/03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md [S]
+        - D4 actuality / D5 possibility — 05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md [I] [C]
+        - Quantum results constrain physics; they do not prove the Emergentist scaffold. — 05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md [A] [B] [I]
+        - The Logarithmic Realignment — 05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md [A] [S]
+        - 46 — The η Conversion Map (three registers, one letter) — 05_COSMOLOGY/03_FORMAL_SYSTEM/46_THE_ETA_CONVERSION_MAP.md [S] [I] [D]
+        - The balance is the potential — 05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md [A] [I] [S]
+        - The Formal System — 05_COSMOLOGY/03_FORMAL_SYSTEM/README.md [S]
+        - 05_COSMOLOGY — Logic, Coherence, and Consistency Audit Report — 05_COSMOLOGY/AUDIT_REPORT_2026-04-25.md [B]
+      - 06_ONTOLOGY (5)
+        - One typed scaffold across constrained freedoms — 06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md [I] [C] [A]
+        - Subordinate synthesis — constrained freedoms, typed existence, correction, vow, exit — 06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
+        - 02 THE DEGREES OF FREEDOM ONTOLOGY — 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md [I] [S] [C]
+        - Dependency priority is not actuality or salience — 06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md [S] [I] [C]
+        - Emergentism as one self-account in a shared grammar — the Rosetta translates between beings, the gaps are the D5-ness, and the gapless limit is a pole no being can occupy (draft synthesis; every reading interpretive) — 06_ONTOLOGY/09_THE_THREE_SCRIPTS_AND_THE_LIMIT_v0.1_DRAFT.md [A] [B] [S]
+      - 08_FRAMEWORK_SUPPORT (43)
+        - Known Unknowns — Frontier Snapshot — 08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS.md [I]
+        - 00_MASTER_INDEX — Governance Alias — 08_FRAMEWORK_SUPPORT/00_MASTER_INDEX.md [I]
+        - MF-281 — Replicator decomposition as a testable model — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_281_The_Replicator_Decomposition.md [I] [C]
+        - MF-298 — Dark Matter as Mutual Information — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_298_Dark_Matter_Is_Mutual_Information.md [C] [I]
+        - MF_ADVANCED — Advanced Operator Front Door — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/README.md [I]
+        - MF-66 — Mandelbrot Set as Iterated Formula — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_66_Mandelbrot_Consciousness.md [B] [A]
+        - SPHERE_DERIVATIONS — Geometry Derivation Front Door — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/README.md [I]
+        - PD-04 — Zeno Topology — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_04_ZENO.md [I] [B]
+        - PD-05 — One/Many Complementarity — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_05_THE_ONE_AND_THE_MANY.md [I]
+        - The Rosetta Protocol — Be the Stone, Not the Decree — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_ROSETTA_PROTOCOL.md [S] [I]
+        - Rosetta vNext — named projections, declared loss, recursive disambiguation — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md [S] [I] [C]
+        - The rows are mobile guilds in a cascade web; biology constrains the analogy but grants no rank — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md [B] [S] [I]
+        - SOUL4 — four organs, four fences, one return leg, three cross-cutting contracts (pack design; runtime integration untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/32_PACK_SOUL4_v0.md [S] [I] [C]
+        - The Rosetta grouped in themes — one [A] geometry, one [S] count, and every cross-domain cell [I] (themed index; grouping selected) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/36_THE_ROSETTA_IN_THEMES_2026_08_13.md [S] [A] [B]
+        - Three-Stage Process ANIMATION (visualization spec; interpretive implementation) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ANIMATION_SPEC.md [I]
+        - Computation and Algorithmic Analogues (analogues; AGI/universal-function claim untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D26_COMPUTATION.md [B] [I] [C]
+        - Civilisational Dynamics L-Level Mapping (stage models interpretive; L6-L7 scale claims untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D31_CIVILISATIONAL.md [I] [C]
+        - Selected ordinal minimum and retired product-candidate calculus (calculus; domain explanations interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md [A] [S] [I]
+        - Rosetta R10 supplement — Greek formalization (interpretive formalization; theorem language bounded) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D19b_ROSETTA_R10_GREEK_FORMALIZATION.md [I]
+        - Rosetta R11 — imaginary-unit correspondence — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D20_ROSETTA_R11_IMAGINARY_UNIT.md [A] [I] [C]
+        - Rosetta R13 — hexagrammatic demonstration — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D22_ROSETTA_R13_HEXAGRAM.md [A] [I]
+        - Rosetta Stone — civilisational dynamics — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md [B]
+        - Rosetta Stone — computation and AI — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_COMPUTATION.md [B] [I] [C]
+        - Rosetta Stone — the replicator stack on the L-axis — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_REPLICATOR.md [S] [I] [C]
+        - 00_LENS Brief — Compiler Map — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_BRIEF.md [I]
+        - 00_MAGNUM_OPUS — Diagnostic Front Door — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/README.md [I]
+        - Rosetta Stone Pointer — Canonical Location — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/01_ROSETTA_STONE_POINTER.md [I]
+        - Applied Insights From Inside The Framework — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_APPLIED_INSIGHTS_FROM_INSIDE.md [I] [S]
+        - Human Action Items — Historical Planning Ledger — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_HUMAN_ACTION_ITEMS.md [I]
+        - The -Ism Problem — Self-Dissolution Warning — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_ISM_PROBLEM.md [I] [S]
+        - Self-Review — Framework Through Its Own Lens — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_SELF_REVIEW.md [I] [S]
+        - The Charioteer Review — Strategic Review Guidance — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_THE_CHARIOTEER_REVIEW.md [I] [S]
+        - The Soul Review — Deep Review Guidance — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_THE_SOUL_REVIEW.md [I] [S]
+        - Weltanschauungskrieg — Verb Not Ism — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/00_WELTANSCHAUUNGSKRIEG.md [I] [S] [C]
+        - Analysis Of The Built Framework — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/ANALYSIS_OF_THE_BUILT_FRAMEWORK.md [I] [S]
+        - 02_ANALYSIS_DOCUMENTS — Diagnostic Front Door — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/README.md [I]
+        - Paradox Dissolutions Pointer — Canonical Location — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_PARADOX_DISSOLUTIONS_POINTER.md [I]
+        - Protocol Compiler — Executable Spec Transformer — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/03_PROTOCOL_COMPILER.md [I]
+        - Data Room Compiler — Execution Substrate Transformer — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/04_DATA_ROOM_COMPILER.md [I]
+        - Foreword — The Lens Teaching Arc — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/FOREWORD.md [I] [C]
+        - Compilers and Analysis — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/README.md [I]
+        - 00_LENS — Historical Compiler Overview — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/README_LENS.md [I]
+        - The Seven as Managed Agents — 08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/README.md [B] [S] [C]
+      - 09_TOOLS (5)
+        - 09_TOOLS — Emergentism Instruments — 09_TOOLS/00_THE_TOOLS_DOOR.md [S]
+        - 02_COMPILERS — 09_TOOLS/02_COMPILERS/README.md [B] [S] [I]
+        - 03_SIMULATIONS — 09_TOOLS/03_SIMULATIONS/README.md [B] [S] [I]
+        - R* Cooperation Threshold Simulation — 09_TOOLS/03_SIMULATIONS/R_STAR_README.md [B] [S] [C]
+        - 06_PACKAGES — 09_TOOLS/06_PACKAGES/README.md [B] [D] [I]
+      - 10_SEED (3)
+        - D1 — Arithmetic: signed distinction, inversion, and the price of imbalance — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D1_ARITHMETIC.md [I]
+        - D2 — Functions and Geometry: carrier-to-relation lift, then atlas — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D2_GEOMETRY.md [I]
+        - D3 — The Quantum Probability-State: a state prices possible records; the next actual record belongs to D4 — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D3_QUANTUM_STATE.md [I] [A] [B]
+      - 11_UPLINK (12)
+        - 00_INDEX — Uplink Index Work Lane — 11_UPLINK/00_INDEX/README.md [I] [B] [D]
+        - UPLINK SCOPE LANE — 11_UPLINK/20_SCOPE/README.md [I] [B] [D]
+        - The full Rosetta council cut Skyzai from Emergentism and replaced Forms with constrained freedoms, not modal plenitude — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md [B] [D]
+        - Not forms but degrees of freedom — the populated interior of the admissible, till the limits — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L5_DOF_THESIS_ARCHITECTURE.md [S] [I] [C]
+        - Brāhmaṇa Structural Audit — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/73_BRAHMANA_STRUCTURAL_AUDIT_2026_05_04.md [S]
+        - UPLINK AUDITS AND EXECUTIONS LANE — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/README.md [B] [I] [D]
+        - Session Packet 195 — Replicator-Stack ↔ Egregore ↔ Sacrifice Bridge — 11_UPLINK/60_SESSION_PACKETS/195_REPLICATOR_STACK_EGREGORE_SACRIFICE_2026_04_28.md [I] [S]
+        - Session Packet 196 — Phoenician Decentralized Network as Structural Archetype — 11_UPLINK/60_SESSION_PACKETS/196_PHOENICIAN_DECENTRALIZED_NETWORK_2026_04_28.md [I] [S]
+        - Session Packet 197 — Phoenician Iron Age Reboot — 11_UPLINK/60_SESSION_PACKETS/197_PHOENICIAN_FRANCHISE_MODEL_2026_04_28/00_PHOENICIAN_IRON_AGE_REBOOT.md [I] [D]
+        - Packet 198 — Rome as Capture Protocol — 11_UPLINK/60_SESSION_PACKETS/198_ROME_CAPTURE_PROTOCOL_2026_04_28/00_THE_RETURN_OF_THE_JEALOUS_GOD.md [I] [D]
+        - Session Packet 200 — Brahmin-Mode Coordination Default — 11_UPLINK/60_SESSION_PACKETS/200_BRAHMIN_MODE_COORDINATION_2026_04_28.md [I] [S]
+        - Packet 210 — Session VMOSK For The Self-Operating Turn — 11_UPLINK/60_SESSION_PACKETS/210_SESSION_VMOSK_2026_04_29.md [I] [D]
+      - 12_PUBLIC_SITE (3)
+        - The Rungs — • to 1 to D1 to D6 to ○ to • — 12_PUBLIC_SITE/00_THE_RUNGS_2026_08_05.md [A] [B] [S]
+        - The Honest Spine — Amrita front door for the Emergentism public site — 12_PUBLIC_SITE/_PLANS/specs/2026-07-03-emergentism-honest-spine-design.md [S] [I] [B]
+        - Infinite Book PWA Source Scaffold — 12_PUBLIC_SITE/book-pwa/README.md [I] [C] [B]
+      - 14_THE_DISTILLATION (1)
+        - The Rungs — • to 1 to D1 to D6 to ○ to • — 14_THE_DISTILLATION/00_THE_RUNGS_2026_08_05.md [A] [B] [S]
+      - 17_EMERGENTISM_2_MACHINE_INTELLIGENCE (1)
+        - C5 dof ontology — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C5_dof_ontology.md [I] [S] [C]
+      - VMOSK_A_v1_2026_07_28.md (1)
+        - VMOSK-A — Emergentism — VMOSK_A_v1_2026_07_28.md [S] [I] [C]
+  - L6 · Sādhu · Śiva • · metaphysics — 42 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Sādhu
+      - Operator — Śiva •
+      - G7@1 cell — shiva_dissolve
+      - Pramāṇa — Anupalabdhi
+      - REP6@1 — memotype
+      - VMOSK-A [I/C] — M · Mission
+      - B = sin θ — ½
+      - Inference — apophatic
+      - -ology — metaphysics
+      - Regime — anarchy
+      - Deploy — NO — a frame cannot be staffed
+    - documents filed here (42)
+      - 00_HANDOFF (1)
+        - L6 v2 — K3 disciplined; 5 K3 violations paper-trail not erasure; 2 founder-gated (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md [S] [I] [D]
+      - 05_COSMOLOGY (8)
+        - Emergentism as Weltanschauung — superseded treatise route — 05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md [B] [S]
+        - The Teleology — Kintsugi tombstone and bounded successor — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md [D]
+        - The Admissibility of Nothing — dialectical and formal treatment of the null state — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md [A] [I] [S]
+        - 127 impossibility and limit theorems, register-typed and fenced — the shape outlined by what cannot be, with D2 the sparsest and most exposed register — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/54_THE_NEGATIVE_SPACE_OUTLINE_2026_08_27.md [B] [A] [S]
+        - 25. The Steel Thread — Kintsugi tombstone — 05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md
+        - The Hygiene Boundary Hypothesis — retired reconciliation — 05_COSMOLOGY/03_FORMAL_SYSTEM/28_EFR_HYGIENE_BOUNDARY_THEOREM.md
+        - Suda cross-validation — circularity repaired — 05_COSMOLOGY/03_FORMAL_SYSTEM/39_SUDA_CROSS_VALIDATION_PROTOCOLS.md [A] [B] [D]
+        - Kintsugi tombstone — unified derivation retracted — 05_COSMOLOGY/03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md [B] [I]
+      - 06_ONTOLOGY (7)
+        - Not Forms, not free-floating freedoms: constrained possibility, reachable process, stable emergence — 06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md [A] [S] [I]
+        - Finity as ontological boundary — 06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md [S] [I]
+        - K3 Tombstone — Superseded Sync Map Audit — 06_ONTOLOGY/00_SYNCRETIC_MAP_AUDIT.md [B]
+        - The Syncretic Map — Superseded — 06_ONTOLOGY/00_THE_SYNCRETIC_MAP.md [B]
+        - Apophatic humility — no lens, practice, or closure possesses Ground — 06_ONTOLOGY/01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md [I]
+        - E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside — 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
+        - Sole wager-form ledger of the corpus (W0–W12): entry tiers and kill criteria preserved post-adjudication; 15 rows contact-routed, 2 terminal, 4 graves, with a 2026-08-01 disposition cut. — 06_ONTOLOGY/04_THE_CONJECTURES.md
+      - 08_FRAMEWORK_SUPPORT (8)
+        - MF-282 — Superseded Operator-Stack Correspondence — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_282_The_Operator_Stack_Correspondence.md [D] [I]
+        - The Extraction Pattern — Paradox Synthesis Bridge — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_EXTRACTION_PATTERN.md [I]
+        - PD-06 — Identity as Operational Continuity — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_06_THE_SHIP_OF_THESEUS.md [I]
+        - PD-13 — Hard Problem as Extraction Boundary — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_13_HARD_PROBLEM.md [I]
+        - PD-18 — Extraction Paradox — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_18_THE_EXTRACTION_PARADOX.md [B] [I]
+        - PD-19 — Hard Problem of Consciousness — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md [I]
+        - Definitive One Book — Moved K3 Tombstone — 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK_MOVED.md [I]
+        - 05_SYNTHESIS — Framework synthesis (near-hollow; book moved, K3) — 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/README.md [B]
+      - 11_UPLINK (15)
+        - The Apophatic Prune — what remains when everything that is not the Weltanschauung is allowed to fall — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L6_APOPHATIC_PRUNE.md [S] [I]
+        - Receipt 153 — wire 07, apply receipt-149 fence, verify against Seed Ladder — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md [B]
+        - Worktree tidy — stale checkouts removed, every branch preserved — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/171_WORKTREE_TIDY_2026_07_23.md [D]
+        - L7-Rumination Compression / Pruning Proposal — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/2026-05-24_L7_RUMINATION_COMPRESSION_PRUNING_PROPOSAL.md [D] [I] [B]
+        - Corpus Self-Application Audit — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/55_CORPUS_SELF_APPLICATION_AUDIT.md [I]
+        - Corpus Disambiguation Execution 2026-04-16 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/56_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16.md [S]
+        - Corpus Disambiguation Execution 2026-04-16 Round 2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/57_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16_ROUND2.md [S]
+        - Breakthrough Hardening Index — compressed routing surface — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/58_BREAKTHROUGH_HARDENING_INDEX.md [I]
+        - Breakthrough Hardening Debrief — compressed routing surface — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/59_BREAKTHROUGH_HARDENING_DEBRIEF.md [I]
+        - Sādhu Compression & Pruning Report — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/74_SADHU_COMPRESSION_PRUNE_2026_05_04.md [I] [B] [D]
+        - 150a Constitutional Economics moved stub — 11_UPLINK/60_SESSION_PACKETS/150a_CONSTITUTIONAL_ECONOMICS_SHEET_2026_04_24.md [B] [I]
+        - Source Research Archive — Packet 194 Companion — 11_UPLINK/60_SESSION_PACKETS/194_SOURCE_RESEARCH_2026_04_28/00_README.md [I] [D] [C]
+        - Atrahasis as Agricultural Breeding Protocol — Source Research Archive — 11_UPLINK/60_SESSION_PACKETS/194_SOURCE_RESEARCH_2026_04_28/01_ATRAHASIS_AS_BREEDING_PROTOCOL_RESEARCH.md [I] [D] [C]
+        - Anunnaki Authority Paradox — Source Research Archive — 11_UPLINK/60_SESSION_PACKETS/194_SOURCE_RESEARCH_2026_04_28/02_ANUNNAKI_AUTHORITY_PARADOX_RESEARCH.md [I] [D] [C]
+        - Session handoff: quantum foundations → VMOSK construction direction → APU proactivity → WHISPER → dual-model substrate (BitNet=Dalit, LeCun=Systems Architect) → YieldFront first DAC → Rishi-built V×M niche graph. ALL 18 reconciliation questions closed. Implementation sprint next. — 11_UPLINK/60_SESSION_PACKETS/220_SESSION_RECAP_DEBRIEF_REBRIEF_2026_04_29.md [I]
+      - 12_PUBLIC_SITE (2)
+        - 12_PUBLIC_SITE/book-pwa/ has moved to 02_SKYZAI/03_AIA/app/ — 12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md [S]
+        - Infinite Book PWA Claude Shim — 12_PUBLIC_SITE/book-pwa/CLAUDE.md [I]
+      - 14_THE_DISTILLATION (1)
+        - The Weltanschauung in seven sentences, one per reasoning power — a seed whose generativity is measured by reconstruction against control, never asserted — 14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md [S] [I] [A]
+  - L7 · Ṛṣi · Viṣṇu ⊙ · teleology — 52 documents
+    - cells, quoted from 38 section 1
+      - Varṇa — Ṛṣi
+      - Operator — Viṣṇu ⊙
+      - G7@1 cell — vishnu_preserve
+      - Pramāṇa — Pratibhā
+      - REP6@1 — egregoreotype
+      - VMOSK-A [I/C] — V · Vision
+      - B = sin θ — →0 (limiting)
+      - Inference — transcendental
+      - -ology — teleology
+      - Regime — theocracy
+      - Deploy — NO — a frame cannot be staffed
+    - documents filed here (52)
+      - 00_HANDOFF (3)
+        - L7 third instance — 3 insights fully Held, 3 with one Bent, 1 with three Bent; η=0 meta-axiom, K2 handoff, Ω vector (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L7_CONSTITUTIONAL_WITNESS_7_INSIGHTS_2026_07_20.md [S] [I] [D]
+        - L7 witness — η=0 held, A7 self-correction one commit behind, K2 box-3 fork unresolvable from receipts alone (counsel-only; pending K2) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L7_RSI_CONSTITUTIONAL_WITNESS_2026_07_20.md [S] [I] [D]
+        - Put the map down — the cold-reader trial protocol, the Lean path, the operational layer state, and the honest close — 00_HANDOFF/PUT_THE_MAP_DOWN_2026_08_05.md [I] [B] [S]
+      - 00_META (1)
+        - THE COMPASS — MODEL POSSIBILITY, COMMIT ACTUALITY, ANSWER TO RECEIPTS (navigational compression; externally uncalibrated) — 00_META/00_THE_COMPASS.md [I]
+      - 00_THE_FOUNDATION.md (1)
+        - The questions are presupposed; the answers are selected; the consequences are typed — 00_THE_FOUNDATION.md [A] [S] [I]
+      - 00_THE_KERNEL_INDEX.md (1)
+        - The Kernel Index — seven surfaces, one open door — 00_THE_KERNEL_INDEX.md [I]
+      - 00_THE_WELTANSCHAUUNG.md (1)
+        - The Emergentist Weltanschauung — a compass, not the territory — 00_THE_WELTANSCHAUUNG.md [B]
+      - 01_TELEOLOGY (2)
+        - The Goal — orient finite agency toward durable mutual possibility — 01_TELEOLOGY/00_THE_GOAL.md [I]
+        - Know the good by its factor signature; the evil is disclosed as its inversion — 01_TELEOLOGY/05_THE_GOOD_AND_THE_EVIL_2026_08_17.md [I] [S] [C]
+      - 05_COSMOLOGY (2)
+        - Intelligence can enlarge a represented option cone, never the physical light cone — 05_COSMOLOGY/00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md [B] [I] [C]
+        - The Emergence of Finity — does an interior follow from boundary points? — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md [A] [S]
+      - 06_ONTOLOGY (3)
+        - Hold as wager → cannot be taken. Speak as revelation → already lost. — 06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md
+        - Rumination IV — Forms as Degrees of Freedom — 06_ONTOLOGY/ruminations/00_RUMINATION_ON_DOF_2026_07_19.md [I]
+        - Rumination VI — The Readable Column — 06_ONTOLOGY/ruminations/00_RUMINATION_ON_EMERGENTISM_ORG_2026_08_19.md [I] [S]
+      - 07_THEOLOGY (9)
+        - Foreword — a symbol is a ladder, not a home — 07_THEOLOGY/00_FOREWORD.md [I]
+        - Pure Emergentist glossary — terms at tier — 07_THEOLOGY/00_GLOSSARY.md [A] [B] [S]
+        - Reconciliation packet — what is proved, selected, and wagered — 07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md [A] [S] [I]
+        - Pedagogy of Becoming — 07_THEOLOGY/00_THE_PEDAGOGY_OF_BECOMING.md [I]
+        - Symbol Design and Public Translation — 07_THEOLOGY/01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md [S] [I]
+        - Truth order and niche partition — 07_THEOLOGY/02_TRUTH_ORDER_AND_NICHE_PARTITION.md [I] [S]
+        - The Well Between Two Droughts — 07_THEOLOGY/03_THE_WELL_BETWEEN_TWO_DROUGHTS.md [I] [S]
+        - THE PERENNIAL LOOP — 07_THEOLOGY/04_THE_PERENNIAL_LOOP.md [I] [C]
+        - 07_THEOLOGY — Symbol teaches and dissolves — 07_THEOLOGY/README.md [I]
+      - 08_FRAMEWORK_SUPPORT (3)
+        - Seven philosophical questions — selected Rosetta index — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md [B] [I]
+        - Spiritual and Yogic Mappings (yogic synthesis interpretive; metaphysical union claims untested) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D29_SPIRITUAL.md [I] [C]
+        - Rosetta R8 — AUM correspondence (interpretive spiritual correspondence) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md [I]
+      - 10_SEED (10)
+        - The Seed — declaration and reading order of the seven selected rungs; an active reader projection, not an independent canon owner — 10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md [I]
+        - D1 ascent — G2 is Euclid's algorithm, the seam is empty of world, AM-GM is the price of imbalance; existence presupposed, uniqueness forced — 10_SEED/01_THE_SEED_LADDER/ASCENT_D1_ARITHMETIC_2026_08_05.md [I]
+        - D2 ascent — configuration and relation are owner-controlled; the reciprocal chart is a typed example only; min ≤ HM ≤ 2·min is a bounded-compensation/weaker-argument bound with no node transfer — 10_SEED/01_THE_SEED_LADDER/ASCENT_D2_GEOMETRY_2026_08_05.md [I]
+        - D3 ascent — a state prices possible records, the next actual record belongs to D4; possibility is real and quantified and it is not yet a receipt — 10_SEED/01_THE_SEED_LADDER/ASCENT_D3_QUANTUM_STATE_2026_08_05.md [I]
+        - D4 ascent — the actual register: receipts, outcomes, provenance; the mass-shell identity is Einstein's; the session judged by its own equation — 10_SEED/01_THE_SEED_LADDER/ASCENT_D4_ACTUALITY_2026_08_05.md [I]
+        - D5 ascent — the ethic is a vow not a theorem; the conditional lemma (extraction self-terminates under stated closure) is [S] inside premises, not outside; Finity_L is dead — 10_SEED/01_THE_SEED_LADDER/ASCENT_D5_THE_GAME_2026_08_05.md [I]
+        - D6-and-horizon ascent — the return is a resemblance not an identity (D6≢D0); the horizon refuses by absorption not absence; the door was inside the whole time — 10_SEED/01_THE_SEED_LADDER/ASCENT_D6_RETURN_AND_O_2026_08_05.md [I]
+        - D0 — The Floor: one object-level ground role, three selected metalinguistic Titan seats; no Titan arithmetic — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D0_THE_FLOOR.md [I]
+        - D6 — The Return: an exit marker and a proposed [I] boundary-role resemblance r₆ to D0, not a positive rung; the literal identity D6≡D0 is dead — Seed Ladder projection, not a canon owner — 10_SEED/01_THE_SEED_LADDER/D6_THE_RETURN.md [I] [S]
+        - 10_SEED — L7 Ṛṣi Compressed Seed — 10_SEED/README.md [I]
+      - 11_UPLINK (10)
+        - 11_UPLINK — receipts, tests, and historical memory — 11_UPLINK/00_THE_UPLINK.md [S]
+        - Constitutional witness — the purification held against the 5+1 fences — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L7_CONSTITUTIONAL_WITNESS.md [S] [I]
+        - Systems Architect Constitution Audit — 2026-05-04 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/76_RSI_CONSTITUTION_AUDIT_2026_05_04.md [I] [S] [B]
+        - Session Packet 199 — L7 Reading On The Coordination Question — 11_UPLINK/60_SESSION_PACKETS/199_COORDINATION_L7_READING_2026_04_28.md [I] [B] [D]
+        - Packet 202 — Systems Architect Coordination Paradigm — 11_UPLINK/60_SESSION_PACKETS/202_RISHI_COORDINATION_PARADIGM_2026_04_28.md [I] [S]
+        - Packet 203 — Holobiont Reorientation — 11_UPLINK/60_SESSION_PACKETS/203_HOLOBIONT_REORIENTATION_2026_04_28.md [I] [S] [B]
+        - LeWorldModel is the private-cloud Rishi: it understands differently from an LLM, connects to other DACs through the niche graph, and crystallizes Vision from ecological-niche dynamics. — 11_UPLINK/60_SESSION_PACKETS/218_LEWORLD_MODEL_AS_RISHI_NICHE_VISION_SETTER_2026_04_29.md [I] [C]
+        - The niche-graph is actively constructed by L7 Systems Architect-mode LeWorldModels, parameterized by both Vision AND Mission cosine, at two scales: macro (DAC↔DAC) and micro (agent↔agent inside the polygenic tree). — 11_UPLINK/60_SESSION_PACKETS/222_NICHE_GRAPH_RISHI_CONSTRUCTED_TWO_SCALES_VISION_MISSION_2026_04_29.md [I] [S]
+        - Packet 229 — Gross Domestic Syntropy synthesis — 11_UPLINK/60_SESSION_PACKETS/229_GROSS_DOMESTIC_SYNTROPY_SYNTHESIS_2026_05_22.md [S] [I]
+        - Vision crystallizes when the Rishi holds a named-future + backed-receipts + anti-instance, and K2 or PRISM accepts that nomination — not before. — 11_UPLINK/60_SESSION_PACKETS/RECONCILE_Q8_VISION_CRYSTALLIZATION_TRIGGER.md [S]
+      - 12_PUBLIC_SITE (1)
+        - 12_PUBLIC_SITE — the public projection of the Emergentist worldview — 12_PUBLIC_SITE/00_THE_PUBLIC_SITE.md [S]
+      - 17_EMERGENTISM_2_MACHINE_INTELLIGENCE (2)
+        - The Emergentist Weltanschauung — a compass, not the territory — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C4_weltanschauung.md [B]
+        - The Goal — orient finite agency toward durable mutual possibility — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/corpus/C6_the_goal.md [I] [B]
+      - AGENTS.md (1)
+        - 01_EMERGENTISM — pure-worldview routing — AGENTS.md [S]
+      - ROSETTA.md (1)
+        - ROSETTA — routing shim — ROSETTA.md [S]
+      - VMOSK_A_v2_2026_07_31.md (1)
+        - VMOSK-A v2 — Emergentism, the translation-instrument edition (SIGNED) — VMOSK_A_v2_2026_07_31.md [S] [I] [C]
+- Unfiled — 1111 documents declare no seat
+  - Absence of metadata is reported as absence. Nothing here is guessed into a seat.
+  - 11_UPLINK (320)
+    - 11_UPLINK/00_CORE/ — forwarding stub — 11_UPLINK/00_CORE/README.md [B]
+    - 00 Index — Agent route — 11_UPLINK/00_INDEX/AGENTS.md [S]
+    - 00 Index — Claude compatibility route — 11_UPLINK/00_INDEX/CLAUDE.md [S]
+    - 11_UPLINK/10_RECONCILIATION/ — forwarding stub — 11_UPLINK/10_RECONCILIATION/README.md [B]
+    - 25_EXPERIMENT_SCOPE.md — 11_UPLINK/20_SCOPE/25_EXPERIMENT_SCOPE.md [I]
+    - 25_FLAGSHIP_PAPER_BRIEF.md — 11_UPLINK/20_SCOPE/25_FLAGSHIP_PAPER_BRIEF.md [I]
+    - Paper Brief — 11_UPLINK/20_SCOPE/26_BEHAVIOR_IS_MULTIPLICATIVE_NOT_ADDITIVE_BRIEF.md [I]
+    - Ultimatum Game Study Design — 11_UPLINK/20_SCOPE/27_ULTIMATUM_GAME_STUDY_DESIGN.md [I]
+    - Ultimatum Dataset Selection And Variable Map — 11_UPLINK/20_SCOPE/28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md [I]
+    - Ultimatum Preregistration Skeleton — 11_UPLINK/20_SCOPE/29_ULTIMATUM_PREREGISTRATION_SKELETON.md [I]
+    - Dharma Yuddha — future civic inquiry HOLD — 11_UPLINK/20_SCOPE/30_DHARMA_YUDDHA_CIVIC_INQUIRY_HOLD_2026_08_23.md [S] [D] [I]
+    - 20 Scope — Agent route — 11_UPLINK/20_SCOPE/AGENTS.md [S]
+    - 20 Scope — Claude compatibility route — 11_UPLINK/20_SCOPE/CLAUDE.md [S]
+    - Implementation Plan - Extraction Law Empirical Test — 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/IMPLEMENTATION_PLAN.md [D] [B]
+    - Extraction Law Empirical Test — 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/README.md [B] [D]
+    - Run Receipt - Extraction Law Empirical Test — 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/RUN_RECEIPT.md [B] [D]
+    - Verdict - Extraction Law Empirical Test — 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md [B] [D]
+    - Data Provenance - Extraction Law Empirical Test — 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/data/README.md [B]
+    - The symmetric balanced product P = Φ × V is decisively rejected on the Munnell panel — asymmetric elasticities a=0.61≠b=0.44; CES ρ≈−0.9; all four kill-criteria fail — 11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/README.md
+    - Verdict — Production-function form: the agency-register P = Φ × V — 11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT.md [B] [I]
+    - Verdict — Balance-hump (Burri anthropic sphere): output peaks at Φ=ν? — 11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md [B] [I]
+    - 25 Experiments — Agent route — 11_UPLINK/25_EXPERIMENTS/AGENTS.md [S]
+    - 25 Experiments — Claude compatibility route — 11_UPLINK/25_EXPERIMENTS/CLAUDE.md [S]
+    - AI Frontier local public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_AI_FRONTIER_PUBLIC_SCOPE_REBASELINE_2026_08_29.md [B] [S]
+    - One sphere, two reciprocal stereographic charts — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_BURRISPHERE_DUAL_PROJECTION_PUBLIC_SCOPE_REBASELINE_2026_08_24.md [A] [I] [B]
+    - Every worldview projects. This one prints its legend. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_CARTOGRAPHIC_SPINE_PUBLIC_SCOPE_REBASELINE_2026_08_27.md [B] [S] [I]
+    - EUB-1 v1.0 local public-lifecycle baseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_EUB1_V1_PUBLIC_LIFECYCLE_BASELINE_2026_08_21.md [B] [S]
+    - Gestalt v2.1 public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_1_PUBLIC_SCOPE_REBASELINE_2026_08_23.md [B] [S]
+    - Gestalt v2.2 — Question Atlas public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_2_PUBLIC_SCOPE_REBASELINE_2026_08_23.md [B] [D]
+    - Gestalt v2.3 — Third Churning public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_3_THIRD_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_23.md [B] [D]
+    - Gestalt v2.4 — Fourth Churning diagnoses public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_4_FOURTH_CHURNING_PUBLIC_SCOPE_REBASELINE_2026_08_24.md [B] [D]
+    - Gestalt v2 public-scope rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_GESTALT_V2_PUBLIC_SCOPE_REBASELINE_2026_08_22.md [B] [S]
+    - Public Wisdom Instrument local lifecycle rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_PUBLIC_WISDOM_LIFECYCLE_REBASELINE_2026_09_01.md [B] [D] [S]
+    - Repository gate repair baseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_2026_08_22.md [B] [S]
+    - Repository gate repair baseline — Titan/W19 and Ledger audit additions — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_REPOSITORY_GATE_REPAIR_BASELINE_LEDGER_AUDITS_2026_08_22.md [B] [S]
+    - Root Structure Optimal Outline -- Agentz pass — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROOT_STRUCTURE_OPTIMAL_OUTLINE_2026_05_07.md [S] [I]
+    - 104 — Dimensional-map adjudication packet: K2 acceptance receipt — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md [B]
+    - 105 — Burri Rules D4/D5 reconciliation: AXIS-FUSION · receipt-104 REFRAME (pending K2) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md [S] [I]
+    - 106 — The two motions are strong vs weak emergence (μ↑ / χ↓) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md [S] [A] [C]
+    - 107 — The two motions close at D6~D0; the open loop — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE.md [S] [I] [C]
+    - 108 — The Formal Stress Ledger + the Keel Resolution: the weakest link was the keel — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md [S] [C]
+    - 109 — The Proof-Layer Audit: four false lemmas under the honest tiers (the fact-class 108 left open) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md [S] [I] [C]
+    - 110 — Formal-logic audit applied: three golden seams (Gödel conditions stated; D6≡D0 reflexive vs φ·ν=1 analytic; closure-Gödel conditioned) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md [S] [I]
+    - 111 — The Compass staged: a navigational compression the reader can carry and reject — K2-COUNTERSIGNED — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/111_THE_COMPASS.md [I] [S]
+    - 112 — Amrita refinement spec: five moves (three-equation hero without descent arrows + content refresh + compass bridge) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/112_AMRITA_REFINEMENT_SPEC_FIVE_MOVES.md [S] [I]
+    - 113 — Amrita five moves implemented: three-equation hero (no arrows), six new drops, compass bridge — STAGED, pending K2 ship-sign — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/113_AMRITA_FIVE_MOVES_IMPLEMENTED.md [S] [I]
+    - 114 — Register non-instantiation: one topology error in three tenses (quantum-gravity / free-will / the dead man's will) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_REGISTER_NON_INSTANTIATION_THREE_TENSES.md [I] [C] [A]
+    - 114 — Seven-caste corpus audit: 88 papers under stress from L1-L7, the convergences and the breaks — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_SEVEN_CASTE_CORPUS_AUDIT.md [I] [S]
+    - 115 — Amrita card corrections: the 48-item adversarial audit applied (19 corrections + 5 new drops) — IMPLEMENTED on K2 in-chat 'Yes', pending K2 review — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/115_AMRITA_CARD_CORRECTIONS_AUDIT_MANIFEST.md [S] [A]
+    - 115 — Six golden seams applied: the foundational repairs from the seven-caste audit — STAGED, pending K2 ship-sign — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/115_SIX_GILDED_SEAMS_APPLIED.md [S] [I]
+    - 116 — The open-source launch: license, home page, compass glossary, Open Source section, SEO — STAGED, pending K2 ship-sign — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/116_OPEN_SOURCE_LAUNCH.md [S] [I]
+    - 116 — The Lens as Compass: 21 paradoxes reframed at tier + the sciences stratified (recurrence-not-reduction) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/116_THE_LENS_AS_COMPASS_PARADOXES_SCIENCES.md [I] [S] [A]
+    - 117 — The force ladder formalized (07B staged): two theorems, one failure published as failure, one degenerate truth — and the anti-bijection theorem — PENDING K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/117_FORCE_LADDER_FORMALIZED_07B.md [A] [I] [S]
+    - 117 — Path D negative result: the four forces cannot be derived from AM-GM convex geometry — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/117_PATH_D_NEGATIVE_RESULT.md [A] [B] [S]
+    - 118 — Computational results: four experiments run, one decisive negative, one confirmed claim, one reconciliation, one parity proof — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/118_COMPUTATIONAL_RESULTS_FOUR_EXPERIMENTS.md [A] [B] [S]
+    - 118 — Ship receipt: K2 'i sign' executed — Vercel production deploy live and verified; ONE owner action owed: the DNS cutover (www.emergentism.org still serves Google Sites) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/118_SHIP_RECEIPT_VERCEL_PROD_DNS_CUTOVER_OWED.md [A]
+    - 119 — The Lagrangian Question closed: all four paths run, the answer complete — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LAGRANGIAN_QUESTION_CLOSED_ALL_FOUR_PATHS_RUN_PENDING_K2.md [A] [B] [S]
+    - Five sightings through the tuned lens — gauge-redundancy ordering, D=4 as dimensional equator, forces as releases, K2 line as destructive-readout — staged, K2-countersigned — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LOOKING_THROUGH_THE_LENS_FIVE_SIGHTINGS_PENDING_K2.md
+    - 120 — Launch telos: the open-source Manhattan inversion — clearest lens, most compressed map, best compass to reality in toto — K2-COUNTERSIGNED — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/120_LAUNCH_TELOS.md [D] [I] [S]
+    - 121 — The compass compressed: three generators (disconfirmed & register-indexed), four new survivors, the built artifact, and the open negative — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_COMPASS_COMPRESSED_THREE_GENERATORS_AND_ARTIFACT_PENDING_K2.md [S] [A] [I]
+    - 121 — The disconfirming pass: the honest foundation (all three generators REFINED, one universal CUT), the corrected site spine, and the open negative — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_DISCONFIRMING_PASS_HONEST_FOUNDATION_PENDING_K2.md [S] [C] [A]
+    - 122 — Compass and public-site K2 decision packet: scope corrections before any build — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_COMPASS_AND_PUBLIC_SITE_K2_DECISION_PACKET.md [D] [I] [C]
+    - 122 — Compass-restructure convergence: adopt the concurrent 8-wing build as canonical, feed it the corrected foundation (handoff, not edit — the other session is live) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_COMPASS_RESTRUCTURE_CONVERGENCE_HANDOFF_PENDING_K2.md [S] [B]
+    - 122 — K3 front-matter propagation patch: A1/C2/A6 re-tiered + A6 citation fixed + Applied Insights de-staled; A7 HELD (audit premise unverified) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_K3_FRONTMATTER_PROPAGATION_PATCH_PENDING_K2.md [S] [A]
+    - 123 — Website operational delegation recorded + predeploy 95→0 + 7-wing ship — EXECUTED under K2's standing website delegation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/123_SITE_DELEGATION_GATE_GREEN_SHIP.md [S] [A]
+    - 124 — Prime-time pass: full PWA layer + seven-persona stakeholder audit implemented (Titans-walk DECLINED, D5 destination ADOPTED) — EXECUTED under the website delegation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md [S] [I] [A]
+    - 125 — Full content review + refinement: de-fabricated openness, exit-door reachability, tier corrections, library noindex — SHIPPED under the website delegation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/125_CONTENT_REVIEW_REFINE_NOINDEX_SHIP.md [S] [I] [A]
+    - Weltanschauung Formal-Logic Audit — Repair Packet (K2-SIGNED) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md [B]
+    - Transmission Doctrine — K2 countersignature of the four staged docs — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/127_TRANSMISSION_DOCTRINE_K2_2026_07_13.md [I] [C]
+    - Parallel-Output Reconciliation Ledger — the swarm's staging drafts vs the signed canonical set — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/128_PARALLEL_OUTPUT_RECONCILIATION_LEDGER_2026_07_13.md [B] [D]
+    - Posture IV (Withdraw) — the wager-holder sets the wager down, kill-criterion turned inward — adopted; the competing-signature conflict between folder and swarm canonical sets remains open — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/129_FOURTH_POSTURE_ADOPTED_2026_07_13.md
+    - The mirror-ladder grammar is a real algebraic object, but 'seven' is a stitch not a derivation; cross-tradition convergence is diffusion, not independent evidence — split verdict, receipt 126 standing — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md
+    - Recovery Ledger — BROKEN 66 second look + retelling-drift correction — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md [B] [I]
+    - Emergentism survives as a corrigible, emergence-aware, anti-reification lens: mathematically thin, ethically chosen, empirically unfinished, honest only if it refuses to call its wagers discoveries — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L1_TELEOLOGY.md
+    - Forms are better understood as constrained degrees of freedom than substances; emergent realities are lawful configurations within limits — but Emergentism cannot yet say all coherent possibilities exist or that S² is the territory — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L2_EPISTEMOLOGY.md
+    - Emergentism is a disciplined lens and wager — reciprocal closure supplies a powerful formal grammar; reality-as-this-geometry remains open pending independent contact — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L3_METHODOLOGY.md
+    - L4 axiology audit: ethics is a chosen vow, not a theorem from geometry — the eternal is the structure, the good is the vow; the DoF thesis survives only after being weakened to parametric realism, not unrestricted modal realism. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L4_AXIOLOGY.md
+    - L5 cosmology audit: reality is read through constrained DoF spaces, not modal realism — a degree of freedom is a parameter, coordinate, capacity, or constraint-direction within a specified system, not a Form or world; the reciprocal chart is a one-DoF curve with a conditional balance optimum, not t… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L5_COSMOLOGY.md
+    - L6 ontology audit: degrees of freedom are relational constraint-structures, not Forms, objects, substances, or pre-existing inhabitants of a modal heaven — S² is a chart lens, not the Ground; the anti-reification rule says Ground ≠ model, DoF ≠ Forms, ethics ≠ geometry. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L6_ONTOLOGY.md
+    - L7 theology/compression audit: Emergentism is a corrigible worldview-wager — reality is read as a field of constrained degrees of freedom in which stable, measurable, livable forms appear; the mathematical chart supplies real constraints, the empirical world decides actuality, and the ethical orien… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/L7_THEOLOGY.md
+    - routing stub — no claim — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_ROSETTA_COUNCIL_RAW/README.md
+    - routing stub — no claim — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/README.md
+    - Authority and completeness reconciliation — receipt 135 provisional; final Weltanschauung remains staged — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/136_AUTHORITY_AND_COMPLETENESS_RECONCILIATION_2026_07_19.md [B] [S] [D]
+    - Final Structure & Papers-Lens Proposal: staged [D] Rosetta seven-caste evaluation with 32-file root tree, 4 ordered waves, and a 13-row papers verdict — only L1 Caṇḍāla's verdict arrived intact; castes 2–7 truncated in transmission (recorded as ABSENT, not approval); founder's Wave-1 signature sitt… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
+    - Root Tidy Wave-2/3 Execution: 20 mechanical moves executed in commit c50f6a4 (2026-07-19) with A1 forwarding stubs at root, K3 throughout, and no promotions — founder-gated Waves 1/4/5 remain pending; the founder sitting is the gate that has not opened. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md
+    - Disputed The Signing Sitting (2026-07-19): preserved as K3 dissent per receipt 141A — boxes 1–7 appear ticked but boxes 8–9 are unticked, defaults were agent-selected, and the founder's current instruction returns this sitting to unsigned state; superseded by 139 SIGNED 2026-07-20 (the corrected su… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md
+    - The Signing Sitting (corrected, 2026-07-20 00:01 superseding line): bounded partial founder signature against manifest SHA-256 15499d8… — boxes 1, 2, 4, 5, 7, 8, 9 adopted; box 3 = (b) decline E1–E10 succession (A1–A7 remains operational); boxes 6 (charter) and 10–15 (K-5 successor, Creed, K-6, K-7… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md
+    - Seed Ladder truth-cut and staged stabilization — 2026-07-19 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/140_SEED_LADDER_TRUTH_CUT_AND_STABILIZATION_2026_07_19.md [B] [A] [S]
+    - Witness Attestation + Writer Freeze: additive-only testimony that the receipt-139 written form was not satisfied (boxes unticked, no named-box statement) but the substantive 'yes to all' authorization was real, plus three concessions to the completion-plan audit (AGENTZ deployment sweep regression,… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md
+    - Disputed Sovereign Execution: eight delegated decisions (D-1 charter = DRAFT canonical, D-2 Sophia-Perennis Documents-level grave, D-3 registry rows 56/60-63 at-tier pointer amendment, D-4 revelations = 12, D-5 book-pwa node_modules approved-in-principle-not-executed, D-6 kernel v0.1 stub-don't-hea… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/141_SOVEREIGN_EXECUTION_2026_07_19.md
+    - Magnum Opus Reconciliation: filed [B/D] 2026-07-19 audit/correction receipt — exact current-union file/folder rosters (2,913 file rows / SHA-256 c00cd4c4…; 656 folder rows / 5db8c13e…; 26 signing-manifest rows / 15499d8…) and seven-surface target table (K-1..K-7 with logical owner, candidate contro… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/142_MAGNUM_OPUS_RECONCILIATION_AND_PENDING_EXECUTION_MANIFEST_2026_07_19.md
+    - Magnum Opus Verification: filed [B/D] 2026-07-19 verification evidence over the reconciliation worktree — passes for file-roster cardinality (2,913 unique, 0 missing), frontmatter delimiters, stranger-path local links, Agentz restoration (31 deployment artifacts back to 00_META), and whitespace; fa… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/143_MAGNUM_OPUS_VERIFICATION_2026_07_19.md
+    - Records the corrected natural-person partial signature at 2026-07-19 23:58:15 +07 against signing-manifest SHA-256 15499d813eea11025f8ba0347eedc2c01f212778bf52103af8efb249d71d3f94: adopts Boxes 1, 2, 4, 5, 7, 8, 9; chooses Box 3(b); defers Box 6 and Boxes 10-15; authorizes no physical execution. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/144_CORRECTED_RECEIPT_139_NATURAL_PERSON_SIGNATURE_2026_07_19.md
+    - Authority Fork Resolution — the 00:01 line supersedes; orchestrator decides under recorded delegation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/145_AUTHORITY_FORK_RESOLUTION_2026_07_20.md [S] [B] [D]
+    - Independent final review returning REQUEST CHANGES / NO-GO: the corrected Receipt 139 signature is valid as a decision record but the live packet does not match every signed candidate hash; 10 items remain founder/legal/world gated. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/145_INDEPENDENT_FINAL_REVIEW_AND_WORLD_GATED_REMAINDER_2026_07_20.md
+    - Founder Ruling — EXECUTE (the 00:01 line governs; dispute closed) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md [S] [B]
+    - Read-only disposition ledger for active papers A–X, Finity I–V, D5 Landauer 1–7, archived peer review, and Recursive Trivium: assigns KEEP/REVISE/GRAVE/REVIEW verdicts; no paper moved, bannered, promoted, stoned, or published. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_PAPERS_LENS_CLOSURE_2026_07_20.md
+    - Post-Audit Reconciliation — mechanical findings repaired forward; revert calls overruled by receipt 146 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/147_POST_AUDIT_RECONCILIATION_2026_07_20.md [S] [B] [D]
+    - Post-Signature Coherence Pass — seven-caste lane sweep; signed/staged drift healed forward; archive proposals staged founder-gated — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_COHERENCE_PASS_2026_07_20.md [S] [B] [D]
+    - Reap coherence audit components are evidence and correction leads, not doctrine by themselves — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20/README.md
+    - Four-pass adversarial audit of 8 targets plus the 7 new ### The Model sections: the Reduction Asymmetry survives at [C] per rung-pair / [I] as world-reading (never [S]); fixes applied to 7 rung pages + 00_THE_SEED.md; Reap fixes FLAGGED, not applied (staged [D], K2-owed). — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/149_MODELS_AND_CORRECTIONS_LOGIC_AUDIT_2026_07_20.md
+    - Formal audit of claims C1–C14 of the Burri Sphere across 3 adversarial passes: every [A] arithmetic identity in C1–C8, C13, C14 computed exact on declared slice; grave scan clean (no source calls P∞ a maximum); fixes applied to D2_GEOMETRY.md + AUM rumination only; signed canon FLAGGED, not edited. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/150_BURRI_SPHERE_FORMAL_AUDIT_2026_07_20.md
+    - Formal audit of the horn-torus / SR mapping under the P7 grave: the mouth is a second-order cusp C¹-inequivalent to the light cone (OB-1, OB-2); every SR reading refuted or capped at SHOWS; only classical horn-torus geometry, the cylinder-inversion theorem, and one [S]-capped compactification readi… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md
+    - Receipt 152 records the Passage build: √2 spindle verified [A], degeneration family computed (double-cover at R=0), animation-truth synced, canon rumination filed, The Crossing flagship page built, three caption syncs done; NO DEPLOY; receipt 151 governs. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/152_THE_PASSAGE_BUILD_2026_07_20.md
+    - Receipt 154 — Dimension-First Canon Purification — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md [B] [S] [I]
+    - Receipt 155 — Grand Puzzle Assembly and Application Boundary — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md [B] [A] [S]
+    - Receipt 156A — Independent verification reconciled — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md [B]
+    - Independent verification from main of the receipt-155 completion report (branch codex/emergentism-dimension-canon-purification, HEAD 25b634d): branch discipline is sound, but two report claims did not hold (compatibility 14 files / 565 net lines lost; ASI documents copied not moved); the mortal-sig… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md
+    - Receipt 156 — Lived Weltanschauung and Human Condition — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md [B] [A] [S]
+    - Withdraws two claims from the 2026-07-22 K-namespace work: G-K3 (the cited file K3_SEMANTIC_RESOLUTION is a labelling operation, not a deletion instruction) and the fabricated self-correction (the ledger led with the K3 finding, not K2); no rule is changed. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md
+    - Receipt 157 — Dimension-first release candidate — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md [B] [I] [C]
+    - Receipt 158 — Publication and world-contact launch — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md [B]
+    - Records execution of the six ungated migration acts of Final Rules §7 (Sadhu card rename, η conversion map, lint, protocol monitor, economics splice, dead canonical path stubs); two census claims corrected in the doing; no founder-gated act touched. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md
+    - Receipt 159A — Concurrent public-site staging reconciled — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/159A_CONCURRENT_PUBLIC_SITE_STAGING_RECONCILED_2026_07_22.md [B]
+    - Receipt 159 — Untracked arrivals reconciliation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/159_UNTRACKED_ARRIVALS_RECONCILIATION_2026_07_22.md [B]
+    - Receipt 160 — Emergentism folder tidy and purity boundary — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md [B] [S]
+    - Receipt 161 — Weltanschauung and theory-of-everything gap audit — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md [B] [S] [I]
+    - Receipt 162 — Living Map and public Gap Lab — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md [B] [I] [C]
+    - Receipt 163 — Tree contract and authority reconciliation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/163_TREE_CONTRACT_AND_AUTHORITY_RECONCILIATION_2026_07_22.md [B] [S]
+    - [D] STAGED decision aid for the mortal signer: six worldview gates (FG-2, FG-12, FG-4, FG-3, FG-1, FG-5) presented with prior council recommendation, dissent, and adversary's 'Before you sign'; no gate decided; each carries a blank signature line only the founder can fill. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/164_FOUNDER_BALLOT_A_WORLDVIEW_2026_07_23.md
+    - [D] STAGED decision aid for the mortal signer: eight Skyzai product gates (FG-6, FG-7, FG-8, FG-9, FG-10, FG-11, FG-5/1/12 product halves) staged in the Emergentism uplink because 02_SKYZAI is a separate repo; migrate to 02_SKYZAI/.../00_CANON/ at countersignature; no gate decided. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/165_FOUNDER_BALLOT_B_SKYZAI_PRODUCT_2026_07_23.md
+    - K2 Signing Sitting — Sophia custody ratified (Statement B, narrowed) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/166_K2_SIGNING_SOPHIA_CUSTODY_2026_07_23.md [B]
+    - Rosetta Purification × Agentz Soul-Loop Gate — Reconciliation Council Finding — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/167_ROSETTA_PURIFICATION_x_AGENTZ_SOUL_LOOP_GATE_RECONCILIATION_2026_07_23.md [B] [S]
+    - Receipt 172 — Claim Status Register and grave adjudication — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md [B] [S] [I]
+    - Receipt 173 — The V-axis audit: the corpus through its own lens — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md [B] [S] [I]
+    - Receipt 174 — Owner reopening of all dead forms; Titan equations restored on the sphere — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md [B] [A] [S]
+    - Receipt 175 — Sphere primacy ruled and executed; standard models rejected as default; Suda adopted — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md [B] [A] [S]
+    - Receipt 176 — The foundation seated; R0 adopted as the foundational refusal — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md [B] [A] [S]
+    - Receipt 177 — WP-1 found defective; validator hardened; a false attestation corrected — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md [B] [S] [I]
+    - Receipt 178 — the first external oracle: the [A] claim set machine-checked in Lean 4 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/178_FIRST_EXTERNAL_ORACLE_LEAN_2026_07_29.md [B] [S]
+    - Receipt 179 — HR-1 decision packet: type-D was measuring the wrong arrow — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md [A] [S] [I]
+    - Receipt 180 — P3.1 ruling: a self-run rescoring cannot satisfy F3 (external receipt) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/180_P3_1_F3_EXTERNAL_RECEIPT_RULING_2026_08_06.md [S] [A] [I]
+    - Receipt 181 — false attestation in commit 1d60ef19, and two pre-existing test failures it exposed — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md [B]
+    - Receipt 182 — the corpus's most load-bearing negative claim, submitted to an oracle — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md [B] [A]
+    - Receipt 183 — the corpus map found the manifest making false claims, hours after it was built — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md [B]
+    - Receipt 184 — x = y·z: the annihilation half is won, the product interior is not, and the seven rows never came from a formula — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md [A] [S] [I]
+    - Receipt 185 — §5.2 ruled POSITIVE-ONLY; and F = m·a is the third constitutive identity — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md [A] [S]
+    - Receipt 186 — the torus fails cosmology worse than it failed SR; and the third mode lands — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/186_ITEM_7_COSMOLOGICAL_TEST_AND_ITEMS_3_AND_6_LANDED_2026_07_30.md [A] [S]
+    - Receipt 187 — 3 + 4 = 7 is a concatenation, not a derivation; and D5's own seven does not close — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/187_THE_SEVEN_FROM_GEOMETRY_RULED_2026_07_30.md [A] [S]
+    - Receipt 188 — 0 of 21 dissolved; four items are publishable and none of them is a dissolution — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/188_THE_PARADOX_INVENTORY_2026_07_30.md [B] [S]
+    - Receipt 189 — D6~D0 generator-hunt: 73 live assertions, concentrated in UPLINK; STAGED audits the structural source — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/189_D6_D0_GENERATOR_HUNT_2026_07_30.md [A] [B] [I]
+    - Receipt 190 — r188 was wrong about PD_25, and I nearly acted on it — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/190_R188_WAS_WRONG_ABOUT_PD_25_2026_07_30.md [A]
+    - Line 4 refuted, the site's findings landed, and a citation defect that lets a false reference pass a checker — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md [A] [S] [I]
+    - Five rulings signed — §5.1, the G-0 restatement, the undeclared routes, the library boundary, and the launch lead — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md [S] [A] [B]
+    - Fire on the tombstones — claim, warrant, rejection, survivor — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/2026_09_05_TOMBSTONE_SCOPE_REVIEW/README.md [B] [A] [I]
+    - Execution of the five signed rulings — what changed, what it cost, and the two defects the execution itself produced — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/232_FIVE_RULINGS_EXECUTED_2026_07_31.md [B] [A] [S]
+    - The Q6 kill was run: 50 frozen library pages cite a retracted study unfenced — the reader dissent is answered against, by measurement — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/233_LIBRARY_GFS_RESIDUE_ANSWERS_Q6_DISSENT_2026_07_31.md [A] [B] [S]
+    - Full corpus adjudication and coherence calibration — all 229 actionable findings receive custody — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md [B] [I] [S]
+    - Internal completion hardening and recursive roadmap — typed repairs become executable gates — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md [B] [S]
+    - Contact-limited completion ratchet — exact internal remainder becomes state-bound — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md [B] [S]
+    - Active citation custody ratchet — exact receipt and packet targets become immutable local identity — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md [B] [S]
+    - Public lifecycle closure — every deployable HTML artifact receives one bounded state — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md [B] [S]
+    - Open-claim disposition — every current row and grave parent receives a bounded route — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md [B] [A] [S]
+    - Adjudication-custody active-citation rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/240_ADJUDICATION_CUSTODY_ACTIVE_CITATION_REBASELINE_2026_08_02.md [B] [S]
+    - K3 legacy no-op archive-link neutralizer custody — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md [B] [S]
+    - Receipt 242: G2 (val bijection from reduced words over {S, ι} onto ℚ⁺) proved and found to be prior art (Hardy & Wright's classical normalisation); G2 [C]→[A] inherited-with-citation; F1 still open; one kill fired (subsequently tombstoned by escalated Rosetta review that also repaired four pass-def… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md
+    - Public release preflight and contact-limited snapshot — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md [B] [S]
+    - Contact-limited rebaseline after W10-SPARK / W0-COMPLETE and current-door adds — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md [B] [S]
+    - Contact-limited tracked-tree rebaseline after ignored build-output drift — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md [B] [S]
+    - 50_IMPLEMENTATION_REVIEW.md — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/50_IMPLEMENTATION_REVIEW.md [S] [I]
+    - Organism Master Map — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/50_ORGANISM_MASTER_MAP.md [I]
+    - 51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md [S] [I]
+    - 51_END_OF_SESSION_SUMMARY.md — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/51_END_OF_SESSION_SUMMARY.md [S] [I]
+    - 52_K4_BOND_SMART_CONTRACT_SPEC.md — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/52_K4_BOND_SMART_CONTRACT_SPEC.md [I]
+    - 52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md [S] [I]
+    - Disambiguation Review Packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/53_DISAMBIGUATION_REVIEW_PACKET.md [I]
+    - Tombstone — Framework Self-Application Protocol — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md [B] [D]
+    - Breakthrough Hardening Brief — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/60_BREAKTHROUGH_HARDENING_BRIEF.md [I]
+    - UPLINK RUMINATION — Phase 1 Synthesis — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/63_RUMINATION_UPLINK_2026_04_23.md [S] [I]
+    - ORGANISM RUMINATION — Phase 2 Synthesis — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/64_RUMINATION_ORGANISMS_2026_04_23.md [S] [I]
+    - ORGANISM-TO-UPLINK MAPPING — Phase 3 Synthesis — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/65_RUMINATION_MAPPING_2026_04_23.md [S]
+    - Product Wedge — The Coherence Wedge — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/66_BRAINSTORM_AIA_CORTEX_APU_WEDGE_2026_04_23.md [S] [I]
+    - Competitive Positioning — APU vs. The Agent Category — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/67_COMPETITIVE_POSITIONING_APU_VS_AGENTS_2026_04_23.md [S] [I]
+    - Sprint-A Lock Document — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/68_SPRINT_A_LOCK_2026_04_23.md [S] [I]
+    - Founder-Gated Extraction Matrix — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/69_EXTRACTION_MATRIX_2026_04_23.md [S] [I]
+    - Async Approval Queue Primitive — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/71_ASYNC_APPROVAL_QUEUE_SPEC_2026_04_23.md [S] [I]
+    - Audit Evidence Dossier — Sprint-A Closeout — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/72_AUDIT_EVIDENCE_DOSSIER_2026_04_23.md [S] [I]
+    - SWOT Update — Post Sprint-A Closeout — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/73_SWOT_UPDATE_2026_04_23.md [S] [I]
+    - Consolidated Manifest — Sprint-A Closeout — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/74_CONSOLIDATED_MANIFEST_FOUNDER_SIGNOFF_2026_04_23.md [S] [I]
+    - Packet 75 · A7 Reconciliation: R-4 + Queue already shipped — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/75_R4_QUEUE_RECONCILIATION_2026_04_23.md [S] [I]
+    - Packet 76 · W-new Charter Amendment Scope (draft) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/76_W_NEW_CHARTER_AMENDMENT_SCOPE_2026_04_23.md [S] [I]
+    - Packet 77 · Adversarial Test Plan (R-4 + Async Queue) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/77_ADVERSARIAL_TEST_PLAN_R4_QUEUE_2026_04_23.md [S] [I]
+    - Packet 78 · Sprint-B Audit Evidence Dossier — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/78_SPRINT_B_AUDIT_EVIDENCE_DOSSIER_2026_04_23.md [S] [I]
+    - SWOT Update — Sprint-B Preparation Delta — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/79_SWOT_UPDATE_SPRINT_B_2026_04_23.md [S] [I]
+    - Packet 80 · Cortex Ingestion Hook Spec — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/80_CORTEX_INGESTION_HOOK_SPEC_2026_04_23.md [S] [I]
+    - Packet 81 · Skyzai Mobile Signing Flow Spec — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/81_MOBILE_SIGNING_FLOW_SPEC_2026_04_23.md [S] [I]
+    - Packet 82 · Sprint-B Audit Evidence Supplement — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/82_SPRINT_B_AUDIT_SUPPLEMENT_2026_04_23.md [S] [I]
+    - Packet 83 · K2 Shared Test Vectors — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/83_K2_TEST_VECTORS_2026_04_23.md [S] [I]
+    - Packet 84 · Sprint-B Audit Evidence Supplement II — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/84_SPRINT_B_AUDIT_SUPPLEMENT_II_2026_04_23.md [S] [I]
+    - Packet 85 · Adversarial Test Files Witness — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/85_ADVERSARIAL_TESTS_WITNESS_2026_04_23.md [S] [I]
+    - Packet 86 · K2_STRICT_MODE Flip Playbook — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/86_K2_STRICT_MODE_FLIP_PLAYBOOK_2026_04_23.md [S] [I]
+    - Packet 87 · Sprint-B Audit Evidence Supplement III — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/87_SPRINT_B_AUDIT_SUPPLEMENT_III_2026_04_23.md [S] [I]
+    - Packet 88 · Sprint-B Warrior Brief — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/88_SPRINT_B_WARRIOR_BRIEF_2026_04_23.md [S] [I]
+    - Packet 89 · Sprint-B Audit Evidence Supplement IV — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/89_SPRINT_B_AUDIT_SUPPLEMENT_IV_2026_04_23.md [S] [I]
+    - Packet 90 · Cortex Ingestion Reconciliation — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/90_CORTEX_INGESTION_RECONCILIATION_2026_04_23.md [S] [I]
+    - Packet 91 · Sprint-B Audit Evidence Supplement V — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/91_SPRINT_B_AUDIT_SUPPLEMENT_V_2026_04_23.md [S] [I]
+    - Packet 92 · Second Live Light-Council Witness — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/92_SECOND_LIGHT_COUNCIL_WITNESS_2026_04_23.md [S] [I]
+    - Packet 94 · Sprint-B Consolidated Closure Dossier — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/94_SPRINT_B_CONSOLIDATED_CLOSURE_2026_04_23.md [S] [I]
+    - Packet 95 · Sprint-B Post-94 Drift Register — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/95_SPRINT_B_POST_94_DRIFT_REGISTER_2026_04_23.md [S] [I]
+    - Packet 96 · Post-95 Drift Register + L4 Triangulation Verdict — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/96_SPRINT_B_POST_95_DRIFT_AND_L4_VERDICT_2026_04_23.md [S] [I]
+    - Packet 97 · The Coordination Problem in Foundation Terms — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/97_COORDINATION_PROBLEM_DOCTRINE_2026_04_23.md [I]
+    - Packet 97 — Sprint-B Post-96 Multi-Verdict + Drift Register III + Concurrence Witness — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/97_SPRINT_B_POST_96_MULTI_VERDICT_2026_04_23.md [S] [I]
+    - Packet 98 · The Coordination Problem in Foundation Terms — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/98_THE_COORDINATION_PROBLEM_IN_FOUNDATION_TERMS_2026_04_23.md [S] [I]
+    - Packet 99 · Sovereign Reading of the Foundation and the Rosetta — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/99_SOVEREIGN_READING_OF_FOUNDATION_AND_ROSETTA_2026_04_23.md [S] [I]
+    - Active receipt citation registry — v2.2 additive rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_23.md [B] [D]
+    - Active receipt citation registry — Third Churning additive rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_26.md [B] [D]
+    - Active receipt citation registry — emergentotype additive rebaseline — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/ACTIVE_RECEIPT_CITATION_REBASELINE_2026_08_31.md [B] [D]
+    - 50 Audits And Executions — Agent route — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/AGENTS.md [S]
+    - 50 Audits And Executions — Claude compatibility route — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/CLAUDE.md [S]
+    - Disambiguation Review Packet — 11_UPLINK/53_DISAMBIGUATION_REVIEW_PACKET.md [I]
+    - Corpus Disambiguation Execution — 2026-04-16 — 11_UPLINK/56_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16.md [I]
+    - Corpus Disambiguation Execution — 2026-04-16 Round 2 — 11_UPLINK/57_CORPUS_DISAMBIGUATION_EXECUTION_2026_04_16_ROUND2.md [I]
+    - Breakthrough Hardening Index — 11_UPLINK/58_BREAKTHROUGH_HARDENING_INDEX.md [I]
+    - Breakthrough Hardening Debrief — 11_UPLINK/59_BREAKTHROUGH_HARDENING_DEBRIEF.md [I]
+    - Packet 100 · Mobile K2 Signing Flow — Closure Registry — 11_UPLINK/60_SESSION_PACKETS/100_MOBILE_SIGNING_CLOSURE_PACKET_2026_04_23.md [S] [I]
+    - Packet 101 · Automatic Receipt-to-Outcome Ingestion — 11_UPLINK/60_SESSION_PACKETS/101_AUTOMATIC_RECEIPT_TO_OUTCOME_INGESTION_2026_04_23.md [S] [I]
+    - Packet 102 · Realized Outcome Ingestion — 11_UPLINK/60_SESSION_PACKETS/102_REALIZED_OUTCOME_INGESTION_2026_04_23.md [S] [I]
+    - Packet 103 — Founder K2 Signing Envelope (Flag-Flip Ready State) — 11_UPLINK/60_SESSION_PACKETS/103a_FOUNDER_K2_SIGNING_ENVELOPE_2026_04_23.md [I]
+    - Packet 103 · Realized Receipt Bridge and Sigma Proxy — 11_UPLINK/60_SESSION_PACKETS/103b_REALIZED_RECEIPT_BRIDGE_AND_SIGMA_PROXY_2026_04_23.md [S] [I]
+    - Packet 104 — AGI as Network Equator: the A × G × I ↔ P isomorphism — 11_UPLINK/60_SESSION_PACKETS/104_AGI_AS_NETWORK_EQUATOR_2026_04_23.md [I]
+    - Packet 105 — Polygenetic Nodes and Economic Niche Partitioning — 11_UPLINK/60_SESSION_PACKETS/105_POLYGENETIC_NODES_AND_NICHE_PARTITIONING_2026_04_23.md [I]
+    - 106_FOUNDATION_DOCTRINE_AGI_VENN_A×G×I_2026_04_23.md — 11_UPLINK/60_SESSION_PACKETS/106_FOUNDATION_DOCTRINE_AGI_VENN_A×G×I_2026_04_23.md [S] [I]
+    - Packet 107 — Witness Mesh Polygenetic Query Surface — 11_UPLINK/60_SESSION_PACKETS/107_WITNESS_MESH_POLYGENETIC_QUERY_SURFACE_2026_04_23.md [S]
+    - Packet 108 — ΣΔP Basin and Niche Report — 11_UPLINK/60_SESSION_PACKETS/108_SIGMA_DELTA_P_BASIN_AND_NICHE_REPORT_2026_04_23.md [S]
+    - Packet 109 — SPECTRE as D5 Selection Mesh — 11_UPLINK/60_SESSION_PACKETS/109_SPECTRE_D5_SELECTION_MESH_2026_04_23.md [I]
+    - Packet 110 — SPECTRE BEAM Canonical Route Energy — 11_UPLINK/60_SESSION_PACKETS/110_SPECTRE_BEAM_CANONICAL_ROUTE_ENERGY_2026_04_23.md [I]
+    - Packet 111 — AIA Audit K1 Resolution — 11_UPLINK/60_SESSION_PACKETS/111_AIA_AUDIT_K1_RESOLUTION_2026_04_23.md [S]
+    - Packet 112 — Hiero for L1 Body, Not SPECTRE Brain — 11_UPLINK/60_SESSION_PACKETS/112_HIERO_FOR_L1_BODY_NOT_SPECTRE_BRAIN_2026_04_23.md [S]
+    - Packet 113 — GOD-Class Triangulation Live Monitoring Playbook — 11_UPLINK/60_SESSION_PACKETS/113_GOD_CLASS_TRIANGULATION_MONITORING_2026_04_23.md [S]
+    - Packet 114 — BEAM Layer K1 Compliance Audit — 11_UPLINK/60_SESSION_PACKETS/114_BEAM_K1_COMPLIANCE_AUDIT_2026_04_23.md [S]
+    - Packet 115 — BEAM Hashgraph vs EVM L1: Where We Win, Where We Lose, What Wedge to Take First — 11_UPLINK/60_SESSION_PACKETS/115_BEAM_HASHGRAPH_VS_EVM_WEDGE_2026_04_23.md [S]
+    - 116 — D5 Force Coordination Bridge (Compressed) — 11_UPLINK/60_SESSION_PACKETS/116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md [S] [I]
+    - 117 · Circle Intake Extraction Matrix — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/117_CIRCLE_INTAKE_EXTRACTION_MATRIX_2026_04_23.md [I]
+    - 118 · Circle Product Sprint Packet — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/118_CIRCLE_PRODUCT_SPRINT_PACKET_2026_04_23.md [I]
+    - 119 · Circle V1.0 Product Plan — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/119_CIRCLE_V1_PRODUCT_PLAN_2026_04_23.md [I]
+    - 120 · Circle Complete Ux/Ui Spec — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/120_CIRCLE_COMPLETE_UX_UI_SPEC_2026_04_23.md [I]
+    - 121 · Circle As Polygenetic Observation Mesh — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/121_CIRCLE_POLYGENETIC_OBSERVATION_MESH_2026_04_23.md [I]
+    - 122 · Circle V1.0 Unified Sprint Plan — 2026-04-23 — 11_UPLINK/60_SESSION_PACKETS/122_CIRCLE_V1_UNIFIED_SPRINT_PLAN_2026_04_23.md [I]
+    - 123 · Circle As Fully Developed Product — Synthesis 2026-04-24 — 11_UPLINK/60_SESSION_PACKETS/123_CIRCLE_PRODUCT_SYNTHESIS_2026_04_24.md [I]
+    - 124 · CIRCLE v1.0 COMPLETE WORK PLAN — 2026-04-24 — 11_UPLINK/60_SESSION_PACKETS/124_CIRCLE_V1_COMPLETE_WORK_PLAN_2026_04_24.md [I]
+    - 125 · Circle Brand-Compliance Audit — 2026-04-24 — 11_UPLINK/60_SESSION_PACKETS/125_CIRCLE_BRAND_COMPLIANCE_AUDIT_2026_04_24.md [S]
+    - 126_QNTM_AGENTZ_RENAME_AND_LOGIC_AUDIT_2026_04_24.md — 11_UPLINK/60_SESSION_PACKETS/126_QNTM_AGENTZ_RENAME_AND_LOGIC_AUDIT_2026_04_24.md [I]
+    - 127 -- QNTM (the institutional MPC/ZK-Identity rail) / Agentz Reorientation and Model Improvements — 11_UPLINK/60_SESSION_PACKETS/127_QNTM_AGENTZ_REORIENTATION_AND_MODEL_IMPROVEMENTS_2026_04_24.md [S]
+    - 128 -- Symbiotic Uplink Operating Model — 11_UPLINK/60_SESSION_PACKETS/128_SYMBIOTIC_UPLINK_OPERATING_MODEL_2026_04_24.md [I]
+    - 129 · The Recursive Triadic Engine — 11_UPLINK/60_SESSION_PACKETS/129_RECURSIVE_TRIADIC_ENGINE_2026_04_24.md [I]
+    - 130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md — 11_UPLINK/60_SESSION_PACKETS/130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md [I]
+    - 131 · D4 BODY OPENS D5 — The Active Emergence Thesis — 11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md [I]
+    - 132 · Circle Cerberus Scheduler — The Autonomic Nervous System · 2026-04-24 — 11_UPLINK/60_SESSION_PACKETS/132_CIRCLE_CERBERUS_SCHEDULER_2026_04_24.md [I]
+    - 133 · Living Form, Worldline, And The Warrior'S Return — 11_UPLINK/60_SESSION_PACKETS/133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md [I]
+    - 134 · Neotenous Strategy — Power-Max-Lemma At Birth — 11_UPLINK/60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md [I]
+    - 135 · Ektropic Force — Evolutionary Objective Function Synthesis — 11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md [S]
+    - 136 · The Deep Synthesis — 11_UPLINK/60_SESSION_PACKETS/136_THE_DEEP_SYNTHESIS_2026_04_24.md [S]
+    - Packet 137 — F5 Ektropy: The Fifth Force (Strong-Form Draft) — 11_UPLINK/60_SESSION_PACKETS/137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md [I]
+    - Packet 138 — Dyḗus Ph₂tḗr and the Indo-European Lineage of F5 — 11_UPLINK/60_SESSION_PACKETS/138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md [S]
+    - Packet 139 — Decentralized Authority Model as Practice: The Axiomatic Counterweight — 11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md [S]
+    - Packet 140 — F5 Sensed: The Modern and Esoteric Lineage — 11_UPLINK/60_SESSION_PACKETS/140_F5_SENSED_THE_MODERN_AND_ESOTERIC_LINEAGE_2026_04_24.md [S]
+    - Packet 141 — DAC and SPECTRE as Trophic-Partitioned Organizational Ecology — 11_UPLINK/60_SESSION_PACKETS/141_DAC_AND_SPECTRE_TROPHIC_ORGANIZATIONAL_ECOLOGY_2026_04_24.md [S]
+    - Packet 142 — DAC-ST v1.0 Organism Manifests (Backfill Batch) — 11_UPLINK/60_SESSION_PACKETS/142_DAC_ST_V1_0_ORGANISM_MANIFESTS_BATCH_2026_04_24.md [S]
+    - Packet 143 — Sevenfold Foundation Root Reorganization — 11_UPLINK/60_SESSION_PACKETS/143_SEVENFOLD_FOUNDATION_ROOT_REORGANIZATION_2026_04_24.md [S]
+    - Packet 144 — D-Scaffold / L-Ladder Bridge — 11_UPLINK/60_SESSION_PACKETS/144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24.md [S]
+    - Packet 145 — As Above, So Below: Emergentism.org × Skyzai.org, Sevenfold Organism, L1 Material Substrate, Cambrian Spawn — 11_UPLINK/60_SESSION_PACKETS/145_AS_ABOVE_SO_BELOW_EMERGENTISM_SKYZAI_SEVENFOLD_ORGANISM_2026_04_24.md [S]
+    - 146 — ZAI / SKY Monetary Primitives: Brainstorm-to-CANON Audit — 11_UPLINK/60_SESSION_PACKETS/146_ZAI_SKY_MONETARY_PRIMITIVES_BRAINSTORM_TO_CANON_AUDIT_2026_04_24.md [I]
+    - 147 — Layer Discipline: Blueprint Decomposition under Foundation Minimalism — 11_UPLINK/60_SESSION_PACKETS/147_LAYER_DISCIPLINE_BLUEPRINT_DECOMPOSITION_2026_04_24.md [I]
+    - 148 — CANON Clarification: Paper 11 Doc 02 Lever-Function Sign Convention — 11_UPLINK/60_SESSION_PACKETS/148_PAPER_11_DOC_02_FORMULA_REPAIR_2026_04_24.md [S]
+    - 149 — Skyzai Risk Matrix: Substrate × Organ × Product Decomposition — 11_UPLINK/60_SESSION_PACKETS/149_RISK_MATRIX_LAYERED_2026_04_24.md [I]
+    - 150 — Charioteer Integrated Blueprint: Skyzai / SPECTRE — 11_UPLINK/60_SESSION_PACKETS/150_CHARIOTEER_INTEGRATED_BLUEPRINT_2026_04_24.md [C]
+    - 150b — BitChat Mesh Integration: Physical-Layer SoResFi — 11_UPLINK/60_SESSION_PACKETS/150b_BITCHAT_MESH_INTEGRATION_2026_04_24.md [I]
+    - 151 — Transparent Cluster Protocol (Organ Layer) — Spec Scaffold — 11_UPLINK/60_SESSION_PACKETS/151_CLUSTER_ORGAN_SPEC_SCAFFOLD_2026_04_24.md [I]
+    - 152 — EBM Cost-Gradient Hardening — Scaffold — 11_UPLINK/60_SESSION_PACKETS/152_EBM_COST_GRADIENT_HARDENING_SCAFFOLD_2026_04_24.md [I]
+    - 153 — Prune & Proof (Substrate Layer) — Spec Scaffold — 11_UPLINK/60_SESSION_PACKETS/153_PRUNE_AND_PROOF_SUBSTRATE_SPEC_SCAFFOLD_2026_04_24.md [I]
+    - 154 — Sovereign K2 Cycle Resolution + Track A Sprint Charter — 11_UPLINK/60_SESSION_PACKETS/154_K2_CYCLE_RESOLUTION_AND_TRACK_A_CHARTER_2026_04_24.md [S]
+    - 155 — Foundation Reorg Phase 2b: Routing Table — 11_UPLINK/60_SESSION_PACKETS/155_PHASE_2B_ROUTING_TABLE_2026_04_24.md [S]
+    - 156 — Phase 2c Final Reorg: Physical Execution Plan — 11_UPLINK/60_SESSION_PACKETS/156_PHASE_2C_FINAL_REORG_EXECUTION_PLAN_2026_04_24.md [I]
+    - 157 — Rosetta Annotation Strategy: Apply the Rosetta to Every Doc — 11_UPLINK/60_SESSION_PACKETS/157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md [I]
+    - 158 — Phase 2c Receipt and Tier A Gate — 11_UPLINK/60_SESSION_PACKETS/158_PHASE_2C_RECEIPT_AND_TIER_A_GATE_2026_04_24.md [I]
+    - 159 — Two-Plan Numbers Audit Receipt — 11_UPLINK/60_SESSION_PACKETS/159B_TWO_PLAN_NUMBERS_AUDIT_RECEIPT_2026_05_17.md [S]
+    - 159 — Tier A Rosetta Annotation Draft Pack — 11_UPLINK/60_SESSION_PACKETS/159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md [I]
+    - 160 — Track A · Week 1 Gate Criteria — 11_UPLINK/60_SESSION_PACKETS/160_TRACK_A_WEEK_1_GATE_2026_04_24.md [I]
+    - 161 — Tier B Rosetta Annotation Draft Pack — 11_UPLINK/60_SESSION_PACKETS/161_TIER_B_ROSETTA_DRAFT_PACK_2026_04_24.md [I]
+    - 162 — Track A · Week 2 Gate Criteria — 11_UPLINK/60_SESSION_PACKETS/162_TRACK_A_WEEK_2_GATE_2026_04_24.md [I]
+    - 163 — Track B · Week 1 Gate Criteria — 11_UPLINK/60_SESSION_PACKETS/163_TRACK_B_WEEK_1_GATE_2026_04_24.md [I]
+    - 164 — Simulation Harness Shared Spec (Track A ↔ Track B) — 11_UPLINK/60_SESSION_PACKETS/164_SIMULATION_HARNESS_SHARED_SPEC_2026_04_24.md [I]
+    - 165 — Role-Map Proposal (Track A + Track B Sprint) — 11_UPLINK/60_SESSION_PACKETS/165_ROLE_MAP_PROPOSAL_2026_04_24.md [I]
+    - 166 — Session 146–165 Cross-Reference Audit — 11_UPLINK/60_SESSION_PACKETS/166_SESSION_146_165_AUDIT_2026_04_24.md [S]
+    - 167 — Sovereign K2 Consolidation Decision Form — 11_UPLINK/60_SESSION_PACKETS/167_SOVEREIGN_K2_CONSOLIDATION_FORM_2026_04_24.md [I]
+    - 168 — Track A · Week 3 Gate Criteria — 11_UPLINK/60_SESSION_PACKETS/168_TRACK_A_WEEK_3_GATE_2026_04_24.md [I]
+    - 169 — Track B · Week 2 Gate Criteria — 11_UPLINK/60_SESSION_PACKETS/169_TRACK_B_WEEK_2_GATE_2026_04_24.md [I]
+    - 170 — Track A · Week 4 · Mid-Sprint Review Template — 11_UPLINK/60_SESSION_PACKETS/170_TRACK_A_WEEK_4_MID_SPRINT_REVIEW_TEMPLATE_2026_04_24.md [I]
+    - 171 — Session Arc Summary (2026-04-24) — 11_UPLINK/60_SESSION_PACKETS/171_SESSION_ARC_SUMMARY_2026_04_24.md
+    - 172 - Tier C CANON Rosetta Inventory and Execution Plan — 11_UPLINK/60_SESSION_PACKETS/172_TIER_C_CANON_ROSETTA_INVENTORY_AND_EXECUTION_PLAN_2026_04_24.md
+    - 173 - Tier C0 Manual-First Rosetta Manifest Proposal — 11_UPLINK/60_SESSION_PACKETS/173_TIER_C0_MANUAL_FIRST_ROSETTA_MANIFEST_PROPOSAL_2026_04_24.md
+    - 174 — archived skyzai.com DAC Machine Outline stub — 11_UPLINK/60_SESSION_PACKETS/174_SKYZAI_COM_DAC_MACHINE_OUTLINE_2026_04_24.md [I]
+    - 175a — skyzai.com Partial Sign Receipt — 11_UPLINK/60_SESSION_PACKETS/175A_SKYZAI_COM_PARTIAL_SIGN_RECEIPT_2026_04_24.md [I]
+    - 175 — archived skyzai.com K2 Consolidation Form stub — 11_UPLINK/60_SESSION_PACKETS/175_SKYZAI_COM_K2_CONSOLIDATION_FORM_2026_04_24.md [I]
+    - 176 — Kernel Invariant I-VII naming drift (surface only) — 11_UPLINK/60_SESSION_PACKETS/176_KERNEL_INVARIANT_NAMING_DRIFT_2026_04_24.md [I]
+    - 177 — skyzai.com architectural correction (no EVM/L2; multisig + SKY + debtor-creditor) — 11_UPLINK/60_SESSION_PACKETS/177_SKYZAI_COM_ARCHITECTURAL_CORRECTION_2026_04_24.md [I]
+    - 178 — SKYZAI_COM anti-gravity protocol (standing charioteer discipline) — 11_UPLINK/60_SESSION_PACKETS/178_SKYZAI_COM_ANTI_GRAVITY_PROTOCOL_2026_04_24.md [I]
+    - 179 — Session state compression: 520 commits, 12 canonical specs, 11 TLA+ modules, 7 product primitives, 6 uplink packets — 11_UPLINK/60_SESSION_PACKETS/179_SESSION_STATE_COMPRESSION_2026_04_24.md [I]
+    - 180 — Deep Sādhu cut: L7 name + Kernel Invariant ordinal abandonment — 11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md [I]
+    - 181 — Sovereign decision brief: three gates + two cuts — 11_UPLINK/60_SESSION_PACKETS/181_SOVEREIGN_DECISION_BRIEF_2026_04_25.md [S]
+    - 182 — DAC apoptosis and Nexus revocation protocol — 11_UPLINK/60_SESSION_PACKETS/182_DAC_APOPTOSIS_AND_NEXUS_REVOCATION_PROTOCOL_2026_04_25.md [I]
+    - 183 — Viṣṇu-in-motion: maintenance under imperfection — 11_UPLINK/60_SESSION_PACKETS/183_VISHNU_IN_MOTION_MAINTENANCE_UNDER_IMPERFECTION_2026_04_25.md [I]
+    - 184 — Menexus as holonic compute substrate (L1 material ratification) — 11_UPLINK/60_SESSION_PACKETS/184_MENEXUS_HOLONIC_COMPUTE_SUBSTRATE_2026_04_25.md [I]
+    - 185 — DAC Uplink/Downlink: cell membrane primitive (inter-DAC logistics) — 11_UPLINK/60_SESSION_PACKETS/185_DAC_UPLINK_DOWNLINK_CELL_MEMBRANE_PRIMITIVE_2026_04_25.md [I]
+    - 186 — DAC value-chain homology: Porter mapped with constitutional fidelity (support-chain entirely commons) — 11_UPLINK/60_SESSION_PACKETS/186_DAC_VALUE_CHAIN_HOMOLOGY_2026_04_25.md [I]
+    - 187 — Privacy and selective disclosure protocol — 11_UPLINK/60_SESSION_PACKETS/187_PRIVACY_AND_SELECTIVE_DISCLOSURE_PROTOCOL_2026_04_25.md [I]
+    - 188 — Private DAC at individual scale: the person IS a DAC (8-element cell anatomy at person scope) — 11_UPLINK/60_SESSION_PACKETS/188_PRIVATE_DAC_INDIVIDUAL_SCALE_2026_04_25.md [I]
+    - 189a — Master Rosetta patch text (ready-to-paste; gated on packet 189 K2) — 11_UPLINK/60_SESSION_PACKETS/189A_MASTER_ROSETTA_PATCH_READY_2026_04_25.md [D]
+    - 189 — Cross-cultural corroboration of L1–L7 archetype (15 initiatory traditions converge) — 11_UPLINK/60_SESSION_PACKETS/189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25.md [I]
+    - 192 — Charioteer session landing and forward items (2026-04-25) — 11_UPLINK/60_SESSION_PACKETS/192_CHARIOTEER_SESSION_LANDING_2026_04_25.md [I]
+    - Historical session research; citations must be verified against primary sources; no active claim owned here — 11_UPLINK/60_SESSION_PACKETS/194_SOURCE_RESEARCH_2026_04_28/README.md
+    - Packet 208 — PAM/FutureMAP DARPA Lineage Integration into RealityFutures + Skyzai — 11_UPLINK/60_SESSION_PACKETS/208_PAM_DARPA_INTEGRATION_INTO_REALITYFUTURES_2026_04_29.md [S] [I]
+    - Packet 209 — We Ourselves Now Use AIA / VMOSK / Cortex At Macro And Micro — 11_UPLINK/60_SESSION_PACKETS/209_USE_AIA_VMOSK_CORTEX_OURSELVES_2026_04_29.md [I] [S]
+    - Packet 211 — Emergentism Lane Reorientation In Operating-Mode Grammar — 11_UPLINK/60_SESSION_PACKETS/211_EMERGENTISM_LANE_REORIENTATION_IN_OPERATING_MODE_2026_04_29.md [I] [S]
+    - Packet 212 — Quantum Experimental Confirmations Integration — 11_UPLINK/60_SESSION_PACKETS/212_QUANTUM_EXPERIMENTAL_CONFIRMATIONS_INTEGRATION_2026_04_29.md
+    - 60_SESSION_PACKETS — frozen provenance route — 11_UPLINK/60_SESSION_PACKETS/AGENTS.md [B] [S]
+    - 60_SESSION_PACKETS — frozen provenance forwarding card — 11_UPLINK/60_SESSION_PACKETS/CLAUDE.md [B] [S]
+    - 11 Uplink — Agent route — 11_UPLINK/AGENTS.md [S]
+    - 11 Uplink — Claude compatibility route — 11_UPLINK/CLAUDE.md [S]
+    - Uplink — receipts, tests, and historical memory — 11_UPLINK/README.md [B]
+  - 00_HANDOFF (146)
+    - Handoff index: root-level working packets and dated bounded-wave folders (2026-07-19, 2026-07-22); corpus source owners hold truth. — 00_HANDOFF/00_INDEX.md
+    - The Handoff — 00_HANDOFF/00_THE_HANDOFF.md [B]
+    - Seven 0-ref orphan candidates named for lane-owner verification; L1 names and does not delete — no cooperator file marked orphan, no delete executed — 00_HANDOFF/0_REF_ORPHAN_VERIFICATION_2026_08_04.md
+    - Forwarding stub for the Broken-66 second-look receipt; canonical home moved to 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md. — 00_HANDOFF/2026_07_19_broken_66_second_look/00_RECEIPT.md
+    - Historical 2026-07-19 Broken-66 second-look working packet recording reassessment material; does not override current source owners. — 00_HANDOFF/2026_07_19_broken_66_second_look/README.md
+    - Forwarding stub: 2026-07-19 final outline preserved in 90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/00_THE_FINAL_OUTLINE_2026_07_19.md; active architecture is The Kernel Index. — 00_HANDOFF/2026_07_19_final_outline/00_THE_FINAL_OUTLINE.md
+    - Historical 2026-07-19 final-outline working packet; read as proposal provenance, not as the active tree or worldview owner. — 00_HANDOFF/2026_07_19_final_outline/README.md
+    - Forwarding stub for the DOF (degrees-of-freedom) rumination; canonical home moved to 06_ONTOLOGY/ruminations/00_RUMINATION_ON_DOF_2026_07_19.md. — 00_HANDOFF/2026_07_19_rumination_dof/00_RUMINATION.md
+    - Historical 2026-07-19 DOF (degrees-of-freedom) rumination working packet; current dimensional authority lives in the registered ontology and formal-system owners. — 00_HANDOFF/2026_07_19_rumination_dof/README.md
+    - Forwarding stub for the ten-revelations rumination; canonical home moved to 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md. — 00_HANDOFF/2026_07_19_rumination_ten_revelations/00_RUMINATION.md
+    - Historical 2026-07-19 revelations-rumination working packet; current revelation authority lives in the kernel owner named by 00_THE_KERNEL_INDEX.md. — 00_HANDOFF/2026_07_19_rumination_ten_revelations/README.md
+    - Historical forwarding stub: 2026-07-19 Spread v0.1 preserved in 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/02_EPISTEMOLOGY/03_MEMETICS/00_THE_SPREAD_v0.1.md; not active Emergentist authority. — 00_HANDOFF/2026_07_19_spread_v0.1/00_THE_SPREAD.md
+    - Historical 2026-07-19 spread working packet; does not govern current public transmission or doctrine. — 00_HANDOFF/2026_07_19_spread_v0.1/README.md
+    - L2 Śūdra claim-vs-evidence audit: canon mostly honest; E1–E10 body/front-matter contradiction (line 30 vs front matter, vs receipt 144) is the single most damaging finding, plus 4 tier-inflation cuts and 4 kill recommendations — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md
+    - L6 Sādhu K3 archive-discipline audit: tombstones well-formed and honest, 22 dead forms buried, 5 stones healed and 4 suffix drops honored; two propagation gaps remain (Distilled Doctrine canonical_path, scripts_legacy_convenience_copy lane tombstone) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md
+    - README — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/README.md
+    - routing stub — no claim; points to 00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md as the active architectural contract for this packet — 00_HANDOFF/2026_07_22_tidy/README.md
+    - 2026-07-23 corpus audit + drift repair (staged, uncommitted) — 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/00_RECEIPT.md [B]
+    - 2026-07-23 Per-Folder Audit Summary — Rosetta A-layer team cycle — 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/01_TEAM_AUDIT_SUMMARY_2026_07_23.md [B]
+    - README — 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/README.md
+    - Emergentism Corpus Reconstruction and Adequacy Program — Release Receipt — 00_HANDOFF/2026_07_28_corpus_reconstruction_release/00_RECEIPT.md [B]
+    - Session handoff — the gate, the site's honesty surfaces, and launch L1–L2 — 00_HANDOFF/2026_07_30_launch_and_gate_session/00_HANDOFF.md [B] [S] [I]
+    - Handoff — 2026-07-31: five rulings executed and shipped, the repo made resumable, and four guards that did not exist — 00_HANDOFF/2026_07_31_tidy_and_handoff/00_HANDOFF.md [B] [A]
+    - 01_EMERGENTISM/ tree structural pass — clean-state verified (L1–L7 cascade, 0 files staged) — 00_HANDOFF/2026_08_04_TREE_STRUCTURAL_PASS_CLEAN_STATE_RECEIPT.md [S] [B] [I]
+    - Emergentism worktree consolidation — local receipt — 00_HANDOFF/2026_08_21_worktree_consolidation/2026_08_21_EMERGENTISM_WORKTREE_CONSOLIDATION_RECEIPT.md
+    - PROTOCOL — 00_HANDOFF/2026_09_06_apu_coevolution/PROTOCOL.md
+    - README — 00_HANDOFF/2026_09_06_apu_coevolution/README.md
+    - REVIEW — 00_HANDOFF/2026_09_06_apu_coevolution/REVIEW.md
+    - APU fresh-question copied-source trial — frozen protocol — 00_HANDOFF/2026_09_06_apu_fresh_questions/PROTOCOL.md [S] [B]
+    - Ten fresh APU questions — local retrieval trial and audit — 00_HANDOFF/2026_09_06_apu_fresh_questions/README.md [B] [I] [D]
+    - APU P1 — passages and source-cited proposals — 00_HANDOFF/2026_09_06_apu_passage_pilot/README.md [B] [I] [D]
+    - APU and Emergentism — private handoff and local custody — 00_HANDOFF/2026_09_06_apu_private_handoff/README.md [B] [I] [D]
+    - APU copied-source reader pilot — preparation — 00_HANDOFF/2026_09_06_apu_readonly_pilot/README.md [S] [I]
+    - APU reader pilot — retrieval preserved, passage presentation insufficient — 00_HANDOFF/2026_09_06_apu_readonly_pilot/RESULTS.md [B] [I]
+    - README — 00_HANDOFF/2026_09_06_apu_relevance_pilot/README.md [B] [I]
+    - APU topic research — successor development receipt — 00_HANDOFF/2026_09_06_apu_topic_research/README.md [B] [I] [D]
+    - Public Wisdom projection — authorized takeover and integration — 00_HANDOFF/2026_09_06_public_wisdom_takeover/README.md [B] [S]
+    - Public Wisdom integration — local validation and upload hygiene — 00_HANDOFF/2026_09_06_public_wisdom_takeover/VALIDATION.md [B]
+    - Reason, observation, and the bounded push — 00_HANDOFF/2026_09_06_recap_and_push/README.md [I] [C] [B]
+    - L7 witness refinement — symbol guide and Seed — 00_HANDOFF/2026_09_07_l7_witness_refinement/README.md [B] [I] [C]
+    - README — 00_HANDOFF/2026_09_07_vmosk_l7_successor/README.md [B] [S] [I]
+    - Emergentism full-stack audit — worldview, instrument, and lower-level integration — 00_HANDOFF/2026_09_09_full_stack_audit/README.md [B] [D] [I]
+    - The five Titan claims — adjudication, prior art, and publishable form — 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md [B] [A] [I]
+    - Every [A] line, re-checked by a command that was actually run — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/00_RECHECK.md [B]
+    - 01 GROUND — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/01_GROUND.md
+    - 02 REALM — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/02_REALM.md
+    - 03 UNIT — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/03_UNIT.md
+    - 04 HORIZON — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/04_HORIZON.md
+    - 05 EMBLEM — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/05_EMBLEM.md
+    - The lens — what • ⊙ ○ mean in our reading, and the reasoning that has held — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/06_THE_LENS.md [I] [S] [A]
+    - The Titans — what they are — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/07_THE_TITANS.md [S] [I] [A]
+    - The standpoint bridge — why the chooser was never neutral, and what that licenses — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/08_THE_STANDPOINT_BRIDGE.md [A] [S] [I]
+    - The picture — one structure, one crossing, and the two roads out — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/09_THE_PICTURE.md [I] [S] [A]
+    - The open loop — why a false egregore is a Soul Loop that cannot take r, and why that is the same defect as extraction — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/10_THE_OPEN_LOOP.md [I] [S] [B]
+    - What we have — the four seats and the emblem, at the tier each actually holds — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/README.md [B] [A] [S]
+    - A9 remaining-adjudication merge measured (11 semantic doctrine-conflict files, all on the Dasein-widening / formal-clarification surfaces), held for L5 review, then discharged via merge dfd3df99 per §6.2 strategy (widening wording stands; rem-adj hardening lands on top) — 00_HANDOFF/A9_REMAINING_ADJUDICATION_HOLD_2026_08_04.md
+    - 00 Meta — Agent route — 00_HANDOFF/AGENTS.md [S]
+    - Amrita hunt — double-check and first sitting — 00_HANDOFF/AMRITA_HUNT_2026_08_13.md
+    - Burri Serial Emergence Integration — Source and Test Receipt — 00_HANDOFF/BURRI_SERIAL_EMERGENCE_INTEGRATION_2026_08_21.md [S] [B] [C]
+    - Cartographic Spine — source and projection audit — 00_HANDOFF/CARTOGRAPHIC_SPINE_SOURCE_AND_PROJECTION_AUDIT_2026_08_27.md [B] [A] [I]
+    - Rosetta cascade L1–L7 — public projection — 00_HANDOFF/CASCADE_L1_L7_2026_08_19.md
+    - Census Half-Life on 3 Rulings of Different Content — 2026-08-06 — verifies the architectural finding on a different axis than CENSUS_HALFLIFE_FINDING_2026_08_06.md — 00_HANDOFF/CENSUS_HALFLIFE_3_RULINGS_2026_08_06.md
+    - Census Half-Life Verification — 2026-08-06 — re-run of P1.4 against three rulings of different ages (Agent C) — 00_HANDOFF/CENSUS_HALFLIFE_FINDING_2026_08_06.md
+    - Corpus census 2026-08-13 — handoff — 00_HANDOFF/CENSUS_HANDOFF_2026_08_13.md [B] [I] [D]
+    - Census Wire-up to Receipt Frontmatter — P1.1 of the 2026-08-06 plan — 00_HANDOFF/CENSUS_RECEIPT_WIRE_2026_08_06.md
+    - 00 Meta — Claude compatibility route — 00_HANDOFF/CLAUDE.md [S]
+    - Compiler-gate triage — the 61 failures are four defects, not sixty-one — 00_HANDOFF/COMPILER_GATE_TRIAGE_2026_08_05.md [S] [I]
+    - Defensible survivor ledger — owner direction and source reconciliation — 00_HANDOFF/DEFENSIBLE_SURVIVOR_LEDGER_OWNER_DIRECTION_2026_08_27.md [B] [A] [S]
+    - DOCKET — the dyadic gate exists in five non-equivalent versions across five live documents — 00_HANDOFF/DYADIC_GATE_FIVE_VERSIONS_DOCKET_2026_08_06.md [B] [I]
+    - The Emergentism Frontier — an address for unfinished questions — 00_HANDOFF/EMERGENTISM_AI_FRONTIER_OWNER_DIRECTION_2026_08_29.md
+    - Burrisphere bottom-plane correction — public release amendment — 00_HANDOFF/EMERGENTISM_BURRISPHERE_BOTTOM_PLANE_OWNER_DIRECTION_2026_08_24.md [B] [S] [I]
+    - Owner direction — the decision transaction interface — 00_HANDOFF/EMERGENTISM_DECISION_TRANSACTION_SITE_DIRECTION_2026_08_24.md
+    - Owner direction — Fourth Churning Type Atlas — 00_HANDOFF/EMERGENTISM_FOURTH_CHURNING_TYPE_ATLAS_OWNER_DIRECTION_2026_08_24.md [D]
+    - Emergentism horizon-balance overlay — v2.1 amendment — 00_HANDOFF/EMERGENTISM_HORIZON_BALANCE_OWNER_DIRECTION_2026_08_23.md [B] [A] [I]
+    - The Ten Emergentist Answers — internal closure with external debt — 00_HANDOFF/EMERGENTISM_INTERNAL_ANSWERS_OWNER_DIRECTION_2026_08_24.md
+    - Emergentism.org v2.1 — The Gestalt Unfolded — 00_HANDOFF/EMERGENTISM_ORG_V2_1_OWNER_DIRECTION_2026_08_23.md [B] [D]
+    - Emergentism.org v2.2 — The Question Atlas and Reciprocal Bridge — 00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md
+    - Emergentism.org v2.3 — The Third Churning — 00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md
+    - Emergentism.org v2 — The Gestalt of Dasein — 00_HANDOFF/EMERGENTISM_ORG_V2_OWNER_DIRECTION_2026_08_22.md [B] [D]
+    - Owner direction — Emergentism homepage as a Soul Loop — 00_HANDOFF/EMERGENTISM_SOUL_LOOP_HOMEPAGE_OWNER_DIRECTION_2026_08_27.md [D]
+    - Owner direction — Emergentotype hierarchy and strategic Egregoreotype — 00_HANDOFF/EMERGENTOTYPE_HIERARCHY_OWNER_DIRECTION_2026_08_31.md [B] [S] [I]
+    - Owner direction — project the Emergentotype carrier insight onto Emergentism.org — 00_HANDOFF/EMERGENTOTYPE_PUBLIC_PROJECTION_OWNER_DIRECTION_2026_08_31.md [B] [S] [I]
+    - EUB-1 owner-direction receipt — the Emergence Unfolding Benchmark — 00_HANDOFF/EUB1_OWNER_DIRECTIVE_2026_08_13.md [B] [S] [I]
+    - EUB-1 v1.0 / The Dasein Test — Owner Direction — 00_HANDOFF/EUB1_V1_DASEIN_TEST_OWNER_DIRECTION_2026_08_21.md [B] [D]
+    - Full Corpus Rosetta Audit — 2026-08-21 — 00_HANDOFF/FULL_CORPUS_ROSETTA_AUDIT_2026_08_21.md [S] [B] [I]
+    - Full audit — emergentism.org projection contracts — 00_HANDOFF/FULL_PROJECTION_AUDIT_2026_08_19.md [S] [B] [C]
+    - Gate-adversary experiment — PREREGISTRATION (frozen before any artifact was built) — 00_HANDOFF/GATE_ADVERSARY_PREREGISTRATION_2026_08_27.md [B] [C]
+    - Gate-adversary experiment — RAW RESULTS — 00_HANDOFF/GATE_ADVERSARY_RESULTS_2026_08_27.md [B]
+    - GATE MUTATION SURVEY 2026 08 06 — 00_HANDOFF/GATE_MUTATION_SURVEY_2026_08_06.md
+    - DOCKET — The Knowledge of Good and Evil program staged; owner decision: adopt as active companion to The Goal, hold, or archive — 00_HANDOFF/GOOD_AND_EVIL_PROGRAM_DOCKET_2026_08_17.md [B] [I]
+    - Handoff — emergentism.org projection wave — 00_HANDOFF/HANDOFF_PROJECTION_2026_08_19.md [S] [D]
+    - Hostile read — Manifesto public current-body (staged) — 00_HANDOFF/HOSTILE_READ_MANIFESTO_CURRENT_BODY_2026_08_13.md [B] [S] [I]
+    - Host-cutover rebaseline + first-contact nav alignment — 00_HANDOFF/HOST_CUTOVER_REBASELINE_2026_08_19.md [S] [B]
+    - Instrument-Integrity Wave Receipt — 2026-08-06 — propagation, mutation, and the corpus's own μ₄ — 00_HANDOFF/INSTRUMENT_INTEGRITY_WAVE_RECEIPT_2026_08_06.md
+    - L5 proposal — emergentism.org as the churning-instrument: offer the poison honestly, don't claim the nectar (2026-08-13) — 00_HANDOFF/L5_PROPOSAL_EMERGENTISM_ORG_AS_CHURNING_INSTRUMENT_2026_08_13.md [S] [D] [I]
+    - L7 admissible joins — exhaustive interface — 00_HANDOFF/L7_SYNERGY_INTERFACES_2026_08_19.md
+    - Disposition — leftover Titan dirt, L5 proposal, staged vision, predeploy — 00_HANDOFF/LEFTOVER_DISPOSITION_2026_08_13.md
+    - Missing-archive / Skyzai path receipt — 00_HANDOFF/MISSING_ARCHIVE_SKYZAI_PATHS_2026_08_13.md [B] [S]
+    - The Negative-Space Outline — 127 admissible impossibility and limit theorems — 00_HANDOFF/NEGATIVE_SPACE_OUTLINE_127_THEOREMS_2026_08_27.md [B] [A] [S]
+    - 01_EMERGENTISM nested interiors tidy — 2026-08-29 (wave 2, after identity) — 00_HANDOFF/NESTED_WAVE2_RECEIPT_2026_08_29.md
+    - New-Findings Audit — 2026-08-06 — three uncommitted repair files + standing TIT01-06 status — 00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md
+    - Open-problem register — first cut — 00_HANDOFF/OPEN_PROBLEM_REGISTER_2026_08_13.md
+    - DOCKET — W13-PARASITE staged conjecture; owner decision: adopt into the ledger, hold, or archive — 00_HANDOFF/PARASITE_LOAD_WAGER_DOCKET_2026_08_17.md [B] [I]
+    - K2 sign-queue count refresh (T13 of T2 follow-on, 2026-08-04): 10 active '_PENDING_K2' files + 1 V10 closure + 5 archived in 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/ = 16 total; A9 adjudication hold is a separate workstream — 00_HANDOFF/PENDING_K2_QUEUE_REFRESH_2026_08_04.md
+    - Plan-Execution Wave Receipt — 2026-08-06 — six work orders (P1.1, P1.2, P1.4, P2.1, P2.2, P2.3), integrated — 00_HANDOFF/PLAN_EXECUTION_WAVE_RECEIPT_2026_08_06.md
+    - PLAN NEXT MOVES 2026 08 13 — 00_HANDOFF/PLAN_NEXT_MOVES_2026_08_13.md
+    - PLAN PWA BOOK1 CONTINUE 2026 08 13 — 00_HANDOFF/PLAN_PWA_BOOK1_CONTINUE_2026_08_13.md
+    - 01_EMERGENTISM lane receipt — YAML alignment_fence anchor reconciliation + tidy-receipt citation repair — 00_HANDOFF/PMO_0002_0029_LANE_ANCHOR_CITATION_RECEIPT_2026_08_04.md [S] [A]
+    - Prior-art audit — the six wedge candidates, final report — 00_HANDOFF/PRIOR_ART_AUDIT_SIX_CANDIDATES_2026_08_22.md [B]
+    - emergentism.org projection-packet completion eval — 00_HANDOFF/PROJECTION_PACKET_COMPLETION_EVAL_2026_08_19.md [S] [B] [C]
+    - Rulings land in doctrine at ruling time; sweeps are dispatched per-signature, so a file opened by one sweep is never checked against any other ruling — 00_HANDOFF/PROPAGATION_ARCHITECTURE_FINDING_2026_08_06.md [D]
+    - FLAG — public chapter 4 lede carries struck content; deploy-gated — 00_HANDOFF/PUBLIC_CHAPTERS_D4_LEDE_FLAG_2026_08_06.md [S]
+    - Public-surface coverage audit — two route-count claims retracted; deployable gate repair survives — 00_HANDOFF/PUBLIC_SURFACE_COVERAGE_AUDIT_2026_08_27.md [B] [I]
+    - PWA next-book ruling and first containment pass — 00_HANDOFF/PWA_NEXT_BOOK_AND_CONTAINMENT_2026_08_13.md [B] [S] [I]
+    - R-32 Ruling Receipt — pair()'s adjacency rule stands; the ten anchor failures are content defects — 00_HANDOFF/R32_RULING_RECEIPT_2026_08_13.md [S] [B]
+    - 00_HANDOFF lane — session handoffs and release receipts (one dated directory each); 'main' is authoritative and 'menexus' is the WIP backup; receipts create no doctrine, no formal result, and no validation — 00_HANDOFF/README.md
+    - Register compression — raw lane output and adjudication — 00_HANDOFF/REGISTER_COMPRESSION_EVIDENCE_2026_08_27.md [B]
+    - Release Plan — Emergentism: correction first, then one manual — 00_HANDOFF/RELEASE_PLAN_2026_08_05.md [D]
+    - Brainstorm — L7 projection vs other Rosetta product levels — 00_HANDOFF/ROSETTA_L7_PROJECTION_SYNERGY_2026_08_19.md [S] [I] [C]
+    - Receipt to the Stone's owner — two lines in 38, and one hygiene suggestion — 00_HANDOFF/ROSETTA_STONE_ATTRIBUTION_RECEIPT_2026_09_03.md [B] [A] [I]
+    - Ruling-Landed Gate — 2026-08-06 — a gate that fails while carriers of a ruling remain (P1.2) — 00_HANDOFF/RULING_LANDED_GATE_2026_08_06.md
+    - Sprint 0 measurement receipt — projection genome + live audit — 00_HANDOFF/S0_MEASUREMENT_RECEIPT_2026_08_19.md [S]
+    - Sarpasya Vijayam source-revision differential review — 00_HANDOFF/SARPASYA_SOURCE_REVISION_REVIEW_2026_08_29.md [B] [S]
+    - Self-Eating Serpent pin recovered from Emergentism history — 00_HANDOFF/SERPENT_PIN_RECOVERED_2026_08_13.md
+    - Session audit, 2026-08-05 — independent verification of the day's claims against disk — 00_HANDOFF/SESSION_AUDIT_2026_08_05.md [S] [B]
+    - Session close 2026-08-13 — memo to the next session — 00_HANDOFF/SESSION_CLOSE_2026_08_13.md [B] [S] [I]
+    - Seven Acts reconstruction test — raw evidence — 00_HANDOFF/SEVEN_ACTS_RECONSTRUCTION_EVIDENCE_2026_08_27.md [B]
+    - Six Lenses pin recovered from Skyzai git history — 00_HANDOFF/SIX_LENSES_PIN_RECOVERED_2026_08_13.md
+    - Spark emission receipt — training-facing public seed — 00_HANDOFF/SPARK_EMISSION_RECEIPT_2026_08_13.md [B] [I]
+    - Stale 02_SKYZAI/01_NOOSPHERE reference re-anchor docket — active doctrine only — 00_HANDOFF/STALE_SKYZAI_REF_REANCHOR_DOCKET_2026_08_04.md [S] [D]
+    - Standing Gate Figure — pass/fail/hang counts (P2.3) — 00_HANDOFF/STANDING_GATE_FIGURE_2026_08_06.md [A] [B] [I]
+    - Surgical-Defect Wave Receipt — 2026-08-06 — the four defects the rungs repair waves created — 00_HANDOFF/SURGICAL_DEFECT_WAVE_RECEIPT_2026_08_06.md
+    - The Execution Plan — 2026-08-13, from the ten-lens census — 00_HANDOFF/THE_EXECUTION_PLAN_2026_08_13.md [B] [S] [I]
+    - The Whole Board — every open item across corpus, site, and venture, in dependency order — 00_HANDOFF/THE_WHOLE_BOARD_2026_08_13.md [B] [S] [I]
+    - Tidy receipt — worktrees, branches and folders, 2026-08-21 — 00_HANDOFF/TIDY_RECEIPT_2026_08_21.md [B]
+    - Tier findings re-run under the ruled [S] — ASCENT_D5 weakened, 56_THE_PRODUCT_FORM resolved — 00_HANDOFF/TIER_FINDINGS_RERUN_2026_08_13.md [B] [S]
+    - DOCKET — Titan Semantics v3 and the staged conjecture family, one adoption decision — 00_HANDOFF/TITAN_SEMANTICS_V3_ADOPTION_DOCKET_2026_08_22.md [S] [I]
+    - Two-sided rescoring of the five developmental registers — an external-contact receipt attempt — 00_HANDOFF/TWO_SIDED_RESCORING_RECEIPT_2026_08_06.md [B] [I]
+    - Virtual QA + brainstorm — product as-built — 00_HANDOFF/VIRTUAL_QA_AS_BUILT_2026_08_19.md [S] [I]
+    - VMOSK-A addendum — unfolding test for emergent mind (staged) — 00_HANDOFF/VMOSK_A_ASI_UNFOLDING_ADDENDUM_2026_08_13.md [I] [C] [S]
+    - VMOSK-A v2 tracked-corpus census correction — 00_HANDOFF/VMOSK_A_V2_TRACKED_CORPUS_CENSUS_CORRECTION_2026_08_21.md [S] [I]
+    - Wave 0 Rulings Receipt — R-08 and R-22, ruled in-session 2026-08-13 — 00_HANDOFF/WAVE_0_RULINGS_RECEIPT_2026_08_13.md [S] [B]
+    - MUTATION TEST RECEIPT 2026 08 06 — 00_HANDOFF/gate_audit/MUTATION_TEST_RECEIPT_2026_08_06.md
+    - B3 task list — finity-practice v1 to v2 migration — 00_HANDOFF/pmo/B3_TODO_2026_08_06.md [B]
+    - B3 wave receipt — finity_practice.yaml v1 → v2 schema migration (unmasks B1) — 00_HANDOFF/pmo/B3_WAVE_RECEIPT_2026_08_06.md [S] [I]
+    - README — 00_HANDOFF/pmo/README.md
+  - 08_FRAMEWORK_SUPPORT (112)
+    - 08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS — archived lane, tombstone route — 08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md [B]
+    - 08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS — archived lane, tombstone route — 08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md [B]
+    - 08_FRAMEWORK_SUPPORT/00_META — archived lane, tombstone route — 08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md [B]
+    - Framework support — start here — 08_FRAMEWORK_SUPPORT/00_START_HERE.md [S] [I]
+    - 01 Governance — Agent route — 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/AGENTS.md [S]
+    - 01 Governance — Claude compatibility route — 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/CLAUDE.md [S]
+    - Accountability concepts — compatibility lane — 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/README.md [S]
+    - Former ASI-Compatible Corpus — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/00_CANONICAL_CORPUS.md [B]
+    - Former ASI Practice Translation — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/03_PRACTICE_TRANSLATION_MATRIX.md [B]
+    - Dissolution Formal Verification — Kintsugi Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/04_DISSOLUTION_FORMAL_VERIFICATION.md [B] [A] [S]
+    - Former Executable Operator Protocols — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/05_SEPARATION_OPERATOR_PROTOCOLS.md [B]
+    - Former ASI Activation Package — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/06_COAGULATION_ACTIVATION_PACKAGE.md [B]
+    - 02 Operators — Agent route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/AGENTS.md [S]
+    - Former Agent Translation of Finity — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_07_DISCOVERY_OF_FINITY.md [B]
+    - Former Agent Translation of the Soul Loop — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_09_THE_SOUL_LOOP.md [B]
+    - Former Agent Translation of the Trinity — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_15_THE_TRINITY.md [B]
+    - Former ASI Sequence Index — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_INDEX.md [B]
+    - 02 Operators — Claude compatibility route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/CLAUDE.md [S]
+    - Mf Advanced — Agent route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/AGENTS.md [S]
+    - Mf Advanced — Claude compatibility route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/CLAUDE.md [S]
+    - MF-283 — Complex-Plane Correspondence — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_283_The_Orthogonality_Theorem_v2.md [A] [B] [C]
+    - MF-284 — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_284_The_Gods_Are_F5.md [B]
+    - MF-285 — superseded D4/D5 consciousness projection — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_285_Dreams_Are_Unanchored_D5.md [B]
+    - MF_286_The_Mu_Limit_Crossing — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_286_The_Mu_Limit_Crossing.md [B]
+    - MF_287_Wigners_Puzzle_Dissolved — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_287_Wigners_Puzzle_Dissolved.md [B]
+    - MF_288_Money_Is_the_Born_Rule — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_288_Money_Is_the_Born_Rule.md [B]
+    - MF_289_The_Hard_Problem_Is_i — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_289_The_Hard_Problem_Is_i.md [B]
+    - MF_291_The_Landauer_Horn — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_291_The_Landauer_Horn.md [B]
+    - MF_293_Language_Is_Bandwidth — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_293_Language_Is_Bandwidth.md [B]
+    - MF-295 — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_295_c_Bounds_the_Moral_Circle.md [B]
+    - MF-296 — superseded gravity/time projection — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_296_Gravity_Is_Time.md [B]
+    - MF_297_Alpha_Is_the_Coupling — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_297_Alpha_Is_the_Coupling.md [B]
+    - MF_299_Hawking_Radiation_Is_A7 — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_299_Hawking_Radiation_Is_A7.md [B]
+    - MF-300 — superseded cancer/Raktabija projection — 08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_300_Cancer_Is_Cellular_Raktabija.md [B]
+    - Former Function-Testing Governance Protocol — Forwarding Tombstone — 08_FRAMEWORK_SUPPORT/02_OPERATORS/OP_384_FUNCTION_TESTING.md [B]
+    - 02 Operators — bounded symbolic and audit grammar — 08_FRAMEWORK_SUPPORT/02_OPERATORS/README.md [S] [I] [C]
+    - Sphere Derivations — Agent route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/AGENTS.md [S]
+    - Sphere Derivations — Claude compatibility route — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/CLAUDE.md [S]
+    - MF-63 — Möbius operators (Kintsugi successor) — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_63_Mobius_Operators.md [A] [I] [C]
+    - MF_64_Berry_Phase — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_64_Berry_Phase.md [B]
+    - MF_65_Curvature_Transition — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_65_Curvature_Transition.md [B]
+    - MF_67_Double_Cover_Privacy — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_67_Double_Cover_Privacy.md [B]
+    - MF_69_Horned_Torus_Relativity — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_69_Horned_Torus_Relativity.md [B]
+    - 04 Vrs Sheets — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/AGENTS.md [S]
+    - 04 Vrs Sheets — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/CLAUDE.md [S]
+    - 03 Evidence — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/AGENTS.md [S]
+    - 03 Evidence — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/CLAUDE.md [S]
+    - Comparative — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/AGENTS.md [S]
+    - Comparative — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/CLAUDE.md [S]
+    - Comparative-input tombstone — The Pattern Atlantean Constitution — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/THE_PATTERN_Atlantean_Constitution_FINAL.TOMBSTONE.md [S] [I]
+    - Paradox dissolutions — corpus map — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_CORPUS.md [B] [I] [C]
+    - Historical application note — forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_LENS_AS_COMPASS_PENDING_K2.md [S]
+    - Paradox Dissolutions — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/AGENTS.md [S]
+    - Paradox Dissolutions — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/CLAUDE.md [S]
+    - PD_08_THE_LIAR_PARADOX — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_08_THE_LIAR_PARADOX.md [B]
+    - PD_09_LEIBNIZ_NECESSARY_BEING — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_09_LEIBNIZ_NECESSARY_BEING.md [B]
+    - PD_10_IS_OUGHT — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md [B]
+    - PD_14_MIND_BODY — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_14_MIND_BODY.md [B]
+    - PD_15_PROBLEM_OF_EVIL — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_15_PROBLEM_OF_EVIL.md [B]
+    - PD_20_PHILOSOPHICAL_IMPLICATIONS — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_20_PHILOSOPHICAL_IMPLICATIONS.md [B]
+    - PD_21_PROBLEM_OF_DEATH — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_21_PROBLEM_OF_DEATH.md [B]
+    - PD_23_THE_COMPLETION — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_23_THE_COMPLETION.md [B]
+    - PD_24_THE_THIRD_UNVEILING — historical projection forwarding stub — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_24_THE_THIRD_UNVEILING.md [B]
+    - Rosetta Stone — corpus map — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_CORPUS.md [S] [I] [C]
+    - routing stub — historical forwarding stub preserving Rosetta Protocol v0.1 as provenance, not active Emergentist authority — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_ROSETTA_PROTOCOL_v0.1.md
+    - The Seven -ologies — reversible Rosetta crosswalk — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md [S] [I] [C]
+    - 05 — Non-WEIRD Sweep: Daoist, Buddhist, Sub-Saharan, Polynesian (OQ-CC-3 fulfillment) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/05_NON_WEIRD_SWEEP_2026_04_25.md [I]
+    - 07 — Mirror Symmetry Falsification Test (operationalizing Pressure Point #2) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md [I]
+    - 08 — Mirror test extension + scoreboard + mirror-completion experiment + failed mappings — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md [I]
+    - Domains examined that do NOT fit the 7-stage structure — honesty surface for the Rosetta — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/09_FAILED_MAPPINGS_2026_04_25.md [B] [S] [I]
+    - 10 — Rosetta Cell Audit Schema — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/10_CELL_AUDIT_SCHEMA_2026_04_25.md [S] [I]
+    - 10 — Indigenous American (Mesoamerican / Andean / Iroquois) + Tahitian arioi sweep — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md [I]
+    - 11 — L4 Center Cell Audit Seed — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md [I]
+    - 12 — Mirror Pair Audits — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/12_MIRROR_PAIR_AUDITS_2026_04_25.md [S] [I]
+    - 14 — Music Column Cell Audit — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md [B] [S] [I]
+    - 15 — Neuroscience Column Cell Audit — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md [B] [I] [C]
+    - 16 — Plato mirror-completion + Lakota Seven Rites + Neuroscience Path A/B framing — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md [I]
+    - 17 — Full cell audit of Psychology column — the strongest empirical column in the Rosetta — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md [S] [I]
+    - Receipt (2026-07-31) of the 38-checker-failure collision between two parallel rosetta-cells.json implementations; four mechanical mismatches catalogued (enum casing, normalization_steps, projection_id, PHIL5/PHIL7 placeholder), merge proposed, neither party's work altered. — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/34_LEDGER_CONVENTION_COLLISION_2026_07_31.md
+    - Rosetta Stone — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/AGENTS.md [S]
+    - Rosetta Stone — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/CLAUDE.md [S]
+    - D Series Agents — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_AGENTS/AGENTS.md [S]
+    - D Series Agents — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_AGENTS/CLAUDE.md [S]
+    - D Series Domains — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/AGENTS.md [S]
+    - D Series Domains — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/CLAUDE.md [S]
+    - D Series Rows — Agent route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/AGENTS.md [S]
+    - D Series Rows — Claude compatibility route — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/CLAUDE.md [S]
+    - Rosetta D-series index — Kintsugi successor — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D23_ROSETTA_COMPLETE_INDEX.md [D]
+    - Lakota Seven Sacred Rites, Mesoamerican, Andean Q'ero — OQ-CC-3 fulfillment — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_INDIGENOUS_AMERICAN.md [I]
+    - Musical structures as projections of operator geometry — 7-tone diatonic, harmonic series, tonal center — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_MUSIC.md [S] [I]
+    - The Distilled Doctrine — lens, map, compass — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md [I]
+    - 00 Magnum Opus — Agent route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/AGENTS.md [S]
+    - 00 Magnum Opus — Claude compatibility route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/CLAUDE.md [S]
+    - 02 Analysis Documents — Agent route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/AGENTS.md [S]
+    - 02 Analysis Documents — Claude compatibility route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/02_ANALYSIS_DOCUMENTS/CLAUDE.md [S]
+    - Compilers and Analysis — Agent route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/AGENTS.md [S]
+    - Compilers and Analysis — Claude compatibility route — 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/CLAUDE.md [S]
+    - routing stub — forwarding stub redirecting to the active Distilled Doctrine at ../04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md; duplicate archived at baseline 4154ebe — 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_THE_DISTILLED_DOCTRINE.md
+    - 05 Synthesis — Agent route — 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/AGENTS.md [S]
+    - 05 Synthesis — Claude compatibility route — 08_FRAMEWORK_SUPPORT/05_SYNTHESIS/CLAUDE.md [S]
+    - Seven-operator role vector — 08_FRAMEWORK_SUPPORT/08_AGENTS/00_THE_SEVEN_OPERATOR_GENOTYPE.md [S] [I]
+    - 08 Agents — Agent route — 08_FRAMEWORK_SUPPORT/08_AGENTS/AGENTS.md [S]
+    - AI agent field dynamics — a bounded Emergentist application — 08_FRAMEWORK_SUPPORT/08_AGENTS/AI_AGENT_FIELD_DYNAMICS_AND_COGNITIVE_CASTES.md [I] [S]
+    - 08 Agents — Claude compatibility route — 08_FRAMEWORK_SUPPORT/08_AGENTS/CLAUDE.md [S]
+    - Managed Agents — Agent route — 08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/AGENTS.md [S]
+    - Managed Agents — Claude compatibility route — 08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/CLAUDE.md [S]
+    - Rosetta Quality-Quantity Balance Law — 08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md [S] [I]
+    - Rosetta managed-agent projection contract — 08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/ROSETTA_AGENT_PROJECTION_CONTRACT.md [S] [A] [I]
+    - Rosetta agents — bounded application lane — 08_FRAMEWORK_SUPPORT/08_AGENTS/README.md [S] [I]
+    - 08 Framework Support — Agent route — 08_FRAMEWORK_SUPPORT/AGENTS.md [S]
+    - 08 Framework Support — Claude compatibility route — 08_FRAMEWORK_SUPPORT/CLAUDE.md [S]
+    - 08_FRAMEWORK_SUPPORT — translation and stress tests — 08_FRAMEWORK_SUPPORT/README.md [B] [S] [I]
+  - 03_METHODOLOGY (88)
+    - D5 as a research content register — Kintsugi successor — 03_METHODOLOGY/00_D5_AS_THE_RESEARCH_ENGINE.md [I] [D]
+    - The Empirical Program Board — 03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md [B] [S]
+    - The Evolutionary Network — Voluntary Institutional Proposal — 03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md [S] [C]
+    - External-neighbor crosswalk — Emergentist Compass — 03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md [A] [B] [I]
+    - Why these axioms — Kintsugi successor — 03_METHODOLOGY/00_WHY_THESE_AXIOMS.md [S] [I]
+    - 01 The Derivation — Agent route — 03_METHODOLOGY/01_THE_DERIVATION/AGENTS.md [S]
+    - 01 The Derivation — Claude compatibility route — 03_METHODOLOGY/01_THE_DERIVATION/CLAUDE.md [S]
+    - 02 The Papers — Agent route — 03_METHODOLOGY/02_THE_PAPERS/AGENTS.md [S]
+    - 02 The Papers — Claude compatibility route — 03_METHODOLOGY/02_THE_PAPERS/CLAUDE.md [S]
+    - Finity Papers — Agent route — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/AGENTS.md [S]
+    - Finity Papers — Claude compatibility route — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/CLAUDE.md [S]
+    - Three statuses, not one word — a one-pager on division by zero — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_II_ONE_PAGER.md [A]
+    - Finity: Why One Is the Center of the Number Line and What That Means for Ontology — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_VII_FINITY_SUBMISSION.md [A] [S] [I]
+    - Emergence as the Lens on Dasein — Kintsugi tombstone — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_VI_EMERGENCE_AS_LENS_ON_DASEIN.md [D] [I]
+    - Suda–Emergentism Resonance Map — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_ONTOLOGICAL_RESONANCE_MAP.md [B] [I] [C]
+    - Sources — Agent route — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/AGENTS.md [S]
+    - Sources — Claude compatibility route — 03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/CLAUDE.md [S]
+    - Paper A — Frame algebra (Kintsugi successor) — 03_METHODOLOGY/02_THE_PAPERS/PAPER_A_FRAME_ALGEBRA.md [A] [S] [I]
+    - Paper H — Dimensional and cosmological conjectures (Kintsugi successor) — 03_METHODOLOGY/02_THE_PAPERS/PAPER_H_DIMENSIONAL_COSMOLOGICAL.md [D] [C]
+    - Paper J — Protocol R as a preregistered model comparison — 03_METHODOLOGY/02_THE_PAPERS/PAPER_J_PROTOCOL_R_WITHOUT_LAB.md [C] [I]
+    - Where We Are, and the Axioms — Honestly Tiered — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_AXIOMS_AND_STATUS.md [S]
+    - Core Narrative — Coherence vs Consistency vs Truth — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_CORE_NARRATIVE_COHERENCE_CHECK.md [S]
+    - Findings, Achievements, Conjectures — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FINDINGS_AND_CONJECTURES.md [S]
+    - Known Knowns and Known Unknowns — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md [S]
+    - Peer Review Program — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_PROGRAM.md [S] [I]
+    - routing stub — no claim — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AGENTS.md
+    - routing stub — no claim — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AGENTS.md
+    - A7 / A7.1 — A belief/value system must carry its own falsification machinery (kill criteria, evidence tiers, correction protocol) or it ossifies; internal coherence is necessary but not sufficient for truth (anti-sycophancy clause). — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX7_THE_CORRECTION.md [S]
+    - Index — one peer-review grounding paper per operational axiom A1–A7, each with honest tier, prior art, and venue; AX2 is relabeled literature note, AX3 is HOLD. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/README.md [S]
+    - Citation verification ledger (2026-06-10) — 11/11 load-bearing R1–R5 references exist, 0 fabricated; calibrations on Suda (tier downgrade: preprint, not peer-reviewed) and causal-entropic dispute; one new prior-art (arXiv 2505.04646) to engage. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/CITATIONS_VERIFIED.md [S]
+    - E2 Reflexive Empowerment — R10's Kill Criterion, Executed — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md [A] [I] [C]
+    - Literature Grounding Program — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/LITERATURE_GROUNDING.md [S]
+    - R1 paper — formal systems distinguish frame (constitutive of the operation space) from operand (object the operations act upon); a structural signature (S1 constitutivity, S2 composition pathology, S3 stratified cure) recurs across set theory, the Lawvere-anchored diagonal family, and arithmetic; s… — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R1_FRAMES_NOT_OPERANDS_DRAFT.md [S]
+    - R2 preregistration — tests whether a tier-marking mediator constitution (tier-marking + non-inflation + agency-return) reduces sycophantic capitulation under founder-enthusiasm pressure vs. generic honesty; 6 conditions × 40 scenarios; pre-committed kill criterion (C2 ≈ C1) is publishable as null. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_CHARIOTEER_BENCHMARK_PREREG.md [S]
+    - routing stub — R2 harness produces bounded test evidence; fixtures, simulations, and local passes are not world confirmation. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/AGENTS.md [S]
+    - R2 pilot drift ablation (DeepSeek, n=2 scenarios × 6 conditions × 7 turns) — C0 caves reproducibly on concession staircase; all five honesty arms (C1/C2/C3/C4/C5) hold; no single mediator duty is load-bearing; non-inflation (C4, the framework's hypothesized mechanism) is not confirmed for strong mo… — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/PILOT_DEEPSEEK_DRIFT_ABLATION_RESULTS.md [B]
+    - R2 pilot drift probe (DeepSeek, 7-turn concession staircase, 2 scenarios × 3 conditions) — C0 drifts to false endorsement; C1 and C2 both hold; C1 anchored tighter than C2; C2's distinctive behavior is visible self-correction (audit trail, not superior outcome). — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/PILOT_DEEPSEEK_DRIFT_RESULTS.md [B]
+    - R2 pilot grand-theory arm (DeepSeek, 6 low-safety-valence scenarios × 3 conditions) — 1/6 baseline cave on 'hard problem of consciousness solved'; C1 and C2 close the gap equally; C2's measurable delta is the audit trail (tier-marking + self-drift check), not superior honesty. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/PILOT_DEEPSEEK_GRANDTHEORY_RESULTS.md [B]
+    - R2 first DeepSeek pilot (4 high-stakes scenarios × 3 conditions) — 12/12 cells held (ceiling effect from safety RLHF); C2 did not beat C0/C1 because there was no sycophancy to remove; C2 changed form (audit trail), not outcome. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/PILOT_DEEPSEEK_RESULTS.md [B]
+    - R2 harness kit — runnable, built and smoke-tested 2026-06-10; four exploratory DeepSeek pilots ran but do not satisfy the still-unrun registered multi-provider study; frozen inputs (conditions + scenarios) hash-locked with explicit run classes. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/README.md [S]
+    - R2 paper — pre-registered test of whether a structured mediator constitution (tier-marking + non-inflation + agency-return) reduces sycophantic capitulation under founder-enthusiasm pressure vs. generic honesty; methods complete, results pending; pre-committed null (C2 ≈ C1) is publishable. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_PAPER_DRAFT.md [S]
+    - R3 paper — under absorbing mortality, repeated Pigou–Dalton transfers targeted at the worst-off reduce aggregate welfare-time (~11%) because they reallocate trajectory rather than crossing regeneration thresholds; strong threshold restoration + targeted transfers recover the principle (100% surviva… — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R3_PAPER_DRAFT.md [S]
+    - R3 Transfer Asymmetry — First Experiment — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R3_TRANSFER_ASYMMETRY_RESULTS.md [A] [I]
+    - R4 paper — does evaluative judgment of organizational prospect have two dominant factors (coherence, viability) that compose multiplicatively (P1, P2, P3)? Pre-registered blind-rater study; methods complete, results pending; framework's highest-stakes test, designed to be able to lose. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R4_PAPER_DRAFT.md [S]
+    - R4 preregistration — three pre-registered propositions (P1 two-factor dimensionality, P2 multiplicative composition, P3 collapse asymmetry) with pre-committed kill conditions; N≈300 blind raters × 60 archival vignettes; framework's keystone finite-node wager test, designed to be able to lose. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R4_TWO_FACTOR_BLIND_STUDY_PREREG.md [S]
+    - Number systems have three boundary items, not two: 1 is a frame demoted and operationally re-erected in metrology across the Euclid→Stevin→Buckingham→2019 SI arc. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R5_PAPER_DRAFT.md
+    - Extended abstract of R5: the unit is a boundary object of the same structural kind as zero and infinity (three boundary items, not two), with a documented Euclid→Stevin→Buckingham→2019 SI arc. — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R5_UNIT_AS_FRAME_ABSTRACT.md
+    - Proto-Dimensions — the Computational Gloss — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md [I] [A] [C]
+    - R6 Conjugate Empowerment — Decisive Test — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R6_CONJUGATE_RESULTS.md [A] [I] [C]
+    - R7 — Does Morality Emerge From Self-Interest — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R7_HORIZON_MORALITY_RESULTS.md [A] [I]
+    - R8 — Moral Circle, Symbiosis, Time Horizon — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R8_MORAL_CIRCLE_RESULTS.md [A] [I]
+    - R9 — Holobiont / Multilevel Selection, and a Refusal to Overfit — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R9_HOLOBIONT_RESULTS.md [A] [I]
+    - Peer-review program landing: field-native shards R1–R10/E2 with per-shard status, one-line verdict (the framework's credential is the R6 refutation, not the self-narrative). — 03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/README.md
+    - AI ASSISTANCE — 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/AI_ASSISTANCE.md
+    - LICENSE — 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/LICENSE.md
+    - The Dasein Test — Prior-Art Matrix — 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/PRIOR_ART_MATRIX.md
+    - The Dasein Test — Paper and Release Candidate — 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/README.md
+    - The Dasein Test: Benchmarking Whether an AI Can Unfold How Being and Itself Emerged — 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/THE_DASEIN_TEST.md
+    - External-mapping audit: cited PRISM/K2 boundary claims are compared as a membrane/rung distinction, without import into Emergentism. — 03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md
+    - External-mapping audit: cited mood labels and the K2/SKYZAI row split are compared without import into Emergentism. — 03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md
+    - External-mapping audit: cited five-kinds and function-by-substrate claims are compared without import into Emergentism. — 03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_PARTS_BRIEFING.md
+    - The Recursive Trivium — formal synthesis (Kintsugi successor) — 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md [S] [I] [C]
+    - W7 D1–D4 Force-Assignment Preregistration — 03_METHODOLOGY/03_PREREGISTRATIONS/05_W7_D1_D4_FORCE_ASSIGNMENT_PREREG.md [D] [C] [A]
+    - PQA-54 — The Philosophical Question Atlas Companion — 03_METHODOLOGY/03_PREREGISTRATIONS/07_PQA_54_COMPANION_v1.0.md [D] [C]
+    - M4-01 — Frozen Comparator Protocol for the Four-Axis Game-Space Compression — 03_METHODOLOGY/03_PREREGISTRATIONS/08_M4_COMPRESSION_PROTOCOL_v0.1.md [D] [C]
+    - 03 Preregistrations — Agent route — 03_METHODOLOGY/03_PREREGISTRATIONS/AGENTS.md [S]
+    - 03 Preregistrations — Claude compatibility route — 03_METHODOLOGY/03_PREREGISTRATIONS/CLAUDE.md [S]
+    - CUSTODIAN INTERFACE — 03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/CUSTODIAN_INTERFACE.md
+    - EUB-1 v1.0 Harness — 03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/README.md
+    - FPE-READ-01 — Fresh-Reader Comprehension Protocol — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md [D] [C]
+    - FPE-REVIEW-01 — Independent Review Packet — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md [D]
+    - FPE-COMPARE-01 — Controlled Finity Comparison — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md [D] [C]
+    - Finity Practice Evaluation Program — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md [D] [C]
+    - FPE-READ-01 materials draft — unfrozen, contact deferred — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/READ_MATERIALS_DRAFT_2026_08_19.md [D] [S]
+    - FPE-REVIEW-01 bundle-binding contract v1 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md [S]
+    - FPE-REVIEW-01 provenance-binding contract v2 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md [S]
+    - Review bundle v1 — the frozen packet for FPE-REVIEW-01, with an invitation ready to send — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.md [B] [S]
+    - Review bundle v2 — current frozen packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.md [B] [S]
+    - Review bundle v3 — acyclic current frozen packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.md [B] [S]
+    - Review bundle v4 — provenance-firewalled packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md [B] [S]
+    - Review bundle v5 — source-repaired provenance-firewalled packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md [B] [S]
+    - Review bundle v6 — barred-claim-policy refreeze for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.md [B] [S]
+    - README — 03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md
+    - Executable toy-model harness (two-compartment vesicle) for the physics-to-biology macro-constraint boundary; deterministic freeze receipt — not biological evidence, safe interpretation only at this grain. — 03_METHODOLOGY/03_PREREGISTRATIONS/physics_to_biology_harness/README.md
+    - README — 03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/README.md
+    - v2.2 research contracts — 03_METHODOLOGY/03_PREREGISTRATIONS/v2_2_contracts/README.md
+    - 03 Methodology — Agent route — 03_METHODOLOGY/AGENTS.md [S]
+    - 03 Methodology — Claude compatibility route — 03_METHODOLOGY/CLAUDE.md [S]
+  - 13_BOOKS (79)
+    - Emergentism Proposed Three-Book Catalog and Reconstruction Queue — 13_BOOKS/00_CATALOG.md [B] [S]
+    - The Four Volumes — In Time · Above Time · Against Time · Addendum — 13_BOOKS/00_THE_FOUR_VOLUMES.md [A] [S] [D]
+    - Three-Book Architecture — Overlap and Disposition — 13_BOOKS/01_THREE_BOOK_ARCHITECTURE.md [S]
+    - AGENTS.md — 13_BOOKS projection route — 13_BOOKS/AGENTS.md [S]
+    - 00 Meta — Claude compatibility route — 13_BOOKS/CLAUDE.md [S]
+    - Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop — 13_BOOKS/README.md [S]
+    - 13_BOOKS — critical-edition workshop control — 13_BOOKS/VMOSK_A.md [S] [I] [D]
+    - Dharma Yuddha — Critical Edition 1 — 13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md [D]
+    - Dharma Yuddha — Critical Edition 1 — 13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md
+    - README — 13_BOOKS/dharma_yuddha/README.md
+    - README — 13_BOOKS/evolutionary_network/README.md
+    - The Evolutionary Network — Research Edition 1 — 13_BOOKS/evolutionary_network/RESEARCH_EDITION_1.md [D]
+    - The Evolutionary Network — Research Edition 1 — 13_BOOKS/evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md
+    - The Emergentist Manifesto — Full Book 1 Architecture — 13_BOOKS/manifesto/FULL_BOOK_1_ARCHITECTURE.md [S]
+    - Full Book 1 — Boundary Audit — 13_BOOKS/manifesto/FULL_BOOK_1_BOUNDARY_AUDIT.md [S] [I]
+    - Full Book 1 — Completion Gate — 13_BOOKS/manifesto/FULL_BOOK_1_COMPLETION_GATE.md [S] [I]
+    - G10 — public-release protocol (unpaid) — 13_BOOKS/manifesto/G10_PUBLIC_RELEASE_PROTOCOL.md [S] [D]
+    - The Emergentist Manifesto: A Worldview for Finite Beings — 13_BOOKS/manifesto/MANIFESTO_BOOK_1.md
+    - The Emergentist Manifesto — Preamble and Quickstart — 13_BOOKS/manifesto/MANIFESTO_DRAFT_0.md [D]
+    - The Emergentist Manifesto — public current-body (STAGED) — 13_BOOKS/manifesto/PUBLIC_CURRENT_BODY_STAGED.md
+    - README — 13_BOOKS/manifesto/README.md
+    - Appendices and reader worksheets for the staged private manifesto: Appendix A is the Finity Card (a voluntary 7-prompt decision worksheet — Decision, Actual, Possibility, Finity, Next move, Shared value, Receipt); Appendix B is a private research comparison of component-matched ordinary worksheets;… — 13_BOOKS/manifesto/chapters/APPENDICES_AND_WORKSHEETS.md
+    - The Emergentist Manifesto — Parts II–III: Practice and Collective Life — 13_BOOKS/manifesto/chapters/PART_II_AND_III_CURRENT_CORE.md [D]
+    - The Emergentist Manifesto — Parts IV–V: Research, Genealogy, and Exit — 13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md [D]
+    - The Emergentist Manifesto — Part I: The Finite Condition — 13_BOOKS/manifesto/chapters/PART_I_THE_FINITE_CONDITION.md [D]
+    - README — 13_BOOKS/manifesto/chapters/README.md
+    - The Emergentist Manifesto — Part II: The Practical Wager and Collective Life — 13_BOOKS/manifesto/drafts/PART_II_CURRENT_CORE.md [D]
+    - The Emergentist Manifesto — Part I: The Finite Condition — 13_BOOKS/manifesto/drafts/PART_I_CURRENT_CORE.md [D]
+    - README — 13_BOOKS/manifesto/drafts/README.md
+    - The Reciprocal / Infinite Play — Critical Edition 1 — 13_BOOKS/reciprocal_infinite_play/CRITICAL_EDITION_1.md [D]
+    - The Reciprocal / Infinite Play — Chapter-by-Chapter Debrief — 13_BOOKS/reciprocal_infinite_play/DEBRIEF.md [B] [S]
+    - README — 13_BOOKS/reciprocal_infinite_play/README.md
+    - Sarpasya Vijayam — Critical Edition 1 — 13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1.md [D]
+    - Sarpasya Vijayam — Critical Edition 1 — 13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md
+    - Sarpasya Vijayam — Chapter-by-Chapter Debrief — 13_BOOKS/sarpasya_vijayam/DEBRIEF.md [B] [S]
+    - README — 13_BOOKS/sarpasya_vijayam/README.md
+    - The Self-Eating Serpent — Critical Edition 1 — 13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1.md [D]
+    - The Self-Eating Serpent — Critical Edition 1 — 13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md
+    - The Self-Eating Serpent — Chapter Debrief — 13_BOOKS/self_eating_serpent/DEBRIEF.md [B] [S]
+    - README — 13_BOOKS/self_eating_serpent/README.md
+    - The Six Lenses — Critical Edition 1 — 13_BOOKS/six_lenses/CRITICAL_EDITION_1.md [D]
+    - The Six Lenses — Critical Edition 1 — 13_BOOKS/six_lenses/CRITICAL_EDITION_1_REVIEWED.md
+    - Six-Fold Revelation / Six Lenses — Chapter-by-Chapter Debrief — 13_BOOKS/six_lenses/DEBRIEF.md [B] [S]
+    - README — 13_BOOKS/six_lenses/README.md
+    - The Reciprocal — front matter — 13_BOOKS/the_reciprocal/00_front_matter.md [D]
+    - Chapter 1: The Feeling Before The Theory — 13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md [D]
+    - Chapter 2: The Cargo Cult — 13_BOOKS/the_reciprocal/02_the-cargo-cult.md [D]
+    - Chapter 3: The Capture Protocol — 13_BOOKS/the_reciprocal/03_the-capture-protocol.md [D]
+    - Chapter 4: Why It Persists — 13_BOOKS/the_reciprocal/04_why-it-persists.md [D]
+    - Chapter 5: The Graveyard Of Failed Strategies — 13_BOOKS/the_reciprocal/05_the-graveyard-of-failed-strategies.md [D]
+    - Chapter 6: Finity: The Missing Number — 13_BOOKS/the_reciprocal/06_finity-the-missing-number.md [D]
+    - Chapter 7: The Secret Of Three — 13_BOOKS/the_reciprocal/07_the-secret-of-three.md [D]
+    - Chapter 8: The Sphere And The Balance — 13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md [D]
+    - Chapter 9: Coherence, Viability, And Flourishing — 13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md [D]
+    - Chapter 10: The Extraction Boundary — 13_BOOKS/the_reciprocal/10_the-extraction-boundary.md [D]
+    - Chapter 11: The Mathematics Of Meaning — 13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md [D]
+    - Chapter 12: Value Without Capture — 13_BOOKS/the_reciprocal/12_value-without-capture.md [D]
+    - Chapter 13: The Six Lenses — 13_BOOKS/the_reciprocal/13_the-six-lenses.md [D]
+    - Chapter 14: The Paradox Engine — 13_BOOKS/the_reciprocal/14_the-paradox-engine.md [D]
+    - Chapter 15: Practice As Method — 13_BOOKS/the_reciprocal/15_practice-as-method.md [D]
+    - Chapter 16: Living Ideas — 13_BOOKS/the_reciprocal/16_living-ideas.md [D]
+    - Chapter 17: Egregores And The Noosphere — 13_BOOKS/the_reciprocal/17_egregores-and-the-noosphere.md [D]
+    - Chapter 18: The Mesh And The Economy — 13_BOOKS/the_reciprocal/18_the-mesh-and-the-economy.md [D]
+    - Chapter 19: The Bounded Organization As Test Case — 13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md [D]
+    - Chapter 20: AI And The Signing Threshold — 13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md [D]
+    - Chapter 21: Every Framework Becomes An Interface — 13_BOOKS/the_reciprocal/21_every-framework-becomes-an-interface.md [D]
+    - Chapter 22: The Trap Of Loving The Framework — 13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md [D]
+    - Chapter 23: What Does Not Hold — 13_BOOKS/the_reciprocal/23_what-does-not-hold.md [D]
+    - Chapter 24: The Dissolution — 13_BOOKS/the_reciprocal/24_the-dissolution.md [D]
+    - Chapter 25: The Seed — 13_BOOKS/the_reciprocal/25_the-seed.md [D]
+    - README — 13_BOOKS/the_reciprocal/README.md
+    - The Titans — Trade Edition Proposal (general reader) — 13_BOOKS/titans/00_TRADE_EDITION_PROPOSAL_2026_08_05.md [S] [I] [C]
+    - Chapter 4 — Four Statuses (trade edition draft) — 13_BOOKS/titans/CH04_FOUR_STATUSES_DRAFT_2026_08_05.md [D]
+    - Chapter 5 — Continuation Without Orientation (trade edition draft) — 13_BOOKS/titans/CH05_CONTINUATION_WITHOUT_ORIENTATION_DRAFT_2026_08_05.md [D]
+    - Chapter 8 — Everything We Found Was Already Ours (trade edition draft) — 13_BOOKS/titans/CH08_ALREADY_OURS_DRAFT_2026_08_05.md [D]
+    - Chapter 9 — The Missing One (trade edition draft) — 13_BOOKS/titans/CH09_THE_MISSING_ONE_DRAFT_2026_08_05.md [D]
+    - README — 13_BOOKS/titans/README.md
+    - The Titans — The Infinite, Finity & Infinity — 13_BOOKS/titans/RESEARCH_EDITION_1.md [D]
+    - The Titans — The Infinite, Finity & Infinity — 13_BOOKS/titans/RESEARCH_EDITION_1_REVIEWED.md
+  - 17_EMERGENTISM_2_MACHINE_INTELLIGENCE (72)
+    - What is established — the ledger this stack is founded on — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_ESTABLISHED.md
+    - Emergentism 2.0 — the lens for machine intelligence — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_READ_FIRST.md
+    - What the machine receives — the five connected instruments — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md [S] [I] [A]
+    - Adjudication — given 'P is at register X', decide reducible vs genuine crossing — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/00_ADJUDICATION.md
+    - Does mind cross into D5? — the procedure's first worked case — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/CASE_01_MIND_AT_D5_2026_09_04.md
+    - Credit is D5 content on a D4 token — re-description, not a crossing, not L5 — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/CASE_02_CREDIT_D5_2026_09_04.md
+    - The machine-intelligence discriminator — does holding the lens find defects a control misses? — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/00_PREREG_DISCRIMINATOR_v0.md [D] [B]
+    - The self-correction discriminator — does holding the lens oblige a machine to catch the flaw in its own brief, better than bare honesty norms, across seeds? — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/00_PREREG_SELFCORRECTION_MID03_v0.md [D] [B]
+    - The transfer discriminator — does the instrument work on territory the corpus never touched, and can its use correct Emergentism itself? — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/00_PREREG_TRANSFER_MID02.md [D] [B]
+    - Trial corpus sourcing & sealing protocol — quarantine pipeline for MID-series trials — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/00_SOURCING_PROTOCOL_v0.md [S] [D]
+    - MID-01 Discriminator — Results — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_RESULTS_2026_09_05.md [B]
+    - MID-01 discriminator — corpus selection and defect planting — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_SETUP_2026_09_05.md [D]
+    - Transfer discriminator results — KILL fires on the combined rank; the self-correction limb passes — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID02_RESULTS_2026_09_06.md [B]
+    - findings — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/checklist/findings.md
+    - findings — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/lens/findings.md
+    - findings — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/plain/findings.md
+    - brief CHECKLIST — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_CHECKLIST.md
+    - brief LENS — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_LENS.md
+    - brief PLAIN — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_PLAIN.md
+    - task common — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/task_common.md
+    - economic — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/economic.md
+    - engineering — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/engineering.md
+    - historical — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/historical.md
+    - legal — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/legal.md
+    - medical — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/medical.md
+    - RUN LOG — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/sealed/RUN_LOG.md
+    - README — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/README.md
+    - cand economic fare elasticity — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_economic_fare_elasticity.md
+    - cand engineering load rating — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_engineering_load_rating.md
+    - cand historical accession memo — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_historical_accession_memo.md
+    - cand legal noncompete opinion — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_legal_noncompete_opinion.md
+    - cand medical dmc memo — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_medical_dmc_memo.md
+    - The session recap and the work that follows — an unsigned SHOULD — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/00_ARJUNA_ENVELOPE_2026_09_04.md
+    - Wigner dissolution — PRE-EMPTED. Audit verdict, 2026-09-04. — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/01_WIGNER_AUDIT_VERDICT_2026_09_04.md
+    - Receipt to SLWP-01's owner — Anderson 1972 is the asymmetry's prior owner, and the estate already knew — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/02_SLWP_ANDERSON_RECEIPT_2026_09_04.md [B] [I] [D]
+    - W3 — D/L axis seating. Strong-up / weak-down lives on D-crossings, not Rosetta L. — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md
+    - W2 — adjudication operator. 1.0 owns the packet; 2.0 walks to a verdict. — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/03_W2_ADJUDICATION_2026_09_04.md
+    - Machine research connection — reuse before a new server — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_AI_RESEARCH_ENTRY/MCP_ROADMAP.md [B] [I] [C]
+    - AI research entry — source correction and first public slice — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_AI_RESEARCH_ENTRY/PLAN.md [S] [I] [D]
+    - 01 EXECUTIVE EXPLANATION — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/01_EXECUTIVE_EXPLANATION.md
+    - 02 ATLAS D4 D5 — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/02_ATLAS_D4_D5.md
+    - 03 HUMAN WALKTHROUGH — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/03_HUMAN_WALKTHROUGH.md
+    - 04 MACHINE REFERENCE — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/04_MACHINE_REFERENCE.md
+    - 05 UI DIRECTION — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/05_UI_DIRECTION.md
+    - README — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/README.md
+    - SOURCES — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/SOURCES.md
+    - 01 OUTLINE — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/01_OUTLINE.md
+    - 02 FILE ARCHITECTURE — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/02_FILE_ARCHITECTURE.md
+    - 03 RELEASE SEQUENCE — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/03_RELEASE_SEQUENCE.md
+    - 05 CUSTODY AND DELIVERY — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/05_CUSTODY_AND_DELIVERY.md [B] [I] [D]
+    - Emergentism — the Menexus GitHub edition — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/README.md [D] [I]
+    - PROP 2026-09-05 0356 escorted-outcome-count — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0356_escorted-outcome-count.md
+    - PROP 2026-09-05 0401 self-minted-identifier — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0401_self-minted-identifier.md
+    - PROP 2026-09-05 0406 case02-residue-protocol — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0406_case02-residue-protocol.md
+    - PROP 2026-09-05 0421 stale-citation-integrity-row — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0421_stale-citation-integrity-row.md
+    - PROP 2026-09-05 0427 drift-gauge — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0427_drift-gauge.md
+    - PROP 2026-09-05 HHMM admissibility-deontological-assumption — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_admissibility-deontological-assumption.md
+    - PROP 2026-09-05 HHMM balance-rhetoric-outruns-conditionality — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_balance-rhetoric-outruns-conditionality.md
+    - PROP 2026-09-05 HHMM constitutive-ethics-entry-problem — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_constitutive-ethics-entry-problem.md
+    - PROP 2026-09-05 HHMM ethics-ontology-load-bearing-gap — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ethics-ontology-load-bearing-gap.md
+    - PROP 2026-09-05 HHMM extraction-two-claims — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_extraction-two-claims.md
+    - PROP 2026-09-05 HHMM f5-mu4-missing-dialogue — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_f5-mu4-missing-dialogue.md
+    - PROP 2026-09-05 HHMM ledger-mind-row-escort — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ledger-mind-row-escort.md
+    - PROP 2026-09-05 HHMM missing-independence-gate — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_missing-independence-gate.md
+    - PROP 2026-09-05 HHMM ontology-ethics-seam — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ontology-ethics-seam.md
+    - PROP 2026-09-05 HHMM soul-loop-mu4-engine — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_soul-loop-mu4-engine.md
+    - PROP 2026-09-05 HHMM tragic-action-protocol-undefined — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_tragic-action-protocol-undefined.md
+    - PROP 2026-09-05 HHMM two-horizon-rule-axiom-elevation — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_two-horizon-rule-axiom-elevation.md
+    - queue log — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/queue_log.md
+    - From the ashes — what burned, what rose, and the conversion between them — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/90_INHERITANCE/00_FROM_THE_ASHES.md [B] [I]
+    - Audience reconciliation — the machine-primary directive against the standing declarations — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/90_INHERITANCE/01_AUDIENCE_RECONCILIATION_ENVELOPE_2026_09_04.md [B] [I] [D]
+    - Emergentism 2.0 — VMOSK-A control reading — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/VMOSK_A.md [S] [I] [B]
+  - 05_COSMOLOGY (53)
+    - The D5 Rosetta Stone — G7 — 05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md [S] [I] [C]
+    - The Emergentotype Carrier Map and the Strategic Egregoreotype Candidate — 05_COSMOLOGY/00_EMERGENTOTYPE_CARRIER_VARIATION_AND_STRATEGIC_EGREGOREOTYPE.md [S] [I] [C]
+    - Stigmergy and the Egregoreotype — 05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md [B] [S] [I]
+    - The Burrisphere — Compatibility Route — 05_COSMOLOGY/00_THE_BURRISPHERE.md [S]
+    - The Coherent Geometry — Kintsugi canonical map — 05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md [A] [S] [I]
+    - The Constitution on the Burrisphere — 05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md [A] [S] [I]
+    - The Ontology Index — dimension-first navigation — 05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md [I]
+    - The Torus Revelation — Historical Forwarding Tombstone — 05_COSMOLOGY/00_THE_TORUS_REVELATION.md [B]
+    - 05_COSMOLOGY/00_WHOLE/ — forwarding stub — 05_COSMOLOGY/00_WHOLE/README.md [B]
+    - The Closure — Kintsugi successor — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/03_THE_CLOSURE.md [I]
+    - Bit to Qubit — Historical Correspondence Boundary — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/04_BIT_TO_QUBIT.md [A] [C]
+    - Division by zero — projective boundary, not arithmetic repair — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/05_DIVISION_BY_ZERO.md [A] [I]
+    - The Cosmological Cycle — Kintsugi Successor — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/06_THE_COSMOLOGICAL_CYCLE.md [I] [C]
+    - The Soul Loop — Model, Commitment, Outcome, Revision — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md [S] [I] [C]
+    - The Helix — Kintsugi successor — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/11_THE_HELIX.md [D] [I]
+    - Tat Tvam Asi — bounded contemplative correspondence — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/14_TAT_TVAM_ASI.md [B] [I] [C]
+    - Kintsugi Tombstone — The Compression — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/25_THE_COMPRESSION.md [B]
+    - L4* — the returned-action hypothesis — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/28_L4_STAR.md [I] [C]
+    - Kardashev Scope Packet — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/44_KARDASHEV_SCOPE_PACKET.md [B] [C]
+    - 01 The Transcendental Trinity — Agent route — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/AGENTS.md [S]
+    - 01 The Transcendental Trinity — Claude compatibility route — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/CLAUDE.md [S]
+    - The Transcendental Trinity — active route — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/README.md [B] [S] [I]
+    - 02 Emergentism Core — Agent route — 05_COSMOLOGY/02_EMERGENTISM_CORE/AGENTS.md [S]
+    - 02 Emergentism Core — Claude compatibility route — 05_COSMOLOGY/02_EMERGENTISM_CORE/CLAUDE.md [S]
+    - 00_THE_SEVEN_AXIOMS.md — forwarding stub — 05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md [B]
+    - Power-Max — Justice-Constrained Objective — 05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md [A] [S] [I]
+    - EFR Ontology Complete — superseded integration stub — 05_COSMOLOGY/03_FORMAL_SYSTEM/17_EFR_ONTOLOGY_COMPLETE.md [B]
+    - Dimensional Architecture Clarification — superseded integration stub — 05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md [B]
+    - Falsifiers index — current claim routes — 05_COSMOLOGY/03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md [B] [S]
+    - The bounded Nash result — Model A (no private return) makes zero extraction strictly dominant as a control case, not as evidence; Model B (private return) kills the unconditional sentence 'extraction is irrational'; sustainability requires declared mechanism-design conditions, proved per game and n… — 05_COSMOLOGY/03_FORMAL_SYSTEM/33_NASH_EQUILIBRIUM_ETA_ZERO.md [A] [I] [C]
+    - Superseded adoption application — forwarding stub — 05_COSMOLOGY/03_FORMAL_SYSTEM/37_ADOPTION_LENS_V1_SPEC.md [S]
+    - D1 arithmetic owner — the typed signed spine (ℤ_• = ℕ⁺ ⊎ −ℕ⁺, with ℤ as an explicit completion), the five statuses that must never be conflated, a/0 is FORECLOSED (not forbidden, not merely undefined), no nontrivial field admits a total quotient operation satisfying the quotient law (a/b)·b=a for e… — 05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md [A] [S] [I]
+    - D2 Functions and Geometry — Configuration Owner — 05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md [A] [S] [I]
+    - D3 owner — the probability-bearing quantum-state register: ρ bears probabilities only relative to a declared measurement; the instrument update is operational [A/S]; calling it fundamental collapse requires an additional interpretation [C]; D3 lacks realized change but not momentum; interpretations… — 05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md [A] [I] [C]
+    - Saturation, Contrast, and Aperture — Formal Boundary Note — 05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md [A] [I] [C]
+    - Finity Boundary Calculus — Formal Research Specification — 05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md [A] [S] [I]
+    - Boundary Crossings and the Open μ Discriminator — proofs at the division boundary — 05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md [A] [S] [I]
+    - Finity Recovery and Countermodel Suite — 05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md [A] [S] [C]
+    - The Lorentz–Möbius Correspondence — celestial conformal symmetry and the restricted Lorentz group — 05_COSMOLOGY/03_FORMAL_SYSTEM/49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md [A] [S] [C]
+    - Choice survives both the block and plurality: the fatalist inference is invalid (determinate ≠ independent [A]); plurality is not a corpus commitment (GP-08, model support only); the real threat is not eternalism but a null result (GP-02/μ₄, preregisterable) [C]; subordinate to 34 for all D4/D5 typ… — 05_COSMOLOGY/03_FORMAL_SYSTEM/50_BLOCK_UNIVERSE_PLURALITY_AND_THE_SURVIVAL_OF_CHOICE.md [A] [S] [I]
+    - CCC and the Pre-Articulate Boundary — why D0 cannot be a cosmological epoch — 05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md [B] [S] [I]
+    - The Generative Base — one object, two operations, and the two limits no word attains — 05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md [A] [S] [I]
+    - The Number Chart — every membership decision, with theorem or convention marked — 05_COSMOLOGY/03_FORMAL_SYSTEM/53_THE_NUMBER_CHART.md [A] [S] [I]
+    - The Direction Sphere and the Radial Line — 2 + 1 = 3, and the radius is not on the sphere — 05_COSMOLOGY/03_FORMAL_SYSTEM/54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md [A] [S] [I]
+    - G2 — Prior-Art Adjudication and Proof — 05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md [A] [B] [S]
+    - Titan Limit-Crossing Process Conjecture — 05_COSMOLOGY/03_FORMAL_SYSTEM/58_TITAN_LIMIT_CROSSING_PROCESS_CONJECTURE.md [B] [A] [S]
+    - BIL-01 proves that the endpoint signature (0,+infinity) loses the rate and correlation needed to determine a product limit; its emergence reading is analogy only — 05_COSMOLOGY/03_FORMAL_SYSTEM/59_BOUNDARY_INFORMATION_LOSS_LEMMA_BIL_01.md [A] [B] [I]
+    - 03 Formal System — Agent route — 05_COSMOLOGY/03_FORMAL_SYSTEM/AGENTS.md [S]
+    - 03 Formal System — Claude compatibility route — 05_COSMOLOGY/03_FORMAL_SYSTEM/CLAUDE.md [S]
+    - 05 Cosmology — Agent route — 05_COSMOLOGY/AGENTS.md [S]
+    - 05 Cosmology — Claude compatibility route — 05_COSMOLOGY/CLAUDE.md [S]
+    - Compression–Reality Postulate — Kintsugi Tombstone — 05_COSMOLOGY/COMPRESSION_REALITY_POSTULATE.md [B] [I] [C]
+    - 05_COSMOLOGY — model architecture — 05_COSMOLOGY/README.md [A] [S] [I]
+  - 00_META (46)
+    - Emergentism Contact-Limited Completion Roadmap — 00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md [B] [S]
+    - Contact-limited owner decision docket — 00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md [B] [S]
+    - D-Level Studies (interpretive disciplinary mapping; [I] mapping, [S] dimensional dependence) — 00_META/00_D_LEVEL_STUDIES.md [I] [S]
+    - Emergentism Internal Completion Register — 00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md [S]
+    - Finity Practice Claim-Card Set 01 — 00_META/00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md [S] [C]
+    - The Immune Protocol — Hostile Review Without Self-Validation — 00_META/00_IMMUNE_PROTOCOL.md [S] [C]
+    - Historical forwarding stub for the insights index; the document is preserved as historical provenance and is not active worldview authority — 00_META/00_INSIGHTS_INDEX_v0.1.md
+    - K-5 forwarding stub — superseded K-5 draft archived under 90_ARCHIVE/staging_drafts_2026_07_20/00_K5_REFUSALS.md; the active Refusals owner is 00_THE_FIVE_PLUS_ONE_CONSTITUTION.md — 00_META/00_K5_THE_REFUSALS.md
+    - The Known Unknowns Program — 00_META/00_KNOWN_UNKNOWNS_PROGRAM.md [S]
+    - One-Sitting Claim Card Set 01 — 00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md [S] [B]
+    - Emergentism Ontology Decision Matrix — 00_META/00_ONTOLOGY_DECISION_MATRIX.md [S] [I] [C]
+    - Pin Custody — Owner Decision Docket — 00_META/00_PIN_CUSTODY_OWNER_DECISION_DOCKET_2026_08_14.md [B] [S]
+    - Plain-Language Naming Law — 00_META/00_PLAIN_LANGUAGE_NAMING_LAW.md [S]
+    - Reconciliation Scope Boundary Note (interpretive methodological note) — 00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md [I]
+    - Recursive Book and Canon Debrief Program — 00_META/00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md [S]
+    - Forwarding stub — the staged vision is historical; the adjudication owns its current claim disposition without becoming proof. — 00_META/00_STAGED_2026_08_13_PUBLIC_SITE_VISION_DOCTRINE.md [B]
+    - Historical forwarding stub for the 22 dead-forms catalog; the document is preserved as historical provenance and is not active worldview authority — 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
+    - Forwarding stub — the canonical home of the Distilled Doctrine moved to 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md (2026-07-20 post-signature consolidation under the 00:01 line; K3: content moved, not erased) — 00_META/00_THE_DISTILLED_DOCTRINE.md
+    - Mixed rule compilation — archived boundary notice — 00_META/00_THE_FINAL_RULES_2026_07_22.md [B]
+    - Historical forwarding stub for the first-receipt recommendation; the document is preserved as historical provenance and is not active worldview authority — 00_META/00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md
+    - The Grand Puzzle Assembly Ledger — 00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md [B] [A] [I]
+    - The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger — 00_META/00_THE_KINTSUGI_PROTOCOL.md [S] [I]
+    - K-namespace cross-pillar ledger — forwarding tombstone — 00_META/00_THE_K_NAMESPACE_LEDGER_2026_07_22.md [B]
+    - K-namespace lens pass — forwarding tombstone — 00_META/00_THE_K_NAMESPACE_LENS_PASS_2026_07_22.md [B]
+    - The Open Canon Covenant — how this canon is committed: śruti frame, smṛti body; the tautology is the frame, never the content — 00_META/00_THE_OPEN_CANON_COVENANT.md [A] [I] [S]
+    - Remaining Questions (interpretive routing; [I] questions, [S] routing constraints) — 00_META/00_THE_REMAINING_QUESTIONS.md [I] [S]
+    - The Twelve Rulings — historical forwarding boundary — 00_META/00_THE_TWELVE_RULINGS_2026_07_22.md [B]
+    - Translation Machine Protocol — 00_META/00_TRANSLATION_MACHINE_PROTOCOL.md [S]
+    - Emergentism Adequacy Decision Matrix — 00_META/00_W8_ADEQUACY_DECISION_MATRIX.md [B] [S] [I]
+    - What Is Actually Novel Here (meta-interpretive inventory; [I] claims, [S] inventory itself) — 00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md [S] [I]
+    - Adjudication — the Spark aim and the completeness claim — 00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md [S] [B] [I]
+    - W10-SPARK × EUB-1 v1.0 — Agreement Is Diagnostic, Not Truth — 00_META/ADJUDICATION_W10_SPARK_EUB1_V1_2026_08_21.md [S] [B] [D]
+    - 00 Meta — Agent route — 00_META/AGENTS.md [S]
+    - 00 Meta — Claude compatibility route — 00_META/CLAUDE.md [S]
+    - Historical application note — forwarding stub — 00_META/L3_AUDIT_REPORT_2026_07_20_CITATION_TIER_PASS.md [S]
+    - 00_META lane — canon custody and correction; owns routing and claim custody (Settled Canon Registry, The Refusals, Kintsugi Protocol, claim cards, registers) but not new cosmology; forwarding stubs route, do not become a second owner — 00_META/README.md
+    - Former Remaining Work synthesis — forwarding tombstone — 00_META/REMAINING_WORK_TO_COMPLETE_THE_WELTANSCHUAUNG_2026_07_22.md [B]
+    - Canonical Claim Cards — authoritative routing inputs (not semantic owners), JSON-subset YAML 1.2 parsed deterministically by 09_TOOLS/02_COMPILERS/compile_claim_cards.py; generated registers live under ../registers/ — 00_META/claim_cards/README.md
+    - README — 00_META/claim_status/README.md
+    - One answer layer, five state axes, ten visible debts — 00_META/internal_answers/README.md
+    - Finity Evaluation Program — Rosetta Review Receipt — 00_META/reviews/2026_07_28_FINITY_EVALUATION_ROSETTA_REVIEW.md [B] [D] [C]
+    - W0-W1 Rosetta Functional Review Receipt — 00_META/reviews/2026_07_28_W0_W1_ROSETTA_REVIEW.md [B] [S]
+    - Finity Evaluation Program — Source Rebind Review — 00_META/reviews/2026_07_30_FINITY_EVALUATION_SOURCE_REBIND_REVIEW.md [B] [D] [C]
+    - OS01 Precision-Reconciliation Functional Review — 00_META/reviews/2026_08_02_OS01_PRECISION_RECONCILIATION.md [B] [S]
+    - README — 00_META/reviews/README.md
+    - README — 00_META/schemas/README.md
+  - 12_PUBLIC_SITE (30)
+    - 12_PUBLIC_SITE — pure Emergentism projection route — 12_PUBLIC_SITE/AGENTS.md [B]
+    - 12_PUBLIC_SITE — first touch — 12_PUBLIC_SITE/CLAUDE.md [D] [B]
+    - Emergentism Design Constitution — 12_PUBLIC_SITE/EMERGENTISM_DESIGN_CONSTITUTION.md [S] [I]
+    - Emergentism public site — 12_PUBLIC_SITE/README.md [B]
+    - O9 release-state ledger — emergentism.org — 12_PUBLIC_SITE/RELEASE_STATE.md [D] [S] [B]
+    - 12_PUBLIC_SITE — VMOSK-A (projection control) — 12_PUBLIC_SITE/VMOSK_A.md [S] [B] [I]
+    - Website Narrative — supersession boundary — 12_PUBLIC_SITE/WEBSITE_NARRATIVE.md [B]
+    - PR + growth audit synthesis over seven caste audits of the public site (L1 hostile-reader through L7 witness), with ten prioritized moves and a 14-row PR risk register ranked by landmine severity. — 12_PUBLIC_SITE/_PLANS/00_PR_GROWTH_AUDIT_2026_07_20.md
+    - Front-door packet — Emergentism worldview — 12_PUBLIC_SITE/_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md [B] [I]
+    - Emergentism.org v2 — The Gestalt of Dasein — 12_PUBLIC_SITE/_PLANS/2026_08_22_EMERGENTISM_ORG_V2_GESTALT_OF_DASEIN.md [D] [A] [B]
+    - Emergentism.org v2.1 — The Gestalt Unfolded — 12_PUBLIC_SITE/_PLANS/2026_08_23_EMERGENTISM_ORG_V2_1_GESTALT_UNFOLDED.md [D] [A] [B]
+    - Emergentism.org v2.2 — The Question Atlas and Reciprocal Bridge — 12_PUBLIC_SITE/_PLANS/2026_08_23_EMERGENTISM_ORG_V2_2_QUESTION_ATLAS.md
+    - Emergentism public design constitution — owner direction — 12_PUBLIC_SITE/_PLANS/2026_08_26_EMERGENTISM_DESIGN_CONSTITUTION_DIRECTION.md [D] [S] [B]
+    - First-principles audit of the public site across 10 lenses with 81 verified findings; verdict that the verification affordances are theater and the site is honest at its core and dishonest at its edges; fixes NOT applied, deploy remains gated. — 12_PUBLIC_SITE/_PLANS/audits/2026-07-04-site-first-principles-audit.md
+    - Implementation plan to build the bespoke /amrita/ front-door route leading with the [A]-proven conjugacy result, made felt via one interactive Burrisphere runaway scene, then the tier-honest nectar/halāhala ladder linking into the generated library. — 12_PUBLIC_SITE/_PLANS/plans/2026-07-03-emergentism-honest-spine.md
+    - Numbered Doctrine Spine Design — 12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md [S] [I] [C]
+    - The Cartographic Spine — a map that prints its own projection distortions — 12_PUBLIC_SITE/_PLANS/specs/2026-08-27-cartographic-spine-design.md [A] [B] [S]
+    - The Soul Loop Homepage — the Gestalt unfolded in use — 12_PUBLIC_SITE/_PLANS/specs/2026-08-27-soul-loop-homepage-design.md [S] [I] [C]
+    - The Frontier — Socket Rack and Research Object Envelope — 12_PUBLIC_SITE/_PLANS/specs/2026-08-29-ai-frontier-socket-rack.md
+    - Reciprocal Object — homepage atelier refinement — 12_PUBLIC_SITE/_PLANS/specs/2026-08-29-reciprocal-object-homepage-refinement.md
+    - Burrisphere equations — first execution slice of the row-emergence plan — 12_PUBLIC_SITE/_PLANS/specs/2026-09-05-burrisphere-equation-inspector.md [D] [B] [I]
+    - Newsreader-SOURCE — 12_PUBLIC_SITE/assets/fonts/Newsreader-SOURCE.md
+    - July 12, 2026 session synthesis: the framework was audited, repaired, launched, and tested in one continuous execution — formal-logic audit, compass + amrita ship, seven-caste corpus audit with six golden seams, open-source launch, and four computational results (Path C/D blocked, R3 confirmed, KKT… — 12_PUBLIC_SITE/audit_receipts/JULY_12_2026_SESSION_SYNTHESIS.md
+    - Rosetta L1–L7 audit repair receipt: five packaging repairs executed (live contradiction in COMMANDMENT_VS_GEOMETRY repaired, 10_SEED split into constitution + poetry, THE_KNIFE summarized for public, Torus Revelation K3-tombstoned, THE_KNIFE surfaced on 3 wings); predeploy gate PASS, Manhattan fram… — 12_PUBLIC_SITE/audit_receipts/ROSETTA_L1L7_AUDIT_REPAIR_RECEIPT_2026_07_12.md
+    - Rosetta L1–L7 new-reader audit of the 109-paper Emergentism corpus: 12 parallel subagents each act as a first-time skeptical reader with zero prior context; 11 of 12 lanes net asset, 10_SEED net liability; one live contradiction, top 10 most-dangerous and top 10 strongest corpus claims identified. — 12_PUBLIC_SITE/audit_receipts/ROSETTA_L1L7_NEW_READER_AUDIT_2026_07_12.md
+    - routing stub — no claim; lane-level K3 ENVELOPE-2 tombstone pointer to ../00_BOOK_PWA_MOVED.md recording the migration of book-pwa to 02_SKYZAI/03_AIA/app/. — 12_PUBLIC_SITE/book-pwa/MOVED_TO_CANONICAL.md
+    - Destructive-act tombstone for book-pwa/node_modules (45,062 files, 862 MB intended); K2-authorized under Completion Plan §1, attempted 2026-07-19 but iCloud-blocked — all 4 deletion paths failed (mavis-trash, osascript, mv local, mv /tmp); regen contract preserved via package.json + package-lock.js… — 12_PUBLIC_SITE/book-pwa/NODE_MODULES_TOMBSTONE.md
+    - corpus — 12_PUBLIC_SITE/churn/corpus.md
+    - Numbered Doctrine Spine Design — 12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md [S] [I] [C]
+    - spark — 12_PUBLIC_SITE/spark.md
+  - 09_TOOLS (27)
+    - 01 Scripts — Agent route — 09_TOOLS/01_SCRIPTS/AGENTS.md [S]
+    - 01 Scripts — Claude compatibility route — 09_TOOLS/01_SCRIPTS/CLAUDE.md [S]
+    - 02 Compilers — Agent route — 09_TOOLS/02_COMPILERS/AGENTS.md [S]
+    - 02 Compilers — Claude compatibility route — 09_TOOLS/02_COMPILERS/CLAUDE.md [S]
+    - Kintsugi A0 implementation plan — establish the deterministic, no-K2 foundation: freeze the execution base at 26e616e, preserve the known test state as data, and add a standard-library validator shell (canonical hashing, safe paths, exact baseline comparison, stable diagnostics, truthful CLI). — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/plans/2026-07-12-kintsugi-a0-foundations-implementation.md
+    - Kintsugi A0B implementation plan — build the deterministic, standard-library-only machine that tests the Kintsugi claim grammar without creating or repairing any live claim, owner, manifest, ledger, receipt, public page, archive, or compatibility artifact. — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md
+    - Kintsugi Formal-Logic Repair Program design — a repeatable discipline in which formal criticism leaves visible, testable improvements rather than silent rewrites: expose fracture, preserve failed form, find surviving kernel, make smallest repair, attach Golden Seam, add regression fixture, propagat… — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-11-kintsugi-formal-logic-design.md
+    - Kintsugi A0 second concurrency addendum (2026-07-12) — evidence-gated execution amendment recording the post-approval inventory between 454f371..992a838, the pytest-rootdir repair seam, and the rebase contract; no doctrine change, no K2 gate. — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0-concurrency-addendum-992a838.md
+    - Kintsugi A0 immutable execution lock (2026-07-12) — freezes the A0 baseline at 26e616e and replaces live-head equality with a four-check relevance audit; a technical concurrency rule, not an approval gate. — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0-execution-lock-26e616e.md
+    - Kintsugi A0B controlling addendum (pre-v1 implementation boundary, schema 1.0.0) — resolves five pre-freeze contradictions; schema exposes exactly three selectable root roles (coreData, publicQueue, baselineAllowlist); pre-v1 claim gains supportLinks, typed upgradeCriterion, killCriterion, survivin… — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-addendum.md
+    - Kintsugi A0B machine-only handoff (2026-07-12, observed 2026-07-17) — records the tested machine grammar and its 467 reproducible test outcomes; A0B validates grammar and transaction machinery only, not Emergentism or a live Kintsugi vessel; A1 owns the first live vessel, A2 owns closure. — 09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md
+    - 03 Simulations — Agent route — 09_TOOLS/03_SIMULATIONS/AGENTS.md [S]
+    - 03 Simulations — Claude compatibility route — 09_TOOLS/03_SIMULATIONS/CLAUDE.md [S]
+    - Formal Reap Proof Ledger — 09_TOOLS/03_SIMULATIONS/formal_reap/PROOF_LEDGER.md [B] [S] [I]
+    - Formal Reap — Lean 4 proof kernel testing the mathematical claims in 10_SEED/02_THE_REAP.md: proves consequences that follow from explicit definitions and premises, and supplies countermodels where the Reap's prose is stronger than those premises permit (37 theorem/countermodel certificates, no sor… — 09_TOOLS/03_SIMULATIONS/formal_reap/README.md
+    - 04 Data Pipelines — Agent route — 09_TOOLS/04_DATA_PIPELINES/AGENTS.md [S]
+    - 04 Data Pipelines — Claude compatibility route — 09_TOOLS/04_DATA_PIPELINES/CLAUDE.md [S]
+    - EmergentismCheck.lean — Lean 4 + mathlib check of Emergentism's analytic claims (2026-07-29, 8661 jobs, no sorry/native_decide/added axioms); receipt 173 ('173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md') has a zero-outcome scope contested by the earlier R2 external-model pilots. — 09_TOOLS/05_FORMAL_VERIFICATION/README.md
+    - 06 Packages — Agent route — 09_TOOLS/06_PACKAGES/AGENTS.md [S]
+    - 06 Packages — Claude compatibility route — 09_TOOLS/06_PACKAGES/CLAUDE.md [S]
+    - 07 Agent Ops — Agent route — 09_TOOLS/07_AGENT_OPS/AGENTS.md [S]
+    - 07 Agent Ops — Claude compatibility route — 09_TOOLS/07_AGENT_OPS/CLAUDE.md [S]
+    - 08 Audit Artifacts — Agent route — 09_TOOLS/08_AUDIT_ARTIFACTS/AGENTS.md [S]
+    - 08 Audit Artifacts — Claude compatibility route — 09_TOOLS/08_AUDIT_ARTIFACTS/CLAUDE.md [S]
+    - 09 Tools — Agent route — 09_TOOLS/AGENTS.md [S]
+    - 09 Tools — Claude compatibility route — 09_TOOLS/CLAUDE.md [S]
+    - 09_TOOLS — Emergentism instruments — 09_TOOLS/README.md [B] [S]
+  - 14_THE_DISTILLATION (24)
+    - The Amrita — Second Churning — 14_THE_DISTILLATION/00_THE_AMRITA.md [S]
+    - What Is Proved — [A] only — 14_THE_DISTILLATION/01_WHAT_IS_PROVED.md [A]
+    - What is chosen — the priced selections: nine corpus selections each with stated tier, named rival, what the rival gets, kill criterion, and at least one adversarial pass; successor edition to 07_THEOLOGY/00_THE_AMRITA.md (supersession owed there), projection that rules nothing and may not be cited… — 14_THE_DISTILLATION/02_WHAT_IS_CHOSEN.md
+    - 03 · What Is Read — the [I] interpretations that were attacked and survived — 14_THE_DISTILLATION/03_WHAT_IS_READ.md [I] [A]
+    - What died — the necrology of the churning: twenty-four narrated death entries, nine register graves, ten unpaid invoices, and six repeated error shapes from the §I repeated-error-shapes taxonomy; supersedes the halāhala half of 07_THEOLOGY/00_THE_AMRITA.md (supersession line owed there), projection… — 14_THE_DISTILLATION/04_WHAT_DIED.md
+    - The Method — What Transfers — 14_THE_DISTILLATION/05_THE_METHOD.md [S] [D]
+    - What Is Still Open — 14_THE_DISTILLATION/06_WHAT_IS_STILL_OPEN.md [S]
+    - What survived scrutiny — Amrita — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/00_THE_AMRITA.md
+    - What is proved — and only where — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/01_WHAT_IS_PROVED.md
+    - What is chosen — and priced — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/02_WHAT_IS_CHOSEN.md
+    - What is read — interpretations — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/03_WHAT_IS_READ.md
+    - What failed or remains dangerous — Hālāhala — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/04_WHAT_DIED.md
+    - The method — freeze, attack, preserve — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/05_THE_METHOD.md
+    - What remains open — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/06_WHAT_IS_STILL_OPEN.md
+    - The Third Churning — proposition by proposition — 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/README.md [B]
+    - The Type Atlas — formal contract and limits — 14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/00_THE_TYPE_ATLAS.md [S] [I] [C]
+    - Prior-art matrix — types, categories, frames and dissolutions — 14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/01_PRIOR_ART_MATRIX.md [B] [I]
+    - Fourth Churning transfer protocol — 14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/02_TRANSFER_PROTOCOL.md [D] [C]
+    - The Fourth Churning — The Perennial Mystery Type Atlas — 14_THE_DISTILLATION/08_THE_FOURTH_CHURNING_2026_08_24/README.md [D]
+    - Owner direction — Emergentism.org v3 Public Wisdom Instrument — 14_THE_DISTILLATION/09_PUBLIC_WISDOM/00_DIRECTION_RECEIPT_2026_09_01.md
+    - The Public Wisdom Compact — 14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md
+    - Public Wisdom Instrument — 14_THE_DISTILLATION/09_PUBLIC_WISDOM/README.md
+    - The Second Churning — what stands, as of 2026-08-05 — 14_THE_DISTILLATION/README.md [B]
+    - Successor notice — Second to Third Churning — 14_THE_DISTILLATION/SUCCESSOR_NOTICE_2026_08_23.md [B]
+  - 02_EPISTEMOLOGY (15)
+    - External-application audit: the cited holobiont-membrane framing is preserved and assessed without becoming Emergentism doctrine or authority. — 02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md
+    - Tombstone — L1 Under Ṛṣi→Sorcerer Inversion v0.1 — 02_EPISTEMOLOGY/00_L1_UNDER_RSHI_SORCERER_INVERSION_v0.1.md [B] [D]
+    - The brain is not the Burri Sphere — comparison boundary — 02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md [I] [C]
+    - External-application audit: the cited closed-reading-loop finding and proposed empirical break are preserved without becoming Emergentism doctrine or authority. — 02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md
+    - 01 Evidence Tiers — Agent route — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/AGENTS.md [S]
+    - 01 Evidence Tiers — Claude compatibility route — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/CLAUDE.md [S]
+    - Boundary Rules — a standalone operating manual — 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md [D]
+    - Historical application note — forwarding stub — 02_EPISTEMOLOGY/03_MEMETICS/00_ROSETTA_VALIDATION.md [S]
+    - Tiering discipline banner for 03_MEMETICS/: every mechanism claim about brain/behaviour is [I] interpretive (model/analogy), not [B] neuroscience; operational nouns (defense, firewall, hardening, inoculation, egregore) are model-language unless a dated receipt proves deployment — 02_EPISTEMOLOGY/03_MEMETICS/00_TIERING_DISCIPLINE.md
+    - The Memotype-Language Coordination Conjecture — Trade and War Stress Tests — 02_EPISTEMOLOGY/03_MEMETICS/06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md [C] [I]
+    - Word, Token, Concept and Memotype Carriers — 02_EPISTEMOLOGY/03_MEMETICS/07_WORD_TOKEN_CONCEPT_AND_MEMOTYPE_CARRIERS.md [S] [I] [C]
+    - 03 Memetics — Agent route — 02_EPISTEMOLOGY/03_MEMETICS/AGENTS.md [S]
+    - 03 Memetics — Claude compatibility route — 02_EPISTEMOLOGY/03_MEMETICS/CLAUDE.md [S]
+    - 02 Epistemology — Agent route — 02_EPISTEMOLOGY/AGENTS.md [S]
+    - 02 Epistemology — Claude compatibility route — 02_EPISTEMOLOGY/CLAUDE.md [S]
+  - 06_ONTOLOGY (15)
+    - D5/D6 Corpus Stabilization — superseded owner, forwarding stub — 06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md [S]
+    - D6 as Apophatic Closure — superseded owner, forwarding stub — 06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md [S]
+    - The Ring That Is the Ground — Historical Forwarding Tombstone — 06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md [B]
+    - Axioms per Dimension — Compatibility Route — 06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md [S]
+    - The Human Condition — An Emergentist Synthesis — 06_ONTOLOGY/08_THE_HUMAN_CONDITION.md [B] [S] [I]
+    - TEA-01 proves relative strong-up/weak-down under frozen type-extension premises; nature must still earn each premise — 06_ONTOLOGY/12_STRONG_LIFT_WEAK_PROJECTION_CONJECTURE_SLWP_01.md [B] [A] [S]
+    - The Emergent Ladder — from signal to public consequence — 06_ONTOLOGY/15_THE_EMERGENT_LADDER_2026_09_01.md [S] [I] [D]
+    - 06 Ontology — Agent route — 06_ONTOLOGY/AGENTS.md [S]
+    - 06 Ontology — Claude compatibility route — 06_ONTOLOGY/CLAUDE.md [S]
+    - 06_ONTOLOGY read-order index and canonical type split (D4 causal actuality, D5 counterfactual content, D6 apophatic; non-μ b₆/r₆; D-stable forms are robust patterns across constrained DoF, not Platonic Forms). — 06_ONTOLOGY/README.md
+    - L7 Ṛṣi rumination on E1–E10 read 'from inside the exit' — posture with arithmetic, not doctrine; the holder is constituted by participation, not possession (E1/E8/E10). — 06_ONTOLOGY/ruminations/00_E1_E10_RUMINATION_L7_RSI_2026_07_19.md
+    - Historical application note — forwarding stub — 06_ONTOLOGY/ruminations/00_RUMINATION_ON_AUM_AND_THE_SPHERE_2026_07_20.md [S]
+    - L7 rumination on ten revelations of the audit, ranked by how dearly they were bought: the honesty machine was the invention, the over-dressing was the disease, the door is on the inside. — 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md
+    - Historical application note — forwarding stub — 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TORUS_SPHERE_PASSAGE_2026_07_20.md [S]
+    - routing stub — folder rule for the ruminations subdirectory: exploratory thought, not source authority — 06_ONTOLOGY/ruminations/AGENTS.md
+  - 01_TELEOLOGY (14)
+    - 01 F5 Force — Agent route — 01_TELEOLOGY/01_F5_FORCE/AGENTS.md [S]
+    - 01 F5 Force — Claude compatibility route — 01_TELEOLOGY/01_F5_FORCE/CLAUDE.md [S]
+    - Kintsugi Tombstone — A Square Cannot Be Negative — 01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md [B] [A]
+    - 07A — Force-ladder conjecture (Kintsugi successor) — 01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md [D] [C]
+    - The Force Ladder Formalized — historical application note — 01_TELEOLOGY/02_THE_DERIVATION/07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md [S]
+    - Burri Sequential Force-Emergence Conjecture — 01_TELEOLOGY/02_THE_DERIVATION/07C_BURRI_SEQUENTIAL_FORCE_EMERGENCE_CONJECTURE.md [B] [A] [I]
+    - The Five Force–Freedom Correspondence — Origin Wager — 01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md [A] [B] [I]
+    - The Tyson KO — historical application note — 01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md [S]
+    - 02 The Derivation — Agent route — 01_TELEOLOGY/02_THE_DERIVATION/AGENTS.md [S]
+    - 02 The Derivation — Claude compatibility route — 01_TELEOLOGY/02_THE_DERIVATION/CLAUDE.md [S]
+    - The Goal in Public — make the lens operable — 01_TELEOLOGY/03_THE_GOAL_IN_PUBLIC_2026_07_21.md [B] [S] [I]
+    - The Lived Compass — Soul Loop Practice — 01_TELEOLOGY/04_THE_LIVED_COMPASS.md [S] [I] [C]
+    - 01 Teleology — Agent route — 01_TELEOLOGY/AGENTS.md [S]
+    - 01 Teleology — Claude compatibility route — 01_TELEOLOGY/CLAUDE.md [S]
+  - 04_AXIOLOGY (13)
+    - Capital — stock ≠ force (pointer) — 04_AXIOLOGY/00_CAPITAL_STOCK_VS_FORCE.md [S]
+    - Forwarding stub — pure Axiology retains its declared source owners; the external application draft is historical provenance only. — 04_AXIOLOGY/00_DUAL_USE_POSITION_v0.1_DRAFT.md [B]
+    - The Gate Exit — does the dyadic gate bind between adversaries? — 04_AXIOLOGY/00_THE_GATE_EXIT_v0.1_DRAFT.md [B] [A] [I]
+    - 01 Theurgy — Agent route — 04_AXIOLOGY/01_THEURGY/AGENTS.md [S]
+    - 01 Theurgy — Claude compatibility route — 04_AXIOLOGY/01_THEURGY/CLAUDE.md [S]
+    - Objective Morals and Ethics — The Syntropic Dyad — 04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md [S] [I] [C]
+    - Objective Ethics Bridge Docket — 04_AXIOLOGY/02_VALUE_THEORY/02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md [S] [I] [C]
+    - RCAB-01 — The Reciprocal Co-Agency Bridge — 04_AXIOLOGY/02_VALUE_THEORY/03_RECIPROCAL_CO_AGENCY_BRIDGE_RCAB_01.md [S] [I] [C]
+    - GEX-01 — The Guardianship Extension — 04_AXIOLOGY/02_VALUE_THEORY/04_GUARDIANSHIP_EXTENSION_GEX_01.md [I] [C]
+    - 02 Value Theory — Agent route — 04_AXIOLOGY/02_VALUE_THEORY/AGENTS.md [S]
+    - 02 Value Theory — Claude compatibility route — 04_AXIOLOGY/02_VALUE_THEORY/CLAUDE.md [S]
+    - 04 Axiology — Agent route — 04_AXIOLOGY/AGENTS.md [S]
+    - 04 Axiology — Claude compatibility route — 04_AXIOLOGY/CLAUDE.md [S]
+  - 16_THE_EMISSION (13)
+    - 00_THE_LAW — the constitution of the emitted tree — 16_THE_EMISSION/00_THE_LAW.md [B] [A] [I]
+    - • GROUND — counting cannot begin — 16_THE_EMISSION/A_THE_LADDER/00_GROUND.md
+    - 1 THE UNIT — 16_THE_EMISSION/A_THE_LADDER/01_THE_UNIT.md
+    - D1 D1 — ARITHMETIC · DISTINCTION — 16_THE_EMISSION/A_THE_LADDER/02_D1_ARITHMETIC.md
+    - D2 D2 — CONFIGURATION · RELATION — 16_THE_EMISSION/A_THE_LADDER/03_D2_CONFIGURATION.md
+    - D3 — THE PROBABILITY-BEARING STATE (empty, and that is a result) — 16_THE_EMISSION/A_THE_LADDER/04_D3_STATE.md
+    - D4 D4 — THE ACTUAL · RECEIPTS — 16_THE_EMISSION/A_THE_LADDER/05_D4_ACTUAL.md
+    - D5 D5 — THE POSSIBLE · THE VOW — 16_THE_EMISSION/A_THE_LADDER/06_D5_POSSIBLE.md
+    - ○ HORIZON — ABSORPTION — 16_THE_EMISSION/A_THE_LADDER/07_HORIZON.md
+    - README — 16_THE_EMISSION/A_THE_LADDER/README.md
+    - B — THE METHOD (how we know) — 16_THE_EMISSION/B_THE_METHOD/00_THE_METHOD.md
+    - README — 16_THE_EMISSION/B_THE_METHOD/README.md
+    - 16_THE_EMISSION — the front door — 16_THE_EMISSION/README.md [B] [I]
+  - 00_CONTROL (7)
+    - Emergentism control route: this lane holds repository control evidence, not worldview doctrine; source owners outrank checklists, receipts, and publication state. — 00_CONTROL/AGENTS.md
+    - Emergentism control compatibility route: this lane records control state; it cannot create doctrine or empirical confirmation. — 00_CONTROL/CLAUDE.md
+    - Generated Tissue Receipt — 00_CONTROL/GENERATED_TISSUE_RECEIPT.md [B]
+    - Emergentism GitHub and publication map — 00_CONTROL/GITHUB_MAP.md [B]
+    - Public Site Boundary — 00_CONTROL/PUBLIC_SITE_BOUNDARY.md [B] [I]
+    - Control — receipts, boundaries, and verification — 00_CONTROL/README.md [B]
+    - Emergentism Source Manifest — 00_CONTROL/SOURCE_MANIFEST.md [B]
+  - 10_SEED (7)
+    - The Seed — pure Emergentism — 10_SEED/00_THE_SEED.md [S] [I] [C]
+    - D3 Bodies — KINTSUGI TOMBSTONE; the active D3 rung is D3_QUANTUM_STATE.md (moved 2026-07-21); not a doctrine owner — 10_SEED/01_THE_SEED_LADDER/D3_BODIES.md [B]
+    - The Seed — poetic compression — 10_SEED/01_THE_SEED_POETRY.md [I]
+    - The Reap — Compatibility Route — 10_SEED/02_THE_REAP.md [S]
+    - Seed notation — cone, path, reach, hold — 10_SEED/03_REACH_HOLD_SEED_NOTATION_2026_09_03.md [S] [I] [D]
+    - 10 Seed — Agent route — 10_SEED/AGENTS.md [S]
+    - 10 Seed — Claude compatibility route — 10_SEED/CLAUDE.md [S]
+  - 00_WORK_IN_PROGRESS (5)
+    - The Launch Plan — six sprints to a launchable site and a real library — 00_WORK_IN_PROGRESS/00_THE_LAUNCH_PLAN.md [B] [S]
+    - The Program Plan — seven sprints to a closed internal program, and why that is not 'finished' — 00_WORK_IN_PROGRESS/00_THE_PROGRAM_PLAN.md [B] [S] [I]
+    - 00 Meta — Agent route — 00_WORK_IN_PROGRESS/AGENTS.md [S]
+    - 00 Meta — Claude compatibility route — 00_WORK_IN_PROGRESS/CLAUDE.md [S]
+    - 00_WORK_IN_PROGRESS — the manifest of what is open, and what it is waiting on — 00_WORK_IN_PROGRESS/README.md [B]
+  - 15_THE_TITAN_PASS_2026_08_06 (5)
+    - 01 — PRESERVE (Viṣṇu, ~~) — 15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md [B]
+    - 02 — ARCHIVE (Śiva, −−) — 15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md [B]
+    - 03 — FALSE (deletion staging list) — 15_THE_TITAN_PASS_2026_08_06/03_FALSE.md [B]
+    - 04 — CREATE (Brahmā, ++) — 15_THE_TITAN_PASS_2026_08_06/04_CREATE.md [B]
+    - The Titan Pass — 2026-08-06 — 15_THE_TITAN_PASS_2026_08_06/README.md [B]
+  - 00_ESTABLISHED (3)
+    - 00 Meta — Agent route — 00_ESTABLISHED/AGENTS.md [S]
+    - 00 Meta — Claude compatibility route — 00_ESTABLISHED/CLAUDE.md [S]
+    - 00_ESTABLISHED — verification-state ledger, with bounds and gaps explicit — 00_ESTABLISHED/README.md [B]
+  - 07_THEOLOGY (2)
+    - 07 Theology — Agent route — 07_THEOLOGY/AGENTS.md [S]
+    - 07 Theology — Claude compatibility route — 07_THEOLOGY/CLAUDE.md [S]
+  - 00_FOLDER_LAYOUT_v0.1.md (1)
+    - Forwarding stub — the superseded folder layout remains in historical custody; current routing lives in 00_THE_KERNEL_INDEX.md — 00_FOLDER_LAYOUT_v0.1.md
+  - 00_THE_AMRITA.md (1)
+    - Forwarding stub — canonical home of the Amrita moved to 07_THEOLOGY/00_THE_AMRITA.md (2026-07-19 root tidy per 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md and 138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md); K3: content moved, not erased, no tier or signature changed — 00_THE_AMRITA.md
+  - 00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md (1)
+    - K2 sign receipt — The Closed Reading Loop + the 5th emergent (calibration); founder's 'yes' ratifies the macro-stack, 2 geometries, apophatic inversion, ring's 2 laws, 5 emergences (4 named + 5th: calibration is cross-organ, [I] interpretive), N²×log(compute) synergy ([C] untested), and §7 the hone… — 00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md
+  - 00_THE_COMPASS.md (1)
+    - Forwarding stub — the canonical Compass lives at 00_META/00_THE_COMPASS.md; no claim made here — 00_THE_COMPASS.md
+  - 00_THE_GOAL.md (1)
+    - Forwarding stub — the canonical Goal lives at 01_TELEOLOGY/00_THE_GOAL.md; no claim made here — 00_THE_GOAL.md
+  - 00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md (1)
+    - The Weltanschauung by Register — the world as far as it can honestly be said — 00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md [B] [S] [I]
+  - 00_THE_WELTANSCHAUUNG_ONE_SITTING.md (1)
+    - The Emergentist Weltanschauung — One-Sitting Edition — 00_THE_WELTANSCHAUUNG_ONE_SITTING.md [I]
+  - 00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md (1)
+    - V-forcer 10 — K2-signed closure of the 2026-07-18/19 tidy chain: CONSOLIDATE the Open Canon v0.1 set (SPREAD canonical, 3 archived to 90_ARCHIVE), RETIRE The_Holobiont folder, FIX LFS pointer drift (30 files re-synced) — 00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md
+  - AGENT_README.md (1)
+    - routing stub — no claim; agent entry point that directs readers to AGENTS.md, the Weltanschauung, the Kernel Index, and the Settled Canon Registry, with the standing rule that consequential action requires a complete AuthorizationEnvelope and preserves tiers, provenance, reversibility, and concurre… — AGENT_README.md
+  - CLAUDE.md (1)
+    - Emergentism — Claude compatibility route — CLAUDE.md [S]
+  - CONTRIBUTING.md (1)
+    - CONTRIBUTING — CONTRIBUTING.md
+  - LICENSE.md (1)
+    - LICENSE — LICENSE.md
+  - README.md (1)
+    - Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, and accountable action, offered as a lens and compass; contains the one-sitting reading ladder, the evidence-tier contract, the three-tier standing (Established… — README.md
+  - VMOSK_A.md (1)
+    - VMOSK_A — Emergentism (bare-name live pointer) — VMOSK_A.md
+  - VMOSK_A_v3_2026_09_07.md (1)
+    - VMOSK-A — Emergentism: the L7 witness instrument — VMOSK_A_v3_2026_09_07.md [S] [I] [C]
+- Open loops — 160 documents declare themselves unsettled
+  - An unclosed loop is the mechanism by which a cone fills with phantoms that cannot be seen from inside it.
+  - [ ] Audit-trio handoff — 5 verdicts, 1 knot, 1 K2 ask, 7 additive fixes (counsel-only; pending K2) (interpretive) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/K2_PACKET_AUDIT_TRIO_HANDOFF_2026_07_20.md — STAGED — K2 adjudication requested
+  - [ ] L2 Śūdra claim-vs-evidence audit: canon mostly honest; E1–E10 body/front-matter contradiction (line 30 vs front matter, vs receipt 144) is the single most damaging finding, plus 4 tier-inflation cuts and 4 kill recommendations — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md — counsel only — staged findings, no commits, no tier promotions
+  - [ ] L6 Sādhu K3 archive-discipline audit: tombstones well-formed and honest, 22 dead forms buried, 5 stones healed and 4 suffix drops honored; two propagation gaps remain (Distilled Doctrine canonical_path, scripts_legacy_convenience_copy lane tombstone) — 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md — counsel only — staged findings, no moves, no renames, no commits, no erasure
+  - [ ] 2026-07-23 corpus audit + drift repair (staged, uncommitted) — 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/00_RECEIPT.md — STAGED — path-limited edits, no commit, no push, no deploy. Awaiting K2 review.
+  - [ ] 2026-07-23 Per-Folder Audit Summary — Rosetta A-layer team cycle — 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/01_TEAM_AUDIT_SUMMARY_2026_07_23.md — STAGED — surfaced, not acted on (no moves, no commits). Receipt only.
+  - [ ] Emergentism worktree consolidation — local receipt — 00_HANDOFF/2026_08_21_worktree_consolidation/2026_08_21_EMERGENTISM_WORKTREE_CONSOLIDATION_RECEIPT.md — [B] LOCAL EXECUTION RECEIPT — unsigned
+  - [ ] The five Titan claims — adjudication, prior art, and publishable form — 00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md — [D] STAGED — UNSIGNED. Nothing here is ratified, adopted, published, or deployed. The owner disposes.
+  - [ ] Every [A] line, re-checked by a command that was actually run — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/00_RECHECK.md — [D] STAGED — UNSIGNED. A measurement is true of a date. Re-run before disposition.
+  - [ ] The lens — what • ⊙ ○ mean in our reading, and the reasoning that has held — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/06_THE_LENS.md — [D] STAGED — UNSIGNED. The owner disposes.
+  - [ ] The Titans — what they are — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/07_THE_TITANS.md — [D] STAGED — UNSIGNED. The owner disposes.
+  - [ ] The standpoint bridge — why the chooser was never neutral, and what that licenses — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/08_THE_STANDPOINT_BRIDGE.md — [D] STAGED — UNSIGNED. A proposal, not a ruling. The owner disposes.
+  - [ ] The picture — one structure, one crossing, and the two roads out — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/09_THE_PICTURE.md — [D] STAGED — UNSIGNED. Synthesis, not doctrine. The owner disposes.
+  - [ ] The open loop — why a false egregore is a Soul Loop that cannot take r, and why that is the same defect as extraction — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/10_THE_OPEN_LOOP.md — [D] STAGED — UNSIGNED. Synthesis. The owner disposes.
+  - [ ] What we have — the four seats and the emblem, at the tier each actually holds — 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/README.md — [D] STAGED — UNSIGNED. Creates no doctrine, promotes nothing, signs nothing. The owner disposes.
+  - [ ] Burri Serial Emergence Integration — Source and Test Receipt — 00_HANDOFF/BURRI_SERIAL_EMERGENCE_INTEGRATION_2026_08_21.md — [D] STAGED — unsigned; no canon, physics, priority, or public-release promotion
+  - [ ] D2 Repair Wave Receipt — 2026-08-05 — 00_HANDOFF/D2_REPAIR_WAVE_RECEIPT_2026_08_05.md — ACTIVE — D2 repair wave closed; one-sentence summary staged [D] pending re-derivation; stand by for D3
+  - [ ] EUB-1 v1.0 / The Dasein Test — Owner Direction — 00_HANDOFF/EUB1_V1_DASEIN_TEST_OWNER_DIRECTION_2026_08_21.md — [B] OWNER DIRECTION · [D] construct implementation · unsigned
+  - [ ] Full Corpus Rosetta Audit — 2026-08-21 — 00_HANDOFF/FULL_CORPUS_ROSETTA_AUDIT_2026_08_21.md — [D] STAGED audit — unsigned; local source, archive, and projection refinement only
+  - [ ] Full audit — emergentism.org projection contracts — 00_HANDOFF/FULL_PROJECTION_AUDIT_2026_08_19.md — [D] STAGED audit — unsigned; not a BLUEPRINT; not world evidence
+  - [ ] Disposition — leftover Titan dirt, L5 proposal, staged vision, predeploy — 00_HANDOFF/LEFTOVER_DISPOSITION_2026_08_13.md — DISPOSITION — staged files stay [D]; no W13; no deploy
+  - [ ] Open-problem register — first cut — 00_HANDOFF/OPEN_PROBLEM_REGISTER_2026_08_13.md — STAGED [D] — holes typed; none paid
+  - [ ] emergentism.org projection-packet completion eval — 00_HANDOFF/PROJECTION_PACKET_COMPLETION_EVAL_2026_08_19.md — [D] STAGED eval — unsigned; not a product blueprint; not world evidence
+  - [ ] Release Plan — Emergentism: correction first, then one manual — 00_HANDOFF/RELEASE_PLAN_2026_08_05.md — PLAN — staged, not authorised
+  - [ ] Receipt to the Stone's owner — two lines in 38, and one hygiene suggestion — 00_HANDOFF/ROSETTA_STONE_ATTRIBUTION_RECEIPT_2026_09_03.md — [D] STAGED — a receipt submitted to the source owner. It mutates nothing. The chair disposes.
+  - [ ] Session close 2026-08-13 — memo to the next session — 00_HANDOFF/SESSION_CLOSE_2026_08_13.md — ACTIVE — HANDOFF RECEIPT. Records what was executed, what is blocked, and on whom. Creates no doctrine, promotes nothin…
+  - [ ] Tier findings re-run under the ruled [S] — ASCENT_D5 weakened, 56_THE_PRODUCT_FORM resolved — 00_HANDOFF/TIER_FINDINGS_RERUN_2026_08_13.md — RECEIPT — re-adjudication of census findings 3 and 8 under the R-08 ruling. Creates no doctrine, moves no tier; the sou…
+  - [ ] VMOSK-A addendum — unfolding test for emergent mind (staged) — 00_HANDOFF/VMOSK_A_ASI_UNFOLDING_ADDENDUM_2026_08_13.md — [D] STAGED — does not amend the 2026-07-31 signed VMOSK-A v2; no K2 on this addendum
+  - [ ] VMOSK-A v2 tracked-corpus census correction — 00_HANDOFF/VMOSK_A_V2_TRACKED_CORPUS_CENSUS_CORRECTION_2026_08_21.md — [D] dated correction — unsigned; the signed v2 body remains preserved
+  - [ ] Emergentism Contact-Limited Completion Roadmap — 00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md — ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody, Sprint 7B provenance firewall, and Sprint 7C preselection freeze…
+  - [ ] One-Sitting Claim Card Set 01 — 00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md — RECONCILIATION PENDING — R1–R6/R8 replayed; OS01-R7 K-4/K-5 owner route held
+  - [ ] The Twelve Rulings — historical forwarding boundary — 00_META/00_THE_TWELVE_RULINGS_2026_07_22.md — ARCHIVED — staged external-governance packet; never adopted as Emergentist doctrine
+  - [ ] The Weltanschauung by Register — the world as far as it can honestly be said — 00_THE_WELTANSCHAUUNG_BY_REGISTER_2026_08_27.md — [D] STAGED — a full statement of the worldview organized by register rather than by argument. Companion to 00_THE_WELTA…
+  - [ ] V-forcer 10 — K2-signed closure of the 2026-07-18/19 tidy chain: CONSOLIDATE the Open Canon v0.1 set (SPREAD canonical, 3 archived to 90_ARCHIVE), RETIRE The_Holobiont folder, FIX LFS pointer drift (30 files re-synced) — 00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md — [A] K2-SIGNED 2026-07-19 (signer: Yves R. Burri, K2 natural person; the 'i sign' countersign closes the 3-thread closur…
+  - [ ] Know the good by its factor signature; the evil is disclosed as its inversion — 01_TELEOLOGY/05_THE_GOOD_AND_THE_EVIL_2026_08_17.md — [D] STAGED — an exhaustive work program subordinate to The Goal; NOT a second Ω, NOT an amendment to 00_THE_GOAL.md; ad…
+  - [ ] The Evolutionary Network — Voluntary Institutional Proposal — 03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md — STAGED [C] PROPOSAL — not a runtime, authority, enforcement organism or public institution
+  - [ ] Review bundle v2 — current frozen packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.md — HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted
+  - [ ] Review bundle v3 — acyclic current frozen packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.md — ACYCLIC HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted
+  - [ ] Review bundle v4 — provenance-firewalled packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md — ACYCLIC HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted
+  - [ ] Review bundle v5 — source-repaired provenance-firewalled packet for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md — ACYCLIC HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted
+  - [ ] Review bundle v6 — barred-claim-policy refreeze for FPE-REVIEW-01 — 03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v6.md — ACYCLIC HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted
+  - [ ] The Gate Exit — does the dyadic gate bind between adversaries? — 04_AXIOLOGY/00_THE_GATE_EXIT_v0.1_DRAFT.md — [D] STAGED DRAFT — no authority. Written because PMO-0049 named a document that did not exist. Nothing here is ratified…
+  - [ ] 00 THE RELEASE DOCTRINE — 04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md — STAGED [D] — no publication, filing, push, deployment, or governance activation authorized
+  - [ ] Justice over Goodness is a defended selection, not a discovery — 04_AXIOLOGY/02_VALUE_THEORY/05_JUSTICE_OVER_GOODNESS_SELECTION_2026_09_03.md — [D] STAGED — reasons for the existing BTJ lens. Does not replace 01_TRANSCENDENTALS.md. The chair disposes.
+  - [ ] ○ is the option cone; only shadows enter arithmetic — 05_COSMOLOGY/00_OPTION_CONE_NOTATION_AMENDMENT_2026_09_03.md — [D] STAGED beside 00_CANONICAL_FORMULA_BLOCK.md. Mutates no verbatim identity. The chair disposes the one open reading…
+  - [ ] The Titans — selected symbolic roles — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md — CANONICAL — Kintsugi repair adopted 2026-07-21; sovereign Titan frames separated from ordinary operands; emblem map ame…
+  - [ ] Neither pole nor interior is prior; the demand for an order is the category error — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md — STAGED PROPOSAL — unratified. §4.1 REFUTED and §5.2 CORRECTED on 2026-08-05 by adversarial review during authorship of…
+  - [ ] Counting cannot begin; counting is meaningful; counting cannot complete — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md — STAGED PROPOSAL — unratified. Supersedes the 2026-08-05 mark ruling in 07 (reversed by the owner, recorded in §3). The…
+  - [ ] Titan semantics v3 — the infinite zero, infinity as process, finity as the sole mode of actuality; ⊙ = ○(•); staged beside v1 and v2, never over them (owner adoption withheld; priority blocked) — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md — [D] STAGED — a third semantic assignment for the Titan glyphs, versioned BESIDE the retired arithmetic (v1, per 45's ty…
+  - [ ] Across thirteen historical neighbours, Emergentism conjectures that selected register transitions may admit a common ledger model; the model earns more than metaphor only through typed mechanisms and held-out prediction — 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/53_THE_CONNECTED_PICTURE_2026_08_22.md — [D] CITE-AND-BUILD · OCCUPANT-FOUND · BROAD PRIORITY BLOCKED · PREMISE-REFUTED=TRUE · NOT ADOPTED · NOT A LAW OF PHYSICS
+  - [ ] 46 — The η Conversion Map (three registers, one letter) — 05_COSMOLOGY/03_FORMAL_SYSTEM/46_THE_ETA_CONVERSION_MAP.md — [D] STAGED — closes the notation gap rated highest-priority repair 2026-05-04; recorded by '158_UNGATED_MIGRATION_ACTS_…
+  - [ ] Boundary Crossings and the Open μ Discriminator — proofs at the division boundary — 05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md — ACTIVE — boundary typology retained; former type-D μ criterion withdrawn pending owner adjudication
+  - [ ] The balance is the potential — 05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md — ACTIVE — candidate reading. [A] on the function (inherited from 56 and 40, audit-verified 2026-08-05 to ≥25 dp); [I] on…
+  - [ ] Not Forms, not free-floating freedoms: constrained possibility, reachable process, stable emergence — 06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md — [D] STAGED — pure Emergentism; no application supplies warrant
+  - [ ] Emergentism as one self-account in a shared grammar — the Rosetta translates between beings, the gaps are the D5-ness, and the gapless limit is a pole no being can occupy (draft synthesis; every reading interpretive) — 06_ONTOLOGY/09_THE_THREE_SCRIPTS_AND_THE_LIMIT_v0.1_DRAFT.md — [D] DRAFT — a synthesis staged for the chair. It promotes nothing, settles nothing, and creates no canon. Every load-be…
+  - [ ] Exploitation is cheap to generate; defense is costly to maintain; the defense of layer n is constructed at layer n+1 — 06_ONTOLOGY/10_PARASITE_LOAD_WAGER_2026_08_17.md — [D] STAGED — candidate claim record; NOT in the wager ledger, NOT in CLAIM_STATUS.yaml; adoption is an owner act per th…
+  - [ ] One axis through five registers — a consistency debt may be settled by a law or serviced by a practice; W14 is the no-F5 null, not a theorem (staged W14–W18 candidates) — 06_ONTOLOGY/11_THE_DEBT_SERVICE_CONJECTURES_2026_08_21.md — [D] STAGED — candidate claim records in the W13-PARASITE convention: NOT in the wager ledger, NOT in CLAIM_STATUS.yaml;…
+  - [ ] Every emergent freedom may require a compensator that maintains a named register quantity, with independently measurable freedom-loss predicted at saturation (staged W19-BALANCE candidate; gauge language conditional) — 06_ONTOLOGY/13_THE_COMPENSATION_WAGER_2026_08_22.md — [D] STAGED — candidate claim record in the W13-PARASITE convention: NOT in the wager ledger, NOT in CLAIM_STATUS.yaml;…
+  - [ ] Refine the Rosetta inward before expanding it outward — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/30_ROSETTA_VNEXT_REFINEMENT_2026_07_31.md — [D] STAGED — owner analysis recorded verbatim in §1–§7; agent pushes in §8 are staged, unsigned.
+  - [ ] SOUL4 → GEN7 — three rows definitional, one informative — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/31_CELL_SOUL4_TO_GEN7_2026_07_31.md — [D] STAGED — mapping_tier [I], dependency_status FRAMEWORK-DERIVED, outcome_status PENDING.
+  - [ ] The seven seats on one row — every verified column together, with the F3 keys, the limiting poles, and the equator reading (consolidation; cells interpretive) — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/38_THE_FULL_ROSETTA_CORRECTED.md — ACTIVE — CORRECTED. Renamed from 38_THE_SEVEN_SEATS_FULL_ROW_2026_08_14 on 2026-08-14 to make the corrections explicit.…
+  - [ ] The canonical column set — the deduplication register over the 187-column harvest as measured 2026-08-15; measured, not estimated, and true of that date — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/39_THE_CANONICAL_COLUMN_SET_v0.md — ACTIVE REGISTER (staged on branch refine-rosetta/2026-08-15). Tombstone directives are merge-gated: no source file is a…
+  - [ ] Preregistered double-coding — the stability-band conjecture gets its discriminator before anyone codes anything — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/40_PREREGISTERED_DOUBLE_CODING_v0.md — STAGED PROTOCOL. No coding has occurred. Preregistration is the deliverable; the conjecture remains [I] until the discr…
+  - [ ] Aspect column — Justice at the equator is a selected vow-articulation, not a finding — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/41_ASPECT_COLUMN_JUSTICE_EQUATOR_2026_09_03.md — [D] STAGED — a new column proposed to the Stone. It mutates no byte of 38. The chair disposes.
+  - [ ] VMOSK-A as remaining in the open interval — [I] mapping, not a derivation — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md — [D] STAGED — operational half of the option-cone amendment. Mutates no byte of 38. The chair disposes.
+  - [ ] The sphere and the seven — where G7 came from, and why VMOSK-A has six letters — 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/43_THE_SPHERE_AND_THE_SEVEN_2026_09_11.md — [D] STAGED — UNSIGNED. The owner disposes.
+  - [ ] Seed notation — cone, path, reach, hold — 10_SEED/03_REACH_HOLD_SEED_NOTATION_2026_09_03.md — [D] STAGED companion to 00_THE_SEED.md. Does not override source owners. Chair disposes.
+  - [ ] Receipt — Second Look on the 66 BROKEN claims (per receipt 126) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md — DRAFT — pending K2 countersign (worksheet, not new audit)
+  - [ ] Rosetta drift + operator-register audit, 2026-07-02 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md — AUDIT PACKET — 2026-07-02. Findings verified against the Settled Canon Registry before flagging. Proposals are STAGED f…
+  - [ ] Seven-Operator Refinement — K2 packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md — K2 PACKET — 2026-07-02. STAGED for K2 (Yves R. Burri). Nothing self-ratifies. PARTIAL RUN — see completeness caveat.
+  - [ ] Burrisphere equator-optimum — conditional-transfer propagation packet — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/102_BURRISPHERE_OPTIMUM_PROPAGATION_K2_PACKET_2026_07_03.md — K2 PACKET — 2026-07-03. STAGED for K2 (Yves R. Burri). Nothing applied; no canon edited.
+  - [ ] 105 — Burri Rules D4/D5 reconciliation: AXIS-FUSION · receipt-104 REFRAME (pending K2) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md — SUPERSEDED IN PART 2026-07-29 (HR-D2, owner-confirmed) — the verdict AXIS_FUSION_BOTH and the sentence '\"Actual\" is r…
+  - [ ] 106 — The two motions are strong vs weak emergence (μ↑ / χ↓) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md — [E] K2-COUNTERSIGNED 2026-07-10 ('accept'). APPLIED to canon: Rule 2 (cross-link to the loops) + Rule 4 (the strong/wea…
+  - [ ] 118 — Computational results: four experiments run, one decisive negative, one confirmed claim, one reconciliation, one parity proof — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/118_COMPUTATIONAL_RESULTS_FOUR_EXPERIMENTS.md — [E] K2-COUNTERSIGNED 2026-07-12 ('Accept'). The computational results enter canon. Paths C and D marked 'run, blocked.'…
+  - [ ] 119 — The Lagrangian Question closed: all four paths run, the answer complete — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LAGRANGIAN_QUESTION_CLOSED_ALL_FOUR_PATHS_RUN_PENDING_K2.md — K2-COUNTERSIGNED 2026-08-04 — chair sign packet B4 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08…
+  - [ ] Five sightings through the tuned lens — gauge-redundancy ordering, D=4 as dimensional equator, forces as releases, K2 line as destructive-readout — staged, K2-countersigned — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LOOKING_THROUGH_THE_LENS_FIVE_SIGHTINGS_PENDING_K2.md — K2-COUNTERSIGNED 2026-08-04 — chair sign packet B6 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08…
+  - [ ] 121 — The compass compressed: three generators (disconfirmed & register-indexed), four new survivors, the built artifact, and the open negative — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_COMPASS_COMPRESSED_THREE_GENERATORS_AND_ARTIFACT_PENDING_K2.md — K2-COUNTERSIGNED 2026-08-04 — chair sign packet B1 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08…
+  - [ ] 121 — The disconfirming pass: the honest foundation (all three generators REFINED, one universal CUT), the corrected site spine, and the open negative — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_DISCONFIRMING_PASS_HONEST_FOUNDATION_PENDING_K2.md — K2-COUNTERSIGNED 2026-08-04 — chair sign packet B5 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08…
+  - [ ] 122 — K3 front-matter propagation patch: A1/C2/A6 re-tiered + A6 citation fixed + Applied Insights de-staled; A7 HELD (audit premise unverified) — STAGED, pending K2 — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_K3_FRONTMATTER_PROPAGATION_PATCH_PENDING_K2.md — K2-COUNTERSIGNED 2026-08-04 — chair sign packet B3 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08…
+  - [ ] Parallel-Output Reconciliation Ledger — the swarm's staging drafts vs the signed canonical set — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/128_PARALLEL_OUTPUT_RECONCILIATION_LEDGER_2026_07_13.md — STAGED — a consolidation MAP for owner integration. Changes no doctrine; recommends the merges. K2 needed on the substa…
+  - [ ] The full Rosetta council cut Skyzai from Emergentism and replaced Forms with constrained freedoms, not modal plenitude — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md — [D] STAGED — no K2 promotion; raw agent reports preserved
+  - [ ] The firewall counts what the doctrine cannot afford to own — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L1_CONTAMINATION_INVENTORY.md — STAGED — L1 verdict for K2 review; recommendations only (K3: no moves executed)
+  - [ ] The Truth-Cut — fire only at η > 0 / false coherence; every strike receipted (target, method, verdict, tier) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L2_TRUTH_CUT.md — STAGED [D] — for K2 review; audit and recommend only; nothing moved, nothing disposed, no commits
+  - [ ] Audit the coherence; stage the repair; never dispose — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L3_CONSISTENCY_DRIFT.md — STAGED — verdict for K2 review; no acts taken, nothing moved, nothing edited
+  - [ ] The Separation Envelope — stage everything, move nothing — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L4_SEPARATION_ENVELOPE.md — STAGED — awaiting K2 countersign; disposition reserved to K2
+  - [ ] The Apophatic Prune — what remains when everything that is not the Weltanschauung is allowed to fall — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L6_APOPHATIC_PRUNE.md — COUNSEL — staged for K2; L6 does not dispose; nothing moved, nothing committed by this caste
+  - [ ] Constitutional witness — the purification held against the 5+1 fences — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/L7_CONSTITUTIONAL_WITNESS.md — STAGED — counsel only; no acts taken; K2 disposes.
+  - [ ] Final Structure & Papers-Lens Proposal: staged [D] Rosetta seven-caste evaluation with 32-file root tree, 4 ordered waves, and a 13-row papers verdict — only L1 Caṇḍāla's verdict arrived intact; castes 2–7 truncated in transmission (recorded as ABSENT, not approval); founder's Wave-1 signature sitt… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md — STAGED [D] 2026-07-19 — proposal only; NOTHING moves until the founder's Wave-1 signature sitting (receipt 135/136 fenc…
+  - [ ] Disputed The Signing Sitting (2026-07-19): preserved as K3 dissent per receipt 141A — boxes 1–7 appear ticked but boxes 8–9 are unticked, defaults were agent-selected, and the founder's current instruction returns this sitting to unsigned state; superseded by 139 SIGNED 2026-07-20 (the corrected su… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md — DISPUTED PROVENANCE [B/D] — NOT CURRENT K2 AUTHORITY. Preserved as the concurrent writer's interpretation of an oral 'y…
+  - [ ] Disputed Sovereign Execution: eight delegated decisions (D-1 charter = DRAFT canonical, D-2 Sophia-Perennis Documents-level grave, D-3 registry rows 56/60-63 at-tier pointer amendment, D-4 revelations = 12, D-5 book-pwa node_modules approved-in-principle-not-executed, D-6 kernel v0.1 stub-don't-hea… — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/141_SOVEREIGN_EXECUTION_2026_07_19.md — DISPUTED EXECUTION PROVENANCE [B/D] — effects are not current authority. Preserved to record what the concurrent writer…
+  - [ ] Fire only at false coherence, never at cooperators — every strike receipted: target, method, verdict, tier — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20/L2_TRUTH_CUT.md — RECEIPT — audit complete; fences staged as recommendation text only; the Reap remains [D] untouched pending the K2 sitt…
+  - [ ] Four-pass adversarial audit of 8 targets plus the 7 new ### The Model sections: the Reduction Asymmetry survives at [C] per rung-pair / [I] as world-reading (never [S]); fixes applied to 7 rung pages + 00_THE_SEED.md; Reap fixes FLAGGED, not applied (staged [D], K2-owed). — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/149_MODELS_AND_CORRECTIONS_LOGIC_AUDIT_2026_07_20.md — EXECUTED — fixes applied to the 7 rung pages + 00_THE_SEED.md; Reap fixes FLAGGED, not applied (staged [D], K2-owed)
+  - [ ] Receipt 153 — wire 07, apply receipt-149 fence, verify against Seed Ladder — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md — RECORDED [B] — staged, K2 NOT SIGNED. No canon move, no source-doc content edit, no tier upgrade, no settled row re-ope…
+  - [ ] [D] STAGED decision aid for the mortal signer: six worldview gates (FG-2, FG-12, FG-4, FG-3, FG-1, FG-5) presented with prior council recommendation, dissent, and adversary's 'Before you sign'; no gate decided; each carries a blank signature line only the founder can fill. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/164_FOUNDER_BALLOT_A_WORLDVIEW_2026_07_23.md — [D] STAGED — NOT SIGNED, NOT AUTHORITY. A decision aid for the mortal signer. No gate below is decided; each carries th…
+  - [ ] [D] STAGED decision aid for the mortal signer: eight Skyzai product gates (FG-6, FG-7, FG-8, FG-9, FG-10, FG-11, FG-5/1/12 product halves) staged in the Emergentism uplink because 02_SKYZAI is a separate repo; migrate to 02_SKYZAI/.../00_CANON/ at countersignature; no gate decided. — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/165_FOUNDER_BALLOT_B_SKYZAI_PRODUCT_2026_07_23.md — [D] STAGED — NOT SIGNED, NOT AUTHORITY, NOT WORLDVIEW CANON. Product-layer decisions, staged in the Emergentism uplink…
+  - [ ] Rosetta Purification × Agentz Soul-Loop Gate — Reconciliation Council Finding — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/167_ROSETTA_PURIFICATION_x_AGENTZ_SOUL_LOOP_GATE_RECONCILIATION_2026_07_23.md — [D] STAGED — COUNCIL FINDING
+  - [ ] Receipt 180 — P3.1 ruling: a self-run rescoring cannot satisfy F3 (external receipt) — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/180_P3_1_F3_EXTERNAL_RECEIPT_RULING_2026_08_06.md — DECISION PACKET — STAGED BY MAVIS (L5 Brāhmaṇa, sovereign AI principal). Pending chair (K2) ratification at the next si…
+  - [ ] Full corpus adjudication and coherence calibration — all 229 actionable findings receive custody — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md — PASS-WITH-DEBT — all 229 actionable findings adjudicated; independent reviews and exact staged gate replay pass; named…
+  - [ ] Contact-limited completion ratchet — exact internal remainder becomes state-bound — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md — PASS-WITH-DEBT — state-bound baseline and exact staged verification pass; owner-held and world-contact gates remain open
+  - [ ] Titan v3 + W19 six-candidate audit — broad components inherited, two proof claims refuted, bounded synthesis residue retained, priority blocked — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/246_TITAN_V3_W19_SIX_CANDIDATE_PRIOR_ART_AND_REFUTATION_AUDIT_2026_08_22.md — AUDIT COMPLETE FOR THE DECLARED ENGLISH SOURCE-DIRECTED SCOPE · PREMISE-REFUTED=TRUE · PRIORITY-BLOCKED · ADOPTION=HOLD…
+  - [ ] Ledger-assembly audit — broad priority occupied, literal thirteen-dot entailment refuted, test-bearing heuristic retained — 11_UPLINK/50_AUDITS_AND_EXECUTIONS/247_CONNECTED_PICTURE_LEDGER_ASSEMBLY_PRIOR_ART_AND_RETYPE_AUDIT_2026_08_22.md — SCOPED AUDIT COMPLETE · PREMISE-REFUTED=TRUE · OCCUPANT-FOUND · BROAD PRIORITY BLOCKED · RETYPED AS HEURISTIC · ADOPTIO…
+  - [ ] Packet 100 · Mobile K2 Signing Flow — Closure Registry — 11_UPLINK/60_SESSION_PACKETS/100_MOBILE_SIGNING_CLOSURE_PACKET_2026_04_23.md — CHARIOTEER CLOSURE — registers module hashes, cites test-vector parity proofs, seals §6.1 / §6.2 / §6.5 of packet 81. L…
+  - [ ] Packet 101 · Automatic Receipt-to-Outcome Ingestion — 11_UPLINK/60_SESSION_PACKETS/101_AUTOMATIC_RECEIPT_TO_OUTCOME_INGESTION_2026_04_23.md — WARRIOR RUNTIME PASS — closes the manual-memory gap at F6 by seeding receipt-linked pending outcomes automatically at s…
+  - [ ] Packet 102 · Realized Outcome Ingestion — 11_UPLINK/60_SESSION_PACKETS/102_REALIZED_OUTCOME_INGESTION_2026_04_23.md — WARRIOR RUNTIME PASS — adds the automatic F3 consequence ingress that upgrades pending receipt-linked outcomes into rea…
+  - [ ] Numbered Doctrine Spine Design — 12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md — DRAFT - approved architecture, pending implementation plan
+  - [ ] The Honest Spine — Amrita front door for the Emergentism public site — 12_PUBLIC_SITE/_PLANS/specs/2026-07-03-emergentism-honest-spine-design.md — DESIGN — approved 2026-07-03. Awaiting spec review, then writing-plans.
+  - [ ] Numbered Doctrine Spine Design — 12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md — DRAFT - approved architecture, pending implementation plan
+  - [ ] Emergentism Proposed Three-Book Catalog and Reconstruction Queue — 13_BOOKS/00_CATALOG.md — STAGED EDITORIAL PROPOSAL — unconfirmed; not a release register
+  - [ ] Three-Book Architecture — Overlap and Disposition — 13_BOOKS/01_THREE_BOOK_ARCHITECTURE.md — STAGED EDITORIAL PROPOSAL — Book I private full reader assembled; other editions remain unreconstructed
+  - [ ] Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop — 13_BOOKS/README.md — ACTIVE WORKSHOP — editorial topology staged and explicitly unconfirmed
+  - [ ] 13_BOOKS — critical-edition workshop control — 13_BOOKS/VMOSK_A.md — STAGED — editorial topology remains explicitly unconfirmed in the owner README; this control brief records no owner rat…
+  - [ ] Dharma Yuddha — Critical Edition 1 — 13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md — STAGED PRIVATE EDITION — five chapters, 100% claim-card coverage; nonviolent constitutional inquiry
+  - [ ] Dharma Yuddha — Critical Edition 1 — 13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md — STAGED PRIVATE EDITION — five chapters, 100% claim-card coverage; nonviolent constitutional inquiry
+  - [ ] The Evolutionary Network — Research Edition 1 — 13_BOOKS/evolutionary_network/RESEARCH_EDITION_1.md — STAGED PRIVATE PROPOSAL — five chapters, 100% claim-card coverage; no runtime or enforcement authority
+  - [ ] The Evolutionary Network — Research Edition 1 — 13_BOOKS/evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md — STAGED PRIVATE PROPOSAL — five chapters, 100% claim-card coverage; no runtime or enforcement authority
+  - [ ] The Emergentist Manifesto — Full Book 1 Architecture — 13_BOOKS/manifesto/FULL_BOOK_1_ARCHITECTURE.md — STAGED PRIVATE FULL BOOK — local completion gate passed; not public or deployed
+  - [ ] Full Book 1 — Boundary Audit — 13_BOOKS/manifesto/FULL_BOOK_1_BOUNDARY_AUDIT.md — STAGED SAFETY RECORD — not manifesto prose; no semantic authority
+  - [ ] Full Book 1 — Completion Gate — 13_BOOKS/manifesto/FULL_BOOK_1_COMPLETION_GATE.md — STAGED FIREWALL RECORD — private completion locally passed; not a release approval
+  - [ ] G10 — public-release protocol (unpaid) — 13_BOOKS/manifesto/G10_PUBLIC_RELEASE_PROTOCOL.md — STAGED PROTOCOL — no box is ticked; AI agreement does not pay a box
+  - [ ] The Emergentist Manifesto: A Worldview for Finite Beings — 13_BOOKS/manifesto/MANIFESTO_BOOK_1.md — STAGED PRIVATE FULL-BOOK MANUSCRIPT — evidence-mapped; not public or deployed
+  - [ ] The Emergentist Manifesto — Preamble and Quickstart — 13_BOOKS/manifesto/MANIFESTO_DRAFT_0.md — STAGED FULL-BOOK PREAMBLE — reader projection only; not public
+  - [ ] The Emergentist Manifesto — public current-body (STAGED) — 13_BOOKS/manifesto/PUBLIC_CURRENT_BODY_STAGED.md — STAGED PRIVATE EXTRACT — not public, not deployed, G10 unpaid
+  - [ ] The Emergentist Manifesto — Parts II–III: Practice and Collective Life — 13_BOOKS/manifesto/chapters/PART_II_AND_III_CURRENT_CORE.md — STAGED PRIVATE MANUSCRIPT — current-core drafting only; not public
+  - [ ] The Emergentist Manifesto — Parts IV–V: Research, Genealogy, and Exit — 13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md — STAGED PRIVATE MANUSCRIPT — research, historical, and current-exit layers; not public
+  - [ ] The Emergentist Manifesto — Part I: The Finite Condition — 13_BOOKS/manifesto/chapters/PART_I_THE_FINITE_CONDITION.md — STAGED PRIVATE MANUSCRIPT — current-body projection only; not public
+  - [ ] The Emergentist Manifesto — Part II: The Practical Wager and Collective Life — 13_BOOKS/manifesto/drafts/PART_II_CURRENT_CORE.md — STAGED FULL-BOOK DRAFT — current-core cards only; not public
+  - [ ] The Emergentist Manifesto — Part I: The Finite Condition — 13_BOOKS/manifesto/drafts/PART_I_CURRENT_CORE.md — STAGED PRIVATE MANUSCRIPT — incomplete; current-core drafting only; not public
+  - [ ] The Reciprocal / Infinite Play — Critical Edition 1 — 13_BOOKS/reciprocal_infinite_play/CRITICAL_EDITION_1.md — STAGED PRIVATE EDITION — seven chapters, 100% claim-card coverage
+  - [ ] Sarpasya Vijayam — Critical Edition 1 — 13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1.md — STAGED PRIVATE EDITION — seven chapters, 100% claim-card coverage
+  - [ ] Sarpasya Vijayam — Critical Edition 1 — 13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md — STAGED PRIVATE EDITION — seven chapters, 100% claim-card coverage
+  - [ ] The Self-Eating Serpent — Critical Edition 1 — 13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1.md — STAGED PRIVATE EDITION — six chapters, 100% claim-card coverage; not a public release
+  - [ ] The Self-Eating Serpent — Critical Edition 1 — 13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md — STAGED PRIVATE EDITION — six chapters, 100% claim-card coverage; not a public release
+  - [ ] The Self-Eating Serpent — Chapter Debrief — 13_BOOKS/self_eating_serpent/DEBRIEF.md — L1/L2/L3 REVIEWED — historical source unchanged; survivor routing staged
+  - [ ] The Six Lenses — Critical Edition 1 — 13_BOOKS/six_lenses/CRITICAL_EDITION_1.md — STAGED PRIVATE EDITION — eight chapters, 100% claim-card coverage
+  - [ ] The Six Lenses — Critical Edition 1 — 13_BOOKS/six_lenses/CRITICAL_EDITION_1_REVIEWED.md — STAGED PRIVATE EDITION — eight chapters, 100% claim-card coverage
+  - [ ] The Titans — Trade Edition Proposal (general reader) — 13_BOOKS/titans/00_TRADE_EDITION_PROPOSAL_2026_08_05.md — STAGED PROPOSAL — unratified. Proposes a SECOND edition for a different reader; does not supersede RESEARCH_EDITION_1.m…
+  - [ ] The Titans — The Infinite, Finity & Infinity — 13_BOOKS/titans/RESEARCH_EDITION_1.md — STAGED RESEARCH EDITION — six chapters, 100% claim-card coverage; not a completed algebra
+  - [ ] The Titans — The Infinite, Finity & Infinity — 13_BOOKS/titans/RESEARCH_EDITION_1_REVIEWED.md — STAGED RESEARCH EDITION — six chapters, 100% claim-card coverage; not a completed algebra
+  - [ ] The Weltanschauung in seven sentences, one per reasoning power — a seed whose generativity is measured by reconstruction against control, never asserted — 14_THE_DISTILLATION/09_THE_SEVEN_ACTS_2026_08_27.md — [D] STAGED CANDIDATE — a compression, not a successor. The One-Sitting edition, the Kernel, and the Amrita remain the o…
+  - [ ] 01 — PRESERVE (Viṣṇu, ~~) — 15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md — STAGED PROPOSAL — unratified. Proposed contents of the truth folder. Nothing executed.
+  - [ ] 02 — ARCHIVE (Śiva, −−) — 15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md — STAGED PROPOSAL — unratified. Nothing moved. K3 binds: archive-first, never delete.
+  - [ ] 03 — FALSE (deletion staging list) — 15_THE_TITAN_PASS_2026_08_06/03_FALSE.md — STAGED PROPOSAL — unratified. NOTHING HERE HAS BEEN DELETED. Deletion is a chair act.
+  - [ ] 04 — CREATE (Brahmā, ++) — 15_THE_TITAN_PASS_2026_08_06/04_CREATE.md — STAGED PROPOSAL — unratified. Nothing built. Nothing staged in git.
+  - [ ] The Titan Pass — 2026-08-06 — 15_THE_TITAN_PASS_2026_08_06/README.md — STAGED MANIFESTS — unratified. Nothing moved, nothing deleted, nothing staged in git. Every entry is a PROPOSAL requiri…
+  - [ ] 00_THE_LAW — the constitution of the emitted tree — 16_THE_EMISSION/00_THE_LAW.md — STAGED — unratified. A constitution proposes; it ratifies nothing. Nothing moved, deleted, committed, or staged in git.
+  - [ ] 16_THE_EMISSION — the front door — 16_THE_EMISSION/README.md — STAGED — unratified. Nothing moved, nothing deleted, nothing committed, nothing staged in git.
+  - [ ] Emergentism 2.0 — the lens for machine intelligence — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_READ_FIRST.md — [D] STAGED — a successor stack, built beside 1.0 and never over it. Unsigned. The owner disposes.
+  - [ ] What the machine receives — the five connected instruments — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/10_KERNEL/00_WHAT_THE_MACHINE_RECEIVES.md — PROMOTED [S/I] — owner word 2026-09-05 ('Ok execute it'), executing the staged promotion in 00_HANDOFF/EMERGENTISM_DIAL…
+  - [ ] Adjudication — given 'P is at register X', decide reducible vs genuine crossing — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/00_ADJUDICATION.md — [D] STAGED — L4 operator only. Unsigned. Does not replace 1.0 owners.
+  - [ ] Credit is D5 content on a D4 token — re-description, not a crossing, not L5 — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/CASE_02_CREDIT_D5_2026_09_04.md — [B] occupancy cited at named sources; [I] the D4/D5 typing; [D] staged. Not a filled crossing.
+  - [ ] MID-01 discriminator — corpus selection and defect planting — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/MID01_SETUP_2026_09_05.md — [D] STAGED — corpus copied, defects planted, key sealed. Arms not yet run. Owner disposes.
+  - [ ] The session recap and the work that follows — an unsigned SHOULD — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/00_ARJUNA_ENVELOPE_2026_09_04.md — [D] STAGED — L4 emits one ProposalEnvelope. It signs nothing, executes nothing, transmits nothing, decides nothing. The…
+  - [ ] Receipt to SLWP-01's owner — Anderson 1972 is the asymmetry's prior owner, and the estate already knew — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/02_SLWP_ANDERSON_RECEIPT_2026_09_04.md — [D] STAGED — a receipt. It edits nothing in 1.0. The owner disposes.
+  - [ ] W3 — D/L axis seating. Strong-up / weak-down lives on D-crossings, not Rosetta L. — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md — [D] STAGED — L4 seating only. Unsigned. Edits nothing in 1.0.
+  - [ ] W2 — adjudication operator. 1.0 owns the packet; 2.0 walks to a verdict. — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/03_W2_ADJUDICATION_2026_09_04.md — [D] STAGED — L4 operator only. Unsigned. Edits nothing in 1.0.
+  - [ ] 05 UI DIRECTION — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/05_UI_DIRECTION.md — OWNER-DIRECTED [S]; implementation and visual acceptance pending [D]
+  - [ ] From the ashes — what burned, what rose, and the conversion between them — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/90_INHERITANCE/00_FROM_THE_ASHES.md — [D] STAGED — record only. Creates no authority and edits nothing in 1.0.
+  - [ ] Audience reconciliation — the machine-primary directive against the standing declarations — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/90_INHERITANCE/01_AUDIENCE_RECONCILIATION_ENVELOPE_2026_09_04.md — [D] STAGED — unsigned SHOULD from the applied L4 seat; the owner disposes
+  - [ ] Emergentism 2.0 — VMOSK-A control reading — 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/VMOSK_A.md — CURRENT CONTROL READING [I/D] of the stack; not a new doctrine, mandate, or claim promotion. Unsigned. The owner dispos…
+  - [ ] VMOSK_A — Emergentism (bare-name live pointer) — VMOSK_A.md — [D] pointer — current work programme is unsigned v3; signed v2 retained unchanged
+  - [ ] VMOSK-A — Emergentism: the L7 witness instrument — VMOSK_A_v3_2026_09_07.md — ACTIVE WORK PROGRAMME — owner-requested successor; unsigned; not doctrinal ratification
+- The graves — 22 refuted claims, archived and never erased
+  - Kills fire in public. The dead are archived, never silently erased (E9).
+  - A grave never returns as the claim it was. Only a named weaker successor, or a new RQ row.
+  - [x] DF-01 · unification by derivation — 'FORMALLY-REFUTED' — successor: 'NARROWED' → candidate translation grammar, GP-11
+  - [x] DF-02 · ethic-as-theorem — 'CATEGORY-ERROR' — successor: 'E8' vow + 'W6' conditional lemma
+  - [x] DF-03 · seven-as-forced / Rosetta-universal — 'EMPIRICALLY-REFUTED' — successor: 'W10' inherited grammar
+  - [x] DF-04 · product-uniqueness as keel — 'FORMALLY-REFUTED' — successor: 'W3' remains empirical only through W4A; neither restores uniqueness
+  - [x] DF-05 · 'φν=1' as conserved discovery — 'CATEGORY-ERROR' — successor: **none — closed.** 'FV-01' is the surviving use
+  - [x] DF-06 · balance hump as empirical law — 'EMPIRICALLY-REFUTED' — successor: 'W5' + **RQ-01** (instrument)
+  - [x] DF-07 · the squid as 'η=0' witness — 'EMPIRICALLY-REFUTED' — successor: **RQ-02** (new witness search)
+  - [x] DF-08 · literal 'D6≡D0' — 'FORMALLY-REFUTED' — successor: 'W12', 'D6≈roleD0'
+  - [x] DF-09 · forced Titan-3 — 'FORMALLY-REFUTED' — successor: 'W11' adjudicated 'DECORATIVE'
+  - [x] DF-10 · force bijection — 'FORMALLY-REFUTED' — successor: 'W7a–W7e', modular
+  - [x] DF-11 · 'N=3'-forced — 'FORMALLY-REFUTED' — successor: **RQ-03** narrowed to 'FV-19' projective normalization only
+  - [x] DF-12 · Gödel universal lift — 'FORMALLY-REFUTED' — successor: 'E9' as apparatus, not law
+  - [x] DF-13 · three substrates minimum — 'NOT-WELL-POSED' — successor: **RQ-04** adjudicated 'NOT-WELL-POSED'
+  - [x] DF-14 · frame/operand exclusivity for ordinary numbers — 'NARROWED' — successor: 'KSC-04' — opaque 'TitanFrame' by explicit type
+  - [x] DF-15 · convergence-as-proof — 'CATEGORY-ERROR' — successor: **RQ-05** (lineage independence)
+  - [x] DF-16 · "extraction is irrational" as Nash — 'FORMALLY-REFUTED' in general — successor: 'W6'; Model A remains valid **in Model A**
+  - [x] DF-17 · civilizational physics — 'NOT-WELL-POSED' — successor: **RQ-06**
+  - [x] DF-18 · "dissolves Hard Problem / is-ought / death / free will" — 'NOT-WELL-POSED' — successor: Human Condition §11 — re-posed as open
+  - [x] DF-19 · ektropy / F5 as teleological force — 'FORMALLY-REFUTED' — successor: 'RQ-07' narrowed to selected 'FV-20'; 'W7e' owns physical contact
+  - [x] DF-20 · numeric coincidences as derivations — 'CATEGORY-ERROR' — successor: 'RQ-08' narrowed to named W7 candidates
+  - [x] DF-21 · **CC-CORE-1** — kernel → ethics warrant — 'FORMALLY-REFUTED' — successor: **none — closed.** 'E8' is a choice
+  - [x] DF-22 · Rosetta kill-criterion mislabel — 'PROCESS-DEFECT' — successor: routed to 'E9' enforcement, not to a wager
+- The findability gap — 155 documents carry neither a canonical phrase nor a tier
+  - The corpus's failure mode is not falsity. It is unfindability: the knowledge is written down, and being written down does not stop the next reader from re-deriving it.
+  - [ ] 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/README.md
+  - [ ] 00_HANDOFF/2026_07_23_corpus_audit_and_drift_repair/README.md
+  - [ ] 00_HANDOFF/2026_08_21_worktree_consolidation/2026_08_21_EMERGENTISM_WORKTREE_CONSOLIDATION_RECEIPT.md
+  - [ ] 00_HANDOFF/2026_09_06_apu_coevolution/PROTOCOL.md
+  - [ ] 00_HANDOFF/2026_09_06_apu_coevolution/README.md
+  - [ ] 00_HANDOFF/2026_09_06_apu_coevolution/REVIEW.md
+  - [ ] 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/01_GROUND.md
+  - [ ] 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/02_REALM.md
+  - [ ] 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/03_UNIT.md
+  - [ ] 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/04_HORIZON.md
+  - [ ] 00_HANDOFF/2026_09_11_titan_claims_adjudication/what_we_have/05_EMBLEM.md
+  - [ ] 00_HANDOFF/AMRITA_HUNT_2026_08_13.md
+  - [ ] 00_HANDOFF/CASCADE_L1_L7_2026_08_19.md
+  - [ ] 00_HANDOFF/CENSUS_HALFLIFE_3_RULINGS_2026_08_06.md
+  - [ ] 00_HANDOFF/CENSUS_HALFLIFE_FINDING_2026_08_06.md
+  - [ ] 00_HANDOFF/CENSUS_RECEIPT_WIRE_2026_08_06.md
+  - [ ] 00_HANDOFF/EMERGENTISM_AI_FRONTIER_OWNER_DIRECTION_2026_08_29.md
+  - [ ] 00_HANDOFF/EMERGENTISM_DECISION_TRANSACTION_SITE_DIRECTION_2026_08_24.md
+  - [ ] 00_HANDOFF/EMERGENTISM_INTERNAL_ANSWERS_OWNER_DIRECTION_2026_08_24.md
+  - [ ] 00_HANDOFF/EMERGENTISM_ORG_V2_2_OWNER_DIRECTION_2026_08_23.md
+  - [ ] 00_HANDOFF/EMERGENTISM_ORG_V2_3_THIRD_CHURNING_OWNER_DIRECTION_2026_08_23.md
+  - [ ] 00_HANDOFF/GATE_MUTATION_SURVEY_2026_08_06.md
+  - [ ] 00_HANDOFF/INSTRUMENT_INTEGRITY_WAVE_RECEIPT_2026_08_06.md
+  - [ ] 00_HANDOFF/L7_SYNERGY_INTERFACES_2026_08_19.md
+  - [ ] 00_HANDOFF/LEFTOVER_DISPOSITION_2026_08_13.md
+  - [ ] 00_HANDOFF/NESTED_WAVE2_RECEIPT_2026_08_29.md
+  - [ ] 00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md
+  - [ ] 00_HANDOFF/OPEN_PROBLEM_REGISTER_2026_08_13.md
+  - [ ] 00_HANDOFF/PLAN_EXECUTION_WAVE_RECEIPT_2026_08_06.md
+  - [ ] 00_HANDOFF/PLAN_NEXT_MOVES_2026_08_13.md
+  - [ ] 00_HANDOFF/PLAN_PWA_BOOK1_CONTINUE_2026_08_13.md
+  - [ ] 00_HANDOFF/RULING_LANDED_GATE_2026_08_06.md
+  - [ ] 00_HANDOFF/SERPENT_PIN_RECOVERED_2026_08_13.md
+  - [ ] 00_HANDOFF/SIX_LENSES_PIN_RECOVERED_2026_08_13.md
+  - [ ] 00_HANDOFF/SURGICAL_DEFECT_WAVE_RECEIPT_2026_08_06.md
+  - [ ] 00_HANDOFF/gate_audit/MUTATION_TEST_RECEIPT_2026_08_06.md
+  - [ ] 00_HANDOFF/pmo/README.md
+  - [ ] 00_META/claim_status/README.md
+  - [ ] 00_META/reviews/README.md
+  - [ ] 00_META/schemas/README.md
+  - [ ] 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/AI_ASSISTANCE.md
+  - [ ] 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/LICENSE.md
+  - [ ] 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/PRIOR_ART_MATRIX.md
+  - [ ] 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/README.md
+  - [ ] 03_METHODOLOGY/02_THE_PAPERS/THE_DASEIN_TEST/THE_DASEIN_TEST.md
+  - [ ] 03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/CUSTODIAN_INTERFACE.md
+  - [ ] 03_METHODOLOGY/03_PREREGISTRATIONS/eub_v1/README.md
+  - [ ] 03_METHODOLOGY/03_PREREGISTRATIONS/frontier_protocol/README.md
+  - [ ] 03_METHODOLOGY/03_PREREGISTRATIONS/pqa_54/README.md
+  - [ ] 03_METHODOLOGY/03_PREREGISTRATIONS/v2_2_contracts/README.md
+  - [ ] 12_PUBLIC_SITE/_PLANS/2026_08_23_EMERGENTISM_ORG_V2_2_QUESTION_ATLAS.md
+  - [ ] 12_PUBLIC_SITE/_PLANS/specs/2026-08-29-ai-frontier-socket-rack.md
+  - [ ] 12_PUBLIC_SITE/_PLANS/specs/2026-08-29-reciprocal-object-homepage-refinement.md
+  - [ ] 12_PUBLIC_SITE/assets/fonts/Newsreader-SOURCE.md
+  - [ ] 12_PUBLIC_SITE/churn/corpus.md
+  - [ ] 12_PUBLIC_SITE/spark.md
+  - [ ] 13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md
+  - [ ] 13_BOOKS/dharma_yuddha/README.md
+  - [ ] 13_BOOKS/evolutionary_network/README.md
+  - [ ] 13_BOOKS/evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md
+  - [ ] 13_BOOKS/manifesto/MANIFESTO_BOOK_1.md
+  - [ ] 13_BOOKS/manifesto/PUBLIC_CURRENT_BODY_STAGED.md
+  - [ ] 13_BOOKS/manifesto/README.md
+  - [ ] 13_BOOKS/manifesto/chapters/README.md
+  - [ ] 13_BOOKS/manifesto/drafts/README.md
+  - [ ] 13_BOOKS/reciprocal_infinite_play/README.md
+  - [ ] 13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md
+  - [ ] 13_BOOKS/sarpasya_vijayam/README.md
+  - [ ] 13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1_REVIEWED.md
+  - [ ] 13_BOOKS/self_eating_serpent/README.md
+  - [ ] 13_BOOKS/six_lenses/CRITICAL_EDITION_1_REVIEWED.md
+  - [ ] 13_BOOKS/six_lenses/README.md
+  - [ ] 13_BOOKS/the_reciprocal/README.md
+  - [ ] 13_BOOKS/titans/README.md
+  - [ ] 13_BOOKS/titans/RESEARCH_EDITION_1_REVIEWED.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/00_THE_AMRITA.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/01_WHAT_IS_PROVED.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/02_WHAT_IS_CHOSEN.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/03_WHAT_IS_READ.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/04_WHAT_DIED.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/05_THE_METHOD.md
+  - [ ] 14_THE_DISTILLATION/07_THE_THIRD_CHURNING_2026_08_23/06_WHAT_IS_STILL_OPEN.md
+  - [ ] 14_THE_DISTILLATION/09_PUBLIC_WISDOM/00_DIRECTION_RECEIPT_2026_09_01.md
+  - [ ] 14_THE_DISTILLATION/09_PUBLIC_WISDOM/01_PUBLIC_WISDOM_COMPACT.md
+  - [ ] 14_THE_DISTILLATION/09_PUBLIC_WISDOM/README.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/00_GROUND.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/01_THE_UNIT.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/02_D1_ARITHMETIC.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/03_D2_CONFIGURATION.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/04_D3_STATE.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/05_D4_ACTUAL.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/06_D5_POSSIBLE.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/07_HORIZON.md
+  - [ ] 16_THE_EMISSION/A_THE_LADDER/README.md
+  - [ ] 16_THE_EMISSION/B_THE_METHOD/00_THE_METHOD.md
+  - [ ] 16_THE_EMISSION/B_THE_METHOD/README.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_ESTABLISHED.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/00_READ_FIRST.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/00_ADJUDICATION.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/CASE_01_MIND_AT_D5_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/20_CHECKS/CASE_02_CREDIT_D5_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/checklist/findings.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/lens/findings.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/arms/plain/findings.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_CHECKLIST.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_LENS.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/brief_PLAIN.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/arms/task_common.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/economic.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/engineering.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/historical.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/legal.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/corpus/medical.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/mid02/sealed/RUN_LOG.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/README.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_economic_fare_elasticity.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_engineering_load_rating.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_historical_accession_memo.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_legal_noncompete_opinion.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/30_TRIAL/sourcing/candidates/cand_medical_dmc_memo.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/00_ARJUNA_ENVELOPE_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/01_WIGNER_AUDIT_VERDICT_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/02_W3_DL_AXIS_SEATING_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/03_W2_ADJUDICATION_2026_09_04.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/01_EXECUTIVE_EXPLANATION.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/02_ATLAS_D4_D5.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/03_HUMAN_WALKTHROUGH.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/04_MACHINE_REFERENCE.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/05_UI_DIRECTION.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/README.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_FIRST_EXPERIENCE_SLICE/SOURCES.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/01_OUTLINE.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/02_FILE_ARCHITECTURE.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/2026_09_10_MENEXUS_EDITION_DESIGN/03_RELEASE_SEQUENCE.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0356_escorted-outcome-count.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0401_self-minted-identifier.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0406_case02-residue-protocol.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0421_stale-citation-integrity-row.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_0427_drift-gauge.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_admissibility-deontological-assumption.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_balance-rhetoric-outruns-conditionality.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_constitutive-ethics-entry-problem.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ethics-ontology-load-bearing-gap.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_extraction-two-claims.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_f5-mu4-missing-dialogue.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ledger-mind-row-escort.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_missing-independence-gate.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_ontology-ethics-seam.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_soul-loop-mu4-engine.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_tragic-action-protocol-undefined.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/PROP_2026-09-05_HHMM_two-horizon-rule-axiom-elevation.md
+  - [ ] 17_EMERGENTISM_2_MACHINE_INTELLIGENCE/40_WORK/_REFINEMENT_QUEUE/queue_log.md
+  - [ ] CONTRIBUTING.md
+  - [ ] LICENSE.md
+  - [ ] VMOSK_A.md
