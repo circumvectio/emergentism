@@ -32,7 +32,7 @@ evidence_tier: "[I] Interpretive — creative synthesis across traditions."
 **Hat:** Philosopher
 **Evidence Tier:** [I] Interpretive — creative synthesis across traditions
 **Date:** 2026-03-23
-**Depends on:** Burri Sphere formalism, Egyptian system architecture, Comparative mythology
+**Depends on:** Burri Sphere formalism, Egyptian cosmology, Comparative mythology
 
 ---
 

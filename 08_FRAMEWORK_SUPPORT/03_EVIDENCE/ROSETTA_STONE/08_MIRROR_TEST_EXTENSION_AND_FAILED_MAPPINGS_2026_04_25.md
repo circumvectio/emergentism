@@ -182,6 +182,45 @@ Combining `07_*` (corrected) + this document, with **17 column projections** sco
 
 **The "10 strong" set** is the **honest core Rosetta**: Pramāṇa, Operator, Varṇa, Chakra, Alchemy, Music Modes, PIE, Sumerian Mythology, Tarot Major Arcana, Computation. These ten columns alone constitute a robust cross-domain convergence claim with NO failed mirror pairs.
 
+> **`DF-15` FENCE — added in place 2026-09-11. The 2026-04-25 sentence above is
+> left byte-intact: this is a dated audit, and what was claimed that day is part
+> of the record. The fence disarms the claim at the point of reading; it does not
+> rewrite the history.**
+>
+> The sentence above is a live instance of **`DF-15` — convergence-as-proof**,
+> graded `CATEGORY-ERROR` in `00_META/00_THE_CLAIM_STATUS_REGISTER.md`: *"fifteen
+> renderings of one shape are one datum."* Ten columns that mirror cleanly are ten
+> **renderings**, not ten observations, and they may never be summed as evidence.
+>
+> Three defects, each sufficient on its own:
+>
+> 1. **The measurement is misdescribed.** The scoreboard measured mirror-symmetry
+>    *under the selected chart* — `B(θ) = B(π−θ)` on the chart this corpus selected.
+>    That is a property of the projection, not corroboration of it. A column scores
+>    3-STRONG when it survives the framework's own symmetry; nothing outside the
+>    framework was consulted.
+> 2. **This document refutes the sentence two paragraphs below it.** The "Striking
+>    pattern" note concedes that the cleanest 3-strong columns come from traditions
+>    that **already encode polarity in their source**. That is a selection effect
+>    stated out loud. Columns were not found to converge; polarity-encoding columns
+>    were the ones that could pass. Selection is not convergence.
+> 3. **The lineage objection is in-lane and unrebutted.**
+>    `30_ROSETTA_VNEXT_REFINEMENT_2026_07_31.md` §7D: **"Ten correspondences
+>    descending from one Indo-European lineage are not ten independent
+>    observations."** At minimum Pramāṇa, Varṇa, Chakra, PIE and Tarot are not
+>    causally separable. The cultural-dependency mapping §7D calls for —
+>    `independent`, `common ancestry`, `direct diffusion`, `modern synthesis`,
+>    `framework-derived`, `unknown` — **has never been run**, and `RQ-05` (lineage
+>    independence) stands `OPEN-EMPIRICAL` in the register, whose stated rule is:
+>    *no separable lineage → zero convergence weight.*
+>
+> **Standing until `RQ-05` is discharged: the "10 strong" set carries ZERO
+> convergence weight.** It may be cited only as what it actually is — the subset of
+> tested columns whose mirror pairs did not fail under the selected chart — and
+> never as cross-domain corroboration, independent confirmation, or evidence that
+> the seven-seat structure is real. Evidence tier unchanged: `[I]` throughout, per
+> §0. This fence creates no mapping and promotes no cell.
+
 **Striking pattern:** the cleanest 3-strong columns come from traditions that already **encode polarity** in their source (Sanskrit Vedānta, chakra root↔crown, alchemy calcination↔coagulation, music boundary modes, PIE roots, Sumerian descent-deities, Tarot Death↔World). The failing columns come from **linear progressions or continua** (Plato's degeneration, neuroscience cognitive sophistication).
 
 This **strengthens** the sovereign's Pressure Point #3 hypothesis: L4-as-center maps cleanly into traditions that have native center concepts; it forces in domains that are linear.

@@ -82,7 +82,7 @@ The critical insight is the **Great Inversion**: contemporary global civilisatio
 
 **L6 -- Contemplative Economies.** Societies that have moved beyond accumulation to wisdom-based resource allocation. Technology is advanced but oriented toward liberation rather than growth. Culture is philosophical and abstract -- art that points beyond itself. The environment is deeply regenerative -- the society gives back more than it takes. Phi-max is approximately 0.9. Historical examples are rare and partial: monastic economies (Benedictine, Buddhist sangha), Bhutanese GNH experiment.
 
-**L7 -- Closure-Horizon (Hypothetical).** The theoretical limit: a civilisation that integrates game-theoretic wisdom with technological capability so completely that positive governance approaches its own terminal boundary. Spiritual-AI integration at the civilisational limit (A6: three substrates). Transcendent / axiomatic art. Cosmic responsibility -- stewardship extended beyond the planetary. Phi-max approaches 1.0. No historical example exists. This is the Great Filter territory: the Moksha/Asura fork applied to civilisation itself.
+**L7 -- Closure-Horizon (Hypothetical).** The theoretical limit: a civilisation that integrates spiritual wisdom with technological capability so completely that positive governance approaches its own terminal boundary. Spiritual-AI integration at the civilisational limit (A6: three substrates). Transcendent / axiomatic art. Cosmic responsibility -- stewardship extended beyond the planetary. Phi-max approaches 1.0. No historical example exists. This is the Great Filter territory: the Moksha/Asura fork applied to civilisation itself.
 
 ---
 
@@ -98,7 +98,7 @@ Every civilisational stage in the table above can be read as a **position on the
 | **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, bearer-complete gains under a declared comparison; no sum of ordinal scores** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
 | L5 | Possible-power-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | L6 | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
-| L7 | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
+| L7 | Closure-horizon | Theoretical limit — spiritual-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
 
 **The PIE lineage (`138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md`):** Indo-European civilisation can be read as a 6,000-year attempt to maintain F5-alignment through increasingly complex institutional forms — from tribal sky-father ritual through republican law through imperial bureaucracy through Christian monotheism through scientific rationalism. Each form eventually allowed η>0 into its compounding loops and collapsed. The framework's constitutional organism is the next attempt, with machine-speed self-correction (A7) and three-substrate architecture (A6) as new safeguards.
 

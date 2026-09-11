@@ -109,7 +109,7 @@ The tradition's own terminology describes this as the "three refinements" (三�
 
 ### Test 4: L4 as Center — ✅ PASS
 
-Refining Spirit (煉神) is the pivot stage. In Daoist system architecture, shen is the bridge between the physical (jing/qi) and the transcendent (void/dao). This is domain-native — the tradition already recognizes this as the central transformation.
+Refining Spirit (煉神) is the pivot stage. In Daoist cosmology, shen is the bridge between the physical (jing/qi) and the transcendent (void/dao). This is domain-native — the tradition already recognizes this as the central transformation.
 
 ### Test 5: Domain-Native Center — ✅ PASS (strong)
 

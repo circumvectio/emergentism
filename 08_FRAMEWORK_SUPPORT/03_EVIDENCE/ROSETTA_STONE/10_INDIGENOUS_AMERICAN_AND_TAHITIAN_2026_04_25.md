@@ -47,7 +47,7 @@ Mesoamerican religious-cosmological systems are well-documented but show **NON-s
 
 ### 1.2 The closest 7-fold candidate (interpretive)
 
-Some scholars (e.g., Maffie, *Aztec Philosophy* 2014) note **the Aztec teotl-system architecture has a quincunx** (four quarters + center = 5) extended by *above* and *below* axes, giving **7 cosmological points** (4 cardinal + center + above + below). This is **interpretive numerology**, not a documented graded ascent.
+Some scholars (e.g., Maffie, *Aztec Philosophy* 2014) note **the Aztec teotl-cosmology has a quincunx** (four quarters + center = 5) extended by *above* and *below* axes, giving **7 cosmological points** (4 cardinal + center + above + below). This is **interpretive numerology**, not a documented graded ascent.
 
 | Aztec quincunx + axes | Possible L-level mapping |
 |---|---|
@@ -63,7 +63,7 @@ This is **forced interpretive mapping**, not a Mesoamerican-native 7-grade ascen
 
 ### 1.3 Verdict
 
-**Mesoamerican traditions FAIL the universal-7 claim.** They have richer structures (13/9 system architecture, 4-fold cardinal quadripartite, calendar cycles) that don't reduce to 7 stages without forcing. **Charioteer recommendation:** add to the FAILED MAPPINGS appendix; do NOT add to V-bis canonical.
+**Mesoamerican traditions FAIL the universal-7 claim.** They have richer structures (13/9 cosmology, 4-fold cardinal quadripartite, calendar cycles) that don't reduce to 7 stages without forcing. **Charioteer recommendation:** add to the FAILED MAPPINGS appendix; do NOT add to V-bis canonical.
 
 ---
 
@@ -81,7 +81,7 @@ The Q'ero are the Quechua-speaking *paqos* (priest-shamans) of the high Andes (P
 
 ### 2.2 The 7-stage claim
 
-Some New Age / modern reconstructions report a **7-level paqo hierarchy**, sometimes citing connection to chakra system architecture. Scholarly Andean anthropology generally treats this as a **post-1970s synthesis** influenced by global esoteric movements rather than pre-contact Inca tradition.
+Some New Age / modern reconstructions report a **7-level paqo hierarchy**, sometimes citing connection to chakra cosmology. Scholarly Andean anthropology generally treats this as a **post-1970s synthesis** influenced by global esoteric movements rather than pre-contact Inca tradition.
 
 ### 2.3 Verdict
 
@@ -191,7 +191,7 @@ If the 7 grades are accepted (with Ellis as primary):
 
 **The structural finding:** The Rosetta's universal-7 claim **requires both 7-grade AND mirror-symmetric structure**. Many traditions are 7-graded without being mirror-symmetric (Tahitian arioi as belt-rank-style). Many traditions are not 7-graded at all (Mesoamerican 13/9, Iroquois 5-6, Andean 3-5). **The intersection — 7-graded AND mirror-symmetric — is small and clusters around polarity-encoding traditions** (per the cross-finding from [`08_*`](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md)).
 
-**Lakota remains the only confirmed Indigenous American tradition in the V-bis candidate set.**
+~~**Lakota remains the only confirmed Indigenous American tradition in the V-bis candidate set.**~~ **[SUPERSEDED 2026-08-15 — "confirmed" is withdrawn. The mirror and equator claims that qualified Lakota for V-bis were killed-by-independent-coding (anchor rotated one seat; a rotation is not a chart symmetry). Lakota remains the only Indigenous American **candidate**, and it now stands on the cyclic order `[I]` alone. Ruling: `R1_LAKOTA_ROTATION@1` in `rosetta_cells.json` and the cross-reference appendices in both coding files.]**
 
 ---
 
@@ -249,7 +249,7 @@ After this sweep, the V-bis canonical column has **6 entries**: 5 Indo-European/
 
 **The framework's strongest defensible claim post-this-sweep:**
 
-> The operator grammar (4 Gods + 3 Titans on S²) is structurally exhaustive. The 7-stage articulation with clean mirror symmetry around L4 converges in **polarity-encoding traditions** — five Indo-European/Mediterranean + one Indigenous American candidate (Lakota, pending verification). Most other surveyed traditions either lack 7-grade structure entirely (Mesoamerican, Iroquois, Sub-Saharan, most Polynesian) OR are 7-graded with non-mirror-symmetric (monotonic-accumulation) structure (Tahitian arioi). The mirror-symmetric subset is small but well-defined; the framework documents both successes and failures via published transparency receipts.
+> The operator grammar (4 Gods + 3 Titans on S²) is structurally exhaustive. The 7-stage articulation with clean mirror symmetry around L4 converges in **polarity-encoding traditions** — five Indo-European/Mediterranean ~~+ one Indigenous American candidate (Lakota, pending verification)~~ **[Lakota struck 2026-08-15 — mirror and equator claims killed-by-independent-coding: the anchor is rotated one seat between `16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md` and `ROSETTA_INDIGENOUS_AMERICAN.md`, and a rotation is not a symmetry of the chart. The cyclic order is retained `[I]`, but the column is not mirror-symmetric around L4, so the defensible claim is **five** Indo-European/Mediterranean traditions, not six. Ruling: `R1_LAKOTA_ROTATION@1` in `rosetta_cells.json`.]**. Most other surveyed traditions either lack 7-grade structure entirely (Mesoamerican, Iroquois, Sub-Saharan, most Polynesian) OR are 7-graded with non-mirror-symmetric (monotonic-accumulation) structure (Tahitian arioi). The mirror-symmetric subset is small but well-defined; the framework documents both successes and failures via published transparency receipts.
 
 This is a *much smaller* claim than "all human knowledge converges on 7 stages," and *much more defensible* because every test produces a documented receipt — pass or fail.
 

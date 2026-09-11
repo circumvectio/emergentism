@@ -116,6 +116,38 @@ These are NOT genuine challenges. They are the same continuum at different resol
 
 **The 7-level structure is defensible but not unique.** It is a geometric consequence of S² with 15-degree intervals, but other level counts arise from other geometric choices or resolutions. The framework's strongest claim is not "there are exactly 7 levels" but "there is a balance apex at the midpoint with poles at the extremes." This midpoint-apex structure appears in ALL traditions examined (3, 4, 5, 7, 8, 10, 12 levels) — suggesting it is more fundamental than the specific count.
 
+> **`DF-15` FENCE — added in place 2026-09-11; the sentence above is left
+> byte-intact.** "Appears in ALL traditions examined … suggesting it is more
+> fundamental" is the same species as the convergence claim fenced in
+> `08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md` §3, and it is
+> **`DF-15` — convergence-as-proof**, graded `CATEGORY-ERROR` in
+> `00_META/00_THE_CLAIM_STATUS_REGISTER.md`: *"fifteen renderings of one shape are
+> one datum."* It carries extra weight here because it sits under a heading that
+> calls itself an honest assessment.
+>
+> Three defects, each sufficient on its own:
+>
+> 1. **The sample frame is the framework's own reading list.** "Traditions
+>    examined" names no selection rule and no tradition that was examined and found
+>    to **lack** a midpoint apex. A claim with no possible disconfirming instance
+>    is unfalsifiable as written, not strongly confirmed.
+> 2. **The traditions are not causally separable.**
+>    `30_ROSETTA_VNEXT_REFINEMENT_2026_07_31.md` §7D: **"Ten correspondences
+>    descending from one Indo-European lineage are not ten independent
+>    observations."** The cultural-dependency mapping §7D calls for has not been
+>    run, and `RQ-05` (lineage independence) stands `OPEN-EMPIRICAL`, with the
+>    register's rule attached: *no separable lineage → zero convergence weight.*
+> 3. **Recurrence is not depth.** Even a genuinely independent recurrence would be
+>    a search-and-robustness signal — evidence about where the corpus looked — and
+>    never evidence that the structure is real.
+>
+> **Read the sentence as a conjecture with its test named, not as a finding.** The
+> test is §7D's dependency mapping plus blind coding against native and n-row
+> grammars (§7F). Until it runs, the midpoint-apex recurrence carries **zero
+> convergence weight**, and "more fundamental" is a hypothesis, not a result. This
+> does not disturb the §0 boundary note or the rest of this file's pressure tests,
+> which remain `[I]` throughout.
+
 **The framework's deepest vulnerability** is the smooth B = sin(theta) function. Dabrowski and clinical psychology provide strong evidence that development passes through disintegration, not smooth ascent. The framework should either modify the balance function to include a local minimum, or clearly distinguish between the *mathematical* B (smooth on S²) and the *experiential* trajectory (which includes dark nights).
 
 ---

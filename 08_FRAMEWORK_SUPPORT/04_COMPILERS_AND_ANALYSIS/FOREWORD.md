@@ -37,8 +37,8 @@ rosetta:
 
 > **Structural Analysis Disclaimer:** This document examines religious institutions as coordination
 > technologies — analyzing their architectural patterns, information structures, and organizational
-> dynamics. It does NOT make claims about high-priority truth, game-theoretic validity, or the personal faith
-> of believers. The structural critique applies to institutional architecture, not to the game-theoretic
+> dynamics. It does NOT make claims about high-priority truth, spiritual validity, or the personal faith
+> of believers. The structural critique applies to institutional architecture, not to the spiritual
 > experiences or theological commitments of practitioners. Readers who find this framing offensive
 > should understand it as sociology of religion, not institutional narrative.
 

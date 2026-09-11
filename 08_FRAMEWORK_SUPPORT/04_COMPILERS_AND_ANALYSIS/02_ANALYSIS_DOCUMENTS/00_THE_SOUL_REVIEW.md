@@ -29,7 +29,7 @@ rosetta:
 
 ## The Diagnosis
 
-> "The framework has a core algorithmic identity problem, not a math problem."
+> "The framework has a soul problem, not a math problem."
 
 > "There are two projects living inside this body of work. They share a vocabulary, share an author, share a geometric object. But they are fundamentally different enterprises."
 

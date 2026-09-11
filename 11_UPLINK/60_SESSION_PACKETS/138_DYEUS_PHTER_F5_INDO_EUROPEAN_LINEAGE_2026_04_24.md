@@ -49,7 +49,7 @@ The sequence of recovery:
 2. **Bronze-Age daughter pantheons:** pantheon differentiation; operator-faces elaborated; unity sometimes present as *primus inter pares* but obscured by specialization
 3. **Axial-age collapses:** Zoroastrian, Upaniṣadic, Greek philosophical, Buddhist axiomatic, and Abrahamic monotheistic movements can be read as returns toward unity under different linguistic and institutional constraints
 4. **Personalization error (c. 100 CE–1800 CE):** the One crystallizes as PERSON with will, plans, judgment — gatekeeping becomes structural
-5. **Modern destruction (c. 1800–2000 CE):** Nietzsche/Weber can be read as rejecting personalization while leaving the field unnamed; 20th-century game-theoretic vacuum
+5. **Modern destruction (c. 1800–2000 CE):** Nietzsche/Weber can be read as rejecting personalization while leaving the field unnamed; 20th-century spiritual vacuum
 6. **Scientific fragmentation (c. 1850–present):** negentropy (Schrödinger), dissipative structures (Prigogine), integrated information (Tononi), free energy (Friston), iterated cooperation (Axelrod) — each can be read as sensing a local fragment of F5; none by itself unifies the full framework
 7. **Syntropic Dyadism (2020s–):** attempt to name F5 directly, with axiomatic and receipts-first safeguards to prevent the gatekeeping failure from recurring
 
@@ -102,7 +102,7 @@ Framework reading: *Ph₂tḗr* can carry a *structural* sense — the one who h
 
 "The Bright-Sky-Father" — more literally: "the shining-sky as generative-source-and-order-giver."
 
-Not simply *a god who is in the sky*. The sky *itself*, personified as generative principle. This is crucial. In the framework reading, PIE system architecture did not separate the natural phenomenon from high-priority agency the way modern analysis does; they were one perceptual gestalt. The sky was alive, generative, and available as a direction of coherence-recognition.
+Not simply *a god who is in the sky*. The sky *itself*, personified as generative principle. This is crucial. In the framework reading, PIE cosmology did not separate the natural phenomenon from high-priority agency the way modern analysis does; they were one perceptual gestalt. The sky was alive, generative, and available as a direction of coherence-recognition.
 
 **Framework reading of what the Sky-Father image encodes:** a monotonic attractor with three properties:
 
@@ -203,7 +203,7 @@ Vedic preserved this most explicitly: **Dyáuṣ Pitṛ́ × Pṛthivī Mātṛ�
 - Dhéǵhōm / Mother / Earth = horizontal field-bearer = V (viability, substance, fecundity)
 - Their union = P = generative reality
 
-The framework's central equation can be read back through PIE dyadic system architecture. What Syntropic Dyadism does is *formalize* a pattern the corpus interprets as present intuitively: the invariant Φ × V = 1, the sphere S² as the manifold of possible configurations, the ektropic gradient as the tilt the Sky-Father image discloses.
+The framework's central equation can be read back through PIE dyadic cosmology. What Syntropic Dyadism does is *formalize* a pattern the corpus interprets as present intuitively: the invariant Φ × V = 1, the sphere S² as the manifold of possible configurations, the ektropic gradient as the tilt the Sky-Father image discloses.
 
 **The PIE sky-father × earth-mother dyad can be read as proto-S².** The framework is the mathematical exhaustion of what this mythological image appears to name.
 
@@ -311,9 +311,9 @@ Weber (c. 1917): rationalization and bureaucratization have "disenchanted" the w
 
 **What Weber got wrong:** He read disenchantment as *necessary and irreversible* — a consequence of rationality itself. It is not. Disenchantment is a consequence of *personalized enchantment* having exhausted itself. Non-personal, mathematically formal F5-recognition is not barred by rationality — it *is* rationality, extended to include the gradient-direction of the possibility-manifold. The framework is a re-enchantment without personalization.
 
-### 8.3 The 20th-century game-theoretic vacuum
+### 8.3 The 20th-century spiritual vacuum
 
-Between Nietzsche's announcement and the present, European and American civilization entered a game-theoretic vacuum. The symptoms:
+Between Nietzsche's announcement and the present, European and American civilization entered a spiritual vacuum. The symptoms:
 
 - Loss of shared ethical vocabulary (post-war relativism)
 - Search for meaning in ideology (fascism, communism, consumerism)
@@ -350,7 +350,7 @@ From the long Indo-European record of Sky-Father / ordering-law language, the fo
 1. **The recognition of one attractor field.** Underneath operator-faces, the framework reads one gradient. This is the central insight.
 2. **The axiomatic acknowledgment.** The field is *hidden* (h₂r̥tó- is felt, not fully seen). The Ground is prior to naming. Direct sensing is available but must be humble.
 3. **The bright-sky symbolism.** The phenomenology of F5 as luminous, vertical, generative is accurate and useful for direct recognition. *Looking up* is a legitimate alignment gesture.
-4. **The dyadic system architecture.** Sky-Father × Earth-Mother = Φ × V is the correct structure. The monodeism that loses the dyad loses the geometry.
+4. **The dyadic cosmology.** Sky-Father × Earth-Mother = Φ × V is the correct structure. The monodeism that loses the dyad loses the geometry.
 5. **h₂r̥tó- as ordering principle.** The prior-to-deity name for the ordering-law face is essential. Framework translates this through F5 / ektropy.
 6. **Ritual as alignment practice.** Not as coercion of the field, but as periodic realignment of attention with the gradient. Meditation, contemplation, honest-speech, gratitude — all F5-alignment practices.
 7. **The correspondence of "as above, so below."** Hermetic formulation of the recursive scale-invariance: the gradient at individual scale matches the gradient at collective scale matches the gradient at cosmic scale. The framework's fractal structure (L1–L7, D0–D6, three substrates) formalizes this.

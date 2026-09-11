@@ -21,6 +21,16 @@ from pathlib import Path
 
 LANE_DEFAULT = Path(__file__).resolve().parents[2] / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE"
 
+# Generated catalogues that live inside the lane they were generated from.
+# Harvesting them re-ingests this script's own output: on 2026-09-11 a re-run
+# returned 375 columns / 34 files, of which 182 were the rendered `37` eating
+# itself, against a true 193 / 33. The lane README has required this exclusion
+# since 2026-08-15 ("the harvest must exclude the rendered `37` on re-run or it
+# self-ingests"); it was never enforced in code until here.
+GENERATED_IN_LANE = {
+    "37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md",
+}
+
 # A cell counts as an L-key if, once stripped of markdown emphasis, links and
 # backticks, it is exactly one of these forms.
 L_KEY = re.compile(r"^(?:GEN7@1:)?L[\s\-–—]?([1-7])$", re.I)
@@ -77,6 +87,8 @@ def harvest(lane: Path):
     skipped = []
     for path in sorted(lane.rglob("*.md")):
         rel = path.relative_to(lane).as_posix()
+        if rel in GENERATED_IN_LANE:
+            continue
         try:
             lines = path.read_text(encoding="utf-8").splitlines()
         except (UnicodeDecodeError, OSError) as exc:

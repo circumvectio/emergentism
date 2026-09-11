@@ -66,7 +66,7 @@ empirical Triple Lock claims.
 | L4 | Timocracy | Kṣatriya | Honour-rule | Command (strategic) | Military republics, Sparta | [I] |
 | L5 | Aristocracy | Brāhmaṇa | Wisdom-rule | Information | Knowledge societies, Athens | [I] |
 | L6 | Anarchy | Sādhu | Self-governance | Wisdom | Intentional communities | [C] |
-| L7 | Theocracy | Ṛṣi | Divine mandate | Gift | Rare game-theoretic orders | [C] |
+| L7 | Theocracy | Ṛṣi | Divine mandate | Gift | Rare spiritual orders | [C] |
 
 ---
 

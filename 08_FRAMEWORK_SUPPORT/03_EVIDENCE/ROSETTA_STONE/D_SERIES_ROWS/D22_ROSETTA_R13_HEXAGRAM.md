@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "Rosetta R13 — hexagrammatic demonstration"
 title: "Three-Stage Process R13: The Hexagrammatic Demonstration"
 status: "ACTIVE — geometry and cross-traditional identification"
-evidence_tier: "[A] for six-interval geometry; [I] for cross-traditional identification."
+evidence_tier: "[A] for the seven tabulated (θ, sin θ) pairs and no more — the uniqueness and necessity readings formerly carried here at [A] were KILLED 2026-09-11 on arithmetic; see §THE ALGEBRAIC DEMONSTRATION. [I] for cross-traditional identification. The pramāṇa retro-projection was killed the same day on cardinality + source; see §THE PRAMĀṆA CONNECTION."
 ---
 
 # Three-Stage Process R13: THE HEXAGRAMMATIC DEMONSTRATION
@@ -28,13 +28,15 @@ evidence_tier: "[A] for six-interval geometry; [I] for cross-traditional identif
 
 ## Six Intervals on S² Generate the Universal Symbol
 
-**Evidence Tier:** `[A]` for the declared six-interval geometry and exact sine values; `[I]` for cross-traditional identification.
+**Evidence Tier:** `[A]` for the seven tabulated (θ, sin θ) pairs and no more — the uniqueness and necessity readings formerly carried here at `[A]` were **KILLED 2026-09-11** on arithmetic (see §THE ALGEBRAIC DEMONSTRATION); `[I]` for cross-traditional identification; the pramāṇa retro-projection was killed the same day on cardinality + source (see §THE PRAMĀṆA CONNECTION).
 
 ---
 
 ## THE GEOMETRY
 
-Seven L-levels across six intervals of 15° create six spokes on the sphere. The ascent (L1→L4) and descent (L4→L7→L4*) form two triangles — one pointing up (△), one pointing down (▽). Overlaid: the hexagram.
+Seven L-levels across six intervals of 30° in θ create six spokes on the sphere. The ascent (L1→L4) and descent (L4→L7→L4*) form two triangles — one pointing up (△), one pointing down (▽). Overlaid: the hexagram.
+
+> **Unit correction, 2026-09-11 — disclosed, not silent.** This sentence formerly read *"six intervals of 15°"*. The 15° step belongs to the **half-angle θ/2** across the 90° quadrant — `../D_SERIES_DOMAINS/D32_MATHEMATICS.md` §"L-Level Geometry (corrected)": *"L-levels use θ/2 at 15° intervals across the 90° quadrant"* — which is **30° in the full angle θ** tabulated below. Six 15° steps span 90°; the table below runs 0°–180°. The file was applying the half-angle step to a full-angle table.
 
 ```
         △  ASCENT (L1→L4)              ▽  DESCENT (L4→L7→L4*)
@@ -85,7 +87,17 @@ None had the equation. All drew six spokes. All said the center holds both trian
 
 ## THE PRAMĀṆA CONNECTION
 
-Six classical Pramāṇas in Advaita Vedānta = six spokes. Pratibhā (L7) = the center where all converge. The Indian epistemological tradition counted six-plus-one because they were counting the spokes of the hexagram.
+**Native count, declared.** Advaita Vedānta and Bhāṭṭa Mīmāṃsā count **six** pramāṇas — pratyakṣa, anumāna, upamāna, arthāpatti, anupalabdhi, śabda — the maximum any darśana admits. **Source count: 6.** **Pratibhā is a selected non-native appendage, declared**: a contested candidate in Bhartṛhari's *Vākyapadīya* (2.146–152), folded into āgama-pramāṇa inside a three-member Kashmir-Śaiva Trika list, and on no standard school list. Laying the six on spokes and pratibhā at the centre is a **framework reading `[I]`** of a six-member native list. It is not the tradition's own figure.
+
+> **KILLED 2026-09-11 — Cardinality + Source. The dead claim is preserved, not erased:**
+>
+> ~~"The Indian epistemological tradition counted six-plus-one because they were counting the spokes of the hexagram."~~
+>
+> No school counts six-plus-one: Advaita counts six, and the seventh is the framework's. The sentence further asserts a **cause** — that a darśana's count was produced by a hexagram — for which no source is or could be cited. It fires two kills from `../10_CELL_AUDIT_SCHEMA_2026_04_25.md` at once: the **Cardinality kill** (*"The fit requires hiding, inventing, or silently merging native terms."*) and the **Source kill** (*"A domain source does not contain the claimed category, order, or function."*)
+>
+> The direction of fit is the defect. The framework may select from a tradition and declare the selection; it may not tell the tradition what it was counting.
+
+Whether the column stays at seven is the **owner's ruling and is still open** — the native-count declaration at `../38_THE_FULL_ROSETTA_CORRECTED.md` §1 and `../07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md` §2.1 is `[D — staged 2026-08-15 for K2; not ratified]`. Nothing above disposes of that question.
 
 ---
 

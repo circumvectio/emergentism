@@ -76,7 +76,7 @@ This **confirms the sovereign's Pressure Point #6 (Row Compression):** "Plato ha
 
 **Path α — Demote L6-L7 to "post-Platonic political extensions":** mark Anarchy and Theocracy as NOT-FROM-PLATO; cite later political theorists (e.g., Bakunin for anarchy as ideal regime; political institutional narrative literature for theocracy). Honest about provenance.
 
-**Path β — Find Plato's implicit L6-L7:** Plato has implicit *philosophical* extensions of his political theory in the post-cave passages of *Republic* VII (the philosopher who returns to political life is at L5; the philosopher who refuses politics is at L6 by inference; the philosopher contemplating the Form of the Good is at L7 by inference). Map these but mark [I] interpretive — they are not Plato's *political* regimes but his *philosophical-game-theoretic* hierarchy.
+**Path β — Find Plato's implicit L6-L7:** Plato has implicit *philosophical* extensions of his political theory in the post-cave passages of *Republic* VII (the philosopher who returns to political life is at L5; the philosopher who refuses politics is at L6 by inference; the philosopher contemplating the Form of the Good is at L7 by inference). Map these but mark [I] interpretive — they are not Plato's *political* regimes but his *philosophical-spiritual* hierarchy.
 
 **Path γ — Compress Plato to 5 columns:** present the Plato column as [L1, L2, L3, L4, L5] only and add a footnote that the framework's L6-L7 require non-Platonic sources. This is the cleanest minimum-claim.
 
@@ -101,7 +101,7 @@ The Seven Sacred Rites (Wakȟáŋ Wičhóȟ'aŋ) of the Lakota people, brought (
 | # | Rite | Name | Function |
 |---|---|---|---|
 | 1 | Inípi | Sweat Lodge | Purification of body and spirit |
-| 2 | Haŋblečheya | Vision Quest / Crying for a Vision | Solitary seeking of game-theoretic guidance |
+| 2 | Haŋblečheya | Vision Quest / Crying for a Vision | Solitary seeking of spiritual guidance |
 | 3 | Wíwaŋyaŋg Wačhípi | Sun Dance | Communal renewal and sacrifice |
 | 4 | Hunkápi | Making of Relatives | Establishing kinship bonds |
 | 5 | Išnáthi Awíčhalowaŋpi | Coming-of-Age Ceremony | Girl's puberty / new full-personhood |
@@ -118,19 +118,21 @@ The Seven Sacred Rites (Wakȟáŋ Wičhóȟ'aŋ) of the Lakota people, brought (
 | L4 | **Hunkápi** (Making of Relatives) | The social bond at full balance; kinship-creation; the equator-of-relation. Kṣatriya-equivalent — the warrior-bond. |
 | L5 | **Išnáthi Awíčhalowaŋpi** (Coming-of-Age) | Initiation into full personhood; transmission of new-status to the next generation. Brāhmaṇa-equivalent — systematic transmission. |
 | L6 | **Tȟápa Waŋkáyeyapi** (Throwing of the Ball) | Seeking-without-grasping (the ball is thrown into the four directions; whoever catches it is blessed; embraces non-attachment). Sādhu-equivalent — axiomatic seeking. |
-| L7 | **Naǧí Glúhapi** (Keeping of the Soul) | Care for the core algorithmic identity of the deceased over a year; sustains the spirit beyond the body. Systems Architect-equivalent — transcendental attendance. |
+| L7 | **Naǧí Glúhapi** (Keeping of the Soul) | Care for the soul of the deceased over a year; sustains the spirit beyond the body. Systems Architect-equivalent — transcendental attendance. |
 
 ### 2.4 Mirror analysis
 
 | Pair | Strength |
 |---|---|
-| **L1 Inípi ↔ L7 Naǧí Glúhapi** | ✓ STRONG. Both are boundary rites: entry to game-theoretic life (purification before participation) vs exit from game-theoretic life (keeping the core algorithmic identity through transition out). Same boundary-handling function, inverse direction (entrance vs exit). |
+| **L1 Inípi ↔ L7 Naǧí Glúhapi** | ✓ STRONG. Both are boundary rites: entry to spiritual life (purification before participation) vs exit from spiritual life (keeping the soul through transition out). Same boundary-handling function, inverse direction (entrance vs exit). |
 | **L2 Haŋblečheya ↔ L6 Tȟápa Waŋkáyeyapi** | ✓ STRONG. Both involve seeking through *non-instrumental* engagement: vision quest (solitary openness, not grasping for vision but receiving it) vs throwing-the-ball (the ball-thrower has no control over who catches it; blessing is received not seized). Same non-grasping seeking, inverse mode (solitary vs communal-participatory). |
 | **L3 Wíwaŋyaŋg Wačhípi ↔ L5 Išnáthi Awíčhalowaŋpi** | ✓ STRONG. Both are productive-transmissive ceremonies. Sun Dance renews the community through individual sacrifice; Coming-of-Age initiates new full-personhood (transmits adulthood-status). Same productive-transmission function, inverse direction (community-renewing-through-individual vs individual-receiving-from-community). |
 
 **Mirror score:** 3-STRONG.
 
 ### 2.5 What this means
+
+**[SUPERSEDED 2026-08-15 — the score this section reasons from was killed-by-independent-coding (anchor rotated one seat in `ROSETTA_INDIGENOUS_AMERICAN.md`; a rotation is not a chart symmetry). None of the three consequences below follow. In particular the WEIRD-bias counter does not survive: no mirror-clean non-IE/Med column was established here. What survives is the cyclic order, `[I]`. See the cross-reference appendix at the end of this file.]**
 
 If the Lakota Seven Sacred Rites mapping holds, this is the **first non-IE/Med tradition to score 3-strong on mirror symmetry**. That would:
 
@@ -147,7 +149,7 @@ Apply the framework's evidence-tier discipline:
 | Lakota tradition has Seven Sacred Rites | [S] established (Black Elk, multiple anthropological sources) |
 | Brown's specific ordering is canonical | [S] structural — most-cited but not unanimous |
 | Mapping to L1-L7 is correct | [I] interpretive — charioteer judgment |
-| Mirror symmetry holds at 3-strong | [I] interpretive — based on this mapping |
+| Mirror symmetry holds at 3-strong | ~~[I] interpretive — based on this mapping~~ → **KILLED-BY-INDEPENDENT-CODING 2026-08-15.** The rotation by one seat in `ROSETTA_INDIGENOUS_AMERICAN.md` moves every pair; a rotation is not a chart symmetry. Cyclic order retained `[I]`. Ruling: appendix at end of file; `R1_LAKOTA_ROTATION@1`. |
 | The "seven" is pre-Christian | [I] interpretive — DeMallie raises possible syncretism |
 | The pattern strengthens universal-7 claim | [I] interpretive contingent on the above |
 
@@ -239,12 +241,14 @@ Charioteer recommends Option 1 — exposing the experiment is the framework's st
 | Test | Outcome | Implication |
 |---|---|---|
 | **Plato mirror-completion** | Plato is 5-stage; L6-L7 are post-Platonic imports | The framework's "7" is partly artifactual where it forces 5 → 7 |
-| **Lakota Seven Rites** | 3-strong mirror score (interpretive but real) | Universal-7 claim has a non-IE/Med candidate; WEIRD bias partially countered |
+| **Lakota Seven Rites** | ~~3-strong mirror score (interpretive but real)~~ → **mirror + equator KILLED-BY-INDEPENDENT-CODING 2026-08-15**; cyclic order retained `[I]` | ~~Universal-7 claim has a non-IE/Med candidate; WEIRD bias partially countered~~ → the rotation divergence means no mirror-clean non-IE/Med column was established; the WEIRD-bias counter does not survive. Ruling: appendix at end of file; `R1_LAKOTA_ROTATION@1`. |
 | **Neuroscience Path A/B** | Charioteer cannot decide; framing the experiment IS the work | The framework's geometric prediction either gets vindicated by neuroscience research or honestly demoted |
 
 **Combined verdict:** The framework's stage-count claim is **stronger in some non-IE traditions (Lakota) than in some IE traditions (Plato)**. The "7" is not Indo-European-specific; it is **polarity-encoding-specific**. Traditions that natively encode polarity project 7-stage mirror cleanly; traditions that are linear/degenerative (Plato) or cognitive-progressive (current Neuroscience) project partially or with forcing.
 
 This is consistent with — and now empirically extends — the sovereign's Pressure Point #3 (L4 Center Problem) and Pressure Point #6 (Row Compression).
+
+**[SUPERSEDED 2026-08-15.** The combined verdict above rests on the Lakota mirror score, which was killed-by-independent-coding: `ROSETTA_INDIGENOUS_AMERICAN.md` codes the same seven rites in the same cyclic order with the anchor rotated one seat, and a rotation is not a symmetry of the chart. "Stronger in some non-IE traditions (Lakota) than in some IE traditions (Plato)" no longer holds, and the appeal to Pressure Point #3 inverts: the L4 Center Problem is **confirmed, not extended** — the two codings put the Lakota equator on different rites (Hunkápi vs Sun Dance) and neither centre is established. Cyclic order retained `[I]`; mirror and equator claims killed, pending the Lakota-scholar consultation demanded by `FAILED_MAPPINGS_AND_TESTING_QUEUE.md` item I. Ruling: the cross-reference appendix at the end of this file.**]**
 
 ---
 
@@ -252,7 +256,7 @@ This is consistent with — and now empirically extends — the sovereign's Pres
 
 **3-STRONG columns (genuine S² projections), now extended:**
 - Pramāṇa, Operator, Varṇa, Chakra, Alchemy, Music Modes, PIE, Sumerian Mythology, Tarot Major Arcana, Computation
-- **Candidate addition: Lakota Seven Sacred Rites** [I] interpretive but mirror-clean
+- ~~**Candidate addition: Lakota Seven Sacred Rites** [I] interpretive but mirror-clean~~ → **WITHDRAWN 2026-08-15: mirror and equator claims KILLED-BY-INDEPENDENT-CODING.** The anchor is rotated one seat between this file and `ROSETTA_INDIGENOUS_AMERICAN.md`, and a rotation is not a symmetry of the chart, so the column is **not** mirror-clean and does not belong in the 3-STRONG set. The seven rites and their cyclic order are retained `[I]`. Ruling: the cross-reference appendix at the end of this file, and `R1_LAKOTA_ROTATION@1` in `rosetta_cells.json`.
 
 **Columns confirmed to need narrowing:**
 - **Plato:** demote L6-L7 to post-Platonic extensions (Path α recommended)

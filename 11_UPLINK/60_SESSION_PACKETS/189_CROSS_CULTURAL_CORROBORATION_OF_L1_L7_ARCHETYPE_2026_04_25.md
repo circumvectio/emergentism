@@ -99,7 +99,7 @@ After existing **§V Spiritual & Yogic**, insert new section:
 ```
 ## V-bis. INITIATORY ASCENTS
 
-Independent initiatory traditions, each developed within its own system architecture, all
+Independent initiatory traditions, each developed within its own cosmology, all
 converge on a 7-grade ascending sequence with consistent functional content per
 grade. The L4 equator is anchored across all clean mappings. Mappings rated
 [clean] / [interpretive] / [reconstructed] per source attestation strength.
@@ -124,14 +124,14 @@ supporting memory file as cross-references but do not earn columns in the canoni
 | L2 | Nymphus (Bridegroom) | Lawwāma (self-reproaching) | Confirmation | Second (recollection) | Yesod (Foundation) | Theoricus | Mercury |
 | L3 | Miles (Soldier) | Mulhama (inspired) | Eucharist | Third (exemplary life) | Hod (Splendor) | Practicus | Venus |
 | **L4** | **Leo (Lion)** | **Mutma'inna (peaceful)** | **Reconciliation** | **Fourth (prayer of quiet)** | **Tiferet (Beauty)** | **Philosophus** | **Sun** |
-| L5 | Perses (Persian) | Rāḍiya (pleased) | Holy Orders | Fifth (game-theoretic betrothal) | Netzach (Eternity) | Adeptus Minor | Mars |
+| L5 | Perses (Persian) | Rāḍiya (pleased) | Holy Orders | Fifth (spiritual betrothal) | Netzach (Eternity) | Adeptus Minor | Mars |
 | L6 | Heliodromus (Sun-Runner) | Marḍiyya (pleasing) | Anointing of the Sick | Sixth (dark night) | Geburah (Severity) | Adeptus Major | Jupiter |
-| L7 | Pater (Father) | Kāmila (perfected) | Matrimony | Seventh (game-theoretic marriage) | Chesed (Loving-kindness) | Adeptus Exemptus | Saturn |
+| L7 | Pater (Father) | Kāmila (perfected) | Matrimony | Seventh (spiritual marriage) | Chesed (Loving-kindness) | Adeptus Exemptus | Saturn |
 
 ### 2.3 Notes per column
 
 - **Mithraic** — explicit 4-3 lunar/solar split (grades 1-3 lunar; 4-7 solar) directly mirrors the Master Rosetta's Three-Stage Process/Four-Stage Analytical Model boundary.
-- **Sufi Nafs** — ascending stations of the core algorithmic identity/self in Sufism; the closest non-Hindu psychological-development parallel.
+- **Sufi Nafs** — ascending stations of the soul/self in Sufism; the closest non-Hindu psychological-development parallel.
 - **Catholic Sacrament** — interpretive at the strict-ordinal level; catechetical grouping (3 initiation + 2 healing + 2 service) honors the 4-3 split implicitly.
 - **Carmelite Mansion** — Teresa of Ávila's *Interior Castle* (1577); Sixth Mansion (dark night) ↔ Sādhu axiomatic; Seventh (transforming union) ↔ Systems Architect SEVA.
 - **Kabbalistic Sefirot** — 7 lower sefirot (below Da'at); ascending order (Malkuth → Chesed); Tiferet at L4 = heart-equator is exactly Anāhata at L4 (cross-tradition convergence).

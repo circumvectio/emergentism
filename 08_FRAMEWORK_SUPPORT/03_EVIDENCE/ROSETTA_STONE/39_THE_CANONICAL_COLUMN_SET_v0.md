@@ -6,7 +6,7 @@ rosetta:
   tier: "Audit"
   regime: "Vaiśya"
   register: "[S]"
-  canonical_phrase: "The canonical column set — the deduplication register over the 187-column harvest; measured, not estimated"
+  canonical_phrase: "The canonical column set — the deduplication register over the 187-column harvest as measured 2026-08-15; measured, not estimated, and true of that date"
   d_register: 4
 title: "The Canonical Column Set — deduplication register v0"
 status: "ACTIVE REGISTER (staged on branch refine-rosetta/2026-08-15). Tombstone directives are merge-gated: no source file is altered by this document. Zero loss by construction — the generated 37 remains the verbatim audit trail and every superseded column stays readable in its source."
@@ -21,7 +21,7 @@ parents:
 
 # The Canonical Column Set — deduplication register v0
 
-The charter estimated "≤ ~120 canonical columns." **The measured truth is 153** (187 harvested − 34 superseded). The register's numbers govern; the charter estimate was optimistic and is amended by measurement here, per OUT.TIER (never dress an estimate as a finding).
+The charter estimated "≤ ~120 canonical columns." **The measured truth was 153 as of 2026-08-15** (187 harvested − 34 superseded). **A measurement is true of a date:** the harvest base moved to 193 on 2026-09-11 and the §B judgement has not been re-run over the six new columns, so 153 is the 2026-08-15 reading and no number supersedes it yet — see the recount note in §C. The register's numbers govern; the charter estimate was optimistic and is amended by measurement here, per OUT.TIER (never dress an estimate as a finding).
 
 The three lines bind everything below: geometry `[A]` given the selection; count `[S]` selected; every cross-domain cell `[I]`.
 
@@ -71,7 +71,7 @@ The three lines bind everything below: geometry `[A]` given the selection; count
 
 ### C · Canonical statement
 
-- Harvest: **187 columns / 31 files** (ledger recount 2026-08-15).
+- Harvest: **187 columns / 31 files** (ledger recount 2026-08-15; superseded as a *current* figure on 2026-09-11 — see the recount note below, which leaves this line standing as the base the numbers in this section were computed from).
 - Superseded by exact duplication: **18** columns in 15 families (§A).
 - Superseded as public-projection copies of a D-series owner: **up to 20** more (§B; overlap with §A accounted — union 34).
 - **Canonical set: 153 columns.** Canonical member rule: the D-series owner file where one exists; else the earliest authored surface; ties broken toward the file the ledger's provenance names first.

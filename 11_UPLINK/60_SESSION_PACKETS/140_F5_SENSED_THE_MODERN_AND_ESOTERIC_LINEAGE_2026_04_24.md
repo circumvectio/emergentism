@@ -125,7 +125,7 @@ Key terms across traditions:
 ### 3.4 What Occult Traditions Got Wrong
 
 1. **Priestcraft failure at full intensity.** Occult traditions are *defined* by exclusive access. Initiation is restricted. Knowledge is guarded. The framework's K2 (mortal-signs-every-act) and A6 (three substrates) explicitly reject this.
-2. **Personalization of forces.** The "planetary intelligences," "angels," "archons," and "gods" of occult system architecture are operator-faces that hardened into personalities. The framework preserves operator-faces as deployable modes; occult traditions often reified them into independent agencies.
+2. **Personalization of forces.** The "planetary intelligences," "angels," "archons," and "gods" of occult cosmology are operator-faces that hardened into personalities. The framework preserves operator-faces as deployable modes; occult traditions often reified them into independent agencies.
 3. **No falsification discipline.** Occult claims are typically immune to empirical test. The framework's A7 discipline requires falsification criteria. Packet 137 §3 provides them for F5.
 4. **Gendered essentialism.** Many occult traditions encode gender dualism as cosmological necessity. The framework's Φ × V dyad is structural, not gendered.
 

@@ -86,7 +86,7 @@ The cross-cultural noosphere-emergence pattern is not specific to any one geogra
 | Egypt | Nile predictable flood | Calendar, hieroglyphics, monumental memory, administration |
 | Indus | Monsoon cycle + urban density | Standardized measures, urban planning, plumbing |
 | Shang/Zhou | Dry-wet seasonal contrast + flood control | Oracle bone divination, ritual coordination, mandate-of-heaven |
-| Mesoamerica | Drought-flood cycle | Long-count calendar, math-with-zero, complex system architecture |
+| Mesoamerica | Drought-flood cycle | Long-count calendar, math-with-zero, complex cosmology |
 | Andes | Vertical climate zones (sea level → 4000m) | Vertical-archipelago resource management, *quipu* |
 | Polynesia | Ocean-distance gradient | Celestial navigation, double-hulled vessels, cultural transmission |
 | Paleolithic Europe | Ice-age survival | Lascaux, projectile points, fire control, social cooperation |

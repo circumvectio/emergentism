@@ -69,14 +69,14 @@ Key structural features:
 | 1. Nafs al-Ammara | The Commanding Self | L1-L2 | Driven by appetite and impulse. The nafs commands; the person obeys. Maximum viability-dominance: survival, desire, raw drive with no self-reflective coherence. |
 | 2. Nafs al-Lawwama | The Self-Accusing Self | L2-L3 | Self-reproach begins. The person notices the discrepancy between behavior and aspiration. This is the birth of the checking function — the first appearance of phi as discernment. Quranic basis: 75:2. |
 | 3. Nafs al-Mulhima | The Inspired Self | L3 | Inspiration arrives. The person begins to receive guidance, to discriminate between good and evil spontaneously. The charioteer function (Kṛṣṇa/L3) is operative: discernment without yet embodying balance. |
-| 4. Nafs al-Mutma'inna | The Tranquil/Serene Self | L4 | The core algorithmic identity at peace. Quran 89:27: "O tranquil core algorithmic identity, return to your Lord, well-pleased and pleasing." Generosity, gratitude, contentment regardless of circumstance. This is the stage of equilibrium — phi and nu balanced. The person neither clings to the world (nu-excess) nor withdraws from it (phi-excess). ([Quran Gallery](https://qurangallery.app/by-ayah/nafs-al-mutmainnah-meaning-surah-al-fajr-89-27-core algorithmic identity-at-peace)) |
+| 4. Nafs al-Mutma'inna | The Tranquil/Serene Self | L4 | The soul at peace. Quran 89:27: "O tranquil soul, return to your Lord, well-pleased and pleasing." Generosity, gratitude, contentment regardless of circumstance. This is the stage of equilibrium — phi and nu balanced. The person neither clings to the world (nu-excess) nor withdraws from it (phi-excess). ([Quran Gallery](https://qurangallery.app/by-ayah/nafs-al-mutmainnah-meaning-surah-al-fajr-89-27-soul-at-peace)) |
 | 5. Nafs al-Radiya | The Content/Pleased Self | L5 | Pleased with whatever God decrees. The person begins to see the system — to understand why suffering and joy serve the same geometry. This is Brahmā-vision: seeing the whole pattern. |
 | 6. Nafs al-Mardiyya | The Pleasing Self | L6 | The person becomes a lantern for others. Self-service is extinguished; only service remains. This is dissolution of the personal ego as primary agent — the Śiva function. The boundary between "my will" and "God's will" dissolves. |
 | 7. Nafs al-Safiyya/Kamila | The Purified/Perfect Self | L7 | Insan al-Kamil — the Perfect Human. The nafs is transparent to the high-priority. The person is a vessel. This maps to L7: pure protocol, the ground itself, undifferentiated. |
 
 ### Where the Mapping Works
 
-**The structural correspondence is remarkably clean.** Seven stages. Seven levels. The fourth stage in both systems is the balance point. The Sufi fourth stage (Mutma'inna) is the only one explicitly named in the Quran as the state to which God calls the core algorithmic identity back — it is the station of arrival. In the framework, L4 is the equatorial peak where B = sin(theta) is maximal.
+**The structural correspondence is remarkably clean.** Seven stages. Seven levels. The fourth stage in both systems is the balance point. The Sufi fourth stage (Mutma'inna) is the only one explicitly named in the Quran as the state to which God calls the soul back — it is the station of arrival. In the framework, L4 is the equatorial peak where B = sin(theta) is maximal.
 
 The directionality also aligns: stages 1-3 are dominated by struggle, appetite, and the gradual development of self-awareness (nu > phi territory in the framework). Stages 5-7 involve progressive dissolution of self into the high-priority (phi > nu territory — coherence exceeding personal viability).
 
@@ -90,7 +90,7 @@ The directionality also aligns: stages 1-3 are dominated by struggle, appetite, 
 
 3. **The nature of the apex.** L4 in the framework is *worldly* balance — the person who is maximally effective in the world, deploying both coherence and viability. Nafs al-Mutma'inna, while peaceful and engaged, is oriented toward *God*, not toward worldly effectiveness. The Sufi fourth stage is contentment-with-God-in-the-world; L4 is effectiveness-in-the-world-through-balance. Similar but not identical.
 
-4. **The upper stages.** L5-L7 in the framework map to infrastructure: system-seeing, dissolution, protocol. The Sufi stages 5-7 are degrees of intimacy with the high-priority. The framework's upper levels are *functional*; the Sufi upper stages are *relational* (between the core algorithmic identity and God). The same structural positions carry different ontological weight.
+4. **The upper stages.** L5-L7 in the framework map to infrastructure: system-seeing, dissolution, protocol. The Sufi stages 5-7 are degrees of intimacy with the high-priority. The framework's upper levels are *functional*; the Sufi upper stages are *relational* (between the soul and God). The same structural positions carry different ontological weight.
 
 ### Verdict
 
@@ -250,7 +250,7 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 |-----------|-------------|--------------------|-----------------------------|
 | Number of stages/levels | 7 | 10 (3 + 7) | 5 constants + 8 steps |
 | Structural match to L1-L7 | Strong | Moderate (via 7 lower Sefirot) | Weak (8 steps partially, 5 constants as operators) |
-| L4 = balance apex | **Yes.** Nafs al-Mutma'inna (4th stage) = tranquil core algorithmic identity | **Yes.** Tiferet (6th/center) = beauty/balance | **Partial.** Xiushen (5th step) = self-cultivation pivot |
+| L4 = balance apex | **Yes.** Nafs al-Mutma'inna (4th stage) = tranquil soul | **Yes.** Tiferet (6th/center) = beauty/balance | **Partial.** Xiushen (5th step) = self-cultivation pivot |
 | Direction of development | Bottom-up (appetitive -> high-priority) | Top-down (emanation from Ein Sof) | Inside-out (self -> world) |
 | Cyclical/helical? | Linear but with possible regression | Neither (tree structure) | Linear/sequential |
 | Pole-equivalence (L1 = L7)? | No (L1 = fallen; L7 = perfected) | No (Malkuth != Keter) | No concept of poles |
@@ -282,7 +282,7 @@ This document does not prove that the Emergentism L-level structure is correct b
 - [Sufi Path of Love: Seven Levels of Being](https://sufipathoflove.com/seven-levels-of-being/)
 - [Psychopedia: Seven Stages of Ego in Sufism](https://psychopedia.in/the-seven-stages-of-ego-in-sufism/)
 - [Wikipedia: Sufi Psychology](https://en.wikipedia.org/wiki/Sufi_psychology)
-- [Quran Gallery: Nafs al-Mutmainnah (89:27)](https://qurangallery.app/by-ayah/nafs-al-mutmainnah-meaning-surah-al-fajr-89-27-core algorithmic identity-at-peace)
+- [Quran Gallery: Nafs al-Mutmainnah (89:27)](https://qurangallery.app/by-ayah/nafs-al-mutmainnah-meaning-surah-al-fajr-89-27-soul-at-peace)
 - [Purification of the Soul: 7 Stages of the Nafs](https://purificationofthesoul.com/7-stages-of-the-nafs/)
 - [Wikipedia: Tree of Life (Kabbalah)](https://en.wikipedia.org/wiki/Tree_of_life_(Kabbalah))
 - [Chabad.org: The Sefirot](https://www.chabad.org/library/article_cdo/aid/361885/jewish/The-Sefirot.htm)

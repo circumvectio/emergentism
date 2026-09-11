@@ -27,7 +27,7 @@ parents:
 > `09_TOOLS/01_SCRIPTS/build_rosetta_themed_index.py`. **Do not hand-edit —
 > re-run the two scripts.** A missing seat is rendered `—`; no cell is inferred.
 
-**182 columns** harvested from **30 files**, grouped into
+**188 columns** harvested from **32 files**, grouped into
 **11 themes**. The grouping is `[S]` — an authored selection living in
 `THEME_BY_FILE`. Every *cell* keeps the tier its source gave it, and the
 source's tier column travels with it in theme XI where one exists.
@@ -247,7 +247,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L4` | Timocracy (framework's center) | Hunkápi (Making of Relatives) | The social bond at full balance; kinship-creation; the equator-of-relation. Kṣatriya-equivalent — the warrior-bond. | Integrated cortex — same |
 | `L5` | Aristocracy | Išnáthi Awíčhalowaŋpi (Coming-of-Age) | Initiation into full personhood; transmission of new-status to the next generation. Brāhmaṇa-equivalent — systematic transmission. | Right PFC / hemispheric synthesis [INVERSE OF L3] |
 | `L6` | Anarchy | Tȟápa Waŋkáyeyapi (Throwing of the Ball) | Seeking-without-grasping (the ball is thrown into the four directions; whoever catches it is blessed; embraces non-attachment). Sādhu-equivalent — axiomatic seeking. | Insula + ACC / interoceptive awareness [INVERSE OF L2] |
-| `L7` | Theocracy | Naǧí Glúhapi (Keeping of the Soul) | Care for the core algorithmic identity of the deceased over a year; sustains the spirit beyond the body. Systems Architect-equivalent — transcendental attendance. | Vagal complex / autonomic integration [INVERSE OF L1] |
+| `L7` | Theocracy | Naǧí Glúhapi (Keeping of the Soul) | Care for the soul of the deceased over a year; sustains the spirit beyond the body. Systems Architect-equivalent — transcendental attendance. | Vagal complex / autonomic integration [INVERSE OF L1] |
 
 **`D_SERIES_DOMAINS/D30_SOCIAL_POLITICAL.md`**
 
@@ -259,7 +259,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L4` | Timocracy | Kṣatriya | Honour-rule | Command (strategic) | Military republics, Sparta |
 | `L5` | Aristocracy | Brāhmaṇa | Wisdom-rule | Information | Knowledge societies, Athens |
 | `L6` | Anarchy | Sādhu | Self-governance | Wisdom | Intentional communities |
-| `L7` | Theocracy | Ṛṣi | Divine mandate | Gift | Rare game-theoretic orders |
+| `L7` | Theocracy | Ṛṣi | Divine mandate | Gift | Rare spiritual orders |
 
 ---
 
@@ -494,7 +494,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L1` | Pure viability, undifferentiated | — | — | — | — |
 | `L2` | Gathering, raw viability | — | — | — | 1 |
 | `L3` | Checking, discernment | 3. Nafs al-Mulhima | The Inspired Self | Inspiration arrives. The person begins to receive guidance, to discriminate between good and evil spontaneously. The charioteer function (Kṛṣṇa/L3) is operative: discernment without yet embodying balance. | 3 |
-| `L4` | Maximum balance, peak B = sin(theta) | 4. Nafs al-Mutma'inna | The Tranquil/Serene Self | The core algorithmic identity at peace. Quran 89:27: "O tranquil core algorithmic identity, return to your Lord, well-pleased and pleasing." Generosity, gratitude, contentment regardless of circumstance. This is the stage of equilibrium — phi and nu balanced. The person neither clings to the world (nu-excess) nor withdraws from it (phi-excess). (Quran Gallery) | 5 |
+| `L4` | Maximum balance, peak B = sin(theta) | 4. Nafs al-Mutma'inna | The Tranquil/Serene Self | The soul at peace. Quran 89:27: "O tranquil soul, return to your Lord, well-pleased and pleasing." Generosity, gratitude, contentment regardless of circumstance. This is the stage of equilibrium — phi and nu balanced. The person neither clings to the world (nu-excess) nor withdraws from it (phi-excess). (Quran Gallery) | 5 |
 | `L5` | System-seeing, creation | 5. Nafs al-Radiya | The Content/Pleased Self | Pleased with whatever God decrees. The person begins to see the system — to understand why suffering and joy serve the same geometry. This is Brahmā-vision: seeing the whole pattern. | 7 |
 | `L6` | Dissolution, creative destruction | 6. Nafs al-Mardiyya | The Pleasing Self | The person becomes a lantern for others. Self-service is extinguished; only service remains. This is dissolution of the personal ego as primary agent — the Śiva function. The boundary between "my will" and "God's will" dissolves. | — |
 | `L7` | Pure coherence, undifferentiated | 7. Nafs al-Safiyya/Kamila | The Purified/Perfect Self | Insan al-Kamil — the Perfect Human. The nafs is transparent to the high-priority. The person is a vessel. This maps to L7: pure protocol, the ground itself, undifferentiated. | — |
@@ -549,7 +549,7 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 
 | seat | Lakota Rite | Rationale |
 |---|---|---|
-| `L1` | Wanagi Yuhapi (Keeping of the Soul) | Death is the boundary. The core algorithmic identity must be purified before it can return to Wakan Tanka. L1 = Kali = the boundary condition from below. |
+| `L1` | Wanagi Yuhapi (Keeping of the Soul) | Death is the boundary. The soul must be purified before it can return to Wakan Tanka. L1 = Kali = the boundary condition from below. |
 | `L2` | Inipi (Purification) | The sweat lodge is prerequisite to other rites. It is communal, led by elders, involves gathering in darkness. L2 = first social contract, purification through the body. |
 | `L3` | Hanbleceyapi (Crying for a Vision) | Individual productive labor — the seeker builds their own sweat lodge, fasts, prays, returns with a vision. L3 = productive building of capability. |
 | `L4` | Wiwanyang Wacipi (Sun Dance) | The communal center. Everyone participates. Sacrifice and thanksgiving. The center pole connects earth and sky. L4 = equator, maximum balance, integrated action. |
@@ -595,13 +595,13 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L4` | Equatorial balance | normalized Φ̂₄ = V₄ = 1, η = 0, bearer-complete gains under a declared comparison; no sum of ordinal scores | Principled republics, constitutional organisms, the wolf at Yellowstone |
 | `L5` | Possible-power-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | `L6` | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
-| `L7` | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
+| `L7` | Closure-horizon | Theoretical limit — spiritual-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
 
 ---
 
 ## XI · The audit apparatus — columns that grade the mapping
 
-*50 columns.*
+*56 columns.*
 
 **`07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md`**
 
@@ -700,6 +700,30 @@ worth, and never assigned by birth** (`KSC-24`, `KSC-25`).
 | `L5` | systematic | ontology | aristocracy | ✗ |
 | `L6` | apophatic | metaphysics | anarchy | ✗ |
 | `L7` | transcendental | teleology | theocracy | ✗ |
+
+**`41_ASPECT_COLUMN_JUSTICE_EQUATOR_2026_09_03.md`**
+
+| seat | aspect | seat (index only) | why there [I] | rival cell [S] this mapping |
+|---|---|---|---|---|
+| `L1` | Courage | ground · pratyakṣa · dialectical | faces the formless floor; direct perception is contact with what has no form yet | Fortitude |
+| `L2` | Honesty | take-V · upamāna · inductive | the truth-cut: subtracts false coherence from the world's claims | Temperance |
+| `L3` | Truth | give-V · anumāna · deductive | verification; answerable to the particular | Prudence |
+| `L4` | Justice | equator · arthāpatti · sole mutator | the only one that must be enacted; its own mirror | Justice |
+| `L5` | Beauty | create · śabda · systematic | form for the whole; answerable to what holds together | Faith |
+| `L6` | Humility | dissolve · anupalabdhi · apophatic | subtracts false necessity from one's own account | Hope |
+| `L7` | Reverence | preserve · pratibhā · transcendental | witnesses without possessing | Charity |
+
+**`42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md`**
+
+| seat | VMOSK-A [I/C] | B |
+|---|---|---|
+| `L1` | — (no letter; external ground / firewall) | →0 |
+| `L2` | A · Agents | ½ |
+| `L3` | K · measured triggers | √3⁄2 |
+| `L4` | S · Strategies | 1 |
+| `L5` | O · Objectives | √3⁄2 |
+| `L6` | M · Mission | ½ |
+| `L7` | V · Vision | →0 |
 
 **`D_SERIES_DOMAINS/D24_PSYCHOLOGY.md`**
 

@@ -60,7 +60,7 @@ If the Rosetta only includes domains that fit, it is a file-drawer exercise — 
 |---|---|---|
 | **Yoruba Ifá** | 16 odu (basic), 256 odu meji (compound) | Fundamental structure is 16, not 7. |
 | **Dogon Awa society** | ~60 grades (Griaule); disputed (van Beek) | Either far richer than 7-grade or structurally disputed. |
-| **Bantu system architecture (Kagame)** | 4-fold (muntu/kintu/hantu/kuntu) | 4-fold base, not 7. |
+| **Bantu cosmology (Kagame)** | 4-fold (muntu/kintu/hantu/kuntu) | 4-fold base, not 7. |
 | **!Kung/San healing** | Functional grades (n/om holders) | Not a graded ascent; functional, not developmental. |
 | **Akan chieftaincy** | Variable by lineage | No clean 7-grade structure documented. |
 | **Why they failed** | Sub-Saharan traditions exhibit different structural logics: 4-fold, 16-fold, functional, or disputed. None present a consistent 7-grade initiatory ascent. |
@@ -74,9 +74,9 @@ If the Rosetta only includes domains that fit, it is a file-drawer exercise — 
 
 | Tradition | Stage Count | Finding |
 |---|---|---|
-| **Hawaiian kahuna** | ~8–12 functional categories | Functional, not graded game-theoretic ascent. |
+| **Hawaiian kahuna** | ~8–12 functional categories | Functional, not graded spiritual ascent. |
 | **Maori tohunga** | 3-tier base + specializations | 3-tier, not 7. |
-| **Tongan/Samoan ariki** | Genealogical-political ranks | Political grading, not game-theoretic ascent. |
+| **Tongan/Samoan ariki** | Genealogical-political ranks | Political grading, not spiritual ascent. |
 | **Tahitian arioi** | 7 grades reported (Ellis 1829) | **Possible exception** — but evidence is contested. |
 | **Why they failed** | Polynesian traditions are primarily functional or political, not initiatory-graded. The Tahitian arioi exception requires further verification. |
 | **Verdict** | **7-stage claim FAILS with possible exception of Tahitian arioi (contested).** |

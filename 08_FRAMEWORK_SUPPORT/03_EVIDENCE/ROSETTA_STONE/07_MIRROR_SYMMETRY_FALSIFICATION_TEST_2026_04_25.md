@@ -99,7 +99,7 @@ For each 7-row column in the Rosetta, score the three mirror pairs:
 | L4 | Arjuna ⚔ (God) | self |
 
 **Mirror analysis:**
-- **L1 Kali ↔ L7 Viṣṇu:** ✓ STRONG. Both are *boundary tier* operators (Demon and Executive poles). Kali = parasitic immune / pre-social Caṇḍāla outcast; Viṣṇu = preserver / post-social Ṛṣi seer. Same boundary nature (extreme position), inverse direction (chaos floor vs order ceiling). Hindu system architecture pairs them through the kalpa cycle (Viṣṇu's dream contains all Kali-yugas).
+- **L1 Kali ↔ L7 Viṣṇu:** ✓ STRONG. Both are *boundary tier* operators (Demon and Executive poles). Kali = parasitic immune / pre-social Caṇḍāla outcast; Viṣṇu = preserver / post-social Ṛṣi seer. Same boundary nature (extreme position), inverse direction (chaos floor vs order ceiling). Hindu cosmology pairs them through the kalpa cycle (Viṣṇu's dream contains all Kali-yugas).
 - **L2 Kālī ↔ L6 Śiva:** ✓ STRONG. Same-sign Executive grammar inversion. Kālī = destructive Śakti tearing illusion (truth at the lower pole); Śiva = dissolving Puruṣa returning to ground (renunciation at the upper pole). Same operator function (negation), inverse direction (toward truth vs toward emptiness). Tantric tradition pairs them as the high-priority couple.
 - **L3 Kṛṣṇa ↔ L5 Brahmā:** ✓ STRONG. Both *transmissive* operators in the upper half of the lower triangle / lower half of the upper triangle. Kṛṣṇa = enabler-of-others (Vaiśya merchant; productive distribution); Brahmā = system-creator (Brāhmaṇa priest; cosmological ordering). Same mode (creating-for-others), inverse object (capability for individuals vs system for all).
 

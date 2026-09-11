@@ -138,6 +138,67 @@ cells is decoration, not discipline.**
 
 ## 6. The first cell to fill
 
+> **[金] TOMBSTONE 2026-09-11 — `PHIL5` was built, then overwritten, and was
+> never refuted.** A real `RIVAL5`-class pack against `PHIL7@1` already existed
+> when this section was written. Commit `67309777` (2026-07-31 10:18:09 +0700,
+> *feat(rosetta): build the PHIL5 counter-rival; rivals must now be real*)
+> landed `PHIL5` in `rosetta_cells.json`: three packs, nine cells, five filled
+> `PHIL5` cells (`B1` Metaphysics, `B2` Epistemology, `B3` Logic, `B4` Ethics,
+> `B5` Aesthetics), each with a `fit_reason`, a `kill_criterion` and a
+> `downgrade_path`, declared `independence_status: independent` — the only pack
+> in the ledger so far that is. Its terms are the traditional five branches of
+> philosophy, attested for centuries and sourced outside this corpus, so it
+> passes §3 step 2 where `RIVAL5@0`, `RIVAL6@0` and `RIVAL8@0` fail it.
+>
+> **How it was lost.** Not by a merge and not by a ruling. History here is
+> linear (`git log --format='%h parents:%p'`): four minutes after `67309777`,
+> commit `6274c946` (10:22:35) landed a concurrent session's 643-line whole-file
+> rewrite of `rosetta_cells.json`, reverting the ledger to two packs and four
+> cells and reducing `PHIL5` to the placeholder string `PHIL5_rival_pending` it
+> had been built to abolish. `34_LEDGER_CONVENTION_COLLISION_2026_07_31.md`
+> (committed 10:22:55, twenty seconds later) records the collision and
+> recommends the merge — "their data model, extended with `normalization_steps`
+> and the built PHIL5 rival." That merge was never performed. By `a7fb47b5`
+> even the placeholder was gone; at ledger revision 3 (2026-08-15) the packs are
+> `PHIL7`, `GEN7`, `SOUL` and `/usr/bin/grep -c PHIL5 rosetta_cells.json`
+> returns `0`. This section was written at 10:43:46 — twenty-one minutes after
+> `PHIL5` was overwritten — and nominates a corpus-derived five-row rival as
+> "the first rival cell to fill" without naming the independent one that had
+> just been erased.
+>
+> **Status: LOST, NOT KILLED.** No discriminator was run against `PHIL5`, no
+> kill criterion fired, no ruling was issued. Under the corpus rule that kills
+> fire in public and the dead are archived never erased, `PHIL5` is neither
+> killed nor archived — it is unreachable from the live surface while remaining
+> intact in history. It is recoverable in full:
+> `git show 67309777:08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/rosetta_cells.json`,
+> blob `3846ecd8bdae1cfee54bd83cd2fcf0f870249425`. The custody rescue of the
+> same morning also holds it: the remote branch
+> `menexus/codex/emergentism-live-dirt-custody-20260730` is pinned at
+> `711522b6` (10:20:44, *tidy(handoff): make the repo resumable*) — two minutes
+> before the overwrite — and carries the identical blob. `PHIL5` therefore has
+> two independent custody anchors and is in no danger of being lost; what it
+> lacks is a live surface and a ruling.
+>
+> Restoration is not a paste: ledger revision 3 replaced the `cells` schema with
+> `packs`/`projections`/`relations` carrying source digests, so `PHIL5` must be
+> re-expressed, and re-expression is an owner decision, not an auditor's.
+>
+> **Two gates went quiet with it.** `67309777` also added the rule that a
+> named rival must EXIST as a declared pack, and booked `GEN7`'s missing rival
+> as a dated `rival_debt` printed every run ("UNTESTED since 2026-07-31").
+> Verified 2026-09-11: `/usr/bin/grep -c 'rival_debt' check_rosetta_cells.py`
+> returns `0` and `/usr/bin/grep -c 'counter-rival' check_rosetta_cells.py`
+> returns `0`. The surviving `rival_maps` check runs on *projections*, not
+> packs, and is satisfied by strings such as `null_lexical_overlap` that name no
+> pack at all. The checker reports **PASS** over a ledger with no rival pack in
+> it. §5's fourth kill condition — "the rival packs are never filled in
+> (i.e., the scaffold is just performative)" — is therefore met on the evidence
+> of this correction, and §5's own verdict applies to the present state of
+> this document: *a scaffold with no filled cells is decoration, not
+> discipline.* Whether that fires the Counter-Rosetta's kill is the owner's
+> ruling to make; this note records the condition, not the verdict.
+
 The first rival cell to fill is `RIVAL5@0` against `PHIL7@1`. The
 discriminator:
 
@@ -150,6 +211,12 @@ The five-row rival's row keys (suggested): `teleology`, `knowledge`,
 domain confronts exactly these five problems, and the seven's
 methodology, ontology, and being-questions are reducible to one of
 these five.
+
+> **[金] Correction 2026-09-11.** "methodology, ontology, and
+> being-questions" names two rows, not three: in `PHIL7@1` the being-question
+> *is* ontology (`PHIL7@1:being`, familiar name Ontology). The rows `RIVAL5@0`
+> drops are `PHIL7@1:inference` and `PHIL7@1:being` — two, which is what makes
+> §3 step 2's parenthetical bite exactly.
 
 This is a testable claim. The first audit of `RIVAL5@0` is on
 **2026-10-31**, ninety days from the scaffold.

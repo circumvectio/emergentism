@@ -34,7 +34,7 @@ This packet contains **no doctrine**. It is the literal markdown patch text that
 
 ## V-bis. INITIATORY ASCENTS
 
-Independent initiatory traditions, each developed within its own system architecture, all
+Independent initiatory traditions, each developed within its own cosmology, all
 converge on a 7-grade ascending sequence with consistent functional content per
 grade. The L4 equator is anchored across all clean mappings, and the
 Tiferet–Anāhata heart-equator convergence is the strongest single
@@ -49,9 +49,9 @@ memory but do not earn canonical columns here.
 | L2 | Nymphus (Bridegroom) | Lawwāma (self-reproaching) | Second (recollection) | Yesod (Foundation) | Theoricus |
 | L3 | Miles (Soldier) | Mulhama (inspired) | Third (exemplary life) | Hod (Splendor) | Practicus |
 | **L4** | **Leo (Lion)** | **Mutma'inna (peaceful)** | **Fourth (prayer of quiet)** | **Tiferet (Beauty/Heart/Balance)** | **Philosophus** |
-| L5 | Perses (Persian) | Rāḍiya (pleased) | Fifth (game-theoretic betrothal) | Netzach (Eternity) | Adeptus Minor |
+| L5 | Perses (Persian) | Rāḍiya (pleased) | Fifth (spiritual betrothal) | Netzach (Eternity) | Adeptus Minor |
 | L6 | Heliodromus (Sun-Runner) | Marḍiyya (pleasing) | Sixth (dark night) | Geburah (Severity) | Adeptus Major |
-| L7 | Pater (Father) | Kāmila (perfected) | Seventh (game-theoretic marriage) | Chesed (Loving-kindness) | Adeptus Exemptus |
+| L7 | Pater (Father) | Kāmila (perfected) | Seventh (spiritual marriage) | Chesed (Loving-kindness) | Adeptus Exemptus |
 
 **Evidence:** [I] for individual tradition mappings. [S] for the structural
 cross-traditional alignment per the same epistemics as §I and §III. [C] for the

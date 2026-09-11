@@ -116,7 +116,9 @@ These domains have NOT been examined. They should be tested with pre-registered 
 |--------|-------|---------|
 | **Confirmed Fit** | 12+ | Psychology, Plato, Initiatory, Yoga, Mythology, Neuroscience, Computation, Game Theory, Civilisational, PIE, Liberal Arts, Daoist (D35) |
 | **Confirmed Failure** | 5 | Electron shells, Complexity classes, Bacterial growth, SDLC, Erikson |
-| **Untested** | 7 | Buddhist bhūmis, Sub-Saharan, Lakota, Polynesian, Music, Embryonic, Periods |
+| **Untested** | 7 | Buddhist bhūmis, Sub-Saharan, **Lakota †**, Polynesian, Music, Embryonic, Periods |
+
+† **Lakota is no longer simply untested.** It was coded twice and the codings diverged by a one-seat rotation: **mirror and equator claims killed-by-independent-coding 2026-08-15; cyclic order retained `[I]`** (see item I above, and `R1_LAKOTA_ROTATION@1` in `rosetta_cells.json`). It is counted here as untested because the consultation item I demands is still open, not because no test has fired. Whether it should move to a fourth row — *coded, partially killed* — is an owner decision; the row counts are left unchanged.
 
 **The failure-to-fit ratio is currently 5:12+.** This is healthy — it means the Rosetta is not selecting only domains that fit. The 5 failures are genuinely unstructured domains, not forced non-fits.
 

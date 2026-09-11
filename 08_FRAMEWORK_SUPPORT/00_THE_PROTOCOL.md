@@ -75,7 +75,7 @@ that report through the equator symbol `[I/C]`; the report and every neural
 correlate are D4 actualities, not evidence for a special D4 witness type or a
 literal meeting of past and future light cones.
 
-**Critical prediction:** The quality of the "something present" in minutes 10-20 should be **the same regardless of the practitioner's cultural, religious, or philosophical background.** A Zen monk, a Christian contemplative, a secular mindfulness practitioner, and a physicist with no game-theoretic background should all report the same phenomenological core. The traditions differ in how they INTERPRET the experience. The experience itself is geometric, not cultural.
+**Critical prediction:** The quality of the "something present" in minutes 10-20 should be **the same regardless of the practitioner's cultural, religious, or philosophical background.** A Zen monk, a Christian contemplative, a secular mindfulness practitioner, and a physicist with no spiritual background should all report the same phenomenological core. The traditions differ in how they INTERPRET the experience. The experience itself is geometric, not cultural.
 
 ### Predicted Third-Person Neural Correlates
 

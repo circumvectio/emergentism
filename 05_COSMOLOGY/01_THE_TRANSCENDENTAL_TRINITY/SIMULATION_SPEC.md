@@ -349,7 +349,7 @@ D6 → D0: The sphere collapses. The dot returns. The cycle completes.
 One poloidal cycle on the torus is rendered as one aeon `[I]`.
 Penrose CCC and the dimensional hierarchy may be compared only as a removable
 correspondence `[C]`; neither follows from the other.
-The system architecture is a selected interpretive scaffold, not arithmetic.
+The cosmology is a selected interpretive scaffold, not arithmetic.
 ```
 
 ---
@@ -434,7 +434,7 @@ Their paired rendering = the model's reciprocal chart (`φν=1` by definition)
 
 ### Physics
 - Symmetry breaking
-- The electroweak epoch (in system architecture)
+- The electroweak epoch (in cosmology)
 - Matter/antimatter separation
 - The emergence of distinct forces from unified field
 

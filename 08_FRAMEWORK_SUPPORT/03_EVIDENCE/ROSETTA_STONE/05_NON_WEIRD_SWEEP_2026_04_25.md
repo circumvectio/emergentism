@@ -149,7 +149,7 @@ Sub-Saharan African religious-initiatory traditions are vast, varied, and often 
 | **Akan (Ghana) chieftaincy initiation** | Multi-stage including ritual death/rebirth, name-giving, regalia investiture | No clean 7-grade structure documented; varies by stool/lineage |
 | **Yoruba (Nigeria) Ifá divination** | 16 *odu* (basic), 256 *odu meji* (compound), then odu-kindreds | **Not 7** — 16/256 base structure is fundamental |
 | **Dogon (Mali) Awa society** | ~60 initiatory grades documented in Marcel Griaule's work; later scholars (van Beek) dispute Griaule's reconstruction | Disputed; if Griaule is right, structure is far richer than 7-grade |
-| **Bantu system architecture (Kagame)** | 4-fold classification: muntu/kintu/hantu/kuntu (person/thing/place-time/modality) | **Not 7** — 4-fold base |
+| **Bantu cosmology (Kagame)** | 4-fold classification: muntu/kintu/hantu/kuntu (person/thing/place-time/modality) | **Not 7** — 4-fold base |
 | **!Kung / San healing dance** | Trance-state grades (n/om holders); not a 7-grade ascent | **Not 7** — functional, not graded |
 
 ### 3.2 Honest assessment
@@ -175,12 +175,12 @@ Sub-Saharan African religious-initiatory traditions are vast, varied, and often 
 |---|---|---|
 | **Hawaiian kahuna lineages** | Functional categories (kahuna pule/prayer, lā'au lapa'au/herbal medicine, kuhikuhi pu'uone/architecture, etc.) | **Not 7** — functional, ~8–12 categories depending on island |
 | **Maori tohunga grades** | Historical 3-tier system (tohunga ahurewa, matakite, makutu, with specializations); whare wānanga schools had grades | **Not 7** — 3-tier base, with specialization branches |
-| **Tongan/Samoan ariki/matai** | Chiefly succession ranks (`tu'i`, `matai`, etc.); genealogical-political | **Not 7** — political grading, not game-theoretic ascent |
+| **Tongan/Samoan ariki/matai** | Chiefly succession ranks (`tu'i`, `matai`, etc.); genealogical-political | **Not 7** — political grading, not spiritual ascent |
 | **Tahitian arioi society** | 7 grades reportedly documented in some early ethnographic accounts (e.g., Ellis 1829), but disputed | Possible 7-grade structure here, but evidence is contested |
 
 ### 4.2 Honest assessment
 
-**Polynesian traditions do NOT present a clean 7-grade game-theoretic initiatory structure.** The Tahitian arioi society's reported 7 grades is an interesting possible exception but the historical evidence is contested (Ellis was a missionary observer; later scholars vary).
+**Polynesian traditions do NOT present a clean 7-grade spiritual initiatory structure.** The Tahitian arioi society's reported 7 grades is an interesting possible exception but the historical evidence is contested (Ellis was a missionary observer; later scholars vary).
 
 ### 4.3 Verdict for the Rosetta
 

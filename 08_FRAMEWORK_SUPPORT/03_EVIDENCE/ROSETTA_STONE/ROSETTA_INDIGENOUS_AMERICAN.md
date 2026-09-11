@@ -12,7 +12,7 @@ rosetta:
 **Evidence tier:** [S] for Lakota Seven Sacred Rites (documented ethnography). [I] for L-level mapping. [C] for Mesoamerican and Andean (insufficient data).
 **Depends on:** [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md), [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis
 **Kill criterion:** If the Lakota rites are shown to be ordered differently by Lakota elders, or if the mapping misrepresents the ceremonial purpose.
-**Cultural safety note:** This document reports externally documented information about living game-theoretic traditions. The Lakota Seven Sacred Rites are actively practiced. This is a scholarly mapping, not a claim of authority over these traditions.
+**Cultural safety note:** This document reports externally documented information about living spiritual traditions. The Lakota Seven Sacred Rites are actively practiced. This is a scholarly mapping, not a claim of authority over these traditions.
 
 ---
 
@@ -44,7 +44,7 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 |---|-------------|---------|---------|-------------|
 | 1 | **Wanagi Yuhapi** | Keeping of the Soul | Hold and purify the spirit of the deceased; communal grief; eventual release | Death and mourning |
 | 2 | **Inipi** | Purification Rite (Sweat Lodge) | Cleanse body, mind, spirit; prerequisite for other rites | Preparation and renewal |
-| 3 | **Hanbleceyapi** | Crying for a Vision (Vision Quest) | Solitary seeking of game-theoretic guidance through fasting and prayer | Individual game-theoretic seeking |
+| 3 | **Hanbleceyapi** | Crying for a Vision (Vision Quest) | Solitary seeking of spiritual guidance through fasting and prayer | Individual spiritual seeking |
 | 4 | **Wiwanyang Wacipi** | The Sun Dance | Communal thanksgiving, sacrifice, renewal of people and earth; most complex public ceremony | Community integration |
 | 5 | **Hunkapi** | Making of Relatives | Formal adoption; binding individuals in kinship obligation | Social bonding |
 | 6 | **Isnati Awicalowanpi** | Preparing a Girl for Womanhood | Puberty rites; celebrating transition to adulthood | Life transition |
@@ -56,15 +56,15 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 
 **However:** The "Throwing of the Ball" explicitly represents "the stages of a person's life" (Handbook of Native American Mythology). The ball, painted to represent the universe, is thrown to the four directions and then upward. Catching it symbolizes "the struggle to break free of ignorance." This contains a **developmental narrative** within a single ceremony.
 
-**The four directions + center + above + below** appear in multiple rites (Inipi lodge oriented east; Sun Dance center pole; Throwing of the Ball to four directions). This is a **5- or 7-directional spatial system architecture**, not a linear stage model.
+**The four directions + center + above + below** appear in multiple rites (Inipi lodge oriented east; Sun Dance center pole; Throwing of the Ball to four directions). This is a **5- or 7-directional spatial cosmology**, not a linear stage model.
 
-**The Sun Dance is the communal center.** Of all seven rites, the Sun Dance is the only one that "everyone participates in" (World History Encyclopedia). It is the most complex, the most public, and the most integrative. In the framework's terms, this is **L4-equivalent** — the equatorial ceremony where the whole community comes into balance.
+**The Sun Dance is the communal center.** Of all seven rites, the Sun Dance is the only one that "everyone participates in" (World History Encyclopedia). It is the most complex, the most public, and the most integrative. In the framework's terms, this is ~~**L4-equivalent** — the equatorial ceremony where the whole community comes into balance~~ **[EQUATOR SEAT SUPERSEDED 2026-08-15 — killed-by-independent-coding. `16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md` codes the same seven rites in the same cyclic order with the anchor rotated one seat and seats the equator on Hunkápi, not the Sun Dance; a rotation is not a symmetry of the chart, so the two codings genuinely disagree and **no seat is established**. The Sun Dance's ethnographic primacy — most public, most integrative, the one everyone participates in — is untouched `[S]`; only its **L-seat** is killed. Cyclic order retained `[I]`. Ruling: the cross-reference appendix at the end of this file.]**
 
 ### 1.4 Proposed L-level mapping (interpretive)
 
 | L | Lakota Rite | Rationale | Strength |
 |---|-------------|-----------|----------|
-| L1 | **Wanagi Yuhapi** (Keeping of the Soul) | Death is the boundary. The core algorithmic identity must be purified before it can return to Wakan Tanka. L1 = Kali = the boundary condition from below. | Moderate — death is universal boundary |
+| L1 | **Wanagi Yuhapi** (Keeping of the Soul) | Death is the boundary. The soul must be purified before it can return to Wakan Tanka. L1 = Kali = the boundary condition from below. | Moderate — death is universal boundary |
 | L2 | **Inipi** (Purification) | The sweat lodge is prerequisite to other rites. It is communal, led by elders, involves gathering in darkness. L2 = first social contract, purification through the body. | Strong — prerequisite function matches L2's foundational role |
 | L3 | **Hanbleceyapi** (Crying for a Vision) | Individual productive labor — the seeker builds their own sweat lodge, fasts, prays, returns with a vision. L3 = productive building of capability. | Moderate — individual achievement but not "exchange" |
 | L4 | **Wiwanyang Wacipi** (Sun Dance) | The communal center. Everyone participates. Sacrifice and thanksgiving. The center pole connects earth and sky. L4 = equator, maximum balance, integrated action. | **Strong** — communal center, maximum complexity, balance |
@@ -74,9 +74,9 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 
 ### 1.5 Honest assessment
 
-**The Lakota Seven Sacred Rites do NOT form a clean initiatory ascent.** They are a **ceremonial cycle** — seven ceremonies for different life domains, not seven stages of game-theoretic progression.
+**The Lakota Seven Sacred Rites do NOT form a clean initiatory ascent.** They are a **ceremonial cycle** — seven ceremonies for different life domains, not seven stages of spiritual progression.
 
-**However:** The framework can still read them as a **functional projection** of the operator grammar onto Lakota game-theoretic life:
+**However:** The framework can still read them as a **functional projection** of the operator grammar onto Lakota spiritual life:
 - L1/L7 ceremonies address boundaries (death / cosmological knowledge)
 - L2/L6 ceremonies address transitions (purification / puberty)
 - L3/L5 ceremonies address individual/social building (vision quest / making relatives)
@@ -84,7 +84,7 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 
 **The mirror symmetry is weak** because the rites are not ordered as a sequence. One does not "progress" from Keeping of the Soul to Throwing the Ball. The rites are situationally activated, not developmentally climbed.
 
-**The 4-3 split is present but spatial, not temporal:** The four directions + center + above + below structure appears in multiple rites. This is a 7-fold spatial system architecture (4 directions + center + zenith + nadir), which resonates with the 7-level geometry but is geometrically different — it's a **directional mandala**, not a spherical latitude.
+**The 4-3 split is present but spatial, not temporal:** The four directions + center + above + below structure appears in multiple rites. This is a 7-fold spatial cosmology (4 directions + center + zenith + nadir), which resonates with the 7-level geometry but is geometrically different — it's a **directional mandala**, not a spherical latitude.
 
 ### 1.6 Verdict for the Rosetta
 
@@ -92,8 +92,8 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 |---|---|
 | Lakota have 7 mission-critical rites | **[S]** Well-documented ethnographically |
 | The 7 rites map to 7 L-levels | **[I]** Interpretive. The mapping is framework-imposed. The rites are functional, not graded. |
-| L4 = Sun Dance as communal center | **[S]** Strongest cell — the Sun Dance is explicitly the most integrative, public, and complex ceremony |
-| Mirror symmetry holds | **[I]** Weak — rites are not ordered as a sequence |
+| L4 = Sun Dance as communal center | ~~**[S]** Strongest cell — the Sun Dance is explicitly the most integrative, public, and complex ceremony~~ → **EQUATOR CLAIM KILLED-BY-INDEPENDENT-CODING 2026-08-15.** `16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md` seats the equator on Hunkápi, one seat away, from the same rites in the same cyclic order; a rotation is not a chart symmetry, so neither centre is established. The Sun Dance's ethnographic primacy remains `[S]`; its **seat** does not. Cyclic order retained `[I]`. Ruling: appendix at end of file; `R1_LAKOTA_ROTATION@1`. |
+| Mirror symmetry holds | ~~**[I]** Weak — rites are not ordered as a sequence~~ → **KILLED-BY-INDEPENDENT-CODING 2026-08-15**, not merely weak. The anchor is rotated one seat in `16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md` and every mirror pair moves with it; a rotation is not a chart symmetry. Cyclic order retained `[I]`. Ruling: appendix at end of file; `R1_LAKOTA_ROTATION@1`. |
 | The 7 is a structural constant | **[I]** The 7 rites are a ceremonial set, not a discovered developmental pattern |
 
 **Outcome:** The Lakota column **does not provide independent evidence for a universal 7-stage structure.** It provides evidence for a **7-fold ceremonial taxonomy** that can be read through the Rosetta lens. The framework survives by narrowing its claim: "7-fold structures appear across cultures; the specific 7-stage initiatory ascent is Indo-European/Mediterranean."
@@ -113,7 +113,7 @@ The rites are **ceremonies for life circumstances**, not necessarily a sequentia
 
 ### 2.2 Honest assessment
 
-**Mesoamerican traditions do NOT present a consistent 7-grade initiatory structure.** The fundamental numbers in Mesoamerican system architecture are **4 (directions), 5 (center), 9 (underworld levels), 13 (day numbers), 20 (day signs)**, and **260 (mission-critical calendar)**. Seven is not a structurally privileged number in the way it is in Indo-European traditions.
+**Mesoamerican traditions do NOT present a consistent 7-grade initiatory structure.** The fundamental numbers in Mesoamerican cosmology are **4 (directions), 5 (center), 9 (underworld levels), 13 (day numbers), 20 (day signs)**, and **260 (mission-critical calendar)**. Seven is not a structurally privileged number in the way it is in Indo-European traditions.
 
 The **9 levels of Mictlan** (the Aztec underworld) are the closest parallel to a graded descent/ascent structure, but 9 ≠ 7.
 
@@ -132,7 +132,7 @@ The **9 levels of Mictlan** (the Aztec underworld) are the closest parallel to a
 |---|---|---|
 | **Q'ero paq'o (shaman/healer)** | Two main categories: altomisayoq (high-altitude ritual specialist) and pampamisayoq (valley ritual specialist). Further specializations exist. | **Not 7** — functional specialization, not graded |
 | **Inca ceque system** | 41 ceque (ritual lines) radiating from Cusco, grouped by direction and social group | **Not 7** — 41-fold spatial structure |
-| **Andean chakra (energy centers)** | Some contemporary Andean-game-theoretic-syncretic traditions use chakra-like concepts, but these appear to be influenced by Asian traditions | Not clearly pre-Columbian |
+| **Andean chakra (energy centers)** | Some contemporary Andean-spiritual-syncretic traditions use chakra-like concepts, but these appear to be influenced by Asian traditions | Not clearly pre-Columbian |
 
 ### 3.2 Honest assessment
 
@@ -168,7 +168,7 @@ This is the **final honest position** after complete OQ-CC-3 fulfillment.
 - Akta Lakota Museum: Lakota Culture / Seven Sacred Rites
 - Handbook of Native American Mythology (Thompson & Miller)
 - León-Portilla, Miguel. *Aztec Thought and Culture* (1963)
-- Hunt, Eva. *The Transformation of the Hummingbird* (1977) — Mesoamerican system architecture
+- Hunt, Eva. *The Transformation of the Hummingbird* (1977) — Mesoamerican cosmology
 - Allen, Catherine. *The Hold Life Has* (2002) — Andean Q'ero
 - [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) — East Asian, Sub-Saharan, Polynesian sweep
 - [`09_FAILED_MAPPINGS_2026_04_25.md`](09_FAILED_MAPPINGS_2026_04_25.md) — Failed mappings appendix

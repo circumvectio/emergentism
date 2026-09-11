@@ -86,7 +86,7 @@ A tradition or domain was included in the Rosetta Stone if:
 | **Indigenous / Oral traditions** | Various | Insufficient textual documentation for rigorous mapping. Risk of misrepresentation is high. **Excluded to avoid cultural appropriation.** If indigenous scholars wish to contribute their own mappings, the framework welcomes it. |
 | **Marxism / Dialectical Materialism** | Thesis-Antithesis-Synthesis | Three stages, not seven. The dialectical structure maps to the helical dynamics (ascent-descent-synthesis) but not to the L-level hierarchy. **Partially included** as structural analogy, not as a Rosetta row. |
 | **Scientific Materialism / Physicalism** | Reality is physical; consciousness may be emergent | D1–D3 use mathematical and quantum descriptions, while actual carriers, experiments, experiences, and reports are D4. D5 types counterfactual content represented by D4 carriers, not a second nonphysical substance. The scaffold alone neither proves nor excludes physical reduction; consciousness ontology remains open. |
-| **Islam / Sufism** | 7 stages of the nafs (core algorithmic identity) | Sufi stages DO map to the L-levels with reasonable fidelity. **Not yet included** due to insufficient scholarship by the author. This is a gap, not an exclusion. |
+| **Islam / Sufism** | 7 stages of the nafs (soul) | Sufi stages DO map to the L-levels with reasonable fidelity. **Not yet included** due to insufficient scholarship by the author. This is a gap, not an exclusion. |
 | **Kabbalah** | 10 Sefirot | 10 levels, not 7. The mapping would require collapsing or extending. **Not yet included** due to complexity and risk of superficial treatment. |
 
 ---

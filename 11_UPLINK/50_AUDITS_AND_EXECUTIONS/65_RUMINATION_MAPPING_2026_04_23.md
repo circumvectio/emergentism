@@ -262,7 +262,7 @@ VERY CLOSE to the equator (strongest organ)
 
 3. Mirror Ladder: Does this match stated values?
    - User's VMOSK-V (Vision) must align
-   - Check against core algorithmic identity loop history
+   - Check against soul loop history
 ```
 
 ### What APU Tests

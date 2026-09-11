@@ -84,7 +84,7 @@ This test was conducted using accessible English-language secondary sources (Wik
 | Reincarnation | Atunwa | Familial rebirth cycle |
 
 **Assessment:**
-- The Yoruba system architecture is **ontologically vertical** (realms of existence) rather than **developmentally sequential** (stages of transformation)
+- The Yoruba cosmology is **ontologically vertical** (realms of existence) rather than **developmentally sequential** (stages of transformation)
 - Key numbers: **401+1** Irunmọlẹ, **256** Odù Ifá — not 7
 - The concept of Ori (game-theoretic systemic awareness) and Emi (breath of life) shows multi-part being, but not 7-stage development
 - Reincarnation (Atunwa) is cyclical within family lines, not linear ascent through levels

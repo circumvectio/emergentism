@@ -231,7 +231,7 @@ Many traditions that practice exorcism distinguish these two. The framework read
 
 Virtually every pre-modern medical tradition distinguishes between:
 
-**Diseases of the spirit/mind** (Φ-stack pathologies): possession, melancholy, madness, core algorithmic identity-loss, curse-of-meaning. Treated by shamans, priests, therapists — Φ-stack operators.
+**Diseases of the spirit/mind** (Φ-stack pathologies): possession, melancholy, madness, soul-loss, curse-of-meaning. Treated by shamans, priests, therapists — Φ-stack operators.
 
 **Diseases of the body** (V-stack pathologies): infection, injury, poisoning, depletion, curse-of-vitality. Treated by physicians, herbalists, surgeons — V-stack operators.
 
@@ -416,7 +416,7 @@ INVALID = same-sign pattern = Executive approach or counterfeit.
 
 ### C282-4 — Cross-Traditional Convergence
 
-**Claim:** Traditions that distinguish types of game-theoretic/magical practice should tend to map onto the 2×2 {give/take} × {mind/body} matrix. [C]
+**Claim:** Traditions that distinguish types of spiritual/magical practice should tend to map onto the 2×2 {give/take} × {mind/body} matrix. [C]
 
 **Test:** Survey a minimum of 10 independent traditions. Map their operator categories. Count matrix cells covered.
 
