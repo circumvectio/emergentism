@@ -1,0 +1,2824 @@
+{
+ "id": "ORDINAL_2X2_COMPLETE",
+ "version": "v1",
+ "sha256": "a2c4d3bffcf0adb3912744defdc727f021e7c5f3456167cc5c1cc947394e6806",
+ "raw_ordered_pairs": 576,
+ "equivalence": "order-8 relabelling group: swap row labels, swap column labels, exchange player roles",
+ "count": 78,
+ "sampling_rule": "none \u2014 complete enumeration of the space, then one representative per orbit",
+ "exclusions": "none",
+ "citation": "Rapoport & Guyer (1966); Robinson & Goforth, The Topology of the 2x2 Games (2005) \u2014 cited as the external provenance of the space, not as authority for this count",
+ "games": [
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G000"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G001"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G002"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G003"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G004"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G005"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G006"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G007"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G008"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G009"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G010"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G011"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G012"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": false,
+   "is_dilemma": true,
+   "id": "G013"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G014"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G015"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G016"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G017"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      4,
+      2
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G018"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      4,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G019"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      4,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G020"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G021"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G022"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G023"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G024"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G025"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G026"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G027"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G028"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      4,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G029"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G030"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G031"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G032"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G033"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G034"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G035"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G036"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G037"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G038"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G039"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": true,
+   "id": "G040"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G041"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      3
+     ],
+     [
+      2,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G042"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G043"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G044"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G045"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G046"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      3
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G047"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G048"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    [
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G049"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G050"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      2,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G051"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G052"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G053"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G054"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G055"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      1
+     ],
+     [
+      4,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G056"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G057"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G058"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G059"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G060"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      1
+     ]
+    ],
+    [
+     [
+      4,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G061"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G062"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G063"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": true,
+   "id": "G064"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G065"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G066"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      2,
+      4
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G067"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     [
+      2,
+      4
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G068"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ],
+    [
+     [
+      3,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G069"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      3
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      3,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 2,
+   "pure_ne_cells": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G070"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G071"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G072"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G073"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      3,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": false,
+   "nash_pareto": true,
+   "is_dilemma": false,
+   "id": "G074"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G075"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      2,
+      2
+     ],
+     [
+      4,
+      1
+     ]
+    ]
+   ],
+   "pure_ne_count": 1,
+   "pure_ne_cells": [
+    [
+     1,
+     0
+    ]
+   ],
+   "row_dominant": true,
+   "col_dominant": true,
+   "nash_pareto": false,
+   "is_dilemma": true,
+   "id": "G076"
+  },
+  {
+   "matrix": [
+    [
+     [
+      1,
+      4
+     ],
+     [
+      3,
+      3
+     ]
+    ],
+    [
+     [
+      4,
+      1
+     ],
+     [
+      2,
+      2
+     ]
+    ]
+   ],
+   "pure_ne_count": 0,
+   "pure_ne_cells": [],
+   "row_dominant": false,
+   "col_dominant": false,
+   "nash_pareto": false,
+   "is_dilemma": false,
+   "id": "G077"
+  }
+ ]
+}
