@@ -1,0 +1,462 @@
+{
+ "id": "IPD_MEMORY1_COMPLETE",
+ "version": "v1",
+ "sha256": "07dd7c463bd85c79abbbc515b3c0d940a7fa230580b68f4bbf68a00c1c381549",
+ "count": 32,
+ "equivalence": "none \u2014 every (opening, rule) pair is a distinct strategy and all are kept",
+ "sampling_rule": "none \u2014 complete enumeration of 2^4 response rules x 2 openings",
+ "exclusions": "none",
+ "payoffs": "standard PD: T=5 > R=3 > P=1 > S=0, with 2R > T+S",
+ "scoring": "exact long-run average over the cycle of deterministic play; no simulation, no seed",
+ "citation": "Axelrod, The Evolution of Cooperation (1984); Nowak & Sigmund on memory-one strategies (1993) \u2014 external provenance of the space",
+ "games": [
+  {
+   "id": "S00",
+   "opening": 0,
+   "bits": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.5,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": true
+  },
+  {
+   "id": "S01",
+   "opening": 1,
+   "bits": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.5,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S02",
+   "opening": 0,
+   "bits": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "mean_score": 1.5,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": true
+  },
+  {
+   "id": "S03",
+   "opening": 1,
+   "bits": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "mean_score": 1.375,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S04",
+   "opening": 0,
+   "bits": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "mean_score": 1.5,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": true
+  },
+  {
+   "id": "S05",
+   "opening": 1,
+   "bits": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "mean_score": 2.375,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S06",
+   "opening": 0,
+   "bits": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "mean_score": 1.5,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": true
+  },
+  {
+   "id": "S07",
+   "opening": 1,
+   "bits": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S08",
+   "opening": 0,
+   "bits": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "mean_score": 2.1875,
+   "tournament_tier": 1,
+   "nash_vs_self": true,
+   "is_nice": true
+  },
+  {
+   "id": "S09",
+   "opening": 1,
+   "bits": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "mean_score": 2.0937,
+   "tournament_tier": 1,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S10",
+   "opening": 0,
+   "bits": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "mean_score": 2.349,
+   "tournament_tier": 1,
+   "nash_vs_self": true,
+   "is_nice": true
+  },
+  {
+   "id": "S11",
+   "opening": 1,
+   "bits": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "mean_score": 2.0156,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S12",
+   "opening": 0,
+   "bits": [
+    0,
+    1,
+    1,
+    0
+   ],
+   "mean_score": 2.5573,
+   "tournament_tier": 1,
+   "nash_vs_self": true,
+   "is_nice": true
+  },
+  {
+   "id": "S13",
+   "opening": 1,
+   "bits": [
+    0,
+    1,
+    1,
+    0
+   ],
+   "mean_score": 2.8906,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S14",
+   "opening": 0,
+   "bits": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": true
+  },
+  {
+   "id": "S15",
+   "opening": 1,
+   "bits": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S16",
+   "opening": 0,
+   "bits": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.625,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S17",
+   "opening": 1,
+   "bits": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.8125,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S18",
+   "opening": 0,
+   "bits": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "mean_score": 1.6927,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S19",
+   "opening": 1,
+   "bits": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "mean_score": 1.8594,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S20",
+   "opening": 0,
+   "bits": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "mean_score": 1.901,
+   "tournament_tier": 2,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S21",
+   "opening": 1,
+   "bits": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "mean_score": 2.7344,
+   "tournament_tier": 0,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S22",
+   "opening": 0,
+   "bits": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "mean_score": 2.25,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S23",
+   "opening": 1,
+   "bits": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S24",
+   "opening": 0,
+   "bits": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "mean_score": 2.25,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S25",
+   "opening": 1,
+   "bits": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "mean_score": 2.25,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S26",
+   "opening": 0,
+   "bits": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "mean_score": 2.3594,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S27",
+   "opening": 1,
+   "bits": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "mean_score": 2.2188,
+   "tournament_tier": 1,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S28",
+   "opening": 0,
+   "bits": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "mean_score": 2.7344,
+   "tournament_tier": 0,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S29",
+   "opening": 1,
+   "bits": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "mean_score": 2.9688,
+   "tournament_tier": 0,
+   "nash_vs_self": false,
+   "is_nice": false
+  },
+  {
+   "id": "S30",
+   "opening": 0,
+   "bits": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  },
+  {
+   "id": "S31",
+   "opening": 1,
+   "bits": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "mean_score": 3.0,
+   "tournament_tier": 0,
+   "nash_vs_self": true,
+   "is_nice": false
+  }
+ ]
+}

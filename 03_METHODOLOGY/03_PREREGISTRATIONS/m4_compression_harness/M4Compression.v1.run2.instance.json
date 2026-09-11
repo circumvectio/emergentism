@@ -1,0 +1,95 @@
+{
+ "schema_id": "M4Compression.v1",
+ "trial_id": "m4-01-ipd-memory1-2026-09-11",
+ "corpus": {
+  "id": "IPD_MEMORY1_COMPLETE",
+  "version": "v1",
+  "sha256": "07dd7c463bd85c79abbbc515b3c0d940a7fa230580b68f4bbf68a00c1c381549",
+  "count": 32,
+  "sampling_rule": "none \u2014 complete enumeration of 2^4 response rules x 2 openings",
+  "citation": "Axelrod (1984); Nowak & Sigmund (1993) \u2014 external provenance",
+  "note": "complete enumeration of 2^4 response rules x 2 openings; \u00a75 corpus-selection kill cannot fire",
+  "all_four_axes_denote": true
+ },
+ "native_encoder": {
+  "id": "strategy-specification-baseline",
+  "fit_without_emergentist_coordinates": true,
+  "description": "the strategy's own spec: opening move plus the four response bits"
+ },
+ "target": {
+  "kind": "held_out_classification",
+  "metric": "macro_f1",
+  "primary": "tournament_tier",
+  "also_run": [
+   "nash_vs_self",
+   "is_nice"
+  ],
+  "ground_truth": "exact long-run average payoff over the cycle of deterministic play; no simulation, no seed"
+ },
+ "code_length": {
+  "unit": "bits",
+  "includes_dictionary": true,
+  "missing_placement_costed": true,
+  "note": "no missing placements in this run \u2014 all four axes denote"
+ },
+ "parameter_count": 4,
+ "distortion_metric": {
+  "name": "macro_f1_shortfall_vs_floor",
+  "maximum": 0.1
+ },
+ "performance_floor": {
+  "metric": "macro_f1",
+  "minimum": 0.8
+ },
+ "splits": {
+  "scheme": "deterministic stratified 6-fold over the complete space",
+  "development": "folds 1-4 (feature selection touched only these)",
+  "validation": "fold 5",
+  "held_out": "fold 6",
+  "note": "reported scores are the mean across all 6 rotations"
+ },
+ "comparators": [
+  {
+   "kind": "NATIVE",
+   "id": "strategy-specification",
+   "macro_f1": 0.7241,
+   "bits": 224.8
+  },
+  {
+   "kind": "ONE_AXIS",
+   "id": "best-one-axis-on-dev(bit_DC)",
+   "macro_f1": 0.4537,
+   "bits": 43.0
+  },
+  {
+   "kind": "ALTERNATE_TWO_AXIS",
+   "id": "axelrod-nice-x-provocable",
+   "macro_f1": 0.4873,
+   "bits": 91.0
+  },
+  {
+   "kind": "ADDED_AXIS",
+   "id": "four-axis-plus-forgiving",
+   "macro_f1": 0.3889,
+   "bits": 318.8
+  },
+  {
+   "kind": "LEARNED_NO_PLACEMENT",
+   "id": "two-features-selected-on-dev",
+   "macro_f1": 0.5556,
+   "bits": 147.5
+  }
+ ],
+ "resource_parity": {
+  "same_training_rows": true,
+  "same_target_access": true,
+  "same_parameter_budget": true,
+  "same_compute_budget": true,
+  "learner": "run 1's depth-3 8-leaf tree imported unchanged"
+ },
+ "maximality_scope": "FROZEN_COMPARATOR_CLASS_ONLY",
+ "global_game_theory_exhausted": false,
+ "result_state": "KILLED",
+ "kill": "KILLED on a corpus where ALL FOUR AXES DENOTE, which closes run 1's scope limitation. On the primary target the four-axis encoding reached macro_f1 0.3463 at 278 bits and lost to every required comparator: NATIVE 0.7241, LEARNED_NO_PLACEMENT 0.5556, ALTERNATE_TWO_AXIS 0.4873 at 91 bits, ONE_AXIS 0.4537 at 43 bits. Axelrod's own two 1984 descriptors \u2014 nice x provocable \u2014 beat the proposal at ONE THIRD its code length. On is_nice, four comparators scored a perfect 1.0000 while the proposal scored 0.4296 against a 0.4286 baseline. The 0.8 floor was reached on no target. \u00a74's decision rule requires beating NATIVE, ONE_AXIS, ALTERNATE_TWO_AXIS and LEARNED_NO_PLACEMENT; on the primary target it beat none.",
+ "survivor": "Two findings favour the encoding and are recorded rather than buried. (1) Unlike run 1, it is NOT at the majority baseline: 0.3463 against 0.1818 on the primary target, and 0.4845 against 0.3962 on nash_vs_self. It carries real signal \u2014 it is dominated, not empty. (2) The ADDED_AXIS kill did NOT fire: adding an independently motivated fifth axis (forgiveness) produced no material gain, which is weak evidence that the four are not obviously missing a neighbour in their own terms. Per \u00a75 the chart survives as visualization, interpretive vocabulary and hypothesis generator. SCOPE: two corpora now, both complete enumerations, one comparator class, one learner. Axis 4's reading of self-conditioning as 'represented power' is a declared INTERPRETATION and the most contestable choice in this run."
+}

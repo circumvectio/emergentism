@@ -1,0 +1,186 @@
+{
+ "corpus": {
+  "id": "IPD_MEMORY1_COMPLETE",
+  "version": "v1",
+  "sha256": "07dd7c463bd85c79abbbc515b3c0d940a7fa230580b68f4bbf68a00c1c381549",
+  "count": 32,
+  "sampling_rule": "none \u2014 complete enumeration of 2^4 response rules x 2 openings"
+ },
+ "axes_all_denote": true,
+ "learner": {
+  "kind": "depth-limited decision tree (imported unchanged from run 1)",
+  "max_depth": 3,
+  "max_leaves": 8,
+  "folds": 6
+ },
+ "results": {
+  "tournament_tier": {
+   "M4_FOUR_AXIS": {
+    "macro_f1_mean": 0.3463,
+    "macro_f1_min": 0.1667,
+    "macro_f1_max": 0.5333,
+    "accuracy": 0.4375,
+    "code_length_bits": 278.0
+   },
+   "NATIVE": {
+    "macro_f1_mean": 0.7241,
+    "macro_f1_min": 0.1333,
+    "macro_f1_max": 1.0,
+    "accuracy": 0.8125,
+    "code_length_bits": 224.8
+   },
+   "ALTERNATE_TWO_AXIS": {
+    "macro_f1_mean": 0.4873,
+    "macro_f1_min": 0.3556,
+    "macro_f1_max": 0.8222,
+    "accuracy": 0.5312,
+    "code_length_bits": 91.0
+   },
+   "ADDED_AXIS": {
+    "macro_f1_mean": 0.3889,
+    "macro_f1_min": 0.1333,
+    "macro_f1_max": 0.5333,
+    "accuracy": 0.5,
+    "code_length_bits": 318.8
+   },
+   "ONE_AXIS": {
+    "macro_f1_mean": 0.4537,
+    "macro_f1_min": 0.1333,
+    "macro_f1_max": 0.5556,
+    "accuracy": 0.5938,
+    "code_length_bits": 43.0,
+    "selected": [
+     "bit_DC"
+    ]
+   },
+   "LEARNED_NO_PLACEMENT": {
+    "macro_f1_mean": 0.5556,
+    "macro_f1_min": 0.1333,
+    "macro_f1_max": 0.8222,
+    "accuracy": 0.6562,
+    "code_length_bits": 147.5,
+    "selected": [
+     "bit_DC",
+     "take_give"
+    ]
+   },
+   "MAJORITY_BASELINE": {
+    "macro_f1_mean": 0.1818,
+    "accuracy": 0.375,
+    "code_length_bits": 0.0
+   }
+  },
+  "nash_vs_self": {
+   "M4_FOUR_AXIS": {
+    "macro_f1_mean": 0.4845,
+    "macro_f1_min": 0.3333,
+    "macro_f1_max": 0.7619,
+    "accuracy": 0.6562,
+    "code_length_bits": 265.0
+   },
+   "NATIVE": {
+    "macro_f1_mean": 0.5968,
+    "macro_f1_min": 0.4857,
+    "macro_f1_max": 0.7619,
+    "accuracy": 0.625,
+    "code_length_bits": 226.9
+   },
+   "ALTERNATE_TWO_AXIS": {
+    "macro_f1_mean": 0.6147,
+    "macro_f1_min": 0.3333,
+    "macro_f1_max": 0.7778,
+    "accuracy": 0.7188,
+    "code_length_bits": 86.0
+   },
+   "ADDED_AXIS": {
+    "macro_f1_mean": 0.4845,
+    "macro_f1_min": 0.3333,
+    "macro_f1_max": 0.7619,
+    "accuracy": 0.6562,
+    "code_length_bits": 304.1
+   },
+   "ONE_AXIS": {
+    "macro_f1_mean": 0.3964,
+    "macro_f1_min": 0.375,
+    "macro_f1_max": 0.4286,
+    "accuracy": 0.6562,
+    "code_length_bits": 43.0,
+    "selected": [
+     "provocable"
+    ]
+   },
+   "LEARNED_NO_PLACEMENT": {
+    "macro_f1_mean": 0.4956,
+    "macro_f1_min": 0.4,
+    "macro_f1_max": 0.7619,
+    "accuracy": 0.6875,
+    "code_length_bits": 133.3,
+    "selected": [
+     "provocable",
+     "take_give"
+    ]
+   },
+   "MAJORITY_BASELINE": {
+    "macro_f1_mean": 0.3962,
+    "accuracy": 0.6562,
+    "code_length_bits": 0.0
+   }
+  },
+  "is_nice": {
+   "M4_FOUR_AXIS": {
+    "macro_f1_mean": 0.4296,
+    "macro_f1_min": 0.4,
+    "macro_f1_max": 0.4444,
+    "accuracy": 0.75,
+    "code_length_bits": 263.0
+   },
+   "NATIVE": {
+    "macro_f1_mean": 1.0,
+    "macro_f1_min": 1.0,
+    "macro_f1_max": 1.0,
+    "accuracy": 1.0,
+    "code_length_bits": 202.6
+   },
+   "ALTERNATE_TWO_AXIS": {
+    "macro_f1_mean": 1.0,
+    "macro_f1_min": 1.0,
+    "macro_f1_max": 1.0,
+    "accuracy": 1.0,
+    "code_length_bits": 81.0
+   },
+   "ADDED_AXIS": {
+    "macro_f1_mean": 0.4296,
+    "macro_f1_min": 0.4,
+    "macro_f1_max": 0.4444,
+    "accuracy": 0.75,
+    "code_length_bits": 302.0
+   },
+   "ONE_AXIS": {
+    "macro_f1_mean": 1.0,
+    "macro_f1_min": 1.0,
+    "macro_f1_max": 1.0,
+    "accuracy": 1.0,
+    "code_length_bits": 43.0,
+    "selected": [
+     "nice"
+    ]
+   },
+   "LEARNED_NO_PLACEMENT": {
+    "macro_f1_mean": 1.0,
+    "macro_f1_min": 1.0,
+    "macro_f1_max": 1.0,
+    "accuracy": 1.0,
+    "code_length_bits": 81.0,
+    "selected": [
+     "nice",
+     "opening"
+    ]
+   },
+   "MAJORITY_BASELINE": {
+    "macro_f1_mean": 0.4286,
+    "accuracy": 0.75,
+    "code_length_bits": 0.0
+   }
+  }
+ }
+}
