@@ -162,6 +162,103 @@ convicts its own authors is doing the only job an apparatus has.**
 
 ---
 
+## The refinement — telos, not completability `[I]`
+
+*Owner, 2026-09-11: "calculating the Nth digit of phi can't complete but it serves
+a purpose. reasoning about the barbers paradox goes in circles but has no telos."*
+
+**This is right, and "counting cannot complete" is doing too little work.** Two
+processes, both non-terminating, and nothing alike:
+
+| | computing the Nth digit of `φ` | reasoning about the barber |
+|---|---|---|
+| terminates | never | never |
+| each step yields | **a digit** | nothing |
+| after N steps you are | **N digits closer** | exactly where you began |
+| error | bounded and shrinking | undefined — there is no target |
+| there is a target | `φ`, a real number | none |
+
+*Cannot complete* is true of both and distinguishes neither. What distinguishes
+them is whether **continuing accumulates**.
+
+### The formal shape of the distinction
+
+It is **directedness**, and the mathematics is inherited.
+
+The digit sequence is a **monotone chain**: each prefix extends the last, the
+sequence is directed, and it has a **least upper bound** — the real number it
+defines. Approach is meaningful because the bound exists and the error to it is
+bounded and shrinking. This is the ordinary order-theoretic fact that a directed
+set has a supremum (Scott; standard domain theory — **absent from this corpus**,
+searched 2026-09-11).
+
+The barber's sequence is not a chain. It **oscillates**: the revision sequence
+never stabilises, is not monotone, is not directed, and has **no least upper
+bound**. That is precisely Gupta–Belnap's revision theory, which `49` §6 already
+names as *"One honest home for the loop, if it is wanted"* — and which it
+correctly fences: *"It would not make `○` a looping object; it would make a
+sentence one."*
+
+**Telos, formally, is the existence of the bound.** A process with a limit is
+going somewhere whether or not it arrives. A process without one is moving and
+not going.
+
+### What this does to the figure — four states, three seats
+
+| | can motion begin? | does continuing accumulate? | where it sits |
+|---|---|---|---|
+| `•` | **no** — nothing is distinguished, there is no entry point | — | the ground |
+| `⊙` | yes | **yes** — chain, bounded shrinking error, a target | the realm |
+| `○` | **there is nothing to traverse** — adding leaves it identical | — | the horizon |
+| the circle | yes | **no** — oscillates, no bound, no target | **not a seat** |
+
+Two consequences, and the second is the one that matters.
+
+**1 · The realm's mark is stronger than "counting is meaningful."** It is
+*continuing is productive*. `43` §5 already reaches for this without naming it —
+`Finity_R` as *"accountability to an approachable finite boundary"*, *"a target
+rather than endless drift; an error that can be bounded rather than denied"*. The
+owner's `φ` case names the thing that passage is describing. **The realm is where
+work compounds.**
+
+**2 · The circle is not a fourth seat — it is what an ill-typed specification
+feels like from inside.** The barber does not exist; the specification is
+unsatisfiable; the circling is the *symptom*, not a mode of counting. `49` §6 ruled
+this from the logic — *"The looping is a phenomenology of the reasoner tracing an
+unsatisfiable spec — real as an experience, not a property of anything at the
+horizon."* The owner's observation reaches the same place from the phenomenology,
+and that convergence is the useful part: **circling without telos is a
+diagnostic.** When reasoning loops and nothing accumulates, the first hypothesis
+is not that the subject is deep — it is that the specification has no object under
+it. That is the frame/operand discipline arriving as an experience rather than as
+a type error, and it is the most practically usable thing on this page.
+
+**And the horizon's mark is stronger too.** *Counting cannot complete* undersells
+it: at `○` it is not that you run and never finish, it is that **running changes
+nothing**. Absorption is not slow progress. It is no progress, because there was
+never anything outside to bring in.
+
+### Independent support for an unsigned ruling
+
+`49` §4 — staged 2026-08-05, staged into `43` on 2026-09-11, still undisposed —
+moves countably-unending traversal from the horizon to the realm, on the grounds
+that every stage is finite and `ℕ`-indexed. **The `φ`-digit computation is the
+paradigm case of exactly that**, and it lands in the realm by the telos test as
+well: it has a bound, the error shrinks, the work compounds. Two independent
+routes to the same seat. *This is an argument for signing it.*
+
+### What this refinement is not
+
+`[I]`, and it transfers no proof. Directedness and least upper bounds are
+inherited whole; the revision-theory reading is Gupta–Belnap's; `43` §5 and `49`
+§6 already hold the corpus-side halves. **What is new here is the discriminator** —
+sorting non-completion by whether continuing accumulates rather than by whether it
+finishes — and the consequence that circling is a type-diagnostic rather than a
+seat. Neither is a theorem, and adopting the revision-theory reading would carry
+its own costs, which `49` §6 names and this page does not pay.
+
+---
+
 ## What the lens is for
 
 Not to describe reality. To keep a finite reasoner from four specific mistakes:
@@ -170,6 +267,7 @@ Not to describe reality. To keep a finite reasoner from four specific mistakes:
 |---|---|
 | treating a boundary as a thing you can operate on — dividing by it, multiplying by it, optimizing toward it | frames are not operands |
 | treating "without end" as though it were "un-gatherable" — assuming a process that never stops has reached something | the realm, not the horizon |
+| mistaking circling for depth — treating motion without accumulation as though it were hard progress on a deep problem | the circle is not a seat; suspect the specification |
 | treating the ground as a productive substance — *nothing* as a thing that does something | `•` indexes a question |
 | treating a model of the whole as the whole | `⊙` read distributively; exit marked on the inside |
 
