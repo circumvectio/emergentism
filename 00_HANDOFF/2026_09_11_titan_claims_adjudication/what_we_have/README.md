@@ -64,6 +64,12 @@ found operating inside its own established lines.
 | `○` | [04_HORIZON.md](04_HORIZON.md) | The horizon. Seven `[A]` lines. Absorption is Cantor's, is inherited, and is **analytic** — its kill cannot fire, which is evidence of analyticity, not of survival. |
 | `• ⊙ ○` | [05_EMBLEM.md](05_EMBLEM.md) | The emblem whole, the selection and its published price, and **what we do not have**, stated so it cannot be softened. |
 | | [00_RECHECK.md](00_RECHECK.md) | All 34 `[A]` lines, the command run against each, the result, and the five demotions. |
+| **→** | **[06_THE_LENS.md](06_THE_LENS.md)** | **The reading itself** — what the three seats mean to us, and the eight moves that have held under every attack. The pages above audit the parts; this one states the thing. |
+
+**Read `06_THE_LENS.md` first.** Priority is not truth. Every piece of the
+mathematics may be inherited — most of it is, and it is attributed — and the lens
+still be the right way to see. The audit establishes what we may *claim*; the lens
+states what we *hold*.
 
 ## What the pass corrected in its own authors
 
