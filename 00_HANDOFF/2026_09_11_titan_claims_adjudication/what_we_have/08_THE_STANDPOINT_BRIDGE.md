@@ -388,6 +388,122 @@ asked and what nothing on disk currently answers.
 
 ---
 
+## 8b · The cone gradation, the reductio, and why evil must hide `[I]`
+
+*Owner, 2026-09-11: "whatever opens the light cone… with low opportunity costs is
+good; whatever closes the light cone and leaves only few worldlines with high
+opportunity costs is bad; and what threatens to collapse the worldline for the
+biosphere is evil… evil only thrives in occulted actions, as soon as light is
+shined and the collective is aware it's stopped."*
+
+### On "light cone" — already ruled, and the ruling permits the speech
+
+No correction owed. `04_AXIOLOGY/00_CAPITAL_INSIDE_THE_CONE.md`, chair-ranked
+2026-09-05: *"Chair speech may say 'light cone.' Corpus split stands"* — physical
+light cone `[A]`, bound by `c`; option cone `[I]`, the admissible ends an agent
+still names. Capital *"acts on the option cone inside the physical bound. It does
+**not** widen `c`."* Speech may say light cone; **doctrine copy says option
+cone.** This document says option cone.
+
+### The gradation is already written — and it corrects the owner's own formula
+
+The same document, ranked **COMPLETE**, carries the fence:
+
+| Interior | Titan |
+|---|---|
+| Thickens the chosen world line; **neighbors remain**, only relatively dearer | **Drives opportunity cost to zero by deleting neighbors** |
+| **Exit stays open** | Enclosure of the cone; no outside left |
+
+> Reducing opportunity cost *toward* the chosen end is interior. **Eliminating**
+> the cone is the Titan.
+
+**And this refutes "low opportunity cost is good" as stated.** Evil also drives
+opportunity cost down — to *zero* — by the opposite route. Both the builder and
+the destroyer can report a cheap chosen line. The number does not discriminate.
+
+**What discriminates is whether the neighbours are still there.** Low cost by
+*thickening* is interior; low cost by *deleting* is the Titan. So the criterion
+is not the cost but the mechanism, exactly as `Evil(a)` §5 already requires:
+the gain must not be obtained *through* the loss.
+
+The same document closes the other end too — *"Capital is **not** 'more options'
+(fatter cone, no mission = D5 without a mission)."* **A fatter cone is not good
+either.** Widening without a drawn line is potential no one is travelling.
+
+Corrected gradation, in the corpus's own terms:
+
+| | `Δ` option cone | neighbours | exit | verdict |
+|---|---|---|---|---|
+| widening with no drawn line | up | — | — | not good — `D5` without a mission |
+| **thickening a line, neighbours dearer but present** | chosen line cheaper | **remain** | **open** | **interior — good** |
+| narrowing that forecloses alternatives at cost | down | thinned | open | **bad** |
+| cost driven to zero by deleting neighbours | — | **deleted** | **closed** | **Titan — evil** |
+| the limit of the last row | `D5 → ∅` | none | none | §8a |
+
+### The reductio — and its exact form is unlivability, not falsity
+
+*"Someone could say there is no `is` to being alive, only `ought` — then ask him
+to kill himself and his kin, and everyone would come to stop him."*
+
+The honest form is narrower than "his argument is false", and **stronger for
+being exact.**
+
+That everyone intervenes is evidence about what bearers *treat* as non-optional;
+it is not a proof that there are moral facts. A committed error theorist can say
+all of it is systematic error and remain consistent. **What he cannot do is
+occupy the position.** Act on it and he ceases to be a bearer, and therefore
+ceases to be a party to the argument; decline to act on it and the orientation
+he denies is visibly in force in him.
+
+So: **the position is not unthinkable. It is unoccupiable.** It cannot be held by
+anything that is still there to hold it. That is §1 again — the conditions of the
+standpoint cannot be bracketed by the standpoint — and it is sufficient, because
+a value contract is for the living. It does not need to defeat error theory in
+the abstract. It needs to note that no error theorist has ever been a
+counterexample to it.
+
+### Why evil must hide — and this is the load-bearing one
+
+*"Evil only thrives in occulted actions."*
+
+**This is not an observation about evil's habits. It is the first word of the
+definition.** `00_THE_EXTRACTION_LAW.md`: relational extraction is
+*"**concealed**, unauthorized, decoupled, or ground-negating cost transfer inside
+a cooperative, social, or institutional relation."* Concealment leads the list.
+
+And it is the whole architecture of `J`. Power-Max's Justice clauses are, read
+together, a **transparency specification**:
+
+- *"named actors, payers, beneficiaries, and consequence bearers"*
+- *"no hidden extraction or compensating aggregate that erases a harmed side"*
+- *"no bearer in `B(a)` is hidden or destroyed by aggregation"*
+
+and `E8`'s vow forbids *"laundering harm through an aggregate."*
+
+**The synthesis, and it is the most useful thing on this page.** Evil is
+structurally required to hide, because the moment the payer is named the transfer
+is priced and the collective prices it. Therefore **transparency is not a virtue
+adjacent to the ethic — it is the ethic's enforcement mechanism.** There is no
+separate police. Naming the bearer *is* the police.
+
+Three consequences follow, and all three are already built:
+
+1. **The epistemics and the ethics are one machine.** Receipts, evidence tiers,
+   named owners, kills fired in public — these are not scholarly hygiene that the
+   value contract happens to sit beside. They are the *instrument* by which the
+   value contract is enforceable at all.
+2. **`E9` is correctly a conduct axiom, not an epistemic one.** *"Kills fire in
+   public. The dead are archived, never silently erased."* That is the anti-
+   concealment rule turned on oneself — the author subjected to the same
+   transparency that makes extraction pricable.
+3. **The Syntropic Imperative's programme is this argument's engineering.**
+   *"η = 0 egregoric architecture: public systems that leave traces of evidence,
+   provenance, reversibility, sovereignty, and direct practice instead of traces
+   of outrage, dependency, opacity, and capture."* Build the lit room; evil
+   cannot work in it.
+
+---
+
 ## 9 · Claims and kills
 
 | claim | tier | kill |
@@ -402,6 +518,9 @@ asked and what nothing on disk currently answers.
 | Evil's limit is the annihilation of the bearer-field, hence self-annulling | `[I]` | show a coherent bearer that persists with its sustaining field at zero — i.e. break Schrödinger's premise, not the arithmetic |
 | The limit is `D4` persisting with `D5 = ∅` — full actuality, zero possibility | `[I]` proposal | show that a selectable-future cone survives the last selector, or that the state collapses to `•` rather than to inert actuality |
 | Evil differs from bad in category, not magnitude | `[I]` | exhibit a bad act whose direction has the same limit, or an evil act whose direction does not |
+| Low opportunity cost does not discriminate good from evil; the neighbours clause does | `[S]` | exhibit an act that deletes neighbours and is nonetheless interior, or one that preserves them and is nonetheless the Titan |
+| The "no `is`, only `ought`" position is unoccupiable rather than false | `[I]` | exhibit someone who acted on it and remained a party to the argument |
+| Concealment is constitutive of `η_move`, so transparency is the enforcement mechanism | `[S]` | exhibit a relational extraction that survives its payer being named and priced |
 
 **This document's own kill.** If any sentence here is cited as reopening
 `DF-21`, as deriving the ethic from the geometry, or as showing extraction to be
