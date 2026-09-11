@@ -24,7 +24,7 @@ At the ground seat counting cannot begin; in the realm counting is meaningful (y
 
 *Attacked.* Three earlier discriminators for the same seats were proposed and killed on the record (§6, :183-201): uncountability, non-self-membership, the barber. It was then contested by a parent document — `43` had the proper class at the ground seat, `49` §1 at the horizon — and the third-pass correction resolved the collision in favour of §1 and moved the object in `43`. A same-day independent audit attacked `49` and found §4's *account* of how the reading was reached to be false; the document records the verdict against itself at :137 — *"So §1 was right and §4's account of how it got there was wrong."* Attacked, holed elsewhere, and the reading came through.
 
-*Inherited ingredient, named in place:* the property that discriminates is **absorption**, owner **Richard Dedekind**, *Was sind und was sollen die Zahlen?* (1888). It is `[A]` and is not this file's; see the inherited-mathematics ledger.
+*Inherited ingredient, named in place:* the property that discriminates is **absorption**, owner **Cantor** — the *Transfinitum* (*vermehrbar*) / *Absolutum* (*unvermehrbar*) criterion, *Mitteilungen zur Lehre vom Transfiniten* (1887–88); lattice structure Huntington 1904, Birkhoff 1940. **Corrected 2026-09-11** (was Richard Dedekind, *Was sind und was sollen die Zahlen?* 1888, who owns the **middle** line only). It is `[A]` and is not this file's; see the inherited-mathematics ledger.
 
 **LIVE KILL (49:253).** Show two of the three modes collapse into one. NOT FIRED — no candidate offered.
 
