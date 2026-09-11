@@ -120,7 +120,8 @@ named tension `[S]`: `00_VMOSK-A/README.md` splits **`V·M·O = Φ_H`** and
 reason (potential versus viability, not frame versus means). The two readings
 are **rival `[I]`s until the chair disposes**, and this file does not dispose of
 them. That two independent rationales cut the same place is worth noticing and
-is **not** evidence: `45` §8 — *"no agreement between lenses counts as
+is **not** evidence: [`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md`](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md)
+§8 line 183 — *"no agreement between lenses counts as
 independent evidence."*
 
 **Symbolic positions, not moral essences.** `00_THE_MASTER_ROSETTA`: *"These
