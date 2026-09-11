@@ -22,9 +22,18 @@ command that was **actually run** against every `[A]`.
 ## The one-paragraph answer
 
 **We have a typed boundary vocabulary, a body of correctly-attributed inherited
-mathematics, and a working immune system.** We do not have a theorem of our own,
-an ontology, an ethics, or a fact about the world — and every place where the
-corpus reached for one is recorded here as a grave, a staging, or a debt.
+mathematics, a working immune system, and a chosen ethic that is stated as chosen.**
+We do not have a theorem of our own, an ontology, a *derivation* of the ethic, or a
+fact about the world — and every place where the corpus reached for one is recorded
+here as a grave, a staging, or a debt.
+
+> **Corrected 2026-09-11, on owner challenge.** An earlier version of this
+> paragraph read *"we do not have … an ethics."* **That was false**, and it
+> contradicted the same sentence: the "working immune system" it credits **is**
+> `E9 · The Correction`, a conduct axiom. The corpus has an explicit ethic and
+> has never claimed to derive one. What `DF-21` killed is the **bridge**, and the
+> register says so in the successor column: *"none — closed. `E8` is a choice."*
+> A choice is not an absence. See §"The ethic, which we do have" below.
 
 ## The numbers
 
@@ -98,6 +107,45 @@ Recorded here rather than repaired silently, because the correction is the resul
    (10 + 1 comma-free), not the missing one — because R4 landed hours earlier. An
    earlier draft of the ground seat printed *"×2 — both in the ledger"*; false of
    this tree, corrected in place. **A measurement is true of a date.**
+
+## The ethic, which we do have
+
+`04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md` states the position without
+ornament: *"Emergentism openly chooses a Justice envelope rather than pretending
+to derive it from the reciprocal seam."* The vow, verbatim:
+
+> Seek durable mutual option-cone widening without hiding an impact-bearer,
+> coercing consent, laundering harm through an aggregate, or closing contest
+> and exit.
+
+Layer III of the axiom ledger is headed **"CONDUCT (posited, never derived)"** —
+the non-derivation is the *design*, not a gap:
+
+| | axiom | tier | what it forbids |
+|---|---|---|---|
+| **E8** | **The Vow** — non-extraction: do not raise yourself by draining what sustains you, judged with the sustaining boundary in view | `[I]` posit | *"deriving ought from is; scoping the vow only to convenient parties while claiming the full ethic"* |
+| **E9** | **The Correction** — every load-bearing claim carries tier, upgrade path, kill and survivors; kills fire in public; the dead are archived, never silently erased | `[S]` | *"tautology shield; memory hole; certainty pose; logging fired kills as passes"* |
+| **E10** | **The Exit** — the map ends with *put the map down*; the door is marked exit **on the inside**; *"a worldview that needs believers has already failed"* | `[I/S]` | *"adherents as success metric; no-exit forms; map=Ground"* |
+
+Each carries a kill. E8's: *"dyadic non-extraction systematically produces worse
+coupled outcomes than the alternative under declared tests."* E10's: *"the exit is
+revoked in practice while still claimed in text."*
+
+**And the conduct layer is the most robust thing in the corpus.** Read the
+ledger's *Survivors* lines: if `E1` falls — *"E8–E10 as practice without ontology
+story."* If `E6` falls — *"Survivors: E8–E10."* If `E4` falls, if the genesis
+story falls, the vow, the correction and the exit are still standing. **The ethic
+does not rest on the geometry, which is exactly why killing the bridge did not
+touch it.**
+
+What is genuinely owed here is narrower and should not be inflated into "no
+ethics": the `[C]` bridge stays dead with no successor; `E8`'s Model-A support is
+scoped to stated game assumptions and is *"Not a universal Nash law"*; and
+`η = 0` scoped to cooperators rather than to all impact-bearers is a breach of
+`E8`'s own forbid-clause — which the 2026-07-19 separation found, and which
+stripping the venture layer *heals*.
+
+---
 
 ## What this page does not do
 
