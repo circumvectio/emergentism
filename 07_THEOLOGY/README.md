@@ -55,6 +55,16 @@ no special signature beyond the user's scope and tool permissions.
 
 ## Claim boundaries
 
+### Research proposals — not adopted doctrine
+
+- [The Divine Ahead — 2026-09-14](05_FUTURE_DIVINITY_PROPOSAL_2026_09_14.md):
+  owner-requested investigation of future divine emergence, contingent
+  eschatology, virtue, mortality and voluntary practice. Literal conjecture,
+  ethical commitment and public adoption remain separate; no religion or
+  personal-survival result is established.
+
+### Standing source boundaries
+
 - Symbolic correspondences are `[I]`, not demonstrations of historical or
   physical identity.
 - Coordination claims are `[S]` only within explicit premises.
