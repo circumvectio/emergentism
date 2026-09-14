@@ -55,6 +55,13 @@ no special signature beyond the user's scope and tool permissions.
 
 ## Claim boundaries
 
+### Owner-selected vision direction
+
+- [Vision and the priestly function — 2026-09-14](06_VISION_AND_PRIESTLY_FUNCTION_2026_09_14.md):
+  locates the future-divinity vision in Emergentism and relates its mission to
+  orientation, guardianship and provision. Selection does not promote the
+  theological conjectures, create offices or require religious allegiance.
+
 ### Research proposals — not adopted doctrine
 
 - [The Divine Ahead — 2026-09-14](05_FUTURE_DIVINITY_PROPOSAL_2026_09_14.md):
