@@ -64,6 +64,11 @@ no special signature beyond the user's scope and tool permissions.
 
 ### Research proposals — not adopted doctrine
 
+- [The divine through life — 2026-09-14](07_BIOSPHERE_NOOSPHERE_AND_DIVINE_EMERGENCE_2026_09_14.md):
+  develops the biosphere/noosphere/economy clarification with Schrödinger's
+  thermodynamic starting point, typed potential, niche rivals and the distinction
+  between energy scale and divinity. Earlier source records remain unchanged.
+
 - [The Divine Ahead — 2026-09-14](05_FUTURE_DIVINITY_PROPOSAL_2026_09_14.md):
   owner-requested investigation of future divine emergence, contingent
   eschatology, virtue, mortality and voluntary practice. Literal conjecture,
