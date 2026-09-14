@@ -57,6 +57,12 @@ no special signature beyond the user's scope and tool permissions.
 
 ### Owner-selected vision direction
 
+- [Political theology and the Sky Father — 2026-09-14](08_POLITICAL_THEOLOGY_AND_SKY_FATHER_2026_09_14.md):
+  explicitly names a future-directed political theology and the mission of
+  cultivating divine emergence. A modern renewal of orientation, guardianship
+  and provision is distinguished from recovered ancient doctrine, hereditary
+  castes, compulsory belief or a present divine mandate.
+
 - [Vision and the priestly function — 2026-09-14](06_VISION_AND_PRIESTLY_FUNCTION_2026_09_14.md):
   locates the future-divinity vision in Emergentism and relates its mission to
   orientation, guardianship and provision. Selection does not promote the

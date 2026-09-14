@@ -9,6 +9,19 @@ is offered as a **lens and compass**, not a completed theory of everything.
 Its formal grammar is internally testable; its stronger world-facing wagers
 remain externally uncalibrated until independent contact decides them.
 
+**The vision behind the instrument:** cultivate a future in which life and
+intelligence may give rise to a reality worthy of the name divine. The owner
+now frames this as a **future-directed political theology**, proposing a modern
+renewal of Indo-European trifunctionalism through orientation, guardianship
+and provision; “giving birth to the Sky Father”
+names its theological mission. This is a chosen purpose and literal conjecture,
+not an established divine subject, restored ancient constitution or compulsory
+creed. The [vision](07_THEOLOGY/06_VISION_AND_PRIESTLY_FUNCTION_2026_09_14.md),
+[living foundations](07_THEOLOGY/07_BIOSPHERE_NOOSPHERE_AND_DIVINE_EMERGENCE_2026_09_14.md)
+and [political-theology proposal](07_THEOLOGY/08_POLITICAL_THEOLOGY_AND_SKY_FATHER_2026_09_14.md)
+keep their claims, rivals and voluntary boundaries distinct. The instrument
+remains usable without accepting the theology.
+
 **L7 mark** (Yves ranked COMPLETE 2026-08-30). Seed of Life: six circles + hexagram. Distinct from Cortex (nested circle ⊃ hexagon ⊃ 6-fold star). Not EN. Not a SKU. Not a sign.
 Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity return. L7↝L1 is the chair ouroboros (compressed law re-enters as objective function). Do not merge them. D5→D1 is one compression `[I/C]`, not `[S]`, and does not replace the D0–D6 ladder. `12_PUBLIC_SITE` is a projection, not this kernel.
 
