@@ -1,0 +1,49 @@
+{
+  "schema": "emergentism.source-review-custody.v1",
+  "date": "2026-09-14",
+  "source_revision": "f8a261e13144bc619d5c12277fcaaf50b8d355e6",
+  "status": "PROPOSED_REVIEW_NOT_ADOPTED",
+  "sources": [
+    {
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "bytes": 14930,
+      "sha256": "6253645aa8668013522aa1e3fa5fe76a81b6070231b133f79f8d1a393d4ed998",
+      "git_blob": "d9cd25440e265a0ace3715286fa86860a5e6f730"
+    },
+    {
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md",
+      "bytes": 17740,
+      "sha256": "a59289ea4a225b48721f8a3c3310ae928790835b0ad1f6616704d394cc758022",
+      "git_blob": "72b9ff41d23cff7c67e51c0da0afe61e8cb20655"
+    },
+    {
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/52_TITAN_SEMANTICS_V3_THE_RULE_AND_THE_WEDGE_2026_08_22.md",
+      "bytes": 40027,
+      "sha256": "ea6fdd17ed948eb2319a8371c7fcfdbf52f0f82a2928c78ab807778c571d37a6",
+      "git_blob": "65c0c1a35589099047c3f3cfe150ee03caf82fb1"
+    },
+    {
+      "path": "00_HANDOFF/2026_09_11_titan_claims_adjudication/README.md",
+      "bytes": 39405,
+      "sha256": "9d2906118451971a6157b546c91d3ced0fb21936b706733fc321a2a4dfb2ea8a",
+      "git_blob": "8fb18f579fe3c637de2bcb2ea98a88d83ac16062"
+    },
+    {
+      "path": "00_META/00_SETTLED_CANON_REGISTRY.md",
+      "bytes": 43518,
+      "sha256": "48ae2ba59e3e62a66c4424123c167c057e31cf31a3686da9acf1065d98258e9c",
+      "git_blob": "48629dee0bc7e09c3ee081de505eb720da88cfb7"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md",
+      "bytes": 49738,
+      "sha256": "538fbdc4031dc452348a65a07356733d6ccaa1a9890a26ee8a3c3b9e6c0db028",
+      "git_blob": "340e2a9b97675f01649030f69e4392bb1f1ca788"
+    }
+  ],
+  "boundaries": [
+    "Source assertions and receipt history are attributed, not independently validated",
+    "No source amendment, accepted memory or website release",
+    "No estate-wide absence claim"
+  ]
+}

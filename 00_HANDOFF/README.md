@@ -7,6 +7,10 @@ canonical_phrase: "00_HANDOFF lane — session handoffs and release receipts (on
 
 # 00_HANDOFF
 
+Current bounded reading review: [Titans realm, unit and staged actuality](2026_09_14_titans_reader_review/README.md)
+— proposed reader wording, exact source pins and unresolved adoption boundaries;
+not a new doctrine owner or public release.
+
 Session handoffs and release receipts, one dated directory each. The `YYYY_MM_DD` prefix is
 zero-padded, so lexical order is date order — `ls` lists them oldest first
 (`2026_07_19_broken_66_second_look`) to newest dated directory (`2026_08_21_worktree_consolidation` as of 2026-08-29). Older text named `2026_07_31_tidy_and_handoff`; that directory remains. Loose dated receipts also live at this folder root (`00_INDEX.md`: named working packets, not one-directory-only). Directories
