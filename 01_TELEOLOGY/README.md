@@ -37,6 +37,13 @@ Two circuits, not one: Seed `r₆:D6↝D0` remains an interpretive non-identity 
 
 ## Active proposal
 
+[Emergentist Exergy — VMO × SKA](05_EMERGENTIST_EXERGY/README.md) implements
+the 2026-09-15 reader terminology and six-field correction loop as a subordinate
+source package: typed composition by default, an explicitly experimental
+calibrated product, a synthetic example and offline checks. It does not replace
+the formal Power-Max ranking, physical exergy, or The Goal; numerical and
+practical adequacy remain open. Public migration is separately tracked.
+
 [The Goal in Public](03_THE_GOAL_IN_PUBLIC_2026_07_21.md) is a `[D]`
 objective layer for making the public lens operable by strangers. It is not an
 amendment to the canonical Goal, and its adoption hypotheses remain testable.

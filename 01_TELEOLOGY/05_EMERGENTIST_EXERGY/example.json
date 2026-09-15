@@ -1,0 +1,74 @@
+{
+  "schema_version": "emergentism/EmergentistExergy.v1",
+  "id": "synthetic-clinic-r1",
+  "tier": "[D]",
+  "context": {
+    "id": "synthetic-clinic-day1",
+    "bearers": ["clinic", "patients", "watershed"],
+    "system_boundary": "Synthetic clinic water service including source, pump, power, maintenance, patients and watershed; not a real deployment.",
+    "as_of": "2026-09-15T10:00:00Z",
+    "review_at": "2026-09-16T10:00:00Z",
+    "horizon_end": "2026-10-15T10:00:00Z"
+  },
+  "vmo": {
+    "vision": {
+      "statement": "Dependable, safe clinic water without depleting the watershed or excluding patients.",
+      "cone_type": "imagined_option_cone",
+      "exclusions": ["No guarantee of universal feasibility", "No hidden loss to patients or watershed"]
+    },
+    "mission": {
+      "statement": "Maintain supply through repair or replacement under resource and safety constraints.",
+      "constraints": ["Water quality must be assessed separately", "Do not exceed sustainable source capacity", "No physical act is authorized by this record"],
+      "trajectories": [
+        {"id": "repair", "description": "Inspect and repair the current pump and delivery line.", "status": "imagined", "evidence": []},
+        {"id": "replace", "description": "Evaluate replacement if inspection rules out repair.", "status": "imagined", "evidence": []}
+      ]
+    },
+    "objectives": [
+      {"id": "water-service", "trajectory_id": "repair", "description": "Reach the stated flow and safety criteria by the next review, without assuming either is already satisfied.", "kpi_ids": ["flow", "water-safety"]}
+    ]
+  },
+  "ska": {
+    "strategies": [
+      {
+        "id": "inspect-first",
+        "objective_id": "water-service",
+        "agent_ids": ["technician"],
+        "policy": "Propose a scoped inspection before committing to replacement; retain stopping as an option.",
+        "dependencies": [
+          {"id": "backup-power", "description": "Backup electricity during outage; availability untested.", "status": "unknown", "evidence": []},
+          {"id": "sustainable-source", "description": "Source capacity within watershed limits; unmeasured.", "status": "unknown", "evidence": []}
+        ]
+      }
+    ],
+    "kpis": [
+      {"id": "flow", "objective_id": "water-service", "metric": "Delivered flow in synthetic bench case", "unit": "L/h", "threshold": 100, "comparator": "ge", "value": 60, "status": "failed", "observed_at": "2026-09-15T09:00:00Z", "expires_at": "2026-09-16T09:00:00Z", "evidence": ["synthetic-flow"]},
+      {"id": "water-safety", "objective_id": "water-service", "metric": "Pass of the separately specified local safety assessment; not a medical standard supplied here", "unit": "pass indicator", "threshold": 1, "comparator": "ge", "value": null, "status": "unknown", "observed_at": null, "expires_at": null, "evidence": []}
+    ],
+    "agents": [
+      {"id": "technician", "role": "Synthetic maintenance participant", "capabilities": ["Propose an inspection; real competence unverified"], "scope": ["Prepare a proposal only"], "may_sign": false, "may_authorize": false}
+    ]
+  },
+  "evidence": [
+    {"id": "synthetic-flow", "kind": "synthetic", "source": "example.json: invented 60 L/h bench observation", "limitations": "Not an external measurement, field trial, safety assessment or outcome claim."}
+  ],
+  "guardrails": {
+    "authorization": "unassessed",
+    "authorization_evidence": [],
+    "justice": "unassessed",
+    "justice_evidence": [],
+    "bearers": [
+      {"id": "clinic", "option_effect": "unknown", "consent": "unknown", "costs": "Power, repair parts, staff time; unmeasured.", "repair_exit": "Pause proposal; retain alternative suppliers and repair route.", "evidence": []},
+      {"id": "patients", "option_effect": "unknown", "consent": "unknown", "costs": "Service disruption and safety risk must not vanish into throughput.", "repair_exit": "Independent complaint and alternative safe supply need a real plan.", "evidence": []},
+      {"id": "watershed", "option_effect": "unknown", "consent": "unknown", "costs": "Withdrawal and ecological effects unmeasured; no claim that ecosystems consent.", "repair_exit": "Specify mandate-bound ecological representation and withdrawal limits before action.", "evidence": []}
+    ],
+    "ledgers": {
+      "physical_exergy": {"status": "unmeasured", "evidence": []},
+      "thermodynamic_entropy": {"status": "unmeasured", "evidence": []},
+      "history_entropy": {"status": "unmeasured", "evidence": []},
+      "viability": {"status": "unmeasured", "evidence": []}
+    }
+  },
+  "assessment": {"mode": "composition_only", "calibration": null, "factors": null},
+  "revision": {"parent_id": null, "changed_fields": [], "reason": "Initial synthetic case; observed failure and unknowns preserved.", "evidence": []}
+}

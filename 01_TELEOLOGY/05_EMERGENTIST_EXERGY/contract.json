@@ -1,0 +1,19 @@
+{
+  "schema_version": "emergentism/EmergentistExergyContract.v1",
+  "record_version": "emergentism/EmergentistExergy.v1",
+  "format": "custom vocabulary; not JSON Schema",
+  "reader_expression": "Emergentist Exergy = VMO × SKA",
+  "modes": ["composition_only", "experimental_product"],
+  "fields": ["vision", "mission", "objectives", "strategies", "kpis", "agents"],
+  "revision_fields": ["vision", "mission", "objectives", "strategies", "kpis", "agents", "context", "guardrails", "assessment"],
+  "trajectory_states": ["imagined", "supported", "ruled_out"],
+  "dependency_states": ["unknown", "supported", "absent"],
+  "kpi_states": ["unknown", "met", "failed"],
+  "evidence_kinds": ["synthetic", "observation", "reference"],
+  "source_pins": [
+    {"path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md", "sha256": "ba48ac8689d31032d3569b62c195bf992ba4b43bfe963e6162d5b77dac32d252"},
+    {"path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md", "sha256": "21bfad3bb6089fa2d304c1745738eeb9ce035bf201b73b0b7ad79019b29490ef"},
+    {"path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/42_VMOSKA_BOUNDARY_DISCIPLINE_2026_09_03.md", "sha256": "ef5957ab968a0e1ca398e76869b1c85916c284f68bf45f70c94170a2f630708e"},
+    {"path": "01_TELEOLOGY/00_THE_GOAL.md", "sha256": "f9e4c5cfad7632be1244e22ea33c7846da19438cc1505ddad666382b1b214c76"}
+  ]
+}
