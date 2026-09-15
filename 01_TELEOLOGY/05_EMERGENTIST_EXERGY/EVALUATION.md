@@ -73,3 +73,54 @@ measures. Do not add money, entropy, option counts and watts into one number.
 
 The conceptual candidate may survive even if neither EE-03 nor EE-05 does.
 That is the planned outcome boundary, not a post-hoc rescue of the product.
+
+## Power, capability and renewal extension
+
+Companion: [Power, capability and the systems that sustain them](POWER_AND_CAPABILITY.md).
+This is a proposed extension to EE-04/05, not an executed or preregistered trial.
+
+**Candidate `[C]`:** adding a service's dependency and renewal state improves
+held-out predictions of durable service compared with local throughput alone.
+Name the selection mechanism separately if claiming that predicted service
+explains evolutionary or market persistence. Availability is not reproductive
+fitness by definition.
+
+Before a trial, freeze matched workloads, accepted-output quality, initial
+budgets, hardware boundaries, horizon, sampling rationale and failure criteria.
+Vary resource supply, repair delay and task changes independently where
+feasible. Count communications, idle reserves, upstream support and recovery;
+include common-cause failures rather than assuming independent components.
+
+Compare at least these prespecified models:
+
+| Model | Inputs / prediction to test | What would defeat the application |
+|---|---|---|
+| Conditional MPP | Useful physical work rate and explicit reinvestment/maintenance model predict persistence over the fixed horizon | No incremental held-out predictive value; merely relabeling successful output “useful” after observation |
+| Reliability/maintenance | Dependency availability, load, repair and reserve state predict service continuity at a specified minimum quality | Component-level baseline predicts as well after complexity and measurement cost |
+| Task-capability profile | Feasible tasks, switching costs and adaptation under changed demand predict unmet demand and recovery | Extra recorded flexibility does not predict delivered benefit or costs more than it enables |
+
+Include combined models and a simple local baseline; the three explanations
+can agree, so no difference is not a discriminating result. Prespecify both
+predictive scoring and a minimum practical improvement; control for the extra
+information, effort and complexity supplied to each model. Development cases
+and held-out disturbance combinations must be separate. Report missingness,
+nulls and adverse effects, not only apparent wins.
+
+Equal predictions do not distinguish mechanisms. A sufficiently precise
+no-improvement result can nevertheless reject the claimed incremental benefit
+of the richer instrument against its preregistered practical margin.
+
+**No measured physical useful power, no physical MPP result.** A software-only
+study may test task delivery and the renewal hypothesis, but task counts,
+profit, FLOPs and electrical consumption cannot impersonate useful-work output.
+No arbitrary conversion of task scores into joules is permitted.
+
+For each bearer record supported tasks, quality, resource use, availability,
+repair/replacement times, losses and exit separately. More cumulative delivery
+does not itself establish more capability after the endpoint. Lower total
+energy does not itself establish worse task performance. If a public benefit
+claim hides a harmed bearer, it fails that claim regardless of predictive fit.
+
+The accompanying `test_power_models.py` is nine local synthetic regressions:
+it checks explicit mathematical examples and missing-dependency logic only.
+It is not a trial of MPP, network cooperation, machine superiority or the ethic.

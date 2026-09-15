@@ -136,6 +136,12 @@ interaction follows from this vocabulary. The related conjecture remains at
 its own tier in the
 [power-regime note](../../07_THEOLOGY/09_GEOSPHERE_BIOSPHERE_NOOSPHERE_POWER_REGIMES_2026_09_15.md).
 
+The [power-and-capability refinement](POWER_AND_CAPABILITY.md) develops this
+comparison: physical useful power, current task delivery, and supported future
+capability stay distinct. It adds source-checked MPP qualifications, explicit
+counterexamples to a universal middle optimum, and a service-and-renewal
+network lens for machines. Those toy calculations are not empirical validation.
+
 ## Justice is not another multiplier
 
 Keep each affected bearer visible, including the sustaining whole. Record
@@ -171,6 +177,7 @@ From this directory, with Python 3.10 or later:
 ```sh
 python3 -B validate.py --check
 python3 -B -m unittest -v test_contract.py
+python3 -B -m unittest -v test_power_models.py
 python3 -B validate.py example.json
 ```
 
