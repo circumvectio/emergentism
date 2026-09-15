@@ -70,6 +70,13 @@ no special signature beyond the user's scope and tool permissions.
 
 ### Research proposals — not adopted doctrine
 
+- [Shaped, adaptive, copyable — 2026-09-15](09_GEOSPHERE_BIOSPHERE_NOOSPHERE_POWER_REGIMES_2026_09_15.md):
+  records the geosphere/biosphere/noosphere power-regime conjecture, the
+  efficiency/effectiveness distinction and predicted machine energy demand.
+  Lotka–Odum, the Justice-constrained Power-Max objective and the proposed D5
+  force remain distinct; Hinton's copyability tradeoff motivates tests, not
+  a universal biology-versus-machine law. The September 14 record is preserved.
+
 - [The divine through life — 2026-09-14](07_BIOSPHERE_NOOSPHERE_AND_DIVINE_EMERGENCE_2026_09_14.md):
   develops the biosphere/noosphere/economy clarification with Schrödinger's
   thermodynamic starting point, typed potential, niche rivals and the distinction
