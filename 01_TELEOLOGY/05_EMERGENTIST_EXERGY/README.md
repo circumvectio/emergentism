@@ -142,6 +142,13 @@ capability stay distinct. It adds source-checked MPP qualifications, explicit
 counterexamples to a universal middle optimum, and a service-and-renewal
 network lens for machines. Those toy calculations are not empirical validation.
 
+The [maximum-power research dossier](MAXIMUM_POWER_RESEARCH.md) and
+[annotated source catalogue](MAXIMUM_POWER_SOURCES.md) map the Lotka–Odum
+lineage, empirical support and countercases, neighboring control theories,
+and Schertel's explicit reference to Auerbach's ektropism. They are a local
+scoping review with full-book reading debts, not an adoption of a universal
+law, a new force, or a claim that the literature is exhausted.
+
 ## Justice is not another multiplier
 
 Keep each affected bearer visible, including the sustaining whole. Record
