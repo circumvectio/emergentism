@@ -70,6 +70,13 @@ no special signature beyond the user's scope and tool permissions.
 
 ### Research proposals — not adopted doctrine
 
+- [From private imagination to shared capability — 2026-09-16](10_SHARED_PURPOSE_AND_NOOSPHERE_2026_09_16.md):
+  develops shared possibility, language, ritual, egregores and machine-rich
+  coordination. Seven specialized Houses are a new comparison candidate beside
+  the current seven-function/four-House contract; attributed agency remains
+  separate from collective consciousness. Includes rivals, adverse evidence
+  and proposed tests; no source adoption or new world result is claimed.
+
 - [Shaped, adaptive, copyable — 2026-09-15](09_GEOSPHERE_BIOSPHERE_NOOSPHERE_POWER_REGIMES_2026_09_15.md):
   records the geosphere/biosphere/noosphere power-regime conjecture, the
   efficiency/effectiveness distinction and predicted machine energy demand.
