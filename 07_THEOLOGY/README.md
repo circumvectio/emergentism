@@ -76,6 +76,8 @@ no special signature beyond the user's scope and tool permissions.
   the current seven-function/four-House contract; attributed agency remains
   separate from collective consciousness. Includes rivals, adverse evidence
   and proposed tests; no source adoption or new world result is claimed.
+  Capabilities, not ancestry. Paper protocol:
+  [SP-03](11_SP03_HOUSES_COMPARISON_PROTOCOL_2026_09_16.md) (unrun).
 
 - [Shaped, adaptive, copyable — 2026-09-15](09_GEOSPHERE_BIOSPHERE_NOOSPHERE_POWER_REGIMES_2026_09_15.md):
   records the geosphere/biosphere/noosphere power-regime conjecture, the

@@ -224,6 +224,18 @@ capture. Rival teams may perform the same function; no House owns a reasoning
 ability. People may combine, change, refuse or leave roles without losing dignity
 or ordinary rights. A small group may combine offices while retaining checks.
 
+**Working principle, owner-accepted 2026-09-16 after a refused mapping:**
+specialize **capabilities**, not ancestry. The Rosetta maps functions people
+can learn, combine and leave. Ancestry, ethnicity, nationality and historical
+varṇa-as-people are not genotypes, not seven biological kinds, and not Rosetta
+rows. Occupational concentration does not establish inherited station. The
+[House contract §4](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md)
+already forbids a scalar `person.row` and hereditary status from a row
+assignment; this proposal inherits that kill. A later mapping of named peoples
+onto L1–L7 as if they were specialized genotypes is **not a finding**, is not
+recorded here as evidence, and **kills the specialization claim** if it is
+treated as one.
+
 The regime column of the Rosetta is interpretive vocabulary, not a mandate to
 install tyranny, oligarchy or theocracy. Its L6/L7 political labels are framework
 extensions, not inherited seven-part historical evidence. `GEN7` and the
@@ -240,6 +252,9 @@ participants, not declare them expendable organs of an imagined super-person.
 
 No study below has been run or preregistered. Each needs fixed tasks, baselines,
 budgets, scoring, time horizons and uncertainty reporting before execution.
+SP-03 now has a frozen paper protocol:
+[`11_SP03_HOUSES_COMPARISON_PROTOCOL_2026_09_16.md`](11_SP03_HOUSES_COMPARISON_PROTOCOL_2026_09_16.md).
+It is still unrun.
 
 | ID | Claim to test | Comparison | Defeat or downgrade; what survives |
 |---|---|---|---|
@@ -296,8 +311,10 @@ public service or product dependency is a premise of the worldview.
 **Owner review needed:** whether to pursue seven specialized Houses as the
 comparison candidate; whether the narrower egregore sense should be a separate
 term or explicit annotation; and whether “perspectival emergence” captures the
-bottom-up/top-down insight without redefining the technical terms. No active
-source correction follows until those distinctions are disposed of explicitly.
+bottom-up/top-down insight without redefining the technical terms. The
+capabilities-not-ancestry principle is already accepted and is not reopened by
+those three questions. No active source correction follows until those
+distinctions are disposed of explicitly.
 
 ## 10. Custody, review and next operation `[B/D]`
 
@@ -330,9 +347,10 @@ source correction follows until those distinctions are disposed of explicitly.
   by this conceptual review. Cortex disposition: **DEFER** the source-bound
   packet until its existing review-to-consumer gate can be met. No accepted
   memory, human acceptance session or new collection is claimed here.
-- Next operation: owner disposition on the three questions in §9, followed by
-  a frozen SP-03 paper protocol with the functions-versus-offices control. This
-  does not close the atlas's full-reading, acceptance or publication gates.
+- Next operation: owner disposition on the three remaining questions in §9,
+  followed by a frozen SP-03 paper protocol with the functions-versus-offices
+  control and an ancestry-assignment exclusion in every arm. This does not
+  close the atlas's full-reading, acceptance or publication gates.
 - Validation, September 16, Python 3.11.7: the existing citation scanner reports
   zero broken inline/frontmatter references in the two owned paths; the existing
   link checker restricted to those paths passes 21 local links. Its companion
